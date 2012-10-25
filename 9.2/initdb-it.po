@@ -36,9 +36,7 @@ msgstr ""
 "X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../../port/dirmod.c:79
-#: ../../port/dirmod.c:92
-#: ../../port/dirmod.c:109
+#: ../../port/dirmod.c:79 ../../port/dirmod.c:92 ../../port/dirmod.c:109
 #, c-format
 msgid "out of memory\n"
 msgstr "memoria esaurita\n"
@@ -68,15 +66,12 @@ msgstr "impossibile leggere la directory \"%s\": %s\n"
 msgid "could not stat file or directory \"%s\": %s\n"
 msgstr "impossibile ottenere informazioni sul file o la directory \"%s\": %s\n"
 
-#: ../../port/dirmod.c:598
-#: ../../port/dirmod.c:615
+#: ../../port/dirmod.c:598 ../../port/dirmod.c:615
 #, c-format
 msgid "could not remove file or directory \"%s\": %s\n"
 msgstr "impossibile rimuovere il file o la directory \"%s\": %s\n"
 
-#: ../../port/exec.c:125
-#: ../../port/exec.c:239
-#: ../../port/exec.c:282
+#: ../../port/exec.c:125 ../../port/exec.c:239 ../../port/exec.c:282
 #, c-format
 msgid "could not identify current directory: %s"
 msgstr "impossibile identificare la directory corrente: %s"
@@ -96,8 +91,7 @@ msgstr "impossibile leggere il binario \"%s\""
 msgid "could not find a \"%s\" to execute"
 msgstr "impossibile trovare un \"%s\" da eseguire"
 
-#: ../../port/exec.c:255
-#: ../../port/exec.c:291
+#: ../../port/exec.c:255 ../../port/exec.c:291
 #, c-format
 msgid "could not change directory to \"%s\""
 msgstr "impossibile cambiare directory in \"%s\""
@@ -132,29 +126,22 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 msgid "child process exited with unrecognized status %d"
 msgstr "il processo figlio è terminato con il valore di uscita non riconosciuto %d"
 
-#: initdb.c:294
-#: initdb.c:308
+#: initdb.c:294 initdb.c:308
 #, c-format
 msgid "%s: out of memory\n"
 msgstr "%s: memoria esaurita\n"
 
-#: initdb.c:418
-#: initdb.c:1336
+#: initdb.c:418 initdb.c:1336
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
 msgstr "%s: impossibile aprire il file \"%s\" per la lettura: %s\n"
 
-#: initdb.c:474
-#: initdb.c:840
-#: initdb.c:869
+#: initdb.c:474 initdb.c:840 initdb.c:869
 #, c-format
 msgid "%s: could not open file \"%s\" for writing: %s\n"
 msgstr "%s: impossibile aprire il file \"%s\" per la scrittura: %s\n"
 
-#: initdb.c:482
-#: initdb.c:490
-#: initdb.c:847
-#: initdb.c:875
+#: initdb.c:482 initdb.c:490 initdb.c:847 initdb.c:875
 #, c-format
 msgid "%s: could not write file \"%s\": %s\n"
 msgstr "%s: impossibile scrivere nel file \"%s\": %s\n"
@@ -240,8 +227,7 @@ msgstr "%s: impossibile determinare il nome utente: %s\n"
 msgid "%s: \"%s\" is not a valid server encoding name\n"
 msgstr "%s: \"%s\" non è un nome di codifica per il server valido\n"
 
-#: initdb.c:760
-#: initdb.c:3194
+#: initdb.c:760 initdb.c:3194
 #, c-format
 msgid "%s: could not create directory \"%s\": %s\n"
 msgstr "%s: impossibile creare la directory \"%s\": %s\n"
@@ -251,9 +237,7 @@ msgstr "%s: impossibile creare la directory \"%s\": %s\n"
 msgid "%s: file \"%s\" does not exist\n"
 msgstr "%s: il file \"%s\" non esiste\n"
 
-#: initdb.c:792
-#: initdb.c:801
-#: initdb.c:811
+#: initdb.c:792 initdb.c:801 initdb.c:811
 #, c-format
 msgid ""
 "This might mean you have a corrupted installation or identified\n"
@@ -691,9 +675,7 @@ msgstr "Esecuzione in modalità debug\n"
 msgid "Running in noclean mode.  Mistakes will not be cleaned up.\n"
 msgstr "Esecuzione in modalità noclean. Gli errori non verrano puliti.\n"
 
-#: initdb.c:2767
-#: initdb.c:2788
-#: initdb.c:3017
+#: initdb.c:2767 initdb.c:2788 initdb.c:3017
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Provate \"%s --help\" per maggiori informazioni.\n"
@@ -855,26 +837,22 @@ msgstr ""
 msgid "The default text search configuration will be set to \"%s\".\n"
 msgstr "La configurazione predefinita di ricerca testo sarà impostata a \"%s\".\n"
 
-#: initdb.c:3121
-#: initdb.c:3188
+#: initdb.c:3121 initdb.c:3188
 #, c-format
 msgid "creating directory %s ... "
 msgstr "creazione della directory %s ... "
 
-#: initdb.c:3135
-#: initdb.c:3206
+#: initdb.c:3135 initdb.c:3206
 #, c-format
 msgid "fixing permissions on existing directory %s ... "
 msgstr "correzione dei permessi sulla directory esistente %s ... "
 
-#: initdb.c:3141
-#: initdb.c:3212
+#: initdb.c:3141 initdb.c:3212
 #, c-format
 msgid "%s: could not change permissions of directory \"%s\": %s\n"
 msgstr "%s: impossibile cambiare i permessi di accesso della directory \"%s\": %s\n"
 
-#: initdb.c:3154
-#: initdb.c:3225
+#: initdb.c:3154 initdb.c:3225
 #, c-format
 msgid "%s: directory \"%s\" exists but is not empty\n"
 msgstr "%s: la directory \"%s\" esiste ma non è vuota\n"
@@ -890,8 +868,7 @@ msgstr ""
 "la directory \"%s\" o eseguite %s\n"
 "con un argomento diverso da \"%s\".\n"
 
-#: initdb.c:3165
-#: initdb.c:3235
+#: initdb.c:3165 initdb.c:3235
 #, c-format
 msgid "%s: could not access directory \"%s\": %s\n"
 msgstr "%s: impossibile accedere alla directory \"%s\": %s\n"
