@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-25 23:38+0100\n"
+"PO-Revision-Date: 2012-10-26 18:52+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -435,7 +435,7 @@ msgstr "  -e XIDEPOCH      imposta il prossimo ID epoch transazione\n"
 #: pg_resetxlog.c:1032
 #, c-format
 msgid "  -f               force update to be done\n"
-msgstr "  -f              forza l'esecuzione dell'aggiornamento\n"
+msgstr "  -f               forza l'esecuzione dell'aggiornamento\n"
 
 #: pg_resetxlog.c:1033
 #, c-format
@@ -443,8 +443,8 @@ msgid ""
 "  -l TLI,FILE,SEG  force minimum WAL starting location for new transaction "
 "log\n"
 msgstr ""
-"  -l TLI,FILE,SEG  forza il minimo punto d'inizio WAL per il nuovo log della "
-"transazione\n"
+"  -l TLI,FILE,SEG  forza il minimo punto d'inizio WAL per il nuovo log\n"
+"                   delle transazione\n"
 
 #: pg_resetxlog.c:1034
 #, c-format
@@ -457,8 +457,8 @@ msgid ""
 "  -n               no update, just show extracted control values (for "
 "testing)\n"
 msgstr ""
-"  -n               nessun aggiornamento, mostra solo i valori di controllo "
-"estratti (solo per prova)\n"
+"  -n               nessun aggiornamento, mostra solo i valori di controllo\n"
+"                   estratti (solo per prova)\n"
 
 #: pg_resetxlog.c:1036
 #, c-format
