@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-25 17:21+0100\n"
+"PO-Revision-Date: 2012-10-26 18:36+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -82,8 +82,8 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Se non viene specificata un directory per i dati (DATADIR), la variabile\n"
-" d'ambiente PGDATA sarà usata come predefinita.\n"
+"Se non viene specificata un directory per i dati (DATADIR) verrà usata la\n"
+"variabile d'ambiente PGDATA.\n"
 "\n"
 
 #: pg_controldata.c:41
@@ -225,7 +225,7 @@ msgstr "Ultimo TimeLineID del checkpoint :          %u\n"
 #: pg_controldata.c:206
 #, c-format
 msgid "Latest checkpoint's full_page_writes: %s\n"
-msgstr "Ultimo full_page_writes del checkpoint: %s\n"
+msgstr "Ultimo full_page_writes del checkpoint:     %s\n"
 
 #: pg_controldata.c:207
 msgid "off"
@@ -392,7 +392,7 @@ msgstr "per valore"
 #: pg_controldata.c:265
 #, c-format
 msgid "Float8 argument passing:              %s\n"
-msgstr "Passaggio di argomenti Float8:         %s\n"
+msgstr "Passaggio di argomenti Float8:              %s\n"
 
 #~ msgid "LC_CTYPE:                             %s\n"
 #~ msgstr "LC_CTYPE:                             %s\n"
