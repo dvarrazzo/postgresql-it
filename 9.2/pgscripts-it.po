@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-26 00:17+0100\n"
+"PO-Revision-Date: 2012-10-26 19:00+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -170,8 +170,7 @@ msgstr ""
 #, c-format
 msgid "  -h, --host=HOSTNAME       database server host or socket directory\n"
 msgstr ""
-"  -h, --host=HOSTNAME       indirizzo dell'host del server database o "
-"directory socket\n"
+"  -h, --host=HOSTNAME       host del server database o directory socket\n"
 
 #: clusterdb.c:262 createlang.c:244 createuser.c:356 dropdb.c:165
 #: droplang.c:245 dropuser.c:167 reindexdb.c:342 vacuumdb.c:359
@@ -440,8 +439,8 @@ msgid ""
 "By default, a database with the same name as the current user is created.\n"
 msgstr ""
 "\n"
-"Come predefinito, un database con lo stesso nome dell'utente corrente verrà "
-"creato.\n"
+"Se il nome non è specificato verrà creato un database con lo stesso nome\n"
+"dell'utente corrente.\n"
 
 #: createlang.c:149 droplang.c:148
 msgid "Name"
@@ -664,8 +663,8 @@ msgstr "  --no-replication          il ruolo non può avviare una replica\n"
 msgid ""
 "  -U, --username=USERNAME   user name to connect as (not the one to create)\n"
 msgstr ""
-"  -U, --username=UTENTE     nome utente con cui collegarsi (non quello da "
-"creare)\n"
+"  -U, --username=UTENTE     nome utente con cui collegarsi\n"
+"                            (non quello da creare)\n"
 
 #: dropdb.c:102
 #, c-format
@@ -788,8 +787,8 @@ msgstr ""
 msgid ""
 "  -U, --username=USERNAME   user name to connect as (not the one to drop)\n"
 msgstr ""
-"  -U, --username=UTENTE     nome utente con cui collegarsi (non quello da "
-"eliminare)\n"
+"  -U, --username=UTENTE     nome utente con cui collegarsi\n"
+"                            (non quello da eliminare)\n"
 
 #: reindexdb.c:149
 #, c-format
@@ -878,7 +877,7 @@ msgstr "  -a, --all                 re-indicizza tutti i database\n"
 #: reindexdb.c:332
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to reindex\n"
-msgstr "  -d, --dbname=NOME_DB       database da re-indicizzare\n"
+msgstr "  -d, --dbname=NOME_DB      database da re-indicizzare\n"
 
 #: reindexdb.c:334
 #, c-format
@@ -980,8 +979,9 @@ msgstr "  -f, --full                      esegui una pulizia completa\n"
 #, c-format
 msgid "  -F, --freeze                    freeze row transaction information\n"
 msgstr ""
-"  -F, --freeze                    congela le informazioni per la transazione "
-"sulla riga\n"
+"  -F, --freeze                    congela le informazioni per la "
+"transazione\n"
+"                                  sulla riga\n"
 
 #: vacuumdb.c:350
 #, c-format
@@ -992,7 +992,7 @@ msgstr "  -q, --quiet                     non stampare alcun messaggio\n"
 #, c-format
 msgid "  -t, --table='TABLE[(COLUMNS)]'  vacuum specific table only\n"
 msgstr ""
-"  -t, --table='TABELLA[(COLONNE)]' pulisci solamente la tabella specificata\n"
+"  -t, --table='TABELLA[(COL)]'    pulisci solamente la tabella specificata\n"
 
 #: vacuumdb.c:352
 #, c-format
@@ -1018,8 +1018,8 @@ msgstr ""
 #, c-format
 msgid "  -Z, --analyze-only              only update optimizer statistics\n"
 msgstr ""
-"  -z, --analyze-only              aggiorna soltanto le statistiche per "
-"l'ottimizzatore\n"
+"  -z, --analyze-only              aggiorna soltanto le statistiche per\n"
+"                                  l'ottimizzatore\n"
 
 #: vacuumdb.c:356
 #, c-format
