@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-25 20:10+0100\n"
+"PO-Revision-Date: 2012-10-26 18:50+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1382,8 +1382,8 @@ msgid ""
 "                               plain text (default))\n"
 msgstr ""
 "  -F, --format=c|d|t|p         formato del file di output (custom, "
-"directory, tar,\n"
-"                               testo in chiaro (predefinito))\n"
+"directory,\n"
+"                               tar, testo in chiaro (predefinito))\n"
 
 #: pg_dump.c:809
 #, c-format
@@ -1409,8 +1409,8 @@ msgstr ""
 msgid ""
 "  --lock-wait-timeout=TIMEOUT  fail after waiting TIMEOUT for a table lock\n"
 msgstr ""
-"  --lock-wait-timeout=TIMEOUT  termina con errore dopo un'attesa di TIMEOUT "
-"per un lock di tabella\n"
+"  --lock-wait-timeout=TIMEOUT  termina con errore dopo un'attesa di TIMEOUT\n"
+"                               per un lock di tabella\n"
 
 #: pg_dump.c:813 pg_dumpall.c:543
 #, c-format
@@ -1444,22 +1444,22 @@ msgid ""
 "recreating\n"
 msgstr ""
 "  -c, --clean                  svuota (drop) gli oggetti del database prima "
-"di ricrearli\n"
+"di\n"
+"                               ricrearli\n"
 
 #: pg_dump.c:819
 #, c-format
 msgid ""
 "  -C, --create                 include commands to create database in dump\n"
 msgstr ""
-"  -C, --create                 include nell'archivio i comandi per creare "
-"database\n"
+"  -C, --create                 include nell'archivio i comandi per creare\n"
+"                               i database\n"
 
 #: pg_dump.c:820
 #, c-format
 msgid "  -E, --encoding=ENCODING      dump the data in encoding ENCODING\n"
 msgstr ""
-"  -E, --encoding=CODIFICA      scarica i dati nella codifica indicata in "
-"CODIFICA\n"
+"  -E, --encoding=CODIFICA      scarica i dati nella CODIFICA indicata\n"
 
 #: pg_dump.c:821
 #, c-format
@@ -1484,9 +1484,8 @@ msgid ""
 "  -O, --no-owner               skip restoration of object ownership in\n"
 "                               plain-text format\n"
 msgstr ""
-"  -O, --no-owner              salta il ripristino della proprietà degli "
-"oggetti\n"
-"                              nel formato testo in chiaro\n"
+"  -O, --no-owner               salta il ripristino della proprietà degli\n"
+"                               oggetti nel formato testo in chiaro\n"
 
 #: pg_dump.c:826 pg_dumpall.c:551
 #, c-format
@@ -1500,7 +1499,8 @@ msgid ""
 "format\n"
 msgstr ""
 "  -S, --superuser=NOME         nome del superutente da usare nel formato "
-"testo in chiaro\n"
+"testo\n"
+"                               in chiaro\n"
 
 #: pg_dump.c:828
 #, c-format
@@ -1513,7 +1513,7 @@ msgstr ""
 #, c-format
 msgid "  -T, --exclude-table=TABLE    do NOT dump the named table(s)\n"
 msgstr ""
-"  -T, --exclude-table=TABELLA   NON scaricare la tabella o le tabelle "
+"  -T, --exclude-table=TABELLA  NON scaricare la tabella o le tabelle "
 "nominate\n"
 
 #: pg_dump.c:830 pg_dumpall.c:554
@@ -1535,8 +1535,8 @@ msgid ""
 "  --column-inserts             dump data as INSERT commands with column "
 "names\n"
 msgstr ""
-"  --column-inserts             scarica dati come comandi INSERT con nomi di "
-"colonna\n"
+"  --column-inserts             scarica dati come comandi INSERT con nomi\n"
+"                               di colonna\n"
 
 #: pg_dump.c:833 pg_dumpall.c:557
 #, c-format
@@ -1544,16 +1544,16 @@ msgid ""
 "  --disable-dollar-quoting     disable dollar quoting, use SQL standard "
 "quoting\n"
 msgstr ""
-"  --disable-dollar-quoting     disabilita la quotazione con dollari, usa la "
-"quotazione standard SQL\n"
+"  --disable-dollar-quoting     disabilita la quotazione con dollari, usa la\n"
+"                               quotazione standard SQL\n"
 
 #: pg_dump.c:834 pg_dumpall.c:558 pg_restore.c:431
 #, c-format
 msgid ""
 "  --disable-triggers           disable triggers during data-only restore\n"
 msgstr ""
-"  --disable-triggers           disabilita i trigger durante il ripristino "
-"dei soli dati\n"
+"  --disable-triggers           disabilita i trigger durante il ripristino\n"
+"                               dei soli dati\n"
 
 #: pg_dump.c:835
 #, c-format
@@ -1561,7 +1561,8 @@ msgid ""
 "  --exclude-table-data=TABLE   do NOT dump data for the named table(s)\n"
 msgstr ""
 "  --exclude-table-data=TABLE   NON scaricare i dati per la tabella o le "
-"tabelle nominate\n"
+"tabelle\n"
+"                               indicate\n"
 
 #: pg_dump.c:836 pg_dumpall.c:559
 #, c-format
@@ -1597,7 +1598,8 @@ msgid ""
 "  --quote-all-identifiers      quote all identifiers, even if not key words\n"
 msgstr ""
 "  --quote-all-identifiers      metti tutti gli identificatori tra "
-"virgolette, anche se non sono parole chiave\n"
+"virgolette,\n"
+"                               anche se non sono parole chiave\n"
 
 #: pg_dump.c:841
 #, c-format
@@ -1605,8 +1607,9 @@ msgid ""
 "  --section=SECTION            dump named section (pre-data, data, or post-"
 "data)\n"
 msgstr ""
-"  --section=SECTION            scarica la sezione con questo nome (pre-data, "
-"data o post-data)\n"
+"  --section=SECTION            scarica la sezione con questo nome (pre-"
+"data,\n"
+"                               data o post-data)\n"
 
 #: pg_dump.c:842
 #, c-format
@@ -1615,7 +1618,8 @@ msgid ""
 "anomalies\n"
 msgstr ""
 "  --serializable-deferrable    attendi prima che lo scaricamento possa "
-"essere eseguito senza anomalie\n"
+"essere\n"
+"                               eseguito senza anomalie\n"
 
 #: pg_dump.c:843 pg_dumpall.c:564 pg_restore.c:437
 #, c-format
@@ -1626,10 +1630,9 @@ msgid ""
 "                               ALTER OWNER commands to set ownership\n"
 msgstr ""
 "  --use-set-session-authorization\n"
-"                              usa i comandi SET SESSION AUTHORIZATION invece "
-"dei\n"
-"                              comandi ALTER OWNER per impostare le "
-"proprietà\n"
+"                               usa i comandi SET SESSION AUTHORIZATION "
+"invece\n"
+"                               di ALTER OWNER per impostare le proprietà\n"
 
 #: pg_dump.c:847 pg_dumpall.c:568 pg_restore.c:441
 #, c-format
@@ -1669,7 +1672,8 @@ msgid ""
 "automatically)\n"
 msgstr ""
 "  -W, --password           forza la richiesta della password (dovrebbe "
-"avvenire automaticamente)\n"
+"avvenire\n"
+"                           automaticamente)\n"
 
 #: pg_dump.c:853 pg_dumpall.c:575
 #, c-format
