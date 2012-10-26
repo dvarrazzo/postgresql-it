@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-26 17:37+0100\n"
+"PO-Revision-Date: 2012-10-26 17:39+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -558,8 +558,7 @@ msgstr ""
 #, c-format
 msgid ""
 "Asynchronous notification \"%s\" received from server process with PID %d.\n"
-msgstr ""
-"Notificazione asincrona \"%s\" ricevuta dal processo server con PID %d.\n"
+msgstr "Notifica asincrona \"%s\" ricevuta dal processo server con PID %d.\n"
 
 #: common.c:865
 #, c-format
@@ -4138,7 +4137,7 @@ msgstr "crea nuove righe in una tabella"
 
 #: sql_help.h:777
 msgid "listen for a notification"
-msgstr "attendi una notificazione"
+msgstr "attendi l'arrivo di notifiche"
 
 #: sql_help.h:782
 msgid "load a shared library file"
@@ -4154,7 +4153,7 @@ msgstr "posiziona un cursore"
 
 #: sql_help.h:797
 msgid "generate a notification"
-msgstr "crea una notificazione"
+msgstr "genera una notifica"
 
 #: sql_help.h:802
 msgid "prepare a statement for execution"
@@ -4240,7 +4239,7 @@ msgstr "svuota una tabella o una lista di tabelle"
 
 #: sql_help.h:917
 msgid "stop listening for a notification"
-msgstr "termina l'attesa di notificazioni"
+msgstr "termina l'attesa di notifiche"
 
 #: sql_help.h:922
 msgid "update rows of a table"
