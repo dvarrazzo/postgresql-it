@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-25 16:39+0100\n"
+"PO-Revision-Date: 2012-10-26 18:24+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -61,8 +61,8 @@ msgstr "  -F, --format=p|t       formato di output (plain (default), tar)\n"
 msgid ""
 "  -x, --xlog             include required WAL files in backup (fetch mode)\n"
 msgstr ""
-"  -x, --xlog             includi i file WAL richiesti nel backup (modalità "
-"fetch)\n"
+"  -x, --xlog             includi i file WAL necessari nel backup\n"
+"                         (modalità fetch)\n"
 
 #: pg_basebackup.c:111
 #, c-format
@@ -84,7 +84,7 @@ msgstr "  -z, --gzip             comprimi l'output tar\n"
 msgid ""
 "  -Z, --compress=0-9     compress tar output with given compression level\n"
 msgstr ""
-"  -Z, --compress=0-9     comprimi l'output tar con questo livello di "
+"  -Z, --compress=0-9     comprimi l'output tar a questo livello di "
 "compressione\n"
 
 #: pg_basebackup.c:115
@@ -159,7 +159,8 @@ msgid ""
 msgstr ""
 "  -s, --status-interval=INTERVAL\n"
 "                         intervallo tra i pacchetti di stato inviati al "
-"server (in secondi)\n"
+"server\n"
+"                         (in secondi)\n"
 
 #: pg_basebackup.c:128 pg_receivexlog.c:72
 #, c-format
@@ -178,8 +179,8 @@ msgid ""
 "  -W, --password         force password prompt (should happen "
 "automatically)\n"
 msgstr ""
-"  -W, --password         obbliga la richiesta della password (dovrebbe "
-"essere automatico)\n"
+"  -W, --password         forza la richiesta della password\n"
+"                         (dovrebbe essere automatico)\n"
 
 #: pg_basebackup.c:131 pg_receivexlog.c:75
 #, c-format
