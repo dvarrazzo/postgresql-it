@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-25 17:04+0100\n"
+"PO-Revision-Date: 2012-10-26 18:31+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -201,8 +201,8 @@ msgstr ""
 msgid ""
 "  --sysconfdir          show location of system-wide configuration files\n"
 msgstr ""
-" --sysconfdir           mostra la locazione dei file di configurazione di "
-"sistema\n"
+" --sysconfdir           mostra la locazione dei file di configurazione\n"
+"                        di sistema\n"
 
 #: pg_config.c:445
 #, c-format
@@ -223,24 +223,25 @@ msgstr ""
 #, c-format
 msgid "  --cc                  show CC value used when PostgreSQL was built\n"
 msgstr ""
-"  --cc                  mostra il valore di CC usato alla compilazione di "
-"PostgreSQL\n"
+"  --cc                  mostra il valore di CC usato alla compilazione di\n"
+"                        PostgreSQL\n"
 
 #: pg_config.c:449
 #, c-format
 msgid ""
 "  --cppflags            show CPPFLAGS value used when PostgreSQL was built\n"
 msgstr ""
-"  --cppflags            mostra il valore di CPPFLAGS usato alla compilazione "
-"di PostgreSQL\n"
+"  --cppflags            mostra il valore di CPPFLAGS usato alla "
+"compilazione\n"
+"                        di PostgreSQL\n"
 
 #: pg_config.c:450
 #, c-format
 msgid ""
 "  --cflags              show CFLAGS value used when PostgreSQL was built\n"
 msgstr ""
-"  --cflags              mostra il valore di CFLAGS usato alla compilazione "
-"di PostgreSQL\n"
+"  --cflags              mostra il valore di CFLAGS usato alla compilazione\n"
+"                        di PostgreSQL\n"
 
 #: pg_config.c:451
 #, c-format
@@ -248,15 +249,16 @@ msgid ""
 "  --cflags_sl           show CFLAGS_SL value used when PostgreSQL was built\n"
 msgstr ""
 "  --cflags_sl           mostra il valore di CFLAGS_SL usato alla "
-"compilazione di PostgreSQL\n"
+"compilazione\n"
+"                        di PostgreSQL\n"
 
 #: pg_config.c:452
 #, c-format
 msgid ""
 "  --ldflags             show LDFLAGS value used when PostgreSQL was built\n"
 msgstr ""
-"  --ldflags             mostra il valore di LDFLAGS usato alla compilazione "
-"di PostgreSQL\n"
+"  --ldflags             mostra il valore di LDFLAGS usato alla compilazione\n"
+"                        di PostgreSQL\n"
 
 #: pg_config.c:453
 #, c-format
@@ -265,7 +267,8 @@ msgid ""
 "built\n"
 msgstr ""
 "  --ldflags_ex          mostra il valore di LDFLAGS_EX usato alla "
-"compilazione di PostgreSQL\n"
+"compilazione\n"
+"                        di PostgreSQL\n"
 
 #: pg_config.c:454
 #, c-format
@@ -274,15 +277,16 @@ msgid ""
 "built\n"
 msgstr ""
 "  --ldflags_sl          mostra il valore di LDFLAGS_SL usato alla "
-"compilazione di PostgreSQL\n"
+"compilazione\n"
+"                        di PostgreSQL\n"
 
 #: pg_config.c:455
 #, c-format
 msgid ""
 "  --libs                show LIBS value used when PostgreSQL was built\n"
 msgstr ""
-"  --libs                mostra il valore LIBS usato alla compilazione di "
-"PostgreSQL\n"
+"  --libs                mostra il valore LIBS usato alla compilazione di\n"
+"                        PostgreSQL\n"
 
 #: pg_config.c:456
 #, c-format
@@ -292,7 +296,7 @@ msgstr "  --version             mostra la versione di PostgreSQL\n"
 #: pg_config.c:457
 #, c-format
 msgid "  -?, --help            show this help, then exit\n"
-msgstr "  -?, --help            mostra questo aiuto, poi esce\n"
+msgstr "  -?, --help            mostra questo aiuto ed esci\n"
 
 #: pg_config.c:458
 #, c-format
