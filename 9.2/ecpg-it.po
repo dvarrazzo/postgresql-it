@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-24 22:07+0100\n"
+"PO-Revision-Date: 2012-10-26 18:08+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -29,9 +29,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: descriptor.c:64
 #, c-format
@@ -74,7 +73,8 @@ msgid ""
 "%s is the PostgreSQL embedded SQL preprocessor for C programs.\n"
 "\n"
 msgstr ""
-"%s è il preprocessore SQL embedded di PostgreSQL per programmi scritti in C.\n"
+"%s è il preprocessore SQL embedded di PostgreSQL per programmi scritti in "
+"C.\n"
 "\n"
 
 #: ecpg.c:37
@@ -99,7 +99,8 @@ msgid ""
 "  -c             automatically generate C code from embedded SQL code;\n"
 "                 this affects EXEC SQL TYPE\n"
 msgstr ""
-"  -c             genera automaticamente il codice C dal codice SQL embedded;\n"
+"  -c             genera automaticamente il codice C dal codice SQL "
+"embedded;\n"
 "                 questo ha effetto su EXEC SQL TYPE\n"
 
 #: ecpg.c:43
@@ -108,7 +109,8 @@ msgid ""
 "  -C MODE        set compatibility mode; MODE can be one of\n"
 "                 \"INFORMIX\", \"INFORMIX_SE\"\n"
 msgstr ""
-"  -C MODE        setta il compatibility mode; MODE può essere uno tra\n"
+"  -C MODO        setta la modalità di compatibilità; MODO può essere uno "
+"tra\n"
 "                 \"INFORMIX\", \"INFORMIX_SE\"\n"
 
 #: ecpg.c:46
@@ -119,17 +121,19 @@ msgstr "  -d             genera l'output di debug del parser\n"
 #: ecpg.c:48
 #, c-format
 msgid "  -D SYMBOL      define SYMBOL\n"
-msgstr "  -D SYMBOL      definisce SYMBOL\n"
+msgstr "  -D SIMBOLO     definisci SIMBOLO\n"
 
 #: ecpg.c:49
 #, c-format
-msgid "  -h             parse a header file, this option includes option \"-c\"\n"
-msgstr "  -h             fa il parsing di un header file, questa opzione include l'opzione \"-c\"\n"
+msgid ""
+"  -h             parse a header file, this option includes option \"-c\"\n"
+msgstr ""
+"  -h             analizza un file header, questa opzione include \"-c\"\n"
 
 #: ecpg.c:50
 #, c-format
 msgid "  -i             parse system include files as well\n"
-msgstr "  -i             fa il parsing anche dei file di sistema\n"
+msgstr "  -i             analizza anche i file di sistema\n"
 
 #: ecpg.c:51
 #, c-format
@@ -139,7 +143,7 @@ msgstr "  -I DIRECTORY   cerca gli include file in DIRECTORY\n"
 #: ecpg.c:52
 #, c-format
 msgid "  -o OUTFILE     write result to OUTFILE\n"
-msgstr "  -o OUTFILE     scrive il risultato in OUTFILE\n"
+msgstr "  -o FILEOUT     scrive il risultato in FILEOUT\n"
 
 #: ecpg.c:53
 #, c-format
@@ -147,28 +151,28 @@ msgid ""
 "  -r OPTION      specify run-time behavior; OPTION can be:\n"
 "                 \"no_indicator\", \"prepare\", \"questionmarks\"\n"
 msgstr ""
-"  -r OPTION      specifica il comportamento run-time; OPTION può essere:\n"
+"  -r OPZIONE     specifica il comportamento run-time; OPZIONE può essere:\n"
 "                 \"no_indicator\", \"prepare\", \"questionmarks\"\n"
 
 #: ecpg.c:55
 #, c-format
 msgid "  --regression   run in regression testing mode\n"
-msgstr "  --regression   viene eseguito in modalità test di regressione\n"
+msgstr "  --regression   esegui in modalità test di regressione\n"
 
 #: ecpg.c:56
 #, c-format
 msgid "  -t             turn on autocommit of transactions\n"
-msgstr "  -t             attiva il commit automatico nelle transazioni\n"
+msgstr "  -t             attiva il commit automatico delle transazioni\n"
 
 #: ecpg.c:57
 #, c-format
 msgid "  --version      output version information, then exit\n"
-msgstr "  --version      mostra le informazioni sulla versione, poi esce\n"
+msgstr "  --version      mostra le informazioni sulla versione ed esci\n"
 
 #: ecpg.c:58
 #, c-format
 msgid "  -?, --help     show this help, then exit\n"
-msgstr "  -?, --help     mostra questo aiuto, poi esce\n"
+msgstr "  -?, --help     mostra questo aiuto ed esci\n"
 
 #: ecpg.c:59
 #, c-format
@@ -178,8 +182,9 @@ msgid ""
 "input file name, after stripping off .pgc if present.\n"
 msgstr ""
 "\n"
-"Se non viene specificato nessun file di output, il nome è composto aggiungendo .c\n"
-"la nome del file di input, dopo aver tolto .pgc se presente.\n"
+"Se non viene specificato nessun file di output, il nome è composto "
+"aggiungendo\n"
+".c al nome del file di input, dopo aver tolto .pgc se presente.\n"
 
 #: ecpg.c:61
 #, c-format
@@ -322,14 +327,20 @@ msgstr "errore di sintassi nel comando EXEC SQL INCLUDE"
 
 #: pgc.l:1218
 #, c-format
-msgid "internal error: unreachable state; please report this to <pgsql-bugs@postgresql.org>"
-msgstr "errore interno: stato non raggiungibile, si prega di segnalarlo a <pgsql-bugs@postgresql.org>"
+msgid ""
+"internal error: unreachable state; please report this to <pgsql-"
+"bugs@postgresql.org>"
+msgstr ""
+"errore interno: stato non raggiungibile, si prega di segnalarlo a <pgsql-"
+"bugs@postgresql.org>"
 
 # "percorso di inclusione" sembra fuorviante
 #: pgc.l:1343
 #, c-format
 msgid "Error: include path \"%s/%s\" is too long on line %d, skipping\n"
-msgstr "Errore: il percorso della include \"%s/%s\" è troppo lungo alla linea %d, perciò viene saltato\n"
+msgstr ""
+"Errore: il percorso della include \"%s/%s\" è troppo lungo alla linea %d, "
+"perciò viene saltato\n"
 
 #: pgc.l:1365
 #, c-format
@@ -439,7 +450,8 @@ msgstr "COPY FROM STDIN non è implementato"
 #: preproc.y:8157 preproc.y:12866
 #, c-format
 msgid "using variable \"%s\" in different declare statements is not supported"
-msgstr "usare la variabile \"%s\" in una diversa istruzione declare non è supportato"
+msgstr ""
+"usare la variabile \"%s\" in una diversa istruzione declare non è supportato"
 
 #: preproc.y:8159 preproc.y:12868
 #, c-format
@@ -468,8 +480,12 @@ msgstr "atteso \"@\", trovato \"%s\""
 
 #: preproc.y:12644
 #, c-format
-msgid "only protocols \"tcp\" and \"unix\" and database type \"postgresql\" are supported"
-msgstr "soltanto i protocolli \"tcp\" e \"unix\" ed il tipo database \"postgresql\" sono supportati"
+msgid ""
+"only protocols \"tcp\" and \"unix\" and database type \"postgresql\" are "
+"supported"
+msgstr ""
+"soltanto i protocolli \"tcp\" e \"unix\" ed il tipo database \"postgresql\" "
+"sono supportati"
 
 #: preproc.y:12647
 #, c-format
@@ -479,7 +495,8 @@ msgstr "atteso \"://\", trovato \"%s\""
 #: preproc.y:12652
 #, c-format
 msgid "Unix-domain sockets only work on \"localhost\" but not on \"%s\""
-msgstr "i socket di dominio Unix funzionano solo con \"localhost\" ma non con \"%s\""
+msgstr ""
+"i socket di dominio Unix funzionano solo con \"localhost\" ma non con \"%s\""
 
 #: preproc.y:12678
 #, c-format
@@ -574,8 +591,11 @@ msgstr "la variabile \"%s\" è nascosta da una variabile locale"
 
 #: type.c:275
 #, c-format
-msgid "indicator variable \"%s\" is hidden by a local variable of a different type"
-msgstr "la variabile di indicatore \"%s\" è nascosta da una variabile locale di tipo diverso"
+msgid ""
+"indicator variable \"%s\" is hidden by a local variable of a different type"
+msgstr ""
+"la variabile di indicatore \"%s\" è nascosta da una variabile locale di tipo "
+"diverso"
 
 #: type.c:277
 #, c-format
@@ -621,7 +641,8 @@ msgstr "la variabile \"%s\" non è un puntatore"
 #: variable.c:138 variable.c:163
 #, c-format
 msgid "variable \"%s\" is not a pointer to a structure or a union"
-msgstr "la variabile \"%s\" non è un puntatore ad una struttura o ad una unione"
+msgstr ""
+"la variabile \"%s\" non è un puntatore ad una struttura o ad una unione"
 
 #: variable.c:150
 #, c-format
@@ -655,10 +676,16 @@ msgstr "gli array multidimensionali non sono supportati"
 
 #: variable.c:524
 #, c-format
-msgid "multilevel pointers (more than 2 levels) are not supported; found %d level"
-msgid_plural "multilevel pointers (more than 2 levels) are not supported; found %d levels"
-msgstr[0] "puntatori a più livelli (più di 2 livelli) non sono supportati; trovato %d livello"
-msgstr[1] "puntatori a più livelli (più di 2 livelli) non sono supportati; trovati %d livelli"
+msgid ""
+"multilevel pointers (more than 2 levels) are not supported; found %d level"
+msgid_plural ""
+"multilevel pointers (more than 2 levels) are not supported; found %d levels"
+msgstr[0] ""
+"puntatori a più livelli (più di 2 livelli) non sono supportati; trovato %d "
+"livello"
+msgstr[1] ""
+"puntatori a più livelli (più di 2 livelli) non sono supportati; trovati %d "
+"livelli"
 
 #: variable.c:529
 #, c-format
