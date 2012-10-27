@@ -57,13 +57,13 @@ msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
 #, c-format
 msgid "%s: cannot cluster all databases and a specific one at the same time\n"
 msgstr ""
-"%s: impossibile riordinare tutti i database ed uno specifico nello stesso "
+"%s: impossibile raggruppare tutti i database ed uno specifico nello stesso "
 "momento\n"
 
 #: clusterdb.c:145
 #, c-format
 msgid "%s: cannot cluster a specific table in all databases\n"
-msgstr "%s: impossibile riordinare una tabella specifica in tutti i database\n"
+msgstr "%s: impossibile raggruppare una tabella specifica in tutti i database\n"
 
 #: clusterdb.c:198
 #, c-format
@@ -86,7 +86,7 @@ msgid ""
 "%s clusters all previously clustered tables in a database.\n"
 "\n"
 msgstr ""
-"%s riordina tutte le tabelle precedentemente riordinate in un database.\n"
+"%s raggruppa tutte le tabelle precedentemente raggruppate in un database.\n"
 "\n"
 
 #: clusterdb.c:249 createdb.c:252 createlang.c:234 createuser.c:329
@@ -113,12 +113,12 @@ msgstr ""
 #: clusterdb.c:252
 #, c-format
 msgid "  -a, --all                 cluster all databases\n"
-msgstr "  -a, --all                 riordina tutti i database\n"
+msgstr "  -a, --all                 raggruppa tutti i database\n"
 
 #: clusterdb.c:253
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to cluster\n"
-msgstr "  -d, --dbname=NOME_DB      database da riordinare\n"
+msgstr "  -d, --dbname=NOME_DB      database da raggruppare\n"
 
 #: clusterdb.c:254 createlang.c:238 createuser.c:335 dropdb.c:158
 #: droplang.c:239 dropuser.c:159 reindexdb.c:333
@@ -135,7 +135,7 @@ msgstr "  -q, --quiet               non stampare alcun messaggio\n"
 #: clusterdb.c:256
 #, c-format
 msgid "  -t, --table=TABLE         cluster specific table only\n"
-msgstr "  -t, --table=TABELLA       riordina solo la tabella specificata\n"
+msgstr "  -t, --table=TABELLA       raggruppa solo la tabella specificata\n"
 
 #: clusterdb.c:257
 #, c-format

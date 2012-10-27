@@ -3827,7 +3827,7 @@ msgstr "chiudi un cursore"
 
 #: sql_help.h:367
 msgid "cluster a table according to an index"
-msgstr "riordina una tabella in base ad un indice"
+msgstr "raggruppa una tabella in base ad un indice"
 
 #: sql_help.h:372
 msgid "define or change the comment of an object"
