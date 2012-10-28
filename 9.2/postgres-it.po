@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-28 20:23+0100\n"
+"PO-Revision-Date: 2012-10-28 22:54+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -5724,9 +5724,9 @@ msgid "operator family \"%s\" for access method \"%s\" already exists in schema 
 msgstr "la famiglia di operatori \"%s\" per il metodo di accesso \"%s\" esiste già nello schema \"%s\""
 
 #: commands/operatorcmds.c:99
-#, fuzzy, c-format
+#, c-format
 msgid "=> is deprecated as an operator name"
-msgstr "\"%s\" non è un nome di operatore valido"
+msgstr "=> è deprecato come nome di operatore"
 
 #: commands/operatorcmds.c:100
 #, c-format
@@ -5736,54 +5736,54 @@ msgstr "Questo nome potrebbe essere vietato del tutto in una prossima versione d
 #: commands/operatorcmds.c:121 commands/operatorcmds.c:129
 #, c-format
 msgid "SETOF type not allowed for operator argument"
-msgstr "il tipo SETOF non è permesso per l'argomento dell'operatore."
+msgstr "il tipo SETOF non è permesso come argomento dell'operatore."
 
 #: commands/operatorcmds.c:157
-#, fuzzy, c-format
+#, c-format
 msgid "operator attribute \"%s\" not recognized"
-msgstr "Formato del file non riconosciuto"
+msgstr "attributo dell'operatore \"%s\" non riconosciuto"
 
 #: commands/operatorcmds.c:167
-#, fuzzy, c-format
+#, c-format
 msgid "operator procedure must be specified"
-msgstr "il nome dell'host deve essere specificato\n"
+msgstr "la procedura dell'operatore deve essere specificata"
 
 #: commands/operatorcmds.c:178
 #, c-format
 msgid "at least one of leftarg or rightarg must be specified"
-msgstr "almeno uno dei leftarg o dei rightarg deve essere specificato"
+msgstr "almeno uno tra leftarg e rightarg deve essere specificato"
 
 #: commands/operatorcmds.c:246
-#, fuzzy, c-format
+#, c-format
 msgid "restriction estimator function %s must return type \"float8\""
-msgstr "la funzione %s richiede una coercizione di tipo a run-time"
+msgstr "la funzione di stima di restrizione %s deve restituire il tipo \"float8\""
 
 #: commands/operatorcmds.c:285
-#, fuzzy, c-format
+#, c-format
 msgid "join estimator function %s must return type \"float8\""
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione di stima del join %s deve restituire il tipo \"float8\""
 
 #: commands/portalcmds.c:61 commands/portalcmds.c:160
 #: commands/portalcmds.c:212
 #, c-format
 msgid "invalid cursor name: must not be empty"
-msgstr "nome del cursore non valido: non può essere vuoto"
+msgstr "nome di cursore non valido: non deve essere vuoto"
 
 #: commands/portalcmds.c:168 commands/portalcmds.c:222
 #: executor/execCurrent.c:67 utils/adt/xml.c:2387 utils/adt/xml.c:2551
-#, fuzzy, c-format
+#, c-format
 msgid "cursor \"%s\" does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "il cursore \"%s\" non esiste"
 
 #: commands/portalcmds.c:340 tcop/pquery.c:740 tcop/pquery.c:1403
-#, fuzzy, c-format
+#, c-format
 msgid "portal \"%s\" cannot be run"
 msgstr "il portale \"%s\" non può essere eseguito"
 
 #: commands/portalcmds.c:413
 #, c-format
 msgid "could not reposition held cursor"
-msgstr "non si può riposizionare il cursore held"
+msgstr "impossibile riposizionare il cursore held"
 
 #: commands/prepare.c:71
 #, c-format
@@ -5791,9 +5791,9 @@ msgid "invalid statement name: must not be empty"
 msgstr "nome di istruzione non valido: non deve essere vuoto"
 
 #: commands/prepare.c:129 parser/parse_param.c:303 tcop/postgres.c:1303
-#, fuzzy, c-format
+#, c-format
 msgid "could not determine data type of parameter $%d"
-msgstr "impossibile trovare il tipo di array per il tipo di dati %s"
+msgstr "impossibile determinare il tipo di dato del parametro $%d"
 
 #: commands/prepare.c:147
 #, c-format
@@ -5816,24 +5816,24 @@ msgid "Expected %d parameters but got %d."
 msgstr "Erano attesi %d parametri ma ottenuti %d."
 
 #: commands/prepare.c:363
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use subquery in EXECUTE parameter"
-msgstr "non si può usare una sottoquery nel vincolo di controllo"
+msgstr "non si possono usare sottoquery nel parametro EXECUTE"
 
 #: commands/prepare.c:367
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use aggregate function in EXECUTE parameter"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non si possono usare funzioni aggregate nel parametro EXECUTE"
 
 #: commands/prepare.c:371
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in EXECUTE parameter"
-msgstr "non è possibile usare aggregati nei parameti di EXECUTE"
+msgstr "non si possono usare funzioni finestra nel parametro EXECUTE"
 
 #: commands/prepare.c:384
 #, c-format
 msgid "parameter $%d of type %s cannot be coerced to the expected type %s"
-msgstr "il parametro %d del tipo %s non può essere forzato al previsto tipo %s "
+msgstr "il parametro $%d di tipo %s non può essere forzato al tipo previsto %s "
 
 #: commands/prepare.c:479
 #, c-format
@@ -5851,19 +5851,19 @@ msgid "using pg_pltemplate information instead of CREATE LANGUAGE parameters"
 msgstr "vengono usate le informazioni di pg_pltemplate invece dei parametri di CREATE LANGUAGE"
 
 #: commands/proclang.c:98
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to create procedural language \"%s\""
-msgstr "Solo un superuser può fare commenti sul linguaggio procedurale"
+msgstr "solo i superutenti possono creare il linguaggo procedurale \"%s\""
 
 #: commands/proclang.c:118 commands/proclang.c:280
 #, c-format
 msgid "function %s must return type \"language_handler\""
-msgstr "la funzione %s deve tornare un tipo \"language_handler\""
+msgstr "la funzione %s deve restituire un tipo \"language_handler\""
 
 #: commands/proclang.c:244
-#, fuzzy, c-format
+#, c-format
 msgid "unsupported language \"%s\""
-msgstr "%s: linguaggio non supportato \"%s\"\n"
+msgstr "linguaggio non supportato \"%s\""
 
 #: commands/proclang.c:246
 #, c-format
@@ -5871,29 +5871,29 @@ msgid "The supported languages are listed in the pg_pltemplate system catalog."
 msgstr "I linguaggi supportati sono elencate nel catalogo di sistema pg_pltemplate"
 
 #: commands/proclang.c:254
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to create custom procedural language"
-msgstr "Solo un superuser può fare commenti sul linguaggio procedurale"
+msgstr "solo i superutenti possono creare un linguaggio procedurale personalizzato"
 
 #: commands/proclang.c:273
-#, fuzzy, c-format
+#, c-format
 msgid "changing return type of function %s from \"opaque\" to \"language_handler\""
-msgstr "il tipo restituito dalla funzione di transizione è %s e non %s"
+msgstr "cambio del tipo restituito dalla funzione %s da \"opaque\" a \"language_handler\""
 
 #: commands/proclang.c:358 commands/proclang.c:560
-#, fuzzy, c-format
+#, c-format
 msgid "language \"%s\" already exists"
-msgstr "La scorciatoia «%s» esiste già"
+msgstr "il linguaggio \"%s\" esiste già"
 
 #: commands/schemacmds.c:81 commands/schemacmds.c:211
-#, fuzzy, c-format
+#, c-format
 msgid "unacceptable schema name \"%s\""
-msgstr "Ignorato il nome schema \"%s\", non valido: %s"
+msgstr "nome dello schema \"%s\" non accettabile"
 
 #: commands/schemacmds.c:82 commands/schemacmds.c:212
 #, c-format
 msgid "The prefix \"pg_\" is reserved for system schemas."
-msgstr "il prefisso \"pg_\" è riservato agli schemi di sistema."
+msgstr "Il prefisso \"pg_\" è riservato agli schemi di sistema."
 
 #: commands/seclabel.c:57
 #, c-format
@@ -5906,45 +5906,45 @@ msgid "must specify provider when multiple security label providers have been lo
 msgstr "occorre specificare un fornitore quando più di un fornitore di etichette di sicurezza è stato caricato"
 
 #: commands/seclabel.c:79
-#, fuzzy, c-format
+#, c-format
 msgid "security label provider \"%s\" is not loaded"
-msgstr "la variabile \"%s\" non è stata dichiarata"
+msgstr "il fornitore di etichette di sicurezza \"%s\" non è stato caricato"
 
 #: commands/sequence.c:124
-#, fuzzy, c-format
+#, c-format
 msgid "unlogged sequences are not supported"
-msgstr "le chiavi r-albero a lunghezza variabile non sono supportate"
+msgstr "le sequenze non loggate non sono supportate"
 
 #: commands/sequence.c:419 commands/tablecmds.c:2265 commands/tablecmds.c:2437
 #: commands/tablecmds.c:9746 parser/parse_utilcmd.c:2327 tcop/utility.c:756
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s\" does not exist, skipping"
-msgstr "non esiste la chiave multipla %s"
+msgstr "la relazione \"%s\" non esiste, saltata"
 
 #: commands/sequence.c:634
 #, c-format
 msgid "nextval: reached maximum value of sequence \"%s\" (%s)"
-msgstr "nextval: è stato raggiunto il massimo valore della sequenza \"%s\" (%s)"
+msgstr "nextval: è stato raggiunto il valore massimo della sequenza \"%s\" (%s)"
 
 #: commands/sequence.c:657
 #, c-format
 msgid "nextval: reached minimum value of sequence \"%s\" (%s)"
-msgstr "nextval: è stato raggiunto il minimo valore della sequenza \"%s\" (%s)"
+msgstr "nextval: è stato raggiunto il valore minimo della sequenza \"%s\" (%s)"
 
 #: commands/sequence.c:771
 #, c-format
 msgid "currval of sequence \"%s\" is not yet defined in this session"
-msgstr "currval della sequenza \"%s\"  non è ancora definito in questa sessione"
+msgstr "il valore corrente della sequenza \"%s\" non è stato ancora definito in questa sessione"
 
 #: commands/sequence.c:790 commands/sequence.c:796
 #, c-format
 msgid "lastval is not yet defined in this session"
-msgstr "lastval non è ancora definito in questa sessione"
+msgstr "lastval non è stato ancora definito in questa sessione"
 
 #: commands/sequence.c:865
-#, fuzzy, c-format
+#, c-format
 msgid "setval: value %s is out of bounds for sequence \"%s\" (%s..%s)"
-msgstr "il valore %s non rientra nei limiti previsti per l'opzione \"%s\""
+msgstr "setval: il valore %s non rientra nei margini della sequenza \"%s\" (%s..%s)"
 
 #: commands/sequence.c:1028 lib/stringinfo.c:266 libpq/auth.c:1018
 #: libpq/auth.c:1378 libpq/auth.c:1446 libpq/auth.c:1848
@@ -5969,9 +5969,9 @@ msgid "out of memory"
 msgstr "memoria esaurita"
 
 #: commands/sequence.c:1234
-#, fuzzy, c-format
+#, c-format
 msgid "INCREMENT must not be zero"
-msgstr "%s: il campo `%s' non deve essere vuoto"
+msgstr "INCREMENT non può essere zero"
 
 #: commands/sequence.c:1290
 #, c-format
@@ -5996,17 +5996,17 @@ msgstr "il valore di RESTART (%s) non può essere inferiore a quello di MINVALUE
 #: commands/sequence.c:1369
 #, c-format
 msgid "RESTART value (%s) cannot be greater than MAXVALUE (%s)"
-msgstr "il valore di RESTART (%s) non può essere inferiore a quello di MAXVALUE (%s)"
+msgstr "il valore di RESTART (%s) non può essere superiore a quello di MAXVALUE (%s)"
 
 #: commands/sequence.c:1384
-#, fuzzy, c-format
+#, c-format
 msgid "CACHE (%s) must be greater than zero"
-msgstr "completes-needed deve essere maggiore di 0\n"
+msgstr "CACHE (%s) dev'essere maggiore di zero"
 
 #: commands/sequence.c:1416
-#, fuzzy, c-format
+#, c-format
 msgid "invalid OWNED BY option"
-msgstr "Seleziona l'opzione di ricerca \"Posseduto dal gruppo\""
+msgstr "opzione OWNED BY non valida"
 
 #: commands/sequence.c:1417
 #, c-format
@@ -6014,125 +6014,119 @@ msgid "Specify OWNED BY table.column or OWNED BY NONE."
 msgstr "Specifica OWNED BY tabella.colonna oppure OWNED BY NONE."
 
 #: commands/sequence.c:1439 commands/tablecmds.c:5723
-#, fuzzy, c-format
+#, c-format
 msgid "referenced relation \"%s\" is not a table"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "la relazione referenziata \"%s\" non è una tabella"
 
 #: commands/sequence.c:1446
 #, c-format
 msgid "sequence must have same owner as table it is linked to"
-msgstr "la sequenza deve avere lo stesso owner della tabella è linkato"
+msgstr "la sequenza deve avere lo stesso proprietario della tabella a cui è collegata"
 
 #: commands/sequence.c:1450
 #, c-format
 msgid "sequence must be in same schema as table it is linked to"
-msgstr "la sequenza deve essere nello stesso schema e tabella al quale è linkato"
+msgstr "la sequenza deve essere nello stesso schema della tabella a cui è collegata"
 
 #: commands/tablecmds.c:202
-#, fuzzy, c-format
+#, c-format
 msgid "table \"%s\" does not exist"
-msgstr "la tabella specificata \"%s\" non esiste\n"
+msgstr "la tabella \"%s\" non esiste"
 
 #: commands/tablecmds.c:203
-#, fuzzy, c-format
+#, c-format
 msgid "table \"%s\" does not exist, skipping"
-msgstr "la tabella specificata \"%s\" non esiste\n"
+msgstr "la tabella \"%s\" non esiste, saltata"
 
 #: commands/tablecmds.c:205
-#, fuzzy
 msgid "Use DROP TABLE to remove a table."
-msgstr "Si è tentato di rimuovere una tabella non vuota"
+msgstr "Usa DROP TABLE per eliminare una tabella."
 
 #: commands/tablecmds.c:208
-#, fuzzy, c-format
+#, c-format
 msgid "sequence \"%s\" does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "la sequenza \"%s\" non esiste"
 
 #: commands/tablecmds.c:209
-#, fuzzy, c-format
+#, c-format
 msgid "sequence \"%s\" does not exist, skipping"
-msgstr "non esiste la chiave multipla %s"
+msgstr "la sequenza \"%s\" non esiste, saltata"
 
 #: commands/tablecmds.c:211
-#, fuzzy
 msgid "Use DROP SEQUENCE to remove a sequence."
-msgstr "Usare \"apt-get autoremove\" per rimuoverli."
+msgstr "Usa DROP SEQUENCE per eliminare una sequenza."
 
 #: commands/tablecmds.c:214
-#, fuzzy, c-format
+#, c-format
 msgid "view \"%s\" does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "la vista \"%s\" non esiste"
 
 #: commands/tablecmds.c:215
-#, fuzzy, c-format
+#, c-format
 msgid "view \"%s\" does not exist, skipping"
-msgstr "non esiste la chiave multipla %s"
+msgstr "la vista \"%s\" non esiste, saltata"
 
 #: commands/tablecmds.c:217
-#, fuzzy
 msgid "Use DROP VIEW to remove a view."
-msgstr "Usare \"apt-get autoremove\" per rimuoverli."
+msgstr "Usa DROP VIEW per eliminare una vista."
 
 #: commands/tablecmds.c:220 parser/parse_utilcmd.c:1512
-#, fuzzy, c-format
+#, c-format
 msgid "index \"%s\" does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "l'indice \"%s\" non esiste"
 
 #: commands/tablecmds.c:221
-#, fuzzy, c-format
+#, c-format
 msgid "index \"%s\" does not exist, skipping"
-msgstr "non esiste la chiave multipla %s"
+msgstr "l'indice \"%s\" non esiste, saltato"
 
 #: commands/tablecmds.c:223
-#, fuzzy
 msgid "Use DROP INDEX to remove an index."
-msgstr "Usare \"apt-get autoremove\" per rimuoverli."
+msgstr "Usa DROP INDEX per eliminare un indice."
 
 #: commands/tablecmds.c:228
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a type"
-msgstr "Il tipo %s non presenta una classe"
+msgstr "\"%s\" non è un tipo"
 
 #: commands/tablecmds.c:229
-#, fuzzy
 msgid "Use DROP TYPE to remove a type."
-msgstr "Il tipo di uscita audio da usare"
+msgstr "Usa DROP TYPE per eliminare un tipo."
 
 #: commands/tablecmds.c:232 commands/tablecmds.c:7728
 #: commands/tablecmds.c:9681
-#, fuzzy, c-format
+#, c-format
 msgid "foreign table \"%s\" does not exist"
-msgstr "la tabella specificata \"%s\" non esiste\n"
+msgstr "la tabella esterna \"%s\" non esiste"
 
 #: commands/tablecmds.c:233
-#, fuzzy, c-format
+#, c-format
 msgid "foreign table \"%s\" does not exist, skipping"
-msgstr "la tabella specificata \"%s\" non esiste\n"
+msgstr "la tabella esterna \"%s\" non esiste, saltata"
 
 #: commands/tablecmds.c:235
-#, fuzzy
 msgid "Use DROP FOREIGN TABLE to remove a foreign table."
-msgstr "Si è tentato di rimuovere una tabella non vuota"
+msgstr "Usa DROP FOREIGN TABLE per eliminare una tabella esterna."
 
 #: commands/tablecmds.c:451
 #, c-format
 msgid "ON COMMIT can only be used on temporary tables"
-msgstr "ON COMMIT può essere usato solo nelle tabelle temporanee"
+msgstr "ON COMMIT può essere usato solo con le tabelle temporanee"
 
 #: commands/tablecmds.c:455
-#, fuzzy, c-format
+#, c-format
 msgid "constraints on foreign tables are not supported"
-msgstr "il vincolo \"%s\" per la tabella \"%s\" non esiste"
+msgstr "i vincoli sulle tabelle esterne non sono supportati"
 
 #: commands/tablecmds.c:475
-#, fuzzy, c-format
+#, c-format
 msgid "cannot create temporary table within security-restricted operation"
-msgstr "%s non può esssere eseguita da una funzione"
+msgstr "non è possibile creare la tabella temporanea nell'ambito di operazioni a sicurezza ristretta"
 
 #: commands/tablecmds.c:581 commands/tablecmds.c:4485
-#, fuzzy, c-format
+#, c-format
 msgid "default values on foreign tables are not supported"
-msgstr "il valore di default per variabili di tipo ROW o RECORD non è supportato"
+msgstr "i valori di default sulle tabelle esterne non sono supportati"
 
 #: commands/tablecmds.c:750
 #, c-format
@@ -6149,44 +6143,44 @@ msgstr "DROP INDEX CONCURRENTLY non supporta CASCADE"
 #: commands/tablecmds.c:5729 commands/tablecmds.c:10229 commands/trigger.c:194
 #: commands/trigger.c:1085 commands/trigger.c:1191 rewrite/rewriteDefine.c:266
 #: tcop/utility.c:104
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied: \"%s\" is a system catalog"
-msgstr "Impossibile aggiungere la connessione di sistema: permesso negato."
+msgstr "permesso negato: \"%s\" è un catalogo di sistema"
 
 #: commands/tablecmds.c:1022
-#, fuzzy, c-format
+#, c-format
 msgid "truncate cascades to table \"%s\""
-msgstr "Va alla tabella successiva."
+msgstr "truncate si propaga in cascata alla tabella \"%s\""
 
 #: commands/tablecmds.c:1253
 #, c-format
 msgid "cannot truncate temporary tables of other sessions"
-msgstr "non posso troncare le tabelle temporanee delle altre sessioni"
+msgstr "impossibile svuotare tabelle temporanee di altre sessioni"
 
 #: commands/tablecmds.c:1458 parser/parse_utilcmd.c:1730
-#, fuzzy, c-format
+#, c-format
 msgid "inherited relation \"%s\" is not a table"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "la relazione ereditata \"%s\" non è una tabella"
 
 #: commands/tablecmds.c:1465 commands/tablecmds.c:8895
 #, c-format
 msgid "cannot inherit from temporary relation \"%s\""
-msgstr "non posso ereditare dalla relazione temporaneo  \"%s\""
+msgstr "non è possibile ereditare dalla relazione temporanea \"%s\""
 
 #: commands/tablecmds.c:1482 commands/tablecmds.c:8923
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s\" would be inherited from more than once"
-msgstr "il parametro \"%s\"è stato specificato più di una volta"
+msgstr "la relazione \"%s\" sarebbe ereditata più di una volta"
 
 #: commands/tablecmds.c:1530
 #, c-format
 msgid "merging multiple inherited definitions of column \"%s\""
-msgstr "unisci le definizioni multiple ereditate della colonna \"%s\""
+msgstr "unione delle definizioni multiple ereditate della colonna \"%s\""
 
 #: commands/tablecmds.c:1538
-#, fuzzy, c-format
+#, c-format
 msgid "inherited column \"%s\" has a type conflict"
-msgstr "la colonna \"%s\"ha un conflitto di tipi"
+msgstr "la colonna ereditata \"%s\" ha un conflitto di tipo"
 
 #: commands/tablecmds.c:1540 commands/tablecmds.c:1561
 #: commands/tablecmds.c:1748 commands/tablecmds.c:1770
@@ -6195,29 +6189,29 @@ msgstr "la colonna \"%s\"ha un conflitto di tipi"
 #: parser/parse_coerce.c:1713 parser/parse_param.c:217
 #, c-format
 msgid "%s versus %s"
-msgstr "%s versus %s"
+msgstr "tra %s e %s"
 
 #: commands/tablecmds.c:1547
-#, fuzzy, c-format
+#, c-format
 msgid "inherited column \"%s\" has a collation conflict"
-msgstr "la colonna \"%s\"ha un conflitto di tipi"
+msgstr "la colonna ereditata \"%s\" ha un conflitto di ordinamento"
 
 #: commands/tablecmds.c:1549 commands/tablecmds.c:1758
 #: commands/tablecmds.c:4358
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" versus \"%s\""
-msgstr "%s versus %s"
+msgstr "tra \"%s\" e \"%s\""
 
 #: commands/tablecmds.c:1559
-#, fuzzy, c-format
+#, c-format
 msgid "inherited column \"%s\" has a storage parameter conflict"
-msgstr "la colonna \"%s\"ha un conflitto di tipi"
+msgstr "la colonna ereditata \"%s\" ha un conflitto di parametro di memorizzazione"
 
 #: commands/tablecmds.c:1671 parser/parse_utilcmd.c:818
 #: parser/parse_utilcmd.c:1159 parser/parse_utilcmd.c:1235
-#, fuzzy, c-format
+#, c-format
 msgid "cannot convert whole-row table reference"
-msgstr "impossibile convertire un poligono vuoto in un cerchio"
+msgstr "non è possibile convertire riferimenti ad una riga intera di tabella whole-row table"
 
 #: commands/tablecmds.c:1672 parser/parse_utilcmd.c:819
 #, c-format
@@ -6227,32 +6221,32 @@ msgstr "Il vincolo \"%s\" contiene un riferimento alla riga intera alla tabella 
 #: commands/tablecmds.c:1738
 #, c-format
 msgid "merging column \"%s\" with inherited definition"
-msgstr "unisci la colonna \"%s\" con la definizione ereditata"
+msgstr "unione della colonna \"%s\" con la definizione ereditata"
 
 #: commands/tablecmds.c:1746
 #, c-format
 msgid "column \"%s\" has a type conflict"
-msgstr "la colonna \"%s\"ha un conflitto di tipi"
+msgstr "la colonna \"%s\" ha un conflitto di tipi"
 
 #: commands/tablecmds.c:1756
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" has a collation conflict"
-msgstr "la colonna \"%s\"ha un conflitto di tipi"
+msgstr "la colonna \"%s\" ha un conflitto di ordinamento"
 
 #: commands/tablecmds.c:1768
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" has a storage parameter conflict"
-msgstr "la colonna \"%s\"ha un conflitto di tipi"
+msgstr "la colonna \"%s\" ha un conflitto di parametri di memorizzazione"
 
 #: commands/tablecmds.c:1820
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" inherits conflicting default values"
-msgstr "la collona \"%s\"contiene dei valori nulli"
+msgstr "la colonna \"%s\" eredita valori predefiniti in conflitto tra loro"
 
 #: commands/tablecmds.c:1822
 #, c-format
 msgid "To resolve the conflict, specify a default explicitly."
-msgstr "Per risolvere il conflitto, specificare un valore di default esplicitamente."
+msgstr "Per risolvere il conflitto, specificare esplicitamente un valore predefinito."
 
 #: commands/tablecmds.c:1869
 #, c-format
@@ -6260,56 +6254,56 @@ msgid "check constraint name \"%s\" appears multiple times but with different ex
 msgstr "il nome del vincolo di controllo \"%s\" compare più di una volta ma con espressioni diverse"
 
 #: commands/tablecmds.c:2054
-#, fuzzy, c-format
+#, c-format
 msgid "cannot rename column of typed table"
-msgstr "impossibile accettare un valore di tipo internal"
+msgstr "non è possibile rinominare la colonna di una tabella con tipo"
 
 #: commands/tablecmds.c:2070
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table, view, composite type, index, or foreign table"
-msgstr "  \\d [NOME]      visualizza informazioni su tabelle, indici, sequenze o viste\n"
+msgstr "\"%s\" non è una tabella, una vista, un tipo composito, un indice né una tabella esterna"
 
 #: commands/tablecmds.c:2162
 #, c-format
 msgid "inherited column \"%s\" must be renamed in child tables too"
-msgstr "la colonna ereditata \"%s\" deve essere rinominata anche nelle tabelle figlie"
+msgstr "la colonna ereditata \"%s\" dev'essere rinominata anche nelle tabelle figlie"
 
 #: commands/tablecmds.c:2194
-#, fuzzy, c-format
+#, c-format
 msgid "cannot rename system column \"%s\""
-msgstr "Impossibile rinominare o spostare la cartella di sistema «{0}»."
+msgstr "impossibile rinominare la colonna di sistema \"%s\""
 
 #: commands/tablecmds.c:2209
-#, fuzzy, c-format
+#, c-format
 msgid "cannot rename inherited column \"%s\""
-msgstr "%s: impossibile rinominare la directory %s in %s\n"
+msgstr "impossibile rinominare la colonna ereditata \"%s\""
 
 #: commands/tablecmds.c:2351
-#, fuzzy, c-format
+#, c-format
 msgid "inherited constraint \"%s\" must be renamed in child tables too"
-msgstr "le costraint devono essere aggiunte anche alle tabelle figlie"
+msgstr "i vincoli ereditati \"%s\" devono essere rinominati anche nelle tabelle figlie"
 
 #: commands/tablecmds.c:2358
-#, fuzzy, c-format
+#, c-format
 msgid "cannot rename inherited constraint \"%s\""
-msgstr "%s: impossibile rinominare la directory %s in %s\n"
+msgstr "impossibile rinominare il vincolo ereditato \"%s\""
 
 #. translator: first %s is a SQL command, eg ALTER TABLE
 #: commands/tablecmds.c:2560
-#, fuzzy, c-format
+#, c-format
 msgid "cannot %s \"%s\" because it is being used by active queries in this session"
-msgstr "impossibile eliminare %s perchè© richiesto dal sistema database"
+msgstr "non è possibile effettuare %s \"%s\" perché è in uso da query attive in questa sessione"
 
 #. translator: first %s is a SQL command, eg ALTER TABLE
 #: commands/tablecmds.c:2569
-#, fuzzy, c-format
+#, c-format
 msgid "cannot %s \"%s\" because it has pending trigger events"
-msgstr "impossibile eliminare %s perchè© altri oggetti dipendono da esso"
+msgstr "non è possibile effettuare %s \"%s\" perché ha eventi trigger in sospeso"
 
 #: commands/tablecmds.c:3463
-#, fuzzy, c-format
+#, c-format
 msgid "cannot rewrite system relation \"%s\""
-msgstr "impossibile determinare il nome del sistema"
+msgstr "impossibile riscrivere la relazione di sistema \"%s\""
 
 #: commands/tablecmds.c:3473
 #, c-format
@@ -6317,100 +6311,100 @@ msgid "cannot rewrite temporary tables of other sessions"
 msgstr "impossibile riscrivere tabelle temporanee di altre sessioni"
 
 #: commands/tablecmds.c:3699
-#, fuzzy, c-format
+#, c-format
 msgid "rewriting table \"%s\""
-msgstr "si rimuove il file \"%s\""
+msgstr "riscrittura della tabella \"%s\""
 
 #: commands/tablecmds.c:3703
-#, fuzzy, c-format
+#, c-format
 msgid "verifying table \"%s\""
-msgstr "Tabella esterna \"%s.%s\""
+msgstr "verifica della tabella \"%s\""
 
 #: commands/tablecmds.c:3810
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" contains null values"
-msgstr "la collona \"%s\" contiene dei valori nulli"
+msgstr "la colonna \"%s\" contiene valori null"
 
 #: commands/tablecmds.c:3824 commands/tablecmds.c:6622
-#, fuzzy, c-format
+#, c-format
 msgid "check constraint \"%s\" is violated by some row"
-msgstr "il vincolo di controllo \"%s\"esiste già "
+msgstr "il vincolo di controllo \"%s\" è violato da alcune righe"
 
 #: commands/tablecmds.c:3965
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table or index"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "\"%s\" non è una tabella né un indice"
 
 #: commands/tablecmds.c:3968 commands/trigger.c:188 commands/trigger.c:1079
 #: commands/trigger.c:1183 rewrite/rewriteDefine.c:260
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table or view"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "\"%s\" non è una tabella né una vista"
 
 #: commands/tablecmds.c:3971
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table or foreign table"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "\"%s\" non è una tabella né una tabella esterna"
 
 #: commands/tablecmds.c:3974
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table, composite type, or foreign table"
-msgstr "  \\d [NOME]      visualizza informazioni su tabelle, indici, sequenze o viste\n"
+msgstr "\"%s\" non è una tabella, un tipo composito né una tabella esterna"
 
 #: commands/tablecmds.c:3984
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is of the wrong type"
-msgstr "Il tipo %s non presenta una classe"
+msgstr "\"%s\" è del tipo sbagliato"
 
 #: commands/tablecmds.c:4133 commands/tablecmds.c:4140
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter type \"%s\" because column \"%s.%s\" uses it"
-msgstr "impossibile eliminare %s perchè© %s lo richiede"
+msgstr "impossibile modificare il tipo \"%s\" perché la colonna \"%s.%s\" lo usa"
 
 #: commands/tablecmds.c:4147
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter foreign table \"%s\" because column \"%s.%s\" uses its row type"
-msgstr "impossibile eliminare %s perchè© %s lo richiede"
+msgstr "impossibile modificare la tabella esterna \"%s\" perché la colonna \"%s.%s\" usa il suo tipo"
 
 #: commands/tablecmds.c:4154
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter table \"%s\" because column \"%s.%s\" uses its row type"
-msgstr "impossibile eliminare %s perchè© %s lo richiede"
+msgstr "impossibile modificare la tabella \"%s\" perché la colonna \"%s.%s\" usa il suo tipo"
 
 #: commands/tablecmds.c:4216
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter type \"%s\" because it is the type of a typed table"
-msgstr "impossibile eliminare %s perchè© %s lo richiede"
+msgstr "impossibile modificare il tipo \"%s\" perché è il tipo di una tabella con tipo"
 
 #: commands/tablecmds.c:4218
-#, fuzzy, c-format
+#, c-format
 msgid "Use ALTER ... CASCADE to alter the typed tables too."
-msgstr "Usa DROP ... CASCADE per eliminare anche gli oggetti dipendenti."
+msgstr "Usa DROP ... CASCADE per eliminare anche le tabelle con tipo."
 
 #: commands/tablecmds.c:4262
-#, fuzzy, c-format
+#, c-format
 msgid "type %s is not a composite type"
-msgstr "Il tipo %s non presenta una classe"
+msgstr "il tipo %s non è un tipo composito"
 
 #: commands/tablecmds.c:4288
-#, fuzzy, c-format
+#, c-format
 msgid "cannot add column to typed table"
-msgstr "impossibile accettare un valore di tipo internal"
+msgstr "impossibile aggiungere una colonna ad una tabella con tipo"
 
 #: commands/tablecmds.c:4350 commands/tablecmds.c:9077
-#, fuzzy, c-format
+#, c-format
 msgid "child table \"%s\" has different type for column \"%s\""
-msgstr "solo la tabella \"%s\"può essere referenziata nel vincolo di controllo"
+msgstr "la tabella figlia \"%s\" ha tipo diverso per la colonna \"%s\""
 
 #: commands/tablecmds.c:4356 commands/tablecmds.c:9084
-#, fuzzy, c-format
+#, c-format
 msgid "child table \"%s\" has different collation for column \"%s\""
-msgstr "solo la tabella \"%s\"può essere referenziata nel vincolo di controllo"
+msgstr "la tabella figlia \"%s\" ha ordinamento diverso per la colonna \"%s\""
 
 #: commands/tablecmds.c:4366
-#, fuzzy, c-format
+#, c-format
 msgid "child table \"%s\" has a conflicting \"%s\" column"
-msgstr "indice mancante per il vincolo %s\n"
+msgstr "la tabella figlia \"%s\" ha la colonna \"%s\" in conflitto"
 
 #: commands/tablecmds.c:4378
 #, c-format
@@ -6423,7 +6417,7 @@ msgid "column must be added to child tables too"
 msgstr "la colonna deve essere aggiunta anche alle tabelle figlie"
 
 #: commands/tablecmds.c:4671
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" of relation \"%s\" already exists"
 msgstr "la colonna \"%s\" della relazione \"%s\" esiste già"
 
@@ -6431,19 +6425,19 @@ msgstr "la colonna \"%s\" della relazione \"%s\" esiste già"
 #: commands/tablecmds.c:4909 commands/tablecmds.c:5011
 #: commands/tablecmds.c:5055 commands/tablecmds.c:5134
 #: commands/tablecmds.c:7145 commands/tablecmds.c:7750
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter system column \"%s\""
-msgstr "impossibile determinare il nome del sistema"
+msgstr "impossibile modificare la colonna di sistema \"%s\""
 
 #: commands/tablecmds.c:4808
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" is in a primary key"
 msgstr "la colonna \"%s\" è in una chiave primaria"
 
 #: commands/tablecmds.c:4958
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table, index, or foreign table"
-msgstr "\"%s\"non è una tabella ne un indice"
+msgstr "\"%s\" non è una tabella, un indice né una tabella esterna"
 
 #: commands/tablecmds.c:4985
 #, c-format
@@ -6451,14 +6445,14 @@ msgid "statistics target %d is too low"
 msgstr "il target delle statistiche %d è troppo basso"
 
 #: commands/tablecmds.c:4993
-#, fuzzy, c-format
+#, c-format
 msgid "lowering statistics target to %d"
-msgstr "Indica se fornire un obiettivo"
+msgstr "target delle statistiche abbassato a %d"
 
 #: commands/tablecmds.c:5115
 #, c-format
 msgid "invalid storage type \"%s\""
-msgstr "tipo di storage non valido \"%s\""
+msgstr "tipo di immagazzinamento non valido \"%s\""
 
 #: commands/tablecmds.c:5146
 #, c-format
@@ -6466,24 +6460,24 @@ msgid "column data type %s can only have storage PLAIN"
 msgstr "il tipo di dato della colonna %s può avere solo immagazzinamento PLAIN"
 
 #: commands/tablecmds.c:5176
-#, fuzzy, c-format
+#, c-format
 msgid "cannot drop column from typed table"
-msgstr "non si può eliminare il database aperto attualmente"
+msgstr "impossibile eliminare la colonna da una tabella con tipo"
 
 #: commands/tablecmds.c:5217
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" of relation \"%s\" does not exist, skipping"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "la colonna \"%s\" della relazione \"%s\" non esiste, saltato"
 
 #: commands/tablecmds.c:5230
-#, fuzzy, c-format
+#, c-format
 msgid "cannot drop system column \"%s\""
-msgstr "impossibile determinare il nome del sistema"
+msgstr "non è possibile eliminare la colonna di sistema \"%s\""
 
 #: commands/tablecmds.c:5237
-#, fuzzy, c-format
+#, c-format
 msgid "cannot drop inherited column \"%s\""
-msgstr "la colonna \"%s\" non può essere dichiarata SETOF"
+msgstr "non è possibile eliminare la colonna ereditata \"%s\""
 
 #: commands/tablecmds.c:5466
 #, c-format
@@ -6493,7 +6487,7 @@ msgstr "ALTER TABLE / ADD CONSTRAINT USING INDEX rinominerà l'indice \"%s\" in 
 #: commands/tablecmds.c:5656
 #, c-format
 msgid "constraint must be added to child tables too"
-msgstr "le costraint devono essere aggiunte anche alle tabelle figlie"
+msgstr "il vincolo deve essere aggiunto anche alle tabelle figlie"
 
 #: commands/tablecmds.c:5746
 #, c-format
@@ -6506,9 +6500,9 @@ msgid "constraints on unlogged tables may reference only permanent or unlogged t
 msgstr "i vincoli su tabelle non loggate possono referenziare solo tabelle permanenti o non loggate"
 
 #: commands/tablecmds.c:5759
-#, fuzzy, c-format
+#, c-format
 msgid "constraints on temporary tables may reference only temporary tables"
-msgstr "non posso creare indici su tabelle temporanee di altre sessioni"
+msgstr "i vincoli su tabelle temporanee possono referenziare solo tabelle temporanee"
 
 #: commands/tablecmds.c:5820
 #, c-format
@@ -6516,45 +6510,45 @@ msgid "number of referencing and referenced columns for foreign key disagree"
 msgstr "i numeri di colonne referenzianti e referenziate per la chiave esterna non combaciano"
 
 #: commands/tablecmds.c:5927
-#, fuzzy, c-format
+#, c-format
 msgid "foreign key constraint \"%s\" cannot be implemented"
-msgstr "la funzione \"dist_lb\"non è stata ancora implementata"
+msgstr "non è possibile implementare il vincolo di chiave esterna \"%s\""
 
 #: commands/tablecmds.c:5930
 #, c-format
 msgid "Key columns \"%s\" and \"%s\" are of incompatible types: %s and %s."
-msgstr "le colonne chiave \"%s\" e \"%s\" hanno tipi incompatibili: %s e %s."
+msgstr "Le colonne chiave \"%s\" e \"%s\" hanno tipi incompatibili: %s e %s."
 
 #: commands/tablecmds.c:6122 commands/tablecmds.c:6984
 #: commands/tablecmds.c:7040
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste"
 
 #: commands/tablecmds.c:6129
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" of relation \"%s\" is not a foreign key or check constraint"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "il vincolo \"%s\" della relazione \"%s\" non è una chiave esterna o un vincolo di controllo"
 
 #: commands/tablecmds.c:6198
-#, fuzzy, c-format
+#, c-format
 msgid "constraint must be validated on child tables too"
-msgstr "le costraint devono essere aggiunte anche alle tabelle figlie"
+msgstr "i vincoli devono essere validati anche sulle tabelle figlie"
 
 #: commands/tablecmds.c:6256
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" referenced in foreign key constraint does not exist"
-msgstr "la colonna \"%s\"della relazione \"%s\"non esiste"
+msgstr "la colonna \"%s\" referenziata dal vincolo di chiave esterna non esiste"
 
 #: commands/tablecmds.c:6261
 #, c-format
 msgid "cannot have more than %d keys in a foreign key"
-msgstr "non posso avere più di %d chiavi in una chiave esterna"
+msgstr "non possono esserci più di %d chiavi in una chiave esterna"
 
 #: commands/tablecmds.c:6326
 #, c-format
 msgid "cannot use a deferrable primary key for referenced table \"%s\""
-msgstr "impossibile usare una chiave primaria deferita per la tabella referenziata \"%s\""
+msgstr "non è possibile usare una chiave primaria deferita per la tabella referenziata \"%s\""
 
 #: commands/tablecmds.c:6343
 #, c-format
@@ -6564,62 +6558,62 @@ msgstr "la tabella referenziata \"%s\" non ha una chiave primaria"
 #: commands/tablecmds.c:6493
 #, c-format
 msgid "cannot use a deferrable unique constraint for referenced table \"%s\""
-msgstr "impossibile usare un vincolo univoco deferito per la tabella referenziata \"%s\""
+msgstr "non è possibile usare un vincolo univoco deferito per la tabella referenziata \"%s\""
 
 #: commands/tablecmds.c:6498
 #, c-format
 msgid "there is no unique constraint matching given keys for referenced table \"%s\""
-msgstr "non c'è un vincolo univoco che corrisponda alle chiavi indicate per referenziare la tabella \"%s\""
+msgstr "non c'è alcun vincolo univoco che corrisponda alle chiavi indicate per la tabella referenziata \"%s\""
 
 #: commands/tablecmds.c:6652
-#, fuzzy, c-format
+#, c-format
 msgid "validating foreign key constraint \"%s\""
-msgstr "lettura dei vincoli di chiave esterna per la tabella \"%s\"\n"
+msgstr "validazione del vincolo di chiave esterna \"%s\""
 
 #: commands/tablecmds.c:6946
-#, fuzzy, c-format
+#, c-format
 msgid "cannot drop inherited constraint \"%s\" of relation \"%s\""
-msgstr "la condizione \"%s\"per la relazione \"%s\"esiste già "
+msgstr "impossibile eliminare il vincolo ereditato \"%s\" della relazione \"%s\""
 
 #: commands/tablecmds.c:6990
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist, skipping"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste, saltato"
 
 #: commands/tablecmds.c:7129
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter column type of typed table"
-msgstr "impossibile accettare un valore di tipo internal"
+msgstr "impossibile modificare il tipo di colonna di una tabella con tipo"
 
 #: commands/tablecmds.c:7152
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter inherited column \"%s\""
-msgstr "la colonna \"%s\" non può essere dichiarata SETOF"
+msgstr "impossibile modificare la colonna ereditata \"%s\""
 
 #: commands/tablecmds.c:7198
 #, c-format
 msgid "transform expression must not return a set"
-msgstr "l'espressione di trasformazione non deve restituire un set"
+msgstr "l'espressione di trasformazione non può restituire un insieme"
 
 #: commands/tablecmds.c:7204
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use subquery in transform expression"
-msgstr "impossibile usare espressioni aggregato in una espressione di trasformazione"
+msgstr "non è possibile usare sottoquery in un'espressione di trasformazione"
 
 #: commands/tablecmds.c:7208
 #, c-format
 msgid "cannot use aggregate function in transform expression"
-msgstr "impossibile usare espressioni aggregato in una espressione di trasformazione"
+msgstr "non è possibile usare funzioni aggregate in un'espressione di trasformazione"
 
 #: commands/tablecmds.c:7212
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in transform expression"
-msgstr "impossibile usare espressioni aggregato in una espressione di trasformazione"
+msgstr "non è possibile usare funzioni finestra in un'espressione di trasformazione"
 
 #: commands/tablecmds.c:7231
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" cannot be cast automatically to type %s"
-msgstr "la colonna \"%s\" non può essere trasformata nel tipo \"%s\""
+msgstr "la colonna \"%s\" non può essere convertita automaticamente al tipo %s"
 
 #: commands/tablecmds.c:7233
 #, c-format
@@ -6632,19 +6626,19 @@ msgid "type of inherited column \"%s\" must be changed in child tables too"
 msgstr "il tipo della colonna ereditata \"%s\" deve essere cambiato anche nelle tabelle figlie"
 
 #: commands/tablecmds.c:7363
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter type of column \"%s\" twice"
-msgstr "la colonna \"%s\" non può essere trasformata nel tipo \"%s\""
+msgstr "impossibile cambiare il tipo della colonna \"%s\" due volte"
 
 #: commands/tablecmds.c:7399
-#, fuzzy, c-format
+#, c-format
 msgid "default for column \"%s\" cannot be cast automatically to type %s"
-msgstr "la colonna \"%s\"non può essere trasformata nel tipo \"%s\""
+msgstr "il valore predefinito della colonna \"%s\" non può essere convertito automaticamente al tipo %s"
 
 #: commands/tablecmds.c:7525
 #, c-format
 msgid "cannot alter type of a column used by a view or rule"
-msgstr "impossibile cambiare il tipo di una colonna usata in una vista o una regola di riscrittura"
+msgstr "non è possibile cambiare il tipo di una colonna usata in una vista o una regola"
 
 #: commands/tablecmds.c:7526 commands/tablecmds.c:7545
 #, c-format
@@ -6652,14 +6646,14 @@ msgid "%s depends on column \"%s\""
 msgstr "%s dipende dalla colonna \"%s\""
 
 #: commands/tablecmds.c:7544
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter type of a column used in a trigger definition"
-msgstr "la colonna \"%s\" non può essere trasformata nel tipo \"%s\""
+msgstr "impossibile cambiare il tipo di una colonna usata nella definizione di un trigger"
 
 #: commands/tablecmds.c:8082
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change owner of index \"%s\""
-msgstr "impossibile entrare nella directory %s"
+msgstr "impossibile cambiare il proprietario dell'indice \"%s\""
 
 #: commands/tablecmds.c:8084
 #, c-format
@@ -6667,59 +6661,59 @@ msgid "Change the ownership of the index's table, instead."
 msgstr "Cambia il proprietario della tabella dell'indice invece."
 
 #: commands/tablecmds.c:8100
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change owner of sequence \"%s\""
-msgstr "cambia la definizione di un generatore di sequenze"
+msgstr "non è possibile cambiare il proprietario della sequenza \"%s\""
 
 #: commands/tablecmds.c:8102 commands/tablecmds.c:9765
-#, fuzzy, c-format
+#, c-format
 msgid "Sequence \"%s\" is linked to table \"%s\"."
-msgstr "ricarica dei dati per la tabella \"%s\"\n"
+msgstr "La sequenza \"%s\" è collegata alla tabella \"%s\"."
 
 #: commands/tablecmds.c:8114 commands/tablecmds.c:10299
-#, fuzzy, c-format
+#, c-format
 msgid "Use ALTER TYPE instead."
-msgstr "Proprietà obsoleta, utilizzare shadow_type"
+msgstr "È possibile usare ALTER TYPE invece."
 
 #: commands/tablecmds.c:8123 commands/tablecmds.c:10316
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table, view, sequence, or foreign table"
-msgstr "  \\d [NOME]      visualizza informazioni su tabelle, indici, sequenze o viste\n"
+msgstr "\"%s\" non è una tabella, una vista, una sequenza né una tabella esterna"
 
 #: commands/tablecmds.c:8451
 #, c-format
 msgid "cannot have multiple SET TABLESPACE subcommands"
-msgstr "impossibile usare più di un sotto-comando SET TABLESPACE"
+msgstr "non è possibile avere più di un sottocomando SET TABLESPACE"
 
 #: commands/tablecmds.c:8520
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table, index, or TOAST table"
-msgstr "\"%s\"non è una tabella ne un indice"
+msgstr "\"%s\" non è una tabella, un indice né una tabella TOAST"
 
 #: commands/tablecmds.c:8656
-#, fuzzy, c-format
+#, c-format
 msgid "cannot move system relation \"%s\""
-msgstr "Impossibile rinominare o spostare la cartella di sistema «{0}»."
+msgstr "non è possibile spostare la relazione \"%s\""
 
 #: commands/tablecmds.c:8672
 #, c-format
 msgid "cannot move temporary tables of other sessions"
-msgstr "non posso muovere le tabelle temporanee di altre sessioni"
+msgstr "non è possibile spostare tabelle temporanee di altre sessioni"
 
 #: commands/tablecmds.c:8864
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change inheritance of typed table"
-msgstr "impossibile accettare un valore di tipo internal"
+msgstr "impossibile cambiare ereditarietà di tabelle con tipo"
 
 #: commands/tablecmds.c:8950
-#, fuzzy, c-format
+#, c-format
 msgid "circular inheritance not allowed"
-msgstr "\"%.*s\" non è consentito per %s"
+msgstr "l'ereditarietà circolare non è consentita"
 
 #: commands/tablecmds.c:8951
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is already a child of \"%s\"."
-msgstr "{0} è già un delegato"
+msgstr "\"%s\" è già figlia di \"%s\"."
 
 #: commands/tablecmds.c:8959
 #, c-format
@@ -6734,58 +6728,57 @@ msgstr "la colonna \"%s\" nella tabella figlia dev'essere marcata NOT NULL"
 #: commands/tablecmds.c:9111
 #, c-format
 msgid "child table is missing column \"%s\""
-msgstr "la tabella figlia ha perso una colonna \"%s\""
+msgstr "la tabella figlia non ha la colonna \"%s\""
 
 #: commands/tablecmds.c:9194
-#, fuzzy, c-format
+#, c-format
 msgid "child table \"%s\" has different definition for check constraint \"%s\""
-msgstr "solo la tabella \"%s\"può essere referenziata nel vincolo di controllo"
+msgstr "la tabella figlia \"%s\" ha una definizione diversa del vincolo di controllo \"%s\""
 
-# TODO: verifica che il secondo segnaposto sia una tabella, non un vincolo
 #: commands/tablecmds.c:9202
 #, c-format
 msgid "constraint \"%s\" conflicts with non-inherited constraint on child table \"%s\""
 msgstr "il vincolo \"%s\" è in conflitto con un vincolo non ereditato nella tabella figlia \"%s\""
 
 #: commands/tablecmds.c:9226
-#, fuzzy, c-format
+#, c-format
 msgid "child table is missing constraint \"%s\""
-msgstr "indice mancante per il vincolo %s\n"
+msgstr "la tabella figlia non ha il vincolo \"%s\""
 
 #: commands/tablecmds.c:9306
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s\" is not a parent of relation \"%s\""
-msgstr "    ++   --> saltato, genitore non della versione selezionata\n"
+msgstr "la relazione \"%s\" non è genitore della relazione \"%s\""
 
 #: commands/tablecmds.c:9523
-#, fuzzy, c-format
+#, c-format
 msgid "typed tables cannot inherit"
-msgstr "il tipo con l'OID %u non esiste"
+msgstr "le tabelle con tipo non possono essere ereditate"
 
 #: commands/tablecmds.c:9554
-#, fuzzy, c-format
+#, c-format
 msgid "table is missing column \"%s\""
-msgstr "la tabella figlia ha perso una colonna \"%s\""
+msgstr "la tabella non ha la colonna \"%s\""
 
 #: commands/tablecmds.c:9564
-#, fuzzy, c-format
+#, c-format
 msgid "table has column \"%s\" where type requires \"%s\""
-msgstr "Importa Riferimenti"
+msgstr "la tabella ha la colonna \"%s\" laddove il tipo richiede \"%s\""
 
 #: commands/tablecmds.c:9573
-#, fuzzy, c-format
+#, c-format
 msgid "table \"%s\" has different type for column \"%s\""
-msgstr "solo la tabella \"%s\"può essere referenziata nel vincolo di controllo"
+msgstr "la tabella \"%s\" ha tipo diverso per la colonna \"%s\""
 
 #: commands/tablecmds.c:9586
-#, fuzzy, c-format
+#, c-format
 msgid "table has extra column \"%s\""
-msgstr "la tabella figlia ha perso una colonna \"%s\""
+msgstr "la tabella ha la colonna \"%s\" in eccesso"
 
 #: commands/tablecmds.c:9633
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a typed table"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "\"%s\" non è una tabella con tipo"
 
 #: commands/tablecmds.c:9764
 #, c-format
@@ -6793,71 +6786,71 @@ msgid "cannot move an owned sequence into another schema"
 msgstr "impossibile spostare una sequenza con proprietario in uno schema diverso"
 
 #: commands/tablecmds.c:9825
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s\" already exists in schema \"%s\""
-msgstr "Il name esiste già nello storage"
+msgstr "la relazione \"%s\" esiste già nello schema \"%s\""
 
 #: commands/tablecmds.c:10283
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a composite type"
-msgstr "\"%s\" è un tipo composito"
+msgstr "\"%s\" non è un tipo composito"
 
 #: commands/tablecmds.c:10304
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is a foreign table"
-msgstr "Lista delle tabelle esterne"
+msgstr "\"%s\" non è una tabella esterna"
 
 #: commands/tablecmds.c:10305
-#, fuzzy, c-format
+#, c-format
 msgid "Use ALTER FOREIGN TABLE instead."
-msgstr "deprecato, si usi lang"
+msgstr "Usa ALTER FOREIGN TABLE invece."
 
 #: commands/tablespace.c:154 commands/tablespace.c:171
 #: commands/tablespace.c:182 commands/tablespace.c:190
 #: commands/tablespace.c:608 storage/file/copydir.c:61
-#, fuzzy, c-format
+#, c-format
 msgid "could not create directory \"%s\": %m"
-msgstr "Impossibile creare la directory %s."
+msgstr "impossibile creare la directory \"%s\": %m"
 
 #: commands/tablespace.c:201
-#, fuzzy, c-format
+#, c-format
 msgid "could not stat directory \"%s\": %m"
-msgstr "Impossibile aprire la cartella (%s)"
+msgstr "impossibile ottenere informazioni sulla directory \"%s\": %m"
 
 #: commands/tablespace.c:210
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" exists but is not a directory"
-msgstr "%s esiste ma non è una directory"
+msgstr "\"%s\" esiste ma non è una directory"
 
 #: commands/tablespace.c:240
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to create tablespace \"%s\""
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di creare il tablespace \"%s\" negato"
 
 #: commands/tablespace.c:242
 #, c-format
 msgid "Must be superuser to create a tablespace."
-msgstr "Solo un superuser può incrementare questo valore."
+msgstr "Solo un superutente può incrementare questo valore."
 
 #: commands/tablespace.c:258
-#, fuzzy, c-format
+#, c-format
 msgid "tablespace location cannot contain single quotes"
-msgstr "gli indici hash non possono contenere chiavi nulle"
+msgstr "la locazione del tablespace non può contenere apici"
 
 #: commands/tablespace.c:268
-#, fuzzy, c-format
+#, c-format
 msgid "tablespace location must be an absolute path"
-msgstr "%s: la posizione del file di input deve essere un path assoluto\n"
+msgstr "la locazione del tablespace dev'essere un percorso assoluto"
 
 #: commands/tablespace.c:279
-#, fuzzy, c-format
+#, c-format
 msgid "tablespace location \"%s\" is too long"
-msgstr "Il percorso della deviazione è troppo lungo"
+msgstr "la locazione del tablespace \"%s\" è troppo lunga"
 
 #: commands/tablespace.c:289 commands/tablespace.c:858
-#, fuzzy, c-format
+#, c-format
 msgid "unacceptable tablespace name \"%s\""
-msgstr "Nome del colore di sfondo"
+msgstr "il nome del tablespace \"%s\" non è accettabile"
 
 #: commands/tablespace.c:291 commands/tablespace.c:859
 #, c-format
@@ -6865,39 +6858,39 @@ msgid "The prefix \"pg_\" is reserved for system tablespaces."
 msgstr "Il prefisso \"pg_\" è riservato per i tablespace di sistema."
 
 #: commands/tablespace.c:301 commands/tablespace.c:871
-#, fuzzy, c-format
+#, c-format
 msgid "tablespace \"%s\" already exists"
-msgstr "La scorciatoia «%s» esiste già"
+msgstr "il tablespace \"%s\" esiste già"
 
 #: commands/tablespace.c:371 commands/tablespace.c:534
 #: replication/basebackup.c:152 replication/basebackup.c:699
 #: utils/adt/misc.c:370
-#, fuzzy, c-format
+#, c-format
 msgid "tablespaces are not supported on this platform"
-msgstr "%s: i link simbolici non sono supportati su questa piattaforma"
+msgstr "i tablespace non sono supportati su questa piattaforma"
 
 #: commands/tablespace.c:409 commands/tablespace.c:842
 #: commands/tablespace.c:909 commands/tablespace.c:1014
 #: commands/tablespace.c:1080 commands/tablespace.c:1218
 #: commands/tablespace.c:1418
-#, fuzzy, c-format
+#, c-format
 msgid "tablespace \"%s\" does not exist"
 msgstr "il tablespace \"%s\" non esiste"
 
 #: commands/tablespace.c:415
-#, fuzzy, c-format
+#, c-format
 msgid "tablespace \"%s\" does not exist, skipping"
-msgstr "il tablespace con l'OID %u non esiste"
+msgstr "il tablespace \"%s\" non esiste, saltato"
 
 #: commands/tablespace.c:491
-#, fuzzy, c-format
+#, c-format
 msgid "tablespace \"%s\" is not empty"
-msgstr "Lo storage non è vuoto"
+msgstr "il tablespace \"%s\" non è vuoto"
 
 #: commands/tablespace.c:565
-#, fuzzy, c-format
+#, c-format
 msgid "directory \"%s\" does not exist"
-msgstr "La directory «%s» non esiste."
+msgstr "la directory \"%s\" non esiste"
 
 #: commands/tablespace.c:566
 #, c-format
@@ -6905,24 +6898,24 @@ msgid "Create this directory for the tablespace before restarting the server."
 msgstr "Crea questa directory per il tablespace prima di riavviare il server."
 
 #: commands/tablespace.c:571
-#, fuzzy, c-format
+#, c-format
 msgid "could not set permissions on directory \"%s\": %m"
-msgstr "%s %s `%s': non riesco a impostare 'close-on-exec': (fcntl: %s)"
+msgstr "impossibile impostare permessi sulla directory \"%s\": %m"
 
 #: commands/tablespace.c:603
-#, fuzzy, c-format
+#, c-format
 msgid "directory \"%s\" already in use as a tablespace"
-msgstr "la directory \"%s\"esiste già "
+msgstr "la directory \"%s\" già è in uso come tablespace"
 
 #: commands/tablespace.c:618 commands/tablespace.c:779
-#, fuzzy, c-format
+#, c-format
 msgid "could not remove symbolic link \"%s\": %m"
-msgstr "link simbolico non leggibile \"%s\""
+msgstr "impossibile rimuovere il link simbolico \"%s\": %m"
 
 #: commands/tablespace.c:628
-#, fuzzy, c-format
+#, c-format
 msgid "could not create symbolic link \"%s\": %m"
-msgstr "link simbolico non leggibile \"%s\""
+msgstr "impossibile creare il link simbolico \"%s\": %m"
 
 #: commands/tablespace.c:694 commands/tablespace.c:704
 #: postmaster/postmaster.c:1177 replication/basebackup.c:405
@@ -6934,19 +6927,19 @@ msgstr "impossibile aprire la directory \"%s\": %m"
 
 #: commands/tablespace.c:734 commands/tablespace.c:747
 #: commands/tablespace.c:771
-#, fuzzy, c-format
+#, c-format
 msgid "could not remove directory \"%s\": %m"
-msgstr "Impossibile rimuovere la directory \"%s\"."
+msgstr "impossibile rimuovere la directory \"%s\": %m"
 
 #: commands/tablespace.c:1085
-#, fuzzy, c-format
+#, c-format
 msgid "Tablespace \"%s\" does not exist."
-msgstr "il tablespace \"%s\" non esiste"
+msgstr "Il tablespace \"%s\" non esiste."
 
 #: commands/tablespace.c:1517
 #, c-format
 msgid "directories for tablespace %u could not be removed"
-msgstr "fallita rimozione delle directory per il tablespace %u"
+msgstr "non è stato possibile rimuovere le directory per il tablespace %u"
 
 #: commands/tablespace.c:1519
 #, c-format
@@ -6954,9 +6947,9 @@ msgid "You can remove the directories manually if necessary."
 msgstr "Puoi rimuovere le directory manualmente se necessario."
 
 #: commands/trigger.c:161
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is a table"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "\"%s\" non è una tabella"
 
 #: commands/trigger.c:163
 #, c-format
@@ -6964,14 +6957,14 @@ msgid "Tables cannot have INSTEAD OF triggers."
 msgstr "Le tabelle non possono avere trigger INSTEAD OF."
 
 #: commands/trigger.c:174 commands/trigger.c:181
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is a view"
-msgstr "\"%s\" non è una vista"
+msgstr "\"%s\" è una vista"
 
 #: commands/trigger.c:176
 #, c-format
 msgid "Views cannot have row-level BEFORE or AFTER triggers."
-msgstr "Le viste non possono avere trigger BEFORE o AFTER di riga."
+msgstr "Le viste non possono avere trigger di riga BEFORE o AFTER."
 
 #: commands/trigger.c:183
 #, c-format
@@ -6994,137 +6987,134 @@ msgid "INSTEAD OF triggers cannot have WHEN conditions"
 msgstr "i trigger INSTEAD OF non possono avere condizioni WHEN"
 
 #: commands/trigger.c:255
-#, fuzzy, c-format
+#, c-format
 msgid "INSTEAD OF triggers cannot have column lists"
-msgstr "Le funzioni trigger non possono avere argomenti dichiarati"
+msgstr "i trigger INSTEAD OF non possono avere liste di colonne"
 
 #: commands/trigger.c:299
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use subquery in trigger WHEN condition"
-msgstr "non si può usare una sottoquery nel vincolo di controllo"
+msgstr "impossibile usare sottoquery nella condizione WHEN del trigger"
 
 #: commands/trigger.c:303
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use aggregate function in trigger WHEN condition"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "impossibile usare funzioni di aggregazione nella condizione WHEN del trigger"
 
 #: commands/trigger.c:307
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in trigger WHEN condition"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "impossibile usare funzioni finestra nella condizione WHEN del trigger"
 
 #: commands/trigger.c:329 commands/trigger.c:342
 #, c-format
 msgid "statement trigger's WHEN condition cannot reference column values"
-msgstr "la condizione WHEN del trigger sull'istruzione non può riferirsi a valori di colonna"
+msgstr "la condizione WHEN del trigger di istruzione non può riferirsi a valori di colonna"
 
 #: commands/trigger.c:334
 #, c-format
 msgid "INSERT trigger's WHEN condition cannot reference OLD values"
-msgstr "le condizioni WHEN dei trigger INSERT non possono usare valori OLD"
+msgstr "la condizione WHEN dei trigger INSERT non può usare OLD"
 
 #: commands/trigger.c:347
 #, c-format
 msgid "DELETE trigger's WHEN condition cannot reference NEW values"
-msgstr "le condizioni WHEN dei trigger DELETE non possono usare valori NEW"
+msgstr "la condizione WHEN del trigger DELETE non può usare NEW"
 
 #: commands/trigger.c:352
 #, c-format
 msgid "BEFORE trigger's WHEN condition cannot reference NEW system columns"
-msgstr "le condizioni WHEN dei trigger BEFORE non possono usare le colonne di sistema NEW"
+msgstr "la condizione WHEN del trigger BEFORE non può usare le colonne di sistema NEW"
 
 #: commands/trigger.c:397
-#, fuzzy, c-format
+#, c-format
 msgid "changing return type of function %s from \"opaque\" to \"trigger\""
-msgstr "il tipo restituito dalla funzione di transizione è %s e non %s"
+msgstr "modifica del tipo restituito dalla funzione %s da \"opaque\" a \"trigger\""
 
 #: commands/trigger.c:404
 #, c-format
 msgid "function %s must return type \"trigger\""
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione %s deve restituire il tipo \"trigger\""
 
 #: commands/trigger.c:515 commands/trigger.c:1259
-#, fuzzy, c-format
+#, c-format
 msgid "trigger \"%s\" for relation \"%s\" already exists"
-msgstr "la condizione \"%s\" per la relazione \"%s\" esiste già"
+msgstr "il trigger \"%s\" per la relazione \"%s\" esiste già"
 
-# TODO: che vuol dire?
 #: commands/trigger.c:800
 msgid "Found referenced table's UPDATE trigger."
-msgstr "Trovato trigger UPDATE della colonna referenziata."
+msgstr "Trovato trigger UPDATE della tabella referenziata."
 
 #: commands/trigger.c:801
 msgid "Found referenced table's DELETE trigger."
-msgstr "Trovato trigger DELETE della colonna referenziata."
+msgstr "Trovato trigger DELETE della tabella referenziata."
 
 #: commands/trigger.c:802
-#, fuzzy
 msgid "Found referencing table's trigger."
-msgstr "previsti %d trigger per la tabella \"%s\" ma trovati %d\n"
+msgstr "Trovato trigger della tabella referenziante."
 
-# TODO: che vuol dire?
 #: commands/trigger.c:911 commands/trigger.c:927
 #, c-format
 msgid "ignoring incomplete trigger group for constraint \"%s\" %s"
-msgstr ""
+msgstr "ignorato gruppo di trigger incompleto per il vincolo \"%s\" %s"
 
 #: commands/trigger.c:939
-#, fuzzy, c-format
+#, c-format
 msgid "converting trigger group into constraint \"%s\" %s"
-msgstr "la condizione \"%s\"per la relazione \"%s\"esiste già "
+msgstr "conversione del gruppo di trigger nel vincolo \"%s\" %s"
 
 #: commands/trigger.c:1150 commands/trigger.c:1302 commands/trigger.c:1413
-#, fuzzy, c-format
+#, c-format
 msgid "trigger \"%s\" for table \"%s\" does not exist"
-msgstr "Non esiste un database per la tabella"
+msgstr "il trigger \"%s\" per la tabella \"%s\" non esiste"
 
 #: commands/trigger.c:1381
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied: \"%s\" is a system trigger"
-msgstr "Impossibile aggiungere la connessione di sistema: permesso negato."
+msgstr "permesso negato: \"%s\" è un trigger di sistema"
 
 #: commands/trigger.c:1874
 #, c-format
 msgid "trigger function %u returned null value"
-msgstr "la funzione trigger %u ha ritornato un valore null"
+msgstr "la funzione trigger %u ha restituito un valore null"
 
 #: commands/trigger.c:1933 commands/trigger.c:2132 commands/trigger.c:2316
 #: commands/trigger.c:2558
 #, c-format
 msgid "BEFORE STATEMENT trigger cannot return a value"
-msgstr "i trigger BEFORE STATEMENT non possono restituire un valore"
+msgstr "il trigger BEFORE STATEMENT non può restituire un valore"
 
 #: commands/trigger.c:2620 executor/execMain.c:1881
 #: executor/nodeLockRows.c:138 executor/nodeModifyTable.c:367
 #: executor/nodeModifyTable.c:583
 #, c-format
 msgid "could not serialize access due to concurrent update"
-msgstr "non posso serializzare un accesso in scadenza durante un update concorrenziale"
+msgstr "impossibile serializzare l'accesso a causa di modifiche concorrenti"
 
 #: commands/trigger.c:4235
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" is not deferrable"
-msgstr "clausola NOT DEFERRABLE malposizionata"
+msgstr "il vincolo \"%s\" non è deferibile"
 
 #: commands/trigger.c:4258
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" does not exist"
-msgstr "il vincolo \"%s\" per la tabella \"%s\" non esiste"
+msgstr "il vincolo \"%s\" non esiste"
 
 #: commands/tsearchcmds.c:113 commands/tsearchcmds.c:912
-#, fuzzy, c-format
+#, c-format
 msgid "function %s should return type %s"
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione %s dovrebbe restituire il tipo %s"
 
 #: commands/tsearchcmds.c:185
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to create text search parsers"
-msgstr "Solo un superuser può incrementare questo valore."
+msgstr "solo un superutente può creare analizzatori di ricerca di testo"
 
 #: commands/tsearchcmds.c:233
-#, fuzzy, c-format
+#, c-format
 msgid "text search parser parameter \"%s\" not recognized"
-msgstr "\"%s\"non è un opzione riconosciuta"
+msgstr "parametro dell'analizzatore di ricerca di testo \"%s\" non riconosciuto"
 
 #: commands/tsearchcmds.c:243
 #, c-format
@@ -7147,39 +7137,39 @@ msgid "text search parser lextypes method is required"
 msgstr "il metodo lextype dell'analizzatore di ricerca di testo è richiesto"
 
 #: commands/tsearchcmds.c:319
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to rename text search parsers"
-msgstr "Solo un superuser può incrementare questo valore."
+msgstr "solo un superutente può rinominare analizzatori di ricerca di testo"
 
 #: commands/tsearchcmds.c:337
-#, fuzzy, c-format
+#, c-format
 msgid "text search parser \"%s\" already exists"
-msgstr "lo schema \"%s\"esiste già "
+msgstr "l'analizzatore di ricerca di testo \"%s\" esiste già"
 
 #: commands/tsearchcmds.c:463
-#, fuzzy, c-format
+#, c-format
 msgid "text search template \"%s\" does not accept options"
-msgstr "lo schema \"%s\"non esite"
+msgstr "il modello di ricerca di testo \"%s\" non accetta opzioni"
 
 #: commands/tsearchcmds.c:536
-#, fuzzy, c-format
+#, c-format
 msgid "text search template is required"
-msgstr "\"infile\" è necessario per i flag di generazione del template.\n"
+msgstr "il modello di ricerca di testo è richiesto"
 
 #: commands/tsearchcmds.c:605
-#, fuzzy, c-format
+#, c-format
 msgid "text search dictionary \"%s\" already exists"
-msgstr "la relazione \"%s\"esiste già "
+msgstr "il dizionario di ricerca di testo \"%s\" esiste già"
 
 #: commands/tsearchcmds.c:976
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to create text search templates"
-msgstr "Solo un superuser può incrementare questo valore."
+msgstr "solo un superutente può creare modelli di ricerca di testo"
 
 #: commands/tsearchcmds.c:1013
-#, fuzzy, c-format
+#, c-format
 msgid "text search template parameter \"%s\" not recognized"
-msgstr "\"%s\"non è un opzione riconosciuta"
+msgstr "parametro del modello di ricerca di testo \"%s\" non riconosciuto"
 
 #: commands/tsearchcmds.c:1023
 #, c-format
@@ -7187,66 +7177,64 @@ msgid "text search template lexize method is required"
 msgstr "il metodo lexize del modello di ricerca di testo è richiesto"
 
 #: commands/tsearchcmds.c:1062
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to rename text search templates"
-msgstr "Solo un superuser può incrementare questo valore."
+msgstr "solo un superutente può rinominare modelli di ricerca di testo"
 
 #: commands/tsearchcmds.c:1081
-#, fuzzy, c-format
+#, c-format
 msgid "text search template \"%s\" already exists"
-msgstr "lo schema \"%s\"esiste già "
+msgstr "il modello di ricerca di testo \"%s\" esiste già"
 
 #: commands/tsearchcmds.c:1318
-#, fuzzy, c-format
+#, c-format
 msgid "text search configuration parameter \"%s\" not recognized"
-msgstr "\"%s\"non è un opzione riconosciuta"
+msgstr "parametro della configurazione di ricerca di testo \"%s\" non riconosciuto"
 
 #: commands/tsearchcmds.c:1325
 #, c-format
 msgid "cannot specify both PARSER and COPY options"
-msgstr "impossibile specificare sia PARSER che COPY"
+msgstr "non è possibile specificare sia l'opzione PARSER che COPY"
 
 #: commands/tsearchcmds.c:1353
 #, c-format
 msgid "text search parser is required"
-msgstr "è richiesto il parser per il text search"
+msgstr "l'analizzatore per la ricerca di testo è richiesto"
 
 #: commands/tsearchcmds.c:1463
-#, fuzzy, c-format
+#, c-format
 msgid "text search configuration \"%s\" already exists"
-msgstr ""
-"  -T, --text-search-config=CFG\n"
-"                            configurazione prefedinita per la ricerca testi\n"
+msgstr "la configurazione di ricerca di testo \"%s\" esiste già"
 
 #: commands/tsearchcmds.c:1726
-#, fuzzy, c-format
+#, c-format
 msgid "token type \"%s\" does not exist"
-msgstr "il tipo con l'OID %u non esiste"
+msgstr "il tipo di token \"%s\" non esiste"
 
 #: commands/tsearchcmds.c:1948
-#, fuzzy, c-format
+#, c-format
 msgid "mapping for token type \"%s\" does not exist"
-msgstr "il gruppo \"%s\"non esiste"
+msgstr "la mappatura per il token \"%s\" non esiste"
 
 #: commands/tsearchcmds.c:1954
-#, fuzzy, c-format
+#, c-format
 msgid "mapping for token type \"%s\" does not exist, skipping"
-msgstr "il gruppo \"%s\"non esiste"
+msgstr "la mappatura per il token \"%s\" non esiste, saltato"
 
 #: commands/tsearchcmds.c:2107 commands/tsearchcmds.c:2218
-#, fuzzy, c-format
+#, c-format
 msgid "invalid parameter list format: \"%s\""
-msgstr "campo non valido nella lista di parametri"
+msgstr "formato di lista di parametri non valido: \"%s\""
 
 #: commands/typecmds.c:180
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to create a base type"
-msgstr "Solo un superuser può incrementare questo valore."
+msgstr "solo un superutente può creare un tipo di base"
 
 #: commands/typecmds.c:286 commands/typecmds.c:1339
-#, fuzzy, c-format
+#, c-format
 msgid "type attribute \"%s\" not recognized"
-msgstr "«%s» non è un tipo di attributo valido"
+msgstr "attributo del tipo \"%s\" non riconosciuto"
 
 #: commands/typecmds.c:340
 #, c-format
@@ -7254,60 +7242,59 @@ msgid "invalid type category \"%s\": must be simple ASCII"
 msgstr "categoria non valida \"%s\": dev'essere semplice ASCII"
 
 #: commands/typecmds.c:359
-#, fuzzy, c-format
+#, c-format
 msgid "array element type cannot be %s"
-msgstr "Questo tipo di archivio non può essere modificato."
+msgstr "il tipo di elemento dell'array non può essere %s"
 
 #: commands/typecmds.c:391
-#, fuzzy, c-format
+#, c-format
 msgid "alignment \"%s\" not recognized"
-msgstr "Formato del file non riconosciuto"
+msgstr "allineamento \"%s\" non riconosciuto"
 
 #: commands/typecmds.c:408
-#, fuzzy, c-format
+#, c-format
 msgid "storage \"%s\" not recognized"
-msgstr "Formato del file non riconosciuto"
+msgstr "immagazzinamento \"%s\" non riconosciuto"
 
 #: commands/typecmds.c:419
 #, c-format
 msgid "type input function must be specified"
-msgstr "la funzione di input del tipo deve essere specificato"
+msgstr "la funzione di input del tipo deve essere specificata"
 
 #: commands/typecmds.c:423
 #, c-format
 msgid "type output function must be specified"
-msgstr "la funzione di output del tipo deve essere specificato"
+msgstr "la funzione di output del tipo deve essere specificata"
 
-# TODO: giusto?
 #: commands/typecmds.c:428
 #, c-format
 msgid "type modifier output function is useless without a type modifier input function"
-msgstr "una funzione di output del modificatore del tipo è inutile senza una funzione di input"
+msgstr "la funzione di output del modificatore di tipo è inutile senza una funzione di input"
 
 #: commands/typecmds.c:451
-#, fuzzy, c-format
+#, c-format
 msgid "changing return type of function %s from \"opaque\" to %s"
-msgstr "il tipo restituito dalla funzione di transizione è %s e non %s"
+msgstr "modifica del tipo restituito dalla funzione %s da \"opaque\" a %s"
 
 #: commands/typecmds.c:458
-#, fuzzy, c-format
+#, c-format
 msgid "type input function %s must return type %s"
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione %s di input di tipo deve restituire il tipo %s"
 
 #: commands/typecmds.c:468
-#, fuzzy, c-format
+#, c-format
 msgid "changing return type of function %s from \"opaque\" to \"cstring\""
-msgstr "il tipo restituito dalla funzione di transizione è %s e non %s"
+msgstr "modifica del tipo restituito dalla funzione %s da \"opaque\" a \"cstring\""
 
 #: commands/typecmds.c:475
-#, fuzzy, c-format
+#, c-format
 msgid "type output function %s must return type \"cstring\""
-msgstr "la funzione %s richiede una coercizione di tipo a run-time"
+msgstr "la funzione %s di output di tipo deve restituire il tipo \"cstring\""
 
 #: commands/typecmds.c:484
-#, fuzzy, c-format
+#, c-format
 msgid "type receive function %s must return type %s"
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione receive %s del tipo deve restituire il tipo %s"
 
 #: commands/typecmds.c:493
 #, c-format
@@ -7315,89 +7302,89 @@ msgid "type send function %s must return type \"bytea\""
 msgstr "la funzione send %s del tipo deve restituire il tipo \"bytea\""
 
 #: commands/typecmds.c:756
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a valid base type for a domain"
-msgstr "\"%s\"non è un nome di operatore valido"
+msgstr "\"%s\" non è un tipo di base valido per un dominio"
 
 #: commands/typecmds.c:842
 #, c-format
 msgid "multiple default expressions"
-msgstr "multiple default expressions"
+msgstr "più di una espressione di default"
 
 #: commands/typecmds.c:906 commands/typecmds.c:915
-#, fuzzy, c-format
+#, c-format
 msgid "conflicting NULL/NOT NULL constraints"
-msgstr "un iid NULL non è valido"
+msgstr "vincoli NULL/NOT NULL in conflitto"
 
 #: commands/typecmds.c:931
-#, fuzzy, c-format
+#, c-format
 msgid "CHECK constraints for domains cannot be marked NO INHERIT"
-msgstr "clausola NOT DEFERRABLE malposizionata"
+msgstr "il vincolo CHECK del dominio non può essere marcato NO INHERIT"
 
 #: commands/typecmds.c:940 commands/typecmds.c:2397
 #, c-format
 msgid "unique constraints not possible for domains"
-msgstr "Le costraints unique non sono possibili per i domini."
+msgstr "i vincoli univoci non sono ammessi per i domini"
 
 #: commands/typecmds.c:946 commands/typecmds.c:2403
 #, c-format
 msgid "primary key constraints not possible for domains"
-msgstr "le costraints della chiave primaria non sono possibili per i domini"
+msgstr "i vincoli di chiave primaria non sono ammessi per i domini"
 
 #: commands/typecmds.c:952 commands/typecmds.c:2409
-#, fuzzy, c-format
+#, c-format
 msgid "exclusion constraints not possible for domains"
-msgstr "Le costraints unique non sono possibili per i domini."
+msgstr "i vincoli di esclusione non sono ammessi per i domini"
 
 #: commands/typecmds.c:958 commands/typecmds.c:2415
 #, c-format
 msgid "foreign key constraints not possible for domains"
-msgstr "Le costraints per la chiave esterna non è possivile per i domini"
+msgstr "i vincoli di chiave esterna non sono ammessi per i domini"
 
 #: commands/typecmds.c:967 commands/typecmds.c:2424
 #, c-format
 msgid "specifying constraint deferrability not supported for domains"
-msgstr "i domini non supportano deferibilità dei vincoli"
+msgstr "specificare la deferibilità dei vincoli non è ammesso per i domini"
 
 #: commands/typecmds.c:1211 utils/cache/typcache.c:1064
-#, fuzzy, c-format
+#, c-format
 msgid "%s is not an enum"
-msgstr "non è un numero di versione"
+msgstr "%s non è una enumerazione"
 
 #: commands/typecmds.c:1347
-#, fuzzy, c-format
+#, c-format
 msgid "type attribute \"subtype\" is required"
-msgstr "«%s» non è un tipo di attributo valido"
+msgstr "l'attributo \"subtype\" del tipo è richiesto"
 
 #: commands/typecmds.c:1352
-#, fuzzy, c-format
+#, c-format
 msgid "range subtype cannot be %s"
-msgstr "Questo tipo di archivio non può essere modificato."
+msgstr "il sottotipo dell'intervallo non può essere %s"
 
 #: commands/typecmds.c:1371
 #, c-format
 msgid "range collation specified but subtype does not support collation"
-msgstr "un ordinamento per è stato specificato per l'intervallo ma il sotto-tipo non supporta gli ordinamenti"
+msgstr "è stato specificato un ordinamento per gli intervalli ma il sottotipo non supporta ordinamenti"
 
 #: commands/typecmds.c:1605
-#, fuzzy, c-format
+#, c-format
 msgid "changing argument type of function %s from \"opaque\" to \"cstring\""
-msgstr "il tipo restituito dalla funzione di transizione è %s e non %s"
+msgstr "modifica del tipo di argomento della funzione %s da \"opaque\" a \"cstring\""
 
 #: commands/typecmds.c:1656
-#, fuzzy, c-format
+#, c-format
 msgid "changing argument type of function %s from \"opaque\" to %s"
-msgstr "il tipo restituito dalla funzione di transizione è %s e non %s"
+msgstr "modifica del tipo di argomento della funzione %s da \"opaque\" a %s"
 
 #: commands/typecmds.c:1755
-#, fuzzy, c-format
+#, c-format
 msgid "typmod_in function %s must return type \"integer\""
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione typmod_in %s deve restituire il tipo \"integer\""
 
 #: commands/typecmds.c:1782
-#, fuzzy, c-format
+#, c-format
 msgid "typmod_out function %s must return type \"cstring\""
-msgstr "la funzione %s richiede una coercizione di tipo a run-time"
+msgstr "la funzione typmod_out %s deve restituire il tipo \"cstring\""
 
 #: commands/typecmds.c:1809
 #, c-format
@@ -7405,19 +7392,19 @@ msgid "type analyze function %s must return type \"boolean\""
 msgstr "la funzione analyze %s del tipo deve restituire il tipo \"boolean\""
 
 #: commands/typecmds.c:1855
-#, fuzzy, c-format
+#, c-format
 msgid "You must specify an operator class for the range type or define a default operator class for the subtype."
-msgstr "Devi specificare un operatore di classe per l'index o definire un operatore di classe di default per il data type"
+msgstr "Occorre specificare una classe di operatori per l'intervallo o definire una classe di operatori predefinita per il sottotipo."
 
 #: commands/typecmds.c:1886
-#, fuzzy, c-format
+#, c-format
 msgid "range canonical function %s must return range type"
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione canonica %s dell'intervallo deve restituire un intervallo"
 
 #: commands/typecmds.c:1892
-#, fuzzy, c-format
+#, c-format
 msgid "range canonical function %s must be immutable"
-msgstr "il terzo argomento della funzione cast deve essere un tipo booleano"
+msgstr "la funzione canonica %s dell'intervallo deve essere immutabile"
 
 #: commands/typecmds.c:1928
 #, fuzzy, c-format
