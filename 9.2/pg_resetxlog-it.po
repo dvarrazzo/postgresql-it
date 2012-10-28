@@ -109,8 +109,7 @@ msgstr "%s non può esssere eseguito da \"root\"\n"
 #: pg_resetxlog.c:254
 #, c-format
 msgid "You must run %s as the PostgreSQL superuser.\n"
-msgstr ""
-"Si deve obbligatoriamente eseguire %s come superutente di PostgreSQL.\n"
+msgstr "Si deve obbligatoriamente eseguire %s come superutente di PostgreSQL.\n"
 
 #: pg_resetxlog.c:264
 #, c-format
@@ -138,8 +137,7 @@ msgid ""
 "If these values seem acceptable, use -f to force reset.\n"
 msgstr ""
 "\n"
-"Se questi parametri sembrano accettabili, utilizzate -f per forzare un "
-"reset.\n"
+"Se questi parametri sembrano accettabili, utilizzate -f per forzare un reset.\n"
 
 #: pg_resetxlog.c:367
 #, c-format
@@ -164,8 +162,7 @@ msgid ""
 "  touch %s\n"
 "and try again.\n"
 msgstr ""
-"Se siete sicuri che il percorso della directory dei dati è corretto, "
-"eseguite\n"
+"Se siete sicuri che il percorso della directory dei dati è corretto, eseguite\n"
 "  touch %s\n"
 "e riprovate.\n"
 
@@ -182,9 +179,7 @@ msgstr "%s: pg_control esiste ma ha un CRC non valido; procedere con cautela\n"
 #: pg_resetxlog.c:455
 #, c-format
 msgid "%s: pg_control exists but is broken or unknown version; ignoring it\n"
-msgstr ""
-"%s: pg_control esiste ma è inutilizzabile o è una versione sconosciuta; "
-"verrà ignorato\n"
+msgstr "%s: pg_control esiste ma è inutilizzabile o è una versione sconosciuta; verrà ignorato\n"
 
 #: pg_resetxlog.c:550
 #, c-format
@@ -355,12 +350,8 @@ msgstr "passaggio di argomenti float8:                   %s\n"
 
 #: pg_resetxlog.c:677
 #, c-format
-msgid ""
-"%s: internal error -- sizeof(ControlFileData) is too large ... fix "
-"PG_CONTROL_SIZE\n"
-msgstr ""
-"%s: errore interno -- sizeof(ControlFileData) è troppo grande ... correggere "
-"PG_CONTROL_SIZE\n"
+msgid "%s: internal error -- sizeof(ControlFileData) is too large ... fix PG_CONTROL_SIZE\n"
+msgstr "%s: errore interno -- sizeof(ControlFileData) è troppo grande ... correggere PG_CONTROL_SIZE\n"
 
 #: pg_resetxlog.c:692
 #, c-format
@@ -439,9 +430,7 @@ msgstr "  -f               forza l'esecuzione dell'aggiornamento\n"
 
 #: pg_resetxlog.c:1033
 #, c-format
-msgid ""
-"  -l TLI,FILE,SEG  force minimum WAL starting location for new transaction "
-"log\n"
+msgid "  -l TLI,FILE,SEG  force minimum WAL starting location for new transaction log\n"
 msgstr ""
 "  -l TLI,FILE,SEG  forza il minimo punto d'inizio WAL per il nuovo log\n"
 "                   delle transazione\n"
@@ -453,9 +442,7 @@ msgstr "  -m XID           imposta il prossimo ID di multitransaction\n"
 
 #: pg_resetxlog.c:1035
 #, c-format
-msgid ""
-"  -n               no update, just show extracted control values (for "
-"testing)\n"
+msgid "  -n               no update, just show extracted control values (for testing)\n"
 msgstr ""
 "  -n               nessun aggiornamento, mostra solo i valori di controllo\n"
 "                   estratti (solo per prova)\n"

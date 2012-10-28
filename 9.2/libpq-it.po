@@ -139,8 +139,7 @@ msgstr "valore sslmode errato: \"%s\"\n"
 #: fe-connect.c:809
 #, c-format
 msgid "sslmode value \"%s\" invalid when SSL support is not compiled in\n"
-msgstr ""
-"valore sslmode \"%s\" non valido quando il supporto SSL non è compilato\n"
+msgstr "valore sslmode \"%s\" non valido quando il supporto SSL non è compilato\n"
 
 #: fe-connect.c:1013
 #, c-format
@@ -218,15 +217,11 @@ msgstr "impossibile convertire il nome host \"%s\" in indirizzo: %s\n"
 #: fe-connect.c:1382
 #, c-format
 msgid "could not translate Unix-domain socket path \"%s\" to address: %s\n"
-msgstr ""
-"impossibile convertire il percorso del socket di dominio Unix \"%s\" in "
-"indirizzo: %s\n"
+msgstr "impossibile convertire il percorso del socket di dominio Unix \"%s\" in indirizzo: %s\n"
 
 #: fe-connect.c:1592
 msgid "invalid connection state, probably indicative of memory corruption\n"
-msgstr ""
-"stato connessione invalido, probabilmente indica una corruzione della "
-"memoria\n"
+msgstr "stato connessione invalido, probabilmente indica una corruzione della memoria\n"
 
 #: fe-connect.c:1633
 #, c-format
@@ -279,8 +274,7 @@ msgstr "l'utente locale con ID %d non esiste\n"
 #: fe-connect.c:1942
 #, c-format
 msgid "requirepeer specifies \"%s\", but actual peer user name is \"%s\"\n"
-msgstr ""
-"requirepeer specifica \"%s\", ma il vero nome utente del peer è \"%s\"\n"
+msgstr "requirepeer specifica \"%s\", ma il vero nome utente del peer è \"%s\"\n"
 
 #: fe-connect.c:1976
 #, c-format
@@ -304,8 +298,7 @@ msgstr "ricevuta risposta errata alla negoziazione SSL: %c\n"
 #: fe-connect.c:2190 fe-connect.c:2223
 #, c-format
 msgid "expected authentication request from server, but received %c\n"
-msgstr ""
-"prevista richiesta di autenticazione dal server, ma è stato ricevuto %c\n"
+msgstr "prevista richiesta di autenticazione dal server, ma è stato ricevuto %c\n"
 
 #: fe-connect.c:2404
 #, c-format
@@ -319,8 +312,7 @@ msgstr "messaggio imprevisto dal server durante l'avvio\n"
 #: fe-connect.c:2588
 #, c-format
 msgid "invalid connection state %d, probably indicative of memory corruption\n"
-msgstr ""
-"stato connessione errato %d, probabilmente indica una corruzione di memoria\n"
+msgstr "stato connessione errato %d, probabilmente indica una corruzione di memoria\n"
 
 #: fe-connect.c:3028 fe-connect.c:3088
 #, c-format
@@ -345,9 +337,7 @@ msgstr "URL LDAP \"%s\" non corretta: deve avere esattamente un attributo\n"
 #: fe-connect.c:3469 fe-connect.c:3526
 #, c-format
 msgid "invalid LDAP URL \"%s\": must have search scope (base/one/sub)\n"
-msgstr ""
-"URL LDAP \"%s\" non corretta: deve essere specificato la portata della "
-"ricerca (base/one/sub)\n"
+msgstr "URL LDAP \"%s\" non corretta: deve essere specificato la portata della ricerca (base/one/sub)\n"
 
 #: fe-connect.c:3480
 #, c-format
@@ -396,9 +386,7 @@ msgstr "stringa tra virgolette non terminata nella stringa di connessione\n"
 
 #: fe-connect.c:3815
 msgid "could not get home directory to locate service definition file"
-msgstr ""
-"impossibile ottenere la home directory per trovare il file di definizione di "
-"servizio"
+msgstr "impossibile ottenere la home directory per trovare il file di definizione di servizio"
 
 #: fe-connect.c:3848
 #, c-format
@@ -427,12 +415,8 @@ msgstr "URI invalida propagata alla routine di parsing interna: \"%s\"\n"
 
 #: fe-connect.c:4653
 #, c-format
-msgid ""
-"end of string reached when looking for matching \"]\" in IPv6 host address "
-"in URI: \"%s\"\n"
-msgstr ""
-"fine stringa raggiunta cercando un \"]\" corrispondente nell'indirizzo host "
-"IPv6 nella URI: \"%s\"\n"
+msgid "end of string reached when looking for matching \"]\" in IPv6 host address in URI: \"%s\"\n"
+msgstr "fine stringa raggiunta cercando un \"]\" corrispondente nell'indirizzo host IPv6 nella URI: \"%s\"\n"
 
 #: fe-connect.c:4660
 #, c-format
@@ -441,24 +425,18 @@ msgstr "l'indirizzo host IPv6 non dev'essere assente nella URI: \"%s\"\n"
 
 #: fe-connect.c:4675
 #, c-format
-msgid ""
-"unexpected character \"%c\" at position %d in URI (expected \":\" or \"/\"): "
-"\"%s\"\n"
-msgstr ""
-"carattere inatteso \"%c\" in posizione %d nella uri URI (atteso \":\" oppure "
-"\"/\"): \"%s\"\n"
+msgid "unexpected character \"%c\" at position %d in URI (expected \":\" or \"/\"): \"%s\"\n"
+msgstr "carattere inatteso \"%c\" in posizione %d nella uri URI (atteso \":\" oppure \"/\"): \"%s\"\n"
 
 #: fe-connect.c:4789
 #, c-format
 msgid "extra key/value separator \"=\" in URI query parameter: \"%s\"\n"
-msgstr ""
-"separatore chiave/valore \"=\" in eccesso nei parametri della URI: \"%s\"\n"
+msgstr "separatore chiave/valore \"=\" in eccesso nei parametri della URI: \"%s\"\n"
 
 #: fe-connect.c:4809
 #, c-format
 msgid "missing key/value separator \"=\" in URI query parameter: \"%s\"\n"
-msgstr ""
-"separatore chiave/valore \"=\" mancante nei parametri della URI: \"%s\"\n"
+msgstr "separatore chiave/valore \"=\" mancante nei parametri della URI: \"%s\"\n"
 
 #: fe-connect.c:4880
 #, c-format
@@ -486,12 +464,9 @@ msgstr "ATTENZIONE: il file delle password \"%s\" non è un file regolare\n"
 
 #: fe-connect.c:5511
 #, c-format
-msgid ""
-"WARNING: password file \"%s\" has group or world access; permissions should "
-"be u=rw (0600) or less\n"
+msgid "WARNING: password file \"%s\" has group or world access; permissions should be u=rw (0600) or less\n"
 msgstr ""
-"ATTENZIONE: Il file delle password %s ha privilegi di accesso in lettura e "
-"scrittura per tutti;\n"
+"ATTENZIONE: Il file delle password %s ha privilegi di accesso in lettura e scrittura per tutti;\n"
 "i permessi dovrebbero essere u=rw (0600) o inferiori\n"
 
 #: fe-connect.c:5611
@@ -616,9 +591,7 @@ msgstr "impossibile scrivere sul file \"%s\": %s\n"
 
 #: fe-lobj.c:760
 msgid "query to initialize large object functions did not return data\n"
-msgstr ""
-"la query per inizializzare le funzioni large object non hanno restituito "
-"dati\n"
+msgstr "la query per inizializzare le funzioni large object non hanno restituito dati\n"
 
 #: fe-lobj.c:801
 msgid "cannot determine OID of function lo_open\n"
@@ -693,9 +666,7 @@ msgstr "select() fallita: %s\n"
 #: fe-protocol2.c:91
 #, c-format
 msgid "invalid setenv state %c, probably indicative of memory corruption\n"
-msgstr ""
-"stato %c di setenv non valido, probabilmente indica una corruzione di "
-"memoria\n"
+msgstr "stato %c di setenv non valido, probabilmente indica una corruzione di memoria\n"
 
 #: fe-protocol2.c:390
 #, c-format
@@ -710,27 +681,17 @@ msgstr "messaggio tipo 0x%02x arrivato dal server mentre era inattivo"
 #: fe-protocol2.c:522
 #, c-format
 msgid "unexpected character %c following empty query response (\"I\" message)"
-msgstr ""
-"carattere %c non previsto a seguito di una risposta vuota ad una query "
-"(messaggio \"I\")"
+msgstr "carattere %c non previsto a seguito di una risposta vuota ad una query (messaggio \"I\")"
 
 #: fe-protocol2.c:580
 #, c-format
-msgid ""
-"server sent data (\"D\" message) without prior row description (\"T\" "
-"message)"
-msgstr ""
-"il server ha spedito dati (messaggio di tipo \"D\") senza prima il "
-"descrittore di riga (messaggio di tipo \"T\")"
+msgid "server sent data (\"D\" message) without prior row description (\"T\" message)"
+msgstr "il server ha spedito dati (messaggio di tipo \"D\") senza prima il descrittore di riga (messaggio di tipo \"T\")"
 
 #: fe-protocol2.c:598
 #, c-format
-msgid ""
-"server sent binary data (\"B\" message) without prior row description (\"T\" "
-"message)"
-msgstr ""
-"il server ha spedito dati binari (messaggio di tipo \"B\") senza prima il "
-"descrittore di riga (messaggio di tipo \"T\")"
+msgid "server sent binary data (\"B\" message) without prior row description (\"T\" message)"
+msgstr "il server ha spedito dati binari (messaggio di tipo \"B\") senza prima il descrittore di riga (messaggio di tipo \"T\")"
 
 #: fe-protocol2.c:618 fe-protocol3.c:385
 #, c-format
@@ -757,26 +718,18 @@ msgid "protocol error: id=0x%x\n"
 msgstr "errore di protocollo: id=0x%x\n"
 
 #: fe-protocol3.c:341
-msgid ""
-"server sent data (\"D\" message) without prior row description (\"T\" "
-"message)\n"
-msgstr ""
-"il server ha spedito dati (messaggio di tipo \"D\") senza prima il "
-"descrittore di riga (messaggio di tipo \"T\")\n"
+msgid "server sent data (\"D\" message) without prior row description (\"T\" message)\n"
+msgstr "il server ha spedito dati (messaggio di tipo \"D\") senza prima il descrittore di riga (messaggio di tipo \"T\")\n"
 
 #: fe-protocol3.c:406
 #, c-format
 msgid "message contents do not agree with length in message type \"%c\"\n"
-msgstr ""
-"i contenuti del messaggio non sono in accordo con la lunghezza del tipo di "
-"messaggio \"%c\"\n"
+msgstr "i contenuti del messaggio non sono in accordo con la lunghezza del tipo di messaggio \"%c\"\n"
 
 #: fe-protocol3.c:427
 #, c-format
 msgid "lost synchronization with server: got message type \"%c\", length %d\n"
-msgstr ""
-"persa la sincronizzazione con il server: ricevuto il tipo di messaggio \"%c"
-"\" di lunghezza %d\n"
+msgstr "persa la sincronizzazione con il server: ricevuto il tipo di messaggio \"%c\" di lunghezza %d\n"
 
 #: fe-protocol3.c:480 fe-protocol3.c:520
 msgid "insufficient data in \"T\" message"
@@ -888,9 +841,7 @@ msgstr "impossibile inviare dati al server: %s\n"
 
 #: fe-secure.c:761 fe-secure.c:778
 msgid "could not get server common name from server certificate\n"
-msgstr ""
-"impossibile ottenere in nome comune del server per il certificato del "
-"server\n"
+msgstr "impossibile ottenere in nome comune del server per il certificato del server\n"
 
 #: fe-secure.c:791
 msgid "SSL certificate's common name contains embedded null\n"
@@ -898,14 +849,12 @@ msgstr "Il nome comune del certificato SSL contiene un null\n"
 
 #: fe-secure.c:803
 msgid "host name must be specified for a verified SSL connection\n"
-msgstr ""
-"il nome dell'host dev'essere specificato per una connessione SSL verificata\n"
+msgstr "il nome dell'host dev'essere specificato per una connessione SSL verificata\n"
 
 #: fe-secure.c:817
 #, c-format
 msgid "server common name \"%s\" does not match host name \"%s\"\n"
-msgstr ""
-"il nome comune del server \"%s\" non corrisponde al nome dell'host \"%s\"\n"
+msgstr "il nome comune del server \"%s\" non corrisponde al nome dell'host \"%s\"\n"
 
 #: fe-secure.c:952
 #, c-format
@@ -935,15 +884,12 @@ msgstr "impossibile inizializzare il motore SSL \"%s\": %s\n"
 #: fe-secure.c:1174
 #, c-format
 msgid "could not read private SSL key \"%s\" from engine \"%s\": %s\n"
-msgstr ""
-"impossibile leggere il file della chiave privata SSL \"%s\" dal motore \"%s"
-"\": %s\n"
+msgstr "impossibile leggere il file della chiave privata SSL \"%s\" dal motore \"%s\": %s\n"
 
 #: fe-secure.c:1188
 #, c-format
 msgid "could not load private SSL key \"%s\" from engine \"%s\": %s\n"
-msgstr ""
-"impossibile caricare la chiave privata SSL \"%s\" dal motore \"%s\": %s\n"
+msgstr "impossibile caricare la chiave privata SSL \"%s\" dal motore \"%s\": %s\n"
 
 #: fe-secure.c:1225
 #, c-format
@@ -952,12 +898,8 @@ msgstr "certificato trovato, ma non la chiave privata \"%s\"\n"
 
 #: fe-secure.c:1233
 #, c-format
-msgid ""
-"private key file \"%s\" has group or world access; permissions should be "
-"u=rw (0600) or less\n"
-msgstr ""
-"Il file della chiave privata \"%s\" ha privilegi di accesso in lettura e "
-"scrittura per tutti; i permessi dovrebbero essere u=rw (0600) o inferiori\n"
+msgid "private key file \"%s\" has group or world access; permissions should be u=rw (0600) or less\n"
+msgstr "Il file della chiave privata \"%s\" ha privilegi di accesso in lettura e scrittura per tutti; i permessi dovrebbero essere u=rw (0600) o inferiori\n"
 
 #: fe-secure.c:1244
 #, c-format
@@ -967,8 +909,7 @@ msgstr "impossibile caricare il file della chiave privata \"%s\": %s\n"
 #: fe-secure.c:1258
 #, c-format
 msgid "certificate does not match private key file \"%s\": %s\n"
-msgstr ""
-"il certificato non corrisponde con il file della chiave privata \"%s\": %s\n"
+msgstr "il certificato non corrisponde con il file della chiave privata \"%s\": %s\n"
 
 #: fe-secure.c:1286
 #, c-format
@@ -983,24 +924,19 @@ msgstr "la libreria SSL non supporta i certificati di tipo CRL (file \"%s\")\n"
 #: fe-secure.c:1340
 msgid ""
 "could not get home directory to locate root certificate file\n"
-"Either provide the file or change sslmode to disable server certificate "
-"verification.\n"
+"Either provide the file or change sslmode to disable server certificate verification.\n"
 msgstr ""
-"impossibile ottenere la directory utente per trovare il file di certificato "
-"radice\n"
-"Fornite il file oppure cambiate sslmode per disabilitare la verifica del "
-"certificato del server.\n"
+"impossibile ottenere la directory utente per trovare il file di certificato radice\n"
+"Fornite il file oppure cambiate sslmode per disabilitare la verifica del certificato del server.\n"
 
 #: fe-secure.c:1344
 #, c-format
 msgid ""
 "root certificate file \"%s\" does not exist\n"
-"Either provide the file or change sslmode to disable server certificate "
-"verification.\n"
+"Either provide the file or change sslmode to disable server certificate verification.\n"
 msgstr ""
 "il file \"%s\" del certificato radice non esiste\n"
-"Fornite il file oppure cambiate sslmode per disabilitare la verifica del "
-"certificato del server.\n"
+"Fornite il file oppure cambiate sslmode per disabilitare la verifica del certificato del server.\n"
 
 #: fe-secure.c:1438
 #, c-format
@@ -1071,9 +1007,7 @@ msgstr "errore socket non riconosciuto: 0x%08X/%d"
 #~ msgstr "impossibile creare un large object per il file \"%s\"\n"
 
 #~ msgid "could not receive server response to SSL negotiation packet: %s\n"
-#~ msgstr ""
-#~ "impossibile ricevere una risposta dal server per i pacchetti di "
-#~ "negoziazione SSL: %s\n"
+#~ msgstr "impossibile ricevere una risposta dal server per i pacchetti di negoziazione SSL: %s\n"
 
 #~ msgid "fe_getauthname: invalid authentication system: %d\n"
 #~ msgstr "fe_getauthname: sistema di autenticazione errato: %d\n"
@@ -1100,12 +1034,7 @@ msgstr "errore socket non riconosciuto: 0x%08X/%d"
 #~ msgstr "impossibile aprire il file della chiave privata \"%s\": %s\n"
 
 #~ msgid "could not get home directory to locate client certificate files"
-#~ msgstr ""
-#~ "impossibile ottenere la home directory per trovare i file dei certificati "
-#~ "dei client"
+#~ msgstr "impossibile ottenere la home directory per trovare i file dei certificati dei client"
 
-#~ msgid ""
-#~ "verified SSL connections are only supported when connecting to a host name"
-#~ msgstr ""
-#~ "le connessioni con verifica SSL sono supportate soltanto quando ci si "
-#~ "connette ad un hostname"
+#~ msgid "verified SSL connections are only supported when connecting to a host name"
+#~ msgstr "le connessioni con verifica SSL sono supportate soltanto quando ci si connette ad un hostname"
