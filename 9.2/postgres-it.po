@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-28 03:18+0100\n"
+"PO-Revision-Date: 2012-10-28 11:53+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2541,7 +2541,7 @@ msgstr "il linguaggio \"%s\" non è fidato"
 #: catalog/aclchk.c:2559
 #, c-format
 msgid "Only superusers can use untrusted languages."
-msgstr "Solo il superutente può usare linguaggi non fidati."
+msgstr "Solo un superutente può usare linguaggi non fidati."
 
 #: catalog/aclchk.c:3075
 #, c-format
@@ -4745,7 +4745,7 @@ msgstr "il numero di campi è %d, ne erano attesi %d"
 #: commands/copy.c:2969 commands/copy.c:2986
 #, c-format
 msgid "literal carriage return found in data"
-msgstr "\"ritorno carrello\" letterale trovato nei dati"
+msgstr "\"ritorno carrello\" trovato nei dati"
 
 #: commands/copy.c:2970 commands/copy.c:2987
 #, c-format
@@ -4755,12 +4755,13 @@ msgstr "\"ritorno carrello\" non quotato trovato nei dati"
 #: commands/copy.c:2972 commands/copy.c:2989
 #, c-format
 msgid "Use \"\\r\" to represent carriage return."
-msgstr "Usa \"\\r\" per rappresentare i \"ritorno carrello\"."
+msgstr "Usa \"\\r\" per rappresentare i caratteri \"ritorno carrello\"."
 
 #: commands/copy.c:2973 commands/copy.c:2990
 #, c-format
 msgid "Use quoted CSV field to represent carriage return."
-msgstr "Usa un campo CSV quotato per rappresetare i \"ritorno carrello\"."
+msgstr ""
+"Usa un campo CSV quotato per rappresentare i caratteri \"ritorno carrello\"."
 
 #: commands/copy.c:3002
 #, c-format
@@ -4775,12 +4776,12 @@ msgstr "\"nuova riga\" non quotato trovato nei dati"
 #: commands/copy.c:3005
 #, c-format
 msgid "Use \"\\n\" to represent newline."
-msgstr "Usa \"\\n\" per rappresentare \"nuova riga\"."
+msgstr "Usa \"\\n\" per rappresentare i caratteri \"nuova riga\"."
 
 #: commands/copy.c:3006
 #, c-format
 msgid "Use quoted CSV field to represent newline."
-msgstr "Usa un campo CSV quotato per rappresetare i nuova-riga."
+msgstr "Usa un campo CSV quotato per rappresentare i caratteri \"nuova riga\"."
 
 #: commands/copy.c:3052 commands/copy.c:3088
 #, c-format
@@ -5733,7 +5734,7 @@ msgstr "Usa CREATE LANGUAGE per caricare il linguaggio nel database."
 #: commands/functioncmds.c:898 commands/functioncmds.c:1321
 #, c-format
 msgid "only superuser can define a leakproof function"
-msgstr "solo il superutente può definire una funzione stagna"
+msgstr "solo un superutente può definire una funzione stagna"
 
 #: commands/functioncmds.c:920
 #, c-format
