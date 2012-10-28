@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-28 03:01+0100\n"
+"PO-Revision-Date: 2012-10-28 03:18+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -4972,14 +4972,14 @@ msgid "encoding \"%s\" does not match locale \"%s\""
 msgstr "La risposta del server non corrisponde"
 
 #: commands/dbcommands.c:698
-#, fuzzy, c-format
+#, c-format
 msgid "The chosen LC_CTYPE setting requires encoding \"%s\"."
-msgstr "Il settaggio LC_CTYPE  scelto richiede l'encoding %s"
+msgstr "L'impostazione LC_CTYPE scelta richiede l'encoding \"%s\"."
 
 #: commands/dbcommands.c:713
-#, fuzzy, c-format
+#, c-format
 msgid "The chosen LC_COLLATE setting requires encoding \"%s\"."
-msgstr "Il settaggio LC_COLLATE selezionato richiede la codifica %s."
+msgstr "L'impostazione LC_COLLATE scelta richiede la codifica \"%s\"."
 
 #: commands/dbcommands.c:771
 #, fuzzy, c-format
@@ -9845,9 +9845,9 @@ msgid "LDAP over SSL is not supported on this platform."
 msgstr "%s: i link simbolici non sono supportati su questa piattaforma"
 
 #: libpq/auth.c:2111
-#, fuzzy, c-format
+#, c-format
 msgid "could not start LDAP TLS session: error code %d"
-msgstr "impossibile settare l'utente della sessione a \"%s\": %s"
+msgstr "impossibile avviare una sessione LDAP TLS: codice errore %d"
 
 #: libpq/auth.c:2133
 #, c-format
@@ -12403,12 +12403,12 @@ msgstr "la regola ON SELECT non può usare OLD"
 #: parser/parse_utilcmd.c:2179
 #, c-format
 msgid "ON SELECT rule cannot use NEW"
-msgstr "La regola ON SELECT non può usare NEW"
+msgstr "la regola ON SELECT non può usare NEW"
 
 #: parser/parse_utilcmd.c:2188
-#, fuzzy, c-format
+#, c-format
 msgid "ON INSERT rule cannot use OLD"
-msgstr "(Il comando INSERT non può settare gli OID.)\n"
+msgstr "la regola ON INSERT non può usare OLD"
 
 #: parser/parse_utilcmd.c:2194
 #, c-format
@@ -16582,7 +16582,7 @@ msgstr "il valore \"%s\"non è valido per cidr"
 #: utils/adt/network.c:119 utils/adt/network.c:249
 #, c-format
 msgid "Value has bits set to right of mask."
-msgstr "Il valore ha dei bit settai a destra della mask."
+msgstr "Il valore ha dei bit settati a destra della maschera."
 
 #: utils/adt/network.c:160 utils/adt/network.c:614 utils/adt/network.c:639
 #: utils/adt/network.c:664
@@ -18126,7 +18126,7 @@ msgstr "Troppi risultati per questa ricerca."
 #: utils/init/miscinit.c:538
 #, c-format
 msgid "permission denied to set session authorization"
-msgstr "permesso negato per settare l'autorizzazione per la sessione"
+msgstr "permesso negato per impostare l'autorizzazione della sessione"
 
 #: utils/init/miscinit.c:618
 #, fuzzy, c-format

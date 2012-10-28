@@ -504,10 +504,10 @@ msgstr ""
 #~ msgstr "Numero massimo di parametri per una funzione: %u\n"
 
 #~ msgid "%s: invalid LC_CTYPE setting\n"
-#~ msgstr "%s: settaggio errato per LC_CTYPE\n"
+#~ msgstr "%s: impostazione errata per LC_CTYPE\n"
 
 #~ msgid "%s: invalid LC_COLLATE setting\n"
-#~ msgstr "%s: settaggio errato per LC_COLLATE\n"
+#~ msgstr "%s: impostazione errata per LC_COLLATE\n"
 
 #~ msgid "  --version       output version information, then exit\n"
 #~ msgstr "  --version       mostra informazioni sulla versione, poi esci\n"
