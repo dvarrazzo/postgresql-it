@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-28 18:56+0100\n"
+"PO-Revision-Date: 2012-10-28 20:23+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -5788,7 +5788,7 @@ msgstr "non si può riposizionare il cursore held"
 #: commands/prepare.c:71
 #, c-format
 msgid "invalid statement name: must not be empty"
-msgstr "nome dello statement non valid: non deve essere vuoto"
+msgstr "nome di istruzione non valido: non deve essere vuoto"
 
 #: commands/prepare.c:129 parser/parse_param.c:303 tcop/postgres.c:1303
 #, fuzzy, c-format
@@ -5798,12 +5798,12 @@ msgstr "impossibile trovare il tipo di array per il tipo di dati %s"
 #: commands/prepare.c:147
 #, c-format
 msgid "utility statements cannot be prepared"
-msgstr "l' utility statements non può essere preparata"
+msgstr "le istruzioni di utilità non possono essere preparate"
 
 #: commands/prepare.c:257 commands/prepare.c:264
 #, c-format
 msgid "prepared statement is not a SELECT"
-msgstr "la statement preparata non è una  SELECT"
+msgstr "l'istruzione preparata non è una SELECT"
 
 #: commands/prepare.c:332
 #, c-format
@@ -5836,14 +5836,14 @@ msgid "parameter $%d of type %s cannot be coerced to the expected type %s"
 msgstr "il parametro %d del tipo %s non può essere forzato al previsto tipo %s "
 
 #: commands/prepare.c:479
-#, fuzzy, c-format
+#, c-format
 msgid "prepared statement \"%s\" already exists"
-msgstr "Un file di nome \"%s\" esiste già."
+msgstr "l'istruzione preparata \"%s\" esiste già"
 
 #: commands/prepare.c:518
-#, fuzzy, c-format
+#, c-format
 msgid "prepared statement \"%s\" does not exist"
-msgstr "non esiste la chiave multipla %s"
+msgstr "l'istruzione preparata \"%s\" non esiste"
 
 #: commands/proclang.c:88
 #, c-format
@@ -7016,7 +7016,7 @@ msgstr "non si possono usare aggregati nel vincolo di controllo"
 #: commands/trigger.c:329 commands/trigger.c:342
 #, c-format
 msgid "statement trigger's WHEN condition cannot reference column values"
-msgstr "le condizioni WHEN dei trigger di istruzione non possono usare valori di colonne"
+msgstr "la condizione WHEN del trigger sull'istruzione non può riferirsi a valori di colonna"
 
 #: commands/trigger.c:334
 #, c-format
@@ -7892,7 +7892,7 @@ msgstr "Seleziona una cartella dentro cui importare"
 #: commands/view.c:463
 #, c-format
 msgid "views must not contain data-modifying statements in WITH"
-msgstr "una vista non può contenere comandi di modifica dei dati in un WITH"
+msgstr "una vista non può contenere istruzioni di modifica dei dati in un WITH"
 
 #: commands/view.c:491
 #, c-format
@@ -8272,12 +8272,12 @@ msgstr ""
 #: executor/functions.c:1517
 #, c-format
 msgid "Function's final statement must be SELECT or INSERT/UPDATE/DELETE RETURNING."
-msgstr ""
+msgstr "L'istruzione finale della funzione deve essere SELECT oppure INSERT/UPDATE/DELETE RETURNING."
 
 #: executor/functions.c:1554
-#, fuzzy, c-format
+#, c-format
 msgid "Final statement must return exactly one column."
-msgstr "la vista deve avere almeno una colonna"
+msgstr "L'istruzione finale deve restituire esattamente una colonna."
 
 #: executor/functions.c:1566
 #, c-format
@@ -8287,17 +8287,17 @@ msgstr "l'attuale tipo di ritorno è %s."
 #: executor/functions.c:1679
 #, c-format
 msgid "Final statement returns too many columns."
-msgstr ""
+msgstr "L'istruzione finale restituisce troppe colonne."
 
 #: executor/functions.c:1712
 #, c-format
 msgid "Final statement returns %s instead of %s at column %d."
-msgstr ""
+msgstr "L'istruzione finale restituisce %s invece di %s alla colonna %d."
 
 #: executor/functions.c:1742
 #, c-format
 msgid "Final statement returns too few columns."
-msgstr ""
+msgstr "L'istruzione finale restituisce troppe poche colonne."
 
 #: executor/functions.c:1791
 #, c-format
@@ -8422,9 +8422,9 @@ msgid "Scrollable cursors must be READ ONLY."
 msgstr ""
 
 #: executor/spi.c:2157
-#, fuzzy, c-format
+#, c-format
 msgid "SQL statement \"%s\""
-msgstr "funzione SQL \"%s\" istruzione %d"
+msgstr "istruzione SQL \"%s\""
 
 #: foreign/foreign.c:188
 #, fuzzy, c-format
@@ -10073,9 +10073,9 @@ msgid "  -d 0-5             override debugging level\n"
 msgstr "  -d 0-5          scavalca il livello di debugging\n"
 
 #: main/main.c:316
-#, fuzzy, c-format
+#, c-format
 msgid "  -E                 echo statement before execution\n"
-msgstr "prepara una query per l'esecuzione"
+msgstr "  -E                 stampa le istruzioni prima dell'esecuzione\n"
 
 #: main/main.c:317
 #, fuzzy, c-format
@@ -10329,7 +10329,7 @@ msgstr ""
 #: parser/analyze.c:1627
 #, c-format
 msgid "UNION/INTERSECT/EXCEPT member statement cannot refer to other relations of same query level"
-msgstr ""
+msgstr "l'istruzione membro di UNION/INTERSECT/EXCEPT non può riferirsi al altre relazione allo stesso livello della query"
 
 #: parser/analyze.c:1715
 #, c-format
@@ -10369,7 +10369,7 @@ msgstr "impossibile specificare sia SCROLL che NO SCROLL"
 #: parser/analyze.c:2188
 #, c-format
 msgid "DECLARE CURSOR must not contain data-modifying statements in WITH"
-msgstr ""
+msgstr "DECLARE CURSOR non può contenere istruzioni di modifica dei dati nel WITH"
 
 #: parser/analyze.c:2194
 #, c-format
@@ -10820,7 +10820,7 @@ msgstr "il nome della colonna \"%s\"è duplicato"
 #: parser/parse_cte.c:264
 #, c-format
 msgid "WITH clause containing a data-modifying statement must be at the top level"
-msgstr ""
+msgstr "la clausola WITH contenente un'istruzione di modifica dei dati deve apparire al livello superiore"
 
 #: parser/parse_cte.c:313
 #, c-format
@@ -10855,7 +10855,7 @@ msgstr ""
 #: parser/parse_cte.c:651
 #, c-format
 msgid "recursive query \"%s\" must not contain data-modifying statements"
-msgstr ""
+msgstr "la query ricorsica \"%s\" non può contenere istruzioni di modifica dei dati"
 
 #: parser/parse_cte.c:659
 #, c-format
@@ -11522,7 +11522,7 @@ msgstr ""
 #: rewrite/rewriteHandler.c:442 rewrite/rewriteManip.c:1040
 #, c-format
 msgid "conditional UNION/INTERSECT/EXCEPT statements are not implemented"
-msgstr ""
+msgstr "le istruzioni UNION/INTERSECT/EXCEPT non condizionali non sono implementate"
 
 #: parser/parse_utilcmd.c:2175
 #, c-format
@@ -12825,7 +12825,7 @@ msgstr ""
 #: rewrite/rewriteDefine.c:337
 #, c-format
 msgid "rules on SELECT must not contain data-modifying statements in WITH"
-msgstr ""
+msgstr "le regole su SELECT non possono contenere istruzioni di modifica dei dati nel WITH"
 
 #: rewrite/rewriteDefine.c:345
 #, c-format
@@ -12961,22 +12961,22 @@ msgstr ""
 #: rewrite/rewriteHandler.c:1884
 #, c-format
 msgid "DO INSTEAD NOTHING rules are not supported for data-modifying statements in WITH"
-msgstr ""
+msgstr "le regole DO INSTEAD NOTHING non sono supportate per istruzioni di modifica dei dati nel WITH"
 
 #: rewrite/rewriteHandler.c:1898
 #, c-format
 msgid "conditional DO INSTEAD rules are not supported for data-modifying statements in WITH"
-msgstr ""
+msgstr "le regole DO INSTEAD NOTHING condizionali non sono supportate per istruzioni di modifica dei dati nel WITH"
 
 #: rewrite/rewriteHandler.c:1902
 #, c-format
 msgid "DO ALSO rules are not supported for data-modifying statements in WITH"
-msgstr ""
+msgstr "le regole DO ALSO non sono supportate per istruzioni di modifica dei dati nel WITH"
 
 #: rewrite/rewriteHandler.c:1907
 #, c-format
 msgid "multi-statement DO INSTEAD rules are not supported for data-modifying statements in WITH"
-msgstr ""
+msgstr "le regole DO INSTEAD multi-istruzione non sono supportate per istruzioni di modifica dei dati nel WITH"
 
 #: rewrite/rewriteHandler.c:2061
 #, c-format
@@ -13016,7 +13016,7 @@ msgstr ""
 #: rewrite/rewriteManip.c:1028
 #, c-format
 msgid "conditional utility statements are not implemented"
-msgstr "le conditional utility statements non sono imlementate"
+msgstr "i comandi di utilità condizionali non sono imlementati"
 
 #: rewrite/rewriteManip.c:1193
 #, c-format
@@ -13301,9 +13301,9 @@ msgid "requested shared memory size overflows size_t"
 msgstr "la dimensione della memoria condivisa supera size_t"
 
 #: storage/ipc/standby.c:491 tcop/postgres.c:2929
-#, fuzzy, c-format
+#, c-format
 msgid "canceling statement due to conflict with recovery"
-msgstr "cancellazione statement scaduto verso timeout statement"
+msgstr "annullamento dell'istruzione a causa di un conflitto con recovery"
 
 #: storage/ipc/standby.c:492 tcop/postgres.c:2225
 #, c-format
@@ -13698,12 +13698,12 @@ msgstr "frontend message di tipo  %d non valido"
 #: tcop/postgres.c:886
 #, c-format
 msgid "statement: %s"
-msgstr "statement: %s"
+msgstr "istruzione: %s"
 
 #: tcop/postgres.c:1126
-#, fuzzy, c-format
+#, c-format
 msgid "duration: %s ms  statement: %s"
-msgstr "Durata (in millisecondi) dell'animazione "
+msgstr "durata: %s ms  istruzione: %s"
 
 #: tcop/postgres.c:1176
 #, fuzzy, c-format
@@ -13713,7 +13713,7 @@ msgstr "errore di analisi"
 #: tcop/postgres.c:1234
 #, c-format
 msgid "cannot insert multiple commands into a prepared statement"
-msgstr "non è consentito inserire comandi multipli in uno statement preparato"
+msgstr "non è consentito inserire comandi multipli in una istruzione preparata"
 
 #: tcop/postgres.c:1391
 #, c-format
@@ -13728,7 +13728,7 @@ msgstr "collega  %s a %s"
 #: tcop/postgres.c:1455 tcop/postgres.c:2274
 #, c-format
 msgid "unnamed prepared statement does not exist"
-msgstr "lo statemente senza nome preparato non esiste"
+msgstr "l'istruzione preparata senza nome non esiste"
 
 #: tcop/postgres.c:1497
 #, c-format
@@ -13736,9 +13736,9 @@ msgid "bind message has %d parameter formats but %d parameters"
 msgstr "il messaggio di bind ha %d i formati del parametro ma %d parametri"
 
 #: tcop/postgres.c:1503
-#, fuzzy, c-format
+#, c-format
 msgid "bind message supplies %d parameters, but prepared statement \"%s\" requires %d"
-msgstr "numero errato di parametri per l'istruzione preparata \"%s\""
+msgstr "il messaggio di bind fornisce %d paramatri, ma l'istruzione preparata \"%s\" ne richiede %d"
 
 #: tcop/postgres.c:1670
 #, c-format
@@ -13859,14 +13859,14 @@ msgid "connection to client lost"
 msgstr "connessione al server persa\n"
 
 #: tcop/postgres.c:2892
-#, fuzzy, c-format
+#, c-format
 msgid "canceling authentication due to timeout"
-msgstr "cancellazione statement scaduto verso timeout statement"
+msgstr "annullamento dell'autenticazione a causa di timeout"
 
 #: tcop/postgres.c:2901
 #, c-format
 msgid "canceling statement due to statement timeout"
-msgstr "cancellazione statement scaduto verso timeout statement"
+msgstr "annullamento dell'istruzione a causa di timeout"
 
 #: tcop/postgres.c:2910
 #, c-format
@@ -13876,7 +13876,7 @@ msgstr "autovacuum task in eliminazione"
 #: tcop/postgres.c:2945
 #, c-format
 msgid "canceling statement due to user request"
-msgstr "cancello la azio bloccata per richiesta dell'utente"
+msgstr "annullamento dell'istruzione su richiesta dell'utente"
 
 #: tcop/postgres.c:3073 tcop/postgres.c:3095
 #, c-format
@@ -16774,7 +16774,7 @@ msgstr "LOCATION:  %s:%d\n"
 
 #: utils/error/elog.c:2391
 msgid "STATEMENT:  "
-msgstr "STATEMENT:  "
+msgstr "ISTRUZIONE:  "
 
 #. translator: This string will be truncated at 47
 #. characters expanded.
@@ -17403,7 +17403,7 @@ msgstr "Default di Connessione dei Client"
 
 #: utils/misc/guc.c:597
 msgid "Client Connection Defaults / Statement Behavior"
-msgstr "Default di Connessione dei Client / Comportamento degli Statement"
+msgstr "Valori Predefiniti Connessioni Client / Comportamento Istruzioni"
 
 #: utils/misc/guc.c:599
 msgid "Client Connection Defaults / Locale and Formatting"
@@ -17570,9 +17570,8 @@ msgid "Reinitialize server after backend crash."
 msgstr ""
 
 #: utils/misc/guc.c:909
-#, fuzzy
 msgid "Logs the duration of each completed SQL statement."
-msgstr "Inserisce nel log la durata di ogni statement SQL completato."
+msgstr "Registra nel log la durata di ogni istruzione SQL completata."
 
 #: utils/misc/guc.c:918
 msgid "Logs each query's parse tree."
@@ -17995,9 +17994,8 @@ msgid "Sets the maximum number of simultaneously prepared transactions."
 msgstr "Sefinisc il numero massimo di transazioni prepared contemporanee."
 
 #: utils/misc/guc.c:1853
-#, fuzzy
 msgid "Sets the maximum allowed duration of any statement."
-msgstr "Definisce la durata massima consentita per un qualsiasi statement."
+msgstr "Imposta la durata massima consentita per qualsiasi istruzione."
 
 #: utils/misc/guc.c:1854
 msgid "A value of 0 turns off the timeout."
@@ -18101,9 +18099,8 @@ msgid "This affects real, double precision, and geometric data types. The parame
 msgstr "Ciò ha effetto sui tipi di dati REAL, DOUBLE PRECISION e  geometrici. Il valore del parametro è sommato al numero standard di cifre (FLT_DIG o DBL_DIG a seconda dei casi)."
 
 #: utils/misc/guc.c:2067
-#, fuzzy
 msgid "Sets the minimum execution time above which statements will be logged."
-msgstr "Definisce il tempo minimo di esecuzione oltre il quale gli statement vengono registrati nel log."
+msgstr "Imposta il tempo minimo di esecuzione oltre il quale le istruzioni vengono registrate nel log."
 
 #: utils/misc/guc.c:2069
 #, fuzzy
@@ -18628,12 +18625,11 @@ msgstr "Controlla livelli di messaggi registrati"
 
 #: utils/misc/guc.c:3166
 msgid "Causes all statements generating error at or above this level to be logged."
-msgstr "Fa in modo che tutti gli eventi generanti errore sopra o sotto questo livello siano registrati nel log."
+msgstr "Fa in modo che tutti gli eventi che generano errore a questo livello o a un livello superiore siano registrati nel log."
 
 #: utils/misc/guc.c:3177
-#, fuzzy
 msgid "Sets the type of statements logged."
-msgstr "Imposta il tipo di puntatori del mouse da usare."
+msgstr "Imposta il tipo di istruzioni registrato nel log."
 
 #: utils/misc/guc.c:3187
 #, fuzzy
@@ -18856,14 +18852,14 @@ msgid "SSL is not supported by this build"
 msgstr "<b>SSL non è supportato in questa compilazione di Evolution</b>"
 
 #: utils/misc/guc.c:8451
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot enable parameter when \"log_statement_stats\" is true."
-msgstr "non è possibile abilitare il paramentro quando \"log_statement_stats\" è abilitato"
+msgstr "Non è possibile abilitare il parametro quando \"log_statement_stats\" è attivo."
 
 #: utils/misc/guc.c:8463
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot enable \"log_statement_stats\" when \"log_parser_stats\", \"log_planner_stats\", or \"log_executor_stats\" is true."
-msgstr "non è possibile abilitare  \"log_statement_stats\" quando \"log_parser_stats\", \"log_planner_stats\", o \"log_executor_stats\" sono abilitato."
+msgstr "Impossibile abilitare \"log_statement_stats\" quando \"log_parser_stats\", \"log_planner_stats\" o \"log_executor_stats\" è attivo."
 
 #: utils/misc/help_config.c:131
 #, c-format
@@ -18992,9 +18988,9 @@ msgstr "colonna \"%s\"duplicata"
 
 #  translator: %s represents an SQL statement name
 #: utils/time/snapmgr.c:774
-#, fuzzy, c-format
+#, c-format
 msgid "cannot export a snapshot from a subtransaction"
-msgstr "impossibile eseguire %s all'interno di una sottotransazione"
+msgstr "impossibile esportare uno snapshot da una sottotransazione"
 
 #: utils/time/snapmgr.c:924 utils/time/snapmgr.c:929 utils/time/snapmgr.c:934
 #: utils/time/snapmgr.c:949 utils/time/snapmgr.c:954 utils/time/snapmgr.c:959

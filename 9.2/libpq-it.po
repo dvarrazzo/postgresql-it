@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-25 15:26+0100\n"
+"PO-Revision-Date: 2012-10-28 19:51+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -484,7 +484,7 @@ msgstr "il testo del comando è un puntatore nullo\n"
 
 #: fe-exec.c:1209 fe-exec.c:1304
 msgid "statement name is a null pointer\n"
-msgstr "il nome dello statement è un puntatore nullo\n"
+msgstr "il nome dell'istruzione è un puntatore nullo\n"
 
 #: fe-exec.c:1224 fe-exec.c:1381 fe-exec.c:2075 fe-exec.c:2273
 msgid "function requires at least protocol version 3.0\n"

@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-28 03:20+0100\n"
+"PO-Revision-Date: 2012-10-28 19:57+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -377,37 +377,37 @@ msgstr "gli array multidimensionali per tipi dato semplici non sono supportati"
 #: preproc.y:1526
 #, c-format
 msgid "AT option not allowed in CLOSE DATABASE statement"
-msgstr "l'opzione AT non è permessa nel comando CLOSE DATABASE"
+msgstr "l'opzione AT non è permessa nell'istruzione CLOSE DATABASE"
 
 #: preproc.y:1723
 #, c-format
 msgid "AT option not allowed in CONNECT statement"
-msgstr "l'opzione AT non è permessa nel comando CONNECT"
+msgstr "l'opzione AT non è permessa nell'istruzione CONNECT"
 
 #: preproc.y:1757
 #, c-format
 msgid "AT option not allowed in DISCONNECT statement"
-msgstr "l'opzione AT non è permessa nel comando DISCONNECT"
+msgstr "l'opzione AT non è permessa nell'istruzione DISCONNECT"
 
 #: preproc.y:1812
 #, c-format
 msgid "AT option not allowed in SET CONNECTION statement"
-msgstr "l'opzione AT non è permessa nel comando SET CONNECTION"
+msgstr "l'opzione AT non è permessa nell'istruzione SET CONNECTION"
 
 #: preproc.y:1834
 #, c-format
 msgid "AT option not allowed in TYPE statement"
-msgstr "l'opzione AT non è permessa nel comando TYPE"
+msgstr "l'opzione AT non è permessa nell'istruzione TYPE"
 
 #: preproc.y:1843
 #, c-format
 msgid "AT option not allowed in VAR statement"
-msgstr "l'opzione AT non è permessa nel comando VAR"
+msgstr "l'opzione AT non è permessa nell'istruzione VAR"
 
 #: preproc.y:1850
 #, c-format
 msgid "AT option not allowed in WHENEVER statement"
-msgstr "l'opzione AT non è permessa nel comando WHENEVER"
+msgstr "l'opzione AT non è permessa nell'istruzione WHENEVER"
 
 #: preproc.y:2204 preproc.y:3489 preproc.y:4658 preproc.y:4667 preproc.y:4952
 #: preproc.y:7343 preproc.y:7348 preproc.y:7353 preproc.y:9695 preproc.y:10242
@@ -503,7 +503,7 @@ msgstr "tipo dato non valido"
 #: preproc.y:12794 preproc.y:12811
 #, c-format
 msgid "incomplete statement"
-msgstr "comando incompleto"
+msgstr "istruzione incompleta"
 
 #: preproc.y:12797 preproc.y:12814
 #, c-format
@@ -533,7 +533,7 @@ msgstr "i puntatori a varchar non sono implementati"
 #: preproc.y:13625 preproc.y:13650
 #, c-format
 msgid "using unsupported DESCRIBE statement"
-msgstr "si sta utilizzando una dichiarazione non supportata DESCRIBE"
+msgstr "si sta utilizzando una istruzione DESCRIBE non supportata"
 
 #: preproc.y:13897
 #, c-format
@@ -673,4 +673,4 @@ msgstr "gli array multidimensionali per strutture non sono supportati"
 #~ msgstr "la condizione dichiarata INITIALLY DEFERRED  deve essere DEFERRABLE"
 
 #~ msgid "AT option not allowed in DEALLOCATE statement"
-#~ msgstr "l'opzione AT non è permessa nel comando DEALLOCATE"
+#~ msgstr "l'opzione AT non è permessa nell'istruzione DEALLOCATE"

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-26 17:39+0100\n"
+"PO-Revision-Date: 2012-10-28 19:52+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -3830,7 +3830,7 @@ msgstr "definisci una nuova vista"
 
 #: sql_help.h:557
 msgid "deallocate a prepared statement"
-msgstr "dealloca una query preparata"
+msgstr "dealloca una istruzione preparata"
 
 #: sql_help.h:562
 msgid "define a cursor"
@@ -3974,11 +3974,11 @@ msgstr "elimina una vista"
 
 #: sql_help.h:752
 msgid "execute a prepared statement"
-msgstr "esegui una query preparata"
+msgstr "esegui una istruzione preparata"
 
 #: sql_help.h:757
 msgid "show the execution plan of a statement"
-msgstr "mostra il piano di esecuzione di una query"
+msgstr "mostra il piano di esecuzione di una istruzione"
 
 #: sql_help.h:762
 msgid "retrieve rows from a query using a cursor"
@@ -4014,7 +4014,7 @@ msgstr "genera una notifica"
 
 #: sql_help.h:802
 msgid "prepare a statement for execution"
-msgstr "prepara un comando per l'esecuzione"
+msgstr "prepara una istruzione per l'esecuzione"
 
 #: sql_help.h:807
 msgid "prepare the current transaction for two-phase commit"

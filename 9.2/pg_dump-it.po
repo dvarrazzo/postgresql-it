@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-26 18:50+0100\n"
+"PO-Revision-Date: 2012-10-28 19:55+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1135,7 +1135,7 @@ msgstr "errore interno -- né th né fh specificato in tarReadRaw()\n"
 #: pg_backup_tar.c:677
 #, c-format
 msgid "unexpected COPY statement syntax: \"%s\"\n"
-msgstr "sintassi del comando COPY imprevista: \"%s\"\n"
+msgstr "sintassi dell'istruzione COPY imprevista: \"%s\"\n"
 
 #: pg_backup_tar.c:880
 #, c-format
@@ -2350,10 +2350,10 @@ msgstr ""
 #~ msgstr "ripristino della OID del large object %u\n"
 
 #~ msgid "invalid COPY statement -- could not find \"from stdin\" in string \"%s\" starting at position %lu\n"
-#~ msgstr "istruzione per la COPY non valida -- non è possibile trovare \"from stdin\" nella stringa \"%s\" partendo dalla posizione%lu\n"
+#~ msgstr "istruzione COPY non valida -- non è possibile trovare \"from stdin\" nella stringa \"%s\" partendo dalla posizione%lu\n"
 
 #~ msgid "invalid COPY statement -- could not find \"copy\" in string \"%s\"\n"
-#~ msgstr "istruzione per la COPY non valida -- non è possibile trovare \"copy\" nella stringa \"%s\"\n"
+#~ msgstr "istruzione COPY non valida -- non è possibile trovare \"copy\" nella stringa \"%s\"\n"
 
 #~ msgid "could not close large object file\n"
 #~ msgstr "non è possibile chiudere il file large object\n"
