@@ -5,6 +5,13 @@ MOS = $(patsubst %.po,%.mo,$(POS))
 
 all: $(MOS)
 
+rewrap:
+	for f in $$(git st --porcelain *.po | grep " M " | cut -c 8-); do \
+		echo $$f; \
+		msgcat --no-wrap $$f | sponge $$f; \
+	done
+
+
 clean:
 	rm -f $(MOS)
 
