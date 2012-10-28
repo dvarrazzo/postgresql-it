@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-28 19:52+0100\n"
+"PO-Revision-Date: 2012-10-28 23:52+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1425,7 +1425,7 @@ msgstr "Lista dei server esterni"
 #: describe.c:3924
 #, c-format
 msgid "The server (version %d.%d) does not support user mappings.\n"
-msgstr "IL server (versione %d.%d) non supporta le mappature utente.\n"
+msgstr "IL server (versione %d.%d) non supporta la mappatura di utenti.\n"
 
 #: describe.c:3933 describe.c:3994
 msgid "Server"
@@ -1437,7 +1437,7 @@ msgstr "Nome utente"
 
 #: describe.c:3959
 msgid "List of user mappings"
-msgstr "Lista delle mappature utenti"
+msgstr "Lista delle mappature degli utenti"
 
 #: describe.c:3982
 #, c-format
@@ -3662,7 +3662,7 @@ msgstr "cambia la definizione di un tipo"
 
 #: sql_help.h:337
 msgid "change the definition of a user mapping"
-msgstr "cambia la definizione di una mappatura utente"
+msgstr "cambia la definizione di una mappatura degli"
 
 #: sql_help.h:342
 msgid "change the definition of a view"
@@ -3966,7 +3966,7 @@ msgstr "elimina un tipo dato"
 
 #: sql_help.h:737
 msgid "remove a user mapping for a foreign server"
-msgstr "elimina la mappatura di un utente per un server esterno"
+msgstr "elimina la mappatura degli utenti per un server esterno"
 
 #: sql_help.h:742
 msgid "remove a view"

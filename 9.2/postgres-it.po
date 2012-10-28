@@ -2779,7 +2779,7 @@ msgstr "server %s"
 #: catalog/dependency.c:2838
 #, c-format
 msgid "user mapping for %s"
-msgstr "mappatura utente per %s"
+msgstr "mappatura utenti per %s"
 
 #: catalog/dependency.c:2872
 #, c-format
@@ -5077,12 +5077,12 @@ msgstr "cambiare il validatore del wrapper di dati esterni può rendere non vali
 #: commands/foreigncmds.c:1152
 #, c-format
 msgid "user mapping \"%s\" already exists for server %s"
-msgstr "la mappatura \"%s\" esiste già per il server %s"
+msgstr "la mappatura utenti \"%s\" esiste già per il server %s"
 
 #: commands/foreigncmds.c:1239 commands/foreigncmds.c:1344
 #, c-format
 msgid "user mapping \"%s\" does not exist for the server"
-msgstr "la mappatura utente \"%s\" non esiste per il server"
+msgstr "la mappatura utenti \"%s\" non esiste per il server"
 
 #: commands/foreigncmds.c:1331
 #, c-format
@@ -5092,7 +5092,7 @@ msgstr "il server non esiste, saltato"
 #: commands/foreigncmds.c:1349
 #, c-format
 msgid "user mapping \"%s\" does not exist for the server, skipping"
-msgstr "la mappatura utente \"%s\" non esiste per il server, saltata"
+msgstr "la mappatura utenti \"%s\" non esiste per il server, saltata"
 
 #: commands/functioncmds.c:102
 #, c-format
