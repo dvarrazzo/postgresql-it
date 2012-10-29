@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 13:37+0100\n"
+"PO-Revision-Date: 2012-10-29 18:20+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -531,7 +531,7 @@ msgstr "%s: segnale di interruzione ricevuto, sto terminando.\n"
 #: pg_receivexlog.c:114
 #, c-format
 msgid "%s: could not open directory \"%s\": %s\n"
-msgstr "%s: impossibile aprire la cartella \"%s\": %s\n"
+msgstr "%s: impossibile aprire la directory \"%s\": %s\n"
 
 #: pg_receivexlog.c:155
 #, c-format

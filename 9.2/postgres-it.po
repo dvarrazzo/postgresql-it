@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 17:39+0100\n"
+"PO-Revision-Date: 2012-10-29 18:20+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -66,7 +66,7 @@ msgstr "impossibile ottenere la giunzione per \"%s\": %s\n"
 #: ../port/dirmod.c:451
 #, c-format
 msgid "could not open directory \"%s\": %s\n"
-msgstr "Impossibile aprire la cartella  \"%s\": %s\n"
+msgstr "Impossibile aprire la directory  \"%s\": %s\n"
 
 #: ../port/dirmod.c:488
 #, c-format
