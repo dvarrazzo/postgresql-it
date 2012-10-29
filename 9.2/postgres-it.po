@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 01:04+0100\n"
+"PO-Revision-Date: 2012-10-29 02:00+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Bookmarks: 2816,1609,-1,-1,-1,-1,1296,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 2816,1935,-1,-1,-1,-1,1296,-1,-1,-1\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
@@ -9145,7 +9145,7 @@ msgstr "segreto RADIUS non specificato"
 #: libpq/auth.c:2488 libpq/hba.c:1543
 #, c-format
 msgid "could not translate RADIUS server name \"%s\" to address: %s"
-msgstr "impossibile tradurre il nome del server RADIUS \"%s\" in indirizzo: %s"
+msgstr "impossibile convertire il nome del server RADIUS \"%s\" in indirizzo: %s"
 
 #: libpq/auth.c:2516
 #, c-format
@@ -9386,43 +9386,42 @@ msgstr "impossibile accettare connessioni SSH: %s"
 #: libpq/be-secure.c:984
 #, c-format
 msgid "SSL certificate's common name contains embedded null"
-msgstr ""
+msgstr "Il nome comune del certificato SSL contiene un null"
 
 #: libpq/be-secure.c:995
-#, fuzzy, c-format
+#, c-format
 msgid "SSL connection from \"%s\""
-msgstr "Connessione SSL fallita"
+msgstr "connessione SSL da \"%s\""
 
 #: libpq/be-secure.c:1046
-#, fuzzy
 msgid "no SSL error reported"
 msgstr "nessun errore SSL riportato"
 
 #: libpq/be-secure.c:1050
-#, fuzzy, c-format
+#, c-format
 msgid "SSL error code %lu"
 msgstr "codice di errore SSL: %lu"
 
 #: libpq/hba.c:181
 #, c-format
 msgid "authentication file token too long, skipping: \"%s\""
-msgstr ""
+msgstr "token del file di autenticazione troppo lungo, saltato: \"%s\""
 
 #: libpq/hba.c:326
-#, fuzzy, c-format
+#, c-format
 msgid "could not open secondary authentication file \"@%s\" as \"%s\": %m"
-msgstr "Impossibile aprire '%s' come SUN-raster-file"
+msgstr "impossibile aprire il file secondario di autenticazione \"@%s\" come \"%s\": %m"
 
 #: libpq/hba.c:595
-#, fuzzy, c-format
+#, c-format
 msgid "could not translate host name \"%s\" to address: %s"
-msgstr "impossibile convertire l'host name \"%s\" all'indirizzo: %s\n"
+msgstr "impossibile convertire il nome host \"%s\" in indirizzo: %s"
 
 #. translator: the second %s is a list of auth methods
 #: libpq/hba.c:746
-#, fuzzy, c-format
+#, c-format
 msgid "authentication option \"%s\" is only valid for authentication methods %s"
-msgstr "autenticazione PAM fallita per l'utente \"%s\""
+msgstr "l'opzione di autenticazione \"%s\" è valida solo per i metodi di autenticazione %s"
 
 #: libpq/hba.c:748 libpq/hba.c:764 libpq/hba.c:795 libpq/hba.c:841
 #: libpq/hba.c:854 libpq/hba.c:876 libpq/hba.c:885 libpq/hba.c:908
@@ -9434,288 +9433,282 @@ msgstr "autenticazione PAM fallita per l'utente \"%s\""
 #: libpq/hba.c:1308 libpq/hba.c:1345 libpq/hba.c:1355 libpq/hba.c:1408
 #: libpq/hba.c:1420 libpq/hba.c:1433 libpq/hba.c:1467 libpq/hba.c:1545
 #: libpq/hba.c:1563 libpq/hba.c:1584 tsearch/ts_locale.c:182
-#, fuzzy, c-format
+#, c-format
 msgid "line %d of configuration file \"%s\""
-msgstr ""
-"il file di configurazione è:\n"
-"    %s\n"
+msgstr "riga %d del file di configurazione \"%s\""
 
 #: libpq/hba.c:762
-#, fuzzy, c-format
+#, c-format
 msgid "authentication method \"%s\" requires argument \"%s\" to be set"
-msgstr "il metodo di autenticazione %u non è supportato\n"
+msgstr "il metodo di autenticazione \"%s\" richiede che l'argomenti \"%s\" sia impostato"
 
 #: libpq/hba.c:783
-#, fuzzy, c-format
+#, c-format
 msgid "missing entry in file \"%s\" at end of line %d"
-msgstr "Fine riga mancante nel file wcprops per '%s'"
+msgstr "voce mancante nel file \"%s\" alla fine della riga %d"
 
 #: libpq/hba.c:794
-#, fuzzy, c-format
+#, c-format
 msgid "multiple values in ident field"
-msgstr "clausola DEFERRABLE/NOT DEFERRABLE multiple non consentite"
+msgstr "più di un valore nel campo ident"
 
 #: libpq/hba.c:839
-#, fuzzy, c-format
+#, c-format
 msgid "multiple values specified for connection type"
-msgstr "tipo di connessione non valido: %s"
+msgstr "più di un valore specificato per il tipo di connessione"
 
 #: libpq/hba.c:840
 #, c-format
 msgid "Specify exactly one connection type per line."
-msgstr ""
+msgstr "Specifica esattamente un tipo di connessione per riga."
 
 #: libpq/hba.c:853
-#, fuzzy, c-format
+#, c-format
 msgid "local connections are not supported by this build"
-msgstr "<b>SSL non è supportato in questa compilazione di Evolution</b>"
+msgstr "le connessioni locali non sono supportate in questo binario"
 
 #: libpq/hba.c:874
 #, c-format
 msgid "hostssl requires SSL to be turned on"
-msgstr ""
+msgstr "hostssl richiede che SSL sia attivo"
 
 #: libpq/hba.c:875
 #, c-format
 msgid "Set ssl = on in postgresql.conf."
-msgstr ""
+msgstr "Imposta ssl = on in postgresql.conf."
 
 #: libpq/hba.c:883
-#, fuzzy, c-format
+#, c-format
 msgid "hostssl is not supported by this build"
-msgstr "<b>SSL non è supportato in questa compilazione di Evolution</b>"
+msgstr "hostssl non è supportato in questo binario"
 
 #: libpq/hba.c:884
-#, fuzzy, c-format
+#, c-format
 msgid "Compile with --with-openssl to use SSL connections."
-msgstr "impossibile stabilire una connessione SSL: %s\n"
+msgstr "Compila con --with-openssl per usare connessioni SSL."
 
 #: libpq/hba.c:906
-#, fuzzy, c-format
+#, c-format
 msgid "invalid connection type \"%s\""
-msgstr "Qualsiasi tipo di connessione"
+msgstr "tipo di connession \"%s\" non valido"
 
 #: libpq/hba.c:919
-#, fuzzy, c-format
+#, c-format
 msgid "end-of-line before database specification"
-msgstr "eof inatteso prima della fine della riga %d"
+msgstr "fine riga prima della specificazione del database"
 
 #: libpq/hba.c:938
-#, fuzzy, c-format
+#, c-format
 msgid "end-of-line before role specification"
-msgstr "eof inatteso prima della fine della riga %d"
+msgstr "fine riga prima della specificazione del ruolo"
 
 #: libpq/hba.c:959
 #, c-format
 msgid "end-of-line before IP address specification"
-msgstr ""
+msgstr "fine riga prima della specificazione dell'indirizzo IP"
 
 #: libpq/hba.c:969
 #, c-format
 msgid "multiple values specified for host address"
-msgstr ""
+msgstr "più di un valore specificato per l'indirizzo host"
 
 #: libpq/hba.c:970
 #, c-format
 msgid "Specify one address range per line."
-msgstr ""
+msgstr "Specifica un intervallo di indirizzi per riga."
 
 #: libpq/hba.c:1024
-#, fuzzy, c-format
+#, c-format
 msgid "invalid IP address \"%s\": %s"
-msgstr "Indirizzo IP del server:"
+msgstr "indirizzo IP non valido \"%s\": %s"
 
 #: libpq/hba.c:1042
 #, c-format
 msgid "specifying both host name and CIDR mask is invalid: \"%s\""
-msgstr ""
+msgstr "specificare sia un nome host che una maschera CIDR non è consentito: \"%s\""
 
 #: libpq/hba.c:1054
-#, fuzzy, c-format
+#, c-format
 msgid "invalid CIDR mask in address \"%s\""
-msgstr "\"%c\" non è un carattere valido in un indirizzo per la memorizzazione della configurazione"
+msgstr "maschera CIDR non valida nell'indirizzo \"%s\""
 
 #: libpq/hba.c:1071
-#, fuzzy, c-format
+#, c-format
 msgid "end-of-line before netmask specification"
-msgstr "eof inatteso prima della fine della riga %d"
+msgstr "fine riga prima della specificazione della maschera di rete"
 
 #: libpq/hba.c:1072
 #, c-format
 msgid "Specify an address range in CIDR notation, or provide a separate netmask."
-msgstr ""
+msgstr "Specifica un intervallo di indirizzi in notazione CIDR, oppure fornisci una maschera di rete separata."
 
 #: libpq/hba.c:1082
 #, c-format
 msgid "multiple values specified for netmask"
-msgstr ""
+msgstr "più di un valore specificato per la maschera di rete"
 
 #: libpq/hba.c:1095
-#, fuzzy, c-format
+#, c-format
 msgid "invalid IP mask \"%s\": %s"
-msgstr "Applica la maschera di retinatura dello sfondo"
+msgstr "maschera IP non valida \"%s\": %s"
 
 #: libpq/hba.c:1112
 #, c-format
 msgid "IP address and mask do not match"
-msgstr ""
+msgstr "l'indirizzo IP e la maschera non combaciano"
 
 #: libpq/hba.c:1127
-#, fuzzy, c-format
+#, c-format
 msgid "end-of-line before authentication method"
-msgstr "eof inatteso prima della fine della riga %d"
+msgstr "fine riga prima del metodo di autenticazione"
 
 #: libpq/hba.c:1137
-#, fuzzy, c-format
+#, c-format
 msgid "multiple values specified for authentication type"
-msgstr "attenzione: il file di origine %s è stato specificato più di una volta"
+msgstr "più di un valore specificato per il tipo di autenticazione"
 
 #: libpq/hba.c:1138
 #, c-format
 msgid "Specify exactly one authentication type per line."
-msgstr ""
+msgstr "Specifica esattamente un tipo di autenticazione per riga."
 
 #: libpq/hba.c:1211
-#, fuzzy, c-format
+#, c-format
 msgid "invalid authentication method \"%s\""
-msgstr "Metodo di autenticazione non supportato"
+msgstr "metodo di autenticazione \"%s\" non valido"
 
 #: libpq/hba.c:1222
-#, fuzzy, c-format
+#, c-format
 msgid "invalid authentication method \"%s\": not supported by this build"
-msgstr "il metodo di autenticazione %u non è supportato\n"
+msgstr "metodo di autenticazione \"%s\" non valido: non supportato da questo binario"
 
 #: libpq/hba.c:1243
-#, fuzzy, c-format
+#, c-format
 msgid "krb5 authentication is not supported on local sockets"
-msgstr "Autenticazione Kerberos 5 non supportata\n"
+msgstr "l'autenticazione krb5 non è supportata su socket locali"
 
 #: libpq/hba.c:1254
-#, fuzzy, c-format
+#, c-format
 msgid "gssapi authentication is not supported on local sockets"
-msgstr "Autenticazione Kerberos 5 non supportata\n"
+msgstr "l'autenticazione gssapi non è supportata su socket locali"
 
 #: libpq/hba.c:1265
-#, fuzzy, c-format
+#, c-format
 msgid "peer authentication is only supported on local sockets"
-msgstr "Autenticazione Kerberos 5 non supportata\n"
+msgstr "l'autenticazione peer è supportata solo su socket locali"
 
 #: libpq/hba.c:1282
-#, fuzzy, c-format
+#, c-format
 msgid "cert authentication is only supported on hostssl connections"
-msgstr "kerberos 4 supporta solo connessione IPv4"
+msgstr "l'autenticazione cert è supportata solo su connessioni hostssl"
 
 #: libpq/hba.c:1307
 #, c-format
 msgid "authentication option not in name=value format: %s"
-msgstr ""
+msgstr "opzione di autenticazione non in formato nome=valore: %s"
 
 #: libpq/hba.c:1344
 #, c-format
 msgid "cannot use ldapbasedn, ldapbinddn, ldapbindpasswd, or ldapsearchattribute together with ldapprefix"
-msgstr ""
+msgstr "impossibile usare ldapbasedn, ldapbinddn, ldapbindpasswd o ldapsearchattribute insieme a ldapprefix"
 
 #: libpq/hba.c:1354
-#, fuzzy, c-format
+#, c-format
 msgid "authentication method \"ldap\" requires argument \"ldapbasedn\", \"ldapprefix\", or \"ldapsuffix\" to be set"
-msgstr "il metodo di autenticazione %u non è supportato\n"
+msgstr "il metodo di autenticazione \"ldap\" richede che gli argomenti \"ldapbasedn\", \"ldapprefix\" o \"ldapsuffix\" siano impostati"
 
 #: libpq/hba.c:1394
-#, fuzzy
 msgid "ident, peer, krb5, gssapi, sspi, and cert"
-msgstr "ident, krb5, gssapi, sspi e cert"
+msgstr "ident, peer, krb5, gssapi, sspi e cert"
 
 #: libpq/hba.c:1407
 #, c-format
 msgid "clientcert can only be configured for \"hostssl\" rows"
-msgstr ""
+msgstr "il clientcert può essere configurato solo per le righe \"hostssl\""
 
 #: libpq/hba.c:1418
 #, c-format
 msgid "client certificates can only be checked if a root certificate store is available"
-msgstr ""
+msgstr "il certificato del client può essere controllato solo se un root certificate store è disponibile"
 
 #: libpq/hba.c:1419
-#, fuzzy, c-format
+#, c-format
 msgid "Make sure the configuration parameter \"ssl_ca_file\" is set."
-msgstr "parametri di configurazione non riconosciuti \"%s\""
+msgstr "Assicurati che il parametro di configurazione \"ssl_ca_file\" sia impostato."
 
 #: libpq/hba.c:1432
 #, c-format
 msgid "clientcert can not be set to 0 when using \"cert\" authentication"
-msgstr ""
+msgstr "clientcert non può essere impostato a 0 quando si usa l'autenticazione \"cert\""
 
 #: libpq/hba.c:1466
-#, fuzzy, c-format
+#, c-format
 msgid "invalid LDAP port number: \"%s\""
-msgstr "LDAP URL \"%s\" non corretta: numero di port non corretto\n"
+msgstr "numero di porta LDAP non valido: \"%s\""
 
 #: libpq/hba.c:1512 libpq/hba.c:1520
-#, fuzzy
 msgid "krb5, gssapi, and sspi"
 msgstr "krb5, gssapi e sspi"
 
 #: libpq/hba.c:1562
-#, fuzzy, c-format
+#, c-format
 msgid "invalid RADIUS port number: \"%s\""
-msgstr "LDAP URL \"%s\" non corretta: numero di port non corretto\n"
+msgstr "numero di porta RADIUS non valido: \"%s\""
 
 #: libpq/hba.c:1582
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized authentication option name: \"%s\""
-msgstr ""
-"Uso: %s NOME\n"
-" o:  %s OPZIONE\n"
+msgstr "nome di opzione di autenticazione non riconosciuto: \"%s\""
 
 #: libpq/hba.c:1771
-#, fuzzy, c-format
+#, c-format
 msgid "configuration file \"%s\" contains no entries"
-msgstr "non esiste la chiave multipla %s"
+msgstr "il file di configurazione \"%s\" non contiene alcuna voce"
 
 #: libpq/hba.c:1878
-#, fuzzy, c-format
+#, c-format
 msgid "invalid regular expression \"%s\": %s"
-msgstr "Espressione regolare non valida"
+msgstr "espressione regolare non valida \"%s\": %s"
 
 #: libpq/hba.c:1901
-#, fuzzy, c-format
+#, c-format
 msgid "regular expression match for \"%s\" failed: %s"
-msgstr "%s: nessuna espressione regolare corretta per il campo `%s': %s"
+msgstr "corrispondenza dell'espressione regolare \"%s\" fallita: %s"
 
 #: libpq/hba.c:1919
 #, c-format
 msgid "regular expression \"%s\" has no subexpressions as requested by backreference in \"%s\""
-msgstr ""
+msgstr "l'espressione regolare \"%s\" non ha la sottoespressione richiesta dal riferimento in \"%s\""
 
 #: libpq/hba.c:2018
 #, c-format
 msgid "provided user name (%s) and authenticated user name (%s) do not match"
-msgstr ""
+msgstr "il nome utente fornito (%s) e il nome utente autenticato (%s) non combaciano"
 
 #: libpq/hba.c:2039
 #, c-format
 msgid "no match in usermap \"%s\" for user \"%s\" authenticated as \"%s\""
-msgstr ""
+msgstr "nessuna corrispondenza nella mappa utenti \"%s\" per l'utente \"%s\" autenticato come \"%s\""
 
 #: libpq/hba.c:2069
-#, fuzzy, c-format
+#, c-format
 msgid "could not open usermap file \"%s\": %m"
-msgstr "Impossibile aprire il file \"%s\" per la lettura"
+msgstr "impossibile aprire il file usermap \"%s\": %m"
 
 #: libpq/pqcomm.c:306
-#, fuzzy, c-format
+#, c-format
 msgid "could not translate host name \"%s\", service \"%s\" to address: %s"
-msgstr "impossibile rinominare il file \"%s\"in \"%s\": %m"
+msgstr "impossibile convertire il nome host \"%s\", servizio \"%s\" in indirizzo: %s"
 
 #: libpq/pqcomm.c:310
-#, fuzzy, c-format
+#, c-format
 msgid "could not translate service \"%s\" to address: %s"
-msgstr "impossibile convertire l'host name \"%s\" all'indirizzo: %s\n"
+msgstr "impossibile convertire il servizio \"%s\" in indirizzo: %s"
 
 #: libpq/pqcomm.c:337
 #, c-format
 msgid "could not bind to all requested addresses: MAXLISTEN (%d) exceeded"
-msgstr ""
+msgstr "impossibile effettuare il bind di tutti gli indirizzi richiesti: MAXLISTEN (%d) superato"
 
 #: libpq/pqcomm.c:346
 msgid "IPv4"
@@ -9730,87 +9723,87 @@ msgid "Unix"
 msgstr "Unix"
 
 #: libpq/pqcomm.c:360
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized address family %d"
-msgstr "Famiglia di indirizzamento %u (AF_*) sconosciuta"
+msgstr "famiglia di indirizzi non riconosciuta %d"
 
 #. translator: %s is IPv4, IPv6, or Unix
 #: libpq/pqcomm.c:371
-#, fuzzy, c-format
+#, c-format
 msgid "could not create %s socket: %m"
-msgstr "impossibile creare il socket: %s\n"
+msgstr "impossibile creare il socket %s: %m"
 
 #: libpq/pqcomm.c:396
 #, c-format
 msgid "setsockopt(SO_REUSEADDR) failed: %m"
-msgstr ""
+msgstr "setsockopt(SO_REUSEADDR) fallito: %m"
 
 #: libpq/pqcomm.c:411
 #, c-format
 msgid "setsockopt(IPV6_V6ONLY) failed: %m"
-msgstr ""
+msgstr "setsockopt(IPV6_V6ONLY) fallito: %m"
 
 #. translator: %s is IPv4, IPv6, or Unix
 #: libpq/pqcomm.c:430
-#, fuzzy, c-format
+#, c-format
 msgid "could not bind %s socket: %m"
-msgstr "%s: impossibile mappare il socket"
+msgstr "impossibile effettuare il bind del socket %s: %m"
 
 #: libpq/pqcomm.c:433
 #, c-format
 msgid "Is another postmaster already running on port %d? If not, remove socket file \"%s\" and retry."
-msgstr ""
+msgstr "C'è già un altro postmaster in funzione sulla porta %d? Se non c'è, rimuovi il file socket \"%s\" e riprova."
 
 #: libpq/pqcomm.c:436
 #, c-format
 msgid "Is another postmaster already running on port %d? If not, wait a few seconds and retry."
-msgstr ""
+msgstr "C'è già un altro postmaster in funzione sulla porta %d? Se non c'è, aspetta alcuni secondi e riprova."
 
 #. translator: %s is IPv4, IPv6, or Unix
 #: libpq/pqcomm.c:469
-#, fuzzy, c-format
+#, c-format
 msgid "could not listen on %s socket: %m"
-msgstr "Impossibile eseguire listen() su un socket"
+msgstr "impossibile ascoltare sul socket %s: %m"
 
 #: libpq/pqcomm.c:554
-#, fuzzy, c-format
+#, c-format
 msgid "group \"%s\" does not exist"
 msgstr "il gruppo \"%s\" non esiste"
 
 #: libpq/pqcomm.c:564
-#, fuzzy, c-format
+#, c-format
 msgid "could not set group of file \"%s\": %m"
-msgstr "Il file chiavi non presenta il gruppo \"%s\""
+msgstr "impossibile impostare il gruppo del file \"%s\""
 
 #: libpq/pqcomm.c:575
-#, fuzzy, c-format
+#, c-format
 msgid "could not set permissions of file \"%s\": %m"
-msgstr "Impossibile determinare i permessi del file selezionato."
+msgstr "impossibile impostare i permessi del file \"%s\": %m"
 
 #: libpq/pqcomm.c:605
-#, fuzzy, c-format
+#, c-format
 msgid "could not accept new connection: %m"
-msgstr "Impossibile ottenere una schermata della connessione."
+msgstr "impossibile accettare nuove connessioni: %m"
 
 #: libpq/pqcomm.c:773
-#, fuzzy, c-format
+#, c-format
 msgid "could not set socket to non-blocking mode: %m"
-msgstr "impossibile creare il socket per la connessione Ident: %m"
+msgstr "impossibile impostare il socket in modalità non bloccante: %m"
 
 #: libpq/pqcomm.c:779
-#, fuzzy, c-format
+#, c-format
 msgid "could not set socket to blocking mode: %m"
-msgstr "impossibile inviare dati al server: %s\n"
+msgstr "impossibile impostare il socket in modalità bloccante: %m"
 
 #: libpq/pqcomm.c:831 libpq/pqcomm.c:921
-#, fuzzy, c-format
+#, c-format
 msgid "could not receive data from client: %m"
-msgstr "impossibile ricevere dati dal server: %s\n"
+msgstr "impossibile ricevere dati dal client: %m"
 
 #: libpq/pqcomm.c:1072
 #, c-format
 msgid "unexpected EOF within message length word"
-msgstr ""
+msgstr "fine file inattesa nella word della lunghezza del messaggio"
 
 #: libpq/pqcomm.c:1083
 #, c-format
@@ -9818,19 +9811,19 @@ msgid "invalid message length"
 msgstr "lunghezza del messaggio non valida"
 
 #: libpq/pqcomm.c:1105 libpq/pqcomm.c:1115
-#, fuzzy, c-format
+#, c-format
 msgid "incomplete message from client"
-msgstr "Messaggio dal canale di chat %s"
+msgstr "messaggio incompleto dal client"
 
 #: libpq/pqcomm.c:1245
-#, fuzzy, c-format
+#, c-format
 msgid "could not send data to client: %m"
-msgstr "impossibile inviare dati al server: %s\n"
+msgstr "impossibile inviare dati al client: %m"
 
 #: libpq/pqformat.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "no data left in message"
-msgstr "Nessun dato firmato nella firma"
+msgstr "nessun dato rimasto nel messaggio"
 
 #: libpq/pqformat.c:556 libpq/pqformat.c:574 libpq/pqformat.c:595
 #: utils/adt/arrayfuncs.c:1410 utils/adt/rowtypes.c:557
@@ -9839,9 +9832,9 @@ msgid "insufficient data left in message"
 msgstr "i dati rimasti nel messaggio non sono sufficienti"
 
 #: libpq/pqformat.c:636
-#, fuzzy, c-format
+#, c-format
 msgid "invalid string in message"
-msgstr "Stringa non valida nell'ambiente: %s"
+msgstr "stringa non valida nel messaggio"
 
 #: libpq/pqformat.c:652
 #, c-format
@@ -9854,24 +9847,29 @@ msgid "%s: setsysinfo failed: %s\n"
 msgstr "%s: setsysinfo fallita: %s\n"
 
 #: main/main.c:255
-#, fuzzy, c-format
+#, c-format
 msgid "%s: WSAStartup failed: %d\n"
-msgstr "aptitude ha dato errore"
+msgstr "%s: WSAStartup fallita: %d\n"
 
 #: main/main.c:274
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s is the PostgreSQL server.\n"
 "\n"
-msgstr "Questo computer è un server _WINS"
+msgstr ""
+"%s è il server PostgreSQL.\n"
+"\n"
 
 #: main/main.c:275
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage:\n"
 "  %s [OPTION]...\n"
 "\n"
-msgstr "Uso: %s [OPZIONE]\n"
+msgstr ""
+"Utilizzo:\n"
+"  %s [OPZIONE]...\n"
+"\n"
 
 #: main/main.c:276
 #, c-format
@@ -9879,111 +9877,109 @@ msgid "Options:\n"
 msgstr "Opzioni:\n"
 
 #: main/main.c:278
-#, fuzzy, c-format
+#, c-format
 msgid "  -A 1|0             enable/disable run-time assert checking\n"
-msgstr "  -P              disabilita il sistema degli indici\n"
+msgstr "  -A 1|0             abilita/disabilita il controllo delle asserzioni in esecuzione\n"
 
 #: main/main.c:280
 #, c-format
 msgid "  -B NBUFFERS        number of shared buffers\n"
-msgstr ""
+msgstr "  -B NBUFFERS        numero di buffer condivisi\n"
 
 #: main/main.c:281
-#, fuzzy, c-format
+#, c-format
 msgid "  -c NAME=VALUE      set run-time parameter\n"
-msgstr "resetta un parametro al suo valore di base"
+msgstr "  -c NOME=VALORE     imposta un parametro di esecuzione\n"
 
 #: main/main.c:282
-#, fuzzy, c-format
+#, c-format
 msgid "  -C NAME            print value of run-time parameter, then exit\n"
-msgstr "  --help               mostra questo aiuto ed esce\n"
+msgstr "  -C NAME            stampa il valore del parametro di esecuzione ed esci\n"
 
 #: main/main.c:283
-#, fuzzy, c-format
+#, c-format
 msgid "  -d 1-5             debugging level\n"
-msgstr "Livello riempimento"
+msgstr "  -d 1-5             livello di debugging\n"
 
 #: main/main.c:284
-#, fuzzy, c-format
+#, c-format
 msgid "  -D DATADIR         database directory\n"
-msgstr "Impossibile creare la cartella del database!"
+msgstr "  -D DATADIR         directory del database\n"
 
 #: main/main.c:285
-#, fuzzy, c-format
+#, c-format
 msgid "  -e                 use European date input format (DMY)\n"
-msgstr "  -F, --freeze                    congela le informazioni per la transazione sulla riga\n"
+msgstr "  -e                 usa il formato date europeo (GMA)\n"
 
 #: main/main.c:286
-#, fuzzy, c-format
+#, c-format
 msgid "  -F                 turn fsync off\n"
-msgstr "Spegnere Bluetooth"
+msgstr "  -F                 disabilita fsync\n"
 
 #: main/main.c:287
-#, fuzzy, c-format
+#, c-format
 msgid "  -h HOSTNAME        host name or IP address to listen on\n"
-msgstr ""
-"       --bind-address=INDIRIZZO lega l'INDIRIZZO (nome dell'host o IP)\n"
-"                                all'host locale.\n"
+msgstr "  -h HOSTNAME        nome host o indirizzo IP su cui ascoltare\n"
 
 #: main/main.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "  -i                 enable TCP/IP connections\n"
-msgstr "_Vietare connessioni TCP al server X"
+msgstr "  -i                 abilita le connessioni TCP/IP\n"
 
 #: main/main.c:289
 #, c-format
 msgid "  -k DIRECTORY       Unix-domain socket location\n"
-msgstr ""
+msgstr "  -k DIRECTORY       locazione dei socket di dominio Unix\n"
 
 #: main/main.c:291
-#, fuzzy, c-format
+#, c-format
 msgid "  -l                 enable SSL connections\n"
-msgstr "  -l              abilita le connessioni SSL\n"
+msgstr "  -l                 abilita la connessione SSL\n"
 
 #: main/main.c:293
-#, fuzzy, c-format
+#, c-format
 msgid "  -N MAX-CONNECT     maximum number of allowed connections\n"
-msgstr "Definisce il numero massimo di connessioni concorrenti."
+msgstr "  -N MAX-CONNECT     numero massimo di connessioni consentite\n"
 
 #: main/main.c:294
 #, c-format
 msgid "  -o OPTIONS         pass \"OPTIONS\" to each server process (obsolete)\n"
-msgstr ""
+msgstr "  -o OPZIONI         passa \"OPZIONI\" ad ogni processo server (obsoleto)\n"
 
 #: main/main.c:295
-#, fuzzy, c-format
+#, c-format
 msgid "  -p PORT            port number to listen on\n"
-msgstr "Impossibile mettersi in ascolto sul socket: %s"
+msgstr "  -p PORT            numero di porta sul quale ascoltare\n"
 
 #: main/main.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "  -s                 show statistics after each query\n"
-msgstr "-a              mostra gli input dallo script"
+msgstr "  -s                 mostra le statistiche dopo ogni query\n"
 
 #: main/main.c:297
 #, c-format
 msgid "  -S WORK-MEM        set amount of memory for sorts (in kB)\n"
-msgstr ""
+msgstr "  -S WORK-MEM        imposta la dimensione della memoria per gli ordinamenti (in kB)\n"
 
 #: main/main.c:298
-#, fuzzy, c-format
+#, c-format
 msgid "  -V, --version      output version information, then exit\n"
-msgstr "  --version      mostra le informazioni sulla versione, poi esce\n"
+msgstr "  -V, --version      mostra informazioni sulla versione ed esci\n"
 
 #: main/main.c:299
-#, fuzzy, c-format
+#, c-format
 msgid "  --NAME=VALUE       set run-time parameter\n"
-msgstr "resetta un parametro al suo valore di base"
+msgstr "  --NOME=VALORE      imposta un parametro di esecuzione\n"
 
 #: main/main.c:300
 #, c-format
 msgid "  --describe-config  describe configuration parameters, then exit\n"
-msgstr ""
+msgstr "  --describe-config  descrivi i parametri di configurazione ed esci\n"
 
 #: main/main.c:301
-#, fuzzy, c-format
+#, c-format
 msgid "  -?, --help         show this help, then exit\n"
-msgstr "  --help         mostra questo help, poi esce\n"
+msgstr "  -?, --help         mostra questo aiuto ed esci\n"
 
 #: main/main.c:303
 #, c-format
@@ -9995,39 +9991,39 @@ msgstr ""
 "Opzioni per gli sviluppatori:\n"
 
 #: main/main.c:304
-#, fuzzy, c-format
+#, c-format
 msgid "  -f s|i|n|m|h       forbid use of some plan types\n"
-msgstr "  -f s|i|n|m|h    proibisce l'uso di alcuni  plan types\n"
+msgstr "  -f s|i|n|m|h       vieta l'uso di alcuni tipi di piano\n"
 
 #: main/main.c:305
-#, fuzzy, c-format
+#, c-format
 msgid "  -n                 do not reinitialize shared memory after abnormal exit\n"
-msgstr "\\p             mostra i contenuti del query buffer\n"
+msgstr "  -n                 non reinizializzare la memoria condivisa dopo un'uscita anormale\n"
 
 #: main/main.c:306
-#, fuzzy, c-format
+#, c-format
 msgid "  -O                 allow system table structure changes\n"
-msgstr "  -O              permette di modificare la struttura di alcune tabelle di sistema\n"
+msgstr "  -O                 consenti cambiamenti alla struttura delle tabelle di sistema\n"
 
 #: main/main.c:307
-#, fuzzy, c-format
+#, c-format
 msgid "  -P                 disable system indexes\n"
-msgstr "  -P              disabilita il sistema degli indici\n"
+msgstr "  -P                 disabilita gli indici di sistema\n"
 
 #: main/main.c:308
-#, fuzzy, c-format
+#, c-format
 msgid "  -t pa|pl|ex        show timings after each query\n"
-msgstr "  -t pa|pl|ex     mostra il tempo dopo ogni query\n"
+msgstr "  -t pa|pl|ex        mostra i tempi impiegati dopo ogni query\n"
 
 #: main/main.c:309
-#, fuzzy, c-format
+#, c-format
 msgid "  -T                 send SIGSTOP to all backend processes if one dies\n"
-msgstr "  -T              manda il  SIGSTOP verso tutti i server di backend se uno muore\n"
+msgstr "  -T                 invia SIGSTOP a tutti i processi backend se uno muore\n"
 
 #: main/main.c:310
-#, fuzzy, c-format
+#, c-format
 msgid "  -W NUM             wait NUM seconds to allow attach from a debugger\n"
-msgstr "  -W NUM          apettare un NUM di secondi per permettere la connessione da un debugger\n"
+msgstr "  -W NUM             attendi NUM secondi per consentire ad un debugger di collegarsi\n"
 
 #: main/main.c:312
 #, c-format
@@ -10039,19 +10035,19 @@ msgstr ""
 "Opzione per la modalità a singolo utente:\n"
 
 #: main/main.c:313
-#, fuzzy, c-format
+#, c-format
 msgid "  --single           selects single-user mode (must be first argument)\n"
-msgstr "-s              modalitè  single-step mode (conferma ogni query)"
+msgstr "  --single           imposta la modalità utente singolo (deve essere il primo argomento)\n"
 
 #: main/main.c:314
-#, fuzzy, c-format
+#, c-format
 msgid "  DBNAME             database name (defaults to user name)\n"
-msgstr "  -d NOME DB       specificare il nome del database a cui connettersi (default: \"%s\")\n"
+msgstr "  DBNAME             nome del database (il predefinito è il nome dell'utente)\n"
 
 #: main/main.c:315
-#, fuzzy, c-format
+#, c-format
 msgid "  -d 0-5             override debugging level\n"
-msgstr "  -d 0-5          scavalca il livello di debugging\n"
+msgstr "  -d 0-5             scavalca il livello di debugging\n"
 
 #: main/main.c:316
 #, c-format
@@ -10059,14 +10055,14 @@ msgid "  -E                 echo statement before execution\n"
 msgstr "  -E                 stampa le istruzioni prima dell'esecuzione\n"
 
 #: main/main.c:317
-#, fuzzy, c-format
+#, c-format
 msgid "  -j                 do not use newline as interactive query delimiter\n"
-msgstr "\\p             mostra i contenuti del query buffer\n"
+msgstr "  -j                 non usare \"a capo\" come delimitatore delle query interattivo\n"
 
 #: main/main.c:318 main/main.c:323
-#, fuzzy, c-format
+#, c-format
 msgid "  -r FILENAME        send stdout and stderr to given file\n"
-msgstr "-o NOME FILE     reindirizza i risultati al file speicificato (oppure | pipe)"
+msgstr "  -r FILENAME        invia stdout e stderr al file in argomento\n"
 
 #: main/main.c:320
 #, c-format
@@ -10075,22 +10071,22 @@ msgid ""
 "Options for bootstrapping mode:\n"
 msgstr ""
 "\n"
-"Opzioni per il bootstrapping mode:\n"
+"Opzioni per la modalità di inizializzazione:\n"
 
 #: main/main.c:321
-#, fuzzy, c-format
+#, c-format
 msgid "  --boot             selects bootstrapping mode (must be first argument)\n"
-msgstr "-s              modalitè  single-step mode (conferma ogni query)"
+msgstr "  --boot             seleziona la modalità di inizializzazione (dev'essere il primo argomento)\n"
 
 #: main/main.c:322
-#, fuzzy, c-format
+#, c-format
 msgid "  DBNAME             database name (mandatory argument in bootstrapping mode)\n"
-msgstr "-U NOME UTENTE         nome utente database (default: \"%s\")\n"
+msgstr "  DBNAME             nome del database (obbligatorio in modalità di inizializzazione)\n"
 
 #: main/main.c:324
-#, fuzzy, c-format
+#, c-format
 msgid "  -x NUM             internal use\n"
-msgstr "  -x NUM          uso interno\n"
+msgstr "  -x NUM             uso interno\n"
 
 #: main/main.c:326
 #, c-format
@@ -10102,6 +10098,12 @@ msgid ""
 "\n"
 "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr ""
+"\n"
+"Si prega di leggere la documentazione per la lista completa di\n"
+"impostazioni di configurazione e come impostarle sulla riga di comando\n"
+"o nel file di configurazione\n"
+"\n"
+"Segnalare bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: main/main.c:340
 #, c-format
