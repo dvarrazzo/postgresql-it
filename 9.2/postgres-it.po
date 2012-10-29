@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 18:20+0100\n"
+"PO-Revision-Date: 2012-10-29 19:47+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Bookmarks: 2816,2220,-1,-1,-1,-1,1296,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 2816,2606,-1,-1,-1,-1,1296,-1,-1,-1\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
@@ -66,7 +66,7 @@ msgstr "impossibile ottenere la giunzione per \"%s\": %s\n"
 #: ../port/dirmod.c:451
 #, c-format
 msgid "could not open directory \"%s\": %s\n"
-msgstr "Impossibile aprire la directory  \"%s\": %s\n"
+msgstr "impossibile aprire la directory  \"%s\": %s\n"
 
 #: ../port/dirmod.c:488
 #, c-format
@@ -7832,9 +7832,9 @@ msgid "SET TRANSACTION [NOT] DEFERRABLE must be called before any query"
 msgstr "SET TRANSACTION [NOT] DEFERRABLE dev'essere invocato prima di qualsiasi query"
 
 #: commands/variable.c:765
-#, fuzzy, c-format
+#, c-format
 msgid "Conversion between %s and %s is not supported."
-msgstr "la conversione fra %s e %s non è supportata"
+msgstr "La conversione fra %s e %s non è supportata."
 
 #: commands/variable.c:772
 #, c-format
@@ -11613,23 +11613,23 @@ msgid ""
 "This error does *not* mean that you have run out of disk space.  It occurs when either the system limit for the maximum number of semaphore sets (SEMMNI), or the system wide maximum number of semaphores (SEMMNS), would be exceeded.  You need to raise the respective kernel parameter.  Alternatively, reduce PostgreSQL's consumption of semaphores by reducing its max_connections parameter.\n"
 "The PostgreSQL documentation contains more information about configuring your system for PostgreSQL."
 msgstr ""
-"Questo errore *non* significa che è finito lo spazio su disco. Succede o quando il limite di sistema per il massimo numero di semafori impostati (SEMMNI), oppure il massimo numero di semafori di sistema (SEMMNS) verrebbe superato. È necessario aumentare i rispettivi parametri del kernel. Alternativamente, riduci l'utilizzo di semafori di PostgreSQL riducendo il parametro max_connections.\n"
+"Questo errore *non* significa che è finito lo spazio su disco. Può succedere quando il limite di sistema per il massimo numero di semafori impostati (SEMMNI), oppure il massimo numero di semafori di sistema (SEMMNS), verrebbe superato. È necessario aumentare i rispettivi parametri del kernel. Alternativamente, riduci l'utilizzo di semafori di PostgreSQL riducendo il parametro max_connections.\n"
 "La documentazione di PostgreSQL contiene più informazioni su come configurare il tuo sistema per PostgreSQL."
 
 #: port/pg_sema.c:143 port/sysv_sema.c:143
 #, c-format
 msgid "You possibly need to raise your kernel's SEMVMX value to be at least %d.  Look into the PostgreSQL documentation for details."
-msgstr ""
+msgstr "Potresti dover aumentare il valore SEMVMX del tuo kernel ad almeno %d. Consulta la documentazione di PostgreSQL per ulteriori dettagli."
 
 #: port/pg_shmem.c:144 port/sysv_shmem.c:144
 #, c-format
 msgid "could not create shared memory segment: %m"
-msgstr ""
+msgstr "impossibile creare il segmento di memoria condivisa: %m"
 
 #: port/pg_shmem.c:145 port/sysv_shmem.c:145
 #, c-format
 msgid "Failed system call was shmget(key=%lu, size=%lu, 0%o)."
-msgstr ""
+msgstr "La chiamata di sistema fallita era shmget(key=%lu, size=%lu, 0%o)."
 
 #: port/pg_shmem.c:149 port/sysv_shmem.c:149
 #, c-format
@@ -11638,6 +11638,8 @@ msgid ""
 "If the request size is already small, it's possible that it is less than your kernel's SHMMIN parameter, in which case raising the request size or reconfiguring SHMMIN is called for.\n"
 "The PostgreSQL documentation contains more information about shared memory configuration."
 msgstr ""
+"Questo errore di solito vuol dire che la richiesta di PostgreSQL di un segmento di memoria condivisa eccede il valore del parametro SHMMAX del tuo kernel. Puoi ridurre la dimensione richiesta oppure riconfigurare il kernel con uno SHMMAX più grande. Per ridurre la dimensione richiesta (attualmente %lu byte), riduci l'utilizzo di memoria condivisa di PostgreSQL, ad esempio riducendo shared_buffers o max_connections. Se la dimensione richiesta è già piccola, è possibile che sia inferiore al parametro SHMMIN del tuo kernel, nel cui caso sarebbe necessario aumentare la dimensione richiesta o riconfigurare SHMMIN.\n"
+"La documentazione di PostgreSQL contiene ulteriori informazioni sulla configurazione della memoria condivisa."
 
 #: port/pg_shmem.c:162 port/sysv_shmem.c:162
 #, c-format
@@ -11645,6 +11647,8 @@ msgid ""
 "This error usually means that PostgreSQL's request for a shared memory segment exceeded available memory or swap space, or exceeded your kernel's SHMALL parameter.  You can either reduce the request size or reconfigure the kernel with larger SHMALL.  To reduce the request size (currently %lu bytes), reduce PostgreSQL's shared memory usage, perhaps by reducing shared_buffers or max_connections.\n"
 "The PostgreSQL documentation contains more information about shared memory configuration."
 msgstr ""
+"Questo errore di solito vuol dire che la richiesta di PostgreSQL di un segmento di memoria condivisa supera la memoria disponibile o lo spazio di swap, oppure supera il parametro SHMALL del tuo kernel. Puoi ridurre la dimensione richiesta oppure riconfigurare il kernel con uno SHMALL più grande. Per ridurre la dimensione richiesta (attualmente %lu byte), riduci l'utilizzo di memoria condivisa di PostgreSQL, ad esempio riducendo shared_buffers o max_connections.\n"
+"La documentazione di PostgreSQL contiene ulteriori informazioni sulla configurazione della memoria condivisa."
 
 #: port/pg_shmem.c:173 port/sysv_shmem.c:173
 #, c-format
@@ -11652,205 +11656,205 @@ msgid ""
 "This error does *not* mean that you have run out of disk space.  It occurs either if all available shared memory IDs have been taken, in which case you need to raise the SHMMNI parameter in your kernel, or because the system's overall limit for shared memory has been reached.  If you cannot increase the shared memory limit, reduce PostgreSQL's shared memory request (currently %lu bytes), perhaps by reducing shared_buffers or max_connections.\n"
 "The PostgreSQL documentation contains more information about shared memory configuration."
 msgstr ""
+"Questo errore *non* significa che è finito lo spazio su disco. Può succedere se tutti gli ID di memoria condivisa sono stati presi, nel cui caso è necessario aumentare il parametro SHMMNI del tuo kernel, oppure perché il limite globale la memoria condivisa di sistema è stato raggiunto. Se non puoi incrementare il limite di memoria condivisa, riduci la richiesta di memoria condivisa di PostgreSQL (attualmente %lu byte), ad esempio riducendo shared_buffers o max_connections.\n"
+"La documentazione di PostgreSQL contiene ulteriori informazioni sulla configurazione della memoria condivisa."
 
 #: port/pg_shmem.c:436 port/sysv_shmem.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "could not stat data directory \"%s\": %m"
-msgstr "\"%s\" non è una directory valida"
+msgstr "impossibile ottenere informazioni sulla directory dati \"%s\": %m"
 
 #: port/win32/crashdump.c:108
 #, c-format
 msgid "could not load dbghelp.dll, cannot write crash dump\n"
-msgstr ""
+msgstr "impossibile caricare dbghelp.dll, impossibile salvare il crash dump\n"
 
 #: port/win32/crashdump.c:116
 #, c-format
 msgid "could not load required functions in dbghelp.dll, cannot write crash dump\n"
-msgstr ""
+msgstr "impossibile caricare la funzione richiesta in dbghelp.dll, impossibile salvare il crash dump\n"
 
 #: port/win32/crashdump.c:147
-#, fuzzy, c-format
+#, c-format
 msgid "could not open crash dump file \"%s\" for writing: error code %lu\n"
-msgstr "Impossibile aprire il file «%s» in scrittura."
+msgstr "impossibile aprire il file del crash dump \"%s\" in scrittura: codice errore %lu\n"
 
 #: port/win32/crashdump.c:154
-#, fuzzy, c-format
+#, c-format
 msgid "wrote crash dump to file \"%s\"\n"
-msgstr "Salvato cronologia nel file \"%s/%s\".\n"
+msgstr "crash dump salvato nel file \"%s\"\n"
 
 #: port/win32/crashdump.c:156
-#, fuzzy, c-format
+#, c-format
 msgid "could not write crash dump to file \"%s\": error code %lu\n"
-msgstr "impossibile scrivere sul file \"%s\": %s\n"
+msgstr "impossibile scrivere il crash dump nel file \"%s\": codice errore %lu\n"
 
 #: port/win32/security.c:43
-#, fuzzy, c-format
+#, c-format
 msgid "could not open process token: error code %lu\n"
-msgstr "impossibile aprire il large object %u\n"
+msgstr "impossibile aprire il token del processo: codice errore %lu\n"
 
 #: port/win32/security.c:63
-#, fuzzy, c-format
+#, c-format
 msgid "could not get SID for Administrators group: error code %lu\n"
-msgstr "impossibile ripristinare \"%s\"dall'archivio: restituito codice %d"
+msgstr "impossibile ottenere il SID del gruppo Amministratori: codice errore %lu\n"
 
 #: port/win32/security.c:72
-#, fuzzy, c-format
+#, c-format
 msgid "could not get SID for PowerUsers group: error code %lu\n"
-msgstr "impossibile aprire il large object %u\n"
+msgstr "impossibile ottenere il SID del gruppo PowerUsers: codice errore %lu\n"
 
 #: port/win32/signal.c:189
-#, fuzzy, c-format
+#, c-format
 msgid "could not create signal listener pipe for PID %d: error code %lu"
-msgstr "impossibile creare il thread per il dispaccio dei segnali: %d\n"
+msgstr "impossibile creare la pipe di ascolto dei segnali per il PID %d: codice errore %lu"
 
 #: port/win32/signal.c:269 port/win32/signal.c:301
-#, fuzzy, c-format
+#, c-format
 msgid "could not create signal listener pipe: error code %lu; retrying\n"
-msgstr "impossibile creare il thread per il dispaccio dei segnali: %d\n"
+msgstr "impossibile creare la pipe di ascolto dei segnali: codice errore %lu; sto riprovando\n"
 
 #: port/win32/signal.c:312
-#, fuzzy, c-format
+#, c-format
 msgid "could not create signal dispatch thread: error code %lu\n"
-msgstr "impossibile creare il thread per il dispaccio dei segnali: %d\n"
+msgstr "impossibile creare il thread per la distribuzione dei segnali: codice errore %lu\n"
 
 #: port/win32_sema.c:94
-#, fuzzy, c-format
+#, c-format
 msgid "could not create semaphore: error code %lu"
-msgstr ""
-"Impossibile creare la chiave. L'errore è:\n"
-"%s"
+msgstr "impossibile creare il semaforo: codice errore %lu"
 
 #: port/win32_sema.c:165
-#, fuzzy, c-format
+#, c-format
 msgid "could not lock semaphore: error code %lu"
-msgstr "Impossibile bloccare «%s»: errore di protocollo con il lock-helper"
+msgstr "impossibile bloccare il semaforo: codice errore %lu"
 
 #: port/win32_sema.c:178
-#, fuzzy, c-format
+#, c-format
 msgid "could not unlock semaphore: error code %lu"
-msgstr "Impossibile eliminare il file \"%s\" nella cartella \"%s\" (codice errore %i; %m)."
+msgstr "impossibile sbloccare il semaforo: codice errore %lu"
 
 #: port/win32_sema.c:207
-#, fuzzy, c-format
+#, c-format
 msgid "could not try-lock semaphore: error code %lu"
-msgstr "impossibile ripristinare \"%s\"dall'archivio: restituito codice %d"
+msgstr "impossibile provare a bloccare il semaforo: codice errore %lu"
 
 #: port/win32_shmem.c:168 port/win32_shmem.c:203 port/win32_shmem.c:224
-#, fuzzy, c-format
+#, c-format
 msgid "could not create shared memory segment: error code %lu"
-msgstr "impossibile passare alla directory to \"%s\": %m"
+msgstr "impossibile creare il segmento di memoria condivisa: codice errore %lu"
 
 #: port/win32_shmem.c:169
 #, c-format
 msgid "Failed system call was CreateFileMapping(size=%lu, name=%s)."
-msgstr ""
+msgstr "La chiamata di sistema fallita era CreateFileMapping(size=%lu, name=%s)."
 
 #: port/win32_shmem.c:193
 #, c-format
 msgid "pre-existing shared memory block is still in use"
-msgstr ""
+msgstr "blocco di memoria condivisa preesistente ancora in uso"
 
 #: port/win32_shmem.c:194
 #, c-format
 msgid "Check if there are any old server processes still running, and terminate them."
-msgstr ""
+msgstr "Controlla se ci sono vecchi processi server ancora in esecuzione ed interrompili."
 
 #: port/win32_shmem.c:204
 #, c-format
 msgid "Failed system call was DuplicateHandle."
-msgstr ""
+msgstr "La chiamata di sistema fallita era DuplicateHandle."
 
 #: port/win32_shmem.c:225
 #, c-format
 msgid "Failed system call was MapViewOfFileEx."
-msgstr ""
+msgstr "La chiamata di sistema fallita era MapViewOfFileEx."
 
 #: postmaster/autovacuum.c:362
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork autovacuum launcher process: %m"
-msgstr "impossibile scrivere sul processo figlio: %s\n"
+msgstr "impossibile effettuare il fork del processo di esecuzione di autovacuum: %m"
 
 #: postmaster/autovacuum.c:407
-#, fuzzy, c-format
+#, c-format
 msgid "autovacuum launcher started"
-msgstr "modalità inattiva avviata"
+msgstr "esecutore di autovacuum avviato"
 
 #: postmaster/autovacuum.c:767
-#, fuzzy, c-format
+#, c-format
 msgid "autovacuum launcher shutting down"
-msgstr "Arresto del server di configurazione non riuscito: %s"
+msgstr "arresto dell'esecutore di autovacuum"
 
 #: postmaster/autovacuum.c:1420
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork autovacuum worker process: %m"
-msgstr "impossibile crfeare file di controllo \"%s\": %m"
+msgstr "impossibile effettuare il fork del processo di lavoro di autovacuum: %m"
 
 #: postmaster/autovacuum.c:1638
-#, fuzzy, c-format
+#, c-format
 msgid "autovacuum: processing database \"%s\""
-msgstr "impossibile leggere il database %s"
+msgstr "autovacuum: elaborazione del database \"%s\""
 
 #: postmaster/autovacuum.c:2041
-#, fuzzy, c-format
+#, c-format
 msgid "autovacuum: dropping orphan temp table \"%s\".\"%s\" in database \"%s\""
-msgstr "%s: la pulizia della tabella \"%s\"nel database \"%s\"è fallito: %s"
+msgstr "autovacuum: eliminazione della tabella temporanea orfana \"%s\".\"%s\" nel database \"%s\""
 
 #: postmaster/autovacuum.c:2053
-#, fuzzy, c-format
+#, c-format
 msgid "autovacuum: found orphan temp table \"%s\".\"%s\" in database \"%s\""
-msgstr "%s: la pulizia della tabella \"%s\"nel database \"%s\"è fallito: %s"
+msgstr "autovacuum: trovata tabella temporanea orfana \"%s\".\"%s\" nel database \"%s\""
 
 #: postmaster/autovacuum.c:2323
-#, fuzzy, c-format
+#, c-format
 msgid "automatic vacuum of table \"%s.%s.%s\""
-msgstr "  -t, --table='TABELLA[(COLONNE)]'  pulisci solamente una tabella specifica\n"
+msgstr "pulizia automatica della tabella \"%s.%s.%s\""
 
 #: postmaster/autovacuum.c:2326
-#, fuzzy, c-format
+#, c-format
 msgid "automatic analyze of table \"%s.%s.%s\""
-msgstr "ANALYZE [ VERBOSE ] [ tabella [ (colonna [, ...] ) ] ]"
+msgstr "analisi automatica della tabella \"%s.%s.%s\""
 
 #: postmaster/autovacuum.c:2812
 #, c-format
 msgid "autovacuum not started because of misconfiguration"
-msgstr ""
+msgstr "autovacuum non avviato a causa di configurazione errata"
 
 #: postmaster/autovacuum.c:2813
 #, c-format
 msgid "Enable the \"track_counts\" option."
-msgstr ""
+msgstr "Abilita l'opzione \"track_counts\"."
 
 #: postmaster/checkpointer.c:485
 #, c-format
 msgid "checkpoints are occurring too frequently (%d second apart)"
 msgid_plural "checkpoints are occurring too frequently (%d seconds apart)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "i checkpoint stanno avvenendo troppo frequentemente (a distanza di %d secondo)"
+msgstr[1] "i checkpoint stanno avvenendo troppo frequentemente (a distanza di %d secondi)"
 
 #: postmaster/checkpointer.c:489
 #, c-format
 msgid "Consider increasing the configuration parameter \"checkpoint_segments\"."
-msgstr ""
+msgstr "Considera l'incremento del parametro di configurazione \"checkpoint_segments\"."
 
 #: postmaster/checkpointer.c:634
-#, fuzzy, c-format
+#, c-format
 msgid "transaction log switch forced (archive_timeout=%d)"
-msgstr "file registro transazioni reciclato \"%s\""
+msgstr "rotazione del log delle transazioni forzata (archive_timeout=%d)"
 
 #: postmaster/checkpointer.c:1090
 #, c-format
 msgid "checkpoint request failed"
-msgstr "richiesta checkpoint fallita"
+msgstr "richiesta di checkpoint fallita"
 
 #: postmaster/checkpointer.c:1091
-#, fuzzy, c-format
+#, c-format
 msgid "Consult recent messages in the server log for details."
-msgstr "Guarda il registro di postmaster per i dettagli."
+msgstr "Consulta i messaggi recenti nel log del server per i dettagli."
 
 #: postmaster/checkpointer.c:1287
 #, c-format
 msgid "compacted fsync request queue from %d entries to %d entries"
-msgstr ""
+msgstr "coda di richieste di fsync ridotta da %d a %d elementi"
 
 #: postmaster/pgarch.c:164
 #, c-format
@@ -11860,12 +11864,12 @@ msgstr "non è possibile fare un fork dell'archiver: %m"
 #: postmaster/pgarch.c:490
 #, c-format
 msgid "archive_mode enabled, yet archive_command is not set"
-msgstr ""
+msgstr "archive_mode abilitato, ma archive_command non è impostato"
 
 #: postmaster/pgarch.c:505
-#, fuzzy, c-format
+#, c-format
 msgid "transaction log file \"%s\" could not be archived: too many failures"
-msgstr "file registro transazioni reciclato \"%s\""
+msgstr "impossibile archiviare il file di log delle transazioni \"%s\" troppi fallimenti"
 
 #: postmaster/pgarch.c:608
 #, c-format
@@ -11874,44 +11878,44 @@ msgstr "comando di archiviazione fallito con codice di uscita %d"
 
 #: postmaster/pgarch.c:610 postmaster/pgarch.c:620 postmaster/pgarch.c:627
 #: postmaster/pgarch.c:633 postmaster/pgarch.c:642
-#, fuzzy, c-format
+#, c-format
 msgid "The failed archive command was: %s"
-msgstr "Avvio del comando non riuscito"
+msgstr "Il comando di archiviazione fallito era: %s"
 
 #: postmaster/pgarch.c:617
-#, fuzzy, c-format
+#, c-format
 msgid "archive command was terminated by exception 0x%X"
-msgstr "processo figlio terminato da eccezione 0x%X"
+msgstr "comando di archiviazione terminato da eccezione 0x%X"
 
 #: postmaster/pgarch.c:619 postmaster/postmaster.c:2883
 #, c-format
 msgid "See C include file \"ntstatus.h\" for a description of the hexadecimal value."
-msgstr ""
+msgstr "Consulta il file include C \"ntstatus.h\" per una spiegazione del valore esadecimale."
 
 #: postmaster/pgarch.c:624
-#, fuzzy, c-format
+#, c-format
 msgid "archive command was terminated by signal %d: %s"
-msgstr "processo figlio terminato da segnale %d"
+msgstr "comando di archiviazione terminato dal segnale %d: %s"
 
 #: postmaster/pgarch.c:631
-#, fuzzy, c-format
+#, c-format
 msgid "archive command was terminated by signal %d"
-msgstr "processo figlio terminato da segnale %d"
+msgstr "comando di archiviazione terminato dal segnale %d"
 
 #: postmaster/pgarch.c:640
-#, fuzzy, c-format
+#, c-format
 msgid "archive command exited with unrecognized status %d"
-msgstr "processo figlio uscito con stato non riconosciuto %d"
+msgstr "processo di archiviazione uscito con stato non riconosciuto %d"
 
 #: postmaster/pgarch.c:652
-#, fuzzy, c-format
+#, c-format
 msgid "archived transaction log file \"%s\""
-msgstr "file registro transazioni reciclato \"%s\" "
+msgstr "file di log delle transazioni archiviato \"%s\" "
 
 #: postmaster/pgarch.c:701
-#, fuzzy, c-format
+#, c-format
 msgid "could not open archive status directory \"%s\": %m"
-msgstr "impossibile creare file di stato dell'archivio \"%s\": %m"
+msgstr "impossibile aprire la directory di stato dell'archivio \"%s\": %m"
 
 #: postmaster/pgstat.c:333
 #, c-format
@@ -11919,84 +11923,84 @@ msgid "could not resolve \"localhost\": %s"
 msgstr "non è possibile risolvere \"localhost\": %s"
 
 #: postmaster/pgstat.c:356
-#, fuzzy, c-format
+#, c-format
 msgid "trying another address for the statistics collector"
-msgstr "impossibile creare il socket per il raccoglitore statistiche: %m"
+msgstr "si sta tentando di usare un diverso indirizzo per il raccoglitore di statistiche"
 
 #: postmaster/pgstat.c:365
 #, c-format
 msgid "could not create socket for statistics collector: %m"
-msgstr "impossibile creare il socket per il raccoglitore statistiche: %m"
+msgstr "impossibile creare il socket per il raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:377
-#, fuzzy, c-format
+#, c-format
 msgid "could not bind socket for statistics collector: %m"
-msgstr "impossibile creare il socket per il raccoglitore statistiche: %m"
+msgstr "impossibile eseguire il bind del socket per il raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:388
 #, c-format
 msgid "could not get address of socket for statistics collector: %m"
-msgstr ""
+msgstr "impossibile ottenere l'indirizzo del socket per il raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:404
-#, fuzzy, c-format
+#, c-format
 msgid "could not connect socket for statistics collector: %m"
-msgstr "impossibile creare il socket per il raccoglitore statistiche: %m"
+msgstr "impossibile connettersi al socket per il raccoglitore statistiche: %m"
 
 #: postmaster/pgstat.c:425
 #, c-format
 msgid "could not send test message on socket for statistics collector: %m"
-msgstr ""
+msgstr "impossibile inviare il messaggio di prova al socket per il raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:451
 #, c-format
 msgid "select() failed in statistics collector: %m"
-msgstr ""
+msgstr "select() fallita nel raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:466
 #, c-format
 msgid "test message did not get through on socket for statistics collector"
-msgstr ""
+msgstr "il messaggio di prova non ha raggiunto il socket per il raccoglitore di statistiche"
 
 #: postmaster/pgstat.c:481
 #, c-format
 msgid "could not receive test message on socket for statistics collector: %m"
-msgstr ""
+msgstr "impossibile ricevere il messaggio di prova sul socket per il raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:491
 #, c-format
 msgid "incorrect test message transmission on socket for statistics collector"
-msgstr ""
+msgstr "trasmissione errata del messaggio di prova per il raccoglitore di statistiche"
 
 #: postmaster/pgstat.c:514
 #, c-format
 msgid "could not set statistics collector socket to nonblocking mode: %m"
-msgstr ""
+msgstr "impossibile impostare il socket per il raccoglitore di statistiche in modalità non bloccante: %m"
 
 #: postmaster/pgstat.c:524
 #, c-format
 msgid "disabling statistics collector for lack of working socket"
-msgstr ""
+msgstr "raccoglitore di statistiche disabilitato per mancanza di un socket funzionante"
 
 #: postmaster/pgstat.c:626
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork statistics collector: %m"
-msgstr "impossibile creare il socket per il raccoglitore statistiche: %m"
+msgstr "impossibile eseguire il fork del raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:1162 postmaster/pgstat.c:1186 postmaster/pgstat.c:1217
 #, c-format
 msgid "must be superuser to reset statistics counters"
-msgstr ""
+msgstr "occorre essere un superutente per resettare i contatori delle statistiche"
 
 #: postmaster/pgstat.c:1193
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized reset target: \"%s\""
-msgstr "funzione `%s': parametro #%d, `%s', duplica parametro #%d"
+msgstr "obiettivo del reset non riconosciuto: \"%s\""
 
 #: postmaster/pgstat.c:1194
-#, fuzzy, c-format
+#, c-format
 msgid "Target must be \"bgwriter\"."
-msgstr "Il valore deve essere un INTEGER."
+msgstr "L'obiettivo deve essere \"bgwriter\"."
 
 #: postmaster/pgstat.c:3139
 #, c-format
@@ -12004,52 +12008,52 @@ msgid "could not read statistics message: %m"
 msgstr "impossibile leggere il messaggio delle statistiche: %m"
 
 #: postmaster/pgstat.c:3456
-#, fuzzy, c-format
+#, c-format
 msgid "could not open temporary statistics file \"%s\": %m"
-msgstr "impossibile chiudere il file temporaneo statistiche \"%s\": %m"
+msgstr "impossibile aprire il file temporaneo delle statistiche \"%s\": %m"
 
 #: postmaster/pgstat.c:3533
-#, fuzzy, c-format
+#, c-format
 msgid "could not write temporary statistics file \"%s\": %m"
-msgstr "impossibile chiudere il file temporaneo statistiche \"%s\": %m"
+msgstr "impossibile scrivere nel file temporaneo delle statistiche \"%s\": %m"
 
 #: postmaster/pgstat.c:3542
 #, c-format
 msgid "could not close temporary statistics file \"%s\": %m"
-msgstr "impossibile chiudere il file temporaneo statistiche \"%s\": %m"
+msgstr "impossibile chiudere il file temporaneo delle statistiche \"%s\": %m"
 
 #: postmaster/pgstat.c:3550
-#, fuzzy, c-format
+#, c-format
 msgid "could not rename temporary statistics file \"%s\" to \"%s\": %m"
-msgstr "impossibile rinominare il file temporaneo delle statistiche  \"%s\" in \"%s\": %m"
+msgstr "impossibile rinominare il file temporaneo delle statistiche \"%s\" in \"%s\": %m"
 
 #: postmaster/pgstat.c:3656 postmaster/pgstat.c:3885
-#, fuzzy, c-format
+#, c-format
 msgid "could not open statistics file \"%s\": %m"
-msgstr "impossibile chiudere il file temporaneo statistiche \"%s\": %m"
+msgstr "impossibile aprire il file delle statistiche \"%s\": %m"
 
 #: postmaster/pgstat.c:3668 postmaster/pgstat.c:3678 postmaster/pgstat.c:3700
 #: postmaster/pgstat.c:3715 postmaster/pgstat.c:3778 postmaster/pgstat.c:3796
 #: postmaster/pgstat.c:3812 postmaster/pgstat.c:3830 postmaster/pgstat.c:3846
 #: postmaster/pgstat.c:3897 postmaster/pgstat.c:3908
-#, fuzzy, c-format
+#, c-format
 msgid "corrupted statistics file \"%s\""
-msgstr "corrotto il file pgstat.stat"
+msgstr "file delle statistiche corrotto \"%s\""
 
 #: postmaster/pgstat.c:4210
 #, c-format
 msgid "database hash table corrupted during cleanup --- abort"
-msgstr ""
+msgstr "tabella hash del database corrotta durante la pulizia --- interruzione"
 
 #: postmaster/postmaster.c:592
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid argument for option -f: \"%s\"\n"
-msgstr "%s: parametro errato per l'opzione -l\n"
+msgstr "%s: argomento non valido per l'opzione -f: \"%s\"\n"
 
 #: postmaster/postmaster.c:678
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid argument for option -t: \"%s\"\n"
-msgstr "%s: parametro errato per l'opzione -l\n"
+msgstr "%s: argomento non valido per l'opzione -t: \"%s\"\n"
 
 #: postmaster/postmaster.c:729
 #, c-format
@@ -12059,77 +12063,77 @@ msgstr "%s: argomento non valido: \"%s\"\n"
 #: postmaster/postmaster.c:764
 #, c-format
 msgid "%s: superuser_reserved_connections must be less than max_connections\n"
-msgstr ""
+msgstr "%s: superuser_reserved_connections dev'essere minore di max_connections\n"
 
 #: postmaster/postmaster.c:769
 #, c-format
 msgid "%s: max_wal_senders must be less than max_connections\n"
-msgstr ""
+msgstr "%s: max_wal_senders dev'essere minore di max_connections\n"
 
 #: postmaster/postmaster.c:774
 #, c-format
 msgid "WAL archival (archive_mode=on) requires wal_level \"archive\" or \"hot_standby\""
-msgstr ""
+msgstr "L'archiviazione dei WAL (archive_mode=on) richiede wal_level \"archive\" oppure \"hot_standby\""
 
 #: postmaster/postmaster.c:777
 #, c-format
 msgid "WAL streaming (max_wal_senders > 0) requires wal_level \"archive\" or \"hot_standby\""
-msgstr ""
+msgstr "lo streaming dei WAL (max_wal_senders > 0) richiede  wal_level \"archive\" oppure \"hot_standby\""
 
 #: postmaster/postmaster.c:785
 #, c-format
 msgid "%s: invalid datetoken tables, please fix\n"
-msgstr ""
+msgstr "%s: datetoken tables non valido, per favore correggilo\n"
 
 #: postmaster/postmaster.c:861
 #, c-format
 msgid "invalid list syntax for \"listen_addresses\""
-msgstr ""
+msgstr "sintassi della lista non valida per \"listen_addresses\""
 
 #: postmaster/postmaster.c:891
-#, fuzzy, c-format
+#, c-format
 msgid "could not create listen socket for \"%s\""
-msgstr "impossibile creare il socket per la connessione Ident: %m"
+msgstr "impossibile creare il socket di ascolto per \"%s\""
 
 #: postmaster/postmaster.c:897
-#, fuzzy, c-format
+#, c-format
 msgid "could not create any TCP/IP sockets"
-msgstr "impossibile creare il socket: %s\n"
+msgstr "impossibile creare alcun socket TCP/IP"
 
 #: postmaster/postmaster.c:948
-#, fuzzy, c-format
+#, c-format
 msgid "could not create Unix-domain socket"
-msgstr "Impossibile creare il socket di ascolto ICE: %s"
+msgstr "Impossibile creare il socket di dominio Unix"
 
 #: postmaster/postmaster.c:956
 #, c-format
 msgid "no socket created for listening"
-msgstr ""
+msgstr "nessun socket per l'ascolto è stato creato"
 
 #: postmaster/postmaster.c:1001
-#, fuzzy, c-format
+#, c-format
 msgid "could not create I/O completion port for child queue"
-msgstr "impossibile creare un large object per il file \"%s\"\n"
+msgstr "impossibile creare la porta di completamento I/O per la coda dei figli"
 
 #: postmaster/postmaster.c:1031
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not change permissions of external PID file \"%s\": %s\n"
-msgstr "%s: impossibile cambiare i permessi di accesso della directory \"%s\": %s\n"
+msgstr "%s: impossibile cambiare permessi del file PID esteno \"%s\": %s\n"
 
 #: postmaster/postmaster.c:1035
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not write external PID file \"%s\": %s\n"
-msgstr "%s non può scrivere sul file pid esterno %s\n"
+msgstr "%s: impossibile scrivere nel file PID esteno \"%s\": %s\n"
 
 #: postmaster/postmaster.c:1103 utils/init/postinit.c:197
 #, c-format
 msgid "could not load pg_hba.conf"
-msgstr ""
+msgstr "impossibile caricare pg_hba.conf"
 
 #: postmaster/postmaster.c:1156
 #, c-format
 msgid "%s: could not locate matching postgres executable"
-msgstr ""
+msgstr "%s: impossibile trovare l'eseguibile postgres corrispondente"
 
 #: postmaster/postmaster.c:1179 utils/misc/tzparser.c:325
 #, c-format
@@ -12137,39 +12141,39 @@ msgid "This may indicate an incomplete PostgreSQL installation, or that the file
 msgstr "Questo potrebbe indicare una installazione di PostgreSQL incompleta, o che il file \"%s\" sia stato spostato dalla sua locazione corretta."
 
 #: postmaster/postmaster.c:1207
-#, fuzzy, c-format
+#, c-format
 msgid "data directory \"%s\" does not exist"
-msgstr "La directory «%s» non esiste."
+msgstr "la directory dei dati \"%s\" non esiste"
 
 #: postmaster/postmaster.c:1212
-#, fuzzy, c-format
+#, c-format
 msgid "could not read permissions of directory \"%s\": %m"
-msgstr "%s: impossibile leggere dalla cartella \"%s\": %s\n"
+msgstr "impossibile leggere i permessi della directory \"%s\": %m"
 
 #: postmaster/postmaster.c:1220
-#, fuzzy, c-format
+#, c-format
 msgid "specified data directory \"%s\" is not a directory"
-msgstr "\"%s\" non è una directory valida"
+msgstr "la directory dei dati specificata \"%s\" non è una directory"
 
 #: postmaster/postmaster.c:1236
-#, fuzzy, c-format
+#, c-format
 msgid "data directory \"%s\" has wrong ownership"
-msgstr "la relazione \"%s\"non esiste"
+msgstr "la directory dei dati \"%s\" ha il proprietario errato"
 
 #: postmaster/postmaster.c:1238
 #, c-format
 msgid "The server must be started by the user that owns the data directory."
-msgstr ""
+msgstr "Il server deve essere avviato dall'utente che possiede la directory dei dati."
 
 #: postmaster/postmaster.c:1258
-#, fuzzy, c-format
+#, c-format
 msgid "data directory \"%s\" has group or world access"
-msgstr "la relazione \"%s\"non esiste"
+msgstr "la directory dei dati \"%s\" è accessibile dal gruppo o da tutti"
 
 #: postmaster/postmaster.c:1260
-#, fuzzy, c-format
+#, c-format
 msgid "Permissions should be u=rwx (0700)."
-msgstr "%s: authdir %s con permessi errati %o, dovrebbero essere %o. Chiusura in corso."
+msgstr "I permessi dovrebbero essere u=rwx (0700)."
 
 #: postmaster/postmaster.c:1271
 #, c-format
@@ -12178,51 +12182,54 @@ msgid ""
 "Expected to find it in the directory \"%s\",\n"
 "but could not open file \"%s\": %s\n"
 msgstr ""
+"%s: impossibile trovare il database\n"
+"Sarebbe dovuto essere nella directory \"%s\",\n"
+"ma non è stato possibile aprire il file \"%s\": %s\n"
 
 #: postmaster/postmaster.c:1343
-#, fuzzy, c-format
+#, c-format
 msgid "select() failed in postmaster: %m"
-msgstr "buffer_copy (%s) non riuscita"
+msgstr "select() fallita in postmaster: %m"
 
 #: postmaster/postmaster.c:1510 postmaster/postmaster.c:1541
 #, c-format
 msgid "incomplete startup packet"
-msgstr "pacchetto di startup incompleto"
+msgstr "pacchetto di avvio incompleto"
 
 #: postmaster/postmaster.c:1522
-#, fuzzy, c-format
+#, c-format
 msgid "invalid length of startup packet"
-msgstr "dimensione del pacchetto password errata"
+msgstr "dimensione del pacchetto di avvio non valida"
 
 #: postmaster/postmaster.c:1579
-#, fuzzy, c-format
+#, c-format
 msgid "failed to send SSL negotiation response: %m"
-msgstr "ricevuta risposta errata alla negoziazione SSL: %c\n"
+msgstr "invio della risposta di negoziazione SSL fallito: %m"
 
 #: postmaster/postmaster.c:1608
 #, c-format
 msgid "unsupported frontend protocol %u.%u: server supports %u.0 to %u.%u"
-msgstr ""
+msgstr "protocollo frontend non supportato %u.%u: il server supporta da %u.0 a %u.%u"
 
 #: postmaster/postmaster.c:1659
-#, fuzzy, c-format
+#, c-format
 msgid "invalid value for boolean option \"replication\""
-msgstr "valore non valido per l'opzione booleana \"%s\": \"%s\""
+msgstr "valore per l'opzione booleana \"replication\" non valido"
 
 #: postmaster/postmaster.c:1679
 #, c-format
 msgid "invalid startup packet layout: expected terminator as last byte"
-msgstr ""
+msgstr "formato del pacchetto di avvio non valido: atteso il terminatore all'ultimo byte"
 
 #: postmaster/postmaster.c:1707
 #, c-format
 msgid "no PostgreSQL user name specified in startup packet"
-msgstr ""
+msgstr "nessun utente PostgreSQL specificato nel pacchetto di avvio"
 
 #: postmaster/postmaster.c:1764
 #, c-format
 msgid "the database system is starting up"
-msgstr "il sistema del database si sta avviando"
+msgstr "il database si sta avviando"
 
 #: postmaster/postmaster.c:1769
 #, c-format
@@ -12230,30 +12237,30 @@ msgid "the database system is shutting down"
 msgstr "il database si sta spegnendo"
 
 #: postmaster/postmaster.c:1774
-#, fuzzy, c-format
+#, c-format
 msgid "the database system is in recovery mode"
-msgstr "il sistema database è stato interrotto mentre era in recupero alle %s"
+msgstr "il database è in modalità di ripristino"
 
 #: postmaster/postmaster.c:1779 storage/ipc/procarray.c:277
 #: storage/ipc/sinvaladt.c:304 storage/lmgr/proc.c:336
 #, c-format
 msgid "sorry, too many clients already"
-msgstr ""
+msgstr "spiacente, troppi client già connessi"
 
 #: postmaster/postmaster.c:1841
 #, c-format
 msgid "wrong key in cancel request for process %d"
-msgstr ""
+msgstr "chiave sbagliata nella richiesta di annullamento per il processo %d"
 
 #: postmaster/postmaster.c:1849
 #, c-format
 msgid "PID %d in cancel request did not match any process"
-msgstr ""
+msgstr "il PID %d nella richiesta di annullamento non corrisponde ad alcun processo"
 
 #: postmaster/postmaster.c:2069
-#, fuzzy, c-format
+#, c-format
 msgid "received SIGHUP, reloading configuration files"
-msgstr "Ricevuto SIGHUP, nuovo caricamento di tutti i database"
+msgstr "SIGHUP ricevuto, sto ricaricando i file di configurazione"
 
 #: postmaster/postmaster.c:2094
 #, c-format
@@ -12261,65 +12268,63 @@ msgid "pg_hba.conf not reloaded"
 msgstr "pg_hba.conf non è stato ricaricato"
 
 #: postmaster/postmaster.c:2137
-#, fuzzy, c-format
+#, c-format
 msgid "received smart shutdown request"
-msgstr "Ricevuta richiesta di sincronizzare in modo sincrono"
+msgstr "richiesta di arresto smart ricevuta"
 
 #: postmaster/postmaster.c:2187
-#, fuzzy, c-format
+#, c-format
 msgid "received fast shutdown request"
-msgstr "Ricevuta richiesta di sincronizzare in modo sincrono"
+msgstr "richiesta di arresto fast ricevuta"
 
 #: postmaster/postmaster.c:2211
 #, c-format
 msgid "aborting any active transactions"
-msgstr ""
+msgstr "interruzione di tutte le transazioni attive"
 
 #: postmaster/postmaster.c:2240
-#, fuzzy, c-format
+#, c-format
 msgid "received immediate shutdown request"
-msgstr "Ricevuta richiesta di sincronizzare in modo sincrono"
+msgstr "richiesta di arresto immediate ricevuta"
 
 #: postmaster/postmaster.c:2318 postmaster/postmaster.c:2351
 msgid "startup process"
-msgstr "si avvia il processo"
+msgstr "avvio del processo"
 
 #: postmaster/postmaster.c:2321
 #, c-format
 msgid "aborting startup due to startup process failure"
-msgstr ""
+msgstr "avvio interrotto a causa del fallimento del processo di avvio"
 
 #: postmaster/postmaster.c:2378
 #, c-format
 msgid "terminating all walsender processes to force cascaded standby(s) to update timeline and reconnect"
-msgstr ""
+msgstr "interruzione di tutti i processi walsender per forzare gli standby in cascata ad aggiornare la timeline e riconnettersi"
 
 #: postmaster/postmaster.c:2408
-#, fuzzy, c-format
+#, c-format
 msgid "database system is ready to accept connections"
-msgstr "Il database \"%s\"attualmento non accetta connessioni"
+msgstr "il database è pronto ad accettare connessioni"
 
 #: postmaster/postmaster.c:2423
 msgid "background writer process"
-msgstr "processo si scrittura in background"
+msgstr "processo di scrittura in background"
 
 #: postmaster/postmaster.c:2477
-#, fuzzy
 msgid "checkpointer process"
-msgstr "processo di archiviazione"
+msgstr "processo di creazione checkpoint"
 
 #: postmaster/postmaster.c:2493
 msgid "WAL writer process"
 msgstr "processo di scrittura WAL"
 
 #: postmaster/postmaster.c:2507
-#, fuzzy
 msgid "WAL receiver process"
-msgstr "processo di scrittura WAL"
+msgstr "processo di ricezione WAL"
 
 #: postmaster/postmaster.c:2522
 msgid "autovacuum launcher process"
-msgstr "processo del lanciatore del autovacuum"
+msgstr "processo del lanciatore di autovacuum"
 
 #: postmaster/postmaster.c:2537
 msgid "archiver process"
@@ -12327,11 +12332,11 @@ msgstr "processo di archiviazione"
 
 #: postmaster/postmaster.c:2553
 msgid "statistics collector process"
-msgstr "procersso del raccoglitore statistiche"
+msgstr "procersso del raccoglitore di statistiche"
 
 #: postmaster/postmaster.c:2567
 msgid "system logger process"
-msgstr "processo del system logger"
+msgstr "processo del logger di sistema"
 
 #: postmaster/postmaster.c:2602 postmaster/postmaster.c:2621
 #: postmaster/postmaster.c:2628 postmaster/postmaster.c:2646
@@ -12341,7 +12346,7 @@ msgstr "processo del server"
 #: postmaster/postmaster.c:2682
 #, c-format
 msgid "terminating any other active server processes"
-msgstr ""
+msgstr "interruzione di tutti gli altri processi attivi del server"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
@@ -12353,468 +12358,466 @@ msgstr "%s (PID %d) è uscito con codice di uscita %d"
 #: postmaster/postmaster.c:2873 postmaster/postmaster.c:2884
 #: postmaster/postmaster.c:2895 postmaster/postmaster.c:2904
 #: postmaster/postmaster.c:2914
-#, fuzzy, c-format
+#, c-format
 msgid "Failed process was running: %s"
-msgstr "processo figlio terminato da segnale %s"
+msgstr "Il processo fallito stava eseguendo: %s"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
 #: postmaster/postmaster.c:2881
-#, fuzzy, c-format
+#, c-format
 msgid "%s (PID %d) was terminated by exception 0x%X"
-msgstr "processo figlio terminato da eccezione 0x%X"
+msgstr "%s (PID %d) è stato terminato dall'eccezione 0x%X"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
 #: postmaster/postmaster.c:2891
-#, fuzzy, c-format
+#, c-format
 msgid "%s (PID %d) was terminated by signal %d: %s"
-msgstr "processo figlio terminato da segnale %d"
+msgstr "%s (PID %d) è stato terminato dal segnale %d: %s"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
 #: postmaster/postmaster.c:2902
-#, fuzzy, c-format
+#, c-format
 msgid "%s (PID %d) was terminated by signal %d"
-msgstr "processo figlio terminato da segnale %d"
+msgstr "%s (PID %d) è stato terminato dal segnale %d"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
 #: postmaster/postmaster.c:2912
-#, fuzzy, c-format
+#, c-format
 msgid "%s (PID %d) exited with unrecognized status %d"
-msgstr "processo figlio uscito con stato non riconosciuto %d"
+msgstr "%s (PID %d) uscito con stato non riconosciuto %d"
 
 #: postmaster/postmaster.c:3096
-#, fuzzy, c-format
+#, c-format
 msgid "abnormal database system shutdown"
-msgstr "l'arresto del sistema di database è stato interrotto alle %s"
+msgstr "spegnimento anormale del database"
 
 #: postmaster/postmaster.c:3135
 #, c-format
 msgid "all server processes terminated; reinitializing"
-msgstr ""
+msgstr "tutti i processi server sono terminati; re-inizializzazione"
 
 #: postmaster/postmaster.c:3318
 #, c-format
 msgid "could not fork new process for connection: %m"
-msgstr ""
+msgstr "impossibile effettuare il fork del nuovo processo per la connessione: %m"
 
 #: postmaster/postmaster.c:3360
 msgid "could not fork new process for connection: "
-msgstr ""
+msgstr "impossibile effettuare il fork del nuovo processo per la connessione"
 
 #: postmaster/postmaster.c:3474
-#, fuzzy, c-format
+#, c-format
 msgid "connection received: host=%s port=%s"
-msgstr "Connessione chiusa dall'host"
+msgstr "connessione ricevuta: host=%s porta=%s"
 
 #: postmaster/postmaster.c:3479
-#, fuzzy, c-format
+#, c-format
 msgid "connection received: host=%s"
-msgstr "Connessione chiusa dall'host"
+msgstr "connessione ricevuta: host=%s"
 
 #: postmaster/postmaster.c:3748
-#, fuzzy, c-format
+#, c-format
 msgid "could not execute server process \"%s\": %m"
-msgstr "Impossibile interrompere il processo (%s)."
+msgstr "impossibile eseguire il processo del server \"%s\": %m"
 
 #: postmaster/postmaster.c:4272
-#, fuzzy, c-format
+#, c-format
 msgid "database system is ready to accept read only connections"
-msgstr "Il database \"%s\"attualmento non accetta connessioni"
+msgstr "il database è pronto ad accettare connessioni in sola lettura"
 
 #: postmaster/postmaster.c:4539
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork startup process: %m"
-msgstr "Impossibile interrompere il processo (%s)."
+msgstr "impossibile effettuare il fork del processo di avvio: %m"
 
 #: postmaster/postmaster.c:4543
 #, c-format
 msgid "could not fork background writer process: %m"
-msgstr ""
+msgstr "impossibile effettuare il fork del processo di scrittura in background: %m"
 
 #: postmaster/postmaster.c:4547
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork checkpointer process: %m"
-msgstr "impossibile scrivere sul processo figlio: %s\n"
+msgstr "impossibile effettuare il fork del processo di creazione dei checkpoint: %m"
 
 #: postmaster/postmaster.c:4551
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork WAL writer process: %m"
-msgstr "impossibile scrivere sul processo figlio: %s\n"
+msgstr "impossibile effettuare il fork del processo di scrittura dei WAL: %m"
 
 #: postmaster/postmaster.c:4555
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork WAL receiver process: %m"
-msgstr "impossibile scrivere sul processo figlio: %s\n"
+msgstr "impossibile effettuare il fork di ricezione dei WAL: %m"
 
 #: postmaster/postmaster.c:4559
-#, fuzzy, c-format
+#, c-format
 msgid "could not fork process: %m"
-msgstr "Impossibile terminare il processo %d: %s\n"
+msgstr "impossibile effettuare il fork del processo: %m"
 
 #: postmaster/postmaster.c:4848
-#, fuzzy, c-format
+#, c-format
 msgid "could not duplicate socket %d for use in backend: error code %d"
-msgstr "impossibile creare il socket per la connessione Ident: %m"
+msgstr "impossibile duplicare il socket %d da usare nel backend: codice errore %d"
 
 #: postmaster/postmaster.c:4880
-#, fuzzy, c-format
+#, c-format
 msgid "could not create inherited socket: error code %d\n"
-msgstr "impossibile creare il socket: %s\n"
+msgstr "impossibile creare il socket ereditato: codice errore %d\n"
 
 #: postmaster/postmaster.c:4909 postmaster/postmaster.c:4916
-#, fuzzy, c-format
+#, c-format
 msgid "could not read from backend variables file \"%s\": %s\n"
-msgstr "impossibile leggere dal file \"%s\" all'offset %u: %m"
+msgstr "impossibile leggere dal file delle variabili del backend \"%s\": %s\n"
 
 #: postmaster/postmaster.c:4925
-#, fuzzy, c-format
+#, c-format
 msgid "could not remove file \"%s\": %s\n"
-msgstr "impossibile rimuovere il file \"%s\": %m"
+msgstr "impossibile rimuovere il file \"%s\": %s\n"
 
 #: postmaster/postmaster.c:4942
-#, fuzzy, c-format
+#, c-format
 msgid "could not map view of backend variables: error code %lu\n"
-msgstr "impossibile crfeare file di controllo \"%s\": %m"
+msgstr "impossibile mappare la vista delle variabili del backend: codice errore %lu\n"
 
 #: postmaster/postmaster.c:4951
-#, fuzzy, c-format
+#, c-format
 msgid "could not unmap view of backend variables: error code %lu\n"
-msgstr "impossibile crfeare file di controllo \"%s\": %m"
+msgstr "impossibile rimuovere la mappa della vista delle variabili del backend: codice errore %lu\n"
 
 #: postmaster/postmaster.c:4958
-#, fuzzy, c-format
+#, c-format
 msgid "could not close handle to backend parameter variables: error code %lu\n"
-msgstr "impossibile crfeare file di controllo \"%s\": %m"
+msgstr "impossibile chiudere l'handle dei parametri variabili del backend: codice errore %lu\n"
 
 #: postmaster/postmaster.c:5108
-#, fuzzy, c-format
+#, c-format
 msgid "could not read exit code for process\n"
-msgstr "impossibile scrivere sul processo figlio: %s\n"
+msgstr "impossibile leggere il codice di uscita del processo\n"
 
 #: postmaster/postmaster.c:5113
-#, fuzzy, c-format
+#, c-format
 msgid "could not post child completion status\n"
-msgstr "impossibile chiudere il flusso di compressione: %s\n"
+msgstr "impossibile inviare lo stato di completamento del figlio\n"
 
 #: postmaster/syslogger.c:454 postmaster/syslogger.c:1041
 #, c-format
 msgid "could not read from logger pipe: %m"
-msgstr "impossibile leggere dalla coda registrazioni: %m"
+msgstr "impossibile leggere dalla pipe del logger: %m"
 
 #: postmaster/syslogger.c:503
 #, c-format
 msgid "logger shutting down"
-msgstr "spegnimento logger "
+msgstr "spegnimento del logger"
 
 #: postmaster/syslogger.c:547 postmaster/syslogger.c:561
-#, fuzzy, c-format
+#, c-format
 msgid "could not create pipe for syslog: %m"
-msgstr "impossibile creare la coda per syslogging: %m"
+msgstr "impossibile creare la pipe per il syslog: %m"
 
 #: postmaster/syslogger.c:597
 #, c-format
 msgid "could not fork system logger: %m"
-msgstr "impossibile forkare dalla coda registrazioni: %m"
+msgstr "impossibile effettuare il fork del logger di sistema: %m"
 
 #: postmaster/syslogger.c:628
 #, c-format
 msgid "could not redirect stdout: %m"
-msgstr "impossibile redirigere verso stdout: %m"
+msgstr "impossibile redirigere stdout: %m"
 
 #: postmaster/syslogger.c:633 postmaster/syslogger.c:651
 #, c-format
 msgid "could not redirect stderr: %m"
-msgstr "impossibile redirigere stden: %m"
+msgstr "impossibile redirigere stdin: %m"
 
 #: postmaster/syslogger.c:996
 #, c-format
 msgid "could not write to log file: %s\n"
-msgstr "impossibile scrivere sul file di log:  %s\n"
+msgstr "impossibile scrivere nel file di log: %s\n"
 
 #: postmaster/syslogger.c:1125
-#, fuzzy, c-format
+#, c-format
 msgid "could not open log file \"%s\": %m"
-msgstr "non si può aprire il file di lock \"%s\": %m"
+msgstr "impossibile aprire il file di log \"%s\": %m"
 
 #: postmaster/syslogger.c:1187 postmaster/syslogger.c:1231
 #, c-format
 msgid "disabling automatic rotation (use SIGHUP to re-enable)"
-msgstr ""
+msgstr "rotazione automatica disabilitata (usa SIGHUP per abilitarla di nuovo)"
 
 #: regex/regc_pg_locale.c:261
-#, fuzzy, c-format
+#, c-format
 msgid "could not determine which collation to use for regular expression"
-msgstr "impossibile determinare la descrizione della riga per la funzione restituente il record"
+msgstr "impossibile determinare quale ordinamento usare per le espressioni regolari"
 
 #: repl_scanner.l:76
-#, fuzzy
 msgid "invalid streaming start location"
-msgstr "istruzione di elaborazione XML non valida"
+msgstr "locazione di avvio dello streaming non valida"
 
 #: repl_scanner.l:97 scan.l:630
-#, fuzzy
 msgid "unterminated quoted string"
-msgstr "%s:%d: attenzione: stringa non terminata"
+msgstr "stringa tra virgolette non terminata"
 
 #: repl_scanner.l:107
-#, fuzzy, c-format
+#, c-format
 msgid "syntax error: unexpected character \"%s\""
-msgstr "errore di sintassi, atteso \"=\""
+msgstr "errore di sintassi: carattere \"%s\" inaspettato"
 
 #: replication/basebackup.c:125 replication/basebackup.c:679
 #: utils/adt/misc.c:358
-#, fuzzy, c-format
+#, c-format
 msgid "could not read symbolic link \"%s\": %m"
-msgstr "link simbolico non leggibile \"%s\""
+msgstr "impossibile leggere il link simbolico \"%s\": %m"
 
 #: replication/basebackup.c:132 replication/basebackup.c:683
 #: utils/adt/misc.c:362
-#, fuzzy, c-format
+#, c-format
 msgid "symbolic link \"%s\" target is too long"
-msgstr "Il percorso della deviazione è troppo lungo"
+msgstr "la destinazione del link simbolico \"%s\" è troppo lunga"
 
 #: replication/basebackup.c:193
-#, fuzzy, c-format
+#, c-format
 msgid "could not stat control file \"%s\": %m"
-msgstr "impossibile creare il file di controllo \"%s\": %m"
+msgstr "impossibile ottenere informazioni sul file di controllo \"%s\": %m"
 
 #: replication/basebackup.c:270 replication/basebackup.c:814
 #, c-format
 msgid "base backup could not send data, aborting backup"
-msgstr ""
+msgstr "impossibile inviare dati da parte del backup di base, backup interrotto"
 
 #: replication/basebackup.c:317 replication/basebackup.c:326
 #: replication/basebackup.c:335 replication/basebackup.c:344
 #: replication/basebackup.c:353
-#, fuzzy, c-format
+#, c-format
 msgid "duplicate option \"%s\""
-msgstr "%s: opzione non valida -- %c\n"
+msgstr "opzione duplicata \"%s\""
 
 #: replication/basebackup.c:615
 #, c-format
 msgid "shutdown requested, aborting active base backup"
-msgstr ""
+msgstr "arresto richiesto, interruzione del backup di base attivo"
 
 #: replication/basebackup.c:633
-#, fuzzy, c-format
+#, c-format
 msgid "could not stat file or directory \"%s\": %m"
-msgstr "Il file «%s» non è un file regolare o una directory."
+msgstr "impossibile ottenere informazioni sul file o directory \"%s\": %m"
 
 #: replication/basebackup.c:726
-#, fuzzy, c-format
+#, c-format
 msgid "skipping special file \"%s\""
-msgstr "il file di log delle transazioni \"%s\"viene rimosso"
+msgstr "file speciale \"%s\" saltato"
 
 #: replication/basebackup.c:804
-#, fuzzy, c-format
+#, c-format
 msgid "archive member \"%s\" too large for tar format"
-msgstr "membro dell'archivio troppo grande per il formato tar\n"
+msgstr "il membro \"%s\" dell'archivio è troppo grande per il formato tar"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:101
-#, fuzzy, c-format
+#, c-format
 msgid "could not connect to the primary server: %s"
-msgstr "impossibile convertire \"%s\"in un fuso orario"
+msgstr "impossibile connettersi al server primario: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:113
 #, c-format
 msgid "could not receive database system identifier and timeline ID from the primary server: %s"
-msgstr ""
+msgstr "impossibile ricevere l'identificativo del database e l'ID della timeline dal server primario: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:124
-#, fuzzy, c-format
+#, c-format
 msgid "invalid response from primary server"
-msgstr "la lunghezza del record del checkpoint primario non è valida"
+msgstr "risposta non valisa dal server primario"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:125
 #, c-format
 msgid "Expected 1 tuple with 3 fields, got %d tuples with %d fields."
-msgstr ""
+msgstr "Attesa una tupla con tre campi, ricevute %d tuple con %d campi."
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:140
 #, c-format
 msgid "database system identifier differs between the primary and standby"
-msgstr ""
+msgstr "l'identificativo del database è diverso tra il primario e lo standby"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:141
 #, c-format
 msgid "The primary's identifier is %s, the standby's identifier is %s."
-msgstr ""
+msgstr "L'identificativo del primario è %s, quello dello standby è %s."
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:153
-#, fuzzy, c-format
+#, c-format
 msgid "timeline %u of the primary does not match recovery target timeline %u"
-msgstr "la timeline %u richiesta non è figlia della timeline %u del database"
+msgstr "la timeline del primario %u non combacia con la timeline di destinazione di recupero %u"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:165
-#, fuzzy, c-format
+#, c-format
 msgid "could not start WAL streaming: %s"
-msgstr "impossibile impostare il socket in modalità blocco: %s\n"
+msgstr "impossibile avviare lo streaming dei WAL: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:171
 #, c-format
 msgid "streaming replication successfully connected to primary"
-msgstr ""
+msgstr "streaming di replica connesso con successo al primario"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:193
 #, c-format
 msgid "socket not open"
-msgstr ""
+msgstr "socket non aperto"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:367
 #: replication/libpqwalreceiver/libpqwalreceiver.c:388
 #: replication/libpqwalreceiver/libpqwalreceiver.c:393
-#, fuzzy, c-format
+#, c-format
 msgid "could not receive data from WAL stream: %s"
-msgstr "impossibile ricevere dati dal server: %s\n"
+msgstr "impossibile ricevere dati dallo stream WAL: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:384
 #, c-format
 msgid "replication terminated by primary server"
-msgstr ""
+msgstr "replica terminata dal server primario"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:415
-#, fuzzy, c-format
+#, c-format
 msgid "could not send data to WAL stream: %s"
-msgstr "impossibile inviare dati al server: %s\n"
+msgstr "impossibile inviare dati allo stream WAL: %s"
 
 #: replication/syncrep.c:207
-#, fuzzy, c-format
+#, c-format
 msgid "canceling the wait for synchronous replication and terminating connection due to administrator command"
-msgstr "termino la connesione su comando dell'amministatore di sistema"
+msgstr "annullamento dell'attesa di replica sincrona ed interruzione della connessione a seguito del comando dell'amministratore"
 
 #: replication/syncrep.c:208 replication/syncrep.c:225
 #, c-format
 msgid "The transaction has already committed locally, but might not have been replicated to the standby."
-msgstr ""
+msgstr "La transazione ha già effettuato il commit localmente, ma potrebbe non essere stata replicata agli standby."
 
 #: replication/syncrep.c:224
-#, fuzzy, c-format
+#, c-format
 msgid "canceling wait for synchronous replication due to user request"
-msgstr "cancello la azio bloccata per richiesta dell'utente"
+msgstr "annullamento dell'attesa di replica sincrona a seguito della richiesta utente"
 
 #: replication/syncrep.c:355
 #, c-format
 msgid "standby \"%s\" now has synchronous standby priority %u"
-msgstr ""
+msgstr "lo standby \"%s\" ha ora priorità di standby sincrono %u"
 
 #: replication/syncrep.c:461
 #, c-format
 msgid "standby \"%s\" is now the synchronous standby with priority %u"
-msgstr ""
+msgstr "lo standby \"%s\" è ora in standby sincrono con priorità %u"
 
 #: replication/walreceiver.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "terminating walreceiver process due to administrator command"
-msgstr "sto terminando il processo di atovacuum su comando dell'amministratore"
+msgstr "interruzione del processo walreceiver a seguito di comando dell'amministratore"
 
 #: replication/walreceiver.c:306
-#, fuzzy, c-format
+#, c-format
 msgid "cannot continue WAL streaming, recovery has already ended"
-msgstr "si tralascia il restartpoint, il ripristino è ormai terminato"
+msgstr "impossibile continuare lo streaming dei WAL, il recupero è già terminato"
 
 #: replication/walsender.c:270 replication/walsender.c:521
 #: replication/walsender.c:579
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected EOF on standby connection"
-msgstr "inaspettato EOF sulla connessione del client"
+msgstr "fine del file inaspettato sulla connessione di standby"
 
 #: replication/walsender.c:276
-#, fuzzy, c-format
+#, c-format
 msgid "invalid standby handshake message type %d"
-msgstr "frontend message di tipo  %d non valido"
+msgstr "tipo di messaggio di handshake di standby non valido %d"
 
 #: replication/walsender.c:399 replication/walsender.c:1163
 #, c-format
 msgid "terminating walsender process to force cascaded standby to update timeline and reconnect"
-msgstr ""
+msgstr "interruzione del processo walsender per forzare gli standby in cascata ad aggiornare la timeline e riconnettersi"
 
 #: replication/walsender.c:493
-#, fuzzy, c-format
+#, c-format
 msgid "invalid standby query string: %s"
-msgstr "la stringa di escape non è valida"
+msgstr "stringa di query di standby non valida: %s"
 
 #: replication/walsender.c:550
-#, fuzzy, c-format
+#, c-format
 msgid "invalid standby message type \"%c\""
-msgstr "frontend message di tipo  %d non valido"
+msgstr "tipo di messaggio di standby non valido \"%c\""
 
 #: replication/walsender.c:601
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected message type \"%c\""
-msgstr "era atteso il nome di un tipo"
+msgstr "tipo di messaggio inatteso \"%c\""
 
 #: replication/walsender.c:796
 #, c-format
 msgid "standby \"%s\" has now caught up with primary"
-msgstr ""
+msgstr "lo standby \"%s\" ha ora raggiunto il primario"
 
 #: replication/walsender.c:871
-#, fuzzy, c-format
+#, c-format
 msgid "terminating walsender process due to replication timeout"
-msgstr "sto terminando il processo di atovacuum su comando dell'amministratore"
+msgstr "interruzione del processo walsender a causa di timeout di replica"
 
 #: replication/walsender.c:938
 #, c-format
 msgid "number of requested standby connections exceeds max_wal_senders (currently %d)"
-msgstr ""
+msgstr "il numero di richieste di connessioni di standby supera max_wal_senders (attualmente %d)"
 
 #: replication/walsender.c:1024 replication/walsender.c:1086
 #, c-format
 msgid "requested WAL segment %s has already been removed"
-msgstr ""
+msgstr "il segmento WAL richiesto %s è stato già rimosso"
 
 #: replication/walsender.c:1057
 #, c-format
 msgid "could not read from log file %u, segment %u, offset %u, length %lu: %m"
-msgstr "impossibile scrivere nel file di log %u, segmento %u, offset %u, lunghezza %lu: %m"
+msgstr "impossibile leggere dal file di log %u, segmento %u, offset %u, lunghezza %lu: %m"
 
 #: rewrite/rewriteDefine.c:107 rewrite/rewriteDefine.c:771
-#, fuzzy, c-format
+#, c-format
 msgid "rule \"%s\" for relation \"%s\" already exists"
-msgstr "la condizione \"%s\" per la relazione \"%s\" esiste già"
+msgstr "la regola \"%s\" per la relazione \"%s\" esiste già"
 
 #: rewrite/rewriteDefine.c:290
 #, c-format
 msgid "rule actions on OLD are not implemented"
-msgstr ""
+msgstr "le regole di azione su OLD non sono implementate"
 
 #: rewrite/rewriteDefine.c:291
 #, c-format
 msgid "Use views or triggers instead."
-msgstr ""
+msgstr "Usa le viste o i trigger invece."
 
 #: rewrite/rewriteDefine.c:295
 #, c-format
 msgid "rule actions on NEW are not implemented"
-msgstr ""
+msgstr "le regole di azione su NEW non sono implementate"
 
 #: rewrite/rewriteDefine.c:296
 #, c-format
 msgid "Use triggers instead."
-msgstr "Usare i triggers al posto di "
+msgstr "Usa i trigger invece."
 
 #: rewrite/rewriteDefine.c:309
 #, c-format
 msgid "INSTEAD NOTHING rules on SELECT are not implemented"
-msgstr ""
+msgstr "le regole INSTEAD NOTHING su SELECT non sono implementate"
 
 #: rewrite/rewriteDefine.c:310
 #, c-format
 msgid "Use views instead."
-msgstr "usare le viste al posto di"
+msgstr "Usa le viste invece."
 
 #: rewrite/rewriteDefine.c:318
 #, c-format
 msgid "multiple actions for rules on SELECT are not implemented"
-msgstr ""
+msgstr "avere più di una azione per le regole su SELECT non è implementato"
 
 #: rewrite/rewriteDefine.c:329
 #, c-format
 msgid "rules on SELECT must have action INSTEAD SELECT"
-msgstr ""
+msgstr "le regole su SELECT devono avere un'azione INSTEAD SELECT"
 
 #: rewrite/rewriteDefine.c:337
 #, c-format
@@ -12824,7 +12827,7 @@ msgstr "le regole su SELECT non possono contenere istruzioni di modifica dei dat
 #: rewrite/rewriteDefine.c:345
 #, c-format
 msgid "event qualifications are not implemented for rules on SELECT"
-msgstr ""
+msgstr "le qualificazioni di evento non sono implementate per le regole su SELECT"
 
 #: rewrite/rewriteDefine.c:370
 #, c-format
@@ -12834,123 +12837,123 @@ msgstr "\"%s\" è già una vista"
 #: rewrite/rewriteDefine.c:394
 #, c-format
 msgid "view rule for \"%s\" must be named \"%s\""
-msgstr ""
+msgstr "la regola della vista \"%s\" deve essere chiamata \"%s\""
 
 #: rewrite/rewriteDefine.c:419
 #, c-format
 msgid "could not convert table \"%s\" to a view because it is not empty"
-msgstr ""
+msgstr "impossibile convertire la tabella \"%s\" in una vista perché non è vuota"
 
 #: rewrite/rewriteDefine.c:426
 #, c-format
 msgid "could not convert table \"%s\" to a view because it has triggers"
-msgstr ""
+msgstr "impossibile convertire la tabella \"%s\" in una vista perché ha dei trigger"
 
 #: rewrite/rewriteDefine.c:428
 #, c-format
 msgid "In particular, the table cannot be involved in any foreign key relationships."
-msgstr ""
+msgstr "In particolare, la tabella non può prendere parte in alcuna relazione di chiave esterna."
 
 #: rewrite/rewriteDefine.c:433
 #, c-format
 msgid "could not convert table \"%s\" to a view because it has indexes"
-msgstr ""
+msgstr "impossibile convertire la tabella \"%s\" in una vista perché ha indici"
 
 #: rewrite/rewriteDefine.c:439
 #, c-format
 msgid "could not convert table \"%s\" to a view because it has child tables"
-msgstr ""
+msgstr "impossibile convertire la tabella \"%s\" in una vista perché ha tabelle figlie"
 
 #: rewrite/rewriteDefine.c:466
 #, c-format
 msgid "cannot have multiple RETURNING lists in a rule"
-msgstr ""
+msgstr "non è possibile avere più di una lista RETURNING in una regola"
 
 #: rewrite/rewriteDefine.c:471
 #, c-format
 msgid "RETURNING lists are not supported in conditional rules"
-msgstr ""
+msgstr "le liste RETURNING non sono supportate in regole condizionali"
 
 #: rewrite/rewriteDefine.c:475
 #, c-format
 msgid "RETURNING lists are not supported in non-INSTEAD rules"
-msgstr ""
+msgstr "le liste RETURNING non sono supportate in regole che non siano INSTEAD"
 
 #: rewrite/rewriteDefine.c:554
 #, c-format
 msgid "SELECT rule's target list has too many entries"
-msgstr ""
+msgstr "la lista di destinazione della regola SELECT ha troppi elementi"
 
 #: rewrite/rewriteDefine.c:555
 #, c-format
 msgid "RETURNING list has too many entries"
-msgstr ""
+msgstr "la lista RETURNING ha troppi elementi"
 
 #: rewrite/rewriteDefine.c:571
 #, c-format
 msgid "cannot convert relation containing dropped columns to view"
-msgstr ""
+msgstr "impossibile convertire una relazione contenente colonne eliminate in una vista"
 
 #: rewrite/rewriteDefine.c:576
 #, c-format
 msgid "SELECT rule's target entry %d has different column name from \"%s\""
-msgstr ""
+msgstr "l'elemento %d di destinazione della regola SELECT ha nome di colonna diverso da \"%s\""
 
 #: rewrite/rewriteDefine.c:582
 #, c-format
 msgid "SELECT rule's target entry %d has different type from column \"%s\""
-msgstr ""
+msgstr "l'elemento %d di destinazione della regola SELECT è di tipo diverso dalla colonna \"%s\""
 
 #: rewrite/rewriteDefine.c:584
 #, c-format
 msgid "RETURNING list's entry %d has different type from column \"%s\""
-msgstr ""
+msgstr "l'elemento %d della lista RETURNING è di tipo diverso dalla colonna \"%s\""
 
 #: rewrite/rewriteDefine.c:599
 #, c-format
 msgid "SELECT rule's target entry %d has different size from column \"%s\""
-msgstr ""
+msgstr "l'elemento %d di destinazione della regola SELECT ha dimensione diversa dalla colonna \"%s\""
 
 #: rewrite/rewriteDefine.c:601
 #, c-format
 msgid "RETURNING list's entry %d has different size from column \"%s\""
-msgstr ""
+msgstr "l'elemento %d della lista RETURNING ha dimensione diversa dalla colonna \"%s\""
 
 #: rewrite/rewriteDefine.c:609
 #, c-format
 msgid "SELECT rule's target list has too few entries"
-msgstr ""
+msgstr "la lista di destinazione della regola SELECT ha troppi pochi elementi"
 
 #: rewrite/rewriteDefine.c:610
 #, c-format
 msgid "RETURNING list has too few entries"
-msgstr "la lista RETURNING a troppe poche entry"
+msgstr "la lista RETURNING ha troppi pochi elementi"
 
 #: rewrite/rewriteDefine.c:702 rewrite/rewriteDefine.c:764
 #: rewrite/rewriteSupport.c:116
-#, fuzzy, c-format
+#, c-format
 msgid "rule \"%s\" for relation \"%s\" does not exist"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "la regola \"%s\" per la relazione \"%s\" non esiste"
 
 #: rewrite/rewriteHandler.c:485
 #, c-format
 msgid "WITH query name \"%s\" appears in both a rule action and the query being rewritten"
-msgstr ""
+msgstr "la query WITH \"%s\" appare sia in una regola di azione che nella query che deve essere riscritta"
 
 #: rewrite/rewriteHandler.c:543
 #, c-format
 msgid "cannot have RETURNING lists in multiple rules"
-msgstr ""
+msgstr "impossibile liste RETURNING in più di una regola"
 
 #: rewrite/rewriteHandler.c:874 rewrite/rewriteHandler.c:892
 #, c-format
 msgid "multiple assignments to same column \"%s\""
-msgstr ""
+msgstr "più di un assegnamento alla stessa colonna \"%s\""
 
 #: rewrite/rewriteHandler.c:1628 rewrite/rewriteHandler.c:2023
 #, c-format
 msgid "infinite recursion detected in rules for relation \"%s\""
-msgstr ""
+msgstr "ricorsione infinita individuata nelle regole per la relazione \"%s\""
 
 #: rewrite/rewriteHandler.c:1884
 #, c-format
@@ -12975,132 +12978,125 @@ msgstr "le regole DO INSTEAD multi-istruzione non sono supportate per istruzioni
 #: rewrite/rewriteHandler.c:2061
 #, c-format
 msgid "cannot perform INSERT RETURNING on relation \"%s\""
-msgstr ""
+msgstr "non è possibile eseguire INSERT RETURNING sulla relazione \"%s\""
 
 #: rewrite/rewriteHandler.c:2063
 #, c-format
 msgid "You need an unconditional ON INSERT DO INSTEAD rule with a RETURNING clause."
-msgstr ""
+msgstr "È necessaria una regola ON INSERT DO INSTEAD non condizionale con una clausola RETURNING."
 
 #: rewrite/rewriteHandler.c:2068
 #, c-format
 msgid "cannot perform UPDATE RETURNING on relation \"%s\""
-msgstr ""
+msgstr "non è possibile eseguire UPDATE RETURNING sulla relazione \"%s\""
 
 #: rewrite/rewriteHandler.c:2070
 #, c-format
 msgid "You need an unconditional ON UPDATE DO INSTEAD rule with a RETURNING clause."
-msgstr ""
+msgstr "È necessaria una regola ON UPDATE DO INSTEAD non condizionale con una clausola RETURNING."
 
 #: rewrite/rewriteHandler.c:2075
 #, c-format
 msgid "cannot perform DELETE RETURNING on relation \"%s\""
-msgstr ""
+msgstr "non è possibile eseguire DELETE RETURNING sulla relazione \"%s\""
 
 #: rewrite/rewriteHandler.c:2077
 #, c-format
 msgid "You need an unconditional ON DELETE DO INSTEAD rule with a RETURNING clause."
-msgstr ""
+msgstr "È necessaria una regola ON DELETE DO INSTEAD non condizionale con una clausola RETURNING."
 
 #: rewrite/rewriteHandler.c:2141
 #, c-format
 msgid "WITH cannot be used in a query that is rewritten by rules into multiple queries"
-msgstr ""
+msgstr "WITH non può essere usato in una query che viene riscritta da regole in più di una query"
 
 #: rewrite/rewriteManip.c:1028
 #, c-format
 msgid "conditional utility statements are not implemented"
-msgstr "i comandi di utilità condizionali non sono imlementati"
+msgstr "i comandi di utilità condizionali non sono implementati"
 
 #: rewrite/rewriteManip.c:1193
 #, c-format
 msgid "WHERE CURRENT OF on a view is not implemented"
-msgstr "WHERE CURRENT OF non è implementato sulla vista"
+msgstr "WHERE CURRENT OF su una vista non è implementato"
 
 #: rewrite/rewriteSupport.c:158
-#, fuzzy, c-format
+#, c-format
 msgid "rule \"%s\" does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "la regola \"%s\" non esiste"
 
 #: rewrite/rewriteSupport.c:171
 #, c-format
 msgid "there are multiple rules named \"%s\""
-msgstr "ci sono molteplici regole chiamate \"%s\""
+msgstr "esiste più di una regola chiamata \"%s\""
 
 #: rewrite/rewriteSupport.c:172
 #, c-format
 msgid "Specify a relation name as well as a rule name."
-msgstr "Specificare un nome di relazione bene come un nome di regola."
+msgstr "Specifica sia un nome di relazione che un nome di regola."
 
 #: scan.l:412
-#, fuzzy
 msgid "unterminated /* comment"
-msgstr "Commenta la riga"
+msgstr "commento /* non terminato"
 
 #: scan.l:441
-#, fuzzy
 msgid "unterminated bit string literal"
-msgstr "Costante stringa non terminata dopo %s"
+msgstr "letterale di stringa di bit non terminato"
 
 #: scan.l:462
-#, fuzzy
 msgid "unterminated hexadecimal string literal"
-msgstr "Costante stringa non terminata dopo %s"
+msgstr "letterale di stringa esadecimale non terminato"
 
 #: scan.l:512
 #, c-format
 msgid "unsafe use of string constant with Unicode escapes"
-msgstr "uso insano della stringa costante con gli escape Unicode"
+msgstr "uso non sicuro di stringa costante con gli escape Unicode"
 
 #: scan.l:513
 #, c-format
 msgid "String constants with Unicode escapes cannot be used when standard_conforming_strings is off."
-msgstr ""
+msgstr "Le stringhe costanti con escape Unicode non possono essere usate quando standard_conforming_strings è disattivato."
 
 #: scan.l:565 scan.l:573 scan.l:581 scan.l:582 scan.l:583 scan.l:1239
 #: scan.l:1266 scan.l:1270 scan.l:1308 scan.l:1312 scan.l:1334
-#, fuzzy
 msgid "invalid Unicode surrogate pair"
-msgstr "Pulisce il valore mostrato [Esc]"
+msgstr "coppia surrogata Unicode non valida"
 
 #: scan.l:587
-#, fuzzy, c-format
+#, c-format
 msgid "invalid Unicode escape"
-msgstr "Pulisce il valore mostrato [Esc]"
+msgstr "escape Unicode non valido"
 
 #: scan.l:588
 #, c-format
 msgid "Unicode escapes must be \\uXXXX or \\UXXXXXXXX."
-msgstr ""
+msgstr "Gli escape Unicode devono essere \\uXXXX or \\UXXXXXXXX."
 
 #: scan.l:599
 #, c-format
 msgid "unsafe use of \\' in a string literal"
-msgstr "uso insano di \\' in una stringa literal"
+msgstr "uso non sicuro di \\' in una stringa letterale"
 
 #: scan.l:600
 #, c-format
 msgid "Use '' to write quotes in strings. \\' is insecure in client-only encodings."
-msgstr ""
+msgstr "Usa '' per scrivere gli apici in una stringa. \\' non è sicuro in codifiche solo client."
 
 #: scan.l:675
-#, fuzzy
 msgid "unterminated dollar-quoted string"
-msgstr "stringa non chiusa nella stringa di connessione\n"
+msgstr "stringa delimitata da dollari non terminata"
 
 #: scan.l:692 scan.l:704 scan.l:718
-#, fuzzy
 msgid "zero-length delimited identifier"
-msgstr "riferimento simbolico di lunghezza zero"
+msgstr "identificatore delimitato di lunghezza zero"
 
 #: scan.l:731
-#, fuzzy
 msgid "unterminated quoted identifier"
-msgstr "Identificatore icona «%s» malformato"
+msgstr "identificatore tra virgolette non terminato"
 
 #: scan.l:835
 msgid "operator too long"
-msgstr "il comando è troppo lungo"
+msgstr "operatore troppo lungo"
 
 #. translator: %s is typically the translation of "syntax error"
 #: scan.l:993
@@ -13116,148 +13112,146 @@ msgstr "%s sopra o presso \"%s\""
 
 #: scan.l:1162 scan.l:1194
 msgid "Unicode escape values cannot be used for code point values above 007F when the server encoding is not UTF8"
-msgstr ""
+msgstr "i valori escape Unicode non possono essere usati per code point superiori a 007F se la codifica del server non è UTF8"
 
 #: scan.l:1190 scan.l:1326
-#, fuzzy
 msgid "invalid Unicode escape value"
-msgstr "Pulisce il valore mostrato [Esc]"
+msgstr "valore escape Unicode non valido"
 
 #: scan.l:1215
-#, fuzzy
 msgid "invalid Unicode escape character"
-msgstr "%s:%d: attenzione: carattere Unicode non valido"
+msgstr "carattere escape Unicode non valido"
 
 #: scan.l:1382
 #, c-format
 msgid "nonstandard use of \\' in a string literal"
-msgstr "uso non standard di \\' in una stringa literal"
+msgstr "uso non standard di \\' in una stringa letterale"
 
 #: scan.l:1383
 #, c-format
 msgid "Use '' to write quotes in strings, or use the escape string syntax (E'...')."
-msgstr ""
+msgstr "Usa '' per scrivere gli apici nelle stringhe, oppure usa la sintassi di escape delle stringhe (E'...')."
 
 #: scan.l:1392
 #, c-format
 msgid "nonstandard use of \\\\ in a string literal"
-msgstr "uso non standard di \\\\ in una stringa literal"
+msgstr "uso non standard di \\\\ in una stringa letterale"
 
 #: scan.l:1393
 #, c-format
 msgid "Use the escape string syntax for backslashes, e.g., E'\\\\'."
-msgstr ""
+msgstr "Usa la sintassi di escape delle stringhe per i backslash, cioè E'\\\\'."
 
 #: scan.l:1407
 #, c-format
 msgid "nonstandard use of escape in a string literal"
-msgstr "uso non standard dell'escape in una stringa literal"
+msgstr "uso non standard dell'escape in una stringa letterale"
 
 #: scan.l:1408
 #, c-format
 msgid "Use the escape string syntax for escapes, e.g., E'\\r\\n'."
-msgstr ""
+msgstr "Usa la sintassi di escape per le stringhe per effettuare gli escape, cioè, E'\\r\\n'."
 
 #: snowball/dict_snowball.c:180
 #, c-format
 msgid "no Snowball stemmer available for language \"%s\" and encoding \"%s\""
-msgstr "non è disponibileun Snowball stemmer per la lingua \"%s\" e la codifica \"%s\""
+msgstr "non è disponibile uno stemmer Snowball per la lingua \"%s\" e la codifica \"%s\""
 
 #: snowball/dict_snowball.c:203 tsearch/dict_ispell.c:73
 #: tsearch/dict_simple.c:48
 #, c-format
 msgid "multiple StopWords parameters"
-msgstr "ilparametri StopWords sono multipli"
+msgstr "più di un parametro StopWords"
 
 #: snowball/dict_snowball.c:212
 #, c-format
 msgid "multiple Language parameters"
-msgstr "parametri per Language multipli"
+msgstr "più di un parametro Language"
 
 #: snowball/dict_snowball.c:219
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized Snowball parameter: \"%s\""
-msgstr "funzione `%s': parametro #%d, `%s', duplica parametro #%d"
+msgstr "parametro Snowball non riconosciuto: \"%s\""
 
 #: snowball/dict_snowball.c:227
 #, c-format
 msgid "missing Language parameter"
-msgstr "mancante il parametro Language"
+msgstr "parametro Language mancante"
 
 #: storage/buffer/bufmgr.c:136 storage/buffer/bufmgr.c:241
 #, c-format
 msgid "cannot access temporary tables of other sessions"
-msgstr ""
+msgstr "impossibile accedere a tabelle temporanee di altre sessioni"
 
 #: storage/buffer/bufmgr.c:378
 #, c-format
 msgid "unexpected data beyond EOF in block %u of relation %s"
-msgstr ""
+msgstr "dati oltre fine file inaspettati nel blocco %u della relazione %s"
 
 #: storage/buffer/bufmgr.c:380
 #, c-format
 msgid "This has been seen to occur with buggy kernels; consider updating your system."
-msgstr ""
+msgstr "Questo fenomeno è stato riportato con kernel difettosi: considera l'aggiornamento del tuo sistema."
 
 #: storage/buffer/bufmgr.c:466
 #, c-format
 msgid "invalid page header in block %u of relation %s; zeroing out page"
-msgstr ""
+msgstr "intestazione di pagina non valida nel blocco %u della relazione %s; azzeramento della pagina"
 
 #: storage/buffer/bufmgr.c:474
-#, fuzzy, c-format
+#, c-format
 msgid "invalid page header in block %u of relation %s"
-msgstr "impossibile leggere il blocco %u della relazione %u/%u/%u: %m"
+msgstr "intestazione di pagina non valida nel blocco %u della relazione %s"
 
 #: storage/buffer/bufmgr.c:2909
-#, fuzzy, c-format
+#, c-format
 msgid "could not write block %u of %s"
-msgstr "impossibile scrivere il blocco %u di %u/%u/%u"
+msgstr "impossibile scrivere il blocco %u di %s"
 
 #: storage/buffer/bufmgr.c:2911
 #, c-format
 msgid "Multiple failures --- write error might be permanent."
-msgstr ""
+msgstr "Più di un fallimento --- l'errore in scrittura potrebbe essere permanente."
 
 #: storage/buffer/bufmgr.c:2932 storage/buffer/bufmgr.c:2951
-#, fuzzy, c-format
+#, c-format
 msgid "writing block %u of relation %s"
-msgstr "Errore durante la scrittura del blocco %lu (%s). "
+msgstr "scrittura del blocco %u della relazione %s"
 
 #: storage/buffer/localbuf.c:189
 #, c-format
 msgid "no empty local buffer available"
-msgstr ""
+msgstr "nessun buffer locale vuoto disponibile"
 
 #: storage/file/fd.c:416
-#, fuzzy, c-format
+#, c-format
 msgid "getrlimit failed: %m"
-msgstr "aptitude ha dato errore"
+msgstr "getrlimit fallito: %m"
 
 #: storage/file/fd.c:506
 #, c-format
 msgid "insufficient file descriptors available to start server process"
-msgstr ""
+msgstr "descrittori di file non sufficienti per avviare il processo server"
 
 #: storage/file/fd.c:507
 #, c-format
 msgid "System allows %d, we need at least %d."
-msgstr ""
+msgstr "Il sistema ne consente %d, ne occorrono almeno %d."
 
 #: storage/file/fd.c:548 storage/file/fd.c:1509 storage/file/fd.c:1625
 #, c-format
 msgid "out of file descriptors: %m; release and retry"
-msgstr ""
+msgstr "descrittori di file esauriti: %m; sto rilasciando e riprovando"
 
 #: storage/file/fd.c:1108
-#, fuzzy, c-format
+#, c-format
 msgid "temporary file: path \"%s\", size %lu"
-msgstr "il file archivio \"%s\" è di dimensione errata: %lu invece di %lu"
+msgstr "file temporaneo: percorso \"%s\", dimensione %lu"
 
 #: storage/file/fd.c:1257
-#, fuzzy, c-format
+#, c-format
 msgid "temporary file size exceeds temp_file_limit (%dkB)"
-msgstr "la dimensione della riga indice %lu eccede il massimo per un b-albero, %lu"
+msgstr "la dimensione del file temporaneo supera temp_file_limit (%dkB)"
 
 #: storage/file/fd.c:1684
 #, c-format
@@ -13272,52 +13266,52 @@ msgstr "impossibile leggere la directory \"%s\": %m"
 #: storage/lmgr/proc.c:205 utils/hash/dynahash.c:954
 #, c-format
 msgid "out of shared memory"
-msgstr "la shared memory è esaurita"
+msgstr "memoria condivisa esaurita"
 
 #: storage/ipc/shmem.c:346 storage/ipc/shmem.c:399
-#, fuzzy, c-format
+#, c-format
 msgid "not enough shared memory for data structure \"%s\" (%lu bytes requested)"
-msgstr "Memoria non sufficiente per il buffer della chiave decifrata."
+msgstr "memoria condivisa insufficiente per la struttura di dati \"%s\" (%lu byte richiesti)"
 
 #: storage/ipc/shmem.c:365
-#, fuzzy, c-format
+#, c-format
 msgid "could not create ShmemIndex entry for data structure \"%s\""
-msgstr "impossibile trovare il tipo di array per il tipo di dati %s"
+msgstr "impossibile creare l'elemento ShmemIndex per la struttura di dati \"%s\""
 
 #: storage/ipc/shmem.c:380
 #, c-format
 msgid "ShmemIndex entry size is wrong for data structure \"%s\": expected %lu, actual %lu"
-msgstr ""
+msgstr "La dimensione di ShmemIndex è errata per la struttura di dati \"%s\": attesi %lu, reali %lu"
 
 #: storage/ipc/shmem.c:427 storage/ipc/shmem.c:446
 #, c-format
 msgid "requested shared memory size overflows size_t"
-msgstr "la dimensione della memoria condivisa supera size_t"
+msgstr "la dimensione richiesta di memoria condivisa supera size_t"
 
 #: storage/ipc/standby.c:491 tcop/postgres.c:2929
 #, c-format
 msgid "canceling statement due to conflict with recovery"
-msgstr "annullamento dell'istruzione a causa di un conflitto con recovery"
+msgstr "annullamento dell'istruzione a causa di un conflitto con il ripristino"
 
 #: storage/ipc/standby.c:492 tcop/postgres.c:2225
 #, c-format
 msgid "User transaction caused buffer deadlock with recovery."
-msgstr ""
+msgstr "La transazione utente ha causato un deadlock del buffer con il ripristino."
 
 #: storage/large_object/inv_api.c:551 storage/large_object/inv_api.c:748
-#, fuzzy, c-format
+#, c-format
 msgid "large object %u was not opened for writing"
-msgstr "l'oggetto grande %u non esiste"
+msgstr "il large object %u non è stato aperto in scrittura"
 
 #: storage/large_object/inv_api.c:558 storage/large_object/inv_api.c:755
-#, fuzzy, c-format
+#, c-format
 msgid "large object %u was already dropped"
-msgstr "la regola %u è stata eliminata concorrenzialmente"
+msgstr "il large object %u è stato già eliminato"
 
 #: storage/lmgr/deadlock.c:925
 #, c-format
 msgid "Process %d waits for %s on %s; blocked by process %d."
-msgstr ""
+msgstr "Il processo %d è in attesa di %s su %s; bloccato dal processo %d"
 
 #: storage/lmgr/deadlock.c:944
 #, c-format
@@ -13330,160 +13324,160 @@ msgid "deadlock detected"
 msgstr "rilevato deadlock"
 
 #: storage/lmgr/deadlock.c:956
-#, fuzzy, c-format
+#, c-format
 msgid "See server log for query details."
-msgstr "Istallazione utente di GIMP fallita; vedere il file log per i dettagli."
+msgstr "Controllare i log del server per i dettagli della query."
 
 #: storage/lmgr/lmgr.c:657
-#, fuzzy, c-format
+#, c-format
 msgid "relation %u of database %u"
-msgstr "Database SQL"
+msgstr "la relazione %u del database %u"
 
 #: storage/lmgr/lmgr.c:663
-#, fuzzy, c-format
+#, c-format
 msgid "extension of relation %u of database %u"
-msgstr "impossibile leggere il database %s"
+msgstr "l'estensione della relazione %u del database %u"
 
 #: storage/lmgr/lmgr.c:669
-#, fuzzy, c-format
+#, c-format
 msgid "page %u of relation %u of database %u"
-msgstr "impossibile leggere il database %s"
+msgstr "la pagina %u della relazione %u del database %u"
 
 #: storage/lmgr/lmgr.c:676
-#, fuzzy, c-format
+#, c-format
 msgid "tuple (%u,%u) of relation %u of database %u"
-msgstr "impossibile leggere il database %s"
+msgstr "la tupla (%u,%u) della relazione %u del database %u"
 
 #: storage/lmgr/lmgr.c:684
 #, c-format
 msgid "transaction %u"
-msgstr "transazione %u"
+msgstr "la transazione %u"
 
 #: storage/lmgr/lmgr.c:689
-#, fuzzy, c-format
+#, c-format
 msgid "virtual transaction %d/%u"
-msgstr "Transazione non riuscita"
+msgstr "la transazione virtuale %d/%u"
 
 #: storage/lmgr/lmgr.c:695
-#, fuzzy, c-format
+#, c-format
 msgid "object %u of class %u of database %u"
-msgstr "impossibile leggere il database %s"
+msgstr "l'oggetto %u di classe %u del database %u"
 
 #: storage/lmgr/lmgr.c:703
 #, c-format
 msgid "user lock [%u,%u,%u]"
-msgstr "user lock [%u,%u,%u]"
+msgstr "il lock utente [%u,%u,%u]"
 
 #: storage/lmgr/lmgr.c:710
-#, fuzzy, c-format
+#, c-format
 msgid "advisory lock [%u,%u,%u,%u]"
-msgstr "_Blocca versione"
+msgstr "l'advisory lock [%u,%u,%u,%u]"
 
 #: storage/lmgr/lmgr.c:718
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized locktag type %d"
-msgstr "Tipo di abbreviazione non riconosciuto: \"%c\""
+msgstr "tipo di locktag non riconosciuto %d"
 
 #: storage/lmgr/lock.c:615
 #, c-format
 msgid "cannot acquire lock mode %s on database objects while recovery is in progress"
-msgstr ""
+msgstr "impossibile acquisire lock in modo %s sugli oggetti del database mentre è in corso il ripristino"
 
 #: storage/lmgr/lock.c:617
 #, c-format
 msgid "Only RowExclusiveLock or less can be acquired on database objects during recovery."
-msgstr ""
+msgstr "Solo RowExclusiveLock o inferiore può essere acquisito sugli oggetti database durante il ripristino."
 
 #: storage/lmgr/lock.c:758 storage/lmgr/lock.c:786 storage/lmgr/lock.c:2387
 #: storage/lmgr/lock.c:3501 storage/lmgr/lock.c:3566 storage/lmgr/lock.c:3847
 #, c-format
 msgid "You might need to increase max_locks_per_transaction."
-msgstr ""
+msgstr "Potrebbe essere necessario incrementare max_locks_per_transaction."
 
 #: storage/lmgr/lock.c:2818 storage/lmgr/lock.c:2931
 #, c-format
 msgid "cannot PREPARE while holding both session-level and transaction-level locks on the same object"
-msgstr ""
+msgstr "impossibile effettuare PREPARE tenendo sia lock a livello di sessione che di transazione sullo stesso oggetto"
 
 #: storage/lmgr/lock.c:3023
 #, c-format
 msgid "Not enough memory for reassigning the prepared transaction's locks."
-msgstr ""
+msgstr "Memoria insufficiente per riassegnare i lock della transazione preparata."
 
 #: storage/lmgr/predicate.c:668
 #, c-format
 msgid "not enough elements in RWConflictPool to record a read/write conflict"
-msgstr ""
+msgstr "elementi non sufficienti in RWConflictPool per registrare un conflitto di lettura/scrittura"
 
 #: storage/lmgr/predicate.c:669 storage/lmgr/predicate.c:697
 #, c-format
 msgid "You might need to run fewer transactions at a time or increase max_connections."
-msgstr ""
+msgstr "Potrebbe essere necessario eseguire meno transazioni per volta oppure incrementare max_connections."
 
 #: storage/lmgr/predicate.c:696
 #, c-format
 msgid "not enough elements in RWConflictPool to record a potential read/write conflict"
-msgstr ""
+msgstr "elementi non sufficienti in RWConflictPool per registrare un potenziale conflitto di lettura/scrittura"
 
 #: storage/lmgr/predicate.c:901
 #, c-format
 msgid "memory for serializable conflict tracking is nearly exhausted"
-msgstr ""
+msgstr "la memoria per il tracciamento dei conflitti di serializzazione è quasi esaurita"
 
 #: storage/lmgr/predicate.c:902
 #, c-format
 msgid "There might be an idle transaction or a forgotten prepared transaction causing this."
-msgstr ""
+msgstr "Ciò potrebbe essere causato da una transazione inattiva o una transazione preparata dimenticata."
 
 #: storage/lmgr/predicate.c:1184 storage/lmgr/predicate.c:1256
 #, c-format
 msgid "not enough shared memory for elements of data structure \"%s\" (%lu bytes requested)"
-msgstr ""
+msgstr "memoria condivisa non sufficiente per gli elementi della struttura dati \"%s\" (richiesti %lu byte)"
 
 #: storage/lmgr/predicate.c:1544
 #, c-format
 msgid "deferrable snapshot was unsafe; trying a new one"
-msgstr ""
+msgstr "lo snapshot deferibile era insicuro; ne sto provando uno nuovo"
 
 #: storage/lmgr/predicate.c:1583
 #, c-format
 msgid "\"default_transaction_isolation\" is set to \"serializable\"."
-msgstr ""
+msgstr "\"default_transaction_isolation\" è impostato a \"serializable\"."
 
 #: storage/lmgr/predicate.c:1584
 #, c-format
 msgid "You can use \"SET default_transaction_isolation = 'repeatable read'\" to change the default."
-msgstr ""
+msgstr "Puoi usare \"SET default_transaction_isolation = 'repeatable read'\" per cambiare il valore predefinito."
 
 #: storage/lmgr/predicate.c:1623
 #, c-format
 msgid "a snapshot-importing transaction must not be READ ONLY DEFERRABLE"
-msgstr ""
+msgstr "una transazione che importa uno snapshot non può essere READ ONLY DEFERRABLE"
 
 #: storage/lmgr/predicate.c:1693 utils/time/snapmgr.c:282
 #, c-format
 msgid "could not import the requested snapshot"
-msgstr ""
+msgstr "impossibile importare lo snapshot richiesto"
 
 #: storage/lmgr/predicate.c:1694 utils/time/snapmgr.c:283
 #, c-format
 msgid "The source transaction %u is not running anymore."
-msgstr ""
+msgstr "La transazione di origine %u non è più in esecuzione."
 
 #: storage/lmgr/predicate.c:2318 storage/lmgr/predicate.c:2333
 #: storage/lmgr/predicate.c:3729
 #, c-format
 msgid "You might need to increase max_pred_locks_per_transaction."
-msgstr ""
+msgstr "Potrebbe essere necessario incrementare max_pred_locks_per_transaction."
 
 #: storage/lmgr/predicate.c:3883 storage/lmgr/predicate.c:3972
 #: storage/lmgr/predicate.c:3980 storage/lmgr/predicate.c:4019
 #: storage/lmgr/predicate.c:4258 storage/lmgr/predicate.c:4596
 #: storage/lmgr/predicate.c:4608 storage/lmgr/predicate.c:4650
 #: storage/lmgr/predicate.c:4688
-#, fuzzy, c-format
+#, c-format
 msgid "could not serialize access due to read/write dependencies among transactions"
-msgstr "non posso serializzare un accesso in scadenza durante un update concorrenziale"
+msgstr "impossibile serializzare l'accesso a causa di dipendenze di lettura/scrittura tra le transazioni"
 
 #: storage/lmgr/predicate.c:3885 storage/lmgr/predicate.c:3974
 #: storage/lmgr/predicate.c:3982 storage/lmgr/predicate.c:4021
@@ -13492,78 +13486,78 @@ msgstr "non posso serializzare un accesso in scadenza durante un update concorre
 #: storage/lmgr/predicate.c:4690
 #, c-format
 msgid "The transaction might succeed if retried."
-msgstr ""
+msgstr "La transazione potrebbe riuscire se ritentata."
 
 #: storage/lmgr/proc.c:1124
 #, c-format
 msgid "Process %d waits for %s on %s."
-msgstr ""
+msgstr "Processo %d in attesa di %s su %s."
 
 #: storage/lmgr/proc.c:1134
-#, fuzzy, c-format
+#, c-format
 msgid "sending cancel to blocking autovacuum PID %d"
-msgstr "autovacuum task in eliminazione"
+msgstr "invio di annullamento per bloccare l'autovacuum con PID %d"
 
 #: storage/lmgr/proc.c:1146 utils/adt/misc.c:134
 #, c-format
 msgid "could not send signal to process %d: %m"
-msgstr "impossibile inviare segnali al processo %d: %m"
+msgstr "impossibile inviare il segnale al processo %d: %m"
 
 #: storage/lmgr/proc.c:1180
 #, c-format
 msgid "process %d avoided deadlock for %s on %s by rearranging queue order after %ld.%03d ms"
-msgstr ""
+msgstr "il processo %d ha evitato un deadlock per %s su %s modificando l'ordine della coda dopo %ld.%03d ms"
 
 #: storage/lmgr/proc.c:1192
 #, c-format
 msgid "process %d detected deadlock while waiting for %s on %s after %ld.%03d ms"
-msgstr ""
+msgstr "il processo %d ha individuato un deadlock mentre era in attesa di %s su %s dopo %ld.%03d ms"
 
 #: storage/lmgr/proc.c:1198
 #, c-format
 msgid "process %d still waiting for %s on %s after %ld.%03d ms"
-msgstr ""
+msgstr "il processo %d è ancira un attesa di %s su %s dopo %ld.%03d ms"
 
 #: storage/lmgr/proc.c:1202
 #, c-format
 msgid "process %d acquired %s on %s after %ld.%03d ms"
-msgstr ""
+msgstr "il processo %d ha acquisito %s su %s dopo %ld.%03d ms"
 
 #: storage/lmgr/proc.c:1218
 #, c-format
 msgid "process %d failed to acquire %s on %s after %ld.%03d ms"
-msgstr ""
+msgstr "il processo %d ha fallito l'acquisizione di %s su %s dopo %ld.%03d ms"
 
 #: storage/page/bufpage.c:142 storage/page/bufpage.c:389
 #: storage/page/bufpage.c:622 storage/page/bufpage.c:752
 #, c-format
 msgid "corrupted page pointers: lower = %u, upper = %u, special = %u"
-msgstr ""
+msgstr "puntatore di pagina corrotto: lower = %u, upper = %u, special = %u"
 
 #: storage/page/bufpage.c:432
-#, fuzzy, c-format
+#, c-format
 msgid "corrupted item pointer: %u"
-msgstr "Indirizza il puntatore all'oggetto corrente."
+msgstr "puntatore di elemento corrotto: %u"
 
 #: storage/page/bufpage.c:443 storage/page/bufpage.c:804
 #, c-format
 msgid "corrupted item lengths: total %u, available space %u"
-msgstr ""
+msgstr "lunghezza dell'elemento corrotta: totale %u, spazio disponibile %u"
 
 #: storage/page/bufpage.c:641 storage/page/bufpage.c:777
 #, c-format
 msgid "corrupted item pointer: offset = %u, size = %u"
-msgstr ""
+msgstr "puntatore di elemento corrotto: offset = %u, size = %u"
 
 #: storage/smgr/md.c:419 storage/smgr/md.c:890
-#, fuzzy, c-format
+#, c-format
 msgid "could not truncate file \"%s\": %m"
-msgstr "impossibile creare il file \"%s\": %m"
+msgstr "impossibile svuotare il file \"%s\": %m"
 
 #: storage/smgr/md.c:486
-#, fuzzy, c-format
+#, c-format
 msgid "cannot extend file \"%s\" beyond %u blocks"
-msgstr "impossibile troncare la relazione %u/%u/%u a %u blocchi: %m"
+msgstr "estendere il file \"%s\" oltre %u blocchi"
 
 #: storage/smgr/md.c:508 storage/smgr/md.c:669 storage/smgr/md.c:744
 #, fuzzy, c-format
