@@ -16546,7 +16546,7 @@ msgstr "Valore per l'argomento non valido"
 
 #: utils/adt/xml.c:1736
 msgid "Space required."
-msgstr "E' necessario uno spazio."
+msgstr "È necessario uno spazio."
 
 #: utils/adt/xml.c:1739
 msgid "standalone accepts only 'yes' or 'no'."
