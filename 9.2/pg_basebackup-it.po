@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 11:49+0100\n"
+"PO-Revision-Date: 2012-10-29 13:37+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -118,12 +118,12 @@ msgstr "  -v, --verbose          messaggi di output più numerosi\n"
 #: pg_basebackup.c:121 pg_receivexlog.c:65
 #, c-format
 msgid "  -V, --version          output version information, then exit\n"
-msgstr "  -V, --version          stampa informazioni sulla versione ed esci\n"
+msgstr "  -V, --version          mostra informazioni sulla versione ed esci\n"
 
 #: pg_basebackup.c:122 pg_receivexlog.c:66
 #, c-format
 msgid "  -?, --help             show this help, then exit\n"
-msgstr "  -?, --help             stampa questo messaggio di aiuto ed esci\n"
+msgstr "  -?, --help             mostra questo aiuto ed esci\n"
 
 #: pg_basebackup.c:123 pg_receivexlog.c:67
 #, c-format

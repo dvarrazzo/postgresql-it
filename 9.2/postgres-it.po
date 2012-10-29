@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 12:53+0100\n"
+"PO-Revision-Date: 2012-10-29 13:11+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2016,7 +2016,7 @@ msgstr "-c %s richiede un valore"
 #: postmaster/postmaster.c:731
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Consultare \"%s --help\" per maggiori informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: bootstrap/bootstrap.c:304
 #, c-format
@@ -13887,9 +13887,9 @@ msgid "invalid command-line argument for server process: %s"
 msgstr "argomenti della linea di comando non validi per il processo server"
 
 #: tcop/postgres.c:3478 tcop/postgres.c:3484
-#, fuzzy, c-format
+#, c-format
 msgid "Try \"%s --help\" for more information."
-msgstr "Provare \"%s --help\" per maggiori informazioni."
+msgstr "Prova \"%s --help\" per maggiori informazioni."
 
 #: tcop/postgres.c:3482
 #, fuzzy, c-format

@@ -460,7 +460,7 @@ msgstr "  -O OFFSET        imposta il prossimo offset multitransaction\n"
 #: pg_resetxlog.c:1038
 #, c-format
 msgid "  -V, --version    output version information, then exit\n"
-msgstr "  -V, --version    stampa informazioni sulla versione ed esci\n"
+msgstr "  -V, --version    mostra informazioni sulla versione ed esci\n"
 
 #: pg_resetxlog.c:1039
 #, c-format
