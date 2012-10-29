@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 12:31+0100\n"
+"PO-Revision-Date: 2012-10-29 12:34+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -15062,7 +15062,7 @@ msgstr "i riferimenti alla directory padre (\"..\") non sono consentiti"
 #: utils/adt/genfile.c:71
 #, c-format
 msgid "absolute path not allowed"
-msgstr "i path assoluti non sono consentiti"
+msgstr "i percorsi assoluti non sono consentiti"
 
 #: utils/adt/genfile.c:76
 #, c-format
@@ -15134,9 +15134,9 @@ msgid "invalid input syntax for type path: \"%s\""
 msgstr "l'input per il tipo path ha una sintassi non valida: \"%s\""
 
 #: utils/adt/geo_ops.c:1473
-#, fuzzy, c-format
+#, c-format
 msgid "invalid number of points in external \"path\" value"
-msgstr "il numero di punti nel valore del \"path\"esterno non è valido"
+msgstr "il numero di punti nel valore del \"path\" esterno non è valido"
 
 #: utils/adt/geo_ops.c:1816
 #, c-format
@@ -18337,14 +18337,12 @@ msgid "Sets the tablespace(s) to use for temporary tables and sort files."
 msgstr "Definisce i(l) tablespace da usarsi per le tabelle tempoeanee e i file di sort."
 
 #: utils/misc/guc.c:2610
-#, fuzzy
 msgid "Sets the path for dynamically loadable modules."
-msgstr "Definisce il path per i moduli caricabili dinamicamente."
+msgstr "Definisce il percorso per i moduli caricabili dinamicamente."
 
 #: utils/misc/guc.c:2611
-#, fuzzy
 msgid "If a dynamically loadable module needs to be opened and the specified name does not have a directory component (i.e., the name does not contain a slash), the system will search this path for the specified file."
-msgstr "Se si deve aprire un modulo caricabile dinamicamente e il nome specificato non contiene un path di directory (se non contiene uno slash) il sistema cercherè  il file specificato in questo path."
+msgstr "Se si deve aprire un modulo caricabile dinamicamente e il nome specificato non contiene un percorso di directory (se non contiene uno slash) il sistema cercherà  il file specificato in questo percorso."
 
 #: utils/misc/guc.c:2624
 #, fuzzy
@@ -18439,7 +18437,7 @@ msgstr "Definisce la directory di destinazione dei file di log."
 
 #: utils/misc/guc.c:2813
 msgid "Can be specified as relative to the data directory or as absolute path."
-msgstr "Può essere specificata sua come relativa alla data directory sia come path assoluto."
+msgstr "Può essere specificata sua come relativa alla directory data sia come percorso assoluto."
 
 #: utils/misc/guc.c:2823
 msgid "Sets the file name pattern for log files."
