@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 11:51+0100\n"
+"PO-Revision-Date: 2012-10-29 12:14+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -116,7 +116,7 @@ msgstr "impossibile leggere il link simbolico \"%s\""
 #: ../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "processo figlio uscito con codice d'uscita %d"
+msgstr "processo figlio uscito con codice di uscita %d"
 
 #: ../port/exec.c:530
 #, c-format
@@ -11857,9 +11857,9 @@ msgid "transaction log file \"%s\" could not be archived: too many failures"
 msgstr "file registro transazioni reciclato \"%s\""
 
 #: postmaster/pgarch.c:608
-#, fuzzy, c-format
+#, c-format
 msgid "archive command failed with exit code %d"
-msgstr "comando man fallito con stato d'uscita %d"
+msgstr "comando di archiviazione fallito con codice di uscita %d"
 
 #: postmaster/pgarch.c:610 postmaster/pgarch.c:620 postmaster/pgarch.c:627
 #: postmaster/pgarch.c:633 postmaster/pgarch.c:642
@@ -12335,9 +12335,9 @@ msgstr ""
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
 #: postmaster/postmaster.c:2871
-#, fuzzy, c-format
+#, c-format
 msgid "%s (PID %d) exited with exit code %d"
-msgstr "processo figlio uscito con codice d'uscita %d"
+msgstr "%s (PID %d) è uscito con codice di uscita %d"
 
 #: postmaster/postmaster.c:2873 postmaster/postmaster.c:2884
 #: postmaster/postmaster.c:2895 postmaster/postmaster.c:2904

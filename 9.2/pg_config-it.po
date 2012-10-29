@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-26 18:31+0100\n"
+"PO-Revision-Date: 2012-10-29 12:12+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -64,7 +64,7 @@ msgstr "link simbolico non leggibile \"%s\""
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "processo figlio uscito con codice d'uscita %d"
+msgstr "processo figlio terminato con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format

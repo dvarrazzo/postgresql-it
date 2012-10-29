@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-28 23:52+0100\n"
+"PO-Revision-Date: 2012-10-29 12:15+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -69,7 +69,7 @@ msgstr "impossibile leggere il link simbolico \"%s\""
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è uscito con codice d'uscita %d"
+msgstr "il processo figlio è uscito con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format
@@ -2083,7 +2083,7 @@ msgstr "Formattazione\n"
 #: help.c:238
 #, c-format
 msgid "  \\a                     toggle between unaligned and aligned output mode\n"
-msgstr "  \\a                     alterna tra modalità d'uscita allineata e disallineata\n"
+msgstr "  \\a                     alterna tra modalità di output allineata e disallineata\n"
 
 #: help.c:239
 #, c-format

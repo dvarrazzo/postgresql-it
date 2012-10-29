@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-29 12:06+0100\n"
+"PO-Revision-Date: 2012-10-29 12:13+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -68,7 +68,7 @@ msgstr "non è possibile leggere il link simbolico \"%s\""
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è uscito con codice d'uscita %d"
+msgstr "il processo figlio è uscito con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format
@@ -763,12 +763,12 @@ msgstr "parallel_restore non dovrebbe uscire\n"
 #: pg_backup_archiver.c:3751
 #, c-format
 msgid "could not create worker process: %s\n"
-msgstr "impossibile creare il worker process: %s\n"
+msgstr "impossibile creare il processo worker: %s\n"
 
 #: pg_backup_archiver.c:3759
 #, c-format
 msgid "could not create worker thread: %s\n"
-msgstr "impossibile creare il worker thread: %s\n"
+msgstr "impossibile creare il thread worker: %s\n"
 
 #: pg_backup_archiver.c:3983
 #, c-format
@@ -788,7 +788,7 @@ msgstr "elemento %d %s %s terminato\n"
 #: pg_backup_archiver.c:4095
 #, c-format
 msgid "worker process failed: exit code %d\n"
-msgstr "worker process fallito: codice d'uscita %d\n"
+msgstr "processo worker fallito: codice di uscita %d\n"
 
 #: pg_backup_archiver.c:4257
 #, c-format
