@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-29 12:37+0100\n"
+"PO-Revision-Date: 2012-10-29 12:41+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1387,7 +1387,7 @@ msgid ""
 "  -O, --no-owner               skip restoration of object ownership in\n"
 "                               plain-text format\n"
 msgstr ""
-"  -O, --no-owner               salta il ripristino della proprietà degli\n"
+"  -O, --no-owner               salta il ripristino del proprietario degli\n"
 "                               oggetti nel formato testo in chiaro\n"
 
 #: pg_dump.c:826 pg_dumpall.c:551
@@ -1500,7 +1500,7 @@ msgid ""
 msgstr ""
 "  --use-set-session-authorization\n"
 "                               usa i comandi SET SESSION AUTHORIZATION invece\n"
-"                               di ALTER OWNER per impostare le proprietà\n"
+"                               di ALTER OWNER per impostare il proprietario\n"
 
 #: pg_dump.c:847 pg_dumpall.c:568 pg_restore.c:441
 #, c-format
@@ -2015,7 +2015,7 @@ msgstr "  -g, --globals-only           scarica solo gli oggetti globali e non i 
 #: pg_dumpall.c:549 pg_restore.c:423
 #, c-format
 msgid "  -O, --no-owner               skip restoration of object ownership\n"
-msgstr "  -O, --no-owner               salta il ripristino della proprietà degli oggetti\n"
+msgstr "  -O, --no-owner               salta il ripristino del proprietario degli oggetti\n"
 
 #: pg_dumpall.c:550
 #, c-format

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-29 12:15+0100\n"
+"PO-Revision-Date: 2012-10-29 12:41+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -4022,7 +4022,7 @@ msgstr "prepara la transazione corrente per un commit a due fasi"
 
 #: sql_help.h:812
 msgid "change the ownership of database objects owned by a database role"
-msgstr "cambia la proprietà di oggetti del database posseduti da un ruolo"
+msgstr "cambia il proprietario degli oggetti del database posseduti da un ruolo"
 
 #: sql_help.h:817
 msgid "rebuild indexes"
