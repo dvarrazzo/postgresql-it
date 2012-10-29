@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 12:34+0100\n"
+"PO-Revision-Date: 2012-10-29 12:44+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1037,12 +1037,12 @@ msgstr "non esiste alcun flag di contrecord nel file di log %u, segmento %u, off
 #: access/transam/xlog.c:4113
 #, c-format
 msgid "invalid contrecord length %u in log file %u, segment %u, offset %u"
-msgstr "la lunghezza %u del contrecord nel log file %u, segmento %u, offset %u non è valida"
+msgstr "la lunghezza %u del contrecord nel file di log %u, segmento %u, offset %u non è valida"
 
 #: access/transam/xlog.c:4203
 #, c-format
 msgid "invalid magic number %04X in log file %u, segment %u, offset %u"
-msgstr "il magic number %04X nel log file registro %u, segmento %u, offset %u non è valido"
+msgstr "il magic number %04X nel file di log %u, segmento %u, offset %u non è valido"
 
 #: access/transam/xlog.c:4210 access/transam/xlog.c:4256
 #, c-format
@@ -1073,17 +1073,17 @@ msgstr "XLOG_BLCKSZ non corretto nell'intestazione pagina."
 #: access/transam/xlog.c:4264
 #, c-format
 msgid "unexpected pageaddr %X/%X in log file %u, segment %u, offset %u"
-msgstr "il pageaddr %X/%X nel log file %u, segmento %u, offset %u non era previsto"
+msgstr "il pageaddr %X/%X nel file di log %u, segmento %u, offset %u non era previsto"
 
 #: access/transam/xlog.c:4276
 #, c-format
 msgid "unexpected timeline ID %u in log file %u, segment %u, offset %u"
-msgstr "l'ID della timeline %u nel log file %u, segmento %u, offset %u non era previsto"
+msgstr "l'ID della timeline %u nel file di log %u, segmento %u, offset %u non era previsto"
 
 #: access/transam/xlog.c:4294
 #, c-format
 msgid "out-of-sequence timeline ID %u (after %u) in log file %u, segment %u, offset %u"
-msgstr "l'ID della timeline %u (dopo %u) nel log file %u, segmento %u, offset %u è fuori sequenza"
+msgstr "l'ID della timeline %u (dopo %u) nel file di log %u, segmento %u, offset %u è fuori sequenza"
 
 #: access/transam/xlog.c:4367
 #, c-format
@@ -12756,9 +12756,9 @@ msgid "requested WAL segment %s has already been removed"
 msgstr ""
 
 #: replication/walsender.c:1057
-#, fuzzy, c-format
+#, c-format
 msgid "could not read from log file %u, segment %u, offset %u, length %lu: %m"
-msgstr "impossibile scrivere nel log file %u, segmento %u, offset %u, lunghezza %u: %m"
+msgstr "impossibile scrivere nel file di log %u, segmento %u, offset %u, lunghezza %lu: %m"
 
 #: rewrite/rewriteDefine.c:107 rewrite/rewriteDefine.c:771
 #, fuzzy, c-format
