@@ -75,20 +75,21 @@ Quando il database si rivolge all'utente, usa la seconda persona singolare.
 Traduzioni di termini abbastanza comuni
 ---------------------------------------
 
-* exit code: codice di uscita (inteso di processi e thread)
-* encoding: codifica
-* collate: ordinamento
-* database cluster: cluster di database
-* server-side: lato server
-* client-side: lato client
-* return: restituire, non tornare o ritornare
-* set: impostare, non settare (non c'è puttare o gettare, no?)
-* get: ottenere, trovare (a seconda del contesto: ottenere informazioni,
-  trovare un valore)
-* superuser: superutente
-* default: predefinito
-* log file: file di log
-* owenership: il proprietario, non la proprietà (quest'ultimo è ambiguo)
 * bug: bug, non bachi (e neanche errori: non sono quelli da segnalare alla
   mailing list.)
+* client-side: lato client
+* collate: ordinamento
+* database cluster: cluster di database
+* default: predefinito
+* encoding: codifica
+* exit code: codice di uscita (inteso di processi e thread)
+* get: ottenere, trovare (a seconda del contesto: ottenere informazioni,
+* invalid: non valido (non "invalido")
+* log file: file di log
+* owenership: il proprietario, non la proprietà (quest'ultimo è ambiguo)
+* return: restituire, non tornare o ritornare
+* server-side: lato server
+* set: impostare, non settare (non c'è puttare o gettare, no?)
+  trovare un valore)
+* superuser: superutente
 
