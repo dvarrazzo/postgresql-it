@@ -668,9 +668,3 @@ msgstr "il puntatore a puntatore non è supportato per questo tipo di dato"
 #, c-format
 msgid "multidimensional arrays for structures are not supported"
 msgstr "gli array multidimensionali per strutture non sono supportati"
-
-#~ msgid "constraint declared INITIALLY DEFERRED must be DEFERRABLE"
-#~ msgstr "la condizione dichiarata INITIALLY DEFERRED  deve essere DEFERRABLE"
-
-#~ msgid "AT option not allowed in DEALLOCATE statement"
-#~ msgstr "l'opzione AT non è permessa nell'istruzione DEALLOCATE"

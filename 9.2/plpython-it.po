@@ -430,36 +430,3 @@ msgstr "impossibile convertire oggetto Unicode Python in byte"
 #, c-format
 msgid "could not extract bytes from encoded string"
 msgstr "impossibile estrarre byte dalla stringa codificata"
-
-#~ msgid "PL/Python function \"%s\" failed"
-#~ msgstr "la funzione PL/Python \"%s\" è fallita"
-
-#~ msgid "could not create string representation of Python object in PL/Python function \"%s\" while creating return value"
-#~ msgstr "impossibile creare una rappresentazione di tipo stringa dell'oggetto Python nella funzione PL/Python \"%s\" durante la creazione del valore di ritorno"
-
-#~ msgid "could not compute string representation of Python object in PL/Python function \"%s\" while modifying trigger row"
-#~ msgstr "impossibile calcolare la rappresentazione di tipo stringa dell'oggetto Python nella funzione PL/Python \"%s\" mentre si sta modificando la riga di trigger"
-
-#~ msgid "out of memory"
-#~ msgstr "memoria esaurita"
-
-#~ msgid "PL/Python: %s"
-#~ msgstr "PL/Python: %s"
-
-#~ msgid "could not create procedure cache"
-#~ msgstr "impossibile creare la procedura cache"
-
-#~ msgid "unrecognized error in PLy_spi_execute_query"
-#~ msgstr "errore non riconosciuto nella funzione PLy_spi_execute_query"
-
-#~ msgid "unrecognized error in PLy_spi_execute_plan"
-#~ msgstr "errore non riconosciuto nella funzione PLy_spi_execute_plan"
-
-#~ msgid "unrecognized error in PLy_spi_prepare"
-#~ msgstr "errore non riconosciuto in PLy_spi_prepare"
-
-#~ msgid "invalid arguments for plpy.prepare"
-#~ msgstr "argomenti non validi per plpy.prepare"
-
-#~ msgid "transaction aborted"
-#~ msgstr "transazione abortita"

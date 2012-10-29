@@ -480,24 +480,3 @@ msgid ""
 msgstr ""
 "\n"
 "Segnalare bug a <pgsql-bugs@postgresql.org>.\n"
-
-#~ msgid "LC_CTYPE:                             %s\n"
-#~ msgstr "LC_CTYPE:                             %s\n"
-
-#~ msgid "LC_COLLATE:                           %s\n"
-#~ msgstr "LC_COLLATE:                           %s\n"
-
-#~ msgid "Maximum number of function arguments: %u\n"
-#~ msgstr "Numero massimo di parametri per una funzione: %u\n"
-
-#~ msgid "%s: invalid LC_CTYPE setting\n"
-#~ msgstr "%s: impostazione errata per LC_CTYPE\n"
-
-#~ msgid "%s: invalid LC_COLLATE setting\n"
-#~ msgstr "%s: impostazione errata per LC_COLLATE\n"
-
-#~ msgid "  --version       output version information, then exit\n"
-#~ msgstr "  --version       mostra informazioni sulla versione, poi esci\n"
-
-#~ msgid "  --help          show this help, then exit\n"
-#~ msgstr "  --help           mostra questo aiuto, poi esci\n"

@@ -299,6 +299,3 @@ msgstr "%s: il proprio programma eseguibile non è stato trovato\n"
 #, c-format
 msgid "%s: invalid argument: %s\n"
 msgstr "%s: parametro invalido: %s\n"
-
-#~ msgid "  --help                show this help, then exit\n"
-#~ msgstr "  --help               mostra questo aiuto ed esce\n"

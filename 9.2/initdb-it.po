@@ -919,23 +919,3 @@ msgstr ""
 "oppure\n"
 "    %s%s%spg_ctl%s -D %s%s%s -l logfile start\n"
 "\n"
-
-#~ msgid "creating directory %s/%s ... "
-#~ msgstr "creazione directory %s/%s ... "
-
-#~ msgid "%s: failed\n"
-#~ msgstr "%s: fallito\n"
-
-#~ msgid "  --locale=LOCALE           initialize database cluster with given locale\n"
-#~ msgstr ""
-#~ "  --locale=LOCALE           inizzializza il database cluster con il\n"
-#~ "locale specificato\n"
-
-#~ msgid "%s: could not determine valid short version string\n"
-#~ msgstr "%s: impossibile determinare una versione corta della stringa valida\n"
-
-#~ msgid "%s: The password file was not generated. Please report this problem.\n"
-#~ msgstr "%s: Il file delle password non è stato generato. Segnalate questo problema.\n"
-
-#~ msgid "%s: unrecognized authentication method \"%s\"\n"
-#~ msgstr "%s: metodo di autenticazione non riconosciuto \"%s\"\n"

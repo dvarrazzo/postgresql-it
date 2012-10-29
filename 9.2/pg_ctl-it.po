@@ -783,21 +783,3 @@ msgstr "%s: nessuna operazione specificata\n"
 #, c-format
 msgid "%s: no database directory specified and environment variable PGDATA unset\n"
 msgstr "%s: nessuna directory del database è stata specificata e la variabile d'ambiente PGDATA non è configurata\n"
-
-#~ msgid "could not start server\n"
-#~ msgstr "non è possibile avviare il server\n"
-
-#~ msgid "  --version              output version information, then exit\n"
-#~ msgstr "  --version              mostra le informazioni della versione, poi esci\n"
-
-#~ msgid "  --help                 show this help, then exit\n"
-#~ msgstr "  --help                 mostra l'help e poi esci\n"
-
-#~ msgid ""
-#~ "%s is a utility to start, stop, restart, reload configuration files,\n"
-#~ "report the status of a PostgreSQL server, or signal a PostgreSQL process.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "%s è un proramma di utilità per avviare, spegnere, riavviare, ricaricare file di configurazione,\n"
-#~ "dare un rapporto sullo stato di PostgreSQL server, o segnalare un processo di PostgreSQL.\n"
-#~ "\n"

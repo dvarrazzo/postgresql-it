@@ -4158,39 +4158,3 @@ msgstr ""
 #, c-format
 msgid "unrecognized Boolean value; assuming \"on\"\n"
 msgstr "valore booleano non riconosciuto; interpretato come \"attivato\"\n"
-
-#~ msgid "schema"
-#~ msgstr "schema"
-
-#~ msgid "tablespace"
-#~ msgstr "tablespace"
-
-#~ msgid "new_column"
-#~ msgstr "nuova_colonna"
-
-#~ msgid "column"
-#~ msgstr "colonna"
-
-#~ msgid "data type"
-#~ msgstr "tipo di dato"
-
-#~ msgid "aggregate"
-#~ msgstr "aggregato"
-
-#~ msgid "contains support for command-line editing"
-#~ msgstr "contiene il supporto per l'editing da riga di comando"
-
-#~ msgid "  --version                output version information, then exit\n"
-#~ msgstr "  --version                mostra informazioni sulla versione, poi esci\n"
-
-#~ msgid "  --help                   show this help, then exit\n"
-#~ msgstr "  --help                   mostra questo aiuto, poi esci\n"
-
-#~ msgid "\\copy: unexpected response (%d)\n"
-#~ msgstr "\\copy: risultato inaspettato(%d)\n"
-
-#~ msgid "\\copy: %s"
-#~ msgstr "\\copy: %s"
-
-#~ msgid "\\%s: error\n"
-#~ msgstr "\\%s: errore\n"

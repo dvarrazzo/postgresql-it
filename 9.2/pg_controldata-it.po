@@ -389,30 +389,3 @@ msgstr "per valore"
 #, c-format
 msgid "Float8 argument passing:              %s\n"
 msgstr "Passaggio di argomenti Float8:              %s\n"
-
-#~ msgid "LC_CTYPE:                             %s\n"
-#~ msgstr "LC_CTYPE:                             %s\n"
-
-#~ msgid "LC_COLLATE:                           %s\n"
-#~ msgstr "LC_COLLATE:                           %s\n"
-
-#~ msgid "Maximum number of function arguments: %u\n"
-#~ msgstr "N° massimo di argomenti per funzione: %u\n"
-
-#~ msgid "Latest checkpoint's UNDO location:    %X/%X\n"
-#~ msgstr "Ultima posizione UNDO checkpoint:     %X/%X\n"
-
-#~ msgid ""
-#~ "Usage:\n"
-#~ "  %s [OPTION] [DATADIR]\n"
-#~ "\n"
-#~ "Options:\n"
-#~ "  --help         show this help, then exit\n"
-#~ "  --version      output version information, then exit\n"
-#~ msgstr ""
-#~ "Uso:\n"
-#~ "  %s [OPZIONI] [DATADIR]\n"
-#~ "\n"
-#~ "Opzioni:\n"
-#~ "  --help         mostra questo help, poi esci\n"
-#~ "  --version      mostra le informazioni circa la versione, poi esci\n"

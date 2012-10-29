@@ -967,32 +967,3 @@ msgid ""
 msgstr ""
 "\n"
 "Consulta la descrizione del comando SQL VACUUM per maggiori informazioni.\n"
-
-#~ msgid "  --version                       output version information, then exit\n"
-#~ msgstr "  --version                       mostra informazioni sulla versione e poi esci\n"
-
-#~ msgid "  --help                          show this help, then exit\n"
-#~ msgstr "  --help                          mostra questi aiuti ed esci\n"
-
-#~ msgid "%s: still %s functions declared in language \"%s\"; language not removed\n"
-#~ msgstr "%s: ancora %s funzioni dichiarate nel linguaggio \"%s\"; linguaggio non eliminato\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "If one of -d, -D, -r, -R, -s, -S, and ROLENAME is not specified, you will\n"
-#~ "be prompted interactively.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Se uno tra -d, -D, -r, -R, -s, -S ed UTENTE non è specificato, ti sarà richesto interattivamente.\n"
-
-#~ msgid "  --version                 output version information, then exit\n"
-#~ msgstr "  --version                 mostra informazioni sulla versione, poi esci\n"
-
-#~ msgid "  --help                    show this help, then exit\n"
-#~ msgstr "  --help                    mostra questo aiuto e poi esci\n"
-
-#~ msgid "  --version                    output version information, then exit\n"
-#~ msgstr "  --version                       mostra informazioni sulla versione e poi esce\n"
-
-#~ msgid "  --help                       show this help, then exit\n"
-#~ msgstr "  --help                       mostra questa guida, quindi esce\n"

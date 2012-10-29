@@ -201,6 +201,3 @@ msgstr "compilazione della funzione Perl \"%s\""
 #, c-format
 msgid "PL/Perl anonymous code block"
 msgstr "blocco di codice anonimo PL/Perl"
-
-#~ msgid "while executing PLC_SAFE_OK"
-#~ msgstr "durante l'esecuzione di PLC_SAFE_OK"
