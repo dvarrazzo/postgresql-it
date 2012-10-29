@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 11:52+0100\n"
+"PO-Revision-Date: 2012-10-29 12:21+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -290,7 +290,7 @@ msgstr "inizializzazione di pg_authid ... "
 
 #: initdb.c:1311
 msgid "Enter new superuser password: "
-msgstr "Inserire la nuova password del superuser: "
+msgstr "Inserire la nuova password del superutente: "
 
 #: initdb.c:1312
 msgid "Enter it again: "
@@ -545,7 +545,7 @@ msgstr "      --no-locale           equivalente a --locale=C\n"
 #: initdb.c:2529
 #, c-format
 msgid "      --pwfile=FILE         read password for the new superuser from file\n"
-msgstr "      --pwfile=FILE         legge la password per il nuovo superuser dal file\n"
+msgstr "      --pwfile=FILE         leggi la password per il nuovo superutente dal file\n"
 
 #: initdb.c:2530
 #, c-format
@@ -559,12 +559,12 @@ msgstr ""
 #: initdb.c:2532
 #, c-format
 msgid "  -U, --username=NAME       database superuser name\n"
-msgstr "  -U, --username=NOME       nome del superuser del database\n"
+msgstr "  -U, --username=NOME       nome del superutente del database\n"
 
 #: initdb.c:2533
 #, c-format
 msgid "  -W, --pwprompt            prompt for a password for the new superuser\n"
-msgstr "  -W, --pwprompt            richiede la password per il nuovo superuser\n"
+msgstr "  -W, --pwprompt            richiede la password per il nuovo superutente\n"
 
 #: initdb.c:2534
 #, c-format

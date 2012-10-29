@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 12:14+0100\n"
+"PO-Revision-Date: 2012-10-29 12:31+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -13952,7 +13952,7 @@ msgstr "%s non può esssere eseguita da una funzione"
 #: tcop/utility.c:1119
 #, c-format
 msgid "must be superuser to do CHECKPOINT"
-msgstr "bisogna essere superuser per eseguire CHECKPOINT"
+msgstr "solo un superutente può eseguire CHECKPOINT"
 
 #: tsearch/dict_ispell.c:51 tsearch/dict_thesaurus.c:614
 #, c-format
@@ -15083,9 +15083,9 @@ msgstr "Impossibile posizionarsi sul file XCF: %s"
 
 #: utils/adt/genfile.c:179 utils/adt/genfile.c:203 utils/adt/genfile.c:224
 #: utils/adt/genfile.c:248
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to read files"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo un superutente può leggere i file"
 
 #: utils/adt/genfile.c:186 utils/adt/genfile.c:231
 #, c-format
@@ -15093,14 +15093,14 @@ msgid "requested length cannot be negative"
 msgstr "la lunghezza richiesta non può essere negativa"
 
 #: utils/adt/genfile.c:272
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to get file information"
-msgstr "solo un superuser può accedere alle informazione dei file"
+msgstr "solo un superutente può ottenere informazioni sul file"
 
 #: utils/adt/genfile.c:336
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to get directory listings"
-msgstr "solo un superuser può listare il contenuto di una directory"
+msgstr "solo un superutente può elencare il contenuto della directory"
 
 #: utils/adt/geo_ops.c:294 utils/adt/geo_ops.c:4251 utils/adt/geo_ops.c:5172
 #, c-format
@@ -15385,19 +15385,19 @@ msgid "PID %d is not a PostgreSQL server process"
 msgstr "il PID %d non rappresenta un processo di un server PostgreSQL"
 
 #: utils/adt/misc.c:152
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser or have the same role to cancel queries running in other server processes"
-msgstr "solo un superuser può inviare segnali verso altri processi del server"
+msgstr "solo un superutente oppure lo stesso ruolo può cancellare le query in esecuzione in altri processi del server"
 
 #: utils/adt/misc.c:169
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser or have the same role to terminate other server processes"
-msgstr "solo un superuser può inviare segnali verso altri processi del server"
+msgstr "solo un superutente oppure lo stesso ruolo può interrompere altri processi"
 
 #: utils/adt/misc.c:183
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to signal the postmaster"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo un superutente può inviare segnali al postmaster"
 
 #: utils/adt/misc.c:188
 #, fuzzy, c-format
@@ -15405,9 +15405,9 @@ msgid "failed to send signal to postmaster: %m"
 msgstr "impossibile inviare segnali al processo %d: %m"
 
 #: utils/adt/misc.c:205
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to rotate log files"
-msgstr "solo un superuser può eseguire la rotazione dei log file"
+msgstr "solo un superutente può eseguire la rotazione dei file di log"
 
 #: utils/adt/misc.c:210
 #, c-format
@@ -17129,29 +17129,29 @@ msgid "You should immediately run CREATE USER \"%s\" SUPERUSER;."
 msgstr "Dovresti eseguire immediatamente 'CREATE USER \"%s\"WITH SYSID %d CREATEUSER;'."
 
 #: utils/init/postinit.c:632
-#, fuzzy, c-format
+#, c-format
 msgid "new replication connections are not allowed during database shutdown"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "non sono accettate nuove connessioni di replica durante lo spegnimento del database"
 
 #: utils/init/postinit.c:636
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to connect during database shutdown"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo un superutente può connettersi durante lo spegnimento del database"
 
 #: utils/init/postinit.c:646
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to connect in binary upgrade mode"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo un superutente può connettersi in modalità di aggiornamento binario"
 
 #: utils/init/postinit.c:660
-#, fuzzy, c-format
+#, c-format
 msgid "remaining connection slots are reserved for non-replication superuser connections"
-msgstr "Definisce il numero di slot per connessioni riservate ai superuser."
+msgstr "i rimanenti slot di connessione sono riservate a connessioni di superutenti non di replica"
 
 #: utils/init/postinit.c:674
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser or replication role to start walsender"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo un superutente o il ruolo di replica può avviare walsender"
 
 #: utils/init/postinit.c:734
 #, c-format
@@ -17485,7 +17485,7 @@ msgstr "Questo algoritmo cerca di realizzare piani senza effettuare una ricerca 
 
 #: utils/misc/guc.c:781
 msgid "Shows whether the current user is a superuser."
-msgstr "Mostra se l'utente attuale è un superuser o meno."
+msgstr "Mostra se l'utente attuale è un superutente o meno."
 
 #: utils/misc/guc.c:791
 msgid "Enables advertising the server via Bonjour."
@@ -17875,9 +17875,8 @@ msgid "Sets the maximum number of concurrent connections."
 msgstr "Definisce il numero massimo di connessioni concorrenti."
 
 #: utils/misc/guc.c:1609
-#, fuzzy
 msgid "Sets the number of connection slots reserved for superusers."
-msgstr "Definisce il numero di slot per connessioni riservate ai superuser."
+msgstr "Definisce il numero di slot per connessioni riservate ai superutenti."
 
 #: utils/misc/guc.c:1623
 msgid "Sets the number of shared memory buffers used by the server."
@@ -18770,9 +18769,9 @@ msgid "%g is outside the valid range for parameter \"%s\" (%g .. %g)"
 msgstr "%g è fuori dal range valid per \"%s\"(%g .. %g)"
 
 #: utils/misc/guc.c:5948 utils/misc/guc.c:5996 utils/misc/guc.c:6888
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to examine \"%s\""
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo un superutente può esaminare \"%s\""
 
 #: utils/misc/guc.c:6062
 #, c-format
