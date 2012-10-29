@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 14:28+0100\n"
+"PO-Revision-Date: 2012-10-29 17:39+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Bookmarks: 2816,1935,-1,-1,-1,-1,1296,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 2816,2220,-1,-1,-1,-1,1296,-1,-1,-1\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
@@ -10113,11 +10113,15 @@ msgid ""
 "possible system security compromise.  See the documentation for\n"
 "more information on how to properly start the server.\n"
 msgstr ""
+"Non è consentito eseguire il server PostgreSQL come \"root\".\n"
+"Il server deve essere avviato con un ID utente non privilegiato per\n"
+"prevenire possibili problemi di sicurezza. Consulta la documentazione\n"
+"per avere maggiori informazioni su come avviare il server correttamente.\n"
 
 #: main/main.c:357
 #, c-format
 msgid "%s: real and effective user IDs must match\n"
-msgstr "%s: gli user ID reale e quello effettivo devono coincidere\n"
+msgstr "%s: utente gli ID reale e quello effettivo devono coincidere\n"
 
 #: main/main.c:364
 #, c-format
@@ -10128,16 +10132,21 @@ msgid ""
 "possible system security compromises.  See the documentation for\n"
 "more information on how to properly start the server.\n"
 msgstr ""
+"Non è consentito eseguire il server PostgreSQL con un utente con permessi\n"
+"amministrativi.\n"
+"Il server deve essere avviato con un ID utente non privilegiato per\n"
+"prevenire possibili problemi di sicurezza. Consulta la documentazione\n"
+"per avere maggiori informazioni su come avviare il server correttamente.\n"
 
 #: main/main.c:385
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid effective UID: %d\n"
-msgstr "impossibile impostare lo uid effettivo"
+msgstr "%s: UID effettivo non valido: %d\n"
 
 #: main/main.c:398
 #, c-format
 msgid "%s: could not determine user name (GetUserName failed)\n"
-msgstr ""
+msgstr "%s: impossibile determinare il nome utente (GetUserName fallita)\n"
 
 #: nodes/nodeFuncs.c:115 nodes/nodeFuncs.c:141 parser/parse_coerce.c:1781
 #: parser/parse_coerce.c:1809 parser/parse_coerce.c:1885
@@ -10149,165 +10158,165 @@ msgstr "impossibile trovare il tipo di array per il tipo di dati %s"
 #: optimizer/path/joinrels.c:676
 #, c-format
 msgid "FULL JOIN is only supported with merge-joinable or hash-joinable join conditions"
-msgstr ""
+msgstr "FULL JOIN è supportato solo con condizioni di join realizzabili con merge o hash"
 
 #: optimizer/plan/initsplan.c:592
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to the nullable side of an outer join"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non può essere applicato al lato di un join esterno che può essere null"
 
 #: optimizer/plan/planner.c:1031 parser/analyze.c:1383 parser/analyze.c:1575
 #: parser/analyze.c:2281
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE is not allowed with UNION/INTERSECT/EXCEPT"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con UNION/INTERSECT/EXCEPT"
 
 #: optimizer/plan/planner.c:2359
-#, fuzzy, c-format
+#, c-format
 msgid "could not implement GROUP BY"
-msgstr "Impossibile cambiare il gruppo di «%s»: %s"
+msgstr "impossibile implementare GROUP BY"
 
 #: optimizer/plan/planner.c:2360 optimizer/plan/planner.c:2532
 #: optimizer/prep/prepunion.c:822
 #, c-format
 msgid "Some of the datatypes only support hashing, while others only support sorting."
-msgstr ""
+msgstr "Alcuni dei tipi di dati supportano solo l'hashing, mentre altri supportano solo l'ordinamento."
 
 #: optimizer/plan/planner.c:2531
-#, fuzzy, c-format
+#, c-format
 msgid "could not implement DISTINCT"
-msgstr "Impossibile inizializzare Bonobo"
+msgstr "impossibile implementare DISTINCT"
 
 #: optimizer/plan/planner.c:3122
 #, c-format
 msgid "could not implement window PARTITION BY"
-msgstr ""
+msgstr "impossibile implementare PARTITION BY della finestra"
 
 #: optimizer/plan/planner.c:3123
 #, c-format
 msgid "Window partitioning columns must be of sortable datatypes."
-msgstr ""
+msgstr "La colonna di partizionamento della finestra dev'essere un tipo di dato ordinabile."
 
 #: optimizer/plan/planner.c:3127
 #, c-format
 msgid "could not implement window ORDER BY"
-msgstr ""
+msgstr "impossibile implementare ORDER BY della finestra"
 
 #: optimizer/plan/planner.c:3128
 #, c-format
 msgid "Window ordering columns must be of sortable datatypes."
-msgstr ""
+msgstr "La colonna di ordinamento della finestra dev'essere un tipo di dato ordinabile."
 
 #: optimizer/plan/setrefs.c:255
-#, fuzzy, c-format
+#, c-format
 msgid "too many range table entries"
-msgstr "troppi argomenti"
+msgstr "troppi intervalli di tabella"
 
 #: optimizer/prep/prepunion.c:416
 #, c-format
 msgid "could not implement recursive UNION"
-msgstr ""
+msgstr "impossibile implementare la UNION ricorsiva"
 
 #: optimizer/prep/prepunion.c:417
 #, c-format
 msgid "All column datatypes must be hashable."
-msgstr ""
+msgstr "Tutti i tipi di dati devono supportare l'hash."
 
 #. translator: %s is UNION, INTERSECT, or EXCEPT
 #: optimizer/prep/prepunion.c:821
-#, fuzzy, c-format
+#, c-format
 msgid "could not implement %s"
-msgstr "Impossibile chiudere \"%s\" (%m)."
+msgstr "impossibile implementare %s"
 
 #: optimizer/util/clauses.c:4358
-#, fuzzy, c-format
+#, c-format
 msgid "SQL function \"%s\" during inlining"
-msgstr "funzione SQL \"%s\"istruzione %d"
+msgstr "funzione SQL \"%s\" durante l'inlining"
 
 #: optimizer/util/plancat.c:99
-#, fuzzy, c-format
+#, c-format
 msgid "cannot access temporary or unlogged relations during recovery"
-msgstr "%s non può esssere eseguita da una funzione"
+msgstr "impossibile accedere a relazioni temporanee o non loggate durante il ripristino"
 
 #: parser/analyze.c:620 parser/analyze.c:1128
 #, c-format
 msgid "VALUES lists must all be the same length"
-msgstr ""
+msgstr "le liste VALUES devono essere tutte della stessa lunghezza"
 
 #: parser/analyze.c:662 parser/analyze.c:1261
 #, c-format
 msgid "VALUES must not contain table references"
-msgstr ""
+msgstr "VALUES non può contenere riferimenti a tabelle"
 
 #: parser/analyze.c:676 parser/analyze.c:1275
 #, c-format
 msgid "VALUES must not contain OLD or NEW references"
-msgstr ""
+msgstr "VALUES non può contenere riferimenti a OLD o a NEW"
 
 #: parser/analyze.c:677 parser/analyze.c:1276
 #, c-format
 msgid "Use SELECT ... UNION ALL ... instead."
-msgstr ""
+msgstr "Usa SELECT ... UNION ALL ... invece."
 
 #: parser/analyze.c:782 parser/analyze.c:1288
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use aggregate function in VALUES"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non si possono usare funzioni di aggregazione in VALUES"
 
 #: parser/analyze.c:788 parser/analyze.c:1294
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in VALUES"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non si possono usare funzioni finestra in VALUES"
 
 #: parser/analyze.c:822
 #, c-format
 msgid "INSERT has more expressions than target columns"
-msgstr ""
+msgstr "INSERT ha più espressioni che colonne di destinazione"
 
 #: parser/analyze.c:840
 #, c-format
 msgid "INSERT has more target columns than expressions"
-msgstr ""
+msgstr "INSERT ha più colonne di destinazione che espressioni"
 
 #: parser/analyze.c:844
 #, c-format
 msgid "The insertion source is a row expression containing the same number of columns expected by the INSERT. Did you accidentally use extra parentheses?"
-msgstr ""
+msgstr "L'origine dell'inserimento è un'espressione riga con lo stesso numero di colonne attese da INSERT. Forse hai usato accidentalmente parentesi in eccesso?"
 
 #: parser/analyze.c:951 parser/analyze.c:1358
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT ... INTO is not allowed here"
-msgstr "EXECUTE di SELECT ... INTO non è implementato"
+msgstr "SELECT ... INTO non è permesso qui"
 
 #: parser/analyze.c:1142
 #, c-format
 msgid "DEFAULT can only appear in a VALUES list within INSERT"
-msgstr ""
+msgstr "DEFAULT può apparire solo nella lista di VALUES usata in un INSERT"
 
 #: parser/analyze.c:1250 parser/analyze.c:2432
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to VALUES"
-msgstr "SELECT FOR UPDATE non è consentito con AGGREGATE"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con VALUES"
 
 #: parser/analyze.c:1506
 #, c-format
 msgid "invalid UNION/INTERSECT/EXCEPT ORDER BY clause"
-msgstr ""
+msgstr "clausola UNION/INTERSECT/EXCEPT ORDER BY non valida"
 
 #: parser/analyze.c:1507
 #, c-format
 msgid "Only result column names can be used, not expressions or functions."
-msgstr ""
+msgstr "Possono essere usati solo nomi di colonne risultanti, non espressioni o funzioni."
 
 #: parser/analyze.c:1508
 #, c-format
 msgid "Add the expression/function to every SELECT, or move the UNION into a FROM clause."
-msgstr ""
+msgstr "Aggiungi l'espressione/funzione ad ogni SELECT, oppure sposta la UNION in una clausola FROM."
 
 #: parser/analyze.c:1567
 #, c-format
 msgid "INTO is only allowed on first SELECT of UNION/INTERSECT/EXCEPT"
-msgstr ""
+msgstr "INTO è permesso solo nella prima SELECT di UNION/INTERSECT/EXCEPT"
 
 #: parser/analyze.c:1627
 #, c-format
@@ -10317,32 +10326,32 @@ msgstr "l'istruzione membro di UNION/INTERSECT/EXCEPT non può riferirsi al altr
 #: parser/analyze.c:1715
 #, c-format
 msgid "each %s query must have the same number of columns"
-msgstr ""
+msgstr "ogni query in %s deve avere lo stesso numero di colonne"
 
 #: parser/analyze.c:1991
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use aggregate function in UPDATE"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non è possibile usare funzioni di aggregazione in UPDATE"
 
 #: parser/analyze.c:1997
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in UPDATE"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non è possibile usare funzioni finestra in UPDATE"
 
 #: parser/analyze.c:2106
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use aggregate function in RETURNING"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non è possibile usare funzioni di aggregazione in RETURNING"
 
 #: parser/analyze.c:2112
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in RETURNING"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non è possibile usare funzioni finestra in RETURNING"
 
 #: parser/analyze.c:2131
 #, c-format
 msgid "RETURNING cannot contain references to other relations"
-msgstr ""
+msgstr "RETURNING non può contenere riferimenti ad altre relazioni"
 
 #: parser/analyze.c:2170
 #, c-format
@@ -10357,230 +10366,230 @@ msgstr "DECLARE CURSOR non può contenere istruzioni di modifica dei dati nel WI
 #: parser/analyze.c:2194
 #, c-format
 msgid "DECLARE CURSOR WITH HOLD ... FOR UPDATE/SHARE is not supported"
-msgstr ""
+msgstr "DECLARE CURSOR WITH HOLD ... FOR UPDATE/SHARE non è supportato"
 
 #: parser/analyze.c:2195
 #, c-format
 msgid "Holdable cursors must be READ ONLY."
-msgstr ""
+msgstr "I cursori trattenibili devono essere READ ONLY."
 
 #: parser/analyze.c:2208
 #, c-format
 msgid "DECLARE INSENSITIVE CURSOR ... FOR UPDATE/SHARE is not supported"
-msgstr ""
+msgstr "DECLARE INSENSITIVE CURSOR ... FOR UPDATE/SHARE non è supportato"
 
 #: parser/analyze.c:2209
 #, c-format
 msgid "Insensitive cursors must be READ ONLY."
-msgstr "il cursore Insensitive dev'essere READ ONLY."
+msgstr "I cursori Insensitive devono essere READ ONLY."
 
 #: parser/analyze.c:2285
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE is not allowed with DISTINCT clause"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola GROUP BY"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con la clausola DISTINCT"
 
 #: parser/analyze.c:2289
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE is not allowed with GROUP BY clause"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola GROUP BY"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con la clausola DISTINCT"
 
 #: parser/analyze.c:2293
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE is not allowed with HAVING clause"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola GROUP BY"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con la clausola HAVING"
 
 #: parser/analyze.c:2297
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE is not allowed with aggregate functions"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con funzioni di aggregazione"
 
 #: parser/analyze.c:2301
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE is not allowed with window functions"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con funzioni finestra"
 
 #: parser/analyze.c:2305
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE is not allowed with set-returning functions in the target list"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non è consentito con funzioni che ritornano insiemi nella lista di destinazione"
 
 #: parser/analyze.c:2384
 #, c-format
 msgid "SELECT FOR UPDATE/SHARE must specify unqualified relation names"
-msgstr ""
+msgstr "SELECT FOR UPDATE/SHARE deve specificare nomi di relazioni non qualificati"
 
 #: parser/analyze.c:2401
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE cannot be used with foreign table \"%s\""
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non può essere usato con la tabella esterna \"%s\""
 
 #: parser/analyze.c:2420
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a join"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non può essere applicato ad un JOIN"
 
 #: parser/analyze.c:2426
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a function"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "SELECT FOR UPDATE/SHARE non può essere applicato ad una funzione"
 
 #: parser/analyze.c:2438
-#, fuzzy, c-format
+#, c-format
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a WITH query"
-msgstr "SELECT FOR UPDATE non è consentito con AGGREGATE"
+msgstr "SELECT FOR UPDATE/SHARE non può essere applicato ad una query WITH"
 
 #: parser/analyze.c:2452
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s\" in FOR UPDATE/SHARE clause not found in FROM clause"
-msgstr "relazione \"%s\"della clausola FOR UPDATE non trovata nella clausola FROM"
+msgstr "la relazione \"%s\" nella clausola FOR UPDATE/SHARE non è indicata nella clausola FROM"
 
 #: parser/parse_agg.c:129 parser/parse_oper.c:218
 #, c-format
 msgid "could not identify an ordering operator for type %s"
-msgstr ""
+msgstr "impossibile identificare un operatore di ordinamento per il tipo %s"
 
 #: parser/parse_agg.c:131
 #, c-format
 msgid "Aggregates with DISTINCT must be able to sort their inputs."
-msgstr ""
+msgstr "Gli aggregati cin DISTINCT devono essere in grado di ordinare i loro input."
 
 #: parser/parse_agg.c:172
 #, c-format
 msgid "aggregate function calls cannot contain window function calls"
-msgstr ""
+msgstr "le chiamate a funzioni di aggregazione non possono contenere chiamate a funzioni finestra"
 
 #: parser/parse_agg.c:243 parser/parse_clause.c:1630
-#, fuzzy, c-format
+#, c-format
 msgid "window \"%s\" does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "la finestra \"%s\" non esiste"
 
 #: parser/parse_agg.c:334
 #, c-format
 msgid "aggregates not allowed in WHERE clause"
-msgstr "gli aggregati non sono permessi nella clausola WHERE"
+msgstr "le funzioni di aggregazione non sono consentite nella clausola WHERE"
 
 #: parser/parse_agg.c:340
 #, c-format
 msgid "aggregates not allowed in JOIN conditions"
-msgstr "gli aggregati non sono consentiti nelle condizioni JOIN"
+msgstr "le funzioni di aggregazione non sono consentite nelle condizioni JOIN"
 
 #: parser/parse_agg.c:361
 #, c-format
 msgid "aggregates not allowed in GROUP BY clause"
-msgstr "gli aggregati non sono consentiti nella clausola GROUP BY"
+msgstr "le funzioni di aggregazione non sono consentite nella clausola GROUP BY"
 
 #: parser/parse_agg.c:431
 #, c-format
 msgid "aggregate functions not allowed in a recursive query's recursive term"
-msgstr ""
+msgstr "le funzioni di aggregazione non sono consentite nel termine ricorsivo di una query ricorsiva"
 
 #: parser/parse_agg.c:456
-#, fuzzy, c-format
+#, c-format
 msgid "window functions not allowed in WHERE clause"
-msgstr "gli aggregati non sono permessi nella clausola WHERE"
+msgstr "le funzioni finestra non sono consentiti nella clausola WHERE"
 
 #: parser/parse_agg.c:462
-#, fuzzy, c-format
+#, c-format
 msgid "window functions not allowed in JOIN conditions"
-msgstr "gli aggregati non sono consentiti nelle condizioni JOIN"
+msgstr "gli aggregati non sono consentiti nella condizioni JOIN"
 
 #: parser/parse_agg.c:468
-#, fuzzy, c-format
+#, c-format
 msgid "window functions not allowed in HAVING clause"
-msgstr "gli aggregati non sono permessi nella clausola WHERE"
+msgstr "le funzioni finestra non sono consentite nella clausola HAVING"
 
 #: parser/parse_agg.c:481
-#, fuzzy, c-format
+#, c-format
 msgid "window functions not allowed in GROUP BY clause"
-msgstr "gli aggregati non sono consentiti nella clausola GROUP BY"
+msgstr "le funzioni finestra non sono consentite nella clausola GROUP BY"
 
 #: parser/parse_agg.c:500 parser/parse_agg.c:513
 #, c-format
 msgid "window functions not allowed in window definition"
-msgstr ""
+msgstr "le funzioni finestra non sono consentite nella definizioni di finestra"
 
 #: parser/parse_agg.c:671
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s.%s\" must appear in the GROUP BY clause or be used in an aggregate function"
-msgstr "l'attributo \"%s.%s\"deve raggrouppato o usato in un aggregato"
+msgstr "la colonna \"%s.%s\" deve comparire nella clausola GROUP BY o essere usata in una funzione di aggregazione"
 
 #: parser/parse_agg.c:677
-#, fuzzy, c-format
+#, c-format
 msgid "subquery uses ungrouped column \"%s.%s\" from outer query"
-msgstr "sotto-select usa un attributo \"%s.%s\"non raggruppato da una query esterna"
+msgstr "la sottoquery usa la colonna non raggruppata \"%s.%s\" dalla query esterna"
 
 #: parser/parse_clause.c:420
 #, c-format
 msgid "JOIN/ON clause refers to \"%s\", which is not part of JOIN"
-msgstr ""
+msgstr "la clausola JOIN/ON si riferisce a \"%s\", che non fa parte del JOIN"
 
 #: parser/parse_clause.c:517
 #, c-format
 msgid "subquery in FROM cannot refer to other relations of same query level"
-msgstr ""
+msgstr "la sottoquery nel FROM non può riferirsi ad altre relazioni allo stesso livello di query"
 
 #: parser/parse_clause.c:573
 #, c-format
 msgid "function expression in FROM cannot refer to other relations of same query level"
-msgstr ""
+msgstr "l'espressione funzionale nel FROM non può riferirsi ad altre relazioni allo stesso livello di query"
 
 #: parser/parse_clause.c:586
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use aggregate function in function expression in FROM"
-msgstr "non si possono usare aggregati nell'espressione predefinita"
+msgstr "non è possibile usare funzioni di aggregazione nell'espressione funzionale del FROM"
 
 #: parser/parse_clause.c:593
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in function expression in FROM"
-msgstr "non si possono usare aggregati nell'espressione predefinita"
+msgstr "non è possibile usare funzioni finestra nell'espressione funzionale del FROM"
 
 #: parser/parse_clause.c:870
-#, fuzzy, c-format
+#, c-format
 msgid "column name \"%s\" appears more than once in USING clause"
-msgstr "il nome della colonna \"%s\"è duplicato"
+msgstr "il nome della colonna \"%s\" compare più di una volta nella clausola USING"
 
 #: parser/parse_clause.c:885
-#, fuzzy, c-format
+#, c-format
 msgid "common column name \"%s\" appears more than once in left table"
-msgstr "il nome della colonna \"%s\"è duplicato"
+msgstr "il nome comune della colonna \"%s\" compare più di una volta nella tabella di sinistra"
 
 #: parser/parse_clause.c:894
 #, c-format
 msgid "column \"%s\" specified in USING clause does not exist in left table"
-msgstr ""
+msgstr "la colonna \"%s\" specificata nella clausola USING non esiste nella tabella di sinistra"
 
 #: parser/parse_clause.c:908
-#, fuzzy, c-format
+#, c-format
 msgid "common column name \"%s\" appears more than once in right table"
-msgstr "il nome della colonna \"%s\"è duplicato"
+msgstr "il nome comune della colonna \"%s\" compare più di una volta nella tabella di destra"
 
 #: parser/parse_clause.c:917
 #, c-format
 msgid "column \"%s\" specified in USING clause does not exist in right table"
-msgstr ""
+msgstr "la colonna \"%s\" specificata nella clausola USING non esiste nella tabella di destra"
 
 #: parser/parse_clause.c:974
 #, c-format
 msgid "column alias list for \"%s\" has too many entries"
-msgstr ""
+msgstr "la lista di alias delle colonne per \"%s\" ha troppi elementi"
 
 #. translator: %s is name of a SQL construct, eg LIMIT
 #: parser/parse_clause.c:1221
-#, fuzzy, c-format
+#, c-format
 msgid "argument of %s must not contain variables"
-msgstr "l'argomento di %s non deve restituire un set"
+msgstr "l'argomento di %s non può contenere variabili"
 
 #. translator: %s is name of a SQL construct, eg LIMIT
 #: parser/parse_clause.c:1232
-#, fuzzy, c-format
+#, c-format
 msgid "argument of %s must not contain aggregate functions"
-msgstr "l'argomento di %s non deve restituire un set"
+msgstr "l'argomento di %s non può contenere funzioni di aggregazione"
 
 #. translator: %s is name of a SQL construct, eg LIMIT
 #: parser/parse_clause.c:1243
-#, fuzzy, c-format
+#, c-format
 msgid "argument of %s must not contain window functions"
-msgstr "l'argomento di %s non deve restituire un set"
+msgstr "l'argomento di %s non può contenere funzioni finestra"
 
 #. translator: first %s is name of a SQL construct, eg ORDER BY
 #: parser/parse_clause.c:1360
@@ -10590,89 +10599,89 @@ msgstr "%s \"%s\" è ambiguo"
 
 #. translator: %s is name of a SQL construct, eg ORDER BY
 #: parser/parse_clause.c:1384
-#, fuzzy, c-format
+#, c-format
 msgid "non-integer constant in %s"
-msgstr "errore impossibile in do_constant"
+msgstr "costante non intera in %s"
 
 #  translator: %s is name of a SQL construct, eg ORDER BY
 #. translator: %s is name of a SQL construct, eg ORDER BY
 #: parser/parse_clause.c:1402
 #, c-format
 msgid "%s position %d is not in select list"
-msgstr ""
+msgstr "%s in posizione %d non è nella lista SELECT"
 
 #: parser/parse_clause.c:1618
-#, fuzzy, c-format
+#, c-format
 msgid "window \"%s\" is already defined"
-msgstr "estensione: funzione `%s' già definita"
+msgstr "la finestra \"%s\" è già definita"
 
 #: parser/parse_clause.c:1672
 #, c-format
 msgid "cannot override PARTITION BY clause of window \"%s\""
-msgstr ""
+msgstr "impossibile scavalcare la clausola PARTITION BY della finestra \"%s\""
 
 #: parser/parse_clause.c:1684
 #, c-format
 msgid "cannot override ORDER BY clause of window \"%s\""
-msgstr ""
+msgstr "impossibile scavalcare la clausola ORDER BY della finestra \"%s\""
 
 #: parser/parse_clause.c:1706
 #, c-format
 msgid "cannot override frame clause of window \"%s\""
-msgstr ""
+msgstr "impossibile scavalcare la clausola della finestra \"%s\""
 
 #: parser/parse_clause.c:1772
 #, c-format
 msgid "in an aggregate with DISTINCT, ORDER BY expressions must appear in argument list"
-msgstr ""
+msgstr "in un aggregato con DISTINCT, le espressioni ORDER BY devono figurare nella lista di argomenti"
 
 #: parser/parse_clause.c:1773
 #, c-format
 msgid "for SELECT DISTINCT, ORDER BY expressions must appear in select list"
-msgstr ""
+msgstr "per SELECT DISTINCT, le espressioni ORDER BY devono figurare nella lista di argomenti"
 
 #: parser/parse_clause.c:1859 parser/parse_clause.c:1891
 #, c-format
 msgid "SELECT DISTINCT ON expressions must match initial ORDER BY expressions"
-msgstr ""
+msgstr "le espressioni SELECT DISTINCT ON devono coincidere con l'espressione ORDER BY iniziale"
 
 #: parser/parse_clause.c:2013
-#, fuzzy, c-format
+#, c-format
 msgid "operator %s is not a valid ordering operator"
-msgstr "\"%s\" non è un nome di operatore valido"
+msgstr "l'operatore %s non è un operatore di ordinamento valido"
 
 #: parser/parse_clause.c:2015
 #, c-format
 msgid "Ordering operators must be \"<\" or \">\" members of btree operator families."
-msgstr ""
+msgstr "Gli operatori di ordinamento devono essere i membri \"<\" oppure \">\" di una famiglia di operatori btree."
 
 #: parser/parse_coerce.c:932 parser/parse_coerce.c:962
 #: parser/parse_coerce.c:980 parser/parse_coerce.c:995
 #: parser/parse_expr.c:1664 parser/parse_expr.c:2125 parser/parse_target.c:830
-#, fuzzy, c-format
+#, c-format
 msgid "cannot cast type %s to %s"
-msgstr "la colonna \"%s\" non può essere trasformata nel tipo \"%s\""
+msgstr "impossibile convertire il tipo %s in %s"
 
 #: parser/parse_coerce.c:965
 #, c-format
 msgid "Input has too few columns."
-msgstr "l'input ha troppe poche colonne,"
+msgstr "L'input ha troppe poche colonne."
 
 #: parser/parse_coerce.c:983
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot cast type %s to %s in column %d."
-msgstr "la colonna \"%s\" non può essere trasformata nel tipo \"%s\""
+msgstr "Impossibile convertire il tipo %s in %s nella colonna %d."
 
 #: parser/parse_coerce.c:998
-#, fuzzy, c-format
+#, c-format
 msgid "Input has too many columns."
-msgstr "il pacchetto %s ha troppe coppie Conflicts/Replaces"
+msgstr "L'input ha troppe colonne."
 
 #. translator: first %s is name of a SQL construct, eg WHERE
 #: parser/parse_coerce.c:1041
 #, c-format
 msgid "argument of %s must be type boolean, not type %s"
-msgstr "l'argomento di %s deve essere booleano, non di tipo %s"
+msgstr "l'argomento di %s deve essere di tipo booleano, non %s"
 
 #. translator: %s is name of a SQL construct, eg WHERE
 #. translator: %s is name of a SQL construct, eg LIMIT
@@ -10683,122 +10692,122 @@ msgstr "l'argomento di %s non deve restituire un set"
 
 #. translator: first %s is name of a SQL construct, eg LIMIT
 #: parser/parse_coerce.c:1088
-#, fuzzy, c-format
+#, c-format
 msgid "argument of %s must be type %s, not type %s"
-msgstr "l'argomento di %s deve essere booleano, non di tipo %s"
+msgstr "l'argomento di %s deve essere di tipo %s, non %s"
 
 #. translator: first %s is name of a SQL construct, eg CASE
 #: parser/parse_coerce.c:1221
-#, fuzzy, c-format
+#, c-format
 msgid "%s types %s and %s cannot be matched"
-msgstr "Le opzioni -P e -z non possono essere combinate"
+msgstr "in %s i tipi %s e %s non combaciano"
 
 #. translator: first %s is name of a SQL construct, eg CASE
 #: parser/parse_coerce.c:1288
-#, fuzzy, c-format
+#, c-format
 msgid "%s could not convert type %s to %s"
-msgstr "Impossibile impostare la velocità di trasmissione a %d"
+msgstr "in %s impossibile convertire il tipo %s in %s"
 
 #: parser/parse_coerce.c:1590
 #, c-format
 msgid "arguments declared \"anyelement\" are not all alike"
-msgstr ""
+msgstr "gli argomenti dichiarati \"anyelement\" non sono tutti simili"
 
 #: parser/parse_coerce.c:1610
 #, c-format
 msgid "arguments declared \"anyarray\" are not all alike"
-msgstr ""
+msgstr "gli argomenti dichiarati \"anyarray\" non sono tutti simili"
 
 #: parser/parse_coerce.c:1630
 #, c-format
 msgid "arguments declared \"anyrange\" are not all alike"
-msgstr ""
+msgstr "gli argomenti dichiarati \"anyrange\" non sono tutti simili"
 
 #: parser/parse_coerce.c:1659 parser/parse_coerce.c:1870
 #: parser/parse_coerce.c:1904
 #, c-format
 msgid "argument declared \"anyarray\" is not an array but type %s"
-msgstr ""
+msgstr "l'argomento dichiarato \"anyarray\" non è un array ma di tipo %s"
 
 #: parser/parse_coerce.c:1675
 #, c-format
 msgid "argument declared \"anyarray\" is not consistent with argument declared \"anyelement\""
-msgstr ""
+msgstr "l'argomento dichiarato \"anyarray\" non è consistente con l' argomento dichiarato \"anyelement\""
 
 #: parser/parse_coerce.c:1696 parser/parse_coerce.c:1917
 #, c-format
 msgid "argument declared \"anyrange\" is not a range but type %s"
-msgstr ""
+msgstr "l'argomento dichiarato \"anyrange\" non è un intervallo ma di tipo %s"
 
 #: parser/parse_coerce.c:1712
 #, c-format
 msgid "argument declared \"anyrange\" is not consistent with argument declared \"anyelement\""
-msgstr ""
+msgstr "l'argomento dichiarato \"anyrange\" non è consistente con l'argomento dichiarato \"anyelement\""
 
 #: parser/parse_coerce.c:1732
 #, c-format
 msgid "could not determine polymorphic type because input has type \"unknown\""
-msgstr ""
+msgstr "impossibile determinare il tipo polimorfico perché l'input è di tipo \"unknown\""
 
 #: parser/parse_coerce.c:1742
 #, c-format
 msgid "type matched to anynonarray is an array type: %s"
-msgstr ""
+msgstr "il tipo associato ad anynonarray è di tipo array: %s"
 
 #: parser/parse_coerce.c:1752
 #, c-format
 msgid "type matched to anyenum is not an enum type: %s"
-msgstr ""
+msgstr "il tipo associato ad anyenum non è una enumerazione: %s"
 
 #: parser/parse_coerce.c:1792 parser/parse_coerce.c:1822
-#, fuzzy, c-format
+#, c-format
 msgid "could not find range type for data type %s"
-msgstr "impossibile trovare il tipo di array per il tipo di dati %s"
+msgstr "impossibile trovare il tipo di intervallo per il tipo di dato %s"
 
 #: parser/parse_collate.c:214 parser/parse_collate.c:538
 #, c-format
 msgid "collation mismatch between implicit collations \"%s\" and \"%s\""
-msgstr ""
+msgstr "mancata corrispondenza degli ordinamenti impliciti \"%s\" e \"%s\""
 
 #: parser/parse_collate.c:217 parser/parse_collate.c:541
 #, c-format
 msgid "You can choose the collation by applying the COLLATE clause to one or both expressions."
-msgstr ""
+msgstr "Puoi scegliere l'ordinamento applicando la clausola COLLATE ad una o ad entrambe le espressioni."
 
 #: parser/parse_collate.c:763
 #, c-format
 msgid "collation mismatch between explicit collations \"%s\" and \"%s\""
-msgstr ""
+msgstr "mancata corrispondenza degli ordinamenti espliciti \"%s\" e \"%s\""
 
 #: parser/parse_cte.c:42
 #, c-format
 msgid "recursive reference to query \"%s\" must not appear within its non-recursive term"
-msgstr ""
+msgstr "il riferimento ricorsivo alla query \"%s\" non può figurare nel suo termine non ricorsivo"
 
 #: parser/parse_cte.c:44
 #, c-format
 msgid "recursive reference to query \"%s\" must not appear within a subquery"
-msgstr ""
+msgstr "il riferimento ricorsivo alla query \"%s\" non può figurare in una sottoquery"
 
 #: parser/parse_cte.c:46
 #, c-format
 msgid "recursive reference to query \"%s\" must not appear within an outer join"
-msgstr ""
+msgstr "il riferimento ricorsivo alla query \"%s\" non può figurare in un join esterno"
 
 #: parser/parse_cte.c:48
 #, c-format
 msgid "recursive reference to query \"%s\" must not appear within INTERSECT"
-msgstr ""
+msgstr "il riferimento ricorsivo alla query \"%s\" non può figurare in INTERSECT"
 
 #: parser/parse_cte.c:50
 #, c-format
 msgid "recursive reference to query \"%s\" must not appear within EXCEPT"
-msgstr ""
+msgstr "il riferimento ricorsivo alla query \"%s\" non può figurare in EXCEPT"
 
 #: parser/parse_cte.c:132
-#, fuzzy, c-format
+#, c-format
 msgid "WITH query name \"%s\" specified more than once"
-msgstr "il nome della colonna \"%s\"è duplicato"
+msgstr "il nome della query WITH \"%s\" è stato specificato più di una volta"
 
 #: parser/parse_cte.c:264
 #, c-format
@@ -10808,98 +10817,98 @@ msgstr "la clausola WITH contenente un'istruzione di modifica dei dati deve appa
 #: parser/parse_cte.c:313
 #, c-format
 msgid "recursive query \"%s\" column %d has type %s in non-recursive term but type %s overall"
-msgstr ""
+msgstr "nella query ricorsiva \"%s\" la colonna %d è di tipo %s nel suo termine non ricorsivo ma %s globalmente"
 
 #: parser/parse_cte.c:319
 #, c-format
 msgid "Cast the output of the non-recursive term to the correct type."
-msgstr ""
+msgstr "Converti l'output del termine non ricorsivo nel tipo corretto."
 
 #: parser/parse_cte.c:324
 #, c-format
 msgid "recursive query \"%s\" column %d has collation \"%s\" in non-recursive term but collation \"%s\" overall"
-msgstr ""
+msgstr "nella query ricorsiva \"%s\" la colonna %d ha ordinamento \"%s\" nel suo termine non ricorsivo ma \"%s\" globalmente"
 
 #: parser/parse_cte.c:328
 #, c-format
 msgid "Use the COLLATE clause to set the collation of the non-recursive term."
-msgstr ""
+msgstr "Usa la clausola COLLATE per impostare l'ordinamento del termine non ricorsivo."
 
 #: parser/parse_cte.c:419
 #, c-format
 msgid "WITH query \"%s\" has %d columns available but %d columns specified"
-msgstr ""
+msgstr "la query WITH \"%s\" ha %d colonne disponibili ma %d colonne specificate"
 
 #: parser/parse_cte.c:599
 #, c-format
 msgid "mutual recursion between WITH items is not implemented"
-msgstr ""
+msgstr "il riferimento reciproco tra elementi WITH non è implementato"
 
 #: parser/parse_cte.c:651
 #, c-format
 msgid "recursive query \"%s\" must not contain data-modifying statements"
-msgstr "la query ricorsica \"%s\" non può contenere istruzioni di modifica dei dati"
+msgstr "la query ricorsiva \"%s\" non può contenere istruzioni di modifica dei dati"
 
 #: parser/parse_cte.c:659
 #, c-format
 msgid "recursive query \"%s\" does not have the form non-recursive-term UNION [ALL] recursive-term"
-msgstr ""
+msgstr "la query ricorsiva \"%s\" non ha la forma termine-non-ricorsivo UNION [ALL] termine-ricorsivo"
 
 #: parser/parse_cte.c:703
 #, c-format
 msgid "ORDER BY in a recursive query is not implemented"
-msgstr ""
+msgstr "ORDER BY non è implementato in una query ricorsiva"
 
 #: parser/parse_cte.c:709
 #, c-format
 msgid "OFFSET in a recursive query is not implemented"
-msgstr ""
+msgstr "OFFSET non è implementato in una query ricorsiva"
 
 #: parser/parse_cte.c:715
 #, c-format
 msgid "LIMIT in a recursive query is not implemented"
-msgstr ""
+msgstr "LIMIT non è implementato in una query ricorsiva"
 
 #: parser/parse_cte.c:721
 #, c-format
 msgid "FOR UPDATE/SHARE in a recursive query is not implemented"
-msgstr ""
+msgstr "FOR UPDATE/SHARE non è implementato in una query ricorsiva"
 
 #: parser/parse_cte.c:778
 #, c-format
 msgid "recursive reference to query \"%s\" must not appear more than once"
-msgstr ""
+msgstr "il riferimento ricorsivo alla query \"%s\" non può apparire più di una volta"
 
 #: parser/parse_expr.c:364 parser/parse_expr.c:757
-#, fuzzy, c-format
+#, c-format
 msgid "column %s.%s does not exist"
-msgstr "la colonna \"%s\" non esiste"
+msgstr "la colonna %s.%s non esiste"
 
 #: parser/parse_expr.c:376
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" not found in data type %s"
-msgstr "la colonna \"%s\"non può essere trasformata nel tipo \"%s\""
+msgstr "la colonna \"%s\" non è stata trovata nel tipo di dato %s"
 
 #: parser/parse_expr.c:382
-#, fuzzy, c-format
+#, c-format
 msgid "could not identify column \"%s\" in record data type"
-msgstr "impossibile trovare un operatore di confronto per il tipo %s"
+msgstr "impossibile identificare la colonna \"%s\" nel tipo di dato record"
 
 #: parser/parse_expr.c:388
 #, c-format
 msgid "column notation .%s applied to type %s, which is not a composite type"
-msgstr ""
+msgstr "la notazione della colonna .%s sembra essere di tipo %s, che non è un tipo composito"
 
 #: parser/parse_expr.c:418 parser/parse_target.c:618
 #, c-format
 msgid "row expansion via \"*\" is not supported here"
-msgstr ""
+msgstr "l'espansione della riga tramite \"*\" non è supportata qui"
 
 #: parser/parse_expr.c:741 parser/parse_relation.c:485
 #: parser/parse_relation.c:558 parser/parse_target.c:1065
-#, fuzzy, c-format
+#, c-format
 msgid "column reference \"%s\" is ambiguous"
-msgstr "La colonna è ridimensionabile dall'utente"
+msgstr "il riferimento alla colonna \"%s\" è ambiguo"
 
 #: parser/parse_expr.c:809 parser/parse_param.c:109 parser/parse_param.c:141
 #: parser/parse_param.c:198 parser/parse_param.c:297
@@ -10910,72 +10919,72 @@ msgstr "parametro $%d non presente"
 #: parser/parse_expr.c:1021
 #, c-format
 msgid "NULLIF requires = operator to yield boolean"
-msgstr ""
+msgstr "NULLIF richiede che l'operatore = restituisca un valore booleano"
 
 #: parser/parse_expr.c:1200
 #, c-format
 msgid "arguments of row IN must all be row expressions"
-msgstr ""
+msgstr "gli argomenti della riga IN devono essere tutti espressioni di riga"
 
 #: parser/parse_expr.c:1436
-#, fuzzy, c-format
+#, c-format
 msgid "subquery must return a column"
-msgstr "l'argomento di %s non deve restituire un set"
+msgstr "la sottoquery deve restituire una colonna"
 
 #: parser/parse_expr.c:1443
 #, c-format
 msgid "subquery must return only one column"
-msgstr ""
+msgstr "la sottoquery deve restituire solo una colonna"
 
 #: parser/parse_expr.c:1503
-#, fuzzy, c-format
+#, c-format
 msgid "subquery has too many columns"
-msgstr "il pacchetto %s ha troppe coppie Conflicts/Replaces"
+msgstr "la sottoquery ha troppe colonne"
 
 #: parser/parse_expr.c:1508
 #, c-format
 msgid "subquery has too few columns"
-msgstr "la subquery ha troppe poche colonne"
+msgstr "la sottoquery ha troppe poche colonne"
 
 #: parser/parse_expr.c:1604
-#, fuzzy, c-format
+#, c-format
 msgid "cannot determine type of empty array"
-msgstr "impossibile determinare il tipo di dati risultante"
+msgstr "impossibile determinare il tipo di un array vuoto"
 
 #: parser/parse_expr.c:1605
 #, c-format
 msgid "Explicitly cast to the desired type, for example ARRAY[]::integer[]."
-msgstr ""
+msgstr "Effettua una conversione esplicita al tipo desiderato, ad esempio, for example ARRAY[]::integer[]."
 
 #: parser/parse_expr.c:1619
-#, fuzzy, c-format
+#, c-format
 msgid "could not find element type for data type %s"
-msgstr "impossibile trovare il tipo di array per il tipo di dati %s"
+msgstr "impossibile trovare il tipo dell'elemento per il tipo di dato %s"
 
 #: parser/parse_expr.c:1832
 #, c-format
 msgid "unnamed XML attribute value must be a column reference"
-msgstr ""
+msgstr "il valore dell'attributo XML senza nome dev'essere un riferimento ad una colonna"
 
 #: parser/parse_expr.c:1833
 #, c-format
 msgid "unnamed XML element value must be a column reference"
-msgstr ""
+msgstr "il valore dell'elemento XML senza nome dev'essere un riferimento ad una colonna"
 
 #: parser/parse_expr.c:1848
-#, fuzzy, c-format
+#, c-format
 msgid "XML attribute name \"%s\" appears more than once"
-msgstr "il nome della colonna \"%s\"è duplicato"
+msgstr "l'attributo XML di nome \"%s\" compare più di una volta"
 
 #: parser/parse_expr.c:1955
-#, fuzzy, c-format
+#, c-format
 msgid "cannot cast XMLSERIALIZE result to %s"
-msgstr "la colonna \"%s\" non può essere trasformata nel tipo \"%s\""
+msgstr "non è possibile convertire il risultato di XMLSERIALIZE a %s"
 
 #: parser/parse_expr.c:2198 parser/parse_expr.c:2398
 #, c-format
 msgid "unequal number of entries in row expressions"
-msgstr ""
+msgstr "numero di elementi differente nelle espressioni di riga"
 
 #: parser/parse_expr.c:2208
 #, c-format
@@ -10983,64 +10992,64 @@ msgid "cannot compare rows of zero length"
 msgstr "non possono comparire righe di lunghezza zero"
 
 #: parser/parse_expr.c:2233
-#, fuzzy, c-format
+#, c-format
 msgid "row comparison operator must yield type boolean, not type %s"
-msgstr "l'argomento di %s deve essere booleano, non di tipo %s"
+msgstr "l'operatore di comparazione tra righe deve restituire il tipo booleano, non il tipo %s"
 
 #: parser/parse_expr.c:2240
-#, fuzzy, c-format
+#, c-format
 msgid "row comparison operator must not return a set"
-msgstr "l'espressione di trasformazione non deve restituire un set"
+msgstr "l'operatore di comparazione tra righe non può restituire un insieme"
 
 #: parser/parse_expr.c:2299 parser/parse_expr.c:2344
-#, fuzzy, c-format
+#, c-format
 msgid "could not determine interpretation of row comparison operator %s"
-msgstr "impossibile determinare il tipo di dato del parametro $%d"
+msgstr "impossibile determinare un'interpretazione dell'operatore di comparazione tra righe %s"
 
 #: parser/parse_expr.c:2301
 #, c-format
 msgid "Row comparison operators must be associated with btree operator families."
-msgstr ""
+msgstr "Gli operatori di comparazione tra righe devono essere associati a famiglie di operatori btree."
 
 #: parser/parse_expr.c:2346
 #, c-format
 msgid "There are multiple equally-plausible candidates."
-msgstr ""
+msgstr "C'è più di un candidato egualmente plausibile."
 
 #: parser/parse_expr.c:2438
 #, c-format
 msgid "IS DISTINCT FROM requires = operator to yield boolean"
-msgstr ""
+msgstr "IS DISTINCT FROM richiede che l'operatore = restituisca un valore booleano"
 
 #: parser/parse_func.c:147
-#, fuzzy, c-format
+#, c-format
 msgid "argument name \"%s\" used more than once"
-msgstr "attenzione: il file di origine %s è stato specificato più di una volta"
+msgstr "il nome dell'argomento \"%s\" è usato più di una volta"
 
 #: parser/parse_func.c:158
 #, c-format
 msgid "positional argument cannot follow named argument"
-msgstr ""
+msgstr "gli argomenti posizionali non possono seguire gli argomenti con nome"
 
 #: parser/parse_func.c:236
-#, fuzzy, c-format
+#, c-format
 msgid "%s(*) specified, but %s is not an aggregate function"
-msgstr "È stata specificata la modalità \"Trivial Only\", ma questa non è un'operazione banale."
+msgstr "%s(*) specificato, ma %s non è una funzione di aggregazione"
 
 #: parser/parse_func.c:243
 #, c-format
 msgid "DISTINCT specified, but %s is not an aggregate function"
-msgstr ""
+msgstr "DISTINCT specificato, ma %s non è una funzione di aggregazione"
 
 #: parser/parse_func.c:249
-#, fuzzy, c-format
+#, c-format
 msgid "ORDER BY specified, but %s is not an aggregate function"
-msgstr "È stata specificata la modalità \"Trivial Only\", ma questa non è un'operazione banale."
+msgstr "ORDER BY specificato, ma %s non è una funzione di aggregazione"
 
 #: parser/parse_func.c:255
-#, fuzzy, c-format
+#, c-format
 msgid "OVER specified, but %s is not a window function nor an aggregate function"
-msgstr "cambia la definizione di una funzione di aggregazione"
+msgstr "OVER specificato, ma %s non è una funzione finestra né una funzione di aggregazione"
 
 #: parser/parse_func.c:277
 #, c-format
@@ -11050,103 +11059,103 @@ msgstr "la funzione %s non è unica"
 #: parser/parse_func.c:280
 #, c-format
 msgid "Could not choose a best candidate function. You might need to add explicit type casts."
-msgstr ""
+msgstr "Non è stato possibile scegliere la funzione migliore. Potrebbe essere necessario convertire i tipi esplicitamente."
 
 #: parser/parse_func.c:291
 #, c-format
 msgid "No aggregate function matches the given name and argument types. Perhaps you misplaced ORDER BY; ORDER BY must appear after all regular arguments of the aggregate."
-msgstr ""
+msgstr "Nessuna funzione di aggregazione trovata con nome e tipi di argomenti forniti. Forse hai posizionato ORDER BY male: ORDER BY deve apparire dopo tutti gli argomenti regolari della funzione di aggregazione."
 
 #: parser/parse_func.c:302
 #, c-format
 msgid "No function matches the given name and argument types. You might need to add explicit type casts."
-msgstr ""
+msgstr "Nessuna funzione trovata con nome e tipi di argomenti forniti. Potrebbe essere necessario convertire i tipi esplicitamente."
 
 #: parser/parse_func.c:412 parser/parse_func.c:478
 #, c-format
 msgid "%s(*) must be used to call a parameterless aggregate function"
-msgstr ""
+msgstr "%s(*) dev'essere usato per richiamare una funzione di aggregazione senza parametri"
 
 #: parser/parse_func.c:419
-#, fuzzy, c-format
+#, c-format
 msgid "aggregates cannot return sets"
-msgstr "l'argomento di %s non deve restituire un set"
+msgstr "le funzioni di aggregazione non possono restituire insiemi"
 
 #: parser/parse_func.c:431
-#, fuzzy, c-format
+#, c-format
 msgid "aggregates cannot use named arguments"
-msgstr "l'argomento di %s non deve restituire un set"
+msgstr "le funzioni di aggregazione non possono usare argomenti con nome"
 
 #: parser/parse_func.c:450
 #, c-format
 msgid "window function call requires an OVER clause"
-msgstr ""
+msgstr "una chiamata ad una funzione finestra richiede una clausola OVER"
 
 #: parser/parse_func.c:468
 #, c-format
 msgid "DISTINCT is not implemented for window functions"
-msgstr ""
+msgstr "DISTINCT non è implementato per funzioni finestra"
 
 #: parser/parse_func.c:488
-#, fuzzy, c-format
+#, c-format
 msgid "aggregate ORDER BY is not implemented for window functions"
-msgstr "l'argomento di %s non deve restituire un set"
+msgstr "ORDER BY delle funzioni di aggregazione non è implementato per funzioni finestra"
 
 #: parser/parse_func.c:494
-#, fuzzy, c-format
+#, c-format
 msgid "window functions cannot return sets"
-msgstr "la funzione %s restituisce un set"
+msgstr "le funzioni finestra non possono restituire insiemi"
 
 #: parser/parse_func.c:505
-#, fuzzy, c-format
+#, c-format
 msgid "window functions cannot use named arguments"
-msgstr "la funzione %s restituisce un set"
+msgstr "le funzioni finestra non possono usare argomenti con nome"
 
 #: parser/parse_func.c:1670
-#, fuzzy, c-format
+#, c-format
 msgid "aggregate %s(*) does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "la funzione di aggregazione %s(*) non esiste"
 
 #: parser/parse_func.c:1675
-#, fuzzy, c-format
+#, c-format
 msgid "aggregate %s does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "la funzione di aggregazione %s non esiste"
 
 #: parser/parse_func.c:1694
-#, fuzzy, c-format
+#, c-format
 msgid "function %s is not an aggregate"
-msgstr " Questa funzione non è stata implementata. "
+msgstr "la funzione %s non è una funzione di aggregazione"
 
 #: parser/parse_node.c:83
-#, fuzzy, c-format
+#, c-format
 msgid "target lists can have at most %d entries"
-msgstr "le tabelle possono avere al massimo %d colonne"
+msgstr "le liste di destinazione possono avere al più %d elementi"
 
 #: parser/parse_node.c:240
 #, c-format
 msgid "cannot subscript type %s because it is not an array"
-msgstr ""
+msgstr "non è possibile usare un indice su %s perché non è un array"
 
 #: parser/parse_node.c:342 parser/parse_node.c:369
-#, fuzzy, c-format
+#, c-format
 msgid "array subscript must have type integer"
-msgstr "l'argomento di %s deve essere di tipo intero, non di tipo %s"
+msgstr "l'indice di un array dev'essere di tipo intero"
 
 #: parser/parse_node.c:393
 #, c-format
 msgid "array assignment requires type %s but expression is of type %s"
-msgstr ""
+msgstr "l'assegnamento all'array richiede il tipo %s ma l'espressione è di tipo %s"
 
 #: parser/parse_oper.c:123 parser/parse_oper.c:717 utils/adt/regproc.c:464
 #: utils/adt/regproc.c:484 utils/adt/regproc.c:643
 #, c-format
 msgid "operator does not exist: %s"
-msgstr "l'operatore %s non esiste"
+msgstr "l'operatore non esiste: %s"
 
 #: parser/parse_oper.c:220
 #, c-format
 msgid "Use an explicit ordering operator or modify the query."
-msgstr ""
+msgstr "Usa un operatore di ordinamento esplicito, oppure modifica la query."
 
 #: parser/parse_oper.c:224 utils/adt/arrayfuncs.c:3175
 #: utils/adt/arrayfuncs.c:3694 utils/adt/rowtypes.c:1157
@@ -11155,357 +11164,357 @@ msgid "could not identify an equality operator for type %s"
 msgstr "impossibile trovare un operatore di uguaglianza per il tipo %s"
 
 #: parser/parse_oper.c:475
-#, fuzzy, c-format
+#, c-format
 msgid "operator requires run-time type coercion: %s"
-msgstr "la funzione %s richiede una coercizione di tipo a run-time"
+msgstr "l'operatore richiede una coercizione di tipo a run-time: %s"
 
 #: parser/parse_oper.c:709
-#, fuzzy, c-format
+#, c-format
 msgid "operator is not unique: %s"
-msgstr "\"%s\" non è un nome di operatore valido"
+msgstr "l'operatore non è unico: %s"
 
 #: parser/parse_oper.c:711
 #, c-format
 msgid "Could not choose a best candidate operator. You might need to add explicit type casts."
-msgstr ""
+msgstr "Non è stato possibile scegliere l'operatore migliore. Potrebbe essere necessario convertire i tipi esplicitamente."
 
 #: parser/parse_oper.c:719
 #, c-format
 msgid "No operator matches the given name and argument type(s). You might need to add explicit type casts."
-msgstr ""
+msgstr "Nessun operatore trovato con nome e tipi di argomenti forniti. Potrebbe essere necessario convertire i tipi esplicitamente."
 
 #: parser/parse_oper.c:778 parser/parse_oper.c:892
-#, fuzzy, c-format
+#, c-format
 msgid "operator is only a shell: %s"
-msgstr "la proprietà è in sola lettura"
+msgstr "l'operatore è solo un segnaposto: %s"
 
 #: parser/parse_oper.c:880
 #, c-format
 msgid "op ANY/ALL (array) requires array on right side"
-msgstr ""
+msgstr "op ANY/ALL (array) richiede un array sul lato destro"
 
 #: parser/parse_oper.c:922
 #, c-format
 msgid "op ANY/ALL (array) requires operator to yield boolean"
-msgstr ""
+msgstr "op ANY/ALL (array) richiede che l'operatore restituisca un valore booleano"
 
 #: parser/parse_oper.c:927
 #, c-format
 msgid "op ANY/ALL (array) requires operator not to return a set"
-msgstr ""
+msgstr "op ANY/ALL (array) richiede che l'operatore non restituisca un insieme"
 
 #: parser/parse_param.c:215
 #, c-format
 msgid "inconsistent types deduced for parameter $%d"
-msgstr "dedotta incosistenza di tipo per il parametro $%d"
+msgstr "tipi di dati dedotti per il parametro $%d non consistenti"
 
 #: parser/parse_relation.c:147
-#, fuzzy, c-format
+#, c-format
 msgid "table reference \"%s\" is ambiguous"
-msgstr "Il tavolo è pieno."
+msgstr "il riferimento alla tabella \"%s\" è ambiguo"
 
 #: parser/parse_relation.c:183
 #, c-format
 msgid "table reference %u is ambiguous"
-msgstr "la table reference %u è ambigua"
+msgstr "il riferimento alla tabella %u è ambiguo"
 
 #: parser/parse_relation.c:350
-#, fuzzy, c-format
+#, c-format
 msgid "table name \"%s\" specified more than once"
-msgstr "attenzione: il file di origine %s è stato specificato più di una volta"
+msgstr "la tabella di nome \"%s\" è stata specificata più di una volta"
 
 #: parser/parse_relation.c:761 parser/parse_relation.c:1052
 #: parser/parse_relation.c:1439
 #, c-format
 msgid "table \"%s\" has %d columns available but %d columns specified"
-msgstr ""
+msgstr "la tabella \"%s\" ha %d colonne disponibili ma %d colonne specificate"
 
 #: parser/parse_relation.c:791
 #, c-format
 msgid "too many column aliases specified for function %s"
-msgstr ""
+msgstr "troppi alias di colonna specificati per la funzione %s"
 
 #: parser/parse_relation.c:857
 #, c-format
 msgid "There is a WITH item named \"%s\", but it cannot be referenced from this part of the query."
-msgstr ""
+msgstr "C'è un elemento di WITH di nome \"%s\", ma non può essere referenziato da questa parte della query."
 
 #: parser/parse_relation.c:859
 #, c-format
 msgid "Use WITH RECURSIVE, or re-order the WITH items to remove forward references."
-msgstr ""
+msgstr "Usa WITH RECURSIVE, oppure riordina gli elementi di WITH per rimuovere i riferimenti in avanti."
 
 #: parser/parse_relation.c:1132
-#, fuzzy, c-format
+#, c-format
 msgid "a column definition list is only allowed for functions returning \"record\""
-msgstr "la descrizione della tupla per una funzione che restituisce record non è determinabile"
+msgstr "la lista di definizione di colonne è consentita solo per funzioni che restituiscono \"record\""
 
 #: parser/parse_relation.c:1140
-#, fuzzy, c-format
+#, c-format
 msgid "a column definition list is required for functions returning \"record\""
-msgstr "la descrizione della tupla per una funzione che restituisce record non è determinabile"
+msgstr "la lista di definizione di colonne è necessaria per funzioni che restituiscono \"record\""
 
 #: parser/parse_relation.c:1191
-#, fuzzy, c-format
+#, c-format
 msgid "function \"%s\" in FROM has unsupported return type %s"
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione \"%s\" in FROM restituisce il tipo non supportato %s"
 
 #: parser/parse_relation.c:1265
 #, c-format
 msgid "VALUES lists \"%s\" have %d columns available but %d columns specified"
-msgstr ""
+msgstr "le liste VALUES \"%s\" hanno %d colonne disponibili ma %d colonne specificate"
 
 #: parser/parse_relation.c:1321
-#, fuzzy, c-format
+#, c-format
 msgid "joins can have at most %d columns"
-msgstr "le tabelle possono avere al massimo %d colonne"
+msgstr "i join possono avere al più %d colonne"
 
 #: parser/parse_relation.c:1412
 #, c-format
 msgid "WITH query \"%s\" does not have a RETURNING clause"
-msgstr ""
+msgstr "la query WITH \"%s\" non ha una clausola RETURNING"
 
 #: parser/parse_relation.c:2094
-#, fuzzy, c-format
+#, c-format
 msgid "column %d of relation \"%s\" does not exist"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "la colonna %d della relazione \"%s\" non esiste"
 
 #: parser/parse_relation.c:2478
-#, fuzzy, c-format
+#, c-format
 msgid "invalid reference to FROM-clause entry for table \"%s\""
-msgstr "numero colonna errato %d per la tabella \"%s\"\n"
+msgstr "riferimento non valido all'elemento della clausola FROM per la tabella \"%s\""
 
 #: parser/parse_relation.c:2481
 #, c-format
 msgid "Perhaps you meant to reference the table alias \"%s\"."
-msgstr ""
+msgstr "Forse intendevi utilizzare l'alias \"%s\" della tabella."
 
 #: parser/parse_relation.c:2483
 #, c-format
 msgid "There is an entry for table \"%s\", but it cannot be referenced from this part of the query."
-msgstr ""
+msgstr "C'è un elemento per la tabella \"%s\", ma non può essere referenziato da questa parte della query."
 
 #: parser/parse_relation.c:2489
 #, c-format
 msgid "missing FROM-clause entry for table \"%s\""
-msgstr ""
+msgstr "elemento FROM per la tabella \"%s\" mancante"
 
 #: parser/parse_target.c:383 parser/parse_target.c:671
-#, fuzzy, c-format
+#, c-format
 msgid "cannot assign to system column \"%s\""
-msgstr "Impossibile connettersi al bus di sistema"
+msgstr "impossibile assegnare alla colonna di sistema \"%s\""
 
 #: parser/parse_target.c:411
 #, c-format
 msgid "cannot set an array element to DEFAULT"
-msgstr ""
+msgstr "impossibile impostare gli elementi di un array a DEFAULT"
 
 #: parser/parse_target.c:416
-#, fuzzy, c-format
+#, c-format
 msgid "cannot set a subfield to DEFAULT"
-msgstr "Imposta la chiave selezionata come predefinita"
+msgstr "impossibile impostare un sottocampo a DEFAULT"
 
 #: parser/parse_target.c:485
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" is of type %s but expression is of type %s"
-msgstr "la colonna \"%s\" è di tipo %s ma l'espressione predefinita è di tipo %s"
+msgstr "la colonna \"%s\" è di tipo %s ma l'espressione è di tipo %s"
 
 #: parser/parse_target.c:655
 #, c-format
 msgid "cannot assign to field \"%s\" of column \"%s\" because its type %s is not a composite type"
-msgstr ""
+msgstr "impossibile assegnare al campo \"%s\" della colonna \"%s\" perché il suo tipo %s non è un tipo composito"
 
 #: parser/parse_target.c:664
 #, c-format
 msgid "cannot assign to field \"%s\" of column \"%s\" because there is no such column in data type %s"
-msgstr ""
+msgstr "impossibile assegnare al campo \"%s\" della colonna \"%s\" perché non questa colonna non compare nel tipo di dato %s"
 
 #: parser/parse_target.c:731
-#, fuzzy, c-format
+#, c-format
 msgid "array assignment to \"%s\" requires type %s but expression is of type %s"
-msgstr "la colonna \"%s\"è di tipo %s ma l'espressione predefinita è di tipo %s"
+msgstr "l'assegnamento array a \"%s\" richiede il tipo %s ma l'espressione è di tipo %s"
 
 #: parser/parse_target.c:741
-#, fuzzy, c-format
+#, c-format
 msgid "subfield \"%s\" is of type %s but expression is of type %s"
-msgstr "la colonna \"%s\" è di tipo %s ma l'espressione predefinita è di tipo %s"
+msgstr "il sottocampo \"%s\" è di tipo %s ma l'espressione è di tipo %s"
 
 #: parser/parse_target.c:1127
 #, c-format
 msgid "SELECT * with no tables specified is not valid"
-msgstr ""
+msgstr "SELECT * senza tabelle specificate non è consentito"
 
 #: parser/parse_type.c:83
 #, c-format
 msgid "improper %%TYPE reference (too few dotted names): %s"
-msgstr ""
+msgstr "riferimento %%TYPE improprio (troppi pochi nomi puntati): %s"
 
 #: parser/parse_type.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "improper %%TYPE reference (too many dotted names): %s"
-msgstr "nome qualificato improrio (troppi nomi puntati): %s"
+msgstr "riferimento %%TYPE improprio (troppi nomi puntati): %s"
 
 #: parser/parse_type.c:133
-#, fuzzy, c-format
+#, c-format
 msgid "type reference %s converted to %s"
-msgstr "referenza ad argomento non inizializzato `%s'"
+msgstr "riferimento al tipo %s convertito in %s"
 
 #: parser/parse_type.c:208 utils/cache/typcache.c:196
 #, c-format
 msgid "type \"%s\" is only a shell"
-msgstr "il tipo \"%s\" è solo una shell"
+msgstr "il tipo \"%s\" è solo un segnaposto"
 
 #: parser/parse_type.c:293
 #, c-format
 msgid "type modifier is not allowed for type \"%s\""
-msgstr ""
+msgstr "modificatore di tipo non ammesso per il tipo \"%s\""
 
 #: parser/parse_type.c:336
 #, c-format
 msgid "type modifiers must be simple constants or identifiers"
-msgstr ""
+msgstr "i modificatori di tipo devono essere costanti o identificatori semplici"
 
 #: parser/parse_type.c:647 parser/parse_type.c:746
-#, fuzzy, c-format
+#, c-format
 msgid "invalid type name \"%s\""
-msgstr "Digitare un nome di file"
+msgstr "nome di tipo \"%s\" non valido"
 
 #: parser/parse_utilcmd.c:175
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s\" already exists, skipping"
-msgstr "la relazione \"%s\" esiste già"
+msgstr "la relazione \"%s\" esiste già, saltata"
 
 #: parser/parse_utilcmd.c:334
-#, fuzzy, c-format
+#, c-format
 msgid "array of serial is not implemented"
-msgstr " Questa funzione non è stata implementata. "
+msgstr "gli array di serial non sono implementati"
 
 #: parser/parse_utilcmd.c:382
 #, c-format
 msgid "%s will create implicit sequence \"%s\" for serial column \"%s.%s\""
-msgstr ""
+msgstr "%s creerà la sequenza implicita \"%s\" per la colonna serial \"%s.%s\""
 
 #: parser/parse_utilcmd.c:483 parser/parse_utilcmd.c:495
 #, c-format
 msgid "conflicting NULL/NOT NULL declarations for column \"%s\" of table \"%s\""
-msgstr "dichiarazioni conflittuali NULL/NOT NULL per la colonna \"%s\" della tabella \"%s\""
+msgstr "dichiarazioni NULL/NOT NULL in conflitto per la colonna \"%s\" della tabella \"%s\""
 
 #: parser/parse_utilcmd.c:507
 #, c-format
 msgid "multiple default values specified for column \"%s\" of table \"%s\""
-msgstr ""
+msgstr "più di un valore predefinito specificato per la colonna \"%s\" della tabella \"%s\""
 
 #: parser/parse_utilcmd.c:1160 parser/parse_utilcmd.c:1236
 #, c-format
 msgid "Index \"%s\" contains a whole-row table reference."
-msgstr ""
+msgstr "L'indice \"%s\" contiene un riferimento all'intera riga della tabella."
 
 #: parser/parse_utilcmd.c:1503
 #, c-format
 msgid "cannot use an existing index in CREATE TABLE"
-msgstr ""
+msgstr "non è possibile usare un indice preesistente in CREATE TABLE"
 
 #: parser/parse_utilcmd.c:1523
 #, c-format
 msgid "index \"%s\" is already associated with a constraint"
-msgstr ""
+msgstr "l'indice \"%s\" è già associato ad un vincolo"
 
 #: parser/parse_utilcmd.c:1531
-#, fuzzy, c-format
+#, c-format
 msgid "index \"%s\" does not belong to table \"%s\""
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "l'indice \"%s\" non appartiene alla tabella \"%s\""
 
 #: parser/parse_utilcmd.c:1538
-#, fuzzy, c-format
+#, c-format
 msgid "index \"%s\" is not valid"
-msgstr "l'indice \"%s\" non è un indice hash"
+msgstr "l'indice \"%s\" non è valido"
 
 #: parser/parse_utilcmd.c:1544
-#, fuzzy, c-format
+#, c-format
 msgid "index \"%s\" is not ready"
-msgstr "l'indice \"%s\" non è un btree"
+msgstr "l'indice \"%s\" non è pronto"
 
 #: parser/parse_utilcmd.c:1550
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a unique index"
-msgstr "\"%s\" non è un dice"
+msgstr "\"%s\" non è un indice univoco"
 
 #: parser/parse_utilcmd.c:1551 parser/parse_utilcmd.c:1558
 #: parser/parse_utilcmd.c:1565 parser/parse_utilcmd.c:1635
 #, c-format
 msgid "Cannot create a primary key or unique constraint using such an index."
-msgstr ""
+msgstr "Non è possibile creare una chiave primaria o un vincolo univoco usando tale indice."
 
 #: parser/parse_utilcmd.c:1557
-#, fuzzy, c-format
+#, c-format
 msgid "index \"%s\" contains expressions"
-msgstr "l'indice \"%s\" ha una versione errata dell'hash"
+msgstr "l'indice \"%s\" contiene espressioni"
 
 #: parser/parse_utilcmd.c:1564
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is a partial index"
-msgstr "\"%s\" è un indice"
+msgstr "\"%s\" è un indice parziale"
 
 #: parser/parse_utilcmd.c:1576
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is a deferrable index"
-msgstr "\"%s\" non è una tabella ne un indice"
+msgstr "\"%s\" è un indice deferibile"
 
 #: parser/parse_utilcmd.c:1577
 #, c-format
 msgid "Cannot create a non-deferrable constraint using a deferrable index."
-msgstr ""
+msgstr "Non è possibile creare un vincolo non deferibile usando un indice deferibile."
 
 #: parser/parse_utilcmd.c:1634
-#, fuzzy, c-format
+#, c-format
 msgid "index \"%s\" does not have default sorting behavior"
-msgstr "non esiste la chiave multipla %s"
+msgstr "l'indice \"%s\" non ha un ordinamento predefinito"
 
 #: parser/parse_utilcmd.c:1779
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" appears twice in primary key constraint"
-msgstr "la colonna \"%s\"è in una chiave primaria"
+msgstr "la colonna \"%s\" appare due volte nel vincolo di chiave primaria"
 
 #: parser/parse_utilcmd.c:1785
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" appears twice in unique constraint"
-msgstr "non si possono usare aggregati nella condizione CHECK"
+msgstr "la colonna \"%s\" appare due volte nel vincolo univoco"
 
 #: parser/parse_utilcmd.c:1950
-#, fuzzy, c-format
+#, c-format
 msgid "index expression cannot return a set"
-msgstr "l'espressione di trasformazione non deve restituire un set"
+msgstr "l'espressione dell'indice non può restituire un insieme"
 
 #: parser/parse_utilcmd.c:1960
 #, c-format
 msgid "index expressions and predicates can refer only to the table being indexed"
-msgstr ""
+msgstr "le espressioni e i predicati dell'indice possono riferirsi solo alla tabella indicizzata"
 
 #: parser/parse_utilcmd.c:2057
 #, c-format
 msgid "rule WHERE condition cannot contain references to other relations"
-msgstr ""
+msgstr "le condizioni WHERE delle regole non possono avere riferimenti ad altre relazioni"
 
 #: parser/parse_utilcmd.c:2063
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use aggregate function in rule WHERE condition"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non è possibile usare funzioni di aggregazioni nella condizione WHERE della regola"
 
 #: parser/parse_utilcmd.c:2067
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use window function in rule WHERE condition"
-msgstr "non si possono usare aggregati nel vincolo di controllo"
+msgstr "non è possibile usare funzioni finestra nella condizione WHERE della regola"
 
 #: parser/parse_utilcmd.c:2139
 #, c-format
 msgid "rules with WHERE conditions can only have SELECT, INSERT, UPDATE, or DELETE actions"
-msgstr ""
+msgstr "le regole con una condizione WHERE possono avere solo azione SELECT, INSERT, UPDATE o DELETE"
 
 #: parser/parse_utilcmd.c:2157 parser/parse_utilcmd.c:2256
 #: rewrite/rewriteHandler.c:442 rewrite/rewriteManip.c:1040
 #, c-format
 msgid "conditional UNION/INTERSECT/EXCEPT statements are not implemented"
-msgstr "le istruzioni UNION/INTERSECT/EXCEPT non condizionali non sono implementate"
+msgstr "le istruzioni UNION/INTERSECT/EXCEPT condizionali non sono implementate"
 
 #: parser/parse_utilcmd.c:2175
 #, c-format
@@ -11530,27 +11539,27 @@ msgstr "La regola ON DELETE non può usare NEW"
 #: parser/parse_utilcmd.c:2222
 #, c-format
 msgid "cannot refer to OLD within WITH query"
-msgstr ""
+msgstr "non ci si può riferire ad OLD nella query WITH"
 
 #: parser/parse_utilcmd.c:2229
 #, c-format
 msgid "cannot refer to NEW within WITH query"
-msgstr ""
+msgstr "non ci si può riferire a NEW nella query WITH"
 
 #: parser/parse_utilcmd.c:2520
 #, c-format
 msgid "misplaced DEFERRABLE clause"
-msgstr "clausola DEFERRABLE malposizionata"
+msgstr "clausola DEFERRABLE mal posizionata"
 
 #: parser/parse_utilcmd.c:2525 parser/parse_utilcmd.c:2540
 #, c-format
 msgid "multiple DEFERRABLE/NOT DEFERRABLE clauses not allowed"
-msgstr "clausola DEFERRABLE/NOT DEFERRABLE multiple non consentite"
+msgstr "clausole DEFERRABLE/NOT DEFERRABLE multiple non consentite"
 
 #: parser/parse_utilcmd.c:2535
 #, c-format
 msgid "misplaced NOT DEFERRABLE clause"
-msgstr "clausola NOT DEFERRABLE malposizionata"
+msgstr "clausola NOT DEFERRABLE mal posizionata"
 
 #: parser/parse_utilcmd.c:2556
 #, c-format
@@ -11560,7 +11569,7 @@ msgstr "clausola INITIALLY DEFERRED mal posizionata"
 #: parser/parse_utilcmd.c:2561 parser/parse_utilcmd.c:2587
 #, c-format
 msgid "multiple INITIALLY IMMEDIATE/DEFERRED clauses not allowed"
-msgstr "clausole INITIALLY IMMEDIATE/DEFERRED  multiple non sono consentite"
+msgstr "clausole INITIALLY IMMEDIATE/DEFERRED multiple non sono consentite"
 
 #: parser/parse_utilcmd.c:2582
 #, c-format
@@ -11570,33 +11579,33 @@ msgstr "clausola INITIALLY IMMEDIATE mal posizionata"
 #: parser/parse_utilcmd.c:2773
 #, c-format
 msgid "CREATE specifies a schema (%s) different from the one being created (%s)"
-msgstr "CREATE specifica uno shcema (%s) differente da quello in creazione (%s)"
+msgstr "CREATE specifica uno schema (%s) differente da quello che sta venendo creato (%s)"
 
 #: parser/scansup.c:190
-#, fuzzy, c-format
+#, c-format
 msgid "identifier \"%s\" will be truncated to \"%s\""
-msgstr "blocchi da spostare"
+msgstr "l'identificatore \"%s\" sarà troncato a \"%s\""
 
 #: port/pg_latch.c:324 port/unix_latch.c:324
-#, fuzzy, c-format
+#, c-format
 msgid "poll() failed: %m"
-msgstr "buffer_copy (%s) non riuscita"
+msgstr "poll() fallito: %m"
 
 #: port/pg_latch.c:403 port/unix_latch.c:403
 #: replication/libpqwalreceiver/libpqwalreceiver.c:233
-#, fuzzy, c-format
+#, c-format
 msgid "select() failed: %m"
-msgstr "buffer_copy (%s) non riuscita"
+msgstr "select() fallita: %m"
 
 #: port/pg_sema.c:111 port/sysv_sema.c:111
-#, fuzzy, c-format
+#, c-format
 msgid "could not create semaphores: %m"
-msgstr "Impossibile creare lo stream: %s"
+msgstr "impossibile creare semafori: %m"
 
 #: port/pg_sema.c:112 port/sysv_sema.c:112
 #, c-format
 msgid "Failed system call was semget(%lu, %d, 0%o)."
-msgstr ""
+msgstr "La chiamata di sistema fallita era semget(%lu, %d, 0%o)."
 
 #: port/pg_sema.c:116 port/sysv_sema.c:116
 #, c-format
@@ -11604,6 +11613,8 @@ msgid ""
 "This error does *not* mean that you have run out of disk space.  It occurs when either the system limit for the maximum number of semaphore sets (SEMMNI), or the system wide maximum number of semaphores (SEMMNS), would be exceeded.  You need to raise the respective kernel parameter.  Alternatively, reduce PostgreSQL's consumption of semaphores by reducing its max_connections parameter.\n"
 "The PostgreSQL documentation contains more information about configuring your system for PostgreSQL."
 msgstr ""
+"Questo errore *non* significa che è finito lo spazio su disco. Succede o quando il limite di sistema per il massimo numero di semafori impostati (SEMMNI), oppure il massimo numero di semafori di sistema (SEMMNS) verrebbe superato. È necessario aumentare i rispettivi parametri del kernel. Alternativamente, riduci l'utilizzo di semafori di PostgreSQL riducendo il parametro max_connections.\n"
+"La documentazione di PostgreSQL contiene più informazioni su come configurare il tuo sistema per PostgreSQL."
 
 #: port/pg_sema.c:143 port/sysv_sema.c:143
 #, c-format
