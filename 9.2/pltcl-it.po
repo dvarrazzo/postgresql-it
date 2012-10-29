@@ -19,14 +19,14 @@ msgstr ""
 "Project-Id-Version: pltcl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:39+0000\n"
-"PO-Revision-Date: 2010-03-27 12:44:19+0100\n"
-"Last-Translator: Gabriele Bartolini <gabriele.bartolini@2ndquadrant.it>\n"
+"PO-Revision-Date: 2012-10-29 12:04+0100\n"
+"Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: pltcl.c:1150
 #, c-format
@@ -55,12 +55,12 @@ msgstr "le funzioni trigger possono essere chiamate solo come trigger"
 #: pltcl.c:1318
 #, c-format
 msgid "PL/Tcl functions cannot return type %s"
-msgstr "le funzioni PL/Tcl non possono ritornare il tipo %s"
+msgstr "le funzioni PL/Tcl non possono restituire il tipo %s"
 
 #: pltcl.c:1330
 #, c-format
 msgid "PL/Tcl functions cannot return composite types"
-msgstr "le funzioni PL.Tcl non possono ritornare tipi composti"
+msgstr "le funzioni PL.Tcl non possono restituire tipi composti"
 
 #: pltcl.c:1369
 #, c-format

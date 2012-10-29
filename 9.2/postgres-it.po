@@ -18154,7 +18154,7 @@ msgstr "Mostra il numero di pagine per un segmento del log di write ahead."
 
 #: utils/misc/guc.c:2233
 msgid "Time to sleep between autovacuum runs."
-msgstr "Tempo di pausa fra due tornare di autovacuum."
+msgstr "Tempo di pausa fra due esecuzioni di autovacuum."
 
 #: utils/misc/guc.c:2243
 msgid "Minimum number of tuple updates or deletes prior to vacuum."
