@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 12:53+0100\n"
+"PO-Revision-Date: 2012-10-29 13:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -193,12 +193,12 @@ msgstr "%s: rimozione dei contenuti della directory dei log delle transazioni fa
 #: initdb.c:564
 #, c-format
 msgid "%s: data directory \"%s\" not removed at user's request\n"
-msgstr "%s: directory dati \"%s\" non rimossa per richiesta dell'utente\n"
+msgstr "%s: directory dati \"%s\" non rimossa su richiesta dell'utente\n"
 
 #: initdb.c:569
 #, c-format
 msgid "%s: transaction log directory \"%s\" not removed at user's request\n"
-msgstr "%s: directory dei log delle transazioni \"%s\" non rimossa per richiesta dell'utente\n"
+msgstr "%s: directory dei log delle transazioni \"%s\" non rimossa su richiesta dell'utente\n"
 
 #: initdb.c:591
 #, c-format
@@ -208,7 +208,7 @@ msgid ""
 "own the server process.\n"
 msgstr ""
 "%s: non può essere eseguito da root\n"
-"Effettuate il log in (usando per esempio \"su\") con l'utente\n"
+"Effettua il login (usando per esempio \"su\") con l'utente\n"
 "(non privilegiato) che controllerà il processo server.\n"
 
 #: initdb.c:603
@@ -242,8 +242,8 @@ msgid ""
 "This might mean you have a corrupted installation or identified\n"
 "the wrong directory with the invocation option -L.\n"
 msgstr ""
-"Questo potrebbe indica una corruzione dell'installazione oppure\n"
-"avete indicato una directory errata con l'opzione -L.\n"
+"Questo potrebbe indica una installazione corrotta oppure\n"
+"hai indicato la directory errata con l'opzione -L.\n"
 
 #: initdb.c:798
 #, c-format
@@ -263,7 +263,7 @@ msgstr "selezione del parametro max_connections predefinito ... "
 #: initdb.c:946
 #, c-format
 msgid "selecting default shared_buffers ... "
-msgstr "si sta selezionando lo shared_buffers predefinito ... "
+msgstr "selezione di shared_buffers predefinito ... "
 
 #: initdb.c:990
 msgid "creating configuration files ... "
@@ -281,8 +281,8 @@ msgid ""
 "Check your installation or specify the correct path using the option -L.\n"
 msgstr ""
 "%s: il file di input \"%s\" non appartiene a PostgreSQL %s\n"
-"Controllate l'installazione o specificate un percorso corretto con\n"
-"l'opzione -L.\n"
+"Controlla la correttezza dell'installazione oppure specifica\n"
+"il percorso corretto con l'opzione -L.\n"
 
 #: initdb.c:1277
 msgid "initializing pg_authid ... "
@@ -290,11 +290,11 @@ msgstr "inizializzazione di pg_authid ... "
 
 #: initdb.c:1311
 msgid "Enter new superuser password: "
-msgstr "Inserire la nuova password del superutente: "
+msgstr "Inserisci la nuova password del superutente: "
 
 #: initdb.c:1312
 msgid "Enter it again: "
-msgstr "Reinserirla: "
+msgstr "Inserisci di nuovo la password: "
 
 #: initdb.c:1315
 #, c-format
@@ -325,7 +325,7 @@ msgstr "caricamento delle descrizioni degli oggetti di sistema ... "
 
 #: initdb.c:1625
 msgid "creating collations ... "
-msgstr "creazione degli ordini alfabetici ... "
+msgstr "creazione degli ordinamenti alfabetici ... "
 
 #: initdb.c:1658
 #, c-format
@@ -426,8 +426,8 @@ msgstr ""
 "La codifica selezionata (%s) e la codifica usata dal locale\n"
 "(%s) non corrispondono. Questo causerebbe un funzionamento errato\n"
 "in molte funzioni di elaborazione delle stringhe di caratteri.\n"
-"Rieseguite %s e non specificate una codifica esplicitamente o\n"
-"selezionate una combinazione corretta.\n"
+"Esegui di nuovo %s senza specificare una codifica esplicitamente\n"
+"oppure seleziona una combinazione corretta.\n"
 
 #: initdb.c:2438
 #, c-format
@@ -554,7 +554,7 @@ msgid ""
 "                            default text search configuration\n"
 msgstr ""
 "  -T, --text-search-config=CFG\n"
-"                            configurazione prefedinita per la ricerca testi\n"
+"                            configurazione predefinita per la ricerca di testo\n"
 
 #: initdb.c:2532
 #, c-format
@@ -564,7 +564,7 @@ msgstr "  -U, --username=NOME       nome del superutente del database\n"
 #: initdb.c:2533
 #, c-format
 msgid "  -W, --pwprompt            prompt for a password for the new superuser\n"
-msgstr "  -W, --pwprompt            richiede la password per il nuovo superutente\n"
+msgstr "  -W, --pwprompt            richiedi la password per il nuovo superutente\n"
 
 #: initdb.c:2534
 #, c-format
@@ -672,12 +672,12 @@ msgstr "Esecuzione in modalità debug\n"
 #: initdb.c:2724
 #, c-format
 msgid "Running in noclean mode.  Mistakes will not be cleaned up.\n"
-msgstr "Esecuzione in modalità noclean. Gli errori non verrano puliti.\n"
+msgstr "Esecuzione in modalità noclean. Gli errori non verranno ripuliti.\n"
 
 #: initdb.c:2767 initdb.c:2788 initdb.c:3017
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Provate \"%s --help\" per maggiori informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: initdb.c:2786
 #, c-format
@@ -701,7 +701,7 @@ msgid ""
 msgstr ""
 "%s: nessuna directory dati specificati\n"
 "È necessario indicare la directory dove risiederanno i dati di questo\n"
-"database. Fate questo invocando l'opzione -D o con la variabile globale\n"
+"database. Puoi farlo usando l'opzione -D oppure la variabile globale\n"
 "PGDATA.\n"
 
 #: initdb.c:2851
@@ -723,7 +723,7 @@ msgid ""
 msgstr ""
 "Il programma \"postgres\" è richiesto da %s ma non è stato trovato\n"
 "nella stessa directory \"%s\".\n"
-"Verificate l'installazione.\n"
+"Verifica la correttezza dell'installazione.\n"
 
 #: initdb.c:2901
 #, c-format
@@ -732,9 +732,9 @@ msgid ""
 "but was not the same version as %s.\n"
 "Check your installation.\n"
 msgstr ""
-"Il programma \"postgres\" è stato trovato da \"%s\" ma non ha\n"
-"la stessa versione di %s.\n"
-"Verificate l'installazione.\n"
+"Il programma \"postgres\" è stato trovato da \"%s\"\n"
+"ma non ha la stessa versione di %s.\n"
+"Verifica la correttezza dell'installazione.\n"
 
 #: initdb.c:2920
 #, c-format
@@ -793,7 +793,7 @@ msgid ""
 "The default database encoding will be set to \"%s\" instead.\n"
 msgstr ""
 "La codifica \"%s\" implicata dal locale non è consentita come codifica lato server.\n"
-"La codifica predefinita dei database sarà impostata a \"%s\" invece.\n"
+"La codifica predefinita dei database sarà impostata invece a \"%s\".\n"
 
 #: initdb.c:3037
 #, c-format
@@ -817,19 +817,19 @@ msgstr "La codifica predefinita del database è stata impostata a \"%s\".\n"
 #: initdb.c:3066
 #, c-format
 msgid "%s: could not find suitable text search configuration for locale \"%s\"\n"
-msgstr "%s: impossibile trovare una configurazione per la ricerca testo per il locale \"%s\"\n"
+msgstr "%s: impossibile trovare una configurazione per la ricerca testo adeguata al locale \"%s\"\n"
 
 #: initdb.c:3077
 #, c-format
 msgid "%s: warning: suitable text search configuration for locale \"%s\" is unknown\n"
-msgstr "%s: attenzione: la configurazione adeguata per la ricerca testo per il locale \"%s\" non è conosciuta\n"
+msgstr "%s: attenzione: non si conosce una configurazione per la ricerca testo adeguata al locale \"%s\"\n"
 
 #: initdb.c:3082
 #, c-format
 msgid "%s: warning: specified text search configuration \"%s\" might not match locale \"%s\"\n"
 msgstr ""
 "%s: attenzione: la configurazione specificata per la ricerca testo \"%s\"\n"
-" potrebbe non corrispondere al locale \"%s\"\n"
+"potrebbe non corrispondere al locale \"%s\"\n"
 
 #: initdb.c:3087
 #, c-format
@@ -863,8 +863,8 @@ msgid ""
 "the directory \"%s\" or run %s\n"
 "with an argument other than \"%s\".\n"
 msgstr ""
-"Se volete creare un nuovo sistema di database, cancellate o svuotate\n"
-"la directory \"%s\" o eseguite %s\n"
+"Se vuoi creare un nuovo sistema di database, elimina o svuota\n"
+"la directory \"%s\" oppure esegui %s\n"
 "con un argomento diverso da \"%s\".\n"
 
 #: initdb.c:3165 initdb.c:3235
@@ -883,8 +883,8 @@ msgid ""
 "If you want to store the transaction log there, either\n"
 "remove or empty the directory \"%s\".\n"
 msgstr ""
-"Se volete salvare i log delle transazioni là, rimuovete\n"
-"o svuotate la directory \"%s\".\n"
+"Se vuoi salvare lì i log delle transazioni,\n"
+"elimina oppure svuota la directory \"%s\".\n"
 
 #: initdb.c:3247
 #, c-format
@@ -913,7 +913,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Successo. Ora si può attivare il database server con:\n"
+"Successo. Ora puoi avviare il server database con:\n"
 "\n"
 "    %s%s%spostgres%s -D %s%s%s\n"
 "oppure\n"
