@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 12:44+0100\n"
+"PO-Revision-Date: 2012-10-29 12:53+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1729,7 +1729,7 @@ msgstr "il database è stato arrestato"
 #: access/transam/xlog.c:8030
 #, c-format
 msgid "concurrent transaction log activity while database system is shutting down"
-msgstr "rilevate attività concorrente sul log delle transazioni durante l'arresto del database"
+msgstr "rilevata attività concorrente sul log delle transazioni durante l'arresto del database"
 
 #: access/transam/xlog.c:8241
 #, c-format
@@ -17111,7 +17111,7 @@ msgstr "Il cluster di database è stato inzializzato con LC_COLLATE \"%s\", che 
 #: utils/init/postinit.c:338 utils/init/postinit.c:345
 #, c-format
 msgid "Recreate the database with another locale or install the missing locale."
-msgstr "ricreate il database con un altra localizzazione o installaste la localizzazione mancante"
+msgstr "Crea di nuovo il database con un altro locale oppure installa il locale mancante."
 
 #: utils/init/postinit.c:343
 #, fuzzy, c-format

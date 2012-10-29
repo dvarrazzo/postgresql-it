@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 12:21+0100\n"
+"PO-Revision-Date: 2012-10-29 12:53+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -784,7 +784,7 @@ msgstr "%s: impossibile determinare una codifica adeguata per il locale \"%s\"\n
 #: initdb.c:3016
 #, c-format
 msgid "Rerun %s with the -E option.\n"
-msgstr "Rieseguite %s con l'opzione -E.\n"
+msgstr "Esegui di nuovo %s con l'opzione -E.\n"
 
 #: initdb.c:3029
 #, c-format
@@ -807,7 +807,7 @@ msgid ""
 "Rerun %s with a different locale selection.\n"
 msgstr ""
 "La codifica \"%s\" non è disponibile come codifica lato server.\n"
-"Rieseguite %s con un locale diverso.\n"
+"Esegui di nuovo %s con un locale diverso.\n"
 
 #: initdb.c:3049
 #, c-format
