@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-28 19:51+0100\n"
+"PO-Revision-Date: 2012-10-29 14:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -221,7 +221,7 @@ msgstr "impossibile convertire il percorso del socket di dominio Unix \"%s\" in 
 
 #: fe-connect.c:1592
 msgid "invalid connection state, probably indicative of memory corruption\n"
-msgstr "stato connessione invalido, probabilmente indica una corruzione della memoria\n"
+msgstr "stato della connessione non valido, probabilmente indica una corruzione della memoria\n"
 
 #: fe-connect.c:1633
 #, c-format

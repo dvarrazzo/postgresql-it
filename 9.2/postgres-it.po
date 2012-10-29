@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 13:11+0100\n"
+"PO-Revision-Date: 2012-10-29 14:28+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -91,7 +91,7 @@ msgstr "impossibile identificare la directory corrente: %s"
 #: ../port/exec.c:144
 #, c-format
 msgid "invalid binary \"%s\""
-msgstr "binario invalido \"%s\""
+msgstr "binario non valido \"%s\""
 
 #: ../port/exec.c:193
 #, c-format
@@ -3876,7 +3876,7 @@ msgstr "non è possibile raggruppare sull'indice parziale \"%s\""
 #: commands/cluster.c:450
 #, c-format
 msgid "cannot cluster on invalid index \"%s\""
-msgstr "non è possibile raggruppare sull'indice invalido \"%s\""
+msgstr "non è possibile raggruppare sull'indice non valido \"%s\""
 
 #: commands/cluster.c:873
 #, c-format
@@ -15500,9 +15500,9 @@ msgid "invalid length in external \"%s\" value"
 msgstr "ottetto non valido in \"macaddr\" valore: \"%s\""
 
 #: utils/adt/network.c:248
-#, fuzzy, c-format
+#, c-format
 msgid "invalid external \"cidr\" value"
-msgstr "valore di FIELDWIDTHS invalido, vicino a `%s'"
+msgstr "valore \"cidr\" esterno non valido"
 
 #: utils/adt/network.c:370 utils/adt/network.c:397
 #, c-format

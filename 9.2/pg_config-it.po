@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-29 13:11+0100\n"
+"PO-Revision-Date: 2012-10-29 14:27+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -39,7 +39,7 @@ msgstr "directory corrente non identificata: %s"
 #: ../../port/exec.c:144
 #, c-format
 msgid "invalid binary \"%s\""
-msgstr "binario invalido \"%s\""
+msgstr "binario non valido \"%s\""
 
 #: ../../port/exec.c:193
 #, c-format
@@ -298,4 +298,4 @@ msgstr "%s: il proprio programma eseguibile non è stato trovato\n"
 #: pg_config.c:527
 #, c-format
 msgid "%s: invalid argument: %s\n"
-msgstr "%s: parametro invalido: %s\n"
+msgstr "%s: parametro non valido: %s\n"

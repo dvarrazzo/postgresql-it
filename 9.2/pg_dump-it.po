@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-29 13:07+0100\n"
+"PO-Revision-Date: 2012-10-29 14:27+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -43,7 +43,7 @@ msgstr "non è possibile identificare la directory corrente: %s"
 #: ../../port/exec.c:144
 #, c-format
 msgid "invalid binary \"%s\""
-msgstr "binario invalido \"%s\""
+msgstr "binario non valido \"%s\""
 
 #: ../../port/exec.c:193
 #, c-format
