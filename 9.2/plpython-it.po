@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:39+0000\n"
-"PO-Revision-Date: 2012-10-26 01:35+0100\n"
+"PO-Revision-Date: 2012-10-29 11:54+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -105,7 +105,7 @@ msgstr "errore nell'ottenere l'elemento successivo dall'iteratore"
 #: plpy_exec.c:164
 #, c-format
 msgid "PL/Python function with return type \"void\" did not return None"
-msgstr "la funzione PL/Python con valore di ritorno \"void\" non ha restituito None"
+msgstr "la funzione PL/Python che restituisce \"void\" non ha restituito None"
 
 #: plpy_exec.c:288 plpy_exec.c:314
 #, c-format
@@ -145,7 +145,7 @@ msgstr "la funzione che restituisce un record è stata chiamata in un contesto c
 #: plpy_exec.c:450
 #, c-format
 msgid "while creating return value"
-msgstr "durante la creazione del valore di ritorno"
+msgstr "durante la creazione del valore da restituire"
 
 #: plpy_exec.c:474
 #, c-format
@@ -394,7 +394,7 @@ msgstr "impossibile convertire oggetti Python in cstring: la rappresentazione st
 #: plpy_typeio.c:787
 #, c-format
 msgid "return value of function with array return type is not a Python sequence"
-msgstr "il valore di ritorno di funzione con tipo di ritorno array non è una sequenza Python"
+msgstr "il valore restituito dalla funzione con tipo restituito array non è una sequenza Python"
 
 #: plpy_typeio.c:886
 #, c-format

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-26 18:24+0100\n"
+"PO-Revision-Date: 2012-10-29 11:49+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -421,12 +421,12 @@ msgstr "%s: impossibile attendere il thread figlio: %s\n"
 #: pg_basebackup.c:1205
 #, c-format
 msgid "%s: could not get child thread exit status: %s\n"
-msgstr "%s: impossibile ottenere il valore di uscita del processo figlio: %s\n"
+msgstr "%s: impossibile ottenere il codice di uscita del thread figlio: %s\n"
 
 #: pg_basebackup.c:1211
 #, c-format
 msgid "%s: child thread exited with error %u\n"
-msgstr "%s: il processo figlio è terminato con errore %u\n"
+msgstr "%s: il thread figlio è terminato con errore %u\n"
 
 #: pg_basebackup.c:1292
 #, c-format

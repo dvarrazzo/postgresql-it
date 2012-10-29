@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-26 18:41+0100\n"
+"PO-Revision-Date: 2012-10-29 11:51+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -63,7 +63,7 @@ msgstr "impossibile leggere il link simbolico \"%s\""
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è uscito con valore di uscita %d"
+msgstr "il processo figlio è uscito con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format
@@ -177,7 +177,7 @@ msgstr "%s: un altro server potrebbe essere in esecuzione; si sta provando ad av
 #: pg_ctl.c:847
 #, c-format
 msgid "%s: could not start server: exit code was %d\n"
-msgstr "%s: non è possibile avviare il server: il valore di uscita è %d\n"
+msgstr "%s: non è possibile avviare il server: il codice di uscita è %d\n"
 
 #: pg_ctl.c:854
 msgid "waiting for server to start..."

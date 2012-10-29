@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 11:43+0100\n"
+"PO-Revision-Date: 2012-10-29 11:52+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -103,7 +103,7 @@ msgstr "impossibile leggere il link simbolico \"%s\""
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è terminato con valore di uscita %d"
+msgstr "il processo figlio è terminato con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format
@@ -123,7 +123,7 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è terminato con il valore di uscita non riconosciuto %d"
+msgstr "il processo figlio è terminato con il codice di uscita non riconosciuto %d"
 
 #: initdb.c:294 initdb.c:308
 #, c-format
@@ -712,7 +712,7 @@ msgstr "%s: impossibile ri-eseguire con token ristretto: codice errore %lu\n"
 #: initdb.c:2866
 #, c-format
 msgid "%s: could not get exit code from subprocess: error code %lu\n"
-msgstr "%s: impossibile ottenere valore di ritorno dal processo figlio: codice errore %lu\n"
+msgstr "%s: impossibile ottenere il codice di uscita del processo figlio: codice errore %lu\n"
 
 #: initdb.c:2894
 #, c-format

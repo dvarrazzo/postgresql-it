@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-29 02:00+0100\n"
+"PO-Revision-Date: 2012-10-29 11:51+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -918,14 +918,14 @@ msgstr "file di log \"%s\" ripristinato dall'archivio"
 #: access/transam/xlog.c:3287
 #, c-format
 msgid "could not restore file \"%s\" from archive: return code %d"
-msgstr "impossibile ripristinare il file \"%s\" dall'archivio: valore di uscita %d"
+msgstr "impossibile ripristinare il file \"%s\" dall'archivio: codice di uscita %d"
 
 #. translator: First %s represents a recovery.conf parameter name like
 #. "recovery_end_command", and the 2nd is the value of that parameter.
 #: access/transam/xlog.c:3401
 #, c-format
 msgid "%s \"%s\": return code %d"
-msgstr "%s \"%s\": valore di uscita %d"
+msgstr "%s \"%s\": codice di uscita %d"
 
 # da non tradursi
 # DV: perché? (trovato tradotto, tra l'altro)
