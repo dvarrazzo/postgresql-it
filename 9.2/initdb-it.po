@@ -806,7 +806,7 @@ msgid ""
 "Encoding \"%s\" is not allowed as a server-side encoding.\n"
 "Rerun %s with a different locale selection.\n"
 msgstr ""
-"La codifica \"%s\" non è disponibile come codifica server-side.\n"
+"La codifica \"%s\" non è disponibile come codifica lato server.\n"
 "Rieseguite %s con un locale diverso.\n"
 
 #: initdb.c:3049
