@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-28 22:54+0100\n"
+"PO-Revision-Date: 2012-10-29 01:04+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Bookmarks: 2816,970,-1,-1,-1,-1,1296,-1,-1,-1\n"
+"X-Poedit-Bookmarks: 2816,1609,-1,-1,-1,-1,1296,-1,-1,-1\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
@@ -7407,34 +7407,34 @@ msgid "range canonical function %s must be immutable"
 msgstr "la funzione canonica %s dell'intervallo deve essere immutabile"
 
 #: commands/typecmds.c:1928
-#, fuzzy, c-format
+#, c-format
 msgid "range subtype diff function %s must return type double precision"
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione di differenza sottotipo %s deve restituire il tipo doppia precisione"
 
 #: commands/typecmds.c:1934
-#, fuzzy, c-format
+#, c-format
 msgid "range subtype diff function %s must be immutable"
-msgstr "la funzione %s deve restituire un tipo \"trigger\""
+msgstr "la funzione di differenza sottotipo %s deve essere immutabile"
 
 #: commands/typecmds.c:2240
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" of table \"%s\" contains null values"
-msgstr "la collona \"%s\"contiene dei valori nulli"
+msgstr "la colonna \"%s\" della tabella \"%s\" contiene valori null"
 
 #: commands/typecmds.c:2342 commands/typecmds.c:2516
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" of domain \"%s\" does not exist"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "il vincolo \"%s\" del dominio \"%s\" non esiste"
 
 #: commands/typecmds.c:2346
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" of domain \"%s\" does not exist, skipping"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "il vincolo \"%s\" del dominio \"%s\" non esiste, saltato"
 
 #: commands/typecmds.c:2522
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" of domain \"%s\" is not a check constraint"
-msgstr "la relazione con l'OID %u non esiste"
+msgstr "il vincolo \"%s\" del dominio \"%s\" non è un vincolo di controllo"
 
 #: commands/typecmds.c:2609
 #, c-format
@@ -7442,34 +7442,34 @@ msgid "column \"%s\" of table \"%s\" contains values that violate the new constr
 msgstr "la colonna \"%s\" della tabella \"%s\" contiene valori che violano il nuovo vincolo"
 
 #: commands/typecmds.c:2811 commands/typecmds.c:3206 commands/typecmds.c:3355
-#, fuzzy, c-format
+#, c-format
 msgid "%s is not a domain"
-msgstr "Dominio non collegato"
+msgstr "%s non è un dominio"
 
 #: commands/typecmds.c:2844
-#, fuzzy, c-format
+#, c-format
 msgid "constraint \"%s\" for domain \"%s\" already exists"
-msgstr "la condizione \"%s\" per la relazione \"%s\" esiste già"
+msgstr "il vincolo \"%s\" del dominio \"%s\" esiste già"
 
 #: commands/typecmds.c:2892 commands/typecmds.c:2901
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use table references in domain check constraint"
-msgstr "non si possono usare aggregati nella condizione CHECK"
+msgstr "impossibile usare riferimenti a tabelle nel vincolo di controllo del dominio"
 
 #: commands/typecmds.c:3140 commands/typecmds.c:3218 commands/typecmds.c:3447
-#, fuzzy, c-format
+#, c-format
 msgid "%s is a table's row type"
-msgstr "I tipi di voce/tabella non coincidono"
+msgstr "%s è il tipo della riga di una tabella"
 
 #: commands/typecmds.c:3142 commands/typecmds.c:3220 commands/typecmds.c:3449
-#, fuzzy, c-format
+#, c-format
 msgid "Use ALTER TABLE instead."
-msgstr "deprecato, si usi lang"
+msgstr "Usa ALTER TABLE invece."
 
 #: commands/typecmds.c:3149 commands/typecmds.c:3227 commands/typecmds.c:3378
-#, fuzzy, c-format
+#, c-format
 msgid "cannot alter array type %s"
-msgstr "le funzioni SQL non possono avere argomenti del tipo %s"
+msgstr "non è possibile modificare il tipo di array %s"
 
 #: commands/typecmds.c:3151 commands/typecmds.c:3229 commands/typecmds.c:3380
 #, c-format
@@ -7477,9 +7477,9 @@ msgid "You can alter type %s, which will alter the array type as well."
 msgstr "puoi modificare il tipo %s, il che modificherà il tipo dell'array come conseguenza."
 
 #: commands/typecmds.c:3433
-#, fuzzy, c-format
+#, c-format
 msgid "type \"%s\" already exists in schema \"%s\""
-msgstr "Il name esiste già nello storage"
+msgstr "il tipo \"%s\" esiste già nello schema \"%s\""
 
 #: commands/user.c:144
 #, c-format
@@ -7487,47 +7487,47 @@ msgid "SYSID can no longer be specified"
 msgstr "SYSID non può più essere specificato"
 
 #: commands/user.c:276
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to create superusers"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo i superutenti possono creare superutenti"
 
 #: commands/user.c:283
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to create replication users"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo i superutenti possono creare utenti di replica"
 
 #: commands/user.c:290
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to create role"
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di creare il ruolo negato"
 
 #: commands/user.c:297 commands/user.c:1091
-#, fuzzy, c-format
+#, c-format
 msgid "role name \"%s\" is reserved"
-msgstr "La sintassi \"none\" è riservata"
+msgstr "il nome di ruolo \"%s\" è riservato"
 
 #: commands/user.c:310 commands/user.c:1085
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" already exists"
-msgstr "La scorciatoia «%s» esiste già"
+msgstr "il ruolo \"%s\" esiste già"
 
 #: commands/user.c:616 commands/user.c:818 commands/user.c:898
 #: commands/user.c:1060 commands/variable.c:855 commands/variable.c:927
 #: utils/adt/acl.c:5088 utils/init/miscinit.c:432
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" does not exist"
-msgstr "Il filtro \"%filter:1\" non esiste."
+msgstr "il ruolo \"%s\" non esiste"
 
 #: commands/user.c:629 commands/user.c:835 commands/user.c:1325
 #: commands/user.c:1462
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to alter superusers"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo i superutenti possono modificare superutenti"
 
 #: commands/user.c:636
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to alter replication users"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo i superutenti possono modificare utenti di replica"
 
 #: commands/user.c:652 commands/user.c:843
 #, c-format
@@ -7535,99 +7535,99 @@ msgid "permission denied"
 msgstr "permesso negato"
 
 #: commands/user.c:871
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to drop role"
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di eliminare il ruolo negato"
 
 #: commands/user.c:903
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" does not exist, skipping"
-msgstr "non esiste la chiave multipla %s"
+msgstr "il ruolo \"%s\" non esiste, saltato"
 
 #: commands/user.c:915 commands/user.c:919
 #, c-format
 msgid "current user cannot be dropped"
-msgstr "L'utente corrente non può essere eliminato"
+msgstr "l'utente corrente non può essere eliminato"
 
 #: commands/user.c:923
-#, fuzzy, c-format
+#, c-format
 msgid "session user cannot be dropped"
-msgstr "Impossibile visualizzare il registro della sessione."
+msgstr "l'utente della sessione non può essere eliminato"
 
 #: commands/user.c:934
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to drop superusers"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo i superutenti possono eliminare superutenti"
 
 #: commands/user.c:957
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" cannot be dropped because some objects depend on it"
-msgstr "impossibile eliminare %s perchè© altri oggetti dipendono da esso"
+msgstr "il ruolo \"%s\" non può essere eliminato perché alcuni oggetti ne dipendono"
 
 #: commands/user.c:1075
-#, fuzzy, c-format
+#, c-format
 msgid "session user cannot be renamed"
-msgstr "Le cartelle spool non possono essere rinominate"
+msgstr "l'utente della sessione non può essere rinominato"
 
 #: commands/user.c:1079
-#, fuzzy, c-format
+#, c-format
 msgid "current user cannot be renamed"
-msgstr "Le cartelle spool non possono essere rinominate"
+msgstr "l'utente corrente non può essere eliminato"
 
 #: commands/user.c:1102
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to rename superusers"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo i superutenti possono rinominare superutenti"
 
 #: commands/user.c:1109
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to rename role"
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di rinominare il ruolo negato"
 
 #: commands/user.c:1130
 #, c-format
 msgid "MD5 password cleared because of role rename"
-msgstr "L' MD5 della password è   stato cancellato poichè la regola è stata rinominata"
+msgstr "L'MD5 della password è stato cancellato perché il ruolo è stato rinominato"
 
 #: commands/user.c:1186
 #, c-format
 msgid "column names cannot be included in GRANT/REVOKE ROLE"
-msgstr "la colonna dei nomi non può essere inclusa nella GRANT/REVOKE ROLE"
+msgstr "la colonna dei nomi non può essere inclusa in GRANT/REVOKE ROLE"
 
 #: commands/user.c:1224
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to drop objects"
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di eliminare gli oggetti negato"
 
 #: commands/user.c:1251 commands/user.c:1260
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to reassign objects"
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di riassegnare gli oggetti negato"
 
 #: commands/user.c:1333 commands/user.c:1470
 #, c-format
 msgid "must have admin option on role \"%s\""
-msgstr "deve avere un opzione di admin nella regola \"%s\""
+msgstr "occorre avere l'opzione admin sul ruolo \"%s\""
 
 #: commands/user.c:1341
-#, fuzzy, c-format
+#, c-format
 msgid "must be superuser to set grantor"
-msgstr "Solo un superuser può cambiare proprietario"
+msgstr "solo i superutenti possono impostare chi ha concesso il privilegio"
 
 #: commands/user.c:1366
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" is a member of role \"%s\""
-msgstr "L'utente «%s» fa già parte del gruppo «%s».\n"
+msgstr "il ruolo \"%s\" è membro del ruolo \"%s\""
 
 #: commands/user.c:1381
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" is already a member of role \"%s\""
-msgstr "L'utente «%s» fa già parte del gruppo «%s».\n"
+msgstr "il ruolo \"%s\" è già membro del ruolo \"%s\""
 
 #: commands/user.c:1492
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" is not a member of role \"%s\""
-msgstr "L'utente «%s» non fa parte del gruppo «%s».\n"
+msgstr "il ruolo \"%s\" non è membro del ruolo \"%s\""
 
 #: commands/vacuum.c:431
 #, c-format
@@ -7670,9 +7670,9 @@ msgid "skipping \"%s\" --- only table or database owner can vacuum it"
 msgstr "\"%s\" saltata --- solo il proprietario del database o della tabella possono pulirla"
 
 #: commands/vacuum.c:988
-#, fuzzy, c-format
+#, c-format
 msgid "skipping \"%s\" --- cannot vacuum non-tables or special system tables"
-msgstr "sto saltando \"%s\" --- non è possibile analizzare indici, viste o le tabelle speciali di sistema"
+msgstr "\"%s\" saltata --- non è possibile ripulire non-tabelle o tabelle speciali di sistema"
 
 #: commands/vacuumlazy.c:286
 #, c-format
@@ -7726,9 +7726,9 @@ msgstr "\"%s\": %d versioni di riga rimosse in %d pagine"
 
 #: commands/vacuumlazy.c:1056 commands/vacuumlazy.c:1192
 #: commands/vacuumlazy.c:1328
-#, fuzzy, c-format
+#, c-format
 msgid "%s."
-msgstr "%s"
+msgstr "%s."
 
 #: commands/vacuumlazy.c:1189
 #, c-format
@@ -7752,19 +7752,19 @@ msgstr ""
 "%s."
 
 #: commands/vacuumlazy.c:1325
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\": truncated %u to %u pages"
-msgstr "Numero di pagine da stampare"
+msgstr "\"%s\": %u pagine ridotte a %u"
 
 #: commands/variable.c:161 utils/misc/guc.c:8327
-#, fuzzy, c-format
+#, c-format
 msgid "Unrecognized key word: \"%s\"."
-msgstr "impossibile riconoscere la parola chiave \"%s\""
+msgstr "Parola chiave non riconosciuta: \"%s\"."
 
 #: commands/variable.c:173
-#, fuzzy, c-format
+#, c-format
 msgid "Conflicting \"datestyle\" specifications."
-msgstr "<b>Specifiche percorso file</b>"
+msgstr "Specifiche di \"datestyle\" in conflitto."
 
 #: commands/variable.c:312
 #, c-format
@@ -7777,29 +7777,29 @@ msgid "Cannot specify days in time zone interval."
 msgstr "Impossibile specificare i giorni nell'intervallo del fuso orario."
 
 #: commands/variable.c:362 commands/variable.c:485
-#, fuzzy, c-format
+#, c-format
 msgid "time zone \"%s\" appears to use leap seconds"
-msgstr "il fuso orario \"%s\"non è stato riconosciuto"
+msgstr "sembra che il fuso orario \"%s\" utilizzi il secondo intercalare"
 
 #: commands/variable.c:364 commands/variable.c:487
-#, fuzzy, c-format
+#, c-format
 msgid "PostgreSQL does not support leap seconds."
-msgstr "NULLIF non supporta set di parametri"
+msgstr "PostgreSQL non supporta il secondo intercalare."
 
 #: commands/variable.c:551
 #, c-format
 msgid "cannot set transaction read-write mode inside a read-only transaction"
-msgstr "non si può impostare una transazione read-write dentro una read-only"
+msgstr "non è possibile impostare una transazione in lettura/scrittura dentro una in sola lettura"
 
 #: commands/variable.c:558
-#, fuzzy, c-format
+#, c-format
 msgid "transaction read-write mode must be set before any query"
-msgstr "non si può impostare una transazione read-write dentro una read-only"
+msgstr "la modalità read-write dev'essere impostata prima di qualsiasi query"
 
 #: commands/variable.c:565
-#, fuzzy, c-format
+#, c-format
 msgid "cannot set transaction read-write mode during recovery"
-msgstr "non si può impostare una transazione read-write dentro una read-only"
+msgstr "non è possibile impostare la transazione in lettura/scrittura durante il ripristino"
 
 #: commands/variable.c:614
 #, c-format
@@ -7814,12 +7814,12 @@ msgstr "SET TRANSACTION ISOLATION LEVEL non può essere invocato in una sotto-tr
 #: commands/variable.c:628 storage/lmgr/predicate.c:1582
 #, c-format
 msgid "cannot use serializable mode in a hot standby"
-msgstr "impossibile usare la modalità serializzabile in un hot standby"
+msgstr "non è possibile usare la modalità SERIALIZABLE in un hot standby"
 
 #: commands/variable.c:629
-#, fuzzy, c-format
+#, c-format
 msgid "You can use REPEATABLE READ instead."
-msgstr "E' invece possibile eliminare %s."
+msgstr "Puoi utilizzare REPEATABLE READ invece."
 
 #: commands/variable.c:677
 #, c-format
@@ -7842,14 +7842,14 @@ msgid "Cannot change \"client_encoding\" now."
 msgstr "Impossibile cambiare \"client_encoding\" ora."
 
 #: commands/variable.c:942
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to set role \"%s\""
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di impostare il ruolo \"%s\" negato"
 
 #: commands/view.c:145
-#, fuzzy, c-format
+#, c-format
 msgid "could not determine which collation to use for view column \"%s\""
-msgstr "impossibile determinare il reale tipo di ritorno per la funzione polimorfa \"%s\""
+msgstr "impossibile determinare quale ordinamento usare per la colonna \"%s\""
 
 #: commands/view.c:160
 #, c-format
@@ -7859,22 +7859,22 @@ msgstr "la vista deve avere almeno una colonna"
 #: commands/view.c:292 commands/view.c:304
 #, c-format
 msgid "cannot drop columns from view"
-msgstr "impossibile eliminare colonne da una vista"
+msgstr "non è possibile eliminare colonne da una vista"
 
 #: commands/view.c:309
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change name of view column \"%s\" to \"%s\""
-msgstr "impossibile passare alla directory to \"%s\": %m"
+msgstr "non è possibile cambiare nome della colonna di vista \"%s\" in \"%s\""
 
 #: commands/view.c:317
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change data type of view column \"%s\" from %s to %s"
-msgstr "il tipo restituito dalla funzione di transizione è %s e non %s"
+msgstr "non è possibile cambiare tipo di dato della colonna di vista \"%s\" da %s a %s"
 
 #: commands/view.c:450
-#, fuzzy, c-format
+#, c-format
 msgid "views must not contain SELECT INTO"
-msgstr "Seleziona una cartella dentro cui importare"
+msgstr "le viste non possono contenere SELECT INTO"
 
 #: commands/view.c:463
 #, c-format
@@ -7892,14 +7892,14 @@ msgid "views cannot be unlogged because they do not have storage"
 msgstr "le viste non possono essere non loggate perché non sono immagazzinate"
 
 #: commands/view.c:513
-#, fuzzy, c-format
+#, c-format
 msgid "view \"%s\" will be a temporary view"
-msgstr "I file temporanei verranno creati in %s\n"
+msgstr "la vista \"%s\" sarà una vista temporanea"
 
 #: executor/execCurrent.c:76
-#, fuzzy, c-format
+#, c-format
 msgid "cursor \"%s\" is not a SELECT query"
-msgstr "la relazione \"%s\"non esiste"
+msgstr "il cursore \"%s\" non è una query SELECT"
 
 #: executor/execCurrent.c:82
 #, c-format
@@ -7917,14 +7917,14 @@ msgid "cursor \"%s\" does not have a FOR UPDATE/SHARE reference to table \"%s\""
 msgstr "il cursore \"%s\" non ha alcun riferimento FOR UPDATE/SHARE alla tabella \"%s\""
 
 #: executor/execCurrent.c:133 executor/execCurrent.c:179
-#, fuzzy, c-format
+#, c-format
 msgid "cursor \"%s\" is not positioned on a row"
-msgstr "il cursore \"%s\"non esiste"
+msgstr "il cursore \"%s\" non è posizionato su una riga"
 
 #: executor/execCurrent.c:166
-#, fuzzy, c-format
+#, c-format
 msgid "cursor \"%s\" is not a simply updatable scan of table \"%s\""
-msgstr "%s: il file \"%s\"non e' un file regolare\n"
+msgstr "il cursore \"%s\" non è una scansione semplice aggiornabile della tabella \"%s\""
 
 #: executor/execCurrent.c:231 executor/execQual.c:1136
 #, c-format
@@ -7937,19 +7937,19 @@ msgid "no value found for parameter %d"
 msgstr "nessun valore trovato per il parametro %d"
 
 #: executor/execMain.c:945
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change sequence \"%s\""
-msgstr "impossibile cambiare i permessi di %s"
+msgstr "non è possibile modificare la sequenza \"%s\""
 
 #: executor/execMain.c:951
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change TOAST relation \"%s\""
-msgstr "impossibile entrare nella directory %s"
+msgstr "non è possibile modificare la relazione TOAST \"%s\""
 
 #: executor/execMain.c:961
-#, fuzzy, c-format
+#, c-format
 msgid "cannot insert into view \"%s\""
-msgstr "non è possibile fare l' insert nella vista"
+msgstr "non è possibile inserire nella vista \"%s\""
 
 #: executor/execMain.c:963
 #, c-format
@@ -7957,9 +7957,9 @@ msgid "You need an unconditional ON INSERT DO INSTEAD rule or an INSTEAD OF INSE
 msgstr "È necessaria una regola ON INSERT DO INSTEAD senza alcuna condizione oppure un trigger INSTEAD OF INSERT."
 
 #: executor/execMain.c:969
-#, fuzzy, c-format
+#, c-format
 msgid "cannot update view \"%s\""
-msgstr "non è possibile aggiornare la vista"
+msgstr "non è possibile modificare la vista \"%s\""
 
 #: executor/execMain.c:971
 #, c-format
@@ -7967,9 +7967,9 @@ msgid "You need an unconditional ON UPDATE DO INSTEAD rule or an INSTEAD OF UPDA
 msgstr "È necessaria una regola ON UPDATE DO INSTEAD senza alcuna condizione oppure un trigger INSTEAD OF UPDATE."
 
 #: executor/execMain.c:977
-#, fuzzy, c-format
+#, c-format
 msgid "cannot delete from view \"%s\""
-msgstr "non è possibile eliminare la vista"
+msgstr "non è possibile cancellare dalla vista \"%s\""
 
 #: executor/execMain.c:979
 #, c-format
@@ -7977,77 +7977,77 @@ msgid "You need an unconditional ON DELETE DO INSTEAD rule or an INSTEAD OF DELE
 msgstr "È necessaria una regola ON DELETE DO INSTEAD senza alcuna condizione oppure un trigger INSTEAD OF DELETE."
 
 #: executor/execMain.c:989
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change foreign table \"%s\""
-msgstr "impossibile cambiare i permessi di %s"
+msgstr "non è possibile modificare la tabella esterna \"%s\""
 
 #: executor/execMain.c:995
-#, fuzzy, c-format
+#, c-format
 msgid "cannot change relation \"%s\""
-msgstr "impossibile cambiare i permessi di %s"
+msgstr "non è possibile modificare la relazione \"%s\""
 
 #: executor/execMain.c:1019
-#, fuzzy, c-format
+#, c-format
 msgid "cannot lock rows in sequence \"%s\""
-msgstr "%s: impossibile copiare da/a una cartella\n"
+msgstr "non è possibile bloccare righe nella sequenza \"%s\""
 
 #: executor/execMain.c:1026
-#, fuzzy, c-format
+#, c-format
 msgid "cannot lock rows in TOAST relation \"%s\""
-msgstr "impossibile entrare nella directory %s"
+msgstr "non è possibile bloccare righe nella relazione TOAST \"%s\""
 
 #: executor/execMain.c:1033
-#, fuzzy, c-format
+#, c-format
 msgid "cannot lock rows in view \"%s\""
-msgstr "%s: impossibile copiare da/a una cartella\n"
+msgstr "non è possibile bloccare righe vista \"%s\""
 
 #: executor/execMain.c:1040
-#, fuzzy, c-format
+#, c-format
 msgid "cannot lock rows in foreign table \"%s\""
-msgstr "non è possibile copiare dalla relazione \"%s\", in quanto non si tratta di una tabella"
+msgstr "non è possibile bloccare righe nella tabella esterna \"%s\""
 
 #: executor/execMain.c:1046
-#, fuzzy, c-format
+#, c-format
 msgid "cannot lock rows in relation \"%s\""
-msgstr "impossibile ottenere il lock su una riga nella relazione \"%s\""
+msgstr "non è possibile bloccare righe nella relazione \"%s\""
 
 #: executor/execMain.c:1522
-#, fuzzy, c-format
+#, c-format
 msgid "null value in column \"%s\" violates not-null constraint"
-msgstr "il valore per il DOMAIN %s viola la check constraint \"%s\""
+msgstr "valori null nella colonna \"%s\" violano il vincolo non-null"
 
 #: executor/execMain.c:1524 executor/execMain.c:1538
-#, fuzzy, c-format
+#, c-format
 msgid "Failing row contains %s."
-msgstr "errore impossibile in do_constant"
+msgstr "La riga in errore contiene %s."
 
 #: executor/execMain.c:1536
-#, fuzzy, c-format
+#, c-format
 msgid "new row for relation \"%s\" violates check constraint \"%s\""
-msgstr "il valore per il DOMAIN %s viola la check constraint \"%s\""
+msgstr "la nuova riga per la relazione \"%s\" viola il vincolo di controllo \"%s\""
 
 #: executor/execQual.c:303 executor/execQual.c:331 executor/execQual.c:3090
 #: utils/adt/array_userfuncs.c:430 utils/adt/arrayfuncs.c:227
 #: utils/adt/arrayfuncs.c:506 utils/adt/arrayfuncs.c:1241
 #: utils/adt/arrayfuncs.c:2914 utils/adt/arrayfuncs.c:4939
-#, fuzzy, c-format
+#, c-format
 msgid "number of array dimensions (%d) exceeds the maximum allowed (%d)"
 msgstr "il numero di dimensioni dell'array (%d) eccede il massimo consentito (%d)"
 
 #: executor/execQual.c:316 executor/execQual.c:344
 #, c-format
 msgid "array subscript in assignment must not be null"
-msgstr "l'array subscript in asseganzione non deve essere null"
+msgstr "l'indice di un array nell'assegnamento non può essere nullo"
 
 #: executor/execQual.c:639 executor/execQual.c:4008
-#, fuzzy, c-format
+#, c-format
 msgid "attribute %d has wrong type"
-msgstr "<li> ha il tipo sbagliato %s"
+msgstr "l'attributo %d è di tipo errato"
 
 #: executor/execQual.c:640 executor/execQual.c:4009
 #, c-format
 msgid "Table has type %s, but query expects %s."
-msgstr "La tabella ha il tipo  %s, ma la query aspetta %s."
+msgstr "La tabella ha il tipo %s, ma la query prevede %s."
 
 #: executor/execQual.c:843 executor/execQual.c:860 executor/execQual.c:1024
 #: executor/nodeModifyTable.c:83 executor/nodeModifyTable.c:93
@@ -8075,11 +8075,11 @@ msgstr "Il tipo di immagazzinamento fisico non corrisponde per l'attributo elimi
 
 #: executor/execQual.c:1301 parser/parse_func.c:91 parser/parse_func.c:323
 #: parser/parse_func.c:642
-#, fuzzy, c-format
+#, c-format
 msgid "cannot pass more than %d argument to a function"
 msgid_plural "cannot pass more than %d arguments to a function"
-msgstr[0] "impossibile passare più di %d parametri ad una funzione"
-msgstr[1] "impossibile passare più di %d parametri ad una funzione"
+msgstr[0] "impossibile passare più di %d argomento ad una funzione"
+msgstr[1] "impossibile passare più di %d argomenti ad una funzione"
 
 #: executor/execQual.c:1490
 #, c-format
@@ -8106,37 +8106,37 @@ msgstr[1] "La riga restituita contiene %d attributi, ma la query ne prevede %d."
 #: executor/execQual.c:1612
 #, c-format
 msgid "Returned type %s at ordinal position %d, but query expects %s."
-msgstr "Tipo %s restituito in posizione %d, ma la query ne prevede %s."
+msgstr "Tipo %s restituito in posizione %d, ma la query prevede %s."
 
 #: executor/execQual.c:1848 executor/execQual.c:2273
 #, c-format
 msgid "table-function protocol for materialize mode was not followed"
-msgstr ""
+msgstr "il protocollo tabella-funzione del modo di materializzazione non è stato seguito"
 
 #: executor/execQual.c:1868 executor/execQual.c:2280
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized table-function returnMode: %d"
-msgstr "valore provolatile sconosciuto per la funzione \"%s\"\n"
+msgstr "returnMode tabella-funzione non riconosciuto: %d"
 
 #: executor/execQual.c:2190
 #, c-format
 msgid "function returning set of rows cannot return null value"
-msgstr ""
+msgstr "una funzione che restituisce un insieme di righe non può restituire un valore null"
 
 #: executor/execQual.c:2247
 #, c-format
 msgid "rows returned by function are not all of the same row type"
-msgstr ""
+msgstr "le righe restituite dalla funzione non sono tutte dello stesso tipo"
 
 #: executor/execQual.c:2438
 #, c-format
 msgid "IS DISTINCT FROM does not support set arguments"
-msgstr "IS DISTINCT FROM non supporta i set di parametri"
+msgstr "IS DISTINCT FROM non supporta argomenti di tipo insieme"
 
 #: executor/execQual.c:2515
 #, c-format
 msgid "op ANY/ALL (array) does not support set arguments"
-msgstr "l'op. ANY/ALL (array) non supporta set di parametri"
+msgstr "l'operatore ANY/ALL (array) non supporta argomenti di tipo insieme"
 
 #: executor/execQual.c:3068
 #, c-format
@@ -8146,18 +8146,18 @@ msgstr "impossibile unire array non compatibili"
 #: executor/execQual.c:3069
 #, c-format
 msgid "Array with element type %s cannot be included in ARRAY construct with element type %s."
-msgstr "un array con tipo di element %s non pul essere incluso nel construtto ARRAY con elementi di tipo %s."
+msgstr "Un array con tipo di elementi %s non può essere incluso nel construtto ARRAY con elementi di tipo %s."
 
 #: executor/execQual.c:3110 executor/execQual.c:3137
 #: utils/adt/arrayfuncs.c:541
 #, c-format
 msgid "multidimensional arrays must have array expressions with matching dimensions"
-msgstr "array multidimensionali devo avere espressioni array con dimensioni corrispondenti"
+msgstr "gli array multidimensionali devo avere espressioni array con dimensioni corrispondenti"
 
 #: executor/execQual.c:3652
 #, c-format
 msgid "NULLIF does not support set arguments"
-msgstr "NULLIF non supporta set di parametri"
+msgstr "NULLIF non supporta argomenti di tipo insieme"
 
 #: executor/execQual.c:3882 utils/adt/domains.c:127
 #, c-format
@@ -8167,29 +8167,29 @@ msgstr "il DOMAIN %s non consente valori nulli"
 #: executor/execQual.c:3911 utils/adt/domains.c:163
 #, c-format
 msgid "value for domain %s violates check constraint \"%s\""
-msgstr "il valore per il DOMAIN %s viola la check constraint \"%s\""
+msgstr "il valore per il DOMAIN %s viola il vincolo di controllo \"%s\""
 
 #: executor/execQual.c:4404 optimizer/util/clauses.c:570
 #: parser/parse_agg.c:162
 #, c-format
 msgid "aggregate function calls cannot be nested"
-msgstr ""
+msgstr "le chiamate a funzioni di aggregazione non possono essere annidate"
 
 #: executor/execQual.c:4442 optimizer/util/clauses.c:644
 #: parser/parse_agg.c:209
 #, c-format
 msgid "window function calls cannot be nested"
-msgstr ""
+msgstr "le chiamate a funzioni finestra non possono essere annidate"
 
 #: executor/execQual.c:4654
-#, fuzzy, c-format
+#, c-format
 msgid "target type is not an array"
-msgstr "%s non è un tipo di libreria conosciuto"
+msgstr "il tipo di destinazione non è un array"
 
 #: executor/execQual.c:4768
 #, c-format
 msgid "ROW() column has type %s instead of type %s"
-msgstr ""
+msgstr "la colonna ROW() ê di tipo %s invece di %s"
 
 #: executor/execQual.c:4903 utils/adt/arrayfuncs.c:3377
 #: utils/adt/rowtypes.c:922
@@ -8198,63 +8198,63 @@ msgid "could not identify a comparison function for type %s"
 msgstr "impossibile trovare un operatore di confronto per il tipo %s"
 
 #: executor/execUtils.c:1304
-#, fuzzy, c-format
+#, c-format
 msgid "could not create exclusion constraint \"%s\""
-msgstr "impossibile creare il socket per la connessione Ident: %m"
+msgstr "non è possibile creare il vincolo di esclusione \"%s\""
 
 #: executor/execUtils.c:1306
 #, c-format
 msgid "Key %s conflicts with key %s."
-msgstr ""
+msgstr "La chiave %s è in conflitto con la chiave %s."
 
 #: executor/execUtils.c:1311
-#, fuzzy, c-format
+#, c-format
 msgid "conflicting key value violates exclusion constraint \"%s\""
-msgstr "un valore chiave duplicato viola la unique constraint \"%s\""
+msgstr "le chiavi in conflitto violano il vincolo di esclusione \"%s\""
 
 #: executor/execUtils.c:1313
 #, c-format
 msgid "Key %s conflicts with existing key %s."
-msgstr ""
+msgstr "La chiave %s è in conflitto con la chiave esistente %s."
 
 #: executor/functions.c:207
 #, c-format
 msgid "could not determine actual type of argument declared %s"
-msgstr ""
+msgstr "impossibile determinare il tipo reale dell'argomento dichiarato %s"
 
 #. translator: %s is a SQL statement name
 #: executor/functions.c:480
-#, fuzzy, c-format
+#, c-format
 msgid "%s is not allowed in a SQL function"
-msgstr "assegnamento non permesso al risultato di una funzione interna"
+msgstr "%s non è consentito in una funzione SQL"
 
 #. translator: %s is a SQL statement name
 #: executor/functions.c:487 executor/spi.c:1266 executor/spi.c:1873
-#, fuzzy, c-format
+#, c-format
 msgid "%s is not allowed in a non-volatile function"
-msgstr "SELECT FOR UPDATE non è consentito con la clausola DISTINCT"
+msgstr "%s non è consentito in una funzione non volatile"
 
 #: executor/functions.c:592
 #, c-format
 msgid "could not determine actual result type for function declared to return type %s"
-msgstr "impossibile determinare il tipo attualmente restituito dalla funzione che dichiara di restituire un tipo %s"
+msgstr "impossibile determinare il tipo realmente restituito dalla funzione dichiarata con tipo restituito %s"
 
 #: executor/functions.c:1330
-#, fuzzy, c-format
+#, c-format
 msgid "SQL function \"%s\" statement %d"
 msgstr "funzione SQL \"%s\" istruzione %d"
 
 #: executor/functions.c:1356
-#, fuzzy, c-format
+#, c-format
 msgid "SQL function \"%s\" during startup"
-msgstr "messaggio imprevisto dal server durante l'avvio\n"
+msgstr "funzione SQL \"%s\" durante l'avvio"
 
 #: executor/functions.c:1515 executor/functions.c:1552
 #: executor/functions.c:1564 executor/functions.c:1677
 #: executor/functions.c:1710 executor/functions.c:1740
 #, c-format
 msgid "return type mismatch in function declared to return %s"
-msgstr ""
+msgstr "il tipo restituito non combacia nella funzione dichiarata con tipo restituito %s"
 
 #: executor/functions.c:1517
 #, c-format
@@ -8269,7 +8269,7 @@ msgstr "L'istruzione finale deve restituire esattamente una colonna."
 #: executor/functions.c:1566
 #, c-format
 msgid "Actual return type is %s."
-msgstr "l'attuale tipo di ritorno è %s."
+msgstr "Il tipo restituito realmente è %s."
 
 #: executor/functions.c:1679
 #, c-format
@@ -8289,12 +8289,12 @@ msgstr "L'istruzione finale restituisce troppe poche colonne."
 #: executor/functions.c:1791
 #, c-format
 msgid "return type %s is not supported for SQL functions"
-msgstr ""
+msgstr "il tipo di risultato %s non è supportato per le funzioni SQL"
 
 #: executor/nodeAgg.c:1734 executor/nodeWindowAgg.c:1851
 #, c-format
 msgid "aggregate %u needs to have compatible input type and transition type"
-msgstr ""
+msgstr "l'aggregato %u deve avere tipi di input e transizione compatibili"
 
 #: executor/nodeHashjoin.c:822 executor/nodeHashjoin.c:852
 #, c-format
@@ -8312,34 +8312,34 @@ msgid "could not read from hash-join temporary file: %m"
 msgstr "impossibile leggere dal file temporaneo per l'hash-join: %m"
 
 #: executor/nodeLimit.c:253
-#, fuzzy, c-format
+#, c-format
 msgid "OFFSET must not be negative"
-msgstr "%s: il campo `%s' non deve essere vuoto"
+msgstr "OFFSET non può essere negativo"
 
 #: executor/nodeLimit.c:280
-#, fuzzy, c-format
+#, c-format
 msgid "LIMIT must not be negative"
-msgstr "%s: il campo `%s' non deve essere vuoto"
+msgstr "LIMIT non può essere negativo"
 
 #: executor/nodeMergejoin.c:1576
 #, c-format
 msgid "RIGHT JOIN is only supported with merge-joinable join conditions"
-msgstr ""
+msgstr "RIGHT JOIN è supportato solo con condizioni di join che supportano merge"
 
 #: executor/nodeMergejoin.c:1596
 #, c-format
 msgid "FULL JOIN is only supported with merge-joinable join conditions"
-msgstr ""
+msgstr "FULL JOIN è supportato solo con condizioni di join che supportano merge"
 
 #: executor/nodeModifyTable.c:84
-#, fuzzy, c-format
+#, c-format
 msgid "Query has too many columns."
-msgstr "il pacchetto %s ha troppe coppie Conflicts/Replaces"
+msgstr "La query ha troppe colonne."
 
 #: executor/nodeModifyTable.c:111
 #, c-format
 msgid "Query provides a value for a dropped column at ordinal position %d."
-msgstr "La query produce un calore per una colonna eliminata alla posizione ordinale %d."
+msgstr "La query produce un calore per una colonna eliminata in posizione %d."
 
 #: executor/nodeModifyTable.c:119
 #, c-format
@@ -8350,63 +8350,63 @@ msgstr "La query ha troppe poche colonne."
 #: executor/nodeSubplan.c:968
 #, c-format
 msgid "more than one row returned by a subquery used as an expression"
-msgstr ""
+msgstr "più di una riga restituita da una sottoquery usata come espressione"
 
 #: executor/nodeWindowAgg.c:1238
-#, fuzzy, c-format
+#, c-format
 msgid "frame starting offset must not be null"
-msgstr "l'array subscript in asseganzione non deve essere null"
+msgstr "l'offset di inizio della finestra dev'essere non nullo"
 
 #: executor/nodeWindowAgg.c:1251
-#, fuzzy, c-format
+#, c-format
 msgid "frame starting offset must not be negative"
-msgstr "la precisione di TIME(%d)%s non può essere negativa"
+msgstr "l'offset di inizio della finestra non può essere negativo"
 
 #: executor/nodeWindowAgg.c:1264
-#, fuzzy, c-format
+#, c-format
 msgid "frame ending offset must not be null"
-msgstr "la colonna della configurazione \"%s\"non può essere nulla"
+msgstr "l'offset di fine della finestra dev'essere non nullo"
 
 #: executor/nodeWindowAgg.c:1277
-#, fuzzy, c-format
+#, c-format
 msgid "frame ending offset must not be negative"
-msgstr "%s: il campo `%s' non deve essere vuoto"
+msgstr "l'offset di fine della finestra non può essere negativo"
 
 #: executor/spi.c:210
 #, c-format
 msgid "transaction left non-empty SPI stack"
-msgstr ""
+msgstr "la transazione ha lasciato lo stack SPI non vuoto"
 
 #: executor/spi.c:211 executor/spi.c:275
 #, c-format
 msgid "Check for missing \"SPI_finish\" calls."
-msgstr ""
+msgstr "Verifica che non ci siano chiamate \"SPI_finish\" mancanti."
 
 #: executor/spi.c:274
 #, c-format
 msgid "subtransaction left non-empty SPI stack"
-msgstr ""
+msgstr "la sottotransazione ha lasciato lo stack SPI non vuoto"
 
 #: executor/spi.c:1142
 #, c-format
 msgid "cannot open multi-query plan as cursor"
-msgstr ""
+msgstr "non è possibile aprire un piano multi-query come cursore"
 
 #. translator: %s is name of a SQL command, eg INSERT
 #: executor/spi.c:1147
-#, fuzzy, c-format
+#, c-format
 msgid "cannot open %s query as cursor"
-msgstr "impossibile eliminare %s perchè© %s lo richiede"
+msgstr "non è possibile aprire una query %s come cursore"
 
 #: executor/spi.c:1243 parser/analyze.c:2201
 #, c-format
 msgid "DECLARE SCROLL CURSOR ... FOR UPDATE/SHARE is not supported"
-msgstr ""
+msgstr "DECLARE SCROLL CURSOR ... FOR UPDATE/SHARE non è supportato"
 
 #: executor/spi.c:1244 parser/analyze.c:2202
 #, c-format
 msgid "Scrollable cursors must be READ ONLY."
-msgstr ""
+msgstr "Un cursore scorribile dev'essere READ ONLY."
 
 #: executor/spi.c:2157
 #, c-format
@@ -8414,34 +8414,34 @@ msgid "SQL statement \"%s\""
 msgstr "istruzione SQL \"%s\""
 
 #: foreign/foreign.c:188
-#, fuzzy, c-format
+#, c-format
 msgid "user mapping not found for \"%s\""
-msgstr "Release \"%s\" per \"%s\" non trovato."
+msgstr "mappatura utenti non trovata per \"%s\""
 
 #: foreign/foreign.c:344
-#, fuzzy, c-format
+#, c-format
 msgid "foreign-data wrapper \"%s\" has no handler"
-msgstr "il database \"%s\"non esiste"
+msgstr "il wrapper di dati remoti \"%s\" non ha un handler"
 
 #: foreign/foreign.c:521
-#, fuzzy, c-format
+#, c-format
 msgid "invalid option \"%s\""
-msgstr "%s: opzione non valida -- %c\n"
+msgstr "opzione \"%s\" non valida"
 
 #: foreign/foreign.c:522
-#, fuzzy, c-format
+#, c-format
 msgid "Valid options in this context are: %s"
-msgstr "Gli elementi annidati (<%s>) non sono permessi in questo contesto"
+msgstr "Le opzioni valide in questo contesto sono: %s"
 
 #: gram.y:914
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized role option \"%s\""
-msgstr "la codifica \"%s\"non è stata riconosciuta"
+msgstr "opzione \"%s\" non riconosciuta per il ruolo"
 
 #: gram.y:1304
-#, fuzzy, c-format
+#, c-format
 msgid "current database cannot be changed"
-msgstr "La password di %s non può essere cambiata.\n"
+msgstr "il database corrente non può essere cambiato"
 
 #: gram.y:1431 gram.y:1446
 #, c-format
@@ -8449,14 +8449,14 @@ msgid "time zone interval must be HOUR or HOUR TO MINUTE"
 msgstr "l'intervallo della time zone deve essere HOUR o HOUR TO MINUTE"
 
 #: gram.y:1451 gram.y:9648 gram.y:12152
-#, fuzzy, c-format
+#, c-format
 msgid "interval precision specified twice"
-msgstr "<%s> specificato due volte per questo tema"
+msgstr "intervallo di precisione specificato due volte"
 
 #: gram.y:2525 gram.y:2532 gram.y:8958 gram.y:8966
 #, c-format
 msgid "GLOBAL is deprecated in temporary table creation"
-msgstr ""
+msgstr "GLOBAL è deprecato nella creazione di tabelle temporanee"
 
 #: gram.y:2969 utils/adt/ri_triggers.c:375 utils/adt/ri_triggers.c:435
 #: utils/adt/ri_triggers.c:598 utils/adt/ri_triggers.c:838
@@ -8471,29 +8471,28 @@ msgid "MATCH PARTIAL not yet implemented"
 msgstr "il MATCH PARTIAL non è stato ancora implementato"
 
 #: gram.y:4142
-#, fuzzy
 msgid "duplicate trigger events specified"
-msgstr "trigger imminente \"%.255s\" duplicato"
+msgstr "evento del trigger specificato più volte"
 
 #: gram.y:4237 parser/parse_utilcmd.c:2548 parser/parse_utilcmd.c:2574
-#, fuzzy, c-format
+#, c-format
 msgid "constraint declared INITIALLY DEFERRED must be DEFERRABLE"
-msgstr "la condizione INITIALLY DEFERRED  deve essere DEFERRABLE"
+msgstr "un vincolo dichiarato INITIALLY DEFERRED dev'essere DEFERRABLE"
 
 #: gram.y:4244
-#, fuzzy, c-format
+#, c-format
 msgid "conflicting constraint properties"
-msgstr "Sono presenti opzioni contraddittorie: --%s o --%s insieme a --%s\n"
+msgstr "proprietà del vincolo in conflitto"
 
 #: gram.y:4308
-#, fuzzy, c-format
+#, c-format
 msgid "CREATE ASSERTION is not yet implemented"
-msgstr "La parola chiave %s è sconosciuta o non ancora implementata"
+msgstr "CREATE ASSERTION non è stata ancora implementata"
 
 #: gram.y:4324
-#, fuzzy, c-format
+#, c-format
 msgid "DROP ASSERTION is not yet implemented"
-msgstr "La parola chiave %s è sconosciuta o non ancora implementata"
+msgstr "DROP ASSERTION non è stata ancora implementata"
 
 #: gram.y:4667
 #, c-format
@@ -8503,17 +8502,17 @@ msgstr "RECHECK non è più richiesto"
 #: gram.y:4668
 #, c-format
 msgid "Update your data type."
-msgstr "Aggiorna i tuoi tipi di dato."
+msgstr "Aggiorna il tuo tipo di dato."
 
 #: gram.y:6386 utils/adt/regproc.c:630
 #, c-format
 msgid "missing argument"
-msgstr "manca uno degli argomenti"
+msgstr "argomento mancante"
 
 #: gram.y:6387 utils/adt/regproc.c:631
 #, c-format
 msgid "Use NONE to denote the missing argument of a unary operator."
-msgstr "Usa NONE per denotare l'argomento mancante in un operatore unario"
+msgstr "Usa NONE per indicare l'argomento mancante in un operatore unario."
 
 #: gram.y:7672 gram.y:7678 gram.y:7684
 #, c-format
@@ -8523,27 +8522,27 @@ msgstr "WITH CHECK OPTION non è implementata"
 #: gram.y:8605
 #, c-format
 msgid "number of columns does not match number of values"
-msgstr "il numero dei valori non corrisponde al numero delle colonne"
+msgstr "il numero di colonne non corrisponde al numero di valori"
 
 #: gram.y:9062
 #, c-format
 msgid "LIMIT #,# syntax is not supported"
-msgstr "LIMIT #,# sintassi non supportata"
+msgstr "La sintassi LIMIT #,# non è supportata"
 
 #: gram.y:9063
 #, c-format
 msgid "Use separate LIMIT and OFFSET clauses."
-msgstr "usa separatamente le clausule LIMIT e OFFSET"
+msgstr "Usa separatamente le clausole LIMIT ed OFFSET."
 
 #: gram.y:9281
 #, c-format
 msgid "VALUES in FROM must have an alias"
-msgstr "VALUES in FROM devono avere un alias"
+msgstr "VALUES nel FROM deve avere un alias"
 
 #: gram.y:9282
 #, c-format
 msgid "For example, FROM (VALUES ...) [AS] foo."
-msgstr ""
+msgstr "Per esempio, FROM (VALUES ...) [AS] foo."
 
 #: gram.y:9287
 #, c-format
@@ -8553,66 +8552,66 @@ msgstr "la subquery in FROM deve avere un alias"
 #: gram.y:9288
 #, c-format
 msgid "For example, FROM (SELECT ...) [AS] foo."
-msgstr ""
+msgstr "Per esempio, FROM (SELECT ...) [AS] foo."
 
 #: gram.y:9774
 #, c-format
 msgid "precision for type float must be at least 1 bit"
-msgstr ""
+msgstr "la precisione per il tipo float dev'essere di almeno un bit"
 
 #: gram.y:9783
 #, c-format
 msgid "precision for type float must be less than 54 bits"
-msgstr ""
+msgstr "la precisione per il tipo float dev'essere inferiore a 54 bit"
 
 #: gram.y:10497
-#, fuzzy, c-format
+#, c-format
 msgid "UNIQUE predicate is not yet implemented"
-msgstr "La parola chiave %s è sconosciuta o non ancora implementata"
+msgstr "il predicato UNIQUE non è stato ancora implementato"
 
 #: gram.y:11419
 #, c-format
 msgid "RANGE PRECEDING is only supported with UNBOUNDED"
-msgstr ""
+msgstr "RANGE PRECEDING è supportato solo con UNBOUNDED"
 
 #: gram.y:11425
 #, c-format
 msgid "RANGE FOLLOWING is only supported with UNBOUNDED"
-msgstr ""
+msgstr "RANGE FOLLOWING è supportato solo con UNBOUNDED"
 
 #: gram.y:11452 gram.y:11475
 #, c-format
 msgid "frame start cannot be UNBOUNDED FOLLOWING"
-msgstr ""
+msgstr "l'inizio della finestra non può essere UNBOUNDED FOLLOWING"
 
 #: gram.y:11457
 #, c-format
 msgid "frame starting from following row cannot end with current row"
-msgstr ""
+msgstr "una finestra che inizia dalla riga seguente non può terminare alla riga corrente"
 
 #: gram.y:11480
 #, c-format
 msgid "frame end cannot be UNBOUNDED PRECEDING"
-msgstr "la fine del frame non può essere UNBOUNDED PRECEDING"
+msgstr "la fine della finestra non può essere UNBOUNDED PRECEDING"
 
 #: gram.y:11486
 #, c-format
 msgid "frame starting from current row cannot have preceding rows"
-msgstr ""
+msgstr "una finestra che inizia dalla riga corrente non può avere righe precedenti"
 
 #: gram.y:11493
 #, c-format
 msgid "frame starting from following row cannot have preceding rows"
-msgstr ""
+msgstr "una finestra che inizia dalla riga seguente non può avere righe precedenti"
 
 #: gram.y:12127
-#, fuzzy, c-format
+#, c-format
 msgid "type modifier cannot have parameter name"
-msgstr "il modificatore di tipo non può essere specificato per la shell di tipo  \"%s\""
+msgstr "un modificatore di tipo non può avere un nome di parametro"
 
 #: gram.y:12725 gram.y:12933
 msgid "improper use of \"*\""
-msgstr "uso improprio di  \"*\""
+msgstr "uso improprio di \"*\""
 
 #: gram.y:12864
 #, c-format
@@ -8622,7 +8621,7 @@ msgstr "numero errato di parametri a sinistra dell'espressione OVERLAPS"
 #: gram.y:12871
 #, c-format
 msgid "wrong number of parameters on right side of OVERLAPS expression"
-msgstr "numero errato di parametri all destra dell'espressione OVERLAPS"
+msgstr "numero errato di parametri a destra dell'espressione OVERLAPS"
 
 #: gram.y:12896 gram.y:12913 tsearch/spell.c:518 tsearch/spell.c:535
 #: tsearch/spell.c:552 tsearch/spell.c:569 tsearch/spell.c:591
@@ -8631,24 +8630,24 @@ msgid "syntax error"
 msgstr "errore di sintassi"
 
 #: gram.y:12984
-#, fuzzy, c-format
+#, c-format
 msgid "multiple ORDER BY clauses not allowed"
-msgstr "clausole INITIALLY IMMEDIATE/DEFERRED  multiple non sono consentite"
+msgstr "non è possibile avere più di una clausola ORDER BY"
 
 #: gram.y:12995
-#, fuzzy, c-format
+#, c-format
 msgid "multiple OFFSET clauses not allowed"
-msgstr "clausola DEFERRABLE/NOT DEFERRABLE multiple non consentite"
+msgstr "non è possibile avere più di una clausola OFFSET"
 
 #: gram.y:13004
-#, fuzzy, c-format
+#, c-format
 msgid "multiple LIMIT clauses not allowed"
-msgstr "clausola DEFERRABLE/NOT DEFERRABLE multiple non consentite"
+msgstr "non è possibile avere più di una clausola LIMIT"
 
 #: gram.y:13013
-#, fuzzy, c-format
+#, c-format
 msgid "multiple WITH clauses not allowed"
-msgstr "clausola DEFERRABLE/NOT DEFERRABLE multiple non consentite"
+msgstr "non è possibile avere più di una clausola WITH"
 
 #: gram.y:13158
 #, c-format
@@ -8656,141 +8655,139 @@ msgid "OUT and INOUT arguments aren't allowed in TABLE functions"
 msgstr "gli argomenti OUT e INOUT non sono permessi nelle funzioni TABLE"
 
 #: gram.y:13259
-#, fuzzy, c-format
+#, c-format
 msgid "multiple COLLATE clauses not allowed"
-msgstr "clausola DEFERRABLE/NOT DEFERRABLE multiple non consentite"
+msgstr "non è possibile avere più di una clausola COLLATE"
 
 #. translator: %s is CHECK, UNIQUE, or similar
 #: gram.y:13297 gram.y:13310
-#, fuzzy, c-format
+#, c-format
 msgid "%s constraints cannot be marked DEFERRABLE"
-msgstr "clausola NOT DEFERRABLE malposizionata"
+msgstr "un vincolo %s non può essere marcato DEFERRABLE"
 
 #. translator: %s is CHECK, UNIQUE, or similar
 #: gram.y:13323
-#, fuzzy, c-format
+#, c-format
 msgid "%s constraints cannot be marked NOT VALID"
-msgstr "clausola NOT DEFERRABLE malposizionata"
+msgstr "un vincolo %s non può essere marcato NOT VALID"
 
 #. translator: %s is CHECK, UNIQUE, or similar
 #: gram.y:13336
-#, fuzzy, c-format
+#, c-format
 msgid "%s constraints cannot be marked NO INHERIT"
-msgstr "clausola NOT DEFERRABLE malposizionata"
+msgstr "un vincolo %s non può essere marcato NO INHERIT"
 
 #: guc-file.l:192
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized configuration parameter \"%s\" in file \"%s\" line %u"
-msgstr "parametri di configurazione non riconosciuti \"%s\""
+msgstr "parametro di configurazione \"%s\" non riconosciuto nel file \"%s\" riga %u"
 
 #: guc-file.l:227 utils/misc/guc.c:5196 utils/misc/guc.c:5372
 #: utils/misc/guc.c:5476 utils/misc/guc.c:5577 utils/misc/guc.c:5698
 #: utils/misc/guc.c:5806
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" cannot be changed without restarting the server"
-msgstr "La password di %s non può essere cambiata.\n"
+msgstr "il parametro \"%s\" non può essere cambiato senza riavviare il server"
 
 #: guc-file.l:255
 #, c-format
 msgid "parameter \"%s\" removed from configuration file, reset to default"
-msgstr ""
+msgstr "il parametro \"%s\" è stato rimosso dal file di configurazione, valore predefinito ripristinato"
 
 #: guc-file.l:317
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" changed to \"%s\""
-msgstr "La password di %s non può essere cambiata.\n"
+msgstr "il parametro \"%s\" è stato modificato a \"%s\""
 
 #: guc-file.l:351
-#, fuzzy, c-format
+#, c-format
 msgid "configuration file \"%s\" contains errors"
-msgstr "non esiste la chiave multipla %s"
+msgstr "il file di configurazione \"%s\" contiene errori"
 
 #: guc-file.l:356
 #, c-format
 msgid "configuration file \"%s\" contains errors; unaffected changes were applied"
-msgstr ""
+msgstr "il file di configurazione \"%s\" contiene errori; i cambiamenti senza errori sono stati applicati"
 
 #: guc-file.l:361
 #, c-format
 msgid "configuration file \"%s\" contains errors; no changes were applied"
-msgstr ""
+msgstr "il file di configurazione \"%s\" contiene errori; nessun cambiamento effettuato"
 
 #: guc-file.l:393
-#, fuzzy, c-format
+#, c-format
 msgid "could not open configuration file \"%s\": maximum nesting depth exceeded"
-msgstr "impossibile aprire il file di controllo \"%s\": %m"
+msgstr "impossibile aprire il file di configurazione \"%s\": massima profondità di annidamento raggiunta"
 
 #: guc-file.l:430 libpq/hba.c:1721
-#, fuzzy, c-format
+#, c-format
 msgid "could not open configuration file \"%s\": %m"
-msgstr "Impossibile salvare il file di configurazione.\n"
+msgstr "impossibile aprire il file di configurazione \"%s\": %m"
 
 #: guc-file.l:436
-#, fuzzy, c-format
+#, c-format
 msgid "skipping missing configuration file \"%s\""
-msgstr ""
-"il file di configurazione è:\n"
-"    %s\n"
+msgstr "file di configurazione mancante \"%s\" saltato"
 
 #: guc-file.l:627
 #, c-format
 msgid "syntax error in file \"%s\" line %u, near end of line"
-msgstr "errore di sintassi nel file \"%s\" linea %u, vicino alla fine della linea"
+msgstr "errore di sintassi nel file \"%s\" riga %u, vicino alla fine della riga"
 
 #: guc-file.l:632
-#, fuzzy, c-format
+#, c-format
 msgid "syntax error in file \"%s\" line %u, near token \"%s\""
-msgstr "la sintassi nell tsquery è errata: \"%s\""
+msgstr "errore di sintassi nel file \"%s\" riga %u, vicino al token \"%s\""
 
 #: guc-file.l:648
 #, c-format
 msgid "too many syntax errors found, abandoning file \"%s\""
-msgstr ""
+msgstr "troppi errori di sintassi, file \"%s\" abbandonato"
 
 #: lib/stringinfo.c:267
 #, c-format
 msgid "Cannot enlarge string buffer containing %d bytes by %d more bytes."
-msgstr ""
+msgstr "Non ê possibile aumentare il buffer della stringa contenente %d byte di altri %d byte."
 
 #: libpq/auth.c:257
-#, fuzzy, c-format
+#, c-format
 msgid "authentication failed for user \"%s\": host rejected"
-msgstr "Host rifiutato: autentica fallita per l'utente \"%s\""
+msgstr "autenticazione fallita per l'utente \"%s\": host rifiutato"
 
 #: libpq/auth.c:260
-#, fuzzy, c-format
+#, c-format
 msgid "Kerberos 5 authentication failed for user \"%s\""
-msgstr "autenticazione IDENT fallita per l'utente \"%s\""
+msgstr "autenticazione Kerberos 5 fallita per l'utente \"%s\""
 
 #: libpq/auth.c:263
-#, fuzzy, c-format
+#, c-format
 msgid "\"trust\" authentication failed for user \"%s\""
-msgstr "autenticazione IDENT fallita per l'utente \"%s\""
+msgstr "autenticazione \"trust\" fallita per l'utente \"%s\""
 
 #: libpq/auth.c:266
-#, fuzzy, c-format
+#, c-format
 msgid "Ident authentication failed for user \"%s\""
-msgstr "autenticazione IDENT fallita per l'utente \"%s\""
+msgstr "autenticazione Ident fallita per l'utente \"%s\""
 
 #: libpq/auth.c:269
-#, fuzzy, c-format
+#, c-format
 msgid "Peer authentication failed for user \"%s\""
-msgstr "autenticazione PAM fallita per l'utente \"%s\""
+msgstr "autenticazione Peer fallita per l'utente \"%s\""
 
 #: libpq/auth.c:273
-#, fuzzy, c-format
+#, c-format
 msgid "password authentication failed for user \"%s\""
-msgstr "autenticazione password fallita per l'utente \"%s\""
+msgstr "autenticazione con password fallita per l'utente \"%s\""
 
 #: libpq/auth.c:278
-#, fuzzy, c-format
+#, c-format
 msgid "GSSAPI authentication failed for user \"%s\""
-msgstr "autenticazione IDENT fallita per l'utente \"%s\""
+msgstr "autenticazione GSSAPI fallita per l'utente \"%s\""
 
 #: libpq/auth.c:281
-#, fuzzy, c-format
+#, c-format
 msgid "SSPI authentication failed for user \"%s\""
-msgstr "autenticazione IDENT fallita per l'utente \"%s\""
+msgstr "autenticazione SSPI fallita per l'utente \"%s\""
 
 #: libpq/auth.c:284
 #, c-format
@@ -8798,107 +8795,107 @@ msgid "PAM authentication failed for user \"%s\""
 msgstr "autenticazione PAM fallita per l'utente \"%s\""
 
 #: libpq/auth.c:287
-#, fuzzy, c-format
+#, c-format
 msgid "LDAP authentication failed for user \"%s\""
-msgstr "autenticazione IDENT fallita per l'utente \"%s\""
+msgstr "autenticazione LDAP fallita per l'utente \"%s\""
 
 #: libpq/auth.c:290
-#, fuzzy, c-format
+#, c-format
 msgid "certificate authentication failed for user \"%s\""
-msgstr "autenticazione IDENT fallita per l'utente \"%s\""
+msgstr "autenticazione con certificato fallita per l'utente \"%s\""
 
 #: libpq/auth.c:293
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS authentication failed for user \"%s\""
-msgstr "autenticazione PAM fallita per l'utente \"%s\""
+msgstr "autenticazione RADIUS fallita per l'utente \"%s\""
 
 #: libpq/auth.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "authentication failed for user \"%s\": invalid authentication method"
-msgstr "autenticazione con metodo sconosciuto fallita per l'utente \"%s\""
+msgstr "autenticazione fallita per l'utente \"%s\": metodo di autenticazione non valido"
 
 #: libpq/auth.c:352
 #, c-format
 msgid "connection requires a valid client certificate"
-msgstr "la connessione richiede a certificato valido per il client"
+msgstr "la connessione richiede un certificato valido per il client"
 
 #: libpq/auth.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "pg_hba.conf rejects replication connection for host \"%s\", user \"%s\", %s"
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
+msgstr "pg_hba.conf rifiuta connessioni di replica per l'host \"%s\", utente \"%s\", %s"
 
 #: libpq/auth.c:396 libpq/auth.c:412 libpq/auth.c:460 libpq/auth.c:478
 msgid "SSL off"
-msgstr "SSL non attiva"
+msgstr "SSL non attivo"
 
 #: libpq/auth.c:396 libpq/auth.c:412 libpq/auth.c:460 libpq/auth.c:478
 msgid "SSL on"
-msgstr "SSL attiva"
+msgstr "SSL attivo"
 
 #: libpq/auth.c:400
-#, fuzzy, c-format
+#, c-format
 msgid "pg_hba.conf rejects replication connection for host \"%s\", user \"%s\""
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
+msgstr "pg_hba.conf rifiuta connessioni di replica per l'host \"%s\", utente \"%s\""
 
 #: libpq/auth.c:409
-#, fuzzy, c-format
+#, c-format
 msgid "pg_hba.conf rejects connection for host \"%s\", user \"%s\", database \"%s\", %s"
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\", %s"
+msgstr "pg_hba.conf rifiuta connessioni per l'host \"%s\", utente \"%s\", database \"%s\", %s"
 
 #: libpq/auth.c:416
-#, fuzzy, c-format
+#, c-format
 msgid "pg_hba.conf rejects connection for host \"%s\", user \"%s\", database \"%s\""
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
+msgstr "pg_hba.conf rifiuta connessioni per l'host \"%s\", user \"%s\", database \"%s\""
 
 #: libpq/auth.c:445
 #, c-format
 msgid "Client IP address resolved to \"%s\", forward lookup matches."
-msgstr ""
+msgstr "Indirizzo IP del client risolto in \"%s\", il forward lookup combacia."
 
 #: libpq/auth.c:447
 #, c-format
 msgid "Client IP address resolved to \"%s\", forward lookup not checked."
-msgstr ""
+msgstr "Indirizzo IP del client risolto in \"%s\", forward lookup non controllato."
 
 #: libpq/auth.c:449
 #, c-format
 msgid "Client IP address resolved to \"%s\", forward lookup does not match."
-msgstr ""
+msgstr "Indirizzo IP del client risolto in \"%s\", il forward lookup non combacia."
 
 #: libpq/auth.c:458
-#, fuzzy, c-format
+#, c-format
 msgid "no pg_hba.conf entry for replication connection from host \"%s\", user \"%s\", %s"
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
+msgstr "nessuna voce in pg_hba.conf per connessioni di replica da host \"%s\", utente \"%s\", database \"%s\""
 
 #: libpq/auth.c:465
-#, fuzzy, c-format
+#, c-format
 msgid "no pg_hba.conf entry for replication connection from host \"%s\", user \"%s\""
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
+msgstr "nessuna voce in pg_hba.conf per connessioni di replica da host \"%s\", user \"%s\""
 
 #: libpq/auth.c:475
 #, c-format
 msgid "no pg_hba.conf entry for host \"%s\", user \"%s\", database \"%s\", %s"
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\", %s"
+msgstr "nessuna voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\", %s"
 
 #: libpq/auth.c:483
 #, c-format
 msgid "no pg_hba.conf entry for host \"%s\", user \"%s\", database \"%s\""
-msgstr "manca una voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
+msgstr "nessuna voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
 
 #: libpq/auth.c:535 libpq/hba.c:1180
-#, fuzzy, c-format
+#, c-format
 msgid "MD5 authentication is not supported when \"db_user_namespace\" is enabled"
-msgstr "Autenticazione Kerberos 5 non supportata\n"
+msgstr "l'autenticazione MD5 non è supportata quando \"db_user_namespace\" è attivo"
 
 #: libpq/auth.c:659
-#, fuzzy, c-format
+#, c-format
 msgid "expected password response, got message type %d"
-msgstr "era atteso il responso password, ricevuto msg di tipo %d"
+msgstr "era attesa una risposta password, ricevuto messaggio di tipo %d"
 
 #: libpq/auth.c:687
 #, c-format
 msgid "invalid password packet size"
-msgstr "dimensione del pacchetto password errata"
+msgstr "dimensione del pacchetto password non valida"
 
 #: libpq/auth.c:691
 #, c-format
@@ -8906,43 +8903,43 @@ msgid "received password packet"
 msgstr "pacchetto password ricevuto"
 
 #: libpq/auth.c:749
-#, fuzzy, c-format
+#, c-format
 msgid "Kerberos initialization returned error %d"
-msgstr "\"deborphan\" è uscito con un codice di errore."
+msgstr "l'inizializazzione Kerberos è fallita con errore %d"
 
 #: libpq/auth.c:759
 #, c-format
 msgid "Kerberos keytab resolving returned error %d"
-msgstr "la risouzione della keytab di Kerberos ritorna l'errore %d"
+msgstr "la risouzione della keytab di Kerberos è fallita con errore %d"
 
 #: libpq/auth.c:783
 #, c-format
 msgid "Kerberos sname_to_principal(\"%s\", \"%s\") returned error %d"
-msgstr ""
+msgstr "Kerberos sname_to_principal(\"%s\", \"%s\") fallito con errore %d"
 
 #: libpq/auth.c:828
-#, fuzzy, c-format
+#, c-format
 msgid "Kerberos recvauth returned error %d"
-msgstr "\"deborphan\" è uscito con un codice di errore."
+msgstr "Kerberos recvauth fallito con errore %d"
 
 #: libpq/auth.c:851
 #, c-format
 msgid "Kerberos unparse_name returned error %d"
-msgstr ""
+msgstr "Kerberos unparse_name fallito con erore %d"
 
 #: libpq/auth.c:999
-#, fuzzy, c-format
+#, c-format
 msgid "GSSAPI is not supported in protocol version 2"
-msgstr "la versione %d del protocollo di gpg-agent non è gestita\n"
+msgstr "GSSAPI non è supportato con la versione 2 del protocollo"
 
 #: libpq/auth.c:1054
-#, fuzzy, c-format
+#, c-format
 msgid "expected GSS response, got message type %d"
-msgstr "era atteso il responso password, ricevuto msg di tipo %d"
+msgstr "era attesa una risposta GSS, ricevuto messaggio di tipo %d"
 
 #: libpq/auth.c:1117
 msgid "accepting GSS security context failed"
-msgstr ""
+msgstr "contesto di sicurezza accettazione GSS fallito"
 
 #: libpq/auth.c:1143
 msgid "retrieving GSS user name failed"
@@ -8951,27 +8948,24 @@ msgstr "la rchiesta del GSS user name è fallita"
 #: libpq/auth.c:1260
 #, c-format
 msgid "SSPI is not supported in protocol version 2"
-msgstr "la verione 2 del protocollo SSPI non è suportata"
+msgstr "SSPI non è supportato con la versione 2 del protocollo"
 
 #: libpq/auth.c:1275
-#, fuzzy
 msgid "could not acquire SSPI credentials"
-msgstr "non riesco ad ottenere le credenziali SSPI"
+msgstr "impossibile ottenere le credenziali SSPI"
 
 #: libpq/auth.c:1292
-#, fuzzy, c-format
+#, c-format
 msgid "expected SSPI response, got message type %d"
-msgstr "era atteso il responso password, ricevuto msg di tipo %d"
+msgstr "era attesa una risposta SSPI, ricevuto messaggio di tipo %d"
 
 #: libpq/auth.c:1364
-#, fuzzy
 msgid "could not accept SSPI security context"
-msgstr "impossibile creare il contesto SSL: %s"
+msgstr "impossibile accettare il contesto di sicurezza SSPI"
 
 #: libpq/auth.c:1426
-#, fuzzy
 msgid "could not get token from SSPI security context"
-msgstr "impossibile creare il socket per la connessione Ident: %m"
+msgstr "impossibile ottenere il token dal contesto di sicurezza SSPI"
 
 #: libpq/auth.c:1670
 #, c-format
@@ -8979,34 +8973,34 @@ msgid "could not create socket for Ident connection: %m"
 msgstr "impossibile creare il socket per la connessione Ident: %m"
 
 #: libpq/auth.c:1685
-#, fuzzy, c-format
+#, c-format
 msgid "could not bind to local address \"%s\": %m"
-msgstr "impossibile convertire l'host name \"%s\" all'indirizzo: %s\n"
+msgstr "impossibile effettuare bind su indirizzo locale \"%s\": %m"
 
 #: libpq/auth.c:1697
 #, c-format
 msgid "could not connect to Ident server at address \"%s\", port %s: %m"
-msgstr ""
+msgstr "impossibile connettersi al server Ident all'indirizzo \"%s\", porta %s: %m"
 
 #: libpq/auth.c:1717
 #, c-format
 msgid "could not send query to Ident server at address \"%s\", port %s: %m"
-msgstr ""
+msgstr "impossibile inviare la query al server Ident all'indirizzo \"%s\", porta %s: %m"
 
 #: libpq/auth.c:1732
 #, c-format
 msgid "could not receive response from Ident server at address \"%s\", port %s: %m"
-msgstr ""
+msgstr "impossibile ricevere una risposta dal server Ident all'indirizzo \"%s\", porta %s: %m"
 
 #: libpq/auth.c:1742
 #, c-format
 msgid "invalidly formatted response from Ident server: \"%s\""
-msgstr ""
+msgstr "risposta dal server Ident formattata in maniera non corretta: \"%s\""
 
 #: libpq/auth.c:1781
-#, fuzzy, c-format
+#, c-format
 msgid "peer authentication is not supported on this platform"
-msgstr "il metodo di autenticazione %u non è supportato\n"
+msgstr "il metodo di autenticazione peer non è supportato su questa piattaforma"
 
 #: libpq/auth.c:1785
 #, c-format
@@ -9021,7 +9015,7 @@ msgstr "l'utente locale con ID %d non esiste"
 #: libpq/auth.c:1877 libpq/auth.c:2149 libpq/auth.c:2509
 #, c-format
 msgid "empty password returned by client"
-msgstr "il cliente ha restituito una password vuota"
+msgstr "il client ha restituito una password vuota"
 
 #: libpq/auth.c:1887
 #, c-format
@@ -9029,9 +9023,9 @@ msgid "error from underlying PAM layer: %s"
 msgstr "errore dal livello PAM sottostante: %s"
 
 #: libpq/auth.c:1956
-#, fuzzy, c-format
+#, c-format
 msgid "could not create PAM authenticator: %s"
-msgstr "impossibile creare il file di log \"%s\""
+msgstr "impossibile creare un autenticatore PAM: %s"
 
 #: libpq/auth.c:1967
 #, c-format
@@ -9054,34 +9048,34 @@ msgid "pam_acct_mgmt failed: %s"
 msgstr "pam_acct_mgmt fallita: %s"
 
 #: libpq/auth.c:2011
-#, fuzzy, c-format
+#, c-format
 msgid "could not release PAM authenticator: %s"
-msgstr "Impossibile rilasciare lo schermo %d sul display «%s»\n"
+msgstr "impossibile rilasciare l'autenticatore PAM: %s"
 
 #: libpq/auth.c:2044 libpq/auth.c:2048
-#, fuzzy, c-format
+#, c-format
 msgid "could not initialize LDAP: error code %d"
-msgstr "Impossibile eliminare il file \"%s\" nella cartella \"%s\" (codice errore %i; %m)."
+msgstr "impossibile inizializzare LDAP: codice errore %d"
 
 #: libpq/auth.c:2058
-#, fuzzy, c-format
+#, c-format
 msgid "could not set LDAP protocol version: error code %d"
-msgstr "impossibile ripristinare \"%s\"dall'archivio: restituito codice %d"
+msgstr "impossibile impostare versione del protocollo LDAP: codice errore %d"
 
 #: libpq/auth.c:2087
 #, c-format
 msgid "could not load wldap32.dll"
-msgstr "non è possibile caricare wldap32.dll"
+msgstr "impossibile caricare wldap32.dll"
 
 #: libpq/auth.c:2095
 #, c-format
 msgid "could not load function _ldap_start_tls_sA in wldap32.dll"
-msgstr ""
+msgstr "impossibile caricare la funzione _ldap_start_tls_sA in wldap32.dll"
 
 #: libpq/auth.c:2096
-#, fuzzy, c-format
+#, c-format
 msgid "LDAP over SSL is not supported on this platform."
-msgstr "%s: i link simbolici non sono supportati su questa piattaforma"
+msgstr "LDAP su SSL non è supportato su questa piattaforma."
 
 #: libpq/auth.c:2111
 #, c-format
@@ -9091,203 +9085,203 @@ msgstr "impossibile avviare una sessione LDAP TLS: codice errore %d"
 #: libpq/auth.c:2133
 #, c-format
 msgid "LDAP server not specified"
-msgstr "LDAP server non è specificato"
+msgstr "server LDAP non specificato"
 
 #: libpq/auth.c:2185
 #, c-format
 msgid "invalid character in user name for LDAP authentication"
-msgstr ""
+msgstr "carattere non valido nel nome utente per l'autenticazione LDAP"
 
 #: libpq/auth.c:2200
 #, c-format
 msgid "could not perform initial LDAP bind for ldapbinddn \"%s\" on server \"%s\": error code %d"
-msgstr ""
+msgstr "impossibile effettuare il bind LDAP iniziale per ldapbinddn \"%s\" sul server \"%s\": codice errore %d"
 
 #: libpq/auth.c:2225
-#, fuzzy, c-format
+#, c-format
 msgid "could not search LDAP for filter \"%s\" on server \"%s\": error code %d"
-msgstr "impossibile ripristinare \"%s\"dall'archivio: restituito codice %d"
+msgstr "impossibile cercare il filtro \"%s\" in LDAP sul server \"%s\": codice errore %d"
 
 #: libpq/auth.c:2235
 #, c-format
 msgid "LDAP search failed for filter \"%s\" on server \"%s\": no such user"
-msgstr ""
+msgstr "ricerca LDAP fallita per il filtro \"%s\" sul server \"%s\": utente non trovato"
 
 #: libpq/auth.c:2239
 #, c-format
 msgid "LDAP search failed for filter \"%s\" on server \"%s\": user is not unique (%ld matches)"
-msgstr ""
+msgstr "ricerca LDAP fallita per il filtro \"%s\" sul server \"%s\": l'utente non è unico (trovati %ld)"
 
 #: libpq/auth.c:2256
-#, fuzzy, c-format
+#, c-format
 msgid "could not get dn for the first entry matching \"%s\" on server \"%s\": %s"
-msgstr "Impossibile aprire '%s' come SUN-raster-file"
+msgstr "impossibile trovare dn per il primo risultato di \"%s\" sul server \"%s\": %s"
 
 #: libpq/auth.c:2276
-#, fuzzy, c-format
+#, c-format
 msgid "could not unbind after searching for user \"%s\" on server \"%s\": %s"
-msgstr "%s: impossibile determinare una codifica adeguata per il locale %s\n"
+msgstr "impossibile effettuare unbind dopo aver cercato l'utente \"%s\" sul server \"%s\": %s"
 
 #: libpq/auth.c:2313
 #, c-format
 msgid "LDAP login failed for user \"%s\" on server \"%s\": error code %d"
-msgstr ""
+msgstr "login LDAP fallito per l'utente \"%s\" sul server \"%s\": codice errore %d"
 
 #: libpq/auth.c:2341
-#, fuzzy, c-format
+#, c-format
 msgid "certificate authentication failed for user \"%s\": client certificate contains no user name"
-msgstr "autenticazione con metodo sconosciuto fallita per l'utente \"%s\""
+msgstr "autenticazione con certificato fallita per l'utente \"%s\": il certificato del client non contiene alcun nome utente"
 
 #: libpq/auth.c:2465
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS server not specified"
-msgstr "LDAP server non è specificato"
+msgstr "server RADIUS non specificato"
 
 #: libpq/auth.c:2472
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS secret not specified"
-msgstr "LDAP server non è specificato"
+msgstr "segreto RADIUS non specificato"
 
 #: libpq/auth.c:2488 libpq/hba.c:1543
-#, fuzzy, c-format
+#, c-format
 msgid "could not translate RADIUS server name \"%s\" to address: %s"
-msgstr "impossibile convertire l'host name \"%s\" all'indirizzo: %s\n"
+msgstr "impossibile tradurre il nome del server RADIUS \"%s\" in indirizzo: %s"
 
 #: libpq/auth.c:2516
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS authentication does not support passwords longer than 16 characters"
-msgstr "Autenticazione Kerberos 5 non supportata\n"
+msgstr "l'autenticazione RADIUS non supporta password più lunghe di 16 caratteri"
 
 #: libpq/auth.c:2527
-#, fuzzy, c-format
+#, c-format
 msgid "could not generate random encryption vector"
-msgstr "impossibile localizzare un record di checkpoint valido"
+msgstr "impossibile generare un vettore di criptaggio casuale"
 
 #: libpq/auth.c:2550
 #, c-format
 msgid "could not perform MD5 encryption of password"
-msgstr ""
+msgstr "impossibile effettuare il criptaggio MD5 della password"
 
 #: libpq/auth.c:2572
-#, fuzzy, c-format
+#, c-format
 msgid "could not create RADIUS socket: %m"
-msgstr "impossibile creare il socket: %s\n"
+msgstr "impossibile creare socket RADIUS: %m"
 
 #: libpq/auth.c:2593
-#, fuzzy, c-format
+#, c-format
 msgid "could not bind local RADIUS socket: %m"
-msgstr "%s: impossibile mappare il socket"
+msgstr "impossibile effettuare il bind del socket RADIUS: %m"
 
 #: libpq/auth.c:2603
-#, fuzzy, c-format
+#, c-format
 msgid "could not send RADIUS packet: %m"
-msgstr "impossibile impostare il socket in modalità blocco: %s\n"
+msgstr "impossibile inviare pacchetto RADIUS: %m"
 
 #: libpq/auth.c:2632 libpq/auth.c:2657
 #, c-format
 msgid "timeout waiting for RADIUS response"
-msgstr ""
+msgstr "tempo scaduto in attesa della risposta RADIUS"
 
 #: libpq/auth.c:2650
-#, fuzzy, c-format
+#, c-format
 msgid "could not check status on RADIUS socket: %m"
-msgstr "impossibile creare il socket: %s\n"
+msgstr "impossibile controllare lo stato sul socket RADIUS: %m"
 
 #: libpq/auth.c:2679
-#, fuzzy, c-format
+#, c-format
 msgid "could not read RADIUS response: %m"
-msgstr "impossibile creare la relazione %u/%u/%u: %m"
+msgstr "impossibile leggere la risposta RADIUS: %m"
 
 #: libpq/auth.c:2691 libpq/auth.c:2695
 #, c-format
 msgid "RADIUS response was sent from incorrect port: %d"
-msgstr ""
+msgstr "la risposta RADIUS è stata inviata da una porta sbagliata: %d"
 
 #: libpq/auth.c:2704
 #, c-format
 msgid "RADIUS response too short: %d"
-msgstr ""
+msgstr "risposta RADIUS troppo breve: %d"
 
 #: libpq/auth.c:2711
 #, c-format
 msgid "RADIUS response has corrupt length: %d (actual length %d)"
-msgstr ""
+msgstr "la risposta RADIUS ha una lunghezza corrotta: %d (lunghezza reale %d)"
 
 #: libpq/auth.c:2719
 #, c-format
 msgid "RADIUS response is to a different request: %d (should be %d)"
-msgstr ""
+msgstr "la risposta RADIUS è a una richiesta differente: %d (dovrebbe essere %d)"
 
 #: libpq/auth.c:2744
-#, fuzzy, c-format
+#, c-format
 msgid "could not perform MD5 encryption of received packet"
-msgstr "impossibile localizzare un record di checkpoint valido"
+msgstr "impossibile effettuare il criptaggio MD5 dei pacchetti ricevuti"
 
 #: libpq/auth.c:2753
 #, c-format
 msgid "RADIUS response has incorrect MD5 signature"
-msgstr ""
+msgstr "la firma MD5 dellla risposta RADIUS non è corretta"
 
 #: libpq/auth.c:2770
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS response has invalid code (%d) for user \"%s\""
-msgstr "autenticazione PAM fallita per l'utente \"%s\""
+msgstr "il codice della risposta RADIUS (%d) per l'utente \"%s\" non è corretto"
 
 #: libpq/be-fsstubs.c:132 libpq/be-fsstubs.c:162 libpq/be-fsstubs.c:188
 #: libpq/be-fsstubs.c:224 libpq/be-fsstubs.c:271 libpq/be-fsstubs.c:518
-#, fuzzy, c-format
+#, c-format
 msgid "invalid large-object descriptor: %d"
-msgstr "OID errato per il large object\n"
+msgstr "descrittore di large object non valido: %d"
 
 #: libpq/be-fsstubs.c:172 libpq/be-fsstubs.c:204 libpq/be-fsstubs.c:528
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied for large object %u"
-msgstr "permesso negato per il linguaggio %s"
+msgstr "permesso per il large object %u negato"
 
 #: libpq/be-fsstubs.c:193
 #, c-format
 msgid "large object descriptor %d was not opened for writing"
-msgstr ""
+msgstr "il descrittore per il large object %d non era aperto in scrittura"
 
 #: libpq/be-fsstubs.c:391
 #, c-format
 msgid "must be superuser to use server-side lo_import()"
-msgstr ""
+msgstr "solo un superutente può usare lo_import() lato server"
 
 #: libpq/be-fsstubs.c:392
 #, c-format
 msgid "Anyone can use the client-side lo_import() provided by libpq."
-msgstr ""
+msgstr "Chiunque può invece usare lo_import() lato client fornito da libpq."
 
 #: libpq/be-fsstubs.c:405
-#, fuzzy, c-format
+#, c-format
 msgid "could not open server file \"%s\": %m"
-msgstr "Impossibile aprire il file di posta %s: %s"
+msgstr "impossibile aprire il file server \"%s\": %m"
 
 #: libpq/be-fsstubs.c:427
-#, fuzzy, c-format
+#, c-format
 msgid "could not read server file \"%s\": %m"
-msgstr "impossibile leggere il file di certificato \"%s\": %s\n"
+msgstr "impossibile leggere dal file server \"%s\": %m"
 
 #: libpq/be-fsstubs.c:457
 #, c-format
 msgid "must be superuser to use server-side lo_export()"
-msgstr ""
+msgstr "solo un superutente può usare lo_export() lato server"
 
 #: libpq/be-fsstubs.c:458
 #, c-format
 msgid "Anyone can use the client-side lo_export() provided by libpq."
-msgstr ""
+msgstr "Chiunque può invece usare lo_export() lato client fornito da libpq."
 
 #: libpq/be-fsstubs.c:483
-#, fuzzy, c-format
+#, c-format
 msgid "could not create server file \"%s\": %m"
-msgstr "impossibile creare il file di log \"%s\""
+msgstr "impossibile creare il file server \"%s\": %m"
 
 #: libpq/be-fsstubs.c:495
-#, fuzzy, c-format
+#, c-format
 msgid "could not write server file \"%s\": %m"
-msgstr "impossibile scrivere sul file \"%s\": %s\n"
+msgstr "impossibile scrivere sul file server \"%s\": %m"
 
 #: libpq/be-secure.c:284 libpq/be-secure.c:379
 #, c-format
@@ -9295,9 +9289,9 @@ msgid "SSL error: %s"
 msgstr "errore SSL: %s"
 
 #: libpq/be-secure.c:293 libpq/be-secure.c:388 libpq/be-secure.c:939
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized SSL error code: %d"
-msgstr "codice di errore SSL %d non riconosciuto\n"
+msgstr "codice di errore SSL %d non riconosciuto"
 
 #: libpq/be-secure.c:332 libpq/be-secure.c:336 libpq/be-secure.c:346
 #, c-format
@@ -9307,7 +9301,7 @@ msgstr "negoziazione SSL fallita"
 #: libpq/be-secure.c:340
 #, c-format
 msgid "SSL failed to send renegotiation request"
-msgstr "SSL non è riuscito a inviare la richiesta di autenticazione"
+msgstr "SSL non è riuscito a inviare la richiesta di rinegoziazione"
 
 #: libpq/be-secure.c:737
 #, c-format
@@ -9327,12 +9321,12 @@ msgstr "impossibile accedere al file della chiave privata \"%s\": %m"
 #: libpq/be-secure.c:774
 #, c-format
 msgid "private key file \"%s\" has group or world access"
-msgstr ""
+msgstr "il file della chiave primaria \"%s\" ha accesso al gruppo o a chiunque"
 
 #: libpq/be-secure.c:776
 #, c-format
 msgid "Permissions should be u=rw (0600) or less."
-msgstr ""
+msgstr "Il permesso dovrebbe essere u=rw (0600) o inferiore."
 
 #: libpq/be-secure.c:783
 #, c-format
@@ -9345,24 +9339,24 @@ msgid "check of private key failed: %s"
 msgstr "controllo della chiave privata fallito: %s"
 
 #: libpq/be-secure.c:808
-#, fuzzy, c-format
+#, c-format
 msgid "could not load root certificate file \"%s\": %s"
-msgstr "impossibile leggere il file del certificato radice \"%s\": %s\n"
+msgstr "impossibile caricare il file del certificato radice \"%s\": %s"
 
 #: libpq/be-secure.c:832
 #, c-format
 msgid "SSL certificate revocation list file \"%s\" ignored"
-msgstr ""
+msgstr "il file di lista di revoche di certificati SSL \"%s\" è stato ignorato"
 
 #: libpq/be-secure.c:834
 #, c-format
 msgid "SSL library does not support certificate revocation lists."
-msgstr ""
+msgstr "La libreria SSL non supporta le liste di revoca dei certificati."
 
 #: libpq/be-secure.c:839
-#, fuzzy, c-format
+#, c-format
 msgid "could not load SSL certificate revocation list file \"%s\": %s"
-msgstr "impossibile leggere il file del certificato radice \"%s\": %s\n"
+msgstr "impossibile caricare il file di lista di revoche di certificati SSL \"%s\": %s"
 
 #: libpq/be-secure.c:884
 #, c-format
@@ -9370,24 +9364,24 @@ msgid "could not initialize SSL connection: %s"
 msgstr "impossibile inizializzare la connessione SSL: %s"
 
 #: libpq/be-secure.c:893
-#, fuzzy, c-format
+#, c-format
 msgid "could not set SSL socket: %s"
-msgstr "impossibile impostare il socket in modalità blocco: %s\n"
+msgstr "impossibile impostare il socket SSH: %s"
 
 #: libpq/be-secure.c:919
-#, fuzzy, c-format
+#, c-format
 msgid "could not accept SSL connection: %m"
-msgstr "impossibile stabilire una connessione SSL: %s\n"
+msgstr "impossibile accettare connessioni SSH: %m"
 
 #: libpq/be-secure.c:923 libpq/be-secure.c:934
-#, fuzzy, c-format
+#, c-format
 msgid "could not accept SSL connection: EOF detected"
-msgstr "impossibile inizializzare la connessione SSL: %s"
+msgstr "impossibile accettare connessioni SSH: fine file individuata"
 
 #: libpq/be-secure.c:928
-#, fuzzy, c-format
+#, c-format
 msgid "could not accept SSL connection: %s"
-msgstr "impossibile stabilire una connessione SSL: %s\n"
+msgstr "impossibile accettare connessioni SSH: %s"
 
 #: libpq/be-secure.c:984
 #, c-format
