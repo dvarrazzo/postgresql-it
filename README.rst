@@ -16,6 +16,9 @@ di riformattare i commenti, creando diff spuri.
 Usa una versione di poedit con lo spellcheck. Se non ce l'ha, compilatelo tu:
 non è difficile.
 
+Usa un carattere non proporzionale per la finestre di input, altrimenti è
+impossibile verificare che l'output sia allineato dove serve.
+
 Disattiva l'opzione View -> Untranslated entries first, altrimenti ad ogni
 salvataggio il lavoro fatto viene mescolato a quello da fare ed usare i
 segnalibri diventa inutile.
@@ -70,6 +73,9 @@ file" come "leggi la password dal file".
 
 Quando il database si rivolge all'utente, usa la seconda persona singolare.
 "Esegui fixdb se non vuoi perdere tutti i tuoi dati", non "eseguite".
+
+Se il programma ha un output allineato (es. i messaggi di --help) rispetta
+l'allineamento e non far andare le stringhe a zig zag.
 
 
 Traduzioni di termini abbastanza comuni
