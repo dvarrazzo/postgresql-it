@@ -283,7 +283,7 @@ msgstr ""
 #: pg_config.c:459
 #, c-format
 msgid "Report bugs to <pgsql-bugs@postgresql.org>.\n"
-msgstr "Segnala bug a <pgsql-bugs@postgresql.org>.\n"
+msgstr "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: pg_config.c:465
 #, c-format

@@ -36,7 +36,7 @@ msgstr "impossibile determinare una codifica per il locale \"%s\": il codeset è
 #: ../port/chklocale.c:336
 #, c-format
 msgid "Please report this to <pgsql-bugs@postgresql.org>."
-msgstr "Segnala errori a <pgsql-bugs@postgresql.org>."
+msgstr "Per favore segnala questo problema a <pgsql-bugs@postgresql.org>."
 
 #: ../port/dirmod.c:79 ../port/dirmod.c:92 ../port/dirmod.c:109
 #, c-format
@@ -10103,7 +10103,7 @@ msgstr ""
 "impostazioni di configurazione e come impostarle sulla riga di comando\n"
 "o nel file di configurazione\n"
 "\n"
-"Segnalare bug a <pgsql-bugs@postgresql.org>.\n"
+"Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: main/main.c:340
 #, c-format

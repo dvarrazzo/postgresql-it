@@ -639,7 +639,7 @@ msgid ""
 "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr ""
 "\n"
-"Segnalate i bug a <pgsql-bugs@postgresql.org>.\n"
+"Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: initdb.c:2553
 msgid ""

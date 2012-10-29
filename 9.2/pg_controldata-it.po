@@ -88,7 +88,7 @@ msgstr ""
 #: pg_controldata.c:41
 #, c-format
 msgid "Report bugs to <pgsql-bugs@postgresql.org>.\n"
-msgstr "Segnala bug a <pgsql-bugs@postgresql.org>.\n"
+msgstr "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: pg_controldata.c:51
 msgid "starting up"

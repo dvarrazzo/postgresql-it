@@ -1775,7 +1775,7 @@ msgstr ""
 #: help.c:151
 #, c-format
 msgid "Report bugs to <pgsql-bugs@postgresql.org>.\n"
-msgstr "Segnala bug a <pgsql-bugs@postgresql.org>.\n"
+msgstr "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: help.c:169
 #, c-format

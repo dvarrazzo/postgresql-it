@@ -187,7 +187,7 @@ msgid ""
 "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr ""
 "\n"
-"Segnalare bug a <pgsql-bugs@postgresql.org>.\n"
+"Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: ecpg.c:182 ecpg.c:333 ecpg.c:343
 #, c-format

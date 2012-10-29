@@ -178,7 +178,7 @@ msgid ""
 "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr ""
 "\n"
-"Segnalate i bug a <pgsql-bugs@postgresql.org>.\n"
+"Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: pg_basebackup.c:172
 #, c-format

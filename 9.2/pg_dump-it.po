@@ -1559,7 +1559,7 @@ msgstr ""
 #: pg_dump.c:857 pg_dumpall.c:579 pg_restore.c:450
 #, c-format
 msgid "Report bugs to <pgsql-bugs@postgresql.org>.\n"
-msgstr "Segnalare bug a <pgsql-bugs@postgresql.org>.\n"
+msgstr "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: pg_dump.c:870
 #, c-format
