@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-30 12:34+0100\n"
+"PO-Revision-Date: 2012-10-30 12:45+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -14641,7 +14641,7 @@ msgstr "unità \"%s\" di \"time\" non è riconosciuta"
 #: utils/adt/date.c:1963
 #, c-format
 msgid "time zone displacement out of range"
-msgstr "la differenza di fuso orario è fuori scala"
+msgstr "la differenza di fuso orario è fuori dall'intervallo consentito"
 
 #: utils/adt/date.c:2587 utils/adt/date.c:2604
 #, c-format
@@ -14677,7 +14677,7 @@ msgstr "valore del campo interval fuori dall'intervallo consentito: \"%s\""
 #: utils/adt/datetime.c:3553
 #, c-format
 msgid "time zone displacement out of range: \"%s\""
-msgstr "la differenza di fuso orario è fuori scala: \"%s\""
+msgstr "la differenza di fuso orario è fuori dall'intervallo consentito: \"%s\""
 
 #. translator: first %s is inet or cidr
 #: utils/adt/datetime.c:3560 utils/adt/network.c:107
@@ -14761,12 +14761,12 @@ msgstr "l'enumerazione %s non contiene valori"
 #: utils/adt/float.c:55
 #, c-format
 msgid "value out of range: overflow"
-msgstr "il valore è fuori scala: overflow"
+msgstr "il valore è fuori dall'intervallo consentito: overflow"
 
 #: utils/adt/float.c:60
 #, c-format
 msgid "value out of range: underflow"
-msgstr "il valore è fuori scala: underflow"
+msgstr "il valore è fuori dall'intervallo consentito: underflow"
 
 #: utils/adt/float.c:207 utils/adt/float.c:260 utils/adt/float.c:311
 #, c-format
@@ -14795,7 +14795,7 @@ msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo double precision"
 #: utils/adt/int8.c:1236 utils/adt/numeric.c:2401 utils/adt/numeric.c:2412
 #, c-format
 msgid "smallint out of range"
-msgstr "il valore è fuori scala per il tipo smallint"
+msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 
 #: utils/adt/float.c:1364 utils/adt/numeric.c:5230
 #, c-format
@@ -14827,7 +14827,7 @@ msgstr "non è possibile calcolare il logaritmo di un numero negativo"
 #: utils/adt/float.c:1665 utils/adt/float.c:1686
 #, c-format
 msgid "input is out of range"
-msgstr "il valore di input è fuori scala"
+msgstr "il valore di input è fuori dall'intervallo consentito"
 
 #: utils/adt/float.c:2748 utils/adt/numeric.c:1218
 #, c-format
@@ -16385,7 +16385,7 @@ msgstr "non è possibile eseguire lo XOR fra stringhe di bit di dimensioni diver
 #: utils/adt/varbit.c:1765 utils/adt/varbit.c:1823
 #, c-format
 msgid "bit index %d out of valid range (0..%d)"
-msgstr "l'indice %d è al di fuori dell'intervallo valida (0..%d)"
+msgstr "l'indice %d è fuori dall'intervallo valido (0..%d)"
 
 #: utils/adt/varbit.c:1774 utils/adt/varlena.c:2222
 #, c-format
@@ -16421,7 +16421,7 @@ msgstr "non è stato possibile comparare le stringhe Unicode: %m"
 #: utils/adt/varlena.c:2210
 #, c-format
 msgid "index %d out of valid range, 0..%d"
-msgstr "l'indice %d è al di fuori dell'intervallo valido, 0..%d"
+msgstr "l'indice %d è fuori dall'intervallo valido, 0..%d"
 
 #: utils/adt/varlena.c:3012
 #, c-format

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-30 12:31+0100\n"
+"PO-Revision-Date: 2012-10-30 12:43+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -434,7 +434,7 @@ msgstr "abilitazione triggers per %s\n"
 #: pg_backup_archiver.c:833
 #, c-format
 msgid "internal error -- WriteData cannot be called outside the context of a DataDumper routine\n"
-msgstr "errore interno -- WriteData non può essere chiamata al di fuori del contesto di una  routine DataDumper\n"
+msgstr "errore interno -- WriteData non può essere chiamata al di fuori del contesto di una routine DataDumper\n"
 
 #: pg_backup_archiver.c:987
 #, c-format
@@ -628,7 +628,7 @@ msgstr "formato del file \"%d\" non riconosciuto\n"
 #: pg_backup_archiver.c:2264
 #, c-format
 msgid "entry ID %d out of range -- perhaps a corrupt TOC\n"
-msgstr "la voce ID %d è fuori scala -- possibile corruzione della TOC\n"
+msgstr "la voce ID %d è fuori dall'intervallo consentito -- possibile corruzione della TOC\n"
 
 #: pg_backup_archiver.c:2380
 #, c-format
