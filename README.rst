@@ -159,5 +159,4 @@ Se esiste un modo ragionevole di tradurli, ok per me.
 * stream (forse flusso -- solo per i WAL?)
 * thread
 * timeline
-* tuple
 * wrapper
