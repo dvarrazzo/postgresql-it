@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 13:07+0100\n"
+"PO-Revision-Date: 2012-10-30 11:35+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -56,12 +56,12 @@ msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
 #: clusterdb.c:139
 #, c-format
 msgid "%s: cannot cluster all databases and a specific one at the same time\n"
-msgstr "%s: impossibile raggruppare tutti i database ed uno specifico nello stesso momento\n"
+msgstr "%s: non è possibile raggruppare tutti i database ed uno specifico nello stesso momento\n"
 
 #: clusterdb.c:145
 #, c-format
 msgid "%s: cannot cluster a specific table in all databases\n"
-msgstr "%s: impossibile raggruppare una tabella specifica in tutti i database\n"
+msgstr "%s: non è possibile raggruppare una tabella specifica in tutti i database\n"
 
 #: clusterdb.c:198
 #, c-format
@@ -218,12 +218,12 @@ msgstr ""
 #: common.c:45
 #, c-format
 msgid "%s: could not obtain information about current user: %s\n"
-msgstr "%s: impossibile acquisire informazioni sull'utente corrente: %s\n"
+msgstr "%s: non è stato possibile acquisire informazioni sull'utente corrente: %s\n"
 
 #: common.c:56
 #, c-format
 msgid "%s: could not get current user name: %s\n"
-msgstr "%s: impossibile determinare il nome utente corrente: %s\n"
+msgstr "%s: non è stato possibile determinare il nome utente corrente: %s\n"
 
 #: common.c:103 common.c:155
 msgid "Password: "
@@ -237,12 +237,12 @@ msgstr "%s: memoria esaurita\n"
 #: common.c:144
 #, c-format
 msgid "%s: could not connect to database %s\n"
-msgstr "%s: impossibile connettersi al database %s\n"
+msgstr "%s: non è stato possibile connettersi al database %s\n"
 
 #: common.c:171
 #, c-format
 msgid "%s: could not connect to database %s: %s"
-msgstr "%s: impossibile connettersi al database %s: %s"
+msgstr "%s: non è stato possibile connettersi al database %s: %s"
 
 #: common.c:220 common.c:248
 #, c-format
@@ -257,7 +257,7 @@ msgstr "%s: query eseguita: %s\n"
 #: common.c:296
 #, c-format
 msgid "pg_strdup: cannot duplicate null pointer (internal error)\n"
-msgstr "pg_strdup: impossibile duplicare un puntatore nullo (errore interno)\n"
+msgstr "pg_strdup: non è possibile duplicare un puntatore nullo (errore interno)\n"
 
 #: common.c:302
 #, c-format
@@ -294,7 +294,7 @@ msgstr "Richiesta di annullamento inviata\n"
 #: common.c:426 common.c:459
 #, c-format
 msgid "Could not send cancel request: %s"
-msgstr "Impossibile inviare la richiesta di annullamento: %s"
+msgstr "Non è stato possibile inviare la richiesta di annullamento: %s"
 
 #: createdb.c:146
 #, c-format
@@ -756,32 +756,32 @@ msgstr ""
 #: reindexdb.c:149
 #, c-format
 msgid "%s: cannot reindex all databases and a specific one at the same time\n"
-msgstr "%s: impossibile re-indicizzare tutti i database ed uno specifico nello stesso momento\n"
+msgstr "%s: non è possibile re-indicizzare tutti i database ed uno specifico nello stesso momento\n"
 
 #: reindexdb.c:154
 #, c-format
 msgid "%s: cannot reindex all databases and system catalogs at the same time\n"
-msgstr "%s: impossibile re-indicizzare tutti i database e i cataloghi di sistema nello stesso momento\n"
+msgstr "%s: non è possibile re-indicizzare tutti i database e i cataloghi di sistema nello stesso momento\n"
 
 #: reindexdb.c:159
 #, c-format
 msgid "%s: cannot reindex a specific table in all databases\n"
-msgstr "%s: impossibile re-indicizzare una tabella specifica in tutti i database\n"
+msgstr "%s: non è possibile re-indicizzare una tabella specifica in tutti i database\n"
 
 #: reindexdb.c:164
 #, c-format
 msgid "%s: cannot reindex a specific index in all databases\n"
-msgstr "%s: impossibile re-indicizzare un indice specifico in tutti i database\n"
+msgstr "%s: non è possibile re-indicizzare un indice specifico in tutti i database\n"
 
 #: reindexdb.c:175
 #, c-format
 msgid "%s: cannot reindex a specific table and system catalogs at the same time\n"
-msgstr "%s: impossibile re-indicizzare una tabella specifica ed i cataloghi di sistema nello stesso momento\n"
+msgstr "%s: non è possibile re-indicizzare una tabella specifica ed i cataloghi di sistema nello stesso momento\n"
 
 #: reindexdb.c:180
 #, c-format
 msgid "%s: cannot reindex a specific index and system catalogs at the same time\n"
-msgstr "%s: impossibile re-indicizzare un indice specifico ed i cataloghi di sistema stesso momento\n"
+msgstr "%s: non è possibile re-indicizzare un indice specifico ed i cataloghi di sistema stesso momento\n"
 
 #: reindexdb.c:250
 #, c-format
@@ -854,22 +854,22 @@ msgstr ""
 #: vacuumdb.c:161
 #, c-format
 msgid "%s: cannot use the \"full\" option when performing only analyze\n"
-msgstr "%s: impossibile usare l'opzione \"full\" quando si effettua solo analyze\n"
+msgstr "%s: non è possibile usare l'opzione \"full\" quando si effettua solo analyze\n"
 
 #: vacuumdb.c:167
 #, c-format
 msgid "%s: cannot use the \"freeze\" option when performing only analyze\n"
-msgstr "%s: impossibile usare l'opzione \"freeze\" quando si effettua solo analyze\n"
+msgstr "%s: non è possibile usare l'opzione \"freeze\" quando si effettua solo analyze\n"
 
 #: vacuumdb.c:180
 #, c-format
 msgid "%s: cannot vacuum all databases and a specific one at the same time\n"
-msgstr "%s: impossibile effettuare la pulizia di tutti i database e di uno in particolare nello stesso momento\n"
+msgstr "%s: non è possibile effettuare la pulizia di tutti i database e di uno in particolare nello stesso momento\n"
 
 #: vacuumdb.c:186
 #, c-format
 msgid "%s: cannot vacuum a specific table in all databases\n"
-msgstr "%s: impossibile effettuare la pulizia di una tabella specifica in tutti i database\n"
+msgstr "%s: non è possibile effettuare la pulizia di una tabella specifica in tutti i database\n"
 
 #: vacuumdb.c:290
 #, c-format

@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plperl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:39+0000\n"
-"PO-Revision-Date: 2012-10-26 00:34+0100\n"
+"PO-Revision-Date: 2012-10-30 11:36+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -105,12 +105,12 @@ msgstr "gli array multidimensionali devono avere espressioni array di dimensioni
 #: plperl.c:1199
 #, c-format
 msgid "cannot convert Perl array to non-array type %s"
-msgstr "impossibile convertire un array Perl nel tipo non-array %s"
+msgstr "non è possibile convertire un array Perl nel tipo non-array %s"
 
 #: plperl.c:1295
 #, c-format
 msgid "cannot convert Perl hash to non-composite type %s"
-msgstr "impossibile convertire un hash Perl nel tipo non composito %s"
+msgstr "non è possibile convertire un hash Perl nel tipo non composito %s"
 
 #: plperl.c:1306
 #, c-format

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-29 14:27+0100\n"
+"PO-Revision-Date: 2012-10-30 12:31+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -38,7 +38,7 @@ msgstr ""
 #: ../../port/exec.c:125 ../../port/exec.c:239 ../../port/exec.c:282
 #, c-format
 msgid "could not identify current directory: %s"
-msgstr "non è possibile identificare la directory corrente: %s"
+msgstr "non è stato possibile identificare la directory corrente: %s"
 
 #: ../../port/exec.c:144
 #, c-format
@@ -48,22 +48,22 @@ msgstr "binario non valido \"%s\""
 #: ../../port/exec.c:193
 #, c-format
 msgid "could not read binary \"%s\""
-msgstr "non è possibile leggere il binario \"%s\""
+msgstr "non è stato  possibile leggere il binario \"%s\""
 
 #: ../../port/exec.c:200
 #, c-format
 msgid "could not find a \"%s\" to execute"
-msgstr "non è possibile trovare un \"%s\" da eseguire"
+msgstr "non è stato possibile trovare un \"%s\" da eseguire"
 
 #: ../../port/exec.c:255 ../../port/exec.c:291
 #, c-format
 msgid "could not change directory to \"%s\""
-msgstr "non è possibile cambiare la directory in \"%s\""
+msgstr "non è stato possibile cambiare la directory in \"%s\""
 
 #: ../../port/exec.c:270
 #, c-format
 msgid "could not read symbolic link \"%s\""
-msgstr "non è possibile leggere il link simbolico \"%s\""
+msgstr "non è stato possibile leggere il link simbolico \"%s\""
 
 #: ../../port/exec.c:526
 #, c-format
@@ -243,12 +243,12 @@ msgstr "controllo di integrità fallito, OID padre %u della tabella \"%s\" (OID 
 #: common.c:828
 #, c-format
 msgid "could not parse numeric array \"%s\": too many numbers\n"
-msgstr "impossibile interpretare l'array numerico \"%s\": troppi numeri\n"
+msgstr "non è stato possibile interpretare l'array numerico \"%s\": troppi numeri\n"
 
 #: common.c:843
 #, c-format
 msgid "could not parse numeric array \"%s\": invalid character in number\n"
-msgstr "impossibile interpretare l'array numerico \"%s\": caratteri non validi nel numero\n"
+msgstr "non è stato possibile interpretare l'array numerico \"%s\": caratteri non validi nel numero\n"
 
 #. translator: this is a module name
 #: compress_io.c:78
@@ -269,34 +269,34 @@ msgstr "compilato senza il supporto a zlib\n"
 #: compress_io.c:240 compress_io.c:349
 #, c-format
 msgid "could not initialize compression library: %s\n"
-msgstr "impossibile inizializzare la libreria di compressione: %s\n"
+msgstr "non è stato possibile inizializzare la libreria di compressione: %s\n"
 
 #: compress_io.c:261
 #, c-format
 msgid "could not close compression stream: %s\n"
-msgstr "impossibile chiudere il flusso di compressione: %s\n"
+msgstr "non è stato possibile chiudere il flusso di compressione: %s\n"
 
 #: compress_io.c:279
 #, c-format
 msgid "could not compress data: %s\n"
-msgstr "impossibile comprimere i dati: %s\n"
+msgstr "non è stato possibile comprimere i dati: %s\n"
 
 #: compress_io.c:300 compress_io.c:431 pg_backup_archiver.c:1476
 #: pg_backup_archiver.c:1499 pg_backup_custom.c:650 pg_backup_directory.c:480
 #: pg_backup_tar.c:589 pg_backup_tar.c:1096 pg_backup_tar.c:1389
 #, c-format
 msgid "could not write to output file: %s\n"
-msgstr "impossibile scrivere sul file di output: %s\n"
+msgstr "non è stato possibile scrivere sul file di output: %s\n"
 
 #: compress_io.c:366 compress_io.c:382
 #, c-format
 msgid "could not uncompress data: %s\n"
-msgstr "impossibile decomprimere i dati: %s\n"
+msgstr "non è stato possibile decomprimere i dati: %s\n"
 
 #: compress_io.c:390
 #, c-format
 msgid "could not close compression library: %s\n"
-msgstr "impossibile chiudere la libreria di compressione: %s\n"
+msgstr "non è stato possibile chiudere la libreria di compressione: %s\n"
 
 #: dumpmem.c:33
 #, c-format
@@ -334,7 +334,7 @@ msgstr "archiviatore"
 #: pg_backup_archiver.c:232 pg_backup_archiver.c:1339
 #, c-format
 msgid "could not close output file: %s\n"
-msgstr "impossibile chiudere il file di output: %s\n"
+msgstr "non è stato possibile chiudere il file di output: %s\n"
 
 #: pg_backup_archiver.c:267 pg_backup_archiver.c:272
 #, c-format
@@ -364,7 +364,7 @@ msgstr "il ripristino parallelo non è supportato con archivi eseguiti da pg_dum
 #: pg_backup_archiver.c:342
 #, c-format
 msgid "cannot restore from compressed archive (compression not supported in this installation)\n"
-msgstr "impossibile ripristinare da archivio compresso (compressione non supportata in questa installazione)\n"
+msgstr "non è possibile ripristinare da archivio compresso (compressione non supportata in questa installazione)\n"
 
 #: pg_backup_archiver.c:359
 #, c-format
@@ -456,17 +456,17 @@ msgstr "ripristino del large object con OID %u\n"
 #: pg_backup_archiver.c:1074
 #, c-format
 msgid "could not create large object %u: %s"
-msgstr "impossibile creare il large object %u: %s"
+msgstr "non è stato possibile creare il large object %u: %s"
 
 #: pg_backup_archiver.c:1079 pg_dump.c:2363
 #, c-format
 msgid "could not open large object %u: %s"
-msgstr "impossibile aprire il large object %u: %s"
+msgstr "non è stato possibile aprire il large object %u: %s"
 
 #: pg_backup_archiver.c:1136
 #, c-format
 msgid "could not open TOC file \"%s\": %s\n"
-msgstr "non è possibile aprire il file TOC \"%s\": %s\n"
+msgstr "non è stato possibile aprire il file TOC \"%s\": %s\n"
 
 #: pg_backup_archiver.c:1177
 #, c-format
@@ -482,19 +482,19 @@ msgstr "non sono state trovate voci per l'ID %d\n"
 #: pg_backup_directory.c:541
 #, c-format
 msgid "could not close TOC file: %s\n"
-msgstr "impossibile chiudere il file TOC: %s\n"
+msgstr "non è stato possibile chiudere il file TOC: %s\n"
 
 #: pg_backup_archiver.c:1309 pg_backup_custom.c:150 pg_backup_directory.c:291
 #: pg_backup_directory.c:527 pg_backup_directory.c:571
 #: pg_backup_directory.c:591
 #, c-format
 msgid "could not open output file \"%s\": %s\n"
-msgstr "impossibile aprire il file di output \"%s\": %s\n"
+msgstr "non è stato possibile aprire il file di output \"%s\": %s\n"
 
 #: pg_backup_archiver.c:1312 pg_backup_custom.c:157
 #, c-format
 msgid "could not open output file: %s\n"
-msgstr "impossibile aprire il file di output: %s\n"
+msgstr "non è stato possibile aprire il file di output: %s\n"
 
 #: pg_backup_archiver.c:1412
 #, c-format
@@ -506,12 +506,12 @@ msgstr[1] "scritti %lu byte di dati large object (risultato = %lu)\n"
 #: pg_backup_archiver.c:1418
 #, c-format
 msgid "could not write to large object (result: %lu, expected: %lu)\n"
-msgstr "impossibile scrivere in oggetti large object (risultato: %lu, previsto: %lu)\n"
+msgstr "non è stato possibile scrivere in oggetti large object (risultato: %lu, previsto: %lu)\n"
 
 #: pg_backup_archiver.c:1484
 #, c-format
 msgid "could not write to custom output routine\n"
-msgstr "impossibile scrivere sulla routine di output personalizzata\n"
+msgstr "non è stato possibile scrivere sulla routine di output personalizzata\n"
 
 #: pg_backup_archiver.c:1522
 #, c-format
@@ -578,17 +578,17 @@ msgstr "la directory \"%s\" non sembra un archivio valido (\"toc.dat\" non esist
 #: pg_backup_directory.c:164 pg_backup_directory.c:349
 #, c-format
 msgid "could not open input file \"%s\": %s\n"
-msgstr "impossibile aprire il file di input \"%s\": %s\n"
+msgstr "non è stato possibile aprire il file di input \"%s\": %s\n"
 
 #: pg_backup_archiver.c:1907 pg_backup_custom.c:176
 #, c-format
 msgid "could not open input file: %s\n"
-msgstr "impossibile aprire il file di input: %s\n"
+msgstr "non è stato possibile aprire il file di input: %s\n"
 
 #: pg_backup_archiver.c:1916
 #, c-format
 msgid "could not read input file: %s\n"
-msgstr "impossibile leggere il file di input: %s\n"
+msgstr "non è stato possibile leggere il file di input: %s\n"
 
 #: pg_backup_archiver.c:1918
 #, c-format
@@ -613,7 +613,7 @@ msgstr "il file di input non sembra essere un archivio valido\n"
 #: pg_backup_archiver.c:2010
 #, c-format
 msgid "could not close input file: %s\n"
-msgstr "impossibile chiudere il file di input: %s\n"
+msgstr "non è stato possibile chiudere il file di input: %s\n"
 
 #: pg_backup_archiver.c:2027
 #, c-format
@@ -653,22 +653,22 @@ msgstr "elemento STDSTRINGS non valido: %s\n"
 #: pg_backup_archiver.c:2651
 #, c-format
 msgid "could not set session user to \"%s\": %s"
-msgstr "impossibile impostare la sessione utente a \"%s\": %s"
+msgstr "non è stato possibile impostare la sessione utente a \"%s\": %s"
 
 #: pg_backup_archiver.c:2683
 #, c-format
 msgid "could not set default_with_oids: %s"
-msgstr "impossibile impostare default_with_oids: %s"
+msgstr "non è stato possibile impostare default_with_oids: %s"
 
 #: pg_backup_archiver.c:2821
 #, c-format
 msgid "could not set search_path to \"%s\": %s"
-msgstr "impossibile impostare search_path a \"%s\": %s"
+msgstr "non è stato possibile impostare search_path a \"%s\": %s"
 
 #: pg_backup_archiver.c:2882
 #, c-format
 msgid "could not set default_tablespace to %s: %s"
-msgstr "impossibile impostare default_tablespace a %s: %s"
+msgstr "non è stato possibile impostare default_tablespace a %s: %s"
 
 #: pg_backup_archiver.c:2991 pg_backup_archiver.c:3173
 #, c-format
@@ -763,12 +763,12 @@ msgstr "parallel_restore non dovrebbe uscire\n"
 #: pg_backup_archiver.c:3751
 #, c-format
 msgid "could not create worker process: %s\n"
-msgstr "impossibile creare il processo worker: %s\n"
+msgstr "non è stato possibile creare il processo worker: %s\n"
 
 #: pg_backup_archiver.c:3759
 #, c-format
 msgid "could not create worker thread: %s\n"
-msgstr "impossibile creare il thread worker: %s\n"
+msgstr "non è stato possibile creare il thread worker: %s\n"
 
 #: pg_backup_archiver.c:3983
 #, c-format
@@ -778,7 +778,7 @@ msgstr "nessun elemento pronto\n"
 #: pg_backup_archiver.c:4080
 #, c-format
 msgid "could not find slot of finished worker\n"
-msgstr "non è possibile trovare slot di worker finiti\n"
+msgstr "non è stato trovato alcuno slot di worker terminati\n"
 
 #: pg_backup_archiver.c:4082
 #, c-format
@@ -803,7 +803,7 @@ msgstr "riduzione dipendenze per %d\n"
 #: pg_backup_archiver.c:4365
 #, c-format
 msgid "table \"%s\" could not be created, will not restore its data\n"
-msgstr "impossibile creare la tabella \"%s\", i suoi dati non verranno ripristinati\n"
+msgstr "non è stato possibile creare la tabella \"%s\", i suoi dati non verranno ripristinati\n"
 
 #. translator: this is a module name
 #: pg_backup_custom.c:89
@@ -828,17 +828,17 @@ msgstr "errore durante lo spostamento nel file: %s\n"
 #: pg_backup_custom.c:463
 #, c-format
 msgid "could not find block ID %d in archive -- possibly due to out-of-order restore request, which cannot be handled due to lack of data offsets in archive\n"
-msgstr "impossibile trovare il blocco ID %d nell'archivio -- forse per una richiesta di ripristino fuori ordine, che non può essere eseguita per la mancanza di offset dati nell'archivio\n"
+msgstr "non è stato possibile trovare il blocco ID %d nell'archivio -- forse per una richiesta di ripristino fuori ordine, che non può essere eseguita per la mancanza di offset dati nell'archivio\n"
 
 #: pg_backup_custom.c:468
 #, c-format
 msgid "could not find block ID %d in archive -- possibly due to out-of-order restore request, which cannot be handled due to non-seekable input file\n"
-msgstr "impossibile trovare il blocco ID %d nell'archivio -- forse per una richiesta di ripristino fuori ordine, che non può essere eseguita perché il file di input non supporta il seek\n"
+msgstr "non è stato possibile trovare il blocco ID %d nell'archivio -- forse per una richiesta di ripristino fuori ordine, che non può essere eseguita perché il file di input non supporta il seek\n"
 
 #: pg_backup_custom.c:473
 #, c-format
 msgid "could not find block ID %d in archive -- possibly corrupt archive\n"
-msgstr "impossibile trovare il blocco ID %d nell'archivio -- forse l'archivio è corrotto\n"
+msgstr "non è stato possibile trovare il blocco ID %d nell'archivio -- forse l'archivio è corrotto\n"
 
 #: pg_backup_custom.c:480
 #, c-format
@@ -853,22 +853,22 @@ msgstr "tipo di blocco dati non riconosciuto %d durante il ripristino dell'archi
 #: pg_backup_custom.c:576 pg_backup_custom.c:910
 #, c-format
 msgid "could not read from input file: end of file\n"
-msgstr "impossibile leggere dal file di input: fine del file\n"
+msgstr "non è stato possibile leggere dal file di input: fine del file\n"
 
 #: pg_backup_custom.c:579 pg_backup_custom.c:913
 #, c-format
 msgid "could not read from input file: %s\n"
-msgstr "impossibile leggere dal file di input: %s\n"
+msgstr "non è stato possibile leggere dal file di input: %s\n"
 
 #: pg_backup_custom.c:608
 #, c-format
 msgid "could not write byte: %s\n"
-msgstr "impossibile scrivere il byte: %s\n"
+msgstr "non è stato possibile scrivere il byte: %s\n"
 
 #: pg_backup_custom.c:716 pg_backup_custom.c:754
 #, c-format
 msgid "could not close archive file: %s\n"
-msgstr "impossibile chiudere il file di archivio: %s\n"
+msgstr "non è stato possibile chiudere il file di archivio: %s\n"
 
 #: pg_backup_custom.c:735
 #, c-format
@@ -888,12 +888,12 @@ msgstr "il ripristino in parallelo da un file che non supporta il seek non è su
 #: pg_backup_custom.c:749
 #, c-format
 msgid "could not determine seek position in archive file: %s\n"
-msgstr "non è possibile determinare la posizione per il seek nel file d'archivio: %s\n"
+msgstr "non è stato possibile determinare la posizione per il seek nel file d'archivio: %s\n"
 
 #: pg_backup_custom.c:764
 #, c-format
 msgid "could not set seek position in archive file: %s\n"
-msgstr "non è possibile impostare la posizione nel file d'archivio: %s\n"
+msgstr "non è stato possibile impostare la posizione nel file d'archivio: %s\n"
 
 #: pg_backup_custom.c:782
 #, c-format
@@ -913,12 +913,12 @@ msgstr "archiviatore (db)"
 #: pg_backup_db.c:40 pg_dump.c:582
 #, c-format
 msgid "could not parse version string \"%s\"\n"
-msgstr "non è possibile interpretare la stringa di versione \"%s\"\n"
+msgstr "non è stato possibile interpretare la stringa di versione \"%s\"\n"
 
 #: pg_backup_db.c:56
 #, c-format
 msgid "could not get server_version from libpq\n"
-msgstr "non è possibile ottenere server_version da libpq\n"
+msgstr "non è stato possibile ottenere server_version da libpq\n"
 
 #: pg_backup_db.c:69 pg_dumpall.c:1793
 #, c-format
@@ -948,7 +948,7 @@ msgstr "riconnessione al database fallita\n"
 #: pg_backup_db.c:185
 #, c-format
 msgid "could not reconnect to database: %s"
-msgstr "impossibile riconnettersi al database: %s"
+msgstr "non è stato possibile riconnettersi al database: %s"
 
 #: pg_backup_db.c:201
 #, c-format
@@ -992,7 +992,7 @@ msgstr "%s: %s    Il comando era: %s\n"
 
 #: pg_backup_db.c:456 pg_backup_db.c:527 pg_backup_db.c:534
 msgid "could not execute query"
-msgstr "impossibile eseguire la query"
+msgstr "non è stato possibile eseguire la query"
 
 #: pg_backup_db.c:507
 #, c-format
@@ -1011,11 +1011,11 @@ msgstr "COPY fallito per la tabella \"%s\": %s"
 
 #: pg_backup_db.c:570
 msgid "could not start database transaction"
-msgstr "impossibile avviare la transazione database"
+msgstr "non è stato possibile iniziare la transazione database"
 
 #: pg_backup_db.c:576
 msgid "could not commit database transaction"
-msgstr "impossibile effettuare il commit della transazione database"
+msgstr "non è stato possibile effettuare il commit della transazione database"
 
 #. translator: this is a module name
 #: pg_backup_directory.c:62
@@ -1030,17 +1030,17 @@ msgstr "directory di output non specificata\n"
 #: pg_backup_directory.c:151
 #, c-format
 msgid "could not create directory \"%s\": %s\n"
-msgstr "impossibile creare la directory \"%s\": %s\n"
+msgstr "non è stato possibile creare la directory \"%s\": %s\n"
 
 #: pg_backup_directory.c:360
 #, c-format
 msgid "could not close data file: %s\n"
-msgstr "impossibile chiudere il file di dati: %s\n"
+msgstr "non è stato possibile chiudere il file di dati: %s\n"
 
 #: pg_backup_directory.c:400
 #, c-format
 msgid "could not open large object TOC file \"%s\" for input: %s\n"
-msgstr "impossibile aprire il file TOC dei large object \"%s\" per l'input: %s\n"
+msgstr "non è stato possibile aprire il file TOC dei large object \"%s\" per l'input: %s\n"
 
 #: pg_backup_directory.c:410
 #, c-format
@@ -1055,17 +1055,17 @@ msgstr "errore in lettura del file TOC dei large object \"%s\"\n"
 #: pg_backup_directory.c:423
 #, c-format
 msgid "could not close large object TOC file \"%s\": %s\n"
-msgstr "impossibile chiudere il file TOC large object \"%s\": %s\n"
+msgstr "non è stato possibile chiudere il file TOC large object \"%s\": %s\n"
 
 #: pg_backup_directory.c:444
 #, c-format
 msgid "could not write byte\n"
-msgstr "impossibile scrivere il byte\n"
+msgstr "non è stato possibile scrivere il byte\n"
 
 #: pg_backup_directory.c:614
 #, c-format
 msgid "could not write to blobs TOC file\n"
-msgstr "impossibile scrivere nel file TOC dei blob\n"
+msgstr "non è stato possibile scrivere nel file TOC dei blob\n"
 
 #: pg_backup_directory.c:642
 #, c-format
@@ -1085,12 +1085,12 @@ msgstr "archiviatore tar"
 #: pg_backup_tar.c:181
 #, c-format
 msgid "could not open TOC file \"%s\" for output: %s\n"
-msgstr "impossibile aprire il file TOC \"%s\" per l'output: %s\n"
+msgstr "non è stato possibile aprire il file TOC \"%s\" per l'output: %s\n"
 
 #: pg_backup_tar.c:189
 #, c-format
 msgid "could not open TOC file for output: %s\n"
-msgstr "impossibile aprire il file TOC per l'output: %s\n"
+msgstr "non è stato possibile aprire il file TOC per l'output: %s\n"
 
 #: pg_backup_tar.c:217 pg_backup_tar.c:373
 #, c-format
@@ -1100,32 +1100,32 @@ msgstr "compressione non supportata dal formato di archivio tar\n"
 #: pg_backup_tar.c:225
 #, c-format
 msgid "could not open TOC file \"%s\" for input: %s\n"
-msgstr "impossibile aprire il file TOC \"%s\" per l'input: %s\n"
+msgstr "non è stato possibile aprire il file TOC \"%s\" per l'input: %s\n"
 
 #: pg_backup_tar.c:232
 #, c-format
 msgid "could not open TOC file for input: %s\n"
-msgstr "impossibile aprire il file TOC per l'input: %s\n"
+msgstr "non è stato possibile aprire il file TOC per l'input: %s\n"
 
 #: pg_backup_tar.c:359
 #, c-format
 msgid "could not find file \"%s\" in archive\n"
-msgstr "impossibile trovare il file \"%s\" nell'archivio\n"
+msgstr "non è stato possibile trovare il file \"%s\" nell'archivio\n"
 
 #: pg_backup_tar.c:415
 #, c-format
 msgid "could not generate temporary file name: %s\n"
-msgstr "impossibile generare il nome del file temporaneo: %s\n"
+msgstr "non è stato possibile generare il nome del file temporaneo: %s\n"
 
 #: pg_backup_tar.c:424
 #, c-format
 msgid "could not open temporary file\n"
-msgstr "impossibile aprire il file temporaneo\n"
+msgstr "non è stato possibile aprire il file temporaneo\n"
 
 #: pg_backup_tar.c:451
 #, c-format
 msgid "could not close tar member\n"
-msgstr "impossibile chiudere il membro tar\n"
+msgstr "non è stato possibile chiudere il membro tar\n"
 
 #: pg_backup_tar.c:551
 #, c-format
@@ -1155,7 +1155,7 @@ msgstr "membro dell'archivio troppo grande per il formato tar\n"
 #: pg_backup_tar.c:1102
 #, c-format
 msgid "could not close temporary file: %s\n"
-msgstr "non è possibile chiudere il file temporaneo: %s\n"
+msgstr "non è stato possibile chiudere il file temporaneo: %s\n"
 
 #: pg_backup_tar.c:1112
 #, c-format
@@ -1165,7 +1165,7 @@ msgstr "la lunghezza del file (%s) non corrisponde con quella prevista (%s)\n"
 #: pg_backup_tar.c:1120
 #, c-format
 msgid "could not output padding at end of tar member\n"
-msgstr "non è possibile effettuare il riempimento in output alla fine del membro tar\n"
+msgstr "non è stato possibile effettuare il riempimento in output alla fine del membro tar\n"
 
 #: pg_backup_tar.c:1149
 #, c-format
@@ -1180,7 +1180,7 @@ msgstr "attuale posizione nel file %s\n"
 #: pg_backup_tar.c:1169 pg_backup_tar.c:1199
 #, c-format
 msgid "could not find header for file \"%s\" in tar archive\n"
-msgstr "impossibile trovare l'intestazione per il file \"%s\" nell'archivio tar\n"
+msgstr "non è stato possibile trovare l'intestazione per il file \"%s\" nell'archivio tar\n"
 
 #: pg_backup_tar.c:1183
 #, c-format
@@ -1242,7 +1242,7 @@ msgstr "(Il comando INSERT non può impostare OID.)\n"
 #: pg_dump.c:575
 #, c-format
 msgid "could not open output file \"%s\" for writing\n"
-msgstr "impossibile aprire il file di output \"%s\" per la scrittura\n"
+msgstr "non è stato possibile aprire il file di output \"%s\" per la scrittura\n"
 
 #: pg_dump.c:641
 #, c-format
@@ -1634,7 +1634,7 @@ msgstr "errore di lettura del large object %u: %s"
 #: pg_dump.c:2566
 #, c-format
 msgid "could not find parent extension for %s\n"
-msgstr "impossibile trovare l'estensione genitore di %s\n"
+msgstr "non è stato possibile trovare l'estensione genitore di %s\n"
 
 #: pg_dump.c:2669
 #, c-format
@@ -1751,27 +1751,27 @@ msgstr "ATTENZIONE: il \"typtype\" del tipo dato \"%s\" sembra non essere valido
 #: pg_dump.c:8855
 #, c-format
 msgid "WARNING: bogus value in proargmodes array\n"
-msgstr "ATTENZIONE: valore fasullo nell'array proargmode\n"
+msgstr "ATTENZIONE: valore errato nell'array proargmode\n"
 
 #: pg_dump.c:9183
 #, c-format
 msgid "WARNING: could not parse proallargtypes array\n"
-msgstr "ATTENZIONE: impossibile analizzare array proallargtype\n"
+msgstr "ATTENZIONE: non è stato possibile analizzare l'array proallargtype\n"
 
 #: pg_dump.c:9199
 #, c-format
 msgid "WARNING: could not parse proargmodes array\n"
-msgstr "ATTENZIONE: impossibile analizzare array proargmode\n"
+msgstr "ATTENZIONE: non è stato possibile analizzare l'array proargmode\n"
 
 #: pg_dump.c:9213
 #, c-format
 msgid "WARNING: could not parse proargnames array\n"
-msgstr "ATTENZIONE: impossibile analizzare array proargname\n"
+msgstr "ATTENZIONE: non è stato possibile analizzare l'array proargname\n"
 
 #: pg_dump.c:9224
 #, c-format
 msgid "WARNING: could not parse proconfig array\n"
-msgstr "ATTENZIONE: impossibile analizzare array preconfig\n"
+msgstr "ATTENZIONE: non è stato possibile analizzare l'array preconfig\n"
 
 #: pg_dump.c:9281
 #, c-format
@@ -1791,7 +1791,7 @@ msgstr "ATTENZIONE: valore fasullo nel campo pg_cast.castmethod\n"
 #: pg_dump.c:9873
 #, c-format
 msgid "WARNING: could not find operator with OID %s\n"
-msgstr "ATTENZIONE: impossibile trovare operatore con OID %s\n"
+msgstr "ATTENZIONE: non è stato possibile trovare operatore con OID %s\n"
 
 #: pg_dump.c:10935
 #, c-format
@@ -1806,12 +1806,12 @@ msgstr "tipo di oggetto (%d) sconosciuto nei privilegi predefiniti\n"
 #: pg_dump.c:11723
 #, c-format
 msgid "could not parse default ACL list (%s)\n"
-msgstr "impossibile interpretare la ACL predefinita (%s)\n"
+msgstr "non è stato possibile interpretare la ACL predefinita (%s)\n"
 
 #: pg_dump.c:11778
 #, c-format
 msgid "could not parse ACL list (%s) for object \"%s\" (%s)\n"
-msgstr "non è possibile analizzare la lista ACL (%s) per l'oggetto \"%s\" (%s)\n"
+msgstr "non è stato possibile analizzare la lista ACL (%s) per l'oggetto \"%s\" (%s)\n"
 
 #: pg_dump.c:12219
 #, c-format
@@ -1900,7 +1900,7 @@ msgstr "dipendenza non valida %d\n"
 #: pg_dump_sort.c:587
 #, c-format
 msgid "could not identify dependency loop\n"
-msgstr "impossibile identificare il ciclo di dipendenze\n"
+msgstr "non è stato possibile identificare il ciclo di dipendenze\n"
 
 #: pg_dump_sort.c:1037
 #, c-format
@@ -1925,7 +1925,7 @@ msgstr "Considera l'uso di un salvataggio completo invece di uno --data-only per
 #: pg_dump_sort.c:1053
 #, c-format
 msgid "WARNING: could not resolve dependency loop among these items:\n"
-msgstr "ATTENZIONE: impossibile risolvere il ciclo di dipendenze tra questi elementi:\n"
+msgstr "ATTENZIONE: non è stato possibile risolvere il ciclo di dipendenze tra questi elementi:\n"
 
 #: pg_dumpall.c:173
 #, c-format
@@ -1967,7 +1967,7 @@ msgstr "%s: la opzioni -r/--roles-only e -t/--tablespaces-only non possono esser
 #: pg_dumpall.c:376 pg_dumpall.c:1730
 #, c-format
 msgid "%s: could not connect to database \"%s\"\n"
-msgstr "%s: non è possibile connettersi al database \"%s\"\n"
+msgstr "%s: non è stato possibile connettersi al database \"%s\"\n"
 
 #: pg_dumpall.c:391
 #, c-format
@@ -1975,13 +1975,13 @@ msgid ""
 "%s: could not connect to databases \"postgres\" or \"template1\"\n"
 "Please specify an alternative database.\n"
 msgstr ""
-"%s: non è possibile connettersi ai database \"postgres\" o \"template1\"\n"
+"%s: non stato è possibile connettersi ai database \"postgres\" o \"template1\"\n"
 "Specificare un database alternativo.\n"
 
 #: pg_dumpall.c:408
 #, c-format
 msgid "%s: could not open the output file \"%s\": %s\n"
-msgstr "%s: non è possibile aprire il file di output \"%s\": %s\n"
+msgstr "%s: non è stato possibile aprire il file di output \"%s\": %s\n"
 
 #: pg_dumpall.c:535
 #, c-format
@@ -2053,12 +2053,12 @@ msgstr ""
 #: pg_dumpall.c:1068
 #, c-format
 msgid "%s: could not parse ACL list (%s) for tablespace \"%s\"\n"
-msgstr "%s: impossibile analizzare la lista ACL (%s) per il tablespace \"%s\"\n"
+msgstr "%s: non è stato possibile analizzare la lista ACL (%s) per il tablespace \"%s\"\n"
 
 #: pg_dumpall.c:1372
 #, c-format
 msgid "%s: could not parse ACL list (%s) for database \"%s\"\n"
-msgstr "%s: impossibile analizzare la lista ACL (%s) per il database \"%s\"\n"
+msgstr "%s: non è stato possibile analizzare la lista ACL (%s) per il database \"%s\"\n"
 
 #: pg_dumpall.c:1584
 #, c-format
@@ -2073,7 +2073,7 @@ msgstr "%s: pg_dump fallito per il database \"%s\", in uscita\n"
 #: pg_dumpall.c:1603
 #, c-format
 msgid "%s: could not re-open the output file \"%s\": %s\n"
-msgstr "%s: impossibile riaprire il file di output \"%s\": %s\n"
+msgstr "%s: non è stato possibile riaprire il file di output \"%s\": %s\n"
 
 #: pg_dumpall.c:1642
 #, c-format
@@ -2083,22 +2083,22 @@ msgstr "%s: in eleborazione \"%s\"\n"
 #: pg_dumpall.c:1752
 #, c-format
 msgid "%s: could not connect to database \"%s\": %s\n"
-msgstr "%s: impossibile connettersi al database \"%s\": %s\n"
+msgstr "%s: non è stato possibile connettersi al database \"%s\": %s\n"
 
 #: pg_dumpall.c:1766
 #, c-format
 msgid "%s: could not get server version\n"
-msgstr "%s: impossibile ottenere la versione del server\n"
+msgstr "%s: non è stato possibile ottenere la versione del server\n"
 
 #: pg_dumpall.c:1772
 #, c-format
 msgid "%s: could not parse server version \"%s\"\n"
-msgstr "%s: impossibile analizzare la versione del server \"%s\"\n"
+msgstr "%s: non è stato possibile analizzare la versione del server \"%s\"\n"
 
 #: pg_dumpall.c:1780
 #, c-format
 msgid "%s: could not parse version \"%s\"\n"
-msgstr "%s: impossibile analizzare la versione \"%s\"\n"
+msgstr "%s: non è stato possibile analizzare la versione \"%s\"\n"
 
 #: pg_dumpall.c:1819 pg_dumpall.c:1845
 #, c-format
@@ -2274,7 +2274,9 @@ msgstr "  -1, --single-transaction     ripristina in un'unica transazione\n"
 msgid ""
 "  --no-data-for-failed-tables  do not restore data of tables that could not be\n"
 "                               created\n"
-msgstr "  --no-data-for-failed-tables  non ripristinare i dati delle tabelle che non                               è stato possibile creare\n"
+msgstr ""
+"  --no-data-for-failed-tables  non ripristinare i dati delle tabelle che non\n"
+"                               è stato possibile creare\n"
 
 #: pg_restore.c:434
 #, c-format
@@ -2289,7 +2291,7 @@ msgstr "  --no-tablespaces             non ripristina le assegnazioni dei tables
 #: pg_restore.c:436
 #, c-format
 msgid "  --section=SECTION            restore named section (pre-data, data, or post-data)\n"
-msgstr "  --section=SECTION            ripristina la sezione con questo nome (pre-data, data, or post-data)\n"
+msgstr "  --section=SECTION            ripristina la sezione con questo nome (pre-data, data, o post-data)\n"
 
 #: pg_restore.c:447
 #, c-format

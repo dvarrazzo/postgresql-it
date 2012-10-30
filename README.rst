@@ -77,6 +77,25 @@ Quando il database si rivolge all'utente, usa la seconda persona singolare.
 Se il programma ha un output allineato (es. i messaggi di --help) rispetta
 l'allineamento e non far andare le stringhe a zig zag.
 
+Gli autori di postgres fanno molta attenzione alla distinzione tra i messaggi
+d'errore dovuti a qualcosa che è impossibile assolutamente fare, per i quali
+usano la forma *cannot*:
+
+    cannot build the roof before the floor
+
+e qualcosa che è fallito per cause momentanee e può riuscire se le condizioni
+cambiano, con *could not*:
+
+    could not find the socks in the drawer
+
+La traduzione scelta è stata rispettivamente:
+
+    non è possibile costruire il tetto prima del pavimento
+    non è stato possibile trovare i calzini nel cassetto
+
+Ovviamente sono possibili variazioni per un concetto così generico; sarebbe
+auspicabile comunque mantenere la distinzione tra i due sensi degli errori.
+
 
 Traduzioni di termini abbastanza comuni
 ---------------------------------------

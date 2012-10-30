@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 11:51+0100\n"
+"PO-Revision-Date: 2012-10-30 12:25+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -33,7 +33,7 @@ msgstr ""
 #: ../../port/exec.c:125 ../../port/exec.c:239 ../../port/exec.c:282
 #, c-format
 msgid "could not identify current directory: %s"
-msgstr "impossibile identificare la directory corrente: %s"
+msgstr "non è stato possibile identificare la directory corrente: %s"
 
 #: ../../port/exec.c:144
 #, c-format
@@ -43,22 +43,22 @@ msgstr "binario non valido \"%s\""
 #: ../../port/exec.c:193
 #, c-format
 msgid "could not read binary \"%s\""
-msgstr "impossibile leggere il binario \"%s\""
+msgstr "non è stato possibile leggere il binario \"%s\""
 
 #: ../../port/exec.c:200
 #, c-format
 msgid "could not find a \"%s\" to execute"
-msgstr "impossibile trovare un \"%s\" da eseguire"
+msgstr "non è stato possibile trovare un \"%s\" da eseguire"
 
 #: ../../port/exec.c:255 ../../port/exec.c:291
 #, c-format
 msgid "could not change directory to \"%s\""
-msgstr "impossibile cambiare directory in \"%s\""
+msgstr "non è stato possibile cambiare directory in \"%s\""
 
 #: ../../port/exec.c:270
 #, c-format
 msgid "could not read symbolic link \"%s\""
-msgstr "impossibile leggere il link simbolico \"%s\""
+msgstr "non è stato possibile leggere il link simbolico \"%s\""
 
 #: ../../port/exec.c:526
 #, c-format
@@ -93,7 +93,7 @@ msgstr "%s: memoria esaurita\n"
 #: pg_ctl.c:292
 #, c-format
 msgid "%s: could not open PID file \"%s\": %s\n"
-msgstr "%s: non è possibile aprire il file PID \"%s\": %s\n"
+msgstr "%s: non è stato possibile aprire il file PID \"%s\": %s\n"
 
 #: pg_ctl.c:299
 #, c-format
@@ -135,7 +135,7 @@ msgstr "%s: non è possibile configurare il limite di grandezza dei core file; i
 #: pg_ctl.c:703
 #, c-format
 msgid "%s: could not read file \"%s\"\n"
-msgstr "%s: non è possibile leggere il file \"%s\"\n"
+msgstr "%s: non è stato possibile leggere il file \"%s\"\n"
 
 #: pg_ctl.c:708
 #, c-format
@@ -177,7 +177,7 @@ msgstr "%s: un altro server potrebbe essere in esecuzione; si sta provando ad av
 #: pg_ctl.c:847
 #, c-format
 msgid "%s: could not start server: exit code was %d\n"
-msgstr "%s: non è possibile avviare il server: il codice di uscita è %d\n"
+msgstr "%s: non è stato possibile avviare il server: il codice di uscita è %d\n"
 
 #: pg_ctl.c:854
 msgid "waiting for server to start..."
@@ -189,11 +189,11 @@ msgstr " fatto\n"
 
 #: pg_ctl.c:860
 msgid "server started\n"
-msgstr "il server è avviato\n"
+msgstr "il server è stato avviato\n"
 
 #: pg_ctl.c:863 pg_ctl.c:867
 msgid " stopped waiting\n"
-msgstr " attesa terminata\n"
+msgstr " attesa interrotta\n"
 
 #: pg_ctl.c:864
 msgid "server is still starting up\n"
@@ -205,7 +205,7 @@ msgid ""
 "%s: could not start server\n"
 "Examine the log output.\n"
 msgstr ""
-"%s: non è possibile avviare il server\n"
+"%s: non è stato possibile avviare il server\n"
 "Esaminare il log di output.\n"
 
 #: pg_ctl.c:874 pg_ctl.c:952 pg_ctl.c:1042
@@ -215,7 +215,7 @@ msgstr " fallito\n"
 #: pg_ctl.c:875
 #, c-format
 msgid "%s: could not wait for server because of misconfiguration\n"
-msgstr "%s: impossibile attendere il server a causa di configurazione errata\n"
+msgstr "%s: non è stato possibile attendere il server a causa di configurazione errata\n"
 
 #: pg_ctl.c:881
 msgid "server starting\n"
@@ -238,7 +238,7 @@ msgstr "%s: non è possibile fermare il server; il server è in esecuzione in mo
 #: pg_ctl.c:911 pg_ctl.c:1006
 #, c-format
 msgid "%s: could not send stop signal (PID: %ld): %s\n"
-msgstr "%s: non è possibile inviare il segnale di arresto (PID: %ld): %s\n"
+msgstr "%s: non è stato possibile inviare il segnale di arresto (PID: %ld): %s\n"
 
 #: pg_ctl.c:918
 msgid "server shutting down\n"
@@ -301,7 +301,7 @@ msgstr "%s: non è possibile eseguire il reload del server; il server è in esec
 #: pg_ctl.c:1088
 #, c-format
 msgid "%s: could not send reload signal (PID: %ld): %s\n"
-msgstr "%s: non è  possibile inviare il segnale di reload (PID: %ld): %s\n"
+msgstr "%s: non è stato possibile inviare il segnale di reload (PID: %ld): %s\n"
 
 #: pg_ctl.c:1093
 msgid "server signaled\n"
@@ -310,32 +310,32 @@ msgstr "segnale inviato al server\n"
 #: pg_ctl.c:1119
 #, c-format
 msgid "%s: cannot promote server; single-user server is running (PID: %ld)\n"
-msgstr "%s: impossibile promuovere il server: il server è in esecuzione in modalità a singolo utente (PID: %ld)\n"
+msgstr "%s: non è possibile promuovere il server: il server è in esecuzione in modalità a singolo utente (PID: %ld)\n"
 
 #: pg_ctl.c:1128
 #, c-format
 msgid "%s: cannot promote server; server is not in standby mode\n"
-msgstr "%s: impossibile promuovere il server: il server non è in modalità standby\n"
+msgstr "%s: non è possibile promuovere il server: il server non è in modalità standby\n"
 
 #: pg_ctl.c:1136
 #, c-format
 msgid "%s: could not create promote signal file \"%s\": %s\n"
-msgstr "%s: impossibile creare il file di segnale di promozione \"%s\": %s\n"
+msgstr "%s: non è stato possibile creare il file di segnale di promozione \"%s\": %s\n"
 
 #: pg_ctl.c:1142
 #, c-format
 msgid "%s: could not write promote signal file \"%s\": %s\n"
-msgstr "%s: impossibile scrivere sul file di segnale di promozione \"%s\": %s\n"
+msgstr "%s: non è stato possibile scrivere sul file di segnale di promozione \"%s\": %s\n"
 
 #: pg_ctl.c:1150
 #, c-format
 msgid "%s: could not send promote signal (PID: %ld): %s\n"
-msgstr "%s: impossibile inviare il segnale di promozione (PID: %ld): %s\n"
+msgstr "%s: non è stato possibile inviare il segnale di promozione (PID: %ld): %s\n"
 
 #: pg_ctl.c:1153
 #, c-format
 msgid "%s: could not remove promote signal file \"%s\": %s\n"
-msgstr "%s: impossibile rimuovere il file di segnale di promozione \"%s\": %s\n"
+msgstr "%s: non è stato possibile rimuovere il file di segnale di promozione \"%s\": %s\n"
 
 #: pg_ctl.c:1158
 msgid "server promoting\n"
@@ -359,22 +359,22 @@ msgstr "%s: nessun server in esecuzione\n"
 #: pg_ctl.c:1246
 #, c-format
 msgid "%s: could not send signal %d (PID: %ld): %s\n"
-msgstr "%s: non è possibile inviare il segnale %d (PID: %ld): %s\n"
+msgstr "%s: non è stato possibile inviare il segnale %d (PID: %ld): %s\n"
 
 #: pg_ctl.c:1280
 #, c-format
 msgid "%s: could not find own program executable\n"
-msgstr "%s: impossibile trovare il proprio programma eseguibile\n"
+msgstr "%s: non è stato possibile trovare il proprio programma eseguibile\n"
 
 #: pg_ctl.c:1290
 #, c-format
 msgid "%s: could not find postgres program executable\n"
-msgstr "%s: impossibile trovare il programma eseguibile postgres\n"
+msgstr "%s: non è stato possibile trovare il programma eseguibile postgres\n"
 
 #: pg_ctl.c:1355 pg_ctl.c:1387
 #, c-format
 msgid "%s: could not open service manager\n"
-msgstr "%s: impossibile aprire il service manager\n"
+msgstr "%s: non è stato possibile aprire il service manager\n"
 
 #: pg_ctl.c:1361
 #, c-format
@@ -384,7 +384,7 @@ msgstr "%s: il servizio \"%s\" è già registrato\n"
 #: pg_ctl.c:1372
 #, c-format
 msgid "%s: could not register service \"%s\": error code %lu\n"
-msgstr "%s: impossibile registrare il servizio  \"%s\": codice errore %lu\n"
+msgstr "%s: non è stato possibile registrare il servizio  \"%s\": codice errore %lu\n"
 
 #: pg_ctl.c:1393
 #, c-format
@@ -394,12 +394,12 @@ msgstr "%s: il servizio \"%s\" non è registrato\n"
 #: pg_ctl.c:1400
 #, c-format
 msgid "%s: could not open service \"%s\": error code %lu\n"
-msgstr "%s: impossibile aprire il servizio \"%s\": codice errore %lu\n"
+msgstr "%s: non è stato possibile aprire il servizio \"%s\": codice errore %lu\n"
 
 #: pg_ctl.c:1407
 #, c-format
 msgid "%s: could not unregister service \"%s\": error code %lu\n"
-msgstr "%s: non è possibile deregistrare il servizio \"%s\": codice errore %lu\n"
+msgstr "%s: non è stato possibile rimuovere la registrazione del servizio \"%s\": codice errore %lu\n"
 
 #: pg_ctl.c:1492
 msgid "Waiting for server startup...\n"
@@ -421,27 +421,27 @@ msgstr "%s: non è possibile avviare il servizio \"%s\": codice errore %lu\n"
 #: pg_ctl.c:1615
 #, c-format
 msgid "%s: WARNING: cannot create restricted tokens on this platform\n"
-msgstr "%s: ATTENZIONE: impossibile creare token ristretti su questa piattaforma\n"
+msgstr "%s: ATTENZIONE: non è possibile creare token ristretti su questa piattaforma\n"
 
 #: pg_ctl.c:1624
 #, c-format
 msgid "%s: could not open process token: error code %lu\n"
-msgstr "%s: impossibile aprire il token di processo: codice errore %lu\n"
+msgstr "%s: non è stato possibile aprire il token di processo: codice errore %lu\n"
 
 #: pg_ctl.c:1637
 #, c-format
 msgid "%s: could not allocate SIDs: error code %lu\n"
-msgstr "%s: impossibile allocare i SID: codice errore %lu\n"
+msgstr "%s: non è stato possibile allocare i SID: codice errore %lu\n"
 
 #: pg_ctl.c:1656
 #, c-format
 msgid "%s: could not create restricted token: error code %lu\n"
-msgstr "%s: impossibile creare il token ristretto: codice errore %lu\n"
+msgstr "%s: non è stato possibile creare il token ristretto: codice errore %lu\n"
 
 #: pg_ctl.c:1694
 #, c-format
 msgid "%s: WARNING: could not locate all job object functions in system API\n"
-msgstr "%s: ATTENZIONE: impossibile trovare tutte le funzioni di controllo dei job nella API di sistema\n"
+msgstr "%s: ATTENZIONE: non è stato possibile trovare tutte le funzioni di controllo dei job nella API di sistema\n"
 
 #: pg_ctl.c:1780
 #, c-format
@@ -741,7 +741,7 @@ msgstr "%s: tipo di avvio non riconosciuto \"%s\"\n"
 #: pg_ctl.c:1976
 #, c-format
 msgid "%s: could not determine the data directory using command \"%s\"\n"
-msgstr "%s: impossibile determinare la directory dei dati usando il comando \"%s\"\n"
+msgstr "%s: non è stato possibile determinare la directory dei dati usando il comando \"%s\"\n"
 
 #: pg_ctl.c:2049
 #, c-format

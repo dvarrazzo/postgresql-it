@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:39+0000\n"
-"PO-Revision-Date: 2012-10-29 11:54+0100\n"
+"PO-Revision-Date: 2012-10-30 12:07+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -43,7 +43,7 @@ msgstr "plpy.cursor richiede una sequenza come secondo argomento"
 #: plpy_cursorobject.c:187 plpy_spi.c:222
 #, c-format
 msgid "could not execute plan"
-msgstr "impossibile eseguire il piano"
+msgstr "non è stato possibile eseguire il piano"
 
 #: plpy_cursorobject.c:190 plpy_spi.c:225
 #, c-format
@@ -150,12 +150,12 @@ msgstr "durante la creazione del valore da restituire"
 #: plpy_exec.c:474
 #, c-format
 msgid "could not create new dictionary while building trigger arguments"
-msgstr "impossibile creare un nuovo dizionario mentre si stanno costruendo gli argomenti del trigger"
+msgstr "non è stato possibile creare un nuovo dizionario mentre si stanno costruendo gli argomenti del trigger"
 
 #: plpy_exec.c:664
 #, c-format
 msgid "TD[\"new\"] deleted, cannot modify row"
-msgstr "TD[\"new\"] cancellato, impossibile modificare la riga"
+msgstr "TD[\"new\"] cancellato, non è possibile modificare la riga"
 
 #: plpy_exec.c:667
 #, c-format
@@ -205,17 +205,17 @@ msgstr "errore non catturato durante l'inizializzazione"
 #: plpy_main.c:141
 #, c-format
 msgid "could not import \"__main__\" module"
-msgstr "impossibile importare il modulo \"__main__\""
+msgstr "non è stato possibile importare il modulo \"__main__\""
 
 #: plpy_main.c:146
 #, c-format
 msgid "could not create globals"
-msgstr "impossibile creare le variabili globali"
+msgstr "non è stato possibile creare le variabili globali"
 
 #: plpy_main.c:150
 #, c-format
 msgid "could not initialize globals"
-msgstr "impossibile inizializzare le variabili globali"
+msgstr "non è stato possibile inizializzare le variabili globali"
 
 #: plpy_main.c:347
 #, c-format
@@ -235,31 +235,31 @@ msgstr "plan.status non accetta argomenti"
 #: plpy_plpymodule.c:178 plpy_plpymodule.c:181
 #, c-format
 msgid "could not import \"plpy\" module"
-msgstr "impossibile importare il modulo \"plpy\""
+msgstr "non è stato possibile importare il modulo \"plpy\""
 
 #: plpy_plpymodule.c:196
 #, c-format
 msgid "could not add the spiexceptions module"
-msgstr "impossibile aggiungere il modulo spiexceptions"
+msgstr "non è stato possibile aggiungere il modulo spiexceptions"
 
 #: plpy_plpymodule.c:217
 #, c-format
 msgid "could not create the base SPI exceptions"
-msgstr "impossibile creare l'eccezione di base SPI"
+msgstr "non è stato possibile creare l'eccezione di base SPI"
 
 #: plpy_plpymodule.c:253 plpy_plpymodule.c:257
 #, c-format
 msgid "could not generate SPI exceptions"
-msgstr "impossibile generare eccezioni SPI"
+msgstr "non è stato possibile generare eccezioni SPI"
 
 #: plpy_plpymodule.c:388
 #, c-format
 msgid "could not unpack arguments in plpy.elog"
-msgstr "impossibile espandere gli argomenti in plpy.elog"
+msgstr "non è stato possibile espandere gli argomenti in plpy.elog"
 
 #: plpy_plpymodule.c:396
 msgid "could not parse error message in plpy.elog"
-msgstr "impossibile interpretare il messaggio di errore in plpy.elog"
+msgstr "non è stato possibile interpretare il messaggio di errore in plpy.elog"
 
 #: plpy_procedure.c:194
 #, c-format
@@ -279,12 +279,12 @@ msgstr "le funzioni PL/Python non possono accettare il tipo %s"
 #: plpy_procedure.c:377
 #, c-format
 msgid "could not compile PL/Python function \"%s\""
-msgstr "impossibile compilare la funzione PL/Python \"%s\""
+msgstr "non è stato possibile compilare la funzione PL/Python \"%s\""
 
 #: plpy_procedure.c:380
 #, c-format
 msgid "could not compile anonymous PL/Python code block"
-msgstr "impossibile compilare il blocco di codice anonimo PL/Python"
+msgstr "non è stato possibile compilare il blocco di codice anonimo PL/Python"
 
 #: plpy_resultobject.c:145 plpy_resultobject.c:165 plpy_resultobject.c:185
 #, c-format
@@ -354,7 +354,7 @@ msgstr "non c'è nessuna transazione da cui uscire"
 #: plpy_typeio.c:291
 #, c-format
 msgid "could not create new dictionary"
-msgstr "impossibile creare il nuovo dizionario"
+msgstr "non è stato possibile creare il nuovo dizionario"
 
 #: plpy_typeio.c:408
 #, c-format
@@ -364,7 +364,7 @@ msgstr "PL/Python non supporta la conversione in array di tipi riga."
 #: plpy_typeio.c:584
 #, c-format
 msgid "cannot convert multidimensional array to Python list"
-msgstr "impossibile convertire array multidimensionali a liste Python"
+msgstr "non è possibile convertire array multidimensionali a liste Python"
 
 #: plpy_typeio.c:585
 #, c-format
@@ -374,22 +374,22 @@ msgstr "PL/Python supporta solo array monodimensionali."
 #: plpy_typeio.c:591
 #, c-format
 msgid "could not create new Python list"
-msgstr "impossibile creare la nuova lista Python"
+msgstr "non è stato possibile creare la nuova lista Python"
 
 #: plpy_typeio.c:650
 #, c-format
 msgid "could not create bytes representation of Python object"
-msgstr "impossibile creare la rappresentazione in byte dell'oggetto Python"
+msgstr "non è stato possibile creare la rappresentazione in byte dell'oggetto Python"
 
 #: plpy_typeio.c:742
 #, c-format
 msgid "could not create string representation of Python object"
-msgstr "impossibile creare la rappresentazione stringa dell'oggetto Python"
+msgstr "non è stato possibile creare la rappresentazione stringa dell'oggetto Python"
 
 #: plpy_typeio.c:753
 #, c-format
 msgid "could not convert Python object into cstring: Python string representation appears to contain null bytes"
-msgstr "impossibile convertire oggetti Python in cstring: la rappresentazione stringa Python sembra contenere byte null"
+msgstr "non è stato possibile convertire oggetti Python in cstring: la rappresentazione stringa Python sembra contenere byte null"
 
 #: plpy_typeio.c:787
 #, c-format
@@ -424,9 +424,9 @@ msgstr "Per restituire null in una colonna, l'oggetto restituito deve avere un a
 #: plpy_util.c:70
 #, c-format
 msgid "could not convert Python Unicode object to bytes"
-msgstr "impossibile convertire oggetto Unicode Python in byte"
+msgstr "non è stato possibile convertire oggetto Unicode Python in byte"
 
 #: plpy_util.c:75
 #, c-format
 msgid "could not extract bytes from encoded string"
-msgstr "impossibile estrarre byte dalla stringa codificata"
+msgstr "non è stato possibile estrarre byte dalla stringa codificata"

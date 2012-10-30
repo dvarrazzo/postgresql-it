@@ -139,12 +139,12 @@ msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 #: pg_controldata.c:132
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr "%s: impossibile aprire il file \"%s\" in lettura: %s\n"
+msgstr "%s: non è stato possibile aprire il file \"%s\" in lettura: %s\n"
 
 #: pg_controldata.c:139
 #, c-format
 msgid "%s: could not read file \"%s\": %s\n"
-msgstr "%s: impossibile leggere dal file \"%s\": %s\n"
+msgstr "%s: non è stato possibile leggere dal file \"%s\": %s\n"
 
 #: pg_controldata.c:153
 #, c-format

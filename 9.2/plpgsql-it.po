@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-26 01:12+0100\n"
+"PO-Revision-Date: 2012-10-30 11:37+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -312,7 +312,7 @@ msgstr "Le funzioni PL/pgSQL non accettano il tipo %s"
 #: pl_comp.c:505
 #, c-format
 msgid "could not determine actual return type for polymorphic function \"%s\""
-msgstr "impossibile determinare il reale tipo di ritorno per la funzione polimorfa \"%s\""
+msgstr "non è stato possibile determinare il reale tipo di ritorno per la funzione polimorfa \"%s\""
 
 #: pl_comp.c:535
 #, c-format
@@ -699,12 +699,12 @@ msgstr "il valore null non può essere assegnato alla variabile \"%s\" dichiarat
 #: pl_exec.c:3822
 #, c-format
 msgid "cannot assign non-composite value to a row variable"
-msgstr "impossibile assegnare un valore non composto ad una variabile di tipo row"
+msgstr "non è possibile assegnare un valore non composto ad una variabile di tipo row"
 
 #: pl_exec.c:3864
 #, c-format
 msgid "cannot assign non-composite value to a record variable"
-msgstr "impossibile assegnare un valore non composto ad una variabile di tipo record"
+msgstr "non è possibile assegnare un valore non composto ad una variabile di tipo record"
 
 #: pl_exec.c:4022
 #, c-format

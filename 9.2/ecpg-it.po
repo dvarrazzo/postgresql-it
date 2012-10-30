@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-29 13:08+0100\n"
+"PO-Revision-Date: 2012-10-30 12:18+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -192,7 +192,7 @@ msgstr ""
 #: ecpg.c:182 ecpg.c:333 ecpg.c:343
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr "%s: impossibile aprire il file \"%s\": %s\n"
+msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
 
 #: ecpg.c:221 ecpg.c:234 ecpg.c:250 ecpg.c:275
 #, c-format
@@ -232,7 +232,7 @@ msgstr "il cursore \"%s\" è stato dichiarato, ma non aperto"
 #: ecpg.c:479 preproc.y:109
 #, c-format
 msgid "could not remove output file \"%s\"\n"
-msgstr "non posso rimuovere il file di output \"%s\"\n"
+msgstr "non è stato possibile rimuovere il file di output \"%s\"\n"
 
 #: pgc.l:403
 #, c-format
@@ -333,7 +333,7 @@ msgstr "Errore: il percorso della include \"%s/%s\" è troppo lungo alla linea %
 #: pgc.l:1365
 #, c-format
 msgid "could not open include file \"%s\" on line %d"
-msgstr "non posso aprire il file di include \"%s\" alla linea %d"
+msgstr "non è stato possibile aprire il file di include \"%s\" alla linea %d"
 
 #: preproc.y:31
 msgid "syntax error"
