@@ -91,6 +91,7 @@ cambiano, con *could not*:
 La traduzione scelta è stata rispettivamente:
 
     non è possibile costruire il tetto prima del pavimento
+
     non è stato possibile trovare i calzini nel cassetto
 
 Ovviamente sono possibili variazioni per un concetto così generico; sarebbe
