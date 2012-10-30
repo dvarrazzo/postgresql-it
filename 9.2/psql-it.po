@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 17:18+0100\n"
+"PO-Revision-Date: 2012-10-30 17:29+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -134,7 +134,7 @@ msgstr "Sei collegato al database \"%s\" con nome utente \"%s\" sull'host \"%s\"
 #: command.c:509 command.c:579 command.c:1336
 #, c-format
 msgid "no query buffer\n"
-msgstr "Nessun query buffer\n"
+msgstr "Nessun buffer query\n"
 
 #: command.c:542 command.c:2617
 #, c-format
@@ -163,7 +163,7 @@ msgstr "\\%s: parametro richiesto mancante\n"
 
 #: command.c:888
 msgid "Query buffer is empty."
-msgstr "Il query buffer è vuoto."
+msgstr "Il buffer query è vuoto."
 
 #: command.c:898
 msgid "Enter new password: "
@@ -190,7 +190,7 @@ msgstr "\\%s: errore durante l'assegnamento della variabile\n"
 
 #: command.c:1033
 msgid "Query buffer reset (cleared)."
-msgstr "Query buffer resettato (svuotato)."
+msgstr "Buffer query resettato (svuotato)."
 
 #: command.c:1046
 #, c-format
@@ -533,9 +533,9 @@ msgid ""
 "%s\n"
 "***(press return to proceed or enter x and return to cancel)********************\n"
 msgstr ""
-"***(Modalità single step: comando di verifica)*******************************************\n"
+"***(Modalità passo singolo: verifica comando)***********************************\n"
 "%s\n"
-"***(premere invio per procedere oppure digitare x ed invio per annullare)********************\n"
+"***(premi invio per procedere oppure digita x ed invio per annullare)***********\n"
 
 #: common.c:916
 #, c-format
@@ -1811,27 +1811,31 @@ msgstr "  \\q                     esci da psql\n"
 #: help.c:176
 #, c-format
 msgid "Query Buffer\n"
-msgstr "Query Buffer\n"
+msgstr "Buffer Query\n"
 
 #: help.c:177
 #, c-format
 msgid "  \\e [FILE] [LINE]       edit the query buffer (or file) with external editor\n"
-msgstr "  \\e [FILE] [RIGA]       modifica il buffer della query (o il file) con l'editor esterno\n"
+msgstr ""
+"  \\e [FILE] [RIGA]       modifica il buffer della query (o il file) con\n"
+"                         l'editor esterno\n"
 
 #: help.c:178
 #, c-format
 msgid "  \\ef [FUNCNAME [LINE]]  edit function definition with external editor\n"
-msgstr "  \\ef [NOME_FUN [RIGA]]  modifica la definizione della funzione con l'editor esterno\n"
+msgstr ""
+"  \\ef [NOME_FUN [RIGA]]  modifica la definizione della funzione con l'editor\n"
+"                         esterno\n"
 
 #: help.c:179
 #, c-format
 msgid "  \\p                     show the contents of the query buffer\n"
-msgstr "  \\p                     mostra i contenuti del query buffer\n"
+msgstr "  \\p                     mostra i contenuti del buffer query\n"
 
 #: help.c:180
 #, c-format
 msgid "  \\r                     reset (clear) the query buffer\n"
-msgstr "  \\r                     reimposta (cancella) il query buffer\n"
+msgstr "  \\r                     reimposta (cancella) il buffer query\n"
 
 #: help.c:182
 #, c-format
@@ -1841,7 +1845,7 @@ msgstr "  \\s [FILE]              mostra la cronologia salvala in un file\n"
 #: help.c:184
 #, c-format
 msgid "  \\w FILE                write query buffer to file\n"
-msgstr "  \\w FILE                scrivi il query buffer su file\n"
+msgstr "  \\w FILE                scrivi il buffer query su file\n"
 
 #: help.c:187
 #, c-format
@@ -1866,17 +1870,23 @@ msgstr "  \\i FILE                esegui i comandi dal file\n"
 #: help.c:191
 #, c-format
 msgid "  \\ir FILE               as \\i, but relative to location of current script\n"
-msgstr "  \\ir FILE               come \\i, ma relativo alla posizione nello script corrente\n"
+msgstr ""
+"  \\ir FILE               come \\i, ma relativo alla posizione nello script\n"
+"                         corrente\n"
 
 #: help.c:192
 #, c-format
 msgid "  \\o [FILE]              send all query results to file or |pipe\n"
-msgstr "  \\o [FILE]              invia i risultati della query ad un file oppure una |pipe\n"
+msgstr ""
+"  \\o [FILE]              invia i risultati della query ad un file oppure\n"
+"                         una |pipe\n"
 
 #: help.c:193
 #, c-format
 msgid "  \\qecho [STRING]        write string to query output stream (see \\o)\n"
-msgstr "  \\qecho [STRINGA]       scrivi la stringa nello stream di output della query (vedi \\o)\n"
+msgstr ""
+"  \\qecho [STRINGA]       scrivi la stringa nello stream di output della query\n"
+"                         (vedi \\o)\n"
 
 #: help.c:196
 #, c-format
@@ -2317,11 +2327,11 @@ msgid ""
 "       \\g or terminate with semicolon to execute query\n"
 "       \\q to quit\n"
 msgstr ""
-"Digitare:  \\copyright per le condizioni di distribuzione\n"
-"       \\h per la guida sui comandi SQL\n"
-"       \\? per la guida sui comandi psql\n"
-"       \\g o terminare con punto e virgola per eseguire la query\n"
-"       \\q per uscire\n"
+"Digita:  \\copyright per le condizioni di distribuzione\n"
+"         \\h per la guida sui comandi SQL\n"
+"         \\? per la guida sui comandi psql\n"
+"         \\g o terminare con punto e virgola per eseguire la query\n"
+"         \\q per uscire\n"
 
 #: print.c:305
 #, c-format
@@ -4115,7 +4125,7 @@ msgid ""
 "Type \"help\" for help.\n"
 "\n"
 msgstr ""
-"Digita \"help\" per ottenere aiuto.\n"
+"Digita \"help\" per avere un aiuto.\n"
 "\n"
 
 #: startup.c:460
