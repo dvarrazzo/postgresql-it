@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 16:33+0100\n"
+"PO-Revision-Date: 2012-10-30 17:15+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -3618,7 +3618,7 @@ msgstr "cambia un ruolo di database"
 
 #: sql_help.h:277
 msgid "change the definition of a schema"
-msgstr "cambia la definizione di un schema"
+msgstr "cambia la definizione di uno schema"
 
 #: sql_help.h:282
 msgid "change the definition of a sequence generator"
@@ -3658,7 +3658,7 @@ msgstr "cambia la definizione di un trigger"
 
 #: sql_help.h:327
 msgid "change the definition of a type"
-msgstr "cambia la definizione di un tipo"
+msgstr "cambia la definizione di un tipo di dato"
 
 #: sql_help.h:337
 msgid "change the definition of a user mapping"
@@ -3962,7 +3962,7 @@ msgstr "elimina un trigger"
 
 #: sql_help.h:727
 msgid "remove a data type"
-msgstr "elimina un tipo dato"
+msgstr "elimina un tipo di dato"
 
 #: sql_help.h:737
 msgid "remove a user mapping for a foreign server"
