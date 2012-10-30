@@ -1,5 +1,8 @@
+LANG = it
+VERSION = 9.2
+
 POS = $(wildcard *.po)
-MOS = $(patsubst %.po,%.mo,$(POS))
+MOS = $(patsubst %-$(LANG).po,%-$(VERSION).mo,$(POS))
 
 .PHONY: clean
 
@@ -11,9 +14,11 @@ rewrap:
 		msgcat --no-wrap $$f | sponge $$f; \
 	done
 
-
 clean:
 	rm -f $(MOS)
 
-%.mo : %.po
+# NOTE: this doesn't generate all the expected file names:
+# ecpglib -> ecpglib6
+# libpq -> libpq5
+%-$(VERSION).mo : %-$(LANG).po
 		msgfmt -o $@ -v -c $<
