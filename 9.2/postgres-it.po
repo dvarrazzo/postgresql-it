@@ -6,6 +6,7 @@
 # http://www.itpug.org/ - info@itpug.org
 #
 # Traduttori:
+#  * Daniele Varrazzo <daniele.varrazzo@gmail.com>
 #  * Vincenzo Romano <vincenzo.romano@itpug.org>
 #
 # Copyright (c) 2010, Associazione Culturale ITPUG
@@ -16,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-30 02:25+0100\n"
+"PO-Revision-Date: 2012-10-30 10:50+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -24,7 +25,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Bookmarks: 2816,3644,-1,-1,-1,-1,1296,-1,-1,-1\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
@@ -1424,7 +1424,7 @@ msgstr "l'hot standby non è possibile perché il wal_level non è stato imposta
 #: access/transam/xlog.c:6057
 #, c-format
 msgid "Either set wal_level to \"hot_standby\" on the master, or turn off hot_standby here."
-msgstr "O imposti il wal_level a \"hot_standby\" sul master, oppure disattiva hot_standby qui."
+msgstr "Puoi impostare il wal_level a \"hot_standby\" sul master, oppure disattivare hot_standby qui."
 
 #: access/transam/xlog.c:6107
 #, c-format
@@ -4853,7 +4853,7 @@ msgstr "parametro non riconosciuto \"%s\" nel file \"%s\""
 #: commands/extension.c:572
 #, c-format
 msgid "parameter \"schema\" cannot be specified when \"relocatable\" is true"
-msgstr "il parametro \"schema\" non può essere specificato quando \"relocatable\" è attivo"
+msgstr "il parametro \"schema\" non può essere specificato quando \"relocatable\" è abilitato"
 
 #: commands/extension.c:724
 #, c-format
@@ -8826,11 +8826,11 @@ msgstr "pg_hba.conf rifiuta connessioni di replica per l'host \"%s\", utente \"%
 
 #: libpq/auth.c:396 libpq/auth.c:412 libpq/auth.c:460 libpq/auth.c:478
 msgid "SSL off"
-msgstr "SSL non attivo"
+msgstr "SSL non abilitato"
 
 #: libpq/auth.c:396 libpq/auth.c:412 libpq/auth.c:460 libpq/auth.c:478
 msgid "SSL on"
-msgstr "SSL attivo"
+msgstr "SSL abilitato"
 
 #: libpq/auth.c:400
 #, c-format
@@ -8885,7 +8885,7 @@ msgstr "nessuna voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \
 #: libpq/auth.c:535 libpq/hba.c:1180
 #, c-format
 msgid "MD5 authentication is not supported when \"db_user_namespace\" is enabled"
-msgstr "l'autenticazione MD5 non è supportata quando \"db_user_namespace\" è attivo"
+msgstr "l'autenticazione MD5 non è supportata quando \"db_user_namespace\" è abilitato"
 
 #: libpq/auth.c:659
 #, c-format
@@ -9470,7 +9470,7 @@ msgstr "le connessioni locali non sono supportate in questo binario"
 #: libpq/hba.c:874
 #, c-format
 msgid "hostssl requires SSL to be turned on"
-msgstr "hostssl richiede che SSL sia attivo"
+msgstr "hostssl richiede che SSL sia abilitato"
 
 #: libpq/hba.c:875
 #, c-format
@@ -9580,7 +9580,7 @@ msgstr "metodo di autenticazione \"%s\" non valido"
 #: libpq/hba.c:1222
 #, c-format
 msgid "invalid authentication method \"%s\": not supported by this build"
-msgstr "metodo di autenticazione \"%s\" non valido: non supportato da questo binario"
+msgstr "metodo di autenticazione \"%s\" non valido: non supportato in questo binario"
 
 #: libpq/hba.c:1243
 #, c-format
@@ -13055,7 +13055,7 @@ msgstr "uso non sicuro di stringa costante con gli escape Unicode"
 #: scan.l:513
 #, c-format
 msgid "String constants with Unicode escapes cannot be used when standard_conforming_strings is off."
-msgstr "Le stringhe costanti con escape Unicode non possono essere usate quando standard_conforming_strings è disattivato."
+msgstr "Le stringhe costanti con escape Unicode non possono essere usate quando standard_conforming_strings è disabilitato."
 
 #: scan.l:565 scan.l:573 scan.l:581 scan.l:582 scan.l:583 scan.l:1239
 #: scan.l:1266 scan.l:1270 scan.l:1308 scan.l:1312 scan.l:1334
@@ -17515,7 +17515,7 @@ msgstr "Registra nel log la fine delle sessioni, compresa la sua durata."
 
 #: utils/misc/guc.c:875
 msgid "Turns on various assertion checks."
-msgstr "Attiva vari controlli con assert."
+msgstr "Abilita vari controlli di asserzione."
 
 #: utils/misc/guc.c:876
 msgid "This is a debugging aid."
@@ -17613,7 +17613,7 @@ msgstr "Inserisci nel log lo host name delle connessioni."
 
 #: utils/misc/guc.c:1118
 msgid "By default, connection logs only show the IP address of the connecting host. If you want them to show the host name you can turn this on, but depending on your host name resolution setup it might impose a non-negligible performance penalty."
-msgstr "Di default, viene inserito nel log solo l'indirizzo IP dell'host connesso. Se vuoi mostrare anche il nome host puoi attivando questa parametro ma, a seconda di come è definito il sistema di risoluzione dei nomi, ciò potrebbe comportare una penalizzazione delle prestazioni non trascurabile."
+msgstr "Normalmente, viene inserito nel log solo l'indirizzo IP dell'host connesso. Se vuoi mostrare anche il nome host puoi attivando questa parametro ma, a seconda di come è definito il sistema di risoluzione dei nomi, ciò potrebbe comportare una penalizzazione delle prestazioni non trascurabile."
 
 #: utils/misc/guc.c:1129
 msgid "Causes subtables to be included by default in various commands."
@@ -17633,7 +17633,7 @@ msgstr "Tratta l'espressione \"expr=NULL\" come \"expr IS NULL\"."
 
 #: utils/misc/guc.c:1150
 msgid "When turned on, expressions of the form expr = NULL (or NULL = expr) are treated as expr IS NULL, that is, they return true if expr evaluates to the null value, and false otherwise. The correct behavior of expr = NULL is to always return null (unknown)."
-msgstr "Se attivato, le espressioni nella forma expr = NULL (o NULL = expr) vengono trattate come expr IS NULL, in modo cioè che restituiscano TRUE se expr viene valutato con valore NULL e falso in ogni altro caso. Il comportamento corretto prevede che expr = NULL valga sempre NULL (sconosciuto)."
+msgstr "Se abilitato, le espressioni nella forma expr = NULL (o NULL = expr) vengono trattate come expr IS NULL, in modo cioè che restituiscano TRUE se expr viene valutato con valore NULL e falso in ogni altro caso. Il comportamento corretto prevede che expr = NULL valga sempre NULL (sconosciuto)."
 
 #: utils/misc/guc.c:1162
 msgid "Enables per-database user names."
@@ -17669,11 +17669,11 @@ msgstr "Esegui un controllo sulla definizione del corpo durante la CREATE FUNCTI
 
 #: utils/misc/guc.c:1229
 msgid "Enable input of NULL elements in arrays."
-msgstr "Attiva l'input di elementi NULL negli array."
+msgstr "Abilita l'input di elementi NULL negli array."
 
 #: utils/misc/guc.c:1230
 msgid "When turned on, unquoted NULL in an array input value means a null value; otherwise it is taken literally."
-msgstr "Se attivato, un NULL senza apici come valore di input in un array indica un valore nullo; altrimenti è preso letteralmente."
+msgstr "Se abilitato, un NULL senza apici come valore di input in un array indica un valore nullo; altrimenti è preso letteralmente."
 
 #: utils/misc/guc.c:1240
 msgid "Create new tables with OIDs by default."
@@ -18538,106 +18538,100 @@ msgstr ""
 "Devi specificare le opzioni --config-file o -D, oppure impostare la variabile d'ambiente PGDATA.\n"
 
 #: utils/misc/guc.c:4111
-#, fuzzy, c-format
+#, c-format
 msgid "%s cannot access the server configuration file \"%s\": %s\n"
-msgstr "impossibile accedere al file di configurazione \"%s\": %m"
+msgstr "%s non può accedere al file di configurazione del server \"%s\": %s\n"
 
 #: utils/misc/guc.c:4132
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s does not know where to find the database system data.\n"
 "This can be specified as \"data_directory\" in \"%s\", or by the -D invocation option, or by the PGDATA environment variable.\n"
 msgstr ""
-"%s non sa dove trovare i dati del sistema database.\n"
-"Devi specificare la directory che contiene il sistema database\n"
-"o specificando un opzione -D o impostando la variabile\n"
-"d'ambiente PGDATA.\n"
+"%s non sa dove trovare i dati di sistema del database.\n"
+"Possono essere specificati come \"data_directory\" in \"%s\", oppure dall'opzione -D, oppure dalla variabile d'ambiente PGDATA.\n"
 
 #: utils/misc/guc.c:4172
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s does not know where to find the \"hba\" configuration file.\n"
 "This can be specified as \"hba_file\" in \"%s\", or by the -D invocation option, or by the PGDATA environment variable.\n"
 msgstr ""
-"%s non sa dove trovare i dati del sistema database.\n"
-"Devi specificare la directory che contiene il sistema database\n"
-"o specificando un opzione -D o impostando la variabile\n"
-"d'ambiente PGDATA.\n"
+"%s non sa dove trovare il file di configurazione \"hba\".\n"
+"Può essere specificato come \"hba_file\" in \"%s\", oppure dall'opzione -D, oppure dalla variabile d'ambiente PGDATA.\n"
 
 #: utils/misc/guc.c:4195
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s does not know where to find the \"ident\" configuration file.\n"
 "This can be specified as \"ident_file\" in \"%s\", or by the -D invocation option, or by the PGDATA environment variable.\n"
 msgstr ""
-"%s non sa dove trovare i dati del sistema database.\n"
-"Devi specificare la directory che contiene il sistema database\n"
-"o specificando un opzione -D o impostando la variabile\n"
-"d'ambiente PGDATA.\n"
+"%s non sa dove trovare il file di configurazione \"ident\".\n"
+"Può essere specificato come \"ident_file\" in \"%s\", oppure dall'opzione -D, oppure dalla variabile d'ambiente PGDATA.\n"
 
 #: utils/misc/guc.c:4787 utils/misc/guc.c:4951
 msgid "Value exceeds integer range."
-msgstr "il valore supera il limite degli interi."
+msgstr "Il valore non rientra nel limite possibile per gli interi."
 
 #: utils/misc/guc.c:4806
 msgid "Valid units for this parameter are \"kB\", \"MB\", and \"GB\"."
-msgstr "Unitaà di misura valide sono \"kB\", \"MB\", e \"GB\"."
+msgstr "Le unità di misura valide sono \"kB\", \"MB\" e \"GB\"."
 
 #: utils/misc/guc.c:4865
 msgid "Valid units for this parameter are \"ms\", \"s\", \"min\", \"h\", and \"d\"."
-msgstr "Unità di misura valide sono \"ms\", \"s\", \"min\", \"h\", e \"d\"."
+msgstr "Le unità di misura valide sono \"ms\", \"s\", \"min\", \"h\" e \"d\"."
 
 #: utils/misc/guc.c:5158 utils/misc/guc.c:5940 utils/misc/guc.c:5992
 #: utils/misc/guc.c:6725 utils/misc/guc.c:6884 utils/misc/guc.c:8053
 #, c-format
 msgid "unrecognized configuration parameter \"%s\""
-msgstr "parametri di configurazione non riconosciuti \"%s\""
+msgstr "il parametro di configurazione \"%s\" è sconosciuto"
 
 #: utils/misc/guc.c:5173
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" cannot be changed"
-msgstr "La password di %s non può essere cambiata.\n"
+msgstr "il parametro \"%s\" non può essere cambiato"
 
 #: utils/misc/guc.c:5206
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" cannot be changed now"
-msgstr "La password di %s non può essere cambiata.\n"
+msgstr "il parametro \"%s\" non può essere cambiato ora"
 
 #: utils/misc/guc.c:5237
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" cannot be set after connection start"
-msgstr "\"%s\"non può essere impostato dopo l'avvio della connessione"
+msgstr "il parametro \"%s\" non può essere impostato dopo l'avvio della connessione"
 
 #: utils/misc/guc.c:5247 utils/misc/guc.c:8069
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to set parameter \"%s\""
-msgstr "Negato il permesso di aprire il calendario"
+msgstr "permesso di impostare il parametro \"%s\" negato"
 
 #: utils/misc/guc.c:5285
-#, fuzzy, c-format
+#, c-format
 msgid "cannot set parameter \"%s\" within security-definer function"
-msgstr "%s non può esssere eseguita da una funzione"
+msgstr "il parametro \"%s\" non può essere impostato da una funzione che ha i privilegi del creatore"
 
 #: utils/misc/guc.c:5438 utils/misc/guc.c:5773 utils/misc/guc.c:8233
 #: utils/misc/guc.c:8267
-#, fuzzy, c-format
+#, c-format
 msgid "invalid value for parameter \"%s\": \"%s\""
-msgstr "Valore non valido per il campo '%s'"
+msgstr "valore non valido per il parametro \"%s\": \"%s\""
 
 #: utils/misc/guc.c:5447
-#, fuzzy, c-format
+#, c-format
 msgid "%d is outside the valid range for parameter \"%s\" (%d .. %d)"
-msgstr "%d è fuori dal range valido per \"%s\"(%d .. %d)"
+msgstr "%d non è compreso nell'intervallo di validità del il parametro \"%s\" (%d .. %d)"
 
 #: utils/misc/guc.c:5540
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" requires a numeric value"
-msgstr "%.*s: Il parametro ARGP_HELP_FMT richiede un valore"
+msgstr "il parametro \"%s\" richiede un valore numerico"
 
 #: utils/misc/guc.c:5548
-#, fuzzy, c-format
+#, c-format
 msgid "%g is outside the valid range for parameter \"%s\" (%g .. %g)"
-msgstr "%g è fuori dal range valid per \"%s\"(%g .. %g)"
+msgstr "%g non è compreso nell'intervallo di validità del il parametro \"%s\" (%g .. %g)"
 
 #: utils/misc/guc.c:5948 utils/misc/guc.c:5996 utils/misc/guc.c:6888
 #, c-format
@@ -18650,9 +18644,9 @@ msgid "SET %s takes only one argument"
 msgstr "SET %s accetta un unico argomento"
 
 #: utils/misc/guc.c:6233
-#, fuzzy, c-format
+#, c-format
 msgid "SET LOCAL TRANSACTION SNAPSHOT is not implemented"
-msgstr "La parola chiave %s è sconosciuta o non ancora implementata"
+msgstr "SET LOCAL TRANSACTION SNAPSHOT non è implementato"
 
 #: utils/misc/guc.c:6313
 #, c-format
@@ -18662,162 +18656,162 @@ msgstr "SET richiede il nome del parametro"
 #: utils/misc/guc.c:6427
 #, c-format
 msgid "attempt to redefine parameter \"%s\""
-msgstr "tentativo di redefinire il parametro \"%s\""
+msgstr "tentativo di ridefinire il parametro \"%s\""
 
 #: utils/misc/guc.c:7772
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse setting for parameter \"%s\""
-msgstr "%s: impossibile esaminare le liste ACL (%s) per il database \"%s\"\n"
+msgstr "impossibile interpretare l'impostazione del parametro \"%s\""
 
 #: utils/misc/guc.c:8131 utils/misc/guc.c:8165
-#, fuzzy, c-format
+#, c-format
 msgid "invalid value for parameter \"%s\": %d"
-msgstr "Valore non valido per il campo '%s'"
+msgstr "valore non valido per il parametro \"%s\": %d"
 
 #: utils/misc/guc.c:8199
-#, fuzzy, c-format
+#, c-format
 msgid "invalid value for parameter \"%s\": %g"
-msgstr "Valore non valido per il campo '%s'"
+msgstr "valore non valido per il parametro \"%s\": %g"
 
 #: utils/misc/guc.c:8389
 #, c-format
 msgid "\"temp_buffers\" cannot be changed after any temporary tables have been accessed in the session."
-msgstr ""
+msgstr "\"temp_buffers\" non può essere modificato dopo che la sessione ha utilizzato qualsiasi tabella temporanea."
 
 #: utils/misc/guc.c:8401
 #, c-format
 msgid "SET AUTOCOMMIT TO OFF is no longer supported"
-msgstr "SET AUTOCOMMIT TO OFF non è più supportata"
+msgstr "SET AUTOCOMMIT TO OFF non è più supportato"
 
 #: utils/misc/guc.c:8413
 #, c-format
 msgid "assertion checking is not supported by this build"
-msgstr "l'assertion checking non è supportato da questa versione"
+msgstr "il controllo delle asserzioni non è supportato in questo binario"
 
 #: utils/misc/guc.c:8426
-#, fuzzy, c-format
+#, c-format
 msgid "Bonjour is not supported by this build"
-msgstr "<b>SSL non è supportato in questa compilazione di Evolution</b>"
+msgstr "Bonjour non è supportato in questo binario"
 
 #: utils/misc/guc.c:8439
-#, fuzzy, c-format
+#, c-format
 msgid "SSL is not supported by this build"
-msgstr "<b>SSL non è supportato in questa compilazione di Evolution</b>"
+msgstr "SSL non è supportato in questo binario"
 
 #: utils/misc/guc.c:8451
 #, c-format
 msgid "Cannot enable parameter when \"log_statement_stats\" is true."
-msgstr "Non è possibile abilitare il parametro quando \"log_statement_stats\" è attivo."
+msgstr "Non è possibile abilitare il parametro quando \"log_statement_stats\" è abilitato."
 
 #: utils/misc/guc.c:8463
 #, c-format
 msgid "Cannot enable \"log_statement_stats\" when \"log_parser_stats\", \"log_planner_stats\", or \"log_executor_stats\" is true."
-msgstr "Impossibile abilitare \"log_statement_stats\" quando \"log_parser_stats\", \"log_planner_stats\" o \"log_executor_stats\" è attivo."
+msgstr "Non è possibile abilitare \"log_statement_stats\" quando \"log_parser_stats\", \"log_planner_stats\" o \"log_executor_stats\" sono abilitati."
 
 #: utils/misc/help_config.c:131
 #, c-format
 msgid "internal error: unrecognized run-time parameter type\n"
-msgstr "internal error: non riconosciuto il tipo di paramentro a run-time\n"
+msgstr "errore interno: tipo di parametro non riconosciuto\n"
 
 #: utils/misc/tzparser.c:61
 #, c-format
 msgid "time zone abbreviation \"%s\" is too long (maximum %d characters) in time zone file \"%s\", line %d"
-msgstr "l'abbreviazione della time zone \"%s\" è troppo lunga  (massimo %d caratteri) nel file della time zone \"%s\", linea %d"
+msgstr "l'abbreviazione del fuso orario \"%s\" è troppo lunga (massimo %d caratteri) nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:68
 #, c-format
 msgid "time zone offset %d is not a multiple of 900 sec (15 min) in time zone file \"%s\", line %d"
-msgstr "l'offset della time zone %d non è un multiplo di 900 sec (15 min) nel file della time zone \"%s\", linea %d"
+msgstr "lo spostamento del fuso orario %d non è un multiplo di 900 secondi (15 minuti) nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:80
 #, c-format
 msgid "time zone offset %d is out of range in time zone file \"%s\", line %d"
-msgstr "l'offset della time zone  %d è fuori dal limite del file della time zone \"%s\", linea %d"
+msgstr "lo spostamento del fuso orario %d è fuori dall'intervallo consentito nel file di fusi orari \"%s\", linea %d"
 
 #: utils/misc/tzparser.c:115
 #, c-format
 msgid "missing time zone abbreviation in time zone file \"%s\", line %d"
-msgstr "persa l'abbrevazione del zona del fuso orario nel time zone file \"%s\", linea %d"
+msgstr "abbreviazione del fuso orario mancante nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:124
 #, c-format
 msgid "missing time zone offset in time zone file \"%s\", line %d"
-msgstr "Perso l'offset della time zone nel file della time zone \"%s\", linea %d"
+msgstr "spostamento del fuso orario mancante nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:131
 #, c-format
 msgid "invalid number for time zone offset in time zone file \"%s\", line %d"
-msgstr "numero non valido della time zone nell'offset del file della time zone \"%s\", linea %d"
+msgstr "numero non valido per lo spostamento di fuso orario nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:154
-#, fuzzy, c-format
+#, c-format
 msgid "invalid syntax in time zone file \"%s\", line %d"
-msgstr "dati non validi nel file dello storico \"%s\""
+msgstr "sintassi non valida nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:218
 #, c-format
 msgid "time zone abbreviation \"%s\" is multiply defined"
-msgstr "l'abbreviazione della time zone è definita a multipli \"%s\" "
+msgstr "l'abbreviazione di fuso orario \"%s\" è definita più di una volta"
 
 #: utils/misc/tzparser.c:220
 #, c-format
 msgid "Entry in time zone file \"%s\", line %d, conflicts with entry in file \"%s\", line %d."
-msgstr "Il valore nel time zone file \"%s\", linea %d, va in conflitto con il valore nel file \"%s\", linea %d."
+msgstr "Il valore nel file di fusi orari \"%s\", riga %d, è conflitto con il valore nel file \"%s\", riga %d."
 
 #: utils/misc/tzparser.c:285
-#, fuzzy, c-format
+#, c-format
 msgid "invalid time zone file name \"%s\""
-msgstr "nome della time-zone non valido: \"%s\""
+msgstr "nome del file di fusi orari non valido: \"%s\""
 
 #: utils/misc/tzparser.c:298
 #, c-format
 msgid "time zone file recursion limit exceeded in file \"%s\""
-msgstr "si sta eccedendo il limite di ricorsioni del file time zone file nel file \"%s\""
+msgstr "limite di ricorsione dei file di fusi orari superato nel file \"%s\""
 
 #: utils/misc/tzparser.c:337 utils/misc/tzparser.c:350
-#, fuzzy, c-format
+#, c-format
 msgid "could not read time zone file \"%s\": %m"
-msgstr "Impossibile cambiare l'orario del file \"%s\" in \"%s\" (%m)."
+msgstr "impossibile leggere il file di fusi orari \"%s\": %m"
 
 #: utils/misc/tzparser.c:360
 #, c-format
 msgid "line is too long in time zone file \"%s\", line %d"
-msgstr "la linea è troppo lunga nel file di time zone \"%s\", linea %d"
+msgstr "la riga è troppo lunga nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:383
 #, c-format
 msgid "@INCLUDE without file name in time zone file \"%s\", line %d"
-msgstr "@INCLUDE senza nome del file nel time zone file \"%s\", linea %d"
+msgstr "@INCLUDE senza nome del file nel file di fusi orari \"%s\", riga %d"
 
 #: utils/mmgr/aset.c:417
 #, c-format
 msgid "Failed while creating memory context \"%s\"."
-msgstr "Creazione contesto memoria fallito: \"%s\"."
+msgstr "Errore durante la creazione del contesto di memoria \"%s\"."
 
 #: utils/mmgr/aset.c:588 utils/mmgr/aset.c:766 utils/mmgr/aset.c:967
 #, c-format
 msgid "Failed on request of size %lu."
-msgstr "Richiesta dimensione fallita: %lu."
+msgstr "Errore nella richiesta della dimensione %lu."
 
 #: utils/mmgr/portalmem.c:208
-#, fuzzy, c-format
+#, c-format
 msgid "cursor \"%s\" already exists"
 msgstr "il cursore \"%s\" esiste già"
 
 #: utils/mmgr/portalmem.c:212
 #, c-format
 msgid "closing existing cursor \"%s\""
-msgstr "chiusura in corso cursore esistente: \"%s\""
+msgstr "chiusura del cursore esistente \"%s\""
 
 #: utils/mmgr/portalmem.c:479
-#, fuzzy, c-format
+#, c-format
 msgid "cannot drop active portal \"%s\""
-msgstr "impossibile determinare il nome del sistema"
+msgstr "impossibile eliminare il portale attivo \"%s\""
 
 #: utils/mmgr/portalmem.c:669
 #, c-format
 msgid "cannot PREPARE a transaction that has created a cursor WITH HOLD"
-msgstr "non si può PREPARE una transazione che ha creato un cursore WITH HOLD"
+msgstr "non si può effettuare il PREPARE di una transazione che ha creato un cursore WITH HOLD"
 
 #: utils/sort/logtape.c:215
 #, c-format
@@ -18830,55 +18824,55 @@ msgid "could not read block %ld of temporary file: %m"
 msgstr "impossibile leggere il blocco %ld dal file temporaneo: %m"
 
 #: utils/sort/tuplesort.c:3089
-#, fuzzy, c-format
+#, c-format
 msgid "could not create unique index \"%s\""
-msgstr "impossibile creare un inidce univoco"
+msgstr "impossibile creare l'inidce univoco \"%s\""
 
 #: utils/sort/tuplesort.c:3091
-#, fuzzy, c-format
+#, c-format
 msgid "Key %s is duplicated."
-msgstr "colonna \"%s\"duplicata"
+msgstr "La chiave %s è duplicata."
 
 #  translator: %s represents an SQL statement name
 #: utils/time/snapmgr.c:774
 #, c-format
 msgid "cannot export a snapshot from a subtransaction"
-msgstr "impossibile esportare uno snapshot da una sottotransazione"
+msgstr "impossibile esportare uno snapshot da una sotto-transazione"
 
 #: utils/time/snapmgr.c:924 utils/time/snapmgr.c:929 utils/time/snapmgr.c:934
 #: utils/time/snapmgr.c:949 utils/time/snapmgr.c:954 utils/time/snapmgr.c:959
 #: utils/time/snapmgr.c:1058 utils/time/snapmgr.c:1074
 #: utils/time/snapmgr.c:1099
-#, fuzzy, c-format
+#, c-format
 msgid "invalid snapshot data in file \"%s\""
-msgstr "i dati nel file \"%s\"non sono validi"
+msgstr "dati dello snapshot non validi nel file \"%s\""
 
 #: utils/time/snapmgr.c:996
 #, c-format
 msgid "SET TRANSACTION SNAPSHOT must be called before any query"
-msgstr ""
+msgstr "SET TRANSACTION SNAPSHOT dev'essere invocato prima di qualunque query"
 
 #: utils/time/snapmgr.c:1005
 #, c-format
 msgid "a snapshot-importing transaction must have isolation level SERIALIZABLE or REPEATABLE READ"
-msgstr ""
+msgstr "una transazione che importa uno snapshot deve avere livello di isolamento SERIALIZABLE o REPEATABLE READ"
 
 #: utils/time/snapmgr.c:1014 utils/time/snapmgr.c:1023
-#, fuzzy, c-format
+#, c-format
 msgid "invalid snapshot identifier: \"%s\""
-msgstr "i dati nel file \"%s\"non sono validi"
+msgstr "identificatore di snapshot non valido: \"%s\""
 
 #: utils/time/snapmgr.c:1112
 #, c-format
 msgid "a serializable transaction cannot import a snapshot from a non-serializable transaction"
-msgstr ""
+msgstr "una transazione serializzabile non può importare uno snapshot da una transazione non serializzabile"
 
 #: utils/time/snapmgr.c:1116
-#, fuzzy, c-format
+#, c-format
 msgid "a non-read-only serializable transaction cannot import a snapshot from a read-only transaction"
-msgstr "non si può impostare una transazione read-write dentro una read-only"
+msgstr "una transazione non di sola lettura non può importare uno snapshot da una transazione di sola lettura"
 
 #: utils/time/snapmgr.c:1131
-#, fuzzy, c-format
+#, c-format
 msgid "cannot import a snapshot from a different database"
-msgstr "impossibile eseguire l'OR fra stringhe di bit di dimensioni diverse"
+msgstr "non è possibile importare uno snapshot da un database diverso"
