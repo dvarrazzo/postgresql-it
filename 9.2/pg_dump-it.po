@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-30 12:43+0100\n"
+"PO-Revision-Date: 2012-10-30 12:48+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -163,7 +163,7 @@ msgstr "lettura delle configurazioni di ricerca testo definite dall'utente\n"
 #: common.c:177
 #, c-format
 msgid "reading user-defined foreign-data wrappers\n"
-msgstr "lettura degli adattatori per dati esterni definiti dall'utente\n"
+msgstr "lettura dei wrapper di dati esterni definiti dall'utente\n"
 
 #: common.c:181
 #, c-format

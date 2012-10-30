@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 12:12+0100\n"
+"PO-Revision-Date: 2012-10-30 12:50+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1395,7 +1395,7 @@ msgstr ""
 #: describe.c:3765
 #, c-format
 msgid "The server (version %d.%d) does not support foreign-data wrappers.\n"
-msgstr "Il server (versione %d.%d) non supporta i wrapper per dati esterni.\n"
+msgstr "Il server (versione %d.%d) non supporta i wrapper di dati esterni.\n"
 
 #: describe.c:3779
 msgid "Handler"
@@ -1403,7 +1403,7 @@ msgstr "Handler"
 
 #: describe.c:3822
 msgid "List of foreign-data wrappers"
-msgstr "Lista dei wrapper per dati esterni"
+msgstr "Lista dei wrapper di dati esterni"
 
 #: describe.c:3845
 #, c-format
@@ -1951,7 +1951,7 @@ msgstr "  \\deu[+] [MODELLO]      mostra le mappature degli utenti\n"
 #: help.c:210
 #, c-format
 msgid "  \\dew[+] [PATTERN]      list foreign-data wrappers\n"
-msgstr "  \\dew[+] [MODELLO]      mostra i wrapper a dati esterni\n"
+msgstr "  \\dew[+] [MODELLO]      mostra i wrapper di dati esterni\n"
 
 #: help.c:211
 #, c-format
@@ -3574,7 +3574,7 @@ msgstr "cambia la definizione di una estensione"
 
 #: sql_help.h:222
 msgid "change the definition of a foreign-data wrapper"
-msgstr "cambia la definizione di un wrapper per dati esterni"
+msgstr "cambia la definizione di un wrapper di dati esterni"
 
 #: sql_help.h:227
 msgid "change the definition of a foreign table"
@@ -3734,7 +3734,7 @@ msgstr "installa un'estensione"
 
 #: sql_help.h:427
 msgid "define a new foreign-data wrapper"
-msgstr "definisci un nuovo wrapper per dati esterni"
+msgstr "definisci un nuovo wrapper di dati esterni"
 
 #: sql_help.h:432
 msgid "define a new foreign table"
@@ -3878,7 +3878,7 @@ msgstr "elimina una estensione"
 
 #: sql_help.h:617
 msgid "remove a foreign-data wrapper"
-msgstr "elimina un wrapper per dati esterni"
+msgstr "elimina un wrapper di dati esterni"
 
 #: sql_help.h:622
 msgid "remove a foreign table"
