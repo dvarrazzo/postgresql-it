@@ -96,6 +96,18 @@ La traduzione scelta è stata rispettivamente:
 Ovviamente sono possibili variazioni per un concetto così generico; sarebbe
 auspicabile comunque mantenere la distinzione tra i due sensi degli errori.
 
+Se le stringhe originali hanno un segnaposto alla fine, questo non dovrebbe
+essere spostato. Non tradurre:
+
+    file not found: %s
+
+con:
+
+    il file %s non è stato trovato
+
+Il segnaposto alla fine è usato per rendere più evidente il valore, o più
+leggibile l'intera frase se la variabile può essere arbitrariamente lunga.
+
 
 Traduzioni di termini abbastanza comuni
 ---------------------------------------
