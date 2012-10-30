@@ -119,7 +119,9 @@ Traduzioni di termini abbastanza comuni
 * database cluster: cluster di database
 * default: predefinito
 * encoding: codifica
+* error code: codice errore
 * exit code: codice di uscita (inteso di processi e thread)
+* false (is false): è disabilitato
 * get: ottenere, trovare (a seconda del contesto: ottenere informazioni,
 * invalid: non valido (non "invalido")
 * line: riga (di un file)
@@ -129,5 +131,7 @@ Traduzioni di termini abbastanza comuni
 * server-side: lato server
 * set: impostare, non settare (non c'è puttare o gettare, no?)
   trovare un valore)
+* subquery: sottoquery
 * superuser: superutente
-
+* stat: ottenere informazioni
+* true (is true): è abilitato
