@@ -139,7 +139,7 @@ msgstr "Nessun query buffer\n"
 #: command.c:542 command.c:2617
 #, c-format
 msgid "invalid line number: %s\n"
-msgstr "numero di linea non valido: \"%s\"\n"
+msgstr "numero di riga non valido: \"%s\"\n"
 
 #: command.c:573
 #, c-format
@@ -313,7 +313,7 @@ msgstr ""
 #: command.c:1827
 #, c-format
 msgid "environment variable PSQL_EDITOR_LINENUMBER_ARG must be set to specify a line number\n"
-msgstr "la variabile di ambiente PSQL_EDITOR_LINENUMBER_ARG deve specificare un numero di linea\n"
+msgstr "la variabile di ambiente PSQL_EDITOR_LINENUMBER_ARG deve specificare un numero di riga\n"
 
 #: command.c:1864
 #, c-format
@@ -2306,7 +2306,7 @@ msgstr "Utilizza \"\\q\" per uscire %s.\n"
 
 #: mainloop.c:189
 msgid "You are using psql, the command-line interface to PostgreSQL."
-msgstr "Stai utilizzando psql, l'interfaccia a linea di comando di PostgreSQL."
+msgstr "Stai utilizzando psql, l'interfaccia a riga di comando di PostgreSQL."
 
 #: mainloop.c:190
 #, c-format

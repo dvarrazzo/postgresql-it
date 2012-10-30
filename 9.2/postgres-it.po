@@ -2021,7 +2021,7 @@ msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 #: bootstrap/bootstrap.c:304
 #, c-format
 msgid "%s: invalid command-line arguments\n"
-msgstr "%s: parametri della linea di comando non validi\n"
+msgstr "%s: parametri della riga di comando non validi\n"
 
 #: catalog/aclchk.c:203
 #, c-format
@@ -13889,7 +13889,7 @@ msgstr "Incrementa il limite dello stack della piattaforma usando \"ulimit -s\" 
 #: tcop/postgres.c:3477
 #, c-format
 msgid "invalid command-line argument for server process: %s"
-msgstr "argomento della linea di comando non valido per il processo server: %s"
+msgstr "argomento della riga di comando non valido per il processo server: %s"
 
 #: tcop/postgres.c:3478 tcop/postgres.c:3484
 #, c-format
@@ -13899,7 +13899,7 @@ msgstr "Prova \"%s --help\" per maggiori informazioni."
 #: tcop/postgres.c:3482
 #, c-format
 msgid "%s: invalid command-line argument: %s"
-msgstr "%s: argomento della linea di comando non valido: %s"
+msgstr "%s: argomento della riga di comando non valido: %s"
 
 #: tcop/postgres.c:3569
 #, c-format
@@ -14022,12 +14022,12 @@ msgstr "delimitatore non previsto"
 #: tsearch/dict_thesaurus.c:262 tsearch/dict_thesaurus.c:278
 #, c-format
 msgid "unexpected end of line or lexeme"
-msgstr "fine della linea o del lessema inaspettata"
+msgstr "fine della riga o del lessema inaspettata"
 
 #: tsearch/dict_thesaurus.c:287
 #, c-format
 msgid "unexpected end of line"
-msgstr "fine della linea non attesa"
+msgstr "fine della riga non attesa"
 
 #: tsearch/dict_thesaurus.c:411
 #, c-format
@@ -18726,7 +18726,7 @@ msgstr "lo spostamento del fuso orario %d non è un multiplo di 900 secondi (15 
 #: utils/misc/tzparser.c:80
 #, c-format
 msgid "time zone offset %d is out of range in time zone file \"%s\", line %d"
-msgstr "lo spostamento del fuso orario %d è fuori dall'intervallo consentito nel file di fusi orari \"%s\", linea %d"
+msgstr "lo spostamento del fuso orario %d è fuori dall'intervallo consentito nel file di fusi orari \"%s\", riga %d"
 
 #: utils/misc/tzparser.c:115
 #, c-format

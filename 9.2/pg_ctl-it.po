@@ -140,7 +140,7 @@ msgstr "%s: non è stato possibile leggere il file \"%s\"\n"
 #: pg_ctl.c:708
 #, c-format
 msgid "%s: option file \"%s\" must have exactly one line\n"
-msgstr "%s: il file di opzione \"%s\" deve avere esattamente una linea\n"
+msgstr "%s: il file di opzione \"%s\" deve avere esattamente una riga\n"
 
 #: pg_ctl.c:756
 #, c-format
@@ -609,7 +609,7 @@ msgid ""
 "  -o OPTIONS             command line options to pass to postgres\n"
 "                         (PostgreSQL server executable) or initdb\n"
 msgstr ""
-"  -o OPTIONS             opzioni da linea di comando da passare a postgres\n"
+"  -o OPTIONS             opzioni da riga di comando da passare a postgres\n"
 "                         (programma eseguibile del server PostgreSQL)\n"
 
 #: pg_ctl.c:1825

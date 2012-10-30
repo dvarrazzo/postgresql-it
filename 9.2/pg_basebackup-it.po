@@ -468,7 +468,7 @@ msgstr "Prova \"%s --help\" per avere più informazioni.\n"
 #: pg_basebackup.c:1411 pg_receivexlog.c:398
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi parametri nella linea di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
 
 #: pg_basebackup.c:1423 pg_receivexlog.c:410
 #, c-format

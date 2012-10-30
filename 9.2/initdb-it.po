@@ -682,7 +682,7 @@ msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 #: initdb.c:2786
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi parametri nella linea di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
 
 #: initdb.c:2795
 #, c-format

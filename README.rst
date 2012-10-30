@@ -110,6 +110,7 @@ Traduzioni di termini abbastanza comuni
 * exit code: codice di uscita (inteso di processi e thread)
 * get: ottenere, trovare (a seconda del contesto: ottenere informazioni,
 * invalid: non valido (non "invalido")
+* line: riga (di un file)
 * log file: file di log
 * owenership: il proprietario, non la proprietà (quest'ultimo è ambiguo)
 * return: restituire, non tornare o ritornare

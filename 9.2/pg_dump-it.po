@@ -471,7 +471,7 @@ msgstr "non è stato possibile aprire il file TOC \"%s\": %s\n"
 #: pg_backup_archiver.c:1177
 #, c-format
 msgid "WARNING: line ignored: %s\n"
-msgstr "ATTENZIONE: la linea è stata ignorata: %s\n"
+msgstr "ATTENZIONE: la riga è stata ignorata: %s\n"
 
 #: pg_backup_archiver.c:1184
 #, c-format
@@ -1045,7 +1045,7 @@ msgstr "non è stato possibile aprire il file TOC dei large object \"%s\" per l'
 #: pg_backup_directory.c:410
 #, c-format
 msgid "invalid line in large object TOC file \"%s\": \"%s\"\n"
-msgstr "linea non valida nel file TOC dei large object \"%s\": \"%s\"\n"
+msgstr "riga non valida nel file TOC dei large object \"%s\": \"%s\"\n"
 
 #: pg_backup_directory.c:419
 #, c-format
@@ -1217,7 +1217,7 @@ msgstr "intestazione tar corrotta in %s (previsti %d, calcolati %d) alla posizio
 #: pg_dump.c:528 pg_dumpall.c:306 pg_restore.c:295
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi argomenti nella linea di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
 #: pg_dump.c:540
 #, c-format

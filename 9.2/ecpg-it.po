@@ -328,12 +328,12 @@ msgstr "errore interno: stato non raggiungibile, si prega di segnalarlo a <pgsql
 #: pgc.l:1343
 #, c-format
 msgid "Error: include path \"%s/%s\" is too long on line %d, skipping\n"
-msgstr "Errore: il percorso della include \"%s/%s\" è troppo lungo alla linea %d, perciò viene saltato\n"
+msgstr "Errore: il percorso della include \"%s/%s\" è troppo lungo alla riga %d, perciò viene saltato\n"
 
 #: pgc.l:1365
 #, c-format
 msgid "could not open include file \"%s\" on line %d"
-msgstr "non è stato possibile aprire il file di include \"%s\" alla linea %d"
+msgstr "non è stato possibile aprire il file di include \"%s\" alla riga %d"
 
 #: preproc.y:31
 msgid "syntax error"

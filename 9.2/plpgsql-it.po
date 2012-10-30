@@ -337,7 +337,7 @@ msgstr "Gli argomenti del trigger possono essere acceduti tramite TG_NARGS e TG_
 #: pl_comp.c:911
 #, c-format
 msgid "compilation of PL/pgSQL function \"%s\" near line %d"
-msgstr "compilazione della funzione PL/pgSQL \"%s\" in prossimità della linea %d"
+msgstr "compilazione della funzione PL/pgSQL \"%s\" in prossimità della riga %d"
 
 #: pl_comp.c:934
 #, c-format
@@ -446,7 +446,7 @@ msgstr "la struttura della riga restituita non coincide con la struttura della t
 #: pl_exec.c:808
 #, c-format
 msgid "PL/pgSQL function %s line %d %s"
-msgstr "funzione PL/pgSQL %s linea %d %s"
+msgstr "funzione PL/pgSQL %s riga %d %s"
 
 #: pl_exec.c:819
 #, c-format

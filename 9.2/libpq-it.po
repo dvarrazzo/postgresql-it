@@ -401,12 +401,12 @@ msgstr "il file di servizio \"%s\" non è stato trovato\n"
 #: fe-connect.c:3884
 #, c-format
 msgid "line %d too long in service file \"%s\"\n"
-msgstr "la linea %d nel file di servizio \"%s\" è troppo lunga\n"
+msgstr "la riga %d nel file di servizio \"%s\" è troppo lunga\n"
 
 #: fe-connect.c:3955 fe-connect.c:3982
 #, c-format
 msgid "syntax error in service file \"%s\", line %d\n"
-msgstr "errore di sintassi del file di servizio \"%s\", alla linea %d\n"
+msgstr "errore di sintassi del file di servizio \"%s\", alla riga %d\n"
 
 #: fe-connect.c:4583
 #, c-format
