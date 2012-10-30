@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 17:15+0100\n"
+"PO-Revision-Date: 2012-10-30 17:18+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -3542,7 +3542,7 @@ msgstr "espressione_ordinamento"
 
 #: sql_help.h:182 sql_help.h:837
 msgid "abort the current transaction"
-msgstr "interrompi la transazione corrente"
+msgstr "annulla la transazione corrente"
 
 #: sql_help.h:187
 msgid "change the definition of an aggregate function"
@@ -3694,7 +3694,7 @@ msgstr "definisci o modifica il commento di un oggetto"
 
 #: sql_help.h:377 sql_help.h:747
 msgid "commit the current transaction"
-msgstr "esegui la transazione corrente"
+msgstr "rendi persistente la transazione corrente"
 
 #: sql_help.h:382
 msgid "commit a transaction that was earlier prepared for two-phase commit"
@@ -4046,7 +4046,7 @@ msgstr "annulla una transazione che era stata preparata per un commit a due fasi
 
 #: sql_help.h:847
 msgid "roll back to a savepoint"
-msgstr "roll back fino a un punto di salvataggio"
+msgstr "annulla le modifiche fino a un punto di salvataggio"
 
 #: sql_help.h:852
 msgid "define a new savepoint within the current transaction"
