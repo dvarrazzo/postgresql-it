@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 13:28+0100\n"
+"PO-Revision-Date: 2012-10-30 16:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1816,12 +1816,12 @@ msgstr "Query Buffer\n"
 #: help.c:177
 #, c-format
 msgid "  \\e [FILE] [LINE]       edit the query buffer (or file) with external editor\n"
-msgstr "  \\e [FILE] [LINE]       modifica il buffer della query (o il file) con l'editor esterno\n"
+msgstr "  \\e [FILE] [RIGA]       modifica il buffer della query (o il file) con l'editor esterno\n"
 
 #: help.c:178
 #, c-format
 msgid "  \\ef [FUNCNAME [LINE]]  edit function definition with external editor\n"
-msgstr "  \\ef [NOME_FUN [LINEA]] modifica la definizione della funzione con l'editor esterno\n"
+msgstr "  \\ef [NOME_FUN [RIGA]]  modifica la definizione della funzione con l'editor esterno\n"
 
 #: help.c:179
 #, c-format

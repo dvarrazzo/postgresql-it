@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-30 13:18+0100\n"
+"PO-Revision-Date: 2012-10-30 16:30+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -457,7 +457,7 @@ msgstr "funzione PL/pgSQL %s %s"
 #: pl_exec.c:827
 #, c-format
 msgid "PL/pgSQL function %s line %d at %s"
-msgstr "funzione PL/pgSQL %s line %d a %s"
+msgstr "funzione PL/pgSQL %s riga %d a %s"
 
 #: pl_exec.c:833
 #, c-format
