@@ -135,3 +135,26 @@ Traduzioni di termini abbastanza comuni
 * superuser: superutente
 * stat: ottenere informazioni
 * true (is true): è abilitato
+
+
+Termini non tradotti
+--------------------
+
+Se esiste un modo ragionevole di tradurli, ok per me.
+
+* advisory lock
+* backslash
+* code point (Unicode)
+* commit
+* escape
+* inline, inlining
+* join
+* large object
+* log
+* pipe (forse coda?)
+* standby
+* stream (forse flusso -- solo per i WAL?)
+* thread
+* timeline
+* tuple
+* wrapper
