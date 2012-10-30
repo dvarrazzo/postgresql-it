@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-30 13:30+0100\n"
+"PO-Revision-Date: 2012-10-30 13:52+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -9958,7 +9958,9 @@ msgstr "  -s                 mostra le statistiche dopo ogni query\n"
 #: main/main.c:297
 #, c-format
 msgid "  -S WORK-MEM        set amount of memory for sorts (in kB)\n"
-msgstr "  -S WORK-MEM        imposta la dimensione della memoria per gli ordinamenti (in kB)\n"
+msgstr ""
+"  -S WORK-MEM        imposta la dimensione della memoria per gli ordinamenti\n"
+"                     (in kB)\n"
 
 #: main/main.c:298
 #, c-format
@@ -9997,12 +9999,16 @@ msgstr "  -f s|i|n|m|h       vieta l'uso di alcuni tipi di piano\n"
 #: main/main.c:305
 #, c-format
 msgid "  -n                 do not reinitialize shared memory after abnormal exit\n"
-msgstr "  -n                 non reinizializzare la memoria condivisa dopo un'uscita anormale\n"
+msgstr ""
+"  -n                 non reinizializzare la memoria condivisa dopo un'uscita\n"
+"                     anormale\n"
 
 #: main/main.c:306
 #, c-format
 msgid "  -O                 allow system table structure changes\n"
-msgstr "  -O                 consenti cambiamenti alla struttura delle tabelle di sistema\n"
+msgstr ""
+"  -O                 consenti cambiamenti alla struttura delle tabelle\n"
+"                     di sistema\n"
 
 #: main/main.c:307
 #, c-format
@@ -10022,7 +10028,9 @@ msgstr "  -T                 invia SIGSTOP a tutti i processi backend se uno muo
 #: main/main.c:310
 #, c-format
 msgid "  -W NUM             wait NUM seconds to allow attach from a debugger\n"
-msgstr "  -W NUM             attendi NUM secondi per consentire ad un debugger di collegarsi\n"
+msgstr ""
+"  -W NUM             attendi NUM secondi per consentire ad un debugger\n"
+"                     di collegarsi\n"
 
 #: main/main.c:312
 #, c-format
@@ -10036,7 +10044,9 @@ msgstr ""
 #: main/main.c:313
 #, c-format
 msgid "  --single           selects single-user mode (must be first argument)\n"
-msgstr "  --single           imposta la modalità utente singolo (deve essere il primo argomento)\n"
+msgstr ""
+"  --single           imposta la modalità utente singolo (deve essere il primo\n"
+"                     argomento)\n"
 
 #: main/main.c:314
 #, c-format
@@ -10056,7 +10066,9 @@ msgstr "  -E                 stampa le istruzioni prima dell'esecuzione\n"
 #: main/main.c:317
 #, c-format
 msgid "  -j                 do not use newline as interactive query delimiter\n"
-msgstr "  -j                 non usare \"a capo\" come delimitatore delle query interattivo\n"
+msgstr ""
+"  -j                 non usare \"a capo\" come delimitatore delle query\n"
+"                     interattivo\n"
 
 #: main/main.c:318 main/main.c:323
 #, c-format
@@ -10075,12 +10087,16 @@ msgstr ""
 #: main/main.c:321
 #, c-format
 msgid "  --boot             selects bootstrapping mode (must be first argument)\n"
-msgstr "  --boot             seleziona la modalità di inizializzazione (dev'essere il primo argomento)\n"
+msgstr ""
+"  --boot             seleziona la modalità di inizializzazione (dev'essere\n"
+"                     il primo argomento)\n"
 
 #: main/main.c:322
 #, c-format
 msgid "  DBNAME             database name (mandatory argument in bootstrapping mode)\n"
-msgstr "  DBNAME             nome del database (obbligatorio in modalità di inizializzazione)\n"
+msgstr ""
+"  DBNAME             nome del database (obbligatorio in modalità di\n"
+"                     inizializzazione)\n"
 
 #: main/main.c:324
 #, c-format
@@ -10098,9 +10114,9 @@ msgid ""
 "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr ""
 "\n"
-"Si prega di leggere la documentazione per la lista completa di\n"
-"impostazioni di configurazione e come impostarle sulla riga di comando\n"
-"o nel file di configurazione\n"
+"Si prega di leggere la documentazione per la lista completa di impostazioni\n"
+"di configurazione e come impostarle sulla riga di comando o nel file di\n"
+"configurazione\n"
 "\n"
 "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
