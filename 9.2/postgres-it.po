@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-30 13:52+0100\n"
+"PO-Revision-Date: 2012-10-30 16:45+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -12701,7 +12701,7 @@ msgstr "non è stato possibile inviare dati allo stream WAL: %s"
 #: replication/syncrep.c:207
 #, c-format
 msgid "canceling the wait for synchronous replication and terminating connection due to administrator command"
-msgstr "annullamento dell'attesa di replica sincrona ed interruzione della connessione a seguito del comando dell'amministratore"
+msgstr "annullamento dell'attesa di replica sincrona ed interruzione della connessione su comando dell'amministratore"
 
 #: replication/syncrep.c:208 replication/syncrep.c:225
 #, c-format
@@ -12711,7 +12711,7 @@ msgstr "La transazione ha già effettuato il commit localmente, ma potrebbe non 
 #: replication/syncrep.c:224
 #, c-format
 msgid "canceling wait for synchronous replication due to user request"
-msgstr "annullamento dell'attesa di replica sincrona a seguito della richiesta utente"
+msgstr "annullamento dell'attesa di replica sincrona su richiesta utente"
 
 #: replication/syncrep.c:355
 #, c-format
@@ -12726,7 +12726,7 @@ msgstr "lo standby \"%s\" è ora in standby sincrono con priorità %u"
 #: replication/walreceiver.c:150
 #, c-format
 msgid "terminating walreceiver process due to administrator command"
-msgstr "interruzione del processo walreceiver a seguito del comando dell'amministratore"
+msgstr "interruzione del processo walreceiver su comando dell'amministratore"
 
 #: replication/walreceiver.c:306
 #, c-format
@@ -13123,7 +13123,7 @@ msgstr "%s alla fine dell'input"
 #: scan.l:1001
 #, c-format
 msgid "%s at or near \"%s\""
-msgstr "%s sopra o presso \"%s\""
+msgstr "%s a o presso \"%s\""
 
 #: scan.l:1162 scan.l:1194
 msgid "Unicode escape values cannot be used for code point values above 007F when the server encoding is not UTF8"
@@ -13844,7 +13844,7 @@ msgstr "Un'operazione in floating-point non valida è stata segnalata. Questo pr
 #: tcop/postgres.c:2843
 #, c-format
 msgid "terminating autovacuum process due to administrator command"
-msgstr "interruzione del processo autovacuum a seguito del comando dell'amministratore"
+msgstr "interruzione del processo autovacuum su comando dell'amministratore"
 
 #: tcop/postgres.c:2849 tcop/postgres.c:2859 tcop/postgres.c:2922
 #, c-format
@@ -13854,7 +13854,7 @@ msgstr "interruzione della connessione a causa di conflitto con il ripristino"
 #: tcop/postgres.c:2865
 #, c-format
 msgid "terminating connection due to administrator command"
-msgstr "interruzione della connessione a seguito del comando dell'amministratore"
+msgstr "interruzione della connessione su comando dell'amministratore"
 
 #: tcop/postgres.c:2877
 #, c-format
