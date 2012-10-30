@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 12:50+0100\n"
+"PO-Revision-Date: 2012-10-30 13:28+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -89,7 +89,7 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è uscito con lo stato non riconosciuto %d"
+msgstr "il processo figlio è uscito con lo stato sconosciuto %d"
 
 #: command.c:113
 #, c-format
@@ -4070,7 +4070,7 @@ msgstr "imposta il momento del controllo dei vincoli per la transazione corrente
 
 #: sql_help.h:882
 msgid "set the current user identifier of the current session"
-msgstr "imposta l'identificatore utente della sessione corrente"
+msgstr "imposta l'identificativo utente della sessione corrente"
 
 #: sql_help.h:887
 msgid "set the session user identifier and the current user identifier of the current session"
@@ -4157,4 +4157,4 @@ msgstr ""
 #: variables.c:115
 #, c-format
 msgid "unrecognized Boolean value; assuming \"on\"\n"
-msgstr "valore booleano non riconosciuto; interpretato come \"attivato\"\n"
+msgstr "valore booleano sconosciuto; interpretato come \"attivato\"\n"

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-30 12:14+0100\n"
+"PO-Revision-Date: 2012-10-30 13:08+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -123,7 +123,7 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è terminato con il codice di uscita non riconosciuto %d"
+msgstr "il processo figlio è terminato con il codice di uscita sconosciuto %d"
 
 #: initdb.c:294 initdb.c:308
 #, c-format

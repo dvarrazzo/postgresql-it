@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:39+0000\n"
-"PO-Revision-Date: 2012-10-30 12:07+0100\n"
+"PO-Revision-Date: 2012-10-30 13:18+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -329,7 +329,7 @@ msgstr "SPI_execute ha fallito: %s"
 #: plpy_spi.c:439
 #, c-format
 msgid "unrecognized error in PLy_spi_execute_fetch_result"
-msgstr "errore non riconosciuto nella funzione PLy_spi_execute_fetch_result"
+msgstr "errore sconosciuto nella funzione PLy_spi_execute_fetch_result"
 
 #: plpy_subxactobject.c:122
 #, c-format

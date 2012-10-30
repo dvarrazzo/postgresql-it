@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-30 12:20+0100\n"
+"PO-Revision-Date: 2012-10-30 13:09+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -827,7 +827,7 @@ msgstr "la connessione SSL è stata chiusa inaspettatamente\n"
 #: fe-secure.c:408 fe-secure.c:569 fe-secure.c:1419
 #, c-format
 msgid "unrecognized SSL error code: %d\n"
-msgstr "codice di errore SSL %d non riconosciuto\n"
+msgstr "codice di errore SSL sconosciuto: %d\n"
 
 #: fe-secure.c:452
 #, c-format
@@ -956,4 +956,4 @@ msgstr "codice di errore SSL: %lu"
 #: win32.c:322
 #, c-format
 msgid "unrecognized socket error: 0x%08X/%d"
-msgstr "errore socket non riconosciuto: 0x%08X/%d"
+msgstr "errore socket sconosciuto: 0x%08X/%d"

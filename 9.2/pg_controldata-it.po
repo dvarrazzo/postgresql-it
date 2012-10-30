@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-29 13:08+0100\n"
+"PO-Revision-Date: 2012-10-30 13:11+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -120,11 +120,11 @@ msgstr "in produzione"
 
 #: pg_controldata.c:65
 msgid "unrecognized status code"
-msgstr "codice di stato non riconosciuto"
+msgstr "codice di stato sconosciuto"
 
 #: pg_controldata.c:80
 msgid "unrecognized wal_level"
-msgstr "wal_level non riconosciuto"
+msgstr "wal_level sconosciuto"
 
 #: pg_controldata.c:123
 #, c-format

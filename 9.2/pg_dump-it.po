@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:47+0000\n"
-"PO-Revision-Date: 2012-10-30 12:48+0100\n"
+"PO-Revision-Date: 2012-10-30 13:16+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -88,7 +88,7 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è uscito col valore non riconosciuto %d"
+msgstr "il processo figlio è uscito col valore sconosciuto %d"
 
 #: common.c:105
 #, c-format
@@ -312,7 +312,7 @@ msgstr "memoria esaurita\n"
 #: dumputils.c:1263
 #, c-format
 msgid "%s: unrecognized section name: \"%s\"\n"
-msgstr "%s: nome di sezione non riconosciuto \"%s\"\n"
+msgstr "%s: nome di sezione sconosciuto: \"%s\"\n"
 
 #: dumputils.c:1265 pg_dump.c:516 pg_dump.c:530 pg_dumpall.c:298
 #: pg_dumpall.c:308 pg_dumpall.c:318 pg_dumpall.c:327 pg_dumpall.c:336
@@ -623,7 +623,7 @@ msgstr "allocazione AH per %s, formato %d\n"
 #: pg_backup_archiver.c:2130
 #, c-format
 msgid "unrecognized file format \"%d\"\n"
-msgstr "formato del file \"%d\" non riconosciuto\n"
+msgstr "formato di file \"%d\" sconosciuto\n"
 
 #: pg_backup_archiver.c:2264
 #, c-format
@@ -638,7 +638,7 @@ msgstr "letta voce TOC %d (ID %d) per %s %s\n"
 #: pg_backup_archiver.c:2414
 #, c-format
 msgid "unrecognized encoding \"%s\"\n"
-msgstr "codifica non riconosciuta \"%s\"\n"
+msgstr "codifica sconosciuta \"%s\"\n"
 
 #: pg_backup_archiver.c:2419
 #, c-format
@@ -818,7 +818,7 @@ msgstr "OID non valido per large object\n"
 #: pg_backup_custom.c:442
 #, c-format
 msgid "unrecognized data block type (%d) while searching archive\n"
-msgstr "tipo di blocco dati non riconosciuto (%d) durante la ricerca in archivio\n"
+msgstr "tipo di blocco dati sconosciuto (%d) durante la ricerca in archivio\n"
 
 #: pg_backup_custom.c:453
 #, c-format
@@ -848,7 +848,7 @@ msgstr "trovato il blocco ID (%d) inatteso leggendo i dati -- previsto %d\n"
 #: pg_backup_custom.c:494
 #, c-format
 msgid "unrecognized data block type %d while restoring archive\n"
-msgstr "tipo di blocco dati non riconosciuto %d durante il ripristino dell'archivio\n"
+msgstr "tipo di blocco dati sconosciuto %d durante il ripristino dell'archivio\n"
 
 #: pg_backup_custom.c:576 pg_backup_custom.c:910
 #, c-format
@@ -1776,12 +1776,12 @@ msgstr "ATTENZIONE: non è stato possibile analizzare l'array preconfig\n"
 #: pg_dump.c:9281
 #, c-format
 msgid "unrecognized provolatile value for function \"%s\"\n"
-msgstr "valore provolatile non riconosciuto per la funzione \"%s\"\n"
+msgstr "valore provolatile sconosciuto per la funzione \"%s\"\n"
 
 #: pg_dump.c:9501
 #, c-format
 msgid "WARNING: bogus value in pg_cast.castfunc or pg_cast.castmethod field\n"
-msgstr "ATTENZIONE: valore fasullo nei campi pg_cast.castfunc o pg_cast.castmethod\n"
+msgstr "ATTENZIONE: valore scorretto nei campi pg_cast.castfunc o pg_cast.castmethod\n"
 
 #: pg_dump.c:9504
 #, c-format
@@ -1841,7 +1841,7 @@ msgstr "omesso indice per vincolo \"%s\"\n"
 #: pg_dump.c:13137
 #, c-format
 msgid "unrecognized constraint type: %c\n"
-msgstr "tipo di vincolo non riconosciuto: %c\n"
+msgstr "tipo di vincolo sconosciuto: %c\n"
 
 #: pg_dump.c:13284
 #, c-format
@@ -2128,7 +2128,7 @@ msgstr "%s: non si può specificare insieme --single-transaction e job multipli\
 #: pg_restore.c:350
 #, c-format
 msgid "unrecognized archive format \"%s\"; please specify \"c\", \"d\", or \"t\"\n"
-msgstr "formato di archivio non riconosciuto \"%s\"; specificare \"c\", \"d\" o \"t\"\n"
+msgstr "formato di archivio sconosciuto \"%s\"; specificare \"c\", \"d\" o \"t\"\n"
 
 #: pg_restore.c:386
 #, c-format

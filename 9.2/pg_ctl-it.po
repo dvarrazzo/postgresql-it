@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-30 12:25+0100\n"
+"PO-Revision-Date: 2012-10-30 13:12+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -83,7 +83,7 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è uscito con uno valore non riconosciuto %d"
+msgstr "il processo figlio è uscito col valore sconosciuto %d"
 
 #: pg_ctl.c:243 pg_ctl.c:258 pg_ctl.c:2137
 #, c-format
@@ -726,17 +726,17 @@ msgstr ""
 #: pg_ctl.c:1874
 #, c-format
 msgid "%s: unrecognized shutdown mode \"%s\"\n"
-msgstr "%s: modalità di arresto non riconosciuta \"%s\"\n"
+msgstr "%s: modalità di arresto sconosciuta \"%s\"\n"
 
 #: pg_ctl.c:1906
 #, c-format
 msgid "%s: unrecognized signal name \"%s\"\n"
-msgstr "%s: nome del segnale non riconosciuto \"%s\"\n"
+msgstr "%s: nome del segnale sconosciuto \"%s\"\n"
 
 #: pg_ctl.c:1923
 #, c-format
 msgid "%s: unrecognized start type \"%s\"\n"
-msgstr "%s: tipo di avvio non riconosciuto \"%s\"\n"
+msgstr "%s: tipo di avvio sconosciuto \"%s\"\n"
 
 #: pg_ctl.c:1976
 #, c-format

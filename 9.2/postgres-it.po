@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-30 12:56+0100\n"
+"PO-Revision-Date: 2012-10-30 13:30+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -164,7 +164,7 @@ msgstr "Potrebbe esserci un programma di antivirus, backup o simili che interfer
 #: ../port/strerror.c:25
 #, c-format
 msgid "unrecognized error %d"
-msgstr "errore non riconosciuto %d"
+msgstr "errore sconosciuto %d"
 
 #: ../port/win32error.c:188
 #, c-format
@@ -174,7 +174,7 @@ msgstr "codice di errore win32 %lu mappato su %d"
 #: ../port/win32error.c:199
 #, c-format
 msgid "unrecognized win32 error code: %lu"
-msgstr "codice di errore win32 non riconosciuto: %lu"
+msgstr "codice di errore win32 sconosciuto: %lu"
 
 #: access/common/heaptuple.c:645 access/common/heaptuple.c:1399
 #, c-format
@@ -210,7 +210,7 @@ msgstr "RESET non deve contenere valori per i parametri"
 #: access/common/reloptions.c:668
 #, c-format
 msgid "unrecognized parameter namespace \"%s\""
-msgstr "parametro del namespace \"%s\" non identificato"
+msgstr "parametro del namespace \"%s\" sconosciuto"
 
 #: access/common/reloptions.c:912
 #, c-format
@@ -571,7 +571,7 @@ msgstr "Connettersi al database in cui la transazione è stata preparata per por
 #: access/transam/twophase.c:466
 #, c-format
 msgid "prepared transaction with identifier \"%s\" does not exist"
-msgstr "la transazione preparata con identificatore \"%s\" non esiste"
+msgstr "la transazione preparata con identificativo \"%s\" non esiste"
 
 #: access/transam/twophase.c:969
 #, c-format
@@ -1058,7 +1058,7 @@ msgstr "il file WAL proviene da un sistema diverso"
 #: access/transam/xlog.c:4233
 #, c-format
 msgid "WAL file database system identifier is %s, pg_control database system identifier is %s."
-msgstr "l'identificatore di sistema del database del file WAL è %s, l'identificatore di sistema del database di pg_control è %s."
+msgstr "l'identificativo di sistema del database del file WAL è %s, l'identificativo di sistema del database di pg_control è %s."
 
 #: access/transam/xlog.c:4241
 #, c-format
@@ -1335,11 +1335,10 @@ msgstr "recovery_target_xid non ha un valore numerico valido: \"%s\""
 msgid "recovery_target_name is too long (maximum %d characters)"
 msgstr "il recovery_target_name è troppo lungo (massimo %d caratteri)"
 
-# da non tradurre
 #: access/transam/xlog.c:5576
 #, c-format
 msgid "unrecognized recovery parameter \"%s\""
-msgstr "il parametro di ripristino \"%s\" non è stato riconosciuto"
+msgstr "parametro di ripristino \"%s\" sconosciuto"
 
 #: access/transam/xlog.c:5587
 #, c-format
@@ -2246,7 +2245,7 @@ msgstr "\"%s\" non è un dominio"
 #: catalog/aclchk.c:3203
 #, c-format
 msgid "unrecognized privilege type \"%s\""
-msgstr "tipo di privilegio non riconosciuto \"%s\""
+msgstr "tipo di privilegio \"%s\" sconosciuto"
 
 #: catalog/aclchk.c:3252
 #, c-format
@@ -4266,7 +4265,7 @@ msgstr "intestazione del file COPY non valida (flag mancanti)"
 #: commands/copy.c:2377
 #, c-format
 msgid "unrecognized critical flags in COPY file header"
-msgstr "alcune flag critici non sono state riconosciuti nell'intestazione del file COPY"
+msgstr "alcune flag critici non sono stati riconosciuti nell'intestazione del file COPY"
 
 #: commands/copy.c:2383
 #, c-format
@@ -4751,7 +4750,7 @@ msgstr "la famiglia di operatori \"%s\" non esiste per il metodo di accesso \"%s
 #: commands/explain.c:158
 #, c-format
 msgid "unrecognized value for EXPLAIN option \"%s\": \"%s\""
-msgstr "valore non riconosciuto per l'opzione di EXPLAIN \"%s\": \"%s\""
+msgstr "valore sconosciuto per l'opzione di EXPLAIN \"%s\": \"%s\""
 
 #: commands/explain.c:164
 #, c-format
@@ -4848,7 +4847,7 @@ msgstr "il parametro \"%s\" dev'essere una lista di nomi di estensioni"
 #: commands/extension.c:563
 #, c-format
 msgid "unrecognized parameter \"%s\" in file \"%s\""
-msgstr "parametro non riconosciuto \"%s\" nel file \"%s\""
+msgstr "parametro sconosciuto \"%s\" nel file \"%s\""
 
 #: commands/extension.c:572
 #, c-format
@@ -5207,7 +5206,7 @@ msgstr "ROWS dev'essere positivo"
 #: commands/functioncmds.c:722
 #, c-format
 msgid "unrecognized function attribute \"%s\" ignored"
-msgstr "attributo \"%s\" per la funzione ignorato"
+msgstr "attributo di funzione sconosciuto \"%s\" ignorato"
 
 #: commands/functioncmds.c:773
 #, c-format
@@ -8116,7 +8115,7 @@ msgstr "il protocollo tabella-funzione del modo di materializzazione non è stat
 #: executor/execQual.c:1868 executor/execQual.c:2280
 #, c-format
 msgid "unrecognized table-function returnMode: %d"
-msgstr "returnMode tabella-funzione non riconosciuto: %d"
+msgstr "returnMode tabella-funzione sconosciuto: %d"
 
 #: executor/execQual.c:2190
 #, c-format
@@ -8436,7 +8435,7 @@ msgstr "Le opzioni valide in questo contesto sono: %s"
 #: gram.y:914
 #, c-format
 msgid "unrecognized role option \"%s\""
-msgstr "opzione \"%s\" non riconosciuta per il ruolo"
+msgstr "opzione di ruolo \"%s\" sconosciuta"
 
 #: gram.y:1304
 #, c-format
@@ -8680,7 +8679,7 @@ msgstr "un vincolo %s non può essere marcato NO INHERIT"
 #: guc-file.l:192
 #, c-format
 msgid "unrecognized configuration parameter \"%s\" in file \"%s\" line %u"
-msgstr "parametro di configurazione \"%s\" non riconosciuto nel file \"%s\" riga %u"
+msgstr "parametro di configurazione \"%s\" sconosciuto nel file \"%s\" riga %u"
 
 #: guc-file.l:227 utils/misc/guc.c:5196 utils/misc/guc.c:5372
 #: utils/misc/guc.c:5476 utils/misc/guc.c:5577 utils/misc/guc.c:5698
@@ -9291,7 +9290,7 @@ msgstr "errore SSL: %s"
 #: libpq/be-secure.c:293 libpq/be-secure.c:388 libpq/be-secure.c:939
 #, c-format
 msgid "unrecognized SSL error code: %d"
-msgstr "codice di errore SSL %d non riconosciuto"
+msgstr "codice di errore SSL sconosciuto: %d"
 
 #: libpq/be-secure.c:332 libpq/be-secure.c:336 libpq/be-secure.c:346
 #, c-format
@@ -9658,7 +9657,7 @@ msgstr "numero di porta RADIUS non valido: \"%s\""
 #: libpq/hba.c:1582
 #, c-format
 msgid "unrecognized authentication option name: \"%s\""
-msgstr "nome di opzione di autenticazione non riconosciuto: \"%s\""
+msgstr "nome di opzione di autenticazione sconosciuto: \"%s\""
 
 #: libpq/hba.c:1771
 #, c-format
@@ -9725,7 +9724,7 @@ msgstr "Unix"
 #: libpq/pqcomm.c:360
 #, c-format
 msgid "unrecognized address family %d"
-msgstr "famiglia di indirizzi non riconosciuta %d"
+msgstr "famiglia di indirizzi %d sconosciuto"
 
 #. translator: %s is IPv4, IPv6, or Unix
 #: libpq/pqcomm.c:371
@@ -11584,7 +11583,7 @@ msgstr "CREATE specifica uno schema (%s) differente da quello che sta venendo cr
 #: parser/scansup.c:190
 #, c-format
 msgid "identifier \"%s\" will be truncated to \"%s\""
-msgstr "l'identificatore \"%s\" sarà troncato a \"%s\""
+msgstr "l'identificativo \"%s\" sarà troncato a \"%s\""
 
 #: port/pg_latch.c:324 port/unix_latch.c:324
 #, c-format
@@ -11905,7 +11904,7 @@ msgstr "comando di archiviazione terminato dal segnale %d"
 #: postmaster/pgarch.c:640
 #, c-format
 msgid "archive command exited with unrecognized status %d"
-msgstr "processo di archiviazione uscito con stato non riconosciuto %d"
+msgstr "processo di archiviazione uscito con stato sconosciuto %d"
 
 #: postmaster/pgarch.c:652
 #, c-format
@@ -11995,7 +11994,7 @@ msgstr "occorre essere un superutente per resettare i contatori delle statistich
 #: postmaster/pgstat.c:1193
 #, c-format
 msgid "unrecognized reset target: \"%s\""
-msgstr "obiettivo del reset non riconosciuto: \"%s\""
+msgstr "obiettivo del reset sconosciuto: \"%s\""
 
 #: postmaster/pgstat.c:1194
 #, c-format
@@ -12388,7 +12387,7 @@ msgstr "%s (PID %d) è stato terminato dal segnale %d"
 #: postmaster/postmaster.c:2912
 #, c-format
 msgid "%s (PID %d) exited with unrecognized status %d"
-msgstr "%s (PID %d) uscito con stato non riconosciuto %d"
+msgstr "%s (PID %d) uscito con stato sconosciuto %d"
 
 #: postmaster/postmaster.c:3096
 #, c-format
@@ -13088,11 +13087,11 @@ msgstr "stringa delimitata da dollari non terminata"
 
 #: scan.l:692 scan.l:704 scan.l:718
 msgid "zero-length delimited identifier"
-msgstr "identificatore delimitato di lunghezza zero"
+msgstr "identificativo delimitato di lunghezza zero"
 
 #: scan.l:731
 msgid "unterminated quoted identifier"
-msgstr "identificatore tra virgolette non terminato"
+msgstr "identificativo tra virgolette non terminato"
 
 #: scan.l:835
 msgid "operator too long"
@@ -13171,7 +13170,7 @@ msgstr "più di un parametro Language"
 #: snowball/dict_snowball.c:219
 #, c-format
 msgid "unrecognized Snowball parameter: \"%s\""
-msgstr "parametro Snowball non riconosciuto: \"%s\""
+msgstr "parametro Snowball sconosciuto: \"%s\""
 
 #: snowball/dict_snowball.c:227
 #, c-format
@@ -13376,7 +13375,7 @@ msgstr "l'advisory lock [%u,%u,%u,%u]"
 #: storage/lmgr/lmgr.c:718
 #, c-format
 msgid "unrecognized locktag type %d"
-msgstr "tipo di locktag non riconosciuto %d"
+msgstr "tipo di locktag %d sconosciuto"
 
 #: storage/lmgr/lock.c:615
 #, c-format
@@ -13972,7 +13971,7 @@ msgstr "più di un parametro AffFile"
 #: tsearch/dict_ispell.c:81
 #, c-format
 msgid "unrecognized Ispell parameter: \"%s\""
-msgstr "parametro Ispell non riconsciuto: \"%s\""
+msgstr "parametro Ispell sconosciuto: \"%s\""
 
 #: tsearch/dict_ispell.c:95
 #, c-format
@@ -13992,12 +13991,12 @@ msgstr "più di un parametro Accept"
 #: tsearch/dict_simple.c:65
 #, c-format
 msgid "unrecognized simple dictionary parameter: \"%s\""
-msgstr "parametro del dizionario simple non riconosciuto: \"%s\""
+msgstr "parametro del dizionario simple sconosciuto: \"%s\""
 
 #: tsearch/dict_synonym.c:117
 #, c-format
 msgid "unrecognized synonym parameter: \"%s\""
-msgstr "parametro dei sinonimi non riconosciuto: \"%s\""
+msgstr "parametro synonym sconosciuto: \"%s\""
 
 #: tsearch/dict_synonym.c:124
 #, c-format
@@ -14067,7 +14066,7 @@ msgstr "più di un parametro Dictionary"
 #: tsearch/dict_thesaurus.c:630
 #, c-format
 msgid "unrecognized Thesaurus parameter: \"%s\""
-msgstr "parametro di Thesaurus non riconosciuto: \"%s\""
+msgstr "parametro di Thesaurus sconosciuto: \"%s\""
 
 #: tsearch/dict_thesaurus.c:642
 #, c-format
@@ -14149,7 +14148,7 @@ msgstr "l'analizzatore di ricerca di testo non supporta la creazione di intestaz
 #: tsearch/wparser_def.c:2551
 #, c-format
 msgid "unrecognized headline parameter: \"%s\""
-msgstr "parametro di intestazione non riconosciuto: \"%s\""
+msgstr "parametro di intestazione sconosciuto: \"%s\""
 
 #: tsearch/wparser_def.c:2560
 #, c-format
@@ -14174,7 +14173,7 @@ msgstr "MaxFragments dovrebbe essere >= 0"
 #: utils/adt/acl.c:168 utils/adt/name.c:91
 #, c-format
 msgid "identifier too long"
-msgstr "l'identificatore è troppo lungo"
+msgstr "l'identificativo è troppo lungo"
 
 #: utils/adt/acl.c:169 utils/adt/name.c:92
 #, c-format
@@ -14184,7 +14183,7 @@ msgstr "Gli identificatori devono essere più corti di %d caratteri."
 #: utils/adt/acl.c:255
 #, c-format
 msgid "unrecognized key word: \"%s\""
-msgstr "parola chiave non riconosciuta: \"%s\""
+msgstr "parola chiave sconosciuta: \"%s\""
 
 #: utils/adt/acl.c:256
 #, c-format
@@ -14269,7 +14268,7 @@ msgstr "aclremove is no longer supported"
 #: utils/adt/acl.c:1631 utils/adt/acl.c:1685
 #, c-format
 msgid "unrecognized privilege type: \"%s\""
-msgstr "tipo di privilegio non riconosciuto: \"%s\""
+msgstr "tipo di privilegio sconosciuto: \"%s\""
 
 #: utils/adt/acl.c:3425 utils/adt/regproc.c:118 utils/adt/regproc.c:139
 #: utils/adt/regproc.c:289
@@ -14703,7 +14702,7 @@ msgstr "il tipo %s non è un dominio"
 #: utils/adt/encode.c:55 utils/adt/encode.c:91
 #, c-format
 msgid "unrecognized encoding: \"%s\""
-msgstr "codifica non riconosciuta: \"%s\""
+msgstr "codifica sconosciuta: \"%s\""
 
 #: utils/adt/encode.c:150
 #, c-format
@@ -16451,12 +16450,12 @@ msgstr "troppi pochi argomenti per il formato"
 #: utils/adt/varlena.c:3976
 #, c-format
 msgid "unrecognized conversion specifier \"%c\""
-msgstr "specificatore di conversione non riconosciuto \"%c\""
+msgstr "specificatore di conversione sconosciuto \"%c\""
 
 #: utils/adt/varlena.c:4005
 #, c-format
 msgid "null values cannot be formatted as an SQL identifier"
-msgstr "i valori null non possono essere formattati come un identificatore SQL"
+msgstr "i valori vuoti non possono essere formattati come un identificativo SQL"
 
 #: utils/adt/windowfuncs.c:243
 #, c-format
@@ -16893,7 +16892,7 @@ msgstr "la funzione interna \"%s\" non è nella tabella interna di lookup"
 #: utils/fmgr/fmgr.c:481
 #, c-format
 msgid "unrecognized API version %d reported by info function \"%s\""
-msgstr "versione API non riconosciuta %d riportata dalla funzione info \"%s\""
+msgstr "versione API sconosciuto %d riportata dalla funzione info \"%s\""
 
 #: utils/fmgr/fmgr.c:852 utils/fmgr/fmgr.c:2113
 #, c-format
@@ -18585,7 +18584,7 @@ msgstr "Le unità di misura valide sono \"ms\", \"s\", \"min\", \"h\" e \"d\"."
 #: utils/misc/guc.c:6725 utils/misc/guc.c:6884 utils/misc/guc.c:8053
 #, c-format
 msgid "unrecognized configuration parameter \"%s\""
-msgstr "il parametro di configurazione \"%s\" è sconosciuto"
+msgstr "parametro di configurazione \"%s\" sconosciuto"
 
 #: utils/misc/guc.c:5173
 #, c-format
@@ -18711,7 +18710,7 @@ msgstr "Non è possibile abilitare \"log_statement_stats\" quando \"log_parser_s
 #: utils/misc/help_config.c:131
 #, c-format
 msgid "internal error: unrecognized run-time parameter type\n"
-msgstr "errore interno: tipo di parametro non riconosciuto\n"
+msgstr "errore interno: tipo di parametro sconosciuto\n"
 
 #: utils/misc/tzparser.c:61
 #, c-format
@@ -18860,7 +18859,7 @@ msgstr "una transazione che importa uno snapshot deve avere livello di isolament
 #: utils/time/snapmgr.c:1014 utils/time/snapmgr.c:1023
 #, c-format
 msgid "invalid snapshot identifier: \"%s\""
-msgstr "identificatore di snapshot non valido: \"%s\""
+msgstr "identificativo di snapshot non valido: \"%s\""
 
 #: utils/time/snapmgr.c:1112
 #, c-format

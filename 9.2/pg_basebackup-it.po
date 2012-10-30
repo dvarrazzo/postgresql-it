@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 18:20+0100\n"
+"PO-Revision-Date: 2012-10-30 13:10+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -315,7 +315,7 @@ msgstr "%s: non è stato possibile creare un link simbolico da \"%s\" a \"%s\": 
 #: pg_basebackup.c:850
 #, c-format
 msgid "%s: unrecognized link indicator \"%c\"\n"
-msgstr "%s: indicatore di link non riconosciuto \"%c\"\n"
+msgstr "%s: indicatore di link sconosciuto \"%c\"\n"
 
 #: pg_basebackup.c:870
 #, c-format
@@ -617,7 +617,7 @@ msgstr "%s: non rinominerò \"%s\", il segmento non è completo\n"
 #: receivelog.c:319
 #, c-format
 msgid "%s: system identifier does not match between base backup and streaming connection\n"
-msgstr "%s: l'identificatore di sistema non combacia tra il backup di base e la connessione in streaming\n"
+msgstr "%s: l'identificativo di sistema non combacia tra il backup di base e la connessione in streaming\n"
 
 #: receivelog.c:327
 #, c-format
@@ -647,7 +647,7 @@ msgstr "%s: il messaggio di keepalive ha dimensione non corretta %d\n"
 #: receivelog.c:494
 #, c-format
 msgid "%s: unrecognized streaming header: \"%c\"\n"
-msgstr "%s: intestazione dello streaming non riconosciuta: \"%c\"\n"
+msgstr "%s: intestazione dello streaming sconosciuta: \"%c\"\n"
 
 #: receivelog.c:500
 #, c-format

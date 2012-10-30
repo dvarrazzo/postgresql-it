@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-30 12:18+0100\n"
+"PO-Revision-Date: 2012-10-30 13:07+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -265,19 +265,18 @@ msgstr "stringa tra virgolette non terminata"
 #: pgc.l:574 pgc.l:587
 #, c-format
 msgid "zero-length delimited identifier"
-msgstr "identificatore di delimitazione di dimensione-zero"
+msgstr "identificativo delimitato di dimensione-zero"
 
 #: pgc.l:595
 #, c-format
 msgid "unterminated quoted identifier"
-msgstr "identificatore tra virgolette non terminato"
+msgstr "identificativo tra virgolette non terminato"
 
 #: pgc.l:941
 #, c-format
 msgid "missing identifier in EXEC SQL UNDEF command"
-msgstr "identificatore mancante nel comando EXEC SQL UNDEF"
+msgstr "identificativo mancante nel comando EXEC SQL UNDEF"
 
-# sarebbe "mancanti corrispondenti"... ma non trovo un senso corretto
 #: pgc.l:987 pgc.l:1001
 #, c-format
 msgid "missing matching \"EXEC SQL IFDEF\" / \"EXEC SQL IFNDEF\""
@@ -293,7 +292,6 @@ msgstr "manca \"EXEC SQL ENDIF;\""
 msgid "more than one EXEC SQL ELSE"
 msgstr "più di un EXEC SQL ELSE"
 
-# trovare modo + corretto
 #: pgc.l:1060 pgc.l:1074
 #, c-format
 msgid "unmatched EXEC SQL ENDIF"
@@ -307,12 +305,12 @@ msgstr "troppe condizioni EXEC SQL IFDEF annidate"
 #: pgc.l:1127
 #, c-format
 msgid "missing identifier in EXEC SQL IFDEF command"
-msgstr "identificatore mancante nel comando EXEC SQL IFDEF"
+msgstr "identificativo mancante nel comando EXEC SQL IFDEF"
 
 #: pgc.l:1136
 #, c-format
 msgid "missing identifier in EXEC SQL DEFINE command"
-msgstr "identificatore mancante nel comando EXEC SQL DEFINE"
+msgstr "identificativo mancante nel comando EXEC SQL DEFINE"
 
 #: pgc.l:1169
 #, c-format
@@ -324,11 +322,10 @@ msgstr "errore di sintassi nel comando EXEC SQL INCLUDE"
 msgid "internal error: unreachable state; please report this to <pgsql-bugs@postgresql.org>"
 msgstr "errore interno: stato non raggiungibile, si prega di segnalarlo a <pgsql-bugs@postgresql.org>"
 
-# "percorso di inclusione" sembra fuorviante
 #: pgc.l:1343
 #, c-format
 msgid "Error: include path \"%s/%s\" is too long on line %d, skipping\n"
-msgstr "Errore: il percorso della include \"%s/%s\" è troppo lungo alla riga %d, perciò viene saltato\n"
+msgstr "Errore: il percorso delle inclusioni \"%s/%s\" è troppo lungo alla riga %d, perciò viene saltato\n"
 
 #: pgc.l:1365
 #, c-format
@@ -508,7 +505,7 @@ msgstr "istruzione incompleta"
 #: preproc.y:12797 preproc.y:12814
 #, c-format
 msgid "unrecognized token \"%s\""
-msgstr "token \"%s\" non riconosciuto"
+msgstr "token \"%s\" sconosciuto"
 
 #: preproc.y:13088
 #, c-format

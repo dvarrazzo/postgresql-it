@@ -116,6 +116,7 @@ Traduzioni di termini abbastanza comuni
   mailing list.)
 * client-side: lato client
 * collate: ordinamento
+* constraint: vincolo
 * database cluster: cluster di database
 * default: predefinito
 * encoding: codifica
@@ -123,6 +124,7 @@ Traduzioni di termini abbastanza comuni
 * exit code: codice di uscita (inteso di processi e thread)
 * false (is false): è disabilitato
 * get: ottenere, trovare (a seconda del contesto: ottenere informazioni,
+* identifier: identificativo, non identificatore
 * invalid: non valido (non "invalido")
 * line: riga (di un file)
 * log file: file di log
@@ -135,6 +137,7 @@ Traduzioni di termini abbastanza comuni
 * superuser: superutente
 * stat: ottenere informazioni
 * true (is true): è abilitato
+* unrecognized: sconosciuto
 
 
 Termini non tradotti

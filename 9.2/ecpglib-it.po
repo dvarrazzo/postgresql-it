@@ -19,17 +19,16 @@ msgstr ""
 "Project-Id-Version: ecpglib (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-24 22:08+0100\n"
+"PO-Revision-Date: 2012-10-30 13:08+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: connect.c:231
 msgid "empty message text"
@@ -151,7 +150,7 @@ msgstr "l'indice del descrittore è fuori intervallo alla riga %d"
 #: error.c:228
 #, c-format
 msgid "unrecognized descriptor item \"%s\" on line %d"
-msgstr "elemento del descrittore \"%s\" non riconosciuto alla riga %d"
+msgstr "elemento del descrittore \"%s\" sconosciuto alla riga %d"
 
 #: error.c:238
 #, c-format

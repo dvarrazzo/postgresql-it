@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 12:21+0100\n"
+"PO-Revision-Date: 2012-10-30 13:10+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -84,7 +84,7 @@ msgstr "processo figlio terminato da segnale %d"
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "processo figlio uscito con stato non riconosciuto %d"
+msgstr "processo figlio uscito con stato sconosciuto %d"
 
 #: pg_config.c:243 pg_config.c:259 pg_config.c:275 pg_config.c:291
 #: pg_config.c:307 pg_config.c:323 pg_config.c:339 pg_config.c:355
