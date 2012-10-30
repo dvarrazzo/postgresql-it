@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-30 12:49+0100\n"
+"PO-Revision-Date: 2012-10-30 12:56+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -8547,7 +8547,7 @@ msgstr "Per esempio, FROM (VALUES ...) [AS] foo."
 #: gram.y:9287
 #, c-format
 msgid "subquery in FROM must have an alias"
-msgstr "la subquery in FROM deve avere un alias"
+msgstr "la sottoquery in FROM deve avere un alias"
 
 #: gram.y:9288
 #, c-format
