@@ -124,7 +124,7 @@ Traduzioni di termini abbastanza comuni
 * error code: codice errore
 * exit code: codice di uscita (inteso di processi e thread)
 * false (is false): è disabilitato
-* get: ottenere, trovare (a seconda del contesto: ottenere informazioni,
+* get: ottenere, trovare (a seconda del contesto: ottenere informazioni, trovare un valore)
 * identifier: identificativo, non identificatore
 * invalid: non valido (non "invalido")
 * line: riga (di un file)
@@ -133,7 +133,6 @@ Traduzioni di termini abbastanza comuni
 * return: restituire, non tornare o ritornare
 * server-side: lato server
 * set: impostare, non settare (non c'è puttare o gettare, no?)
-  trovare un valore)
 * subquery: sottoquery
 * superuser: superutente
 * stat: ottenere informazioni
