@@ -36,8 +36,8 @@ Non tradurre il plurale delle parole inglesi: file e non files.
 La traduzione di directory è directory, non cartella. "Cartella" è un
 microsoftismo.
 
-La versione maiuscola di "è" è "È" e non "E'". In Linux si ottiene con Alt Gr
-+ # poi Shift + e
+La versione maiuscola di "è" è "È" e non "E'". Il modo più facile di digitarla
+su Linux è di scrivere è col Caps Lock attivo.
 
 Se hai un dubbio, su qualche parola, controlla come è stata fatta in passato.
 Per esempio, come è tradotto "database cluster"? ::
