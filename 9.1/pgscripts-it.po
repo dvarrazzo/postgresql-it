@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:57+0000\n"
-"PO-Revision-Date: 2012-10-31 15:08+0100\n"
+"PO-Revision-Date: 2012-10-31 16:34+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -533,7 +533,7 @@ msgstr "  -d, --dbname=NOME_DB      database dal quale eliminare il linguaggio\n
 
 #: dropuser.c:103
 msgid "Enter name of role to drop: "
-msgstr "Inserisci il nome del ruolo da eliminare:"
+msgstr "Inserisci il nome del ruolo da eliminare: "
 
 #: dropuser.c:107
 #, c-format

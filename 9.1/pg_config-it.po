@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:56+0000\n"
-"PO-Revision-Date: 2012-10-31 14:42+0100\n"
+"PO-Revision-Date: 2012-10-31 16:24+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -131,13 +131,13 @@ msgstr "  --sharedir            mostra la locazione dei file di supporto non dip
 #, c-format
 msgid "  --sysconfdir          show location of system-wide configuration files\n"
 msgstr ""
-" --sysconfdir           mostra la locazione dei file di configurazione\n"
+"  --sysconfdir          mostra la locazione dei file di configurazione\n"
 "                        di sistema\n"
 
 #: pg_config.c:445
 #, c-format
 msgid "  --pgxs                show location of extension makefile\n"
-msgstr " --pgxs                 mostra la locazione delle estensioni makefile\n"
+msgstr "  --pgxs                mostra la locazione delle estensioni makefile\n"
 
 #: pg_config.c:446
 #, c-format

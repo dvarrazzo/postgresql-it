@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:51+0000\n"
-"PO-Revision-Date: 2012-10-31 14:38+0100\n"
+"PO-Revision-Date: 2012-10-31 16:23+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -716,12 +716,12 @@ msgstr "CONTESTO: %s\n"
 
 #: fe-protocol3.c:851
 msgid "LOCATION:  "
-msgstr "POSIZIONE:"
+msgstr "POSIZIONE:  "
 
 #: fe-protocol3.c:853
 #, c-format
 msgid "%s, "
-msgstr "%s,"
+msgstr "%s, "
 
 #: fe-protocol3.c:855
 #, c-format
@@ -733,10 +733,9 @@ msgstr "%s:%s"
 msgid "LINE %d: "
 msgstr "RIGA %d: "
 
-# NON SONO ASSOLUTAMENTE CONVINTO!
 #: fe-protocol3.c:1465
 msgid "PQgetline: not doing text COPY OUT\n"
-msgstr "PQgetline: non riesce a fare il testo di COPY OUT \n"
+msgstr "PQgetline: COPY OUT testuale ignorato\n"
 
 #: fe-secure.c:265
 #, c-format
