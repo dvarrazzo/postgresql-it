@@ -46,6 +46,9 @@ class CheckWhitespace(object):
 	_chk_re = None
 
 	def check(self, entry):
+		if 'fuzzy' in entry.flags:
+			return
+
 		if not entry.msgid_plural:
 			msgs = [(entry.msgid, entry.msgstr)]
 		else:
