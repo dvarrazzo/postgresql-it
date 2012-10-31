@@ -42,12 +42,10 @@ su Linux è di scrivere è col Caps Lock attivo.
 Se hai un dubbio, su qualche parola, controlla come è stata fatta in passato.
 Per esempio, come è tradotto "database cluster"? ::
 
-	ack -i -A1 "database cluster" *.po
+	grep -i -A1 "database cluster" *.po
 
-dove ``ack`` è `ack-grep`_. Otterrai i messaggi che usano la stringa e le
-relative traduzioni e potrai fartene un'idea.
-
-.. _ack-grep: http://betterthangrep.com/
+Otterrai i messaggi che usano la stringa e le relative traduzioni e potrai
+fartene un'idea.
 
 Sei il futuro Gadda e il linguaggio te lo manipoli come vuoi? Grande, siamo
 felici tu sia con noi. Ma la consistenza è più importante di altri fattori in
