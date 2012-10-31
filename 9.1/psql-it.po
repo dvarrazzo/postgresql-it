@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:55+0000\n"
-"PO-Revision-Date: 2012-10-30 17:29+0100\n"
+"PO-Revision-Date: 2012-10-31 15:13+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -135,7 +135,7 @@ msgstr "Autenticazione password fallita.\n"
 #: command.c:999 command.c:1100 command.c:1282
 #, c-format
 msgid "\\%s: error\n"
-msgstr ""
+msgstr "\\%s: errore\n"
 
 #: command.c:1040
 msgid "Query buffer reset (cleared)."
@@ -230,9 +230,9 @@ msgstr ""
 "         Alcune caratteristiche di psql potrebbero non funzionare.\n"
 
 #: command.c:1673
-#, fuzzy, c-format
+#, c-format
 msgid "SSL connection (cipher: %s, bits: %i)\n"
-msgstr "connessione SSL (cifratura: %s, bit: %d)\n"
+msgstr "connessione SSL (cifratura: %s, bit: %i)\n"
 
 #: command.c:1683
 #, c-format
@@ -384,9 +384,9 @@ msgid "Default footer is off."
 msgstr "Piè di pagina disattivato."
 
 #: command.c:2332
-#, fuzzy, c-format
+#, c-format
 msgid "Target width for \"wrapped\" format is %d.\n"
-msgstr "La larghezza di destinazione è %d.\n"
+msgstr "La larghezza di destinazione per il formato \"wrapped\" è %d.\n"
 
 #: command.c:2337
 #, c-format
@@ -476,14 +476,14 @@ msgid "%s: cannot copy from/to a directory\n"
 msgstr "%s: non è possibile copiare da/a una directory\n"
 
 #: copy.c:331
-#, fuzzy, c-format
+#, c-format
 msgid "\\copy: %s"
-msgstr "\\connetti: %s"
+msgstr "\\copy: %s"
 
 #: copy.c:335 copy.c:349
-#, fuzzy, c-format
+#, c-format
 msgid "\\copy: unexpected response (%d)\n"
-msgstr "stato della transazione imprevisto (%d)\n"
+msgstr "\\copy: risposta imprevista (%d)\n"
 
 #: copy.c:353
 msgid "trying to exit copy mode"
@@ -604,14 +604,14 @@ msgstr ""
 "                           esegui il file di comandi in un'unica transazione\n"
 
 #: help.c:100
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                   show this help, then exit\n"
-msgstr "  -?, --help               mostra questo aiuto ed esci\n"
+msgstr "  --help                   mostra questo aiuto ed esci\n"
 
 #: help.c:101
-#, fuzzy, c-format
+#, c-format
 msgid "  --version                output version information, then exit\n"
-msgstr "  -V, --version            mostra informazioni sulla versione ed esci\n"
+msgstr "  --version                mostra informazioni sulla versione ed esci\n"
 
 #: help.c:103
 #, c-format
@@ -933,19 +933,19 @@ msgid "  \\db[+]  [PATTERN]      list tablespaces\n"
 msgstr "  \\dB[+]  [MODELLO]      mostra i tablespace\n"
 
 #: help.c:197
-#, fuzzy, c-format
+#, c-format
 msgid "  \\dc[S]  [PATTERN]      list conversions\n"
-msgstr "  \\dc[S+] [MODELLO]      mostra le conversioni di codifica\n"
+msgstr "  \\dc[S] [MODELLO]       mostra le conversioni di codifica\n"
 
 #: help.c:198
-#, fuzzy, c-format
+#, c-format
 msgid "  \\dC     [PATTERN]      list casts\n"
-msgstr "  \\dC[+]  [MODELLO]      mostra le conversioni di tipo\n"
+msgstr "  \\dC     [MODELLO]      mostra le conversioni di tipo\n"
 
 #: help.c:199
-#, fuzzy, c-format
+#, c-format
 msgid "  \\dd[S]  [PATTERN]      show comments on objects\n"
-msgstr "  \\dc[S+] [MODELLO]      mostra le conversioni di codifica\n"
+msgstr "  \\dc     [MODELLO]      mostra le conversioni di codifica\n"
 
 #: help.c:200
 #, c-format
@@ -953,9 +953,9 @@ msgid "  \\ddp    [PATTERN]      list default privileges\n"
 msgstr "  \\ddp    [MODELLO]      mostra i privilegi predefiniti\n"
 
 #: help.c:201
-#, fuzzy, c-format
+#, c-format
 msgid "  \\dD[S]  [PATTERN]      list domains\n"
-msgstr "  \\dD[S+] [MODELLO]      mostra i domini\n"
+msgstr "  \\dD     [MODELLO]      mostra i domini\n"
 
 #: help.c:202
 #, c-format
@@ -1129,16 +1129,15 @@ msgid "  \\H                     toggle HTML output mode (currently %s)\n"
 msgstr "  \\H                     cambia modalità HTML (attualmente %s)\n"
 
 #: help.c:238
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  \\pset NAME [VALUE]     set table output option\n"
 "                         (NAME := {format|border|expanded|fieldsep|footer|null|\n"
 "                         numericlocale|recordsep|tuples_only|title|tableattr|pager})\n"
 msgstr ""
 "  \\pset NOME [VALORE]    imposta opzioni di output tabella\n"
-"                         (NOME := {format|border|expanded|fieldsep|\n"
-"                         fieldsep_zero|footer|null|numericlocale|recordsep|\n"
-"                         recordsep_zero|tuples_only|title|tableattr|pager})\n"
+"                         (NOME := {format|border|expanded|fieldsep|footer|null|\n"
+"                         numericlocale|recordsep|tuples_only|title|tableattr|pager})\n"
 
 #: help.c:241
 #, c-format
@@ -1153,10 +1152,10 @@ msgstr ""
 "                         specificato allora annullali\n"
 
 #: help.c:244
-#, fuzzy, c-format
+#, c-format
 msgid "  \\x [on|off]            toggle expanded output (currently %s)\n"
 msgstr ""
-"  \\x [on|off|auto]       cambia modalità output espansa\n"
+"  \\x [on|off]            cambia modalità output espansa\n"
 "                         (attualmente %s)\n"
 
 #: help.c:248
@@ -1428,7 +1427,7 @@ msgstr "%s: attenzione: parametro in eccesso \"%s\" nella riga di comando ignora
 
 #: startup.c:625
 msgid "contains support for command-line editing"
-msgstr ""
+msgstr "include il supporto per l'editing della riga di comando"
 
 #: describe.c:69 describe.c:236 describe.c:463 describe.c:585 describe.c:706
 #: describe.c:788 describe.c:849 describe.c:2504 describe.c:2698
@@ -1631,7 +1630,7 @@ msgstr "Oggetto"
 
 #: describe.c:863
 msgid "aggregate"
-msgstr ""
+msgstr "aggregato"
 
 #: describe.c:902 sql_help.c:1715 sql_help.c:2833 sql_help.c:2903
 #: sql_help.c:3036 sql_help.c:3141 sql_help.c:3192
@@ -1639,7 +1638,6 @@ msgid "operator"
 msgstr "operatore"
 
 #: describe.c:921
-#, fuzzy
 msgid "data type"
 msgstr "tipo_di_dato"
 
@@ -2884,9 +2882,8 @@ msgstr "nome"
 
 #: sql_help.c:27 sql_help.c:30 sql_help.c:33 sql_help.c:317 sql_help.c:320
 #: sql_help.c:2031
-#, fuzzy
 msgid "type"
-msgstr "Ctype"
+msgstr "tipo"
 
 #: sql_help.c:28 sql_help.c:45 sql_help.c:60 sql_help.c:92 sql_help.c:312
 #: sql_help.c:360 sql_help.c:393 sql_help.c:405 sql_help.c:422 sql_help.c:461
@@ -3119,14 +3116,12 @@ msgstr "azione"
 #: sql_help.c:1434 sql_help.c:1597 sql_help.c:1729 sql_help.c:2432
 #: sql_help.c:2433 sql_help.c:2473 sql_help.c:2686 sql_help.c:2687
 #: sql_help.c:3105 sql_help.c:3107 sql_help.c:3124 sql_help.c:3127
-#, fuzzy
 msgid "column"
-msgstr "Colonna"
+msgstr "colonna"
 
 #: sql_help.c:310 sql_help.c:679
-#, fuzzy
 msgid "new_column"
-msgstr "nuovo_nome_colonna"
+msgstr "nuova_colonna"
 
 #: sql_help.c:315 sql_help.c:371 sql_help.c:684 sql_help.c:876
 msgid "where action is one of:"
@@ -3472,9 +3467,8 @@ msgstr "codifica"
 
 #: sql_help.c:1273 sql_help.c:1440 sql_help.c:1687 sql_help.c:1695
 #: sql_help.c:1727 sql_help.c:1749
-#, fuzzy
 msgid "tablespace"
-msgstr "Tablespace"
+msgstr "tablespace"
 
 #: sql_help.c:1294
 msgid "constraint"
@@ -3485,9 +3479,8 @@ msgid "where constraint is:"
 msgstr "dove vincolo di è:"
 
 #: sql_help.c:1309
-#, fuzzy
 msgid "schema"
-msgstr "Schema"
+msgstr "schema"
 
 #: sql_help.c:1310
 msgid "version"

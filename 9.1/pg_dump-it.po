@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:57+0000\n"
-"PO-Revision-Date: 2012-10-30 13:16+0100\n"
+"PO-Revision-Date: 2012-10-31 15:06+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -120,43 +120,43 @@ msgstr ""
 "Opzioni generali:\n"
 
 #: pg_dump.c:840
-#, fuzzy, c-format
+#, c-format
 msgid "  -f, --file=FILENAME         output file or directory name\n"
-msgstr "  -f, --file=FILENAME          nome del file o directory di output\n"
+msgstr "  -f, --file=FILENAME         nome del file o directory di output\n"
 
 #: pg_dump.c:841
-#, fuzzy, c-format
+#, c-format
 msgid "  -F, --format=c|d|t|p        output file format (custom, directory, tar, plain text)\n"
 msgstr ""
-"  -F, --format=c|d|t|p         formato del file di output (custom, directory,\n"
-"                               tar, testo in chiaro (predefinito))\n"
+"  -F, --format=c|d|t|p        formato del file di output (custom, directory,\n"
+"                              tar, testo in chiaro (predefinito))\n"
 
 #: pg_dump.c:842
-#, fuzzy, c-format
+#, c-format
 msgid "  -v, --verbose               verbose mode\n"
-msgstr "  -v, --verbose                stampa più informazioni\n"
+msgstr "  -v, --verbose               stampa più informazioni\n"
 
 #: pg_dump.c:843
-#, fuzzy, c-format
+#, c-format
 msgid "  -Z, --compress=0-9          compression level for compressed formats\n"
-msgstr "  -Z, --compress=0-9           livello di compressione per formati compressi\n"
+msgstr "  -Z, --compress=0-9          livello di compressione per formati compressi\n"
 
 #: pg_dump.c:844 pg_dumpall.c:534
-#, fuzzy, c-format
+#, c-format
 msgid "  --lock-wait-timeout=TIMEOUT fail after waiting TIMEOUT for a table lock\n"
 msgstr ""
-"  --lock-wait-timeout=TIMEOUT  termina con errore dopo un'attesa di TIMEOUT\n"
-"                               per un lock di tabella\n"
+"  --lock-wait-timeout=TIMEOUT termina con errore dopo un'attesa di TIMEOUT\n"
+"                              per un lock di tabella\n"
 
 #: pg_dump.c:845 pg_dumpall.c:535
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                      show this help, then exit\n"
-msgstr "  -?, --help                   mostra questo aiuto ed esci\n"
+msgstr "  --help                      mostra questo aiuto ed esci\n"
 
 #: pg_dump.c:846 pg_dumpall.c:536
-#, fuzzy, c-format
+#, c-format
 msgid "  --version                   output version information, then exit\n"
-msgstr "  -V, --version                mostra informazioni sulla versione ed esci\n"
+msgstr "  --version                   mostra informazioni sulla versione ed esci\n"
 
 #: pg_dump.c:848 pg_dumpall.c:537
 #, c-format
@@ -168,155 +168,155 @@ msgstr ""
 "Opzioni per il controllo del contenuto dell'output:\n"
 
 #: pg_dump.c:849 pg_dumpall.c:538
-#, fuzzy, c-format
+#, c-format
 msgid "  -a, --data-only             dump only the data, not the schema\n"
-msgstr "  -a, --data-only              scarica solamente i dati, non lo schema\n"
+msgstr "  -a, --data-only             scarica solamente i dati, non lo schema\n"
 
 #: pg_dump.c:850
-#, fuzzy, c-format
+#, c-format
 msgid "  -b, --blobs                 include large objects in dump\n"
-msgstr " -b, --blobs                   includi nell'archivio i large objects\n"
+msgstr "  -b, --blobs                 includi nell'archivio i large objects\n"
 
 #: pg_dump.c:851
-#, fuzzy, c-format
+#, c-format
 msgid "  -c, --clean                 clean (drop) database objects before recreating\n"
 msgstr ""
-"  -c, --clean                  svuota (drop) gli oggetti del database prima di\n"
-"                               ricrearli\n"
+"  -c, --clean                 svuota (drop) gli oggetti del database prima di\n"
+"                              ricrearli\n"
 
 #: pg_dump.c:852
-#, fuzzy, c-format
+#, c-format
 msgid "  -C, --create                include commands to create database in dump\n"
 msgstr ""
-"  -C, --create                 include nell'archivio i comandi per creare\n"
-"                               i database\n"
+"  -C, --create                include nell'archivio i comandi per creare\n"
+"                              i database\n"
 
 #: pg_dump.c:853
-#, fuzzy, c-format
+#, c-format
 msgid "  -E, --encoding=ENCODING     dump the data in encoding ENCODING\n"
-msgstr "  -E, --encoding=CODIFICA      scarica i dati nella CODIFICA indicata\n"
+msgstr "  -E, --encoding=CODIFICA     scarica i dati nella CODIFICA indicata\n"
 
 #: pg_dump.c:854
-#, fuzzy, c-format
+#, c-format
 msgid "  -n, --schema=SCHEMA         dump the named schema(s) only\n"
-msgstr "  -n, --schema=SCHEMA          scarica solo lo schema o gli schemi nominati\n"
+msgstr "  -n, --schema=SCHEMA         scarica solo lo schema o gli schemi nominati\n"
 
 #: pg_dump.c:855
-#, fuzzy, c-format
+#, c-format
 msgid "  -N, --exclude-schema=SCHEMA do NOT dump the named schema(s)\n"
-msgstr "  -N, --exclude-schema=SCHEMA  non scarica lo schema o gli schemi nominati\n"
+msgstr "  -N, --exclude-schema=SCHEMA non scaricare lo schema o gli schemi nominati\n"
 
 #: pg_dump.c:856 pg_dumpall.c:541
-#, fuzzy, c-format
+#, c-format
 msgid "  -o, --oids                  include OIDs in dump\n"
-msgstr "  -o, --oids                   includi gli OID nel dump\n"
+msgstr "  -o, --oids                  includi gli OID nel dump\n"
 
 #: pg_dump.c:857
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -O, --no-owner              skip restoration of object ownership in\n"
 "                              plain-text format\n"
 msgstr ""
-"  -O, --no-owner               salta il ripristino del proprietario degli\n"
-"                               oggetti nel formato testo in chiaro\n"
+"  -O, --no-owner              salta il ripristino del proprietario degli\n"
+"                              oggetti nel formato testo in chiaro\n"
 
 #: pg_dump.c:859 pg_dumpall.c:544
-#, fuzzy, c-format
+#, c-format
 msgid "  -s, --schema-only           dump only the schema, no data\n"
-msgstr "  -s, --schema-only            scarica solo lo schema, non i dati\n"
+msgstr "  -s, --schema-only           scarica solo lo schema, non i dati\n"
 
 #: pg_dump.c:860
-#, fuzzy, c-format
+#, c-format
 msgid "  -S, --superuser=NAME        superuser user name to use in plain-text format\n"
 msgstr ""
-"  -S, --superuser=NOME         nome del superutente da usare nel formato testo\n"
-"                               in chiaro\n"
+"  -S, --superuser=NOME        nome del superutente da usare nel formato testo\n"
+"                              in chiaro\n"
 
 #: pg_dump.c:861
-#, fuzzy, c-format
+#, c-format
 msgid "  -t, --table=TABLE           dump the named table(s) only\n"
-msgstr "  -t, --table=TABELLA          scarica solo la tabella o le tabelle nominate\n"
+msgstr "  -t, --table=TABELLA         scarica solo la tabella o le tabelle nominate\n"
 
 #: pg_dump.c:862
-#, fuzzy, c-format
+#, c-format
 msgid "  -T, --exclude-table=TABLE   do NOT dump the named table(s)\n"
-msgstr "  -T, --exclude-table=TABELLA  NON scaricare la tabella o le tabelle nominate\n"
+msgstr "  -T, --exclude-table=TABELLA NON scaricare la tabella o le tabelle nominate\n"
 
 #: pg_dump.c:863 pg_dumpall.c:547
-#, fuzzy, c-format
+#, c-format
 msgid "  -x, --no-privileges         do not dump privileges (grant/revoke)\n"
-msgstr "  -x, --no-privileges          non scaricare i privilegi (grant/revoke)\n"
+msgstr "  -x, --no-privileges         non scaricare i privilegi (grant/revoke)\n"
 
 #: pg_dump.c:864 pg_dumpall.c:548
-#, fuzzy, c-format
+#, c-format
 msgid "  --binary-upgrade            for use by upgrade utilities only\n"
-msgstr "  --binary-upgrade             da utilizzare solo dall'utilità di aggiornamento\n"
+msgstr "  --binary-upgrade            da utilizzare solo dall'utilità di aggiornamento\n"
 
 #: pg_dump.c:865 pg_dumpall.c:549
-#, fuzzy, c-format
+#, c-format
 msgid "  --column-inserts            dump data as INSERT commands with column names\n"
 msgstr ""
-"  --column-inserts             scarica dati come comandi INSERT con nomi\n"
-"                               di colonna\n"
+"  --column-inserts            scarica dati come comandi INSERT con nomi\n"
+"                              di colonna\n"
 
 #: pg_dump.c:866 pg_dumpall.c:550
-#, fuzzy, c-format
+#, c-format
 msgid "  --disable-dollar-quoting    disable dollar quoting, use SQL standard quoting\n"
 msgstr ""
-"  --disable-dollar-quoting     disabilita la quotazione con dollari, usa la\n"
-"                               quotazione standard SQL\n"
+"  --disable-dollar-quoting    disabilita la quotazione con dollari, usa la\n"
+"                              quotazione standard SQL\n"
 
 #: pg_dump.c:867 pg_dumpall.c:551
-#, fuzzy, c-format
+#, c-format
 msgid "  --disable-triggers          disable triggers during data-only restore\n"
 msgstr ""
-"  --disable-triggers           disabilita i trigger durante il ripristino\n"
-"                               dei soli dati\n"
+"  --disable-triggers          disabilita i trigger durante il ripristino\n"
+"                              dei soli dati\n"
 
 #: pg_dump.c:868 pg_dumpall.c:552
-#, fuzzy, c-format
+#, c-format
 msgid "  --inserts                   dump data as INSERT commands, rather than COPY\n"
-msgstr "  --inserts                    scarica i dati come comandi INSERT anziché COPY\n"
+msgstr "  --inserts                   scarica i dati come comandi INSERT anziché COPY\n"
 
 #: pg_dump.c:869 pg_dumpall.c:553
-#, fuzzy, c-format
+#, c-format
 msgid "  --no-security-labels        do not dump security label assignments\n"
-msgstr "  --no-security-labels         non scaricare le assegnazioni di sicurezza\n"
+msgstr "  --no-security-labels        non scaricare le assegnazioni di sicurezza\n"
 
 #: pg_dump.c:870 pg_dumpall.c:554
-#, fuzzy, c-format
+#, c-format
 msgid "  --no-tablespaces            do not dump tablespace assignments\n"
-msgstr "  --no-tablespaces             non scarica le assegnazioni di tablespace\n"
+msgstr "  --no-tablespaces            non scarica le assegnazioni di tablespace\n"
 
 #: pg_dump.c:871 pg_dumpall.c:555
-#, fuzzy, c-format
+#, c-format
 msgid "  --no-unlogged-table-data    do not dump unlogged table data\n"
-msgstr "  --no-unlogged-table-data     non scaricare i dati delle tabelle non loggate\n"
+msgstr "  --no-unlogged-table-data    non scaricare i dati delle tabelle non loggate\n"
 
 #: pg_dump.c:872 pg_dumpall.c:556
-#, fuzzy, c-format
+#, c-format
 msgid "  --quote-all-identifiers     quote all identifiers, even if not key words\n"
 msgstr ""
-"  --quote-all-identifiers      metti tutti gli identificatori tra virgolette,\n"
-"                               anche se non sono parole chiave\n"
+"  --quote-all-identifiers     metti tutti gli identificatori tra virgolette,\n"
+"                              anche se non sono parole chiave\n"
 
 #: pg_dump.c:873
-#, fuzzy, c-format
+#, c-format
 msgid "  --serializable-deferrable   wait until the dump can run without anomalies\n"
 msgstr ""
-"  --serializable-deferrable    attendi prima che lo scaricamento possa essere\n"
-"                               eseguito senza anomalie\n"
+"  --serializable-deferrable   attendi prima che lo scaricamento possa essere\n"
+"                              eseguito senza anomalie\n"
 
 #: pg_dump.c:874 pg_dumpall.c:557
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --use-set-session-authorization\n"
 "                              use SET SESSION AUTHORIZATION commands instead of\n"
 "                              ALTER OWNER commands to set ownership\n"
 msgstr ""
 "  --use-set-session-authorization\n"
-"                               usa i comandi SET SESSION AUTHORIZATION invece\n"
-"                               di ALTER OWNER per impostare il proprietario\n"
+"                              usa i comandi SET SESSION AUTHORIZATION invece\n"
+"                              di ALTER OWNER per impostare il proprietario\n"
 
 #: pg_dump.c:878 pg_restore.c:439 pg_dumpall.c:561
 #, c-format
@@ -378,9 +378,8 @@ msgid "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
 #: pg_dump.c:896 pg_backup_archiver.c:1459
-#, fuzzy
 msgid "*** aborted because of error\n"
-msgstr "abortito perché la versione del server non corrisponde\n"
+msgstr "*** abortito perché la versione del server non corrisponde\n"
 
 #: pg_dump.c:938
 #, c-format
@@ -416,22 +415,22 @@ msgid "saving database definition\n"
 msgstr "salvataggio definizione del database\n"
 
 #: pg_dump.c:1876
-#, fuzzy, c-format
+#, c-format
 msgid "missing pg_database entry for database \"%s\"\n"
-msgstr "ripristino dati della tabella \"%s\"\n"
+msgstr "voce pg_database mancante per il database \"%s\"\n"
 
 #: pg_dump.c:1883
 #, c-format
 msgid "query returned more than one (%d) pg_database entry for database \"%s\"\n"
-msgstr ""
+msgstr "la query ha restituito più di una voce pg_database (%d) per il database \"%s\"\n"
 
 #: pg_dump.c:1987
 msgid "dumpDatabase(): could not find pg_largeobject.relfrozenxid\n"
-msgstr ""
+msgstr "dumpDatabase(): pg_largeobject.relfrozenxid non trovato\n"
 
 #: pg_dump.c:2026
 msgid "dumpDatabase(): could not find pg_largeobject_metadata.relfrozenxid\n"
-msgstr ""
+msgstr "dumpDatabase(): pg_largeobject_metadata.relfrozenxid non trovato\n"
 
 #: pg_dump.c:2105
 #, c-format
@@ -472,9 +471,9 @@ msgstr[0] "la query ha restituito %d riga invece di una: %s\n"
 msgstr[1] "la query ha restituito %d righe invece di una: %s\n"
 
 #: pg_dump.c:2583
-#, fuzzy, c-format
+#, c-format
 msgid "could not find parent extension for %s"
-msgstr "non è stato possibile trovare l'estensione genitore di %s\n"
+msgstr "non è stato possibile trovare l'estensione genitore di %s"
 
 #: pg_dump.c:2689
 #, c-format
@@ -652,11 +651,11 @@ msgid "definition of view \"%s\" appears to be empty (length zero)\n"
 msgstr "la definizione della vista  \"%s\" sembra essere vuota (lunghezza zero)\n"
 
 #: pg_dump.c:12169
-#, fuzzy, c-format
+#, c-format
 msgid "query returned %d foreign server entry for foreign table \"%s\"\n"
 msgid_plural "query returned %d foreign server entries for foreign table \"%s\"\n"
-msgstr[0] "la query ha restituito %d riga invece di una: %s\n"
-msgstr[1] "la query ha restituito %d righe invece di una: %s\n"
+msgstr[0] "la query ha restituito %d voce di serve esterno per la tabella \"%s\"\n"
+msgstr[1] "la query ha restituito %d voci di serve esterni per la tabella \"%s\"\n"
 
 #: pg_dump.c:12720
 #, c-format
@@ -675,27 +674,26 @@ msgstr "tipo di vincolo sconosciuto: %c\n"
 
 #: pg_dump.c:13082
 msgid "missing pg_database entry for this database\n"
-msgstr ""
+msgstr "voce pg_database mancante per questo database\n"
 
 #: pg_dump.c:13087
 msgid "found more than one pg_database entry for this database\n"
-msgstr ""
+msgstr "la query ha restituito più di una voce pg_database per questo\n"
 
 #: pg_dump.c:13119
-#, fuzzy
 msgid "could not find entry for pg_indexes in pg_class\n"
-msgstr "non sono state trovate voci per l'ID %d\n"
+msgstr "voce per pg_indexes non trovata in pg_class\n"
 
 #: pg_dump.c:13124
 msgid "found more than one entry for pg_indexes in pg_class\n"
-msgstr ""
+msgstr "trovata più di una voce pg_indexes in pg_class\n"
 
 #: pg_dump.c:13198 pg_dump.c:13363
 #, c-format
 msgid "query to get data of sequence \"%s\" returned %d row (expected 1)\n"
 msgid_plural "query to get data of sequence \"%s\" returned %d rows (expected 1)\n"
-msgstr[0] "la query per ottenere i dati della sequenza  \"%s\" ha restituito %d riga (prevista 1)\n"
-msgstr[1] "la query per ottenere i dati della sequenza  \"%s\" ha restituito %d righe (prevista 1)\n"
+msgstr[0] "la query per ottenere i dati della sequenza \"%s\" ha restituito %d riga (prevista 1)\n"
+msgstr[1] "la query per ottenere i dati della sequenza \"%s\" ha restituito %d righe (prevista 1)\n"
 
 #: pg_dump.c:13209
 #, c-format
@@ -723,7 +721,7 @@ msgstr "lettura dati di dipendenza\n"
 
 #: pg_dump.c:14401
 msgid "SQL command failed\n"
-msgstr ""
+msgstr "comando SQL fallito\n"
 
 #: common.c:107
 msgid "reading schemas\n"
@@ -882,9 +880,8 @@ msgid "could not close output file: %s\n"
 msgstr "non è stato possibile chiudere il file di output: %s\n"
 
 #: pg_backup_archiver.c:234
-#, fuzzy
 msgid "-C and -c are incompatible options\n"
-msgstr "-C e -1 sono opzioni incompatibili\n"
+msgstr "-C e -c sono opzioni incompatibili\n"
 
 #: pg_backup_archiver.c:241
 msgid "-C and -1 are incompatible options\n"
@@ -1353,9 +1350,8 @@ msgid "can only reopen input archives\n"
 msgstr "solo gli archivi in input possono essere riaperti\n"
 
 #: pg_backup_custom.c:744
-#, fuzzy
 msgid "parallel restore from stdin is not supported\n"
-msgstr "il ripristino in parallelo da standard input non è supportato\n"
+msgstr "il ripristino in parallelo da stdin non è supportato\n"
 
 #: pg_backup_custom.c:746
 msgid "parallel restore from non-seekable file is not supported\n"
@@ -1461,9 +1457,8 @@ msgid "could not commit database transaction"
 msgstr "non è stato possibile effettuare il commit della transazione database"
 
 #: pg_backup_files.c:68
-#, fuzzy
 msgid "file archiver"
-msgstr "archiviatore"
+msgstr "archiviatore di file"
 
 #: pg_backup_files.c:122
 msgid ""
@@ -1471,35 +1466,36 @@ msgid ""
 "  This format is for demonstration purposes; it is not intended for\n"
 "  normal use. Files will be written in the current working directory.\n"
 msgstr ""
+"ATTENZIONE:\n"
+"  Questo formato è per scopo dimostrativo e non è pensato per l'uso normale.\n"
+"  I file saranno scritti nella directory corrente.\n"
 
 #: pg_backup_files.c:283
-#, fuzzy
 msgid "could not close data file\n"
-msgstr "non è stato possibile chiudere il file di dati: %s\n"
+msgstr "non è stato possibile chiudere il file di dati\n"
 
 #: pg_backup_files.c:317
-#, fuzzy
 msgid "could not close data file after reading\n"
-msgstr "non è stato possibile chiudere il file di dati: %s\n"
+msgstr "non è stato possibile chiudere il file di dati dopo la lettura\n"
 
 #: pg_backup_files.c:379
-#, fuzzy, c-format
+#, c-format
 msgid "could not open large object TOC for input: %s\n"
-msgstr "non è stato possibile aprire il file TOC dei large object \"%s\" per l'input: %s\n"
+msgstr "non è stato possibile aprire il file TOC dei large object per l'input: %s\n"
 
 #: pg_backup_files.c:392 pg_backup_files.c:561
-#, fuzzy, c-format
+#, c-format
 msgid "could not close large object TOC file: %s\n"
-msgstr "non è stato possibile chiudere il file TOC large object \"%s\": %s\n"
+msgstr "non è stato possibile chiudere il file TOC large object: %s\n"
 
 #: pg_backup_files.c:404
 msgid "could not write byte\n"
 msgstr "non è stato possibile scrivere il byte\n"
 
 #: pg_backup_files.c:490
-#, fuzzy, c-format
+#, c-format
 msgid "could not open large object TOC for output: %s\n"
-msgstr "non è stato possibile aprire il file TOC dei large object \"%s\" per l'input: %s\n"
+msgstr "non è stato possibile aprire il file TOC dei large object per l'input: %s\n"
 
 #: pg_backup_files.c:510 pg_backup_tar.c:929
 #, c-format
@@ -1507,14 +1503,13 @@ msgid "invalid OID for large object (%u)\n"
 msgstr "OID non valida per il large object (%u)\n"
 
 #: pg_backup_files.c:529
-#, fuzzy, c-format
+#, c-format
 msgid "could not open large object file \"%s\" for input: %s\n"
-msgstr "non è stato possibile aprire il file TOC dei large object \"%s\" per l'input: %s\n"
+msgstr "non è stato possibile aprire il file di large object \"%s\" per l'input: %s\n"
 
 #: pg_backup_files.c:544
-#, fuzzy
 msgid "could not close large object file\n"
-msgstr "non è stato possibile chiudere il file TOC large object \"%s\": %s\n"
+msgstr "non è stato possibile chiudere il file di large object\n"
 
 #: pg_backup_null.c:78
 msgid "this format cannot be read\n"
@@ -1704,14 +1699,14 @@ msgid "  -v, --verbose            verbose mode\n"
 msgstr "  -v, --verbose            stampa più informazioni\n"
 
 #: pg_restore.c:406
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                   show this help, then exit\n"
-msgstr "  -?, --help                   mostra questo aiuto ed esci\n"
+msgstr "  --help                   mostra questo aiuto ed esci\n"
 
 #: pg_restore.c:407
-#, fuzzy, c-format
+#, c-format
 msgid "  --version                output version information, then exit\n"
-msgstr "  -V, --version                mostra informazioni sulla versione ed esci\n"
+msgstr "  --version                mostra informazioni sulla versione ed esci\n"
 
 #: pg_restore.c:409
 #, c-format
@@ -1723,134 +1718,135 @@ msgstr ""
 "Opzioni per il controllo del ripristino:\n"
 
 #: pg_restore.c:410
-#, fuzzy, c-format
+#, c-format
 msgid "  -a, --data-only          restore only the data, no schema\n"
-msgstr "  -a, --data-only              ripristina solo i dati, non gli schemi\n"
+msgstr "  -a, --data-only          ripristina solo i dati, non gli schemi\n"
 
 #: pg_restore.c:411
-#, fuzzy, c-format
+#, c-format
 msgid "  -c, --clean              clean (drop) database objects before recreating\n"
-msgstr ""
-"  -c, --clean                  svuota (drop) gli oggetti del database prima di\n"
-"                               ricrearli\n"
+msgstr "  -c, --clean              svuota (drop) gli oggetti del database prima di ricrearli\n"
 
 #: pg_restore.c:412
-#, fuzzy, c-format
+#, c-format
 msgid "  -C, --create             create the target database\n"
-msgstr "  -C, --create                 crea il database in oggetto\n"
+msgstr "  -C, --create             crea il database in oggetto\n"
 
 #: pg_restore.c:413
-#, fuzzy, c-format
+#, c-format
 msgid "  -e, --exit-on-error      exit on error, default is to continue\n"
-msgstr "  -e, --exit-on-error          esci in caso di errore, il comportamento predefinito è continuare\n"
+msgstr "  -e, --exit-on-error      esci in caso di errore, il comportamento predefinito è continuare\n"
 
 #: pg_restore.c:414
-#, fuzzy, c-format
+#, c-format
 msgid "  -I, --index=NAME         restore named index\n"
-msgstr "  -I, --index=NOME             nome indice da ripristinare\n"
+msgstr "  -I, --index=NOME         nome indice da ripristinare\n"
 
 #: pg_restore.c:415
-#, fuzzy, c-format
+#, c-format
 msgid "  -j, --jobs=NUM           use this many parallel jobs to restore\n"
-msgstr "  -j, --jobs=NUM               per il ripristino usa questo numero di job paralleli\n"
+msgstr "  -j, --jobs=NUM           per il ripristino usa questo numero di job paralleli\n"
 
 #: pg_restore.c:416
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -L, --use-list=FILENAME  use table of contents from this file for\n"
 "                           selecting/ordering output\n"
 msgstr ""
-"  -L, --use-list=NOMEFILE      utilizza la tabella dei contenuti di questo file per\n"
-"                               selezionare/ordinare l'output\n"
+"  -L, --use-list=NOMEFILE  utilizza la tabella dei contenuti di questo file per\n"
+"                           selezionare/ordinare l'output\n"
 
 #: pg_restore.c:418
-#, fuzzy, c-format
+#, c-format
 msgid "  -n, --schema=NAME        restore only objects in this schema\n"
-msgstr "  -n, --schema=NAME            ripristina solo gli oggetti in questo schema\n"
+msgstr "  -n, --schema=NAME        ripristina solo gli oggetti in questo schema\n"
 
 #: pg_restore.c:419
-#, fuzzy, c-format
+#, c-format
 msgid "  -O, --no-owner           skip restoration of object ownership\n"
-msgstr "  -O, --no-owner               salta il ripristino del proprietario degli oggetti\n"
+msgstr "  -O, --no-owner           salta il ripristino del proprietario degli oggetti\n"
 
 #: pg_restore.c:420
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -P, --function=NAME(args)\n"
 "                           restore named function\n"
 msgstr ""
 "  -P, --function=NOME(argomenti)\n"
-"                               ripristina la funzione nominata\n"
+"                           ripristina la funzione nominata\n"
 
 #: pg_restore.c:422
-#, fuzzy, c-format
+#, c-format
 msgid "  -s, --schema-only        restore only the schema, no data\n"
-msgstr "  -s, --schema-only            ripristina solo lo schema e non i dati\n"
+msgstr "  -s, --schema-only        ripristina solo lo schema e non i dati\n"
 
 #: pg_restore.c:423
-#, fuzzy, c-format
+#, c-format
 msgid "  -S, --superuser=NAME     superuser user name to use for disabling triggers\n"
-msgstr "  -S, --superuser=NOME         nome del superutente da usare per disabilitare i trigger\n"
+msgstr "  -S, --superuser=NOME     nome del superutente da usare per disabilitare i trigger\n"
 
 #: pg_restore.c:424
-#, fuzzy, c-format
+#, c-format
 msgid "  -t, --table=NAME         restore named table\n"
-msgstr "  -t, --table=NOME             ripristina la tabella nominata\n"
+msgstr "  -t, --table=NOME         ripristina la tabella nominata\n"
 
 #: pg_restore.c:425
-#, fuzzy, c-format
+#, c-format
 msgid "  -T, --trigger=NAME       restore named trigger\n"
-msgstr "  -T, --trigger=NOME           ripristina il trigger nominato\n"
+msgstr "  -T, --trigger=NOME       ripristina il trigger nominato\n"
 
 #: pg_restore.c:426
-#, fuzzy, c-format
+#, c-format
 msgid "  -x, --no-privileges      skip restoration of access privileges (grant/revoke)\n"
-msgstr "  -x, --no-privileges          salta il ripristino dei privilegi di accesso (grant/revoke)\n"
+msgstr "  -x, --no-privileges      salta il ripristino dei privilegi di accesso (grant/revoke)\n"
 
 #: pg_restore.c:427
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -1, --single-transaction\n"
 "                           restore as a single transaction\n"
-msgstr "  -1, --single-transaction     ripristina in un'unica transazione\n"
+msgstr ""
+"  -1, --single-transaction\n"
+"                           ripristina in un'unica transazione\n"
 
 #: pg_restore.c:429
-#, fuzzy, c-format
+#, c-format
 msgid "  --disable-triggers       disable triggers during data-only restore\n"
 msgstr ""
-"  --disable-triggers           disabilita i trigger durante il ripristino\n"
-"                               dei soli dati\n"
+"  --disable-triggers       disabilita i trigger durante il ripristino\n"
+"                           dei soli dati\n"
 
 #: pg_restore.c:430
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --no-data-for-failed-tables\n"
 "                           do not restore data of tables that could not be\n"
 "                           created\n"
 msgstr ""
-"  --no-data-for-failed-tables  non ripristinare i dati delle tabelle che non\n"
-"                               è stato possibile creare\n"
+"  --no-data-for-failed-tables\n"
+"                           non ripristinare i dati delle tabelle che non\n"
+"                           è stato possibile creare\n"
 
 #: pg_restore.c:433
-#, fuzzy, c-format
+#, c-format
 msgid "  --no-security-labels     do not restore security labels\n"
-msgstr "  --no-security-labels         do ripristinare le etichette di sicurezza\n"
+msgstr "  --no-security-labels     do ripristinare le etichette di sicurezza\n"
 
 #: pg_restore.c:434
-#, fuzzy, c-format
+#, c-format
 msgid "  --no-tablespaces         do not restore tablespace assignments\n"
-msgstr "  --no-tablespaces             non ripristina le assegnazioni dei tablespace\n"
+msgstr "  --no-tablespaces         non ripristina le assegnazioni dei tablespace\n"
 
 #: pg_restore.c:435
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --use-set-session-authorization\n"
 "                           use SET SESSION AUTHORIZATION commands instead of\n"
 "                           ALTER OWNER commands to set ownership\n"
 msgstr ""
 "  --use-set-session-authorization\n"
-"                               usa i comandi SET SESSION AUTHORIZATION invece\n"
-"                               di ALTER OWNER per impostare il proprietario\n"
+"                           usa i comandi SET SESSION AUTHORIZATION invece\n"
+"                           di ALTER OWNER per impostare il proprietario\n"
 
 #: pg_restore.c:445
 #, c-format
@@ -1939,39 +1935,39 @@ msgid "  %s [OPTION]...\n"
 msgstr "  %s [OPZIONE]...\n"
 
 #: pg_dumpall.c:533
-#, fuzzy, c-format
+#, c-format
 msgid "  -f, --file=FILENAME         output file name\n"
-msgstr "  -f, --file=NOMEFILE          nome file di output\n"
+msgstr "  -f, --file=NOMEFILE         nome file di output\n"
 
 #: pg_dumpall.c:539
-#, fuzzy, c-format
+#, c-format
 msgid "  -c, --clean                 clean (drop) databases before recreating\n"
-msgstr "  -c, --clean                  pulisci (drop) i database prima di ricrearli\n"
+msgstr "  -c, --clean                 pulisci (drop) i database prima di ricrearli\n"
 
 #: pg_dumpall.c:540
-#, fuzzy, c-format
+#, c-format
 msgid "  -g, --globals-only          dump only global objects, no databases\n"
-msgstr "  -g, --globals-only           scarica solo gli oggetti globali e non i database\n"
+msgstr "  -g, --globals-only          scarica solo gli oggetti globali e non i database\n"
 
 #: pg_dumpall.c:542
-#, fuzzy, c-format
+#, c-format
 msgid "  -O, --no-owner              skip restoration of object ownership\n"
-msgstr "  -O, --no-owner               salta il ripristino del proprietario degli oggetti\n"
+msgstr "  -O, --no-owner              salta il ripristino del proprietario degli oggetti\n"
 
 #: pg_dumpall.c:543
-#, fuzzy, c-format
+#, c-format
 msgid "  -r, --roles-only            dump only roles, no databases or tablespaces\n"
-msgstr "  -r, --roles-only             scarica solo i ruoli e non i database o i tablespace\n"
+msgstr "  -r, --roles-only            scarica solo i ruoli e non i database o i tablespace\n"
 
 #: pg_dumpall.c:545
-#, fuzzy, c-format
+#, c-format
 msgid "  -S, --superuser=NAME        superuser user name to use in the dump\n"
-msgstr "  -S, --superuser=NOME         nome del superutente da usare nel dump\n"
+msgstr "  -S, --superuser=NOME        nome del superutente da usare nel dump\n"
 
 #: pg_dumpall.c:546
-#, fuzzy, c-format
+#, c-format
 msgid "  -t, --tablespaces-only      dump only tablespaces, no databases or roles\n"
-msgstr "  -t, --tablespaces-only       scarica solo i tablespace e non i datatbase o i ruoli\n"
+msgstr "  -t, --tablespaces-only      scarica solo i tablespace e non i datatbase o i ruoli\n"
 
 #: pg_dumpall.c:563
 #, c-format
@@ -2022,9 +2018,9 @@ msgid "%s: running \"%s\"\n"
 msgstr "%s: in eleborazione \"%s\"\n"
 
 #: pg_dumpall.c:1651
-#, fuzzy, c-format
+#, c-format
 msgid "%s: out of memory\n"
-msgstr "memoria esaurita\n"
+msgstr "%s: memoria esaurita\n"
 
 #: pg_dumpall.c:1700
 #, c-format

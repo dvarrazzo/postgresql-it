@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:56+0000\n"
-"PO-Revision-Date: 2012-10-30 13:10+0100\n"
+"PO-Revision-Date: 2012-10-31 14:42+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -210,9 +210,9 @@ msgid "  --version             show the PostgreSQL version\n"
 msgstr "  --version             mostra la versione di PostgreSQL\n"
 
 #: pg_config.c:457
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                show this help, then exit\n"
-msgstr "  -?, --help            mostra questo aiuto ed esci\n"
+msgstr "  --help                mostra questo aiuto ed esci\n"
 
 #: pg_config.c:458
 #, c-format

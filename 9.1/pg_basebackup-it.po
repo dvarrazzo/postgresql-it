@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:56+0000\n"
-"PO-Revision-Date: 2012-10-30 13:10+0100\n"
+"PO-Revision-Date: 2012-10-31 14:41+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -52,31 +52,31 @@ msgstr ""
 "Opzioni di controllo del'output:\n"
 
 #: pg_basebackup.c:126
-#, fuzzy, c-format
+#, c-format
 msgid "  -D, --pgdata=DIRECTORY   receive base backup into directory\n"
-msgstr "  -D, --pgdata=DIRECTORY directory in cui ricevere il backup di base\n"
+msgstr "  -D, --pgdata=DIRECTORY   directory in cui ricevere il backup di base\n"
 
 #: pg_basebackup.c:127
-#, fuzzy, c-format
+#, c-format
 msgid "  -F, --format=p|t         output format (plain, tar)\n"
-msgstr "  -F, --format=p|t       formato di output (plain (default), tar)\n"
+msgstr "  -F, --format=p|t         formato di output (plain (default), tar)\n"
 
 #: pg_basebackup.c:128
-#, fuzzy, c-format
+#, c-format
 msgid "  -x, --xlog               include required WAL files in backup\n"
 msgstr ""
-"  -x, --xlog             includi i file WAL necessari nel backup\n"
-"                         (modalità fetch)\n"
+"  -x, --xlog               includi i file WAL necessari nel backup\n"
+"                           (modalità fetch)\n"
 
 #: pg_basebackup.c:129
-#, fuzzy, c-format
+#, c-format
 msgid "  -z, --gzip               compress tar output\n"
-msgstr "  -z, --gzip             comprimi l'output tar\n"
+msgstr "  -z, --gzip               comprimi l'output tar\n"
 
 #: pg_basebackup.c:130
-#, fuzzy, c-format
+#, c-format
 msgid "  -Z, --compress=0-9       compress tar output with given compression level\n"
-msgstr "  -Z, --compress=0-9     comprimi l'output tar a questo livello di compressione\n"
+msgstr "  -Z, --compress=0-9       comprimi l'output tar a questo livello di compressione\n"
 
 #: pg_basebackup.c:131
 #, c-format
@@ -88,38 +88,38 @@ msgstr ""
 "Opzioni generali:\n"
 
 #: pg_basebackup.c:132
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -c, --checkpoint=fast|spread\n"
 "                           set fast or spread checkpointing\n"
 msgstr ""
 "  -c, --checkpoint=fast|spread\n"
-"                         imposta punti di controllo più veloci o più radi\n"
+"                           imposta punti di controllo più veloci o più radi\n"
 
 #: pg_basebackup.c:134
-#, fuzzy, c-format
+#, c-format
 msgid "  -l, --label=LABEL        set backup label\n"
-msgstr "  -l, --label=LABEL      imposta l'etichetta del backup\n"
+msgstr "  -l, --label=LABEL        imposta l'etichetta del backup\n"
 
 #: pg_basebackup.c:135
-#, fuzzy, c-format
+#, c-format
 msgid "  -P, --progress           show progress information\n"
-msgstr "  -P, --progress         mostra informazioni sull'esecuzione\n"
+msgstr "  -P, --progress           mostra informazioni sull'esecuzione\n"
 
 #: pg_basebackup.c:136
-#, fuzzy, c-format
+#, c-format
 msgid "  -v, --verbose            output verbose messages\n"
-msgstr "  -v, --verbose          messaggi di output più numerosi\n"
+msgstr "  -v, --verbose            messaggi di output più numerosi\n"
 
 #: pg_basebackup.c:137
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                   show this help, then exit\n"
-msgstr "  -?, --help             mostra questo aiuto ed esci\n"
+msgstr "  --help                   mostra questo aiuto ed esci\n"
 
 #: pg_basebackup.c:138
-#, fuzzy, c-format
+#, c-format
 msgid "  --version                output version information, then exit\n"
-msgstr "  -V, --version          mostra informazioni sulla versione ed esci\n"
+msgstr "  --version                mostra informazioni sulla versione ed esci\n"
 
 #: pg_basebackup.c:139
 #, c-format
@@ -131,31 +131,31 @@ msgstr ""
 "Opzioni di connessione:\n"
 
 #: pg_basebackup.c:140
-#, fuzzy, c-format
+#, c-format
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
-msgstr "  -h, --host=HOSTNAME    host del server database o directory del socket\n"
+msgstr "  -h, --host=HOSTNAME      host del server database o directory del socket\n"
 
 #: pg_basebackup.c:141
-#, fuzzy, c-format
+#, c-format
 msgid "  -p, --port=PORT          database server port number\n"
-msgstr "  -p, --port=PORT        numero di porta del server database\n"
+msgstr "  -p, --port=PORT          numero di porta del server database\n"
 
 #: pg_basebackup.c:142
-#, fuzzy, c-format
+#, c-format
 msgid "  -U, --username=NAME      connect as specified database user\n"
-msgstr "  -U, --username=NAME    connettiti al database col nome utente specificato\n"
+msgstr "  -U, --username=NAME      connettiti al database col nome utente specificato\n"
 
 #: pg_basebackup.c:143
-#, fuzzy, c-format
+#, c-format
 msgid "  -w, --no-password        never prompt for password\n"
-msgstr "  -w, --no-password      non chiedere mai la password\n"
+msgstr "  -w, --no-password        non chiedere mai la password\n"
 
 #: pg_basebackup.c:144
-#, fuzzy, c-format
+#, c-format
 msgid "  -W, --password           force password prompt (should happen automatically)\n"
 msgstr ""
-"  -W, --password         forza la richiesta della password\n"
-"                         (dovrebbe essere automatico)\n"
+"  -W, --password           forza la richiesta della password\n"
+"                           (dovrebbe essere automatico)\n"
 
 #: pg_basebackup.c:145
 #, c-format
@@ -203,9 +203,9 @@ msgstr[0] "%s/%s kB (%d%%), %d/%d tablespace"
 msgstr[1] "%s/%s kB (%d%%), %d/%d tablespace"
 
 #: pg_basebackup.c:295 pg_basebackup.c:313 pg_basebackup.c:337
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not set compression level %i: %s\n"
-msgstr "%s: non è stato possibile impostare il livello di compressione %d: %s\n"
+msgstr "%s: non è stato possibile impostare il livello di compressione %i: %s\n"
 
 #: pg_basebackup.c:356
 #, c-format
@@ -248,9 +248,9 @@ msgid "%s: could not read COPY data: %s"
 msgstr "%s: non è stato possibile leggere i dati COPY: %s"
 
 #: pg_basebackup.c:568
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid tar block header size: %i\n"
-msgstr "%s: dimensione del blocco di intestazione del file tar non valida: %d\n"
+msgstr "%s: dimensione del blocco di intestazione del file tar non valida: %i\n"
 
 #: pg_basebackup.c:576
 #, c-format
@@ -292,14 +292,14 @@ msgid "Password: "
 msgstr "Password: "
 
 #: pg_basebackup.c:798
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not connect to server: %s"
-msgstr "%s: non è stato possibile connettersi al server: %s\n"
+msgstr "%s: non è stato possibile connettersi al server: %s"
 
 #: pg_basebackup.c:838
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not send base backup command: %s"
-msgstr "%s: non è stato possibile iniziare il backup di base: %s"
+msgstr "%s: non è stato possibile inviare il comando di backup di base: %s"
 
 #: pg_basebackup.c:849
 #, c-format
@@ -322,19 +322,19 @@ msgid "%s: no data returned from server\n"
 msgstr "%s: nessun dato restituito dal server\n"
 
 #: pg_basebackup.c:905
-#, fuzzy, c-format
+#, c-format
 msgid "%s: can only write single tablespace to stdout, database has %i\n"
-msgstr "%s: è possibile scrivere solo un singolo tablespace su stdout, il database ne ha %d\n"
+msgstr "%s: è possibile scrivere solo un singolo tablespace su stdout, il database ne ha %i\n"
 
 #: pg_basebackup.c:934
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not get WAL end position from server: %s"
-msgstr "%s: non è stato possibile ottenere la posizione finale del log delle transazioni dal server: %s"
+msgstr "%s: non è stato possibile ottenere la posizione finale del WAL dal server: %s"
 
 #: pg_basebackup.c:940
-#, fuzzy, c-format
+#, c-format
 msgid "%s: no WAL end position returned from server\n"
-msgstr "%s: nessuna posizione finale del log delle transazioni restituita dal server\n"
+msgstr "%s: nessuna posizione finale del WAL restituita dal server\n"
 
 #: pg_basebackup.c:952
 #, c-format

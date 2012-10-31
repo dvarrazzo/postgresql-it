@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:51+0000\n"
-"PO-Revision-Date: 2012-10-30 13:07+0100\n"
+"PO-Revision-Date: 2012-10-31 14:29+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -158,9 +158,9 @@ msgid "  -t             turn on autocommit of transactions\n"
 msgstr "  -t             attiva il commit automatico delle transazioni\n"
 
 #: ecpg.c:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --help         show this help, then exit\n"
-msgstr "  -?, --help     mostra questo aiuto ed esci\n"
+msgstr "  --help         mostra questo aiuto ed esci\n"
 
 #: ecpg.c:58
 #, c-format

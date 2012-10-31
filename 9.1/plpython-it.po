@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:50+0000\n"
-"PO-Revision-Date: 2012-10-30 13:18+0100\n"
+"PO-Revision-Date: 2012-10-31 15:09+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -161,9 +161,8 @@ msgid "PL/Python only supports one-dimensional arrays."
 msgstr "PL/Python supporta solo array monodimensionali."
 
 #: plpython.c:2339
-#, fuzzy
 msgid "could not create new list"
-msgstr "non è stato possibile creare la nuova lista Python"
+msgstr "non è stato possibile creare la nuova lista"
 
 #: plpython.c:2374
 msgid "could not create new dictionary"

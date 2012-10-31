@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:51+0000\n"
-"PO-Revision-Date: 2012-10-30 16:30+0100\n"
+"PO-Revision-Date: 2012-10-31 15:09+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -89,9 +89,9 @@ msgid "relation \"%s\" does not exist"
 msgstr "la relazione \"%s\" non esiste"
 
 #: pl_comp.c:1815
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s.%s\" does not exist"
-msgstr "la relazione \"%s\" non esiste"
+msgstr "la relazione \"%s.%s\" non esiste"
 
 #: pl_comp.c:1897
 #, c-format
@@ -167,25 +167,25 @@ msgid "returned row structure does not match the structure of the triggering tab
 msgstr "la struttura della riga restituita non coincide con la struttura della tabella che ha generato il trigger"
 
 #: pl_exec.c:803
-#, fuzzy, c-format
+#, c-format
 msgid "PL/pgSQL function \"%s\" line %d %s"
-msgstr "funzione PL/pgSQL %s riga %d %s"
+msgstr "funzione PL/pgSQL \"%s\" riga %d %s"
 
 #: pl_exec.c:814
-#, fuzzy, c-format
+#, c-format
 msgid "PL/pgSQL function \"%s\" %s"
-msgstr "funzione PL/pgSQL %s %s"
+msgstr "funzione PL/pgSQL \"%s\" %s"
 
 #. translator: last %s is a plpgsql statement type name
 #: pl_exec.c:822
-#, fuzzy, c-format
+#, c-format
 msgid "PL/pgSQL function \"%s\" line %d at %s"
-msgstr "funzione PL/pgSQL %s riga %d a %s"
+msgstr "funzione PL/pgSQL \"%s\" riga %d a %s"
 
 #: pl_exec.c:828
-#, fuzzy, c-format
+#, c-format
 msgid "PL/pgSQL function \"%s\""
-msgstr "funzione PL/pgSQL %s"
+msgstr "funzione PL/pgSQL \"%s\""
 
 #: pl_exec.c:936
 msgid "during statement block local variable initialization"

@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:57+0000\n"
-"PO-Revision-Date: 2012-10-30 11:35+0100\n"
+"PO-Revision-Date: 2012-10-31 15:08+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -151,14 +151,14 @@ msgid "  -T, --template=TEMPLATE      template database to copy\n"
 msgstr "  -T, --template=TEMPLATE      modello database da copiare\n"
 
 #: createdb.c:259
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                       show this help, then exit\n"
-msgstr "  -?, --help                      mostra questo aiuto ed esci\n"
+msgstr "  --help                       mostra questo aiuto ed esci\n"
 
 #: createdb.c:260
-#, fuzzy, c-format
+#, c-format
 msgid "  --version                    output version information, then exit\n"
-msgstr "  -V, --version                   mostra informazioni sulla versione ed esci\n"
+msgstr "  --version                    mostra informazioni sulla versione ed esci\n"
 
 #: createdb.c:261 createlang.c:231 createuser.c:321 dropdb.c:151
 #: droplang.c:232 dropuser.c:146 clusterdb.c:247 vacuumdb.c:343
@@ -284,15 +284,15 @@ msgstr "  -l, --list                mostra la lista dei linguaggi attualmente in
 
 #: createlang.c:229 createuser.c:319 dropdb.c:149 droplang.c:230
 #: dropuser.c:144 clusterdb.c:245 reindexdb.c:323
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                    show this help, then exit\n"
-msgstr "  -?, --help                   mostra questo aiuto ed esci\n"
+msgstr "  --help                    mostra questo aiuto ed esci\n"
 
 #: createlang.c:230 createuser.c:320 dropdb.c:150 droplang.c:231
 #: dropuser.c:145 clusterdb.c:246 reindexdb.c:324
-#, fuzzy, c-format
+#, c-format
 msgid "  --version                 output version information, then exit\n"
-msgstr "  -V, --version                mostra informazioni di versione ed esci\n"
+msgstr "  --version                 mostra informazioni di versione ed esci\n"
 
 #: createlang.c:232 createuser.c:322 dropdb.c:152 droplang.c:233
 #: dropuser.c:147 clusterdb.c:248 vacuumdb.c:344 reindexdb.c:326
@@ -388,9 +388,9 @@ msgid "  -d, --createdb            role can create new databases\n"
 msgstr "  -d, --createdb            il ruolo può creare nuovi database\n"
 
 #: createuser.c:305
-#, fuzzy, c-format
+#, c-format
 msgid "  -D, --no-createdb         role cannot create databases\n"
-msgstr "  -D, --no-createdb         il ruolo non può creare database (predefinito)\n"
+msgstr "  -D, --no-createdb         il ruolo non può creare database\n"
 
 #: createuser.c:307
 #, c-format
@@ -437,9 +437,9 @@ msgid "  -r, --createrole          role can create new roles\n"
 msgstr "  -r, --createrole          il ruolo può creare nuovi ruoli\n"
 
 #: createuser.c:316
-#, fuzzy, c-format
+#, c-format
 msgid "  -R, --no-createrole       role cannot create roles\n"
-msgstr "  -R, --no-createrole       il ruolo non può creare ruoli (predefinito)\n"
+msgstr "  -R, --no-createrole       il ruolo non può creare ruoli\n"
 
 #: createuser.c:317
 #, c-format
@@ -447,9 +447,9 @@ msgid "  -s, --superuser           role will be superuser\n"
 msgstr "  -s, --superuser           il ruolo sarà un superutente\n"
 
 #: createuser.c:318
-#, fuzzy, c-format
+#, c-format
 msgid "  -S, --no-superuser        role will not be superuser\n"
-msgstr "  -S, --no-superuser        il ruolo non sarà un superutente (predefinito)\n"
+msgstr "  -S, --no-superuser        il ruolo non sarà un superutente\n"
 
 #: createuser.c:324
 #, c-format
@@ -465,6 +465,9 @@ msgid ""
 "If one of -d, -D, -r, -R, -s, -S, and ROLENAME is not specified, you will\n"
 "be prompted interactively.\n"
 msgstr ""
+"\n"
+"Se una tra -d, -D, -r, -R, -s, -S e ROLENAME manca, ti sarà chiesta\n"
+"interattivamente.\n"
 
 #: dropdb.c:91
 #, c-format
@@ -730,14 +733,14 @@ msgstr ""
 "                                  l'ottimizzatore\n"
 
 #: vacuumdb.c:341
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                          show this help, then exit\n"
-msgstr "  -?, --help                      mostra questo aiuto ed esci\n"
+msgstr "  --help                          mostra questo aiuto ed esci\n"
 
 #: vacuumdb.c:342
-#, fuzzy, c-format
+#, c-format
 msgid "  --version                       output version information, then exit\n"
-msgstr "  -V, --version                   mostra informazioni sulla versione ed esci\n"
+msgstr "  --version                       mostra informazioni sulla versione ed esci\n"
 
 #: vacuumdb.c:349
 #, c-format

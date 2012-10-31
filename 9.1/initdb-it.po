@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:57+0000\n"
-"PO-Revision-Date: 2012-10-30 13:08+0100\n"
+"PO-Revision-Date: 2012-10-31 14:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -238,14 +238,14 @@ msgid "creating collations ... "
 msgstr "creazione degli ordinamenti alfabetici ... "
 
 #: initdb.c:1611
-#, fuzzy, c-format
+#, c-format
 msgid "%s: locale name too long, skipped: %s\n"
-msgstr "%s: nome locale troppo lungo, saltato: \"%s\"\n"
+msgstr "%s: nome locale troppo lungo, saltato: %s\n"
 
 #: initdb.c:1636
-#, fuzzy, c-format
+#, c-format
 msgid "%s: locale name has non-ASCII characters, skipped: %s\n"
-msgstr "%s: nome locale contiene caratteri non ASCII, saltato: \"%s\"\n"
+msgstr "%s: nome locale contiene caratteri non ASCII, saltato: %s\n"
 
 #: initdb.c:1699
 #, c-format
@@ -535,7 +535,6 @@ msgstr ""
 "possono essere specificati contemporaneamente\n"
 
 #: initdb.c:2672
-#, fuzzy
 msgid ""
 "\n"
 "WARNING: enabling \"trust\" authentication for local connections\n"
@@ -543,15 +542,14 @@ msgid ""
 "next time you run initdb.\n"
 msgstr ""
 "\n"
-"ATTENZIONE: abilitazione dell'autenticazione \"trust\" per le connesioni\n"
+"ATTENZIONE: abilitazione dell'autenticazione \"trust\" per le connessioni\n"
 "locali. È possibile cambiare questa impostazione modificando il file\n"
-"pg_hba.conf o utilizzando l'opzione -A oppure --auth-local and --auth-host\n"
-"alla prossima esecuzione di initdb.\n"
+"pg_hba.conf o utilizzando l'opzione -A alla prossima esecuzione di initdb.\n"
 
 #: initdb.c:2695
-#, fuzzy, c-format
+#, c-format
 msgid "%s: unrecognized authentication method \"%s\"\n"
-msgstr "%s: metodo di autenticazione \"%s\" non valido per connessioni \"%s\"\n"
+msgstr "%s: metodo di autenticazione sconosciuto \"%s\"\n"
 
 #: initdb.c:2705
 #, c-format
@@ -610,9 +608,9 @@ msgstr ""
 "\n"
 
 #: initdb.c:2911
-#, fuzzy, c-format
+#, c-format
 msgid "The database cluster will be initialized with locale %s.\n"
-msgstr "Il cluster di database sarà inizializzato con il locale \"%s\".\n"
+msgstr "Il cluster di database sarà inizializzato con il locale %s.\n"
 
 #: initdb.c:2914
 #, c-format
@@ -634,9 +632,9 @@ msgstr ""
 "  TIME:     %s\n"
 
 #: initdb.c:2938
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not find suitable encoding for locale %s\n"
-msgstr "%s: non è stato possibile determinare una codifica adeguata per il locale \"%s\"\n"
+msgstr "%s: non è stato possibile determinare una codifica adeguata per il locale %s\n"
 
 #: initdb.c:2940
 #, c-format
@@ -644,49 +642,49 @@ msgid "Rerun %s with the -E option.\n"
 msgstr "Esegui di nuovo %s con l'opzione -E.\n"
 
 #: initdb.c:2953
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Encoding %s implied by locale is not allowed as a server-side encoding.\n"
 "The default database encoding will be set to %s instead.\n"
 msgstr ""
-"La codifica \"%s\" implicata dal locale non è consentita come codifica lato server.\n"
-"La codifica predefinita dei database sarà impostata invece a \"%s\".\n"
+"La codifica %s implicata dal locale non è consentita come codifica lato server.\n"
+"La codifica predefinita dei database sarà impostata invece a %s.\n"
 
 #: initdb.c:2961
-#, fuzzy, c-format
+#, c-format
 msgid "%s: locale %s requires unsupported encoding %s\n"
-msgstr "%s: il locale \"%s\" richiede la codifica non supportata \"%s\"\n"
+msgstr "%s: il locale %s richiede la codifica non supportata %s\n"
 
 #: initdb.c:2964
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Encoding %s is not allowed as a server-side encoding.\n"
 "Rerun %s with a different locale selection.\n"
 msgstr ""
-"La codifica \"%s\" non è disponibile come codifica lato server.\n"
+"La codifica %s non è disponibile come codifica lato server.\n"
 "Esegui di nuovo %s con un locale diverso.\n"
 
 #: initdb.c:2973
-#, fuzzy, c-format
+#, c-format
 msgid "The default database encoding has accordingly been set to %s.\n"
-msgstr "La codifica predefinita del database è stata impostata a \"%s\".\n"
+msgstr "La codifica predefinita del database è stata impostata a %s.\n"
 
 #: initdb.c:2990
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not find suitable text search configuration for locale %s\n"
-msgstr "%s: non è stato possibile trovare una configurazione per la ricerca testo adeguata al locale \"%s\"\n"
+msgstr "%s: non è stato possibile trovare una configurazione per la ricerca testo adeguata al locale %s\n"
 
 #: initdb.c:3001
-#, fuzzy, c-format
+#, c-format
 msgid "%s: warning: suitable text search configuration for locale %s is unknown\n"
-msgstr "%s: attenzione: non si conosce una configurazione per la ricerca testo adeguata al locale \"%s\"\n"
+msgstr "%s: attenzione: non si conosce una configurazione per la ricerca testo adeguata al locale %s\n"
 
 #: initdb.c:3006
-#, fuzzy, c-format
+#, c-format
 msgid "%s: warning: specified text search configuration \"%s\" might not match locale %s\n"
 msgstr ""
 "%s: attenzione: la configurazione specificata per la ricerca testo \"%s\"\n"
-"potrebbe non corrispondere al locale \"%s\"\n"
+"potrebbe non corrispondere al locale %s\n"
 
 #: initdb.c:3011
 #, c-format

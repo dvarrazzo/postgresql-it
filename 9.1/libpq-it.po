@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:51+0000\n"
-"PO-Revision-Date: 2012-10-30 13:09+0100\n"
+"PO-Revision-Date: 2012-10-31 14:38+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -302,9 +302,9 @@ msgid "expected authentication request from server, but received %c\n"
 msgstr "prevista richiesta di autenticazione dal server, ma è stato ricevuto %c\n"
 
 #: fe-connect.c:2363
-#, fuzzy, c-format
+#, c-format
 msgid "out of memory allocating GSSAPI buffer (%i)"
-msgstr "errore di memoria nell'allocazione del buffer GSSAPI (%i)"
+msgstr "memoria esaurita nell'allocazione del buffer GSSAPI (%i)"
 
 #: fe-connect.c:2448
 msgid "unexpected message from server during startup\n"
@@ -653,9 +653,8 @@ msgid "unexpected response from server; first received character was \"%c\"\n"
 msgstr "risposta inattesa dal server; il primo carattere ricevuto era \"%c\"\n"
 
 #: fe-protocol2.c:833 fe-protocol3.c:707
-#, fuzzy
 msgid "out of memory for query result\n"
-msgstr "memoria esaurita per il risultato della query"
+msgstr "memoria esaurita per il risultato della query\n"
 
 #: fe-protocol2.c:1280 fe-protocol3.c:1637
 #, c-format
@@ -686,9 +685,8 @@ msgid "lost synchronization with server: got message type \"%c\", length %d\n"
 msgstr "persa la sincronizzazione con il server: ricevuto il tipo di messaggio \"%c\" di lunghezza %d\n"
 
 #: fe-protocol3.c:652
-#, fuzzy
 msgid "unexpected field count in \"D\" message\n"
-msgstr "numero dei campi non previsto nel messaggio di tipo \"D\""
+msgstr "numero dei campi non previsto nel messaggio di tipo \"D\"\n"
 
 #. translator: %s represents a digit string
 #: fe-protocol3.c:798 fe-protocol3.c:817

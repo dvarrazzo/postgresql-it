@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:56+0000\n"
-"PO-Revision-Date: 2012-10-30 13:12+0100\n"
+"PO-Revision-Date: 2012-10-31 14:49+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -327,9 +327,9 @@ msgid "%s: service \"%s\" already registered\n"
 msgstr "%s: il servizio \"%s\" è già registrato\n"
 
 #: pg_ctl.c:1358
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not register service \"%s\": error code %d\n"
-msgstr "%s: non è stato possibile registrare il servizio  \"%s\": codice errore %lu\n"
+msgstr "%s: non è stato possibile registrare il servizio  \"%s\": codice errore %d\n"
 
 #: pg_ctl.c:1379
 #, c-format
@@ -337,14 +337,14 @@ msgid "%s: service \"%s\" not registered\n"
 msgstr "%s: il servizio \"%s\" non è registrato\n"
 
 #: pg_ctl.c:1386
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not open service \"%s\": error code %d\n"
-msgstr "%s: non è stato possibile aprire il servizio \"%s\": codice errore %lu\n"
+msgstr "%s: non è stato possibile aprire il servizio \"%s\": codice errore %d\n"
 
 #: pg_ctl.c:1393
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not unregister service \"%s\": error code %d\n"
-msgstr "%s: non è stato possibile rimuovere la registrazione del servizio \"%s\": codice errore %lu\n"
+msgstr "%s: non è stato possibile rimuovere la registrazione del servizio \"%s\": codice errore %d\n"
 
 #: pg_ctl.c:1479
 msgid "Waiting for server startup...\n"
@@ -359,9 +359,9 @@ msgid "Server started and accepting connections\n"
 msgstr "Il server è avviato e accetta connessioni\n"
 
 #: pg_ctl.c:1536
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not start service \"%s\": error code %d\n"
-msgstr "%s: non è possibile avviare il servizio \"%s\": codice errore %lu\n"
+msgstr "%s: non è possibile avviare il servizio \"%s\": codice errore %d\n"
 
 #: pg_ctl.c:1608
 #, c-format
@@ -369,19 +369,19 @@ msgid "%s: WARNING: cannot create restricted tokens on this platform\n"
 msgstr "%s: ATTENZIONE: non è possibile creare token ristretti su questa piattaforma\n"
 
 #: pg_ctl.c:1617
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not open process token: %lu\n"
-msgstr "%s: non è stato possibile aprire il token di processo: codice errore %lu\n"
+msgstr "%s: non è stato possibile aprire il token di processo: %lu\n"
 
 #: pg_ctl.c:1630
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not allocate SIDs: %lu\n"
-msgstr "%s: non è stato possibile allocare i SID: codice errore %lu\n"
+msgstr "%s: non è stato possibile allocare i SID: %lu\n"
 
 #: pg_ctl.c:1649
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not create restricted token: %lu\n"
-msgstr "%s: non è stato possibile creare il token ristretto: codice errore %lu\n"
+msgstr "%s: non è stato possibile creare il token ristretto: %lu\n"
 
 #: pg_ctl.c:1687
 #, c-format
@@ -475,7 +475,7 @@ msgstr ""
 "Opzioni comuni:\n"
 
 #: pg_ctl.c:1799
-#, fuzzy, c-format
+#, c-format
 msgid "  -D, --pgdata DATADIR   location of the database storage area\n"
 msgstr "  -D, --pgdata DATADIR   locazione dell'area di archiviazione del database\n"
 
@@ -485,9 +485,9 @@ msgid "  -s, --silent           only print errors, no informational messages\n"
 msgstr "  -s, --silent           mostra solo gli errori, non i messaggi di informazione\n"
 
 #: pg_ctl.c:1801
-#, fuzzy, c-format
+#, c-format
 msgid "  -t SECS                seconds to wait when using -w option\n"
-msgstr "  -t, --timeout=SECS     secondi da aspettare quando si usa l'opzione -w\n"
+msgstr "  -t SECS                secondi da aspettare quando si usa l'opzione -w\n"
 
 #: pg_ctl.c:1802
 #, c-format
@@ -500,14 +500,14 @@ msgid "  -W                     do not wait until operation completes\n"
 msgstr "  -W                     non aspettare finché l'operazione non è terminata\n"
 
 #: pg_ctl.c:1804
-#, fuzzy, c-format
+#, c-format
 msgid "  --help                 show this help, then exit\n"
-msgstr "  -?, --help             mostra questo aiuto ed esci\n"
+msgstr "  --help                 mostra questo aiuto ed esci\n"
 
 #: pg_ctl.c:1805
-#, fuzzy, c-format
+#, c-format
 msgid "  --version              output version information, then exit\n"
-msgstr "  -V, --version          mostra informazioni sulla versione ed esci\n"
+msgstr "  --version              mostra informazioni sulla versione ed esci\n"
 
 #: pg_ctl.c:1806
 #, c-format
@@ -544,9 +544,9 @@ msgid "  -c, --core-files       not applicable on this platform\n"
 msgstr "  -c, --core-files       non disponibile su questa piattaforma\n"
 
 #: pg_ctl.c:1815
-#, fuzzy, c-format
+#, c-format
 msgid "  -l, --log FILENAME     write (or append) server log to FILENAME\n"
-msgstr "  -l, --log FILENAME     scrivi (o aggiungi) il log del server in FILENAME\n"
+msgstr "  -l, --log FILENAME     scrivi (o accoda) il log del server in FILENAME\n"
 
 #: pg_ctl.c:1816
 #, c-format
@@ -572,9 +572,9 @@ msgstr ""
 "Opzioni per lo spegnimento o il riavvio:\n"
 
 #: pg_ctl.c:1820
-#, fuzzy, c-format
+#, c-format
 msgid "  -m SHUTDOWN-MODE   can be \"smart\", \"fast\", or \"immediate\"\n"
-msgstr "  -m, --mode=MODE        MODE può essere \"smart\", \"fast\", o  \"immediate\"\n"
+msgstr "  -m SHUTDOWN-MODE   può essere \"smart\", \"fast\" o \"immediate\"\n"
 
 #: pg_ctl.c:1822
 #, c-format
