@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:52+0000\n"
-"PO-Revision-Date: 2012-10-31 16:39+0100\n"
+"PO-Revision-Date: 2012-10-31 16:57+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2899,7 +2899,7 @@ msgstr "PANICO"
 
 #: utils/error/assert.c:37
 msgid "TRAP: ExceptionalCondition: bad arguments\n"
-msgstr "TRAP: Eccezione: argomento scorretto\n"
+msgstr "TRAP: ExceptionalCondition: argomenti non corretti\n"
 
 #: utils/error/assert.c:40
 #, c-format
