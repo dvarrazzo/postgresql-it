@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-31 16:57+0100\n"
+"PO-Revision-Date: 2012-10-31 22:28+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1348,7 +1348,7 @@ msgstr "il file dei comandi di ripristino \"%s\" non specifica né primary_conni
 #: access/transam/xlog.c:5589
 #, c-format
 msgid "The database server will regularly poll the pg_xlog subdirectory to check for files placed there."
-msgstr "Il server database controllerà regolarmente la sottodirectory pg_xlog per controllare se vi vengono aggiunti dei file."
+msgstr "Il server database ispezionerà regolarmente la sottodirectory pg_xlog per controllare se vi vengono aggiunti dei file."
 
 #: access/transam/xlog.c:5595
 #, c-format
@@ -7683,7 +7683,7 @@ msgid ""
 "avg read rate: %.3f MiB/s, avg write rate: %.3f MiB/s\n"
 "system usage: %s"
 msgstr ""
-"pulizia automatica della tabella \"%s.%s.%s\": scan di indici: %d\n"
+"pulizia automatica della tabella \"%s.%s.%s\": scansione di indici: %d\n"
 "pagine: %d rimosse, %d restanti\n"
 "tuple: %.0f rimosse, %.0f restanti\n"
 "utilizzo dei buffer: %d colpiti, %d mancati, %d sporcati\n"
@@ -9994,7 +9994,7 @@ msgstr ""
 #: main/main.c:304
 #, c-format
 msgid "  -f s|i|n|m|h       forbid use of some plan types\n"
-msgstr "  -f s|i|n|m|h       vieta l'uso di alcuni tipi di piano\n"
+msgstr "  -f s|i|n|m|h       vieta l'uso di alcuni tipi di piani\n"
 
 #: main/main.c:305
 #, c-format
@@ -10115,7 +10115,7 @@ msgid ""
 msgstr ""
 "\n"
 "Si prega di leggere la documentazione per la lista completa di impostazioni\n"
-"di configurazione e come impostarle sulla riga di comando o nel file di\n"
+"di configurazione e su come impostarle sulla riga di comando o nel file di\n"
 "configurazione\n"
 "\n"
 "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
@@ -13341,7 +13341,7 @@ msgstr "rilevato deadlock"
 #: storage/lmgr/deadlock.c:956
 #, c-format
 msgid "See server log for query details."
-msgstr "Controllare i log del server per i dettagli della query."
+msgstr "Vedi i log del server per i dettagli della query."
 
 #: storage/lmgr/lmgr.c:657
 #, c-format
@@ -18016,7 +18016,7 @@ msgstr "Imposta il numero di buffer delle pagine su disco in shared memory per i
 
 #: utils/misc/guc.c:2000
 msgid "WAL writer sleep time between WAL flushes."
-msgstr "Il tempo di pausa del WAL writer che intercorre fra due flush del WAL."
+msgstr "Tempo di pausa del WAL writer tra due flush dei WAL."
 
 #: utils/misc/guc.c:2012
 msgid "Sets the maximum number of simultaneously running WAL sender processes."
