@@ -1,6 +1,6 @@
 # rules to be imported by VERSION/Makefile
 
-.PHONY: clean
+.PHONY: clean check
 
 all: $(MOS)
 
@@ -9,6 +9,9 @@ rewrap:
 		echo $$f; \
 		msgcat --no-wrap $$f | sponge $$f; \
 	done
+
+check:
+	../tools/chkpos.py $(POS)
 
 clean:
 	rm -f $(MOS)
