@@ -76,7 +76,7 @@ Se il programma ha un output allineato (es. i messaggi di --help) rispetta
 l'allineamento e non far andare le stringhe a zig zag.
 
 Gli autori di postgres fanno molta attenzione alla distinzione tra i messaggi
-d'errore dovuti a qualcosa che è impossibile assolutamente fare, per i quali
+d'errore dovuti a qualcosa che è assolutamente impossibile fare, per i quali
 usano la forma *cannot*:
 
     cannot build the roof before the floor
