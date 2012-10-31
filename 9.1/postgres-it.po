@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:52+0000\n"
-"PO-Revision-Date: 2012-10-31 16:57+0100\n"
+"PO-Revision-Date: 2012-10-31 23:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -137,9 +137,9 @@ msgid "Target must be \"bgwriter\"."
 msgstr "L'obiettivo deve essere \"bgwriter\"."
 
 #: postmaster/pgstat.c:2975
-#, fuzzy, c-format
+#, c-format
 msgid "poll() failed in statistics collector: %m"
-msgstr "select() fallita nel raccoglitore di statistiche: %m"
+msgstr "poll() fallita nel raccoglitore di statistiche: %m"
 
 #: postmaster/pgstat.c:3020
 #, c-format
@@ -235,9 +235,9 @@ msgid "Enable the \"track_counts\" option."
 msgstr "Abilita l'opzione \"track_counts\"."
 
 #: postmaster/syslogger.c:418
-#, fuzzy, c-format
+#, c-format
 msgid "select() failed in logger process: %m"
-msgstr "select() fallita in postmaster: %m"
+msgstr "select() fallita nel processo logger: %m"
 
 #: postmaster/syslogger.c:430 postmaster/syslogger.c:1014
 #, c-format
@@ -498,24 +498,24 @@ msgstr ""
 "ma non è stato possibile aprire il file \"%s\": %s\n"
 
 #: postmaster/postmaster.c:1307
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr "non è stato possibile aprire il file \"%s\": %s"
+msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
 
 #: postmaster/postmaster.c:1314
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not open log file \"%s/%s\": %s\n"
-msgstr "non è stato possibile aprire il file di log \"%s\": %m"
+msgstr "%s: non è stato possibile aprire il file di log \"%s/%s\": %s\n"
 
 #: postmaster/postmaster.c:1325
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not fork background process: %s\n"
-msgstr "non è stato possibile effettuare il fork del processo di scrittura in background: %m"
+msgstr "%s: non è stato possibile effettuare il fork del processo di scrittura in background: %s\n"
 
 #: postmaster/postmaster.c:1347
-#, fuzzy, c-format
+#, c-format
 msgid "%s: could not dissociate from controlling TTY: %s\n"
-msgstr "non è stato possibile leggere dal file di controllo: %m"
+msgstr "%s: non è stato possibile dissociarsi dal terminale di controllo: %s\n"
 
 #: postmaster/postmaster.c:1442
 #, c-format
@@ -808,19 +808,19 @@ msgid "could not remove file \"%s\": %s\n"
 msgstr "non è stato possibile rimuovere il file \"%s\": %s\n"
 
 #: postmaster/postmaster.c:4930
-#, fuzzy, c-format
+#, c-format
 msgid "could not map view of backend variables: error code %d\n"
-msgstr "non è stato possibile mappare la vista delle variabili del backend: codice errore %lu\n"
+msgstr "non è stato possibile mappare la vista delle variabili del backend: codice errore %d\n"
 
 #: postmaster/postmaster.c:4939
-#, fuzzy, c-format
+#, c-format
 msgid "could not unmap view of backend variables: error code %d\n"
-msgstr "non è stato possibile rimuovere la mappa della vista delle variabili del backend: codice errore %lu\n"
+msgstr "non è stato possibile rimuovere la mappa della vista delle variabili del backend: codice errore %d\n"
 
 #: postmaster/postmaster.c:4946
-#, fuzzy, c-format
+#, c-format
 msgid "could not close handle to backend parameter variables: error code %d\n"
-msgstr "non è stato possibile chiudere l'handle dei parametri variabili del backend: codice errore %lu\n"
+msgstr "non è stato possibile chiudere l'handle dei parametri variabili del backend: codice errore %d\n"
 
 #: postmaster/postmaster.c:5091
 msgid "could not read exit code for process\n"
@@ -1208,13 +1208,12 @@ msgid "A page write in process during an operating system crash might be only pa
 msgstr "La scrittura di una pagina durante un crash del sistema operativo potrebbe essere stata scritta su disco solo parzialmente. Durante il ripristino, le variazioni di riga memorizzate nel WAL non sono sufficienti al ripristino. Questa operazione scrive le pagine nel WAL appena modificate dopo un checkpoint nel WAL in maniera da rendere possibile un ripristino completo."
 
 #: utils/misc/guc.c:831
-#, fuzzy
 msgid "Runs the server silently."
-msgstr "Mostra la versione del server."
+msgstr "Esegui il server silenziosamente."
 
 #: utils/misc/guc.c:832
 msgid "If this parameter is set, the server will automatically run in the background and any controlling terminals are dissociated."
-msgstr ""
+msgstr "Se questo parametro è impostato, il server verrà eseguito automaticamente in background, dissociato dai terminali di controllo."
 
 #: utils/misc/guc.c:841
 msgid "Logs each checkpoint."
@@ -1711,9 +1710,8 @@ msgid "Sets the maximum number of simultaneously running WAL sender processes."
 msgstr "Imposta il numero massimo di processi WAL sender in esecuzione simultanea."
 
 #: utils/misc/guc.c:1995
-#, fuzzy
 msgid "WAL sender sleep time between WAL replications."
-msgstr "Il tempo di pausa del WAL writer che intercorre fra due flush del WAL."
+msgstr "Tempo di pausa del WAL sender tra due repliche WAL."
 
 #: utils/misc/guc.c:2006
 msgid "Sets the maximum time to wait for WAL replication."
@@ -1812,7 +1810,6 @@ msgid "Minimum number of tuple updates or deletes prior to vacuum."
 msgstr "Numero minimo di modifiche o cancellazioni di tuple prima dell'esecuzione di un autovacuum."
 
 #: utils/misc/guc.c:2236
-#, fuzzy
 msgid "Minimum number of tuple inserts, updates or deletes prior to analyze."
 msgstr "Numero minimo di inserimenti, modifiche o cancellazioni di tuple prima dell'esecuzione di un analyze."
 
@@ -1873,9 +1870,8 @@ msgid "Zero logs all files. The default is -1 (turning this feature off)."
 msgstr "Il valore 0 (zero) fa registrare tutti i file. Il default è -1 (che disabilita la registrazione)."
 
 #: utils/misc/guc.c:2359
-#, fuzzy
 msgid "Sets the size reserved for pg_stat_activity.current_query, in bytes."
-msgstr "Imposta la dimensione in byte riservata a pg_stat_activity.query."
+msgstr "Imposta la dimensione in byte riservata a pg_stat_activity.current_query."
 
 #: utils/misc/guc.c:2378
 msgid "Sets the planner's estimate of the cost of a sequentially fetched disk page."
@@ -1922,9 +1918,8 @@ msgid "Number of tuple updates or deletes prior to vacuum as a fraction of reltu
 msgstr "Il numero di modifiche o cancellazioni di tuple prima di un VACUUM, come frazione di reltuples."
 
 #: utils/misc/guc.c:2490
-#, fuzzy
 msgid "Number of tuple inserts, updates or deletes prior to analyze as a fraction of reltuples."
-msgstr "Numero di inserimenti, modifiche o cancellazioni di tuple prima di un ANALYZE, come frazione di reltuples."
+msgstr "Numero di inserimenti, modifiche o cancellazioni di tuple prima di un analyze, come frazione di reltuples."
 
 #: utils/misc/guc.c:2500
 msgid "Time spent flushing dirty buffers during checkpoint, as fraction of checkpoint interval."
@@ -2096,7 +2091,7 @@ msgstr "Imposta il nome host o gli indirizzi IP su cui ascoltare."
 
 #: utils/misc/guc.c:2893
 msgid "Sets the list of known custom variable classes."
-msgstr ""
+msgstr "Imposta la lista delle variabili di classe conosciute."
 
 #: utils/misc/guc.c:2904
 msgid "Sets the server's data directory."
@@ -2772,9 +2767,8 @@ msgid "remaining connection slots are reserved for non-replication superuser con
 msgstr "i rimanenti slot di connessione sono riservati a connessioni di superutenti non di replica"
 
 #: utils/init/postinit.c:675
-#, fuzzy
 msgid "must be replication role to start walsender"
-msgstr "solo un superutente o il ruolo di replica può avviare walsender"
+msgstr "solo il ruolo di replica può avviare walsender"
 
 #: utils/init/postinit.c:718 utils/init/postinit.c:786
 #: utils/init/postinit.c:803 commands/dbcommands.c:764
@@ -3113,14 +3107,14 @@ msgid "invalid byte value for encoding \"%s\": 0x%02x"
 msgstr "byte non valido per la codifica \"%s\": 0x%02x"
 
 #: utils/mb/wchar.c:1777
-#, fuzzy, c-format
+#, c-format
 msgid "invalid byte sequence for encoding \"%s\": 0x%s"
-msgstr "sequenza di byte non valida per la codifica \"%s\": %s"
+msgstr "sequenza di byte non valida per la codifica \"%s\": 0x%s"
 
 #: utils/mb/wchar.c:1806
-#, fuzzy, c-format
+#, c-format
 msgid "character 0x%s of encoding \"%s\" has no equivalent in \"%s\""
-msgstr "il carattere con sequenza di byte %s nella codifica \"%s\" non ha un equivalente nella codifica \"%s\""
+msgstr "il carattere con sequenza di byte 0x%s nella codifica \"%s\" non ha un equivalente nella codifica \"%s\""
 
 #: utils/mmgr/aset.c:417
 #, c-format
@@ -3636,9 +3630,9 @@ msgid "could not determine which collation to use for string comparison"
 msgstr "non è stato possibile determinare quale ordinamento usare per la comparazione tra stringhe"
 
 #: utils/adt/varlena.c:1358 utils/adt/varlena.c:1371
-#, fuzzy, c-format
+#, c-format
 msgid "could not convert string to UTF-16: error %lu"
-msgstr "non è stato possibile convertire la stringa in UTF-16: codice errore %lu"
+msgstr "non è stato possibile convertire la stringa in UTF-16: errore %lu"
 
 #: utils/adt/varlena.c:1386
 #, c-format
@@ -3906,7 +3900,6 @@ msgid "count must be greater than zero"
 msgstr "il valore count dev'essere maggiore di zero"
 
 #: utils/adt/float.c:2692 utils/adt/numeric.c:1178
-#, fuzzy
 msgid "operand, lower bound and upper bound cannot be NaN"
 msgstr "l'operando e i valori minimo e massimo non possono essere NaN"
 
@@ -4650,9 +4643,8 @@ msgid "text-search query doesn't contain lexemes: \"%s\""
 msgstr "la query di ricerca di testo non contiene alcun lessema: \"%s\""
 
 #: utils/adt/misc.c:80
-#, fuzzy
 msgid "must be superuser to signal other server processes"
-msgstr "solo un superutente può inviare segnali al postmaster"
+msgstr "solo un superutente può inviare segnali ad un altro processo del server"
 
 #: utils/adt/misc.c:89
 #, c-format
@@ -5850,9 +5842,8 @@ msgid "Increase the platform's stack depth limit via \"ulimit -s\" or local equi
 msgstr "Incrementa il limite dello stack della piattaforma usando \"ulimit -s\" on un comando equivalente."
 
 #: tcop/postgres.c:3468
-#, fuzzy
 msgid "invalid command-line arguments for server process"
-msgstr "argomento della riga di comando non valido per il processo server: %s"
+msgstr "argomento della riga di comando non valido per il processo server"
 
 #: tcop/postgres.c:3469 tcop/postgres.c:3475
 #, c-format
@@ -5860,9 +5851,9 @@ msgid "Try \"%s --help\" for more information."
 msgstr "Prova \"%s --help\" per maggiori informazioni."
 
 #: tcop/postgres.c:3473
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid command-line arguments"
-msgstr "%s: parametri della riga di comando non validi\n"
+msgstr "%s: parametri della riga di comando non validi"
 
 #: tcop/postgres.c:3565
 #, c-format
@@ -7474,9 +7465,9 @@ msgid "could not obtain lock on relation \"%s\""
 msgstr "non è stato possibile ottenere il lock sulla relazione \"%s\""
 
 #: commands/lockcmds.c:98
-#, fuzzy, c-format
+#, c-format
 msgid "could not obtain lock on relation with OID %u"
-msgstr "non è stato possibile ottenere il lock sulla relazione \"%s\""
+msgstr "non è stato possibile ottenere il lock sulla relazione con OID %u"
 
 #: commands/lockcmds.c:122 catalog/namespace.c:285 parser/parse_relation.c:842
 #, c-format
@@ -7893,7 +7884,7 @@ msgid "cannot rename column of typed table"
 msgstr "non è possibile rinominare la colonna di una tabella con tipo"
 
 #: commands/tablecmds.c:1977
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" is not a table, view, composite type, index or foreign table"
 msgstr "\"%s\" non è una tabella, una vista, un tipo composito, un indice né una tabella esterna"
 
@@ -8154,9 +8145,9 @@ msgid "Key columns \"%s\" and \"%s\" are of incompatible types: %s and %s."
 msgstr "Le colonne chiave \"%s\" e \"%s\" hanno tipi incompatibili: %s e %s."
 
 #: commands/tablecmds.c:5747
-#, fuzzy, c-format
+#, c-format
 msgid "foreign key constraint \"%s\" of relation \"%s\" does not exist"
-msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste"
+msgstr "il vincolo di chiave esterna \"%s\" della relazione \"%s\" non esiste"
 
 #: commands/tablecmds.c:5810
 #, c-format
@@ -8234,9 +8225,9 @@ msgid "cannot use window function in transform expression"
 msgstr "non è possibile usare funzioni finestra in un'espressione di trasformazione"
 
 #: commands/tablecmds.c:6672
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" cannot be cast to type %s"
-msgstr "la colonna \"%s\" non può essere convertita automaticamente al tipo %s"
+msgstr "la colonna \"%s\" non può essere convertita al tipo %s"
 
 #: commands/tablecmds.c:6719
 #, c-format
@@ -8249,9 +8240,9 @@ msgid "cannot alter type of column \"%s\" twice"
 msgstr "non è possibile cambiare il tipo della colonna \"%s\" due volte"
 
 #: commands/tablecmds.c:6836
-#, fuzzy, c-format
+#, c-format
 msgid "default for column \"%s\" cannot be cast to type %s"
-msgstr "il valore predefinito della colonna \"%s\" non può essere convertito automaticamente al tipo %s"
+msgstr "il valore predefinito della colonna \"%s\" non può essere convertito al tipo %s"
 
 #: commands/tablecmds.c:6962
 msgid "cannot alter type of a column used by a view or rule"
@@ -8761,9 +8752,9 @@ msgid "Use DROP AGGREGATE to drop aggregate functions."
 msgstr "Usa DROP AGGREGATE per rimuovere le funzioni di aggregazione."
 
 #: commands/functioncmds.c:1017
-#, fuzzy, c-format
+#, c-format
 msgid "removing built-in function \"%s\""
-msgstr "non c'è nessuna funzione predefinita chiamata \"%s\""
+msgstr "rimozione della funzione predefinita \"%s\""
 
 #: commands/functioncmds.c:1110
 msgid "Use ALTER AGGREGATE to rename aggregate functions."
@@ -9296,18 +9287,16 @@ msgstr ""
 "%s."
 
 #: commands/vacuumlazy.c:254
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "automatic vacuum of table \"%s.%s.%s\": index scans: %d\n"
 "pages: %d removed, %d remain\n"
 "tuples: %.0f removed, %.0f remain\n"
 "system usage: %s"
 msgstr ""
-"pulizia automatica della tabella \"%s.%s.%s\": scan di indici: %d\n"
+"pulizia automatica della tabella \"%s.%s.%s\": scansioni di indici: %d\n"
 "pagine: %d rimosse, %d restanti\n"
 "tuple: %.0f rimosse, %.0f restanti\n"
-"utilizzo dei buffer: %d colpiti, %d mancati, %d sporcati\n"
-"velocità di lettura media: %.3f MiB/s, velocità di scrittura media: %.3f MiB/s\n"
 "utilizzo del sistema: %s"
 
 #: commands/vacuumlazy.c:508
@@ -9409,9 +9398,9 @@ msgid "invalid server encoding %d"
 msgstr "codifica del server non valida: %d"
 
 #: commands/dbcommands.c:329 commands/dbcommands.c:333
-#, fuzzy, c-format
+#, c-format
 msgid "invalid locale name %s"
-msgstr "nome locale non valido \"%s\""
+msgstr "nome locale non valido %s"
 
 #: commands/dbcommands.c:352
 #, c-format
@@ -9465,19 +9454,19 @@ msgid "source database \"%s\" is being accessed by other users"
 msgstr "il database sorgente \"%s\" ha attualmente altri utenti collegati"
 
 #: commands/dbcommands.c:695 commands/dbcommands.c:710
-#, fuzzy, c-format
+#, c-format
 msgid "encoding %s does not match locale %s"
-msgstr "la codifica \"%s\" non corrisponde al locale \"%s\""
+msgstr "la codifica %s non corrisponde al locale %s"
 
 #: commands/dbcommands.c:698
-#, fuzzy, c-format
+#, c-format
 msgid "The chosen LC_CTYPE setting requires encoding %s."
-msgstr "L'impostazione LC_CTYPE scelta richiede la codifica \"%s\"."
+msgstr "L'impostazione LC_CTYPE scelta richiede la codifica %s."
 
 #: commands/dbcommands.c:713
-#, fuzzy, c-format
+#, c-format
 msgid "The chosen LC_COLLATE setting requires encoding %s."
-msgstr "L'impostazione LC_COLLATE scelta richiede la codifica \"%s\"."
+msgstr "L'impostazione LC_COLLATE scelta richiede la codifica %s."
 
 #: commands/dbcommands.c:771
 #, c-format
@@ -9536,14 +9525,14 @@ msgid "There are %d other session(s) and %d prepared transaction(s) using the da
 msgstr "Ci sono altre %d sessioni e %d transazioni preparate che stanno usando il database."
 
 #: commands/dbcommands.c:1805
-#, fuzzy, c-format
+#, c-format
 msgid "There are %d other session(s) using the database."
-msgstr "Ci sono %d altra sessione che sta usando il database."
+msgstr "Ci sono altre %d sessioni che stanno usando il database."
 
 #: commands/dbcommands.c:1808
-#, fuzzy, c-format
+#, c-format
 msgid "There are %d prepared transaction(s) using the database."
-msgstr "Ci sono %d transazione preparata che sta usando il database."
+msgstr "Ci sono %d transazioni preparate che stanno usando il database."
 
 #: commands/explain.c:153
 #, c-format
@@ -9844,14 +9833,12 @@ msgid "index search operators must return boolean"
 msgstr "gli operatori di ricerca degli indici devono restituire un booleano"
 
 #: commands/opclasscmds.c:1163
-#, fuzzy
 msgid "btree procedures must have two arguments"
-msgstr "le procedure di comparazione btree devono avere due argomenti"
+msgstr "le procedure btree devono avere due argomenti"
 
 #: commands/opclasscmds.c:1167
-#, fuzzy
 msgid "btree procedures must return integer"
-msgstr "la procedura di hash deve restituire un intero"
+msgstr "pre procedure btree devono restituire un integer"
 
 #: commands/opclasscmds.c:1182
 msgid "hash procedures must have one argument"
@@ -10560,14 +10547,13 @@ msgid "changing the foreign-data wrapper validator can cause the options for dep
 msgstr "cambiare il validatore del wrapper di dati esterni può rendere non valide le opzioni degli oggetti dipendenti"
 
 #: commands/foreigncmds.c:775
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to drop foreign-data wrapper \"%s\""
-msgstr "permesso di modificare il wrapper di dati esterni \"%s\" negato"
+msgstr "permesso di eliminare il wrapper di dati esterni \"%s\" negato"
 
 #: commands/foreigncmds.c:777
-#, fuzzy
 msgid "Must be superuser to drop a foreign-data wrapper."
-msgstr "Solo un superutente può modificare un wrapper di dati esterni."
+msgstr "Solo un superutente può eliminare un wrapper di dati esterni."
 
 #: commands/foreigncmds.c:789
 #, c-format
@@ -10657,7 +10643,6 @@ msgid "payload string too long"
 msgstr "la stringa del carico è troppo lunga"
 
 #: commands/async.c:763
-#, fuzzy
 msgid "cannot PREPARE a transaction that has executed LISTEN, UNLISTEN or NOTIFY"
 msgstr "non è possibile eseguire PREPARE in una transazione che ha eseguito LISTEN, UNLISTEN o NOTIFY"
 
@@ -11108,9 +11093,8 @@ msgid "text search parser lextypes method is required"
 msgstr "il metodo lextype dell'analizzatore di ricerca di testo è richiesto"
 
 #: commands/tsearchcmds.c:297
-#, fuzzy
 msgid "must be superuser to drop text search parsers"
-msgstr "solo un superutente può creare analizzatori di ricerca di testo"
+msgstr "solo un superutente può eliminare analizzatori di ricerca di testo"
 
 #: commands/tsearchcmds.c:320 catalog/namespace.c:1906
 #, c-format
@@ -11178,9 +11162,8 @@ msgid "text search template \"%s\" already exists"
 msgstr "il modello di ricerca di testo \"%s\" esiste già"
 
 #: commands/tsearchcmds.c:1281
-#, fuzzy
 msgid "must be superuser to drop text search templates"
-msgstr "solo un superutente può creare modelli di ricerca di testo"
+msgstr "solo un superutente può eliminare modelli di ricerca di testo"
 
 #: commands/tsearchcmds.c:1304 catalog/namespace.c:2153
 #, c-format
@@ -11734,7 +11717,7 @@ msgstr "non è possibile continuare lo streaming dei WAL, il recupero è già te
 
 #: replication/walsender.c:141
 msgid "recovery is still in progress, can't accept WAL streaming connections"
-msgstr ""
+msgstr "il ripristino è ancora in corso, non è possibile accettare connessioni streaming WAL"
 
 #: replication/walsender.c:261 replication/walsender.c:489
 #: replication/walsender.c:547
@@ -11748,7 +11731,7 @@ msgstr "tipo di messaggio di handshake di standby non valido %d"
 
 #: replication/walsender.c:379
 msgid "standby connections not allowed because wal_level=minimal"
-msgstr ""
+msgstr "le connessioni di standby non sono consentite perché wal_level=minimal"
 
 #: replication/walsender.c:461
 #, c-format
@@ -11811,9 +11794,9 @@ msgid "duplicate option \"%s\""
 msgstr "opzione duplicata \"%s\""
 
 #: replication/basebackup.c:387
-#, fuzzy, c-format
+#, c-format
 msgid "could not open directory \"pg_tblspc\": %m"
-msgstr "non è stato possibile aprire la directory \"%s\": %m"
+msgstr "non è stato possibile aprire la directory \"pg_tblspc\": %m"
 
 #: replication/basebackup.c:597
 msgid "shutdown requested, aborting active base backup"
@@ -12177,9 +12160,9 @@ msgid "check of private key failed: %s"
 msgstr "controllo della chiave privata fallito: %s"
 
 #: libpq/be-secure.c:816
-#, fuzzy, c-format
+#, c-format
 msgid "could not access root certificate file \"%s\": %m"
-msgstr "non è stato possibile caricare il file del certificato radice \"%s\": %s"
+msgstr "non è stato possibile accedere al file del certificato radice \"%s\": %m"
 
 #: libpq/be-secure.c:827
 #, c-format
@@ -12196,13 +12179,13 @@ msgid "SSL library does not support certificate revocation lists."
 msgstr "La libreria SSL non supporta le liste di revoca dei certificati."
 
 #: libpq/be-secure.c:859
-#, fuzzy, c-format
+#, c-format
 msgid "SSL certificate revocation list file \"%s\" not found, skipping: %s"
-msgstr "il file di lista di revoche di certificati SSL \"%s\" è stato ignorato"
+msgstr "file di lista di revoche di certificati SSL \"%s\" non trovato, saltato: %s"
 
 #: libpq/be-secure.c:861
 msgid "Certificates will not be checked against revocation list."
-msgstr ""
+msgstr "I certificati non verranno verificati rispetto alla lista di revoche."
 
 #: libpq/be-secure.c:903
 #, c-format
@@ -12325,12 +12308,11 @@ msgstr "autenticazione fallita per l'utente \"%s\": metodo di autenticazione non
 
 #: libpq/auth.c:325
 msgid "missing or erroneous pg_hba.conf file"
-msgstr ""
+msgstr "file pg_hba.conf mancante o errato"
 
 #: libpq/auth.c:326
-#, fuzzy
 msgid "See server log for details."
-msgstr "Controllare i log del server per i dettagli della query."
+msgstr "Vedi il log del server per i dettagli."
 
 #: libpq/auth.c:356
 msgid "connection requires a valid client certificate"
@@ -12692,24 +12674,24 @@ msgid "could not read RADIUS response: %m"
 msgstr "non è stato possibile leggere la risposta RADIUS: %m"
 
 #: libpq/auth.c:2695 libpq/auth.c:2699
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS response was sent from incorrect port: %i"
-msgstr "la risposta RADIUS è stata inviata da una porta sbagliata: %d"
+msgstr "la risposta RADIUS è stata inviata da una porta sbagliata: %i"
 
 #: libpq/auth.c:2708
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS response too short: %i"
-msgstr "risposta RADIUS troppo breve: %d"
+msgstr "risposta RADIUS troppo breve: %i"
 
 #: libpq/auth.c:2715
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS response has corrupt length: %i (actual length %i)"
-msgstr "la risposta RADIUS ha una lunghezza corrotta: %d (lunghezza reale %d)"
+msgstr "la risposta RADIUS ha una lunghezza corrotta: %i (lunghezza reale %i)"
 
 #: libpq/auth.c:2723
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS response is to a different request: %i (should be %i)"
-msgstr "la risposta RADIUS è a una richiesta differente: %d (dovrebbe essere %d)"
+msgstr "la risposta RADIUS è a una richiesta differente: %i (dovrebbe essere %i)"
 
 #: libpq/auth.c:2748
 msgid "could not perform MD5 encryption of received packet"
@@ -12720,9 +12702,9 @@ msgid "RADIUS response has incorrect MD5 signature"
 msgstr "la firma MD5 dellla risposta RADIUS non è corretta"
 
 #: libpq/auth.c:2774
-#, fuzzy, c-format
+#, c-format
 msgid "RADIUS response has invalid code (%i) for user \"%s\""
-msgstr "il codice della risposta RADIUS (%d) per l'utente \"%s\" non è corretto"
+msgstr "il codice della risposta RADIUS (%i) per l'utente \"%s\" non è corretto"
 
 #: libpq/hba.c:160
 #, c-format
@@ -12851,7 +12833,6 @@ msgid "authentication option not in name=value format: %s"
 msgstr "opzione di autenticazione non in formato nome=valore: %s"
 
 #: libpq/hba.c:1257
-#, fuzzy
 msgid "ident, peer, krb5, gssapi, sspi and cert"
 msgstr "ident, peer, krb5, gssapi, sspi e cert"
 
@@ -12865,7 +12846,7 @@ msgstr "il certificato del client può essere controllato solo se un root certif
 
 #: libpq/hba.c:1283
 msgid "Make sure the root.crt file is present and readable."
-msgstr ""
+msgstr "Assicurati che il file root.crt sia presente e leggibile."
 
 #: libpq/hba.c:1296
 msgid "clientcert can not be set to 0 when using \"cert\" authentication"
@@ -12877,7 +12858,6 @@ msgid "invalid LDAP port number: \"%s\""
 msgstr "numero di porta LDAP non valido: \"%s\""
 
 #: libpq/hba.c:1376 libpq/hba.c:1384
-#, fuzzy
 msgid "krb5, gssapi and sspi"
 msgstr "krb5, gssapi e sspi"
 
@@ -14932,91 +14912,91 @@ msgid "Options:\n"
 msgstr "Opzioni:\n"
 
 #: main/main.c:282
-#, fuzzy, c-format
+#, c-format
 msgid "  -A 1|0          enable/disable run-time assert checking\n"
-msgstr "  -A 1|0             abilita/disabilita il controllo delle asserzioni in esecuzione\n"
+msgstr "  -A 1|0          abilita/disabilita il controllo delle asserzioni in esecuzione\n"
 
 #: main/main.c:284
-#, fuzzy, c-format
+#, c-format
 msgid "  -B NBUFFERS     number of shared buffers\n"
-msgstr "  -B NBUFFERS        numero di buffer condivisi\n"
+msgstr "  -B NBUFFERS     numero di buffer condivisi\n"
 
 #: main/main.c:285
-#, fuzzy, c-format
+#, c-format
 msgid "  -c NAME=VALUE   set run-time parameter\n"
-msgstr "  -c NOME=VALORE     imposta un parametro di esecuzione\n"
+msgstr "  -c NOME=VALORE  imposta un parametro di esecuzione\n"
 
 #: main/main.c:286
-#, fuzzy, c-format
+#, c-format
 msgid "  -d 1-5          debugging level\n"
-msgstr "  -d 1-5             livello di debugging\n"
+msgstr "  -d 1-5          livello di debugging\n"
 
 #: main/main.c:287
-#, fuzzy, c-format
+#, c-format
 msgid "  -D DATADIR      database directory\n"
-msgstr "  -D DATADIR         directory del database\n"
+msgstr "  -D DATADIR      directory del database\n"
 
 #: main/main.c:288
-#, fuzzy, c-format
+#, c-format
 msgid "  -e              use European date input format (DMY)\n"
-msgstr "  -e                 usa il formato date europeo (GMA)\n"
+msgstr "  -e              usa il formato date europeo (GMA)\n"
 
 #: main/main.c:289
-#, fuzzy, c-format
+#, c-format
 msgid "  -F              turn fsync off\n"
-msgstr "  -F                 disabilita fsync\n"
+msgstr "  -F              disabilita fsync\n"
 
 #: main/main.c:290
-#, fuzzy, c-format
+#, c-format
 msgid "  -h HOSTNAME     host name or IP address to listen on\n"
-msgstr "  -h HOSTNAME        nome host o indirizzo IP su cui ascoltare\n"
+msgstr "  -h HOSTNAME     nome host o indirizzo IP su cui ascoltare\n"
 
 #: main/main.c:291
-#, fuzzy, c-format
+#, c-format
 msgid "  -i              enable TCP/IP connections\n"
-msgstr "  -i                 abilita le connessioni TCP/IP\n"
+msgstr "  -i              abilita le connessioni TCP/IP\n"
 
 #: main/main.c:292
-#, fuzzy, c-format
+#, c-format
 msgid "  -k DIRECTORY    Unix-domain socket location\n"
-msgstr "  -k DIRECTORY       locazione dei socket di dominio Unix\n"
+msgstr "  -k DIRECTORY    locazione dei socket di dominio Unix\n"
 
 #: main/main.c:294
-#, fuzzy, c-format
+#, c-format
 msgid "  -l              enable SSL connections\n"
-msgstr "  -l                 abilita la connessione SSL\n"
+msgstr "  -l              abilita la connessione SSL\n"
 
 #: main/main.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "  -N MAX-CONNECT  maximum number of allowed connections\n"
-msgstr "  -N MAX-CONNECT     numero massimo di connessioni consentite\n"
+msgstr "  -N MAX-CONNECT  numero massimo di connessioni consentite\n"
 
 #: main/main.c:297
-#, fuzzy, c-format
+#, c-format
 msgid "  -o OPTIONS      pass \"OPTIONS\" to each server process (obsolete)\n"
-msgstr "  -o OPZIONI         passa \"OPZIONI\" ad ogni processo server (obsoleto)\n"
+msgstr "  -o OPZIONI      passa \"OPZIONI\" ad ogni processo server (obsoleto)\n"
 
 #: main/main.c:298
-#, fuzzy, c-format
+#, c-format
 msgid "  -p PORT         port number to listen on\n"
-msgstr "  -p PORT            numero di porta sul quale ascoltare\n"
+msgstr "  -p PORT         numero di porta sul quale ascoltare\n"
 
 #: main/main.c:299
-#, fuzzy, c-format
+#, c-format
 msgid "  -s              show statistics after each query\n"
-msgstr "  -s                 mostra le statistiche dopo ogni query\n"
+msgstr "  -s              mostra le statistiche dopo ogni query\n"
 
 #: main/main.c:300
-#, fuzzy, c-format
+#, c-format
 msgid "  -S WORK-MEM     set amount of memory for sorts (in kB)\n"
 msgstr ""
-"  -S WORK-MEM        imposta la dimensione della memoria per gli ordinamenti\n"
-"                     (in kB)\n"
+"  -S WORK-MEM     imposta la dimensione della memoria per gli ordinamenti\n"
+"                  (in kB)\n"
 
 #: main/main.c:301
-#, fuzzy, c-format
+#, c-format
 msgid "  --NAME=VALUE    set run-time parameter\n"
-msgstr "  --NOME=VALORE      imposta un parametro di esecuzione\n"
+msgstr "  --NOME=VALORE   imposta un parametro di esecuzione\n"
 
 #: main/main.c:302
 #, c-format
@@ -15024,14 +15004,14 @@ msgid "  --describe-config  describe configuration parameters, then exit\n"
 msgstr "  --describe-config  descrivi i parametri di configurazione ed esci\n"
 
 #: main/main.c:303
-#, fuzzy, c-format
+#, c-format
 msgid "  --help          show this help, then exit\n"
-msgstr "  -?, --help         mostra questo aiuto ed esci\n"
+msgstr "  --help          mostra questo aiuto ed esci\n"
 
 #: main/main.c:304
-#, fuzzy, c-format
+#, c-format
 msgid "  --version       output version information, then exit\n"
-msgstr "  -V, --version      mostra informazioni sulla versione ed esci\n"
+msgstr "  --version       mostra informazioni sulla versione ed esci\n"
 
 #: main/main.c:306
 #, c-format
@@ -15043,45 +15023,45 @@ msgstr ""
 "Opzioni per gli sviluppatori:\n"
 
 #: main/main.c:307
-#, fuzzy, c-format
+#, c-format
 msgid "  -f s|i|n|m|h    forbid use of some plan types\n"
-msgstr "  -f s|i|n|m|h       vieta l'uso di alcuni tipi di piano\n"
+msgstr "  -f s|i|n|m|h    vieta l'uso di alcuni tipi di piani\n"
 
 #: main/main.c:308
-#, fuzzy, c-format
+#, c-format
 msgid "  -n              do not reinitialize shared memory after abnormal exit\n"
 msgstr ""
-"  -n                 non reinizializzare la memoria condivisa dopo un'uscita\n"
-"                     anormale\n"
+"  -n              non reinizializzare la memoria condivisa dopo un'uscita\n"
+"                  anormale\n"
 
 #: main/main.c:309
-#, fuzzy, c-format
+#, c-format
 msgid "  -O              allow system table structure changes\n"
 msgstr ""
-"  -O                 consenti cambiamenti alla struttura delle tabelle\n"
-"                     di sistema\n"
+"  -O              consenti cambiamenti alla struttura delle tabelle\n"
+"                  di sistema\n"
 
 #: main/main.c:310
-#, fuzzy, c-format
+#, c-format
 msgid "  -P              disable system indexes\n"
-msgstr "  -P                 disabilita gli indici di sistema\n"
+msgstr "  -P              disabilita gli indici di sistema\n"
 
 #: main/main.c:311
-#, fuzzy, c-format
+#, c-format
 msgid "  -t pa|pl|ex     show timings after each query\n"
-msgstr "  -t pa|pl|ex        mostra i tempi impiegati dopo ogni query\n"
+msgstr "  -t pa|pl|ex     mostra i tempi impiegati dopo ogni query\n"
 
 #: main/main.c:312
-#, fuzzy, c-format
+#, c-format
 msgid "  -T              send SIGSTOP to all backend processes if one dies\n"
-msgstr "  -T                 invia SIGSTOP a tutti i processi backend se uno muore\n"
+msgstr "  -T              invia SIGSTOP a tutti i processi backend se uno muore\n"
 
 #: main/main.c:313
-#, fuzzy, c-format
+#, c-format
 msgid "  -W NUM          wait NUM seconds to allow attach from a debugger\n"
 msgstr ""
-"  -W NUM             attendi NUM secondi per consentire ad un debugger\n"
-"                     di collegarsi\n"
+"  -W NUM          attendi NUM secondi per consentire ad un debugger\n"
+"                  di collegarsi\n"
 
 #: main/main.c:315
 #, c-format
@@ -15093,38 +15073,38 @@ msgstr ""
 "Opzione per la modalità a singolo utente:\n"
 
 #: main/main.c:316
-#, fuzzy, c-format
+#, c-format
 msgid "  --single        selects single-user mode (must be first argument)\n"
 msgstr ""
-"  --single           imposta la modalità utente singolo (deve essere il primo\n"
-"                     argomento)\n"
+"  --single        imposta la modalità utente singolo (deve essere il primo\n"
+"                  argomento)\n"
 
 #: main/main.c:317
-#, fuzzy, c-format
+#, c-format
 msgid "  DBNAME          database name (defaults to user name)\n"
-msgstr "  DBNAME             nome del database (il predefinito è il nome dell'utente)\n"
+msgstr "  DBNAME          nome del database (il predefinito è il nome dell'utente)\n"
 
 #: main/main.c:318
-#, fuzzy, c-format
+#, c-format
 msgid "  -d 0-5          override debugging level\n"
-msgstr "  -d 0-5             scavalca il livello di debugging\n"
+msgstr "  -d 0-5          scavalca il livello di debugging\n"
 
 #: main/main.c:319
-#, fuzzy, c-format
+#, c-format
 msgid "  -E              echo statement before execution\n"
-msgstr "  -E                 stampa le istruzioni prima dell'esecuzione\n"
+msgstr "  -E              stampa le istruzioni prima dell'esecuzione\n"
 
 #: main/main.c:320
-#, fuzzy, c-format
+#, c-format
 msgid "  -j              do not use newline as interactive query delimiter\n"
 msgstr ""
-"  -j                 non usare \"a capo\" come delimitatore delle query\n"
-"                     interattivo\n"
+"  -j              non usare \"a capo\" come delimitatore delle query\n"
+"                  interattivo\n"
 
 #: main/main.c:321 main/main.c:326
-#, fuzzy, c-format
+#, c-format
 msgid "  -r FILENAME     send stdout and stderr to given file\n"
-msgstr "  -r FILENAME        invia stdout e stderr al file in argomento\n"
+msgstr "  -r FILENAME     invia stdout e stderr al file in argomento\n"
 
 #: main/main.c:323
 #, c-format
@@ -15136,23 +15116,23 @@ msgstr ""
 "Opzioni per la modalità di inizializzazione:\n"
 
 #: main/main.c:324
-#, fuzzy, c-format
+#, c-format
 msgid "  --boot          selects bootstrapping mode (must be first argument)\n"
 msgstr ""
-"  --boot             seleziona la modalità di inizializzazione (dev'essere\n"
-"                     il primo argomento)\n"
+"  --boot          seleziona la modalità di inizializzazione (dev'essere\n"
+"                  il primo argomento)\n"
 
 #: main/main.c:325
-#, fuzzy, c-format
+#, c-format
 msgid "  DBNAME          database name (mandatory argument in bootstrapping mode)\n"
 msgstr ""
-"  DBNAME             nome del database (obbligatorio in modalità di\n"
-"                     inizializzazione)\n"
+"  DBNAME          nome del database (obbligatorio in modalità di\n"
+"                  inizializzazione)\n"
 
 #: main/main.c:327
-#, fuzzy, c-format
+#, c-format
 msgid "  -x NUM          internal use\n"
-msgstr "  -x NUM             uso interno\n"
+msgstr "  -x NUM          uso interno\n"
 
 #: main/main.c:329
 #, c-format
@@ -15314,7 +15294,7 @@ msgstr "intervallo di precisione specificato due volte"
 
 #: gram.y:3005
 msgid "CREATE TABLE AS cannot specify INTO"
-msgstr ""
+msgstr "CREATE TABLE AS non può specificare INTO"
 
 #: gram.y:4058
 msgid "duplicate trigger events specified"
@@ -15350,7 +15330,7 @@ msgstr "WITH CHECK OPTION non è implementata"
 
 #: gram.y:7986
 msgid "column name list not allowed in CREATE TABLE / AS EXECUTE"
-msgstr ""
+msgstr "una lista di nomi di colonne non è consentita in CREATE TABLE / AS EXECUTE"
 
 #: gram.y:8210
 msgid "number of columns does not match number of values"
@@ -15711,9 +15691,8 @@ msgid "subquery uses ungrouped column \"%s.%s\" from outer query"
 msgstr "la sottoquery usa la colonna non raggruppata \"%s.%s\" dalla query esterna"
 
 #: parser/analyze.c:471
-#, fuzzy
 msgid "INSERT ... SELECT cannot specify INTO"
-msgstr "la regola ON SELECT non può usare OLD"
+msgstr "INSERT ... SELECT non può specificare INTO"
 
 #: parser/analyze.c:564 parser/analyze.c:1070
 msgid "VALUES lists must all be the same length"
@@ -15814,7 +15793,7 @@ msgstr "non è possibile specificare sia SCROLL che NO SCROLL"
 
 #: parser/analyze.c:2184
 msgid "DECLARE CURSOR cannot specify INTO"
-msgstr ""
+msgstr "DECLARE CURSOR non può specificare INTO"
 
 #: parser/analyze.c:2196
 msgid "DECLARE CURSOR must not contain data-modifying statements in WITH"
@@ -15892,9 +15871,8 @@ msgid "JOIN/ON clause refers to \"%s\", which is not part of JOIN"
 msgstr "la clausola JOIN/ON si riferisce a \"%s\", che non fa parte del JOIN"
 
 #: parser/parse_clause.c:502
-#, fuzzy
 msgid "subquery in FROM cannot have SELECT INTO"
-msgstr "la sottoquery in FROM deve avere un alias"
+msgstr "la sottoquery in FROM non può avere SELECT INTO"
 
 #: parser/parse_clause.c:524
 msgid "subquery in FROM cannot refer to other relations of same query level"
@@ -16065,9 +16043,8 @@ msgid "arguments of row IN must all be row expressions"
 msgstr "gli argomenti della riga IN devono essere tutti espressioni di riga"
 
 #: parser/parse_expr.c:1414
-#, fuzzy
 msgid "subquery cannot have SELECT INTO"
-msgstr "le viste non possono contenere SELECT INTO"
+msgstr "sa sottoquery non può avere SELECT INTO"
 
 #: parser/parse_expr.c:1442
 msgid "subquery must return a column"
@@ -16622,7 +16599,7 @@ msgstr "il nome della query WITH \"%s\" è stato specificato più di una volta"
 
 #: parser/parse_cte.c:259
 msgid "subquery in WITH cannot have SELECT INTO"
-msgstr ""
+msgstr "la sottoquery nel WITH non può avere SELECT INTO"
 
 #: parser/parse_cte.c:271
 msgid "WITH clause containing a data-modifying statement must be at the top level"
@@ -16687,24 +16664,24 @@ msgid "recursive reference to query \"%s\" must not appear more than once"
 msgstr "il riferimento ricorsivo alla query \"%s\" non può apparire più di una volta"
 
 #: port/win32_sema.c:94
-#, fuzzy, c-format
+#, c-format
 msgid "could not create semaphore: error code %d"
-msgstr "non è stato possibile creare il semaforo: codice errore %lu"
+msgstr "non è stato possibile creare il semaforo: codice errore %d"
 
 #: port/win32_sema.c:165
-#, fuzzy, c-format
+#, c-format
 msgid "could not lock semaphore: error code %d"
-msgstr "non è stato possibile bloccare il semaforo: codice errore %lu"
+msgstr "non è stato possibile bloccare il semaforo: codice errore %d"
 
 #: port/win32_sema.c:178
-#, fuzzy, c-format
+#, c-format
 msgid "could not unlock semaphore: error code %d"
-msgstr "non è stato possibile sbloccare il semaforo: codice errore %lu"
+msgstr "non è stato possibile sbloccare il semaforo: codice errore %d"
 
 #: port/win32_sema.c:207
-#, fuzzy, c-format
+#, c-format
 msgid "could not try-lock semaphore: error code %d"
-msgstr "non è stato possibile provare a bloccare il semaforo: codice errore %lu"
+msgstr "non è stato possibile provare a bloccare il semaforo: codice errore %d"
 
 #: port/sysv_shmem.c:147 port/pg_shmem.c:147
 #, c-format
@@ -16773,9 +16750,9 @@ msgid "You possibly need to raise your kernel's SEMVMX value to be at least %d. 
 msgstr "Potresti dover aumentare il valore SEMVMX del tuo kernel ad almeno %d. Consulta la documentazione di PostgreSQL per ulteriori dettagli."
 
 #: port/win32_shmem.c:168 port/win32_shmem.c:203 port/win32_shmem.c:224
-#, fuzzy, c-format
+#, c-format
 msgid "could not create shared memory segment: %lu"
-msgstr "non è stato possibile creare il segmento di memoria condivisa: %m"
+msgstr "non è stato possibile creare il segmento di memoria condivisa: %lu"
 
 #: port/win32_shmem.c:169
 #, c-format
@@ -16799,34 +16776,34 @@ msgid "Failed system call was MapViewOfFileEx."
 msgstr "La chiamata di sistema fallita era MapViewOfFileEx."
 
 #: port/win32/security.c:43
-#, fuzzy, c-format
+#, c-format
 msgid "could not open process token: error code %d\n"
-msgstr "non è stato possibile aprire il token del processo: codice errore %lu\n"
+msgstr "non è stato possibile aprire il token del processo: codice errore %d\n"
 
 #: port/win32/security.c:63
-#, fuzzy, c-format
+#, c-format
 msgid "could not get SID for Administrators group: error code %d\n"
-msgstr "non è stato possibile ottenere il SID del gruppo Amministratori: codice errore %lu\n"
+msgstr "non è stato possibile ottenere il SID del gruppo Amministratori: codice errore %d\n"
 
 #: port/win32/security.c:72
-#, fuzzy, c-format
+#, c-format
 msgid "could not get SID for PowerUsers group: error code %d\n"
-msgstr "non è stato possibile ottenere il SID del gruppo PowerUsers: codice errore %lu\n"
+msgstr "non è stato possibile ottenere il SID del gruppo PowerUsers: codice errore %d\n"
 
 #: port/win32/signal.c:189
-#, fuzzy, c-format
+#, c-format
 msgid "could not create signal listener pipe for PID %d: error code %d"
-msgstr "non è stato possibile creare la pipe di ascolto dei segnali per il PID %d: codice errore %lu"
+msgstr "non è stato possibile creare la pipe di ascolto dei segnali per il PID %d: codice errore %d"
 
 #: port/win32/signal.c:269 port/win32/signal.c:301
-#, fuzzy, c-format
+#, c-format
 msgid "could not create signal listener pipe: error code %d; retrying\n"
-msgstr "non è stato possibile creare la pipe di ascolto dei segnali: codice errore %lu; sto riprovando\n"
+msgstr "non è stato possibile creare la pipe di ascolto dei segnali: codice errore %d; sto riprovando\n"
 
 #: port/win32/signal.c:312
-#, fuzzy, c-format
+#, c-format
 msgid "could not create signal dispatch thread: error code %d\n"
-msgstr "non è stato possibile creare il thread per la distribuzione dei segnali: codice errore %lu\n"
+msgstr "non è stato possibile creare il thread per la distribuzione dei segnali: codice errore %d\n"
 
 #: port/win32/crashdump.c:108
 msgid "could not load dbghelp.dll, cannot write crash dump\n"
@@ -16837,9 +16814,9 @@ msgid "could not load required functions in dbghelp.dll, cannot write crash dump
 msgstr "non è stato possibile caricare la funzione richiesta in dbghelp.dll, impossibile salvare il crash dump\n"
 
 #: port/win32/crashdump.c:147
-#, fuzzy, c-format
+#, c-format
 msgid "could not open crash dump file \"%s\" for writing: error code %u\n"
-msgstr "non è stato possibile aprire il file del crash dump \"%s\" in scrittura: codice errore %lu\n"
+msgstr "non è stato possibile aprire il file del crash dump \"%s\" in scrittura: codice errore %u\n"
 
 #: port/win32/crashdump.c:154
 #, c-format
@@ -16847,9 +16824,9 @@ msgid "wrote crash dump to file \"%s\"\n"
 msgstr "crash dump salvato nel file \"%s\"\n"
 
 #: port/win32/crashdump.c:156
-#, fuzzy, c-format
+#, c-format
 msgid "could not write crash dump to file \"%s\": error code %08x\n"
-msgstr "non è stato possibile scrivere il crash dump nel file \"%s\": codice errore %lu\n"
+msgstr "non è stato possibile scrivere il crash dump nel file \"%s\": codice errore %08x\n"
 
 #: ../port/open.c:113
 msgid "sharing violation"
