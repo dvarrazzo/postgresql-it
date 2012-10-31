@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:45+0000\n"
-"PO-Revision-Date: 2012-10-30 17:29+0100\n"
+"PO-Revision-Date: 2012-10-31 16:18+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -171,12 +171,12 @@ msgstr "Inserire la nuova password: "
 
 #: command.c:899
 msgid "Enter it again: "
-msgstr "Conferma password:"
+msgstr "Conferma password: "
 
 #: command.c:903
 #, c-format
 msgid "Passwords didn't match.\n"
-msgstr "Le password non corrispondono. \n"
+msgstr "Le password non corrispondono.\n"
 
 #: command.c:921
 #, c-format
@@ -241,7 +241,7 @@ msgstr "Password: "
 #: command.c:1473 startup.c:170 startup.c:172
 #, c-format
 msgid "Password for user %s: "
-msgstr "Inserisci la password per l'utente %s:"
+msgstr "Inserisci la password per l'utente %s: "
 
 #: command.c:1592 command.c:2651 common.c:186 common.c:478 common.c:543
 #: common.c:900 common.c:925 common.c:1022 copy.c:420 copy.c:607
@@ -939,11 +939,11 @@ msgstr "preimpostato %s"
 
 #: describe.c:1575
 msgid "primary key, "
-msgstr "chiave primaria"
+msgstr "chiave primaria, "
 
 #: describe.c:1577
 msgid "unique, "
-msgstr "unico,"
+msgstr "univoco, "
 
 #: describe.c:1583
 #, c-format
@@ -977,7 +977,7 @@ msgstr "Definizione vista:"
 
 #: describe.c:1630 describe.c:1952
 msgid "Rules:"
-msgstr "Regole: "
+msgstr "Regole:"
 
 #: describe.c:1672
 #, c-format
@@ -1662,7 +1662,7 @@ msgstr ""
 #: help.c:119
 #, c-format
 msgid "  -H, --html               HTML table output mode\n"
-msgstr "  -H, --html               modo output tabelle in HTML \n"
+msgstr "  -H, --html               modo output tabelle in HTML\n"
 
 #: help.c:120
 #, c-format

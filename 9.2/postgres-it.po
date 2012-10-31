@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-30 16:45+0100\n"
+"PO-Revision-Date: 2012-10-31 16:39+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2723,7 +2723,7 @@ msgstr "regola %s on "
 #: catalog/dependency.c:2687
 #, c-format
 msgid "trigger %s on "
-msgstr "trigger %s su"
+msgstr "trigger %s su "
 
 #: catalog/dependency.c:2704
 #, c-format
@@ -3771,7 +3771,7 @@ msgstr "\"%s\" saltato --- non è possibile analizzare non-tabelle o le tabelle 
 #: commands/analyze.c:326
 #, c-format
 msgid "analyzing \"%s.%s\" inheritance tree"
-msgstr "analisi dell'albero di ereditarietà di \"%s.%s\" "
+msgstr "analisi dell'albero di ereditarietà di \"%s.%s\""
 
 #: commands/analyze.c:331
 #, c-format
@@ -5832,7 +5832,7 @@ msgstr "non si possono usare funzioni finestra nel parametro EXECUTE"
 #: commands/prepare.c:384
 #, c-format
 msgid "parameter $%d of type %s cannot be coerced to the expected type %s"
-msgstr "il parametro $%d di tipo %s non può essere forzato al tipo previsto %s "
+msgstr "il parametro $%d di tipo %s non può essere forzato al tipo previsto %s"
 
 #: commands/prepare.c:479
 #, c-format
@@ -11925,7 +11925,7 @@ msgstr "processo di archiviazione uscito con stato sconosciuto %d"
 #: postmaster/pgarch.c:652
 #, c-format
 msgid "archived transaction log file \"%s\""
-msgstr "file di log delle transazioni archiviato \"%s\" "
+msgstr "file di log delle transazioni archiviato \"%s\""
 
 #: postmaster/pgarch.c:701
 #, c-format
@@ -12422,7 +12422,7 @@ msgstr "non è stato possibile effettuare il fork del nuovo processo per la conn
 
 #: postmaster/postmaster.c:3360
 msgid "could not fork new process for connection: "
-msgstr "non è stato possibile effettuare il fork del nuovo processo per la connessione"
+msgstr "non è stato possibile effettuare il fork del nuovo processo per la connessione: "
 
 #: postmaster/postmaster.c:3474
 #, c-format
@@ -13685,12 +13685,12 @@ msgstr "la chiamata alla funzione contiene %d parametri ma la funzione ne richie
 #: tcop/fastpath.c:474
 #, c-format
 msgid "function call message contains %d argument formats but %d arguments"
-msgstr "la chiamata alla funzione contiene %d formati di parametri ma %d parametri "
+msgstr "la chiamata alla funzione contiene %d formati di parametri ma %d parametri"
 
 #: tcop/fastpath.c:561 tcop/fastpath.c:644
 #, c-format
 msgid "incorrect binary data format in function argument %d"
-msgstr "incorretto formaro dei dati binari nell'argomento %d della funzione "
+msgstr "formato dei dati binari non corretto nell'argomento %d della funzione"
 
 #: tcop/postgres.c:424 tcop/postgres.c:436 tcop/postgres.c:447
 #: tcop/postgres.c:459 tcop/postgres.c:4194
@@ -13834,7 +13834,7 @@ msgstr "In un momento sarai in grado di riconnetterti al database e di ripetere 
 #: tcop/postgres.c:2668
 #, c-format
 msgid "floating-point exception"
-msgstr "eccezione floating-point "
+msgstr "eccezione floating-point"
 
 #: tcop/postgres.c:2669
 #, c-format
@@ -13884,7 +13884,7 @@ msgstr "annullamento dell'istruzione su richiesta dell'utente"
 #: tcop/postgres.c:3073 tcop/postgres.c:3095
 #, c-format
 msgid "stack depth limit exceeded"
-msgstr "limite di profondità dello stack superato "
+msgstr "limite di profondità dello stack superato"
 
 #: tcop/postgres.c:3074 tcop/postgres.c:3096
 #, c-format

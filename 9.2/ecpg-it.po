@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-10-30 13:07+0100\n"
+"PO-Revision-Date: 2012-10-31 16:20+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -255,7 +255,7 @@ msgstr "bit di chiusura nella stringa letterale mancante"
 #: pgc.l:441
 #, c-format
 msgid "unterminated hexadecimal string literal"
-msgstr "stringa letterale esadecimale non terminata "
+msgstr "stringa letterale esadecimale non terminata"
 
 #: pgc.l:519
 #, c-format
