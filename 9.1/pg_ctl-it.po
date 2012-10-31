@@ -778,6 +778,3 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 #, c-format
 msgid "child process exited with unrecognized status %d"
 msgstr "il processo figlio è uscito col valore sconosciuto %d"
-
-#~ msgid "%s: could not determine the data directory using command \"%s\"\n"
-#~ msgstr "%s: non è stato possibile determinare la directory dei dati usando il comando \"%s\"\n"

@@ -337,24 +337,3 @@ msgstr "non è stato possibile convertire oggetto Unicode Python in byte"
 #: plpython.c:4883
 msgid "could not extract bytes from encoded string"
 msgstr "non è stato possibile estrarre byte dalla stringa codificata"
-
-#~ msgid "plpy.cursor expected a query or a plan"
-#~ msgstr "plpy.cursor richiede una query o un piano"
-
-#~ msgid "plpy.cursor takes a sequence as its second argument"
-#~ msgstr "plpy.cursor richiede una sequenza come secondo argomento"
-
-#~ msgid "iterating a closed cursor"
-#~ msgstr "iterazione di un cursore chiuso"
-
-#~ msgid "iterating a cursor in an aborted subtransaction"
-#~ msgstr "iterazione di un cursore in una sotto-transazione interrotta"
-
-#~ msgid "fetch from a closed cursor"
-#~ msgstr "lettura da un cursore chiuso"
-
-#~ msgid "closing a cursor in an aborted subtransaction"
-#~ msgstr "chiusura di un cursore in una sotto-transazione interrotta"
-
-#~ msgid "command did not produce a result set"
-#~ msgstr "il comando non ha prodotto risultati"

@@ -864,37 +864,3 @@ msgstr "il processo figlio è stato terminato dal segnale %d"
 #, c-format
 msgid "child process exited with unrecognized status %d"
 msgstr "il processo figlio è terminato con il codice di uscita sconosciuto %d"
-
-#~ msgid "%s: failed to restore old locale \"%s\"\n"
-#~ msgstr "%s: non è stato possibile ripristinare il locale precedente \"%s\"\n"
-
-#~ msgid "%s: WARNING: cannot create restricted tokens on this platform\n"
-#~ msgstr "%s: ATTENZIONE: non è possibile creare token ristretti su questa piattaforma\n"
-
-#~ msgid "%s: could not open process token: error code %lu\n"
-#~ msgstr "%s: non è stato possibile processare il token: codice errore %lu\n"
-
-#~ msgid "%s: could not to allocate SIDs: error code %lu\n"
-#~ msgstr "%s: non è stato possibile allocare i SID: codice errore %lu\n"
-
-#~ msgid "%s: could not create restricted token: error code %lu\n"
-#~ msgstr "%s: non è stato possibile creare token ristretto: codice errore %lu\n"
-
-#~ msgid "%s: could not start process for command \"%s\": error code %lu\n"
-#~ msgstr "%s: non è stato possibile avviare il processo per il comando \"%s\": codice errore %lu\n"
-
-#~ msgid "      --auth-host=METHOD    default authentication method for local TCP/IP connections\n"
-#~ msgstr ""
-#~ "      --auth-host=METODO    metodo di autenticazione predefinito per le\n"
-#~ "                            connessioni TCP/IP\n"
-
-#~ msgid "      --auth-local=METHOD   default authentication method for local-socket connections\n"
-#~ msgstr ""
-#~ "      --auth-local=METODO   metodo di autenticazione predefinito per le\n"
-#~ "                            connessioni locali\n"
-
-#~ msgid "%s: could not re-execute with restricted token: error code %lu\n"
-#~ msgstr "%s: non è stato possibile ri-eseguire con token ristretto: codice errore %lu\n"
-
-#~ msgid "%s: could not get exit code from subprocess: error code %lu\n"
-#~ msgstr "%s: non è stato possibile ottenere il codice di uscita del processo figlio: codice errore %lu\n"

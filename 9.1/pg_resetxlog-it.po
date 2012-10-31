@@ -467,12 +467,3 @@ msgid ""
 msgstr ""
 "\n"
 "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
-
-#~ msgid "Latest checkpoint's full_page_writes: %s\n"
-#~ msgstr "full_page_writes dell'ultimo checkpoint:         %s\n"
-
-#~ msgid "off"
-#~ msgstr "disattivato"
-
-#~ msgid "on"
-#~ msgstr "attivato"

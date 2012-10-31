@@ -697,24 +697,3 @@ msgstr "%s alla fine dell'input"
 #, c-format
 msgid "%s at or near \"%s\""
 msgstr "%s a o vicino \"%s\""
-
-#~ msgid "diagnostics item %s is not allowed in GET STACKED DIAGNOSTICS"
-#~ msgstr "l'elemento diagnostico %s non è consentito in GET STACKED DIAGNOSTICS"
-
-#~ msgid "diagnostics item %s is not allowed in GET CURRENT DIAGNOSTICS"
-#~ msgstr "l'elemento diagnostico %s non è consentito in GET CURRENT DIAGNOSTICS"
-
-#~ msgid "cursor \"%s\" has no argument named \"%s\""
-#~ msgstr "il cursore \"%s\" non ha un argomento di nome \"%s\""
-
-#~ msgid "value for parameter \"%s\" of cursor \"%s\" specified more than once"
-#~ msgstr "il valore per il parametro \"%s\" del cursore \"%s\" è stato specificato più di una volta"
-
-#~ msgid "not enough arguments for cursor \"%s\""
-#~ msgstr "numero di argomenti non sufficiente per il cursore \"%s\""
-
-#~ msgid "too many arguments for cursor \"%s\""
-#~ msgstr "troppi argomenti per il cursore \"%s\""
-
-#~ msgid "GET STACKED DIAGNOSTICS cannot be used outside an exception handler"
-#~ msgstr "GET STACKED DIAGNOSTICS non può essere usato fuori da un gestore di eccezioni"
