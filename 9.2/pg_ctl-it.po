@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-30 13:12+0100\n"
+"PO-Revision-Date: 2012-10-31 14:48+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -601,7 +601,7 @@ msgstr "  -c, --core-files       non disponibile su questa piattaforma\n"
 #: pg_ctl.c:1822
 #, c-format
 msgid "  -l, --log=FILENAME     write (or append) server log to FILENAME\n"
-msgstr "  -l, --log FILENAME     scrivi (o aggiungi) il log del server in FILENAME\n"
+msgstr "  -l, --log FILENAME     scrivi (o accoda) il log del server in FILENAME\n"
 
 #: pg_ctl.c:1823
 #, c-format
@@ -629,7 +629,7 @@ msgstr ""
 #: pg_ctl.c:1827
 #, c-format
 msgid "  -m, --mode=MODE        MODE can be \"smart\", \"fast\", or \"immediate\"\n"
-msgstr "  -m, --mode=MODE        MODE può essere \"smart\", \"fast\", o  \"immediate\"\n"
+msgstr "  -m, --mode=MODE        MODE può essere \"smart\", \"fast\" o \"immediate\"\n"
 
 #: pg_ctl.c:1829
 #, c-format
