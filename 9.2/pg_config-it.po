@@ -126,19 +126,19 @@ msgstr "Opzioni:\n"
 #: pg_config.c:432
 #, c-format
 msgid "  --bindir              show location of user executables\n"
-msgstr "  --bindir              mostra la locazione degli eseguibili utente\n"
+msgstr "  --bindir              mostra la posizione degli eseguibili utente\n"
 
 #: pg_config.c:433
 #, c-format
 msgid "  --docdir              show location of documentation files\n"
 msgstr ""
-"  --docdir              mostra la locazione dei file di documentazione\n"
+"  --docdir              mostra la posizione dei file di documentazione\n"
 
 #: pg_config.c:434
 #, c-format
 msgid "  --htmldir             show location of HTML documentation files\n"
 msgstr ""
-"  --htmldir             mostra la locazione dei file di documentazione HTML\n"
+"  --htmldir             mostra la posizione dei file di documentazione HTML\n"
 
 #: pg_config.c:435
 #, c-format
@@ -146,7 +146,7 @@ msgid ""
 "  --includedir          show location of C header files of the client\n"
 "                        interfaces\n"
 msgstr ""
-"  --includedir          mostra la locazione dei file header C delle "
+"  --includedir          mostra la posizione dei file header C delle "
 "interfacce\n"
 "                        client\n"
 
@@ -154,38 +154,38 @@ msgstr ""
 #, c-format
 msgid "  --pkgincludedir       show location of other C header files\n"
 msgstr ""
-"  --pkgincludedir       mostra la locazione degli altri file header C\n"
+"  --pkgincludedir       mostra la posizione degli altri file header C\n"
 
 #: pg_config.c:438
 #, c-format
 msgid ""
 "  --includedir-server   show location of C header files for the server\n"
 msgstr ""
-"  --includedir-server   mostra la locazione dei file header C per il server\n"
+"  --includedir-server   mostra la posizione dei file header C per il server\n"
 
 #: pg_config.c:439
 #, c-format
 msgid "  --libdir              show location of object code libraries\n"
 msgstr ""
-"  --libdir              mostra la locazione delle librerie codice oggetto\n"
+"  --libdir              mostra la posizione delle librerie codice oggetto\n"
 
 #: pg_config.c:440
 #, c-format
 msgid "  --pkglibdir           show location of dynamically loadable modules\n"
 msgstr ""
-"  --pkglibdir           mostra la locazione dei moduli caricabili "
+"  --pkglibdir           mostra la posizione dei moduli caricabili "
 "dinamicamente\n"
 
 #: pg_config.c:441
 #, c-format
 msgid "  --localedir           show location of locale support files\n"
 msgstr ""
-"  --localedir           mostra la locazione dei file di supporto locale\n"
+"  --localedir           mostra la posizione dei file di supporto locale\n"
 
 #: pg_config.c:442
 #, c-format
 msgid "  --mandir              show location of manual pages\n"
-msgstr "  --mandir              mostra la locazione delle pagine del manuale\n"
+msgstr "  --mandir              mostra la posizione delle pagine del manuale\n"
 
 #: pg_config.c:443
 #, c-format
@@ -193,7 +193,7 @@ msgid ""
 "  --sharedir            show location of architecture-independent support "
 "files\n"
 msgstr ""
-"  --sharedir            mostra la locazione dei file di supporto non "
+"  --sharedir            mostra la posizione dei file di supporto non "
 "dipendenti dall'architettura\n"
 
 #: pg_config.c:444
@@ -201,14 +201,14 @@ msgstr ""
 msgid ""
 "  --sysconfdir          show location of system-wide configuration files\n"
 msgstr ""
-"  --sysconfdir          mostra la locazione dei file di configurazione\n"
+"  --sysconfdir          mostra la posizione dei file di configurazione\n"
 "                        di sistema\n"
 
 #: pg_config.c:445
 #, c-format
 msgid "  --pgxs                show location of extension makefile\n"
 msgstr ""
-"  --pgxs                mostra la locazione delle estensioni makefile\n"
+"  --pgxs                mostra la posizione delle estensioni makefile\n"
 
 #: pg_config.c:446
 #, c-format

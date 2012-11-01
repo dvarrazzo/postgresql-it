@@ -579,7 +579,7 @@ msgstr ""
 #, c-format
 msgid "  -D, --pgdata=DATADIR   location of the database storage area\n"
 msgstr ""
-"  -D, --pgdata DATADIR   locazione dell'area di archiviazione del database\n"
+"  -D, --pgdata DATADIR   posizione dell'area di archiviazione del database\n"
 
 #: pg_ctl.c:1807
 #, c-format

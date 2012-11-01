@@ -1758,7 +1758,7 @@ msgstr "il record di checkpoint si trova in %X/%X"
 #, c-format
 msgid "could not find redo location referenced by checkpoint record"
 msgstr ""
-"non è stato possibile localizzare la locazione di redo referenziata dal "
+"non è stato possibile localizzare la posizione di redo referenziata dal "
 "record di checkpoint"
 
 #: access/transam/xlog.c:6255 access/transam/xlog.c:6262
@@ -2297,7 +2297,7 @@ msgstr "pg_xlogfile_name_offset() non può essere eseguito durante il recupero."
 #, c-format
 msgid "could not parse transaction log location \"%s\""
 msgstr ""
-"non è stato possibile interpretare la locazione del log delle transazioni "
+"non è stato possibile interpretare la posizione del log delle transazioni "
 "\"%s\""
 
 #: access/transam/xlogfuncs.c:366
@@ -2329,7 +2329,7 @@ msgstr ""
 #, c-format
 msgid "invalid input syntax for transaction log location: \"%s\""
 msgstr ""
-"sintassi di input non valida per la locazione del log delle transazioni: \"%s"
+"sintassi di input non valida per la posizione del log delle transazioni: \"%s"
 "\""
 
 #: access/transam/xlogfuncs.c:542 access/transam/xlogfuncs.c:546
@@ -3329,7 +3329,7 @@ msgstr "le espressioni predefinite non devono restituire un insieme"
 #: catalog/heap.c:2456
 #, c-format
 msgid "cannot use subquery in default expression"
-msgstr "non si possono usare sotto-query nell'espressione predefinita"
+msgstr "non si possono usare sottoquery nell'espressione predefinita"
 
 #: catalog/heap.c:2460
 #, c-format
@@ -7541,17 +7541,17 @@ msgstr "Solo un superutente può incrementare questo valore."
 #: commands/tablespace.c:258
 #, c-format
 msgid "tablespace location cannot contain single quotes"
-msgstr "la locazione del tablespace non può contenere apici"
+msgstr "la posizione del tablespace non può contenere apici"
 
 #: commands/tablespace.c:268
 #, c-format
 msgid "tablespace location must be an absolute path"
-msgstr "la locazione del tablespace dev'essere un percorso assoluto"
+msgstr "la posizione del tablespace dev'essere un percorso assoluto"
 
 #: commands/tablespace.c:279
 #, c-format
 msgid "tablespace location \"%s\" is too long"
-msgstr "la locazione del tablespace \"%s\" è troppo lunga"
+msgstr "la posizione del tablespace \"%s\" è troppo lunga"
 
 #: commands/tablespace.c:289 commands/tablespace.c:858
 #, c-format
@@ -9171,7 +9171,7 @@ msgstr "La query ha troppe colonne."
 #: executor/nodeModifyTable.c:111
 #, c-format
 msgid "Query provides a value for a dropped column at ordinal position %d."
-msgstr "La query produce un calore per una colonna eliminata in posizione %d."
+msgstr "La query produce un valore per una colonna eliminata in posizione %d."
 
 #: executor/nodeModifyTable.c:119
 #, c-format
@@ -10900,7 +10900,7 @@ msgstr "  -i                 abilita le connessioni TCP/IP\n"
 #: main/main.c:289
 #, c-format
 msgid "  -k DIRECTORY       Unix-domain socket location\n"
-msgstr "  -k DIRECTORY       locazione dei socket di dominio Unix\n"
+msgstr "  -k DIRECTORY       posizione dei socket di dominio Unix\n"
 
 #: main/main.c:291
 #, c-format
@@ -13528,7 +13528,7 @@ msgid ""
 "\"%s\" has been moved away from its proper location."
 msgstr ""
 "Questo potrebbe indicare una installazione di PostgreSQL incompleta, o che "
-"il file \"%s\" sia stato spostato dalla sua locazione corretta."
+"il file \"%s\" sia stato spostato dalla sua posizione corretta."
 
 #: postmaster/postmaster.c:1207
 #, c-format
@@ -13977,7 +13977,7 @@ msgstr ""
 
 #: repl_scanner.l:76
 msgid "invalid streaming start location"
-msgstr "locazione di avvio dello streaming non valida"
+msgstr "posizione di avvio dello streaming non valida"
 
 #: repl_scanner.l:97 scan.l:630
 msgid "unterminated quoted string"
@@ -18564,12 +18564,12 @@ msgstr "CONTESTO:  "
 #: utils/error/elog.c:2370
 #, c-format
 msgid "LOCATION:  %s, %s:%d\n"
-msgstr "LOCAZIONE:  %s, %s:%d\n"
+msgstr "POSIZIONE:  %s, %s:%d\n"
 
 #: utils/error/elog.c:2377
 #, c-format
 msgid "LOCATION:  %s:%d\n"
-msgstr "LOCAZIONE:  %s:%d\n"
+msgstr "POSIZIONE:  %s:%d\n"
 
 #: utils/error/elog.c:2391
 msgid "STATEMENT:  "
@@ -19110,7 +19110,7 @@ msgstr "Varie"
 
 #: utils/misc/guc.c:531
 msgid "File Locations"
-msgstr "Locazione dei File"
+msgstr "Posizione dei File"
 
 #: utils/misc/guc.c:533
 msgid "Connections and Authentication"

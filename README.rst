@@ -122,6 +122,7 @@ Traduzioni di termini abbastanza comuni
 * identifier: identificativo, non identificatore
 * invalid: non valido (non "invalido")
 * line: riga (di un file)
+* location: posizione
 * log file: file di log
 * owenership: il proprietario, non la proprietà (quest'ultimo è ambiguo)
 * return: restituire, non tornare o ritornare
