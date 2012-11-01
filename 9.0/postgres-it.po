@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-31 19:02+0000\n"
-"PO-Revision-Date: 2012-11-01 02:13+0100\n"
+"PO-Revision-Date: 2012-10-31 22:28+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -11303,20 +11303,20 @@ msgstr ""
 #: commands/vacuum.c:941
 #, c-format
 msgid "skipping \"%s\" --- only superuser can vacuum it"
-msgstr "\"%s\" saltata --- solo i superutenti possono pulirla"
+msgstr "\"%s\" saltato --- solo i superutenti possono pulirla"
 
 #: commands/vacuum.c:945
 #, c-format
 msgid "skipping \"%s\" --- only superuser or database owner can vacuum it"
 msgstr ""
-"\"%s\" saltata --- solo i superutenti o il proprietario del database possono "
+"\"%s\" saltato --- solo i superutenti o il proprietario del database possono "
 "pulirla"
 
 #: commands/vacuum.c:949
 #, c-format
 msgid "skipping \"%s\" --- only table or database owner can vacuum it"
 msgstr ""
-"\"%s\" saltata --- solo il proprietario del database o della tabella possono "
+"\"%s\" saltato --- solo il proprietario del database o della tabella possono "
 "pulirla"
 
 #: commands/vacuum.c:966
@@ -12427,7 +12427,7 @@ msgstr "fine del file inaspettato sulla connessione di standby"
 #: replication/walsender.c:320
 #, c-format
 msgid "invalid standby handshake message type %d"
-msgstr "tipo di messaggio di handshake di standby non valido %d"
+msgstr "tipo di messaggio %d di handshake di standby non valido"
 
 #: replication/walsender.c:361
 #, c-format

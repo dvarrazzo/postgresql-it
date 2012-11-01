@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plperl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:39+0000\n"
-"PO-Revision-Date: 2012-10-30 11:36+0100\n"
+"PO-Revision-Date: 2012-11-01 01:12+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -168,7 +168,8 @@ msgstr "non ho ricevuto un riferimento CODE dal compilare la funzione \"%s\""
 #, c-format
 msgid "set-valued function called in context that cannot accept a set"
 msgstr ""
-"funzione set-valued richiamata in un contesto che non può accettare un set"
+"funzione che restituisce un insieme richiamata in un contesto che non può "
+"accettare insiemi"
 
 #: plperl.c:2238
 #, c-format
@@ -176,8 +177,8 @@ msgid ""
 "set-returning PL/Perl function must return reference to array or use "
 "return_next"
 msgstr ""
-"la funzione \"set-returning\" PL/Perl deve restituire un riferimento ad un "
-"array o usare return_next"
+"la funzione PL/Perl che restituisce un insieme deve restituire un "
+"riferimento ad un array o usare return_next"
 
 #: plperl.c:2352
 #, c-format

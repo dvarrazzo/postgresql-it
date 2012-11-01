@@ -4198,7 +4198,7 @@ msgstr "fuso orario \"%s\" non riconosciuto"
 #: utils/adt/timestamp.c:4477 utils/adt/timestamp.c:4651
 #, c-format
 msgid "interval time zone \"%s\" must not specify month"
-msgstr "il fuso orario usato nell'interval \"%s\" non può specificare il mese"
+msgstr "il fuso orario dell'intervallo \"%s\" non può specificare i mesi"
 
 #: utils/adt/selfuncs.c:4926
 msgid "case insensitive matching not supported on type bytea"
@@ -9112,14 +9112,14 @@ msgid ""
 "cannot alter foreign table \"%s\" because column \"%s.%s\" uses its row type"
 msgstr ""
 "non è possibile modificare la tabella esterna \"%s\" perché la colonna \"%s."
-"%s\" usa il suo tipo"
+"%s\" usa il suo tipo di riga"
 
 #: commands/tablecmds.c:3936
 #, c-format
 msgid "cannot alter table \"%s\" because column \"%s.%s\" uses its row type"
 msgstr ""
 "non è possibile modificare la tabella \"%s\" perché la colonna \"%s.%s\" usa "
-"il suo tipo"
+"il suo tipo di riga"
 
 #: commands/tablecmds.c:3998
 #, c-format
@@ -11977,27 +11977,27 @@ msgstr "pulizia di \"%s\" saltata --- lock non disponibile"
 #: commands/vacuum.c:945
 #, c-format
 msgid "skipping \"%s\" --- only superuser can vacuum it"
-msgstr "\"%s\" saltata --- solo i superutenti possono pulirla"
+msgstr "\"%s\" saltato --- solo i superutenti possono pulirla"
 
 #: commands/vacuum.c:949
 #, c-format
 msgid "skipping \"%s\" --- only superuser or database owner can vacuum it"
 msgstr ""
-"\"%s\" saltata --- solo i superutenti o il proprietario del database possono "
+"\"%s\" saltato --- solo i superutenti o il proprietario del database possono "
 "pulirla"
 
 #: commands/vacuum.c:953
 #, c-format
 msgid "skipping \"%s\" --- only table or database owner can vacuum it"
 msgstr ""
-"\"%s\" saltata --- solo il proprietario del database o della tabella possono "
+"\"%s\" saltato --- solo il proprietario del database o della tabella possono "
 "pulirla"
 
 #: commands/vacuum.c:970
 #, c-format
 msgid "skipping \"%s\" --- cannot vacuum non-tables or special system tables"
 msgstr ""
-"\"%s\" saltata --- non è possibile ripulire non-tabelle o tabelle speciali "
+"\"%s\" saltato --- non è possibile ripulire non-tabelle o tabelle speciali "
 "di sistema"
 
 #: commands/async.c:567
@@ -13197,7 +13197,7 @@ msgstr "fine del file inaspettato sulla connessione di standby"
 #: replication/walsender.c:267
 #, c-format
 msgid "invalid standby handshake message type %d"
-msgstr "tipo di messaggio di handshake di standby non valido %d"
+msgstr "tipo di messaggio %d di handshake di standby non valido"
 
 #: replication/walsender.c:379
 msgid "standby connections not allowed because wal_level=minimal"
@@ -13211,12 +13211,12 @@ msgstr "stringa di query di standby non valida: %s"
 #: replication/walsender.c:518
 #, c-format
 msgid "invalid standby message type \"%c\""
-msgstr "tipo di messaggio di standby non valido \"%c\""
+msgstr "tipo di messaggio \"%c\" di standby non valido"
 
 #: replication/walsender.c:569
 #, c-format
 msgid "unexpected message type \"%c\""
-msgstr "tipo di messaggio inatteso \"%c\""
+msgstr "tipo di messaggio \"%c\" inatteso"
 
 #: replication/walsender.c:763
 #, c-format
