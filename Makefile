@@ -1,4 +1,4 @@
-SUBDIRS = 9.1 9.2
+SUBDIRS = 9.0 9.1 9.2
 
 .PHONY: all update check clean
 
