@@ -43,10 +43,12 @@ def main():
 
 def isstale(lines):
     for line in lines:
-        if not line.isspace() and not line.startswith('#~ '):
+        if line.startswith('msgid'):
             return False
+        elif line.startswith('#~ msgid'):
+            return True
 
-    return True
+    return False    # not a translation
 
 if __name__ == '__main__':
     sys.exit(main())
