@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-30 13:10+0100\n"
+"PO-Revision-Date: 2012-11-01 18:23+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -194,36 +194,35 @@ msgstr ""
 #: pg_basebackup.c:172
 #, c-format
 msgid "%s: could not read from ready pipe: %s\n"
-msgstr "%s: non è stato possibile leggere da una pipe pronta: %s\n"
+msgstr "%s: lettura dalla pipe pronta fallita: %s\n"
 
 #: pg_basebackup.c:180 pg_basebackup.c:271 pg_basebackup.c:1187
 #: pg_receivexlog.c:256
 #, c-format
 msgid "%s: could not parse transaction log location \"%s\"\n"
 msgstr ""
-"%s: non è stato possibile interpretare la posizione dei log delle "
-"transazioni \"%s\"\n"
+"%s: interpretazione della posizione del log delle transazioni \"%s\" "
+"fallita\n"
 
 #: pg_basebackup.c:283
 #, c-format
 msgid "%s: could not create pipe for background process: %s\n"
-msgstr ""
-"%s: non è stato possibile creare una pipe per il processo in background: %s\n"
+msgstr "%s: creazione della pipe per il processo in background fallita: %s\n"
 
 #: pg_basebackup.c:316
 #, c-format
 msgid "%s: could not create background process: %s\n"
-msgstr "%s: non è stato possibile creare un processo in background: %s\n"
+msgstr "%s: creazione del processo in background fallita: %s\n"
 
 #: pg_basebackup.c:328
 #, c-format
 msgid "%s: could not create background thread: %s\n"
-msgstr "%s: non è stato possibile creare un thread in background: %s\n"
+msgstr "%s: creazione del thread in background fallita: %s\n"
 
 #: pg_basebackup.c:353 pg_basebackup.c:821
 #, c-format
 msgid "%s: could not create directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare la directory \"%s\": %s\n"
+msgstr "%s: creazione della directory \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:370
 #, c-format
@@ -233,7 +232,7 @@ msgstr "%s: la directory \"%s\" esiste ma non è vuota\n"
 #: pg_basebackup.c:378
 #, c-format
 msgid "%s: could not access directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile accedere alla directory \"%s\": %s\n"
+msgstr "%s: accesso alla directory \"%s\" fallito: %s\n"
 
 #: pg_basebackup.c:425
 #, c-format
@@ -259,18 +258,17 @@ msgstr[1] "%s/%s kB (%d%%), %d/%d tablespace"
 #: pg_basebackup.c:486 pg_basebackup.c:506 pg_basebackup.c:534
 #, c-format
 msgid "%s: could not set compression level %d: %s\n"
-msgstr ""
-"%s: non è stato possibile impostare il livello di compressione %d: %s\n"
+msgstr "%s: impostazione del livello di compressione %d fallito: %s\n"
 
 #: pg_basebackup.c:555
 #, c-format
 msgid "%s: could not create compressed file \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare il file compresso \"%s\": %s\n"
+msgstr "%s: creazione del file compresso \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:566 pg_basebackup.c:863
 #, c-format
 msgid "%s: could not create file \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare il file \"%s\": %s\n"
+msgstr "%s: creazione del file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:578 pg_basebackup.c:725
 #, c-format
@@ -280,27 +278,27 @@ msgstr "%s: non è stato possibile ottenere lo stream di dati COPY: %s"
 #: pg_basebackup.c:612 pg_basebackup.c:670
 #, c-format
 msgid "%s: could not write to compressed file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere sul file compresso \"%s\": %s\n"
+msgstr "%s: scrittura nel file compresso \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:623 pg_basebackup.c:680 pg_basebackup.c:903
 #, c-format
 msgid "%s: could not write to file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere sul file \"%s\": %s\n"
+msgstr "%s: scrittura nel file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:635
 #, c-format
 msgid "%s: could not close compressed file \"%s\": %s\n"
-msgstr "%s: non è stato possibile chiudere il file compresso \"%s\": %s\n"
+msgstr "%s: chiusura del file compresso \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:648 receivelog.c:157 receivelog.c:630 receivelog.c:639
 #, c-format
 msgid "%s: could not close file \"%s\": %s\n"
-msgstr "%s: non è stato possibile chiudere il file \"%s\": %s\n"
+msgstr "%s: chiusura del file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:659 pg_basebackup.c:754 receivelog.c:473
 #, c-format
 msgid "%s: could not read COPY data: %s"
-msgstr "%s: non è stato possibile leggere i dati COPY: %s"
+msgstr "%s: lettura dei dati COPY fallita: %s"
 
 #: pg_basebackup.c:768
 #, c-format
@@ -311,24 +309,22 @@ msgstr ""
 #: pg_basebackup.c:776
 #, c-format
 msgid "%s: could not parse file size\n"
-msgstr "%s: non è stato possibile interpretare la dimensione del file\n"
+msgstr "%s: interpretazione della dimensione del file fallita\n"
 
 #: pg_basebackup.c:784
 #, c-format
 msgid "%s: could not parse file mode\n"
-msgstr "%s: non è stato possibile interpretare la modalità del file\n"
+msgstr "%s: interpretazione della modalità del file fallita\n"
 
 #: pg_basebackup.c:829
 #, c-format
 msgid "%s: could not set permissions on directory \"%s\": %s\n"
-msgstr ""
-"%s: non è stato possibile impostare i permessi sulla directory \"%s\": %s\n"
+msgstr "%s: impostazione dei permessi sulla directory \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:842
 #, c-format
 msgid "%s: could not create symbolic link from \"%s\" to \"%s\": %s\n"
-msgstr ""
-"%s: non è stato possibile creare un link simbolico da \"%s\" a \"%s\": %s\n"
+msgstr "%s: creazione del link simbolico da \"%s\" a \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:850
 #, c-format
@@ -338,7 +334,7 @@ msgstr "%s: indicatore di link sconosciuto \"%c\"\n"
 #: pg_basebackup.c:870
 #, c-format
 msgid "%s: could not set permissions on file \"%s\": %s\n"
-msgstr "%s: non è stato possibile impostare i permessi sul file \"%s\": %s\n"
+msgstr "%s: impostazione dei permessi sul file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:929
 #, c-format
@@ -349,7 +345,7 @@ msgstr "%s: lo stream COPY è terminato prima che l'ultimo file fosse finito\n"
 #: receivelog.c:303 receivelog.c:340
 #, c-format
 msgid "%s: could not send replication command \"%s\": %s"
-msgstr "%s: non è stato possibile inviare il comando di replica \"%s\": %s"
+msgstr "%s: invio del comando di replica \"%s\" fallito: %s"
 
 #: pg_basebackup.c:972 pg_receivexlog.c:247 receivelog.c:311
 #, c-format
@@ -357,13 +353,13 @@ msgid ""
 "%s: could not identify system: got %d rows and %d fields, expected %d rows "
 "and %d fields\n"
 msgstr ""
-"%s: non è stato possibile identificare il sistema: ricevute %d righe e %d "
-"campi, attese %d righe e %d campi\n"
+"%s: identificazione del sistema fallita: ricevute %d righe e %d campi, "
+"attese %d righe e %d campi\n"
 
 #: pg_basebackup.c:1005
 #, c-format
 msgid "%s: could not initiate base backup: %s"
-msgstr "%s: non è stato possibile iniziare il backup di base: %s"
+msgstr "%s: avvio del backup di base fallito: %s"
 
 #: pg_basebackup.c:1011
 #, c-format
@@ -419,8 +415,7 @@ msgstr "%s: in attesa che il processo in background finisca lo streaming...\n"
 #: pg_basebackup.c:1145
 #, c-format
 msgid "%s: could not send command to background pipe: %s\n"
-msgstr ""
-"%s: non è stato possibile inviare il comando alla pipe in background: %s\n"
+msgstr "%s invio del comando alla pipe di background fallita: %s\n"
 
 #: pg_basebackup.c:1154
 #, c-format
@@ -445,7 +440,7 @@ msgstr "%s: il processo figlio è terminato con errore %d\n"
 #: pg_basebackup.c:1198
 #, c-format
 msgid "%s: could not wait for child thread: %s\n"
-msgstr "%s: non è stato possibile attendere il thread figlio: %s\n"
+msgstr "%s: errore nell'attesa del thread figlio: %s\n"
 
 #: pg_basebackup.c:1205
 #, c-format
@@ -573,14 +568,14 @@ msgstr "%s: segnale di interruzione ricevuto, sto terminando.\n"
 #: pg_receivexlog.c:114
 #, c-format
 msgid "%s: could not open directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire la directory \"%s\": %s\n"
+msgstr "%s: apertura della directory \"%s\" fallita: %s\n"
 
 #: pg_receivexlog.c:155
 #, c-format
 msgid "%s: could not parse transaction log file name \"%s\"\n"
 msgstr ""
-"%s: non è stato possibile interpretare il nome del file di log delle "
-"transazioni \"%s\"\n"
+"%s: interpretazione del nome del file di log delle transazioni \"%s\" "
+"fallito\n"
 
 #: pg_receivexlog.c:168
 #, c-format
@@ -659,7 +654,7 @@ msgstr ""
 #: receivelog.c:150
 #, c-format
 msgid "%s: could not fsync file \"%s\": %s\n"
-msgstr "%s: non è stato possibile effettuare fsync sul file \"%s\": %s\n"
+msgstr "%s: fsync del file \"%s\" fallito: %s\n"
 
 #: receivelog.c:177
 #, c-format
@@ -691,7 +686,7 @@ msgstr ""
 #: receivelog.c:398
 #, c-format
 msgid "%s: could not send feedback packet: %s"
-msgstr "%s: non è stato possibile inviare il pacchetto di feedback: %s"
+msgstr "%s: invio del pacchetto di feedback fallito: %s"
 
 #: receivelog.c:454
 #, c-format
@@ -701,7 +696,7 @@ msgstr "%s: select() fallita: %s\n"
 #: receivelog.c:462
 #, c-format
 msgid "%s: could not receive data from WAL stream: %s"
-msgstr "%s: non è stato possibile ottenere dati dallo stream WAL: %s"
+msgstr "%s: ricezione dati dallo stream WAL fallita: %s"
 
 #: receivelog.c:486
 #, c-format
@@ -733,7 +728,7 @@ msgstr "%s: ricevuto offset dati WAL %08x, atteso %08x\n"
 #: receivelog.c:567
 #, c-format
 msgid "%s: could not write %u bytes to WAL file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere %u byte nel file WAL \"%s\": %s\n"
+msgstr "%s: scrittura di %u byte nel file WAL \"%s\" fallita: %s\n"
 
 #: receivelog.c:613
 #, c-format
@@ -757,12 +752,12 @@ msgstr "Password: "
 #: streamutil.c:155
 #, c-format
 msgid "%s: could not connect to server\n"
-msgstr "%s: non è stato possibile connettersi al server\n"
+msgstr "%s: connessione al server fallita\n"
 
 #: streamutil.c:171
 #, c-format
 msgid "%s: could not connect to server: %s\n"
-msgstr "%s: non è stato possibile connettersi al server: %s\n"
+msgstr "%s: connessione al server fallita: %s\n"
 
 #: streamutil.c:191
 #, c-format
