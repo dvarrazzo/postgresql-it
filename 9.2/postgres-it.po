@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-10-31 22:28+0100\n"
-"Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
+"PO-Revision-Date: 2012-11-01 16:39+0100\n"
+"Last-Translator: Marco Beri <marcoberi@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -1115,7 +1115,7 @@ msgstr "la lunghezza del record in %X/%X non è valida"
 #: access/transam/xlog.c:4005
 #, c-format
 msgid "invalid resource manager ID %u at %X/%X"
-msgstr "l' ID %u del resource manager in %X/%X non è valido"
+msgstr "l'ID %u del resource manager in %X/%X non è valido"
 
 #: access/transam/xlog.c:4018 access/transam/xlog.c:4034
 #, c-format
@@ -11822,7 +11822,7 @@ msgid ""
 "argument declared \"anyarray\" is not consistent with argument declared "
 "\"anyelement\""
 msgstr ""
-"l'argomento dichiarato \"anyarray\" non è consistente con l' argomento "
+"l'argomento dichiarato \"anyarray\" non è consistente con l'argomento "
 "dichiarato \"anyelement\""
 
 #: parser/parse_coerce.c:1696 parser/parse_coerce.c:1917
@@ -18212,7 +18212,7 @@ msgstr "l'indice %d è fuori dall'intervallo valido, 0..%d"
 #: utils/adt/varlena.c:3012
 #, c-format
 msgid "field position must be greater than zero"
-msgstr "la posizione del campo deve essere maggiore di zero"
+msgstr "il campo deve essere maggiore di zero"
 
 #: utils/adt/varlena.c:3881 utils/adt/varlena.c:3942
 #, c-format
