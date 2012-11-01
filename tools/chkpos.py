@@ -5,6 +5,7 @@
 import re
 import sys
 import polib
+import glob
 
 import logging
 logger = logging.getLogger()
@@ -24,7 +25,7 @@ def main():
 		logger.debug("performing check: %s", check.__class__.__name__)
 
 	rv = 0
-	for fn in sys.argv[1:]:
+	for fn in [fn for arg in sys.argv[1:] for fn in glob.glob(arg)]:
 		po = polib.pofile(fn)
 		for entry in po:
 			for check in checks:
