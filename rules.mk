@@ -20,11 +20,11 @@ update:
 
 endif
 
-check:
+check: $(MOS)
 	../tools/chkpos.py $(POS)
 
 clean:
-	rm -f $(MOS)
+	rm -f *.mo
 
 # NOTE: this doesn't generate all the expected file names:
 # ecpglib -> ecpglib6
