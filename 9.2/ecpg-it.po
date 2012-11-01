@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:40+0000\n"
-"PO-Revision-Date: 2012-11-01 13:37+0100\n"
-"Last-Translator: Marco Beri <marcoberi@gmail.com>\n"
+"PO-Revision-Date: 2012-11-01 17:22+0100\n"
+"Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -197,7 +197,7 @@ msgstr ""
 #: ecpg.c:182 ecpg.c:333 ecpg.c:343
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
+msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 
 #: ecpg.c:221 ecpg.c:234 ecpg.c:250 ecpg.c:275
 #, c-format
@@ -237,7 +237,7 @@ msgstr "il cursore \"%s\" è stato dichiarato, ma non aperto"
 #: ecpg.c:479 preproc.y:109
 #, c-format
 msgid "could not remove output file \"%s\"\n"
-msgstr "non è stato possibile rimuovere il file di output \"%s\"\n"
+msgstr "rimozione del file di output \"%s\" fallita\n"
 
 #: pgc.l:403
 #, c-format
@@ -341,7 +341,7 @@ msgstr ""
 #: pgc.l:1365
 #, c-format
 msgid "could not open include file \"%s\" on line %d"
-msgstr "non è stato possibile aprire il file di include \"%s\" alla riga %d"
+msgstr "apertura del file di include \"%s\" alla riga %d fallita"
 
 #: preproc.y:31
 msgid "syntax error"
