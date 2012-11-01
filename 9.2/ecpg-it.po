@@ -462,7 +462,7 @@ msgstr "la sintassi LIMIT #,# passata al server non è più supportata"
 #: preproc.y:8812
 #, c-format
 msgid "subquery in FROM must have an alias"
-msgstr "la sotto-query in FROM deve avere un alias"
+msgstr "la sottoquery in FROM deve avere un alias"
 
 #: preproc.y:12596
 #, c-format
