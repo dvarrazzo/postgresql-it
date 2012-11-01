@@ -76,12 +76,14 @@ msgstr "  --bindir              mostra la locazione degli eseguibili utente\n"
 #: pg_config.c:433
 #, c-format
 msgid "  --docdir              show location of documentation files\n"
-msgstr "  --docdir              mostra la locazione dei file di documentazione\n"
+msgstr ""
+"  --docdir              mostra la locazione dei file di documentazione\n"
 
 #: pg_config.c:434
 #, c-format
 msgid "  --htmldir             show location of HTML documentation files\n"
-msgstr "  --htmldir             mostra la locazione dei file di documentazione HTML\n"
+msgstr ""
+"  --htmldir             mostra la locazione dei file di documentazione HTML\n"
 
 #: pg_config.c:435
 #, c-format
@@ -89,33 +91,41 @@ msgid ""
 "  --includedir          show location of C header files of the client\n"
 "                        interfaces\n"
 msgstr ""
-"  --includedir          mostra la locazione dei file header C delle interfacce\n"
+"  --includedir          mostra la locazione dei file header C delle "
+"interfacce\n"
 "                        client\n"
 
 #: pg_config.c:437
 #, c-format
 msgid "  --pkgincludedir       show location of other C header files\n"
-msgstr "  --pkgincludedir       mostra la locazione degli altri file header C\n"
+msgstr ""
+"  --pkgincludedir       mostra la locazione degli altri file header C\n"
 
 #: pg_config.c:438
 #, c-format
-msgid "  --includedir-server   show location of C header files for the server\n"
-msgstr "  --includedir-server   mostra la locazione dei file header C per il server\n"
+msgid ""
+"  --includedir-server   show location of C header files for the server\n"
+msgstr ""
+"  --includedir-server   mostra la locazione dei file header C per il server\n"
 
 #: pg_config.c:439
 #, c-format
 msgid "  --libdir              show location of object code libraries\n"
-msgstr "  --libdir              mostra la locazione delle librerie codice oggetto\n"
+msgstr ""
+"  --libdir              mostra la locazione delle librerie codice oggetto\n"
 
 #: pg_config.c:440
 #, c-format
 msgid "  --pkglibdir           show location of dynamically loadable modules\n"
-msgstr "  --pkglibdir           mostra la locazione dei moduli caricabili dinamicamente\n"
+msgstr ""
+"  --pkglibdir           mostra la locazione dei moduli caricabili "
+"dinamicamente\n"
 
 #: pg_config.c:441
 #, c-format
 msgid "  --localedir           show location of locale support files\n"
-msgstr "  --localedir           mostra la locazione dei file di supporto locale\n"
+msgstr ""
+"  --localedir           mostra la locazione dei file di supporto locale\n"
 
 #: pg_config.c:442
 #, c-format
@@ -124,12 +134,17 @@ msgstr "  --mandir              mostra la locazione delle pagine del manuale\n"
 
 #: pg_config.c:443
 #, c-format
-msgid "  --sharedir            show location of architecture-independent support files\n"
-msgstr "  --sharedir            mostra la locazione dei file di supporto non dipendenti dall'architettura\n"
+msgid ""
+"  --sharedir            show location of architecture-independent support "
+"files\n"
+msgstr ""
+"  --sharedir            mostra la locazione dei file di supporto non "
+"dipendenti dall'architettura\n"
 
 #: pg_config.c:444
 #, c-format
-msgid "  --sysconfdir          show location of system-wide configuration files\n"
+msgid ""
+"  --sysconfdir          show location of system-wide configuration files\n"
 msgstr ""
 "  --sysconfdir          mostra la locazione dei file di configurazione\n"
 "                        di sistema\n"
@@ -137,7 +152,8 @@ msgstr ""
 #: pg_config.c:445
 #, c-format
 msgid "  --pgxs                show location of extension makefile\n"
-msgstr "  --pgxs                mostra la locazione delle estensioni makefile\n"
+msgstr ""
+"  --pgxs                mostra la locazione delle estensioni makefile\n"
 
 #: pg_config.c:446
 #, c-format
@@ -157,49 +173,62 @@ msgstr ""
 
 #: pg_config.c:449
 #, c-format
-msgid "  --cppflags            show CPPFLAGS value used when PostgreSQL was built\n"
+msgid ""
+"  --cppflags            show CPPFLAGS value used when PostgreSQL was built\n"
 msgstr ""
-"  --cppflags            mostra il valore di CPPFLAGS usato alla compilazione\n"
+"  --cppflags            mostra il valore di CPPFLAGS usato alla "
+"compilazione\n"
 "                        di PostgreSQL\n"
 
 #: pg_config.c:450
 #, c-format
-msgid "  --cflags              show CFLAGS value used when PostgreSQL was built\n"
+msgid ""
+"  --cflags              show CFLAGS value used when PostgreSQL was built\n"
 msgstr ""
 "  --cflags              mostra il valore di CFLAGS usato alla compilazione\n"
 "                        di PostgreSQL\n"
 
 #: pg_config.c:451
 #, c-format
-msgid "  --cflags_sl           show CFLAGS_SL value used when PostgreSQL was built\n"
+msgid ""
+"  --cflags_sl           show CFLAGS_SL value used when PostgreSQL was built\n"
 msgstr ""
-"  --cflags_sl           mostra il valore di CFLAGS_SL usato alla compilazione\n"
+"  --cflags_sl           mostra il valore di CFLAGS_SL usato alla "
+"compilazione\n"
 "                        di PostgreSQL\n"
 
 #: pg_config.c:452
 #, c-format
-msgid "  --ldflags             show LDFLAGS value used when PostgreSQL was built\n"
+msgid ""
+"  --ldflags             show LDFLAGS value used when PostgreSQL was built\n"
 msgstr ""
 "  --ldflags             mostra il valore di LDFLAGS usato alla compilazione\n"
 "                        di PostgreSQL\n"
 
 #: pg_config.c:453
 #, c-format
-msgid "  --ldflags_ex          show LDFLAGS_EX value used when PostgreSQL was built\n"
+msgid ""
+"  --ldflags_ex          show LDFLAGS_EX value used when PostgreSQL was "
+"built\n"
 msgstr ""
-"  --ldflags_ex          mostra il valore di LDFLAGS_EX usato alla compilazione\n"
+"  --ldflags_ex          mostra il valore di LDFLAGS_EX usato alla "
+"compilazione\n"
 "                        di PostgreSQL\n"
 
 #: pg_config.c:454
 #, c-format
-msgid "  --ldflags_sl          show LDFLAGS_SL value used when PostgreSQL was built\n"
+msgid ""
+"  --ldflags_sl          show LDFLAGS_SL value used when PostgreSQL was "
+"built\n"
 msgstr ""
-"  --ldflags_sl          mostra il valore di LDFLAGS_SL usato alla compilazione\n"
+"  --ldflags_sl          mostra il valore di LDFLAGS_SL usato alla "
+"compilazione\n"
 "                        di PostgreSQL\n"
 
 #: pg_config.c:455
 #, c-format
-msgid "  --libs                show LIBS value used when PostgreSQL was built\n"
+msgid ""
+"  --libs                show LIBS value used when PostgreSQL was built\n"
 msgstr ""
 "  --libs                mostra il valore LIBS usato alla compilazione di\n"
 "                        PostgreSQL\n"

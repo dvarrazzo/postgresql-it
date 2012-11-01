@@ -56,8 +56,11 @@ msgid "Expected None or a string."
 msgstr "Atteso None o una stringa."
 
 #: plpython.c:724
-msgid "PL/Python trigger function returned \"MODIFY\" in a DELETE trigger -- ignored"
-msgstr "la funzione trigger PL/Python ha restituito \"MODIFY\" in un trigger DELETE -- ignorato"
+msgid ""
+"PL/Python trigger function returned \"MODIFY\" in a DELETE trigger -- ignored"
+msgstr ""
+"la funzione trigger PL/Python ha restituito \"MODIFY\" in un trigger DELETE "
+"-- ignorato"
 
 #: plpython.c:735
 msgid "Expected None, \"OK\", \"SKIP\", or \"MODIFY\"."
@@ -74,24 +77,34 @@ msgstr "TD[\"new\"] non è un dizionario"
 #: plpython.c:814
 #, c-format
 msgid "TD[\"new\"] dictionary key at ordinal position %d is not a string"
-msgstr "la chiave di dizionario TD[\"new\"] alla posizione %d non è una stringa"
+msgstr ""
+"la chiave di dizionario TD[\"new\"] alla posizione %d non è una stringa"
 
 #: plpython.c:820
 #, c-format
-msgid "key \"%s\" found in TD[\"new\"] does not exist as a column in the triggering row"
-msgstr "la chiave \"%s\" trovata in TD[\"new\"] non esiste come colonna nella riga del trigger"
+msgid ""
+"key \"%s\" found in TD[\"new\"] does not exist as a column in the triggering "
+"row"
+msgstr ""
+"la chiave \"%s\" trovata in TD[\"new\"] non esiste come colonna nella riga "
+"del trigger"
 
 #: plpython.c:916
 msgid "could not create new dictionary while building trigger arguments"
-msgstr "non è stato possibile creare un nuovo dizionario mentre si stanno costruendo gli argomenti del trigger"
+msgstr ""
+"non è stato possibile creare un nuovo dizionario mentre si stanno costruendo "
+"gli argomenti del trigger"
 
 #: plpython.c:1123
 msgid "unsupported set function return mode"
 msgstr "modalità di ritorno della funzione set non supportata"
 
 #: plpython.c:1124
-msgid "PL/Python set-returning functions only support returning only value per call."
-msgstr "le funzioni PL/Python che restituiscono insiemi supportano solo la restituzione di un solo valore per chiamata."
+msgid ""
+"PL/Python set-returning functions only support returning only value per call."
+msgstr ""
+"le funzioni PL/Python che restituiscono insiemi supportano solo la "
+"restituzione di un solo valore per chiamata."
 
 #: plpython.c:1136
 msgid "returned object cannot be iterated"
@@ -99,7 +112,9 @@ msgstr "l'oggetto restituito non può essere iterato"
 
 #: plpython.c:1137
 msgid "PL/Python set-returning functions must return an iterable object."
-msgstr "le funzioni PL/Python che restituiscono insiemi devono restituire un oggetto iterabile"
+msgstr ""
+"le funzioni PL/Python che restituiscono insiemi devono restituire un oggetto "
+"iterabile"
 
 #: plpython.c:1162
 msgid "error fetching next item from iterator"
@@ -119,11 +134,15 @@ msgstr "PyList_SetItem() è fallita durante l'impostazione degli argomenti"
 
 #: plpython.c:1397
 msgid "PyDict_SetItemString() failed, while setting up arguments"
-msgstr "PyDict_SetItemString() è fallita durante l'impostazione degli argomenti"
+msgstr ""
+"PyDict_SetItemString() è fallita durante l'impostazione degli argomenti"
 
 #: plpython.c:1409
-msgid "function returning record called in context that cannot accept type record"
-msgstr "la funzione che restituisce un record è stata chiamata in un contesto che non può accettare il tipo record"
+msgid ""
+"function returning record called in context that cannot accept type record"
+msgstr ""
+"la funzione che restituisce un record è stata chiamata in un contesto che "
+"non può accettare il tipo record"
 
 #: plpython.c:1643
 msgid "trigger functions can only be called as triggers"
@@ -170,19 +189,28 @@ msgstr "non è stato possibile creare il nuovo dizionario"
 
 #: plpython.c:2471
 msgid "could not create bytes representation of Python object"
-msgstr "non è stato possibile creare la rappresentazione in byte dell'oggetto Python"
+msgstr ""
+"non è stato possibile creare la rappresentazione in byte dell'oggetto Python"
 
 #: plpython.c:2563
 msgid "could not create string representation of Python object"
-msgstr "non è stato possibile creare la rappresentazione stringa dell'oggetto Python"
+msgstr ""
+"non è stato possibile creare la rappresentazione stringa dell'oggetto Python"
 
 #: plpython.c:2574
-msgid "could not convert Python object into cstring: Python string representation appears to contain null bytes"
-msgstr "non è stato possibile convertire oggetti Python in cstring: la rappresentazione stringa Python sembra contenere byte null"
+msgid ""
+"could not convert Python object into cstring: Python string representation "
+"appears to contain null bytes"
+msgstr ""
+"non è stato possibile convertire oggetti Python in cstring: la "
+"rappresentazione stringa Python sembra contenere byte null"
 
 #: plpython.c:2608
-msgid "return value of function with array return type is not a Python sequence"
-msgstr "il valore restituito dalla funzione con tipo restituito array non è una sequenza Python"
+msgid ""
+"return value of function with array return type is not a Python sequence"
+msgstr ""
+"il valore restituito dalla funzione con tipo restituito array non è una "
+"sequenza Python"
 
 #: plpython.c:2708
 #, c-format
@@ -190,12 +218,18 @@ msgid "key \"%s\" not found in mapping"
 msgstr "la chiave \"%s\" non è stata trovata nel dizionario"
 
 #: plpython.c:2709
-msgid "To return null in a column, add the value None to the mapping with the key named after the column."
-msgstr "Per restituire null in una colonna, inserire nella mappa il valore None con una chiave chiamata come la colonna."
+msgid ""
+"To return null in a column, add the value None to the mapping with the key "
+"named after the column."
+msgstr ""
+"Per restituire null in una colonna, inserire nella mappa il valore None con "
+"una chiave chiamata come la colonna."
 
 #: plpython.c:2757
 msgid "length of returned sequence did not match number of columns in row"
-msgstr "la lunghezza della sequenza ritornata non rispetta il numero di colonne presenti nella riga"
+msgstr ""
+"la lunghezza della sequenza ritornata non rispetta il numero di colonne "
+"presenti nella riga"
 
 #: plpython.c:2865
 #, c-format
@@ -203,8 +237,12 @@ msgid "attribute \"%s\" does not exist in Python object"
 msgstr "l'attributo \"%s\" non esiste nell'oggetto Python"
 
 #: plpython.c:2866
-msgid "To return null in a column, let the returned object have an attribute named after column with value None."
-msgstr "Per restituire null in una colonna, l'oggetto restituito deve avere un attributo chiamato come la colonna con valore None."
+msgid ""
+"To return null in a column, let the returned object have an attribute named "
+"after column with value None."
+msgstr ""
+"Per restituire null in una colonna, l'oggetto restituito deve avere un "
+"attributo chiamato come la colonna con valore None."
 
 #: plpython.c:3185
 msgid "plan.status takes no arguments"
@@ -286,16 +324,22 @@ msgstr "non è stato possibile creare l'eccezione di base SPI"
 
 #: plpython.c:4097
 msgid "Python major version mismatch in session"
-msgstr "mancata corrispondenza della versione maggiore di Python major nella sessione"
+msgstr ""
+"mancata corrispondenza della versione maggiore di Python major nella sessione"
 
 #: plpython.c:4098
 #, c-format
-msgid "This session has previously used Python major version %d, and it is now attempting to use Python major version %d."
-msgstr "Questa sessione ha precedentemente usato Python con versione maggiore %d e ora sta tentando di usare Python con versione maggiore %d."
+msgid ""
+"This session has previously used Python major version %d, and it is now "
+"attempting to use Python major version %d."
+msgstr ""
+"Questa sessione ha precedentemente usato Python con versione maggiore %d e "
+"ora sta tentando di usare Python con versione maggiore %d."
 
 #: plpython.c:4100
 msgid "Start a new session to use a different Python major version."
-msgstr "Avvia una nuova sessione per usa una versione maggiore di Python diversa."
+msgstr ""
+"Avvia una nuova sessione per usa una versione maggiore di Python diversa."
 
 #: plpython.c:4115
 msgid "untrapped error in initialization"

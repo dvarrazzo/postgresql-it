@@ -71,7 +71,8 @@ msgid ""
 "%s is the PostgreSQL embedded SQL preprocessor for C programs.\n"
 "\n"
 msgstr ""
-"%s è il preprocessore SQL embedded di PostgreSQL per programmi scritti in C.\n"
+"%s è il preprocessore SQL embedded di PostgreSQL per programmi scritti in "
+"C.\n"
 "\n"
 
 #: ecpg.c:37
@@ -96,7 +97,8 @@ msgid ""
 "  -c             automatically generate C code from embedded SQL code;\n"
 "                 this affects EXEC SQL TYPE\n"
 msgstr ""
-"  -c             genera automaticamente il codice C dal codice SQL embedded;\n"
+"  -c             genera automaticamente il codice C dal codice SQL "
+"embedded;\n"
 "                 questo ha effetto su EXEC SQL TYPE\n"
 
 #: ecpg.c:43
@@ -120,8 +122,10 @@ msgstr "  -D SIMBOLO     definisci SIMBOLO\n"
 
 #: ecpg.c:49
 #, c-format
-msgid "  -h             parse a header file, this option includes option \"-c\"\n"
-msgstr "  -h             analizza un file header, questa opzione include \"-c\"\n"
+msgid ""
+"  -h             parse a header file, this option includes option \"-c\"\n"
+msgstr ""
+"  -h             analizza un file header, questa opzione include \"-c\"\n"
 
 #: ecpg.c:50
 #, c-format
@@ -175,7 +179,8 @@ msgid ""
 "input file name, after stripping off .pgc if present.\n"
 msgstr ""
 "\n"
-"Se non viene specificato nessun file di output, il nome è composto aggiungendo\n"
+"Se non viene specificato nessun file di output, il nome è composto "
+"aggiungendo\n"
 ".c al nome del file di input, dopo aver tolto .pgc se presente.\n"
 
 #: ecpg.c:61
@@ -300,13 +305,19 @@ msgid "syntax error in EXEC SQL INCLUDE command"
 msgstr "errore di sintassi nel comando EXEC SQL INCLUDE"
 
 #: pgc.l:1217
-msgid "internal error: unreachable state; please report this to <pgsql-bugs@postgresql.org>"
-msgstr "errore interno: stato non raggiungibile, si prega di segnalarlo a <pgsql-bugs@postgresql.org>"
+msgid ""
+"internal error: unreachable state; please report this to <pgsql-"
+"bugs@postgresql.org>"
+msgstr ""
+"errore interno: stato non raggiungibile, si prega di segnalarlo a <pgsql-"
+"bugs@postgresql.org>"
 
 #: pgc.l:1342
 #, c-format
 msgid "Error: include path \"%s/%s\" is too long on line %d, skipping\n"
-msgstr "Errore: il percorso delle inclusioni \"%s/%s\" è troppo lungo alla riga %d, perciò viene saltato\n"
+msgstr ""
+"Errore: il percorso delle inclusioni \"%s/%s\" è troppo lungo alla riga %d, "
+"perciò viene saltato\n"
 
 #: pgc.l:1364
 #, c-format
@@ -401,7 +412,8 @@ msgstr "COPY FROM STDIN non è implementato"
 #: preproc.y:7904 preproc.y:12595
 #, c-format
 msgid "using variable \"%s\" in different declare statements is not supported"
-msgstr "usare la variabile \"%s\" in una diversa istruzione declare non è supportato"
+msgstr ""
+"usare la variabile \"%s\" in una diversa istruzione declare non è supportato"
 
 #: preproc.y:7906 preproc.y:12597
 #, c-format
@@ -426,8 +438,12 @@ msgid "expected \"@\", found \"%s\""
 msgstr "atteso \"@\", trovato \"%s\""
 
 #: preproc.y:12376
-msgid "only protocols \"tcp\" and \"unix\" and database type \"postgresql\" are supported"
-msgstr "soltanto i protocolli \"tcp\" e \"unix\" ed il tipo database \"postgresql\" sono supportati"
+msgid ""
+"only protocols \"tcp\" and \"unix\" and database type \"postgresql\" are "
+"supported"
+msgstr ""
+"soltanto i protocolli \"tcp\" e \"unix\" ed il tipo database \"postgresql\" "
+"sono supportati"
 
 #: preproc.y:12379
 #, c-format
@@ -437,7 +453,8 @@ msgstr "atteso \"://\", trovato \"%s\""
 #: preproc.y:12384
 #, c-format
 msgid "Unix-domain sockets only work on \"localhost\" but not on \"%s\""
-msgstr "i socket di dominio Unix funzionano solo con \"localhost\" ma non con \"%s\""
+msgstr ""
+"i socket di dominio Unix funzionano solo con \"localhost\" ma non con \"%s\""
 
 #: preproc.y:12410
 #, c-format
@@ -522,8 +539,11 @@ msgstr "la variabile \"%s\" è nascosta da una variabile locale"
 
 #: type.c:275
 #, c-format
-msgid "indicator variable \"%s\" is hidden by a local variable of a different type"
-msgstr "la variabile di indicatore \"%s\" è nascosta da una variabile locale di tipo diverso"
+msgid ""
+"indicator variable \"%s\" is hidden by a local variable of a different type"
+msgstr ""
+"la variabile di indicatore \"%s\" è nascosta da una variabile locale di tipo "
+"diverso"
 
 #: type.c:277
 #, c-format
@@ -565,7 +585,8 @@ msgstr "la variabile \"%s\" non è un puntatore"
 #: variable.c:138 variable.c:163
 #, c-format
 msgid "variable \"%s\" is not a pointer to a structure or a union"
-msgstr "la variabile \"%s\" non è un puntatore ad una struttura o ad una unione"
+msgstr ""
+"la variabile \"%s\" non è un puntatore ad una struttura o ad una unione"
 
 #: variable.c:150
 #, c-format
@@ -597,10 +618,16 @@ msgstr "gli array multidimensionali non sono supportati"
 
 #: variable.c:524
 #, c-format
-msgid "multilevel pointers (more than 2 levels) are not supported; found %d level"
-msgid_plural "multilevel pointers (more than 2 levels) are not supported; found %d levels"
-msgstr[0] "puntatori a più livelli (più di 2 livelli) non sono supportati; trovato %d livello"
-msgstr[1] "puntatori a più livelli (più di 2 livelli) non sono supportati; trovati %d livelli"
+msgid ""
+"multilevel pointers (more than 2 levels) are not supported; found %d level"
+msgid_plural ""
+"multilevel pointers (more than 2 levels) are not supported; found %d levels"
+msgstr[0] ""
+"puntatori a più livelli (più di 2 livelli) non sono supportati; trovato %d "
+"livello"
+msgstr[1] ""
+"puntatori a più livelli (più di 2 livelli) non sono supportati; trovati %d "
+"livelli"
 
 #: variable.c:529
 msgid "pointer to pointer is not supported for this data type"

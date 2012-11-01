@@ -76,12 +76,14 @@ msgstr "sintassi in input non valida per il tipo int: \"%s\", alla riga %d"
 #: error.c:89
 #, c-format
 msgid "invalid input syntax for type unsigned int: \"%s\", on line %d"
-msgstr "sintassi in input non valida per il tipo unsigned int: \"%s\", alla riga %d"
+msgstr ""
+"sintassi in input non valida per il tipo unsigned int: \"%s\", alla riga %d"
 
 #: error.c:99
 #, c-format
 msgid "invalid input syntax for floating-point type: \"%s\", on line %d"
-msgstr "sintassi in input non valida per il tipo floating-point: \"%s\", alla riga %d"
+msgstr ""
+"sintassi in input non valida per il tipo floating-point: \"%s\", alla riga %d"
 
 #: error.c:110
 #, c-format
@@ -92,7 +94,9 @@ msgstr "sintassi in input non valida per il tipo boolean: \"%s\", alla riga %d"
 #: error.c:118
 #, c-format
 msgid "could not convert boolean value: size mismatch, on line %d"
-msgstr "conversione fallita per il valore booleano: dimensione incompatibile, alla riga %d"
+msgstr ""
+"conversione fallita per il valore booleano: dimensione incompatibile, alla "
+"riga %d"
 
 #: error.c:128
 #, c-format

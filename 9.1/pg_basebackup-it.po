@@ -54,7 +54,8 @@ msgstr ""
 #: pg_basebackup.c:126
 #, c-format
 msgid "  -D, --pgdata=DIRECTORY   receive base backup into directory\n"
-msgstr "  -D, --pgdata=DIRECTORY   directory in cui ricevere il backup di base\n"
+msgstr ""
+"  -D, --pgdata=DIRECTORY   directory in cui ricevere il backup di base\n"
 
 #: pg_basebackup.c:127
 #, c-format
@@ -75,8 +76,11 @@ msgstr "  -z, --gzip               comprimi l'output tar\n"
 
 #: pg_basebackup.c:130
 #, c-format
-msgid "  -Z, --compress=0-9       compress tar output with given compression level\n"
-msgstr "  -Z, --compress=0-9       comprimi l'output tar a questo livello di compressione\n"
+msgid ""
+"  -Z, --compress=0-9       compress tar output with given compression level\n"
+msgstr ""
+"  -Z, --compress=0-9       comprimi l'output tar a questo livello di "
+"compressione\n"
 
 #: pg_basebackup.c:131
 #, c-format
@@ -119,7 +123,8 @@ msgstr "  --help                   mostra questo aiuto ed esci\n"
 #: pg_basebackup.c:138
 #, c-format
 msgid "  --version                output version information, then exit\n"
-msgstr "  --version                mostra informazioni sulla versione ed esci\n"
+msgstr ""
+"  --version                mostra informazioni sulla versione ed esci\n"
 
 #: pg_basebackup.c:139
 #, c-format
@@ -133,7 +138,8 @@ msgstr ""
 #: pg_basebackup.c:140
 #, c-format
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
-msgstr "  -h, --host=HOSTNAME      host del server database o directory del socket\n"
+msgstr ""
+"  -h, --host=HOSTNAME      host del server database o directory del socket\n"
 
 #: pg_basebackup.c:141
 #, c-format
@@ -143,7 +149,9 @@ msgstr "  -p, --port=PORT          numero di porta del server database\n"
 #: pg_basebackup.c:142
 #, c-format
 msgid "  -U, --username=NAME      connect as specified database user\n"
-msgstr "  -U, --username=NAME      connettiti al database col nome utente specificato\n"
+msgstr ""
+"  -U, --username=NAME      connettiti al database col nome utente "
+"specificato\n"
 
 #: pg_basebackup.c:143
 #, c-format
@@ -152,7 +160,9 @@ msgstr "  -w, --no-password        non chiedere mai la password\n"
 
 #: pg_basebackup.c:144
 #, c-format
-msgid "  -W, --password           force password prompt (should happen automatically)\n"
+msgid ""
+"  -W, --password           force password prompt (should happen "
+"automatically)\n"
 msgstr ""
 "  -W, --password           forza la richiesta della password\n"
 "                           (dovrebbe essere automatico)\n"
@@ -205,7 +215,8 @@ msgstr[1] "%s/%s kB (%d%%), %d/%d tablespace"
 #: pg_basebackup.c:295 pg_basebackup.c:313 pg_basebackup.c:337
 #, c-format
 msgid "%s: could not set compression level %i: %s\n"
-msgstr "%s: non è stato possibile impostare il livello di compressione %i: %s\n"
+msgstr ""
+"%s: non è stato possibile impostare il livello di compressione %i: %s\n"
 
 #: pg_basebackup.c:356
 #, c-format
@@ -250,7 +261,8 @@ msgstr "%s: non è stato possibile leggere i dati COPY: %s"
 #: pg_basebackup.c:568
 #, c-format
 msgid "%s: invalid tar block header size: %i\n"
-msgstr "%s: dimensione del blocco di intestazione del file tar non valida: %i\n"
+msgstr ""
+"%s: dimensione del blocco di intestazione del file tar non valida: %i\n"
 
 #: pg_basebackup.c:576
 #, c-format
@@ -265,12 +277,14 @@ msgstr "%s: non è stato possibile interpretare la modalità del file\n"
 #: pg_basebackup.c:619
 #, c-format
 msgid "%s: could not set permissions on directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile impostare i permessi sulla directory \"%s\": %s\n"
+msgstr ""
+"%s: non è stato possibile impostare i permessi sulla directory \"%s\": %s\n"
 
 #: pg_basebackup.c:632
 #, c-format
 msgid "%s: could not create symbolic link from \"%s\" to \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare un link simbolico da \"%s\" a \"%s\": %s\n"
+msgstr ""
+"%s: non è stato possibile creare un link simbolico da \"%s\" a \"%s\": %s\n"
 
 #: pg_basebackup.c:639
 #, c-format
@@ -324,12 +338,15 @@ msgstr "%s: nessun dato restituito dal server\n"
 #: pg_basebackup.c:905
 #, c-format
 msgid "%s: can only write single tablespace to stdout, database has %i\n"
-msgstr "%s: è possibile scrivere solo un singolo tablespace su stdout, il database ne ha %i\n"
+msgstr ""
+"%s: è possibile scrivere solo un singolo tablespace su stdout, il database "
+"ne ha %i\n"
 
 #: pg_basebackup.c:934
 #, c-format
 msgid "%s: could not get WAL end position from server: %s"
-msgstr "%s: non è stato possibile ottenere la posizione finale del WAL dal server: %s"
+msgstr ""
+"%s: non è stato possibile ottenere la posizione finale del WAL dal server: %s"
 
 #: pg_basebackup.c:940
 #, c-format
@@ -344,7 +361,9 @@ msgstr "%s: ricezione finale fallita: %s"
 #: pg_basebackup.c:1026
 #, c-format
 msgid "%s: invalid output format \"%s\", must be \"plain\" or \"tar\"\n"
-msgstr "%s: formato di output \"%s\" non valido, deve essere \"plain\" oppure \"tar\"\n"
+msgstr ""
+"%s: formato di output \"%s\" non valido, deve essere \"plain\" oppure \"tar"
+"\"\n"
 
 #: pg_basebackup.c:1048
 #, c-format
@@ -353,8 +372,11 @@ msgstr "%s: livello di compressione non valido \"%s\"\n"
 
 #: pg_basebackup.c:1060
 #, c-format
-msgid "%s: invalid checkpoint argument \"%s\", must be \"fast\" or \"spread\"\n"
-msgstr "%s: argomento di checkpoing \"%s\" non valido, deve essere \"fast\" oppure \"spread\"\n"
+msgid ""
+"%s: invalid checkpoint argument \"%s\", must be \"fast\" or \"spread\"\n"
+msgstr ""
+"%s: argomento di checkpoing \"%s\" non valido, deve essere \"fast\" oppure "
+"\"spread\"\n"
 
 #: pg_basebackup.c:1091 pg_basebackup.c:1105 pg_basebackup.c:1116
 #: pg_basebackup.c:1129

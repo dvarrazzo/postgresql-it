@@ -23,10 +23,6 @@ Disattiva l'opzione View -> Untranslated entries first, altrimenti ad ogni
 salvataggio il lavoro fatto viene mescolato a quello da fare ed usare i
 segnalibri diventa inutile.
 
-La versione corrente 1.5.4 di poedit formatta i messaggi a 80 colonne, ancora
-creando diff inutili. Prima di committare il lavoro usa "make rewrap" per
-farlo tornare in condizioni normali.
-
 
 Sulla traduzione
 ----------------

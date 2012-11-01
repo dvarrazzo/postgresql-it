@@ -113,12 +113,16 @@ msgstr ""
 #: createdb.c:251
 #, c-format
 msgid "  -D, --tablespace=TABLESPACE  default tablespace for the database\n"
-msgstr "  -D, --tablespace=TABLESPACE  tablespace predefinito per il database\n"
+msgstr ""
+"  -D, --tablespace=TABLESPACE  tablespace predefinito per il database\n"
 
 #: createdb.c:252
 #, c-format
-msgid "  -e, --echo                   show the commands being sent to the server\n"
-msgstr "  -e, --echo                   mostra i comandi che vengono inviati al server\n"
+msgid ""
+"  -e, --echo                   show the commands being sent to the server\n"
+msgstr ""
+"  -e, --echo                   mostra i comandi che vengono inviati al "
+"server\n"
 
 #: createdb.c:253
 #, c-format
@@ -128,12 +132,14 @@ msgstr "  -E, --encoding=ENCODING      codifica del database\n"
 #: createdb.c:254
 #, c-format
 msgid "  -l, --locale=LOCALE          locale settings for the database\n"
-msgstr "  -l, --locale=LOCALE          impostazioni di localizzazione del database\n"
+msgstr ""
+"  -l, --locale=LOCALE          impostazioni di localizzazione del database\n"
 
 #: createdb.c:255
 #, c-format
 msgid "      --lc-collate=LOCALE      LC_COLLATE setting for the database\n"
-msgstr "      --lc-collate=LOCALE      impostazione LC_COLLATE per il database\n"
+msgstr ""
+"      --lc-collate=LOCALE      impostazione LC_COLLATE per il database\n"
 
 #: createdb.c:256
 #, c-format
@@ -143,7 +149,9 @@ msgstr "      --lc-ctype=LOCALE        impostazione LC_CTYPE per il database\n"
 #: createdb.c:257
 #, c-format
 msgid "  -O, --owner=OWNER            database user to own the new database\n"
-msgstr "  -O, --owner=OWNER            utente database proprietario del nuovo database\n"
+msgstr ""
+"  -O, --owner=OWNER            utente database proprietario del nuovo "
+"database\n"
 
 #: createdb.c:258
 #, c-format
@@ -158,7 +166,8 @@ msgstr "  --help                       mostra questo aiuto ed esci\n"
 #: createdb.c:260
 #, c-format
 msgid "  --version                    output version information, then exit\n"
-msgstr "  --version                    mostra informazioni sulla versione ed esci\n"
+msgstr ""
+"  --version                    mostra informazioni sulla versione ed esci\n"
 
 #: createdb.c:261 createlang.c:231 createuser.c:321 dropdb.c:151
 #: droplang.c:232 dropuser.c:146 clusterdb.c:247 vacuumdb.c:343
@@ -173,8 +182,10 @@ msgstr ""
 
 #: createdb.c:262
 #, c-format
-msgid "  -h, --host=HOSTNAME          database server host or socket directory\n"
-msgstr "  -h, --host=HOSTNAME          host del server database o directory socket\n"
+msgid ""
+"  -h, --host=HOSTNAME          database server host or socket directory\n"
+msgstr ""
+"  -h, --host=HOSTNAME          host del server database o directory socket\n"
 
 #: createdb.c:263
 #, c-format
@@ -274,13 +285,17 @@ msgstr "  -d, --dbname=NOME_DB      database in cui installare il linguaggio\n"
 #: createlang.c:227 createuser.c:306 dropdb.c:147 droplang.c:228
 #: dropuser.c:142 clusterdb.c:241 reindexdb.c:318
 #, c-format
-msgid "  -e, --echo                show the commands being sent to the server\n"
+msgid ""
+"  -e, --echo                show the commands being sent to the server\n"
 msgstr "  -e, --echo                mostra i comandi inviati al server\n"
 
 #: createlang.c:228 droplang.c:229
 #, c-format
-msgid "  -l, --list                show a list of currently installed languages\n"
-msgstr "  -l, --list                mostra la lista dei linguaggi attualmente installati\n"
+msgid ""
+"  -l, --list                show a list of currently installed languages\n"
+msgstr ""
+"  -l, --list                mostra la lista dei linguaggi attualmente "
+"installati\n"
 
 #: createlang.c:229 createuser.c:319 dropdb.c:149 droplang.c:230
 #: dropuser.c:144 clusterdb.c:245 reindexdb.c:323
@@ -298,7 +313,8 @@ msgstr "  --version                 mostra informazioni di versione ed esci\n"
 #: dropuser.c:147 clusterdb.c:248 vacuumdb.c:344 reindexdb.c:326
 #, c-format
 msgid "  -h, --host=HOSTNAME       database server host or socket directory\n"
-msgstr "  -h, --host=HOSTNAME       host del server database o directory socket\n"
+msgstr ""
+"  -h, --host=HOSTNAME       host del server database o directory socket\n"
 
 #: createlang.c:233 createuser.c:323 dropdb.c:153 droplang.c:234
 #: dropuser.c:148 clusterdb.c:249 vacuumdb.c:345 reindexdb.c:327
@@ -310,7 +326,8 @@ msgstr "  -p, --port=PORTA          porta del server database\n"
 #: reindexdb.c:328
 #, c-format
 msgid "  -U, --username=USERNAME   user name to connect as\n"
-msgstr "  -U, --username=UTENTE     nome utente da utilizzare per la connessione\n"
+msgstr ""
+"  -U, --username=UTENTE     nome utente da utilizzare per la connessione\n"
 
 #: createlang.c:235 createuser.c:325 dropdb.c:155 droplang.c:236
 #: dropuser.c:150 clusterdb.c:251 vacuumdb.c:347 reindexdb.c:329
@@ -379,8 +396,11 @@ msgstr "  %s [OPZIONI]... [NOME_RUOLO]\n"
 
 #: createuser.c:303
 #, c-format
-msgid "  -c, --connection-limit=N  connection limit for role (default: no limit)\n"
-msgstr "  -c, --connection-limit=N  limite di connessione per un ruolo (predefinito: nessun limite)\n"
+msgid ""
+"  -c, --connection-limit=N  connection limit for role (default: no limit)\n"
+msgstr ""
+"  -c, --connection-limit=N  limite di connessione per un ruolo (predefinito: "
+"nessun limite)\n"
 
 #: createuser.c:304
 #, c-format
@@ -414,7 +434,8 @@ msgstr "  -I, --no-inherit          il ruolo non eredita privilegi\n"
 #: createuser.c:311
 #, c-format
 msgid "  -l, --login               role can login (default)\n"
-msgstr "  -l, --login               role può accedere al database (predefinito)\n"
+msgstr ""
+"  -l, --login               role può accedere al database (predefinito)\n"
 
 #: createuser.c:312
 #, c-format
@@ -453,7 +474,8 @@ msgstr "  -S, --no-superuser        il ruolo non sarà un superutente\n"
 
 #: createuser.c:324
 #, c-format
-msgid "  -U, --username=USERNAME   user name to connect as (not the one to create)\n"
+msgid ""
+"  -U, --username=USERNAME   user name to connect as (not the one to create)\n"
 msgstr ""
 "  -U, --username=UTENTE     nome utente con cui collegarsi\n"
 "                            (non quello da creare)\n"
@@ -505,7 +527,9 @@ msgstr "  %s [OPZIONE]... NOME_DB\n"
 #: dropdb.c:148 dropuser.c:143
 #, c-format
 msgid "  -i, --interactive         prompt before deleting anything\n"
-msgstr "  -i, --interactive         chiedi conferma prima di cancellare qualunque cosa\n"
+msgstr ""
+"  -i, --interactive         chiedi conferma prima di cancellare qualunque "
+"cosa\n"
 
 #: droplang.c:190
 #, c-format
@@ -528,8 +552,10 @@ msgstr ""
 
 #: droplang.c:227
 #, c-format
-msgid "  -d, --dbname=DBNAME       database from which to remove the language\n"
-msgstr "  -d, --dbname=NOME_DB      database dal quale eliminare il linguaggio\n"
+msgid ""
+"  -d, --dbname=DBNAME       database from which to remove the language\n"
+msgstr ""
+"  -d, --dbname=NOME_DB      database dal quale eliminare il linguaggio\n"
 
 #: dropuser.c:103
 msgid "Enter name of role to drop: "
@@ -556,7 +582,8 @@ msgstr ""
 
 #: dropuser.c:149
 #, c-format
-msgid "  -U, --username=USERNAME   user name to connect as (not the one to drop)\n"
+msgid ""
+"  -U, --username=USERNAME   user name to connect as (not the one to drop)\n"
 msgstr ""
 "  -U, --username=UTENTE     nome utente con cui collegarsi\n"
 "                            (non quello da eliminare)\n"
@@ -564,12 +591,15 @@ msgstr ""
 #: clusterdb.c:129
 #, c-format
 msgid "%s: cannot cluster all databases and a specific one at the same time\n"
-msgstr "%s: non è possibile raggruppare tutti i database ed uno specifico nello stesso momento\n"
+msgstr ""
+"%s: non è possibile raggruppare tutti i database ed uno specifico nello "
+"stesso momento\n"
 
 #: clusterdb.c:135
 #, c-format
 msgid "%s: cannot cluster a specific table in all databases\n"
-msgstr "%s: non è possibile raggruppare una tabella specifica in tutti i database\n"
+msgstr ""
+"%s: non è possibile raggruppare una tabella specifica in tutti i database\n"
 
 #: clusterdb.c:187
 #, c-format
@@ -637,22 +667,30 @@ msgstr ""
 #: vacuumdb.c:150
 #, c-format
 msgid "%s: cannot use the \"full\" option when performing only analyze\n"
-msgstr "%s: non è possibile usare l'opzione \"full\" quando si effettua solo analyze\n"
+msgstr ""
+"%s: non è possibile usare l'opzione \"full\" quando si effettua solo "
+"analyze\n"
 
 #: vacuumdb.c:156
 #, c-format
 msgid "%s: cannot use the \"freeze\" option when performing only analyze\n"
-msgstr "%s: non è possibile usare l'opzione \"freeze\" quando si effettua solo analyze\n"
+msgstr ""
+"%s: non è possibile usare l'opzione \"freeze\" quando si effettua solo "
+"analyze\n"
 
 #: vacuumdb.c:169
 #, c-format
 msgid "%s: cannot vacuum all databases and a specific one at the same time\n"
-msgstr "%s: non è possibile effettuare la pulizia di tutti i database e di uno in particolare nello stesso momento\n"
+msgstr ""
+"%s: non è possibile effettuare la pulizia di tutti i database e di uno in "
+"particolare nello stesso momento\n"
 
 #: vacuumdb.c:175
 #, c-format
 msgid "%s: cannot vacuum a specific table in all databases\n"
-msgstr "%s: non è possibile effettuare la pulizia di una tabella specifica in tutti i database\n"
+msgstr ""
+"%s: non è possibile effettuare la pulizia di una tabella specifica in tutti "
+"i database\n"
 
 #: vacuumdb.c:278
 #, c-format
@@ -690,7 +728,9 @@ msgstr "  -d, --dbname=NOME_DB            database da pulire\n"
 
 #: vacuumdb.c:333
 #, c-format
-msgid "  -e, --echo                      show the commands being sent to the server\n"
+msgid ""
+"  -e, --echo                      show the commands being sent to the "
+"server\n"
 msgstr "  -e, --echo                      mostra i comandi inviati al server\n"
 
 #: vacuumdb.c:334
@@ -702,7 +742,8 @@ msgstr "  -f, --full                      esegui una pulizia completa\n"
 #, c-format
 msgid "  -F, --freeze                    freeze row transaction information\n"
 msgstr ""
-"  -F, --freeze                    congela le informazioni per la transazione\n"
+"  -F, --freeze                    congela le informazioni per la "
+"transazione\n"
 "                                  sulla riga\n"
 
 #: vacuumdb.c:336
@@ -713,7 +754,8 @@ msgstr "  -q, --quiet                     non stampare alcun messaggio\n"
 #: vacuumdb.c:337
 #, c-format
 msgid "  -t, --table='TABLE[(COLUMNS)]'  vacuum specific table only\n"
-msgstr "  -t, --table='TABELLA[(COL)]'    pulisci solamente la tabella specificata\n"
+msgstr ""
+"  -t, --table='TABELLA[(COL)]'    pulisci solamente la tabella specificata\n"
 
 #: vacuumdb.c:338
 #, c-format
@@ -723,7 +765,9 @@ msgstr "  -v, --verbose                   mostra molti messaggi\n"
 #: vacuumdb.c:339
 #, c-format
 msgid "  -z, --analyze                   update optimizer statistics\n"
-msgstr "  -z, --analyze                   aggiorna le statistiche per l'ottimizzatore\n"
+msgstr ""
+"  -z, --analyze                   aggiorna le statistiche per "
+"l'ottimizzatore\n"
 
 #: vacuumdb.c:340
 #, c-format
@@ -739,8 +783,11 @@ msgstr "  --help                          mostra questo aiuto ed esci\n"
 
 #: vacuumdb.c:342
 #, c-format
-msgid "  --version                       output version information, then exit\n"
-msgstr "  --version                       mostra informazioni sulla versione ed esci\n"
+msgid ""
+"  --version                       output version information, then exit\n"
+msgstr ""
+"  --version                       mostra informazioni sulla versione ed "
+"esci\n"
 
 #: vacuumdb.c:349
 #, c-format
@@ -754,42 +801,58 @@ msgstr ""
 #: reindexdb.c:138
 #, c-format
 msgid "%s: cannot reindex all databases and a specific one at the same time\n"
-msgstr "%s: non è possibile re-indicizzare tutti i database ed uno specifico nello stesso momento\n"
+msgstr ""
+"%s: non è possibile re-indicizzare tutti i database ed uno specifico nello "
+"stesso momento\n"
 
 #: reindexdb.c:143
 #, c-format
 msgid "%s: cannot reindex all databases and system catalogs at the same time\n"
-msgstr "%s: non è possibile re-indicizzare tutti i database e i cataloghi di sistema nello stesso momento\n"
+msgstr ""
+"%s: non è possibile re-indicizzare tutti i database e i cataloghi di sistema "
+"nello stesso momento\n"
 
 #: reindexdb.c:148
 #, c-format
 msgid "%s: cannot reindex a specific table in all databases\n"
-msgstr "%s: non è possibile re-indicizzare una tabella specifica in tutti i database\n"
+msgstr ""
+"%s: non è possibile re-indicizzare una tabella specifica in tutti i "
+"database\n"
 
 #: reindexdb.c:153
 #, c-format
 msgid "%s: cannot reindex a specific index in all databases\n"
-msgstr "%s: non è possibile re-indicizzare un indice specifico in tutti i database\n"
+msgstr ""
+"%s: non è possibile re-indicizzare un indice specifico in tutti i database\n"
 
 #: reindexdb.c:164
 #, c-format
-msgid "%s: cannot reindex a specific table and system catalogs at the same time\n"
-msgstr "%s: non è possibile re-indicizzare una tabella specifica ed i cataloghi di sistema nello stesso momento\n"
+msgid ""
+"%s: cannot reindex a specific table and system catalogs at the same time\n"
+msgstr ""
+"%s: non è possibile re-indicizzare una tabella specifica ed i cataloghi di "
+"sistema nello stesso momento\n"
 
 #: reindexdb.c:169
 #, c-format
-msgid "%s: cannot reindex a specific index and system catalogs at the same time\n"
-msgstr "%s: non è possibile re-indicizzare un indice specifico ed i cataloghi di sistema stesso momento\n"
+msgid ""
+"%s: cannot reindex a specific index and system catalogs at the same time\n"
+msgstr ""
+"%s: non è possibile re-indicizzare un indice specifico ed i cataloghi di "
+"sistema stesso momento\n"
 
 #: reindexdb.c:238
 #, c-format
 msgid "%s: reindexing of table \"%s\" in database \"%s\" failed: %s"
-msgstr "%s: la re-indicizzazione della tabella \"%s\" nel database \"%s\" è fallita: %s"
+msgstr ""
+"%s: la re-indicizzazione della tabella \"%s\" nel database \"%s\" è fallita: "
+"%s"
 
 #: reindexdb.c:241
 #, c-format
 msgid "%s: reindexing of index \"%s\" in database \"%s\" failed: %s"
-msgstr "%s: la re-indicizzazione dell'indice \"%s\" nel database \"%s\" è fallita: %s"
+msgstr ""
+"%s: la re-indicizzazione dell'indice \"%s\" nel database \"%s\" è fallita: %s"
 
 #: reindexdb.c:244
 #, c-format
@@ -852,7 +915,8 @@ msgstr ""
 #: common.c:45
 #, c-format
 msgid "%s: could not obtain information about current user: %s\n"
-msgstr "%s: non è stato possibile acquisire informazioni sull'utente corrente: %s\n"
+msgstr ""
+"%s: non è stato possibile acquisire informazioni sull'utente corrente: %s\n"
 
 #: common.c:56
 #, c-format
@@ -891,7 +955,8 @@ msgstr "%s: query eseguita: %s\n"
 #: common.c:266
 #, c-format
 msgid "pg_strdup: cannot duplicate null pointer (internal error)\n"
-msgstr "pg_strdup: non è possibile duplicare un puntatore nullo (errore interno)\n"
+msgstr ""
+"pg_strdup: non è possibile duplicare un puntatore nullo (errore interno)\n"
 
 #: common.c:272
 #, c-format

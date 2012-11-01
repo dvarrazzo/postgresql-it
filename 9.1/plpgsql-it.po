@@ -39,7 +39,9 @@ msgstr "Le funzioni PL/pgSQL non accettano il tipo %s"
 #: pl_comp.c:506
 #, c-format
 msgid "could not determine actual return type for polymorphic function \"%s\""
-msgstr "non è stato possibile determinare il reale tipo di ritorno per la funzione polimorfa \"%s\""
+msgstr ""
+"non è stato possibile determinare il reale tipo di ritorno per la funzione "
+"polimorfa \"%s\""
 
 #: pl_comp.c:536
 msgid "trigger functions can only be called as triggers"
@@ -55,13 +57,18 @@ msgid "trigger functions cannot have declared arguments"
 msgstr "Le funzioni trigger non possono avere argomenti dichiarati"
 
 #: pl_comp.c:584
-msgid "The arguments of the trigger can be accessed through TG_NARGS and TG_ARGV instead."
-msgstr "Gli argomenti del trigger possono essere acceduti tramite TG_NARGS e TG_ARGV invece."
+msgid ""
+"The arguments of the trigger can be accessed through TG_NARGS and TG_ARGV "
+"instead."
+msgstr ""
+"Gli argomenti del trigger possono essere acceduti tramite TG_NARGS e TG_ARGV "
+"invece."
 
 #: pl_comp.c:912
 #, c-format
 msgid "compilation of PL/pgSQL function \"%s\" near line %d"
-msgstr "compilazione della funzione PL/pgSQL \"%s\" in prossimità della riga %d"
+msgstr ""
+"compilazione della funzione PL/pgSQL \"%s\" in prossimità della riga %d"
 
 #: pl_comp.c:935
 #, c-format
@@ -115,8 +122,11 @@ msgstr "condizione di eccezione \"%s\" sconosciuta"
 
 #: pl_comp.c:2403
 #, c-format
-msgid "could not determine actual argument type for polymorphic function \"%s\""
-msgstr "il tipo reale dell'argomento non è determinabile per la funzione polimorfa \"%s\""
+msgid ""
+"could not determine actual argument type for polymorphic function \"%s\""
+msgstr ""
+"il tipo reale dell'argomento non è determinabile per la funzione polimorfa "
+"\"%s\""
 
 #: pl_exec.c:242 pl_exec.c:517
 msgid "during initialization of execution state"
@@ -124,7 +134,8 @@ msgstr "durante l'inizializzazione dello stato di esecuzione"
 
 #: pl_exec.c:249
 msgid "while storing call arguments into local variables"
-msgstr "durante la memorizzazione degli argomenti di chiamata in variabili locali"
+msgstr ""
+"durante la memorizzazione degli argomenti di chiamata in variabili locali"
 
 #: pl_exec.c:306 pl_exec.c:674
 msgid "during function entry"
@@ -136,15 +147,21 @@ msgstr "CONTINUE non può essere usato all'esterno di un ciclo"
 
 #: pl_exec.c:341
 msgid "control reached end of function without RETURN"
-msgstr "il controllo ha raggiunto la fine di una funzione senza incontrare alcun RETURN"
+msgstr ""
+"il controllo ha raggiunto la fine di una funzione senza incontrare alcun "
+"RETURN"
 
 #: pl_exec.c:348
 msgid "while casting return value to function's return type"
-msgstr "durante la conversione del valore da restituire nel tipo restituito della funzione"
+msgstr ""
+"durante la conversione del valore da restituire nel tipo restituito della "
+"funzione"
 
 #: pl_exec.c:361 pl_exec.c:2593
 msgid "set-valued function called in context that cannot accept a set"
-msgstr "è stata chiamata una funzione che restituisce un insieme in un contesto che non può accettarlo"
+msgstr ""
+"è stata chiamata una funzione che restituisce un insieme in un contesto che "
+"non può accettarlo"
 
 #: pl_exec.c:399
 msgid "returned record type does not match expected record type"
@@ -156,15 +173,20 @@ msgstr "durante l'uscita della funzione"
 
 #: pl_exec.c:709
 msgid "control reached end of trigger procedure without RETURN"
-msgstr "il controllo ha raggiunto la fine di una procedura trigger senza incontrare alcun RETURN"
+msgstr ""
+"il controllo ha raggiunto la fine di una procedura trigger senza incontrare "
+"alcun RETURN"
 
 #: pl_exec.c:718
 msgid "trigger procedure cannot return a set"
 msgstr "la procedura trigger non può restituire un insieme"
 
 #: pl_exec.c:740
-msgid "returned row structure does not match the structure of the triggering table"
-msgstr "la struttura della riga restituita non coincide con la struttura della tabella che ha generato il trigger"
+msgid ""
+"returned row structure does not match the structure of the triggering table"
+msgstr ""
+"la struttura della riga restituita non coincide con la struttura della "
+"tabella che ha generato il trigger"
 
 #: pl_exec.c:803
 #, c-format
@@ -189,12 +211,14 @@ msgstr "funzione PL/pgSQL \"%s\""
 
 #: pl_exec.c:936
 msgid "during statement block local variable initialization"
-msgstr "durante l'inizializzazione di variabili locali del blocco di istruzioni"
+msgstr ""
+"durante l'inizializzazione di variabili locali del blocco di istruzioni"
 
 #: pl_exec.c:978
 #, c-format
 msgid "variable \"%s\" declared NOT NULL cannot default to NULL"
-msgstr "la variabile \"%s\" dichiarata NOT NULL non può avere valore predefinito NULL"
+msgstr ""
+"la variabile \"%s\" dichiarata NOT NULL non può avere valore predefinito NULL"
 
 #: pl_exec.c:1028
 msgid "during statement block entry"
@@ -284,7 +308,8 @@ msgstr "il record \"%s\" non è stato ancora assegnato"
 #: pl_exec.c:2423 pl_exec.c:3859 pl_exec.c:4161 pl_exec.c:4196 pl_exec.c:4263
 #: pl_exec.c:4282 pl_exec.c:4350 pl_exec.c:4373
 msgid "The tuple structure of a not-yet-assigned record is indeterminate."
-msgstr "La struttura della tupla di un record non ancora assegnato è indeterminata."
+msgstr ""
+"La struttura della tupla di un record non ancora assegnato è indeterminata."
 
 #: pl_exec.c:2427 pl_exec.c:2447
 msgid "wrong record type supplied in RETURN NEXT"
@@ -300,11 +325,15 @@ msgstr "non si può usare RETURN QUERY in una funzione non-SETOF"
 
 #: pl_exec.c:2541
 msgid "structure of query does not match function result type"
-msgstr "la struttura della query non coincide con il tipo del risultato della funzione"
+msgstr ""
+"la struttura della query non coincide con il tipo del risultato della "
+"funzione"
 
 #: pl_exec.c:2639
 msgid "RAISE without parameters cannot be used outside an exception handler"
-msgstr "RAISE senza parametri non può essere usato all'esterno di un gestore di eccezioni"
+msgstr ""
+"RAISE senza parametri non può essere usato all'esterno di un gestore di "
+"eccezioni"
 
 #: pl_exec.c:2680
 msgid "too few parameters specified for RAISE"
@@ -369,8 +398,11 @@ msgid "EXECUTE of SELECT ... INTO is not implemented"
 msgstr "EXECUTE di SELECT ... INTO non è implementato"
 
 #: pl_exec.c:3260
-msgid "You might want to use EXECUTE ... INTO or EXECUTE CREATE TABLE ... AS instead."
-msgstr "Potresti usare invece EXECUTE ... INTO oppure EXECUTE CREATE TABLE ... AS."
+msgid ""
+"You might want to use EXECUTE ... INTO or EXECUTE CREATE TABLE ... AS "
+"instead."
+msgstr ""
+"Potresti usare invece EXECUTE ... INTO oppure EXECUTE CREATE TABLE ... AS."
 
 #: pl_exec.c:3550 pl_exec.c:3642
 #, c-format
@@ -389,20 +421,26 @@ msgstr "la posizione relativa o assoluta del cursore è nulla"
 #: pl_exec.c:3716
 #, c-format
 msgid "null value cannot be assigned to variable \"%s\" declared NOT NULL"
-msgstr "il valore null non può essere assegnato alla variabile \"%s\" dichiarata NOT NULL"
+msgstr ""
+"il valore null non può essere assegnato alla variabile \"%s\" dichiarata NOT "
+"NULL"
 
 #: pl_exec.c:3769
 msgid "cannot assign non-composite value to a row variable"
-msgstr "non è possibile assegnare un valore non composto ad una variabile di tipo row"
+msgstr ""
+"non è possibile assegnare un valore non composto ad una variabile di tipo row"
 
 #: pl_exec.c:3811
 msgid "cannot assign non-composite value to a record variable"
-msgstr "non è possibile assegnare un valore non composto ad una variabile di tipo record"
+msgstr ""
+"non è possibile assegnare un valore non composto ad una variabile di tipo "
+"record"
 
 #: pl_exec.c:3972
 #, c-format
 msgid "number of array dimensions (%d) exceeds the maximum allowed (%d)"
-msgstr "il numero di dimensioni dell'array (%d) supera il limite consentito (%d)"
+msgstr ""
+"il numero di dimensioni dell'array (%d) supera il limite consentito (%d)"
 
 #: pl_exec.c:3991
 msgid "subscripted object is not an array"
@@ -453,7 +491,8 @@ msgstr "la variabile di tipo ROW o RECORD non può essere NOT NULL"
 
 #: gram.y:486
 msgid "default value for row or record variable is not supported"
-msgstr "il valore di default per variabili di tipo ROW o RECORD non è supportato"
+msgstr ""
+"il valore di default per variabili di tipo ROW o RECORD non è supportato"
 
 #: gram.y:631 gram.y:657
 #, c-format
@@ -474,8 +513,12 @@ msgid "\"%s\" is not a scalar variable"
 msgstr "\"%s\" non è una variabile scalare"
 
 #: gram.y:1154 gram.y:1347
-msgid "loop variable of loop over rows must be a record or row variable or list of scalar variables"
-msgstr "variabile del ciclo sulle righe deve essere una variabile di tipo row o record o una lista di variabili scalari"
+msgid ""
+"loop variable of loop over rows must be a record or row variable or list of "
+"scalar variables"
+msgstr ""
+"variabile del ciclo sulle righe deve essere una variabile di tipo row o "
+"record o una lista di variabili scalari"
 
 #: gram.y:1188
 msgid "cursor FOR loop must have only one target variable"
@@ -487,7 +530,8 @@ msgstr "il cursore FOR nel ciclo deve usare una variabile cursore vincolata"
 
 #: gram.y:1278
 msgid "integer FOR loop must have only one target variable"
-msgstr "il valore integer del ciclo FOR deve avere solo una variabile di destinazione"
+msgstr ""
+"il valore integer del ciclo FOR deve avere solo una variabile di destinazione"
 
 #: gram.y:1314
 msgid "cannot specify REVERSE in query FOR loop"
@@ -495,7 +539,9 @@ msgstr "non puoi specificare REVERSE nel ciclo FOR della query"
 
 #: gram.y:1461
 msgid "loop variable of FOREACH must be a known variable or list of variables"
-msgstr "la variabile del ciclo FOREACH dev'essere una variabile o lista di variabili conosciuta"
+msgstr ""
+"la variabile del ciclo FOREACH dev'essere una variabile o lista di variabili "
+"conosciuta"
 
 #: gram.y:1513 gram.y:1550 gram.y:1598 gram.y:2540 gram.y:2621 gram.y:2732
 #: gram.y:3365
@@ -578,7 +624,8 @@ msgstr "atteso FROM o IN"
 
 #: gram.y:2773
 msgid "RETURN cannot have a parameter in function returning set"
-msgstr "RETURN non può avere un parametro in una funzione che restituisce insiemi"
+msgstr ""
+"RETURN non può avere un parametro in una funzione che restituisce insiemi"
 
 #: gram.y:2774
 msgid "Use RETURN NEXT or RETURN QUERY."
@@ -595,15 +642,21 @@ msgstr "RETURN non può avere un parametro in una funzione che restituisce void"
 
 #: gram.y:2809 gram.y:2816
 msgid "RETURN must specify a record or row variable in function returning row"
-msgstr "RETURN deve specificare una variabile RECORD o ROW in una funzione che restituisce una riga"
+msgstr ""
+"RETURN deve specificare una variabile RECORD o ROW in una funzione che "
+"restituisce una riga"
 
 #: gram.y:2858
 msgid "RETURN NEXT cannot have a parameter in function with OUT parameters"
-msgstr "RETURN NEXT non può avere un parametro in una funzione con parametri OUT"
+msgstr ""
+"RETURN NEXT non può avere un parametro in una funzione con parametri OUT"
 
 #: gram.y:2873 gram.y:2880
-msgid "RETURN NEXT must specify a record or row variable in function returning row"
-msgstr "RETURN NEXT deve specificare una variabile RECORD o ROW in una funzione che restituisce una riga"
+msgid ""
+"RETURN NEXT must specify a record or row variable in function returning row"
+msgstr ""
+"RETURN NEXT deve specificare una variabile RECORD o ROW in una funzione che "
+"restituisce una riga"
 
 #: gram.y:2959
 #, c-format
@@ -612,7 +665,9 @@ msgstr "\"%s\" è dichiarata CONSTANT"
 
 #: gram.y:3021 gram.y:3033
 msgid "record or row variable cannot be part of multiple-item INTO list"
-msgstr "un record o variabile riga on può fare parte di una lista INTO con più di un elemento"
+msgstr ""
+"un record o variabile riga on può fare parte di una lista INTO con più di un "
+"elemento"
 
 #: gram.y:3078
 msgid "too many INTO variables specified"
@@ -683,8 +738,12 @@ msgid "FOR over EXECUTE statement"
 msgstr "ciclo FOR su una istruzione EXECUTE"
 
 #: pl_handler.c:60
-msgid "Sets handling of conflicts between PL/pgSQL variable names and table column names."
-msgstr "Imposta la gestione dei conflitti tra nomi di variabili PL/pgSQL e nomi di colonne di tabella."
+msgid ""
+"Sets handling of conflicts between PL/pgSQL variable names and table column "
+"names."
+msgstr ""
+"Imposta la gestione dei conflitti tra nomi di variabili PL/pgSQL e nomi di "
+"colonne di tabella."
 
 #. translator: %s is typically the translation of "syntax error"
 #: pl_scanner.c:467

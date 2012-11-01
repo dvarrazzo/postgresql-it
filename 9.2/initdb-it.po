@@ -63,7 +63,9 @@ msgstr "non è stato possibile leggere la directory \"%s\": %s\n"
 #: ../../port/dirmod.c:571
 #, c-format
 msgid "could not stat file or directory \"%s\": %s\n"
-msgstr "non è stato possibile ottenere informazioni sul file o la directory \"%s\": %s\n"
+msgstr ""
+"non è stato possibile ottenere informazioni sul file o la directory \"%s\": "
+"%s\n"
 
 #: ../../port/dirmod.c:598 ../../port/dirmod.c:615
 #, c-format
@@ -183,12 +185,16 @@ msgstr "%s: rimozione della directory dei log delle transazioni fallita\n"
 #: initdb.c:552
 #, c-format
 msgid "%s: removing contents of transaction log directory \"%s\"\n"
-msgstr "%s: rimozione dei contenuti della directory dei log delle transazioni \"%s\"\n"
+msgstr ""
+"%s: rimozione dei contenuti della directory dei log delle transazioni \"%s"
+"\"\n"
 
 #: initdb.c:555
 #, c-format
 msgid "%s: failed to remove contents of transaction log directory\n"
-msgstr "%s: rimozione dei contenuti della directory dei log delle transazioni fallita\n"
+msgstr ""
+"%s: rimozione dei contenuti della directory dei log delle transazioni "
+"fallita\n"
 
 #: initdb.c:564
 #, c-format
@@ -198,7 +204,9 @@ msgstr "%s: directory dati \"%s\" non rimossa su richiesta dell'utente\n"
 #: initdb.c:569
 #, c-format
 msgid "%s: transaction log directory \"%s\" not removed at user's request\n"
-msgstr "%s: directory dei log delle transazioni \"%s\" non rimossa su richiesta dell'utente\n"
+msgstr ""
+"%s: directory dei log delle transazioni \"%s\" non rimossa su richiesta "
+"dell'utente\n"
 
 #: initdb.c:591
 #, c-format
@@ -214,7 +222,8 @@ msgstr ""
 #: initdb.c:603
 #, c-format
 msgid "%s: could not obtain information about current user: %s\n"
-msgstr "%s: non è stato possibile acquisire informazioni sull'utente corrente: %s\n"
+msgstr ""
+"%s: non è stato possibile acquisire informazioni sull'utente corrente: %s\n"
 
 #: initdb.c:620
 #, c-format
@@ -432,7 +441,9 @@ msgstr ""
 #: initdb.c:2438
 #, c-format
 msgid "%s: WARNING: cannot create restricted tokens on this platform\n"
-msgstr "%s: ATTENZIONE: non è possibile creare token ristretti su questa piattaforma\n"
+msgstr ""
+"%s: ATTENZIONE: non è possibile creare token ristretti su questa "
+"piattaforma\n"
 
 #: initdb.c:2447
 #, c-format
@@ -452,7 +463,9 @@ msgstr "%s: non è stato possibile creare token ristretto: codice errore %lu\n"
 #: initdb.c:2500
 #, c-format
 msgid "%s: could not start process for command \"%s\": error code %lu\n"
-msgstr "%s: non è stato possibile avviare il processo per il comando \"%s\": codice errore %lu\n"
+msgstr ""
+"%s: non è stato possibile avviare il processo per il comando \"%s\": codice "
+"errore %lu\n"
 
 #: initdb.c:2514
 #, c-format
@@ -484,21 +497,27 @@ msgstr ""
 
 #: initdb.c:2518
 #, c-format
-msgid "  -A, --auth=METHOD         default authentication method for local connections\n"
+msgid ""
+"  -A, --auth=METHOD         default authentication method for local "
+"connections\n"
 msgstr ""
 "  -A, --auth=METODO         metodo di autenticazione predefinito per le\n"
 "                            connessioni locali\n"
 
 #: initdb.c:2519
 #, c-format
-msgid "      --auth-host=METHOD    default authentication method for local TCP/IP connections\n"
+msgid ""
+"      --auth-host=METHOD    default authentication method for local TCP/IP "
+"connections\n"
 msgstr ""
 "      --auth-host=METODO    metodo di autenticazione predefinito per le\n"
 "                            connessioni TCP/IP\n"
 
 #: initdb.c:2520
 #, c-format
-msgid "      --auth-local=METHOD   default authentication method for local-socket connections\n"
+msgid ""
+"      --auth-local=METHOD   default authentication method for local-socket "
+"connections\n"
 msgstr ""
 "      --auth-local=METODO   metodo di autenticazione predefinito per le\n"
 "                            connessioni locali\n"
@@ -527,14 +546,17 @@ msgstr ""
 msgid ""
 "      --lc-collate=, --lc-ctype=, --lc-messages=LOCALE\n"
 "      --lc-monetary=, --lc-numeric=, --lc-time=LOCALE\n"
-"                            set default locale in the respective category for\n"
+"                            set default locale in the respective category "
+"for\n"
 "                            new databases (default taken from environment)\n"
 msgstr ""
 "      --lc-collate, --lc-ctype, --lc-messages=LOCALE\n"
 "      --lc-monetary, --lc-numeric, --lc-time=LOCALE\n"
 "                            inizializza il nuovo cluster di database con il\n"
-"                            locale specificato nella categoria corrispondente.\n"
-"                            Il valore predefinito viene preso dalle variabili\n"
+"                            locale specificato nella categoria "
+"corrispondente.\n"
+"                            Il valore predefinito viene preso dalle "
+"variabili\n"
 "                            d'ambiente\n"
 
 #: initdb.c:2528
@@ -544,8 +566,11 @@ msgstr "      --no-locale           equivalente a --locale=C\n"
 
 #: initdb.c:2529
 #, c-format
-msgid "      --pwfile=FILE         read password for the new superuser from file\n"
-msgstr "      --pwfile=FILE         leggi la password per il nuovo superutente dal file\n"
+msgid ""
+"      --pwfile=FILE         read password for the new superuser from file\n"
+msgstr ""
+"      --pwfile=FILE         leggi la password per il nuovo superutente dal "
+"file\n"
 
 #: initdb.c:2530
 #, c-format
@@ -554,7 +579,8 @@ msgid ""
 "                            default text search configuration\n"
 msgstr ""
 "  -T, --text-search-config=CFG\n"
-"                            configurazione predefinita per la ricerca di testo\n"
+"                            configurazione predefinita per la ricerca di "
+"testo\n"
 
 #: initdb.c:2532
 #, c-format
@@ -563,12 +589,15 @@ msgstr "  -U, --username=NOME       nome del superutente del database\n"
 
 #: initdb.c:2533
 #, c-format
-msgid "  -W, --pwprompt            prompt for a password for the new superuser\n"
-msgstr "  -W, --pwprompt            richiedi la password per il nuovo superutente\n"
+msgid ""
+"  -W, --pwprompt            prompt for a password for the new superuser\n"
+msgstr ""
+"  -W, --pwprompt            richiedi la password per il nuovo superutente\n"
 
 #: initdb.c:2534
 #, c-format
-msgid "  -X, --xlogdir=XLOGDIR     location for the transaction log directory\n"
+msgid ""
+"  -X, --xlogdir=XLOGDIR     location for the transaction log directory\n"
 msgstr ""
 "  -X, --xlogdir=XLOGDIR     posizione della directory contenente i log\n"
 "                            delle transazioni\n"
@@ -614,7 +643,8 @@ msgstr ""
 #: initdb.c:2541
 #, c-format
 msgid "  -V, --version             output version information, then exit\n"
-msgstr "  -V, --version             mostra informazioni sulla versione ed esci\n"
+msgstr ""
+"  -V, --version             mostra informazioni sulla versione ed esci\n"
 
 #: initdb.c:2542
 #, c-format
@@ -657,12 +687,16 @@ msgstr ""
 #: initdb.c:2575
 #, c-format
 msgid "%s: invalid authentication method \"%s\" for \"%s\" connections\n"
-msgstr "%s: metodo di autenticazione \"%s\" non valido per connessioni \"%s\"\n"
+msgstr ""
+"%s: metodo di autenticazione \"%s\" non valido per connessioni \"%s\"\n"
 
 #: initdb.c:2589
 #, c-format
-msgid "%s: must specify a password for the superuser to enable %s authentication\n"
-msgstr "%s: occorre specificare una password per il superutente per abilitare l'autenticazione %s\n"
+msgid ""
+"%s: must specify a password for the superuser to enable %s authentication\n"
+msgstr ""
+"%s: occorre specificare una password per il superutente per abilitare "
+"l'autenticazione %s\n"
 
 #: initdb.c:2720
 #, c-format
@@ -707,12 +741,16 @@ msgstr ""
 #: initdb.c:2851
 #, c-format
 msgid "%s: could not re-execute with restricted token: error code %lu\n"
-msgstr "%s: non è stato possibile ri-eseguire con token ristretto: codice errore %lu\n"
+msgstr ""
+"%s: non è stato possibile ri-eseguire con token ristretto: codice errore "
+"%lu\n"
 
 #: initdb.c:2866
 #, c-format
 msgid "%s: could not get exit code from subprocess: error code %lu\n"
-msgstr "%s: non è stato possibile ottenere il codice di uscita del processo figlio: codice errore %lu\n"
+msgstr ""
+"%s: non è stato possibile ottenere il codice di uscita del processo figlio: "
+"codice errore %lu\n"
 
 #: initdb.c:2894
 #, c-format
@@ -779,7 +817,9 @@ msgstr ""
 #: initdb.c:3014
 #, c-format
 msgid "%s: could not find suitable encoding for locale \"%s\"\n"
-msgstr "%s: non è stato possibile determinare una codifica adeguata per il locale \"%s\"\n"
+msgstr ""
+"%s: non è stato possibile determinare una codifica adeguata per il locale "
+"\"%s\"\n"
 
 #: initdb.c:3016
 #, c-format
@@ -792,7 +832,8 @@ msgid ""
 "Encoding \"%s\" implied by locale is not allowed as a server-side encoding.\n"
 "The default database encoding will be set to \"%s\" instead.\n"
 msgstr ""
-"La codifica \"%s\" implicata dal locale non è consentita come codifica lato server.\n"
+"La codifica \"%s\" implicata dal locale non è consentita come codifica lato "
+"server.\n"
 "La codifica predefinita dei database sarà impostata invece a \"%s\".\n"
 
 #: initdb.c:3037
@@ -816,17 +857,26 @@ msgstr "La codifica predefinita del database è stata impostata a \"%s\".\n"
 
 #: initdb.c:3066
 #, c-format
-msgid "%s: could not find suitable text search configuration for locale \"%s\"\n"
-msgstr "%s: non è stato possibile trovare una configurazione per la ricerca testo adeguata al locale \"%s\"\n"
+msgid ""
+"%s: could not find suitable text search configuration for locale \"%s\"\n"
+msgstr ""
+"%s: non è stato possibile trovare una configurazione per la ricerca testo "
+"adeguata al locale \"%s\"\n"
 
 #: initdb.c:3077
 #, c-format
-msgid "%s: warning: suitable text search configuration for locale \"%s\" is unknown\n"
-msgstr "%s: attenzione: non si conosce una configurazione per la ricerca testo adeguata al locale \"%s\"\n"
+msgid ""
+"%s: warning: suitable text search configuration for locale \"%s\" is "
+"unknown\n"
+msgstr ""
+"%s: attenzione: non si conosce una configurazione per la ricerca testo "
+"adeguata al locale \"%s\"\n"
 
 #: initdb.c:3082
 #, c-format
-msgid "%s: warning: specified text search configuration \"%s\" might not match locale \"%s\"\n"
+msgid ""
+"%s: warning: specified text search configuration \"%s\" might not match "
+"locale \"%s\"\n"
 msgstr ""
 "%s: attenzione: la configurazione specificata per la ricerca testo \"%s\"\n"
 "potrebbe non corrispondere al locale \"%s\"\n"
@@ -834,7 +884,8 @@ msgstr ""
 #: initdb.c:3087
 #, c-format
 msgid "The default text search configuration will be set to \"%s\".\n"
-msgstr "La configurazione predefinita di ricerca testo sarà impostata a \"%s\".\n"
+msgstr ""
+"La configurazione predefinita di ricerca testo sarà impostata a \"%s\".\n"
 
 #: initdb.c:3121 initdb.c:3188
 #, c-format
@@ -849,7 +900,9 @@ msgstr "correzione dei permessi sulla directory esistente %s ... "
 #: initdb.c:3141 initdb.c:3212
 #, c-format
 msgid "%s: could not change permissions of directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile cambiare i permessi di accesso della directory \"%s\": %s\n"
+msgstr ""
+"%s: non è stato possibile cambiare i permessi di accesso della directory \"%s"
+"\": %s\n"
 
 #: initdb.c:3154 initdb.c:3225
 #, c-format
@@ -875,7 +928,8 @@ msgstr "%s: non è stato possibile accedere alla directory \"%s\": %s\n"
 #: initdb.c:3179
 #, c-format
 msgid "%s: transaction log directory location must be an absolute path\n"
-msgstr "%s: la directory dei log delle transazioni deve essere un percorso assoluto\n"
+msgstr ""
+"%s: la directory dei log delle transazioni deve essere un percorso assoluto\n"
 
 #: initdb.c:3228
 #, c-format

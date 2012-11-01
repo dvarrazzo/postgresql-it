@@ -84,8 +84,11 @@ msgstr "modalità di ritorno della funzione set non supportata"
 
 #: plpy_exec.c:91
 #, c-format
-msgid "PL/Python set-returning functions only support returning only value per call."
-msgstr "le funzioni PL/Python che restituiscono insiemi supportano solo la restituzione di un solo valore per chiamata."
+msgid ""
+"PL/Python set-returning functions only support returning only value per call."
+msgstr ""
+"le funzioni PL/Python che restituiscono insiemi supportano solo la "
+"restituzione di un solo valore per chiamata."
 
 #: plpy_exec.c:103
 #, c-format
@@ -95,7 +98,9 @@ msgstr "l'oggetto restituito non può essere iterato"
 #: plpy_exec.c:104
 #, c-format
 msgid "PL/Python set-returning functions must return an iterable object."
-msgstr "le funzioni PL/Python che restituiscono insiemi devono restituire un oggetto iterabile"
+msgstr ""
+"le funzioni PL/Python che restituiscono insiemi devono restituire un oggetto "
+"iterabile"
 
 #: plpy_exec.c:129
 #, c-format
@@ -119,8 +124,11 @@ msgstr "Atteso None o una stringa."
 
 #: plpy_exec.c:304
 #, c-format
-msgid "PL/Python trigger function returned \"MODIFY\" in a DELETE trigger -- ignored"
-msgstr "la funzione trigger PL/Python ha restituito \"MODIFY\" in un trigger DELETE -- ignorato"
+msgid ""
+"PL/Python trigger function returned \"MODIFY\" in a DELETE trigger -- ignored"
+msgstr ""
+"la funzione trigger PL/Python ha restituito \"MODIFY\" in un trigger DELETE "
+"-- ignorato"
 
 #: plpy_exec.c:315
 #, c-format
@@ -135,12 +143,16 @@ msgstr "PyList_SetItem() è fallita durante l'impostazione degli argomenti"
 #: plpy_exec.c:400
 #, c-format
 msgid "PyDict_SetItemString() failed, while setting up arguments"
-msgstr "PyDict_SetItemString() è fallita durante l'impostazione degli argomenti"
+msgstr ""
+"PyDict_SetItemString() è fallita durante l'impostazione degli argomenti"
 
 #: plpy_exec.c:412
 #, c-format
-msgid "function returning record called in context that cannot accept type record"
-msgstr "la funzione che restituisce un record è stata chiamata in un contesto che non può accettare il tipo record"
+msgid ""
+"function returning record called in context that cannot accept type record"
+msgstr ""
+"la funzione che restituisce un record è stata chiamata in un contesto che "
+"non può accettare il tipo record"
 
 #: plpy_exec.c:450
 #, c-format
@@ -150,7 +162,9 @@ msgstr "durante la creazione del valore da restituire"
 #: plpy_exec.c:474
 #, c-format
 msgid "could not create new dictionary while building trigger arguments"
-msgstr "non è stato possibile creare un nuovo dizionario mentre si stanno costruendo gli argomenti del trigger"
+msgstr ""
+"non è stato possibile creare un nuovo dizionario mentre si stanno costruendo "
+"gli argomenti del trigger"
 
 #: plpy_exec.c:664
 #, c-format
@@ -165,12 +179,17 @@ msgstr "TD[\"new\"] non è un dizionario"
 #: plpy_exec.c:691
 #, c-format
 msgid "TD[\"new\"] dictionary key at ordinal position %d is not a string"
-msgstr "la chiave di dizionario TD[\"new\"] alla posizione %d non è una stringa"
+msgstr ""
+"la chiave di dizionario TD[\"new\"] alla posizione %d non è una stringa"
 
 #: plpy_exec.c:697
 #, c-format
-msgid "key \"%s\" found in TD[\"new\"] does not exist as a column in the triggering row"
-msgstr "la chiave \"%s\" trovata in TD[\"new\"] non esiste come colonna nella riga del trigger"
+msgid ""
+"key \"%s\" found in TD[\"new\"] does not exist as a column in the triggering "
+"row"
+msgstr ""
+"la chiave \"%s\" trovata in TD[\"new\"] non esiste come colonna nella riga "
+"del trigger"
 
 #: plpy_exec.c:778
 #, c-format
@@ -185,17 +204,23 @@ msgstr "interruzione forzata di una sotto-transazione che non è terminata"
 #: plpy_main.c:100
 #, c-format
 msgid "Python major version mismatch in session"
-msgstr "mancata corrispondenza della versione maggiore di Python major nella sessione"
+msgstr ""
+"mancata corrispondenza della versione maggiore di Python major nella sessione"
 
 #: plpy_main.c:101
 #, c-format
-msgid "This session has previously used Python major version %d, and it is now attempting to use Python major version %d."
-msgstr "Questa sessione ha precedentemente usato Python con versione maggiore %d e ora sta tentando di usare Python con versione maggiore %d."
+msgid ""
+"This session has previously used Python major version %d, and it is now "
+"attempting to use Python major version %d."
+msgstr ""
+"Questa sessione ha precedentemente usato Python con versione maggiore %d e "
+"ora sta tentando di usare Python con versione maggiore %d."
 
 #: plpy_main.c:103
 #, c-format
 msgid "Start a new session to use a different Python major version."
-msgstr "Avvia una nuova sessione per usa una versione maggiore di Python diversa."
+msgstr ""
+"Avvia una nuova sessione per usa una versione maggiore di Python diversa."
 
 #: plpy_main.c:118
 #, c-format
@@ -379,22 +404,31 @@ msgstr "non è stato possibile creare la nuova lista Python"
 #: plpy_typeio.c:650
 #, c-format
 msgid "could not create bytes representation of Python object"
-msgstr "non è stato possibile creare la rappresentazione in byte dell'oggetto Python"
+msgstr ""
+"non è stato possibile creare la rappresentazione in byte dell'oggetto Python"
 
 #: plpy_typeio.c:742
 #, c-format
 msgid "could not create string representation of Python object"
-msgstr "non è stato possibile creare la rappresentazione stringa dell'oggetto Python"
+msgstr ""
+"non è stato possibile creare la rappresentazione stringa dell'oggetto Python"
 
 #: plpy_typeio.c:753
 #, c-format
-msgid "could not convert Python object into cstring: Python string representation appears to contain null bytes"
-msgstr "non è stato possibile convertire oggetti Python in cstring: la rappresentazione stringa Python sembra contenere byte null"
+msgid ""
+"could not convert Python object into cstring: Python string representation "
+"appears to contain null bytes"
+msgstr ""
+"non è stato possibile convertire oggetti Python in cstring: la "
+"rappresentazione stringa Python sembra contenere byte null"
 
 #: plpy_typeio.c:787
 #, c-format
-msgid "return value of function with array return type is not a Python sequence"
-msgstr "il valore restituito dalla funzione con tipo restituito array non è una sequenza Python"
+msgid ""
+"return value of function with array return type is not a Python sequence"
+msgstr ""
+"il valore restituito dalla funzione con tipo restituito array non è una "
+"sequenza Python"
 
 #: plpy_typeio.c:886
 #, c-format
@@ -403,13 +437,19 @@ msgstr "la chiave \"%s\" non è stata trovata nel dizionario"
 
 #: plpy_typeio.c:887
 #, c-format
-msgid "To return null in a column, add the value None to the mapping with the key named after the column."
-msgstr "Per restituire null in una colonna, inserire nella mappa il valore None con una chiave chiamata come la colonna."
+msgid ""
+"To return null in a column, add the value None to the mapping with the key "
+"named after the column."
+msgstr ""
+"Per restituire null in una colonna, inserire nella mappa il valore None con "
+"una chiave chiamata come la colonna."
 
 #: plpy_typeio.c:935
 #, c-format
 msgid "length of returned sequence did not match number of columns in row"
-msgstr "la lunghezza della sequenza ritornata non rispetta il numero di colonne presenti nella riga"
+msgstr ""
+"la lunghezza della sequenza ritornata non rispetta il numero di colonne "
+"presenti nella riga"
 
 #: plpy_typeio.c:1043
 #, c-format
@@ -418,8 +458,12 @@ msgstr "l'attributo \"%s\" non esiste nell'oggetto Python"
 
 #: plpy_typeio.c:1044
 #, c-format
-msgid "To return null in a column, let the returned object have an attribute named after column with value None."
-msgstr "Per restituire null in una colonna, l'oggetto restituito deve avere un attributo chiamato come la colonna con valore None."
+msgid ""
+"To return null in a column, let the returned object have an attribute named "
+"after column with value None."
+msgstr ""
+"Per restituire null in una colonna, l'oggetto restituito deve avere un "
+"attributo chiamato come la colonna con valore None."
 
 #: plpy_util.c:70
 #, c-format

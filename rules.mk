@@ -4,17 +4,11 @@
 
 all: $(MOS)
 
-rewrap:
-	for f in $$(git st --porcelain *.po | egrep ".M " | cut -c 8-); do \
-		echo $$f; \
-		msgcat --no-wrap $$f | sponge $$f; \
-	done
-
 ifdef UPDATE_FROM
 
 update:
 	for f in *.po; do \
-		msgmerge --no-wrap -N ../${UPDATE_FROM}/$$f $$f | ../tools/nostale.py | sponge $$f; \
+		msgmerge -N ../${UPDATE_FROM}/$$f $$f | ../tools/nostale.py | sponge $$f; \
 		sed -i 's/\(Project-Id-Version:.* \)\(${UPDATE_FROM}\)\(.*\)/\1${VERSION}\3/' $$f; \
 	done
 
