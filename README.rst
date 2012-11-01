@@ -151,6 +151,7 @@ Se esiste un modo ragionevole di tradurli, ok per me.
 * pipe (forse coda?)
 * standby
 * stream (forse flusso -- solo per i WAL?)
+* tablespace
 * thread
 * timeline
 * wrapper
