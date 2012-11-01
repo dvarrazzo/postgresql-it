@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:52+0000\n"
-"PO-Revision-Date: 2012-10-31 23:03+0100\n"
+"PO-Revision-Date: 2012-10-31 22:28+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1703,7 +1703,7 @@ msgstr "Imposta il numero di buffer delle pagine su disco in shared memory per i
 
 #: utils/misc/guc.c:1973
 msgid "WAL writer sleep time between WAL flushes."
-msgstr "Il tempo di pausa del WAL writer che intercorre fra due flush del WAL."
+msgstr "Tempo di pausa del WAL writer tra due flush dei WAL."
 
 #: utils/misc/guc.c:1985
 msgid "Sets the maximum number of simultaneously running WAL sender processes."
@@ -6843,7 +6843,7 @@ msgstr "il file dei comandi di ripristino \"%s\" non specifica né primary_conni
 
 #: access/transam/xlog.c:5434
 msgid "The database server will regularly poll the pg_xlog subdirectory to check for files placed there."
-msgstr "Il server database controllerà regolarmente la sottodirectory pg_xlog per controllare se vi vengono aggiunti dei file."
+msgstr "Il server database ispezionerà regolarmente la sottodirectory pg_xlog per controllare se vi vengono aggiunti dei file."
 
 #: access/transam/xlog.c:5440
 #, c-format
@@ -13308,7 +13308,7 @@ msgstr "rilevato deadlock"
 
 #: storage/lmgr/deadlock.c:952
 msgid "See server log for query details."
-msgstr "Controllare i log del server per i dettagli della query."
+msgstr "Vedi i log del server per i dettagli della query."
 
 #: storage/lmgr/lmgr.c:720
 #, c-format
@@ -15146,7 +15146,7 @@ msgid ""
 msgstr ""
 "\n"
 "Si prega di leggere la documentazione per la lista completa di impostazioni\n"
-"di configurazione e come impostarle sulla riga di comando o nel file di\n"
+"di configurazione e su come impostarle sulla riga di comando o nel file di\n"
 "configurazione\n"
 "\n"
 "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"

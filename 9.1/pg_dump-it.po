@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:57+0000\n"
-"PO-Revision-Date: 2012-10-31 15:06+0100\n"
+"PO-Revision-Date: 2012-10-31 22:27+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1873,7 +1873,7 @@ msgid ""
 msgstr ""
 "Il programma \"pg_dump\" è richiesto da %s ma non è stato trovato nella\n"
 "stessa directory di \"%s\".\n"
-"Controllare la vostra installazione.\n"
+"Verifica che l'installazione sia corretta.\n"
 
 #: pg_dumpall.c:178
 #, c-format
