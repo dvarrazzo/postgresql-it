@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-11-02 17:29+0100\n"
+"PO-Revision-Date: 2012-11-02 17:40+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -694,7 +694,7 @@ msgstr "chiusura del file dello stato a due fasi \"%s\" fallita: %m"
 #: access/transam/twophase.c:1681
 #, c-format
 msgid "removing future two-phase state file \"%s\""
-msgstr "rimozione del file dello stato a due fasi nel futuro \"%s\": %m"
+msgstr "rimozione del file dello stato a due fasi nel futuro \"%s\""
 
 #: access/transam/twophase.c:1697 access/transam/twophase.c:1708
 #: access/transam/twophase.c:1827 access/transam/twophase.c:1838
