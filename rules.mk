@@ -25,3 +25,11 @@ clean:
 # libpq -> libpq5
 %-$(VERSION).mo : %-$(LANG).po
 		msgfmt -o $@ -v -c $<
+
+package:
+	mkdir -p ../package
+	make clean
+	make
+	mv libpq-$(VERSION).mo libpq5-$(VERSION).mo
+	mv ecpglib-$(VERSION).mo ecpglib6-$(VERSION).mo
+	zip -9 ../package/messages-$(LANG)-$(VERSION).zip *.mo
