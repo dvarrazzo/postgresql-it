@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-11-02 17:17+0100\n"
+"PO-Revision-Date: 2012-11-02 17:25+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -68,7 +68,7 @@ msgstr "non è stato possibile ottenere la giunzione per \"%s\": %s\n"
 #: ../port/dirmod.c:451
 #, c-format
 msgid "could not open directory \"%s\": %s\n"
-msgstr "apertura della directory  \"%s\" fallita: %s\n"
+msgstr "apertura della directory \"%s\" fallita: %s\n"
 
 #: ../port/dirmod.c:488
 #, c-format
@@ -491,7 +491,7 @@ msgstr "l'indice \"%s\" non è un btree"
 msgid "version mismatch in index \"%s\": file version %d, code version %d"
 msgstr ""
 "le versioni non corrispondono per l'indice \"%s\": la versione sul file è "
-"%d,  quella del codice %d"
+"%d, quella del codice %d"
 
 #: access/spgist/spgutils.c:664
 #, c-format
@@ -1055,7 +1055,7 @@ msgstr "rimozione del file storico di backup del log delle transazioni \"%s\""
 #: access/transam/xlog.c:3816
 #, c-format
 msgid "incorrect hole size in record at %X/%X"
-msgstr "lo hole size nel record in %X/%X non  è corretto"
+msgstr "lo hole size nel record in %X/%X non è corretto"
 
 #: access/transam/xlog.c:3829
 #, c-format
@@ -15178,7 +15178,7 @@ msgstr "formato dei dati binari non corretto nell'argomento %d della funzione"
 #: tcop/postgres.c:459 tcop/postgres.c:4194
 #, c-format
 msgid "invalid frontend message type %d"
-msgstr "frontend message di tipo  %d non valido"
+msgstr "frontend message di tipo %d non valido"
 
 #: tcop/postgres.c:886
 #, c-format
@@ -17687,8 +17687,8 @@ msgstr "il formato binario nella colonna %d del record non è corretto"
 #, c-format
 msgid "cannot compare dissimilar column types %s and %s at record column %d"
 msgstr ""
-"non è  possibile confrontare i tipi di colonne dissimili %s e %s alla "
-"colonna %d del record"
+"non è possibile confrontare i tipi di colonne dissimili %s e %s alla colonna "
+"%d del record"
 
 #: utils/adt/rowtypes.c:983 utils/adt/rowtypes.c:1203
 #, c-format
@@ -18529,7 +18529,7 @@ msgstr "Il server ha versione %d.%d, la libreria versione %d.%d."
 #: utils/fmgr/dfmgr.c:333
 #, c-format
 msgid "Server has FUNC_MAX_ARGS = %d, library has %d."
-msgstr "Il server ha  FUNC_MAX_ARGS = %d, la libreria ha %d."
+msgstr "Il server ha FUNC_MAX_ARGS = %d, la libreria ha %d."
 
 #: utils/fmgr/dfmgr.c:342
 #, c-format
