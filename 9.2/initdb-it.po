@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-11-01 17:30+0100\n"
+"PO-Revision-Date: 2012-11-02 15:37+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -85,12 +85,12 @@ msgstr "binario non valido \"%s\""
 #: ../../port/exec.c:193
 #, c-format
 msgid "could not read binary \"%s\""
-msgstr "non è stato possibile leggere il binario \"%s\""
+msgstr "lettura del binario \"%s\" fallita"
 
 #: ../../port/exec.c:200
 #, c-format
 msgid "could not find a \"%s\" to execute"
-msgstr "non è stato trovato un \"%s\" da eseguire"
+msgstr "programma \"%s\" da eseguire non trovato"
 
 #: ../../port/exec.c:255 ../../port/exec.c:291
 #, c-format
@@ -228,7 +228,7 @@ msgstr ""
 #: initdb.c:620
 #, c-format
 msgid "%s: could not get current user name: %s\n"
-msgstr "%s: non è stato possibile determinare il nome utente: %s\n"
+msgstr "%s: determinazione del nome utente fallita: %s\n"
 
 #: initdb.c:651
 #, c-format
@@ -411,7 +411,7 @@ msgstr "ok\n"
 #: initdb.c:2284
 #, c-format
 msgid "%s: failed to restore old locale \"%s\"\n"
-msgstr "%s: non è stato possibile ripristinare il locale precedente \"%s\"\n"
+msgstr "%s: ripristino del locale precedente \"%s\" fallito\n"
 
 #: initdb.c:2290
 #, c-format
@@ -453,13 +453,12 @@ msgstr "%s: apertura del token di processo fallita: codice errore %lu\n"
 #: initdb.c:2460
 #, c-format
 msgid "%s: could not to allocate SIDs: error code %lu\n"
-msgstr "%s: non è stato possibile allocare i SID: codice errore %lu\n"
+msgstr "%s: allocazione dei SID fallita: codice errore %lu\n"
 
 #: initdb.c:2479
 #, c-format
 msgid "%s: could not create restricted token: error code %lu\n"
-msgstr ""
-"%s: non è stato possibile creare il token ristretto: codice errore %lu\n"
+msgstr "%s: creazione del token ristretto fallita: codice errore %lu\n"
 
 #: initdb.c:2500
 #, c-format
@@ -741,16 +740,14 @@ msgstr ""
 #: initdb.c:2851
 #, c-format
 msgid "%s: could not re-execute with restricted token: error code %lu\n"
-msgstr ""
-"%s: non è stato possibile ri-eseguire con token ristretto: codice errore "
-"%lu\n"
+msgstr "%s: ri-eseguire con token ristretto fallita: codice errore %lu\n"
 
 #: initdb.c:2866
 #, c-format
 msgid "%s: could not get exit code from subprocess: error code %lu\n"
 msgstr ""
-"%s: non è stato possibile ottenere il codice di uscita del processo figlio: "
-"codice errore %lu\n"
+"%s: lettura del codice di uscita del processo figlio fallita: codice errore "
+"%lu\n"
 
 #: initdb.c:2894
 #, c-format
@@ -817,9 +814,7 @@ msgstr ""
 #: initdb.c:3014
 #, c-format
 msgid "%s: could not find suitable encoding for locale \"%s\"\n"
-msgstr ""
-"%s: non è stato possibile determinare una codifica adeguata per il locale "
-"\"%s\"\n"
+msgstr "%s: nessuna codifica adeguata trovata per il locale \"%s\"\n"
 
 #: initdb.c:3016
 #, c-format
@@ -860,8 +855,7 @@ msgstr "La codifica predefinita del database è stata impostata a \"%s\".\n"
 msgid ""
 "%s: could not find suitable text search configuration for locale \"%s\"\n"
 msgstr ""
-"%s: non è stato possibile trovare una configurazione per la ricerca testo "
-"adeguata al locale \"%s\"\n"
+"%s: nessuna configurazione per la ricerca testo adeguata al locale \"%s\"\n"
 
 #: initdb.c:3077
 #, c-format
@@ -921,7 +915,7 @@ msgstr ""
 #: initdb.c:3165 initdb.c:3235
 #, c-format
 msgid "%s: could not access directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile accedere alla directory \"%s\": %s\n"
+msgstr "%s: accesso alla directory \"%s\" fallito: %s\n"
 
 #: initdb.c:3179
 #, c-format

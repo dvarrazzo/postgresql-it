@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-10-29 13:13+0100\n"
+"PO-Revision-Date: 2012-11-02 15:16+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -114,12 +114,12 @@ msgstr "È obbligatorio eseguire %s come superutente di PostgreSQL.\n"
 #: pg_resetxlog.c:264
 #, c-format
 msgid "%s: could not change directory to \"%s\": %s\n"
-msgstr "%s: Non è stato possibile modificare la directory a \"%s\": %s\n"
+msgstr "%s: spostamento nella directory \"%s\" fallito: %s\n"
 
 #: pg_resetxlog.c:279 pg_resetxlog.c:407
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\" per la lettura: %s\n"
+msgstr "%s: apertura del file \"%s\" per la lettura fallita: %s\n"
 
 #: pg_resetxlog.c:285
 #, c-format
@@ -169,7 +169,7 @@ msgstr ""
 #: pg_resetxlog.c:423
 #, c-format
 msgid "%s: could not read file \"%s\": %s\n"
-msgstr "%s: non è stato possibile leggere il file \"%s\": %s\n"
+msgstr "%s: lettura del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:446
 #, c-format
@@ -362,12 +362,12 @@ msgstr ""
 #: pg_resetxlog.c:692
 #, c-format
 msgid "%s: could not create pg_control file: %s\n"
-msgstr "%s: non è stato possibile creare il file pg_control: %s\n"
+msgstr "%s: creazione del file pg_control fallita: %s\n"
 
 #: pg_resetxlog.c:703
 #, c-format
 msgid "%s: could not write pg_control file: %s\n"
-msgstr "%s: non è stato possibile scrivere il file pg_control: %s\n"
+msgstr "%s: scrittura del file pg_control fallita: %s\n"
 
 #: pg_resetxlog.c:710 pg_resetxlog.c:1017
 #, c-format
@@ -377,27 +377,27 @@ msgstr "%s: errore fsync: %s\n"
 #: pg_resetxlog.c:748 pg_resetxlog.c:823 pg_resetxlog.c:879
 #, c-format
 msgid "%s: could not open directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire la directory \"%s\": %s\n"
+msgstr "%s: apertura della directory \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:792 pg_resetxlog.c:856 pg_resetxlog.c:913
 #, c-format
 msgid "%s: could not read from directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile leggere dalla directory \"%s\": %s\n"
+msgstr "%s: lettura dalla directory \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:837 pg_resetxlog.c:894
 #, c-format
 msgid "%s: could not delete file \"%s\": %s\n"
-msgstr "%s: non è stato possibile eliminare il file \"%s\": %s\n"
+msgstr "%s: cancellazione del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:984
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
+msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:995 pg_resetxlog.c:1009
 #, c-format
 msgid "%s: could not write file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere sul file \"%s\": %s\n"
+msgstr "%s: scrittura del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:1028
 #, c-format

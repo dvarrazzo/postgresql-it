@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-11-01 18:23+0100\n"
+"PO-Revision-Date: 2012-11-02 15:39+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -612,9 +612,7 @@ msgstr "%s: disconnesso. Aspetterò %d secondi per riprovare.\n"
 #: receivelog.c:72
 #, c-format
 msgid "%s: could not open transaction log file \"%s\": %s\n"
-msgstr ""
-"%s: non è stato possibile aprire il file di log delle transazioni \"%s\": "
-"%s\n"
+msgstr "%s: apertura del file di log delle transazioni \"%s\" fallita: %s\n"
 
 #: receivelog.c:84
 #, c-format
@@ -634,22 +632,22 @@ msgstr ""
 #, c-format
 msgid "%s: could not pad transaction log file \"%s\": %s\n"
 msgstr ""
-"%s: non è stato possibile correggere la lunghezza del file di log delle "
-"transazioni \"%s\": %s\n"
+"%s: correzione della lunghezza del file di log delle transazioni \"%s\" "
+"fallita: %s\n"
 
 #: receivelog.c:120
 #, c-format
 msgid "%s: could not seek to beginning of transaction log file \"%s\": %s\n"
 msgstr ""
-"%s: non è stato possibile muoversi all'inizio del file di log delle "
-"transazioni \"%s\": %s\n"
+"%s: spostamento all'inizio del file di log delle transazioni \"%s\" fallito: "
+"%s\n"
 
 #: receivelog.c:143
 #, c-format
 msgid "%s: could not determine seek position in file \"%s\": %s\n"
 msgstr ""
-"%s: non è stato possibile determinare la posizione dove muoversi nel file "
-"\"%s\": %s\n"
+"%s: determinazione della posizione dove muoversi nel file \"%s\" fallita: "
+"%s\n"
 
 #: receivelog.c:150
 #, c-format

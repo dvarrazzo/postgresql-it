@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:42+0000\n"
-"PO-Revision-Date: 2012-11-01 16:39+0100\n"
-"Last-Translator: Marco Beri <marcoberi@gmail.com>\n"
+"PO-Revision-Date: 2012-11-02 17:17+0100\n"
+"Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -68,28 +68,28 @@ msgstr "non è stato possibile ottenere la giunzione per \"%s\": %s\n"
 #: ../port/dirmod.c:451
 #, c-format
 msgid "could not open directory \"%s\": %s\n"
-msgstr "non è stato possibile aprire la directory  \"%s\": %s\n"
+msgstr "apertura della directory  \"%s\" fallita: %s\n"
 
 #: ../port/dirmod.c:488
 #, c-format
 msgid "could not read directory \"%s\": %s\n"
-msgstr "non è stato possibile leggere la directory \"%s\": %s\n"
+msgstr "lettura della directory \"%s\" fallita: %s\n"
 
 #: ../port/dirmod.c:571
 #, c-format
 msgid "could not stat file or directory \"%s\": %s\n"
 msgstr ""
-"non è stato possibile avere informazioni sul file o directory \"%s\": %s\n"
+"non è stato possibile ottenere informazioni sul file o directory \"%s\": %s\n"
 
 #: ../port/dirmod.c:598 ../port/dirmod.c:615
 #, c-format
 msgid "could not remove file or directory \"%s\": %s\n"
-msgstr "non è stato possibile rimuovere il file i directory \"%s\": %s\n"
+msgstr "rimozione del file o directory \"%s\" fallita: %s\n"
 
 #: ../port/exec.c:125 ../port/exec.c:239 ../port/exec.c:282
 #, c-format
 msgid "could not identify current directory: %s"
-msgstr "non è stato possibile identificare la directory corrente: %s"
+msgstr "identificazione della directory corrente fallita: %s"
 
 #: ../port/exec.c:144
 #, c-format
@@ -99,22 +99,22 @@ msgstr "binario non valido \"%s\""
 #: ../port/exec.c:193
 #, c-format
 msgid "could not read binary \"%s\""
-msgstr "non è stato possibile leggere il binario \"%s\""
+msgstr "lettura del binario \"%s\" fallita"
 
 #: ../port/exec.c:200
 #, c-format
 msgid "could not find a \"%s\" to execute"
-msgstr "non è stato trovato alcun \"%s\" da eseguire"
+msgstr "programma \"%s\" da eseguire non trovato"
 
 #: ../port/exec.c:255 ../port/exec.c:291
 #, c-format
 msgid "could not change directory to \"%s\""
-msgstr "non è stato possibile cambiare directory in \"%s\""
+msgstr "spostamento nella directory \"%s\" fallito"
 
 #: ../port/exec.c:270
 #, c-format
 msgid "could not read symbolic link \"%s\""
-msgstr "non è stato possibile leggere il link simbolico \"%s\""
+msgstr "lettura del link simbolico \"%s\" fallita"
 
 #: ../port/exec.c:526
 #, c-format
@@ -144,7 +144,7 @@ msgstr "processo figlio uscito con stato non riconosciuto %d"
 #: ../port/open.c:112
 #, c-format
 msgid "could not open file \"%s\": %s"
-msgstr "non è stato possibile aprire il file \"%s\": %s"
+msgstr "apertura del file \"%s\" fallita: %s"
 
 #: ../port/open.c:113
 msgid "lock violation"
@@ -355,7 +355,7 @@ msgstr "I valori validi sono \"on\", \"off\" ed \"auto\"."
 #: access/gist/gistbuildbuffers.c:780 utils/sort/logtape.c:213
 #, c-format
 msgid "could not write block %ld of temporary file: %m"
-msgstr "non è stato possibile scrivere il blocco %ld del file temporaneo: %m"
+msgstr "scrittura del blocco %ld del file temporaneo fallita: %m"
 
 #: access/gist/gistsplit.c:375
 #, c-format
@@ -434,8 +434,7 @@ msgstr "\"%s\" è un tipo composito"
 #: access/heap/heapam.c:3620
 #, c-format
 msgid "could not obtain lock on row in relation \"%s\""
-msgstr ""
-"non è stato possibile ottenere il lock su una riga nella relazione \"%s\""
+msgstr "lock di riga nella relazione \"%s\" fallito"
 
 #: access/heap/hio.c:239 access/heap/rewriteheap.c:592
 #, c-format
@@ -462,7 +461,7 @@ msgstr "La chiave %s esiste già."
 #: access/nbtree/nbtinsert.c:456
 #, c-format
 msgid "failed to re-find tuple within index \"%s\""
-msgstr "non è stato possibile trovare di nuovo la tupla nell'indice \"%s\""
+msgstr "non ho ritrovato la tupla nell'indice \"%s\""
 
 #: access/nbtree/nbtinsert.c:458
 #, c-format
@@ -515,38 +514,37 @@ msgstr "non è stato possibile accedere allo stato della transazione %u"
 #: access/transam/slru.c:838
 #, c-format
 msgid "Could not open file \"%s\": %m."
-msgstr "Non è stato possibile aprire il file \"%s\": %m."
+msgstr "Apertura del file \"%s\" fallita: %m."
 
 #: access/transam/slru.c:844
 #, c-format
 msgid "Could not seek in file \"%s\" to offset %u: %m."
-msgstr "Non è stato possibile spostarsi nel file \"%s\" all'offset %u: %m."
+msgstr "Spostamento nel file \"%s\" all'offset %u fallito: %m."
 
 #: access/transam/slru.c:851
 #, c-format
 msgid "Could not read from file \"%s\" at offset %u: %m."
-msgstr "Non è stato possibile leggere dal file \"%s\" all'offset %u: %m."
+msgstr "Lettura dal file \"%s\" all'offset %u fallita: %m."
 
 #: access/transam/slru.c:858
 #, c-format
 msgid "Could not write to file \"%s\" at offset %u: %m."
-msgstr "Non è stato possibile scrivere nel file \"%s\" all'offset %u: %m."
+msgstr "Scrittura nel file \"%s\" all'offset %u fallita: %m."
 
 #: access/transam/slru.c:865
 #, c-format
 msgid "Could not fsync file \"%s\": %m."
-msgstr "Non è stato possibile eseguire fsync sul file \"%s\": %m."
+msgstr "fsync del file \"%s\" fallito: %m."
 
 #: access/transam/slru.c:872
 #, c-format
 msgid "Could not close file \"%s\": %m."
-msgstr "Non è stato possibile chiudere il file \"%s\": %m."
+msgstr "Chiusura del file \"%s\" fallita: %m."
 
 #: access/transam/slru.c:1127
 #, c-format
 msgid "could not truncate directory \"%s\": apparent wraparound"
-msgstr ""
-"non è stato possibile troncare la directory \"%s\": probabile wraparound"
+msgstr "troncamento della directory \"%s\" fallito: probabile wraparound"
 
 #: access/transam/slru.c:1201 access/transam/slru.c:1219
 #, c-format
@@ -627,29 +625,29 @@ msgstr "è stata superata la lunghezza massima del file dello stato a due fasi"
 #: access/transam/twophase.c:987
 #, c-format
 msgid "could not create two-phase state file \"%s\": %m"
-msgstr "non è stato possibile creare il file dello stato a due fasi \"%s\": %m"
+msgstr "creazione del file dello stato a due fasi \"%s\" fallito: %m"
 
 #: access/transam/twophase.c:1001 access/transam/twophase.c:1018
 #: access/transam/twophase.c:1074 access/transam/twophase.c:1494
 #: access/transam/twophase.c:1501
 #, c-format
 msgid "could not write two-phase state file: %m"
-msgstr "non è stato possibile scrivere nel file dello stato a due fasi: %m"
+msgstr "scrittura nel file dello stato a due fasi fallito: %m"
 
 #: access/transam/twophase.c:1027
 #, c-format
 msgid "could not seek in two-phase state file: %m"
-msgstr "non è stato possibile spostarsi nel file dello stato a due fasi %m"
+msgstr "spostamento nel file dello stato a due fasi %m fallito"
 
 #: access/transam/twophase.c:1080 access/transam/twophase.c:1519
 #, c-format
 msgid "could not close two-phase state file: %m"
-msgstr "non è stato possibile chiudere il file dello stato a due fasi: %m"
+msgstr "chiusura del file dello stato a due fasi fallita: %m"
 
 #: access/transam/twophase.c:1160 access/transam/twophase.c:1600
 #, c-format
 msgid "could not open two-phase state file \"%s\": %m"
-msgstr "non è stato possibile aprire il file dello stato a due fasi \"%s\": %m"
+msgstr "apertura del file dello stato a due fasi \"%s\" fallita: %m"
 
 #: access/transam/twophase.c:1177
 #, c-format
@@ -661,8 +659,7 @@ msgstr ""
 #: access/transam/twophase.c:1209
 #, c-format
 msgid "could not read two-phase state file \"%s\": %m"
-msgstr ""
-"non è stato possibile leggere dal file dello stato a due fasi \"%s\": %m"
+msgstr "lettura del file dello stato a due fasi \"%s\" fallita: %m"
 
 #: access/transam/twophase.c:1305
 #, c-format
@@ -672,33 +669,27 @@ msgstr "il file dello stato a due fasi per la transazione %u è corrotto"
 #: access/transam/twophase.c:1456
 #, c-format
 msgid "could not remove two-phase state file \"%s\": %m"
-msgstr ""
-"non è stato possibile rimuovere il file dello stato a due fasi \"%s\": %m"
+msgstr "rimozione del file dello stato a due fasi \"%s\" fallita: %m"
 
 #: access/transam/twophase.c:1485
 #, c-format
 msgid "could not recreate two-phase state file \"%s\": %m"
-msgstr ""
-"non è stato possibile ricreare il file dello stato a due fasi \"%s\": %m"
+msgstr "ricreazione del file dello stato a due fasi \"%s\" fallita: %m"
 
 #: access/transam/twophase.c:1513
 #, c-format
 msgid "could not fsync two-phase state file: %m"
-msgstr ""
-"non è stato possibile eseguire fsync sul file dello stato a due fasi: %m"
+msgstr "fsync del file dello stato a due fasi: %m"
 
 #: access/transam/twophase.c:1609
 #, c-format
 msgid "could not fsync two-phase state file \"%s\": %m"
-msgstr ""
-"non è stato possibile eseguire fsync sul file dello stato a due fasi \"%s\": "
-"%m"
+msgstr "fsync del file dello stato a due fasi \"%s\" fallito: %m"
 
 #: access/transam/twophase.c:1616
 #, c-format
 msgid "could not close two-phase state file \"%s\": %m"
-msgstr ""
-"non è stato possibile chiudere il file dello stato a due fasi \"%s\": %m"
+msgstr "chiusura del file dello stato a due fasi \"%s\" fallita: %m"
 
 #: access/transam/twophase.c:1681
 #, c-format
@@ -857,13 +848,12 @@ msgstr "non è possibile avere più di 2^32-1 comandi in una sottotransazione"
 #: access/transam/xlog.c:1307 access/transam/xlog.c:1376
 #, c-format
 msgid "could not create archive status file \"%s\": %m"
-msgstr "non è stato possibile creare file di stato dell'archivio \"%s\": %m"
+msgstr "creazione del file di stato dell'archivio \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:1315 access/transam/xlog.c:1384
 #, c-format
 msgid "could not write archive status file \"%s\": %m"
-msgstr ""
-"non è stato possibile scrivere nel file di stato dell'archivio \"%s\": %m"
+msgstr "scrittura del file di stato dell'archivio \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:1364 access/transam/xlog.c:2867
 #: access/transam/xlog.c:2884 access/transam/xlog.c:4724
@@ -877,16 +867,14 @@ msgstr "non è stato possibile rinominare il file \"%s\" in \"%s\": %m"
 #: replication/walreceiver.c:543 replication/walsender.c:1042
 #, c-format
 msgid "could not seek in log file %u, segment %u to offset %u: %m"
-msgstr ""
-"non è stato possibile spostarsi nel file di log %u, segmento %u all'offset "
-"%u: %m"
+msgstr "spostamento nel file di log %u fallito, segmento %u all'offset %u: %m"
 
 #: access/transam/xlog.c:1847 replication/walreceiver.c:560
 #, c-format
 msgid "could not write to log file %u, segment %u at offset %u, length %lu: %m"
 msgstr ""
-"non è stato possibile scrivere nel file di log %u, segmento %u all'offset "
-"%u, lunghezza %lu: %m"
+"scrittura nel file di log %u fallita, segmento %u all'offset %u, lunghezza "
+"%lu: %m"
 
 #: access/transam/xlog.c:2076
 #, c-format
@@ -898,8 +886,7 @@ msgstr "min recovery point aggiornato a %X/%X"
 #: access/transam/xlog.c:2990 replication/walsender.c:1030
 #, c-format
 msgid "could not open file \"%s\" (log file %u, segment %u): %m"
-msgstr ""
-"non è stato possibile aprire il file \"%s\" (file di log %u, segmento %u): %m"
+msgstr "apertura del file \"%s\" fallita (file di log %u, segmento %u): %m"
 
 #: access/transam/xlog.c:2478 access/transam/xlog.c:2611
 #: access/transam/xlog.c:4574 access/transam/xlog.c:9435
@@ -907,7 +894,7 @@ msgstr ""
 #: storage/file/copydir.c:172 storage/smgr/md.c:297 utils/time/snapmgr.c:860
 #, c-format
 msgid "could not create file \"%s\": %m"
-msgstr "non è stato possibile creare il file \"%s\": %m"
+msgstr "creazione del file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:2510 access/transam/xlog.c:2643
 #: access/transam/xlog.c:4626 access/transam/xlog.c:4689
@@ -917,20 +904,20 @@ msgstr "non è stato possibile creare il file \"%s\": %m"
 #: utils/misc/guc.c:7578 utils/time/snapmgr.c:865 utils/time/snapmgr.c:872
 #, c-format
 msgid "could not write to file \"%s\": %m"
-msgstr "non è stato possibile scrivere nel file \"%s\": %m"
+msgstr "scrittura nel file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:2518 access/transam/xlog.c:2650
 #: access/transam/xlog.c:4695 storage/file/copydir.c:269 storage/smgr/md.c:959
 #: storage/smgr/md.c:1190 storage/smgr/md.c:1363
 #, c-format
 msgid "could not fsync file \"%s\": %m"
-msgstr "non è stato possibile eseguire fsync sul file \"%s\": %m"
+msgstr "fsync del file \"%s\" fallito: %m"
 
 #: access/transam/xlog.c:2523 access/transam/xlog.c:2655
 #: access/transam/xlog.c:4700 commands/copy.c:1341 storage/file/copydir.c:211
 #, c-format
 msgid "could not close file \"%s\": %m"
-msgstr "non è stato possibile chiudere il file \"%s\": %m"
+msgstr "chiusura del file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:2596 access/transam/xlog.c:4338
 #: access/transam/xlog.c:4432 access/transam/xlog.c:4593
@@ -940,7 +927,7 @@ msgstr "non è stato possibile chiudere il file \"%s\": %m"
 #: utils/init/miscinit.c:1145
 #, c-format
 msgid "could not open file \"%s\": %m"
-msgstr "non è stato possibile aprire il file \"%s\": %m"
+msgstr "apertura del file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:2624 access/transam/xlog.c:4605
 #: access/transam/xlog.c:9596 access/transam/xlog.c:9609
@@ -948,7 +935,7 @@ msgstr "non è stato possibile aprire il file \"%s\": %m"
 #: storage/file/copydir.c:186 utils/adt/genfile.c:138
 #, c-format
 msgid "could not read file \"%s\": %m"
-msgstr "non è stato possibile leggere il file \"%s\": %m"
+msgstr "lettura de file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:2627
 #, c-format
@@ -961,7 +948,7 @@ msgid ""
 "could not link file \"%s\" to \"%s\" (initialization of log file %u, segment "
 "%u): %m"
 msgstr ""
-"non è stato possibile linkare il file \"%s\" a \"%s\" (inizializzazione del "
+"creazione del link del file \"%s\" a \"%s\" fallita (inizializzazione del "
 "file di log %u, segmento %u): %m"
 
 #: access/transam/xlog.c:2758
@@ -978,12 +965,12 @@ msgstr ""
 #: storage/smgr/md.c:1310
 #, c-format
 msgid "could not remove file \"%s\": %m"
-msgstr "non è stato possibile rimuovere il file \"%s\": %m"
+msgstr "rimozione del file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:3017 replication/walreceiver.c:509
 #, c-format
 msgid "could not close log file %u, segment %u: %m"
-msgstr "non è stato possibile chiudere il file di log %u, segmento %u: %m"
+msgstr "chiusura del file di log %u fallita, segmento %u: %m"
 
 #: access/transam/xlog.c:3089 access/transam/xlog.c:3249
 #: access/transam/xlog.c:9420 access/transam/xlog.c:9584
@@ -1007,9 +994,7 @@ msgstr "file di log \"%s\" ripristinato dall'archivio"
 #: access/transam/xlog.c:3287
 #, c-format
 msgid "could not restore file \"%s\" from archive: return code %d"
-msgstr ""
-"non è stato possibile ripristinare il file \"%s\" dall'archivio: codice di "
-"uscita %d"
+msgstr "ripristino del file \"%s\" dall'archivio fallito: codice di uscita %d"
 
 #. translator: First %s represents a recovery.conf parameter name like
 #. "recovery_end_command", and the 2nd is the value of that parameter.
@@ -1023,9 +1008,7 @@ msgstr "%s \"%s\": codice di uscita %d"
 #: access/transam/xlog.c:3511 access/transam/xlog.c:3683
 #, c-format
 msgid "could not open transaction log directory \"%s\": %m"
-msgstr ""
-"non è stato possibile aprire la directory dei log delle transazioni \"%s\": "
-"%m"
+msgstr "apertura della directory dei log delle transazioni \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:3554
 #, c-format
@@ -1047,9 +1030,7 @@ msgstr ""
 #: access/transam/xlog.c:3605
 #, c-format
 msgid "could not remove old transaction log file \"%s\": %m"
-msgstr ""
-"non è stato possibile chiudere il vecchio file di log delle transazioni \"%s"
-"\": %m"
+msgstr "chiusura del vecchio file di log delle transazioni \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:3643 access/transam/xlog.c:3653
 #, c-format
@@ -1064,7 +1045,7 @@ msgstr "creazione della directory dei file WAL mancante \"%s\""
 #: access/transam/xlog.c:3662
 #, c-format
 msgid "could not create missing directory \"%s\": %m"
-msgstr "non è stato possibile creare la directory mancante \"%s\": %m"
+msgstr "creazione della directory mancante \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:3696
 #, c-format
@@ -1246,38 +1227,37 @@ msgstr "la nuova timeline di destinazione %u"
 #: access/transam/xlog.c:4717
 #, c-format
 msgid "could not link file \"%s\" to \"%s\": %m"
-msgstr ""
-"non è stato possibile creare il collegamento il file \"%s\" a \"%s\": %m"
+msgstr "creazione del collegamento il file \"%s\" a \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:4806
 #, c-format
 msgid "could not create control file \"%s\": %m"
-msgstr "non è stato possibile creare il file di controllo \"%s\": %m"
+msgstr "creazione del file di controllo \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:4817 access/transam/xlog.c:5042
 #, c-format
 msgid "could not write to control file: %m"
-msgstr "non è stato possibile scrivere nel file di controllo: %m"
+msgstr "scrittura nel file di controllo fallita: %m"
 
 #: access/transam/xlog.c:4823 access/transam/xlog.c:5048
 #, c-format
 msgid "could not fsync control file: %m"
-msgstr "non è stato possibile eseguire fsync sul file di controllo: %m"
+msgstr "fsync del file di controllo fallito: %m"
 
 #: access/transam/xlog.c:4828 access/transam/xlog.c:5053
 #, c-format
 msgid "could not close control file: %m"
-msgstr "non è stato possibile chiudere il file di controllo: %m"
+msgstr "chiusura del file di controllo fallita: %m"
 
 #: access/transam/xlog.c:4846 access/transam/xlog.c:5031
 #, c-format
 msgid "could not open control file \"%s\": %m"
-msgstr "non è stato possibile aprire il file di controllo \"%s\": %m"
+msgstr "apertura del file di controllo \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:4852
 #, c-format
 msgid "could not read from control file: %m"
-msgstr "non è stato possibile leggere dal file di controllo: %m"
+msgstr "lettura dal file di controllo fallita: %m"
 
 #: access/transam/xlog.c:4865 access/transam/xlog.c:4874
 #: access/transam/xlog.c:4898 access/transam/xlog.c:4905
@@ -1489,28 +1469,22 @@ msgstr ""
 #: access/transam/xlog.c:5335
 #, c-format
 msgid "could not write bootstrap transaction log file: %m"
-msgstr ""
-"non è stato possibile scrivere nel file di log della transazione di "
-"bootstrap: %m"
+msgstr "scrittura nel file di log della transazione di bootstrap fallita: %m"
 
 #: access/transam/xlog.c:5341
 #, c-format
 msgid "could not fsync bootstrap transaction log file: %m"
-msgstr ""
-"non è stato possibile eseguire fsync sul file di log della transazione di "
-"bootstrap: %m"
+msgstr "fsync del file di log della transazione di bootstrap fallito: %m"
 
 #: access/transam/xlog.c:5346
 #, c-format
 msgid "could not close bootstrap transaction log file: %m"
-msgstr ""
-"non è stato possibile chiudere il file di log della transazione di "
-"bootstrap: %m"
+msgstr "chiusura del file di log della transazione di bootstrap fallita: %m"
 
 #: access/transam/xlog.c:5413
 #, c-format
 msgid "could not open recovery command file \"%s\": %m"
-msgstr "non è stato possibile aprire il file di ripristino \"%s\": %m"
+msgstr "apertura del file di ripristino \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:5453 access/transam/xlog.c:5544
 #: access/transam/xlog.c:5555 commands/extension.c:525
@@ -1758,8 +1732,8 @@ msgstr "il record di checkpoint si trova in %X/%X"
 #, c-format
 msgid "could not find redo location referenced by checkpoint record"
 msgstr ""
-"non è stato possibile localizzare la posizione di redo referenziata dal "
-"record di checkpoint"
+"localizzazione della posizione di redo referenziata dal record di checkpoint "
+"fallita"
 
 #: access/transam/xlog.c:6255 access/transam/xlog.c:6262
 #, c-format
@@ -1773,12 +1747,12 @@ msgstr ""
 #: access/transam/xlog.c:6261
 #, c-format
 msgid "could not locate required checkpoint record"
-msgstr "non è stato possibile localizzare il record di checkpoint richiesto"
+msgstr "localizzazione del record di checkpoint richiesto fallita"
 
 #: access/transam/xlog.c:6290 access/transam/xlog.c:6305
 #, c-format
 msgid "could not locate a valid checkpoint record"
-msgstr "non è stato possibile localizzare un record di checkpoint valido"
+msgstr "localizzazione di un record di checkpoint valido fallita"
 
 #: access/transam/xlog.c:6299
 #, c-format
@@ -2049,21 +2023,17 @@ msgstr ""
 #: access/transam/xlog.c:9098 access/transam/xlog.c:9122
 #, c-format
 msgid "could not fsync log file %u, segment %u: %m"
-msgstr ""
-"non è stato possibile eseguire fsync sul file di log %u, segmento %u: %m"
+msgstr "fsync del file di log %u fallito, segmento %u: %m"
 
 #: access/transam/xlog.c:9130
 #, c-format
 msgid "could not fsync write-through log file %u, segment %u: %m"
-msgstr ""
-"non è stato possibile eseguire fsync write-through sul file di log %u, "
-"segmento %u: %m"
+msgstr "fsync write-through sul file di log %u fallito, segmento %u: %m"
 
 #: access/transam/xlog.c:9139
 #, c-format
 msgid "could not fdatasync log file %u, segment %u: %m"
-msgstr ""
-"non è stato possibile eseguire fdatasync sul file di log %u, segmento %u: %m"
+msgstr "fdatasync del file di log %u fallito, segmento %u: %m"
 
 #: access/transam/xlog.c:9195 access/transam/xlog.c:9525
 #, c-format
@@ -2147,7 +2117,7 @@ msgstr ""
 #: access/transam/xlog.c:9444 access/transam/xlog.c:9752
 #, c-format
 msgid "could not write file \"%s\": %m"
-msgstr "non è stato possibile scrivere nel file \"%s\": %m"
+msgstr "scrittura nel file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:9588
 #, c-format
@@ -2253,8 +2223,7 @@ msgstr "Non è stato possibile rinominare \"%s\" in \"%s\": %m."
 #: access/transam/xlog.c:10439 access/transam/xlog.c:10461
 #, c-format
 msgid "could not read from log file %u, segment %u, offset %u: %m"
-msgstr ""
-"non è stato possibile leggere dal file di log %u, segmento %u, offset %u: %m"
+msgstr "lettura dal file di log %u fallita, segmento %u, offset %u: %m"
 
 #: access/transam/xlog.c:10550
 #, c-format
@@ -3461,12 +3430,12 @@ msgstr "Le tabelle temporanee non possono specificare un nome di schema"
 #: catalog/namespace.c:372
 #, c-format
 msgid "could not obtain lock on relation \"%s.%s\""
-msgstr "non è stato possibile ottenere il lock sulla relazione \"%s.%s\""
+msgstr "lock della relazione \"%s.%s\" fallito"
 
 #: catalog/namespace.c:377 commands/lockcmds.c:144
 #, c-format
 msgid "could not obtain lock on relation \"%s\""
-msgstr "non è stato possibile ottenere il lock sulla relazione \"%s\""
+msgstr "lock della relazione \"%s\" fallito"
 
 #: catalog/namespace.c:401 parser/parse_relation.c:842
 #, c-format
@@ -4098,7 +4067,7 @@ msgstr "i tipi a dimensione fissa devono avere immagazzinamento PLAIN"
 #: catalog/pg_type.c:771
 #, c-format
 msgid "could not form array type name for type \"%s\""
-msgstr "non è stato possibile creare il nome per il tipo array del tipo \"%s\""
+msgstr "creazione del nome per il tipo array del tipo \"%s\" fallita"
 
 #: catalog/toasting.c:143
 #, c-format
@@ -4214,7 +4183,7 @@ msgstr ""
 
 #: commands/analyze.c:1553 executor/execQual.c:2837
 msgid "could not convert row type"
-msgstr "non è stato possibile convertire il tipo di riga"
+msgstr "conversione del tipo riga fallita"
 
 #: commands/async.c:546
 #, c-format
@@ -4432,7 +4401,7 @@ msgstr "COPY BINARY non è supportato verso stdout o da stdin"
 #: commands/copy.c:481
 #, c-format
 msgid "could not write to COPY file: %m"
-msgstr "non è stato possibile scrivere nel file COPY: %m"
+msgstr "scrittura nel file COPY fallita: %m"
 
 #: commands/copy.c:493
 #, c-format
@@ -4442,7 +4411,7 @@ msgstr "connessione persa durante COPY verso stdout"
 #: commands/copy.c:534
 #, c-format
 msgid "could not read from COPY file: %m"
-msgstr "non è stato possibile leggere dal file COPY: %m"
+msgstr "lettura dal file COPY fallita: %m"
 
 #: commands/copy.c:550 commands/copy.c:569 commands/copy.c:573
 #: tcop/fastpath.c:291 tcop/postgres.c:349 tcop/postgres.c:385
@@ -4650,7 +4619,7 @@ msgstr "i percorsi relativi non sono consentiti per il COPY verso un file"
 #: commands/copy.c:1419
 #, c-format
 msgid "could not open file \"%s\" for writing: %m"
-msgstr "non è stato possibile aprire il file \"%s\" in scrittura: %m"
+msgstr "apertura del file \"%s\" in scrittura fallita: %m"
 
 #: commands/copy.c:1426 commands/copy.c:2347
 #, c-format
@@ -4706,7 +4675,7 @@ msgstr ""
 #: commands/copy.c:2340 utils/adt/genfile.c:122
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
-msgstr "non è stato possibile aprire il file \"%s\" in lettura: %m"
+msgstr "apertura del file \"%s\" in lettura fallita: %m"
 
 #: commands/copy.c:2366
 #, c-format
@@ -5331,8 +5300,7 @@ msgstr ""
 #: commands/extension.c:471
 #, c-format
 msgid "could not open extension control file \"%s\": %m"
-msgstr ""
-"non è stato possibile aprire il file di controllo dell'estensione \"%s\": %m"
+msgstr "apertura del file di controllo dell'estensione \"%s\" fallita: %m"
 
 #: commands/extension.c:493 commands/extension.c:503
 #, c-format
@@ -6397,7 +6365,7 @@ msgstr "il portale \"%s\" non può essere eseguito"
 #: commands/portalcmds.c:413
 #, c-format
 msgid "could not reposition held cursor"
-msgstr "non è stato possibile riposizionare il cursore held"
+msgstr "riposizionamento del cursore held fallito"
 
 #: commands/prepare.c:71
 #, c-format
@@ -7516,7 +7484,7 @@ msgstr "Usa ALTER FOREIGN TABLE invece."
 #: commands/tablespace.c:608 storage/file/copydir.c:61
 #, c-format
 msgid "could not create directory \"%s\": %m"
-msgstr "non è stato possibile creare la directory \"%s\": %m"
+msgstr "creazione della directory \"%s\" fallita: %m"
 
 #: commands/tablespace.c:201
 #, c-format
@@ -7606,7 +7574,7 @@ msgstr "Crea questa directory per il tablespace prima di riavviare il server."
 #: commands/tablespace.c:571
 #, c-format
 msgid "could not set permissions on directory \"%s\": %m"
-msgstr "non è stato possibile impostare permessi sulla directory \"%s\": %m"
+msgstr "impostazione dei permessi sulla directory \"%s\" fallita: %m"
 
 #: commands/tablespace.c:603
 #, c-format
@@ -7616,12 +7584,12 @@ msgstr "la directory \"%s\" già è in uso come tablespace"
 #: commands/tablespace.c:618 commands/tablespace.c:779
 #, c-format
 msgid "could not remove symbolic link \"%s\": %m"
-msgstr "non è stato possibile rimuovere il link simbolico \"%s\": %m"
+msgstr "rimozione del link simbolico \"%s\" fallita: %m"
 
 #: commands/tablespace.c:628
 #, c-format
 msgid "could not create symbolic link \"%s\": %m"
-msgstr "non è stato possibile creare il link simbolico \"%s\": %m"
+msgstr "creazione del link simbolico \"%s\" fallita: %m"
 
 #: commands/tablespace.c:694 commands/tablespace.c:704
 #: postmaster/postmaster.c:1177 replication/basebackup.c:405
@@ -7629,13 +7597,13 @@ msgstr "non è stato possibile creare il link simbolico \"%s\": %m"
 #: utils/adt/genfile.c:353 utils/adt/misc.c:270 utils/misc/tzparser.c:323
 #, c-format
 msgid "could not open directory \"%s\": %m"
-msgstr "non è stato possibile aprire la directory \"%s\": %m"
+msgstr "apertura della directory \"%s\" fallita: %m"
 
 #: commands/tablespace.c:734 commands/tablespace.c:747
 #: commands/tablespace.c:771
 #, c-format
 msgid "could not remove directory \"%s\": %m"
-msgstr "non è stato possibile rimuovere la directory \"%s\": %m"
+msgstr "rimozione della directory \"%s\" fallita: %m"
 
 #: commands/tablespace.c:1085
 #, c-format
@@ -7645,7 +7613,7 @@ msgstr "Il tablespace \"%s\" non esiste."
 #: commands/tablespace.c:1517
 #, c-format
 msgid "directories for tablespace %u could not be removed"
-msgstr "non è stato possibile rimuovere le directory per il tablespace %u"
+msgstr "rimozioni delle directory per il tablespace %u fallita"
 
 #: commands/tablespace.c:1519
 #, c-format
@@ -7802,8 +7770,7 @@ msgstr "il trigger BEFORE STATEMENT non può restituire un valore"
 #: executor/nodeModifyTable.c:583
 #, c-format
 msgid "could not serialize access due to concurrent update"
-msgstr ""
-"non è stato possibile serializzare l'accesso a causa di modifiche concorrenti"
+msgstr "serializzazione dell'accesso fallita a causa di modifiche concorrenti"
 
 #: commands/trigger.c:4235
 #, c-format
@@ -9019,7 +8986,7 @@ msgstr "non è stato possibile trovare un operatore di confronto per il tipo %s"
 #: executor/execUtils.c:1304
 #, c-format
 msgid "could not create exclusion constraint \"%s\""
-msgstr "non è stato possibile creare il vincolo di esclusione \"%s\""
+msgstr "creazione del vincolo di esclusione \"%s\" fallita"
 
 #: executor/execUtils.c:1306
 #, c-format
@@ -9060,8 +9027,8 @@ msgid ""
 "could not determine actual result type for function declared to return type "
 "%s"
 msgstr ""
-"non è stato possibile determinare il tipo realmente restituito dalla "
-"funzione dichiarata con tipo restituito %s"
+"non è stato possibile determinare il tipo reale restituito dalla funzione "
+"dichiarata con tipo restituito %s"
 
 #: executor/functions.c:1330
 #, c-format
@@ -9128,18 +9095,17 @@ msgstr "l'aggregato %u deve avere tipi di input e transizione compatibili"
 #: executor/nodeHashjoin.c:822 executor/nodeHashjoin.c:852
 #, c-format
 msgid "could not rewind hash-join temporary file: %m"
-msgstr ""
-"non è stato possibile riavvolgere il file temporaneo per l'hash-join: %m"
+msgstr "riavvolgimento del file temporaneo per l'hash-join fallito: %m"
 
 #: executor/nodeHashjoin.c:887 executor/nodeHashjoin.c:893
 #, c-format
 msgid "could not write to hash-join temporary file: %m"
-msgstr "non è stato possibile scrivere sul file temporaneo per l'hash-join: %m"
+msgstr "scrittura nel file temporaneo per l'hash-join fallita: %m"
 
 #: executor/nodeHashjoin.c:927 executor/nodeHashjoin.c:937
 #, c-format
 msgid "could not read from hash-join temporary file: %m"
-msgstr "non è stato possibile leggere dal file temporaneo per l'hash-join: %m"
+msgstr "lettura dal file temporaneo per l'hash-join fallita: %m"
 
 #: executor/nodeLimit.c:253
 #, c-format
@@ -9562,13 +9528,13 @@ msgstr ""
 msgid ""
 "could not open configuration file \"%s\": maximum nesting depth exceeded"
 msgstr ""
-"non è stato possibile aprire il file di configurazione \"%s\": massima "
-"profondità di annidamento raggiunta"
+"apertura del file di configurazione \"%s\" fallita: massima profondità di "
+"annidamento raggiunta"
 
 #: guc-file.l:430 libpq/hba.c:1721
 #, c-format
 msgid "could not open configuration file \"%s\": %m"
-msgstr "non è stato possibile aprire il file di configurazione \"%s\": %m"
+msgstr "apertura del file di configurazione \"%s\" fallita: %m"
 
 #: guc-file.l:436
 #, c-format
@@ -9847,34 +9813,31 @@ msgstr "non è stato possibile ottenere il token dal contesto di sicurezza SSPI"
 #: libpq/auth.c:1670
 #, c-format
 msgid "could not create socket for Ident connection: %m"
-msgstr "non è stato possibile creare il socket per la connessione Ident: %m"
+msgstr "creazione del socket per la connessione Ident fallita: %m"
 
 #: libpq/auth.c:1685
 #, c-format
 msgid "could not bind to local address \"%s\": %m"
-msgstr "non è stato possibile effettuare bind su indirizzo locale \"%s\": %m"
+msgstr "bind sull'indirizzo locale \"%s\" fallito: %m"
 
 #: libpq/auth.c:1697
 #, c-format
 msgid "could not connect to Ident server at address \"%s\", port %s: %m"
-msgstr ""
-"non è stato possibile connettersi al server Ident all'indirizzo \"%s\", "
-"porta %s: %m"
+msgstr "connessione al server Ident all'indirizzo \"%s\", porta %s fallita: %m"
 
 #: libpq/auth.c:1717
 #, c-format
 msgid "could not send query to Ident server at address \"%s\", port %s: %m"
 msgstr ""
-"non è stato possibile inviare la query al server Ident all'indirizzo \"%s\", "
-"porta %s: %m"
+"invio della query al server Ident all'indirizzo \"%s\", porta %s fallito: %m"
 
 #: libpq/auth.c:1732
 #, c-format
 msgid ""
 "could not receive response from Ident server at address \"%s\", port %s: %m"
 msgstr ""
-"non è stato possibile ricevere una risposta dal server Ident all'indirizzo "
-"\"%s\", porta %s: %m"
+"ricezione della risposta dal server Ident all'indirizzo \"%s\", porta %s "
+"fallita: %m"
 
 #: libpq/auth.c:1742
 #, c-format
@@ -9910,7 +9873,7 @@ msgstr "errore dal livello PAM sottostante: %s"
 #: libpq/auth.c:1956
 #, c-format
 msgid "could not create PAM authenticator: %s"
-msgstr "non è stato possibile creare un autenticatore PAM: %s"
+msgstr "creazione dell'autenticatore PAM fallita: %s"
 
 #: libpq/auth.c:1967
 #, c-format
@@ -9935,30 +9898,27 @@ msgstr "pam_acct_mgmt fallita: %s"
 #: libpq/auth.c:2011
 #, c-format
 msgid "could not release PAM authenticator: %s"
-msgstr "non è stato possibile rilasciare l'autenticatore PAM: %s"
+msgstr "rilascio dell'autenticatore PAM fallito: %s"
 
 #: libpq/auth.c:2044 libpq/auth.c:2048
 #, c-format
 msgid "could not initialize LDAP: error code %d"
-msgstr "non è stato possibile inizializzare LDAP: codice errore %d"
+msgstr "inizializzazione LDAP fallita: codice errore %d"
 
 #: libpq/auth.c:2058
 #, c-format
 msgid "could not set LDAP protocol version: error code %d"
-msgstr ""
-"non è stato possibile impostare versione del protocollo LDAP: codice errore "
-"%d"
+msgstr "impostazione versione del protocollo LDAP fallita: codice errore %d"
 
 #: libpq/auth.c:2087
 #, c-format
 msgid "could not load wldap32.dll"
-msgstr "non è stato possibile caricare wldap32.dll"
+msgstr "caricamento wldap32.dll fallito"
 
 #: libpq/auth.c:2095
 #, c-format
 msgid "could not load function _ldap_start_tls_sA in wldap32.dll"
-msgstr ""
-"non è stato possibile caricare la funzione _ldap_start_tls_sA in wldap32.dll"
+msgstr "caricamento della funzione _ldap_start_tls_sA in wldap32.dll fallito"
 
 #: libpq/auth.c:2096
 #, c-format
@@ -9968,7 +9928,7 @@ msgstr "LDAP su SSL non è supportato su questa piattaforma."
 #: libpq/auth.c:2111
 #, c-format
 msgid "could not start LDAP TLS session: error code %d"
-msgstr "non è stato possibile avviare una sessione LDAP TLS: codice errore %d"
+msgstr "avvio della sessione LDAP TLS fallito: codice errore %d"
 
 #: libpq/auth.c:2133
 #, c-format
@@ -9986,15 +9946,13 @@ msgid ""
 "could not perform initial LDAP bind for ldapbinddn \"%s\" on server \"%s\": "
 "error code %d"
 msgstr ""
-"non è stato possibile effettuare il bind LDAP iniziale per ldapbinddn \"%s\" "
-"sul server \"%s\": codice errore %d"
+"bind iniziale LDAP per ldapbinddn \"%s\" sul server \"%s\" fallito: codice "
+"errore %d"
 
 #: libpq/auth.c:2225
 #, c-format
 msgid "could not search LDAP for filter \"%s\" on server \"%s\": error code %d"
-msgstr ""
-"non è stato possibile cercare il filtro \"%s\" in LDAP sul server \"%s\": "
-"codice errore %d"
+msgstr "filtro \"%s\" non trovato in LDAP sul server \"%s\": codice errore %d"
 
 #: libpq/auth.c:2235
 #, c-format
@@ -10016,16 +9974,12 @@ msgstr ""
 #, c-format
 msgid ""
 "could not get dn for the first entry matching \"%s\" on server \"%s\": %s"
-msgstr ""
-"non è stato possibile trovare dn per il primo risultato di \"%s\" sul server "
-"\"%s\": %s"
+msgstr "dn per il primo risultato di \"%s\" non trovato sul server \"%s\": %s"
 
 #: libpq/auth.c:2276
 #, c-format
 msgid "could not unbind after searching for user \"%s\" on server \"%s\": %s"
-msgstr ""
-"non è stato possibile effettuare unbind dopo aver cercato l'utente \"%s\" "
-"sul server \"%s\": %s"
+msgstr "unbind fallito dopo aver cercato l'utente \"%s\" sul server \"%s\": %s"
 
 #: libpq/auth.c:2313
 #, c-format
@@ -10055,9 +10009,7 @@ msgstr "segreto RADIUS non specificato"
 #: libpq/auth.c:2488 libpq/hba.c:1543
 #, c-format
 msgid "could not translate RADIUS server name \"%s\" to address: %s"
-msgstr ""
-"non è stato possibile convertire il nome del server RADIUS \"%s\" in "
-"indirizzo: %s"
+msgstr "conversione del nome del server RADIUS \"%s\" in indirizzo fallita: %s"
 
 #: libpq/auth.c:2516
 #, c-format
@@ -10069,27 +10021,27 @@ msgstr ""
 #: libpq/auth.c:2527
 #, c-format
 msgid "could not generate random encryption vector"
-msgstr "non è stato possibile generare un vettore di criptaggio casuale"
+msgstr "generazione del vettore di criptaggio casuale fallita"
 
 #: libpq/auth.c:2550
 #, c-format
 msgid "could not perform MD5 encryption of password"
-msgstr "non è stato possibile effettuare il criptaggio MD5 della password"
+msgstr "criptaggio MD5 della password fallito"
 
 #: libpq/auth.c:2572
 #, c-format
 msgid "could not create RADIUS socket: %m"
-msgstr "non è stato possibile creare socket RADIUS: %m"
+msgstr "creazione del socket RADIUS fallita: %m"
 
 #: libpq/auth.c:2593
 #, c-format
 msgid "could not bind local RADIUS socket: %m"
-msgstr "non è stato possibile effettuare il bind del socket RADIUS: %m"
+msgstr "bind del socket RADIUS fallito: %m"
 
 #: libpq/auth.c:2603
 #, c-format
 msgid "could not send RADIUS packet: %m"
-msgstr "non è stato possibile inviare pacchetto RADIUS: %m"
+msgstr "invio del pacchetto RADIUS fallito: %m"
 
 #: libpq/auth.c:2632 libpq/auth.c:2657
 #, c-format
@@ -10099,12 +10051,12 @@ msgstr "tempo scaduto in attesa della risposta RADIUS"
 #: libpq/auth.c:2650
 #, c-format
 msgid "could not check status on RADIUS socket: %m"
-msgstr "non è stato possibile controllare lo stato sul socket RADIUS: %m"
+msgstr "controllo dello stato sul socket RADIUS fallito: %m"
 
 #: libpq/auth.c:2679
 #, c-format
 msgid "could not read RADIUS response: %m"
-msgstr "non è stato possibile leggere la risposta RADIUS: %m"
+msgstr "lettura della risposta RADIUS fallita: %m"
 
 #: libpq/auth.c:2691 libpq/auth.c:2695
 #, c-format
@@ -10130,8 +10082,7 @@ msgstr ""
 #: libpq/auth.c:2744
 #, c-format
 msgid "could not perform MD5 encryption of received packet"
-msgstr ""
-"non è stato possibile effettuare il criptaggio MD5 dei pacchetti ricevuti"
+msgstr "criptaggio MD5 dei pacchetti ricevuti fallito"
 
 #: libpq/auth.c:2753
 #, c-format
@@ -10173,12 +10124,12 @@ msgstr "Chiunque può invece usare lo_import() lato client fornito da libpq."
 #: libpq/be-fsstubs.c:405
 #, c-format
 msgid "could not open server file \"%s\": %m"
-msgstr "non è stato possibile aprire il file server \"%s\": %m"
+msgstr "apertura del file del server \"%s\" fallita: %m"
 
 #: libpq/be-fsstubs.c:427
 #, c-format
 msgid "could not read server file \"%s\": %m"
-msgstr "non è stato possibile leggere dal file server \"%s\": %m"
+msgstr "lettura dal file del server \"%s\" fallita: %m"
 
 #: libpq/be-fsstubs.c:457
 #, c-format
@@ -10193,12 +10144,12 @@ msgstr "Chiunque può invece usare lo_export() lato client fornito da libpq."
 #: libpq/be-fsstubs.c:483
 #, c-format
 msgid "could not create server file \"%s\": %m"
-msgstr "non è stato possibile creare il file server \"%s\": %m"
+msgstr "creazione del file del server \"%s\" fallita: %m"
 
 #: libpq/be-fsstubs.c:495
 #, c-format
 msgid "could not write server file \"%s\": %m"
-msgstr "non è stato possibile scrivere sul file server \"%s\": %m"
+msgstr "scrittura del file del server \"%s\" fallita: %m"
 
 #: libpq/be-secure.c:284 libpq/be-secure.c:379
 #, c-format
@@ -10223,18 +10174,17 @@ msgstr "SSL non è riuscito a inviare la richiesta di rinegoziazione"
 #: libpq/be-secure.c:737
 #, c-format
 msgid "could not create SSL context: %s"
-msgstr "non è stato possibile creare il contesto SSL: %s"
+msgstr "creazione del contesto SSL fallita: %s"
 
 #: libpq/be-secure.c:753
 #, c-format
 msgid "could not load server certificate file \"%s\": %s"
-msgstr ""
-"non è stato possibile caricare il file di certificato del server \"%s\": %s"
+msgstr "caricamento del file di certificato del server \"%s\" fallito: %s"
 
 #: libpq/be-secure.c:759
 #, c-format
 msgid "could not access private key file \"%s\": %m"
-msgstr "non è stato possibile accedere al file della chiave privata \"%s\": %m"
+msgstr "accesso fallito al file della chiave privata \"%s\": %m"
 
 #: libpq/be-secure.c:774
 #, c-format
@@ -10249,7 +10199,7 @@ msgstr "Il permesso dovrebbe essere u=rw (0600) o inferiore."
 #: libpq/be-secure.c:783
 #, c-format
 msgid "could not load private key file \"%s\": %s"
-msgstr "non è stato possibile caricare il fle della chiave privata \"%s\": %s"
+msgstr "caricamento del file della chiave privata \"%s\" fallito: %s"
 
 #: libpq/be-secure.c:788
 #, c-format
@@ -10259,8 +10209,7 @@ msgstr "controllo della chiave privata fallito: %s"
 #: libpq/be-secure.c:808
 #, c-format
 msgid "could not load root certificate file \"%s\": %s"
-msgstr ""
-"non è stato possibile caricare il file del certificato radice \"%s\": %s"
+msgstr "caricamento del file del certificato radice \"%s\" fallito: %s"
 
 #: libpq/be-secure.c:832
 #, c-format
@@ -10276,33 +10225,33 @@ msgstr "La libreria SSL non supporta le liste di revoca dei certificati."
 #, c-format
 msgid "could not load SSL certificate revocation list file \"%s\": %s"
 msgstr ""
-"non è stato possibile caricare il file di lista di revoche di certificati "
-"SSL \"%s\": %s"
+"caricamento del file di lista di revoche di certificati SSL \"%s\" fallito: "
+"%s"
 
 #: libpq/be-secure.c:884
 #, c-format
 msgid "could not initialize SSL connection: %s"
-msgstr "non è stato possibile inizializzare la connessione SSL: %s"
+msgstr "inizializzazione della connessione SSL fallita: %s"
 
 #: libpq/be-secure.c:893
 #, c-format
 msgid "could not set SSL socket: %s"
-msgstr "non è stato possibile impostare il socket SSH: %s"
+msgstr "impostazione del socket SSL fallita: %s"
 
 #: libpq/be-secure.c:919
 #, c-format
 msgid "could not accept SSL connection: %m"
-msgstr "non è stato possibile accettare connessioni SSH: %m"
+msgstr "accettazione della connessione SSL fallita: %m"
 
 #: libpq/be-secure.c:923 libpq/be-secure.c:934
 #, c-format
 msgid "could not accept SSL connection: EOF detected"
-msgstr "non è stato possibile accettare connessioni SSH: fine file individuata"
+msgstr "accettazione della connessione SSL fallita: fine file individuata"
 
 #: libpq/be-secure.c:928
 #, c-format
 msgid "could not accept SSL connection: %s"
-msgstr "non è stato possibile accettare connessioni SSH: %s"
+msgstr "accettazione della connessione SSL fallita: %s"
 
 #: libpq/be-secure.c:984
 #, c-format
@@ -10332,13 +10281,13 @@ msgstr "token del file di autenticazione troppo lungo, saltato: \"%s\""
 #, c-format
 msgid "could not open secondary authentication file \"@%s\" as \"%s\": %m"
 msgstr ""
-"non è stato possibile aprire il file secondario di autenticazione \"@%s\" "
-"come \"%s\": %m"
+"apertura del file secondario di autenticazione \"@%s\" come \"%s\" fallita: "
+"%m"
 
 #: libpq/hba.c:595
 #, c-format
 msgid "could not translate host name \"%s\" to address: %s"
-msgstr "non è stato possibile convertire il nome host \"%s\" in indirizzo: %s"
+msgstr "conversione del nome host \"%s\" in indirizzo fallita: %s"
 
 #. translator: the second %s is a list of auth methods
 #: libpq/hba.c:746
@@ -10648,26 +10597,23 @@ msgstr ""
 #: libpq/hba.c:2069
 #, c-format
 msgid "could not open usermap file \"%s\": %m"
-msgstr "non è stato possibile aprire il file usermap \"%s\": %m"
+msgstr "apertura del file usermap \"%s\" fallita: %m"
 
 #: libpq/pqcomm.c:306
 #, c-format
 msgid "could not translate host name \"%s\", service \"%s\" to address: %s"
 msgstr ""
-"non è stato possibile convertire il nome host \"%s\", servizio \"%s\" in "
-"indirizzo: %s"
+"conversione del nome host \"%s\", servizio \"%s\" in indirizzo fallita: %s"
 
 #: libpq/pqcomm.c:310
 #, c-format
 msgid "could not translate service \"%s\" to address: %s"
-msgstr "non è stato possibile convertire il servizio \"%s\" in indirizzo: %s"
+msgstr "conversione del servizio \"%s\" in indirizzo fallita: %s"
 
 #: libpq/pqcomm.c:337
 #, c-format
 msgid "could not bind to all requested addresses: MAXLISTEN (%d) exceeded"
-msgstr ""
-"non è stato possibile effettuare il bind di tutti gli indirizzi richiesti: "
-"MAXLISTEN (%d) superato"
+msgstr "bind a tutti gli indirizzi richiesti fallito: MAXLISTEN (%d) superato"
 
 #: libpq/pqcomm.c:346
 msgid "IPv4"
@@ -10706,7 +10652,7 @@ msgstr "setsockopt(IPV6_V6ONLY) fallito: %m"
 #: libpq/pqcomm.c:430
 #, c-format
 msgid "could not bind %s socket: %m"
-msgstr "non è stato possibile effettuare il bind del socket %s: %m"
+msgstr "bind del socket %s fallito: %m"
 
 #: libpq/pqcomm.c:433
 #, c-format
@@ -10730,7 +10676,7 @@ msgstr ""
 #: libpq/pqcomm.c:469
 #, c-format
 msgid "could not listen on %s socket: %m"
-msgstr "non è stato possibile ascoltare sul socket %s: %m"
+msgstr "ascolto sul socket %s fallito: %m"
 
 #: libpq/pqcomm.c:554
 #, c-format
@@ -10740,33 +10686,32 @@ msgstr "il gruppo \"%s\" non esiste"
 #: libpq/pqcomm.c:564
 #, c-format
 msgid "could not set group of file \"%s\": %m"
-msgstr "non è stato possibile impostare il gruppo del file \"%s\""
+msgstr "impostazione del gruppo del file \"%s\" fallita: %m"
 
 #: libpq/pqcomm.c:575
 #, c-format
 msgid "could not set permissions of file \"%s\": %m"
-msgstr "non è stato possibile impostare i permessi del file \"%s\": %m"
+msgstr "impostazione dei permessi del file \"%s\" fallita: %m"
 
 #: libpq/pqcomm.c:605
 #, c-format
 msgid "could not accept new connection: %m"
-msgstr "non è stato possibile accettare nuove connessioni: %m"
+msgstr "impossibile accettare la nuova connessione: %m"
 
 #: libpq/pqcomm.c:773
 #, c-format
 msgid "could not set socket to non-blocking mode: %m"
-msgstr ""
-"non è stato possibile impostare il socket in modalità non bloccante: %m"
+msgstr "impostazione del socket in modalità non bloccante fallita: %m"
 
 #: libpq/pqcomm.c:779
 #, c-format
 msgid "could not set socket to blocking mode: %m"
-msgstr "non è stato possibile impostare il socket in modalità bloccante: %m"
+msgstr "impostazione del socket in modalità bloccante fallita: %m"
 
 #: libpq/pqcomm.c:831 libpq/pqcomm.c:921
 #, c-format
 msgid "could not receive data from client: %m"
-msgstr "non è stato possibile ricevere dati dal client: %m"
+msgstr "ricezione dati dal client fallita: %m"
 
 #: libpq/pqcomm.c:1072
 #, c-format
@@ -10786,7 +10731,7 @@ msgstr "messaggio incompleto dal client"
 #: libpq/pqcomm.c:1245
 #, c-format
 msgid "could not send data to client: %m"
-msgstr "non è stato possibile inviare dati al client: %m"
+msgstr "invio dati al client fallito: %m"
 
 #: libpq/pqformat.c:436
 #, c-format
@@ -11793,7 +11738,7 @@ msgstr "in %s i tipi %s e %s non combaciano"
 #: parser/parse_coerce.c:1288
 #, c-format
 msgid "%s could not convert type %s to %s"
-msgstr "in %s non è stato possibile convertire il tipo %s in %s"
+msgstr "in %s conversione del tipo %s in %s fallita"
 
 #: parser/parse_coerce.c:1590
 #, c-format
@@ -11843,8 +11788,8 @@ msgstr ""
 #, c-format
 msgid "could not determine polymorphic type because input has type \"unknown\""
 msgstr ""
-"non è stato possibile determinare il tipo polimorfico perché l'input è di "
-"tipo \"unknown\""
+"determinazione del tipo polimorfico fallita perché l'input è di tipo "
+"\"unknown\""
 
 #: parser/parse_coerce.c:1742
 #, c-format
@@ -11859,8 +11804,7 @@ msgstr "il tipo associato ad anyenum non è una enumerazione: %s"
 #: parser/parse_coerce.c:1792 parser/parse_coerce.c:1822
 #, c-format
 msgid "could not find range type for data type %s"
-msgstr ""
-"non è stato possibile trovare il tipo di intervallo per il tipo di dato %s"
+msgstr "tipo dell'intervallo non trovato per il tipo di dato %s"
 
 #: parser/parse_collate.c:214 parser/parse_collate.c:538
 #, c-format
@@ -12023,8 +11967,7 @@ msgstr "la colonna \"%s\" non è stata trovata nel tipo di dato %s"
 #: parser/parse_expr.c:382
 #, c-format
 msgid "could not identify column \"%s\" in record data type"
-msgstr ""
-"non è stato possibile identificare la colonna \"%s\" nel tipo di dato record"
+msgstr "la colonna \"%s\" non identificata nel tipo di dato record"
 
 #: parser/parse_expr.c:388
 #, c-format
@@ -12095,8 +12038,7 @@ msgstr ""
 #: parser/parse_expr.c:1619
 #, c-format
 msgid "could not find element type for data type %s"
-msgstr ""
-"non è stato possibile trovare il tipo dell'elemento per il tipo di dato %s"
+msgstr "tipo dell'elemento non trovato per il tipo di dato %s"
 
 #: parser/parse_expr.c:1832
 #, c-format
@@ -12332,8 +12274,7 @@ msgstr "Usa un operatore di ordinamento esplicito, oppure modifica la query."
 #: utils/adt/arrayfuncs.c:3694 utils/adt/rowtypes.c:1157
 #, c-format
 msgid "could not identify an equality operator for type %s"
-msgstr ""
-"non è stato possibile trovare un operatore di uguaglianza per il tipo %s"
+msgstr "operatore di uguaglianza per il tipo %s non trovato"
 
 #: parser/parse_oper.c:475
 #, c-format
@@ -12835,7 +12776,7 @@ msgstr "select() fallita: %m"
 #: port/pg_sema.c:111 port/sysv_sema.c:111
 #, c-format
 msgid "could not create semaphores: %m"
-msgstr "non è stato possibile creare semafori: %m"
+msgstr "creazione dei semafori fallita: %m"
 
 #: port/pg_sema.c:112 port/sysv_sema.c:112
 #, c-format
@@ -12875,7 +12816,7 @@ msgstr ""
 #: port/pg_shmem.c:144 port/sysv_shmem.c:144
 #, c-format
 msgid "could not create shared memory segment: %m"
-msgstr "non è stato possibile creare il segmento di memoria condivisa: %m"
+msgstr "creazione del segmento di memoria condivisa fallita: %m"
 
 #: port/pg_shmem.c:145 port/sysv_shmem.c:145
 #, c-format
@@ -12963,23 +12904,22 @@ msgstr ""
 #, c-format
 msgid "could not load dbghelp.dll, cannot write crash dump\n"
 msgstr ""
-"non è stato possibile caricare dbghelp.dll, impossibile salvare il crash "
-"dump\n"
+"caricamento di dbghelp.dll fallito, impossibile salvare il crash dump\n"
 
 #: port/win32/crashdump.c:116
 #, c-format
 msgid ""
 "could not load required functions in dbghelp.dll, cannot write crash dump\n"
 msgstr ""
-"non è stato possibile caricare la funzione richiesta in dbghelp.dll, "
-"impossibile salvare il crash dump\n"
+"caricamento della funzione richiesta in dbghelp.dll fallito, impossibile "
+"salvare il crash dump\n"
 
 #: port/win32/crashdump.c:147
 #, c-format
 msgid "could not open crash dump file \"%s\" for writing: error code %lu\n"
 msgstr ""
-"non è stato possibile aprire il file del crash dump \"%s\" in scrittura: "
-"codice errore %lu\n"
+"apertura del file del crash dump \"%s\" in scrittura fallito: codice errore "
+"%lu\n"
 
 #: port/win32/crashdump.c:154
 #, c-format
@@ -12989,15 +12929,12 @@ msgstr "crash dump salvato nel file \"%s\"\n"
 #: port/win32/crashdump.c:156
 #, c-format
 msgid "could not write crash dump to file \"%s\": error code %lu\n"
-msgstr ""
-"non è stato possibile scrivere il crash dump nel file \"%s\": codice errore "
-"%lu\n"
+msgstr "scrittura del crash dump nel file \"%s\" fallito: codice errore %lu\n"
 
 #: port/win32/security.c:43
 #, c-format
 msgid "could not open process token: error code %lu\n"
-msgstr ""
-"non è stato possibile aprire il token del processo: codice errore %lu\n"
+msgstr "apertura del token del processo fallita: codice errore %lu\n"
 
 #: port/win32/security.c:63
 #, c-format
@@ -13017,50 +12954,47 @@ msgstr ""
 #, c-format
 msgid "could not create signal listener pipe for PID %d: error code %lu"
 msgstr ""
-"non è stato possibile creare la pipe di ascolto dei segnali per il PID %d: "
-"codice errore %lu"
+"creazione della pipe di ascolto dei segnali per il PID %d fallita: codice "
+"errore %lu"
 
 #: port/win32/signal.c:269 port/win32/signal.c:301
 #, c-format
 msgid "could not create signal listener pipe: error code %lu; retrying\n"
 msgstr ""
-"non è stato possibile creare la pipe di ascolto dei segnali: codice errore "
-"%lu; sto riprovando\n"
+"creazione della pipe di ascolto dei segnali fallita: codice errore %lu; sto "
+"riprovando\n"
 
 #: port/win32/signal.c:312
 #, c-format
 msgid "could not create signal dispatch thread: error code %lu\n"
 msgstr ""
-"non è stato possibile creare il thread per la distribuzione dei segnali: "
-"codice errore %lu\n"
+"creazione del thread per la distribuzione dei segnali fallita: codice errore "
+"%lu\n"
 
 #: port/win32_sema.c:94
 #, c-format
 msgid "could not create semaphore: error code %lu"
-msgstr "non è stato possibile creare il semaforo: codice errore %lu"
+msgstr "creazione del semaforo fallita: codice errore %lu"
 
 #: port/win32_sema.c:165
 #, c-format
 msgid "could not lock semaphore: error code %lu"
-msgstr "non è stato possibile bloccare il semaforo: codice errore %lu"
+msgstr "lock del semaforo fallito: codice errore %lu"
 
 #: port/win32_sema.c:178
 #, c-format
 msgid "could not unlock semaphore: error code %lu"
-msgstr "non è stato possibile sbloccare il semaforo: codice errore %lu"
+msgstr "unlock del semaforo fallito: codice errore %lu"
 
 #: port/win32_sema.c:207
 #, c-format
 msgid "could not try-lock semaphore: error code %lu"
-msgstr ""
-"non è stato possibile provare a bloccare il semaforo: codice errore %lu"
+msgstr "try-lock del semaforo fallito: codice errore %lu"
 
 #: port/win32_shmem.c:168 port/win32_shmem.c:203 port/win32_shmem.c:224
 #, c-format
 msgid "could not create shared memory segment: error code %lu"
-msgstr ""
-"non è stato possibile creare il segmento di memoria condivisa: codice errore "
-"%lu"
+msgstr "creazione del segmento di memoria condivisa fallito: codice errore %lu"
 
 #: port/win32_shmem.c:169
 #, c-format
@@ -13095,9 +13029,7 @@ msgstr "La chiamata di sistema fallita era MapViewOfFileEx."
 #: postmaster/autovacuum.c:362
 #, c-format
 msgid "could not fork autovacuum launcher process: %m"
-msgstr ""
-"non è stato possibile effettuare il fork del processo di esecuzione di "
-"autovacuum: %m"
+msgstr "fork del processo di esecuzione di autovacuum fallito: %m"
 
 #: postmaster/autovacuum.c:407
 #, c-format
@@ -13112,9 +13044,7 @@ msgstr "arresto dell'esecutore di autovacuum"
 #: postmaster/autovacuum.c:1420
 #, c-format
 msgid "could not fork autovacuum worker process: %m"
-msgstr ""
-"non è stato possibile effettuare il fork del processo di lavoro di "
-"autovacuum: %m"
+msgstr "fork del processo di lavoro di autovacuum fallito: %m"
 
 #: postmaster/autovacuum.c:1638
 #, c-format
@@ -13209,7 +13139,7 @@ msgstr "archive_mode abilitato, ma archive_command non è impostato"
 #, c-format
 msgid "transaction log file \"%s\" could not be archived: too many failures"
 msgstr ""
-"non è stato possibile archiviare il file di log delle transazioni \"%s\" "
+"non è stato possibile archiviare il file di log delle transazioni \"%s\": "
 "troppi fallimenti"
 
 #: postmaster/pgarch.c:608
@@ -13259,13 +13189,12 @@ msgstr "file di log delle transazioni archiviato \"%s\""
 #: postmaster/pgarch.c:701
 #, c-format
 msgid "could not open archive status directory \"%s\": %m"
-msgstr ""
-"non è stato possibile aprire la directory di stato dell'archivio \"%s\": %m"
+msgstr "apertura della directory dello stato dell'archivio \"%s\" fallita: %m"
 
 #: postmaster/pgstat.c:333
 #, c-format
 msgid "could not resolve \"localhost\": %s"
-msgstr "non è stato possibile risolvere \"localhost\": %s"
+msgstr "risoluzione di \"localhost\" fallita: %s"
 
 #: postmaster/pgstat.c:356
 #, c-format
@@ -13277,15 +13206,12 @@ msgstr ""
 #: postmaster/pgstat.c:365
 #, c-format
 msgid "could not create socket for statistics collector: %m"
-msgstr ""
-"non è stato possibile creare il socket per il raccoglitore di statistiche: %m"
+msgstr "creazione del socket per il raccoglitore di statistiche fallita: %m"
 
 #: postmaster/pgstat.c:377
 #, c-format
 msgid "could not bind socket for statistics collector: %m"
-msgstr ""
-"non è stato possibile eseguire il bind del socket per il raccoglitore di "
-"statistiche: %m"
+msgstr "bind del socket per il raccoglitore di statistiche fallito: %m"
 
 #: postmaster/pgstat.c:388
 #, c-format
@@ -13297,16 +13223,14 @@ msgstr ""
 #: postmaster/pgstat.c:404
 #, c-format
 msgid "could not connect socket for statistics collector: %m"
-msgstr ""
-"non è stato possibile connettersi al socket per il raccoglitore statistiche: "
-"%m"
+msgstr "connessione al socket per il raccoglitore statistiche fallita: %m"
 
 #: postmaster/pgstat.c:425
 #, c-format
 msgid "could not send test message on socket for statistics collector: %m"
 msgstr ""
-"non è stato possibile inviare il messaggio di prova al socket per il "
-"raccoglitore di statistiche: %m"
+"invio del messaggio di prova al socket per il raccoglitore di statistiche "
+"fallito: %m"
 
 #: postmaster/pgstat.c:451
 #, c-format
@@ -13324,8 +13248,8 @@ msgstr ""
 #, c-format
 msgid "could not receive test message on socket for statistics collector: %m"
 msgstr ""
-"non è stato possibile ricevere il messaggio di prova sul socket per il "
-"raccoglitore di statistiche: %m"
+"ricezione del messaggio di prova sul socket per il raccoglitore di "
+"statistiche fallito: %m"
 
 #: postmaster/pgstat.c:491
 #, c-format
@@ -13337,8 +13261,8 @@ msgstr ""
 #, c-format
 msgid "could not set statistics collector socket to nonblocking mode: %m"
 msgstr ""
-"non è stato possibile impostare il socket per il raccoglitore di statistiche "
-"in modalità non bloccante: %m"
+"impostazione del socket per il raccoglitore di statistiche in modalità non "
+"bloccante fallita: %m"
 
 #: postmaster/pgstat.c:524
 #, c-format
@@ -13350,8 +13274,7 @@ msgstr ""
 #: postmaster/pgstat.c:626
 #, c-format
 msgid "could not fork statistics collector: %m"
-msgstr ""
-"non è stato possibile eseguire il fork del raccoglitore di statistiche: %m"
+msgstr "fork del raccoglitore di statistiche fallito: %m"
 
 #: postmaster/pgstat.c:1162 postmaster/pgstat.c:1186 postmaster/pgstat.c:1217
 #, c-format
@@ -13372,27 +13295,22 @@ msgstr "L'obiettivo deve essere \"bgwriter\"."
 #: postmaster/pgstat.c:3139
 #, c-format
 msgid "could not read statistics message: %m"
-msgstr "non è stato possibile leggere il messaggio delle statistiche: %m"
+msgstr "lettura del messaggio delle statistiche fallito: %m"
 
 #: postmaster/pgstat.c:3456
 #, c-format
 msgid "could not open temporary statistics file \"%s\": %m"
-msgstr ""
-"non è stato possibile aprire il file temporaneo delle statistiche \"%s\": %m"
+msgstr "apertura del file temporaneo delle statistiche \"%s\" fallita: %m"
 
 #: postmaster/pgstat.c:3533
 #, c-format
 msgid "could not write temporary statistics file \"%s\": %m"
-msgstr ""
-"non è stato possibile scrivere nel file temporaneo delle statistiche \"%s\": "
-"%m"
+msgstr "scrittura del file temporaneo delle statistiche \"%s\" fallita: %m"
 
 #: postmaster/pgstat.c:3542
 #, c-format
 msgid "could not close temporary statistics file \"%s\": %m"
-msgstr ""
-"non è stato possibile chiudere il file temporaneo delle statistiche \"%s\": "
-"%m"
+msgstr "chiusura del file temporaneo delle statistiche \"%s\" fallita: %m"
 
 #: postmaster/pgstat.c:3550
 #, c-format
@@ -13404,7 +13322,7 @@ msgstr ""
 #: postmaster/pgstat.c:3656 postmaster/pgstat.c:3885
 #, c-format
 msgid "could not open statistics file \"%s\": %m"
-msgstr "non è stato possibile aprire il file delle statistiche \"%s\": %m"
+msgstr "apertura del file delle statistiche \"%s\" fallita: %m"
 
 #: postmaster/pgstat.c:3668 postmaster/pgstat.c:3678 postmaster/pgstat.c:3700
 #: postmaster/pgstat.c:3715 postmaster/pgstat.c:3778 postmaster/pgstat.c:3796
@@ -13476,7 +13394,7 @@ msgstr "sintassi della lista non valida per \"listen_addresses\""
 #: postmaster/postmaster.c:891
 #, c-format
 msgid "could not create listen socket for \"%s\""
-msgstr "non è stato possibile creare il socket di ascolto per \"%s\""
+msgstr "creazione del socket di ascolto per \"%s\" fallita"
 
 #: postmaster/postmaster.c:897
 #, c-format
@@ -13486,7 +13404,7 @@ msgstr "non è stato possibile creare alcun socket TCP/IP"
 #: postmaster/postmaster.c:948
 #, c-format
 msgid "could not create Unix-domain socket"
-msgstr "Non è stato possibile creare il socket di dominio Unix"
+msgstr "creazione del socket di dominio Unix fallita"
 
 #: postmaster/postmaster.c:956
 #, c-format
@@ -13497,29 +13415,27 @@ msgstr "nessun socket per l'ascolto è stato creato"
 #, c-format
 msgid "could not create I/O completion port for child queue"
 msgstr ""
-"non è stato possibile creare la porta di completamento I/O per la coda dei "
-"figli"
+"creazione della porta di completamento I/O per la coda dei figli fallita"
 
 #: postmaster/postmaster.c:1031
 #, c-format
 msgid "%s: could not change permissions of external PID file \"%s\": %s\n"
-msgstr ""
-"%s: non è stato possibile cambiare permessi del file PID esteno \"%s\": %s\n"
+msgstr "%s: modifica dei permessi del file PID esteno \"%s\" fallita: %s\n"
 
 #: postmaster/postmaster.c:1035
 #, c-format
 msgid "%s: could not write external PID file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere nel file PID esteno \"%s\": %s\n"
+msgstr "%s: scrittura del file PID esteno \"%s\" fallita: %s\n"
 
 #: postmaster/postmaster.c:1103 utils/init/postinit.c:197
 #, c-format
 msgid "could not load pg_hba.conf"
-msgstr "non è stato possibile caricare pg_hba.conf"
+msgstr "caricamento di pg_hba.conf fallito"
 
 #: postmaster/postmaster.c:1156
 #, c-format
 msgid "%s: could not locate matching postgres executable"
-msgstr "%s: non è stato possibile trovare l'eseguibile postgres corrispondente"
+msgstr "%s: eseguibile postgres corrispondente non trovato"
 
 #: postmaster/postmaster.c:1179 utils/misc/tzparser.c:325
 #, c-format
@@ -13538,7 +13454,7 @@ msgstr "la directory dei dati \"%s\" non esiste"
 #: postmaster/postmaster.c:1212
 #, c-format
 msgid "could not read permissions of directory \"%s\": %m"
-msgstr "non è stato possibile leggere i permessi della directory \"%s\": %m"
+msgstr "lettura dei permessi della directory \"%s\" fallita: %m"
 
 #: postmaster/postmaster.c:1220
 #, c-format
@@ -13573,9 +13489,9 @@ msgid ""
 "Expected to find it in the directory \"%s\",\n"
 "but could not open file \"%s\": %s\n"
 msgstr ""
-"%s: non è stato possibile trovare il database\n"
+"%s: database non trovato\n"
 "Sarebbe dovuto essere nella directory \"%s\",\n"
-"ma non è stato possibile aprire il file \"%s\": %s\n"
+"ma l'apertura del file \"%s\" è fallita: %s\n"
 
 #: postmaster/postmaster.c:1343
 #, c-format
@@ -13802,15 +13718,11 @@ msgstr "tutti i processi server sono terminati; re-inizializzazione"
 #: postmaster/postmaster.c:3318
 #, c-format
 msgid "could not fork new process for connection: %m"
-msgstr ""
-"non è stato possibile effettuare il fork del nuovo processo per la "
-"connessione: %m"
+msgstr "fork del nuovo processo per la connessione fallito: %m"
 
 #: postmaster/postmaster.c:3360
 msgid "could not fork new process for connection: "
-msgstr ""
-"non è stato possibile effettuare il fork del nuovo processo per la "
-"connessione: "
+msgstr "fork del nuovo processo per la connessione fallito: "
 
 #: postmaster/postmaster.c:3474
 #, c-format
@@ -13825,7 +13737,7 @@ msgstr "connessione ricevuta: host=%s"
 #: postmaster/postmaster.c:3748
 #, c-format
 msgid "could not execute server process \"%s\": %m"
-msgstr "non è stato possibile eseguire il processo del server \"%s\": %m"
+msgstr "esecuzione del processo del server \"%s\" fallita: %m"
 
 #: postmaster/postmaster.c:4272
 #, c-format
@@ -13835,62 +13747,53 @@ msgstr "il database è pronto ad accettare connessioni in sola lettura"
 #: postmaster/postmaster.c:4539
 #, c-format
 msgid "could not fork startup process: %m"
-msgstr "non è stato possibile effettuare il fork del processo di avvio: %m"
+msgstr "fork del processo di avvio fallito: %m"
 
 #: postmaster/postmaster.c:4543
 #, c-format
 msgid "could not fork background writer process: %m"
-msgstr ""
-"non è stato possibile effettuare il fork del processo di scrittura in "
-"background: %m"
+msgstr "fork del processo di scrittura in background fallito: %m"
 
 #: postmaster/postmaster.c:4547
 #, c-format
 msgid "could not fork checkpointer process: %m"
-msgstr ""
-"non è stato possibile effettuare il fork del processo di creazione dei "
-"checkpoint: %m"
+msgstr "fork del processo di creazione dei checkpoint fallito: %m"
 
 #: postmaster/postmaster.c:4551
 #, c-format
 msgid "could not fork WAL writer process: %m"
-msgstr ""
-"non è stato possibile effettuare il fork del processo di scrittura dei WAL: "
-"%m"
+msgstr "fork del processo di scrittura dei WAL fallito: %m"
 
 #: postmaster/postmaster.c:4555
 #, c-format
 msgid "could not fork WAL receiver process: %m"
-msgstr "non è stato possibile effettuare il fork di ricezione dei WAL: %m"
+msgstr "fork del processo di ricezione dei WAL fallito: %m"
 
 #: postmaster/postmaster.c:4559
 #, c-format
 msgid "could not fork process: %m"
-msgstr "non è stato possibile effettuare il fork del processo: %m"
+msgstr "fork del processo fallito: %m"
 
 #: postmaster/postmaster.c:4848
 #, c-format
 msgid "could not duplicate socket %d for use in backend: error code %d"
 msgstr ""
-"non è stato possibile duplicare il socket %d da usare nel backend: codice "
-"errore %d"
+"duplicazione del socket %d da usare nel backend fallita: codice errore %d"
 
 #: postmaster/postmaster.c:4880
 #, c-format
 msgid "could not create inherited socket: error code %d\n"
-msgstr "non è stato possibile creare il socket ereditato: codice errore %d\n"
+msgstr "creazione del socket ereditato fallita: codice errore %d\n"
 
 #: postmaster/postmaster.c:4909 postmaster/postmaster.c:4916
 #, c-format
 msgid "could not read from backend variables file \"%s\": %s\n"
-msgstr ""
-"non è stato possibile leggere dal file delle variabili del backend \"%s\": "
-"%s\n"
+msgstr "lettura dal file delle variabili del backend \"%s\" fallita: %s\n"
 
 #: postmaster/postmaster.c:4925
 #, c-format
 msgid "could not remove file \"%s\": %s\n"
-msgstr "non è stato possibile rimuovere il file \"%s\": %s\n"
+msgstr "rimozione del file \"%s\" fallita: %s\n"
 
 #: postmaster/postmaster.c:4942
 #, c-format
@@ -13910,23 +13813,23 @@ msgstr ""
 #, c-format
 msgid "could not close handle to backend parameter variables: error code %lu\n"
 msgstr ""
-"non è stato possibile chiudere l'handle dei parametri variabili del backend: "
-"codice errore %lu\n"
+"chiusura dell'handle dei parametri variabili del backend fallita: codice "
+"errore %lu\n"
 
 #: postmaster/postmaster.c:5108
 #, c-format
 msgid "could not read exit code for process\n"
-msgstr "non è stato possibile leggere il codice di uscita del processo\n"
+msgstr "lettura del codice di uscita del processo fallita\n"
 
 #: postmaster/postmaster.c:5113
 #, c-format
 msgid "could not post child completion status\n"
-msgstr "non è stato possibile inviare lo stato di completamento del figlio\n"
+msgstr "invio dello stato di completamento del figlio fallito\n"
 
 #: postmaster/syslogger.c:454 postmaster/syslogger.c:1041
 #, c-format
 msgid "could not read from logger pipe: %m"
-msgstr "non è stato possibile leggere dalla pipe del logger: %m"
+msgstr "lettura dalla pipe del logger fallita: %m"
 
 #: postmaster/syslogger.c:503
 #, c-format
@@ -13936,32 +13839,32 @@ msgstr "spegnimento del logger"
 #: postmaster/syslogger.c:547 postmaster/syslogger.c:561
 #, c-format
 msgid "could not create pipe for syslog: %m"
-msgstr "non è stato possibile creare la pipe per il syslog: %m"
+msgstr "creazione della pipe per il syslog fallita: %m"
 
 #: postmaster/syslogger.c:597
 #, c-format
 msgid "could not fork system logger: %m"
-msgstr "non è stato possibile effettuare il fork del logger di sistema: %m"
+msgstr "fork del logger di sistema fallito: %m"
 
 #: postmaster/syslogger.c:628
 #, c-format
 msgid "could not redirect stdout: %m"
-msgstr "non è stato possibile redirigere stdout: %m"
+msgstr "redirezione di stdout fallita: %m"
 
 #: postmaster/syslogger.c:633 postmaster/syslogger.c:651
 #, c-format
 msgid "could not redirect stderr: %m"
-msgstr "non è stato possibile redirigere stdin: %m"
+msgstr "redirezione di stderr fallita: %m"
 
 #: postmaster/syslogger.c:996
 #, c-format
 msgid "could not write to log file: %s\n"
-msgstr "non è stato possibile scrivere nel file di log: %s\n"
+msgstr "scrittura nel file di log fallita: %s\n"
 
 #: postmaster/syslogger.c:1125
 #, c-format
 msgid "could not open log file \"%s\": %m"
-msgstr "non è stato possibile aprire il file di log \"%s\": %m"
+msgstr "apertura del file di log \"%s\" fallita: %m"
 
 #: postmaster/syslogger.c:1187 postmaster/syslogger.c:1231
 #, c-format
@@ -13992,7 +13895,7 @@ msgstr "errore di sintassi: carattere \"%s\" inaspettato"
 #: utils/adt/misc.c:358
 #, c-format
 msgid "could not read symbolic link \"%s\": %m"
-msgstr "non è stato possibile leggere il link simbolico \"%s\": %m"
+msgstr "lettura del link simbolico \"%s\" fallita: %m"
 
 #: replication/basebackup.c:132 replication/basebackup.c:683
 #: utils/adt/misc.c:362
@@ -14009,9 +13912,7 @@ msgstr ""
 #: replication/basebackup.c:270 replication/basebackup.c:814
 #, c-format
 msgid "base backup could not send data, aborting backup"
-msgstr ""
-"non è stato possibile inviare dati da parte del backup di base, backup "
-"interrotto"
+msgstr "invio dati da parte del backup di base fallito, backup interrotto"
 
 #: replication/basebackup.c:317 replication/basebackup.c:326
 #: replication/basebackup.c:335 replication/basebackup.c:344
@@ -14044,7 +13945,7 @@ msgstr "il membro \"%s\" dell'archivio è troppo grande per il formato tar"
 #: replication/libpqwalreceiver/libpqwalreceiver.c:101
 #, c-format
 msgid "could not connect to the primary server: %s"
-msgstr "non è stato possibile connettersi al server primario: %s"
+msgstr "connessione al server primario fallita: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:113
 #, c-format
@@ -14052,8 +13953,8 @@ msgid ""
 "could not receive database system identifier and timeline ID from the "
 "primary server: %s"
 msgstr ""
-"non è stato possibile ricevere l'identificativo del database e l'ID della "
-"timeline dal server primario: %s"
+"ricezione fallita dell'identificativo del database e l'ID della timeline dal "
+"server primario: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:124
 #, c-format
@@ -14085,7 +13986,7 @@ msgstr ""
 #: replication/libpqwalreceiver/libpqwalreceiver.c:165
 #, c-format
 msgid "could not start WAL streaming: %s"
-msgstr "non è stato possibile avviare lo streaming dei WAL: %s"
+msgstr "avvio dello streaming dei WAL fallito: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:171
 #, c-format
@@ -14102,7 +14003,7 @@ msgstr "socket non aperto"
 #: replication/libpqwalreceiver/libpqwalreceiver.c:393
 #, c-format
 msgid "could not receive data from WAL stream: %s"
-msgstr "non è stato possibile ricevere dati dallo stream WAL: %s"
+msgstr "ricezione dati dallo stream WAL fallita: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:384
 #, c-format
@@ -14112,7 +14013,7 @@ msgstr "replica terminata dal server primario"
 #: replication/libpqwalreceiver/libpqwalreceiver.c:415
 #, c-format
 msgid "could not send data to WAL stream: %s"
-msgstr "non è stato possibile inviare dati allo stream WAL: %s"
+msgstr "invio dati allo stream WAL fallito: %s"
 
 #: replication/syncrep.c:207
 #, c-format
@@ -14221,8 +14122,7 @@ msgstr "il segmento WAL richiesto %s è stato già rimosso"
 #, c-format
 msgid "could not read from log file %u, segment %u, offset %u, length %lu: %m"
 msgstr ""
-"non è stato possibile leggere dal file di log %u, segmento %u, offset %u, "
-"lunghezza %lu: %m"
+"lettura dal file di log %u fallita, segmento %u, offset %u, lunghezza %lu: %m"
 
 #: rewrite/rewriteDefine.c:107 rewrite/rewriteDefine.c:771
 #, c-format
@@ -14295,16 +14195,13 @@ msgstr "la regola della vista \"%s\" deve essere chiamata \"%s\""
 #: rewrite/rewriteDefine.c:419
 #, c-format
 msgid "could not convert table \"%s\" to a view because it is not empty"
-msgstr ""
-"non è stato possibile convertire la tabella \"%s\" in una vista perché non è "
-"vuota"
+msgstr "conversione della tabella \"%s\" in vista fallita perché non è vuota"
 
 #: rewrite/rewriteDefine.c:426
 #, c-format
 msgid "could not convert table \"%s\" to a view because it has triggers"
 msgstr ""
-"non è stato possibile convertire la tabella \"%s\" in una vista perché ha "
-"dei trigger"
+"conversione della tabella \"%s\" in vista fallita perché ha dei trigger"
 
 #: rewrite/rewriteDefine.c:428
 #, c-format
@@ -14317,16 +14214,13 @@ msgstr ""
 #: rewrite/rewriteDefine.c:433
 #, c-format
 msgid "could not convert table \"%s\" to a view because it has indexes"
-msgstr ""
-"non è stato possibile convertire la tabella \"%s\" in una vista perché ha "
-"indici"
+msgstr "conversione della tabella \"%s\" in vista fallita perché ha indici"
 
 #: rewrite/rewriteDefine.c:439
 #, c-format
 msgid "could not convert table \"%s\" to a view because it has child tables"
 msgstr ""
-"non è stato possibile convertire la tabella \"%s\" in una vista perché ha "
-"tabelle figlie"
+"conversione della tabella \"%s\" in vista fallita perché ha tabelle figlie"
 
 #: rewrite/rewriteDefine.c:466
 #, c-format
@@ -14737,7 +14631,7 @@ msgstr "intestazione di pagina non valida nel blocco %u della relazione %s"
 #: storage/buffer/bufmgr.c:2909
 #, c-format
 msgid "could not write block %u of %s"
-msgstr "non è stato possibile scrivere il blocco %u di %s"
+msgstr "scrittura del blocco %u di %s fallita"
 
 #: storage/buffer/bufmgr.c:2911
 #, c-format
@@ -14788,7 +14682,7 @@ msgstr "la dimensione del file temporaneo supera temp_file_limit (%dkB)"
 #: storage/file/fd.c:1684
 #, c-format
 msgid "could not read directory \"%s\": %m"
-msgstr "non è stato possibile leggere la directory \"%s\": %m"
+msgstr "lettura della directory \"%s\" fallita: %m"
 
 #: storage/ipc/shmem.c:190 storage/lmgr/lock.c:757 storage/lmgr/lock.c:785
 #: storage/lmgr/lock.c:2386 storage/lmgr/lock.c:3022 storage/lmgr/lock.c:3500
@@ -14812,8 +14706,7 @@ msgstr ""
 #, c-format
 msgid "could not create ShmemIndex entry for data structure \"%s\""
 msgstr ""
-"non è stato possibile creare l'elemento ShmemIndex per la struttura di dati "
-"\"%s\""
+"creazione dell'elemento ShmemIndex fallita per la struttura di dati \"%s\""
 
 #: storage/ipc/shmem.c:380
 #, c-format
@@ -15059,8 +14952,8 @@ msgstr ""
 msgid ""
 "could not serialize access due to read/write dependencies among transactions"
 msgstr ""
-"non è stato possibile serializzare l'accesso a causa di dipendenze di "
-"lettura/scrittura tra le transazioni"
+"serializzazione dell'accesso fallita a causa di dipendenze di lettura/"
+"scrittura tra le transazioni"
 
 #: storage/lmgr/predicate.c:3885 storage/lmgr/predicate.c:3974
 #: storage/lmgr/predicate.c:3982 storage/lmgr/predicate.c:4021
@@ -15084,7 +14977,7 @@ msgstr "invio di annullamento per bloccare l'autovacuum con PID %d"
 #: storage/lmgr/proc.c:1146 utils/adt/misc.c:134
 #, c-format
 msgid "could not send signal to process %d: %m"
-msgstr "non è stato possibile inviare il segnale al processo %d: %m"
+msgstr "invio del segnale al processo %d fallito: %m"
 
 #: storage/lmgr/proc.c:1180
 #, c-format
@@ -15142,7 +15035,7 @@ msgstr "puntatore di elemento corrotto: offset = %u, size = %u"
 #: storage/smgr/md.c:419 storage/smgr/md.c:890
 #, c-format
 msgid "could not truncate file \"%s\": %m"
-msgstr "non è stato possibile troncare il file \"%s\": %m"
+msgstr "troncamento del file \"%s\" fallito: %m"
 
 #: storage/smgr/md.c:486
 #, c-format
@@ -15152,7 +15045,7 @@ msgstr "estendere il file \"%s\" oltre %u blocchi"
 #: storage/smgr/md.c:508 storage/smgr/md.c:669 storage/smgr/md.c:744
 #, c-format
 msgid "could not seek to block %u in file \"%s\": %m"
-msgstr "non è stato possibile spostarsi al blocco %u nel file \"%s\": %m"
+msgstr "spostamento al blocco %u nel file \"%s\" fallito: %m"
 
 #: storage/smgr/md.c:516
 #, c-format
@@ -15174,33 +15067,30 @@ msgstr ""
 #: storage/smgr/md.c:687
 #, c-format
 msgid "could not read block %u in file \"%s\": %m"
-msgstr "non è stato possibile leggere il blocco %u nel file \"%s\": %m"
+msgstr "lettura del blocco %u nel file \"%s\" fallita: %m"
 
 #: storage/smgr/md.c:703
 #, c-format
 msgid "could not read block %u in file \"%s\": read only %d of %d bytes"
 msgstr ""
-"non è stato possibile leggere il blocco %u nel file \"%s\": letti soli %d "
-"byte di %d"
+"lettura del blocco %u nel file \"%s\" fallita: letti soli %d byte di %d"
 
 #: storage/smgr/md.c:762
 #, c-format
 msgid "could not write block %u in file \"%s\": %m"
-msgstr "non è stato possibile scrivere il blocco %u nel file \"%s\": %m"
+msgstr "scrittura del blocco %u nel file \"%s\" fallita: %m"
 
 #: storage/smgr/md.c:767
 #, c-format
 msgid "could not write block %u in file \"%s\": wrote only %d of %d bytes"
 msgstr ""
-"non è stato possibile leggere il blocco %u nel file \"%s\": scritti solo %d "
-"byte di %d"
+"lettura del blocco %u nel file \"%s\" fallita: scritti solo %d byte di %d"
 
 #: storage/smgr/md.c:866
 #, c-format
 msgid "could not truncate file \"%s\" to %u blocks: it's only %u blocks now"
 msgstr ""
-"non è stato possibile troncare il file \"%s\" a %u blocchi: è di soli %u "
-"blocchi ora"
+"troncamento del file \"%s\" a %u blocchi fallito: ora è di soli %u blocchi"
 
 #: storage/smgr/md.c:915
 #, c-format
@@ -15210,21 +15100,18 @@ msgstr "non è stato possibile troncare il file \"%s\" a %u blocchi: %m"
 #: storage/smgr/md.c:1195
 #, c-format
 msgid "could not fsync file \"%s\" but retrying: %m"
-msgstr ""
-"non è stato possibile eseguire fsync sul file \"%s\" ma sto ritentando: %m"
+msgstr "fsync del file \"%s\" fallito ma sto ritentando: %m"
 
 #: storage/smgr/md.c:1358
 #, c-format
 msgid "could not forward fsync request because request queue is full"
 msgstr ""
-"non è stato possibile inoltrare la richiesta di fsync perché la coda di "
-"richieste è piena"
+"inoltro della richiesta di fsync fallito perché la coda di richieste è piena"
 
 #: storage/smgr/md.c:1755
 #, c-format
 msgid "could not open file \"%s\" (target block %u): %m"
-msgstr ""
-"non è stato possibile aprire il file \"%s\" (blocco di destinazione %u): %m"
+msgstr "apertura del file \"%s\" fallita (blocco di destinazione %u): %m"
 
 #: storage/smgr/md.c:1777
 #, c-format
@@ -15659,12 +15546,12 @@ msgstr "parametro Synonyms mancante"
 #: tsearch/dict_synonym.c:131
 #, c-format
 msgid "could not open synonym file \"%s\": %m"
-msgstr "non è stato possibile aprire il file dei synonym \"%s\": %m"
+msgstr "apertura del file synonym \"%s\" fallita: %m"
 
 #: tsearch/dict_thesaurus.c:179
 #, c-format
 msgid "could not open thesaurus file \"%s\": %m"
-msgstr "non è stato possibile aprire il file dei thesaurus \"%s\": %m"
+msgstr "apertura del file thesaurus \"%s\" fallita: %m"
 
 #: tsearch/dict_thesaurus.c:212
 #, c-format
@@ -15735,7 +15622,7 @@ msgstr "parametro di Dictionary mancante"
 #: tsearch/spell.c:276
 #, c-format
 msgid "could not open dictionary file \"%s\": %m"
-msgstr "non è stato possibile aprire il file dictionary \"%s\": %m"
+msgstr "apertura del file dictionary \"%s\" fallita: %m"
 
 #: tsearch/spell.c:439 utils/adt/regexp.c:194
 #, c-format
@@ -15750,7 +15637,7 @@ msgstr "il carattere flag multibyte non è consentito"
 #: tsearch/spell.c:629 tsearch/spell.c:687 tsearch/spell.c:780
 #, c-format
 msgid "could not open affix file \"%s\": %m"
-msgstr "non è stato possibile aprire il file affix \"%s\": %m"
+msgstr "apertura del file affix \"%s\" fallita: %m"
 
 #: tsearch/spell.c:675
 #, c-format
@@ -15797,7 +15684,7 @@ msgstr "nome del file di configurazione di ricerca di test non valido \"%s\""
 #: tsearch/ts_utils.c:89
 #, c-format
 msgid "could not open stop-word file \"%s\": %m"
-msgstr "non è stato possibile aprire il file delle stop word \"%s\": %m"
+msgstr "apertura del file delle stop word \"%s\" fallita: %m"
 
 #: tsearch/wparser.c:306
 #, c-format
@@ -15947,7 +15834,7 @@ msgstr "occorre far parte del ruolo \"%s\""
 #: utils/adt/array_userfuncs.c:48
 #, c-format
 msgid "could not determine input data types"
-msgstr "non è stato possibile determinare i tipi dei dati in imput"
+msgstr "non è stato possibile determinare i tipi di dati di input"
 
 #: utils/adt/array_userfuncs.c:82
 #, c-format
@@ -16372,7 +16259,7 @@ msgstr "puntatore al Datum non valido"
 #: utils/adt/dbsize.c:106
 #, c-format
 msgid "could not open tablespace directory \"%s\": %m"
-msgstr "non è stato possibile aprire la directory del tablespace \"%s\": %m"
+msgstr "apertura della directory del tablespace \"%s\" fallita: %m"
 
 #: utils/adt/domains.c:79
 #, c-format
@@ -16430,7 +16317,7 @@ msgstr "il valore interno per l'enumerazione non è valido: %u"
 #: utils/adt/enum.c:445
 #, c-format
 msgid "could not determine actual enum type"
-msgstr "non è stato possibile determinare il tipo reale di enumerazione"
+msgstr "determinazione del tipo reale di enumerazione fallita"
 
 #: utils/adt/enum.c:364 utils/adt/enum.c:393
 #, c-format
@@ -16789,7 +16676,7 @@ msgstr "la lunghezza richiesta è eccessiva"
 #: utils/adt/genfile.c:129
 #, c-format
 msgid "could not seek in file \"%s\": %m"
-msgstr "non è stato possibile spostarsi nel file \"%s\": %m"
+msgstr "spostamento nel file \"%s\" fallito: %m"
 
 #: utils/adt/genfile.c:179 utils/adt/genfile.c:203 utils/adt/genfile.c:224
 #: utils/adt/genfile.c:248
@@ -16820,7 +16707,7 @@ msgstr "il numero di punti richiesti è eccessivo"
 #: utils/adt/geo_ops.c:317
 #, c-format
 msgid "could not format \"path\" value"
-msgstr "non è stato possibile formattare il valore \"path\""
+msgstr "formattazione del valore \"path\" fallita"
 
 #: utils/adt/geo_ops.c:392
 #, c-format
@@ -16907,7 +16794,7 @@ msgstr "sintassi di input non valida per il tipo circle: \"%s\""
 #: utils/adt/geo_ops.c:4602 utils/adt/geo_ops.c:4610
 #, c-format
 msgid "could not format \"circle\" value"
-msgstr "non è stato possibile formattare il valore \"circle\""
+msgstr "formattazione del valore \"circle\" fallita"
 
 #: utils/adt/geo_ops.c:4637
 #, c-format
@@ -17117,7 +17004,7 @@ msgstr "solo un superutente può inviare segnali al postmaster"
 #: utils/adt/misc.c:188
 #, c-format
 msgid "failed to send signal to postmaster: %m"
-msgstr "non è stato possibile inviare il segnale al postmaster %m"
+msgstr "invio del segnale al postmaster fallito: %m"
 
 #: utils/adt/misc.c:205
 #, c-format
@@ -17196,7 +17083,7 @@ msgstr "Il valore ha dei bit settati a destra della maschera."
 #: utils/adt/network.c:664
 #, c-format
 msgid "could not format inet value: %m"
-msgstr "non è stato possibile formattare il valore inet: %m"
+msgstr "formattazione del valore inet fallita: %m"
 
 #. translator: %s is inet or cidr
 #: utils/adt/network.c:217
@@ -17229,7 +17116,7 @@ msgstr "la lunghezza della maschera non è valida: %d"
 #: utils/adt/network.c:682
 #, c-format
 msgid "could not format cidr value: %m"
-msgstr "non è stato possibile formattare il valore cidr: %m"
+msgstr "formattazione del valore cidr fallita: %m"
 
 #: utils/adt/network.c:1255
 #, c-format
@@ -17381,7 +17268,7 @@ msgstr "non sono consentiti caratteri nulli"
 #: utils/adt/pg_locale.c:967
 #, c-format
 msgid "could not create locale \"%s\": %m"
-msgstr "non è stato possibile creare il locale \"%s\": %m"
+msgstr "creazione del locale \"%s\" fallita: %m"
 
 #: utils/adt/pg_locale.c:970
 #, c-format
@@ -17927,7 +17814,7 @@ msgstr "unità \"%s\" di interval non riconosciuta"
 #: utils/adt/timestamp.c:4523 utils/adt/timestamp.c:4695
 #, c-format
 msgid "could not convert to time zone \"%s\""
-msgstr "non è stato possibile convertire al fuso orario \"%s\""
+msgstr "conversione al fuso orario \"%s\" fallita"
 
 #: utils/adt/timestamp.c:4555 utils/adt/timestamp.c:4728
 #, c-format
@@ -18195,13 +18082,12 @@ msgstr ""
 #: utils/adt/varlena.c:1417 utils/adt/varlena.c:1430
 #, c-format
 msgid "could not convert string to UTF-16: error code %lu"
-msgstr ""
-"non è stato possibile convertire la stringa in UTF-16: codice errore %lu"
+msgstr "conversione della stringa in UTF-16 fallita: codice errore %lu"
 
 #: utils/adt/varlena.c:1445
 #, c-format
 msgid "could not compare Unicode strings: %m"
-msgstr "non è stato possibile comparare le stringhe Unicode: %m"
+msgstr "comparazione delle stringhe Unicode fallita: %m"
 
 #: utils/adt/varlena.c:2100 utils/adt/varlena.c:2131 utils/adt/varlena.c:2167
 #: utils/adt/varlena.c:2210
@@ -18315,7 +18201,7 @@ msgstr "la funzione xmlvalidate non è implementata"
 #: utils/adt/xml.c:911
 #, c-format
 msgid "could not initialize XML library"
-msgstr "non è stato possibile inizializzare la libreria XML"
+msgstr "inizializzazione della libreria XML fallita"
 
 #: utils/adt/xml.c:912
 #, c-format
@@ -18328,7 +18214,7 @@ msgstr ""
 #: utils/adt/xml.c:998
 #, c-format
 msgid "could not set up XML error handler"
-msgstr "non è stato possibile impostare il gestore di errori XML"
+msgstr "impostazione del gestore di errori XML fallita"
 
 #: utils/adt/xml.c:999
 #, c-format
@@ -18410,9 +18296,7 @@ msgstr "né il nome del namespace né l'URI possono essere nulli"
 #: utils/adt/xml.c:3857
 #, c-format
 msgid "could not register XML namespace with name \"%s\" and URI \"%s\""
-msgstr ""
-"non è stato possibile registrare il namespace XML con nome \"%s\" ed URI \"%s"
-"\""
+msgstr "registrazione del namespace XML con nome \"%s\" ed URI \"%s\" fallita"
 
 #: utils/cache/lsyscache.c:2457 utils/cache/lsyscache.c:2490
 #: utils/cache/lsyscache.c:2523 utils/cache/lsyscache.c:2556
@@ -18439,8 +18323,8 @@ msgstr "il cached plan non deve cambiare il tipo del risultato"
 #, c-format
 msgid "could not create relation-cache initialization file \"%s\": %m"
 msgstr ""
-"non è stato possibile creare il file di inizializzazione della cache delle "
-"relazioni \"%s\": %m"
+"creazione del file di inizializzazione della cache delle relazioni \"%s\" "
+"fallita: %m"
 
 #: utils/cache/relcache.c:4297
 #, c-format
@@ -18450,7 +18334,7 @@ msgstr "Proseguo in ogni caso, ma c'è qualcosa che non funziona."
 #: utils/cache/relcache.c:4511
 #, c-format
 msgid "could not remove cache file \"%s\": %m"
-msgstr "non è stato possibile rimuovere il file di cache \"%s\": %m"
+msgstr "rimozione del file di cache \"%s\" fallita: %m"
 
 #: utils/cache/relmapper.c:453
 #, c-format
@@ -18462,14 +18346,12 @@ msgstr ""
 #: utils/cache/relmapper.c:595 utils/cache/relmapper.c:701
 #, c-format
 msgid "could not open relation mapping file \"%s\": %m"
-msgstr ""
-"non è stato possibile aprire il file della mappa delle relazioni \"%s\": %m"
+msgstr "apertura del file della mappa delle relazioni \"%s\" fallita: %m"
 
 #: utils/cache/relmapper.c:608
 #, c-format
 msgid "could not read relation mapping file \"%s\": %m"
-msgstr ""
-"non è stato possibile leggere il file della mappa delle relazioni \"%s\": %m"
+msgstr "lettura del file della mappa delle relazioni \"%s\" fallita: %m"
 
 #: utils/cache/relmapper.c:618
 #, c-format
@@ -18484,22 +18366,17 @@ msgstr "il file della mappa delle relazioni \"%s\" ha un checksum non valido"
 #: utils/cache/relmapper.c:740
 #, c-format
 msgid "could not write to relation mapping file \"%s\": %m"
-msgstr ""
-"non è stato possibile scrivere nel file della mappa delle relazioni \"%s\": "
-"%m"
+msgstr "scrittura nel file della mappa delle relazioni \"%s\" fallita: %m"
 
 #: utils/cache/relmapper.c:753
 #, c-format
 msgid "could not fsync relation mapping file \"%s\": %m"
-msgstr ""
-"non è stato possibile eseguire fsync sul file della mappa delle relazioni "
-"\"%s\": %m"
+msgstr "fsync del file della mappa delle relazioni \"%s\" fallito: %m"
 
 #: utils/cache/relmapper.c:759
 #, c-format
 msgid "could not close relation mapping file \"%s\": %m"
-msgstr ""
-"non è stato possibile chiudere il file della mappa delle relazioni \"%s\": %m"
+msgstr "chiusura del file della mappa delle relazioni \"%s\" fallita: %m"
 
 #: utils/cache/typcache.c:697
 #, c-format
@@ -18524,12 +18401,12 @@ msgstr "TRAP: %s(\"%s\", File: \"%s\", Linea: %d)\n"
 #: utils/error/elog.c:1546
 #, c-format
 msgid "could not reopen file \"%s\" as stderr: %m"
-msgstr "non è stato possibile riaprire il file \"%s\" come stderr: %m"
+msgstr "riapertura del file \"%s\" come stderr fallita: %m"
 
 #: utils/error/elog.c:1559
 #, c-format
 msgid "could not reopen file \"%s\" as stdout: %m"
-msgstr "non è stato possibile riaprire il file \"%s\" come stdout: %m"
+msgstr "riapertura del file \"%s\" come stdout fallita: %m"
 
 #: utils/error/elog.c:1948 utils/error/elog.c:1958 utils/error/elog.c:1968
 msgid "[unknown]"
@@ -18617,17 +18494,17 @@ msgstr "PANICO"
 #: utils/fmgr/dfmgr.c:125
 #, c-format
 msgid "could not find function \"%s\" in file \"%s\""
-msgstr "non è stato possibile trovare la funzione \"%s\" nel file \"%s\""
+msgstr "funzione \"%s\" non trovata nel file \"%s\""
 
 #: utils/fmgr/dfmgr.c:204 utils/fmgr/dfmgr.c:413 utils/fmgr/dfmgr.c:461
 #, c-format
 msgid "could not access file \"%s\": %m"
-msgstr "non è stato possibile accedere al file \"%s\": %m"
+msgstr "accesso al file \"%s\" fallito: %m"
 
 #: utils/fmgr/dfmgr.c:242
 #, c-format
 msgid "could not load library \"%s\": %s"
-msgstr "non è stato possibile caricare la libreria \"%s\": %s"
+msgstr "caricamento della libreria \"%s\" fallito: %s"
 
 #: utils/fmgr/dfmgr.c:274
 #, c-format
@@ -18727,7 +18604,7 @@ msgid ""
 "could not determine actual result type for function \"%s\" declared to "
 "return type %s"
 msgstr ""
-"non è stato possibile determinare il tipo reale del risultato della funzione "
+"non è stato possibile determinare il tipo reale di risultato della funzione "
 "\"%s\" dichiarata con tipo restituito %s"
 
 #: utils/fmgr/funcapi.c:1300 utils/fmgr/funcapi.c:1331
@@ -18750,7 +18627,7 @@ msgstr ""
 #: utils/init/miscinit.c:115
 #, c-format
 msgid "could not change directory to \"%s\": %m"
-msgstr "non è stato possibile cambiare directory in \"%s\": %m"
+msgstr "spostamento nella directory \"%s\" fallito: %m"
 
 #: utils/init/miscinit.c:381 utils/misc/guc.c:5293
 #, c-format
@@ -18782,17 +18659,17 @@ msgstr "OID del ruolo non valido: %u"
 #: utils/init/miscinit.c:742
 #, c-format
 msgid "could not create lock file \"%s\": %m"
-msgstr "non è stato possibile creare il file di lock \"%s\": %m"
+msgstr "creazione del file di lock \"%s\" fallita: %m"
 
 #: utils/init/miscinit.c:756
 #, c-format
 msgid "could not open lock file \"%s\": %m"
-msgstr "non è stato possibile aprire il file di lock \"%s\": %m"
+msgstr "apertura del file di lock \"%s\" fallita: %m"
 
 #: utils/init/miscinit.c:762
 #, c-format
 msgid "could not read lock file \"%s\": %m"
-msgstr "non è stato possibile leggere dal file di lock \"%s\": %m"
+msgstr "lettura dal file di lock \"%s\" fallita: %m"
 
 #: utils/init/miscinit.c:810
 #, c-format
@@ -18842,7 +18719,7 @@ msgstr ""
 #: utils/init/miscinit.c:876
 #, c-format
 msgid "could not remove old lock file \"%s\": %m"
-msgstr "non è stato possibile rimuovere il vecchio di lock \"%s\": %m"
+msgstr "rimozione del vecchio file di lock \"%s\" fallita: %m"
 
 #: utils/init/miscinit.c:878
 #, c-format
@@ -18857,12 +18734,12 @@ msgstr ""
 #: utils/init/miscinit.c:933
 #, c-format
 msgid "could not write lock file \"%s\": %m"
-msgstr "non è stato possibile scrivere nel file di lock \"%s\": %m"
+msgstr "scrittura del file di lock \"%s\" fallita: %m"
 
 #: utils/init/miscinit.c:1040 utils/misc/guc.c:7649
 #, c-format
 msgid "could not read from file \"%s\": %m"
-msgstr "non è stato possibile leggere dal file \"%s\": %m"
+msgstr "lettura dal file \"%s\" fallita: %m"
 
 #: utils/init/miscinit.c:1139 utils/init/miscinit.c:1152
 #, c-format
@@ -19035,7 +18912,7 @@ msgstr "La sottodirectory del database \"%s\" risulta mancante."
 #: utils/init/postinit.c:809
 #, c-format
 msgid "could not access directory \"%s\": %m"
-msgstr "non è stato possibile accedere alla directory \"%s\": %m"
+msgstr "accesso alla directory \"%s\" fallito: %m"
 
 #: utils/mb/conv.c:509
 #, c-format
@@ -21056,7 +20933,7 @@ msgstr "limite di ricorsione dei file di fusi orari superato nel file \"%s\""
 #: utils/misc/tzparser.c:337 utils/misc/tzparser.c:350
 #, c-format
 msgid "could not read time zone file \"%s\": %m"
-msgstr "non è stato possibile leggere il file di fusi orari \"%s\": %m"
+msgstr "lettura del file di fusi orari \"%s\" fallita: %m"
 
 #: utils/misc/tzparser.c:360
 #, c-format
@@ -21108,12 +20985,12 @@ msgstr "Possibile che lo spazio su disco sia esaurito?"
 #: utils/sort/logtape.c:232
 #, c-format
 msgid "could not read block %ld of temporary file: %m"
-msgstr "non è stato possibile leggere il blocco %ld dal file temporaneo: %m"
+msgstr "lettura del blocco %ld dal file temporaneo fallita: %m"
 
 #: utils/sort/tuplesort.c:3089
 #, c-format
 msgid "could not create unique index \"%s\""
-msgstr "non è stato possibile creare l'inidce univoco \"%s\""
+msgstr "creazione dell'indice univoco \"%s\" fallita"
 
 #: utils/sort/tuplesort.c:3091
 #, c-format
