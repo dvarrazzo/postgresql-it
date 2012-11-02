@@ -42,22 +42,26 @@ class Check(object):
     def check(self, entry):
         raise NotImplementedError
 
+    def messages(self, entry):
+        """Return the pairs (msgid, msgstr) to check.
+
+        Deal with plural entries. Skip fuzzy entries.
+        """
+        if 'fuzzy' in entry.flags:
+            return
+
+        if not entry.msgid_plural:
+            yield (entry.msgid, entry.msgstr)
+        else:
+            yield (entry.msgid, entry.msgstr_plural['0'])
+            yield (entry.msgid_plural, entry.msgstr_plural['1'])
+
 
 class CheckWhitespace(object):
     _chk_re = None
 
     def check(self, entry):
-        if 'fuzzy' in entry.flags:
-            return
-
-        if not entry.msgid_plural:
-            msgs = [(entry.msgid, entry.msgstr)]
-        else:
-            msgs = [
-                (entry.msgid, entry.msgstr_plural['0']),
-                (entry.msgid_plural, entry.msgstr_plural['1']),]
-
-        for s1, s2 in msgs:
+        for s1, s2 in self.messages(entry):
             m1 = self._chk_re.search(s1)
             m2 = self._chk_re.search(s2)
 
@@ -76,6 +80,15 @@ class CheckPreixWhitespace(CheckWhitespace, Check):
 class CheckSufixWhitespace(CheckWhitespace, Check):
     _chk_re = re.compile(r'\s*$')
 
+class CheckPlaceholders(Check):
+    _chk_re = re.compile("(%%)|((%(\.\d+)?[^%]))")
+
+    def check(self, entry):
+        for s1, s2 in self.messages(entry):
+            p1 = self._chk_re.findall(s1)
+            p2 = self._chk_re.findall(s2)
+            if p1 != p2:
+                raise CheckFailed("placeholders don't match")
 
 if __name__ == '__main__':
     sys.exit(main())
