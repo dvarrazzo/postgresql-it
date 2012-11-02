@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:10+0000\n"
-"PO-Revision-Date: 2012-11-01 02:36+0100\n"
+"PO-Revision-Date: 2012-11-02 17:38+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -60,7 +60,7 @@ msgstr "il nome dell'host deve essere specificato\n"
 #: fe-auth.c:242
 #, c-format
 msgid "could not set socket to blocking mode: %s\n"
-msgstr "non è stato possibile impostare il socket in modalità bloccante: %s\n"
+msgstr "impostazione del socket in modalità bloccante fallita: %s\n"
 
 #: fe-auth.c:260 fe-auth.c:264
 #, c-format
@@ -70,8 +70,7 @@ msgstr "Autenticazione Kerberos 5 rifiutata: %*s\n"
 #: fe-auth.c:290
 #, c-format
 msgid "could not restore non-blocking mode on socket: %s\n"
-msgstr ""
-"non è stato possibile ripristinare lo stato non-bloccante sul socket: %s\n"
+msgstr "ripristino dello stato non-bloccante del socket fallito: %s\n"
 
 # DV: non ne sono convinto
 #: fe-auth.c:403
@@ -145,8 +144,7 @@ msgstr ""
 #: fe-connect.c:728
 #, c-format
 msgid "could not set socket to TCP no delay mode: %s\n"
-msgstr ""
-"non è stato possibile impostare il socket in modalità TCP no delay: %s\n"
+msgstr "impostazione del socket in modalità TCP no delay fallita: %s\n"
 
 #: fe-connect.c:758
 #, c-format
@@ -155,7 +153,7 @@ msgid ""
 "\tIs the server running locally and accepting\n"
 "\tconnections on Unix domain socket \"%s\"?\n"
 msgstr ""
-"non è stato possibile connettersi al server: %s\n"
+"connessione al server fallita: %s\n"
 "\tVerifica che il server locale sia in funzione e che\n"
 "\taccetti connessioni sul socket di dominio Unix \"%s\"\n"
 
@@ -166,22 +164,21 @@ msgid ""
 "\tIs the server running on host \"%s\" and accepting\n"
 "\tTCP/IP connections on port %s?\n"
 msgstr ""
-"non è stato possibile connettersi al server: %s\n"
+"connessione al server fallita: %s\n"
 "\tVerifica che il server all'indirizzo \"%s\" sia in funzione\n"
 "\te che accetti connessioni TCP/IP sulla porta %s\n"
 
 #: fe-connect.c:858
 #, c-format
 msgid "could not translate host name \"%s\" to address: %s\n"
-msgstr ""
-"non è stato possibile convertire il nome host \"%s\" in indirizzo: %s\n"
+msgstr "comversione del nome host \"%s\" in indirizzo fallita: %s\n"
 
 #: fe-connect.c:862
 #, c-format
 msgid "could not translate Unix-domain socket path \"%s\" to address: %s\n"
 msgstr ""
-"non è stato possibile convertire il percorso del socket di dominio Unix \"%s"
-"\" in indirizzo: %s\n"
+"conversione del percorso del socket di dominio Unix \"%s\" in indirizzo "
+"fallita: %s\n"
 
 #: fe-connect.c:1069
 msgid "invalid connection state, probably indicative of memory corruption\n"
@@ -192,24 +189,22 @@ msgstr ""
 #: fe-connect.c:1112
 #, c-format
 msgid "could not create socket: %s\n"
-msgstr "non è stato possibile creare il socket: %s\n"
+msgstr "creazione del socket fallita: %s\n"
 
 #: fe-connect.c:1135
 #, c-format
 msgid "could not set socket to non-blocking mode: %s\n"
-msgstr ""
-"non è stato possibile impostare il socket in modalità non bloccante: %s\n"
+msgstr "impostazione del socket in modalità non bloccante fallita: %s\n"
 
 #: fe-connect.c:1147
 #, c-format
 msgid "could not set socket to close-on-exec mode: %s\n"
-msgstr ""
-"non è stato possibile impostare il socket in modalità close-on-exec: %s\n"
+msgstr "impostazione del socket in modalità close-on-exec fallita: %s\n"
 
 #: fe-connect.c:1234
 #, c-format
 msgid "could not get socket error status: %s\n"
-msgstr "non è stato possibile ottenere lo stato di errore del socket: %s\n"
+msgstr "lettura dello stato di errore del socket fallita: %s\n"
 
 #: fe-connect.c:1272
 #, c-format
@@ -219,12 +214,12 @@ msgstr "non è stato possibile ottenere l'indirizzo del client dal socket: %s\n"
 #: fe-connect.c:1316
 #, c-format
 msgid "could not send SSL negotiation packet: %s\n"
-msgstr "non è stato possibile inviare i pacchetti di negoziazione SSL: %s\n"
+msgstr "invio del pacchetto di negoziazione SSL fallito: %s\n"
 
 #: fe-connect.c:1355
 #, c-format
 msgid "could not send startup packet: %s\n"
-msgstr "non è stato possibile spedire il pacchetto di avvio: %s\n"
+msgstr "invio del pacchetto di avvio fallito: %s\n"
 
 #: fe-connect.c:1425
 msgid "server does not support SSL, but SSL was required\n"
@@ -296,7 +291,7 @@ msgstr "URL LDAP \"%s\" non corretta: numero di porta non valido\n"
 
 #: fe-connect.c:2745
 msgid "could not create LDAP structure\n"
-msgstr "non è stato possibile creare la struttura dati LDAP\n"
+msgstr "creazione della struttura dati LDAP fallita\n"
 
 #: fe-connect.c:2787
 #, c-format
@@ -444,7 +439,7 @@ msgstr "il parametro numero %d non è compreso tra 0 e %d"
 #: fe-exec.c:2760
 #, c-format
 msgid "could not interpret result from server: %s"
-msgstr "non è stato possibile interpretare il risultato dal server: %s"
+msgstr "errore nell'interpretazione del risultato dal server: %s"
 
 #: fe-exec.c:2999
 msgid "incomplete multibyte character\n"
@@ -461,17 +456,17 @@ msgstr "non è possibile determinare l'OID della funzione lo_create\n"
 #: fe-lobj.c:525 fe-lobj.c:634
 #, c-format
 msgid "could not open file \"%s\": %s\n"
-msgstr "non è stato possibile aprire il file \"%s\": %s\n"
+msgstr "apertura del file \"%s\" fallita: %s\n"
 
 #: fe-lobj.c:580
 #, c-format
 msgid "could not read from file \"%s\": %s\n"
-msgstr "non è stato possibile leggere dal file \"%s\": %s\n"
+msgstr "lettura dal file \"%s\" fallita: %s\n"
 
 #: fe-lobj.c:654 fe-lobj.c:678
 #, c-format
 msgid "could not write to file \"%s\": %s\n"
-msgstr "non è stato possibile scrivere nel file \"%s\": %s\n"
+msgstr "scrittura nel file \"%s\" fallita: %s\n"
 
 #: fe-lobj.c:759
 msgid "query to initialize large object functions did not return data\n"
@@ -718,12 +713,12 @@ msgstr "codice di errore SSL sconosciuto: %d\n"
 #: fe-secure.c:420
 #, c-format
 msgid "could not receive data from server: %s\n"
-msgstr "non è stato possibile ricevere dati dal server: %s\n"
+msgstr "ricezione dati dal server fallita: %s\n"
 
 #: fe-secure.c:581
 #, c-format
 msgid "could not send data to server: %s\n"
-msgstr "non è stato possibile inviare dati al server: %s\n"
+msgstr "invio dati al server fallito: %s\n"
 
 #: fe-secure.c:701 fe-secure.c:718
 msgid "could not get server common name from server certificate\n"
@@ -755,29 +750,29 @@ msgstr ""
 #: fe-secure.c:826 fe-secure.c:840
 #, c-format
 msgid "could not open certificate file \"%s\": %s\n"
-msgstr "non è stato possibile aprire il file di certificato \"%s\": %s\n"
+msgstr "apertura del file di certificato \"%s\" fallita: %s\n"
 
 #: fe-secure.c:851
 #, c-format
 msgid "could not read certificate file \"%s\": %s\n"
-msgstr "non è stato possibile leggere il file di certificato \"%s\": %s\n"
+msgstr "lettura del file di certificato \"%s\" fallita: %s\n"
 
 #: fe-secure.c:889
 #, c-format
 msgid "could not load SSL engine \"%s\": %s\n"
-msgstr "non è stato possibile caricare il motore/funzionalità SSL \"%s\": %s\n"
+msgstr "caricamento del motore SSL \"%s\" fallito: %s\n"
 
 #: fe-secure.c:902
 #, c-format
 msgid "could not initialize SSL engine \"%s\": %s\n"
-msgstr "non è stato possibile inizializzare il motore SSL \"%s\": %s\n"
+msgstr "inizializzazione del motore SSL \"%s\" fallita: %s\n"
 
 #: fe-secure.c:919
 #, c-format
 msgid "could not read private SSL key \"%s\" from engine \"%s\": %s\n"
 msgstr ""
-"non è stato possibile leggere il file della chiave privata SSL \"%s\" dal "
-"motore \"%s\": %s\n"
+"lettura del file della chiave privata SSL \"%s\" dal motore \"%s\" fallita: "
+"%s\n"
 
 #: fe-secure.c:954
 #, c-format
@@ -817,7 +812,7 @@ msgstr ""
 #: fe-secure.c:1144
 #, c-format
 msgid "could not create SSL context: %s\n"
-msgstr "non è stato possibile creare il contesto SSL: %s\n"
+msgstr "creazione del contesto SSL fallita: %s\n"
 
 #: fe-secure.c:1238
 msgid "could not get home directory to locate root certificate file"
@@ -828,8 +823,7 @@ msgstr ""
 #: fe-secure.c:1262
 #, c-format
 msgid "could not read root certificate file \"%s\": %s\n"
-msgstr ""
-"non è stato possibile leggere il file del certificato radice \"%s\": %s\n"
+msgstr "lettura del file di certificato radice \"%s\" fallita: %s\n"
 
 #: fe-secure.c:1287
 #, c-format
@@ -844,8 +838,8 @@ msgid ""
 "verification.\n"
 msgstr ""
 "il file \"%s\" del certificato radice non esiste\n"
-"Fornite il file oppure cambiate sslmode per disabilitare la verifica del "
-"certificato del server.\n"
+"Per favore fornisci il file oppure cambia sslmode per disabilitare la "
+"verifica del certificato del server.\n"
 
 #: fe-secure.c:1400
 #, c-format

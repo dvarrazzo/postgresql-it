@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:50+0000\n"
-"PO-Revision-Date: 2012-10-31 15:09+0100\n"
+"PO-Revision-Date: 2012-11-02 15:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -92,8 +92,8 @@ msgstr ""
 #: plpython.c:916
 msgid "could not create new dictionary while building trigger arguments"
 msgstr ""
-"non è stato possibile creare un nuovo dizionario mentre si stanno costruendo "
-"gli argomenti del trigger"
+"creazione del nuovo dizionario nella costruzione degli argomenti del trigger "
+"fallita"
 
 #: plpython.c:1123
 msgid "unsupported set function return mode"
@@ -161,11 +161,11 @@ msgstr "le funzioni PL/Python non possono accettare il tipo %s"
 #: plpython.c:1826
 #, c-format
 msgid "could not compile PL/Python function \"%s\""
-msgstr "non è stato possibile compilare la funzione PL/Python \"%s\""
+msgstr "compilazione della funzione PL/Python \"%s\" fallita"
 
 #: plpython.c:1829
 msgid "could not compile anonymous PL/Python code block"
-msgstr "non è stato possibile compilare il blocco di codice anonimo PL/Python"
+msgstr "compilazione del blocco di codice anonimo PL/Python fallita"
 
 #: plpython.c:2123
 msgid "PL/Python does not support conversion to arrays of row types."
@@ -185,25 +185,23 @@ msgstr "non è stato possibile creare la nuova lista"
 
 #: plpython.c:2374
 msgid "could not create new dictionary"
-msgstr "non è stato possibile creare il nuovo dizionario"
+msgstr "creazione del nuovo dizionario fallita"
 
 #: plpython.c:2471
 msgid "could not create bytes representation of Python object"
-msgstr ""
-"non è stato possibile creare la rappresentazione in byte dell'oggetto Python"
+msgstr "creazione della rappresentazione in byte dell'oggetto Python fallita"
 
 #: plpython.c:2563
 msgid "could not create string representation of Python object"
-msgstr ""
-"non è stato possibile creare la rappresentazione stringa dell'oggetto Python"
+msgstr "creazione della rappresentazione stringa dell'oggetto Python fallita"
 
 #: plpython.c:2574
 msgid ""
 "could not convert Python object into cstring: Python string representation "
 "appears to contain null bytes"
 msgstr ""
-"non è stato possibile convertire oggetti Python in cstring: la "
-"rappresentazione stringa Python sembra contenere byte null"
+"conversione dell'oggetto Python in cstring fallita: la rappresentazione "
+"stringa Python sembra contenere byte null"
 
 #: plpython.c:2608
 msgid ""
@@ -271,7 +269,7 @@ msgstr "plpy.execute richiede una sequenza come secondo argomento"
 
 #: plpython.c:3516
 msgid "could not execute plan"
-msgstr "non è stato possibile eseguire il piano"
+msgstr "esecuzione del piano fallita"
 
 #: plpython.c:3519
 #, c-format
@@ -312,15 +310,15 @@ msgstr "non c'è nessuna transazione da cui uscire"
 
 #: plpython.c:3980 plpython.c:3984
 msgid "could not generate SPI exceptions"
-msgstr "non è stato possibile generare eccezioni SPI"
+msgstr "generazione delle eccezioni SPI fallita"
 
 #: plpython.c:4009
 msgid "could not add the spiexceptions module"
-msgstr "non è stato possibile aggiungere il modulo spiexceptions"
+msgstr "aggiunta del modulo spiexceptions fallita"
 
 #: plpython.c:4029
 msgid "could not create the base SPI exceptions"
-msgstr "non è stato possibile creare l'eccezione di base SPI"
+msgstr "creazione delle eccezioni SPI di base fallita"
 
 #: plpython.c:4097
 msgid "Python major version mismatch in session"
@@ -347,19 +345,19 @@ msgstr "errore non catturato durante l'inizializzazione"
 
 #: plpython.c:4143
 msgid "could not import \"__main__\" module"
-msgstr "non è stato possibile importare il modulo \"__main__\""
+msgstr "importazione del modulo \"__main__\""
 
 #: plpython.c:4148
 msgid "could not create globals"
-msgstr "non è stato possibile creare le variabili globali"
+msgstr "creazione delle variabili globali fallita"
 
 #: plpython.c:4152
 msgid "could not initialize globals"
-msgstr "non è stato possibile inizializzare le variabili globali"
+msgstr "inizializzazione delle variabili globali fallita"
 
 #: plpython.c:4190 plpython.c:4193
 msgid "could not import \"plpy\" module"
-msgstr "non è stato possibile importare il modulo \"plpy\""
+msgstr "importazione del modulo \"plpy\" fallita"
 
 #: plpython.c:4260
 msgid "could not unpack arguments in plpy.elog"
@@ -376,8 +374,8 @@ msgstr "%s"
 
 #: plpython.c:4878
 msgid "could not convert Python Unicode object to bytes"
-msgstr "non è stato possibile convertire oggetto Unicode Python in byte"
+msgstr "conversione dell'oggetto Unicode Python in byte fallita"
 
 #: plpython.c:4883
 msgid "could not extract bytes from encoded string"
-msgstr "non è stato possibile estrarre byte dalla stringa codificata"
+msgstr "estrazione dei byte dalla stringa codificata fallita"

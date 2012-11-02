@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-31 19:07+0000\n"
-"PO-Revision-Date: 2012-10-31 14:44+0100\n"
+"PO-Revision-Date: 2012-11-02 13:40+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -128,12 +128,12 @@ msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 #: pg_controldata.c:138
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\" in lettura: %s\n"
+msgstr "%s: apertura del file \"%s\" in lettura fallita: %s\n"
 
 #: pg_controldata.c:145
 #, c-format
 msgid "%s: could not read file \"%s\": %s\n"
-msgstr "%s: non è stato possibile leggere dal file \"%s\": %s\n"
+msgstr "%s: lettura dal file \"%s\" fallita: %s\n"
 
 #: pg_controldata.c:159
 #, c-format
@@ -152,7 +152,7 @@ msgstr ""
 #: pg_controldata.c:186
 #, c-format
 msgid "pg_control version number:            %u\n"
-msgstr "numero di versione di pg_control:           %u\n"
+msgstr "Numero di versione di pg_control:           %u\n"
 
 #: pg_controldata.c:189
 #, c-format
@@ -253,12 +253,12 @@ msgstr "Orario ultimo checkpoint:                   %s\n"
 #: pg_controldata.c:229
 #, c-format
 msgid "Minimum recovery ending location:     %X/%X\n"
-msgstr "locazione del minimum recovery ending:      %X/%X\n"
+msgstr "Posizione del minimum recovery ending:      %X/%X\n"
 
 #: pg_controldata.c:232
 #, c-format
 msgid "Backup start location:                %X/%X\n"
-msgstr "Locazione dell'inizio del backup:           %X/%X\n"
+msgstr "Posizione dell'inizio del backup:           %X/%X\n"
 
 #: pg_controldata.c:235
 #, c-format
@@ -336,7 +336,7 @@ msgstr "numeri in virgola mobile"
 #: pg_controldata.c:262
 #, c-format
 msgid "Float4 argument passing:              %s\n"
-msgstr "Passaggio di argomenti Float4:              %s\n"
+msgstr "passaggio di argomenti Float4:              %s\n"
 
 #: pg_controldata.c:263 pg_controldata.c:265
 msgid "by value"
@@ -349,4 +349,4 @@ msgstr "per riferimento"
 #: pg_controldata.c:264
 #, c-format
 msgid "Float8 argument passing:              %s\n"
-msgstr "Passaggio di argomenti Float8:              %s\n"
+msgstr "passaggio di argomenti Float8:              %s\n"

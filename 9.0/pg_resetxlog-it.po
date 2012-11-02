@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-31 19:06+0000\n"
-"PO-Revision-Date: 2012-10-31 15:06+0100\n"
+"PO-Revision-Date: 2012-11-02 17:27+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -114,12 +114,12 @@ msgstr "È obbligatorio eseguire %s come superutente di PostgreSQL.\n"
 #: pg_resetxlog.c:264
 #, c-format
 msgid "%s: could not change directory to \"%s\": %s\n"
-msgstr "%s: Non è stato possibile modificare la directory a \"%s\": %s\n"
+msgstr "%s: spostamento nella directory \"%s\" fallito: %s\n"
 
 #: pg_resetxlog.c:279 pg_resetxlog.c:407
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\" per la lettura: %s\n"
+msgstr "%s: apertura del file \"%s\" per la lettura fallita: %s\n"
 
 #: pg_resetxlog.c:285
 #, c-format
@@ -128,7 +128,7 @@ msgid ""
 "Is a server running?  If not, delete the lock file and try again.\n"
 msgstr ""
 "%s: il file di lock \"%s\" esiste\n"
-"Il server è in esecuzione? Se non lo è, elimina il lock file e riprova.\n"
+"Il server è in esecuzione? Se non lo è, cancella il file di lock e riprova.\n"
 
 #: pg_resetxlog.c:355
 #, c-format
@@ -169,7 +169,7 @@ msgstr ""
 #: pg_resetxlog.c:423
 #, c-format
 msgid "%s: could not read file \"%s\": %s\n"
-msgstr "%s: non è stato possibile leggere il file \"%s\": %s\n"
+msgstr "%s: lettura del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:446
 #, c-format
@@ -349,12 +349,12 @@ msgstr ""
 #: pg_resetxlog.c:686
 #, c-format
 msgid "%s: could not create pg_control file: %s\n"
-msgstr "%s: non è stato possibile creare il file pg_control: %s\n"
+msgstr "%s: creazione del file pg_control fallita: %s\n"
 
 #: pg_resetxlog.c:697
 #, c-format
 msgid "%s: could not write pg_control file: %s\n"
-msgstr "%s: non è stato possibile scrivere il file pg_control: %s\n"
+msgstr "%s: scrittura del file pg_control fallita: %s\n"
 
 #: pg_resetxlog.c:704 pg_resetxlog.c:1011
 #, c-format
@@ -364,27 +364,27 @@ msgstr "%s: errore fsync: %s\n"
 #: pg_resetxlog.c:742 pg_resetxlog.c:817 pg_resetxlog.c:873
 #, c-format
 msgid "%s: could not open directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire la directory \"%s\": %s\n"
+msgstr "%s: apertura della directory \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:786 pg_resetxlog.c:850 pg_resetxlog.c:907
 #, c-format
 msgid "%s: could not read from directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile leggere dalla directory \"%s\": %s\n"
+msgstr "%s: lettura dalla directory \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:831 pg_resetxlog.c:888
 #, c-format
 msgid "%s: could not delete file \"%s\": %s\n"
-msgstr "%s: non è stato possibile eliminare il file \"%s\": %s\n"
+msgstr "%s: cancellazione del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:978
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
+msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:989 pg_resetxlog.c:1003
 #, c-format
 msgid "%s: could not write file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere sul file \"%s\": %s\n"
+msgstr "%s: scrittura del file \"%s\" fallita: %s\n"
 
 #: pg_resetxlog.c:1022
 #, c-format

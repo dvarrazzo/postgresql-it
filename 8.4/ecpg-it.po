@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:10+0000\n"
-"PO-Revision-Date: 2012-11-01 02:31+0100\n"
+"PO-Revision-Date: 2012-11-01 17:22+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -195,7 +195,7 @@ msgstr ""
 #: ecpg.c:183 ecpg.c:334 ecpg.c:344
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
+msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 
 #: ecpg.c:222 ecpg.c:235 ecpg.c:251 ecpg.c:276
 #, c-format
@@ -317,7 +317,7 @@ msgstr ""
 #: pgc.l:1314
 #, c-format
 msgid "could not open include file \"%s\" on line %d"
-msgstr "non è stato possibile aprire il file di include \"%s\" alla riga %d"
+msgstr "apertura del file di include \"%s\" alla riga %d fallita"
 
 #: preproc.y:30
 msgid "syntax error"
@@ -336,7 +336,7 @@ msgstr "ERRORE: "
 #: preproc.y:106
 #, c-format
 msgid "could not remove output file \"%s\"\n"
-msgstr "non è stato possibile rimuovere il file di output \"%s\"\n"
+msgstr "rimozione del file di output \"%s\" fallita\n"
 
 #: preproc.y:314
 #, c-format
@@ -421,7 +421,7 @@ msgstr "la sintassi LIMIT #,# passata al server non è più supportata"
 
 #: preproc.y:7159
 msgid "subquery in FROM must have an alias"
-msgstr "la sotto-query in FROM deve avere un alias"
+msgstr "la sottoquery in FROM deve avere un alias"
 
 #: preproc.y:10833
 msgid "OLD used in query that is not in a rule"
@@ -513,7 +513,7 @@ msgstr "initializer non è permesso nel comando EXEC SQL VAR"
 
 #: preproc.y:12406
 msgid "arrays of indicators are not allowed on input"
-msgstr "un array di indicatori non è permesso in input"
+msgstr "array di indicatori non sono permessi"
 
 #. translator: %s is typically the translation of "syntax error"
 #: preproc.y:12633
@@ -590,7 +590,7 @@ msgstr "il tipo di variabile di un indicatore deve essere intero"
 #: variable.c:471
 #, c-format
 msgid "unrecognized data type name \"%s\""
-msgstr "tipo di dato chiatato \"%s\" è sconosciuto"
+msgstr "tipo di dato chiamato \"%s\" è sconosciuto"
 
 #: variable.c:482 variable.c:490 variable.c:507 variable.c:510
 msgid "multidimensional arrays are not supported"
@@ -603,11 +603,9 @@ msgid ""
 msgid_plural ""
 "multilevel pointers (more than 2 levels) are not supported; found %d levels"
 msgstr[0] ""
-"puntatori a più livelli (più di 2 livelli) non sono supportati; trovato %d "
-"livello"
+"puntatori a più livelli (più di 2) non sono supportati; trovato %d livello"
 msgstr[1] ""
-"puntatori a più livelli (più di 2 livelli) non sono supportati; trovati %d "
-"livelli"
+"puntatori a più livelli (più di 2) non sono supportati; trovati %d livelli"
 
 #: variable.c:504
 msgid "pointer to pointer is not supported for this data type"

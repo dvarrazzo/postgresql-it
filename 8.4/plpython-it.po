@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:09+0000\n"
-"PO-Revision-Date: 2012-11-01 03:00+0100\n"
+"PO-Revision-Date: 2012-11-02 15:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -83,8 +83,8 @@ msgstr ""
 #: plpython.c:630
 msgid "could not create new dictionary while building trigger arguments"
 msgstr ""
-"non è stato possibile creare un nuovo dizionario mentre si stanno costruendo "
-"gli argomenti del trigger"
+"creazione del nuovo dizionario nella costruzione degli argomenti del trigger "
+"fallita"
 
 #: plpython.c:837
 msgid "unsupported set function return mode"
@@ -172,11 +172,11 @@ msgstr "PyCObject_FromVoidPtr() fallita"
 #: plpython.c:1440
 #, c-format
 msgid "could not compile PL/Python function \"%s\""
-msgstr "non è stato possibile compilare la funzione PL/Python \"%s\""
+msgstr "compilazione della funzione PL/Python \"%s\" fallita"
 
 #: plpython.c:1752
 msgid "could not create new dictionary"
-msgstr "non è stato possibile creare il nuovo dizionario"
+msgstr "creazione del nuovo dizionario fallita"
 
 #: plpython.c:1839 plpython.c:1928 plpython.c:1999
 msgid "could not compute string representation of Python object"
@@ -300,11 +300,11 @@ msgstr "creazione della cache delle procedure fallita"
 
 #: plpython.c:2808
 msgid "could not import \"__main__\" module"
-msgstr "non è stato possibile importare il modulo \"__main__\""
+msgstr "importazione del modulo \"__main__\""
 
 #: plpython.c:2815
 msgid "could not initialize globals"
-msgstr "non è stato possibile inizializzare le variabili globali"
+msgstr "inizializzazione delle variabili globali fallita"
 
 #: plpython.c:2917
 msgid "could not parse error message in plpy.elog"

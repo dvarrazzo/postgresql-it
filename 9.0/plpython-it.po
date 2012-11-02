@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-31 19:01+0000\n"
-"PO-Revision-Date: 2012-11-01 01:14+0100\n"
+"PO-Revision-Date: 2012-11-02 15:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -92,8 +92,8 @@ msgstr ""
 #: plpython.c:816
 msgid "could not create new dictionary while building trigger arguments"
 msgstr ""
-"non è stato possibile creare un nuovo dizionario mentre si stanno costruendo "
-"gli argomenti del trigger"
+"creazione del nuovo dizionario nella costruzione degli argomenti del trigger "
+"fallita"
 
 #: plpython.c:1022
 msgid "unsupported set function return mode"
@@ -158,7 +158,7 @@ msgstr "PyCObject_FromVoidPtr() fallita"
 #: plpython.c:1613
 #, c-format
 msgid "could not compile PL/Python function \"%s\""
-msgstr "non è stato possibile compilare la funzione PL/Python \"%s\""
+msgstr "compilazione della funzione PL/Python \"%s\" fallita"
 
 #: plpython.c:1824
 msgid "PL/Python does not support conversion to arrays of row types."
@@ -174,25 +174,23 @@ msgstr "PL/Python supporta solo array monodimensionali."
 
 #: plpython.c:2067
 msgid "could not create new dictionary"
-msgstr "non è stato possibile creare il nuovo dizionario"
+msgstr "creazione del nuovo dizionario fallita"
 
 #: plpython.c:2139
 msgid "could not create bytes representation of Python object"
-msgstr ""
-"non è stato possibile creare la rappresentazione in byte dell'oggetto Python"
+msgstr "creazione della rappresentazione in byte dell'oggetto Python fallita"
 
 #: plpython.c:2193
 msgid "could not create string representation of Python object"
-msgstr ""
-"non è stato possibile creare la rappresentazione stringa dell'oggetto Python"
+msgstr "creazione della rappresentazione stringa dell'oggetto Python fallita"
 
 #: plpython.c:2204
 msgid ""
 "could not convert Python object into cstring: Python string representation "
 "appears to contain null bytes"
 msgstr ""
-"non è stato possibile convertire oggetti Python in cstring: la "
-"rappresentazione stringa Python sembra contenere byte null"
+"conversione dell'oggetto Python in cstring fallita: la rappresentazione "
+"stringa Python sembra contenere byte null"
 
 #: plpython.c:2238
 msgid ""
@@ -272,7 +270,7 @@ msgstr "plpy.execute richiede una sequenza come secondo argomento"
 
 #: plpython.c:2993
 msgid "could not execute plan"
-msgstr "non è stato possibile eseguire il piano"
+msgstr "esecuzione del piano fallita"
 
 #: plpython.c:2996
 #, c-format
@@ -332,11 +330,11 @@ msgstr "creazione della cache delle procedure fallita"
 
 #: plpython.c:3280
 msgid "could not import \"__main__\" module"
-msgstr "non è stato possibile importare il modulo \"__main__\""
+msgstr "importazione del modulo \"__main__\""
 
 #: plpython.c:3287
 msgid "could not initialize globals"
-msgstr "non è stato possibile inizializzare le variabili globali"
+msgstr "inizializzazione delle variabili globali fallita"
 
 #: plpython.c:3405
 msgid "could not parse error message in plpy.elog"
@@ -358,8 +356,8 @@ msgstr "memoria esaurita"
 
 #: plpython.c:3695
 msgid "could not convert Python Unicode object to bytes"
-msgstr "non è stato possibile convertire oggetto Unicode Python in byte"
+msgstr "conversione dell'oggetto Unicode Python in byte fallita"
 
 #: plpython.c:3700
 msgid "could not extract bytes from encoded string"
-msgstr "non è stato possibile estrarre byte dalla stringa codificata"
+msgstr "estrazione dei byte dalla stringa codificata fallita"

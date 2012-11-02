@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-31 19:01+0000\n"
-"PO-Revision-Date: 2012-11-01 00:54+0100\n"
+"PO-Revision-Date: 2012-11-01 17:22+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -195,7 +195,7 @@ msgstr ""
 #: ecpg.c:182 ecpg.c:333 ecpg.c:343
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
+msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 
 #: ecpg.c:221 ecpg.c:234 ecpg.c:250 ecpg.c:275
 #, c-format
@@ -235,7 +235,7 @@ msgstr "il cursore \"%s\" è stato dichiarato, ma non aperto"
 #: ecpg.c:479 preproc.y:109
 #, c-format
 msgid "could not remove output file \"%s\"\n"
-msgstr "non è stato possibile rimuovere il file di output \"%s\"\n"
+msgstr "rimozione del file di output \"%s\" fallita\n"
 
 #: pgc.l:401
 msgid "unterminated /* comment"
@@ -322,7 +322,7 @@ msgstr ""
 #: pgc.l:1362
 #, c-format
 msgid "could not open include file \"%s\" on line %d"
-msgstr "non è stato possibile aprire il file di include \"%s\" alla riga %d"
+msgstr "apertura del file di include \"%s\" alla riga %d fallita"
 
 #: preproc.y:31
 msgid "syntax error"
@@ -431,7 +431,7 @@ msgstr "la sintassi LIMIT #,# passata al server non è più supportata"
 
 #: preproc.y:7978
 msgid "subquery in FROM must have an alias"
-msgstr "la sotto-query in FROM deve avere un alias"
+msgstr "la sottoquery in FROM deve avere un alias"
 
 #: preproc.y:11714
 msgid "CREATE TABLE AS cannot specify INTO"
@@ -515,7 +515,7 @@ msgstr "initializer non è permesso nel comando EXEC SQL VAR"
 
 #: preproc.y:13311
 msgid "arrays of indicators are not allowed on input"
-msgstr "un array di indicatori non è permesso in input"
+msgstr "array di indicatori non sono permessi"
 
 #. translator: %s is typically the translation of "syntax error"
 #: preproc.y:13565
@@ -553,7 +553,7 @@ msgstr ""
 #: type.c:277
 #, c-format
 msgid "indicator variable \"%s\" is hidden by a local variable"
-msgstr "la variabile indicatore \"%s\" è nascosta da una variabile locale"
+msgstr "la variabile di indicatore \"%s\" è nascosta da una variabile locale"
 
 #: type.c:285
 msgid "indicator for array/pointer has to be array/pointer"
@@ -615,7 +615,7 @@ msgstr "il tipo di variabile di un indicatore deve essere intero"
 #: variable.c:496
 #, c-format
 msgid "unrecognized data type name \"%s\""
-msgstr "tipo di dato chiatato \"%s\" è sconosciuto"
+msgstr "tipo di dato chiamato \"%s\" è sconosciuto"
 
 #: variable.c:507 variable.c:515 variable.c:532 variable.c:535
 msgid "multidimensional arrays are not supported"
@@ -628,11 +628,9 @@ msgid ""
 msgid_plural ""
 "multilevel pointers (more than 2 levels) are not supported; found %d levels"
 msgstr[0] ""
-"puntatori a più livelli (più di 2 livelli) non sono supportati; trovato %d "
-"livello"
+"puntatori a più livelli (più di 2) non sono supportati; trovato %d livello"
 msgstr[1] ""
-"puntatori a più livelli (più di 2 livelli) non sono supportati; trovati %d "
-"livelli"
+"puntatori a più livelli (più di 2) non sono supportati; trovati %d livelli"
 
 #: variable.c:529
 msgid "pointer to pointer is not supported for this data type"

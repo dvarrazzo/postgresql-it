@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:56+0000\n"
-"PO-Revision-Date: 2012-10-31 14:41+0100\n"
+"PO-Revision-Date: 2012-11-02 15:39+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -179,7 +179,7 @@ msgstr ""
 #: pg_basebackup.c:167 pg_basebackup.c:613
 #, c-format
 msgid "%s: could not create directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare la directory \"%s\": %s\n"
+msgstr "%s: creazione della directory \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:184
 #, c-format
@@ -189,7 +189,7 @@ msgstr "%s: la directory \"%s\" esiste ma non è vuota\n"
 #: pg_basebackup.c:192
 #, c-format
 msgid "%s: could not access directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile accedere alla directory \"%s\": %s\n"
+msgstr "%s: accesso alla directory \"%s\" fallito: %s\n"
 
 #: pg_basebackup.c:239
 #, c-format
@@ -221,12 +221,12 @@ msgstr ""
 #: pg_basebackup.c:356
 #, c-format
 msgid "%s: could not create compressed file \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare il file compresso \"%s\": %s\n"
+msgstr "%s: creazione del file compresso \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:367 pg_basebackup.c:652
 #, c-format
 msgid "%s: could not create file \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare il file \"%s\": %s\n"
+msgstr "%s: creazione del file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:379 pg_basebackup.c:525
 #, c-format
@@ -236,27 +236,27 @@ msgstr "%s: non è stato possibile ottenere lo stream di dati COPY: %s"
 #: pg_basebackup.c:411 pg_basebackup.c:465
 #, c-format
 msgid "%s: could not write to compressed file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere sul file compresso \"%s\": %s\n"
+msgstr "%s: scrittura nel file compresso \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:421 pg_basebackup.c:475 pg_basebackup.c:692
 #, c-format
 msgid "%s: could not write to file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere sul file \"%s\": %s\n"
+msgstr "%s: scrittura nel file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:432
 #, c-format
 msgid "%s: could not close compressed file \"%s\": %s\n"
-msgstr "%s: non è stato possibile chiudere il file compresso \"%s\": %s\n"
+msgstr "%s: chiusura del file compresso \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:444
 #, c-format
 msgid "%s: could not close file \"%s\": %s\n"
-msgstr "%s: non è stato possibile chiudere il file \"%s\": %s\n"
+msgstr "%s: chiusura del file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:455 pg_basebackup.c:554
 #, c-format
 msgid "%s: could not read COPY data: %s"
-msgstr "%s: non è stato possibile leggere i dati COPY: %s"
+msgstr "%s: lettura dei dati COPY fallita: %s"
 
 #: pg_basebackup.c:568
 #, c-format
@@ -267,24 +267,22 @@ msgstr ""
 #: pg_basebackup.c:576
 #, c-format
 msgid "%s: could not parse file size\n"
-msgstr "%s: non è stato possibile interpretare la dimensione del file\n"
+msgstr "%s: interpretazione della dimensione del file fallita\n"
 
 #: pg_basebackup.c:584
 #, c-format
 msgid "%s: could not parse file mode\n"
-msgstr "%s: non è stato possibile interpretare la modalità del file\n"
+msgstr "%s: interpretazione della modalità del file fallita\n"
 
 #: pg_basebackup.c:619
 #, c-format
 msgid "%s: could not set permissions on directory \"%s\": %s\n"
-msgstr ""
-"%s: non è stato possibile impostare i permessi sulla directory \"%s\": %s\n"
+msgstr "%s: impostazione dei permessi sulla directory \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:632
 #, c-format
 msgid "%s: could not create symbolic link from \"%s\" to \"%s\": %s\n"
-msgstr ""
-"%s: non è stato possibile creare un link simbolico da \"%s\" a \"%s\": %s\n"
+msgstr "%s: creazione del link simbolico da \"%s\" a \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:639
 #, c-format
@@ -294,7 +292,7 @@ msgstr "%s: indicatore di link sconosciuto \"%c\"\n"
 #: pg_basebackup.c:659
 #, c-format
 msgid "%s: could not set permissions on file \"%s\": %s\n"
-msgstr "%s: non è stato possibile impostare i permessi sul file \"%s\": %s\n"
+msgstr "%s: impostazione dei permessi sul file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:717
 #, c-format
@@ -318,7 +316,7 @@ msgstr "%s: non è stato possibile inviare il comando di backup di base: %s"
 #: pg_basebackup.c:849
 #, c-format
 msgid "%s: could not initiate base backup: %s"
-msgstr "%s: non è stato possibile iniziare il backup di base: %s"
+msgstr "%s: avvio del backup di base fallito: %s"
 
 #: pg_basebackup.c:855
 #, c-format

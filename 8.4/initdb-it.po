@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:14+0000\n"
-"PO-Revision-Date: 2012-11-01 02:32+0100\n"
+"PO-Revision-Date: 2012-11-02 17:23+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -43,22 +43,22 @@ msgstr "%s: memoria esaurita\n"
 #: initdb.c:378 initdb.c:1488
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\" per la lettura: %s\n"
+msgstr "%s: errore nell'apertura del file \"%s\" per la lettura: %s\n"
 
 #: initdb.c:437 initdb.c:996 initdb.c:1025
 #, c-format
 msgid "%s: could not open file \"%s\" for writing: %s\n"
-msgstr "%s: non è stato possibile aprire il file \"%s\" per la scrittura: %s\n"
+msgstr "%s: errore nell'apertura del file \"%s\" per la scrittura: %s\n"
 
 #: initdb.c:445 initdb.c:453 initdb.c:1003 initdb.c:1031
 #, c-format
 msgid "%s: could not write file \"%s\": %s\n"
-msgstr "%s: non è stato possibile scrivere nel file \"%s\": %s\n"
+msgstr "%s: errore nella scrittura del file \"%s\": %s\n"
 
 #: initdb.c:472
 #, c-format
 msgid "%s: could not execute command \"%s\": %s\n"
-msgstr "%s: non è stato possibile eseguire il comando \"%s\": %s\n"
+msgstr "%s: esecuzione del comando \"%s\" fallita: %s\n"
 
 #: initdb.c:592
 #, c-format
@@ -131,12 +131,12 @@ msgstr ""
 #, c-format
 msgid "%s: could not obtain information about current user: %s\n"
 msgstr ""
-"%s: non è stato possibile acquisire informazioni sull'utente corrente: %s\n"
+"%s: non è stato possibile ottenere informazioni sull'utente corrente: %s\n"
 
 #: initdb.c:687
 #, c-format
 msgid "%s: could not get current user name: %s\n"
-msgstr "%s: non è stato possibile determinare il nome utente: %s\n"
+msgstr "%s: determinazione del nome utente fallita: %s\n"
 
 #: initdb.c:718
 #, c-format
@@ -146,7 +146,7 @@ msgstr "%s: \"%s\" non è un nome di codifica per il server valido\n"
 #: initdb.c:916 initdb.c:3056
 #, c-format
 msgid "%s: could not create directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare la directory \"%s\": %s\n"
+msgstr "%s: creazione della directory \"%s\" fallita: %s\n"
 
 #: initdb.c:946
 #, c-format
@@ -165,7 +165,7 @@ msgstr ""
 #: initdb.c:954
 #, c-format
 msgid "%s: could not access file \"%s\": %s\n"
-msgstr "%s: non è stato possibile accedere al file \"%s\": %s\n"
+msgstr "%s: accesso al file \"%s\" fallito: %s\n"
 
 #: initdb.c:965
 #, c-format
@@ -221,7 +221,7 @@ msgstr "Le password non corrispondono.\n"
 #: initdb.c:1494
 #, c-format
 msgid "%s: could not read password from file \"%s\": %s\n"
-msgstr "%s: non è stato possibile leggere il file delle password \"%s\": %s\n"
+msgstr "%s: lettura del file delle password \"%s\" fallita: %s\n"
 
 #: initdb.c:1507
 #, c-format
@@ -283,7 +283,7 @@ msgstr "intercettato segnale\n"
 #: initdb.c:2081
 #, c-format
 msgid "could not write to child process: %s\n"
-msgstr "non è stato possibile scrivere sul processo figlio: %s\n"
+msgstr "scrittura verso il processo figlio fallita: %s\n"
 
 #: initdb.c:2089
 #, c-format
@@ -708,9 +708,7 @@ msgstr "correzione dei permessi sulla directory esistente %s ... "
 #: initdb.c:3003 initdb.c:3073
 #, c-format
 msgid "%s: could not change permissions of directory \"%s\": %s\n"
-msgstr ""
-"%s: non è stato possibile cambiare i permessi di accesso della directory \"%s"
-"\": %s\n"
+msgstr "%s: modifica dei permessi della directory \"%s\" fallita: %s\n"
 
 #: initdb.c:3016 initdb.c:3085
 #, c-format
@@ -731,7 +729,7 @@ msgstr ""
 #: initdb.c:3027 initdb.c:3095
 #, c-format
 msgid "%s: could not access directory \"%s\": %s\n"
-msgstr "%s: non è stato possibile accedere alla directory \"%s\": %s\n"
+msgstr "%s: accesso alla directory \"%s\" fallito: %s\n"
 
 #: initdb.c:3041
 #, c-format
@@ -751,7 +749,7 @@ msgstr ""
 #: initdb.c:3107
 #, c-format
 msgid "%s: could not create symbolic link \"%s\": %s\n"
-msgstr "%s: non è stato possibile creare il link simbolico \"%s\": %s\n"
+msgstr "%s: creazione del link simbolico \"%s\" fallita: %s\n"
 
 #: initdb.c:3112
 #, c-format
@@ -761,7 +759,7 @@ msgstr "%s: i link simbolici non sono supportati su questa piattaforma"
 #: initdb.c:3118
 #, c-format
 msgid "creating subdirectories ... "
-msgstr "creazione delle sottodirectory  ... "
+msgstr "creazione delle sottodirectory ... "
 
 #: initdb.c:3180
 #, c-format
@@ -795,12 +793,12 @@ msgstr "non è stato possibile impostare la giunzione per \"%s\": %s\n"
 #: ../../port/dirmod.c:325
 #, c-format
 msgid "could not open directory \"%s\": %s\n"
-msgstr "non è stato possibile aprire la directory \"%s\": %s\n"
+msgstr "apertura della directory \"%s\" fallita: %s\n"
 
 #: ../../port/dirmod.c:362
 #, c-format
 msgid "could not read directory \"%s\": %s\n"
-msgstr "non è stato possibile leggere la directory \"%s\": %s\n"
+msgstr "lettura della directory \"%s\" fallita: %s\n"
 
 #: ../../port/dirmod.c:445
 #, c-format
@@ -812,12 +810,12 @@ msgstr ""
 #: ../../port/dirmod.c:472 ../../port/dirmod.c:489
 #, c-format
 msgid "could not remove file or directory \"%s\": %s\n"
-msgstr "non è stato possibile rimuovere il file o la directory \"%s\": %s\n"
+msgstr "rimozione del file o directory \"%s\" fallita: %s\n"
 
 #: ../../port/exec.c:195 ../../port/exec.c:309 ../../port/exec.c:352
 #, c-format
 msgid "could not identify current directory: %s"
-msgstr "non è stato possibile identificare la directory corrente: %s"
+msgstr "identificazione della directory corrente fallita: %s"
 
 #: ../../port/exec.c:214
 #, c-format
@@ -827,22 +825,22 @@ msgstr "binario non valido \"%s\""
 #: ../../port/exec.c:263
 #, c-format
 msgid "could not read binary \"%s\""
-msgstr "non è stato possibile leggere il binario \"%s\""
+msgstr "lettura del binario \"%s\" fallita"
 
 #: ../../port/exec.c:270
 #, c-format
 msgid "could not find a \"%s\" to execute"
-msgstr "non è stato possibile trovare un \"%s\" da eseguire"
+msgstr "programma \"%s\" da eseguire non trovato"
 
 #: ../../port/exec.c:325 ../../port/exec.c:361
 #, c-format
 msgid "could not change directory to \"%s\""
-msgstr "non è stato possibile cambiare directory in \"%s\""
+msgstr "spostamento nella directory \"%s\" fallito"
 
 #: ../../port/exec.c:340
 #, c-format
 msgid "could not read symbolic link \"%s\""
-msgstr "non è stato possibile leggere il link simbolico \"%s\""
+msgstr "lettura del link simbolico \"%s\" fallita"
 
 #: ../../port/exec.c:595
 #, c-format

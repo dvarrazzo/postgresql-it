@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-31 19:05+0000\n"
-"PO-Revision-Date: 2012-11-01 01:19+0100\n"
+"PO-Revision-Date: 2012-11-02 15:31+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -54,12 +54,12 @@ msgstr "\\%s: parametro in eccesso \"%s\" ignorato\n"
 #: command.c:267
 #, c-format
 msgid "could not get home directory: %s\n"
-msgstr "non è stato possibile aprire la home directory: %s\n"
+msgstr "directory home non trovata: %s\n"
 
 #: command.c:283
 #, c-format
 msgid "\\%s: could not change directory to \"%s\": %s\n"
-msgstr "\\%s: non è stato possibile modificare la directory a \"%s\": %s\n"
+msgstr "\\%s: spostamento della directory a \"%s\" fallito: %s\n"
 
 #: command.c:316 common.c:940
 #, c-format
@@ -233,11 +233,11 @@ msgstr ""
 #: command.c:1558
 #, c-format
 msgid "could not start editor \"%s\"\n"
-msgstr "non è stato possibile avviare editor \"%s\"\n"
+msgstr "avvio dell'editor \"%s\" fallito\n"
 
 #: command.c:1560
 msgid "could not start /bin/sh\n"
-msgstr "non è stato possibile avviare /bin/sh\n"
+msgstr "avvio di /bin/sh fallito\n"
 
 #: command.c:1597
 #, c-format
@@ -247,7 +247,7 @@ msgstr "non è stato possibile trovare la directory temporanea: %s\n"
 #: command.c:1624
 #, c-format
 msgid "could not open temporary file \"%s\": %s\n"
-msgstr "non è stato possibile aprire il file temporaneo \"%s\": %s\n"
+msgstr "apertura del file temporaneo \"%s\" fallita: %s\n"
 
 #: command.c:1845
 msgid ""
@@ -490,12 +490,12 @@ msgstr "tentativo di uscita dalla modalità copy"
 #: copy.c:407 copy.c:417
 #, c-format
 msgid "could not write COPY data: %s\n"
-msgstr "non è stato possibile scrivere i dati della COPY: %s\n"
+msgstr "scrittura dei dati COPY fallita: %s\n"
 
 #: copy.c:424
 #, c-format
 msgid "COPY data transfer failed: %s"
-msgstr "il trasferimento dei dati della COPY è fallito: %s"
+msgstr "trasferimento dei dati COPY fallito: %s"
 
 #: copy.c:472
 msgid "canceled by user"
@@ -1321,12 +1321,12 @@ msgstr ""
 #: input.c:198
 #, c-format
 msgid "could not read from input file: %s\n"
-msgstr "non è stato possibile leggere dal file di input: %s\n"
+msgstr "lettura dal file di input fallita: %s\n"
 
 #: input.c:406
 #, c-format
 msgid "could not save history to file \"%s\": %s\n"
-msgstr "non è stato possibile salvare la cronologia nel file \"%s\": %s\n"
+msgstr "salvataggio della cronologia nel file \"%s\" fallita: %s\n"
 
 #: input.c:411
 msgid "history is not supported by this installation\n"
@@ -1431,7 +1431,7 @@ msgstr[1] "(%lu righe)"
 #: startup.c:237
 #, c-format
 msgid "%s: could not open log file \"%s\": %s\n"
-msgstr "%s: non è stato possibile aprire il file di log \"%s\": %s\n"
+msgstr "%s: apertura del file di log \"%s\" fallita: %s\n"
 
 #: startup.c:299
 #, c-format
@@ -1445,18 +1445,17 @@ msgstr ""
 #: startup.c:445
 #, c-format
 msgid "%s: could not set printing parameter \"%s\"\n"
-msgstr ""
-"%s: non è stato possibile impostare il parametro per la stampa \"%s\"\n"
+msgstr "%s: impostazione del parametro di stampa \"%s\" fallito\n"
 
 #: startup.c:484
 #, c-format
 msgid "%s: could not delete variable \"%s\"\n"
-msgstr "%s: non è stato possibile eliminare la variabile \"%s\"\n"
+msgstr "%s: cancellazione della variabile \"%s\" fallita\n"
 
 #: startup.c:494
 #, c-format
 msgid "%s: could not set variable \"%s\"\n"
-msgstr "%s: non è stato possibile impostare la variabile \"%s\"\n"
+msgstr "%s: impostazione della variabile \"%s\" fallita\n"
 
 #: startup.c:531 startup.c:537
 #, c-format
@@ -3763,7 +3762,7 @@ msgstr "espressione_ordinamento"
 #: ../../port/exec.c:125 ../../port/exec.c:239 ../../port/exec.c:282
 #, c-format
 msgid "could not identify current directory: %s"
-msgstr "non è stato possibile identificare la directory corrente: %s"
+msgstr "identificazione della directory corrente fallita: %s"
 
 #: ../../port/exec.c:144
 #, c-format
@@ -3773,22 +3772,22 @@ msgstr "binario non valido \"%s\""
 #: ../../port/exec.c:193
 #, c-format
 msgid "could not read binary \"%s\""
-msgstr "non è stato possibile leggere il binario \"%s\""
+msgstr "lettura del binario \"%s\" fallita"
 
 #: ../../port/exec.c:200
 #, c-format
 msgid "could not find a \"%s\" to execute"
-msgstr "non è stato possibile trovare un \"%s\" da eseguire"
+msgstr "programma \"%s\" da eseguire non trovato"
 
 #: ../../port/exec.c:255 ../../port/exec.c:291
 #, c-format
 msgid "could not change directory to \"%s\""
-msgstr "non è stato possibile cambiare directory in \"%s\""
+msgstr "spostamento nella directory \"%s\" fallito"
 
 #: ../../port/exec.c:270
 #, c-format
 msgid "could not read symbolic link \"%s\""
-msgstr "non è stato possibile leggere il link simbolico \"%s\""
+msgstr "lettura del link simbolico \"%s\" fallita"
 
 #: ../../port/exec.c:525
 #, c-format

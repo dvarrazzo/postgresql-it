@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:14+0000\n"
-"PO-Revision-Date: 2012-11-01 02:47+0100\n"
+"PO-Revision-Date: 2012-11-02 15:17+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -916,12 +916,12 @@ msgstr "Password: "
 #: common.c:116
 #, c-format
 msgid "%s: could not connect to database %s\n"
-msgstr "%s: non è stato possibile connettersi al database %s\n"
+msgstr "%s: connessione al database %s fallita\n"
 
 #: common.c:138
 #, c-format
 msgid "%s: could not connect to database %s: %s"
-msgstr "%s: non è stato possibile connettersi al database %s: %s"
+msgstr "%s: connessione al database %s fallita: %s"
 
 #: common.c:162 common.c:190
 #, c-format
@@ -972,4 +972,4 @@ msgstr "Richiesta di annullamento inviata\n"
 #: common.c:369 common.c:402
 #, c-format
 msgid "Could not send cancel request: %s"
-msgstr "Non è stato possibile inviare la richiesta di annullamento: %s"
+msgstr "Invio della richiesta di annullamento fallita: %s"
