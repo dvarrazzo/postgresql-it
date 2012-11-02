@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-21 22:46+0000\n"
-"PO-Revision-Date: 2012-11-02 15:16+0100\n"
+"PO-Revision-Date: 2012-11-02 17:27+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -128,7 +128,7 @@ msgid ""
 "Is a server running?  If not, delete the lock file and try again.\n"
 msgstr ""
 "%s: il file di lock \"%s\" esiste\n"
-"Il server è in esecuzione? Se non lo è, elimina il lock file e riprova.\n"
+"Il server è in esecuzione? Se non lo è, cancella il file di lock e riprova.\n"
 
 #: pg_resetxlog.c:355
 #, c-format
