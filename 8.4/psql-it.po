@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:13+0000\n"
-"PO-Revision-Date: 2012-11-02 15:31+0100\n"
+"PO-Revision-Date: 2012-11-03 09:40+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -954,7 +954,7 @@ msgstr ""
 #: help.c:199
 #, c-format
 msgid "  \\da[+]  [PATTERN]      list aggregates\n"
-msgstr ""
+msgstr "  \\da[+]  [MODELLO]      mostra le aggregazioni\n"
 
 #: help.c:200
 #, c-format
@@ -1286,6 +1286,8 @@ msgid ""
 "No help available for \"%-.*s\".\n"
 "Try \\h with no arguments to see available help.\n"
 msgstr ""
+"Nessun aiuto disponibile per \"%-.*s\".\n"
+"Prova \\h senza argomenti per vedere gli aiuti disponibili.\n"
 
 #: input.c:187
 #, c-format
@@ -2133,7 +2135,7 @@ msgstr "annulla la transazione corrente"
 
 #: sql_help.h:26
 msgid "ABORT [ WORK | TRANSACTION ]"
-msgstr ""
+msgstr "ABORT [ WORK | TRANSACTION ]"
 
 #: sql_help.h:29
 msgid "change the definition of an aggregate function"
@@ -2145,6 +2147,9 @@ msgid ""
 "ALTER AGGREGATE name ( type [ , ... ] ) OWNER TO new_owner\n"
 "ALTER AGGREGATE name ( type [ , ... ] ) SET SCHEMA new_schema"
 msgstr ""
+"ALTER AGGREGATE name ( type [ , ... ] ) RENAME TO new_name\n"
+"ALTER AGGREGATE name ( type [ , ... ] ) OWNER TO new_owner\n"
+"ALTER AGGREGATE name ( type [ , ... ] ) SET SCHEMA new_schema"
 
 #: sql_help.h:33
 msgid "change the definition of a conversion"
@@ -2155,6 +2160,8 @@ msgid ""
 "ALTER CONVERSION name RENAME TO newname\n"
 "ALTER CONVERSION name OWNER TO newowner"
 msgstr ""
+"ALTER CONVERSION name RENAME TO newname\n"
+"ALTER CONVERSION name OWNER TO newowner"
 
 #: sql_help.h:37
 msgid "change a database"
@@ -2180,6 +2187,23 @@ msgid ""
 "ALTER DATABASE name RESET configuration_parameter\n"
 "ALTER DATABASE name RESET ALL"
 msgstr ""
+"ALTER DATABASE name [ [ WITH ] option [ ... ] ]\n"
+"\n"
+"dove option può essere:\n"
+"\n"
+"    CONNECTION LIMIT connlimit\n"
+"\n"
+"ALTER DATABASE name RENAME TO newname\n"
+"\n"
+"ALTER DATABASE name OWNER TO new_owner\n"
+"\n"
+"ALTER DATABASE name SET TABLESPACE new_tablespace\n"
+"\n"
+"ALTER DATABASE name SET configuration_parameter { TO | = } { value | "
+"DEFAULT }\n"
+"ALTER DATABASE name SET configuration_parameter FROM CURRENT\n"
+"ALTER DATABASE name RESET configuration_parameter\n"
+"ALTER DATABASE name RESET ALL"
 
 #: sql_help.h:41
 msgid "change the definition of a domain"
@@ -2200,6 +2224,18 @@ msgid ""
 "ALTER DOMAIN name\n"
 "    SET SCHEMA new_schema"
 msgstr ""
+"ALTER DOMAIN nome\n"
+"    { SET DEFAULT espressione | DROP DEFAULT }\n"
+"ALTER DOMAIN nome\n"
+"    { SET | DROP } NOT NULL\n"
+"ALTER DOMAIN nome\n"
+"    ADD vincolo_di_dominio\n"
+"ALTER DOMAIN nome\n"
+"    DROP CONSTRAINT nome_vincolo [ RESTRICT | CASCADE ]\n"
+"ALTER DOMAIN nome\n"
+"    OWNER TO nuovo_proprietario \n"
+"ALTER DOMAIN name\n"
+"    SET SCHEMA new_schema"
 
 #: sql_help.h:45
 msgid "change the definition of a foreign-data wrapper"
@@ -2212,6 +2248,10 @@ msgid ""
 "    [ OPTIONS ( [ ADD | SET | DROP ] option ['value'] [, ... ]) ]\n"
 "ALTER FOREIGN DATA WRAPPER name OWNER TO new_owner"
 msgstr ""
+"ALTER FOREIGN DATA WRAPPER name\n"
+"    [ VALIDATOR valfunction | NO VALIDATOR ]\n"
+"    [ OPTIONS ( [ ADD | SET | DROP ] option ['value'] [, ... ]) ]\n"
+"ALTER FOREIGN DATA WRAPPER name OWNER TO new_owner"
 
 #: sql_help.h:49
 msgid "change the definition of a function"
@@ -2240,6 +2280,26 @@ msgid ""
 "    RESET configuration_parameter\n"
 "    RESET ALL"
 msgstr ""
+"ALTER FUNCTION name ( [ [ argmode ] [ argname ] argtype [, ...] ] )\n"
+"    action [ ... ] [ RESTRICT ]\n"
+"ALTER FUNCTION name ( [ [ argmode ] [ argname ] argtype [, ...] ] )\n"
+"    RENAME TO new_name\n"
+"ALTER FUNCTION name ( [ [ argmode ] [ argname ] argtype [, ...] ] )\n"
+"    OWNER TO new_owner\n"
+"ALTER FUNCTION name ( [ [ argmode ] [ argname ] argtype [, ...] ] )\n"
+"    SET SCHEMA new_schema\n"
+"\n"
+"dove action è una di:\n"
+"\n"
+"    CALLED ON NULL INPUT | RETURNS NULL ON NULL INPUT | STRICT\n"
+"    IMMUTABLE | STABLE | VOLATILE\n"
+"    [ EXTERNAL ] SECURITY INVOKER | [ EXTERNAL ] SECURITY DEFINER\n"
+"    COST execution_cost\n"
+"    ROWS result_rows\n"
+"    SET configuration_parameter { TO | = } { value | DEFAULT }\n"
+"    SET configuration_parameter FROM CURRENT\n"
+"    RESET configuration_parameter\n"
+"    RESET ALL"
 
 #: sql_help.h:53
 msgid "change role name or membership"
@@ -2252,6 +2312,10 @@ msgid ""
 "\n"
 "ALTER GROUP groupname RENAME TO newname"
 msgstr ""
+"ALTER GROUP groupname ADD USER username [, ... ]\n"
+"ALTER GROUP groupname DROP USER username [, ... ]\n"
+"\n"
+"ALTER GROUP groupname RENAME TO newname"
 
 #: sql_help.h:57
 msgid "change the definition of an index"
@@ -2264,6 +2328,10 @@ msgid ""
 "ALTER INDEX name SET ( storage_parameter = value [, ... ] )\n"
 "ALTER INDEX name RESET ( storage_parameter [, ... ] )"
 msgstr ""
+"ALTER INDEX name RENAME TO new_name\n"
+"ALTER INDEX name SET TABLESPACE tablespace_name\n"
+"ALTER INDEX name SET ( storage_parameter = value [, ... ] )\n"
+"ALTER INDEX name RESET ( storage_parameter [, ... ] )"
 
 #: sql_help.h:61
 msgid "change the definition of a procedural language"
@@ -2274,6 +2342,8 @@ msgid ""
 "ALTER [ PROCEDURAL ] LANGUAGE name RENAME TO newname\n"
 "ALTER [ PROCEDURAL ] LANGUAGE name OWNER TO new_owner"
 msgstr ""
+"ALTER [ PROCEDURAL ] LANGUAGE name RENAME TO newname\n"
+"ALTER [ PROCEDURAL ] LANGUAGE name OWNER TO new_owner"
 
 #: sql_help.h:65
 msgid "change the definition of an operator"
@@ -2284,6 +2354,8 @@ msgid ""
 "ALTER OPERATOR name ( { lefttype | NONE } , { righttype | NONE } ) OWNER TO "
 "newowner"
 msgstr ""
+"ALTER OPERATOR name ( { lefttype | NONE } , { righttype | NONE } ) OWNER TO "
+"newowner"
 
 #: sql_help.h:69
 msgid "change the definition of an operator class"
@@ -2294,6 +2366,8 @@ msgid ""
 "ALTER OPERATOR CLASS name USING index_method RENAME TO newname\n"
 "ALTER OPERATOR CLASS name USING index_method OWNER TO newowner"
 msgstr ""
+"ALTER OPERATOR CLASS name USING index_method RENAME TO newname\n"
+"ALTER OPERATOR CLASS name USING index_method OWNER TO newowner"
 
 #: sql_help.h:73
 msgid "change the definition of an operator family"
@@ -2313,6 +2387,17 @@ msgid ""
 "ALTER OPERATOR FAMILY name USING index_method RENAME TO newname\n"
 "ALTER OPERATOR FAMILY name USING index_method OWNER TO newowner"
 msgstr ""
+"ALTER OPERATOR FAMILY name USING index_method ADD\n"
+"  {  OPERATOR strategy_number operator_name ( op_type, op_type )\n"
+"   | FUNCTION support_number [ ( op_type [ , op_type ] ) ] funcname "
+"( argument_type [, ...] )\n"
+"  } [, ... ]\n"
+"ALTER OPERATOR FAMILY name USING index_method DROP\n"
+"  {  OPERATOR strategy_number ( op_type [ , op_type ] )\n"
+"   | FUNCTION support_number ( op_type [ , op_type ] )\n"
+"  } [, ... ]\n"
+"ALTER OPERATOR FAMILY name USING index_method RENAME TO newname\n"
+"ALTER OPERATOR FAMILY name USING index_method OWNER TO newowner"
 
 #: sql_help.h:77 sql_help.h:125
 msgid "change a database role"
@@ -2341,6 +2426,26 @@ msgid ""
 "ALTER ROLE name RESET configuration_parameter\n"
 "ALTER ROLE name RESET ALL"
 msgstr ""
+"ALTER ROLE name [ [ WITH ] option [ ... ] ]\n"
+"\n"
+"dove ooption può essere:\n"
+"    \n"
+"      SUPERUSER | NOSUPERUSER\n"
+"    | CREATEDB | NOCREATEDB\n"
+"    | CREATEROLE | NOCREATEROLE\n"
+"    | CREATEUSER | NOCREATEUSER\n"
+"    | INHERIT | NOINHERIT\n"
+"    | LOGIN | NOLOGIN\n"
+"    | CONNECTION LIMIT connlimit\n"
+"    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'\n"
+"    | VALID UNTIL 'timestamp' \n"
+"\n"
+"ALTER ROLE name RENAME TO newname\n"
+"\n"
+"ALTER ROLE name SET configuration_parameter { TO | = } { value | DEFAULT }\n"
+"ALTER ROLE name SET configuration_parameter FROM CURRENT\n"
+"ALTER ROLE name RESET configuration_parameter\n"
+"ALTER ROLE name RESET ALL"
 
 #: sql_help.h:81
 msgid "change the definition of a schema"
@@ -2351,6 +2456,8 @@ msgid ""
 "ALTER SCHEMA name RENAME TO newname\n"
 "ALTER SCHEMA name OWNER TO newowner"
 msgstr ""
+"ALTER SCHEMA name RENAME TO newname\n"
+"ALTER SCHEMA name OWNER TO newowner"
 
 #: sql_help.h:85
 msgid "change the definition of a sequence generator"
@@ -2368,6 +2475,15 @@ msgid ""
 "ALTER SEQUENCE name RENAME TO new_name\n"
 "ALTER SEQUENCE name SET SCHEMA new_schema"
 msgstr ""
+"ALTER SEQUENCE name [ INCREMENT [ BY ] increment ]\n"
+"    [ MINVALUE minvalue | NO MINVALUE ] [ MAXVALUE maxvalue | NO MAXVALUE ]\n"
+"    [ START [ WITH ] start ]\n"
+"    [ RESTART [ [ WITH ] restart ] ]\n"
+"    [ CACHE cache ] [ [ NO ] CYCLE ]\n"
+"    [ OWNED BY { table.column | NONE } ]\n"
+"ALTER SEQUENCE name OWNER TO new_owner\n"
+"ALTER SEQUENCE name RENAME TO new_name\n"
+"ALTER SEQUENCE name SET SCHEMA new_schema"
 
 #: sql_help.h:89
 msgid "change the definition of a foreign server"
@@ -2379,6 +2495,9 @@ msgid ""
 "    [ OPTIONS ( [ ADD | SET | DROP ] option ['value'] [, ... ] ) ]\n"
 "ALTER SERVER servername OWNER TO new_owner"
 msgstr ""
+"ALTER SERVER servername [ VERSION 'newversion' ]\n"
+"    [ OPTIONS ( [ ADD | SET | DROP ] option ['value'] [, ... ] ) ]\n"
+"ALTER SERVER servername OWNER TO new_owner"
 
 #: sql_help.h:93
 msgid "change the definition of a table"
@@ -2427,6 +2546,46 @@ msgid ""
 "    OWNER TO new_owner\n"
 "    SET TABLESPACE new_tablespace"
 msgstr ""
+"ALTER TABLE [ ONLY ] name [ * ]\n"
+"    action [, ... ]\n"
+"ALTER TABLE [ ONLY ] name [ * ]\n"
+"    RENAME [ COLUMN ] column TO new_column\n"
+"ALTER TABLE name\n"
+"    RENAME TO new_name\n"
+"ALTER TABLE name\n"
+"    SET SCHEMA new_schema\n"
+"\n"
+"dove action è una di:\n"
+"\n"
+"    ADD [ COLUMN ] column type [ column_constraint [ ... ] ]\n"
+"    DROP [ COLUMN ] column [ RESTRICT | CASCADE ]\n"
+"    ALTER [ COLUMN ] column [ SET DATA ] TYPE type [ USING expression ]\n"
+"    ALTER [ COLUMN ] column SET DEFAULT expression\n"
+"    ALTER [ COLUMN ] column DROP DEFAULT\n"
+"    ALTER [ COLUMN ] column { SET | DROP } NOT NULL\n"
+"    ALTER [ COLUMN ] column SET STATISTICS integer\n"
+"    ALTER [ COLUMN ] column SET STORAGE { PLAIN | EXTERNAL | EXTENDED | "
+"MAIN }\n"
+"    ADD table_constraint\n"
+"    DROP CONSTRAINT constraint_name [ RESTRICT | CASCADE ]\n"
+"    DISABLE TRIGGER [ trigger_name | ALL | USER ]\n"
+"    ENABLE TRIGGER [ trigger_name | ALL | USER ]\n"
+"    ENABLE REPLICA TRIGGER trigger_name\n"
+"    ENABLE ALWAYS TRIGGER trigger_name\n"
+"    DISABLE RULE rewrite_rule_name\n"
+"    ENABLE RULE rewrite_rule_name\n"
+"    ENABLE REPLICA RULE rewrite_rule_name\n"
+"    ENABLE ALWAYS RULE rewrite_rule_name\n"
+"    CLUSTER ON index_name\n"
+"    SET WITHOUT CLUSTER\n"
+"    SET WITH OIDS\n"
+"    SET WITHOUT OIDS\n"
+"    SET ( storage_parameter = value [, ... ] )\n"
+"    RESET ( storage_parameter [, ... ] )\n"
+"    INHERIT parent_table\n"
+"    NO INHERIT parent_table\n"
+"    OWNER TO new_owner\n"
+"    SET TABLESPACE new_tablespace"
 
 #: sql_help.h:97
 msgid "change the definition of a tablespace"
@@ -2437,6 +2596,8 @@ msgid ""
 "ALTER TABLESPACE name RENAME TO newname\n"
 "ALTER TABLESPACE name OWNER TO newowner"
 msgstr ""
+"ALTER TABLESPACE name RENAME TO newname\n"
+"ALTER TABLESPACE name OWNER TO newowner"
 
 #: sql_help.h:101
 msgid "change the definition of a text search configuration"
@@ -2458,6 +2619,19 @@ msgid ""
 "ALTER TEXT SEARCH CONFIGURATION name RENAME TO newname\n"
 "ALTER TEXT SEARCH CONFIGURATION name OWNER TO newowner"
 msgstr ""
+"ALTER TEXT SEARCH CONFIGURATION name\n"
+"    ADD MAPPING FOR token_type [, ... ] WITH dictionary_name [, ... ]\n"
+"ALTER TEXT SEARCH CONFIGURATION name\n"
+"    ALTER MAPPING FOR token_type [, ... ] WITH dictionary_name [, ... ]\n"
+"ALTER TEXT SEARCH CONFIGURATION name\n"
+"    ALTER MAPPING REPLACE old_dictionary WITH new_dictionary\n"
+"ALTER TEXT SEARCH CONFIGURATION name\n"
+"    ALTER MAPPING FOR token_type [, ... ] REPLACE old_dictionary WITH "
+"new_dictionary\n"
+"ALTER TEXT SEARCH CONFIGURATION name\n"
+"    DROP MAPPING [ IF EXISTS ] FOR token_type [, ... ]\n"
+"ALTER TEXT SEARCH CONFIGURATION name RENAME TO newname\n"
+"ALTER TEXT SEARCH CONFIGURATION name OWNER TO newowner"
 
 #: sql_help.h:105
 msgid "change the definition of a text search dictionary"
@@ -2471,6 +2645,11 @@ msgid ""
 "ALTER TEXT SEARCH DICTIONARY name RENAME TO newname\n"
 "ALTER TEXT SEARCH DICTIONARY name OWNER TO newowner"
 msgstr ""
+"ALTER TEXT SEARCH DICTIONARY name (\n"
+"    option [ = value ] [, ... ]\n"
+")\n"
+"ALTER TEXT SEARCH DICTIONARY name RENAME TO newname\n"
+"ALTER TEXT SEARCH DICTIONARY name OWNER TO newowner"
 
 #: sql_help.h:109
 msgid "change the definition of a text search parser"
@@ -2478,7 +2657,7 @@ msgstr "cambia la definizione di un analizzatore di ricerca testo"
 
 #: sql_help.h:110
 msgid "ALTER TEXT SEARCH PARSER name RENAME TO newname"
-msgstr ""
+msgstr "ALTER TEXT SEARCH PARSER name RENAME TO newname"
 
 #: sql_help.h:113
 msgid "change the definition of a text search template"
@@ -2486,7 +2665,7 @@ msgstr "cambia la definizione di un modello di ricerca testo"
 
 #: sql_help.h:114
 msgid "ALTER TEXT SEARCH TEMPLATE name RENAME TO newname"
-msgstr ""
+msgstr "ALTER TEXT SEARCH TEMPLATE name RENAME TO newname"
 
 #: sql_help.h:117
 msgid "change the definition of a trigger"
@@ -2494,7 +2673,7 @@ msgstr "cambia la definizione di un trigger"
 
 #: sql_help.h:118
 msgid "ALTER TRIGGER name ON table RENAME TO newname"
-msgstr ""
+msgstr "ALTER TRIGGER name ON table RENAME TO newname"
 
 #: sql_help.h:121
 msgid "change the definition of a type"
@@ -2506,6 +2685,9 @@ msgid ""
 "ALTER TYPE name OWNER TO new_owner \n"
 "ALTER TYPE name SET SCHEMA new_schema"
 msgstr ""
+"ALTER TYPE name RENAME TO new_name\n"
+"ALTER TYPE name OWNER TO new_owner \n"
+"ALTER TYPE name SET SCHEMA new_schema"
 
 #: sql_help.h:126
 msgid ""
@@ -2530,6 +2712,26 @@ msgid ""
 "ALTER USER name RESET configuration_parameter\n"
 "ALTER USER name RESET ALL"
 msgstr ""
+"ALTER USER name [ [ WITH ] option [ ... ] ]\n"
+"\n"
+"dove option può essere:\n"
+"    \n"
+"      SUPERUSER | NOSUPERUSER\n"
+"    | CREATEDB | NOCREATEDB\n"
+"    | CREATEROLE | NOCREATEROLE\n"
+"    | CREATEUSER | NOCREATEUSER\n"
+"    | INHERIT | NOINHERIT\n"
+"    | LOGIN | NOLOGIN\n"
+"    | CONNECTION LIMIT connlimit\n"
+"    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'\n"
+"    | VALID UNTIL 'timestamp' \n"
+"\n"
+"ALTER USER name RENAME TO newname\n"
+"\n"
+"ALTER USER name SET configuration_parameter { TO | = } { value | DEFAULT }\n"
+"ALTER USER name SET configuration_parameter FROM CURRENT\n"
+"ALTER USER name RESET configuration_parameter\n"
+"ALTER USER name RESET ALL"
 
 #: sql_help.h:129
 msgid "change the definition of a user mapping"
@@ -2541,6 +2743,9 @@ msgid ""
 "    SERVER servername\n"
 "    OPTIONS ( [ ADD | SET | DROP ] option ['value'] [, ... ] )"
 msgstr ""
+"ALTER USER MAPPING FOR { username | USER | CURRENT_USER | PUBLIC }\n"
+"    SERVER servername\n"
+"    OPTIONS ( [ ADD | SET | DROP ] option ['value'] [, ... ] )"
 
 #: sql_help.h:133
 msgid "change the definition of a view"
@@ -2554,6 +2759,11 @@ msgid ""
 "ALTER VIEW name RENAME TO new_name\n"
 "ALTER VIEW name SET SCHEMA new_schema"
 msgstr ""
+"ALTER VIEW name ALTER [ COLUMN ] column SET DEFAULT expression\n"
+"ALTER VIEW name ALTER [ COLUMN ] column DROP DEFAULT\n"
+"ALTER VIEW name OWNER TO new_owner\n"
+"ALTER VIEW name RENAME TO new_name\n"
+"ALTER VIEW name SET SCHEMA new_schema"
 
 #: sql_help.h:137
 msgid "collect statistics about a database"
@@ -2561,7 +2771,7 @@ msgstr "raccogli statistiche sul database"
 
 #: sql_help.h:138
 msgid "ANALYZE [ VERBOSE ] [ table [ ( column [, ...] ) ] ]"
-msgstr ""
+msgstr "ANALYZE [ VERBOSE ] [ table [ ( column [, ...] ) ] ]"
 
 #: sql_help.h:141 sql_help.h:553
 msgid "start a transaction block"
@@ -2577,6 +2787,13 @@ msgid ""
 "UNCOMMITTED }\n"
 "    READ WRITE | READ ONLY"
 msgstr ""
+"BEGIN [ WORK | TRANSACTION ] [ transaction_mode [, ...] ]\n"
+"\n"
+"dove transaction_mode è una di:\n"
+"\n"
+"    ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED | READ "
+"UNCOMMITTED }\n"
+"    READ WRITE | READ ONLY"
 
 #: sql_help.h:145
 msgid "force a transaction log checkpoint"
@@ -2584,7 +2801,7 @@ msgstr "forza un punto di controllo nel log delle transazioni"
 
 #: sql_help.h:146
 msgid "CHECKPOINT"
-msgstr ""
+msgstr "CHECKPOINT"
 
 #: sql_help.h:149
 msgid "close a cursor"
@@ -2592,7 +2809,7 @@ msgstr "chiudi un cursore"
 
 #: sql_help.h:150
 msgid "CLOSE { name | ALL }"
-msgstr ""
+msgstr "CLOSE { name | ALL }"
 
 #: sql_help.h:153
 msgid "cluster a table according to an index"
@@ -2603,6 +2820,8 @@ msgid ""
 "CLUSTER [VERBOSE] tablename [ USING indexname ]\n"
 "CLUSTER [VERBOSE]"
 msgstr ""
+"CLUSTER [VERBOSE] tablename [ USING indexname ]\n"
+"CLUSTER [VERBOSE]"
 
 #: sql_help.h:157
 msgid "define or change the comment of an object"
@@ -2641,6 +2860,36 @@ msgid ""
 "  VIEW object_name\n"
 "} IS 'text'"
 msgstr ""
+"COMMENT ON\n"
+"{\n"
+"  TABLE object_name |\n"
+"  COLUMN table_name.column_name |\n"
+"  AGGREGATE agg_name (agg_type [, ...] ) |\n"
+"  CAST (sourcetype AS targettype) |\n"
+"  CONSTRAINT constraint_name ON table_name |\n"
+"  CONVERSION object_name |\n"
+"  DATABASE object_name |\n"
+"  DOMAIN object_name |\n"
+"  FUNCTION func_name ( [ [ argmode ] [ argname ] argtype [, ...] ] ) |\n"
+"  INDEX object_name |\n"
+"  LARGE OBJECT large_object_oid |\n"
+"  OPERATOR op (leftoperand_type, rightoperand_type) |\n"
+"  OPERATOR CLASS object_name USING index_method |\n"
+"  OPERATOR FAMILY object_name USING index_method |\n"
+"  [ PROCEDURAL ] LANGUAGE object_name |\n"
+"  ROLE object_name |\n"
+"  RULE rule_name ON table_name |\n"
+"  SCHEMA object_name |\n"
+"  SEQUENCE object_name |\n"
+"  TABLESPACE object_name |\n"
+"  TEXT SEARCH CONFIGURATION object_name |\n"
+"  TEXT SEARCH DICTIONARY object_name |\n"
+"  TEXT SEARCH PARSER object_name |\n"
+"  TEXT SEARCH TEMPLATE object_name |\n"
+"  TRIGGER trigger_name ON table_name |\n"
+"  TYPE object_name |\n"
+"  VIEW object_name\n"
+"} IS 'text'"
 
 #: sql_help.h:161 sql_help.h:433
 msgid "commit the current transaction"
@@ -2648,7 +2897,7 @@ msgstr "rendi persistente la transazione corrente"
 
 #: sql_help.h:162
 msgid "COMMIT [ WORK | TRANSACTION ]"
-msgstr ""
+msgstr "COMMIT [ WORK | TRANSACTION ]"
 
 #: sql_help.h:165
 msgid "commit a transaction that was earlier prepared for two-phase commit"
@@ -2658,7 +2907,7 @@ msgstr ""
 
 #: sql_help.h:166
 msgid "COMMIT PREPARED transaction_id"
-msgstr ""
+msgstr "COMMIT PREPARED transaction_id"
 
 #: sql_help.h:169
 msgid "copy data between a file and a table"
@@ -2690,6 +2939,29 @@ msgid ""
 "                [ ESCAPE [ AS ] 'escape' ]\n"
 "                [ FORCE QUOTE column [, ...] ]"
 msgstr ""
+"COPY tablename [ ( column [, ...] ) ]\n"
+"    FROM { 'filename' | STDIN }\n"
+"    [ [ WITH ] \n"
+"          [ BINARY ]\n"
+"          [ OIDS ]\n"
+"          [ DELIMITER [ AS ] 'delimiter' ]\n"
+"          [ NULL [ AS ] 'null string' ]\n"
+"          [ CSV [ HEADER ]\n"
+"                [ QUOTE [ AS ] 'quote' ] \n"
+"                [ ESCAPE [ AS ] 'escape' ]\n"
+"                [ FORCE NOT NULL column [, ...] ]\n"
+"\n"
+"COPY { tablename [ ( column [, ...] ) ] | ( query ) }\n"
+"    TO { 'filename' | STDOUT }\n"
+"    [ [ WITH ] \n"
+"          [ BINARY ]\n"
+"          [ OIDS ]\n"
+"          [ DELIMITER [ AS ] 'delimiter' ]\n"
+"          [ NULL [ AS ] 'null string' ]\n"
+"          [ CSV [ HEADER ]\n"
+"                [ QUOTE [ AS ] 'quote' ] \n"
+"                [ ESCAPE [ AS ] 'escape' ]\n"
+"                [ FORCE QUOTE column [, ...] ]"
 
 #: sql_help.h:173
 msgid "define a new aggregate function"
@@ -2716,6 +2988,24 @@ msgid ""
 "    [ , SORTOP = sort_operator ]\n"
 ")"
 msgstr ""
+"CREATE AGGREGATE name ( input_data_type [ , ... ] ) (\n"
+"    SFUNC = sfunc,\n"
+"    STYPE = state_data_type\n"
+"    [ , FINALFUNC = ffunc ]\n"
+"    [ , INITCOND = initial_condition ]\n"
+"    [ , SORTOP = sort_operator ]\n"
+")\n"
+"\n"
+"o la vecchia sintassi\n"
+"\n"
+"CREATE AGGREGATE name (\n"
+"    BASETYPE = base_type,\n"
+"    SFUNC = sfunc,\n"
+"    STYPE = state_data_type\n"
+"    [ , FINALFUNC = ffunc ]\n"
+"    [ , INITCOND = initial_condition ]\n"
+"    [ , SORTOP = sort_operator ]\n"
+")"
 
 #: sql_help.h:177
 msgid "define a new cast"
@@ -2735,6 +3025,17 @@ msgid ""
 "    WITH INOUT\n"
 "    [ AS ASSIGNMENT | AS IMPLICIT ]"
 msgstr ""
+"CREATE CAST (sourcetype AS targettype)\n"
+"    WITH FUNCTION funcname (argtypes)\n"
+"    [ AS ASSIGNMENT | AS IMPLICIT ]\n"
+"\n"
+"CREATE CAST (sourcetype AS targettype)\n"
+"    WITHOUT FUNCTION\n"
+"    [ AS ASSIGNMENT | AS IMPLICIT ]\n"
+"\n"
+"CREATE CAST (sourcetype AS targettype)\n"
+"    WITH INOUT\n"
+"    [ AS ASSIGNMENT | AS IMPLICIT ]"
 
 #: sql_help.h:181
 msgid "define a new constraint trigger"
@@ -2751,6 +3052,14 @@ msgid ""
 "    FOR EACH ROW\n"
 "    EXECUTE PROCEDURE funcname ( arguments )"
 msgstr ""
+"CREATE CONSTRAINT TRIGGER name\n"
+"    AFTER event [ OR ... ]\n"
+"    ON table_name\n"
+"    [ FROM referenced_table_name ]\n"
+"    { NOT DEFERRABLE | [ DEFERRABLE ] { INITIALLY IMMEDIATE | INITIALLY "
+"DEFERRED } }\n"
+"    FOR EACH ROW\n"
+"    EXECUTE PROCEDURE funcname ( arguments )"
 
 #: sql_help.h:185
 msgid "define a new encoding conversion"
@@ -2761,6 +3070,8 @@ msgid ""
 "CREATE [ DEFAULT ] CONVERSION name\n"
 "    FOR source_encoding TO dest_encoding FROM funcname"
 msgstr ""
+"CREATE [ DEFAULT ] CONVERSION name\n"
+"    FOR source_encoding TO dest_encoding FROM funcname"
 
 #: sql_help.h:189
 msgid "create a new database"
@@ -2777,6 +3088,14 @@ msgid ""
 "           [ TABLESPACE [=] tablespace ]\n"
 "           [ CONNECTION LIMIT [=] connlimit ] ]"
 msgstr ""
+"CREATE DATABASE name\n"
+"    [ [ WITH ] [ OWNER [=] dbowner ]\n"
+"           [ TEMPLATE [=] template ]\n"
+"           [ ENCODING [=] encoding ]\n"
+"           [ LC_COLLATE [=] lc_collate ]\n"
+"           [ LC_CTYPE [=] lc_ctype ]\n"
+"           [ TABLESPACE [=] tablespace ]\n"
+"           [ CONNECTION LIMIT [=] connlimit ] ]"
 
 #: sql_help.h:193
 msgid "define a new domain"
@@ -2793,6 +3112,14 @@ msgid ""
 "[ CONSTRAINT constraint_name ]\n"
 "{ NOT NULL | NULL | CHECK (expression) }"
 msgstr ""
+"CREATE DOMAIN name [ AS ] data_type\n"
+"    [ DEFAULT expression ]\n"
+"    [ constraint [ ... ] ]\n"
+"\n"
+"dove constraint è:\n"
+"\n"
+"[ CONSTRAINT constraint_name ]\n"
+"{ NOT NULL | NULL | CHECK (expression) }"
 
 #: sql_help.h:197
 msgid "define a new foreign-data wrapper"
@@ -2804,6 +3131,9 @@ msgid ""
 "    [ VALIDATOR valfunction | NO VALIDATOR ]\n"
 "    [ OPTIONS ( option 'value' [, ... ] ) ]"
 msgstr ""
+"CREATE FOREIGN DATA WRAPPER name\n"
+"    [ VALIDATOR valfunction | NO VALIDATOR ]\n"
+"    [ OPTIONS ( option 'value' [, ... ] ) ]"
 
 #: sql_help.h:201
 msgid "define a new function"
@@ -2829,6 +3159,23 @@ msgid ""
 "  } ...\n"
 "    [ WITH ( attribute [, ...] ) ]"
 msgstr ""
+"CREATE [ OR REPLACE ] FUNCTION\n"
+"    name ( [ [ argmode ] [ argname ] argtype [ { DEFAULT | = } defexpr ] "
+"[, ...] ] )\n"
+"    [ RETURNS rettype\n"
+"      | RETURNS TABLE ( colname coltype [, ...] ) ]\n"
+"  { LANGUAGE langname\n"
+"    | WINDOW\n"
+"    | IMMUTABLE | STABLE | VOLATILE\n"
+"    | CALLED ON NULL INPUT | RETURNS NULL ON NULL INPUT | STRICT\n"
+"    | [ EXTERNAL ] SECURITY INVOKER | [ EXTERNAL ] SECURITY DEFINER\n"
+"    | COST execution_cost\n"
+"    | ROWS result_rows\n"
+"    | SET configuration_parameter { TO value | = value | FROM CURRENT }\n"
+"    | AS 'definition'\n"
+"    | AS 'obj_file', 'link_symbol'\n"
+"  } ...\n"
+"    [ WITH ( attribute [, ...] ) ]"
 
 #: sql_help.h:205 sql_help.h:229 sql_help.h:285
 msgid "define a new database role"
@@ -2855,6 +3202,24 @@ msgid ""
 "    | USER rolename [, ...]\n"
 "    | SYSID uid"
 msgstr ""
+"CREATE GROUP name [ [ WITH ] option [ ... ] ]\n"
+"\n"
+"dove option può essere:\n"
+"    \n"
+"      SUPERUSER | NOSUPERUSER\n"
+"    | CREATEDB | NOCREATEDB\n"
+"    | CREATEROLE | NOCREATEROLE\n"
+"    | CREATEUSER | NOCREATEUSER\n"
+"    | INHERIT | NOINHERIT\n"
+"    | LOGIN | NOLOGIN\n"
+"    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'\n"
+"    | VALID UNTIL 'timestamp' \n"
+"    | IN ROLE rolename [, ...]\n"
+"    | IN GROUP rolename [, ...]\n"
+"    | ROLE rolename [, ...]\n"
+"    | ADMIN rolename [, ...]\n"
+"    | USER rolename [, ...]\n"
+"    | SYSID uid"
 
 #: sql_help.h:209
 msgid "define a new index"
@@ -2869,6 +3234,12 @@ msgid ""
 "    [ TABLESPACE tablespace ]\n"
 "    [ WHERE predicate ]"
 msgstr ""
+"CREATE [ UNIQUE ] INDEX [ CONCURRENTLY ] name ON table [ USING method ]\n"
+"    ( { column | ( expression ) } [ opclass ] [ ASC | DESC ] [ NULLS { FIRST "
+"| LAST } ] [, ...] )\n"
+"    [ WITH ( storage_parameter = value [, ... ] ) ]\n"
+"    [ TABLESPACE tablespace ]\n"
+"    [ WHERE predicate ]"
 
 #: sql_help.h:213
 msgid "define a new procedural language"
@@ -2880,6 +3251,9 @@ msgid ""
 "CREATE [ TRUSTED ] [ PROCEDURAL ] LANGUAGE name\n"
 "    HANDLER call_handler [ VALIDATOR valfunction ]"
 msgstr ""
+"CREATE [ PROCEDURAL ] LANGUAGE name\n"
+"CREATE [ TRUSTED ] [ PROCEDURAL ] LANGUAGE name\n"
+"    HANDLER call_handler [ VALIDATOR valfunction ]"
 
 #: sql_help.h:217
 msgid "define a new operator"
@@ -2895,6 +3269,13 @@ msgid ""
 "    [, HASHES ] [, MERGES ]\n"
 ")"
 msgstr ""
+"CREATE OPERATOR name (\n"
+"    PROCEDURE = funcname\n"
+"    [, LEFTARG = lefttype ] [, RIGHTARG = righttype ]\n"
+"    [, COMMUTATOR = com_op ] [, NEGATOR = neg_op ]\n"
+"    [, RESTRICT = res_proc ] [, JOIN = join_proc ]\n"
+"    [, HASHES ] [, MERGES ]\n"
+")"
 
 #: sql_help.h:221
 msgid "define a new operator class"
@@ -2910,6 +3291,13 @@ msgid ""
 "   | STORAGE storage_type\n"
 "  } [, ... ]"
 msgstr ""
+"CREATE OPERATOR CLASS name [ DEFAULT ] FOR TYPE data_type\n"
+"  USING index_method [ FAMILY family_name ] AS\n"
+"  {  OPERATOR strategy_number operator_name [ ( op_type, op_type ) ]\n"
+"   | FUNCTION support_number [ ( op_type [ , op_type ] ) ] funcname "
+"( argument_type [, ...] )\n"
+"   | STORAGE storage_type\n"
+"  } [, ... ]"
 
 #: sql_help.h:225
 msgid "define a new operator family"
@@ -2917,7 +3305,7 @@ msgstr "definisci una nuova famiglia operatore"
 
 #: sql_help.h:226
 msgid "CREATE OPERATOR FAMILY name USING index_method"
-msgstr ""
+msgstr "CREATE OPERATOR FAMILY name USING index_method"
 
 #: sql_help.h:230
 msgid ""
@@ -2941,6 +3329,25 @@ msgid ""
 "    | USER rolename [, ...]\n"
 "    | SYSID uid"
 msgstr ""
+"CREATE ROLE name [ [ WITH ] option [ ... ] ]\n"
+"\n"
+"dove option può essere:\n"
+"    \n"
+"      SUPERUSER | NOSUPERUSER\n"
+"    | CREATEDB | NOCREATEDB\n"
+"    | CREATEROLE | NOCREATEROLE\n"
+"    | CREATEUSER | NOCREATEUSER\n"
+"    | INHERIT | NOINHERIT\n"
+"    | LOGIN | NOLOGIN\n"
+"    | CONNECTION LIMIT connlimit\n"
+"    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'\n"
+"    | VALID UNTIL 'timestamp' \n"
+"    | IN ROLE rolename [, ...]\n"
+"    | IN GROUP rolename [, ...]\n"
+"    | ROLE rolename [, ...]\n"
+"    | ADMIN rolename [, ...]\n"
+"    | USER rolename [, ...]\n"
+"    | SYSID uid"
 
 #: sql_help.h:233
 msgid "define a new rewrite rule"
@@ -2952,6 +3359,9 @@ msgid ""
 "    TO table [ WHERE condition ]\n"
 "    DO [ ALSO | INSTEAD ] { NOTHING | command | ( command ; command ... ) }"
 msgstr ""
+"CREATE [ OR REPLACE ] RULE name AS ON event\n"
+"    TO table [ WHERE condition ]\n"
+"    DO [ ALSO | INSTEAD ] { NOTHING | command | ( command ; command ... ) }"
 
 #: sql_help.h:237
 msgid "define a new schema"
@@ -2963,6 +3373,9 @@ msgid ""
 "[ ... ] ]\n"
 "CREATE SCHEMA AUTHORIZATION username [ schema_element [ ... ] ]"
 msgstr ""
+"CREATE SCHEMA schemaname [ AUTHORIZATION username ] [ schema_element "
+"[ ... ] ]\n"
+"CREATE SCHEMA AUTHORIZATION username [ schema_element [ ... ] ]"
 
 #: sql_help.h:241
 msgid "define a new sequence generator"
@@ -2975,6 +3388,10 @@ msgid ""
 "    [ START [ WITH ] start ] [ CACHE cache ] [ [ NO ] CYCLE ]\n"
 "    [ OWNED BY { table.column | NONE } ]"
 msgstr ""
+"CREATE [ TEMPORARY | TEMP ] SEQUENCE name [ INCREMENT [ BY ] increment ]\n"
+"    [ MINVALUE minvalue | NO MINVALUE ] [ MAXVALUE maxvalue | NO MAXVALUE ]\n"
+"    [ START [ WITH ] start ] [ CACHE cache ] [ [ NO ] CYCLE ]\n"
+"    [ OWNED BY { table.column | NONE } ]"
 
 #: sql_help.h:245
 msgid "define a new foreign server"
@@ -2986,6 +3403,9 @@ msgid ""
 "    FOREIGN DATA WRAPPER fdwname\n"
 "    [ OPTIONS ( option 'value' [, ... ] ) ]"
 msgstr ""
+"CREATE SERVER servername [ TYPE 'servertype' ] [ VERSION 'serverversion' ]\n"
+"    FOREIGN DATA WRAPPER fdwname\n"
+"    [ OPTIONS ( option 'value' [, ... ] ) ]"
 
 #: sql_help.h:249
 msgid "define a new table"
@@ -3039,6 +3459,51 @@ msgid ""
 "[ WITH ( storage_parameter [= value] [, ... ] ) ]\n"
 "[ USING INDEX TABLESPACE tablespace ]"
 msgstr ""
+"CREATE [ [ GLOBAL | LOCAL ] { TEMPORARY | TEMP } ] TABLE table_name ( [\n"
+"  { column_name data_type [ DEFAULT default_expr ] [ column_constraint "
+"[ ... ] ]\n"
+"    | table_constraint\n"
+"    | LIKE parent_table [ { INCLUDING | EXCLUDING } { DEFAULTS | CONSTRAINTS "
+"| INDEXES } ] ... }\n"
+"    [, ... ]\n"
+"] )\n"
+"[ INHERITS ( parent_table [, ... ] ) ]\n"
+"[ WITH ( storage_parameter [= value] [, ... ] ) | WITH OIDS | WITHOUT "
+"OIDS ]\n"
+"[ ON COMMIT { PRESERVE ROWS | DELETE ROWS | DROP } ]\n"
+"[ TABLESPACE tablespace ]\n"
+"\n"
+"dove column_constraint è:\n"
+"\n"
+"[ CONSTRAINT constraint_name ]\n"
+"{ NOT NULL | \n"
+"  NULL | \n"
+"  UNIQUE index_parameters |\n"
+"  PRIMARY KEY index_parameters |\n"
+"  CHECK ( expression ) |\n"
+"  REFERENCES reftable [ ( refcolumn ) ] [ MATCH FULL | MATCH PARTIAL | MATCH "
+"SIMPLE ]\n"
+"    [ ON DELETE action ] [ ON UPDATE action ] }\n"
+"[ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY "
+"IMMEDIATE ]\n"
+"\n"
+"e table_constraint è:\n"
+"\n"
+"[ CONSTRAINT constraint_name ]\n"
+"{ UNIQUE ( column_name [, ... ] ) index_parameters |\n"
+"  PRIMARY KEY ( column_name [, ... ] ) index_parameters |\n"
+"  CHECK ( expression ) |\n"
+"  FOREIGN KEY ( column_name [, ... ] ) REFERENCES reftable [ ( refcolumn "
+"[, ... ] ) ]\n"
+"    [ MATCH FULL | MATCH PARTIAL | MATCH SIMPLE ] [ ON DELETE action ] [ ON "
+"UPDATE action ] }\n"
+"[ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY "
+"IMMEDIATE ]\n"
+"\n"
+"index_parameters in UNIQUE and PRIMARY KEY constraints are:\n"
+"\n"
+"[ WITH ( storage_parameter [= value] [, ... ] ) ]\n"
+"[ USING INDEX TABLESPACE tablespace ]"
 
 #: sql_help.h:253 sql_help.h:525
 msgid "define a new table from the results of a query"
@@ -3055,6 +3520,14 @@ msgid ""
 "    AS query\n"
 "    [ WITH [ NO ] DATA ]"
 msgstr ""
+"CREATE [ [ GLOBAL | LOCAL ] { TEMPORARY | TEMP } ] TABLE table_name\n"
+"    [ (column_name [, ...] ) ]\n"
+"    [ WITH ( storage_parameter [= value] [, ... ] ) | WITH OIDS | WITHOUT "
+"OIDS ]\n"
+"    [ ON COMMIT { PRESERVE ROWS | DELETE ROWS | DROP } ]\n"
+"    [ TABLESPACE tablespace ]\n"
+"    AS query\n"
+"    [ WITH [ NO ] DATA ]"
 
 #: sql_help.h:257
 msgid "define a new tablespace"
@@ -3064,6 +3537,7 @@ msgstr "crea un nuovo tablespace"
 msgid ""
 "CREATE TABLESPACE tablespacename [ OWNER username ] LOCATION 'directory'"
 msgstr ""
+"CREATE TABLESPACE tablespacename [ OWNER username ] LOCATION 'directory'"
 
 #: sql_help.h:261
 msgid "define a new text search configuration"
@@ -3076,6 +3550,10 @@ msgid ""
 "    COPY = source_config\n"
 ")"
 msgstr ""
+"CREATE TEXT SEARCH CONFIGURATION name (\n"
+"    PARSER = parser_name |\n"
+"    COPY = source_config\n"
+")"
 
 #: sql_help.h:265
 msgid "define a new text search dictionary"
@@ -3088,6 +3566,10 @@ msgid ""
 "    [, option = value [, ... ]]\n"
 ")"
 msgstr ""
+"CREATE TEXT SEARCH DICTIONARY name (\n"
+"    TEMPLATE = template\n"
+"    [, option = value [, ... ]]\n"
+")"
 
 #: sql_help.h:269
 msgid "define a new text search parser"
@@ -3103,6 +3585,13 @@ msgid ""
 "    [, HEADLINE = headline_function ]\n"
 ")"
 msgstr ""
+"CREATE TEXT SEARCH PARSER name (\n"
+"    START = start_function ,\n"
+"    GETTOKEN = gettoken_function ,\n"
+"    END = end_function ,\n"
+"    LEXTYPES = lextypes_function\n"
+"    [, HEADLINE = headline_function ]\n"
+")"
 
 #: sql_help.h:273
 msgid "define a new text search template"
@@ -3115,6 +3604,10 @@ msgid ""
 "    LEXIZE = lexize_function\n"
 ")"
 msgstr ""
+"CREATE TEXT SEARCH TEMPLATE name (\n"
+"    [ INIT = init_function , ]\n"
+"    LEXIZE = lexize_function\n"
+")"
 
 #: sql_help.h:277
 msgid "define a new trigger"
@@ -3126,6 +3619,9 @@ msgid ""
 "    ON table [ FOR [ EACH ] { ROW | STATEMENT } ]\n"
 "    EXECUTE PROCEDURE funcname ( arguments )"
 msgstr ""
+"CREATE TRIGGER name { BEFORE | AFTER } { event [ OR ... ] }\n"
+"    ON table [ FOR [ EACH ] { ROW | STATEMENT } ]\n"
+"    EXECUTE PROCEDURE funcname ( arguments )"
 
 #: sql_help.h:281
 msgid "define a new data type"
@@ -3161,6 +3657,33 @@ msgid ""
 "\n"
 "CREATE TYPE name"
 msgstr ""
+"CREATE TYPE name AS\n"
+"    ( attribute_name data_type [, ... ] )\n"
+"\n"
+"CREATE TYPE name AS ENUM\n"
+"    ( 'label' [, ... ] )\n"
+"\n"
+"CREATE TYPE name (\n"
+"    INPUT = input_function,\n"
+"    OUTPUT = output_function\n"
+"    [ , RECEIVE = receive_function ]\n"
+"    [ , SEND = send_function ]\n"
+"    [ , TYPMOD_IN = type_modifier_input_function ]\n"
+"    [ , TYPMOD_OUT = type_modifier_output_function ]\n"
+"    [ , ANALYZE = analyze_function ]\n"
+"    [ , INTERNALLENGTH = { internallength | VARIABLE } ]\n"
+"    [ , PASSEDBYVALUE ]\n"
+"    [ , ALIGNMENT = alignment ]\n"
+"    [ , STORAGE = storage ]\n"
+"    [ , LIKE = like_type ]\n"
+"    [ , CATEGORY = category ]\n"
+"    [ , PREFERRED = preferred ]\n"
+"    [ , DEFAULT = default ]\n"
+"    [ , ELEMENT = element ]\n"
+"    [ , DELIMITER = delimiter ]\n"
+")\n"
+"\n"
+"CREATE TYPE name"
 
 #: sql_help.h:286
 msgid ""
@@ -3184,6 +3707,25 @@ msgid ""
 "    | USER rolename [, ...]\n"
 "    | SYSID uid"
 msgstr ""
+"CREATE USER name [ [ WITH ] option [ ... ] ]\n"
+"\n"
+"dove option può essere:\n"
+"    \n"
+"      SUPERUSER | NOSUPERUSER\n"
+"    | CREATEDB | NOCREATEDB\n"
+"    | CREATEROLE | NOCREATEROLE\n"
+"    | CREATEUSER | NOCREATEUSER\n"
+"    | INHERIT | NOINHERIT\n"
+"    | LOGIN | NOLOGIN\n"
+"    | CONNECTION LIMIT connlimit\n"
+"    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'\n"
+"    | VALID UNTIL 'timestamp' \n"
+"    | IN ROLE rolename [, ...]\n"
+"    | IN GROUP rolename [, ...]\n"
+"    | ROLE rolename [, ...]\n"
+"    | ADMIN rolename [, ...]\n"
+"    | USER rolename [, ...]\n"
+"    | SYSID uid"
 
 #: sql_help.h:289
 msgid "define a new mapping of a user to a foreign server"
@@ -3195,6 +3737,9 @@ msgid ""
 "    SERVER servername\n"
 "    [ OPTIONS ( option 'value' [ , ... ] ) ]"
 msgstr ""
+"CREATE USER MAPPING FOR { username | USER | CURRENT_USER | PUBLIC }\n"
+"    SERVER servername\n"
+"    [ OPTIONS ( option 'value' [ , ... ] ) ]"
 
 #: sql_help.h:293
 msgid "define a new view"
@@ -3206,6 +3751,9 @@ msgid ""
 "[, ...] ) ]\n"
 "    AS query"
 msgstr ""
+"CREATE [ OR REPLACE ] [ TEMP | TEMPORARY ] VIEW name [ ( column_name "
+"[, ...] ) ]\n"
+"    AS query"
 
 #: sql_help.h:297
 msgid "deallocate a prepared statement"
@@ -3213,7 +3761,7 @@ msgstr "dealloca una istruzione preparata"
 
 #: sql_help.h:298
 msgid "DEALLOCATE [ PREPARE ] { name | ALL }"
-msgstr ""
+msgstr "DEALLOCATE [ PREPARE ] { name | ALL }"
 
 #: sql_help.h:301
 msgid "define a cursor"
@@ -3224,6 +3772,8 @@ msgid ""
 "DECLARE name [ BINARY ] [ INSENSITIVE ] [ [ NO ] SCROLL ]\n"
 "    CURSOR [ { WITH | WITHOUT } HOLD ] FOR query"
 msgstr ""
+"DECLARE name [ BINARY ] [ INSENSITIVE ] [ [ NO ] SCROLL ]\n"
+"    CURSOR [ { WITH | WITHOUT } HOLD ] FOR query"
 
 #: sql_help.h:305
 msgid "delete rows of a table"
@@ -3236,6 +3786,10 @@ msgid ""
 "    [ WHERE condition | WHERE CURRENT OF cursor_name ]\n"
 "    [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]"
 msgstr ""
+"DELETE FROM [ ONLY ] table [ * ] [ [ AS ] alias ]\n"
+"    [ USING usinglist ]\n"
+"    [ WHERE condition | WHERE CURRENT OF cursor_name ]\n"
+"    [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]"
 
 #: sql_help.h:309
 msgid "discard session state"
@@ -3243,7 +3797,7 @@ msgstr "cancella lo stato della sessione"
 
 #: sql_help.h:310
 msgid "DISCARD { ALL | PLANS | TEMPORARY | TEMP }"
-msgstr ""
+msgstr "DISCARD { ALL | PLANS | TEMPORARY | TEMP }"
 
 #: sql_help.h:313
 msgid "remove an aggregate function"
@@ -3253,6 +3807,7 @@ msgstr "elimina una funzione aggregata"
 msgid ""
 "DROP AGGREGATE [ IF EXISTS ] name ( type [ , ... ] ) [ CASCADE | RESTRICT ]"
 msgstr ""
+"DROP AGGREGATE [ IF EXISTS ] name ( type [ , ... ] ) [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:317
 msgid "remove a cast"
@@ -3262,6 +3817,7 @@ msgstr "elimina una conversione di tipi"
 msgid ""
 "DROP CAST [ IF EXISTS ] (sourcetype AS targettype) [ CASCADE | RESTRICT ]"
 msgstr ""
+"DROP CAST [ IF EXISTS ] (sourcetype AS targettype) [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:321
 msgid "remove a conversion"
@@ -3269,7 +3825,7 @@ msgstr "elimina una conversione"
 
 #: sql_help.h:322
 msgid "DROP CONVERSION [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP CONVERSION [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:325
 msgid "remove a database"
@@ -3277,7 +3833,7 @@ msgstr "elimina un database"
 
 #: sql_help.h:326
 msgid "DROP DATABASE [ IF EXISTS ] name"
-msgstr ""
+msgstr "DROP DATABASE [ IF EXISTS ] name"
 
 #: sql_help.h:329
 msgid "remove a domain"
@@ -3285,7 +3841,7 @@ msgstr "elimina un dominio"
 
 #: sql_help.h:330
 msgid "DROP DOMAIN [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP DOMAIN [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:333
 msgid "remove a foreign-data wrapper"
@@ -3293,7 +3849,7 @@ msgstr "elimina un wrapper di dati esterni"
 
 #: sql_help.h:334
 msgid "DROP FOREIGN DATA WRAPPER [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP FOREIGN DATA WRAPPER [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:337
 msgid "remove a function"
@@ -3305,6 +3861,9 @@ msgid ""
 "[, ...] ] )\n"
 "    [ CASCADE | RESTRICT ]"
 msgstr ""
+"DROP FUNCTION [ IF EXISTS ] name ( [ [ argmode ] [ argname ] argtype "
+"[, ...] ] )\n"
+"    [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:341 sql_help.h:369 sql_help.h:421
 msgid "remove a database role"
@@ -3312,7 +3871,7 @@ msgstr "elimina un ruolo di database"
 
 #: sql_help.h:342
 msgid "DROP GROUP [ IF EXISTS ] name [, ...]"
-msgstr ""
+msgstr "DROP GROUP [ IF EXISTS ] name [, ...]"
 
 #: sql_help.h:345
 msgid "remove an index"
@@ -3320,7 +3879,7 @@ msgstr "elimina un indice"
 
 #: sql_help.h:346
 msgid "DROP INDEX [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP INDEX [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:349
 msgid "remove a procedural language"
@@ -3328,7 +3887,7 @@ msgstr "elimina un linguaggio procedurale"
 
 #: sql_help.h:350
 msgid "DROP [ PROCEDURAL ] LANGUAGE [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP [ PROCEDURAL ] LANGUAGE [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:353
 msgid "remove an operator"
@@ -3339,6 +3898,8 @@ msgid ""
 "DROP OPERATOR [ IF EXISTS ] name ( { lefttype | NONE } , { righttype | "
 "NONE } ) [ CASCADE | RESTRICT ]"
 msgstr ""
+"DROP OPERATOR [ IF EXISTS ] name ( { lefttype | NONE } , { righttype | "
+"NONE } ) [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:357
 msgid "remove an operator class"
@@ -3349,6 +3910,8 @@ msgid ""
 "DROP OPERATOR CLASS [ IF EXISTS ] name USING index_method [ CASCADE | "
 "RESTRICT ]"
 msgstr ""
+"DROP OPERATOR CLASS [ IF EXISTS ] name USING index_method [ CASCADE | "
+"RESTRICT ]"
 
 #: sql_help.h:361
 msgid "remove an operator family"
@@ -3359,6 +3922,8 @@ msgid ""
 "DROP OPERATOR FAMILY [ IF EXISTS ] name USING index_method [ CASCADE | "
 "RESTRICT ]"
 msgstr ""
+"DROP OPERATOR FAMILY [ IF EXISTS ] name USING index_method [ CASCADE | "
+"RESTRICT ]"
 
 #: sql_help.h:365
 msgid "remove database objects owned by a database role"
@@ -3366,11 +3931,11 @@ msgstr "elimina gli oggetti database di proprietà di un ruolo di database"
 
 #: sql_help.h:366
 msgid "DROP OWNED BY name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP OWNED BY name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:370
 msgid "DROP ROLE [ IF EXISTS ] name [, ...]"
-msgstr ""
+msgstr "DROP ROLE [ IF EXISTS ] name [, ...]"
 
 #: sql_help.h:373
 msgid "remove a rewrite rule"
@@ -3378,7 +3943,7 @@ msgstr "elimina una regola di riscrittura"
 
 #: sql_help.h:374
 msgid "DROP RULE [ IF EXISTS ] name ON relation [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP RULE [ IF EXISTS ] name ON relation [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:377
 msgid "remove a schema"
@@ -3386,7 +3951,7 @@ msgstr "elimina uno schema"
 
 #: sql_help.h:378
 msgid "DROP SCHEMA [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP SCHEMA [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:381
 msgid "remove a sequence"
@@ -3394,7 +3959,7 @@ msgstr "elimina una sequenza"
 
 #: sql_help.h:382
 msgid "DROP SEQUENCE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP SEQUENCE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:385
 msgid "remove a foreign server descriptor"
@@ -3402,7 +3967,7 @@ msgstr "elimina una descrizione server esterno"
 
 #: sql_help.h:386
 msgid "DROP SERVER [ IF EXISTS ] servername [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP SERVER [ IF EXISTS ] servername [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:389
 msgid "remove a table"
@@ -3410,7 +3975,7 @@ msgstr "elimina una tabella"
 
 #: sql_help.h:390
 msgid "DROP TABLE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP TABLE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:393
 msgid "remove a tablespace"
@@ -3418,7 +3983,7 @@ msgstr "elimina un tablespace"
 
 #: sql_help.h:394
 msgid "DROP TABLESPACE [ IF EXISTS ] tablespacename"
-msgstr ""
+msgstr "DROP TABLESPACE [ IF EXISTS ] tablespacename"
 
 #: sql_help.h:397
 msgid "remove a text search configuration"
@@ -3428,6 +3993,7 @@ msgstr "elimina una configurazione di ricerca testo"
 msgid ""
 "DROP TEXT SEARCH CONFIGURATION [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 msgstr ""
+"DROP TEXT SEARCH CONFIGURATION [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:401
 msgid "remove a text search dictionary"
@@ -3435,7 +4001,7 @@ msgstr "elimina un dizionario di ricerca testo"
 
 #: sql_help.h:402
 msgid "DROP TEXT SEARCH DICTIONARY [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP TEXT SEARCH DICTIONARY [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:405
 msgid "remove a text search parser"
@@ -3443,7 +4009,7 @@ msgstr "elimina un analizzatore di ricerca testo"
 
 #: sql_help.h:406
 msgid "DROP TEXT SEARCH PARSER [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP TEXT SEARCH PARSER [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:409
 msgid "remove a text search template"
@@ -3451,7 +4017,7 @@ msgstr "elimina un modello di ricerca testo"
 
 #: sql_help.h:410
 msgid "DROP TEXT SEARCH TEMPLATE [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP TEXT SEARCH TEMPLATE [ IF EXISTS ] name [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:413
 msgid "remove a trigger"
@@ -3459,7 +4025,7 @@ msgstr "elimina un trigger"
 
 #: sql_help.h:414
 msgid "DROP TRIGGER [ IF EXISTS ] name ON table [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP TRIGGER [ IF EXISTS ] name ON table [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:417
 msgid "remove a data type"
@@ -3467,11 +4033,11 @@ msgstr "elimina un tipo di dato"
 
 #: sql_help.h:418
 msgid "DROP TYPE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP TYPE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:422
 msgid "DROP USER [ IF EXISTS ] name [, ...]"
-msgstr ""
+msgstr "DROP USER [ IF EXISTS ] name [, ...]"
 
 #: sql_help.h:425
 msgid "remove a user mapping for a foreign server"
@@ -3482,6 +4048,8 @@ msgid ""
 "DROP USER MAPPING [ IF EXISTS ] FOR { username | USER | CURRENT_USER | "
 "PUBLIC } SERVER servername"
 msgstr ""
+"DROP USER MAPPING [ IF EXISTS ] FOR { username | USER | CURRENT_USER | "
+"PUBLIC } SERVER servername"
 
 #: sql_help.h:429
 msgid "remove a view"
@@ -3489,11 +4057,11 @@ msgstr "elimina una vista"
 
 #: sql_help.h:430
 msgid "DROP VIEW [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
-msgstr ""
+msgstr "DROP VIEW [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:434
 msgid "END [ WORK | TRANSACTION ]"
-msgstr ""
+msgstr "END [ WORK | TRANSACTION ]"
 
 #: sql_help.h:437
 msgid "execute a prepared statement"
@@ -3501,7 +4069,7 @@ msgstr "esegui una istruzione preparata"
 
 #: sql_help.h:438
 msgid "EXECUTE name [ ( parameter [, ...] ) ]"
-msgstr ""
+msgstr "EXECUTE name [ ( parameter [, ...] ) ]"
 
 #: sql_help.h:441
 msgid "show the execution plan of a statement"
@@ -3509,7 +4077,7 @@ msgstr "mostra il piano di esecuzione di una istruzione"
 
 #: sql_help.h:442
 msgid "EXPLAIN [ ANALYZE ] [ VERBOSE ] statement"
-msgstr ""
+msgstr "EXPLAIN [ ANALYZE ] [ VERBOSE ] statement"
 
 #: sql_help.h:445
 msgid "retrieve rows from a query using a cursor"
@@ -3536,6 +4104,24 @@ msgid ""
 "    BACKWARD count\n"
 "    BACKWARD ALL"
 msgstr ""
+"FETCH [ direction { FROM | IN } ] cursorname\n"
+"\n"
+"dove direction può essere vuota o una di:\n"
+"\n"
+"    NEXT\n"
+"    PRIOR\n"
+"    FIRST\n"
+"    LAST\n"
+"    ABSOLUTE count\n"
+"    RELATIVE count\n"
+"    count\n"
+"    ALL\n"
+"    FORWARD\n"
+"    FORWARD count\n"
+"    FORWARD ALL\n"
+"    BACKWARD\n"
+"    BACKWARD count\n"
+"    BACKWARD ALL"
 
 #: sql_help.h:449
 msgid "define access privileges"
@@ -3591,6 +4177,53 @@ msgid ""
 "\n"
 "GRANT role [, ...] TO rolename [, ...] [ WITH ADMIN OPTION ]"
 msgstr ""
+"GRANT { { SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | "
+"TRIGGER }\n"
+"    [,...] | ALL [ PRIVILEGES ] }\n"
+"    ON [ TABLE ] tablename [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { { SELECT | INSERT | UPDATE | REFERENCES } ( column [, ...] )\n"
+"    [,...] | ALL [ PRIVILEGES ] ( column [, ...] ) }\n"
+"    ON [ TABLE ] tablename [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { { USAGE | SELECT | UPDATE }\n"
+"    [,...] | ALL [ PRIVILEGES ] }\n"
+"    ON SEQUENCE sequencename [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { { CREATE | CONNECT | TEMPORARY | TEMP } [,...] | ALL "
+"[ PRIVILEGES ] }\n"
+"    ON DATABASE dbname [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { USAGE | ALL [ PRIVILEGES ] }\n"
+"    ON FOREIGN DATA WRAPPER fdwname [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { USAGE | ALL [ PRIVILEGES ] }\n"
+"    ON FOREIGN SERVER servername [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { EXECUTE | ALL [ PRIVILEGES ] }\n"
+"    ON FUNCTION funcname ( [ [ argmode ] [ argname ] argtype [, ...] ] ) "
+"[, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { USAGE | ALL [ PRIVILEGES ] }\n"
+"    ON LANGUAGE langname [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { { CREATE | USAGE } [,...] | ALL [ PRIVILEGES ] }\n"
+"    ON SCHEMA schemaname [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT { CREATE | ALL [ PRIVILEGES ] }\n"
+"    ON TABLESPACE tablespacename [, ...]\n"
+"    TO { [ GROUP ] rolename | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n"
+"\n"
+"GRANT role [, ...] TO rolename [, ...] [ WITH ADMIN OPTION ]"
 
 #: sql_help.h:453
 msgid "create new rows in a table"
@@ -3603,6 +4236,10 @@ msgid ""
 "query }\n"
 "    [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]"
 msgstr ""
+"INSERT INTO table [ ( column [, ...] ) ]\n"
+"    { DEFAULT VALUES | VALUES ( { expression | DEFAULT } [, ...] ) [, ...] | "
+"query }\n"
+"    [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]"
 
 #: sql_help.h:457
 msgid "listen for a notification"
@@ -3610,7 +4247,7 @@ msgstr "attendi l'arrivo di notifiche"
 
 #: sql_help.h:458
 msgid "LISTEN name"
-msgstr ""
+msgstr "LISTEN name"
 
 #: sql_help.h:461
 msgid "load a shared library file"
@@ -3618,7 +4255,7 @@ msgstr "carica un file di libreria condivisa"
 
 #: sql_help.h:462
 msgid "LOAD 'filename'"
-msgstr ""
+msgstr "LOAD 'filename'"
 
 #: sql_help.h:465
 msgid "lock a table"
@@ -3633,6 +4270,12 @@ msgid ""
 "    ACCESS SHARE | ROW SHARE | ROW EXCLUSIVE | SHARE UPDATE EXCLUSIVE\n"
 "    | SHARE | SHARE ROW EXCLUSIVE | EXCLUSIVE | ACCESS EXCLUSIVE"
 msgstr ""
+"LOCK [ TABLE ] [ ONLY ] name [ * ] [, ...] [ IN lockmode MODE ] [ NOWAIT ]\n"
+"\n"
+"dove lockmode è una di:\n"
+"\n"
+"    ACCESS SHARE | ROW SHARE | ROW EXCLUSIVE | SHARE UPDATE EXCLUSIVE\n"
+"    | SHARE | SHARE ROW EXCLUSIVE | EXCLUSIVE | ACCESS EXCLUSIVE"
 
 #: sql_help.h:469
 msgid "position a cursor"
@@ -3640,7 +4283,7 @@ msgstr "posiziona un cursore"
 
 #: sql_help.h:470
 msgid "MOVE [ direction { FROM | IN } ] cursorname"
-msgstr ""
+msgstr "MOVE [ direction { FROM | IN } ] cursorname"
 
 #: sql_help.h:473
 msgid "generate a notification"
@@ -3648,7 +4291,7 @@ msgstr "genera una notifica"
 
 #: sql_help.h:474
 msgid "NOTIFY name"
-msgstr ""
+msgstr "NOTIFY name"
 
 #: sql_help.h:477
 msgid "prepare a statement for execution"
@@ -3656,7 +4299,7 @@ msgstr "prepara una istruzione per l'esecuzione"
 
 #: sql_help.h:478
 msgid "PREPARE name [ ( datatype [, ...] ) ] AS statement"
-msgstr ""
+msgstr "PREPARE name [ ( datatype [, ...] ) ] AS statement"
 
 #: sql_help.h:481
 msgid "prepare the current transaction for two-phase commit"
@@ -3664,7 +4307,7 @@ msgstr "prepara la transazione corrente per un commit a due fasi"
 
 #: sql_help.h:482
 msgid "PREPARE TRANSACTION transaction_id"
-msgstr ""
+msgstr "PREPARE TRANSACTION transaction_id"
 
 #: sql_help.h:485
 msgid "change the ownership of database objects owned by a database role"
@@ -3673,7 +4316,7 @@ msgstr ""
 
 #: sql_help.h:486
 msgid "REASSIGN OWNED BY old_role [, ...] TO new_role"
-msgstr ""
+msgstr "REASSIGN OWNED BY old_role [, ...] TO new_role"
 
 #: sql_help.h:489
 msgid "rebuild indexes"
@@ -3681,7 +4324,7 @@ msgstr "ricostruisci indici"
 
 #: sql_help.h:490
 msgid "REINDEX { INDEX | TABLE | DATABASE | SYSTEM } name [ FORCE ]"
-msgstr ""
+msgstr "REINDEX { INDEX | TABLE | DATABASE | SYSTEM } name [ FORCE ]"
 
 #: sql_help.h:493
 msgid "destroy a previously defined savepoint"
@@ -3689,7 +4332,7 @@ msgstr "distruggi un punto di salvataggio precedentemente definito"
 
 #: sql_help.h:494
 msgid "RELEASE [ SAVEPOINT ] savepoint_name"
-msgstr ""
+msgstr "RELEASE [ SAVEPOINT ] savepoint_name"
 
 #: sql_help.h:497
 msgid "restore the value of a run-time parameter to the default value"
@@ -3700,6 +4343,8 @@ msgid ""
 "RESET configuration_parameter\n"
 "RESET ALL"
 msgstr ""
+"RESET configuration_parameter\n"
+"RESET ALL"
 
 #: sql_help.h:501
 msgid "remove access privileges"
@@ -3776,10 +4421,78 @@ msgid ""
 "    role [, ...] FROM rolename [, ...]\n"
 "    [ CASCADE | RESTRICT ]"
 msgstr ""
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { { SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | "
+"TRIGGER }\n"
+"    [,...] | ALL [ PRIVILEGES ] }\n"
+"    ON [ TABLE ] tablename [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { { SELECT | INSERT | UPDATE | REFERENCES } ( column [, ...] )\n"
+"    [,...] | ALL [ PRIVILEGES ] ( column [, ...] ) }\n"
+"    ON [ TABLE ] tablename [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { { USAGE | SELECT | UPDATE }\n"
+"    [,...] | ALL [ PRIVILEGES ] }\n"
+"    ON SEQUENCE sequencename [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { { CREATE | CONNECT | TEMPORARY | TEMP } [,...] | ALL [ PRIVILEGES ] }\n"
+"    ON DATABASE dbname [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { USAGE | ALL [ PRIVILEGES ] }\n"
+"    ON FOREIGN DATA WRAPPER fdwname [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { USAGE | ALL [ PRIVILEGES ] }\n"
+"    ON FOREIGN SERVER servername [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { EXECUTE | ALL [ PRIVILEGES ] }\n"
+"    ON FUNCTION funcname ( [ [ argmode ] [ argname ] argtype [, ...] ] ) "
+"[, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { USAGE | ALL [ PRIVILEGES ] }\n"
+"    ON LANGUAGE langname [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { { CREATE | USAGE } [,...] | ALL [ PRIVILEGES ] }\n"
+"    ON SCHEMA schemaname [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ GRANT OPTION FOR ]\n"
+"    { CREATE | ALL [ PRIVILEGES ] }\n"
+"    ON TABLESPACE tablespacename [, ...]\n"
+"    FROM { [ GROUP ] rolename | PUBLIC } [, ...]\n"
+"    [ CASCADE | RESTRICT ]\n"
+"\n"
+"REVOKE [ ADMIN OPTION FOR ]\n"
+"    role [, ...] FROM rolename [, ...]\n"
+"    [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:506
 msgid "ROLLBACK [ WORK | TRANSACTION ]"
-msgstr ""
+msgstr "ROLLBACK [ WORK | TRANSACTION ]"
 
 #: sql_help.h:509
 msgid "cancel a transaction that was earlier prepared for two-phase commit"
@@ -3788,7 +4501,7 @@ msgstr ""
 
 #: sql_help.h:510
 msgid "ROLLBACK PREPARED transaction_id"
-msgstr ""
+msgstr "ROLLBACK PREPARED transaction_id"
 
 #: sql_help.h:513
 msgid "roll back to a savepoint"
@@ -3796,7 +4509,7 @@ msgstr "annulla le modifiche fino a un punto di salvataggio"
 
 #: sql_help.h:514
 msgid "ROLLBACK [ WORK | TRANSACTION ] TO [ SAVEPOINT ] savepoint_name"
-msgstr ""
+msgstr "ROLLBACK [ WORK | TRANSACTION ] TO [ SAVEPOINT ] savepoint_name"
 
 #: sql_help.h:517
 msgid "define a new savepoint within the current transaction"
@@ -3804,7 +4517,7 @@ msgstr "definisci un nuovo punto di salvataggio per la transazione corrente"
 
 #: sql_help.h:518
 msgid "SAVEPOINT savepoint_name"
-msgstr ""
+msgstr "SAVEPOINT savepoint_name"
 
 #: sql_help.h:521 sql_help.h:557 sql_help.h:581
 msgid "retrieve rows from a table or view"
@@ -3845,6 +4558,38 @@ msgid ""
 "\n"
 "TABLE { [ ONLY ] table_name [ * ] | with_query_name }"
 msgstr ""
+"[ WITH [ RECURSIVE ] with_query [, ...] ]\n"
+"SELECT [ ALL | DISTINCT [ ON ( expression [, ...] ) ] ]\n"
+"    * | expression [ [ AS ] output_name ] [, ...]\n"
+"    [ FROM from_item [, ...] ]\n"
+"    [ WHERE condition ]\n"
+"    [ GROUP BY expression [, ...] ]\n"
+"    [ HAVING condition [, ...] ]\n"
+"    [ WINDOW window_name AS ( window_definition ) [, ...] ]\n"
+"    [ { UNION | INTERSECT | EXCEPT } [ ALL ] select ]\n"
+"    [ ORDER BY expression [ ASC | DESC | USING operator ] [ NULLS { FIRST | "
+"LAST } ] [, ...] ]\n"
+"    [ LIMIT { count | ALL } ]\n"
+"    [ OFFSET start [ ROW | ROWS ] ]\n"
+"    [ FETCH { FIRST | NEXT } [ count ] { ROW | ROWS } ONLY ]\n"
+"    [ FOR { UPDATE | SHARE } [ OF table_name [, ...] ] [ NOWAIT ] [...] ]\n"
+"\n"
+"dove from_item può essere uno di:\n"
+"\n"
+"    [ ONLY ] table_name [ * ] [ [ AS ] alias [ ( column_alias [, ...] ) ] ]\n"
+"    ( select ) [ AS ] alias [ ( column_alias [, ...] ) ]\n"
+"    with_query_name [ [ AS ] alias [ ( column_alias [, ...] ) ] ]\n"
+"    function_name ( [ argument [, ...] ] ) [ AS ] alias [ ( column_alias "
+"[, ...] | column_definition [, ...] ) ]\n"
+"    function_name ( [ argument [, ...] ] ) AS ( column_definition [, ...] )\n"
+"    from_item [ NATURAL ] join_type from_item [ ON join_condition | USING "
+"( join_column [, ...] ) ]\n"
+"\n"
+"e with_query è:\n"
+"\n"
+"    with_query_name [ ( column_name [, ...] ) ] AS ( select )\n"
+"\n"
+"TABLE { [ ONLY ] table_name [ * ] | with_query_name }"
 
 #: sql_help.h:526
 msgid ""
@@ -3865,6 +4610,22 @@ msgid ""
 "    [ FETCH { FIRST | NEXT } [ count ] { ROW | ROWS } ONLY ]\n"
 "    [ FOR { UPDATE | SHARE } [ OF table_name [, ...] ] [ NOWAIT ] [...] ]"
 msgstr ""
+"[ WITH [ RECURSIVE ] with_query [, ...] ]\n"
+"SELECT [ ALL | DISTINCT [ ON ( expression [, ...] ) ] ]\n"
+"    * | expression [ [ AS ] output_name ] [, ...]\n"
+"    INTO [ TEMPORARY | TEMP ] [ TABLE ] new_table\n"
+"    [ FROM from_item [, ...] ]\n"
+"    [ WHERE condition ]\n"
+"    [ GROUP BY expression [, ...] ]\n"
+"    [ HAVING condition [, ...] ]\n"
+"    [ WINDOW window_name AS ( window_definition ) [, ...] ]\n"
+"    [ { UNION | INTERSECT | EXCEPT } [ ALL ] select ]\n"
+"    [ ORDER BY expression [ ASC | DESC | USING operator ] [ NULLS { FIRST | "
+"LAST } ] [, ...] ]\n"
+"    [ LIMIT { count | ALL } ]\n"
+"    [ OFFSET start [ ROW | ROWS ] ]\n"
+"    [ FETCH { FIRST | NEXT } [ count ] { ROW | ROWS } ONLY ]\n"
+"    [ FOR { UPDATE | SHARE } [ OF table_name [, ...] ] [ NOWAIT ] [...] ]"
 
 #: sql_help.h:529
 msgid "change a run-time parameter"
@@ -3876,14 +4637,18 @@ msgid ""
 "| DEFAULT }\n"
 "SET [ SESSION | LOCAL ] TIME ZONE { timezone | LOCAL | DEFAULT }"
 msgstr ""
+"SET [ SESSION | LOCAL ] configuration_parameter { TO | = } { value | 'value' "
+"| DEFAULT }\n"
+"SET [ SESSION | LOCAL ] TIME ZONE { timezone | LOCAL | DEFAULT }"
 
 #: sql_help.h:533
 msgid "set constraint checking modes for the current transaction"
 msgstr ""
+"imposta la modalità di controllo dei vincoli per la transazione corrente"
 
 #: sql_help.h:534
 msgid "SET CONSTRAINTS { ALL | name [, ...] } { DEFERRED | IMMEDIATE }"
-msgstr ""
+msgstr "SET CONSTRAINTS { ALL | name [, ...] } { DEFERRED | IMMEDIATE }"
 
 #: sql_help.h:537
 msgid "set the current user identifier of the current session"
@@ -3895,6 +4660,9 @@ msgid ""
 "SET [ SESSION | LOCAL ] ROLE NONE\n"
 "RESET ROLE"
 msgstr ""
+"SET [ SESSION | LOCAL ] ROLE rolename\n"
+"SET [ SESSION | LOCAL ] ROLE NONE\n"
+"RESET ROLE"
 
 #: sql_help.h:541
 msgid ""
@@ -3910,6 +4678,9 @@ msgid ""
 "SET [ SESSION | LOCAL ] SESSION AUTHORIZATION DEFAULT\n"
 "RESET SESSION AUTHORIZATION"
 msgstr ""
+"SET [ SESSION | LOCAL ] SESSION AUTHORIZATION username\n"
+"SET [ SESSION | LOCAL ] SESSION AUTHORIZATION DEFAULT\n"
+"RESET SESSION AUTHORIZATION"
 
 #: sql_help.h:545
 msgid "set the characteristics of the current transaction"
@@ -3926,6 +4697,14 @@ msgid ""
 "UNCOMMITTED }\n"
 "    READ WRITE | READ ONLY"
 msgstr ""
+"SET TRANSACTION transaction_mode [, ...]\n"
+"SET SESSION CHARACTERISTICS AS TRANSACTION transaction_mode [, ...]\n"
+"\n"
+"dove transaction_mode è una di:\n"
+"\n"
+"    ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED | READ "
+"UNCOMMITTED }\n"
+"    READ WRITE | READ ONLY"
 
 #: sql_help.h:549
 msgid "show the value of a run-time parameter"
@@ -3936,6 +4715,8 @@ msgid ""
 "SHOW name\n"
 "SHOW ALL"
 msgstr ""
+"SHOW name\n"
+"SHOW ALL"
 
 #: sql_help.h:554
 msgid ""
@@ -3947,6 +4728,13 @@ msgid ""
 "UNCOMMITTED }\n"
 "    READ WRITE | READ ONLY"
 msgstr ""
+"START TRANSACTION [ transaction_mode [, ...] ]\n"
+"\n"
+"dove transaction_mode è una di:\n"
+"\n"
+"    ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED | READ "
+"UNCOMMITTED }\n"
+"    READ WRITE | READ ONLY"
 
 #: sql_help.h:561
 msgid "empty a table or set of tables"
@@ -3957,6 +4745,8 @@ msgid ""
 "TRUNCATE [ TABLE ] [ ONLY ] name [ * ] [, ... ]\n"
 "    [ RESTART IDENTITY | CONTINUE IDENTITY ] [ CASCADE | RESTRICT ]"
 msgstr ""
+"TRUNCATE [ TABLE ] [ ONLY ] name [ * ] [, ... ]\n"
+"    [ RESTART IDENTITY | CONTINUE IDENTITY ] [ CASCADE | RESTRICT ]"
 
 #: sql_help.h:565
 msgid "stop listening for a notification"
@@ -3964,7 +4754,7 @@ msgstr "termina l'attesa di notifiche"
 
 #: sql_help.h:566
 msgid "UNLISTEN { name | * }"
-msgstr ""
+msgstr "UNLISTEN { name | * }"
 
 #: sql_help.h:569
 msgid "update rows of a table"
@@ -3980,6 +4770,13 @@ msgid ""
 "    [ WHERE condition | WHERE CURRENT OF cursor_name ]\n"
 "    [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]"
 msgstr ""
+"UPDATE [ ONLY ] table [ * ] [ [ AS ] alias ]\n"
+"    SET { column = { expression | DEFAULT } |\n"
+"          ( column [, ...] ) = ( { expression | DEFAULT } [, ...] ) } "
+"[, ...]\n"
+"    [ FROM fromlist ]\n"
+"    [ WHERE condition | WHERE CURRENT OF cursor_name ]\n"
+"    [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]"
 
 #: sql_help.h:573
 msgid "garbage-collect and optionally analyze a database"
@@ -3991,6 +4788,9 @@ msgid ""
 "VACUUM [ FULL ] [ FREEZE ] [ VERBOSE ] ANALYZE [ table [ (column "
 "[, ...] ) ] ]"
 msgstr ""
+"VACUUM [ FULL ] [ FREEZE ] [ VERBOSE ] [ table ]\n"
+"VACUUM [ FULL ] [ FREEZE ] [ VERBOSE ] ANALYZE [ table [ (column "
+"[, ...] ) ] ]"
 
 #: sql_help.h:577
 msgid "compute a set of rows"
@@ -4004,6 +4804,11 @@ msgid ""
 "    [ OFFSET start [ ROW | ROWS ] ]\n"
 "    [ FETCH { FIRST | NEXT } [ count ] { ROW | ROWS } ONLY ]"
 msgstr ""
+"VALUES ( expression [, ...] ) [, ...]\n"
+"    [ ORDER BY sort_expression [ ASC | DESC | USING operator ] [, ...] ]\n"
+"    [ LIMIT { count | ALL } ]\n"
+"    [ OFFSET start [ ROW | ROWS ] ]\n"
+"    [ FETCH { FIRST | NEXT } [ count ] { ROW | ROWS } ONLY ]"
 
 #: ../../port/exec.c:195 ../../port/exec.c:309 ../../port/exec.c:352
 #, c-format
