@@ -6272,7 +6272,7 @@ msgstr "il numero di colonne (%d) eccede il limite (%d)"
 #: access/hash/hashovfl.c:546
 #, c-format
 msgid "out of overflow pages in hash index \"%s\""
-msgstr "l'indice hash \"%s\"ha avuto un overflow di pagine"
+msgstr "pagine di overflow esaurite per l'indice hash \"%s\""
 
 #: access/hash/hashsearch.c:152
 msgid "hash indexes do not support whole-index scans"

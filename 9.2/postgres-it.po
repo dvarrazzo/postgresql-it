@@ -400,7 +400,7 @@ msgstr "Non si possono indicizzare valori più grandi di una pagina di buffer."
 #: access/hash/hashovfl.c:546
 #, c-format
 msgid "out of overflow pages in hash index \"%s\""
-msgstr "l'indice hash \"%s\"ha avuto un overflow di pagine"
+msgstr "pagine di overflow esaurite per l'indice hash \"%s\""
 
 #: access/hash/hashsearch.c:151
 #, c-format
