@@ -389,7 +389,7 @@ msgstr "il record \"%s\" non ha un campo \"%s\""
 #: pl_comp.c:1783
 #, c-format
 msgid "relation \"%s\" does not exist"
-msgstr "la relazione \"%s\"non esiste"
+msgstr "la relazione \"%s\" non esiste"
 
 #: pl_comp.c:1892
 #, c-format

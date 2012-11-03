@@ -87,7 +87,7 @@ msgstr "la riga \"%s.%s\" non ha un campo \"%s\""
 #: pl_comp.c:1356
 #, c-format
 msgid "relation \"%s\" does not exist"
-msgstr "la relazione \"%s\"non esiste"
+msgstr "la relazione \"%s\" non esiste"
 
 #: pl_comp.c:1401
 #, c-format

@@ -249,7 +249,7 @@ msgstr "il valore %s non rientra nei limiti previsti per l'opzione \"%s\""
 #: access/common/reloptions.c:970
 #, c-format
 msgid "Valid values are between \"%d\" and \"%d\"."
-msgstr "I valori validi sono quelli compresi fra \"%d\"e \"%d\"."
+msgstr "I valori validi sono quelli compresi fra \"%d\" e \"%d\"."
 
 #: access/common/reloptions.c:981
 #, c-format
@@ -259,7 +259,7 @@ msgstr "valore non valido per l'opzione in virgola mobile \"%s\": %s"
 #: access/common/reloptions.c:988
 #, c-format
 msgid "Valid values are between \"%f\" and \"%f\"."
-msgstr "I valori validi sono quelli compresi fra \"%f\"e \"%f\"."
+msgstr "I valori validi sono quelli compresi fra \"%f\" e \"%f\"."
 
 #: access/common/tupconvert.c:107
 #, c-format
@@ -376,14 +376,14 @@ msgstr ""
 #, c-format
 msgid "index \"%s\" contains unexpected zero page at block %u"
 msgstr ""
-"l'indice \"%s\"contiene una pagina inaspettata completamente a zero al "
+"l'indice \"%s\" contiene una pagina inaspettata completamente a zero al "
 "blocco %u"
 
 #: access/gist/gistutil.c:648 access/hash/hashutil.c:180
 #: access/hash/hashutil.c:192 access/nbtree/nbtpage.c:442
 #, c-format
 msgid "index \"%s\" contains corrupted page at block %u"
-msgstr "l'indice \"%s\"contiene una pagina corrotta al blocco %u"
+msgstr "l'indice \"%s\" contiene una pagina corrotta al blocco %u"
 
 #: access/hash/hashinsert.c:72
 #, c-format
@@ -940,7 +940,7 @@ msgstr "lettura de file \"%s\" fallita: %m"
 #: access/transam/xlog.c:2627
 #, c-format
 msgid "not enough data in file \"%s\""
-msgstr "il file \"%s\"non contiene abbastanza dati"
+msgstr "il file \"%s\" non contiene abbastanza dati"
 
 #: access/transam/xlog.c:2746
 #, c-format
@@ -3446,7 +3446,7 @@ msgstr "la relazione \"%s.%s\" non esiste"
 #: parser/parse_relation.c:863 utils/adt/regproc.c:810
 #, c-format
 msgid "relation \"%s\" does not exist"
-msgstr "la relazione \"%s\"non esiste"
+msgstr "la relazione \"%s\" non esiste"
 
 #: catalog/namespace.c:474 catalog/namespace.c:2805
 #, c-format
@@ -3615,7 +3615,7 @@ msgstr "il nome della colonna deve essere qualificato"
 #: parser/parse_type.c:202 utils/adt/acl.c:4372 utils/adt/regproc.c:974
 #, c-format
 msgid "type \"%s\" does not exist"
-msgstr "il tipo \"%s\"non esiste"
+msgstr "il tipo \"%s\" non esiste"
 
 #: catalog/objectaddress.c:1003 catalog/pg_largeobject.c:196
 #: libpq/be-fsstubs.c:286
@@ -5241,7 +5241,7 @@ msgstr "l'opzione TIMING di EXPLAIN richiede ANALYZE"
 #: commands/extension.c:146 commands/extension.c:2405
 #, c-format
 msgid "extension \"%s\" does not exist"
-msgstr "l'estensione \"%s\"non esiste"
+msgstr "l'estensione \"%s\" non esiste"
 
 #: commands/extension.c:245 commands/extension.c:254 commands/extension.c:266
 #: commands/extension.c:276
@@ -16594,7 +16594,7 @@ msgstr "Il valore deve essere un integer."
 #, c-format
 msgid "value for \"%s\" in source string is out of range"
 msgstr ""
-"il valore \"%s\"nella stringa di origine è fuori dall'intervallo consentito"
+"il valore \"%s\" nella stringa di origine è fuori dall'intervallo consentito"
 
 #: utils/adt/formatting.c:2174
 #, c-format
@@ -17501,7 +17501,7 @@ msgstr "l'espressione regolare %s è fallita"
 #: utils/adt/regexp.c:411
 #, c-format
 msgid "invalid regexp option: \"%c\""
-msgstr "l'opzione regexp \"%c\"non è valida"
+msgstr "l'opzione regexp \"%c\" non è valida"
 
 #: utils/adt/regexp.c:883
 #, c-format

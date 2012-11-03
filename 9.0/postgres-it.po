@@ -3787,7 +3787,7 @@ msgstr "l'espressione regolare %s è fallita"
 #: utils/adt/regexp.c:403
 #, c-format
 msgid "invalid regexp option: \"%c\""
-msgstr "l'opzione regexp \"%c\"non è valida"
+msgstr "l'opzione regexp \"%c\" non è valida"
 
 #: utils/adt/regexp.c:667 utils/adt/like_match.c:287
 msgid "invalid escape string"
@@ -4496,7 +4496,7 @@ msgstr "Il valore deve essere un integer."
 #, c-format
 msgid "value for \"%s\" in source string is out of range"
 msgstr ""
-"il valore \"%s\"nella stringa di origine è fuori dall'intervallo consentito"
+"il valore \"%s\" nella stringa di origine è fuori dall'intervallo consentito"
 
 #: utils/adt/formatting.c:1906
 #, c-format
@@ -5804,14 +5804,14 @@ msgstr "Fornisci due tipi di argomento per l'operatore."
 #: parser/parse_relation.c:855 parser/parse_relation.c:863
 #, c-format
 msgid "relation \"%s\" does not exist"
-msgstr "la relazione \"%s\"non esiste"
+msgstr "la relazione \"%s\" non esiste"
 
 #: utils/adt/regproc.c:973 commands/tablecmds.c:217
 #: commands/functioncmds.c:126 commands/typecmds.c:650
 #: commands/typecmds.c:2572 parser/parse_func.c:1485 parser/parse_type.c:196
 #, c-format
 msgid "type \"%s\" does not exist"
-msgstr "il tipo \"%s\"non esiste"
+msgstr "il tipo \"%s\" non esiste"
 
 #: utils/adt/regproc.c:1383
 msgid "expected a left parenthesis"
@@ -6541,7 +6541,7 @@ msgstr "il valore %s non rientra nei limiti previsti per l'opzione \"%s\""
 #: access/common/reloptions.c:953
 #, c-format
 msgid "Valid values are between \"%d\" and \"%d\"."
-msgstr "I valori validi sono quelli compresi fra \"%d\"e \"%d\"."
+msgstr "I valori validi sono quelli compresi fra \"%d\" e \"%d\"."
 
 #: access/common/reloptions.c:964
 #, c-format
@@ -6551,7 +6551,7 @@ msgstr "valore non valido per l'opzione in virgola mobile \"%s\": %s"
 #: access/common/reloptions.c:971
 #, c-format
 msgid "Valid values are between \"%f\" and \"%f\"."
-msgstr "I valori validi sono quelli compresi fra \"%f\"e \"%f\"."
+msgstr "I valori validi sono quelli compresi fra \"%f\" e \"%f\"."
 
 #: access/common/tupdesc.c:545 parser/parse_relation.c:1172
 #, c-format
@@ -6587,7 +6587,7 @@ msgstr "Non si possono indicizzare valori più grandi di una pagina di buffer."
 #, c-format
 msgid "index \"%s\" contains unexpected zero page at block %u"
 msgstr ""
-"l'indice \"%s\"contiene una pagina inaspettata completamente a zero al "
+"l'indice \"%s\" contiene una pagina inaspettata completamente a zero al "
 "blocco %u"
 
 #: access/hash/hashutil.c:168 access/hash/hashutil.c:179
@@ -6601,7 +6601,7 @@ msgstr "Si richiede l'esecuzione di REINDEX."
 #: access/nbtree/nbtpage.c:443 access/gist/gistutil.c:655
 #, c-format
 msgid "index \"%s\" contains corrupted page at block %u"
-msgstr "l'indice \"%s\"contiene una pagina corrotta al blocco %u"
+msgstr "l'indice \"%s\" contiene una pagina corrotta al blocco %u"
 
 #: access/hash/hashutil.c:204
 #, c-format
@@ -7012,7 +7012,7 @@ msgstr "chiusura del file \"%s\" fallita: %m"
 #: access/transam/xlog.c:2479
 #, c-format
 msgid "not enough data in file \"%s\""
-msgstr "il file \"%s\"non contiene abbastanza dati"
+msgstr "il file \"%s\" non contiene abbastanza dati"
 
 #: access/transam/xlog.c:2598
 #, c-format
