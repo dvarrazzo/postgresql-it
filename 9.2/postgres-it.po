@@ -6024,7 +6024,7 @@ msgstr ""
 #: parser/parse_type.c:498 parser/parse_utilcmd.c:2627 utils/adt/misc.c:518
 #, c-format
 msgid "collations are not supported by type %s"
-msgstr "gli ordinamenti non sono supportati per il tipo %s"
+msgstr "gli ordinamenti non sono supportati dal tipo %s"
 
 #: commands/indexcmds.c:1168
 #, c-format
@@ -8937,7 +8937,7 @@ msgstr ""
 msgid ""
 "multidimensional arrays must have array expressions with matching dimensions"
 msgstr ""
-"gli array multidimensionali devo avere espressioni array con dimensioni "
+"gli array multidimensionali devono avere espressioni array di dimensioni "
 "corrispondenti"
 
 #: executor/execQual.c:3652

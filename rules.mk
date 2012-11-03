@@ -14,6 +14,18 @@ update:
 
 endif
 
+# Copy the translations from the longer files to the shortest files, to make
+# sure the same message translated the same way.
+uniform:
+	for i in $$(seq $$(ls -1 *.po | wc -l)); do \
+		for j in $$(seq $$(($$i + 1)) $$(ls -1 *.po | wc -l)); do \
+			msgmerge -N $$(ls -1S *.po | head -n $$i | tail -n 1) \
+					$$(ls -1S *.po | head -n $$j | tail -n 1) \
+				| ../tools/nostale.py \
+				| sponge $$(ls -1S *.po | head -n $$j | tail -n 1); \
+		done \
+	done
+
 check: $(MOS)
 	../tools/chkpos.py $(POS)
 

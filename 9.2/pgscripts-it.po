@@ -45,13 +45,13 @@ msgstr ""
 #: reindexdb.c:120 reindexdb.c:139 vacuumdb.c:133 vacuumdb.c:153
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: clusterdb.c:127 createdb.c:136 createlang.c:117 createuser.c:176
 #: dropdb.c:109 droplang.c:116 dropuser.c:102 reindexdb.c:137 vacuumdb.c:151
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
 #: clusterdb.c:139
 #, c-format
@@ -99,7 +99,7 @@ msgstr "Utilizzo:\n"
 #: clusterdb.c:250 reindexdb.c:329 vacuumdb.c:343
 #, c-format
 msgid "  %s [OPTION]... [DBNAME]\n"
-msgstr "  %s [OPZIONI]... [NOME_DB]\n"
+msgstr "  %s [OPZIONE]... [NOMEDB]\n"
 
 #: clusterdb.c:251 createdb.c:254 createlang.c:236 createuser.c:331
 #: dropdb.c:157 droplang.c:237 dropuser.c:158 reindexdb.c:330 vacuumdb.c:344
@@ -119,7 +119,7 @@ msgstr "  -a, --all                 raggruppa tutti i database\n"
 #: clusterdb.c:253
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to cluster\n"
-msgstr "  -d, --dbname=NOME_DB      database da raggruppare\n"
+msgstr "  -d, --dbname=NOMEDB       database da raggruppare\n"
 
 #: clusterdb.c:254 createlang.c:238 createuser.c:335 dropdb.c:158
 #: droplang.c:239 dropuser.c:159 reindexdb.c:333
@@ -201,7 +201,7 @@ msgstr "  -W, --password            forza la richiesta di una password\n"
 #: clusterdb.c:266 dropdb.c:169 reindexdb.c:346 vacuumdb.c:363
 #, c-format
 msgid "  --maintenance-db=DBNAME   alternate maintenance database\n"
-msgstr "  --maintenance-db=NOME_DB  database di manutenzione alternativo\n"
+msgstr "  --maintenance-db=NOMEDB   database di manutenzione alternativo\n"
 
 #: clusterdb.c:267
 #, c-format
@@ -260,7 +260,7 @@ msgstr "%s: query fallita: %s"
 #: common.c:222 common.c:250
 #, c-format
 msgid "%s: query was: %s\n"
-msgstr "%s: query eseguita: %s\n"
+msgstr "%s: la query era: %s\n"
 
 #: common.c:296
 #, c-format
@@ -342,7 +342,7 @@ msgstr ""
 #: createdb.c:253
 #, c-format
 msgid "  %s [OPTION]... [DBNAME] [DESCRIPTION]\n"
-msgstr "  %s [OPZIONE]... [NOME_DB] [DESCRIZIONE]\n"
+msgstr "  %s [OPZIONE]... [NOMEDB] [DESCRIZIONE]\n"
 
 #: createdb.c:255
 #, c-format
@@ -396,7 +396,7 @@ msgstr "  -T, --template=TEMPLATE      modello database da copiare\n"
 #, c-format
 msgid "  -V, --version                output version information, then exit\n"
 msgstr ""
-"  -V, --version                mostra informazioni di versione ed esci\n"
+"  -V, --version                mostra informazioni sulla versione ed esci\n"
 
 #: createdb.c:264
 #, c-format
@@ -433,7 +433,7 @@ msgstr "  -W, --password               forza la richiesta di una password\n"
 #: createdb.c:271
 #, c-format
 msgid "  --maintenance-db=DBNAME      alternate maintenance database\n"
-msgstr "  --maintenance-db=NOME_DB     database di manutenzione alternativo\n"
+msgstr "  --maintenance-db=NOMEDB      database di manutenzione alternativo\n"
 
 #: createdb.c:272
 #, c-format
@@ -492,12 +492,12 @@ msgstr ""
 #: createlang.c:235 droplang.c:236
 #, c-format
 msgid "  %s [OPTION]... LANGNAME [DBNAME]\n"
-msgstr "  %s [OPZIONE]... NOME_LINGUAGGIO [NOME_DB]\n"
+msgstr "  %s [OPZIONE]... NOME_LINGUAGGIO [NOMEDB]\n"
 
 #: createlang.c:237
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to install language in\n"
-msgstr "  -d, --dbname=NOME_DB      database in cui installare il linguaggio\n"
+msgstr "  -d, --dbname=NOMEDB       database in cui installare il linguaggio\n"
 
 #: createlang.c:239 droplang.c:240
 #, c-format
@@ -517,7 +517,7 @@ msgstr "Inserisci la password per il nuovo ruolo: "
 
 #: createuser.c:201
 msgid "Enter it again: "
-msgstr "Conferma la password: "
+msgstr "Conferma password: "
 
 #: createuser.c:204
 #, c-format
@@ -539,7 +539,7 @@ msgstr "Il nuovo ruolo può creare altri ruoli?"
 #: createuser.c:270
 #, c-format
 msgid "Password encryption failed.\n"
-msgstr "Criptazione della password fallita.\n"
+msgstr "Criptazione password fallita.\n"
 
 #: createuser.c:313
 #, c-format
@@ -700,7 +700,7 @@ msgstr ""
 #: dropdb.c:156
 #, c-format
 msgid "  %s [OPTION]... DBNAME\n"
-msgstr "  %s [OPZIONE]... NOME_DB\n"
+msgstr "  %s [OPZIONE]... NOMEDB\n"
 
 #: dropdb.c:159
 #, c-format
@@ -740,7 +740,7 @@ msgstr ""
 msgid ""
 "  -d, --dbname=DBNAME       database from which to remove the language\n"
 msgstr ""
-"  -d, --dbname=NOME_DB      database dal quale eliminare il linguaggio\n"
+"  -d, --dbname=NOMEDB       database dal quale eliminare il linguaggio\n"
 
 #: dropuser.c:111
 msgid "Enter name of role to drop: "
@@ -881,7 +881,7 @@ msgstr "  -a, --all                 re-indicizza tutti i database\n"
 #: reindexdb.c:332
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to reindex\n"
-msgstr "  -d, --dbname=NOME_DB      database da re-indicizzare\n"
+msgstr "  -d, --dbname=NOMEDB       database da re-indicizzare\n"
 
 #: reindexdb.c:334
 #, c-format
@@ -967,7 +967,7 @@ msgstr "  -a, --all                       pulisci tutti i database\n"
 #: vacuumdb.c:346
 #, c-format
 msgid "  -d, --dbname=DBNAME             database to vacuum\n"
-msgstr "  -d, --dbname=NOME_DB            database da pulire\n"
+msgstr "  -d, --dbname=NOMEDB             database da pulire\n"
 
 #: vacuumdb.c:347
 #, c-format

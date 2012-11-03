@@ -139,24 +139,23 @@ msgstr ""
 #, c-format
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
 msgstr ""
-"  -h, --host=HOSTNAME      host del server database o directory del socket\n"
+"  -h, --host=NOMEHOST      host server del database o directory socket\n"
 
 #: pg_basebackup.c:141
 #, c-format
 msgid "  -p, --port=PORT          database server port number\n"
-msgstr "  -p, --port=PORT          numero di porta del server database\n"
+msgstr "  -p, --port=PORTA         numero porta del server di database\n"
 
 #: pg_basebackup.c:142
 #, c-format
 msgid "  -U, --username=NAME      connect as specified database user\n"
 msgstr ""
-"  -U, --username=NAME      connettiti al database col nome utente "
-"specificato\n"
+"  -U, --username=NOME      connessione con l'utente di database specificato\n"
 
 #: pg_basebackup.c:143
 #, c-format
 msgid "  -w, --no-password        never prompt for password\n"
-msgstr "  -w, --no-password        non chiedere mai la password\n"
+msgstr "  -w, --no-password        non chiedere mai le password\n"
 
 #: pg_basebackup.c:144
 #, c-format
@@ -164,8 +163,9 @@ msgid ""
 "  -W, --password           force password prompt (should happen "
 "automatically)\n"
 msgstr ""
-"  -W, --password           forza la richiesta della password\n"
-"                           (dovrebbe essere automatico)\n"
+"  -W, --password           forza la richiesta di una password (dovrebbe "
+"essere\n"
+"                           automatico)\n"
 
 #: pg_basebackup.c:145
 #, c-format
@@ -380,12 +380,12 @@ msgstr ""
 #: pg_basebackup.c:1129
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: pg_basebackup.c:1103
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
 #: pg_basebackup.c:1115
 #, c-format

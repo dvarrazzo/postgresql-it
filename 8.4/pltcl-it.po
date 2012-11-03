@@ -48,7 +48,7 @@ msgstr "memoria esaurita"
 
 #: pltcl.c:1302
 msgid "trigger functions can only be called as triggers"
-msgstr "le funzioni trigger possono essere chiamate solo come trigger"
+msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 
 #: pltcl.c:1311
 #, c-format

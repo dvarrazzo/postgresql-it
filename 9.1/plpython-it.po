@@ -141,12 +141,12 @@ msgstr ""
 msgid ""
 "function returning record called in context that cannot accept type record"
 msgstr ""
-"la funzione che restituisce un record è stata chiamata in un contesto che "
-"non può accettare il tipo record"
+"la funzione che restituisce un record è chiamata in un contesto che non può "
+"accettare il tipo record"
 
 #: plpython.c:1643
 msgid "trigger functions can only be called as triggers"
-msgstr "le funzioni trigger possono essere chiamate solo come trigger"
+msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 
 #: plpython.c:1648 plpython.c:2121
 #, c-format

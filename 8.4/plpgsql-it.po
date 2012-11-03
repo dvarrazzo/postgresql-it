@@ -87,7 +87,7 @@ msgstr "la riga \"%s.%s\" non ha un campo \"%s\""
 #: pl_comp.c:1356
 #, c-format
 msgid "relation \"%s\" does not exist"
-msgstr "la relazione \"%s\" non esiste"
+msgstr "la relazione \"%s\"non esiste"
 
 #: pl_comp.c:1401
 #, c-format
@@ -160,8 +160,8 @@ msgstr ""
 #: pl_exec.c:360 pl_exec.c:2383
 msgid "set-valued function called in context that cannot accept a set"
 msgstr ""
-"è stata chiamata una funzione che restituisce un insieme in un contesto che "
-"non può accettarlo"
+"la funzione che restituisce insiemi è chiamata in un contesto che non può "
+"accettare un insieme"
 
 #: pl_exec.c:398
 msgid "returned record type does not match expected record type"
@@ -408,7 +408,7 @@ msgstr "il record \"%s\" non ha un campo \"%s\""
 #, c-format
 msgid "number of array dimensions (%d) exceeds the maximum allowed (%d)"
 msgstr ""
-"il numero di dimensioni dell'array (%d) supera il limite consentito (%d)"
+"il numero di dimensioni dell'array (%d) eccede il massimo consentito (%d)"
 
 #: pl_exec.c:3798
 msgid "subscripted object is not an array"
@@ -416,7 +416,7 @@ msgstr "l'oggetto del quale è stato richiesto un elemento non è un array"
 
 #: pl_exec.c:3821
 msgid "array subscript in assignment must not be null"
-msgstr "l'indice di un array nell'assegnamento non deve essere nullo"
+msgstr "l'indice di un array nell'assegnamento non può essere nullo"
 
 #: pl_exec.c:3936 pl_exec.c:3961 pl_exec.c:3998
 #, c-format
@@ -764,4 +764,4 @@ msgstr "%s alla fine dell'input"
 #: scan.l:455
 #, c-format
 msgid "%s at or near \"%s\""
-msgstr "%s a o vicino \"%s\""
+msgstr "%s a o presso \"%s\""

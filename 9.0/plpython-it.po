@@ -139,7 +139,7 @@ msgstr "PyCObject_AsVoidPtr() fallita"
 
 #: plpython.c:1434
 msgid "trigger functions can only be called as triggers"
-msgstr "le funzioni trigger possono essere chiamate solo come trigger"
+msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 
 #: plpython.c:1438 plpython.c:1822
 #, c-format

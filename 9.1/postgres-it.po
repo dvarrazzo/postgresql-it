@@ -5132,7 +5132,7 @@ msgstr "il letterale array non è definito in modo corretto: \"%s\""
 msgid ""
 "multidimensional arrays must have array expressions with matching dimensions"
 msgstr ""
-"gli array multidimensionali devo avere espressioni array con dimensioni "
+"gli array multidimensionali devono avere espressioni array di dimensioni "
 "corrispondenti"
 
 #: utils/adt/arrayfuncs.c:1249
@@ -10841,7 +10841,7 @@ msgstr ""
 #: parser/parse_type.c:492
 #, c-format
 msgid "collations are not supported by type %s"
-msgstr "gli ordinamenti non sono supportati per il tipo %s"
+msgstr "gli ordinamenti non sono supportati dal tipo %s"
 
 #: commands/indexcmds.c:976
 #, c-format

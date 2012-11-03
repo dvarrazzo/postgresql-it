@@ -63,27 +63,27 @@ msgstr "lettura del link simbolico \"%s\" fallita"
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è uscito con codice di uscita %d"
+msgstr "processo figlio uscito con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format
 msgid "child process was terminated by exception 0x%X"
-msgstr "il processo figlio è stato terminato dall'eccezione 0x%X"
+msgstr "processo figlio terminato da eccezione 0x%X"
 
 #: ../../port/exec.c:539
 #, c-format
 msgid "child process was terminated by signal %s"
-msgstr "il processo figlio è stato terminato dal segnale %s"
+msgstr "processo figlio terminato da segnale %s"
 
 #: ../../port/exec.c:542
 #, c-format
 msgid "child process was terminated by signal %d"
-msgstr "il processo figlio è stato terminato dal segnale %d"
+msgstr "processo figlio terminato da segnale %d"
 
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è uscito col valore sconosciuto %d"
+msgstr "processo figlio uscito con stato non riconosciuto %d"
 
 #: pg_ctl.c:243 pg_ctl.c:258 pg_ctl.c:2137
 #, c-format
@@ -451,7 +451,7 @@ msgstr ""
 #: pg_ctl.c:1624
 #, c-format
 msgid "%s: could not open process token: error code %lu\n"
-msgstr "%s: apertura del token del processo fallita: codice errore %lu\n"
+msgstr "%s: apertura del token di processo fallita: codice errore %lu\n"
 
 #: pg_ctl.c:1637
 #, c-format
@@ -473,7 +473,7 @@ msgstr ""
 #: pg_ctl.c:1780
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: pg_ctl.c:1788
 #, c-format
@@ -811,7 +811,7 @@ msgid ""
 "own the server process.\n"
 msgstr ""
 "%s: non può essere eseguito da root\n"
-"Effettuate il log in (usando per esempio \"su\") con l'utente\n"
+"Effettua il login (usando per esempio \"su\") con l'utente\n"
 "(non privilegiato) che controllerà il processo server.\n"
 
 #: pg_ctl.c:2120
@@ -822,7 +822,7 @@ msgstr "%s: l'opzione -S non è supportata su questa piattaforma\n"
 #: pg_ctl.c:2167
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi parametri di riga di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
 #: pg_ctl.c:2191
 #, c-format

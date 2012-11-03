@@ -151,8 +151,8 @@ msgstr ""
 msgid ""
 "function returning record called in context that cannot accept type record"
 msgstr ""
-"la funzione che restituisce un record è stata chiamata in un contesto che "
-"non può accettare il tipo record"
+"la funzione che restituisce un record è chiamata in un contesto che non può "
+"accettare il tipo record"
 
 #: plpy_exec.c:450
 #, c-format
@@ -289,7 +289,7 @@ msgstr "non è stato possibile interpretare il messaggio di errore in plpy.elog"
 #: plpy_procedure.c:194
 #, c-format
 msgid "trigger functions can only be called as triggers"
-msgstr "le funzioni trigger possono essere chiamate solo come trigger"
+msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 
 #: plpy_procedure.c:199 plpy_typeio.c:406
 #, c-format

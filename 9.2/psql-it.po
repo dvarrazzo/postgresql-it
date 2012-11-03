@@ -69,27 +69,27 @@ msgstr "lettura del link simbolico \"%s\" fallita"
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è uscito con codice di uscita %d"
+msgstr "processo figlio uscito con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format
 msgid "child process was terminated by exception 0x%X"
-msgstr "il processo figlio è stato terminato dall'eccezione 0x%X"
+msgstr "processo figlio terminato da eccezione 0x%X"
 
 #: ../../port/exec.c:539
 #, c-format
 msgid "child process was terminated by signal %s"
-msgstr "il processo figlio è stato terminato dal segnale %s"
+msgstr "processo figlio terminato da segnale %s"
 
 #: ../../port/exec.c:542
 #, c-format
 msgid "child process was terminated by signal %d"
-msgstr "il processo figlio è stato terminato dal segnale %d"
+msgstr "processo figlio terminato da segnale %d"
 
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è uscito con lo stato sconosciuto %d"
+msgstr "processo figlio uscito con stato non riconosciuto %d"
 
 #: command.c:113
 #, c-format
@@ -192,7 +192,7 @@ msgstr "Le password non corrispondono.\n"
 #: command.c:921
 #, c-format
 msgid "Password encryption failed.\n"
-msgstr "Autenticazione password fallita.\n"
+msgstr "Criptazione password fallita.\n"
 
 #: command.c:992 command.c:1093 command.c:1321
 #, c-format
@@ -1580,7 +1580,7 @@ msgstr ""
 msgid ""
 "  -d, --dbname=DBNAME      database name to connect to (default: \"%s\")\n"
 msgstr ""
-"  -d, --dbname=NOME_DB     specifica il nome del database a cui connettersi\n"
+"  -d, --dbname=NOMEDB      specifica il nome del database a cui connettersi\n"
 "                           (default: \"%s\")\n"
 
 #: help.c:93
@@ -4288,7 +4288,7 @@ msgstr "%s: impostazione della variabile \"%s\" fallita\n"
 #: startup.c:553 startup.c:559
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: startup.c:576
 #, c-format

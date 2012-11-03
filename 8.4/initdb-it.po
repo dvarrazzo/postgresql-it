@@ -131,12 +131,12 @@ msgstr ""
 #, c-format
 msgid "%s: could not obtain information about current user: %s\n"
 msgstr ""
-"%s: non è stato possibile ottenere informazioni sull'utente corrente: %s\n"
+"%s: non è stato possibile acquisire informazioni sull'utente corrente: %s\n"
 
 #: initdb.c:687
 #, c-format
 msgid "%s: could not get current user name: %s\n"
-msgstr "%s: determinazione del nome utente fallita: %s\n"
+msgstr "%s: non è stato possibile determinare il nome utente corrente: %s\n"
 
 #: initdb.c:718
 #, c-format
@@ -211,7 +211,7 @@ msgstr "Inserisci la nuova password del superutente: "
 
 #: initdb.c:1464
 msgid "Enter it again: "
-msgstr "Inserisci di nuovo la password: "
+msgstr "Conferma password: "
 
 #: initdb.c:1467
 #, c-format
@@ -519,7 +519,7 @@ msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 #: initdb.c:2622
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
 #: initdb.c:2631
 #, c-format
@@ -804,8 +804,7 @@ msgstr "lettura della directory \"%s\" fallita: %s\n"
 #, c-format
 msgid "could not stat file or directory \"%s\": %s\n"
 msgstr ""
-"non è stato possibile ottenere informazioni sul file o la directory \"%s\": "
-"%s\n"
+"non è stato possibile ottenere informazioni sul file o directory \"%s\": %s\n"
 
 #: ../../port/dirmod.c:472 ../../port/dirmod.c:489
 #, c-format
@@ -845,24 +844,24 @@ msgstr "lettura del link simbolico \"%s\" fallita"
 #: ../../port/exec.c:595
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è terminato con codice di uscita %d"
+msgstr "processo figlio uscito con codice di uscita %d"
 
 #: ../../port/exec.c:599
 #, c-format
 msgid "child process was terminated by exception 0x%X"
-msgstr "il processo figlio è stato terminato dall'eccezione 0x%X"
+msgstr "processo figlio terminato da eccezione 0x%X"
 
 #: ../../port/exec.c:608
 #, c-format
 msgid "child process was terminated by signal %s"
-msgstr "il processo figlio è stato terminato dal segnale %s"
+msgstr "processo figlio terminato da segnale %s"
 
 #: ../../port/exec.c:611
 #, c-format
 msgid "child process was terminated by signal %d"
-msgstr "il processo figlio è stato terminato dal segnale %d"
+msgstr "processo figlio terminato da segnale %d"
 
 #: ../../port/exec.c:615
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è terminato con il codice di uscita sconosciuto %d"
+msgstr "processo figlio uscito con stato non riconosciuto %d"

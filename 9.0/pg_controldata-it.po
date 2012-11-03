@@ -128,12 +128,12 @@ msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 #: pg_controldata.c:138
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr "%s: apertura del file \"%s\" in lettura fallita: %s\n"
+msgstr "%s: errore nell'apertura del file \"%s\" per la lettura: %s\n"
 
 #: pg_controldata.c:145
 #, c-format
 msgid "%s: could not read file \"%s\": %s\n"
-msgstr "%s: lettura dal file \"%s\" fallita: %s\n"
+msgstr "%s: lettura del file \"%s\" fallita: %s\n"
 
 #: pg_controldata.c:159
 #, c-format
@@ -178,7 +178,7 @@ msgstr "Numero di versione del catalogo:            %u\n"
 #: pg_controldata.c:195
 #, c-format
 msgid "Database system identifier:           %s\n"
-msgstr "Identificativo di sistema del database:     %s\n"
+msgstr "Identificatore di sistema del database:     %s\n"
 
 #: pg_controldata.c:197
 #, c-format
@@ -208,27 +208,27 @@ msgstr "Ultima posizione REDO checkpoint:           %X/%X\n"
 #: pg_controldata.c:210
 #, c-format
 msgid "Latest checkpoint's TimeLineID:       %u\n"
-msgstr "Ultimo TimeLineID del checkpoint :          %u\n"
+msgstr "TimeLineId dell'ultimo checkpoint:          %u\n"
 
 #: pg_controldata.c:212
 #, c-format
 msgid "Latest checkpoint's NextXID:          %u/%u\n"
-msgstr "Ultimo NextXID checkpoint :                 %u/%u\n"
+msgstr "NextXID dell'ultimo checkpoint:             %u%u\n"
 
 #: pg_controldata.c:215
 #, c-format
 msgid "Latest checkpoint's NextOID:          %u\n"
-msgstr "Ultimo NextOID del checkpoint:              %u\n"
+msgstr "NextOID dell'ultimo checkpoint:             %u\n"
 
 #: pg_controldata.c:217
 #, c-format
 msgid "Latest checkpoint's NextMultiXactId:  %u\n"
-msgstr "Ultimo NextMultiXactId del checkpoint:      %u\n"
+msgstr "NextMultiXactId dell'ultimo checkpoint:     %u\n"
 
 #: pg_controldata.c:219
 #, c-format
 msgid "Latest checkpoint's NextMultiOffset:  %u\n"
-msgstr "Ultimo NextMultiOffset del checkpoint:      %u\n"
+msgstr "NextMultiOffset dell'ultimo checkpoint:     %u\n"
 
 #: pg_controldata.c:221
 #, c-format
@@ -238,7 +238,7 @@ msgstr "oldestXID dell'ultimo checkpoint:           %u\n"
 #: pg_controldata.c:223
 #, c-format
 msgid "Latest checkpoint's oldestXID's DB:   %u\n"
-msgstr "DB di oldestXID dell'ultimo checkpoint:     %u\n"
+msgstr "DB dell'oldestXID dell'ultimo checkpoint:   %u\n"
 
 #: pg_controldata.c:225
 #, c-format
@@ -283,7 +283,7 @@ msgstr "Impostazione attuale max_locks_per_xact:    %d\n"
 #: pg_controldata.c:243
 #, c-format
 msgid "Maximum data alignment:               %u\n"
-msgstr "Massimo allineamento per i dati:            %u\n"
+msgstr "Massimo allineamento dei dati:              %u\n"
 
 #: pg_controldata.c:246
 #, c-format
@@ -293,12 +293,12 @@ msgstr "Dimensione blocco database:                 %u\n"
 #: pg_controldata.c:248
 #, c-format
 msgid "Blocks per segment of large relation: %u\n"
-msgstr "Blocchi per segmento delle tabelle grandi:  %u\n"
+msgstr "Blocchi per ogni segmento grosse tabelle:   %u\n"
 
 #: pg_controldata.c:250
 #, c-format
 msgid "WAL block size:                       %u\n"
-msgstr "Dimensione dei blocchi WAL:                 %u\n"
+msgstr "Dimensione blocco WAL:                      %u\n"
 
 #: pg_controldata.c:252
 #, c-format
@@ -308,7 +308,7 @@ msgstr "Byte per segmento WAL:                      %u\n"
 #: pg_controldata.c:254
 #, c-format
 msgid "Maximum length of identifiers:        %u\n"
-msgstr "Massima lunghezza identificatori:           %u\n"
+msgstr "Lunghezza massima degli identificatori:     %u\n"
 
 #: pg_controldata.c:256
 #, c-format
@@ -323,11 +323,11 @@ msgstr "Massima dimensione di un segmento TOAST:    %u\n"
 #: pg_controldata.c:260
 #, c-format
 msgid "Date/time type storage:               %s\n"
-msgstr "Memorizzazione tipi Data/ora:               %s\n"
+msgstr "Memorizzazione per tipi data/ora:           %s\n"
 
 #: pg_controldata.c:261
 msgid "64-bit integers"
-msgstr "interi a 64-bit"
+msgstr "interi a 64 bit"
 
 #: pg_controldata.c:261
 msgid "floating-point numbers"
@@ -336,7 +336,7 @@ msgstr "numeri in virgola mobile"
 #: pg_controldata.c:262
 #, c-format
 msgid "Float4 argument passing:              %s\n"
-msgstr "passaggio di argomenti Float4:              %s\n"
+msgstr "Passaggio di argomenti Float4:              %s\n"
 
 #: pg_controldata.c:263 pg_controldata.c:265
 msgid "by value"

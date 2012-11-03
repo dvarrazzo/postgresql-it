@@ -45,13 +45,13 @@ msgstr ""
 #: reindexdb.c:114 reindexdb.c:128
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: createdb.c:131 createlang.c:108 createuser.c:162 dropdb.c:98 droplang.c:107
 #: dropuser.c:96 clusterdb.c:117 vacuumdb.c:140 reindexdb.c:127
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: troppi parametri nella riga di comando (il primo è \"%s\")\n"
+msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
 #: createdb.c:141
 #, c-format
@@ -97,7 +97,7 @@ msgstr "Utilizzo:\n"
 #: createdb.c:249
 #, c-format
 msgid "  %s [OPTION]... [DBNAME] [DESCRIPTION]\n"
-msgstr "  %s [OPZIONE]... [NOME_DB] [DESCRIZIONE]\n"
+msgstr "  %s [OPZIONE]... [NOMEDB] [DESCRIZIONE]\n"
 
 #: createdb.c:250 createlang.c:225 createuser.c:302 dropdb.c:146
 #: droplang.c:226 dropuser.c:141 clusterdb.c:238 vacuumdb.c:330
@@ -275,12 +275,12 @@ msgstr ""
 #: createlang.c:224 droplang.c:225
 #, c-format
 msgid "  %s [OPTION]... LANGNAME [DBNAME]\n"
-msgstr "  %s [OPZIONE]... NOME_LINGUAGGIO [NOME_DB]\n"
+msgstr "  %s [OPZIONE]... NOME_LINGUAGGIO [NOMEDB]\n"
 
 #: createlang.c:226
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to install language in\n"
-msgstr "  -d, --dbname=NOME_DB      database in cui installare il linguaggio\n"
+msgstr "  -d, --dbname=NOMEDB       database in cui installare il linguaggio\n"
 
 #: createlang.c:227 createuser.c:306 dropdb.c:147 droplang.c:228
 #: dropuser.c:142 clusterdb.c:241 reindexdb.c:318
@@ -351,7 +351,7 @@ msgstr "Inserisci la password per il nuovo ruolo: "
 
 #: createuser.c:177
 msgid "Enter it again: "
-msgstr "Conferma la password: "
+msgstr "Conferma password: "
 
 #: createuser.c:180
 #, c-format
@@ -373,7 +373,7 @@ msgstr "Il nuovo ruolo può creare altri ruoli?"
 #: createuser.c:245
 #, c-format
 msgid "Password encryption failed.\n"
-msgstr "Criptazione della password fallita.\n"
+msgstr "Criptazione password fallita.\n"
 
 #: createuser.c:284
 #, c-format
@@ -522,7 +522,7 @@ msgstr ""
 #: dropdb.c:145
 #, c-format
 msgid "  %s [OPTION]... DBNAME\n"
-msgstr "  %s [OPZIONE]... NOME_DB\n"
+msgstr "  %s [OPZIONE]... NOMEDB\n"
 
 #: dropdb.c:148 dropuser.c:143
 #, c-format
@@ -555,7 +555,7 @@ msgstr ""
 msgid ""
 "  -d, --dbname=DBNAME       database from which to remove the language\n"
 msgstr ""
-"  -d, --dbname=NOME_DB      database dal quale eliminare il linguaggio\n"
+"  -d, --dbname=NOMEDB       database dal quale eliminare il linguaggio\n"
 
 #: dropuser.c:103
 msgid "Enter name of role to drop: "
@@ -628,7 +628,7 @@ msgstr ""
 #: clusterdb.c:237 vacuumdb.c:329 reindexdb.c:314
 #, c-format
 msgid "  %s [OPTION]... [DBNAME]\n"
-msgstr "  %s [OPZIONI]... [NOME_DB]\n"
+msgstr "  %s [OPZIONE]... [NOMEDB]\n"
 
 #: clusterdb.c:239
 #, c-format
@@ -638,7 +638,7 @@ msgstr "  -a, --all                 raggruppa tutti i database\n"
 #: clusterdb.c:240
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to cluster\n"
-msgstr "  -d, --dbname=NOME_DB      database da raggruppare\n"
+msgstr "  -d, --dbname=NOMEDB       database da raggruppare\n"
 
 #: clusterdb.c:242 reindexdb.c:320
 #, c-format
@@ -724,7 +724,7 @@ msgstr "  -a, --all                       pulisci tutti i database\n"
 #: vacuumdb.c:332
 #, c-format
 msgid "  -d, --dbname=DBNAME             database to vacuum\n"
-msgstr "  -d, --dbname=NOME_DB            database da pulire\n"
+msgstr "  -d, --dbname=NOMEDB             database da pulire\n"
 
 #: vacuumdb.c:333
 #, c-format
@@ -886,7 +886,7 @@ msgstr "  -a, --all                 re-indicizza tutti i database\n"
 #: reindexdb.c:317
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to reindex\n"
-msgstr "  -d, --dbname=NOME_DB      database da re-indicizzare\n"
+msgstr "  -d, --dbname=NOMEDB       database da re-indicizzare\n"
 
 #: reindexdb.c:319
 #, c-format
@@ -950,7 +950,7 @@ msgstr "%s: query fallita: %s"
 #: common.c:192 common.c:220
 #, c-format
 msgid "%s: query was: %s\n"
-msgstr "%s: query eseguita: %s\n"
+msgstr "%s: la query era: %s\n"
 
 #: common.c:266
 #, c-format

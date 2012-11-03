@@ -49,7 +49,7 @@ msgstr "lettura del binario \"%s\" fallita"
 #: ../../port/exec.c:200
 #, c-format
 msgid "could not find a \"%s\" to execute"
-msgstr "il programma da eseguire \"%s\" non è stato trovato"
+msgstr "programma \"%s\" da eseguire non trovato"
 
 #: ../../port/exec.c:255 ../../port/exec.c:291
 #, c-format
@@ -64,7 +64,7 @@ msgstr "lettura del link simbolico \"%s\" fallita"
 #: ../../port/exec.c:526
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "processo figlio terminato con codice di uscita %d"
+msgstr "processo figlio uscito con codice di uscita %d"
 
 #: ../../port/exec.c:530
 #, c-format
@@ -84,7 +84,7 @@ msgstr "processo figlio terminato da segnale %d"
 #: ../../port/exec.c:546
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "processo figlio uscito con stato sconosciuto %d"
+msgstr "processo figlio uscito con stato non riconosciuto %d"
 
 #: pg_config.c:243 pg_config.c:259 pg_config.c:275 pg_config.c:291
 #: pg_config.c:307 pg_config.c:323 pg_config.c:339 pg_config.c:355

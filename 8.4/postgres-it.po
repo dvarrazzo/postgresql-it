@@ -4750,7 +4750,7 @@ msgstr "il letterale array non è definito in modo corretto: \"%s\""
 msgid ""
 "multidimensional arrays must have array expressions with matching dimensions"
 msgstr ""
-"gli array multidimensionali devo avere espressioni array con dimensioni "
+"gli array multidimensionali devono avere espressioni array di dimensioni "
 "corrispondenti"
 
 #: utils/adt/arrayfuncs.c:1197

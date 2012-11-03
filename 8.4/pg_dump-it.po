@@ -379,7 +379,7 @@ msgstr ""
 #: pg_dump.c:830 pg_restore.c:445 pg_dumpall.c:561
 #, c-format
 msgid "  -w, --no-password        never prompt for password\n"
-msgstr "  -w, --no-password        nessun richiesta di password\n"
+msgstr "  -w, --no-password        non chiedere mai le password\n"
 
 #: pg_dump.c:831 pg_restore.c:446 pg_dumpall.c:562
 #, c-format
@@ -387,9 +387,9 @@ msgid ""
 "  -W, --password           force password prompt (should happen "
 "automatically)\n"
 msgstr ""
-"  -W, --password           forza la richiesta della password (dovrebbe "
-"avvenire\n"
-"                           automaticamente)\n"
+"  -W, --password           forza la richiesta di una password (dovrebbe "
+"essere\n"
+"                           automatico)\n"
 
 #: pg_dump.c:833
 #, c-format
@@ -2267,24 +2267,24 @@ msgstr "lettura del link simbolico \"%s\" fallita"
 #: ../../port/exec.c:595
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è uscito con codice di uscita %d"
+msgstr "processo figlio uscito con codice di uscita %d"
 
 #: ../../port/exec.c:599
 #, c-format
 msgid "child process was terminated by exception 0x%X"
-msgstr "il processo figlio è stato terminato dall'eccezione 0x%X"
+msgstr "processo figlio terminato da eccezione 0x%X"
 
 #: ../../port/exec.c:608
 #, c-format
 msgid "child process was terminated by signal %s"
-msgstr "il processo figlio è stato terminato dal segnale %s"
+msgstr "processo figlio terminato da segnale %s"
 
 #: ../../port/exec.c:611
 #, c-format
 msgid "child process was terminated by signal %d"
-msgstr "il processo figlio è stato terminato dal segnale %d"
+msgstr "processo figlio terminato da segnale %d"
 
 #: ../../port/exec.c:615
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è uscito col valore sconosciuto %d"
+msgstr "processo figlio uscito con stato non riconosciuto %d"

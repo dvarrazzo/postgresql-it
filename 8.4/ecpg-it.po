@@ -200,7 +200,7 @@ msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 #: ecpg.c:222 ecpg.c:235 ecpg.c:251 ecpg.c:276
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: ecpg.c:246
 #, c-format
@@ -242,14 +242,13 @@ msgstr "commento /* non terminato"
 msgid "invalid bit string literal"
 msgstr "bit nella stringa letterale non valido"
 
-# string literal sarebbe intraducubile infatti è come la stringa viene rappresentata nel linguaggio di programmazione, ma come si fa a tradurlo?....
 #: pgc.l:408
 msgid "unterminated bit string literal"
-msgstr "bit di chiusura nella stringa letterale mancante"
+msgstr "letterale di stringa di bit non terminato"
 
 #: pgc.l:424
 msgid "unterminated hexadecimal string literal"
-msgstr "stringa letterale esadecimale non terminata"
+msgstr "letterale di stringa esadecimale non terminato"
 
 #: pgc.l:501
 msgid "unterminated quoted string"
@@ -257,7 +256,7 @@ msgstr "stringa tra virgolette non terminata"
 
 #: pgc.l:556 pgc.l:569
 msgid "zero-length delimited identifier"
-msgstr "identificativo delimitato di dimensione-zero"
+msgstr "identificativo delimitato di lunghezza zero"
 
 #: pgc.l:577
 msgid "unterminated quoted identifier"
@@ -408,7 +407,7 @@ msgstr "COPY FROM STDIN non è implementato"
 
 #: preproc.y:3737 preproc.y:3748
 msgid "constraint declared INITIALLY DEFERRED must be DEFERRABLE"
-msgstr "il vincolo dichiarato INITIALLY DEFERRED deve essere DEFERRABLE"
+msgstr "un vincolo dichiarato INITIALLY DEFERRED dev'essere DEFERRABLE"
 
 #: preproc.y:6556 preproc.y:11144
 #, c-format
@@ -519,7 +518,7 @@ msgstr "array di indicatori non sono permessi"
 #: preproc.y:12633
 #, c-format
 msgid "%s at or near \"%s\""
-msgstr "%s presso o vicino \"%s\""
+msgstr "%s a o presso \"%s\""
 
 #: type.c:18 type.c:30
 msgid "out of memory"

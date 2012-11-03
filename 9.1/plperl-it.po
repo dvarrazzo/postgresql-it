@@ -122,7 +122,7 @@ msgstr "non è possibile convertire un hash Perl nel tipo non composito %s"
 msgid ""
 "function returning record called in context that cannot accept type record"
 msgstr ""
-"funzione che restituisce un record richiamata in un contesto che non può "
+"la funzione che restituisce un record è chiamata in un contesto che non può "
 "accettare il tipo record"
 
 #: plperl.c:1320
@@ -155,8 +155,8 @@ msgstr "non ho ricevuto un riferimento CODE dal compilare la funzione \"%s\""
 #: plperl.c:2193
 msgid "set-valued function called in context that cannot accept a set"
 msgstr ""
-"funzione che restituisce un insieme richiamata in un contesto che non può "
-"accettare insiemi"
+"la funzione che restituisce insiemi è chiamata in un contesto che non può "
+"accettare un insieme"
 
 #: plperl.c:2237
 msgid ""
@@ -183,7 +183,7 @@ msgstr "memoria esaurita"
 
 #: plperl.c:2559
 msgid "trigger functions can only be called as triggers"
-msgstr "le funzioni trigger possono solo essere chiamate come trigger"
+msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 
 #: plperl.c:2932
 msgid "cannot use return_next in a non-SETOF function"

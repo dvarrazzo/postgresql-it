@@ -113,7 +113,7 @@ msgstr "Le password non corrispondono.\n"
 #: command.c:824
 #, c-format
 msgid "Password encryption failed.\n"
-msgstr "Autenticazione password fallita.\n"
+msgstr "Criptazione password fallita.\n"
 
 #: command.c:892 command.c:993 command.c:1055
 #, c-format
@@ -569,7 +569,7 @@ msgstr ""
 msgid ""
 "  -d, --dbname=DBNAME      database name to connect to (default: \"%s\")\n"
 msgstr ""
-"  -d, --dbname=NOME_DB     specifica il nome del database a cui connettersi\n"
+"  -d, --dbname=NOMEDB      specifica il nome del database a cui connettersi\n"
 "                           (default: \"%s\")\n"
 
 #: help.c:97
@@ -1460,7 +1460,7 @@ msgstr "%s: impostazione della variabile \"%s\" fallita\n"
 #: startup.c:531 startup.c:537
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: startup.c:554
 #, c-format
@@ -3792,24 +3792,24 @@ msgstr "lettura del link simbolico \"%s\" fallita"
 #: ../../port/exec.c:525
 #, c-format
 msgid "child process exited with exit code %d"
-msgstr "il processo figlio è uscito con codice di uscita %d"
+msgstr "processo figlio uscito con codice di uscita %d"
 
 #: ../../port/exec.c:529
 #, c-format
 msgid "child process was terminated by exception 0x%X"
-msgstr "il processo figlio è stato terminato dall'eccezione 0x%X"
+msgstr "processo figlio terminato da eccezione 0x%X"
 
 #: ../../port/exec.c:538
 #, c-format
 msgid "child process was terminated by signal %s"
-msgstr "il processo figlio è stato terminato dal segnale %s"
+msgstr "processo figlio terminato da segnale %s"
 
 #: ../../port/exec.c:541
 #, c-format
 msgid "child process was terminated by signal %d"
-msgstr "il processo figlio è stato terminato dal segnale %d"
+msgstr "processo figlio terminato da segnale %d"
 
 #: ../../port/exec.c:545
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "il processo figlio è uscito con lo stato sconosciuto %d"
+msgstr "processo figlio uscito con stato non riconosciuto %d"

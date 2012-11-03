@@ -119,7 +119,7 @@ msgstr "%s: spostamento nella directory \"%s\" fallito: %s\n"
 #: pg_resetxlog.c:279 pg_resetxlog.c:407
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr "%s: apertura del file \"%s\" per la lettura fallita: %s\n"
+msgstr "%s: errore nell'apertura del file \"%s\" per la lettura: %s\n"
 
 #: pg_resetxlog.c:285
 #, c-format
@@ -204,112 +204,112 @@ msgstr ""
 #: pg_resetxlog.c:560
 #, c-format
 msgid "First log file ID after reset:        %u\n"
-msgstr "primo ID del file di log dopo il reset:          %u\n"
+msgstr "primo ID del file di log dopo il reset:     %u\n"
 
 #: pg_resetxlog.c:562
 #, c-format
 msgid "First log file segment after reset:   %u\n"
-msgstr "Primo segmento del file di log dopo il reset:    %u\n"
+msgstr "Primo segmento file di log dopo il reset:   %u\n"
 
 #: pg_resetxlog.c:564
 #, c-format
 msgid "pg_control version number:            %u\n"
-msgstr "Numero versione pg_control:                      %u\n"
+msgstr "Numero di versione di pg_control:           %u\n"
 
 #: pg_resetxlog.c:566
 #, c-format
 msgid "Catalog version number:               %u\n"
-msgstr "Numero versione catalogo:                        %u\n"
+msgstr "Numero di versione del catalogo:            %u\n"
 
 #: pg_resetxlog.c:568
 #, c-format
 msgid "Database system identifier:           %s\n"
-msgstr "Identificatore sistema database:                 %s\n"
+msgstr "Identificatore di sistema del database:     %s\n"
 
 #: pg_resetxlog.c:570
 #, c-format
 msgid "Latest checkpoint's TimeLineID:       %u\n"
-msgstr "TimeLineId dell'ultimo checkpoint:               %u\n"
+msgstr "TimeLineId dell'ultimo checkpoint:          %u\n"
 
 #: pg_resetxlog.c:572
 #, c-format
 msgid "Latest checkpoint's NextXID:          %u/%u\n"
-msgstr "NextXID dell'ultimo checkpoint:                  %u%u\n"
+msgstr "NextXID dell'ultimo checkpoint:             %u%u\n"
 
 #: pg_resetxlog.c:575
 #, c-format
 msgid "Latest checkpoint's NextOID:          %u\n"
-msgstr "NextOID dell'ultimo checkpoint:                  %u\n"
+msgstr "NextOID dell'ultimo checkpoint:             %u\n"
 
 #: pg_resetxlog.c:577
 #, c-format
 msgid "Latest checkpoint's NextMultiXactId:  %u\n"
-msgstr "NextMultiXactId dell'ultimo checkpoint:          %u\n"
+msgstr "NextMultiXactId dell'ultimo checkpoint:     %u\n"
 
 #: pg_resetxlog.c:579
 #, c-format
 msgid "Latest checkpoint's NextMultiOffset:  %u\n"
-msgstr "NextMultiOffset dell'ultimo checkpoint:          %u\n"
+msgstr "NextMultiOffset dell'ultimo checkpoint:     %u\n"
 
 #: pg_resetxlog.c:581
 #, c-format
 msgid "Latest checkpoint's oldestXID:        %u\n"
-msgstr "oldestXID dell'ultimo checkpoint:                %u\n"
+msgstr "oldestXID dell'ultimo checkpoint:           %u\n"
 
 #: pg_resetxlog.c:583
 #, c-format
 msgid "Latest checkpoint's oldestXID's DB:   %u\n"
-msgstr "DB dell'oldestXID dell'ultimo checkpoint:        %u\n"
+msgstr "DB dell'oldestXID dell'ultimo checkpoint:   %u\n"
 
 #: pg_resetxlog.c:585
 #, c-format
 msgid "Latest checkpoint's oldestActiveXID:  %u\n"
-msgstr "oldestActiveXID dell'ultimo checkpoint:          %u\n"
+msgstr "oldestActiveXID dell'ultimo checkpoint:     %u\n"
 
 #: pg_resetxlog.c:587
 #, c-format
 msgid "Maximum data alignment:               %u\n"
-msgstr "Massimo allineamento dei dati:                   %u\n"
+msgstr "Massimo allineamento dei dati:              %u\n"
 
 #: pg_resetxlog.c:590
 #, c-format
 msgid "Database block size:                  %u\n"
-msgstr "Dimensione blocco database:                      %u\n"
+msgstr "Dimensione blocco database:                 %u\n"
 
 #: pg_resetxlog.c:592
 #, c-format
 msgid "Blocks per segment of large relation: %u\n"
-msgstr "Blocchi per ogni segmento delle grosse tabelle:  %u\n"
+msgstr "Blocchi per ogni segmento grosse tabelle:   %u\n"
 
 #: pg_resetxlog.c:594
 #, c-format
 msgid "WAL block size:                       %u\n"
-msgstr "Dimensione blocco WAL:                           %u\n"
+msgstr "Dimensione blocco WAL:                      %u\n"
 
 #: pg_resetxlog.c:596
 #, c-format
 msgid "Bytes per WAL segment:                %u\n"
-msgstr "Byte per segmento WAL:                           %u\n"
+msgstr "Byte per segmento WAL:                      %u\n"
 
 #: pg_resetxlog.c:598
 #, c-format
 msgid "Maximum length of identifiers:        %u\n"
-msgstr "Lunghezza massima degli identificatori:          %u\n"
+msgstr "Lunghezza massima degli identificatori:     %u\n"
 
 #: pg_resetxlog.c:600
 #, c-format
 msgid "Maximum columns in an index:          %u\n"
-msgstr "Massimo numero di colonne in un indice:          %u\n"
+msgstr "Massimo numero di colonne in un indice:     %u\n"
 
 #: pg_resetxlog.c:602
 #, c-format
 msgid "Maximum size of a TOAST chunk:        %u\n"
-msgstr "Massima dimensione di un segmento TOAST:         %u\n"
+msgstr "Massima dimensione di un segmento TOAST:    %u\n"
 
 #: pg_resetxlog.c:604
 #, c-format
 msgid "Date/time type storage:               %s\n"
-msgstr "Memorizzazione per tipi data/ora:                %s\n"
+msgstr "Memorizzazione per tipi data/ora:           %s\n"
 
 #: pg_resetxlog.c:605
 msgid "64-bit integers"
@@ -322,7 +322,7 @@ msgstr "numeri in virgola mobile"
 #: pg_resetxlog.c:606
 #, c-format
 msgid "Float4 argument passing:              %s\n"
-msgstr "Passaggio di argomenti Float4:                   %s\n"
+msgstr "Passaggio di argomenti Float4:              %s\n"
 
 #: pg_resetxlog.c:607 pg_resetxlog.c:609
 msgid "by value"
@@ -335,7 +335,7 @@ msgstr "per riferimento"
 #: pg_resetxlog.c:608
 #, c-format
 msgid "Float8 argument passing:              %s\n"
-msgstr "passaggio di argomenti float8:                   %s\n"
+msgstr "passaggio di argomenti Float8:              %s\n"
 
 #: pg_resetxlog.c:671
 #, c-format
@@ -384,7 +384,7 @@ msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 #: pg_resetxlog.c:989 pg_resetxlog.c:1003
 #, c-format
 msgid "%s: could not write file \"%s\": %s\n"
-msgstr "%s: scrittura del file \"%s\" fallita: %s\n"
+msgstr "%s: errore nella scrittura del file \"%s\": %s\n"
 
 #: pg_resetxlog.c:1022
 #, c-format

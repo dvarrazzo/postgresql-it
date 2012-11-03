@@ -94,8 +94,8 @@ msgstr "errore dalla funzione Perl \"%s\": %s"
 #: plperl.c:1424
 msgid "set-valued function called in context that cannot accept a set"
 msgstr ""
-"funzione che restituisce un insieme richiamata in un contesto che non può "
-"accettare insiemi"
+"la funzione che restituisce insiemi è chiamata in un contesto che non può "
+"accettare un insieme"
 
 #: plperl.c:1467
 msgid ""
@@ -115,7 +115,7 @@ msgstr ""
 msgid ""
 "function returning record called in context that cannot accept type record"
 msgstr ""
-"funzione che restituisce un record richiamata in un contesto che non può "
+"la funzione che restituisce un record è chiamata in un contesto che non può "
 "accettare il tipo record"
 
 #: plperl.c:1615
@@ -135,7 +135,7 @@ msgstr "memoria esaurita"
 
 #: plperl.c:1815
 msgid "trigger functions can only be called as triggers"
-msgstr "le funzioni trigger possono solo essere chiamate come trigger"
+msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 
 #: plperl.c:2109
 msgid "cannot use return_next in a non-SETOF function"

@@ -202,7 +202,7 @@ msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 #: ecpg.c:221 ecpg.c:234 ecpg.c:250 ecpg.c:275
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
-msgstr "Prova \"%s --help\" per avere più informazioni.\n"
+msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
 #: ecpg.c:245
 #, c-format
@@ -251,16 +251,15 @@ msgstr "commento /* non terminato"
 msgid "invalid bit string literal"
 msgstr "bit nella stringa letterale non valido"
 
-# string literal sarebbe intraducubile infatti è come la stringa viene rappresentata nel linguaggio di programmazione, ma come si fa a tradurlo?....
 #: pgc.l:425
 #, c-format
 msgid "unterminated bit string literal"
-msgstr "bit di chiusura nella stringa letterale mancante"
+msgstr "letterale di stringa di bit non terminato"
 
 #: pgc.l:441
 #, c-format
 msgid "unterminated hexadecimal string literal"
-msgstr "stringa letterale esadecimale non terminata"
+msgstr "letterale di stringa esadecimale non terminato"
 
 #: pgc.l:519
 #, c-format
@@ -270,7 +269,7 @@ msgstr "stringa tra virgolette non terminata"
 #: pgc.l:574 pgc.l:587
 #, c-format
 msgid "zero-length delimited identifier"
-msgstr "identificativo delimitato di dimensione-zero"
+msgstr "identificativo delimitato di lunghezza zero"
 
 #: pgc.l:595
 #, c-format
@@ -563,7 +562,7 @@ msgstr "array di indicatori non sono permessi"
 #: preproc.y:14463
 #, c-format
 msgid "%s at or near \"%s\""
-msgstr "%s presso o vicino \"%s\""
+msgstr "%s a o presso \"%s\""
 
 #: type.c:18 type.c:30
 #, c-format

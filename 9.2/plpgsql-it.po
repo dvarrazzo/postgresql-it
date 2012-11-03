@@ -368,7 +368,7 @@ msgstr ""
 #: pl_comp.c:934
 #, c-format
 msgid "parameter name \"%s\" used more than once"
-msgstr "nome di parametro \"%s\" usato più di una volta"
+msgstr "il nome di parametro \"%s\" è usato più di una volta"
 
 #: pl_comp.c:1044
 #, c-format
@@ -389,7 +389,7 @@ msgstr "il record \"%s\" non ha un campo \"%s\""
 #: pl_comp.c:1783
 #, c-format
 msgid "relation \"%s\" does not exist"
-msgstr "la relazione \"%s\" non esiste"
+msgstr "la relazione \"%s\"non esiste"
 
 #: pl_comp.c:1892
 #, c-format
@@ -454,8 +454,8 @@ msgstr ""
 #, c-format
 msgid "set-valued function called in context that cannot accept a set"
 msgstr ""
-"è stata chiamata una funzione che restituisce un insieme in un contesto che "
-"non può accettarlo"
+"la funzione che restituisce insiemi è chiamata in un contesto che non può "
+"accettare un insieme"
 
 #: pl_exec.c:404
 msgid "returned record type does not match expected record type"
@@ -767,7 +767,7 @@ msgstr ""
 #, c-format
 msgid "number of array dimensions (%d) exceeds the maximum allowed (%d)"
 msgstr ""
-"il numero di dimensioni dell'array (%d) supera il limite consentito (%d)"
+"il numero di dimensioni dell'array (%d) eccede il massimo consentito (%d)"
 
 #: pl_exec.c:4054
 #, c-format
@@ -777,7 +777,7 @@ msgstr "l'oggetto del quale è stato richiesto un elemento non è un array"
 #: pl_exec.c:4091
 #, c-format
 msgid "array subscript in assignment must not be null"
-msgstr "l'indice di un array nell'assegnamento non deve essere nullo"
+msgstr "l'indice di un array nell'assegnamento non può essere nullo"
 
 #: pl_exec.c:4563
 #, c-format
@@ -855,4 +855,4 @@ msgstr "%s alla fine dell'input"
 #: pl_scanner.c:520
 #, c-format
 msgid "%s at or near \"%s\""
-msgstr "%s a o vicino \"%s\""
+msgstr "%s a o presso \"%s\""
