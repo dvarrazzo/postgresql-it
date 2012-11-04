@@ -82,12 +82,21 @@ class CheckSufixWhitespace(CheckWhitespace, Check):
 
 
 class CheckPlaceholders(Check):
-    _chk_re = re.compile("(%%)|((%(\.\d+)?[^%]))")
+    _chk_re = re.compile(r"(?:%%)|(%(?:\d+\$)?(?:\.\d+)?[^%])")
 
     def check(self, entry):
         for s1, s2 in self.messages(entry):
-            p1 = self._chk_re.findall(s1)
-            p2 = self._chk_re.findall(s2)
+            p1 = [ s for s in self._chk_re.findall(s1) if s ]
+            p2 = [ s for s in self._chk_re.findall(s2) if s ]
+
+            if not p1 and not p2:
+                return
+
+            # reorder shuffled placeholders
+            if '$' in ''.join(p2):
+                p2.sort(key=lambda s: int(re.match(r'%((\d+)\$)', s).group(2)))
+                p2 = [re.sub(r'\d+\$', '', s) for s in p2]
+
             if p1 != p2:
                 raise CheckFailed("placeholders don't match")
 
