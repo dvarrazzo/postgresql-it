@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:52+0000\n"
-"PO-Revision-Date: 2012-11-02 17:40+0100\n"
+"PO-Revision-Date: 2012-11-04 18:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -43,8 +43,8 @@ msgstr[1] ""
 msgid ""
 "Consider increasing the configuration parameter \"checkpoint_segments\"."
 msgstr ""
-"Considera l'incremento del parametro di configurazione \"checkpoint_segments"
-"\"."
+"Considera di incrementare il parametro di configurazione "
+"\"checkpoint_segments\"."
 
 #: postmaster/bgwriter.c:599
 #, c-format
@@ -964,7 +964,7 @@ msgstr "chiusura del file della mappa delle relazioni \"%s\" fallita: %m"
 #: utils/cache/lsyscache.c:2479 utils/cache/lsyscache.c:2512
 #, c-format
 msgid "type %s is only a shell"
-msgstr "il tipo %s è solo un segnaposto"
+msgstr "il tipo %s non è completamente definito"
 
 #: utils/cache/lsyscache.c:2418
 #, c-format
@@ -989,7 +989,7 @@ msgstr "non esistone una funzione di output binario per il tipo %s"
 #: utils/cache/typcache.c:195 parser/parse_type.c:202
 #, c-format
 msgid "type \"%s\" is only a shell"
-msgstr "il tipo \"%s\" è solo un segnaposto"
+msgstr "il tipo \"%s\" non è completamente definito"
 
 #: utils/cache/typcache.c:629
 #, c-format
@@ -2542,7 +2542,7 @@ msgstr "Imposta la configurazione di ricerca di testo predefinita."
 
 #: utils/misc/guc.c:2991
 msgid "Sets the list of allowed SSL ciphers."
-msgstr "Imposta la lista di cifrari SSL consentiti."
+msgstr "Imposta la lista di codici SSL consentiti."
 
 #: utils/misc/guc.c:3006
 msgid "Sets the application name to be reported in statistics and logs."
@@ -6896,7 +6896,7 @@ msgid ""
 "Stop the postmaster and use a standalone backend to vacuum that database.\n"
 "You might also need to commit or roll back old prepared transactions."
 msgstr ""
-"Arresta il processo postmaster ed utilizza un processo backend a parte per "
+"Arresta il processo postmaster ed utilizza un backend autonomo per "
 "effettuare il VACUUM sul database.\n"
 "Potrebbe essere necessario inoltre effettuare il COMMIT o il ROLLBACK di "
 "vecchie transazioni preparate."
@@ -8795,7 +8795,7 @@ msgstr "truncate si propaga in cascata alla tabella \"%s\""
 
 #: commands/tablecmds.c:1158
 msgid "cannot truncate temporary tables of other sessions"
-msgstr "non è possibile svuotare tabelle temporanee di altre sessioni"
+msgstr "non è possibile troncare tabelle temporanee di altre sessioni"
 
 #: commands/tablecmds.c:1274 commands/tablecmds.c:1699
 #: commands/tablecmds.c:4195 catalog/heap.c:389
@@ -9734,19 +9734,20 @@ msgstr ""
 #: commands/functioncmds.c:100
 #, c-format
 msgid "SQL function cannot return shell type %s"
-msgstr "la funzione SQL non può restituire il tipo segnaposto %s"
+msgstr ""
+"la funzione SQL non può restituire il tipo non completamente definito %s"
 
 #: commands/functioncmds.c:105
 #, c-format
 msgid "return type %s is only a shell"
-msgstr "il tipo restituito %s è solo un segnaposto"
+msgstr "il tipo restituito %s non è completamente definito"
 
 #: commands/functioncmds.c:134 parser/parse_type.c:278
 #, c-format
 msgid "type modifier cannot be specified for shell type \"%s\""
 msgstr ""
-"il modificatore di tipo non può essere specificato per il tipo segnaposto "
-"\"%s\""
+"il modificatore di tipo non può essere specificato per il tipo non "
+"completamente definito \"%s\""
 
 #: commands/functioncmds.c:140
 #, c-format
@@ -9755,17 +9756,18 @@ msgstr "il tipo \"%s\" non è ancora definito"
 
 #: commands/functioncmds.c:141
 msgid "Creating a shell type definition."
-msgstr "Creazione della definizione di un tipo segnaposto."
+msgstr "Creazione di un tipo non completamente definito."
 
 #: commands/functioncmds.c:220
 #, c-format
 msgid "SQL function cannot accept shell type %s"
-msgstr "la funzione SQL non può accettare il tipo segnaposto %s"
+msgstr ""
+"la funzione SQL non può accettare il tipo non completamente definito %s"
 
 #: commands/functioncmds.c:225
 #, c-format
 msgid "argument type %s is only a shell"
-msgstr "il tipo %s dell'argomento è solo un segnaposto"
+msgstr "il tipo %s dell'argomento non è completamente definito"
 
 #: commands/functioncmds.c:235
 #, c-format
@@ -14706,7 +14708,7 @@ msgstr ""
 #: storage/smgr/md.c:888
 #, c-format
 msgid "could not truncate file \"%s\" to %u blocks: %m"
-msgstr "non è stato possibile troncare il file \"%s\" a %u blocchi: %m"
+msgstr "troncamento del file \"%s\" a %u blocchi fallito: %m"
 
 #: storage/smgr/md.c:1141
 #, c-format
@@ -18329,7 +18331,7 @@ msgstr ""
 #: parser/parse_oper.c:779 parser/parse_oper.c:893
 #, c-format
 msgid "operator is only a shell: %s"
-msgstr "l'operatore è solo un segnaposto: %s"
+msgstr "l'operatore non è completamente definito: %s"
 
 #: parser/parse_oper.c:881
 msgid "op ANY/ALL (array) requires array on right side"

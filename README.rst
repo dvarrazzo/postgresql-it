@@ -128,6 +128,7 @@ Traduzioni di termini abbastanza comuni
 * return: restituire, non tornare o ritornare
 * server-side: lato server
 * set: impostare, non settare (non c'è puttare o gettare, no?)
+* shell (tipo di dato): non completamente definito
 * subquery: sottoquery
 * superuser: superutente
 * stat: ottenere informazioni

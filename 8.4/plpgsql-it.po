@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:10+0000\n"
-"PO-Revision-Date: 2012-11-02 15:18+0100\n"
+"PO-Revision-Date: 2012-11-04 18:05+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -107,7 +107,7 @@ msgstr "la relazione \"%s\" non è una tabella"
 #: pl_comp.c:1718
 #, c-format
 msgid "type \"%s\" is only a shell"
-msgstr "il tipo \"%s\" è solo un segnaposto"
+msgstr "il tipo \"%s\" non è completamente definito"
 
 #: pl_comp.c:1788 pl_comp.c:1841
 #, c-format
@@ -391,12 +391,13 @@ msgstr ""
 #: pl_exec.c:3582
 msgid "cannot assign non-composite value to a row variable"
 msgstr ""
-"non è possibile assegnare un valore non composto ad una variabile di tipo row"
+"non è possibile assegnare un valore non composito ad una variabile di tipo "
+"row"
 
 #: pl_exec.c:3624
 msgid "cannot assign non-composite value to a record variable"
 msgstr ""
-"non è possibile assegnare un valore non composto ad una variabile di tipo "
+"non è possibile assegnare un valore non composito ad una variabile di tipo "
 "record"
 
 #: pl_exec.c:3683 pl_exec.c:4020

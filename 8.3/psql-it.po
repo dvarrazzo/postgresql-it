@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:18+0000\n"
-"PO-Revision-Date: 2012-11-04 11:12+0100\n"
+"PO-Revision-Date: 2012-11-04 18:32+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -496,7 +496,7 @@ msgstr "  -1 (\"one\")      esegui il file di comandi in un'unica transazione"
 
 #: help.c:101
 msgid "  -l              list available databases, then exit"
-msgstr "  -l              mostra una lista dei database disponibili ed esci"
+msgstr "  -l              elenca i database disponibili ed esci"
 
 #: help.c:102
 msgid "  -v NAME=VALUE   set psql variable NAME to VALUE"
@@ -858,7 +858,7 @@ msgstr ""
 #: help.c:216
 #, c-format
 msgid "  \\da [PATTERN]  list aggregate functions\n"
-msgstr "  \\da [MODELLO]  mostra le aggregazioni\n"
+msgstr "  \\da [MODELLO]  elenca le aggregazioni\n"
 
 #: help.c:217
 #, c-format
@@ -943,7 +943,7 @@ msgstr "  \\do [NAME]     elenca gli operatori\n"
 #, c-format
 msgid "  \\dl            list large objects, same as \\lo_list\n"
 msgstr ""
-"  \\dl            mostra i large objects, stesso risultato di \\lo_list\n"
+"  \\dl            elenca i large objects, stesso risultato di \\lo_list\n"
 
 #: help.c:231
 #, c-format
@@ -1488,7 +1488,7 @@ msgstr "Tabella TOAST \"%s.%s\""
 #: describe.c:977
 #, c-format
 msgid "Composite type \"%s.%s\""
-msgstr "Tipo composto \"%s.%s\""
+msgstr "Tipo composito \"%s.%s\""
 
 #: describe.c:981
 #, c-format

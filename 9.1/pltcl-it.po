@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pltcl (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:50+0000\n"
-"PO-Revision-Date: 2012-11-01 00:13+0100\n"
+"PO-Revision-Date: 2012-11-04 18:06+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -57,7 +57,7 @@ msgstr "le funzioni PL/Tcl non possono restituire il tipo %s"
 
 #: pltcl.c:1329
 msgid "PL/Tcl functions cannot return composite types"
-msgstr "le funzioni PL/Tcl non possono restituire tipi composti"
+msgstr "le funzioni PL/Tcl non possono restituire tipi compositi"
 
 #: pltcl.c:1368
 #, c-format

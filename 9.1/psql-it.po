@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:55+0000\n"
-"PO-Revision-Date: 2012-11-02 15:31+0100\n"
+"PO-Revision-Date: 2012-11-04 18:32+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -257,7 +257,7 @@ msgstr "connessione SSL (cifratura: %s, bit: %i)\n"
 #: command.c:1683
 #, c-format
 msgid "SSL connection (unknown cipher)\n"
-msgstr "connessione SSL (cifratura sconosciuta)\n"
+msgstr "connessione SSL (codice sconosciuto)\n"
 
 #: command.c:1704
 #, c-format
@@ -266,9 +266,9 @@ msgid ""
 "         8-bit characters might not work correctly. See psql reference\n"
 "         page \"Notes for Windows users\" for details.\n"
 msgstr ""
-"ATTENZIONE: I code page di console (%u) differiscono dai code page\n"
+"ATTENZIONE: Il code page della console (%u) differisce dal code page\n"
 "            di Windows (%u). I caratteri a 8-bit potrebbero non\n"
-"             funzionare correttamente. Vedere le pagine di riferimento\n"
+"            funzionare correttamente. Vedi le pagine di riferimento\n"
 "            psql \"Note per utenti Windows\" per i dettagli.\n"
 
 #: command.c:1788
@@ -625,9 +625,7 @@ msgstr "  -f, --file=NOME FILE     esegui i comandi da un file ed esci\n"
 #: help.c:94
 #, c-format
 msgid "  -l, --list               list available databases, then exit\n"
-msgstr ""
-"  -l --list                mostra una lista dei database disponibili ed "
-"esci\n"
+msgstr "  -l --list                elenca i database disponibili ed esci\n"
 
 #: help.c:95
 #, c-format
@@ -1006,7 +1004,7 @@ msgstr ""
 #: help.c:193
 #, c-format
 msgid "  \\d[S+]                 list tables, views, and sequences\n"
-msgstr "  \\d[S+]                 mostra le tabelle, le viste e le sequenze\n"
+msgstr "  \\d[S+]                 elenca le tabelle, le viste e le sequenze\n"
 
 #: help.c:194
 #, c-format
@@ -1017,181 +1015,181 @@ msgstr ""
 #: help.c:195
 #, c-format
 msgid "  \\da[S]  [PATTERN]      list aggregates\n"
-msgstr "  \\da[S]  [MODELLO]      mostra le funzioni di aggregazione\n"
+msgstr "  \\da[S]  [MODELLO]      elenca le funzioni di aggregazione\n"
 
 #: help.c:196
 #, c-format
 msgid "  \\db[+]  [PATTERN]      list tablespaces\n"
-msgstr "  \\dB[+]  [MODELLO]      mostra i tablespace\n"
+msgstr "  \\dB[+]  [MODELLO]      elenca i tablespace\n"
 
 #: help.c:197
 #, c-format
 msgid "  \\dc[S]  [PATTERN]      list conversions\n"
-msgstr "  \\dc[S] [MODELLO]       mostra le conversioni di codifica\n"
+msgstr "  \\dc[S] [MODELLO]       elenca le conversioni di codifica\n"
 
 #: help.c:198
 #, c-format
 msgid "  \\dC     [PATTERN]      list casts\n"
-msgstr "  \\dC     [MODELLO]      mostra le conversioni di tipo\n"
+msgstr "  \\dC     [MODELLO]      elenca le conversioni di tipo\n"
 
 #: help.c:199
 #, c-format
 msgid "  \\dd[S]  [PATTERN]      show comments on objects\n"
-msgstr "  \\dc     [MODELLO]      mostra le conversioni di codifica\n"
+msgstr "  \\dd[S]  [PATTERN]      mostra i commenti sugli oggetti\n"
 
 #: help.c:200
 #, c-format
 msgid "  \\ddp    [PATTERN]      list default privileges\n"
-msgstr "  \\ddp    [MODELLO]      mostra i privilegi predefiniti\n"
+msgstr "  \\ddp    [MODELLO]      elenca i privilegi predefiniti\n"
 
 #: help.c:201
 #, c-format
 msgid "  \\dD[S]  [PATTERN]      list domains\n"
-msgstr "  \\dD     [MODELLO]      mostra i domini\n"
+msgstr "  \\dD     [MODELLO]      elenca i domini\n"
 
 #: help.c:202
 #, c-format
 msgid "  \\det[+] [PATTERN]      list foreign tables\n"
-msgstr "  \\det[+] [MODELLO]      mostra le tabelle esterne\n"
+msgstr "  \\det[+] [MODELLO]      elenca le tabelle esterne\n"
 
 #: help.c:203
 #, c-format
 msgid "  \\des[+] [PATTERN]      list foreign servers\n"
-msgstr "  \\dES[+] [MODELLO]      mostra i server esterni\n"
+msgstr "  \\dES[+] [MODELLO]      elenca i server esterni\n"
 
 #: help.c:204
 #, c-format
 msgid "  \\deu[+] [PATTERN]      list user mappings\n"
-msgstr "  \\deu[+] [MODELLO]      mostra le mappature degli utenti\n"
+msgstr "  \\deu[+] [MODELLO]      elenca le mappature degli utenti\n"
 
 #: help.c:205
 #, c-format
 msgid "  \\dew[+] [PATTERN]      list foreign-data wrappers\n"
-msgstr "  \\dew[+] [MODELLO]      mostra i wrapper di dati esterni\n"
+msgstr "  \\dew[+] [MODELLO]      elenca i wrapper di dati esterni\n"
 
 #: help.c:206
 #, c-format
 msgid ""
 "  \\df[antw][S+] [PATRN]  list [only agg/normal/trigger/window] functions\n"
 msgstr ""
-"  \\df[antw][S+] [MOD]    mostra le funzioni [solo aggr/normali/trigger/"
+"  \\df[antw][S+] [MOD]    elenca le funzioni [solo aggr/normali/trigger/"
 "finestra]\n"
 
 #: help.c:207
 #, c-format
 msgid "  \\dF[+]  [PATTERN]      list text search configurations\n"
-msgstr "  \\dF[+]  [MODELLO]      mostra le configurazioni di ricerca testo\n"
+msgstr "  \\dF[+]  [MODELLO]      elenca le configurazioni di ricerca testo\n"
 
 #: help.c:208
 #, c-format
 msgid "  \\dFd[+] [PATTERN]      list text search dictionaries\n"
-msgstr "  \\dFd[+] [MODELLO]      mostra i dizionari di ricerca testo\n"
+msgstr "  \\dFd[+] [MODELLO]      elenca i dizionari di ricerca testo\n"
 
 #: help.c:209
 #, c-format
 msgid "  \\dFp[+] [PATTERN]      list text search parsers\n"
-msgstr "  \\dFp[+] [MODELLO]      mostra gli analizzatori di ricerca testo\n"
+msgstr "  \\dFp[+] [MODELLO]      elenca gli analizzatori di ricerca testo\n"
 
 #: help.c:210
 #, c-format
 msgid "  \\dFt[+] [PATTERN]      list text search templates\n"
-msgstr "  \\dFt[+] [MODELLO]      mostra i modelli di ricerca di testo\n"
+msgstr "  \\dFt[+] [MODELLO]      elenca i modelli di ricerca di testo\n"
 
 #: help.c:211
 #, c-format
 msgid "  \\dg[+]  [PATTERN]      list roles\n"
-msgstr "  \\dg[+]  [MODELLO]      mostra i ruoli\n"
+msgstr "  \\dg[+]  [MODELLO]      elenca i ruoli\n"
 
 #: help.c:212
 #, c-format
 msgid "  \\di[S+] [PATTERN]      list indexes\n"
-msgstr "  \\dI[S+] [MODELLO]      mostra gli indici\n"
+msgstr "  \\dI[S+] [MODELLO]      elenca gli indici\n"
 
 #: help.c:213
 #, c-format
 msgid "  \\dl                    list large objects, same as \\lo_list\n"
 msgstr ""
-"  \\dl                    mostra i large objects, stesso risultato di "
+"  \\dl                    elenca i large objects, stesso risultato di "
 "\\lo_list\n"
 
 #: help.c:214
 #, c-format
 msgid "  \\dL[S+] [PATTERN]      list procedural languages\n"
-msgstr "  \\dt[S+] [MODELLO]      mostra i linguaggi procedurali\n"
+msgstr "  \\dt[S+] [MODELLO]      elenca i linguaggi procedurali\n"
 
 #: help.c:215
 #, c-format
 msgid "  \\dn[S+] [PATTERN]      list schemas\n"
-msgstr "  \\dn[+]  [MODELLO]      mostra gli schemi\n"
+msgstr "  \\dn[+]  [MODELLO]      elenca gli schemi\n"
 
 #: help.c:216
 #, c-format
 msgid "  \\do[S]  [PATTERN]      list operators\n"
-msgstr "  \\do[S]  [MODELLO]      mostra gli operatori\n"
+msgstr "  \\do[S]  [MODELLO]      elenca gli operatori\n"
 
 #: help.c:217
 #, c-format
 msgid "  \\dO[S+] [PATTERN]      list collations\n"
-msgstr "  \\dO[S+] [MODELLO]      mostra gli ordinamenti\n"
+msgstr "  \\dO[S+] [MODELLO]      elenca gli ordinamenti\n"
 
 #: help.c:218
 #, c-format
 msgid ""
 "  \\dp     [PATTERN]      list table, view, and sequence access privileges\n"
 msgstr ""
-"  \\dp     [MODELLO]      mostra i permessi di accesso alla tabella, vista\n"
+"  \\dp     [MODELLO]      elenca i permessi di accesso alla tabella, vista\n"
 "                         o sequenza\n"
 
 #: help.c:219
 #, c-format
 msgid "  \\drds [PATRN1 [PATRN2]] list per-database role settings\n"
 msgstr ""
-"  \\drds   [MOD1 [MOD2]]  mostra le impostazioni dei ruoli per database\n"
+"  \\drds   [MOD1 [MOD2]]  elenca le impostazioni dei ruoli per database\n"
 
 #: help.c:220
 #, c-format
 msgid "  \\ds[S+] [PATTERN]      list sequences\n"
-msgstr "  \\ds[S+] [MODELLO]      mostra le sequenze\n"
+msgstr "  \\ds[S+] [MODELLO]      elenca le sequenze\n"
 
 #: help.c:221
 #, c-format
 msgid "  \\dt[S+] [PATTERN]      list tables\n"
-msgstr "  \\dt[S+] [MODELLO]      mostra le tabelle\n"
+msgstr "  \\dt[S+] [MODELLO]      elenca le tabelle\n"
 
 #: help.c:222
 #, c-format
 msgid "  \\dT[S+] [PATTERN]      list data types\n"
-msgstr "  \\dT[S+] [MODELLO]      mostra i tipi di dato\n"
+msgstr "  \\dT[S+] [MODELLO]      elenca i tipi di dato\n"
 
 #: help.c:223
 #, c-format
 msgid "  \\du[+]  [PATTERN]      list roles\n"
-msgstr "  \\du[+]  [MODELLO]      mostra i ruoli\n"
+msgstr "  \\du[+]  [MODELLO]      elenca i ruoli\n"
 
 #: help.c:224
 #, c-format
 msgid "  \\dv[S+] [PATTERN]      list views\n"
-msgstr "  \\dv[S+] [MODELLO]      mostra le viste\n"
+msgstr "  \\dv[S+] [MODELLO]      elenca le viste\n"
 
 #: help.c:225
 #, c-format
 msgid "  \\dE[S+] [PATTERN]      list foreign tables\n"
-msgstr "  \\dE[S+] [MODELLO]      mostra le tabelle esterne\n"
+msgstr "  \\dE[S+] [MODELLO]      elenca le tabelle esterne\n"
 
 #: help.c:226
 #, c-format
 msgid "  \\dx[+]  [PATTERN]      list extensions\n"
-msgstr "  \\dx[+]  [MODELLO]      mostra le estensioni\n"
+msgstr "  \\dx[+]  [MODELLO]      elenca le estensioni\n"
 
 #: help.c:227
 #, c-format
 msgid "  \\l[+]                  list all databases\n"
-msgstr "  \\l[+]                  mostra tutti i database\n"
+msgstr "  \\l[+]                  elenca tutti i database\n"
 
 #: help.c:228
 #, c-format
 msgid "  \\sf[+] FUNCNAME        show a function's definition\n"
-msgstr "  \\sf[+]  NOME_FUNZ      mostra la definizione della funzione\n"
+msgstr "  \\sf[+]  NOME_FUNZ      elenca la definizione della funzione\n"
 
 #: help.c:229
 #, c-format
@@ -1472,7 +1470,7 @@ msgstr ""
 "Digita:  \\copyright per le condizioni di distribuzione\n"
 "         \\h per la guida sui comandi SQL\n"
 "         \\? per la guida sui comandi psql\n"
-"         \\g o terminare con punto e virgola per eseguire la query\n"
+"         \\g o termina con punto e virgola per eseguire la query\n"
 "         \\q per uscire\n"
 
 #: print.c:1138
@@ -1835,7 +1833,7 @@ msgstr "Tabella TOAST \"%s.%s\""
 #: describe.c:1346
 #, c-format
 msgid "Composite type \"%s.%s\""
-msgstr "Tipo composto \"%s.%s\""
+msgstr "Tipo composito \"%s.%s\""
 
 #: describe.c:1350
 #, c-format

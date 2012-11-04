@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:17+0000\n"
-"PO-Revision-Date: 2012-11-04 17:50+0100\n"
+"PO-Revision-Date: 2012-11-04 18:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -846,7 +846,7 @@ msgstr "rimozione del file di cache \"%s\" fallita: %m"
 #: utils/cache/lsyscache.c:2347 utils/cache/lsyscache.c:2382
 #, c-format
 msgid "type %s is only a shell"
-msgstr "il tipo %s è solo un segnaposto"
+msgstr "il tipo %s non è completamente definito"
 
 #: utils/cache/lsyscache.c:2282
 #, c-format
@@ -878,7 +878,7 @@ msgstr "il ruolo \"%s\" non esiste"
 #: utils/cache/typcache.c:151 parser/parse_type.c:204
 #, c-format
 msgid "type \"%s\" is only a shell"
-msgstr "il tipo \"%s\" è solo un segnaposto"
+msgstr "il tipo \"%s\" non è completamente definito"
 
 #: utils/cache/typcache.c:331
 #, c-format
@@ -2385,7 +2385,7 @@ msgstr "Imposta la configurazione di ricerca di testo predefinita."
 
 #: utils/misc/guc.c:2465
 msgid "Sets the list of allowed SSL ciphers."
-msgstr "Imposta la lista di cifrari SSL consentiti."
+msgstr "Imposta la lista di codici SSL consentiti."
 
 #: utils/misc/guc.c:3197
 #, c-format
@@ -7785,7 +7785,7 @@ msgstr "non è possibile svuotare la relazione di sistema \"%s\""
 
 #: commands/tablecmds.c:690
 msgid "cannot truncate temporary tables of other sessions"
-msgstr "non è possibile svuotare tabelle temporanee di altre sessioni"
+msgstr "non è possibile troncare tabelle temporanee di altre sessioni"
 
 #: commands/tablecmds.c:784 commands/tablecmds.c:1107
 #: commands/tablecmds.c:3028 catalog/heap.c:347
@@ -8476,19 +8476,20 @@ msgstr ""
 #: commands/functioncmds.c:90
 #, c-format
 msgid "SQL function cannot return shell type %s"
-msgstr "la funzione SQL non può restituire il tipo segnaposto %s"
+msgstr ""
+"la funzione SQL non può restituire il tipo non completamente definito %s"
 
 #: commands/functioncmds.c:95
 #, c-format
 msgid "return type %s is only a shell"
-msgstr "il tipo restituito %s è solo un segnaposto"
+msgstr "il tipo restituito %s non è completamente definito"
 
 #: commands/functioncmds.c:124 parser/parse_type.c:262
 #, c-format
 msgid "type modifier cannot be specified for shell type \"%s\""
 msgstr ""
-"il modificatore di tipo non può essere specificato per il tipo segnaposto "
-"\"%s\""
+"il modificatore di tipo non può essere specificato per il tipo non "
+"completamente definito \"%s\""
 
 #: commands/functioncmds.c:130
 #, c-format
@@ -8497,17 +8498,18 @@ msgstr "il tipo \"%s\" non è ancora definito"
 
 #: commands/functioncmds.c:131
 msgid "Creating a shell type definition."
-msgstr "Creazione della definizione di un tipo segnaposto."
+msgstr "Creazione di un tipo non completamente definito."
 
 #: commands/functioncmds.c:199
 #, c-format
 msgid "SQL function cannot accept shell type %s"
-msgstr "la funzione SQL non può accettare il tipo segnaposto %s"
+msgstr ""
+"la funzione SQL non può accettare il tipo non completamente definito %s"
 
 #: commands/functioncmds.c:204
 #, c-format
 msgid "argument type %s is only a shell"
-msgstr "il tipo %s dell'argomento è solo un segnaposto"
+msgstr "il tipo %s dell'argomento non è completamente definito"
 
 #: commands/functioncmds.c:214
 #, c-format
