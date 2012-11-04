@@ -1489,7 +1489,7 @@ msgstr "\\df accetta come opzione solo [antwS+]\n"
 #: describe.c:218
 #, c-format
 msgid "\\df does not take a \"w\" option with server version %d.%d\n"
-msgstr "\\df non accetta un opzione \"w\" con la versione del server %d.%d\n"
+msgstr "\\df non accetta un'opzione \"w\" con la versione del server %d.%d\n"
 
 #. translator: "agg" is short for "aggregate"
 #: describe.c:251 describe.c:297 describe.c:314
