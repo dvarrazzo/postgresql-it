@@ -14,6 +14,8 @@ update:
 check:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir check; done
 
+package:
+	for dir in $(SUBDIRS); do $(MAKE) -C $$dir package; done
+
 clean:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir clean; done
-
