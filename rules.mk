@@ -51,7 +51,7 @@ clean:
 		msgfmt -o $@ -v -c $<
 
 popack:
-	zip -9 ../package/postgresql-$(LANG)-$(VERSION).zip *.po
+	tar cjvf ../package/postgresql-$(LANG)-$(VERSION).tar.bz2 *.po
 
 mopack:
 	mkdir -p ../package
