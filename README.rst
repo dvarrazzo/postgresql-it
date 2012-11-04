@@ -24,6 +24,27 @@ salvataggio il lavoro fatto viene mescolato a quello da fare ed usare i
 segnalibri diventa inutile.
 
 
+Commandi per lo sviluppo
+------------------------
+
+make [all]
+    compila tutti i .po in .mo
+
+make check
+    Effettua controlli sulla traduzione (consistenza segnaposti, spaziatura,
+    traduzione dei parametri ecc.)
+
+make dlpots
+    Scarica da babel.postgresql.org la versione più recente dei file .pot
+
+make updatepots
+    Unisci le traduzioni correnti ai file .pot scaricati
+
+make update
+    Riporta gli aggiornamenti fatti all'ultima versione sulla versione
+    precedente ecc.
+
+
 Sulla traduzione
 ----------------
 
