@@ -4,8 +4,9 @@
 
 import re
 import sys
-import polib
 import glob
+import polib
+from operator import attrgetter
 
 import logging
 logger = logging.getLogger()
@@ -14,18 +15,37 @@ logging.basicConfig(
     format='%(levelname)s %(message)s')
 
 
+class ScriptError(Exception):
+    """Controlled exception raised by the script."""
+
 class CheckFailed(Exception):
     """Some translation check failed"""
 
 def main():
-    checks = [ cls() for cls in globals().itervalues()
+    opt = parse_cmdline()
+
+    classes = [ cls for cls in globals().itervalues()
         if type(cls) == type and issubclass(cls, Check)
         and cls is not Check]
+
+    if opt.tests:
+        checks = []
+        for test in opt.tests:
+            for cls in classes:
+                if cls.__name__ == test:
+                    checks.append(cls())
+                    break
+            else:
+                raise ScriptError("test not known: %s" % test)
+
+    else:
+        checks = [ c() for c in classes ]
+
     for check in checks:
         logger.debug("performing check: %s", check.__class__.__name__)
 
     rv = 0
-    for fn in [fn for arg in sys.argv[1:] for fn in glob.glob(arg)]:
+    for fn in [fn for pat in opt.files for fn in glob.glob(pat)]:
         po = polib.pofile(fn)
         for entry in po:
             for check in checks:
@@ -37,6 +57,28 @@ def main():
                         check.__class__.__name__, fn, e, entry)
 
     return rv
+
+def get_check_classes():
+    classes = [ cls for cls in globals().itervalues()
+        if type(cls) == type and issubclass(cls, Check)
+        and cls is not Check ]
+    classes.sort(key=attrgetter('__name__'))
+    return classes
+
+def parse_cmdline():
+    from optparse import OptionParser
+    parser = OptionParser(usage="%prog [options] file [...]",
+        description="check message catalogs consistency")
+    parser.add_option('--test', metavar="NAME", dest="tests", action='append',
+        help="run the test NAME. Can be specified more than once."
+            " If not specified, run all the tests."
+            " Available tests are: %s"
+            % ', '.join(map(attrgetter('__name__'), get_check_classes())))
+
+    opt, args = parser.parse_args()
+    opt.files = args
+
+    return opt
 
 class Check(object):
     def check(self, entry):
@@ -84,14 +126,14 @@ class CheckWhitespace(object):
             if m1.group() != m2.group():
                 raise CheckFailed("match failed")
 
-class CheckPreixWhitespace(CheckWhitespace, Check):
+class PrefixWhitespace(CheckWhitespace, Check):
     _chk_re = re.compile(r'^\s*')
 
-class CheckSufixWhitespace(CheckWhitespace, Check):
+class SuffixWhitespace(CheckWhitespace, Check):
     _chk_re = re.compile(r'\s*$')
 
 
-class CheckPlaceholders(Check):
+class Placeholders(Check):
     _chk_re = re.compile(r"(?:%%)|(%(?:\d+\$)?(?:\.\d+)?[^%])")
 
     def check(self, entry):
@@ -122,16 +164,29 @@ class CheckOption(object):
             if m1 != m2:
                 raise CheckFailed("option don't match")
 
-class CheckShortOption(CheckOption, Check):
+class ShortOption(CheckOption, Check):
     _chk_re = re.compile(r'(?:\s|^)(-[a-zA-Z0-9])\b')
 
-class CheckLongOption(CheckOption, Check):
+class LongOption(CheckOption, Check):
     _chk_re = re.compile(r'(?:\s|^)(--[^\s=A-Z]+)\b')
 
-class CheckPsqlCommand(CheckOption, Check):
+class PsqlCommand(CheckOption, Check):
     _chk_re = re.compile(r'(?:\s|^)(\\[^\s]+)\b')
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    try:
+        sys.exit(main())
 
+    except ScriptError, e:
+        logger.error("%s", e)
+        sys.exit(1)
+
+    except Exception, e:
+        logger.error("Unexpected error: %s - %s",
+            e.__class__.__name__, e, exc_info=True)
+        sys.exit(1)
+
+    except KeyboardInterrupt:
+        logger.info("user interrupt")
+        sys.exit(1)
