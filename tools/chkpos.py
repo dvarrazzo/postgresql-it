@@ -66,14 +66,24 @@ def get_check_classes():
     return classes
 
 def parse_cmdline():
-    from optparse import OptionParser
-    parser = OptionParser(usage="%prog [options] file [...]",
-        description="check message catalogs consistency")
+    import optparse
+
+    class DontTouchTheEpilog(optparse.IndentedHelpFormatter):
+        def format_epilog(self, epilog):
+            if epilog:
+                return "\n" + epilog + "\n"
+            else:
+                return ""
+
+    parser = optparse.OptionParser(usage="%prog [options] file [...]",
+        description="check message catalogs consistency",
+        formatter=DontTouchTheEpilog(),
+        epilog="Available tests are:\n" + '\n'.join(
+            "  - %s: %s" % (cls.__name__, cls.__doc__)
+                for cls in get_check_classes()))
     parser.add_option('--test', metavar="NAME", dest="tests", action='append',
         help="run the test NAME. Can be specified more than once."
-            " If not specified, run all the tests."
-            " Available tests are: %s"
-            % ', '.join(map(attrgetter('__name__'), get_check_classes())))
+            " If not specified, run all the tests.")
 
     opt, args = parser.parse_args()
     opt.files = args
@@ -127,13 +137,16 @@ class CheckWhitespace(object):
                 raise CheckFailed("match failed")
 
 class PrefixWhitespace(CheckWhitespace, Check):
+    """check that the leading whitespaces are equal"""
     _chk_re = re.compile(r'^\s*')
 
 class SuffixWhitespace(CheckWhitespace, Check):
+    """check that the trailing whitespaces are equal"""
     _chk_re = re.compile(r'\s*$')
 
 
 class Placeholders(Check):
+    """check that the placeholders are consistent"""
     _chk_re = re.compile(r"(?:%%)|(%(?:\d+\$)?(?:\.\d+)?[^%])")
 
     def check(self, entry):
@@ -165,12 +178,15 @@ class CheckOption(object):
                 raise CheckFailed("option don't match")
 
 class ShortOption(CheckOption, Check):
+    """check that the short options (e.g. -x) are consistent"""
     _chk_re = re.compile(r'(?:\s|^)(-[a-zA-Z0-9])\b')
 
 class LongOption(CheckOption, Check):
+    """check that the long options (e.g. --foo) are consistent"""
     _chk_re = re.compile(r'(?:\s|^)(--[^\s=A-Z]+)\b')
 
 class PsqlCommand(CheckOption, Check):
+    """check that the psql commands (e.g. \\dX[+]) are consistent"""
     _chk_re = re.compile(r'(?:\s|^)(\\[^\s]+)\b')
 
 
