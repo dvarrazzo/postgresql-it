@@ -13,7 +13,7 @@ dlpots:
 
 updatepots:
 	for f in *.po; do \
-		msgmerge -N $$f $${f%-it.po}.pot | ../tools/nostale.py | sponge $$f; \
+		msgmerge -N $$f $${f%.po}.pot | ../tools/nostale.py | sponge $$f; \
 	done
 
 ifdef UPDATE_FROM
@@ -47,7 +47,7 @@ clean:
 # NOTE: this doesn't generate all the expected file names:
 # ecpglib -> ecpglib6
 # libpq -> libpq5
-%-$(VERSION).mo : %-$(LANG).po
+%-$(VERSION).mo : %.po
 		msgfmt -o $@ -v -c $<
 
 popack:
