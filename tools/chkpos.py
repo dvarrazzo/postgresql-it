@@ -47,14 +47,24 @@ class Check(object):
 
         Deal with plural entries. Skip fuzzy entries.
         """
+        # skip obsolete, fuzzy and missing translations
+        if entry.obsolete:
+            return
+
         if 'fuzzy' in entry.flags:
+            return
+
+        if not entry.msgstr:
             return
 
         if not entry.msgid_plural:
             yield (entry.msgid, entry.msgstr)
         else:
             yield (entry.msgid, entry.msgstr_plural['0'])
-            yield (entry.msgid_plural, entry.msgstr_plural['1'])
+            try:
+                yield (entry.msgid_plural, entry.msgstr_plural['1'])
+            except KeyError:
+                pass
 
 
 class CheckWhitespace(object):
