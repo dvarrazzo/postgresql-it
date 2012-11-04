@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:57+0000\n"
-"PO-Revision-Date: 2012-11-02 15:17+0100\n"
+"PO-Revision-Date: 2012-11-04 18:52+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -773,7 +773,7 @@ msgstr ""
 #, c-format
 msgid "  -Z, --analyze-only              only update optimizer statistics\n"
 msgstr ""
-"  -z, --analyze-only              aggiorna soltanto le statistiche per\n"
+"  -Z, --analyze-only              aggiorna soltanto le statistiche per\n"
 "                                  l'ottimizzatore\n"
 
 #: vacuumdb.c:341
@@ -891,7 +891,7 @@ msgstr "  -d, --dbname=NOMEDB       database da re-indicizzare\n"
 #: reindexdb.c:319
 #, c-format
 msgid "  -i, --index=INDEX         recreate specific index only\n"
-msgstr "  -I, --index=NOME          ricrea solo l'indice specificato\n"
+msgstr "  -i, --index=NOME          ricrea solo l'indice specificato\n"
 
 #: reindexdb.c:321
 #, c-format

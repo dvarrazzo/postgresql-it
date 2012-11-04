@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 18:55+0000\n"
-"PO-Revision-Date: 2012-11-04 18:32+0100\n"
+"PO-Revision-Date: 2012-11-04 19:09+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -210,7 +210,7 @@ msgstr "Connessione precedente mantenuta\n"
 #: command.c:1561
 #, c-format
 msgid "\\connect: %s"
-msgstr "\\connetti: %s"
+msgstr "\\connect: %s"
 
 #: command.c:1594
 #, c-format
@@ -1020,7 +1020,7 @@ msgstr "  \\da[S]  [MODELLO]      elenca le funzioni di aggregazione\n"
 #: help.c:196
 #, c-format
 msgid "  \\db[+]  [PATTERN]      list tablespaces\n"
-msgstr "  \\dB[+]  [MODELLO]      elenca i tablespace\n"
+msgstr "  \\db[+]  [MODELLO]      elenca i tablespace\n"
 
 #: help.c:197
 #, c-format
@@ -1055,7 +1055,7 @@ msgstr "  \\det[+] [MODELLO]      elenca le tabelle esterne\n"
 #: help.c:203
 #, c-format
 msgid "  \\des[+] [PATTERN]      list foreign servers\n"
-msgstr "  \\dES[+] [MODELLO]      elenca i server esterni\n"
+msgstr "  \\des[+] [MODELLO]      elenca i server esterni\n"
 
 #: help.c:204
 #, c-format
@@ -1103,7 +1103,7 @@ msgstr "  \\dg[+]  [MODELLO]      elenca i ruoli\n"
 #: help.c:212
 #, c-format
 msgid "  \\di[S+] [PATTERN]      list indexes\n"
-msgstr "  \\dI[S+] [MODELLO]      elenca gli indici\n"
+msgstr "  \\di[S+] [MODELLO]      elenca gli indici\n"
 
 #: help.c:213
 #, c-format
@@ -1115,12 +1115,12 @@ msgstr ""
 #: help.c:214
 #, c-format
 msgid "  \\dL[S+] [PATTERN]      list procedural languages\n"
-msgstr "  \\dt[S+] [MODELLO]      elenca i linguaggi procedurali\n"
+msgstr "  \\dL[S+] [MODELLO]      elenca i linguaggi procedurali\n"
 
 #: help.c:215
 #, c-format
 msgid "  \\dn[S+] [PATTERN]      list schemas\n"
-msgstr "  \\dn[+]  [MODELLO]      elenca gli schemi\n"
+msgstr "  \\dn[S+]  [MODELLO]     elenca gli schemi\n"
 
 #: help.c:216
 #, c-format

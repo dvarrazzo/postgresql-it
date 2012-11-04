@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:18+0000\n"
-"PO-Revision-Date: 2012-11-04 11:25+0100\n"
+"PO-Revision-Date: 2012-11-04 18:52+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -835,7 +835,7 @@ msgstr "  -t, --table=TABELLA       re-indicizza solo la tabella specificata\n"
 #: reindexdb.c:316
 #, c-format
 msgid "  -i, --index=INDEX         recreate specific index only\n"
-msgstr "  -I, --index=NOME          ricrea solo l'indice specificato\n"
+msgstr "  -i, --index=NOME          ricrea solo l'indice specificato\n"
 
 #: reindexdb.c:326
 #, c-format

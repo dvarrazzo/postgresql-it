@@ -80,6 +80,7 @@ class CheckPreixWhitespace(CheckWhitespace, Check):
 class CheckSufixWhitespace(CheckWhitespace, Check):
     _chk_re = re.compile(r'\s*$')
 
+
 class CheckPlaceholders(Check):
     _chk_re = re.compile("(%%)|((%(\.\d+)?[^%]))")
 
@@ -89,6 +90,28 @@ class CheckPlaceholders(Check):
             p2 = self._chk_re.findall(s2)
             if p1 != p2:
                 raise CheckFailed("placeholders don't match")
+
+class CheckOption(object):
+    _chk_re = None
+
+    def check(self, entry):
+        for s1, s2 in self.messages(entry):
+            m1 = self._chk_re.search(s1)
+            m1 = m1 and m1.group(1)
+            m2 = self._chk_re.search(s2)
+            m2 = m2 and m2.group(1)
+            if m1 != m2:
+                raise CheckFailed("option don't match")
+
+class CheckShortOption(CheckOption, Check):
+    _chk_re = re.compile(r'(?:\s|^)(-[a-zA-Z0-9])\b')
+
+class CheckLongOption(CheckOption, Check):
+    _chk_re = re.compile(r'(?:\s|^)(--[^\s=A-Z]+)\b')
+
+class CheckPsqlCommand(CheckOption, Check):
+    _chk_re = re.compile(r'(?:\s|^)(\\[^\s]+)\b')
+
 
 if __name__ == '__main__':
     sys.exit(main())
