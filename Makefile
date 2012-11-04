@@ -20,8 +20,11 @@ update:
 check:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir check; done
 
-package:
-	for dir in $(SUBDIRS); do $(MAKE) -C $$dir package; done
+popack:
+	for dir in $(SUBDIRS); do $(MAKE) -C $$dir popack; done
+
+mopack:
+	for dir in $(SUBDIRS); do $(MAKE) -C $$dir mopack; done
 
 clean:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir clean; done

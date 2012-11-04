@@ -50,7 +50,10 @@ clean:
 %-$(VERSION).mo : %-$(LANG).po
 		msgfmt -o $@ -v -c $<
 
-package:
+popack:
+	zip -9 ../package/postgresql-$(LANG)-$(VERSION).zip *.po
+
+mopack:
 	mkdir -p ../package
 	make clean
 	make
