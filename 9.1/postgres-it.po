@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2012-10-26 18:52+0000\n"
+"POT-Creation-Date: 2012-11-02 00:22+0000\n"
 "PO-Revision-Date: 2012-11-04 18:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -9464,7 +9464,7 @@ msgid "cannot move an owned sequence into another schema"
 msgstr ""
 "non è possibile spostare una sequenza con proprietario in uno schema diverso"
 
-#: commands/tablecmds.c:9092
+#: commands/tablecmds.c:9123
 #, c-format
 msgid "relation \"%s\" already exists in schema \"%s\""
 msgstr "la relazione \"%s\" esiste già nello schema \"%s\""
@@ -9662,7 +9662,7 @@ msgstr ""
 #: commands/dbcommands.c:194 commands/dbcommands.c:1315
 #: commands/dbcommands.c:1323 commands/extension.c:1250
 #: commands/extension.c:1258 commands/extension.c:1266
-#: commands/extension.c:2512 commands/collationcmds.c:93 commands/user.c:133
+#: commands/extension.c:2517 commands/collationcmds.c:93 commands/user.c:133
 #: commands/user.c:150 commands/user.c:158 commands/user.c:166
 #: commands/user.c:174 commands/user.c:182 commands/user.c:190
 #: commands/user.c:198 commands/user.c:206 commands/user.c:214
@@ -11145,7 +11145,7 @@ msgstr ""
 "la famiglia di operatori \"%s\" per il metodo di accesso \"%s\" esiste già "
 "nello schema \"%s\""
 
-#: commands/extension.c:149 commands/extension.c:2470
+#: commands/extension.c:149 commands/extension.c:2475
 #, c-format
 msgid "extension \"%s\" does not exist"
 msgstr "l'estensione \"%s\" non esiste"
@@ -11276,7 +11276,7 @@ msgstr "l'estensione \"%s\" esiste già"
 msgid "nested CREATE EXTENSION is not supported"
 msgstr "CREATE EXTENSION annidati non sono supportati"
 
-#: commands/extension.c:1284 commands/extension.c:2530
+#: commands/extension.c:1284 commands/extension.c:2535
 msgid "version to install must be specified"
 msgstr "il nome di versione da installare deve essere specificato"
 
@@ -11292,12 +11292,12 @@ msgstr ""
 msgid "extension \"%s\" must be installed in schema \"%s\""
 msgstr "l'estensione \"%s\" dev'essere installata nello schema \"%s\""
 
-#: commands/extension.c:1435 commands/extension.c:2671
+#: commands/extension.c:1435 commands/extension.c:2676
 #, c-format
 msgid "required extension \"%s\" is not installed"
 msgstr "l'estensione richiesta \"%s\" non è installata"
 
-#: commands/extension.c:1596 commands/extension.c:2273
+#: commands/extension.c:1596 commands/extension.c:2274
 #: catalog/objectaddress.c:289
 msgid "extension name cannot be qualified"
 msgstr "il nome dell'estensione non può essere qualificato"
@@ -11331,7 +11331,7 @@ msgstr "l'OID %u non si riferisce ad una tabella"
 msgid "table \"%s\" is not a member of the extension being created"
 msgstr "la tabella \"%s\" non è membra dell'estensione in fase di creazione"
 
-#: commands/extension.c:2300
+#: commands/extension.c:2301
 #, c-format
 msgid ""
 "cannot move extension \"%s\" into schema \"%s\" because the extension "
@@ -11340,31 +11340,31 @@ msgstr ""
 "non è possibile spostare l'estensione \"%s\" nello schema \"%s\" perché "
 "l'estensione contiene lo schema"
 
-#: commands/extension.c:2340 commands/extension.c:2399
+#: commands/extension.c:2341 commands/extension.c:2404
 #, c-format
 msgid "extension \"%s\" does not support SET SCHEMA"
 msgstr "l'estensione \"%s\" non supporta SET SCHEMA"
 
-#: commands/extension.c:2401
+#: commands/extension.c:2406
 #, c-format
 msgid "%s is not in the extension's schema \"%s\""
 msgstr "%s non è nello schema dell'estensione \"%s\""
 
-#: commands/extension.c:2450
+#: commands/extension.c:2455
 msgid "nested ALTER EXTENSION is not supported"
 msgstr "ALTER EXTENSION annidati non sono supportati"
 
-#: commands/extension.c:2541
+#: commands/extension.c:2546
 #, c-format
 msgid "version \"%s\" of extension \"%s\" is already installed"
 msgstr "la versione \"%s\" dell'estensione \"%s\" è già installata"
 
-#: commands/extension.c:2764 catalog/pg_depend.c:164
+#: commands/extension.c:2769 catalog/pg_depend.c:164
 #, c-format
 msgid "%s is already a member of extension \"%s\""
 msgstr "%s fa già parte dell'estensione \"%s\""
 
-#: commands/extension.c:2776
+#: commands/extension.c:2781
 #, c-format
 msgid ""
 "cannot add schema \"%s\" to extension \"%s\" because the schema contains the "
@@ -11373,7 +11373,7 @@ msgstr ""
 "non è possibile aggiungere lo schema \"%s\" all'estensione \"%s\" perché lo "
 "schema contiene l'estensione"
 
-#: commands/extension.c:2794
+#: commands/extension.c:2799
 #, c-format
 msgid "%s is not a member of extension \"%s\""
 msgstr "%s non fa parte dell'estensione \"%s\""
@@ -12371,28 +12371,28 @@ msgstr "non si possono usare funzioni di aggregazione nel vincolo di controllo"
 msgid "cannot use window function in check constraint"
 msgstr "non si possono usare funzioni finestra nel vincolo di controllo"
 
-#: commands/typecmds.c:2608 commands/typecmds.c:2680 commands/typecmds.c:2904
+#: commands/typecmds.c:2608 commands/typecmds.c:2680 commands/typecmds.c:2919
 #, c-format
 msgid "%s is a table's row type"
 msgstr "%s è il tipo della riga di una tabella"
 
-#: commands/typecmds.c:2610 commands/typecmds.c:2682 commands/typecmds.c:2906
+#: commands/typecmds.c:2610 commands/typecmds.c:2682 commands/typecmds.c:2921
 msgid "Use ALTER TABLE instead."
 msgstr "Usa ALTER TABLE invece."
 
-#: commands/typecmds.c:2617 commands/typecmds.c:2689 commands/typecmds.c:2835
+#: commands/typecmds.c:2617 commands/typecmds.c:2689 commands/typecmds.c:2838
 #, c-format
 msgid "cannot alter array type %s"
 msgstr "non è possibile modificare il tipo di array %s"
 
-#: commands/typecmds.c:2619 commands/typecmds.c:2691 commands/typecmds.c:2837
+#: commands/typecmds.c:2619 commands/typecmds.c:2691 commands/typecmds.c:2840
 #, c-format
 msgid "You can alter type %s, which will alter the array type as well."
 msgstr ""
 "puoi modificare il tipo %s, il che modificherà il tipo dell'array come "
 "conseguenza."
 
-#: commands/typecmds.c:2890
+#: commands/typecmds.c:2905
 #, c-format
 msgid "type \"%s\" already exists in schema \"%s\""
 msgstr "il tipo \"%s\" esiste già nello schema \"%s\""
@@ -12555,12 +12555,12 @@ msgstr "la mappatura per il token \"%s\" non esiste, saltato"
 msgid "invalid parameter list format: \"%s\""
 msgstr "formato di lista di parametri non valido: \"%s\""
 
-#: commands/alter.c:423
+#: commands/alter.c:415
 #, c-format
 msgid "must be superuser to set schema of %s"
 msgstr "occorre essere un superutente per impostare lo schema di %s"
 
-#: commands/alter.c:451
+#: commands/alter.c:443
 #, c-format
 msgid "%s already exists in schema \"%s\""
 msgstr "%s esiste già nello schema \"%s\""
@@ -15565,12 +15565,12 @@ msgstr ""
 "non è possibile modificare il proprietario degli oggetti di proprietà di %s "
 "perché richiesti dal database"
 
-#: catalog/pg_constraint.c:773
+#: catalog/pg_constraint.c:783
 #, c-format
 msgid "table \"%s\" has multiple constraints named \"%s\""
 msgstr "la tabella \"%s\" ha più di un vincolo di nome \"%s\""
 
-#: catalog/pg_constraint.c:785
+#: catalog/pg_constraint.c:795
 #, c-format
 msgid "constraint \"%s\" for table \"%s\" does not exist"
 msgstr "il vincolo \"%s\" per la tabella \"%s\" non esiste"
