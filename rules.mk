@@ -4,6 +4,18 @@
 
 all: $(MOS)
 
+dlpots:
+	for u in $$(wget -O - http://babel.postgresql.org/ \
+			| egrep  "href=\"po-$(VERSION)-branch/.*pot\"" \
+			| sed -e 's/.*href="\(.*\)".*/\1/'); do \
+		wget http://babel.postgresql.org/$$u; \
+	done
+
+updatepots:
+	for f in *.po; do \
+		msgmerge -N $$f $${f%-it.po}.pot | ../tools/nostale.py | sponge $$f; \
+	done
+
 ifdef UPDATE_FROM
 
 update:
