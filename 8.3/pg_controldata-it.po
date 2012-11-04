@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:18+0000\n"
-"PO-Revision-Date: 2012-11-02 13:40+0100\n"
+"PO-Revision-Date: 2012-11-04 11:23+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -288,14 +288,14 @@ msgstr "numeri in virgola mobile"
 #: pg_controldata.c:211
 #, c-format
 msgid "Maximum length of locale name:        %u\n"
-msgstr ""
+msgstr "Lunghezza massima del nome di locale:       %u\n"
 
 #: pg_controldata.c:213
 #, c-format
 msgid "LC_COLLATE:                           %s\n"
-msgstr ""
+msgstr "LC_COLLATE:                                 %s\n"
 
 #: pg_controldata.c:215
 #, c-format
 msgid "LC_CTYPE:                             %s\n"
-msgstr ""
+msgstr "LC_CTYPE:                                   %s\n"

@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:18+0000\n"
-"PO-Revision-Date: 2012-11-02 15:17+0100\n"
+"PO-Revision-Date: 2012-11-04 11:25+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -448,6 +448,9 @@ msgid ""
 "If one of -s, -S, -d, -D, -r, -R and ROLENAME is not specified, you will\n"
 "be prompted interactively.\n"
 msgstr ""
+"\n"
+"Uno di -s, -S, -d, -D, -r, -R e ROLENAME non è specificato, ti verrà\n"
+"chiesto interattivamente.\n"
 
 #: dropdb.c:91
 #, c-format

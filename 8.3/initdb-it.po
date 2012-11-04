@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:18+0000\n"
-"PO-Revision-Date: 2012-11-02 17:23+0100\n"
+"PO-Revision-Date: 2012-11-04 11:16+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -180,7 +180,7 @@ msgstr "selezione del parametro max_connections predefinito ... "
 #: initdb.c:1115
 #, c-format
 msgid "selecting default shared_buffers/max_fsm_pages ... "
-msgstr ""
+msgstr "selezione dei parametri shared_buffers/max_fsm_pages predefiniti ... "
 
 #: initdb.c:1161
 msgid "creating configuration files ... "
@@ -340,6 +340,9 @@ msgstr ""
 msgid ""
 "  --locale=LOCALE           initialize database cluster with given locale\n"
 msgstr ""
+"  --locale=LOCALE           inizializza il cluster di database con il "
+"locale\n"
+"                            specificato\n"
 
 #: initdb.c:2383
 #, c-format
@@ -350,11 +353,19 @@ msgid ""
 "                            in the respective category (default taken from\n"
 "                            environment)\n"
 msgstr ""
+"  --lc-collate, --lc-ctype, --lc-messages=LOCALE\n"
+"  --lc-monetary, --lc-numeric, --lc-time=LOCALE\n"
+"                            inizializza il nuovo cluster di database con il\n"
+"                            locale specificato nella categoria "
+"corrispondente.\n"
+"                            Il valore predefinito viene preso dalle "
+"variabili\n"
+"                            d'ambiente\n"
 
 #: initdb.c:2388
 #, c-format
 msgid "  --no-locale               equivalent to --locale=C\n"
-msgstr ""
+msgstr "  --no-locale               equivalente a --locale=C\n"
 
 #: initdb.c:2389
 #, c-format
@@ -400,6 +411,8 @@ msgstr ""
 msgid ""
 "  --pwfile=FILE             read password for the new superuser from file\n"
 msgstr ""
+"  --pwfile=FILE             leggi la password per il nuovo superutente dal "
+"file\n"
 
 #: initdb.c:2396
 #, c-format

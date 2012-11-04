@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:18+0000\n"
-"PO-Revision-Date: 2012-11-02 17:27+0100\n"
+"PO-Revision-Date: 2012-11-04 11:24+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -186,12 +186,12 @@ msgstr ""
 #: pg_resetxlog.c:501
 #, c-format
 msgid "%s: invalid LC_COLLATE setting\n"
-msgstr ""
+msgstr "%s: impostazione di LC_COLLATE non valida\n"
 
 #: pg_resetxlog.c:508
 #, c-format
 msgid "%s: invalid LC_CTYPE setting\n"
-msgstr ""
+msgstr "%s: impostazione di LC_CTYPE non valida\n"
 
 #: pg_resetxlog.c:532
 #, c-format
@@ -317,17 +317,17 @@ msgstr "numeri in virgola mobile"
 #: pg_resetxlog.c:583
 #, c-format
 msgid "Maximum length of locale name:        %u\n"
-msgstr ""
+msgstr "Lunghezza massima del nome di locale:       %u\n"
 
 #: pg_resetxlog.c:585
 #, c-format
 msgid "LC_COLLATE:                           %s\n"
-msgstr ""
+msgstr "LC_COLLATE:                                 %s\n"
 
 #: pg_resetxlog.c:587
 #, c-format
 msgid "LC_CTYPE:                             %s\n"
-msgstr ""
+msgstr "LC_CTYPE:                                   %s\n"
 
 #: pg_resetxlog.c:638
 #, c-format

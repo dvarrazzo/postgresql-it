@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:18+0000\n"
-"PO-Revision-Date: 2012-11-02 17:06+0100\n"
+"PO-Revision-Date: 2012-11-04 11:58+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -68,6 +68,8 @@ msgid ""
 "options -d/-D/--inserts/--column-inserts and -o/--oids cannot be used "
 "together\n"
 msgstr ""
+"le opzioni -d/-D/--inserts/--column-inserts e -o/--oids non possono essere "
+"usate insieme\n"
 
 #: pg_dump.c:470
 msgid "(The INSERT command cannot set OIDs.)\n"
@@ -144,6 +146,8 @@ msgstr "  -f, --file=NOMEFILE      nome del file di output\n"
 msgid ""
 "  -F, --format=c|t|p       output file format (custom, tar, plain text)\n"
 msgstr ""
+"  -F, --format=c|t|p       formato del file di output (custom, tar, testo in "
+"chiaro)\n"
 
 #: pg_dump.c:739
 #, c-format
@@ -151,6 +155,8 @@ msgid ""
 "  -i, --ignore-version     proceed even when server version mismatches\n"
 "                           pg_dump version\n"
 msgstr ""
+"  -i, --ignore-version     prosegui anche se la versione del server non\n"
+"                           combacia con quella di pg_dump\n"
 
 #: pg_dump.c:741 pg_restore.c:376
 #, c-format
@@ -161,6 +167,7 @@ msgstr "  -v, --verbose            stampa più informazioni\n"
 #, c-format
 msgid "  -Z, --compress=0-9       compression level for compressed formats\n"
 msgstr ""
+"  -Z, --compress=0-9       livello di compressione per i formati compressi\n"
 
 #: pg_dump.c:743 pg_restore.c:377 pg_dumpall.c:487
 #, c-format
@@ -197,6 +204,8 @@ msgstr "  -b, --blobs                 includi nell'archivio i large objects\n"
 #, c-format
 msgid "  -c, --clean                 clean (drop) schema prior to create\n"
 msgstr ""
+"  -c, --clean                 ripulisci (elimina) gli schemi prima\n"
+"                              della creazione\n"
 
 #: pg_dump.c:750
 #, c-format
@@ -212,6 +221,8 @@ msgid ""
 "  -d, --inserts               dump data as INSERT commands, rather than "
 "COPY\n"
 msgstr ""
+"  -d, --inserts               salva i dati con comandi INSERT invece di "
+"COPY\n"
 
 #: pg_dump.c:752
 #, c-format
@@ -219,6 +230,8 @@ msgid ""
 "  -D, --column-inserts        dump data as INSERT commands with column "
 "names\n"
 msgstr ""
+"  -D, --column-inserts        salva i dati con comandi INSERT con nomi di "
+"colonne\n"
 
 #: pg_dump.c:753
 #, c-format
@@ -248,6 +261,9 @@ msgid ""
 "  -O, --no-owner              skip restoration of object ownership\n"
 "                              in plain text format\n"
 msgstr ""
+"  -O, --no-owner              non ripristinare il proprietario degli "
+"oggetti\n"
+"                              in modalità di testo in chiaro\n"
 
 #: pg_dump.c:759
 #, c-format
@@ -260,6 +276,8 @@ msgid ""
 "  -S, --superuser=NAME        specify the superuser user name to use in\n"
 "                              plain text format\n"
 msgstr ""
+"  -S, --superuser=NAME        specifica il nome del superutente da usare\n"
+"                              in modalità di testo in chiaro\n"
 
 #: pg_dump.c:762
 #, c-format
@@ -304,6 +322,9 @@ msgid ""
 "                              use SESSION AUTHORIZATION commands instead of\n"
 "                              ALTER OWNER commands to set ownership\n"
 msgstr ""
+"  --use-set-session-authorization\n"
+"                              usa i comandi SESSION AUTHORIZATION invece di\n"
+"                              ALTER OWNER per impostare il proprietario\n"
 
 #: pg_dump.c:771 pg_restore.c:407 pg_dumpall.c:509
 #, c-format
@@ -519,7 +540,7 @@ msgstr "lettura dei trigger per la tabella \"%s\"\n"
 #: pg_dump.c:4000
 #, c-format
 msgid "expected %d triggers on table \"%s\" but found %d\n"
-msgstr ""
+msgstr "attesi %d trigger sulla tabella \"%s\" ma trovati %d\n"
 
 #: pg_dump.c:4047
 #, c-format
@@ -558,7 +579,7 @@ msgstr "ricerca dei vincoli di controllo per la tabella \"%s\"\n"
 #: pg_dump.c:4690
 #, c-format
 msgid "expected %d check constraints on table \"%s\" but found %d\n"
-msgstr ""
+msgstr "attesi %d vincoli di controllo sulla tabella \"%s\" ma trovati %d\n"
 
 #: pg_dump.c:4692
 msgid "(The system catalogs might be corrupted.)\n"
@@ -574,7 +595,7 @@ msgstr "nessuna definizione di etichetta trovata per l'enumerazione ID %u\n"
 #: pg_dump.c:8537 pg_dump.c:10189
 #, c-format
 msgid "query returned %d rows instead of one: %s\n"
-msgstr ""
+msgstr "la query ha restituito %d righe invece di una: %s\n"
 
 #: pg_dump.c:6134
 #, c-format
@@ -683,6 +704,8 @@ msgstr "trovata più di una voce pg_indexes in pg_class\n"
 #, c-format
 msgid "query to get data of sequence \"%s\" returned %d rows (expected 1)\n"
 msgstr ""
+"la query per ottenere i dati sulla sequenza \"%s\" ha restituito %d righe "
+"(attesa una)\n"
 
 #: pg_dump.c:9515
 #, c-format
@@ -953,7 +976,7 @@ msgstr "emissione dei large object non supportata nel formato scelto\n"
 #: pg_backup_archiver.c:741
 #, c-format
 msgid "restored %d large objects\n"
-msgstr ""
+msgstr "%d large object ripristinati\n"
 
 #: pg_backup_archiver.c:758 pg_backup_tar.c:722
 #, c-format
@@ -1003,7 +1026,7 @@ msgstr "apertura del file di output fallita: %s\n"
 #: pg_backup_archiver.c:1102
 #, c-format
 msgid "wrote %lu bytes of large object data (result = %lu)\n"
-msgstr ""
+msgstr "scritti %lu byte di dati large object (risultato = %lu)\n"
 
 #: pg_backup_archiver.c:1106
 #, c-format
@@ -1090,7 +1113,7 @@ msgstr "il file di input non sembra essere un archivio valido\n"
 #: pg_backup_archiver.c:1654
 #, c-format
 msgid "read %lu bytes into lookahead buffer\n"
-msgstr ""
+msgstr "letti %lu byte nel buffer di lookahead\n"
 
 #: pg_backup_archiver.c:1661
 #, c-format
@@ -1105,7 +1128,7 @@ msgstr "allocazione AH per %s, formato %d\n"
 #: pg_backup_archiver.c:1755
 #, c-format
 msgid "archive format is %d\n"
-msgstr ""
+msgstr "il formato dell'archivio è %d\n"
 
 #: pg_backup_archiver.c:1782
 #, c-format
@@ -1212,6 +1235,8 @@ msgid ""
 "dumping a specific TOC data block out of order is not supported without ID "
 "on this input stream (fseek required)\n"
 msgstr ""
+"salvare un blocco dati TOC specifico fuori ordine non è supportato senza ID "
+"su questo stream di input (è richiesto fseek)\n"
 
 #: pg_backup_custom.c:470
 #, c-format
@@ -1299,7 +1324,7 @@ msgstr "versione del server: %s; %s versione: %s\n"
 #: pg_backup_db.c:68 pg_dumpall.c:1395
 #, c-format
 msgid "proceeding despite version mismatch\n"
-msgstr ""
+msgstr "l'operazione proseguirà nonostante le versioni non combaciano\n"
 
 #: pg_backup_db.c:70 pg_dumpall.c:1398
 #, c-format
@@ -1307,6 +1332,8 @@ msgid ""
 "aborting because of version mismatch  (Use the -i option to proceed "
 "anyway.)\n"
 msgstr ""
+"interruzione a causa delle versioni non combacianti (Usa l'opzione -i per "
+"procedere comunque.)\n"
 
 #: pg_backup_db.c:135
 #, c-format
@@ -1487,7 +1514,7 @@ msgstr "errore interno -- né th né fh specificato in tarReadRaw()\n"
 #: pg_backup_tar.c:550
 #, c-format
 msgid "requested %d bytes, got %d from lookahead and %d from file\n"
-msgstr ""
+msgstr "richiesti %d byte, ricevuti %d dal lookahead e %d dal file\n"
 
 #: pg_backup_tar.c:677
 #, c-format
@@ -1557,7 +1584,7 @@ msgstr ""
 #: pg_backup_tar.c:1245
 #, c-format
 msgid "incomplete tar header found (%lu bytes)\n"
-msgstr ""
+msgstr "trovata intestazione tar non completa (%lu byte)\n"
 
 #: pg_backup_tar.c:1281
 #, c-format
@@ -1575,7 +1602,7 @@ msgstr ""
 #: pg_restore.c:283
 #, c-format
 msgid "%s: cannot specify both -d and -f output\n"
-msgstr ""
+msgstr "%s: non è possibile specificare sia -d che -f\n"
 
 #: pg_restore.c:318
 #, c-format
@@ -1609,13 +1636,15 @@ msgstr "  -d, --dbname=NOME        nome del database a cui connettersi\n"
 #: pg_restore.c:373
 #, c-format
 msgid "  -F, --format=c|t         specify backup file format\n"
-msgstr ""
+msgstr "  -F, --format=c|t         specifica il formato di backup del file\n"
 
 #: pg_restore.c:374
 #, c-format
 msgid ""
 "  -i, --ignore-version     proceed even when server version mismatches\n"
 msgstr ""
+"  -i, --ignore-version     procedi anche se la versione del server non "
+"combacia\n"
 
 #: pg_restore.c:375
 #, c-format
@@ -1641,6 +1670,8 @@ msgstr "  -a, --data-only          ripristina solo i dati, non gli schemi\n"
 #, c-format
 msgid "  -c, --clean              clean (drop) schema prior to create\n"
 msgstr ""
+"  -c, --clean              ripulisci (elimina) gli schemi prima della "
+"creazione\n"
 
 #: pg_restore.c:383
 #, c-format
@@ -1658,6 +1689,8 @@ msgid ""
 "  -L, --use-list=FILENAME  use specified table of contents for ordering\n"
 "                           output from this file\n"
 msgstr ""
+"  -L, --use-list=FILENAME  usa la tabella dei contenuti specificata per\n"
+"                           l'ordinamento dell'output per questo file\n"
 
 #: pg_restore.c:387
 #, c-format
@@ -1692,6 +1725,8 @@ msgid ""
 "  -S, --superuser=NAME     specify the superuser user name to use for\n"
 "                           disabling triggers\n"
 msgstr ""
+"  -S, --superuser=NAME     specifica il nome del superutente da usare\n"
+"                           per disabilitare i trigger\n"
 
 #: pg_restore.c:394
 #, c-format
@@ -1726,6 +1761,9 @@ msgid ""
 "                           use SESSION AUTHORIZATION commands instead of\n"
 "                           OWNER TO commands\n"
 msgstr ""
+"  --use-set-session-authorization\n"
+"                           usa i comandi SESSION AUTHORIZATION invece di\n"
+"                           OWNER TO\n"
 
 #: pg_restore.c:401
 #, c-format
@@ -1854,49 +1892,58 @@ msgid ""
 "  -i, --ignore-version     proceed even when server version mismatches\n"
 "                           pg_dumpall version\n"
 msgstr ""
+"  -i, --ignore-version     procedi anche quando la versione del server\n"
+"                           non corrisponde a quella di pg_dumpall\n"
 
 #: pg_dumpall.c:490
 #, c-format
 msgid "  -a, --data-only          dump only the data, not the schema\n"
-msgstr ""
+msgstr "  -a, --data-only          salva solo i dati, non lo schema\n"
 
 #: pg_dumpall.c:491
 #, c-format
 msgid "  -c, --clean              clean (drop) databases prior to create\n"
 msgstr ""
+"  -c, --clean              ripulisci (elimina) i database prima della "
+"creazione\n"
 
 #: pg_dumpall.c:492
 #, c-format
 msgid ""
 "  -d, --inserts            dump data as INSERT, rather than COPY, commands\n"
 msgstr ""
+"  -d, --inserts            salva i dati con comandi INSERT invece di COPY\n"
 
 #: pg_dumpall.c:493
 #, c-format
 msgid ""
 "  -D, --column-inserts     dump data as INSERT commands with column names\n"
 msgstr ""
+"  -D, --column-inserts     salva i dati con comandi INSERT con nomi di "
+"colonna\n"
 
 #: pg_dumpall.c:494
 #, c-format
 msgid "  -g, --globals-only       dump only global objects, no databases\n"
 msgstr ""
+"  -g, --globals-only       salva solo gli oggetti globali, non i database\n"
 
 #: pg_dumpall.c:495
 #, c-format
 msgid "  -o, --oids               include OIDs in dump\n"
-msgstr ""
+msgstr "  -o, --oids               includi gli OID nel salvataggio\n"
 
 #: pg_dumpall.c:497
 #, c-format
 msgid ""
 "  -r, --roles-only         dump only roles, no databases or tablespaces\n"
 msgstr ""
+"  -r, --roles-only         salva solo i ruoli, non i database o tablespace\n"
 
 #: pg_dumpall.c:498
 #, c-format
 msgid "  -s, --schema-only        dump only the schema, no data\n"
-msgstr ""
+msgstr "  -s, --schema-only        salva solo lo schema, non i dati\n"
 
 #: pg_dumpall.c:499
 #, c-format
@@ -1904,17 +1951,21 @@ msgid ""
 "  -S, --superuser=NAME     specify the superuser user name to use in the "
 "dump\n"
 msgstr ""
+"  -S, --superuser=NAME     specifica il nome del superutente da usare nel "
+"salvataggio\n"
 
 #: pg_dumpall.c:500
 #, c-format
 msgid ""
 "  -t, --tablespaces-only   dump only tablespaces, no databases or roles\n"
 msgstr ""
+"  -t, --tablespaces-only   salva solo i tablespace, non i database o i "
+"ruoli\n"
 
 #: pg_dumpall.c:501
 #, c-format
 msgid "  -x, --no-privileges      do not dump privileges (grant/revoke)\n"
-msgstr ""
+msgstr "  -x, --no-privileges      non salvare i privilegi (grant/revoke)\n"
 
 #: pg_dumpall.c:502
 #, c-format
@@ -1922,11 +1973,15 @@ msgid ""
 "  --disable-dollar-quoting\n"
 "                           disable dollar quoting, use SQL standard quoting\n"
 msgstr ""
+"  --disable-dollar-quoting\n"
+"                           disabilita il quoting tra dollari, usa il quoting "
+"standard SQL\n"
 
 #: pg_dumpall.c:511
 #, c-format
 msgid "  -l, --database=DBNAME    specify an alternative default database\n"
 msgstr ""
+"  -l, --database=DBNAME    specifica un database predefinito alternativo\n"
 
 #: pg_dumpall.c:516
 #, c-format
@@ -1935,6 +1990,9 @@ msgid ""
 "The SQL script will be written to the standard output.\n"
 "\n"
 msgstr ""
+"\n"
+"Lo script SQL verrà scritto su standard output.\n"
+"\n"
 
 #: pg_dumpall.c:874
 #, c-format

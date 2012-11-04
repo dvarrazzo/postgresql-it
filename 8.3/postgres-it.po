@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 19:17+0000\n"
-"PO-Revision-Date: 2012-11-03 09:20+0100\n"
+"PO-Revision-Date: 2012-11-04 17:50+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -31,14 +31,14 @@ msgstr ""
 #: postmaster/bgwriter.c:451
 #, c-format
 msgid "checkpoints are occurring too frequently (%d seconds apart)"
-msgstr ""
+msgstr "i checkpoint stanno avvenendo troppo frequentemente (ogni %d secondi)"
 
 #: postmaster/bgwriter.c:453
 msgid ""
 "Consider increasing the configuration parameter \"checkpoint_segments\"."
 msgstr ""
-"Considera l'incremento del parametro di configurazione \"checkpoint_segments"
-"\"."
+"Considera di incrementare il parametro di configurazione "
+"\"checkpoint_segments\"."
 
 #: postmaster/bgwriter.c:542
 #, c-format
@@ -162,7 +162,7 @@ msgstr "lettura del messaggio delle statistiche fallito: %m"
 #: postmaster/pgstat.c:2411
 #, c-format
 msgid "could not set statistics collector timer: %m"
-msgstr ""
+msgstr "impostazione del raccoglitore di statistiche fallito: %m"
 
 #: postmaster/pgstat.c:2525
 #, c-format
@@ -418,6 +418,8 @@ msgid ""
 "%s: the number of buffers (-B) must be at least twice the number of allowed "
 "connections (-N) and at least 16\n"
 msgstr ""
+"%s: in numero di buffer (-B) dev'essere almeno il doppio del numero di "
+"connessioni possibile (-N) e almeno 16\n"
 
 #: postmaster/postmaster.c:707
 #, c-format
@@ -928,7 +930,7 @@ msgstr "Uso delle Risorse / Memoria"
 
 #: utils/misc/guc.c:333
 msgid "Resource Usage / Free Space Map"
-msgstr ""
+msgstr "Uso delle Risorse / Mappa dello Spazio Libero"
 
 #: utils/misc/guc.c:335
 msgid "Resource Usage / Kernel Resources"
@@ -1093,6 +1095,8 @@ msgid ""
 "Child table scans will be skipped if their constraints guarantee that no "
 "rows match the query."
 msgstr ""
+"La scansioni delle tabelle figlie saranno evitate se i loro vincoli "
+"garantiscono che nessuna riga corrisponda con la query."
 
 #: utils/misc/guc.c:523
 msgid "Enables genetic query optimization."
@@ -1212,15 +1216,15 @@ msgstr "Registra nel log la durata di ogni istruzione SQL completata."
 
 #: utils/misc/guc.c:659
 msgid "Prints the parse tree to the server log."
-msgstr ""
+msgstr "Stampa l'albero di parse nel log del server."
 
 #: utils/misc/guc.c:667
 msgid "Prints the parse tree after rewriting to server log."
-msgstr ""
+msgstr "Stampa l'albero di parse dopo la riscrittura nel log del server."
 
 #: utils/misc/guc.c:675
 msgid "Prints the execution plan to server log."
-msgstr ""
+msgstr "Stampa il piano di esecuzione nel log del server."
 
 #: utils/misc/guc.c:683
 msgid "Indents parse and plan tree displays."
@@ -1248,7 +1252,7 @@ msgstr ""
 
 #: utils/misc/guc.c:735
 msgid "Uses the indented output format for EXPLAIN VERBOSE."
-msgstr ""
+msgstr "Usa un formato di output indentato per EXPLAIN VERBOSE."
 
 #: utils/misc/guc.c:744
 msgid "Collects information about executing commands."
@@ -1585,6 +1589,10 @@ msgid ""
 "accepted by the chmod and umask system calls. (To use the customary octal "
 "format the number must start with a 0 (zero).)"
 msgstr ""
+"I socket di dominio Unix utilizzano i normali permessi dei file system Unix. "
+"Il valore del parametro deve essere la specifica numerica dei permessi nella "
+"stessa forma accettata dalle chiamate di sistema chmod e umask. (Per usare "
+"il classico formato ottale, il valore numerico deve iniziare con 0 (zero).)"
 
 #: utils/misc/guc.c:1274
 msgid "Sets the maximum memory to be used for query workspaces."
@@ -1672,10 +1680,13 @@ msgid ""
 "Sets the maximum number of tables and indexes for which free space is "
 "tracked."
 msgstr ""
+"Imposta il numero massimo di tabelle ed indici di cui tracciare lo spazio "
+"libero."
 
 #: utils/misc/guc.c:1437
 msgid "Sets the maximum number of disk pages for which free space is tracked."
 msgstr ""
+"Imposta il numero massimo di pagine disco di cui tracciare lo spazio libero."
 
 #: utils/misc/guc.c:1446
 msgid "Sets the maximum number of locks per transaction."
@@ -1977,6 +1988,8 @@ msgstr "GEQO: pressione selettiva all'interno della popolazione."
 #: utils/misc/guc.c:1855
 msgid "Background writer multiplier on average buffers to scan per round."
 msgstr ""
+"Moltiplicatore del processo di scrittura in background sul numero medio di "
+"buffer da scandire ad ogni giro."
 
 #: utils/misc/guc.c:1864
 msgid "Sets the seed for random-number generation."
@@ -2017,7 +2030,7 @@ msgstr "Imposta se \"\\'\" è consentito nei letterali stringa."
 
 #: utils/misc/guc.c:1919
 msgid "Valid values are ON, OFF, and SAFE_ENCODING."
-msgstr ""
+msgstr "I valori validi sono ON, OFF e SAFE_ENCODING."
 
 #: utils/misc/guc.c:1927
 msgid "Sets the client's character set encoding."
@@ -2033,6 +2046,9 @@ msgid ""
 "WARNING, and ERROR. Each level includes all the levels that follow it. The "
 "later the level, the fewer messages are sent."
 msgstr ""
+"I valori validi sono DEBUG5, DEBUG4, DEBUG3, DEBUG2, DEBUG1, LOG, NOTICE, "
+"WARNING ed ERROR. Ogni livello include tutti i livelli che lo seguono. Più "
+"avanti il livello, meno messaggi sono inviati."
 
 #: utils/misc/guc.c:1949
 msgid "Sets the message levels that are logged."
@@ -2044,6 +2060,9 @@ msgid ""
 "WARNING, ERROR, LOG, FATAL, and PANIC. Each level includes all the levels "
 "that follow it."
 msgstr ""
+"I valori validi sono DEBUG5, DEBUG4, DEBUG3, DEBUG2, DEBUG1, INFO, NOTICE, "
+"WARNING, ERROR, LOG, FATAL e PANIC. Ogni livello include tutti i livelli che "
+"lo seguono."
 
 #: utils/misc/guc.c:1960
 msgid "Sets the verbosity of logged messages."
@@ -2051,7 +2070,7 @@ msgstr "Imposta la prolissità dei messaggi registrati."
 
 #: utils/misc/guc.c:1961
 msgid "Valid values are \"terse\", \"default\", and \"verbose\"."
-msgstr ""
+msgstr "I valori validi sono \"terse\", \"default\" e \"verbose\"."
 
 #: utils/misc/guc.c:1968
 msgid "Sets the type of statements logged."
@@ -2059,7 +2078,7 @@ msgstr "Imposta il tipo di istruzioni registrato nel log."
 
 #: utils/misc/guc.c:1969
 msgid "Valid values are \"none\", \"ddl\", \"mod\", and \"all\"."
-msgstr ""
+msgstr "I valori validi sono \"none\", \"ddl\", \"mod\" e \"all\"."
 
 #: utils/misc/guc.c:1977
 msgid ""
@@ -2073,6 +2092,8 @@ msgid ""
 "All SQL statements that cause an error of the specified level or a higher "
 "level are logged."
 msgstr ""
+"Tutte le istruzioni SQL che causano un errore al livello specifico o ad uno "
+"superiore vengono loggate."
 
 #: utils/misc/guc.c:1987
 msgid "Controls information prefixed to each log line."
@@ -2118,6 +2139,9 @@ msgid ""
 "Each SQL transaction has an isolation level, which can be either \"read "
 "uncommitted\", \"read committed\", \"repeatable read\", or \"serializable\"."
 msgstr ""
+"Ogni transazione SQL ha un livello di isolamento, che può essere uno di "
+"\"read uncommitted\", \"read committed\", \"repeatable read\" o "
+"\"serializable\"."
 
 #: utils/misc/guc.c:2046
 msgid "Sets the session's behavior for triggers and rewrite rules."
@@ -2127,7 +2151,7 @@ msgstr ""
 
 #: utils/misc/guc.c:2047
 msgid "Each session can be either \"origin\", \"replica\", or \"local\"."
-msgstr ""
+msgstr "Ogni sessione può essere una di \"origin\", \"replica\" o \"local\"."
 
 #: utils/misc/guc.c:2056
 msgid "Sets the path for dynamically loadable modules."
@@ -2146,6 +2170,7 @@ msgstr ""
 #: utils/misc/guc.c:2069
 msgid "Sets realm to match Kerberos and GSSAPI users against."
 msgstr ""
+"Imposta il reame verso il quale verificare gli utenti Kerberos e GSSAPI."
 
 #: utils/misc/guc.c:2079
 msgid "Sets the location of the Kerberos server key file."
@@ -2157,7 +2182,7 @@ msgstr "Imposta il nome del servizio Kerberos."
 
 #: utils/misc/guc.c:2098
 msgid "Sets the hostname of the Kerberos server."
-msgstr ""
+msgstr "Imposta il nome host del server Kerberos."
 
 #: utils/misc/guc.c:2107
 msgid "Sets the Bonjour broadcast service name."
@@ -2207,7 +2232,7 @@ msgstr "Imposta la variante di espressioni regolari."
 
 #: utils/misc/guc.c:2195
 msgid "This can be set to advanced, extended, or basic."
-msgstr ""
+msgstr "Questo può essere impostato ad advanced, extended o basic."
 
 #: utils/misc/guc.c:2203
 msgid "Sets the schema search order for names that are not schema-qualified."
@@ -2266,6 +2291,8 @@ msgid ""
 "Valid values are LOCAL0, LOCAL1, LOCAL2, LOCAL3, LOCAL4, LOCAL5, LOCAL6, "
 "LOCAL7."
 msgstr ""
+"Valori validi sono LOCAL0, LOCAL1, LOCAL2, LOCAL3, LOCAL4, LOCAL5, LOCAL6, "
+"LOCAL7."
 
 #: utils/misc/guc.c:2298
 msgid "Sets the program name used to identify PostgreSQL messages in syslog."
@@ -2337,7 +2364,7 @@ msgstr "imposta come i valori binari devono essere codificati nel formato XML."
 
 #: utils/misc/guc.c:2437
 msgid "Valid values are BASE64 and HEX."
-msgstr ""
+msgstr "Valori validi sono BASE64 ed HEX."
 
 #: utils/misc/guc.c:2445
 msgid ""
@@ -2350,7 +2377,7 @@ msgstr ""
 
 #: utils/misc/guc.c:2447
 msgid "Valid values are DOCUMENT and CONTENT."
-msgstr ""
+msgstr "Valori validi sono DOCUMENT e CONTENT."
 
 #: utils/misc/guc.c:2455
 msgid "Sets default text search configuration."
@@ -2440,11 +2467,13 @@ msgid ""
 "parameter \"%s\" cannot be changed after server start; configuration file "
 "change ignored"
 msgstr ""
+"il parametro \"%s\" non puô essere cambiato dopo l'avvio del server; la "
+"modifica al file di configurazione è stata ignorata"
 
 #: utils/misc/guc.c:4279
 #, c-format
 msgid "parameter \"%s\" cannot be changed after server start"
-msgstr ""
+msgstr "il parametro \"%s\" non puô essere cambiato dopo l'avvio del server"
 
 #: utils/misc/guc.c:4289
 #, c-format
@@ -2777,6 +2806,9 @@ msgid ""
 "shared memory block with the command \"ipcclean\", \"ipcrm\", or just delete "
 "the file \"%s\"."
 msgstr ""
+"Se sei sicuro che non ci siano vecchi processi server ancora in esecuzione, "
+"rimuovi il blocco di memoria condivisa con i comandi \"ipcclean\" e \"ipcrm"
+"\", o semplicemente cancella il file \"%s\"."
 
 #: utils/init/miscinit.c:922
 #, c-format
@@ -3690,6 +3722,7 @@ msgstr "unità \"%s\" di interval non riconosciuta"
 #: utils/adt/timestamp.c:3680
 msgid "cannot calculate week number without year information"
 msgstr ""
+"non è possibile calcolare il numero di settimana senza informazioni sull'anno"
 
 #: utils/adt/timestamp.c:4480 utils/adt/timestamp.c:4655
 #, c-format
@@ -3863,15 +3896,19 @@ msgstr "non è possibile convertire un poligono vuoto in un cerchio"
 #: utils/adt/tsginidx.c:74
 msgid "query requires full scan, which is not supported by GIN indexes"
 msgstr ""
+"la query richiede una scansione completa, che non è supportata dagli indici "
+"GIN"
 
 #: utils/adt/tsginidx.c:100
 msgid ""
 "@@ operator does not support lexeme weight restrictions in GIN index searches"
 msgstr ""
+"l'operatore @@ non supporta restrizioni di peso dei lessemi nelle ricerche "
+"su indice GIN"
 
 #: utils/adt/tsginidx.c:101
 msgid "Use the @@@ operator instead."
-msgstr ""
+msgstr "Usa l'operatore @@@ invece."
 
 #: utils/adt/varchar.c:48 utils/adt/varbit.c:49
 #, c-format
@@ -3953,7 +3990,7 @@ msgstr "non è possibile estrarre la radice quadrata di un numero negativo"
 
 #: utils/adt/float.c:1349 utils/adt/numeric.c:1853
 msgid "invalid argument for power function"
-msgstr ""
+msgstr "Argomento non valido per la funzione power"
 
 #: utils/adt/float.c:1415 utils/adt/float.c:1445 utils/adt/numeric.c:4695
 msgid "cannot take logarithm of zero"
@@ -4011,7 +4048,7 @@ msgstr "non è possibile usare \"V\" ed un punto decimale insieme"
 
 #: utils/adt/formatting.c:1110
 msgid "not unique \"S\""
-msgstr ""
+msgstr "\"S\" non unico"
 
 #: utils/adt/formatting.c:1117
 msgid "cannot use \"S\" and \"PL\"/\"MI\"/\"SG\"/\"PR\" together"
@@ -4046,80 +4083,80 @@ msgstr "\"%s\" non è un numero"
 
 #: utils/adt/formatting.c:1805
 msgid "invalid AM/PM string"
-msgstr ""
+msgstr "stringa AM/PM non valida"
 
 #: utils/adt/formatting.c:2126
 msgid "\"TZ\"/\"tz\" not supported"
-msgstr ""
+msgstr "\"TZ\"/\"tz\" non supportato"
 
 #: utils/adt/formatting.c:2136
 #, c-format
 msgid "invalid value for %s"
-msgstr ""
+msgstr "valore non valido per %s"
 
 #: utils/adt/formatting.c:3011
 msgid "January"
-msgstr ""
+msgstr "Gennaio"
 
 #: utils/adt/formatting.c:3014
 msgid "February"
-msgstr ""
+msgstr "Febbraio"
 
 #: utils/adt/formatting.c:3017
 msgid "March"
-msgstr ""
+msgstr "Marzo"
 
 #: utils/adt/formatting.c:3020
 msgid "April"
-msgstr ""
+msgstr "Aprile"
 
 #: utils/adt/formatting.c:3023
 msgid "May"
-msgstr ""
+msgstr "Maggio"
 
 #: utils/adt/formatting.c:3026
 msgid "June"
-msgstr ""
+msgstr "Giugno"
 
 #: utils/adt/formatting.c:3029
 msgid "July"
-msgstr ""
+msgstr "Luglio"
 
 #: utils/adt/formatting.c:3032
 msgid "August"
-msgstr ""
+msgstr "Agosto"
 
 #: utils/adt/formatting.c:3035
 msgid "September"
-msgstr ""
+msgstr "Settembre"
 
 #: utils/adt/formatting.c:3038
 msgid "October"
-msgstr ""
+msgstr "Ottobre"
 
 #: utils/adt/formatting.c:3041
 msgid "November"
-msgstr ""
+msgstr "Novembre"
 
 #: utils/adt/formatting.c:3044
 msgid "December"
-msgstr ""
+msgstr "Dicembre"
 
 #: utils/adt/formatting.c:3059
 msgid "Jan"
-msgstr ""
+msgstr "Gen"
 
 #: utils/adt/formatting.c:3062
 msgid "Feb"
-msgstr ""
+msgstr "Feb"
 
 #: utils/adt/formatting.c:3065
 msgid "Mar"
-msgstr ""
+msgstr "Mar"
 
 #: utils/adt/formatting.c:3068
 msgid "Apr"
-msgstr ""
+msgstr "Apr"
 
 #. translator: Translate this as the abbreviation of "May".
 #. In English, it is both the full month name and the
@@ -4128,95 +4165,95 @@ msgstr ""
 #. which will be stripped at run time.
 #: utils/adt/formatting.c:3077
 msgid "S:May"
-msgstr ""
+msgstr "S:Mag"
 
 #: utils/adt/formatting.c:3080
 msgid "Jun"
-msgstr ""
+msgstr "Giu"
 
 #: utils/adt/formatting.c:3083
 msgid "Jul"
-msgstr ""
+msgstr "Lug"
 
 #: utils/adt/formatting.c:3086
 msgid "Aug"
-msgstr ""
+msgstr "Ago"
 
 #: utils/adt/formatting.c:3089
 msgid "Sep"
-msgstr ""
+msgstr "Set"
 
 #: utils/adt/formatting.c:3092
 msgid "Oct"
-msgstr ""
+msgstr "Ott"
 
 #: utils/adt/formatting.c:3095
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: utils/adt/formatting.c:3098
 msgid "Dec"
-msgstr ""
+msgstr "Dic"
 
 #: utils/adt/formatting.c:3113
 msgid "Sunday"
-msgstr ""
+msgstr "Domenica"
 
 #: utils/adt/formatting.c:3116
 msgid "Monday"
-msgstr ""
+msgstr "Lunedì"
 
 #: utils/adt/formatting.c:3119
 msgid "Tuesday"
-msgstr ""
+msgstr "Martedì"
 
 #: utils/adt/formatting.c:3122
 msgid "Wednesday"
-msgstr ""
+msgstr "Mercoledì"
 
 #: utils/adt/formatting.c:3125
 msgid "Thursday"
-msgstr ""
+msgstr "Giovedì"
 
 #: utils/adt/formatting.c:3128
 msgid "Friday"
-msgstr ""
+msgstr "Venerdì"
 
 #: utils/adt/formatting.c:3131
 msgid "Saturday"
-msgstr ""
+msgstr "Sabato"
 
 #: utils/adt/formatting.c:3146
 msgid "Sun"
-msgstr ""
+msgstr "Dom"
 
 #: utils/adt/formatting.c:3149
 msgid "Mon"
-msgstr ""
+msgstr "Lun"
 
 #: utils/adt/formatting.c:3152
 msgid "Tue"
-msgstr ""
+msgstr "Mar"
 
 #: utils/adt/formatting.c:3155
 msgid "Wed"
-msgstr ""
+msgstr "Mer"
 
 #: utils/adt/formatting.c:3158
 msgid "Thu"
-msgstr ""
+msgstr "Gio"
 
 #: utils/adt/formatting.c:3161
 msgid "Fri"
-msgstr ""
+msgstr "Ben"
 
 #: utils/adt/formatting.c:3164
 msgid "Sat"
-msgstr ""
+msgstr "Sab"
 
 #: utils/adt/formatting.c:3458
 msgid "AM/PM hour must be between 1 and 12"
-msgstr ""
+msgstr "L'ora AM/PM dev'essere tra 1 e 12"
 
 #: utils/adt/formatting.c:3523 utils/adt/datetime.c:2166
 #, c-format
@@ -4323,7 +4360,7 @@ msgstr "la lunghezza della parola (%ld byte) eccede il massimo (%ld byte)"
 #: utils/adt/tsvector.c:227 utils/adt/tsvector.c:276
 #: utils/adt/tsvector_op.c:540 tsearch/to_tsany.c:166
 msgid "string is too long for tsvector"
-msgstr ""
+msgstr "la stringa è troppo lunga per tsvector"
 
 #: utils/adt/ascii.c:75
 #, c-format
@@ -4804,7 +4841,7 @@ msgstr ""
 #: utils/adt/oracle_compat.c:221 utils/adt/oracle_compat.c:231
 #, c-format
 msgid "UTF-16 to UTF-8 translation failed: %lu"
-msgstr ""
+msgstr "conversione da UTF-16 a UTF-8 fallita: %lu"
 
 #: utils/adt/oracle_compat.c:613 utils/adt/oracle_compat.c:711
 #: utils/adt/oracle_compat.c:1192 utils/adt/oracle_compat.c:1482
@@ -4868,7 +4905,7 @@ msgstr "la colonna \"%s\" non esiste"
 #: utils/adt/tsvector_op.c:1422
 #, c-format
 msgid "column \"%s\" is not of character type"
-msgstr ""
+msgstr "la colonna \"%s\" non è di tipo carattere"
 
 #: utils/adt/datetime.c:3123 utils/adt/datetime.c:3130
 #, c-format
@@ -5375,7 +5412,7 @@ msgstr "il valore dell'argomento per la funzione \"exp\" è troppo grande"
 
 #: utils/adt/numeric.c:4947
 msgid "zero raised to zero is undefined"
-msgstr ""
+msgstr "zero elevato a zero non è definito"
 
 #: utils/adt/tsvector_parser.c:137
 #, c-format
@@ -5855,12 +5892,12 @@ msgstr "esecuzione di"
 #: tcop/postgres.c:1916
 #, c-format
 msgid "%s %s%s%s%s%s"
-msgstr ""
+msgstr "%s %s%s%s%s%s"
 
 #: tcop/postgres.c:2000
 #, c-format
 msgid "duration: %s ms  %s %s%s%s%s%s"
-msgstr ""
+msgstr "durata: %s ms  %s %s%s%s%s%s"
 
 #: tcop/postgres.c:2127
 #, c-format
@@ -6140,6 +6177,8 @@ msgstr "parametro \"%s\" non identificato"
 #, c-format
 msgid "fillfactor=%d is out of range (should be between %d and 100)"
 msgstr ""
+"fillfactor=%d è fuori dall'intervallo consentito (dovrebbe essere tra %d e "
+"100)"
 
 #: access/common/tupdesc.c:543 parser/parse_relation.c:909
 #, c-format
@@ -6307,6 +6346,8 @@ msgstr ""
 msgid ""
 "Stop the postmaster and use a standalone backend to vacuum database \"%s\"."
 msgstr ""
+"Arresta il processo postmaster ed utilizza un backend autonomo per "
+"effettuare il VACUUM del database \"%s\"."
 
 #: access/transam/varsup.c:93 access/transam/varsup.c:299
 #, c-format
@@ -6318,6 +6359,8 @@ msgstr ""
 #, c-format
 msgid "To avoid a database shutdown, execute a full-database VACUUM in \"%s\"."
 msgstr ""
+"Per evitare lo spegnimento del database, esegui un VACUUM su tutto il "
+"database a \"%s\"."
 
 #: access/transam/varsup.c:282
 #, c-format
@@ -6812,11 +6855,11 @@ msgstr "creazione del collegamento il file \"%s\" a \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:3884
 msgid "invalid LC_COLLATE setting"
-msgstr ""
+msgstr "impostazione LC_COLLATE non valida"
 
 #: access/transam/xlog.c:3889
 msgid "invalid LC_CTYPE setting"
-msgstr ""
+msgstr "impostazione LC_CTYPE non valida"
 
 #: access/transam/xlog.c:3918
 #, c-format
@@ -7002,10 +7045,12 @@ msgid ""
 "The database cluster was initialized with LOCALE_NAME_BUFLEN %d, but the "
 "server was compiled with LOCALE_NAME_BUFLEN %d."
 msgstr ""
+"Il cluster di database è stato inizializzato con LOCALE_NAME_BUFLEN %d, ma "
+"il server è stato compilato con LOCALE_NAME_BUFLEN %d."
 
 #: access/transam/xlog.c:4108 access/transam/xlog.c:4115
 msgid "database files are incompatible with operating system"
-msgstr ""
+msgstr "i file del database non sono compatibili col sistema operativo"
 
 #: access/transam/xlog.c:4109
 #, c-format
@@ -7013,10 +7058,13 @@ msgid ""
 "The database cluster was initialized with LC_COLLATE \"%s\", which is not "
 "recognized by setlocale()."
 msgstr ""
+"Il cluster di database è stato inizializzato con LC_COLLATE \"%s\", che non "
+"è riconosciuto da setlocale()."
 
 #: access/transam/xlog.c:4112 access/transam/xlog.c:4119
 msgid "It looks like you need to initdb or install locale support."
 msgstr ""
+"Sembra sia necessario eseguire initdb o installare il supporto del locale."
 
 #: access/transam/xlog.c:4116
 #, c-format
@@ -7024,6 +7072,8 @@ msgid ""
 "The database cluster was initialized with LC_CTYPE \"%s\", which is not "
 "recognized by setlocale()."
 msgstr ""
+"Il cluster di database è stato inizializzato con LC_CTYPE \"%s\", che non è "
+"riconosciuto da setlocale()."
 
 #: access/transam/xlog.c:4352
 #, c-format
@@ -7093,7 +7143,7 @@ msgstr "recovery_target_inclusive = %s"
 #: access/transam/xlog.c:4563
 #, c-format
 msgid "log_restartpoints = %s"
-msgstr ""
+msgstr "log_restartpoints = %s"
 
 #: access/transam/xlog.c:4567
 #, c-format
@@ -7297,10 +7347,12 @@ msgstr "redo non richiesto"
 #: access/transam/xlog.c:5238
 msgid "requested recovery stop point is before end time of backup dump"
 msgstr ""
+"il punto di arresto del recupero richiesto va oltre la fine del salvataggio "
+"di backup"
 
 #: access/transam/xlog.c:5241
 msgid "WAL ends before end time of backup dump"
-msgstr ""
+msgstr "il WAL termina prima della fine del salvataggio di backup"
 
 #: access/transam/xlog.c:5262
 #, c-format
@@ -7491,7 +7543,7 @@ msgstr "gli indici GIN non supportano la scansione dell'intero indice"
 
 #: access/gin/ginscan.c:190
 msgid "GIN index does not support search with void query"
-msgstr ""
+msgstr "l'indice GIN non supporta la ricerca con espressione vuota"
 
 #: access/gin/ginarrayproc.c:30
 msgid "array must not contain null values"
@@ -7513,6 +7565,7 @@ msgstr ""
 #, c-format
 msgid "index row size %lu exceeds btree maximum, %lu"
 msgstr ""
+"la dimensione %lu della riga dell'indice supera il massimo del btree, %lu"
 
 #: access/nbtree/nbtsort.c:480 access/nbtree/nbtinsert.c:420
 msgid ""
@@ -8035,7 +8088,7 @@ msgstr "il vincolo \"%s\" non esiste"
 #: commands/tablecmds.c:4698
 #, c-format
 msgid "multiple constraints named \"%s\" were dropped"
-msgstr ""
+msgstr "più di un vincolo chiamato \"%s\" è stato eliminato"
 
 #: commands/tablecmds.c:4744
 #, c-format
@@ -8058,7 +8111,7 @@ msgstr ""
 #: commands/tablecmds.c:4807
 #, c-format
 msgid "column \"%s\" cannot be cast to type \"%s\""
-msgstr ""
+msgstr "la colonna \"%s\" non può essere convertita al tipo \"%s\""
 
 #: commands/tablecmds.c:4833
 #, c-format
@@ -8076,6 +8129,8 @@ msgstr "non è possibile cambiare il tipo della colonna \"%s\" due volte"
 #, c-format
 msgid "default for column \"%s\" cannot be cast to type \"%s\""
 msgstr ""
+"il valore predefinito della colonna \"%s\" non può essere convertito al tipo "
+"\"%s\""
 
 #: commands/tablecmds.c:5031
 msgid "cannot alter type of a column used by a view or rule"
@@ -8179,6 +8234,7 @@ msgstr "la tabella figlia non ha il vincolo \"%s\""
 #, c-format
 msgid "constraint definition for check constraint \"%s\" does not match"
 msgstr ""
+"la definizione di vincolo per il vincolo di controllo \"%s\" non combacia"
 
 #: commands/tablecmds.c:6389
 #, c-format
@@ -8563,6 +8619,8 @@ msgstr "la funzione di conversione deve prendere da uno a tre argomenti"
 #: commands/functioncmds.c:1406
 msgid "argument of cast function must match source data type"
 msgstr ""
+"l'argomento della funzione di conversione dev'essere del tipo di dato di "
+"origine"
 
 #: commands/functioncmds.c:1410
 msgid "second argument of cast function must be type integer"
@@ -8577,6 +8635,8 @@ msgstr ""
 #: commands/functioncmds.c:1418
 msgid "return data type of cast function must match target data type"
 msgstr ""
+"il valore restituito dalla funzione di conversione dev'essere del tipo di "
+"dato di destinazione"
 
 #: commands/functioncmds.c:1429
 msgid "cast function must not be volatile"
@@ -8671,7 +8731,7 @@ msgstr "non è possibile specificare NULL in BINARY mode"
 
 #: commands/copy.c:860
 msgid "COPY delimiter must be a single ASCII character"
-msgstr ""
+msgstr "il delimitatore di COPY dev'essere un singolo carattere ASCII"
 
 #: commands/copy.c:867
 msgid "COPY delimiter cannot be newline or carriage return"
@@ -8700,7 +8760,7 @@ msgstr "il quoting di COPY è disponibile solo in modalità CSV"
 
 #: commands/copy.c:907
 msgid "COPY quote must be a single ASCII character"
-msgstr ""
+msgstr "il quote di COPY dev'essere un solo carattere ASCII"
 
 #: commands/copy.c:912
 msgid "COPY delimiter and quote must be different"
@@ -8712,7 +8772,7 @@ msgstr "l'escape di COPY è disponibile solo in modalità CSV"
 
 #: commands/copy.c:923
 msgid "COPY escape must be a single ASCII character"
-msgstr ""
+msgstr "l'escape di COPY dev'essere un solo carattere ASCII"
 
 #: commands/copy.c:929
 msgid "COPY force quote available only in CSV mode"
@@ -9036,16 +9096,21 @@ msgid ""
 "relation \"%s.%s\" contains more than \"max_fsm_pages\" pages with useful "
 "free space"
 msgstr ""
+"la relazione \"%s.%s\" contiene più pagine di \"max_fsm_pages\" con spazio "
+"libero utile"
 
 #: commands/vacuumlazy.c:232
 msgid ""
 "Consider using VACUUM FULL on this relation or increasing the configuration "
 "parameter \"max_fsm_pages\"."
 msgstr ""
+"Considera l'uso di VACUUM FULL sulla relazione o incrementa il parametro di "
+"configurazione \"max_fsm_pages\"."
 
 #: commands/vacuumlazy.c:233
 msgid "Consider increasing the configuration parameter \"max_fsm_pages\"."
 msgstr ""
+"Considera di incrementare il parametro di configurazione \"max_fsm_pages\"."
 
 #: commands/vacuumlazy.c:253
 #, c-format
@@ -9092,6 +9157,11 @@ msgid ""
 "%u pages are entirely empty.\n"
 "%s."
 msgstr ""
+"%.0f versioni di riga morte non possono essere ancora rimosse.\n"
+"C'erano %.0f puntatori ad oggetti non usati.\n"
+"%u pagine contengono spazio libero utile.\n"
+"%u pagine sono completamente vuote.\n"
+"%s."
 
 #: commands/vacuumlazy.c:682
 #, c-format
@@ -9161,12 +9231,12 @@ msgstr "codifica del server non valida: %d"
 #: commands/dbcommands.c:295
 #, c-format
 msgid "encoding %s does not match server's locale %s"
-msgstr ""
+msgstr "la codifica %s non corrisponde al locale del server %s"
 
 #: commands/dbcommands.c:298
 #, c-format
 msgid "The server's LC_CTYPE setting requires encoding %s."
-msgstr ""
+msgstr "L'impostazione LC_CTYPE del server richiede la codifica %s."
 
 #: commands/dbcommands.c:325
 msgid "pg_global cannot be used as default tablespace"
@@ -9392,17 +9462,18 @@ msgstr "la vista deve avere almeno una colonna"
 
 #: commands/view.c:226 commands/view.c:238
 msgid "cannot change number of columns in view"
-msgstr ""
+msgstr "non è possibile cambiare il numero di colonne in una vista"
 
 #: commands/view.c:243
 #, c-format
 msgid "cannot change name of view column \"%s\""
-msgstr ""
+msgstr "non è possibile cambiare il nome della colonna \"%s\" della vista"
 
 #: commands/view.c:250
 #, c-format
 msgid "cannot change data type of view column \"%s\""
 msgstr ""
+"non è possibile cambiare il tipo di dato della colonna \"%s\" della vista"
 
 #: commands/view.c:402
 msgid "CREATE VIEW specifies more column names than columns"
@@ -10050,15 +10121,15 @@ msgstr ""
 
 #: commands/trigger.c:163
 msgid "multiple INSERT events specified"
-msgstr ""
+msgstr "più di un evento INSERT specificato"
 
 #: commands/trigger.c:170
 msgid "multiple DELETE events specified"
-msgstr ""
+msgstr "più di un evento DELETE  specificato"
 
 #: commands/trigger.c:177
 msgid "multiple UPDATE events specified"
-msgstr ""
+msgstr "più di un evento UPDATE specificato"
 
 #: commands/trigger.c:205
 #, c-format
@@ -10574,11 +10645,11 @@ msgstr ""
 
 #: executor/functions.c:900 executor/functions.c:922
 msgid "Function's final statement must be a SELECT."
-msgstr ""
+msgstr "l'istruzione finale della funzione dev'essere una SELECT."
 
 #: executor/functions.c:957
 msgid "Final SELECT must return exactly one column."
-msgstr ""
+msgstr "La SELECT finale deve restituire esattamente una colonna."
 
 #: executor/functions.c:965
 #, c-format
@@ -10587,16 +10658,16 @@ msgstr "Il tipo restituito realmente è %s."
 
 #: executor/functions.c:1035
 msgid "Final SELECT returns too many columns."
-msgstr ""
+msgstr "La SELECT finale restituisce troppe colonne."
 
 #: executor/functions.c:1047
 #, c-format
 msgid "Final SELECT returns %s instead of %s at column %d."
-msgstr ""
+msgstr "La SELECT finale restituisce %s invece di %s alla colonna %d."
 
 #: executor/functions.c:1067
 msgid "Final SELECT returns too few columns."
-msgstr ""
+msgstr "La SELECT finale restituisce troppe poche colonne."
 
 #: executor/functions.c:1083 catalog/pg_aggregate.c:174 catalog/pg_proc.c:191
 msgid "cannot determine result data type"
@@ -10759,7 +10830,7 @@ msgstr ""
 #: executor/nodeFunctionscan.c:364
 #, c-format
 msgid "Returned row contains %d attributes, but query expects %d."
-msgstr ""
+msgstr "La riga restituita contiene %d attributi, ma la query ne aspetta %d."
 
 #: executor/nodeFunctionscan.c:378
 #, c-format
@@ -10833,11 +10904,12 @@ msgstr "La tabella ha il tipo %s, ma la query prevede %s."
 #, c-format
 msgid "Table row contains %d attributes, but query expects %d."
 msgstr ""
+"La riga della tabella contiene %d attributi, ma la query ne aspetta %d."
 
 #: executor/execQual.c:1189 parser/parse_func.c:93 parser/parse_func.c:424
 #, c-format
 msgid "cannot pass more than %d arguments to a function"
-msgstr ""
+msgstr "non è possibile passare più di %d argomenti ad una funzione"
 
 #: executor/execQual.c:1307
 msgid "functions and operators can take at most one set argument"
@@ -10922,7 +10994,7 @@ msgstr "SELECT FOR UPDATE/SHARE non è consentito nelle sottoquery"
 
 #: optimizer/path/allpaths.c:277
 msgid "SELECT FOR UPDATE/SHARE is not supported for inheritance queries"
-msgstr ""
+msgstr "SELECT FOR UPDATE/SHARE non è supportato pre query di ereditarietà"
 
 #: optimizer/util/clauses.c:3360
 #, c-format
@@ -11086,13 +11158,15 @@ msgstr "accesso fallito al file della chiave privata \"%s\": %m"
 #: libpq/be-secure.c:766
 #, c-format
 msgid "unsafe permissions on private key file \"%s\""
-msgstr ""
+msgstr "permessi non sicuri sul file della chiave privata \"%s\""
 
 #: libpq/be-secure.c:768
 msgid ""
 "File must be owned by the database user and must have no permissions for "
 "\"group\" or \"other\"."
 msgstr ""
+"Il proprietario del file dev'essere l'utente del database e non deve avere "
+"permessi per \"group\" o \"other\"."
 
 #: libpq/be-secure.c:775
 #, c-format
@@ -11111,7 +11185,7 @@ msgstr "caricamento del file del certificato radice \"%s\" fallito: %s"
 
 #: libpq/be-secure.c:801
 msgid "Will not verify client certificates."
-msgstr ""
+msgstr "I certificati client non saranno verificati."
 
 #: libpq/be-secure.c:822
 #, c-format
@@ -11195,6 +11269,8 @@ msgstr "formato del messaggio non valido"
 msgid ""
 "cannot use authentication method \"crypt\" because password is MD5-encrypted"
 msgstr ""
+"non è possibile usare il metodo di autenticazione \"crypt\" perché la "
+"password è criptata in MD5"
 
 #: libpq/auth.c:143
 #, c-format
@@ -11227,10 +11303,12 @@ msgid ""
 "unexpected Kerberos user name received from client (received \"%s\", "
 "expected \"%s\")"
 msgstr ""
+"nome utente Kerberos inatteso ricevuto dal client (ricevuto \"%s\", atteso "
+"\"%s\")"
 
 #: libpq/auth.c:319
 msgid "Kerberos 5 not implemented on this server"
-msgstr ""
+msgstr "Kerberos 5 non è implementato in questo server"
 
 #: libpq/auth.c:392
 #, c-format
@@ -11256,7 +11334,7 @@ msgstr "la rchiesta del GSS user name è fallita"
 
 #: libpq/auth.c:633
 msgid "GSSAPI not implemented on this server"
-msgstr ""
+msgstr "GSSAPI non è implementato in questo server"
 
 #: libpq/auth.c:658
 #, c-format
@@ -11274,7 +11352,7 @@ msgstr "SSPI non è supportato con la versione 2 del protocollo"
 
 #: libpq/auth.c:718
 msgid "could not acquire SSPI credentials handle"
-msgstr ""
+msgstr "acquisizione dell'handle delle credenziali SSPI fallita"
 
 #: libpq/auth.c:735
 #, c-format
@@ -11287,11 +11365,11 @@ msgstr "non è stato possibile accettare il contesto di sicurezza SSPI"
 
 #: libpq/auth.c:869
 msgid "could not get security token from context"
-msgstr ""
+msgstr "non è stato possibile ottenere il token di sicurezza dal contesto"
 
 #: libpq/auth.c:944
 msgid "SSPI not implemented on this server"
-msgstr ""
+msgstr "SSPI non è implementato in questo server"
 
 #: libpq/auth.c:984
 #, c-format
@@ -11420,12 +11498,12 @@ msgstr "rilascio dell'autenticatore PAM fallito: %s"
 
 #: libpq/auth.c:1449
 msgid "LDAP configuration URL not specified"
-msgstr ""
+msgstr "la URL di configurazione LDAP non è stata specificata"
 
 #: libpq/auth.c:1501
 #, c-format
 msgid "invalid LDAP URL: \"%s\""
-msgstr ""
+msgstr "URL LDAP non valida: \"%s\""
 
 #: libpq/auth.c:1524 libpq/auth.c:1528
 #, c-format
@@ -11488,12 +11566,12 @@ msgstr ""
 #: libpq/hba.c:781
 #, c-format
 msgid "invalid IP address \"%s\" in file \"%s\" line %d: %s"
-msgstr ""
+msgstr "indirizzo IP \"%s\" non valido nel file \"%s\" riga %d: %s"
 
 #: libpq/hba.c:817
 #, c-format
 msgid "invalid IP mask \"%s\" in file \"%s\" line %d: %s"
-msgstr ""
+msgstr "maschera IP \"%s\" non valida nel file \"%s\" riga %d: %s"
 
 #: libpq/hba.c:832
 #, c-format
@@ -11503,12 +11581,12 @@ msgstr "l'indirizzo IP e la maschera non combaciano nel file \"%s\" riga %d"
 #: libpq/hba.c:890
 #, c-format
 msgid "invalid entry in file \"%s\" at line %d, token \"%s\""
-msgstr ""
+msgstr "elemento non valido nel file \"%s\" alla riga %d, token \"%s\""
 
 #: libpq/hba.c:896
 #, c-format
 msgid "missing field in file \"%s\" at end of line %d"
-msgstr ""
+msgstr "campo mancante nel file \"%s\" alla fine della riga %d"
 
 #: libpq/hba.c:1110
 #, c-format
@@ -11517,7 +11595,7 @@ msgstr "voce mancante nel file \"%s\" alla fine della riga %d"
 
 #: libpq/hba.c:1140
 msgid "cannot use Ident authentication without usermap field"
-msgstr ""
+msgstr "non è possibile usare l'autenticazione Ident senza il campo usermap"
 
 #: libpq/hba.c:1186
 #, c-format
@@ -11584,7 +11662,7 @@ msgstr ""
 #: libpq/hba.c:1642
 #, c-format
 msgid "Ident protocol identifies remote user as \"%s\""
-msgstr ""
+msgstr "il protocollo Ident identifica l'utente remoto come \"%s\""
 
 #: libpq/be-fsstubs.c:125 libpq/be-fsstubs.c:155 libpq/be-fsstubs.c:170
 #: libpq/be-fsstubs.c:195 libpq/be-fsstubs.c:242 libpq/be-fsstubs.c:469
@@ -11660,17 +11738,17 @@ msgstr "lettura della directory \"%s\" fallita: %m"
 #: storage/freespace/freespace.c:184 storage/freespace/freespace.c:202
 #: storage/freespace/freespace.c:221
 msgid "insufficient shared memory for free space map"
-msgstr ""
+msgstr "memoria condivisa non sufficiente per la mappa dello spazio libero"
 
 #: storage/freespace/freespace.c:214
 #, c-format
 msgid "max_fsm_pages must exceed max_fsm_relations * %d"
-msgstr ""
+msgstr "max_fsm_pages deve superare max_fsm_relations * %d"
 
 #: storage/freespace/freespace.c:624
 #, c-format
 msgid "free space map contains %d pages in %d relations"
-msgstr ""
+msgstr "la mappa dello spazio libero contiene %d pagine in %d relazioni"
 
 #: storage/freespace/freespace.c:626
 #, c-format
@@ -11679,11 +11757,15 @@ msgid ""
 "%.0f page slots are required to track all free space.\n"
 "Current limits are:  %d page slots, %d relations, using %.0f kB."
 msgstr ""
+"Un totale di %.0f slot di pagine sono in uso (compreso l'overhead).\n"
+"%.0f slot di pagine sono richiesti per tracciare tutto lo spazio libero.\n"
+"I limiti attuali sono:  %d slot di pagine, %d relazione, con l'uso di %.0f "
+"kB."
 
 #: storage/freespace/freespace.c:644
 #, c-format
 msgid "max_fsm_relations(%d) equals the number of relations checked"
-msgstr ""
+msgstr "max_fsm_relations(%d) è uguale al numero di relazioni controllate"
 
 #: storage/freespace/freespace.c:646
 #, c-format
@@ -11691,11 +11773,13 @@ msgid ""
 "You have at least %d relations.  Consider increasing the configuration "
 "parameter \"max_fsm_relations\"."
 msgstr ""
+"Hai almeno %d relazioni. Considera di incrementare il parametro di "
+"configurazione \"max_fsm_relations\"."
 
 #: storage/freespace/freespace.c:651
 #, c-format
 msgid "number of page slots needed (%.0f) exceeds max_fsm_pages (%d)"
-msgstr ""
+msgstr "il numero di slot di pagine richieste (%.0f) supera max_fsm_pages (%d)"
 
 #: storage/freespace/freespace.c:653
 #, c-format
@@ -11703,6 +11787,8 @@ msgid ""
 "Consider increasing the configuration parameter \"max_fsm_pages\" to a value "
 "over %.0f."
 msgstr ""
+"Considera di incrementare il parametro di configurazione \"max_fsm_pages\" "
+"ad un valore maggiore di %.0f."
 
 #: storage/ipc/shmem.c:392
 #, c-format
@@ -11716,7 +11802,7 @@ msgstr "la dimensione richiesta di memoria condivisa supera size_t"
 #: storage/buffer/bufmgr.c:228
 #, c-format
 msgid "unexpected data beyond EOF in block %u of relation \"%s\""
-msgstr ""
+msgstr "dati inattesi dopo la fine file nel blocco %u della relazione \"%s\""
 
 #: storage/buffer/bufmgr.c:230
 msgid ""
@@ -11730,16 +11816,18 @@ msgstr ""
 #, c-format
 msgid "invalid page header in block %u of relation \"%s\"; zeroing out page"
 msgstr ""
+"intestazione di pagina non valida nel blocco %u della relazione \"%s\"; "
+"azzeramento della pagina"
 
 #: storage/buffer/bufmgr.c:308
 #, c-format
 msgid "invalid page header in block %u of relation \"%s\""
-msgstr ""
+msgstr "intestazione di pagina non valida nel blocco %u della relazione \"%s\""
 
 #: storage/buffer/bufmgr.c:2562
 #, c-format
 msgid "could not write block %u of %u/%u/%u"
-msgstr ""
+msgstr "scrittura del blocco %u di %u/%u/%u fallita"
 
 #: storage/buffer/bufmgr.c:2567
 msgid "Multiple failures --- write error might be permanent."
@@ -11749,7 +11837,7 @@ msgstr ""
 #: storage/buffer/bufmgr.c:2584
 #, c-format
 msgid "writing block %u of relation %u/%u/%u"
-msgstr ""
+msgstr "scrittura del blocco %u della relazione %u/%u/%u"
 
 #: storage/buffer/localbuf.c:149
 msgid "no empty local buffer available"
@@ -11784,32 +11872,32 @@ msgstr "puntatore di elemento corrotto: offset = %u, size = %u"
 #: storage/smgr/md.c:254
 #, c-format
 msgid "could not create relation %u/%u/%u: %m"
-msgstr ""
+msgstr "creazione della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:347 storage/smgr/md.c:1214
 #, c-format
 msgid "could not remove relation %u/%u/%u: %m"
-msgstr ""
+msgstr "rimozione della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:373
 #, c-format
 msgid "could not remove segment %u of relation %u/%u/%u: %m"
-msgstr ""
+msgstr "rimozione del segmento %u della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:421
 #, c-format
 msgid "cannot extend relation %u/%u/%u beyond %u blocks"
-msgstr ""
+msgstr "non è possibile estendere la relazione %u/%u/%u oltre %u blocchi"
 
 #: storage/smgr/md.c:448 storage/smgr/md.c:602 storage/smgr/md.c:672
 #, c-format
 msgid "could not seek to block %u of relation %u/%u/%u: %m"
-msgstr ""
+msgstr "spostamento al blocco %u della relazione %u/%u/%u fallito: %m"
 
 #: storage/smgr/md.c:459
 #, c-format
 msgid "could not extend relation %u/%u/%u: %m"
-msgstr ""
+msgstr "estensione della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:463 storage/smgr/md.c:472 storage/smgr/md.c:697
 msgid "Check free disk space."
@@ -11820,69 +11908,81 @@ msgstr "Controlla lo spazio libero sul disco."
 msgid ""
 "could not extend relation %u/%u/%u: wrote only %d of %d bytes at block %u"
 msgstr ""
+"estensione della relazione %u/%u/%u fallita: scritti soli %d byte su %d al "
+"blocco %u"
 
 #: storage/smgr/md.c:526
 #, c-format
 msgid "could not open relation %u/%u/%u: %m"
-msgstr ""
+msgstr "apertura della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:613
 #, c-format
 msgid "could not read block %u of relation %u/%u/%u: %m"
-msgstr ""
+msgstr "lettura del blocco %u della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:632
 #, c-format
 msgid "could not read block %u of relation %u/%u/%u: read only %d of %d bytes"
 msgstr ""
+"lettura del blocco %u della relazione %u/%u/%u fallita: letti soli %d byte "
+"su %d"
 
 #: storage/smgr/md.c:683
 #, c-format
 msgid "could not write block %u of relation %u/%u/%u: %m"
-msgstr ""
+msgstr "scrittura del blocco %u della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:691
 #, c-format
 msgid ""
 "could not write block %u of relation %u/%u/%u: wrote only %d of %d bytes"
 msgstr ""
+"scrittura del blocco %u della relazione %u/%u/%u fallita: scritti soli %d "
+"byte di %d"
 
 #: storage/smgr/md.c:764
 #, c-format
 msgid "could not open segment %u of relation %u/%u/%u: %m"
-msgstr ""
+msgstr "apertura del segmento %u della relazione %u/%u/%u fallita: %m"
 
 #: storage/smgr/md.c:802
 #, c-format
 msgid ""
 "could not truncate relation %u/%u/%u to %u blocks: it's only %u blocks now"
 msgstr ""
+"troncamento della relazione %u/%u/%u a %u blocchi fallito: ora è di soli %u "
+"blocchi"
 
 #: storage/smgr/md.c:829 storage/smgr/md.c:855 storage/smgr/md.c:879
 #, c-format
 msgid "could not truncate relation %u/%u/%u to %u blocks: %m"
-msgstr ""
+msgstr "troncamento della relaizone %u/%u/%u a %u blocchi fallito: %m"
 
 #: storage/smgr/md.c:915 storage/smgr/md.c:926 storage/smgr/md.c:1099
 #: storage/smgr/md.c:1251
 #, c-format
 msgid "could not fsync segment %u of relation %u/%u/%u: %m"
-msgstr ""
+msgstr "fsync del segmento %u della relazione %u/%u/%u fallito: %m"
 
 #: storage/smgr/md.c:1107
 #, c-format
 msgid "could not fsync segment %u of relation %u/%u/%u, but retrying: %m"
 msgstr ""
+"fsync del segmento %u della relazione %u/%u/%u fallito ma sto ritentando: %m"
 
 #: storage/smgr/md.c:1599
 #, c-format
 msgid "could not open segment %u of relation %u/%u/%u (target block %u): %m"
 msgstr ""
+"apertura del segmento %u della relazione %u/%u/%u fallito (blocco di "
+"destinazione %u): %m"
 
 #: storage/smgr/md.c:1626
 #, c-format
 msgid "could not seek to end of segment %u of relation %u/%u/%u: %m"
 msgstr ""
+"spostamento alla fine del segmento %u della relazione %u/%u/%u fallito: %m"
 
 #: storage/lmgr/proc.c:915
 #, c-format
@@ -12337,7 +12437,7 @@ msgstr ""
 #: catalog/pg_proc.c:112 parser/parse_func.c:1255 parser/parse_func.c:1293
 #, c-format
 msgid "functions cannot have more than %d arguments"
-msgstr ""
+msgstr "le funzioni non possono avere più di %d argomenti"
 
 #: catalog/pg_proc.c:197
 msgid "unsafe use of pseudo-type \"internal\""
@@ -12376,12 +12476,12 @@ msgstr "Il tipo della riga definito dai parametri di OUT è diverso."
 #: catalog/pg_proc.c:328
 #, c-format
 msgid "function \"%s\" is an aggregate"
-msgstr ""
+msgstr "la funzione \"%s\" è di aggregazione"
 
 #: catalog/pg_proc.c:333
 #, c-format
 msgid "function \"%s\" is not an aggregate"
-msgstr ""
+msgstr "la funzione \"%s\" non è di aggregazione"
 
 #: catalog/pg_proc.c:481
 #, c-format
@@ -12409,6 +12509,8 @@ msgid ""
 "\n"
 "and %d other objects (see server log for list)"
 msgstr ""
+"\n"
+"ed altri %d oggetti (vedi il log del server per la lista)"
 
 #: catalog/pg_shdepend.c:662
 #, c-format
@@ -12416,11 +12518,13 @@ msgid ""
 "\n"
 "and objects in %d other databases (see server log for list)"
 msgstr ""
+"\n"
+"ed oggetti in altri %d database (vedi il log del server per la lista)"
 
 #: catalog/pg_shdepend.c:674
 #, c-format
 msgid "there are objects dependent on %s"
-msgstr ""
+msgstr "ci sono oggetti che dipendono da %s"
 
 #: catalog/pg_shdepend.c:964
 #, c-format
@@ -12446,7 +12550,7 @@ msgstr "accesso a %s"
 #: catalog/pg_shdepend.c:1037
 #, c-format
 msgid "%d objects in %s"
-msgstr ""
+msgstr "%d oggetti in %s"
 
 #: catalog/pg_shdepend.c:1145
 #, c-format
@@ -12547,7 +12651,7 @@ msgstr "tipo di privilegio %s non valido per il tablespace"
 #: catalog/aclchk.c:625
 #, c-format
 msgid "sequence \"%s\" only supports USAGE, SELECT, and UPDATE"
-msgstr ""
+msgstr "la sequenza \"%s\" supporta solo USAGE, SELECT ed UPDATE"
 
 #: catalog/aclchk.c:642
 msgid "invalid privilege type USAGE for table"
@@ -12808,7 +12912,7 @@ msgstr "Usa DROP ... CASCADE per eliminare anche gli oggetti dipendenti."
 #: catalog/dependency.c:376
 #, c-format
 msgid "failed to drop all objects depending on %s"
-msgstr ""
+msgstr "eliminazione di tutti gli oggetti dipendenti da %s fallita"
 
 #: catalog/dependency.c:620
 #, c-format
@@ -12858,7 +12962,7 @@ msgstr "conversione da %s a %s"
 #: catalog/dependency.c:1885
 #, c-format
 msgid "constraint %s on "
-msgstr ""
+msgstr "vincolo %s su "
 
 #: catalog/dependency.c:1891
 #, c-format
@@ -12893,12 +12997,12 @@ msgstr "classe di operatori %s per il metodo di accesso %s"
 #: catalog/dependency.c:2046
 #, c-format
 msgid "operator %d %s of "
-msgstr ""
+msgstr "operatore %d %s di "
 
 #: catalog/dependency.c:2083
 #, c-format
 msgid "function %d %s of "
-msgstr ""
+msgstr "funzione %d %s di "
 
 #: catalog/dependency.c:2119
 #, c-format
@@ -14051,13 +14155,13 @@ msgstr "l'argomento di %s non può contenere variabili"
 #: parser/parse_clause.c:1111
 #, c-format
 msgid "argument of %s must not contain aggregates"
-msgstr ""
+msgstr "l'argomento di %s non può contenere aggregati"
 
 #. translator: %s is name of a SQL construct, eg LIMIT
 #: parser/parse_clause.c:1119
 #, c-format
 msgid "argument of %s must not contain subqueries"
-msgstr ""
+msgstr "argument of %s must not contain sottoquery"
 
 #. translator: first %s is name of a SQL construct, eg ORDER BY
 #: parser/parse_clause.c:1228
@@ -14351,6 +14455,7 @@ msgstr ""
 #, c-format
 msgid "missing FROM-clause entry in subquery for table \"%s\""
 msgstr ""
+"elemento mancante dalla clausola FROM nella sottoquery per la tabella \"%s\""
 
 #: parser/parse_relation.c:2022
 #, c-format
@@ -14361,6 +14466,8 @@ msgstr "elemento FROM per la tabella \"%s\" mancante"
 #, c-format
 msgid "adding missing FROM-clause entry in subquery for table \"%s\""
 msgstr ""
+"aggiunta dell'elemento mancante dalla clausola FROM nella sottoquery per la "
+"tabella \"%s\""
 
 #: parser/parse_relation.c:2034
 #, c-format
