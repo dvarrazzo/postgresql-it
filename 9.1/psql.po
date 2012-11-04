@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-11-02 00:26+0000\n"
-"PO-Revision-Date: 2012-11-04 19:09+0100\n"
+"PO-Revision-Date: 2012-11-04 23:19+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1045,7 +1045,7 @@ msgstr "  \\ddp    [MODELLO]      elenca i privilegi predefiniti\n"
 #: help.c:201
 #, c-format
 msgid "  \\dD[S]  [PATTERN]      list domains\n"
-msgstr "  \\dD     [MODELLO]      elenca i domini\n"
+msgstr "  \\dD[S]  [MODELLO]      elenca i domini\n"
 
 #: help.c:202
 #, c-format

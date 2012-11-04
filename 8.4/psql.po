@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:13+0000\n"
-"PO-Revision-Date: 2012-11-04 19:09+0100\n"
+"PO-Revision-Date: 2012-11-04 23:18+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -977,7 +977,7 @@ msgstr "  \\dd[S]  [PATTERN]      mostra i commenti sugli oggetti\n"
 #: help.c:204
 #, c-format
 msgid "  \\dD[S]  [PATTERN]      list domains\n"
-msgstr "  \\dD     [MODELLO]      elenca i domini\n"
+msgstr "  \\dD[S]  [MODELLO]      elenca i domini\n"
 
 #: help.c:205
 #, c-format
