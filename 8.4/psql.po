@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-10-26 19:13+0000\n"
-"PO-Revision-Date: 2012-11-04 23:18+0100\n"
+"PO-Revision-Date: 2012-11-04 23:22+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -972,7 +972,7 @@ msgstr "  \\dC     [MODELLO]      elenca le conversioni di tipo\n"
 #: help.c:203
 #, c-format
 msgid "  \\dd[S]  [PATTERN]      show comments on objects\n"
-msgstr "  \\dd[S]  [PATTERN]      mostra i commenti sugli oggetti\n"
+msgstr "  \\dd[S]  [MODELLO]      mostra i commenti sugli oggetti\n"
 
 #: help.c:204
 #, c-format
