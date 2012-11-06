@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-11-02 00:15+0000\n"
-"PO-Revision-Date: 2012-11-04 19:09+0100\n"
+"PO-Revision-Date: 2012-11-06 15:02+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -471,11 +471,11 @@ msgstr "Attributi tabelle non specificati.\n"
 
 #: command.c:2399
 msgid "Pager is used for long output."
-msgstr "Paginazione utilizzata per risultati estesi."
+msgstr "Usa la paginazione per risultati estesi."
 
 #: command.c:2401
 msgid "Pager is always used."
-msgstr "Paginazione sempre utilizzato."
+msgstr "Paginazione sempre attiva."
 
 #: command.c:2403
 msgid "Pager usage is off."
