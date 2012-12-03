@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2012-10-26 19:10+0000\n"
+"POT-Creation-Date: 2012-12-03 13:41+0000\n"
 "PO-Revision-Date: 2012-11-02 17:38+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -90,9 +90,9 @@ msgstr "errore di importazione del nome GSSAPI"
 msgid "SSPI continuation error"
 msgstr "SSPI errore di continuazione"
 
-#: fe-auth.c:556 fe-auth.c:630 fe-auth.c:665 fe-auth.c:764 fe-connect.c:1342
-#: fe-connect.c:2630 fe-connect.c:2848 fe-connect.c:3219 fe-connect.c:3228
-#: fe-connect.c:3365 fe-connect.c:3411 fe-connect.c:3429 fe-exec.c:3091
+#: fe-auth.c:556 fe-auth.c:630 fe-auth.c:665 fe-auth.c:764 fe-connect.c:1351
+#: fe-connect.c:2639 fe-connect.c:2857 fe-connect.c:3228 fe-connect.c:3237
+#: fe-connect.c:3374 fe-connect.c:3420 fe-connect.c:3438 fe-exec.c:3091
 #: fe-lobj.c:711 fe-protocol2.c:1027 fe-protocol3.c:1421 fe-secure.c:708
 msgid "out of memory\n"
 msgstr "memoria esaurita\n"
@@ -168,187 +168,192 @@ msgstr ""
 "\tVerifica che il server all'indirizzo \"%s\" sia in funzione\n"
 "\te che accetti connessioni TCP/IP sulla porta %s\n"
 
-#: fe-connect.c:858
+#: fe-connect.c:848
+#, c-format
+msgid "Unix-domain socket path \"%s\" is too long (maximum %d bytes)\n"
+msgstr ""
+
+#: fe-connect.c:867
 #, c-format
 msgid "could not translate host name \"%s\" to address: %s\n"
 msgstr "comversione del nome host \"%s\" in indirizzo fallita: %s\n"
 
-#: fe-connect.c:862
+#: fe-connect.c:871
 #, c-format
 msgid "could not translate Unix-domain socket path \"%s\" to address: %s\n"
 msgstr ""
 "conversione del percorso del socket di dominio Unix \"%s\" in indirizzo "
 "fallita: %s\n"
 
-#: fe-connect.c:1069
+#: fe-connect.c:1078
 msgid "invalid connection state, probably indicative of memory corruption\n"
 msgstr ""
 "stato della connessione non valido, probabilmente indica una corruzione "
 "della memoria\n"
 
-#: fe-connect.c:1112
+#: fe-connect.c:1121
 #, c-format
 msgid "could not create socket: %s\n"
 msgstr "creazione del socket fallita: %s\n"
 
-#: fe-connect.c:1135
+#: fe-connect.c:1144
 #, c-format
 msgid "could not set socket to non-blocking mode: %s\n"
 msgstr "impostazione del socket in modalità non bloccante fallita: %s\n"
 
-#: fe-connect.c:1147
+#: fe-connect.c:1156
 #, c-format
 msgid "could not set socket to close-on-exec mode: %s\n"
 msgstr "impostazione del socket in modalità close-on-exec fallita: %s\n"
 
-#: fe-connect.c:1234
+#: fe-connect.c:1243
 #, c-format
 msgid "could not get socket error status: %s\n"
 msgstr "lettura dello stato di errore del socket fallita: %s\n"
 
-#: fe-connect.c:1272
+#: fe-connect.c:1281
 #, c-format
 msgid "could not get client address from socket: %s\n"
 msgstr "non è stato possibile ottenere l'indirizzo del client dal socket: %s\n"
 
-#: fe-connect.c:1316
+#: fe-connect.c:1325
 #, c-format
 msgid "could not send SSL negotiation packet: %s\n"
 msgstr "invio del pacchetto di negoziazione SSL fallito: %s\n"
 
-#: fe-connect.c:1355
+#: fe-connect.c:1364
 #, c-format
 msgid "could not send startup packet: %s\n"
 msgstr "invio del pacchetto di avvio fallito: %s\n"
 
-#: fe-connect.c:1425
+#: fe-connect.c:1434
 msgid "server does not support SSL, but SSL was required\n"
 msgstr "il server non supporta SSL, ma SSL è stato richiesto\n"
 
-#: fe-connect.c:1451
+#: fe-connect.c:1460
 #, c-format
 msgid "received invalid response to SSL negotiation: %c\n"
 msgstr "ricevuta risposta errata alla negoziazione SSL: %c\n"
 
-#: fe-connect.c:1530 fe-connect.c:1563
+#: fe-connect.c:1539 fe-connect.c:1572
 #, c-format
 msgid "expected authentication request from server, but received %c\n"
 msgstr ""
 "prevista richiesta di autenticazione dal server, ma è stato ricevuto %c\n"
 
-#: fe-connect.c:1742
+#: fe-connect.c:1751
 #, c-format
 msgid "out of memory allocating GSSAPI buffer (%i)"
 msgstr "memoria esaurita nell'allocazione del buffer GSSAPI (%i)"
 
-#: fe-connect.c:1827
+#: fe-connect.c:1836
 msgid "unexpected message from server during startup\n"
 msgstr "messaggio imprevisto dal server durante l'avvio\n"
 
-#: fe-connect.c:1895
+#: fe-connect.c:1904
 #, c-format
 msgid "invalid connection state %c, probably indicative of memory corruption\n"
 msgstr ""
 "stato della connessione %c non valido, probabilmente indica una corruzione "
 "della memoria\n"
 
-#: fe-connect.c:2238 fe-connect.c:2298
+#: fe-connect.c:2247 fe-connect.c:2307
 #, c-format
 msgid "PGEventProc \"%s\" failed during PGEVT_CONNRESET event\n"
 msgstr "PGEventProc \"%s\" fallito durante l'evento PGEVT_CONNRESET\n"
 
-#: fe-connect.c:2643
+#: fe-connect.c:2652
 #, c-format
 msgid "invalid LDAP URL \"%s\": scheme must be ldap://\n"
 msgstr "URL LDAP \"%s\" non corretta: lo schema deve essere ldap://\n"
 
-#: fe-connect.c:2658
+#: fe-connect.c:2667
 #, c-format
 msgid "invalid LDAP URL \"%s\": missing distinguished name\n"
 msgstr "URL LDAP \"%s\" non corretta: distinguished name non trovato\n"
 
-#: fe-connect.c:2669 fe-connect.c:2722
+#: fe-connect.c:2678 fe-connect.c:2731
 #, c-format
 msgid "invalid LDAP URL \"%s\": must have exactly one attribute\n"
 msgstr "URL LDAP \"%s\" non corretta: deve avere esattamente un attributo\n"
 
-#: fe-connect.c:2679 fe-connect.c:2736
+#: fe-connect.c:2688 fe-connect.c:2745
 #, c-format
 msgid "invalid LDAP URL \"%s\": must have search scope (base/one/sub)\n"
 msgstr ""
 "URL LDAP \"%s\" non corretta: deve essere specificato la portata della "
 "ricerca (base/one/sub)\n"
 
-#: fe-connect.c:2690
+#: fe-connect.c:2699
 #, c-format
 msgid "invalid LDAP URL \"%s\": no filter\n"
 msgstr "URL LDAP \"%s\" non corretta: filtro non specificato\n"
 
-#: fe-connect.c:2711
+#: fe-connect.c:2720
 #, c-format
 msgid "invalid LDAP URL \"%s\": invalid port number\n"
 msgstr "URL LDAP \"%s\" non corretta: numero di porta non valido\n"
 
-#: fe-connect.c:2745
+#: fe-connect.c:2754
 msgid "could not create LDAP structure\n"
 msgstr "creazione della struttura dati LDAP fallita\n"
 
-#: fe-connect.c:2787
+#: fe-connect.c:2796
 #, c-format
 msgid "lookup on LDAP server failed: %s\n"
 msgstr "ricerca del server LDAP fallita: %s\n"
 
-#: fe-connect.c:2798
+#: fe-connect.c:2807
 msgid "more than one entry found on LDAP lookup\n"
 msgstr "trovata più di una voce nella ricerca LDAP\n"
 
-#: fe-connect.c:2799 fe-connect.c:2811
+#: fe-connect.c:2808 fe-connect.c:2820
 msgid "no entry found on LDAP lookup\n"
 msgstr "nessun elemento trovato per la ricerca LDAP\n"
 
-#: fe-connect.c:2822 fe-connect.c:2835
+#: fe-connect.c:2831 fe-connect.c:2844
 msgid "attribute has no values on LDAP lookup\n"
 msgstr "l'attributo non ha valori nella ricerca LDAP\n"
 
-#: fe-connect.c:2887 fe-connect.c:2906 fe-connect.c:3267
+#: fe-connect.c:2896 fe-connect.c:2915 fe-connect.c:3276
 #, c-format
 msgid "missing \"=\" after \"%s\" in connection info string\n"
 msgstr "manca \"=\" dopo \"%s\" nella stringa di connessione\n"
 
-#: fe-connect.c:2970 fe-connect.c:3349
+#: fe-connect.c:2979 fe-connect.c:3358
 #, c-format
 msgid "invalid connection option \"%s\"\n"
 msgstr "opzione di connessione errata \"%s\"\n"
 
-#: fe-connect.c:2986 fe-connect.c:3316
+#: fe-connect.c:2995 fe-connect.c:3325
 msgid "unterminated quoted string in connection info string\n"
 msgstr "stringa tra virgolette non terminata nella stringa di connessione\n"
 
-#: fe-connect.c:3029
+#: fe-connect.c:3038
 #, c-format
 msgid "ERROR: service file \"%s\" not found\n"
 msgstr "ERRORE: file di servizio \"%s\" non trovato\n"
 
-#: fe-connect.c:3042
+#: fe-connect.c:3051
 #, c-format
 msgid "ERROR: line %d too long in service file \"%s\"\n"
 msgstr "ERROR: riga %d troppo lunga nel file di servizio \"%s\"\n"
 
-#: fe-connect.c:3114 fe-connect.c:3141
+#: fe-connect.c:3123 fe-connect.c:3150
 #, c-format
 msgid "ERROR: syntax error in service file \"%s\", line %d\n"
 msgstr "ERROR: errore di sintassi nel file di servizio \"%s\", riga %d\n"
 
-#: fe-connect.c:3597
+#: fe-connect.c:3606
 msgid "connection pointer is NULL\n"
 msgstr "il puntatore della connessione è NULL\n"
 
-#: fe-connect.c:3880
+#: fe-connect.c:3889
 #, c-format
 msgid "WARNING: password file \"%s\" is not a plain file\n"
 msgstr "ATTENZIONE: il file delle password \"%s\" non è un file regolare\n"
 
-#: fe-connect.c:3889
+#: fe-connect.c:3898
 #, c-format
 msgid ""
 "WARNING: password file \"%s\" has group or world access; permissions should "

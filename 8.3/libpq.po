@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-26 19:17+0000\n"
+"POT-Creation-Date: 2012-12-03 13:48+0000\n"
 "PO-Revision-Date: 2012-11-04 11:21+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -90,9 +90,9 @@ msgstr "errore di importazione del nome GSSAPI"
 msgid "SSPI continuation error"
 msgstr "SSPI errore di continuazione"
 
-#: fe-auth.c:581 fe-auth.c:654 fe-auth.c:680 fe-auth.c:779 fe-connect.c:1307
-#: fe-connect.c:2527 fe-connect.c:2745 fe-connect.c:3084 fe-connect.c:3093
-#: fe-connect.c:3230 fe-connect.c:3276 fe-connect.c:3294 fe-exec.c:2754
+#: fe-auth.c:581 fe-auth.c:654 fe-auth.c:680 fe-auth.c:779 fe-connect.c:1316
+#: fe-connect.c:2536 fe-connect.c:2754 fe-connect.c:3093 fe-connect.c:3102
+#: fe-connect.c:3239 fe-connect.c:3285 fe-connect.c:3303 fe-exec.c:2754
 #: fe-lobj.c:684 fe-protocol2.c:1027 fe-protocol3.c:1415
 msgid "out of memory\n"
 msgstr "memoria esaurita\n"
@@ -160,182 +160,187 @@ msgstr ""
 "\tVerifica che il server all'indirizzo \"%s\" sia in funzione\n"
 "\te che accetti connessioni TCP/IP sulla porta %s\n"
 
-#: fe-connect.c:833
+#: fe-connect.c:823
+#, c-format
+msgid "Unix-domain socket path \"%s\" is too long (maximum %d bytes)\n"
+msgstr ""
+
+#: fe-connect.c:842
 #, c-format
 msgid "could not translate host name \"%s\" to address: %s\n"
 msgstr "comversione del nome host \"%s\" in indirizzo fallita: %s\n"
 
-#: fe-connect.c:837
+#: fe-connect.c:846
 #, c-format
 msgid "could not translate Unix-domain socket path \"%s\" to address: %s\n"
 msgstr ""
 "conversione del percorso del socket di dominio Unix \"%s\" in indirizzo "
 "fallita: %s\n"
 
-#: fe-connect.c:1038
+#: fe-connect.c:1047
 msgid "invalid connection state, probably indicative of memory corruption\n"
 msgstr ""
 "stato della connessione non valido, probabilmente indica una corruzione "
 "della memoria\n"
 
-#: fe-connect.c:1081
+#: fe-connect.c:1090
 #, c-format
 msgid "could not create socket: %s\n"
 msgstr "creazione del socket fallita: %s\n"
 
-#: fe-connect.c:1104
+#: fe-connect.c:1113
 #, c-format
 msgid "could not set socket to non-blocking mode: %s\n"
 msgstr "impostazione del socket in modalità non bloccante fallita: %s\n"
 
-#: fe-connect.c:1116
+#: fe-connect.c:1125
 #, c-format
 msgid "could not set socket to close-on-exec mode: %s\n"
 msgstr "impostazione del socket in modalità close-on-exec fallita: %s\n"
 
-#: fe-connect.c:1203
+#: fe-connect.c:1212
 #, c-format
 msgid "could not get socket error status: %s\n"
 msgstr "lettura dello stato di errore del socket fallita: %s\n"
 
-#: fe-connect.c:1241
+#: fe-connect.c:1250
 #, c-format
 msgid "could not get client address from socket: %s\n"
 msgstr "non è stato possibile ottenere l'indirizzo del client dal socket: %s\n"
 
-#: fe-connect.c:1285
+#: fe-connect.c:1294
 #, c-format
 msgid "could not send SSL negotiation packet: %s\n"
 msgstr "invio del pacchetto di negoziazione SSL fallito: %s\n"
 
-#: fe-connect.c:1320
+#: fe-connect.c:1329
 #, c-format
 msgid "could not send startup packet: %s\n"
 msgstr "invio del pacchetto di avvio fallito: %s\n"
 
-#: fe-connect.c:1388
+#: fe-connect.c:1397
 msgid "server does not support SSL, but SSL was required\n"
 msgstr "il server non supporta SSL, ma SSL è stato richiesto\n"
 
-#: fe-connect.c:1414
+#: fe-connect.c:1423
 #, c-format
 msgid "received invalid response to SSL negotiation: %c\n"
 msgstr "ricevuta risposta errata alla negoziazione SSL: %c\n"
 
-#: fe-connect.c:1493 fe-connect.c:1526
+#: fe-connect.c:1502 fe-connect.c:1535
 #, c-format
 msgid "expected authentication request from server, but received %c\n"
 msgstr ""
 "prevista richiesta di autenticazione dal server, ma è stato ricevuto %c\n"
 
-#: fe-connect.c:1713
+#: fe-connect.c:1722
 #, c-format
 msgid "out of memory allocating GSSAPI buffer (%i)"
 msgstr "memoria esaurita nell'allocazione del buffer GSSAPI (%i)"
 
-#: fe-connect.c:1798
+#: fe-connect.c:1807
 msgid "unexpected message from server during startup\n"
 msgstr "messaggio imprevisto dal server durante l'avvio\n"
 
-#: fe-connect.c:1866
+#: fe-connect.c:1875
 #, c-format
 msgid "invalid connection state %c, probably indicative of memory corruption\n"
 msgstr ""
 "stato della connessione %c non valido, probabilmente indica una corruzione "
 "della memoria\n"
 
-#: fe-connect.c:2540
+#: fe-connect.c:2549
 #, c-format
 msgid "invalid LDAP URL \"%s\": scheme must be ldap://\n"
 msgstr "URL LDAP \"%s\" non corretta: lo schema deve essere ldap://\n"
 
-#: fe-connect.c:2555
+#: fe-connect.c:2564
 #, c-format
 msgid "invalid LDAP URL \"%s\": missing distinguished name\n"
 msgstr "URL LDAP \"%s\" non corretta: distinguished name non trovato\n"
 
-#: fe-connect.c:2566 fe-connect.c:2619
+#: fe-connect.c:2575 fe-connect.c:2628
 #, c-format
 msgid "invalid LDAP URL \"%s\": must have exactly one attribute\n"
 msgstr "URL LDAP \"%s\" non corretta: deve avere esattamente un attributo\n"
 
-#: fe-connect.c:2576 fe-connect.c:2633
+#: fe-connect.c:2585 fe-connect.c:2642
 #, c-format
 msgid "invalid LDAP URL \"%s\": must have search scope (base/one/sub)\n"
 msgstr ""
 "URL LDAP \"%s\" non corretta: deve essere specificato la portata della "
 "ricerca (base/one/sub)\n"
 
-#: fe-connect.c:2587
+#: fe-connect.c:2596
 #, c-format
 msgid "invalid LDAP URL \"%s\": no filter\n"
 msgstr "URL LDAP \"%s\" non corretta: filtro non specificato\n"
 
-#: fe-connect.c:2608
+#: fe-connect.c:2617
 #, c-format
 msgid "invalid LDAP URL \"%s\": invalid port number\n"
 msgstr "URL LDAP \"%s\" non corretta: numero di porta non valido\n"
 
-#: fe-connect.c:2642
+#: fe-connect.c:2651
 msgid "could not create LDAP structure\n"
 msgstr "creazione della struttura dati LDAP fallita\n"
 
-#: fe-connect.c:2684
+#: fe-connect.c:2693
 #, c-format
 msgid "lookup on LDAP server failed: %s\n"
 msgstr "ricerca del server LDAP fallita: %s\n"
 
-#: fe-connect.c:2695
+#: fe-connect.c:2704
 msgid "more than one entry found on LDAP lookup\n"
 msgstr "trovata più di una voce nella ricerca LDAP\n"
 
-#: fe-connect.c:2696 fe-connect.c:2708
+#: fe-connect.c:2705 fe-connect.c:2717
 msgid "no entry found on LDAP lookup\n"
 msgstr "nessun elemento trovato per la ricerca LDAP\n"
 
-#: fe-connect.c:2719 fe-connect.c:2732
+#: fe-connect.c:2728 fe-connect.c:2741
 msgid "attribute has no values on LDAP lookup\n"
 msgstr "l'attributo non ha valori nella ricerca LDAP\n"
 
-#: fe-connect.c:2784 fe-connect.c:2803 fe-connect.c:3132
+#: fe-connect.c:2793 fe-connect.c:2812 fe-connect.c:3141
 #, c-format
 msgid "missing \"=\" after \"%s\" in connection info string\n"
 msgstr "manca \"=\" dopo \"%s\" nella stringa di connessione\n"
 
-#: fe-connect.c:2867 fe-connect.c:3214
+#: fe-connect.c:2876 fe-connect.c:3223
 #, c-format
 msgid "invalid connection option \"%s\"\n"
 msgstr "opzione di connessione errata \"%s\"\n"
 
-#: fe-connect.c:2883 fe-connect.c:3181
+#: fe-connect.c:2892 fe-connect.c:3190
 msgid "unterminated quoted string in connection info string\n"
 msgstr "stringa tra virgolette non terminata nella stringa di connessione\n"
 
-#: fe-connect.c:2926
+#: fe-connect.c:2935
 #, c-format
 msgid "ERROR: service file \"%s\" not found\n"
 msgstr "ERRORE: file di servizio \"%s\" non trovato\n"
 
-#: fe-connect.c:2939
+#: fe-connect.c:2948
 #, c-format
 msgid "ERROR: line %d too long in service file \"%s\"\n"
 msgstr "ERROR: riga %d troppo lunga nel file di servizio \"%s\"\n"
 
-#: fe-connect.c:3011 fe-connect.c:3038
+#: fe-connect.c:3020 fe-connect.c:3047
 #, c-format
 msgid "ERROR: syntax error in service file \"%s\", line %d\n"
 msgstr "ERROR: errore di sintassi nel file di servizio \"%s\", riga %d\n"
 
-#: fe-connect.c:3462
+#: fe-connect.c:3471
 msgid "connection pointer is NULL\n"
 msgstr "il puntatore della connessione è NULL\n"
 
-#: fe-connect.c:3746
+#: fe-connect.c:3755
 #, c-format
 msgid "WARNING: password file \"%s\" is not a plain file\n"
 msgstr "ATTENZIONE: il file delle password \"%s\" non è un file regolare\n"
 
-#: fe-connect.c:3755
+#: fe-connect.c:3764
 #, c-format
 msgid ""
 "WARNING: password file \"%s\" has world or group read access; permission "

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2012-11-02 00:22+0000\n"
+"POT-Creation-Date: 2012-12-03 13:22+0000\n"
 "PO-Revision-Date: 2012-11-04 18:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -376,9 +376,9 @@ msgstr "file di log delle transazioni archiviato \"%s\""
 msgid "could not open archive status directory \"%s\": %m"
 msgstr "apertura della directory dello stato dell'archivio \"%s\" fallita: %m"
 
-#: postmaster/pgarch.c:715 access/transam/xlog.c:4573
-#: access/transam/xlog.c:5533 access/transam/xlog.c:5586
-#: access/transam/xlog.c:6369
+#: postmaster/pgarch.c:715 access/transam/xlog.c:4609
+#: access/transam/xlog.c:5569 access/transam/xlog.c:5622
+#: access/transam/xlog.c:6405
 #, c-format
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "non è stato possibile rinominare il file \"%s\" in \"%s\": %m"
@@ -637,7 +637,7 @@ msgstr ""
 
 #: postmaster/postmaster.c:2015 postmaster/postmaster.c:2046
 #: postmaster/postmaster.c:3248 postmaster/postmaster.c:3932
-#: postmaster/postmaster.c:4018 postmaster/postmaster.c:4632
+#: postmaster/postmaster.c:4018 postmaster/postmaster.c:4635
 #: utils/hash/dynahash.c:364 utils/hash/dynahash.c:436
 #: utils/hash/dynahash.c:953 utils/misc/guc.c:3298 utils/misc/guc.c:3311
 #: utils/misc/guc.c:3324 utils/misc/tzparser.c:455 utils/init/miscinit.c:150
@@ -650,8 +650,8 @@ msgstr ""
 #: libpq/auth.c:1022 libpq/auth.c:1382 libpq/auth.c:1450 libpq/auth.c:1852
 #: storage/file/fd.c:359 storage/file/fd.c:742 storage/file/fd.c:860
 #: storage/ipc/procarray.c:801 storage/ipc/procarray.c:1212
-#: storage/ipc/procarray.c:1219 storage/ipc/procarray.c:1454
-#: storage/ipc/procarray.c:1905 storage/buffer/localbuf.c:350
+#: storage/ipc/procarray.c:1219 storage/ipc/procarray.c:1459
+#: storage/ipc/procarray.c:1910 storage/buffer/localbuf.c:350
 #: storage/buffer/buf_init.c:154
 msgid "out of memory"
 msgstr "memoria esaurita"
@@ -680,11 +680,11 @@ msgstr "interruzione di tutte le transazioni attive"
 msgid "received immediate shutdown request"
 msgstr "richiesta di arresto immediate ricevuta"
 
-#: postmaster/postmaster.c:2385 postmaster/postmaster.c:2418
+#: postmaster/postmaster.c:2397 postmaster/postmaster.c:2418
 msgid "startup process"
 msgstr "avvio del processo"
 
-#: postmaster/postmaster.c:2388
+#: postmaster/postmaster.c:2400
 msgid "aborting startup due to startup process failure"
 msgstr "avvio interrotto a causa del fallimento del processo di avvio"
 
@@ -791,9 +791,9 @@ msgstr "connessione ricevuta: host=%s porta=%s"
 msgid "connection received: host=%s"
 msgstr "connessione ricevuta: host=%s"
 
-#: postmaster/postmaster.c:3707 access/transam/xlog.c:2392
-#: access/transam/xlog.c:2525 access/transam/xlog.c:4423
-#: access/transam/xlog.c:9094 access/transam/xlog.c:9335
+#: postmaster/postmaster.c:3707 access/transam/xlog.c:2393
+#: access/transam/xlog.c:2526 access/transam/xlog.c:4459
+#: access/transam/xlog.c:9128 access/transam/xlog.c:9369
 #: storage/file/copydir.c:172 storage/smgr/md.c:289
 #, c-format
 msgid "could not create file \"%s\": %m"
@@ -802,8 +802,8 @@ msgstr "creazione del file \"%s\" fallita: %m"
 #: postmaster/postmaster.c:3717 postmaster/postmaster.c:3727
 #: utils/misc/guc.c:7432 utils/misc/guc.c:7457 utils/init/miscinit.c:1089
 #: utils/init/miscinit.c:1098 utils/init/miscinit.c:1105
-#: access/transam/xlog.c:2424 access/transam/xlog.c:2557
-#: access/transam/xlog.c:4475 access/transam/xlog.c:4538
+#: access/transam/xlog.c:2425 access/transam/xlog.c:2558
+#: access/transam/xlog.c:4511 access/transam/xlog.c:4574
 #: storage/file/copydir.c:197
 #, c-format
 msgid "could not write to file \"%s\": %m"
@@ -818,78 +818,78 @@ msgstr "esecuzione del processo del server \"%s\" fallita: %m"
 msgid "database system is ready to accept read only connections"
 msgstr "il database è pronto ad accettare connessioni in sola lettura"
 
-#: postmaster/postmaster.c:4535
+#: postmaster/postmaster.c:4538
 #, c-format
 msgid "could not fork startup process: %m"
 msgstr "fork del processo di avvio fallito: %m"
 
-#: postmaster/postmaster.c:4539
+#: postmaster/postmaster.c:4542
 #, c-format
 msgid "could not fork background writer process: %m"
 msgstr "fork del processo di scrittura in background fallito: %m"
 
-#: postmaster/postmaster.c:4543
+#: postmaster/postmaster.c:4546
 #, c-format
 msgid "could not fork WAL writer process: %m"
 msgstr "fork del processo di scrittura dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:4547
+#: postmaster/postmaster.c:4550
 #, c-format
 msgid "could not fork WAL receiver process: %m"
 msgstr "fork del processo di ricezione dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:4551
+#: postmaster/postmaster.c:4554
 #, c-format
 msgid "could not fork process: %m"
 msgstr "fork del processo fallito: %m"
 
-#: postmaster/postmaster.c:4836
+#: postmaster/postmaster.c:4839
 #, c-format
 msgid "could not duplicate socket %d for use in backend: error code %d"
 msgstr ""
 "duplicazione del socket %d da usare nel backend fallita: codice errore %d"
 
-#: postmaster/postmaster.c:4868
+#: postmaster/postmaster.c:4871
 #, c-format
 msgid "could not create inherited socket: error code %d\n"
 msgstr "creazione del socket ereditato fallita: codice errore %d\n"
 
-#: postmaster/postmaster.c:4897 postmaster/postmaster.c:4904
+#: postmaster/postmaster.c:4900 postmaster/postmaster.c:4907
 #, c-format
 msgid "could not read from backend variables file \"%s\": %s\n"
 msgstr "lettura dal file delle variabili del backend \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:4913
+#: postmaster/postmaster.c:4916
 #, c-format
 msgid "could not remove file \"%s\": %s\n"
 msgstr "rimozione del file \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:4930
+#: postmaster/postmaster.c:4933
 #, c-format
 msgid "could not map view of backend variables: error code %d\n"
 msgstr ""
 "non è stato possibile mappare la vista delle variabili del backend: codice "
 "errore %d\n"
 
-#: postmaster/postmaster.c:4939
+#: postmaster/postmaster.c:4942
 #, c-format
 msgid "could not unmap view of backend variables: error code %d\n"
 msgstr ""
 "non è stato possibile rimuovere la mappa della vista delle variabili del "
 "backend: codice errore %d\n"
 
-#: postmaster/postmaster.c:4946
+#: postmaster/postmaster.c:4949
 #, c-format
 msgid "could not close handle to backend parameter variables: error code %d\n"
 msgstr ""
 "non è stato possibile chiudere l'handle dei parametri variabili del backend: "
 "codice errore %d\n"
 
-#: postmaster/postmaster.c:5091
+#: postmaster/postmaster.c:5094
 msgid "could not read exit code for process\n"
 msgstr "lettura del codice di uscita del processo fallita\n"
 
-#: postmaster/postmaster.c:5096
+#: postmaster/postmaster.c:5099
 msgid "could not post child completion status\n"
 msgstr "invio dello stato di completamento del figlio fallito\n"
 
@@ -903,18 +903,18 @@ msgstr "la configurazione di ricerca di testo \"%s\" non esiste"
 msgid "cached plan must not change result type"
 msgstr "il cached plan non deve cambiare il tipo del risultato"
 
-#: utils/cache/relcache.c:4285
+#: utils/cache/relcache.c:4304
 #, c-format
 msgid "could not create relation-cache initialization file \"%s\": %m"
 msgstr ""
 "creazione del file di inizializzazione della cache delle relazioni \"%s\" "
 "fallita: %m"
 
-#: utils/cache/relcache.c:4287
+#: utils/cache/relcache.c:4306
 msgid "Continuing anyway, but there's something wrong."
 msgstr "Proseguo in ogni caso, ma c'è qualcosa che non funziona."
 
-#: utils/cache/relcache.c:4501
+#: utils/cache/relcache.c:4520
 #, c-format
 msgid "could not remove cache file \"%s\": %m"
 msgstr "rimozione del file di cache \"%s\" fallita: %m"
@@ -2765,8 +2765,8 @@ msgstr ""
 "non è possibile impostare il parametro \"%s\" nell'ambito di operazioni a "
 "sicurezza ristretta"
 
-#: utils/misc/guc.c:5309 access/transam/xlog.c:5298 access/transam/xlog.c:5389
-#: access/transam/xlog.c:5400 commands/extension.c:527
+#: utils/misc/guc.c:5309 access/transam/xlog.c:5334 access/transam/xlog.c:5425
+#: access/transam/xlog.c:5436 commands/extension.c:527
 #: commands/extension.c:535
 #, c-format
 msgid "parameter \"%s\" requires a Boolean value"
@@ -2780,7 +2780,7 @@ msgstr "valore non valido per il parametro \"%s\": \"%s\""
 
 #: utils/misc/guc.c:5399 utils/misc/guc.c:5713 utils/misc/guc.c:8014
 #: utils/misc/guc.c:8048 utils/misc/guc.c:8082 utils/misc/guc.c:8116
-#: utils/misc/guc.c:8151 commands/tablecmds.c:691 commands/user.c:957
+#: utils/misc/guc.c:8151 commands/tablecmds.c:693 commands/user.c:957
 #: storage/lmgr/proc.c:1069 storage/lmgr/deadlock.c:951
 #: catalog/objectaddress.c:315 catalog/dependency.c:937
 #: catalog/dependency.c:938 catalog/dependency.c:944 catalog/dependency.c:945
@@ -2848,7 +2848,7 @@ msgid "invalid value for parameter \"%s\": %g"
 msgstr "valore non valido per il parametro \"%s\": %g"
 
 #: utils/misc/guc.c:8181 commands/variable.c:59 commands/tablespace.c:1163
-#: replication/syncrep.c:660 catalog/namespace.c:3559
+#: replication/syncrep.c:661 catalog/namespace.c:3559
 msgid "List syntax is invalid."
 msgstr "La sintassi della lista non è valida."
 
@@ -3130,9 +3130,9 @@ msgid "could not write lock file \"%s\": %m"
 msgstr "scrittura del file di lock \"%s\" fallita: %m"
 
 #: utils/init/miscinit.c:1039 utils/init/miscinit.c:1153
-#: utils/error/elog.c:1515 access/transam/xlog.c:2510
-#: access/transam/xlog.c:4192 access/transam/xlog.c:4286
-#: access/transam/xlog.c:4442 replication/basebackup.c:773
+#: utils/error/elog.c:1515 access/transam/xlog.c:2511
+#: access/transam/xlog.c:4228 access/transam/xlog.c:4322
+#: access/transam/xlog.c:4478 replication/basebackup.c:773
 #: storage/file/copydir.c:165 storage/file/copydir.c:255 storage/smgr/md.c:553
 #: storage/smgr/md.c:810
 #, c-format
@@ -3158,16 +3158,16 @@ msgstr "Il file \"%s\" non contiene dati validi."
 msgid "You might need to initdb."
 msgstr "Potrebbe essere necessario eseguire initdb."
 
-#: utils/init/miscinit.c:1171 access/transam/xlog.c:4714
-#: access/transam/xlog.c:4723 access/transam/xlog.c:4747
-#: access/transam/xlog.c:4754 access/transam/xlog.c:4761
-#: access/transam/xlog.c:4766 access/transam/xlog.c:4773
-#: access/transam/xlog.c:4780 access/transam/xlog.c:4787
-#: access/transam/xlog.c:4794 access/transam/xlog.c:4801
-#: access/transam/xlog.c:4808 access/transam/xlog.c:4817
-#: access/transam/xlog.c:4824 access/transam/xlog.c:4833
-#: access/transam/xlog.c:4840 access/transam/xlog.c:4849
-#: access/transam/xlog.c:4856
+#: utils/init/miscinit.c:1171 access/transam/xlog.c:4750
+#: access/transam/xlog.c:4759 access/transam/xlog.c:4783
+#: access/transam/xlog.c:4790 access/transam/xlog.c:4797
+#: access/transam/xlog.c:4802 access/transam/xlog.c:4809
+#: access/transam/xlog.c:4816 access/transam/xlog.c:4823
+#: access/transam/xlog.c:4830 access/transam/xlog.c:4837
+#: access/transam/xlog.c:4844 access/transam/xlog.c:4853
+#: access/transam/xlog.c:4860 access/transam/xlog.c:4869
+#: access/transam/xlog.c:4876 access/transam/xlog.c:4885
+#: access/transam/xlog.c:4892
 msgid "database files are incompatible with server"
 msgstr "i file del database sono incompatibili col server"
 
@@ -3557,7 +3557,7 @@ msgstr ""
 #: commands/extension.c:1707 commands/extension.c:1816
 #: commands/extension.c:2009 foreign/foreign.c:350 executor/functions.c:785
 #: executor/execQual.c:1706 executor/execQual.c:1731 executor/execQual.c:2092
-#: executor/execQual.c:5221 replication/walsender.c:1411
+#: executor/execQual.c:5221 replication/walsender.c:1412
 msgid "set-valued function called in context that cannot accept a set"
 msgstr ""
 "la funzione che restituisce insiemi è chiamata in un contesto che non può "
@@ -3688,7 +3688,7 @@ msgstr ""
 
 #: utils/mmgr/portalmem.c:989 commands/prepare.c:755 commands/extension.c:1711
 #: commands/extension.c:1820 commands/extension.c:2013 foreign/foreign.c:355
-#: replication/walsender.c:1415
+#: replication/walsender.c:1416
 msgid "materialize mode required, but it is not allowed in this context"
 msgstr "necessaria modalità materializzata, ma non ammessa in questo contesto"
 
@@ -3895,14 +3895,13 @@ msgstr "nessuno dei tipi in input è un array"
 
 #: utils/adt/array_userfuncs.c:103 utils/adt/array_userfuncs.c:113
 #: utils/adt/int.c:623 utils/adt/int.c:652 utils/adt/int.c:673
-#: utils/adt/int.c:693 utils/adt/int.c:715 utils/adt/int.c:744
-#: utils/adt/int.c:758 utils/adt/int.c:773 utils/adt/int.c:912
-#: utils/adt/int.c:933 utils/adt/int.c:960 utils/adt/int.c:1000
-#: utils/adt/int.c:1021 utils/adt/int.c:1048 utils/adt/int.c:1079
-#: utils/adt/int.c:1142 utils/adt/varlena.c:950 utils/adt/varlena.c:1968
-#: utils/adt/int8.c:1211 utils/adt/float.c:1101 utils/adt/float.c:1160
-#: utils/adt/float.c:2711 utils/adt/float.c:2727 utils/adt/varbit.c:1111
-#: utils/adt/varbit.c:1503 utils/adt/arrayfuncs.c:1276
+#: utils/adt/int.c:704 utils/adt/int.c:737 utils/adt/int.c:759
+#: utils/adt/int.c:907 utils/adt/int.c:928 utils/adt/int.c:955
+#: utils/adt/int.c:995 utils/adt/int.c:1016 utils/adt/int.c:1043
+#: utils/adt/int.c:1076 utils/adt/int.c:1159 utils/adt/varlena.c:950
+#: utils/adt/varlena.c:1968 utils/adt/int8.c:1247 utils/adt/float.c:1101
+#: utils/adt/float.c:1160 utils/adt/float.c:2711 utils/adt/float.c:2727
+#: utils/adt/varbit.c:1111 utils/adt/varbit.c:1503 utils/adt/arrayfuncs.c:1276
 #: utils/adt/numeric.c:2253 utils/adt/numeric.c:2262
 msgid "integer out of range"
 msgstr "intero fuori dall'intervallo"
@@ -3975,18 +3974,18 @@ msgstr "dati int2vector non validi"
 msgid "oidvector has too many elements"
 msgstr "ci sono troppi elementi nell'oidvector"
 
-#: utils/adt/int.c:349 utils/adt/int.c:789 utils/adt/int.c:818
-#: utils/adt/int.c:839 utils/adt/int.c:859 utils/adt/int.c:891
-#: utils/adt/int.c:1157 utils/adt/int8.c:1236 utils/adt/float.c:1119
+#: utils/adt/int.c:349 utils/adt/int.c:775 utils/adt/int.c:804
+#: utils/adt/int.c:825 utils/adt/int.c:845 utils/adt/int.c:879
+#: utils/adt/int.c:1174 utils/adt/int8.c:1272 utils/adt/float.c:1119
 #: utils/adt/float.c:1177 utils/adt/numeric.c:2354 utils/adt/numeric.c:2365
 msgid "smallint out of range"
 msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 
-#: utils/adt/int.c:730 utils/adt/int.c:875 utils/adt/int.c:974
-#: utils/adt/int.c:1063 utils/adt/int.c:1093 utils/adt/int.c:1117
-#: utils/adt/timestamp.c:2876 utils/adt/geo_ops.c:4130 utils/adt/int8.c:596
-#: utils/adt/int8.c:647 utils/adt/int8.c:828 utils/adt/int8.c:927
-#: utils/adt/int8.c:1016 utils/adt/int8.c:1115 utils/adt/float.c:764
+#: utils/adt/int.c:719 utils/adt/int.c:861 utils/adt/int.c:969
+#: utils/adt/int.c:1058 utils/adt/int.c:1097 utils/adt/int.c:1125
+#: utils/adt/timestamp.c:2876 utils/adt/geo_ops.c:4130 utils/adt/int8.c:597
+#: utils/adt/int8.c:657 utils/adt/int8.c:846 utils/adt/int8.c:954
+#: utils/adt/int8.c:1043 utils/adt/int8.c:1151 utils/adt/float.c:764
 #: utils/adt/float.c:828 utils/adt/float.c:2470 utils/adt/float.c:2533
 #: utils/adt/cash.c:507 utils/adt/cash.c:557 utils/adt/cash.c:608
 #: utils/adt/cash.c:657 utils/adt/cash.c:709 utils/adt/cash.c:759
@@ -3994,8 +3993,8 @@ msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 msgid "division by zero"
 msgstr "divisione per zero"
 
-#: utils/adt/int.c:1345 utils/adt/timestamp.c:4712 utils/adt/timestamp.c:4793
-#: utils/adt/int8.c:1373
+#: utils/adt/int.c:1362 utils/adt/timestamp.c:4712 utils/adt/timestamp.c:4793
+#: utils/adt/int8.c:1409
 msgid "step size cannot equal zero"
 msgstr "il valore del passo non può essere uguale a zero"
 
@@ -4175,7 +4174,7 @@ msgstr "non è stato possibile determinare quale ordinamento usare per ILIKE"
 #: utils/adt/formatting.c:1520 utils/adt/formatting.c:1570
 #: utils/adt/formatting.c:1641 utils/adt/formatting.c:1691
 #: utils/adt/formatting.c:1774 utils/adt/formatting.c:1836
-#: utils/adt/like.c:212 commands/indexcmds.c:931 commands/view.c:145
+#: utils/adt/like.c:212 commands/indexcmds.c:896 commands/view.c:145
 #: regex/regc_pg_locale.c:259 catalog/heap.c:560
 msgid "Use the COLLATE clause to set the collation explicitly."
 msgstr "Usa la clausola COLLATE per impostare esplicitamente l'ordinamento."
@@ -4400,18 +4399,18 @@ msgid "value \"%s\" is out of range for type bigint"
 msgstr "il valore \"%s\" è fuori dall'intervallo consentito per il tipo bigint"
 
 #: utils/adt/int8.c:500 utils/adt/int8.c:529 utils/adt/int8.c:550
-#: utils/adt/int8.c:580 utils/adt/int8.c:612 utils/adt/int8.c:630
-#: utils/adt/int8.c:679 utils/adt/int8.c:696 utils/adt/int8.c:765
-#: utils/adt/int8.c:786 utils/adt/int8.c:813 utils/adt/int8.c:844
-#: utils/adt/int8.c:865 utils/adt/int8.c:886 utils/adt/int8.c:913
-#: utils/adt/int8.c:953 utils/adt/int8.c:974 utils/adt/int8.c:1001
-#: utils/adt/int8.c:1032 utils/adt/int8.c:1053 utils/adt/int8.c:1074
-#: utils/adt/int8.c:1101 utils/adt/int8.c:1274 utils/adt/int8.c:1313
+#: utils/adt/int8.c:581 utils/adt/int8.c:615 utils/adt/int8.c:640
+#: utils/adt/int8.c:697 utils/adt/int8.c:714 utils/adt/int8.c:783
+#: utils/adt/int8.c:804 utils/adt/int8.c:831 utils/adt/int8.c:864
+#: utils/adt/int8.c:892 utils/adt/int8.c:913 utils/adt/int8.c:940
+#: utils/adt/int8.c:980 utils/adt/int8.c:1001 utils/adt/int8.c:1028
+#: utils/adt/int8.c:1061 utils/adt/int8.c:1089 utils/adt/int8.c:1110
+#: utils/adt/int8.c:1137 utils/adt/int8.c:1310 utils/adt/int8.c:1349
 #: utils/adt/varbit.c:1583 utils/adt/numeric.c:2306
 msgid "bigint out of range"
 msgstr "bigint fuori dall'intervallo consentito"
 
-#: utils/adt/int8.c:1330
+#: utils/adt/int8.c:1366
 msgid "OID out of range"
 msgstr "OID fuori dall'intervallo consentito"
 
@@ -4824,9 +4823,9 @@ msgid "%d is not a valid encoding code"
 msgstr "%d non è un codice di codifica valido"
 
 #: utils/adt/dbsize.c:65 utils/adt/dbsize.c:211 utils/adt/dbsize.c:276
-#: utils/adt/genfile.c:107 utils/adt/genfile.c:279 access/transam/xlog.c:2927
-#: access/transam/xlog.c:3092 access/transam/xlog.c:9079
-#: access/transam/xlog.c:9255 storage/file/copydir.c:86
+#: utils/adt/genfile.c:107 utils/adt/genfile.c:279 access/transam/xlog.c:2928
+#: access/transam/xlog.c:3093 access/transam/xlog.c:9113
+#: access/transam/xlog.c:9289 storage/file/copydir.c:86
 #: storage/file/copydir.c:125
 #, c-format
 msgid "could not stat file \"%s\": %m"
@@ -4968,13 +4967,13 @@ msgstr "il DOMAIN %s non consente valori nulli"
 msgid "value for domain %s violates check constraint \"%s\""
 msgstr "il valore per il DOMAIN %s viola il vincolo di controllo \"%s\""
 
-#: utils/adt/ruleutils.c:1580 utils/adt/acl.c:2772 commands/tablecmds.c:4510
-#: commands/tablecmds.c:4600 commands/tablecmds.c:4647
-#: commands/tablecmds.c:4743 commands/tablecmds.c:4787
-#: commands/tablecmds.c:4866 commands/tablecmds.c:4950
-#: commands/tablecmds.c:6581 commands/tablecmds.c:6790 commands/analyze.c:343
+#: utils/adt/ruleutils.c:1580 utils/adt/acl.c:2772 commands/tablecmds.c:4517
+#: commands/tablecmds.c:4609 commands/tablecmds.c:4656
+#: commands/tablecmds.c:4752 commands/tablecmds.c:4796
+#: commands/tablecmds.c:4875 commands/tablecmds.c:4959
+#: commands/tablecmds.c:6608 commands/tablecmds.c:6817 commands/analyze.c:343
 #: commands/sequence.c:1443 commands/copy.c:3787 commands/trigger.c:592
-#: catalog/aclchk.c:1428 catalog/objectaddress.c:545 parser/analyze.c:2042
+#: catalog/aclchk.c:1428 catalog/objectaddress.c:545 parser/analyze.c:2046
 #: parser/parse_target.c:895 parser/parse_relation.c:2050
 #: parser/parse_relation.c:2107 parser/parse_type.c:117
 #, c-format
@@ -5143,7 +5142,7 @@ msgstr "i flag dell'array non sono validi"
 msgid "wrong element type"
 msgstr "il tipo di elemento è errato"
 
-#: utils/adt/arrayfuncs.c:1411 utils/adt/rowtypes.c:557 libpq/pqformat.c:556
+#: utils/adt/arrayfuncs.c:1411 utils/adt/rowtypes.c:572 libpq/pqformat.c:556
 #: libpq/pqformat.c:574 libpq/pqformat.c:595
 msgid "insufficient data left in message"
 msgstr "i dati rimasti nel messaggio non sono sufficienti"
@@ -5193,12 +5192,12 @@ msgid "cannot compare arrays of different element types"
 msgstr "non è possibile confrontare array con elementi di tipo diverso"
 
 #: utils/adt/arrayfuncs.c:3176 utils/adt/arrayfuncs.c:3695
-#: utils/adt/rowtypes.c:1157 parser/parse_oper.c:225
+#: utils/adt/rowtypes.c:1185 parser/parse_oper.c:225
 #, c-format
 msgid "could not identify an equality operator for type %s"
 msgstr "operatore di uguaglianza per il tipo %s non trovato"
 
-#: utils/adt/arrayfuncs.c:3378 utils/adt/rowtypes.c:922
+#: utils/adt/arrayfuncs.c:3378 utils/adt/rowtypes.c:950
 #: executor/execQual.c:4892
 #, c-format
 msgid "could not identify a comparison function for type %s"
@@ -5379,8 +5378,8 @@ msgstr "la colonna di configurazione \"%s\" non può essere nulla"
 msgid "text search configuration name \"%s\" must be schema-qualified"
 msgstr "la configurazione di ricerca di testo \"%s\" deve avere uno schema"
 
-#: utils/adt/tsvector_op.c:1417 commands/tablecmds.c:1299
-#: commands/tablecmds.c:2067 commands/copy.c:3792 commands/indexcmds.c:846
+#: utils/adt/tsvector_op.c:1417 commands/tablecmds.c:1301
+#: commands/tablecmds.c:2069 commands/copy.c:3792 commands/indexcmds.c:811
 #: parser/parse_expr.c:764
 #, c-format
 msgid "column \"%s\" does not exist"
@@ -5434,10 +5433,10 @@ msgstr "apertura del file \"%s\" in lettura fallita: %m"
 msgid "could not seek in file \"%s\": %m"
 msgstr "spostamento nel file \"%s\" fallito: %m"
 
-#: utils/adt/genfile.c:138 access/transam/xlog.c:2538
-#: access/transam/xlog.c:4454 access/transam/xlog.c:9267
-#: access/transam/xlog.c:9280 access/transam/xlog.c:9814
-#: access/transam/xlog.c:9849 storage/file/copydir.c:186
+#: utils/adt/genfile.c:138 access/transam/xlog.c:2539
+#: access/transam/xlog.c:4490 access/transam/xlog.c:9301
+#: access/transam/xlog.c:9314 access/transam/xlog.c:9848
+#: access/transam/xlog.c:9883 storage/file/copydir.c:186
 #, c-format
 msgid "could not read file \"%s\": %m"
 msgstr "lettura de file \"%s\" fallita: %m"
@@ -5476,59 +5475,59 @@ msgstr ""
 msgid "invalid input syntax for uuid: \"%s\""
 msgstr "sintassi di input non valida per il tipo uuid: \"%s\""
 
-#: utils/adt/rowtypes.c:98 utils/adt/rowtypes.c:473
+#: utils/adt/rowtypes.c:99 utils/adt/rowtypes.c:488
 msgid "input of anonymous composite types is not implemented"
 msgstr "l'input di un tipo composito anonimo non è implementato"
 
-#: utils/adt/rowtypes.c:151 utils/adt/rowtypes.c:179 utils/adt/rowtypes.c:202
-#: utils/adt/rowtypes.c:210 utils/adt/rowtypes.c:262 utils/adt/rowtypes.c:270
+#: utils/adt/rowtypes.c:152 utils/adt/rowtypes.c:180 utils/adt/rowtypes.c:203
+#: utils/adt/rowtypes.c:211 utils/adt/rowtypes.c:263 utils/adt/rowtypes.c:271
 #, c-format
 msgid "malformed record literal: \"%s\""
 msgstr "letterale record non corretto: \"%s\""
 
-#: utils/adt/rowtypes.c:152
+#: utils/adt/rowtypes.c:153
 msgid "Missing left parenthesis."
 msgstr "Manca la parentesi tonda aperta."
 
-#: utils/adt/rowtypes.c:180
+#: utils/adt/rowtypes.c:181
 msgid "Too few columns."
 msgstr "Il numero di colonne è insufficiente."
 
-#: utils/adt/rowtypes.c:204 utils/adt/rowtypes.c:212
+#: utils/adt/rowtypes.c:205 utils/adt/rowtypes.c:213
 msgid "Unexpected end of input."
 msgstr "L'input è terminato in modo inatteso."
 
-#: utils/adt/rowtypes.c:263
+#: utils/adt/rowtypes.c:264
 msgid "Too many columns."
 msgstr "Troppe colonne."
 
-#: utils/adt/rowtypes.c:271
+#: utils/adt/rowtypes.c:272
 msgid "Junk after right parenthesis."
 msgstr "Sono presenti caratteri spuri dopo la parentesi chiusa."
 
-#: utils/adt/rowtypes.c:522
+#: utils/adt/rowtypes.c:537
 #, c-format
 msgid "wrong number of columns: %d, expected %d"
 msgstr "il numero di colonne non è corretto, %d invece di %d"
 
-#: utils/adt/rowtypes.c:549
+#: utils/adt/rowtypes.c:564
 #, c-format
 msgid "wrong data type: %u, expected %u"
 msgstr "il tipo di dati non è corretto, %u invece di %u"
 
-#: utils/adt/rowtypes.c:610
+#: utils/adt/rowtypes.c:625
 #, c-format
 msgid "improper binary format in record column %d"
 msgstr "il formato binario nella colonna %d del record non è corretto"
 
-#: utils/adt/rowtypes.c:897 utils/adt/rowtypes.c:1132
+#: utils/adt/rowtypes.c:925 utils/adt/rowtypes.c:1160
 #, c-format
 msgid "cannot compare dissimilar column types %s and %s at record column %d"
 msgstr ""
 "non è possibile confrontare i tipi di colonne dissimili %s e %s alla colonna "
 "%d del record"
 
-#: utils/adt/rowtypes.c:983 utils/adt/rowtypes.c:1203
+#: utils/adt/rowtypes.c:1011 utils/adt/rowtypes.c:1231
 msgid "cannot compare record types with different numbers of columns"
 msgstr ""
 "non è possibile confrontare tipi di record con diverso numero di colonne"
@@ -5733,8 +5732,8 @@ msgstr "tipo di privilegio sconosciuto: \"%s\""
 
 #: utils/adt/acl.c:2008 utils/adt/acl.c:2038 utils/adt/acl.c:2070
 #: utils/adt/acl.c:2102 utils/adt/acl.c:2130 utils/adt/acl.c:2160
-#: commands/tablecmds.c:209 commands/tablecmds.c:2166
-#: commands/tablecmds.c:2413 commands/tablecmds.c:8975
+#: commands/tablecmds.c:209 commands/tablecmds.c:2168
+#: commands/tablecmds.c:2415 commands/tablecmds.c:9007
 #: commands/sequence.c:1032 catalog/aclchk.c:1693 catalog/objectaddress.c:398
 #, c-format
 msgid "\"%s\" is not a sequence"
@@ -6470,7 +6469,7 @@ msgstr ""
 "L'utente potrebbe aver avuto bisogno di vedere versioni di righe che devono "
 "essere rimosse."
 
-#: tcop/postgres.c:2251 storage/ipc/standby.c:491
+#: tcop/postgres.c:2251 storage/ipc/standby.c:498
 msgid "User transaction caused buffer deadlock with recovery."
 msgstr ""
 "La transazione utente ha causato un deadlock del buffer con il ripristino."
@@ -6541,7 +6540,7 @@ msgstr "annullamento dell'istruzione a causa di timeout"
 msgid "canceling autovacuum task"
 msgstr "annullamento del task di autovacuum"
 
-#: tcop/postgres.c:2948 storage/ipc/standby.c:490
+#: tcop/postgres.c:2948 storage/ipc/standby.c:497
 msgid "canceling statement due to conflict with recovery"
 msgstr "annullamento dell'istruzione a causa di un conflitto con il ripristino"
 
@@ -6614,9 +6613,9 @@ msgstr ""
 "disconnesione: tempo della sessione: %d:%02d:%02d.%03d utente=%s database=%s "
 "host=%s%s%s"
 
-#: tcop/utility.c:95 commands/tablecmds.c:815 commands/tablecmds.c:1148
-#: commands/tablecmds.c:1989 commands/tablecmds.c:3726
-#: commands/tablecmds.c:5451 commands/trigger.c:192 commands/trigger.c:1105
+#: tcop/utility.c:95 commands/tablecmds.c:817 commands/tablecmds.c:1150
+#: commands/tablecmds.c:1991 commands/tablecmds.c:3733
+#: commands/tablecmds.c:5476 commands/trigger.c:192 commands/trigger.c:1105
 #: rewrite/rewriteDefine.c:263
 #, c-format
 msgid "permission denied: \"%s\" is a system catalog"
@@ -6811,8 +6810,8 @@ msgid "\"%s\" is an index"
 msgstr "\"%s\" è un indice"
 
 #: access/heap/heapam.c:1094 access/heap/heapam.c:1122
-#: access/heap/heapam.c:1152 commands/tablecmds.c:2188
-#: commands/tablecmds.c:7370 commands/tablecmds.c:9025 catalog/aclchk.c:1685
+#: access/heap/heapam.c:1152 commands/tablecmds.c:2190
+#: commands/tablecmds.c:7402 commands/tablecmds.c:9057 catalog/aclchk.c:1685
 #, c-format
 msgid "\"%s\" is a composite type"
 msgstr "\"%s\" è un tipo composito"
@@ -7147,60 +7146,60 @@ msgstr "troncamento della directory \"%s\" fallito: probabile wraparound"
 msgid "removing file \"%s\""
 msgstr "cancellazione del file \"%s\""
 
-#: access/transam/xlog.c:1335
+#: access/transam/xlog.c:1336
 #, c-format
 msgid "could not create archive status file \"%s\": %m"
 msgstr "creazione del file di stato dell'archivio \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:1343
+#: access/transam/xlog.c:1344
 #, c-format
 msgid "could not write archive status file \"%s\": %m"
 msgstr "scrittura del file di stato dell'archivio \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:1798 access/transam/xlog.c:10447
+#: access/transam/xlog.c:1799 access/transam/xlog.c:10481
 #: replication/walreceiver.c:515 replication/walsender.c:1004
 #, c-format
 msgid "could not seek in log file %u, segment %u to offset %u: %m"
 msgstr "spostamento nel file di log %u fallito, segmento %u all'offset %u: %m"
 
-#: access/transam/xlog.c:1815 replication/walreceiver.c:532
+#: access/transam/xlog.c:1816 replication/walreceiver.c:532
 #, c-format
 msgid "could not write to log file %u, segment %u at offset %u, length %lu: %m"
 msgstr ""
 "scrittura nel file di log %u fallita, segmento %u all'offset %u, lunghezza "
 "%lu: %m"
 
-#: access/transam/xlog.c:2017
+#: access/transam/xlog.c:2018
 #, c-format
 msgid "updated min recovery point to %X/%X"
 msgstr "min recovery point aggiornato a %X/%X"
 
-#: access/transam/xlog.c:2367 access/transam/xlog.c:2471
-#: access/transam/xlog.c:2700 access/transam/xlog.c:2771
-#: access/transam/xlog.c:2828 replication/walsender.c:992
+#: access/transam/xlog.c:2368 access/transam/xlog.c:2472
+#: access/transam/xlog.c:2701 access/transam/xlog.c:2772
+#: access/transam/xlog.c:2829 replication/walsender.c:992
 #, c-format
 msgid "could not open file \"%s\" (log file %u, segment %u): %m"
 msgstr "apertura del file \"%s\" fallita (file di log %u, segmento %u): %m"
 
-#: access/transam/xlog.c:2432 access/transam/xlog.c:2564
-#: access/transam/xlog.c:4544 storage/file/copydir.c:269 storage/smgr/md.c:932
+#: access/transam/xlog.c:2433 access/transam/xlog.c:2565
+#: access/transam/xlog.c:4580 storage/file/copydir.c:269 storage/smgr/md.c:932
 #: storage/smgr/md.c:1137 storage/smgr/md.c:1291
 #, c-format
 msgid "could not fsync file \"%s\": %m"
 msgstr "fsync del file \"%s\" fallito: %m"
 
-#: access/transam/xlog.c:2437 access/transam/xlog.c:2569
-#: access/transam/xlog.c:4549 commands/copy.c:1329 storage/file/copydir.c:211
+#: access/transam/xlog.c:2438 access/transam/xlog.c:2570
+#: access/transam/xlog.c:4585 commands/copy.c:1329 storage/file/copydir.c:211
 #, c-format
 msgid "could not close file \"%s\": %m"
 msgstr "chiusura del file \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:2541
+#: access/transam/xlog.c:2542
 #, c-format
 msgid "not enough data in file \"%s\""
 msgstr "il file \"%s\" non contiene abbastanza dati"
 
-#: access/transam/xlog.c:2660
+#: access/transam/xlog.c:2661
 #, c-format
 msgid ""
 "could not link file \"%s\" to \"%s\" (initialization of log file %u, segment "
@@ -7209,7 +7208,7 @@ msgstr ""
 "creazione del link del file \"%s\" a \"%s\" fallita (inizializzazione del "
 "file di log %u, segmento %u): %m"
 
-#: access/transam/xlog.c:2672
+#: access/transam/xlog.c:2673
 #, c-format
 msgid ""
 "could not rename file \"%s\" to \"%s\" (initialization of log file %u, "
@@ -7218,177 +7217,177 @@ msgstr ""
 "non è stato possibile rinominare il file da \"%s\" a \"%s"
 "\" (inizializzazione del file di log %u, segmento %u): %m"
 
-#: access/transam/xlog.c:2855 replication/walreceiver.c:489
+#: access/transam/xlog.c:2856 replication/walreceiver.c:489
 #, c-format
 msgid "could not close log file %u, segment %u: %m"
 msgstr "chiusura del file di log %u fallita, segmento %u: %m"
 
-#: access/transam/xlog.c:2935 access/transam/xlog.c:9285 storage/smgr/md.c:371
+#: access/transam/xlog.c:2936 access/transam/xlog.c:9319 storage/smgr/md.c:371
 #: storage/smgr/md.c:420 storage/smgr/md.c:1251
 #, c-format
 msgid "could not remove file \"%s\": %m"
 msgstr "rimozione del file \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:3071
+#: access/transam/xlog.c:3072
 #, c-format
 msgid "archive file \"%s\" has wrong size: %lu instead of %lu"
 msgstr "il file archivio \"%s\" è di dimensione errata: %lu invece di %lu"
 
-#: access/transam/xlog.c:3080
+#: access/transam/xlog.c:3081
 #, c-format
 msgid "restored log file \"%s\" from archive"
 msgstr "file di log \"%s\" ripristinato dall'archivio"
 
-#: access/transam/xlog.c:3130
+#: access/transam/xlog.c:3131
 #, c-format
 msgid "could not restore file \"%s\" from archive: return code %d"
 msgstr "ripristino del file \"%s\" dall'archivio fallito: codice di uscita %d"
 
 #. translator: First %s represents a recovery.conf parameter name like
 #. "recovery_end_command", and the 2nd is the value of that parameter.
-#: access/transam/xlog.c:3244
+#: access/transam/xlog.c:3245
 #, c-format
 msgid "%s \"%s\": return code %d"
 msgstr "%s \"%s\": codice di uscita %d"
 
 # da non tradursi
 # DV: perché? (trovato tradotto, tra l'altro)
-#: access/transam/xlog.c:3354 access/transam/xlog.c:3537
+#: access/transam/xlog.c:3355 access/transam/xlog.c:3538
 #, c-format
 msgid "could not open transaction log directory \"%s\": %m"
 msgstr "apertura della directory dei log delle transazioni \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:3408
+#: access/transam/xlog.c:3409
 #, c-format
 msgid "recycled transaction log file \"%s\""
 msgstr "il file di log delle transazioni \"%s\" è stato riciclato"
 
-#: access/transam/xlog.c:3424
+#: access/transam/xlog.c:3425
 #, c-format
 msgid "removing transaction log file \"%s\""
 msgstr "eliminazione delfile di log delle transazioni \"%s\""
 
-#: access/transam/xlog.c:3447
+#: access/transam/xlog.c:3448
 #, c-format
 msgid "could not rename old transaction log file \"%s\": %m"
 msgstr ""
 "non è stato possibile rinominare il vecchio file di log delle transazioni "
 "\"%s\": %m"
 
-#: access/transam/xlog.c:3459
+#: access/transam/xlog.c:3460
 #, c-format
 msgid "could not remove old transaction log file \"%s\": %m"
 msgstr "chiusura del vecchio file di log delle transazioni \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:3497 access/transam/xlog.c:3507
+#: access/transam/xlog.c:3498 access/transam/xlog.c:3508
 #, c-format
 msgid "required WAL directory \"%s\" does not exist"
 msgstr "la directory dei file WAL \"%s\" necessaria non esiste"
 
-#: access/transam/xlog.c:3513
+#: access/transam/xlog.c:3514
 #, c-format
 msgid "creating missing WAL directory \"%s\""
 msgstr "creazione della directory dei file WAL mancante \"%s\""
 
-#: access/transam/xlog.c:3516
+#: access/transam/xlog.c:3517
 #, c-format
 msgid "could not create missing directory \"%s\": %m"
 msgstr "creazione della directory mancante \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:3550
+#: access/transam/xlog.c:3551
 #, c-format
 msgid "removing transaction log backup history file \"%s\""
 msgstr "rimozione del file storico di backup del log delle transazioni \"%s\""
 
-#: access/transam/xlog.c:3670
+#: access/transam/xlog.c:3693
 #, c-format
 msgid "incorrect hole size in record at %X/%X"
 msgstr "lo hole size nel record in %X/%X non è corretto"
 
-#: access/transam/xlog.c:3683
+#: access/transam/xlog.c:3706
 #, c-format
 msgid "incorrect total length in record at %X/%X"
 msgstr "la lunghezza totale del record in %X/%X non è corretta"
 
-#: access/transam/xlog.c:3696
+#: access/transam/xlog.c:3719
 #, c-format
 msgid "incorrect resource manager data checksum in record at %X/%X"
 msgstr ""
 "il checksum dei dati del resource manager del record in %X/%X non è corretto"
 
-#: access/transam/xlog.c:3774 access/transam/xlog.c:3812
+#: access/transam/xlog.c:3797 access/transam/xlog.c:3835
 #, c-format
 msgid "invalid record offset at %X/%X"
 msgstr "l'offset del record in %X/%X non è valido"
 
-#: access/transam/xlog.c:3820
+#: access/transam/xlog.c:3843
 #, c-format
 msgid "contrecord is requested by %X/%X"
 msgstr "richiesto contrecord da %X/%X"
 
-#: access/transam/xlog.c:3835
+#: access/transam/xlog.c:3858
 #, c-format
 msgid "invalid xlog switch record at %X/%X"
 msgstr "il record di xlog switch in %X/%X non è valido"
 
-#: access/transam/xlog.c:3843
+#: access/transam/xlog.c:3866
 #, c-format
 msgid "record with zero length at %X/%X"
 msgstr "il record in %X/%X ha lunghezza nulla"
 
-#: access/transam/xlog.c:3852
+#: access/transam/xlog.c:3875
 #, c-format
 msgid "invalid record length at %X/%X"
 msgstr "la lunghezza del record in %X/%X non è valida"
 
-#: access/transam/xlog.c:3859
+#: access/transam/xlog.c:3882
 #, c-format
 msgid "invalid resource manager ID %u at %X/%X"
 msgstr "l'ID %u del resource manager in %X/%X non è valido"
 
-#: access/transam/xlog.c:3872 access/transam/xlog.c:3888
+#: access/transam/xlog.c:3895 access/transam/xlog.c:3911
 #, c-format
 msgid "record with incorrect prev-link %X/%X at %X/%X"
 msgstr "il puntatore all'indietro %X/%X del record in %X/%X non è corretto"
 
-#: access/transam/xlog.c:3917
+#: access/transam/xlog.c:3940
 #, c-format
 msgid "record length %u at %X/%X too long"
 msgstr "la lunghezza %u del record in %X/%X è eccessiva"
 
-#: access/transam/xlog.c:3957
+#: access/transam/xlog.c:3980
 #, c-format
 msgid "there is no contrecord flag in log file %u, segment %u, offset %u"
 msgstr ""
 "non esiste alcun flag di contrecord nel file di log %u, segmento %u, offset "
 "%u"
 
-#: access/transam/xlog.c:3967
+#: access/transam/xlog.c:3990
 #, c-format
 msgid "invalid contrecord length %u in log file %u, segment %u, offset %u"
 msgstr ""
 "la lunghezza %u del contrecord nel file di log %u, segmento %u, offset %u "
 "non è valida"
 
-#: access/transam/xlog.c:4057
+#: access/transam/xlog.c:4080
 #, c-format
 msgid "invalid magic number %04X in log file %u, segment %u, offset %u"
 msgstr ""
 "il magic number %04X nel file di log %u, segmento %u, offset %u non è valido"
 
-#: access/transam/xlog.c:4064 access/transam/xlog.c:4110
+#: access/transam/xlog.c:4087 access/transam/xlog.c:4133
 #, c-format
 msgid "invalid info bits %04X in log file %u, segment %u, offset %u"
 msgstr ""
 "i bit informativi %04X nel file registro %u, segmento %u, offset %u non sono "
 "validi"
 
-#: access/transam/xlog.c:4086 access/transam/xlog.c:4094
-#: access/transam/xlog.c:4101
+#: access/transam/xlog.c:4109 access/transam/xlog.c:4117
+#: access/transam/xlog.c:4124
 msgid "WAL file is from different database system"
 msgstr "il file WAL proviene da un sistema diverso"
 
-#: access/transam/xlog.c:4087
+#: access/transam/xlog.c:4110
 #, c-format
 msgid ""
 "WAL file database system identifier is %s, pg_control database system "
@@ -7397,28 +7396,28 @@ msgstr ""
 "l'identificativo di sistema del database del file WAL è %s, l'identificativo "
 "di sistema del database di pg_control è %s."
 
-#: access/transam/xlog.c:4095
+#: access/transam/xlog.c:4118
 msgid "Incorrect XLOG_SEG_SIZE in page header."
 msgstr "XLOG_SEG_SIZE non corretto nell'intestazione pagina."
 
-#: access/transam/xlog.c:4102
+#: access/transam/xlog.c:4125
 msgid "Incorrect XLOG_BLCKSZ in page header."
 msgstr "XLOG_BLCKSZ non corretto nell'intestazione pagina."
 
-#: access/transam/xlog.c:4118
+#: access/transam/xlog.c:4141
 #, c-format
 msgid "unexpected pageaddr %X/%X in log file %u, segment %u, offset %u"
 msgstr ""
 "il pageaddr %X/%X nel file di log %u, segmento %u, offset %u non era previsto"
 
-#: access/transam/xlog.c:4130
+#: access/transam/xlog.c:4153
 #, c-format
 msgid "unexpected timeline ID %u in log file %u, segment %u, offset %u"
 msgstr ""
 "l'ID della timeline %u nel file di log %u, segmento %u, offset %u non era "
 "previsto"
 
-#: access/transam/xlog.c:4148
+#: access/transam/xlog.c:4180
 #, c-format
 msgid ""
 "out-of-sequence timeline ID %u (after %u) in log file %u, segment %u, offset "
@@ -7427,81 +7426,81 @@ msgstr ""
 "l'ID della timeline %u (dopo %u) nel file di log %u, segmento %u, offset %u "
 "è fuori sequenza"
 
-#: access/transam/xlog.c:4221
+#: access/transam/xlog.c:4257
 #, c-format
 msgid "syntax error in history file: %s"
 msgstr "errore di sintassi nel file dello storico: %s"
 
-#: access/transam/xlog.c:4222
+#: access/transam/xlog.c:4258
 msgid "Expected a numeric timeline ID."
 msgstr "L'ID della timeline deve essere numerico."
 
-#: access/transam/xlog.c:4227
+#: access/transam/xlog.c:4263
 #, c-format
 msgid "invalid data in history file: %s"
 msgstr "dati non validi nel file dello storico: %s"
 
-#: access/transam/xlog.c:4228
+#: access/transam/xlog.c:4264
 msgid "Timeline IDs must be in increasing sequence."
 msgstr "Gli ID della timeline devono essere in ordine crescente"
 
-#: access/transam/xlog.c:4241
+#: access/transam/xlog.c:4277
 #, c-format
 msgid "invalid data in history file \"%s\""
 msgstr "dati non validi nel file dello storico \"%s\""
 
-#: access/transam/xlog.c:4242
+#: access/transam/xlog.c:4278
 msgid "Timeline IDs must be less than child timeline's ID."
 msgstr ""
 "Gli ID della timeline devono avere valori inferiori degli ID della timeline "
 "figlia"
 
-#: access/transam/xlog.c:4328
+#: access/transam/xlog.c:4364
 #, c-format
 msgid "new timeline %u is not a child of database system timeline %u"
 msgstr "la nuova timeline %u non è figlia della timeline %u del database"
 
-#: access/transam/xlog.c:4341
+#: access/transam/xlog.c:4377
 #, c-format
 msgid "new target timeline is %u"
 msgstr "la nuova timeline di destinazione %u"
 
-#: access/transam/xlog.c:4566
+#: access/transam/xlog.c:4602
 #, c-format
 msgid "could not link file \"%s\" to \"%s\": %m"
 msgstr "creazione del collegamento il file \"%s\" a \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:4655
+#: access/transam/xlog.c:4691
 #, c-format
 msgid "could not create control file \"%s\": %m"
 msgstr "creazione del file di controllo \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:4666 access/transam/xlog.c:4891
+#: access/transam/xlog.c:4702 access/transam/xlog.c:4927
 #, c-format
 msgid "could not write to control file: %m"
 msgstr "scrittura nel file di controllo fallita: %m"
 
-#: access/transam/xlog.c:4672 access/transam/xlog.c:4897
+#: access/transam/xlog.c:4708 access/transam/xlog.c:4933
 #, c-format
 msgid "could not fsync control file: %m"
 msgstr "fsync del file di controllo fallito: %m"
 
-#: access/transam/xlog.c:4677 access/transam/xlog.c:4902
+#: access/transam/xlog.c:4713 access/transam/xlog.c:4938
 #, c-format
 msgid "could not close control file: %m"
 msgstr "chiusura del file di controllo fallita: %m"
 
-#: access/transam/xlog.c:4695 access/transam/xlog.c:4880
+#: access/transam/xlog.c:4731 access/transam/xlog.c:4916
 #, c-format
 msgid "could not open control file \"%s\": %m"
 msgstr "apertura del file di controllo \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:4701
+#: access/transam/xlog.c:4737
 #, c-format
 msgid "could not read from control file: %m"
 msgstr "lettura dal file di controllo fallita: %m"
 
-#: access/transam/xlog.c:4715
+#: access/transam/xlog.c:4751
 #, c-format
 msgid ""
 "The database cluster was initialized with PG_CONTROL_VERSION %d (0x%08x), "
@@ -7510,7 +7509,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con PG_CONTROL_VERSION %d (0x"
 "%08x), ma il server è stato compilato con PG_CONTROL_VERSION %d (0x%08x)."
 
-#: access/transam/xlog.c:4719
+#: access/transam/xlog.c:4755
 msgid ""
 "This could be a problem of mismatched byte ordering.  It looks like you need "
 "to initdb."
@@ -7518,7 +7517,7 @@ msgstr ""
 "Questo potrebbe essere un problema di ordinamento di byte che non combacia. "
 "Sembra sia necessario eseguire initdb."
 
-#: access/transam/xlog.c:4724
+#: access/transam/xlog.c:4760
 #, c-format
 msgid ""
 "The database cluster was initialized with PG_CONTROL_VERSION %d, but the "
@@ -7527,16 +7526,16 @@ msgstr ""
 "Il cluster di database è stato inizializzato con PG_CONTROL_VERSION %d, ma "
 "il server è stato compilato con PG_CONTROL_VERSION %d."
 
-#: access/transam/xlog.c:4727 access/transam/xlog.c:4751
-#: access/transam/xlog.c:4758 access/transam/xlog.c:4763
+#: access/transam/xlog.c:4763 access/transam/xlog.c:4787
+#: access/transam/xlog.c:4794 access/transam/xlog.c:4799
 msgid "It looks like you need to initdb."
 msgstr "Sembra sia necessario eseguire initdb."
 
-#: access/transam/xlog.c:4738
+#: access/transam/xlog.c:4774
 msgid "incorrect checksum in control file"
 msgstr "il checksum nel file di controllo non è corretto"
 
-#: access/transam/xlog.c:4748
+#: access/transam/xlog.c:4784
 #, c-format
 msgid ""
 "The database cluster was initialized with CATALOG_VERSION_NO %d, but the "
@@ -7545,7 +7544,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con CATALOG_VERSION_NO %d, ma "
 "il server è stato compilato con CATALOG_VERSION_NO %d."
 
-#: access/transam/xlog.c:4755
+#: access/transam/xlog.c:4791
 #, c-format
 msgid ""
 "The database cluster was initialized with MAXALIGN %d, but the server was "
@@ -7554,7 +7553,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con MAXALIGN %d, ma il server è "
 "stato compilato con MAXALIGN %d."
 
-#: access/transam/xlog.c:4762
+#: access/transam/xlog.c:4798
 msgid ""
 "The database cluster appears to use a different floating-point number format "
 "than the server executable."
@@ -7562,7 +7561,7 @@ msgstr ""
 "Il cluster di database sta usando un formato per i numeri in virgola mobile "
 "diverso da quello usato dall'eseguibile del server."
 
-#: access/transam/xlog.c:4767
+#: access/transam/xlog.c:4803
 #, c-format
 msgid ""
 "The database cluster was initialized with BLCKSZ %d, but the server was "
@@ -7571,17 +7570,17 @@ msgstr ""
 "Il cluster di database è stato inizializzato con BLCKSZ %d, ma il server è "
 "stato compilato con BLCKSZ %d."
 
-#: access/transam/xlog.c:4770 access/transam/xlog.c:4777
-#: access/transam/xlog.c:4784 access/transam/xlog.c:4791
-#: access/transam/xlog.c:4798 access/transam/xlog.c:4805
-#: access/transam/xlog.c:4812 access/transam/xlog.c:4820
-#: access/transam/xlog.c:4827 access/transam/xlog.c:4836
-#: access/transam/xlog.c:4843 access/transam/xlog.c:4852
-#: access/transam/xlog.c:4859
+#: access/transam/xlog.c:4806 access/transam/xlog.c:4813
+#: access/transam/xlog.c:4820 access/transam/xlog.c:4827
+#: access/transam/xlog.c:4834 access/transam/xlog.c:4841
+#: access/transam/xlog.c:4848 access/transam/xlog.c:4856
+#: access/transam/xlog.c:4863 access/transam/xlog.c:4872
+#: access/transam/xlog.c:4879 access/transam/xlog.c:4888
+#: access/transam/xlog.c:4895
 msgid "It looks like you need to recompile or initdb."
 msgstr "Si consiglia di ricompilare il sistema o di eseguire initdb."
 
-#: access/transam/xlog.c:4774
+#: access/transam/xlog.c:4810
 #, c-format
 msgid ""
 "The database cluster was initialized with RELSEG_SIZE %d, but the server was "
@@ -7590,7 +7589,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con RELSEG_SIZE %d, ma il "
 "server è stato compilato con RELSEG_SIZE %d."
 
-#: access/transam/xlog.c:4781
+#: access/transam/xlog.c:4817
 #, c-format
 msgid ""
 "The database cluster was initialized with XLOG_BLCKSZ %d, but the server was "
@@ -7599,7 +7598,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con XLOG_BLOCKSZ %d, ma il "
 "server è stato compilato con XLOG_BLOCKSZ %d."
 
-#: access/transam/xlog.c:4788
+#: access/transam/xlog.c:4824
 #, c-format
 msgid ""
 "The database cluster was initialized with XLOG_SEG_SIZE %d, but the server "
@@ -7608,7 +7607,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con XLOG_SEG_SIZE %d, ma il "
 "server è stato compilato con XLOG_SEG_SIZE %d."
 
-#: access/transam/xlog.c:4795
+#: access/transam/xlog.c:4831
 #, c-format
 msgid ""
 "The database cluster was initialized with NAMEDATALEN %d, but the server was "
@@ -7617,7 +7616,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con NAMEDATALEN %d, ma il "
 "server è stato compilato con NAMEDATALEN %d."
 
-#: access/transam/xlog.c:4802
+#: access/transam/xlog.c:4838
 #, c-format
 msgid ""
 "The database cluster was initialized with INDEX_MAX_KEYS %d, but the server "
@@ -7626,7 +7625,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con INDEX_MAX_KEYS %d, ma il "
 "server è stato compilato con INDEX_MAX_KEYS %d."
 
-#: access/transam/xlog.c:4809
+#: access/transam/xlog.c:4845
 #, c-format
 msgid ""
 "The database cluster was initialized with TOAST_MAX_CHUNK_SIZE %d, but the "
@@ -7635,7 +7634,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con TOAST_MAX_CHUNK_SIZE %d, ma "
 "il server è stato compilato con TOAST_MAX_CHUNK_SIZE %d."
 
-#: access/transam/xlog.c:4818
+#: access/transam/xlog.c:4854
 msgid ""
 "The database cluster was initialized without HAVE_INT64_TIMESTAMP but the "
 "server was compiled with HAVE_INT64_TIMESTAMP."
@@ -7643,7 +7642,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato senza HAVE_INT64_TIMESTAMP ma "
 "il server è stato compilato con HAVE_INT64_TIMESTAMP."
 
-#: access/transam/xlog.c:4825
+#: access/transam/xlog.c:4861
 msgid ""
 "The database cluster was initialized with HAVE_INT64_TIMESTAMP but the "
 "server was compiled without HAVE_INT64_TIMESTAMP."
@@ -7651,7 +7650,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con HAVE_INT64_TIMESTAMP ma il "
 "server è stato compilato senza HAVE_INT64_TIMESTAMP."
 
-#: access/transam/xlog.c:4834
+#: access/transam/xlog.c:4870
 msgid ""
 "The database cluster was initialized without USE_FLOAT4_BYVAL but the server "
 "was compiled with USE_FLOAT4_BYVAL."
@@ -7659,7 +7658,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato senza USE_FLOAT4_BYVAL, ma il "
 "server è stato compilato con USE_FLOAT4_BYVAL."
 
-#: access/transam/xlog.c:4841
+#: access/transam/xlog.c:4877
 msgid ""
 "The database cluster was initialized with USE_FLOAT4_BYVAL but the server "
 "was compiled without USE_FLOAT4_BYVAL."
@@ -7667,7 +7666,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato con USE_FLOAT4_BYVAL, ma il "
 "server è stato compilato senza USE_FLOAT4_BYVAL."
 
-#: access/transam/xlog.c:4850
+#: access/transam/xlog.c:4886
 msgid ""
 "The database cluster was initialized without USE_FLOAT8_BYVAL but the server "
 "was compiled with USE_FLOAT8_BYVAL."
@@ -7675,7 +7674,7 @@ msgstr ""
 "Il cluster di database è stato inizializzato senza USE_FLOAT8_BYVAL, ma il "
 "server è stato compilato con USE_FLOAT8_BYVAL."
 
-#: access/transam/xlog.c:4857
+#: access/transam/xlog.c:4893
 msgid ""
 "The database cluster was initialized with USE_FLOAT8_BYVAL but the server "
 "was compiled without USE_FLOAT8_BYVAL."
@@ -7683,49 +7682,49 @@ msgstr ""
 "Il cluster di database è stato inizializzato con USE_FLOAT8_BYVAL, ma il "
 "server è stato compilato senza USE_FLOAT8_BYVAL."
 
-#: access/transam/xlog.c:5182
+#: access/transam/xlog.c:5218
 #, c-format
 msgid "could not write bootstrap transaction log file: %m"
 msgstr "scrittura nel file di log della transazione di bootstrap fallita: %m"
 
-#: access/transam/xlog.c:5188
+#: access/transam/xlog.c:5224
 #, c-format
 msgid "could not fsync bootstrap transaction log file: %m"
 msgstr "fsync del file di log della transazione di bootstrap fallito: %m"
 
-#: access/transam/xlog.c:5193
+#: access/transam/xlog.c:5229
 #, c-format
 msgid "could not close bootstrap transaction log file: %m"
 msgstr "chiusura del file di log della transazione di bootstrap fallita: %m"
 
-#: access/transam/xlog.c:5260
+#: access/transam/xlog.c:5296
 #, c-format
 msgid "could not open recovery command file \"%s\": %m"
 msgstr "apertura del file di ripristino \"%s\" fallita: %m"
 
 # da non tradurre
 # DV: perché (già tradotto peraltro)
-#: access/transam/xlog.c:5314
+#: access/transam/xlog.c:5350
 #, c-format
 msgid "recovery_target_timeline is not a valid number: \"%s\""
 msgstr "recovery_target_timeline non ha un valore numerico valido: \"%s\""
 
-#: access/transam/xlog.c:5330
+#: access/transam/xlog.c:5366
 #, c-format
 msgid "recovery_target_xid is not a valid number: \"%s\""
 msgstr "recovery_target_xid non ha un valore numerico valido: \"%s\""
 
-#: access/transam/xlog.c:5374
+#: access/transam/xlog.c:5410
 #, c-format
 msgid "recovery_target_name is too long (maximum %d characters)"
 msgstr "il recovery_target_name è troppo lungo (massimo %d caratteri)"
 
-#: access/transam/xlog.c:5421
+#: access/transam/xlog.c:5457
 #, c-format
 msgid "unrecognized recovery parameter \"%s\""
 msgstr "parametro di ripristino \"%s\" sconosciuto"
 
-#: access/transam/xlog.c:5432
+#: access/transam/xlog.c:5468
 #, c-format
 msgid ""
 "recovery command file \"%s\" specified neither primary_conninfo nor "
@@ -7734,7 +7733,7 @@ msgstr ""
 "il file dei comandi di ripristino \"%s\" non specifica né primary_conninfo "
 "né restore_command"
 
-#: access/transam/xlog.c:5434
+#: access/transam/xlog.c:5470
 msgid ""
 "The database server will regularly poll the pg_xlog subdirectory to check "
 "for files placed there."
@@ -7742,7 +7741,7 @@ msgstr ""
 "Il server database ispezionerà regolarmente la sottodirectory pg_xlog per "
 "controllare se vi vengono aggiunti dei file."
 
-#: access/transam/xlog.c:5440
+#: access/transam/xlog.c:5476
 #, c-format
 msgid ""
 "recovery command file \"%s\" must specify restore_command when standby mode "
@@ -7751,72 +7750,72 @@ msgstr ""
 "il file dei comandi di ripristino \"%s\" deve specificare restore_command "
 "quando la modalità standby non è abilitata"
 
-#: access/transam/xlog.c:5460
+#: access/transam/xlog.c:5496
 #, c-format
 msgid "recovery target timeline %u does not exist"
 msgstr "la timeline destinazione di recupero %u non esiste"
 
-#: access/transam/xlog.c:5590
+#: access/transam/xlog.c:5626
 msgid "archive recovery complete"
 msgstr "il ripristino dell'archivio è stato completato"
 
-#: access/transam/xlog.c:5708
+#: access/transam/xlog.c:5744
 #, c-format
 msgid "recovery stopping after commit of transaction %u, time %s"
 msgstr ""
 "il ripristino è stato interrotto dopo il commit della transazione %u alle %s"
 
-#: access/transam/xlog.c:5713
+#: access/transam/xlog.c:5749
 #, c-format
 msgid "recovery stopping before commit of transaction %u, time %s"
 msgstr ""
 "il ripristino è stato interrotto prima del commit della transazione %u, "
 "orario %s"
 
-#: access/transam/xlog.c:5721
+#: access/transam/xlog.c:5757
 #, c-format
 msgid "recovery stopping after abort of transaction %u, time %s"
 msgstr ""
 "il ripristino è stato interrotto dopo l'abort della transazione %u alle %s"
 
-#: access/transam/xlog.c:5726
+#: access/transam/xlog.c:5762
 #, c-format
 msgid "recovery stopping before abort of transaction %u, time %s"
 msgstr ""
 "il ripristino è stato interrotto prima dell'abort della transazione %u alle "
 "%s"
 
-#: access/transam/xlog.c:5735
+#: access/transam/xlog.c:5771
 #, c-format
 msgid "recovery stopping at restore point \"%s\", time %s"
 msgstr "il ripristino è stato interrotto al punto di ripristino \"%s\" alle %s"
 
-#: access/transam/xlog.c:5763
+#: access/transam/xlog.c:5799
 msgid "recovery has paused"
 msgstr "ripristino in pausa"
 
-#: access/transam/xlog.c:5764
+#: access/transam/xlog.c:5800
 msgid "Execute pg_xlog_replay_resume() to continue."
 msgstr "Esegui pg_xlog_replay_resume() per continuare."
 
-#: access/transam/xlog.c:5807 access/transam/xlog.c:5829
-#: access/transam/xlog.c:5851
+#: access/transam/xlog.c:5843 access/transam/xlog.c:5865
+#: access/transam/xlog.c:5887
 msgid "must be superuser to control recovery"
 msgstr "solo un superutente può controllare il recupero"
 
-#: access/transam/xlog.c:5812 access/transam/xlog.c:5834
-#: access/transam/xlog.c:5856
+#: access/transam/xlog.c:5848 access/transam/xlog.c:5870
+#: access/transam/xlog.c:5892
 msgid "recovery is not in progress"
 msgstr "il recupero non è in corso"
 
-#: access/transam/xlog.c:5813 access/transam/xlog.c:5835
-#: access/transam/xlog.c:5857
+#: access/transam/xlog.c:5849 access/transam/xlog.c:5871
+#: access/transam/xlog.c:5893
 msgid "Recovery control functions can only be executed during recovery."
 msgstr ""
 "Le funzioni di controllo del recupero possono essere eseguite solo durante "
 "un recupero."
 
-#: access/transam/xlog.c:5950
+#: access/transam/xlog.c:5986
 #, c-format
 msgid ""
 "hot standby is not possible because %s = %d is a lower setting than on the "
@@ -7825,12 +7824,12 @@ msgstr ""
 "L'hot standby non è possibile perché %s = %d è un'impostazione inferiore a "
 "quella del server master (il cui valore era %d)"
 
-#: access/transam/xlog.c:5972
+#: access/transam/xlog.c:6008
 msgid "WAL was generated with wal_level=minimal, data may be missing"
 msgstr ""
 "il WAL è stato generato con wal_level=minimal, alcuni dati potrebbero mancare"
 
-#: access/transam/xlog.c:5973
+#: access/transam/xlog.c:6009
 msgid ""
 "This happens if you temporarily set wal_level=minimal without taking a new "
 "base backup."
@@ -7838,7 +7837,7 @@ msgstr ""
 "Questo avviene se imposti temporaneamente wal_level=minimal senza effettuare "
 "un nuovo backup di base."
 
-#: access/transam/xlog.c:5984
+#: access/transam/xlog.c:6020
 msgid ""
 "hot standby is not possible because wal_level was not set to \"hot_standby\" "
 "on the master server"
@@ -7846,7 +7845,7 @@ msgstr ""
 "l'hot standby non è possibile perché il wal_level non è stato impostato a "
 "\"hot_standby\" sul server master"
 
-#: access/transam/xlog.c:5985
+#: access/transam/xlog.c:6021
 msgid ""
 "Either set wal_level to \"hot_standby\" on the master, or turn off "
 "hot_standby here."
@@ -7854,34 +7853,34 @@ msgstr ""
 "Puoi impostare il wal_level a \"hot_standby\" sul master, oppure disattivare "
 "hot_standby qui."
 
-#: access/transam/xlog.c:6033
+#: access/transam/xlog.c:6069
 msgid "control file contains invalid data"
 msgstr "il file di controllo contiene dati non validi"
 
-#: access/transam/xlog.c:6037
+#: access/transam/xlog.c:6073
 #, c-format
 msgid "database system was shut down at %s"
 msgstr "il database è stato arrestato alle %s"
 
-#: access/transam/xlog.c:6041
+#: access/transam/xlog.c:6077
 #, c-format
 msgid "database system was shut down in recovery at %s"
 msgstr "il database è stato arrestato durante il ripristino alle %s"
 
-#: access/transam/xlog.c:6045
+#: access/transam/xlog.c:6081
 #, c-format
 msgid "database system shutdown was interrupted; last known up at %s"
 msgstr ""
 "l'arresto del database è stato interrotto; l'ultimo segno di vita risale "
 "alle %s"
 
-#: access/transam/xlog.c:6049
+#: access/transam/xlog.c:6085
 #, c-format
 msgid "database system was interrupted while in recovery at %s"
 msgstr ""
 "il database è stato interrotto alle %s mentre era in fase di ripristino"
 
-#: access/transam/xlog.c:6051
+#: access/transam/xlog.c:6087
 msgid ""
 "This probably means that some data is corrupted and you will have to use the "
 "last backup for recovery."
@@ -7889,14 +7888,14 @@ msgstr ""
 "Questo probabilmente significa che alcuni dati sono corrotti e dovrai usare "
 "il backup più recente per il ripristino."
 
-#: access/transam/xlog.c:6055
+#: access/transam/xlog.c:6091
 #, c-format
 msgid "database system was interrupted while in recovery at log time %s"
 msgstr ""
 "il database è stato interrotto all'orario di log %s mentre era in fase di "
 "ripristino"
 
-#: access/transam/xlog.c:6057
+#: access/transam/xlog.c:6093
 msgid ""
 "If this has occurred more than once some data might be corrupted and you "
 "might need to choose an earlier recovery target."
@@ -7904,51 +7903,51 @@ msgstr ""
 "Se ciò è avvenuto più di una volta, alcuni dati potrebbero essere corrotti e "
 "potresti dover scegliere un obiettivo di ripristino precedente."
 
-#: access/transam/xlog.c:6061
+#: access/transam/xlog.c:6097
 #, c-format
 msgid "database system was interrupted; last known up at %s"
 msgstr "il database è stato interrotto; l'ultimo segno di vita risale alle %s"
 
-#: access/transam/xlog.c:6110
+#: access/transam/xlog.c:6146
 #, c-format
 msgid "requested timeline %u is not a child of database system timeline %u"
 msgstr "la timeline %u richiesta non è figlia della timeline %u del database"
 
-#: access/transam/xlog.c:6128
+#: access/transam/xlog.c:6164
 msgid "entering standby mode"
 msgstr "inizio modalità standby"
 
-#: access/transam/xlog.c:6131
+#: access/transam/xlog.c:6167
 #, c-format
 msgid "starting point-in-time recovery to XID %u"
 msgstr "avvio del ripristino point-in-time allo XID %u"
 
-#: access/transam/xlog.c:6135
+#: access/transam/xlog.c:6171
 #, c-format
 msgid "starting point-in-time recovery to %s"
 msgstr "avvio del ripristino point-in-time alle %s"
 
-#: access/transam/xlog.c:6139
+#: access/transam/xlog.c:6175
 #, c-format
 msgid "starting point-in-time recovery to \"%s\""
 msgstr "avvio del ripristino point-in-time a \"%s\""
 
-#: access/transam/xlog.c:6143
+#: access/transam/xlog.c:6179
 msgid "starting archive recovery"
 msgstr "avvio del ripristino dell'archivio"
 
-#: access/transam/xlog.c:6165 access/transam/xlog.c:6205
+#: access/transam/xlog.c:6201 access/transam/xlog.c:6241
 #, c-format
 msgid "checkpoint record is at %X/%X"
 msgstr "il record di checkpoint si trova in %X/%X"
 
-#: access/transam/xlog.c:6179
+#: access/transam/xlog.c:6215
 msgid "could not find redo location referenced by checkpoint record"
 msgstr ""
 "localizzazione della posizione di redo referenziata dal record di checkpoint "
 "fallita"
 
-#: access/transam/xlog.c:6180 access/transam/xlog.c:6187
+#: access/transam/xlog.c:6216 access/transam/xlog.c:6223
 #, c-format
 msgid ""
 "If you are not restoring from a backup, try removing the file \"%s/"
@@ -7957,92 +7956,92 @@ msgstr ""
 "Se non si sta effettuando il ripristino da backup, prova a rimuovere il file "
 "\"%s/backup_label\"."
 
-#: access/transam/xlog.c:6186
+#: access/transam/xlog.c:6222
 msgid "could not locate required checkpoint record"
 msgstr "localizzazione del record di checkpoint richiesto fallita"
 
-#: access/transam/xlog.c:6215 access/transam/xlog.c:6230
+#: access/transam/xlog.c:6251 access/transam/xlog.c:6266
 msgid "could not locate a valid checkpoint record"
 msgstr "localizzazione di un record di checkpoint valido fallita"
 
-#: access/transam/xlog.c:6224
+#: access/transam/xlog.c:6260
 #, c-format
 msgid "using previous checkpoint record at %X/%X"
 msgstr "si sta usando il precedente record di checkpoint in %X/%X"
 
-#: access/transam/xlog.c:6239
+#: access/transam/xlog.c:6275
 #, c-format
 msgid "redo record is at %X/%X; shutdown %s"
 msgstr "il record di redo è alle %X/%X; arresto %s"
 
-#: access/transam/xlog.c:6243
+#: access/transam/xlog.c:6279
 #, c-format
 msgid "next transaction ID: %u/%u; next OID: %u"
 msgstr "prossimo ID di transazione: %u/%u; prossimo OID: %u"
 
-#: access/transam/xlog.c:6247
+#: access/transam/xlog.c:6283
 #, c-format
 msgid "next MultiXactId: %u; next MultiXactOffset: %u"
 msgstr "prossimo MultiXactId: %u; prossimo MultiXactOffset: %u"
 
-#: access/transam/xlog.c:6250
+#: access/transam/xlog.c:6286
 #, c-format
 msgid "oldest unfrozen transaction ID: %u, in database %u"
 msgstr "ID della più vecchia transazione non congelata: %u, nel database %u"
 
-#: access/transam/xlog.c:6254
+#: access/transam/xlog.c:6290
 msgid "invalid next transaction ID"
 msgstr "l'ID della prossima transazione non è valido"
 
-#: access/transam/xlog.c:6276
+#: access/transam/xlog.c:6312
 msgid "invalid redo in checkpoint record"
 msgstr "il redo nel record di checkpoint non è valido"
 
-#: access/transam/xlog.c:6287
+#: access/transam/xlog.c:6323
 msgid "invalid redo record in shutdown checkpoint"
 msgstr "record di redo non valido nel checkpoint di arresto"
 
-#: access/transam/xlog.c:6317
+#: access/transam/xlog.c:6353
 msgid ""
 "database system was not properly shut down; automatic recovery in progress"
 msgstr ""
 "il database non è stato arrestato correttamente; ripristino automatico in "
 "corso"
 
-#: access/transam/xlog.c:6396
+#: access/transam/xlog.c:6432
 msgid "initializing for hot standby"
 msgstr "inizializzazione per l'hot standby"
 
-#: access/transam/xlog.c:6526
+#: access/transam/xlog.c:6562
 #, c-format
 msgid "redo starts at %X/%X"
 msgstr "il redo inizia in %X/%X"
 
-#: access/transam/xlog.c:6641
+#: access/transam/xlog.c:6677
 #, c-format
 msgid "redo done at %X/%X"
 msgstr "redo concluso in %X/%X"
 
-#: access/transam/xlog.c:6646 access/transam/xlog.c:8232
+#: access/transam/xlog.c:6682 access/transam/xlog.c:8266
 #, c-format
 msgid "last completed transaction was at log time %s"
 msgstr "l'ultima transazione è stata completata all'orario di log %s"
 
-#: access/transam/xlog.c:6654
+#: access/transam/xlog.c:6690
 msgid "redo is not required"
 msgstr "redo non richiesto"
 
-#: access/transam/xlog.c:6702
+#: access/transam/xlog.c:6738
 msgid "requested recovery stop point is before consistent recovery point"
 msgstr ""
 "lo stop point di ripristino è posto prima di un punto di ripristino "
 "consistente"
 
-#: access/transam/xlog.c:6711
+#: access/transam/xlog.c:6747
 msgid "WAL ends before end of online backup"
 msgstr "il WAL termina prima della fine del backup online"
 
-#: access/transam/xlog.c:6712
+#: access/transam/xlog.c:6748
 msgid ""
 "Online backup started with pg_start_backup() must be ended with "
 "pg_stop_backup(), and all WAL up to that point must be available at recovery."
@@ -8051,193 +8050,193 @@ msgstr ""
 "pg_stop_backup(), e tutti i file WAL fino a quel punto devono essere "
 "disponibili per il ripristino."
 
-#: access/transam/xlog.c:6715
+#: access/transam/xlog.c:6751
 msgid "WAL ends before consistent recovery point"
 msgstr "il WAL termina prima di un punto di ripristino consistente"
 
-#: access/transam/xlog.c:6736
+#: access/transam/xlog.c:6772
 #, c-format
 msgid "selected new timeline ID: %u"
 msgstr "l'ID della nuova timeline selezionata è %u"
 
-#: access/transam/xlog.c:6986
+#: access/transam/xlog.c:7022
 #, c-format
 msgid "consistent recovery state reached at %X/%X"
 msgstr "è stato raggiunto uno stato di ripristino consistente a %X/%X"
 
-#: access/transam/xlog.c:7152
+#: access/transam/xlog.c:7188
 msgid "invalid primary checkpoint link in control file"
 msgstr "il link nel file di controllo al checkpoint primario non è valido"
 
-#: access/transam/xlog.c:7156
+#: access/transam/xlog.c:7192
 msgid "invalid secondary checkpoint link in control file"
 msgstr "il link nel file di controllo al checkpoint secondario non è valido"
 
-#: access/transam/xlog.c:7160
+#: access/transam/xlog.c:7196
 msgid "invalid checkpoint link in backup_label file"
 msgstr "il link al checkpoint nel file backup_label non è valido"
 
-#: access/transam/xlog.c:7174
+#: access/transam/xlog.c:7210
 msgid "invalid primary checkpoint record"
 msgstr "il record del checkpoint primario non è valido"
 
-#: access/transam/xlog.c:7178
+#: access/transam/xlog.c:7214
 msgid "invalid secondary checkpoint record"
 msgstr "il record del checkpoint secondario non è valido"
 
-#: access/transam/xlog.c:7182
+#: access/transam/xlog.c:7218
 msgid "invalid checkpoint record"
 msgstr "il record del checkpoint non è valido"
 
-#: access/transam/xlog.c:7193
+#: access/transam/xlog.c:7229
 msgid "invalid resource manager ID in primary checkpoint record"
 msgstr ""
 "l'ID del resource manager nel record del checkpoint primario non è valido"
 
-#: access/transam/xlog.c:7197
+#: access/transam/xlog.c:7233
 msgid "invalid resource manager ID in secondary checkpoint record"
 msgstr ""
 "l'ID del resource manager nel record del checkpoint secondario non è valido"
 
-#: access/transam/xlog.c:7201
+#: access/transam/xlog.c:7237
 msgid "invalid resource manager ID in checkpoint record"
 msgstr "l'ID del resource manager nel record del checkpoint non è valido"
 
-#: access/transam/xlog.c:7213
+#: access/transam/xlog.c:7249
 msgid "invalid xl_info in primary checkpoint record"
 msgstr "l'xl_info nel record del checkpoint primario non è valido"
 
-#: access/transam/xlog.c:7217
+#: access/transam/xlog.c:7253
 msgid "invalid xl_info in secondary checkpoint record"
 msgstr "l'xl_info nel record del checkpoint secondario non è valido"
 
-#: access/transam/xlog.c:7221
+#: access/transam/xlog.c:7257
 msgid "invalid xl_info in checkpoint record"
 msgstr "l'xl_info nel record del checkpoint non è valido"
 
-#: access/transam/xlog.c:7233
+#: access/transam/xlog.c:7269
 msgid "invalid length of primary checkpoint record"
 msgstr "la lunghezza del record del checkpoint primario non è valida"
 
-#: access/transam/xlog.c:7237
+#: access/transam/xlog.c:7273
 msgid "invalid length of secondary checkpoint record"
 msgstr "la lunghezza del record del checkpoint secondario non è valida"
 
-#: access/transam/xlog.c:7241
+#: access/transam/xlog.c:7277
 msgid "invalid length of checkpoint record"
 msgstr "la lunghezza del record del checkpoint non è valida"
 
-#: access/transam/xlog.c:7403
+#: access/transam/xlog.c:7439
 msgid "shutting down"
 msgstr "arresto in corso"
 
-#: access/transam/xlog.c:7425
+#: access/transam/xlog.c:7461
 msgid "database system is shut down"
 msgstr "il database è stato arrestato"
 
-#: access/transam/xlog.c:7859
+#: access/transam/xlog.c:7893
 msgid ""
 "concurrent transaction log activity while database system is shutting down"
 msgstr ""
 "rilevata attività concorrente sul log delle transazioni durante l'arresto "
 "del database"
 
-#: access/transam/xlog.c:8093
+#: access/transam/xlog.c:8127
 msgid "skipping restartpoint, recovery has already ended"
 msgstr "si tralascia il restartpoint, il ripristino è ormai terminato"
 
-#: access/transam/xlog.c:8118
+#: access/transam/xlog.c:8152
 #, c-format
 msgid "skipping restartpoint, already performed at %X/%X"
 msgstr "si tralascia il restartpoint, già eseguito in %X/%X"
 
-#: access/transam/xlog.c:8230
+#: access/transam/xlog.c:8264
 #, c-format
 msgid "recovery restart point at %X/%X"
 msgstr "punto di avvio del ripristino in %X/%X"
 
-#: access/transam/xlog.c:8330
+#: access/transam/xlog.c:8364
 #, c-format
 msgid "restore point \"%s\" created at %X/%X"
 msgstr "punto di ripristino \"%s\" creato in %X/%X"
 
-#: access/transam/xlog.c:8430
+#: access/transam/xlog.c:8464
 msgid "online backup was canceled, recovery cannot continue"
 msgstr "il backup online è stato annullato, il ripristino non può continuare"
 
-#: access/transam/xlog.c:8493
+#: access/transam/xlog.c:8527
 #, c-format
 msgid "unexpected timeline ID %u (after %u) in checkpoint record"
 msgstr ""
 "l'ID della timeline %u (dopo %u) non era prevista nel record di checkpoint"
 
-#: access/transam/xlog.c:8538
+#: access/transam/xlog.c:8572
 #, c-format
 msgid "unexpected timeline ID %u (should be %u) in checkpoint record"
 msgstr ""
 "l'ID della timeline %u (che dovrebbe essere %u) non era prevista nel record "
 "di checkpoint"
 
-#: access/transam/xlog.c:8802 access/transam/xlog.c:8826
+#: access/transam/xlog.c:8836 access/transam/xlog.c:8860
 #, c-format
 msgid "could not fsync log file %u, segment %u: %m"
 msgstr "fsync del file di log %u fallito, segmento %u: %m"
 
-#: access/transam/xlog.c:8834
+#: access/transam/xlog.c:8868
 #, c-format
 msgid "could not fsync write-through log file %u, segment %u: %m"
 msgstr "fsync write-through sul file di log %u fallito, segmento %u: %m"
 
-#: access/transam/xlog.c:8843
+#: access/transam/xlog.c:8877
 #, c-format
 msgid "could not fdatasync log file %u, segment %u: %m"
 msgstr "fdatasync del file di log %u fallito, segmento %u: %m"
 
-#: access/transam/xlog.c:8924 access/transam/xlog.c:9203
+#: access/transam/xlog.c:8958 access/transam/xlog.c:9237
 msgid "must be superuser or replication role to run a backup"
 msgstr "solo un superutente o il ruolo di replica può eseguire un backup"
 
-#: access/transam/xlog.c:8929 access/transam/xlog.c:9208
-#: access/transam/xlog.c:9471 access/transam/xlog.c:9503
-#: access/transam/xlog.c:9544 access/transam/xlog.c:9577
-#: access/transam/xlog.c:9684 access/transam/xlog.c:9759
+#: access/transam/xlog.c:8963 access/transam/xlog.c:9242
+#: access/transam/xlog.c:9505 access/transam/xlog.c:9537
+#: access/transam/xlog.c:9578 access/transam/xlog.c:9611
+#: access/transam/xlog.c:9718 access/transam/xlog.c:9793
 msgid "recovery is in progress"
 msgstr "il ripristino è in corso"
 
-#: access/transam/xlog.c:8930 access/transam/xlog.c:9209
-#: access/transam/xlog.c:9472 access/transam/xlog.c:9504
-#: access/transam/xlog.c:9545 access/transam/xlog.c:9578
+#: access/transam/xlog.c:8964 access/transam/xlog.c:9243
+#: access/transam/xlog.c:9506 access/transam/xlog.c:9538
+#: access/transam/xlog.c:9579 access/transam/xlog.c:9612
 msgid "WAL control functions cannot be executed during recovery."
 msgstr ""
 "le funzioni di controllo WAL non possono essere eseguite durante il "
 "ripristino."
 
-#: access/transam/xlog.c:8935 access/transam/xlog.c:9214
+#: access/transam/xlog.c:8969 access/transam/xlog.c:9248
 msgid "WAL level not sufficient for making an online backup"
 msgstr "livello WAL non sufficiente per creare un backup online"
 
-#: access/transam/xlog.c:8936 access/transam/xlog.c:9215
-#: access/transam/xlog.c:9510
+#: access/transam/xlog.c:8970 access/transam/xlog.c:9249
+#: access/transam/xlog.c:9544
 msgid ""
 "wal_level must be set to \"archive\" or \"hot_standby\" at server start."
 msgstr ""
 "Il wal_level deve essere impostato ad \"archive\" oppuew \"hot_standby\" "
 "all'avvio del server."
 
-#: access/transam/xlog.c:8941
+#: access/transam/xlog.c:8975
 #, c-format
 msgid "backup label too long (max %d bytes)"
 msgstr "etichetta di backup troppo lunga (massimo %d byte)"
 
-#: access/transam/xlog.c:8982 access/transam/xlog.c:9085
+#: access/transam/xlog.c:9016 access/transam/xlog.c:9119
 msgid "a backup is already in progress"
 msgstr "c'è già un backup in corso"
 
-#: access/transam/xlog.c:8983
+#: access/transam/xlog.c:9017
 msgid "Run pg_stop_backup() and try again."
 msgstr "Esegui pg_stop_backup() e prova di nuovo."
 
-#: access/transam/xlog.c:9086
+#: access/transam/xlog.c:9120
 #, c-format
 msgid ""
 "If you're sure there is no backup in progress, remove file \"%s\" and try "
@@ -8246,29 +8245,29 @@ msgstr ""
 "Se si è certi che non ci sono backup in corso, rimuovi il file \"%s\" e "
 "prova di nuovo."
 
-#: access/transam/xlog.c:9101 access/transam/xlog.c:9347
+#: access/transam/xlog.c:9135 access/transam/xlog.c:9381
 #, c-format
 msgid "could not write file \"%s\": %m"
 msgstr "scrittura nel file \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:9259
+#: access/transam/xlog.c:9293
 msgid "a backup is not in progress"
 msgstr "nessuno backup in esecuzione"
 
-#: access/transam/xlog.c:9298 access/transam/xlog.c:9829
-#: access/transam/xlog.c:9835
+#: access/transam/xlog.c:9332 access/transam/xlog.c:9863
+#: access/transam/xlog.c:9869
 #, c-format
 msgid "invalid data in file \"%s\""
 msgstr "i dati nel file \"%s\" non sono validi"
 
-#: access/transam/xlog.c:9396
+#: access/transam/xlog.c:9430
 msgid ""
 "pg_stop_backup cleanup done, waiting for required WAL segments to be archived"
 msgstr ""
 "pulizia di pg_stop_backup effettuata, in attesa che i segmenti WAL richiesti "
 "vengano archiviati"
 
-#: access/transam/xlog.c:9406
+#: access/transam/xlog.c:9440
 #, c-format
 msgid ""
 "pg_stop_backup still waiting for all required WAL segments to be archived "
@@ -8277,7 +8276,7 @@ msgstr ""
 "pg_stop_backup è ancora in attesa che tutti i segmenti WAL richiesti siano "
 "stati archiviati (sono passati %d secondi)"
 
-#: access/transam/xlog.c:9408
+#: access/transam/xlog.c:9442
 msgid ""
 "Check that your archive_command is executing properly.  pg_stop_backup can "
 "be canceled safely, but the database backup will not be usable without all "
@@ -8287,12 +8286,12 @@ msgstr ""
 "pg_stop_backup può essere interrotto in sicurezza ma il backup del database "
 "non sarà utilizzabile senza tutti i segmenti WAL."
 
-#: access/transam/xlog.c:9415
+#: access/transam/xlog.c:9449
 msgid "pg_stop_backup complete, all required WAL segments have been archived"
 msgstr ""
 "pg_stop_backup completo, tutti i segmenti WAL richiesti sono stati archiviati"
 
-#: access/transam/xlog.c:9419
+#: access/transam/xlog.c:9453
 msgid ""
 "WAL archiving is not enabled; you must ensure that all required WAL segments "
 "are copied through other means to complete the backup"
@@ -8300,72 +8299,72 @@ msgstr ""
 "l'archiviazione WAL non è abilitata; devi verificare che tutti i segmenti "
 "WAL richiesti vengano copiati in qualche altro modo per completare il backup"
 
-#: access/transam/xlog.c:9466
+#: access/transam/xlog.c:9500
 msgid "must be superuser to switch transaction log files"
 msgstr "solo un superutente può cambiare i file di log delle transazioni"
 
-#: access/transam/xlog.c:9498
+#: access/transam/xlog.c:9532
 msgid "must be superuser to create a restore point"
 msgstr "Solo un superutente può creare un punto di ripristino"
 
-#: access/transam/xlog.c:9509
+#: access/transam/xlog.c:9543
 msgid "WAL level not sufficient for creating a restore point"
 msgstr "livello WAL non sufficiente per creare un punto di ripristino"
 
-#: access/transam/xlog.c:9517
+#: access/transam/xlog.c:9551
 #, c-format
 msgid "value too long for restore point (maximum %d characters)"
 msgstr ""
 "il valore è troppo lungo per un punto di ripristino (massimo %d caratteri)"
 
-#: access/transam/xlog.c:9685
+#: access/transam/xlog.c:9719
 msgid "pg_xlogfile_name_offset() cannot be executed during recovery."
 msgstr "pg_xlogfile_name_offset() non può essere eseguito durante il recupero."
 
-#: access/transam/xlog.c:9695 access/transam/xlog.c:9767
+#: access/transam/xlog.c:9729 access/transam/xlog.c:9801
 #, c-format
 msgid "could not parse transaction log location \"%s\""
 msgstr ""
 "non è stato possibile interpretare la posizione del log delle transazioni "
 "\"%s\""
 
-#: access/transam/xlog.c:9760
+#: access/transam/xlog.c:9794
 msgid "pg_xlogfile_name() cannot be executed during recovery."
 msgstr "pg_xlogfile_name() non può essere eseguito durante il recupero."
 
-#: access/transam/xlog.c:9871
+#: access/transam/xlog.c:9905
 #, c-format
 msgid "xlog redo %s"
 msgstr "xlog redo %s"
 
-#: access/transam/xlog.c:9911
+#: access/transam/xlog.c:9945
 msgid "online backup mode canceled"
 msgstr "modalità backup online annullata"
 
-#: access/transam/xlog.c:9912
+#: access/transam/xlog.c:9946
 #, c-format
 msgid "\"%s\" was renamed to \"%s\"."
 msgstr "\"%s\" è stato rinominato in \"%s\"."
 
-#: access/transam/xlog.c:9919
+#: access/transam/xlog.c:9953
 msgid "online backup mode was not canceled"
 msgstr "la modalità di backup online non è stata annullata"
 
-#: access/transam/xlog.c:9920
+#: access/transam/xlog.c:9954
 #, c-format
 msgid "Could not rename \"%s\" to \"%s\": %m."
 msgstr "Non è stato possibile rinominare \"%s\" in \"%s\": %m."
 
-#: access/transam/xlog.c:10433 access/transam/xlog.c:10455
+#: access/transam/xlog.c:10467 access/transam/xlog.c:10489
 #, c-format
 msgid "could not read from log file %u, segment %u, offset %u: %m"
 msgstr "lettura dal file di log %u fallita, segmento %u, offset %u: %m"
 
-#: access/transam/xlog.c:10544
+#: access/transam/xlog.c:10578
 msgid "received promote request"
 msgstr "richiesta di promozione ricevuta"
 
-#: access/transam/xlog.c:10557
+#: access/transam/xlog.c:10591
 #, c-format
 msgid "trigger file found: %s"
 msgstr "trovato il file trigger: %s"
@@ -8390,7 +8389,7 @@ msgid "To fix this, do REINDEX INDEX \"%s\"."
 msgstr "Per correggere questo problema esegui REINDEX INDEX \"%s\"."
 
 #: access/nbtree/nbtpage.c:161 access/nbtree/nbtpage.c:365
-#: parser/parse_utilcmd.c:1583
+#: parser/parse_utilcmd.c:1577
 #, c-format
 msgid "index \"%s\" is not a btree"
 msgstr "l'indice \"%s\" non è un btree"
@@ -8433,7 +8432,7 @@ msgstr ""
 "Ciò potrebbe essere causato da un'espressione dell'indice non immutabile."
 
 #: access/index/indexam.c:161 commands/tablecmds.c:221
-#: commands/tablecmds.c:2405 commands/indexcmds.c:1542
+#: commands/tablecmds.c:2407 commands/indexcmds.c:1507
 #: catalog/objectaddress.c:391
 #, c-format
 msgid "\"%s\" is not an index"
@@ -8484,10 +8483,10 @@ msgstr "non è stato possibile ottenere il lock sulla relazione con OID %u"
 msgid "relation \"%s.%s\" does not exist"
 msgstr "la relazione \"%s.%s\" non esiste"
 
-#: commands/lockcmds.c:149 commands/tablecmds.c:203 commands/tablecmds.c:1135
-#: commands/tablecmds.c:2397 commands/tablecmds.c:3744
-#: commands/tablecmds.c:6693 commands/indexcmds.c:200
-#: commands/indexcmds.c:1574 catalog/toasting.c:93 catalog/objectaddress.c:405
+#: commands/lockcmds.c:149 commands/tablecmds.c:203 commands/tablecmds.c:1137
+#: commands/tablecmds.c:2399 commands/tablecmds.c:3751
+#: commands/tablecmds.c:6720 commands/indexcmds.c:197
+#: commands/indexcmds.c:1539 catalog/toasting.c:93 catalog/objectaddress.c:405
 #, c-format
 msgid "\"%s\" is not a table"
 msgstr "\"%s\" non è una tabella"
@@ -8704,9 +8703,9 @@ msgstr "la vista \"%s\" non esiste"
 msgid "view \"%s\" does not exist, skipping"
 msgstr "la vista \"%s\" non esiste, saltata"
 
-#: commands/tablecmds.c:215 commands/tablecmds.c:2172
-#: commands/tablecmds.c:2429 commands/tablecmds.c:3759
-#: commands/tablecmds.c:8983 commands/view.c:181 catalog/objectaddress.c:412
+#: commands/tablecmds.c:215 commands/tablecmds.c:2174
+#: commands/tablecmds.c:2431 commands/tablecmds.c:3766
+#: commands/tablecmds.c:9015 commands/view.c:181 catalog/objectaddress.c:412
 #, c-format
 msgid "\"%s\" is not a view"
 msgstr "\"%s\" non è una vista"
@@ -8743,7 +8742,7 @@ msgstr "\"%s\" non è un tipo"
 msgid "Use DROP TYPE to remove a type."
 msgstr "Usa DROP TYPE per eliminare un tipo."
 
-#: commands/tablecmds.c:231 commands/tablecmds.c:8895
+#: commands/tablecmds.c:231 commands/tablecmds.c:8927
 #, c-format
 msgid "foreign table \"%s\" does not exist"
 msgstr "la tabella esterna \"%s\" non esiste"
@@ -8753,9 +8752,9 @@ msgstr "la tabella esterna \"%s\" non esiste"
 msgid "foreign table \"%s\" does not exist, skipping"
 msgstr "la tabella esterna \"%s\" non esiste, saltata"
 
-#: commands/tablecmds.c:233 commands/tablecmds.c:2178
-#: commands/tablecmds.c:2437 commands/tablecmds.c:3762
-#: commands/tablecmds.c:8991 catalog/objectaddress.c:419
+#: commands/tablecmds.c:233 commands/tablecmds.c:2180
+#: commands/tablecmds.c:2439 commands/tablecmds.c:3769
+#: commands/tablecmds.c:9023 catalog/objectaddress.c:419
 #, c-format
 msgid "\"%s\" is not a foreign table"
 msgstr "\"%s\" non è una tabella esterna"
@@ -8764,147 +8763,147 @@ msgstr "\"%s\" non è una tabella esterna"
 msgid "Use DROP FOREIGN TABLE to remove a foreign table."
 msgstr "Usa DROP FOREIGN TABLE per eliminare una tabella esterna."
 
-#: commands/tablecmds.c:427 executor/execMain.c:2409
+#: commands/tablecmds.c:429 executor/execMain.c:2409
 msgid "ON COMMIT can only be used on temporary tables"
 msgstr "ON COMMIT può essere usato solo con le tabelle temporanee"
 
-#: commands/tablecmds.c:431
+#: commands/tablecmds.c:433
 msgid "constraints on foreign tables are not supported"
 msgstr "i vincoli sulle tabelle esterne non sono supportati"
 
-#: commands/tablecmds.c:449 executor/execMain.c:2427
+#: commands/tablecmds.c:451 executor/execMain.c:2427
 msgid "cannot create temporary table within security-restricted operation"
 msgstr ""
 "non è possibile creare la tabella temporanea nell'ambito di operazioni a "
 "sicurezza ristretta"
 
-#: commands/tablecmds.c:481 commands/tablecmds.c:7889 commands/indexcmds.c:265
+#: commands/tablecmds.c:483 commands/tablecmds.c:7921 commands/indexcmds.c:262
 #: executor/execMain.c:2460
 msgid "only shared relations can be placed in pg_global tablespace"
 msgstr ""
 "solo le relazioni condivise possono essere poste nel tablespace pg_global"
 
-#: commands/tablecmds.c:547 commands/tablecmds.c:4270
+#: commands/tablecmds.c:549 commands/tablecmds.c:4277
 msgid "default values on foreign tables are not supported"
 msgstr "i valori di default sulle tabelle esterne non sono supportati"
 
-#: commands/tablecmds.c:927
+#: commands/tablecmds.c:929
 #, c-format
 msgid "truncate cascades to table \"%s\""
 msgstr "truncate si propaga in cascata alla tabella \"%s\""
 
-#: commands/tablecmds.c:1158
+#: commands/tablecmds.c:1160
 msgid "cannot truncate temporary tables of other sessions"
 msgstr "non è possibile troncare tabelle temporanee di altre sessioni"
 
-#: commands/tablecmds.c:1274 commands/tablecmds.c:1699
-#: commands/tablecmds.c:4195 catalog/heap.c:389
+#: commands/tablecmds.c:1276 commands/tablecmds.c:1701
+#: commands/tablecmds.c:4202 catalog/heap.c:389
 #, c-format
 msgid "tables can have at most %d columns"
 msgstr "le tabelle possono avere al massimo %d colonne"
 
-#: commands/tablecmds.c:1325 commands/copy.c:3799 commands/trigger.c:601
+#: commands/tablecmds.c:1327 commands/copy.c:3799 commands/trigger.c:601
 #: parser/parse_target.c:911 parser/parse_target.c:922
 #, c-format
 msgid "column \"%s\" specified more than once"
 msgstr "la colonna \"%s\" è stata specificata più di una volta"
 
-#: commands/tablecmds.c:1360 parser/parse_utilcmd.c:623
-#: parser/parse_utilcmd.c:1723
+#: commands/tablecmds.c:1362 parser/parse_utilcmd.c:623
+#: parser/parse_utilcmd.c:1717
 #, c-format
 msgid "inherited relation \"%s\" is not a table"
 msgstr "la relazione ereditata \"%s\" non è una tabella"
 
-#: commands/tablecmds.c:1367 commands/tablecmds.c:8121
+#: commands/tablecmds.c:1369 commands/tablecmds.c:8153
 #, c-format
 msgid "cannot inherit from temporary relation \"%s\""
 msgstr "non è possibile ereditare dalla relazione temporanea \"%s\""
 
-#: commands/tablecmds.c:1384 commands/tablecmds.c:8149
+#: commands/tablecmds.c:1386 commands/tablecmds.c:8181
 #, c-format
 msgid "relation \"%s\" would be inherited from more than once"
 msgstr "la relazione \"%s\" sarebbe ereditata più di una volta"
 
-#: commands/tablecmds.c:1432
+#: commands/tablecmds.c:1434
 #, c-format
 msgid "merging multiple inherited definitions of column \"%s\""
 msgstr "unione delle definizioni multiple ereditate della colonna \"%s\""
 
-#: commands/tablecmds.c:1440
+#: commands/tablecmds.c:1442
 #, c-format
 msgid "inherited column \"%s\" has a type conflict"
 msgstr "la colonna ereditata \"%s\" ha un conflitto di tipo"
 
-#: commands/tablecmds.c:1442 commands/tablecmds.c:1463
-#: commands/tablecmds.c:1644 commands/tablecmds.c:1666
+#: commands/tablecmds.c:1444 commands/tablecmds.c:1465
+#: commands/tablecmds.c:1646 commands/tablecmds.c:1668
 #: parser/parse_coerce.c:1540 parser/parse_coerce.c:1560
 #: parser/parse_coerce.c:1605 parser/parse_param.c:217
 #, c-format
 msgid "%s versus %s"
 msgstr "tra %s e %s"
 
-#: commands/tablecmds.c:1449
+#: commands/tablecmds.c:1451
 #, c-format
 msgid "inherited column \"%s\" has a collation conflict"
 msgstr "la colonna ereditata \"%s\" ha un conflitto di ordinamento"
 
-#: commands/tablecmds.c:1451 commands/tablecmds.c:1654
-#: commands/tablecmds.c:4139
+#: commands/tablecmds.c:1453 commands/tablecmds.c:1656
+#: commands/tablecmds.c:4146
 #, c-format
 msgid "\"%s\" versus \"%s\""
 msgstr "tra \"%s\" e \"%s\""
 
-#: commands/tablecmds.c:1461
+#: commands/tablecmds.c:1463
 #, c-format
 msgid "inherited column \"%s\" has a storage parameter conflict"
 msgstr ""
 "la colonna ereditata \"%s\" ha un conflitto di parametro di memorizzazione"
 
-#: commands/tablecmds.c:1569 parser/parse_utilcmd.c:776
+#: commands/tablecmds.c:1571 parser/parse_utilcmd.c:776
 #: parser/parse_utilcmd.c:1154 parser/parse_utilcmd.c:1230
 msgid "cannot convert whole-row table reference"
 msgstr ""
 "non è possibile convertire riferimenti ad una riga intera di tabella whole-"
 "row table"
 
-#: commands/tablecmds.c:1570 parser/parse_utilcmd.c:777
+#: commands/tablecmds.c:1572 parser/parse_utilcmd.c:777
 #, c-format
 msgid "Constraint \"%s\" contains a whole-row reference to table \"%s\"."
 msgstr ""
 "Il vincolo \"%s\" contiene un riferimento alla riga intera alla tabella \"%s"
 "\"."
 
-#: commands/tablecmds.c:1634
+#: commands/tablecmds.c:1636
 #, c-format
 msgid "merging column \"%s\" with inherited definition"
 msgstr "unione della colonna \"%s\" con la definizione ereditata"
 
-#: commands/tablecmds.c:1642
+#: commands/tablecmds.c:1644
 #, c-format
 msgid "column \"%s\" has a type conflict"
 msgstr "la colonna \"%s\" ha un conflitto di tipi"
 
-#: commands/tablecmds.c:1652
+#: commands/tablecmds.c:1654
 #, c-format
 msgid "column \"%s\" has a collation conflict"
 msgstr "la colonna \"%s\" ha un conflitto di ordinamento"
 
-#: commands/tablecmds.c:1664
+#: commands/tablecmds.c:1666
 #, c-format
 msgid "column \"%s\" has a storage parameter conflict"
 msgstr "la colonna \"%s\" ha un conflitto di parametri di memorizzazione"
 
-#: commands/tablecmds.c:1716
+#: commands/tablecmds.c:1718
 #, c-format
 msgid "column \"%s\" inherits conflicting default values"
 msgstr "la colonna \"%s\" eredita valori predefiniti in conflitto tra loro"
 
-#: commands/tablecmds.c:1718
+#: commands/tablecmds.c:1720
 msgid "To resolve the conflict, specify a default explicitly."
 msgstr ""
 "Per risolvere il conflitto, specificare esplicitamente un valore predefinito."
 
-#: commands/tablecmds.c:1765
+#: commands/tablecmds.c:1767
 #, c-format
 msgid ""
 "check constraint name \"%s\" appears multiple times but with different "
@@ -8913,50 +8912,50 @@ msgstr ""
 "il nome del vincolo di controllo \"%s\" compare più di una volta ma con "
 "espressioni diverse"
 
-#: commands/tablecmds.c:1960
+#: commands/tablecmds.c:1962
 msgid "cannot rename column of typed table"
 msgstr "non è possibile rinominare la colonna di una tabella con tipo"
 
-#: commands/tablecmds.c:1977
+#: commands/tablecmds.c:1979
 #, c-format
 msgid "\"%s\" is not a table, view, composite type, index or foreign table"
 msgstr ""
 "\"%s\" non è una tabella, una vista, un tipo composito, un indice né una "
 "tabella esterna"
 
-#: commands/tablecmds.c:2043
+#: commands/tablecmds.c:2045
 #, c-format
 msgid "inherited column \"%s\" must be renamed in child tables too"
 msgstr ""
 "la colonna ereditata \"%s\" dev'essere rinominata anche nelle tabelle figlie"
 
-#: commands/tablecmds.c:2075
+#: commands/tablecmds.c:2077
 #, c-format
 msgid "cannot rename system column \"%s\""
 msgstr "non è possibile rinominare la colonna di sistema \"%s\""
 
-#: commands/tablecmds.c:2090
+#: commands/tablecmds.c:2092
 #, c-format
 msgid "cannot rename inherited column \"%s\""
 msgstr "non è possibile rinominare la colonna ereditata \"%s\""
 
-#: commands/tablecmds.c:2101 commands/tablecmds.c:4183
+#: commands/tablecmds.c:2103 commands/tablecmds.c:4190
 #, c-format
 msgid "column \"%s\" of relation \"%s\" already exists"
 msgstr "la colonna \"%s\" della relazione \"%s\" esiste già"
 
-#: commands/tablecmds.c:2190 commands/tablecmds.c:7372
-#: commands/tablecmds.c:9027
+#: commands/tablecmds.c:2192 commands/tablecmds.c:7404
+#: commands/tablecmds.c:9059
 msgid "Use ALTER TYPE instead."
 msgstr "È possibile usare ALTER TYPE invece."
 
-#: commands/tablecmds.c:2237 catalog/index.c:769 catalog/heap.c:1013
+#: commands/tablecmds.c:2239 catalog/index.c:773 catalog/heap.c:1013
 #, c-format
 msgid "relation \"%s\" already exists"
 msgstr "la relazione \"%s\" esiste già"
 
 #. translator: first %s is a SQL command, eg ALTER TABLE
-#: commands/tablecmds.c:2313
+#: commands/tablecmds.c:2315
 #, c-format
 msgid ""
 "cannot %s \"%s\" because it is being used by active queries in this session"
@@ -8965,79 +8964,79 @@ msgstr ""
 "questa sessione"
 
 #. translator: first %s is a SQL command, eg ALTER TABLE
-#: commands/tablecmds.c:2322
+#: commands/tablecmds.c:2324
 #, c-format
 msgid "cannot %s \"%s\" because it has pending trigger events"
 msgstr ""
 "non è possibile effettuare %s \"%s\" perché ha eventi trigger in sospeso"
 
-#: commands/tablecmds.c:2421
+#: commands/tablecmds.c:2423
 #, c-format
 msgid "\"%s\" is not a composite type"
 msgstr "\"%s\" non è un tipo composito"
 
-#: commands/tablecmds.c:3246
+#: commands/tablecmds.c:3253
 #, c-format
 msgid "cannot rewrite system relation \"%s\""
 msgstr "non è possibile riscrivere la relazione di sistema \"%s\""
 
-#: commands/tablecmds.c:3256
+#: commands/tablecmds.c:3263
 msgid "cannot rewrite temporary tables of other sessions"
 msgstr "non è possibile riscrivere tabelle temporanee di altre sessioni"
 
-#: commands/tablecmds.c:3481
+#: commands/tablecmds.c:3488
 #, c-format
 msgid "rewriting table \"%s\""
 msgstr "riscrittura della tabella \"%s\""
 
-#: commands/tablecmds.c:3485
+#: commands/tablecmds.c:3492
 #, c-format
 msgid "verifying table \"%s\""
 msgstr "verifica della tabella \"%s\""
 
-#: commands/tablecmds.c:3592
+#: commands/tablecmds.c:3599
 #, c-format
 msgid "column \"%s\" contains null values"
 msgstr "la colonna \"%s\" contiene valori null"
 
-#: commands/tablecmds.c:3606
+#: commands/tablecmds.c:3613
 #, c-format
 msgid "check constraint \"%s\" is violated by some row"
 msgstr "il vincolo di controllo \"%s\" è violato da alcune righe"
 
-#: commands/tablecmds.c:3747 commands/tablecmds.c:4697
+#: commands/tablecmds.c:3754 commands/tablecmds.c:4706
 #, c-format
 msgid "\"%s\" is not a table or index"
 msgstr "\"%s\" non è una tabella né un indice"
 
-#: commands/tablecmds.c:3750 commands/trigger.c:186 commands/trigger.c:1099
+#: commands/tablecmds.c:3757 commands/trigger.c:186 commands/trigger.c:1099
 #: rewrite/rewriteDefine.c:257
 #, c-format
 msgid "\"%s\" is not a table or view"
 msgstr "\"%s\" non è una tabella né una vista"
 
-#: commands/tablecmds.c:3753
+#: commands/tablecmds.c:3760
 #, c-format
 msgid "\"%s\" is not a table or foreign table"
 msgstr "\"%s\" non è una tabella né una tabella esterna"
 
-#: commands/tablecmds.c:3756
+#: commands/tablecmds.c:3763
 #, c-format
 msgid "\"%s\" is not a table, composite type, or foreign table"
 msgstr "\"%s\" non è una tabella, un tipo composito né una tabella esterna"
 
-#: commands/tablecmds.c:3766
+#: commands/tablecmds.c:3773
 #, c-format
 msgid "\"%s\" is of the wrong type"
 msgstr "\"%s\" è del tipo sbagliato"
 
-#: commands/tablecmds.c:3915 commands/tablecmds.c:3922
+#: commands/tablecmds.c:3922 commands/tablecmds.c:3929
 #, c-format
 msgid "cannot alter type \"%s\" because column \"%s.%s\" uses it"
 msgstr ""
 "non è possibile modificare il tipo \"%s\" perché la colonna \"%s.%s\" lo usa"
 
-#: commands/tablecmds.c:3929
+#: commands/tablecmds.c:3936
 #, c-format
 msgid ""
 "cannot alter foreign table \"%s\" because column \"%s.%s\" uses its row type"
@@ -9045,137 +9044,137 @@ msgstr ""
 "non è possibile modificare la tabella esterna \"%s\" perché la colonna \"%s."
 "%s\" usa il suo tipo di riga"
 
-#: commands/tablecmds.c:3936
+#: commands/tablecmds.c:3943
 #, c-format
 msgid "cannot alter table \"%s\" because column \"%s.%s\" uses its row type"
 msgstr ""
 "non è possibile modificare la tabella \"%s\" perché la colonna \"%s.%s\" usa "
 "il suo tipo di riga"
 
-#: commands/tablecmds.c:3998
+#: commands/tablecmds.c:4005
 #, c-format
 msgid "cannot alter type \"%s\" because it is the type of a typed table"
 msgstr ""
 "non è possibile modificare il tipo \"%s\" perché è il tipo di una tabella "
 "con tipo"
 
-#: commands/tablecmds.c:4000
+#: commands/tablecmds.c:4007
 msgid "Use ALTER ... CASCADE to alter the typed tables too."
 msgstr "Usa DROP ... CASCADE per eliminare anche le tabelle con tipo."
 
-#: commands/tablecmds.c:4044
+#: commands/tablecmds.c:4051
 #, c-format
 msgid "type %s is not a composite type"
 msgstr "il tipo %s non è un tipo composito"
 
-#: commands/tablecmds.c:4070
+#: commands/tablecmds.c:4077
 msgid "cannot add column to typed table"
 msgstr "non è possibile aggiungere una colonna ad una tabella con tipo"
 
-#: commands/tablecmds.c:4131 commands/tablecmds.c:8303
+#: commands/tablecmds.c:4138 commands/tablecmds.c:8335
 #, c-format
 msgid "child table \"%s\" has different type for column \"%s\""
 msgstr "la tabella figlia \"%s\" ha tipo diverso per la colonna \"%s\""
 
-#: commands/tablecmds.c:4137 commands/tablecmds.c:8310
+#: commands/tablecmds.c:4144 commands/tablecmds.c:8342
 #, c-format
 msgid "child table \"%s\" has different collation for column \"%s\""
 msgstr "la tabella figlia \"%s\" ha ordinamento diverso per la colonna \"%s\""
 
-#: commands/tablecmds.c:4147
+#: commands/tablecmds.c:4154
 #, c-format
 msgid "child table \"%s\" has a conflicting \"%s\" column"
 msgstr "la tabella figlia \"%s\" ha la colonna \"%s\" in conflitto"
 
-#: commands/tablecmds.c:4159
+#: commands/tablecmds.c:4166
 #, c-format
 msgid "merging definition of column \"%s\" for child \"%s\""
 msgstr ""
 "unione delle definizioni della colonna \"%s\" per la tabella figlia \"%s\""
 
-#: commands/tablecmds.c:4389
+#: commands/tablecmds.c:4396
 msgid "column must be added to child tables too"
 msgstr "la colonna deve essere aggiunta anche alle tabelle figlie"
 
-#: commands/tablecmds.c:4519 commands/tablecmds.c:4609
-#: commands/tablecmds.c:4654 commands/tablecmds.c:4750
-#: commands/tablecmds.c:4794 commands/tablecmds.c:4873
-#: commands/tablecmds.c:6590
+#: commands/tablecmds.c:4526 commands/tablecmds.c:4618
+#: commands/tablecmds.c:4663 commands/tablecmds.c:4759
+#: commands/tablecmds.c:4803 commands/tablecmds.c:4882
+#: commands/tablecmds.c:6617
 #, c-format
 msgid "cannot alter system column \"%s\""
 msgstr "non è possibile modificare la colonna di sistema \"%s\""
 
-#: commands/tablecmds.c:4553
+#: commands/tablecmds.c:4562
 #, c-format
 msgid "column \"%s\" is in a primary key"
 msgstr "la colonna \"%s\" è in una chiave primaria"
 
-#: commands/tablecmds.c:4724
+#: commands/tablecmds.c:4733
 #, c-format
 msgid "statistics target %d is too low"
 msgstr "il target delle statistiche %d è troppo basso"
 
-#: commands/tablecmds.c:4732
+#: commands/tablecmds.c:4741
 #, c-format
 msgid "lowering statistics target to %d"
 msgstr "target delle statistiche abbassato a %d"
 
-#: commands/tablecmds.c:4854
+#: commands/tablecmds.c:4863
 #, c-format
 msgid "invalid storage type \"%s\""
 msgstr "tipo di immagazzinamento non valido \"%s\""
 
-#: commands/tablecmds.c:4885
+#: commands/tablecmds.c:4894
 #, c-format
 msgid "column data type %s can only have storage PLAIN"
 msgstr "il tipo di dato della colonna %s può avere solo immagazzinamento PLAIN"
 
-#: commands/tablecmds.c:4915
+#: commands/tablecmds.c:4924
 msgid "cannot drop column from typed table"
 msgstr "non è possibile eliminare la colonna da una tabella con tipo"
 
-#: commands/tablecmds.c:4956
+#: commands/tablecmds.c:4965
 #, c-format
 msgid "column \"%s\" of relation \"%s\" does not exist, skipping"
 msgstr "la colonna \"%s\" della relazione \"%s\" non esiste, saltato"
 
-#: commands/tablecmds.c:4969
+#: commands/tablecmds.c:4978
 #, c-format
 msgid "cannot drop system column \"%s\""
 msgstr "non è possibile eliminare la colonna di sistema \"%s\""
 
-#: commands/tablecmds.c:4976
+#: commands/tablecmds.c:4985
 #, c-format
 msgid "cannot drop inherited column \"%s\""
 msgstr "non è possibile eliminare la colonna ereditata \"%s\""
 
-#: commands/tablecmds.c:5202
+#: commands/tablecmds.c:5211
 #, c-format
 msgid ""
 "ALTER TABLE / ADD CONSTRAINT USING INDEX will rename index \"%s\" to \"%s\""
 msgstr ""
 "ALTER TABLE / ADD CONSTRAINT USING INDEX rinominerà l'indice \"%s\" in \"%s\""
 
-#: commands/tablecmds.c:5270 catalog/pg_constraint.c:645 catalog/heap.c:2296
+#: commands/tablecmds.c:5281 catalog/pg_constraint.c:645 catalog/heap.c:2296
 #, c-format
 msgid "constraint \"%s\" for relation \"%s\" already exists"
 msgstr "il vincolo \"%s\" per la relazione \"%s\" esiste già"
 
-#: commands/tablecmds.c:5380
+#: commands/tablecmds.c:5405
 msgid "constraint must be added to child tables too"
 msgstr "il vincolo deve essere aggiunto anche alle tabelle figlie"
 
-#: commands/tablecmds.c:5445 commands/sequence.c:1425
+#: commands/tablecmds.c:5470 commands/sequence.c:1425
 #, c-format
 msgid "referenced relation \"%s\" is not a table"
 msgstr "la relazione referenziata \"%s\" non è una tabella"
 
-#: commands/tablecmds.c:5468
+#: commands/tablecmds.c:5493
 msgid "constraints on permanent tables may reference only permanent tables"
 msgstr ""
 "i vincoli su tabelle permanenti possono referenziare solo tabelle permanenti"
 
-#: commands/tablecmds.c:5475
+#: commands/tablecmds.c:5500
 msgid ""
 "constraints on unlogged tables may reference only permanent or unlogged "
 "tables"
@@ -9183,63 +9182,63 @@ msgstr ""
 "i vincoli su tabelle non loggate possono referenziare solo tabelle "
 "permanenti o non loggate"
 
-#: commands/tablecmds.c:5481
+#: commands/tablecmds.c:5506
 msgid "constraints on temporary tables may reference only temporary tables"
 msgstr ""
 "i vincoli su tabelle temporanee possono referenziare solo tabelle temporanee"
 
-#: commands/tablecmds.c:5542
+#: commands/tablecmds.c:5567
 msgid "number of referencing and referenced columns for foreign key disagree"
 msgstr ""
 "i numeri di colonne referenzianti e referenziate per la chiave esterna non "
 "combaciano"
 
-#: commands/tablecmds.c:5631
+#: commands/tablecmds.c:5656
 #, c-format
 msgid "foreign key constraint \"%s\" cannot be implemented"
 msgstr "non è possibile implementare il vincolo di chiave esterna \"%s\""
 
-#: commands/tablecmds.c:5634
+#: commands/tablecmds.c:5659
 #, c-format
 msgid "Key columns \"%s\" and \"%s\" are of incompatible types: %s and %s."
 msgstr "Le colonne chiave \"%s\" e \"%s\" hanno tipi incompatibili: %s e %s."
 
-#: commands/tablecmds.c:5747
+#: commands/tablecmds.c:5772
 #, c-format
 msgid "foreign key constraint \"%s\" of relation \"%s\" does not exist"
 msgstr "il vincolo di chiave esterna \"%s\" della relazione \"%s\" non esiste"
 
-#: commands/tablecmds.c:5810
+#: commands/tablecmds.c:5835
 #, c-format
 msgid "column \"%s\" referenced in foreign key constraint does not exist"
 msgstr ""
 "la colonna \"%s\" referenziata dal vincolo di chiave esterna non esiste"
 
-#: commands/tablecmds.c:5815
+#: commands/tablecmds.c:5840
 #, c-format
 msgid "cannot have more than %d keys in a foreign key"
 msgstr "non possono esserci più di %d chiavi in una chiave esterna"
 
-#: commands/tablecmds.c:5880
+#: commands/tablecmds.c:5905
 #, c-format
 msgid "cannot use a deferrable primary key for referenced table \"%s\""
 msgstr ""
 "non è possibile usare una chiave primaria deferita per la tabella "
 "referenziata \"%s\""
 
-#: commands/tablecmds.c:5897
+#: commands/tablecmds.c:5922
 #, c-format
 msgid "there is no primary key for referenced table \"%s\""
 msgstr "la tabella referenziata \"%s\" non ha una chiave primaria"
 
-#: commands/tablecmds.c:6047
+#: commands/tablecmds.c:6074
 #, c-format
 msgid "cannot use a deferrable unique constraint for referenced table \"%s\""
 msgstr ""
 "non è possibile usare un vincolo univoco deferito per la tabella "
 "referenziata \"%s\""
 
-#: commands/tablecmds.c:6052
+#: commands/tablecmds.c:6079
 #, c-format
 msgid ""
 "there is no unique constraint matching given keys for referenced table \"%s\""
@@ -9247,224 +9246,224 @@ msgstr ""
 "non c'è alcun vincolo univoco che corrisponda alle chiavi indicate per la "
 "tabella referenziata \"%s\""
 
-#: commands/tablecmds.c:6103
+#: commands/tablecmds.c:6130
 #, c-format
 msgid "validating foreign key constraint \"%s\""
 msgstr "validazione del vincolo di chiave esterna \"%s\""
 
-#: commands/tablecmds.c:6399
+#: commands/tablecmds.c:6426
 #, c-format
 msgid "cannot drop inherited constraint \"%s\" of relation \"%s\""
 msgstr ""
 "non è possibile eliminare il vincolo ereditato \"%s\" della relazione \"%s\""
 
-#: commands/tablecmds.c:6426 commands/tablecmds.c:6539
+#: commands/tablecmds.c:6453 commands/tablecmds.c:6566
 #, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist"
 msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste"
 
-#: commands/tablecmds.c:6432
+#: commands/tablecmds.c:6459
 #, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist, skipping"
 msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste, saltato"
 
-#: commands/tablecmds.c:6574
+#: commands/tablecmds.c:6601
 msgid "cannot alter column type of typed table"
 msgstr "non è possibile modificare il tipo di colonna di una tabella con tipo"
 
-#: commands/tablecmds.c:6597
+#: commands/tablecmds.c:6624
 #, c-format
 msgid "cannot alter inherited column \"%s\""
 msgstr "non è possibile modificare la colonna ereditata \"%s\""
 
-#: commands/tablecmds.c:6639
+#: commands/tablecmds.c:6666
 msgid "transform expression must not return a set"
 msgstr "l'espressione di trasformazione non può restituire un insieme"
 
-#: commands/tablecmds.c:6645
+#: commands/tablecmds.c:6672
 msgid "cannot use subquery in transform expression"
 msgstr "non è possibile usare sottoquery in un'espressione di trasformazione"
 
-#: commands/tablecmds.c:6649
+#: commands/tablecmds.c:6676
 msgid "cannot use aggregate function in transform expression"
 msgstr ""
 "non è possibile usare funzioni aggregate in un'espressione di trasformazione"
 
-#: commands/tablecmds.c:6653
+#: commands/tablecmds.c:6680
 msgid "cannot use window function in transform expression"
 msgstr ""
 "non è possibile usare funzioni finestra in un'espressione di trasformazione"
 
-#: commands/tablecmds.c:6672
+#: commands/tablecmds.c:6699
 #, c-format
 msgid "column \"%s\" cannot be cast to type %s"
 msgstr "la colonna \"%s\" non può essere convertita al tipo %s"
 
-#: commands/tablecmds.c:6719
+#: commands/tablecmds.c:6746
 #, c-format
 msgid "type of inherited column \"%s\" must be changed in child tables too"
 msgstr ""
 "il tipo della colonna ereditata \"%s\" deve essere cambiato anche nelle "
 "tabelle figlie"
 
-#: commands/tablecmds.c:6800
+#: commands/tablecmds.c:6827
 #, c-format
 msgid "cannot alter type of column \"%s\" twice"
 msgstr "non è possibile cambiare il tipo della colonna \"%s\" due volte"
 
-#: commands/tablecmds.c:6836
+#: commands/tablecmds.c:6863
 #, c-format
 msgid "default for column \"%s\" cannot be cast to type %s"
 msgstr ""
 "il valore predefinito della colonna \"%s\" non può essere convertito al tipo "
 "%s"
 
-#: commands/tablecmds.c:6962
+#: commands/tablecmds.c:6989
 msgid "cannot alter type of a column used by a view or rule"
 msgstr ""
 "non è possibile cambiare il tipo di una colonna usata in una vista o una "
 "regola"
 
-#: commands/tablecmds.c:6963 commands/tablecmds.c:6982
+#: commands/tablecmds.c:6990 commands/tablecmds.c:7009
 #, c-format
 msgid "%s depends on column \"%s\""
 msgstr "%s dipende dalla colonna \"%s\""
 
-#: commands/tablecmds.c:6981
+#: commands/tablecmds.c:7008
 msgid "cannot alter type of a column used in a trigger definition"
 msgstr ""
 "non è possibile cambiare il tipo di una colonna usata nella definizione di "
 "un trigger"
 
-#: commands/tablecmds.c:7340
+#: commands/tablecmds.c:7372
 #, c-format
 msgid "cannot change owner of index \"%s\""
 msgstr "non è possibile cambiare il proprietario dell'indice \"%s\""
 
-#: commands/tablecmds.c:7342
+#: commands/tablecmds.c:7374
 msgid "Change the ownership of the index's table, instead."
 msgstr "Cambia il proprietario della tabella dell'indice invece."
 
-#: commands/tablecmds.c:7358
+#: commands/tablecmds.c:7390
 #, c-format
 msgid "cannot change owner of sequence \"%s\""
 msgstr "non è possibile cambiare il proprietario della sequenza \"%s\""
 
-#: commands/tablecmds.c:7360 commands/tablecmds.c:9017
+#: commands/tablecmds.c:7392 commands/tablecmds.c:9049
 #, c-format
 msgid "Sequence \"%s\" is linked to table \"%s\"."
 msgstr "La sequenza \"%s\" è collegata alla tabella \"%s\"."
 
-#: commands/tablecmds.c:7381 commands/tablecmds.c:9035
+#: commands/tablecmds.c:7413 commands/tablecmds.c:9067
 #, c-format
 msgid "\"%s\" is not a table, view, sequence, or foreign table"
 msgstr ""
 "\"%s\" non è una tabella, una vista, una sequenza né una tabella esterna"
 
-#: commands/tablecmds.c:7666 commands/cluster.c:178
+#: commands/tablecmds.c:7698 commands/cluster.c:178
 #, c-format
 msgid "index \"%s\" for table \"%s\" does not exist"
 msgstr "l'indice \"%s\" per la tabella \"%s\" non esiste"
 
-#: commands/tablecmds.c:7709
+#: commands/tablecmds.c:7741
 msgid "cannot have multiple SET TABLESPACE subcommands"
 msgstr "non è possibile avere più di un sottocomando SET TABLESPACE"
 
-#: commands/tablecmds.c:7761
+#: commands/tablecmds.c:7793
 #, c-format
 msgid "\"%s\" is not a table, index, or TOAST table"
 msgstr "\"%s\" non è una tabella, un indice né una tabella TOAST"
 
-#: commands/tablecmds.c:7882
+#: commands/tablecmds.c:7914
 #, c-format
 msgid "cannot move system relation \"%s\""
 msgstr "non è possibile spostare la relazione \"%s\""
 
-#: commands/tablecmds.c:7898
+#: commands/tablecmds.c:7930
 msgid "cannot move temporary tables of other sessions"
 msgstr "non è possibile spostare tabelle temporanee di altre sessioni"
 
-#: commands/tablecmds.c:8090
+#: commands/tablecmds.c:8122
 msgid "cannot change inheritance of typed table"
 msgstr "non è possibile cambiare ereditarietà di tabelle con tipo"
 
-#: commands/tablecmds.c:8176
+#: commands/tablecmds.c:8208
 msgid "circular inheritance not allowed"
 msgstr "l'ereditarietà circolare non è consentita"
 
-#: commands/tablecmds.c:8177
+#: commands/tablecmds.c:8209
 #, c-format
 msgid "\"%s\" is already a child of \"%s\"."
 msgstr "\"%s\" è già figlia di \"%s\"."
 
-#: commands/tablecmds.c:8185
+#: commands/tablecmds.c:8217
 #, c-format
 msgid "table \"%s\" without OIDs cannot inherit from table \"%s\" with OIDs"
 msgstr ""
 "la tabella \"%s\" senza OID non può ereditare dalla tabella \"%s\" con OID"
 
-#: commands/tablecmds.c:8321
+#: commands/tablecmds.c:8353
 #, c-format
 msgid "column \"%s\" in child table must be marked NOT NULL"
 msgstr "la colonna \"%s\" nella tabella figlia dev'essere marcata NOT NULL"
 
-#: commands/tablecmds.c:8337
+#: commands/tablecmds.c:8369
 #, c-format
 msgid "child table is missing column \"%s\""
 msgstr "la tabella figlia non ha la colonna \"%s\""
 
-#: commands/tablecmds.c:8416
+#: commands/tablecmds.c:8448
 #, c-format
 msgid "child table \"%s\" has different definition for check constraint \"%s\""
 msgstr ""
 "la tabella figlia \"%s\" ha una definizione diversa del vincolo di controllo "
 "\"%s\""
 
-#: commands/tablecmds.c:8440
+#: commands/tablecmds.c:8472
 #, c-format
 msgid "child table is missing constraint \"%s\""
 msgstr "la tabella figlia non ha il vincolo \"%s\""
 
-#: commands/tablecmds.c:8520
+#: commands/tablecmds.c:8552
 #, c-format
 msgid "relation \"%s\" is not a parent of relation \"%s\""
 msgstr "la relazione \"%s\" non è genitore della relazione \"%s\""
 
-#: commands/tablecmds.c:8737
+#: commands/tablecmds.c:8769
 msgid "typed tables cannot inherit"
 msgstr "le tabelle con tipo non possono essere ereditate"
 
-#: commands/tablecmds.c:8768
+#: commands/tablecmds.c:8800
 #, c-format
 msgid "table is missing column \"%s\""
 msgstr "la tabella non ha la colonna \"%s\""
 
-#: commands/tablecmds.c:8778
+#: commands/tablecmds.c:8810
 #, c-format
 msgid "table has column \"%s\" where type requires \"%s\""
 msgstr "la tabella ha la colonna \"%s\" laddove il tipo richiede \"%s\""
 
-#: commands/tablecmds.c:8787
+#: commands/tablecmds.c:8819
 #, c-format
 msgid "table \"%s\" has different type for column \"%s\""
 msgstr "la tabella \"%s\" ha tipo diverso per la colonna \"%s\""
 
-#: commands/tablecmds.c:8800
+#: commands/tablecmds.c:8832
 #, c-format
 msgid "table has extra column \"%s\""
 msgstr "la tabella ha la colonna \"%s\" in eccesso"
 
-#: commands/tablecmds.c:8847
+#: commands/tablecmds.c:8879
 #, c-format
 msgid "\"%s\" is not a typed table"
 msgstr "\"%s\" non è una tabella con tipo"
 
-#: commands/tablecmds.c:9016
+#: commands/tablecmds.c:9048
 msgid "cannot move an owned sequence into another schema"
 msgstr ""
 "non è possibile spostare una sequenza con proprietario in uno schema diverso"
 
-#: commands/tablecmds.c:9123
+#: commands/tablecmds.c:9155
 #, c-format
 msgid "relation \"%s\" already exists in schema \"%s\""
 msgstr "la relazione \"%s\" esiste già nello schema \"%s\""
@@ -10415,23 +10414,23 @@ msgstr "non è possibile raggruppare sull'indice parziale \"%s\""
 msgid "cannot cluster on invalid index \"%s\""
 msgstr "non è possibile raggruppare sull'indice non valido \"%s\""
 
-#: commands/cluster.c:886
+#: commands/cluster.c:894
 #, c-format
 msgid "clustering \"%s.%s\" using index scan on \"%s\""
 msgstr "raggruppamento di \"%s.%s\" usando una scansione sull'indice \"%s\""
 
-#: commands/cluster.c:892
+#: commands/cluster.c:900
 #, c-format
 msgid "clustering \"%s.%s\" using sequential scan and sort"
 msgstr ""
 "raggruppamento di \"%s.%s\" usando una scansione sequenziale e ordinamento"
 
-#: commands/cluster.c:897 commands/vacuumlazy.c:339
+#: commands/cluster.c:905 commands/vacuumlazy.c:339
 #, c-format
 msgid "vacuuming \"%s.%s\""
 msgstr "pulizia di \"%s.%s\""
 
-#: commands/cluster.c:1057
+#: commands/cluster.c:1065
 #, c-format
 msgid ""
 "\"%s\": found %.0f removable, %.0f nonremovable row versions in %u pages"
@@ -10439,7 +10438,7 @@ msgstr ""
 "\"%s\": trovate %.0f versioni di riga removibili, %.0f non removibili in %u "
 "pagine"
 
-#: commands/cluster.c:1061
+#: commands/cluster.c:1069
 #, c-format
 msgid ""
 "%.0f dead row versions cannot be removed yet.\n"
@@ -10751,116 +10750,116 @@ msgstr "opzione di EXPLAIN non riconosciuta \"%s\""
 msgid "EXPLAIN option BUFFERS requires ANALYZE"
 msgstr "l'opzione BUFFERS di EXPLAIN richiede ANALYZE"
 
-#: commands/indexcmds.c:163
+#: commands/indexcmds.c:160
 msgid "must specify at least one column"
 msgstr "occorre specificare almeno una colonna"
 
-#: commands/indexcmds.c:167
+#: commands/indexcmds.c:164
 #, c-format
 msgid "cannot use more than %d columns in an index"
 msgstr "non è possibile usare più di %d colonne in un indice"
 
-#: commands/indexcmds.c:195
+#: commands/indexcmds.c:192
 #, c-format
 msgid "cannot create index on foreign table \"%s\""
 msgstr "non è possibile creare indici sulla tabella esterna \"%s\""
 
-#: commands/indexcmds.c:210
+#: commands/indexcmds.c:207
 msgid "cannot create indexes on temporary tables of other sessions"
 msgstr "non è possibile creare indici su tabelle temporanee di altre sessioni"
 
-#: commands/indexcmds.c:296
+#: commands/indexcmds.c:293
 msgid "substituting access method \"gist\" for obsolete method \"rtree\""
 msgstr ""
 "sostituzione del metodo di accesso \"gist\" per il metodo obsoleto \"rtree\""
 
-#: commands/indexcmds.c:304 commands/opclasscmds.c:369
+#: commands/indexcmds.c:301 commands/opclasscmds.c:369
 #: commands/opclasscmds.c:790 commands/opclasscmds.c:2202
 #, c-format
 msgid "access method \"%s\" does not exist"
 msgstr "Il metodo di accesso \"%s\" non esiste"
 
-#: commands/indexcmds.c:313
+#: commands/indexcmds.c:310
 #, c-format
 msgid "access method \"%s\" does not support unique indexes"
 msgstr "il metodo di accesso \"%s\" non supporta gli indici univoci"
 
-#: commands/indexcmds.c:318
+#: commands/indexcmds.c:315
 #, c-format
 msgid "access method \"%s\" does not support multicolumn indexes"
 msgstr "il metodo di accesso \"%s\" non supporta gli indici multicolonna"
 
-#: commands/indexcmds.c:323
+#: commands/indexcmds.c:320
 #, c-format
 msgid "access method \"%s\" does not support exclusion constraints"
 msgstr "il metodo di accesso \"%s\" non supporta i vincoli di esclusione"
 
-#: commands/indexcmds.c:399
+#: commands/indexcmds.c:396
 #, c-format
 msgid "%s %s will create implicit index \"%s\" for table \"%s\""
 msgstr "%s %s creerà un indice implicito \"%s\" per la tabella \"%s\""
 
-#: commands/indexcmds.c:763
+#: commands/indexcmds.c:728
 msgid "cannot use subquery in index predicate"
 msgstr "non è possibile usare sottoquery nel predicato dell'indice"
 
-#: commands/indexcmds.c:767
+#: commands/indexcmds.c:732
 msgid "cannot use aggregate in index predicate"
 msgstr ""
 "non si possono usare funzioni di aggregazione nel predicato dell'indice"
 
-#: commands/indexcmds.c:776
+#: commands/indexcmds.c:741
 msgid "functions in index predicate must be marked IMMUTABLE"
 msgstr "le funzioni nel predicato dell'indice devono essere marcate IMMUTABLE"
 
-#: commands/indexcmds.c:841 parser/parse_utilcmd.c:1760
+#: commands/indexcmds.c:806 parser/parse_utilcmd.c:1754
 #, c-format
 msgid "column \"%s\" named in key does not exist"
 msgstr "la colonna \"%s\" nominata nella chiave non esiste"
 
-#: commands/indexcmds.c:894
+#: commands/indexcmds.c:859
 msgid "cannot use subquery in index expression"
 msgstr "non si possono usare sottoquery nell'espressione dell'indice"
 
-#: commands/indexcmds.c:898
+#: commands/indexcmds.c:863
 msgid "cannot use aggregate function in index expression"
 msgstr ""
 "non si possono usare funzioni di aggregazione nell'espressione dell'indice"
 
-#: commands/indexcmds.c:909
+#: commands/indexcmds.c:874
 msgid "functions in index expression must be marked IMMUTABLE"
 msgstr ""
 "le funzioni nell'espressione dell'indice devono essere marcate IMMUTABLE"
 
-#: commands/indexcmds.c:930
+#: commands/indexcmds.c:895
 msgid "could not determine which collation to use for index expression"
 msgstr ""
 "non è stato possibile determinare quale ordinamento usare per l'espressione "
 "dell'indice"
 
-#: commands/indexcmds.c:938 commands/typecmds.c:843
-#: parser/parse_utilcmd.c:2612 parser/parse_expr.c:2150
+#: commands/indexcmds.c:903 commands/typecmds.c:843
+#: parser/parse_utilcmd.c:2606 parser/parse_expr.c:2150
 #: parser/parse_type.c:492
 #, c-format
 msgid "collations are not supported by type %s"
 msgstr "gli ordinamenti non sono supportati dal tipo %s"
 
-#: commands/indexcmds.c:976
+#: commands/indexcmds.c:941
 #, c-format
 msgid "operator %s is not commutative"
 msgstr "l'operatore %s non è commutativo"
 
-#: commands/indexcmds.c:978
+#: commands/indexcmds.c:943
 msgid "Only commutative operators can be used in exclusion constraints."
 msgstr ""
 "Solo operatori commutativi possono essere usati nei vincoli di esclusione."
 
-#: commands/indexcmds.c:1004
+#: commands/indexcmds.c:969
 #, c-format
 msgid "operator %s is not a member of operator family \"%s\""
 msgstr "l'operatore %s non è membro della famiglia di operatori \"%s\""
 
-#: commands/indexcmds.c:1007
+#: commands/indexcmds.c:972
 msgid ""
 "The exclusion operator must be related to the index operator class for the "
 "constraint."
@@ -10868,24 +10867,24 @@ msgstr ""
 "L'operatore di esclusione dev'essere correlato alla classe di operatori "
 "dell'indice per il vincolo."
 
-#: commands/indexcmds.c:1042
+#: commands/indexcmds.c:1007
 #, c-format
 msgid "access method \"%s\" does not support ASC/DESC options"
 msgstr "il metodo di accesso \"%s\" non supporta le opzioni ASC/DESC"
 
-#: commands/indexcmds.c:1047
+#: commands/indexcmds.c:1012
 #, c-format
 msgid "access method \"%s\" does not support NULLS FIRST/LAST options"
 msgstr "il metodo di accesso \"%s\" non supporta le opzioni NULLS FIRST/LAST"
 
-#: commands/indexcmds.c:1103
+#: commands/indexcmds.c:1068
 #, c-format
 msgid "data type %s has no default operator class for access method \"%s\""
 msgstr ""
 "il tipo di dati %s non ha una classe di operatori predefinita per il metodo "
 "di accesso \"%s\""
 
-#: commands/indexcmds.c:1105
+#: commands/indexcmds.c:1070
 msgid ""
 "You must specify an operator class for the index or define a default "
 "operator class for the data type."
@@ -10893,33 +10892,33 @@ msgstr ""
 "Devi specificare una classe di operatori per l'indice o definire una classe "
 "di operatori predefinita per il tipo di dati"
 
-#: commands/indexcmds.c:1134 commands/indexcmds.c:1142
+#: commands/indexcmds.c:1099 commands/indexcmds.c:1107
 #: commands/opclasscmds.c:212 commands/opclasscmds.c:1568
 #, c-format
 msgid "operator class \"%s\" does not exist for access method \"%s\""
 msgstr ""
 "la classe di operatori \"%s\" non esiste per il metodo di accesso \"%s\""
 
-#: commands/indexcmds.c:1155
+#: commands/indexcmds.c:1120
 #, c-format
 msgid "operator class \"%s\" does not accept data type %s"
 msgstr "la classe di operatori \"%s\" non accetta il tipo di dati %s"
 
-#: commands/indexcmds.c:1245
+#: commands/indexcmds.c:1210
 #, c-format
 msgid "there are multiple default operator classes for data type %s"
 msgstr "il tipo di dati %s ha più di una classe di operatori predefinita"
 
-#: commands/indexcmds.c:1586
+#: commands/indexcmds.c:1551
 #, c-format
 msgid "table \"%s\" has no indexes"
 msgstr "la tabella \"%s\" non ha indici"
 
-#: commands/indexcmds.c:1614
+#: commands/indexcmds.c:1579
 msgid "can only reindex the currently open database"
 msgstr "è possibile reindicizzare solo il database corrente"
 
-#: commands/indexcmds.c:1699
+#: commands/indexcmds.c:1664
 #, c-format
 msgid "table \"%s.%s\" was reindexed"
 msgstr "la tabella \"%s.%s\" è stata reindicizzata"
@@ -12116,17 +12115,17 @@ msgstr "il trigger BEFORE STATEMENT non può restituire un valore"
 msgid "could not serialize access due to concurrent update"
 msgstr "serializzazione dell'accesso fallita a causa di modifiche concorrenti"
 
-#: commands/trigger.c:4154 catalog/namespace.c:234 catalog/namespace.c:318
+#: commands/trigger.c:4166 catalog/namespace.c:234 catalog/namespace.c:318
 #, c-format
 msgid "cross-database references are not implemented: \"%s.%s.%s\""
 msgstr "i riferimenti tra database diversi non sono implementati: \"%s.%s.%s\""
 
-#: commands/trigger.c:4205
+#: commands/trigger.c:4217
 #, c-format
 msgid "constraint \"%s\" is not deferrable"
 msgstr "il vincolo \"%s\" non è deferibile"
 
-#: commands/trigger.c:4228
+#: commands/trigger.c:4240
 #, c-format
 msgid "constraint \"%s\" does not exist"
 msgstr "il vincolo \"%s\" non esiste"
@@ -12848,22 +12847,22 @@ msgid "FULL JOIN is only supported with merge-joinable join conditions"
 msgstr ""
 "FULL JOIN è supportato solo con condizioni di join che supportano merge"
 
-#: executor/execUtils.c:1305
+#: executor/execUtils.c:1308
 #, c-format
 msgid "could not create exclusion constraint \"%s\""
 msgstr "creazione del vincolo di esclusione \"%s\" fallita"
 
-#: executor/execUtils.c:1307
+#: executor/execUtils.c:1310
 #, c-format
 msgid "Key %s conflicts with key %s."
 msgstr "La chiave %s è in conflitto con la chiave %s."
 
-#: executor/execUtils.c:1312
+#: executor/execUtils.c:1315
 #, c-format
 msgid "conflicting key value violates exclusion constraint \"%s\""
 msgstr "le chiavi in conflitto violano il vincolo di esclusione \"%s\""
 
-#: executor/execUtils.c:1314
+#: executor/execUtils.c:1317
 #, c-format
 msgid "Key %s conflicts with existing key %s."
 msgstr "La chiave %s è in conflitto con la chiave esistente %s."
@@ -12890,11 +12889,11 @@ msgstr "non è possibile aprire un piano multi-query come cursore"
 msgid "cannot open %s query as cursor"
 msgstr "non è possibile aprire una query %s come cursore"
 
-#: executor/spi.c:1233 parser/analyze.c:2209
+#: executor/spi.c:1233 parser/analyze.c:2213
 msgid "DECLARE SCROLL CURSOR ... FOR UPDATE/SHARE is not supported"
 msgstr "DECLARE SCROLL CURSOR ... FOR UPDATE/SHARE non è supportato"
 
-#: executor/spi.c:1234 parser/analyze.c:2210
+#: executor/spi.c:1234 parser/analyze.c:2214
 msgid "Scrollable cursors must be READ ONLY."
 msgstr "Un cursore scorribile dev'essere READ ONLY."
 
@@ -13248,7 +13247,7 @@ msgstr "annullamento dell'attesa di replica sincrona su richiesta utente"
 msgid "standby \"%s\" now has synchronous standby priority %u"
 msgstr "lo standby \"%s\" ha ora priorità di standby sincrono %u"
 
-#: replication/syncrep.c:455
+#: replication/syncrep.c:456
 #, c-format
 msgid "standby \"%s\" is now the synchronous standby with priority %u"
 msgstr "lo standby \"%s\" è ora in standby sincrono con priorità %u"
@@ -13348,8 +13347,8 @@ msgstr ""
 "SELECT FOR UPDATE/SHARE non può essere applicato al lato di un join esterno "
 "che può essere null"
 
-#: optimizer/plan/planner.c:940 parser/analyze.c:1332 parser/analyze.c:1537
-#: parser/analyze.c:2266
+#: optimizer/plan/planner.c:940 parser/analyze.c:1333 parser/analyze.c:1541
+#: parser/analyze.c:2270
 msgid "SELECT FOR UPDATE/SHARE is not allowed with UNION/INTERSECT/EXCEPT"
 msgstr "SELECT FOR UPDATE/SHARE non è consentito con UNION/INTERSECT/EXCEPT"
 
@@ -13502,54 +13501,59 @@ msgstr ""
 msgid "could not listen on %s socket: %m"
 msgstr "ascolto sul socket %s fallito: %m"
 
-#: libpq/pqcomm.c:554
+#: libpq/pqcomm.c:499
+#, c-format
+msgid "Unix-domain socket path \"%s\" is too long (maximum %d bytes)"
+msgstr ""
+
+#: libpq/pqcomm.c:562
 #, c-format
 msgid "group \"%s\" does not exist"
 msgstr "il gruppo \"%s\" non esiste"
 
-#: libpq/pqcomm.c:564
+#: libpq/pqcomm.c:572
 #, c-format
 msgid "could not set group of file \"%s\": %m"
 msgstr "impostazione del gruppo del file \"%s\" fallita: %m"
 
-#: libpq/pqcomm.c:575
+#: libpq/pqcomm.c:583
 #, c-format
 msgid "could not set permissions of file \"%s\": %m"
 msgstr "impostazione dei permessi del file \"%s\" fallita: %m"
 
-#: libpq/pqcomm.c:605
+#: libpq/pqcomm.c:613
 #, c-format
 msgid "could not accept new connection: %m"
 msgstr "impossibile accettare la nuova connessione: %m"
 
-#: libpq/pqcomm.c:773
+#: libpq/pqcomm.c:781
 #, c-format
 msgid "could not set socket to non-blocking mode: %m"
 msgstr "impostazione del socket in modalità non bloccante fallita: %m"
 
-#: libpq/pqcomm.c:779
+#: libpq/pqcomm.c:787
 #, c-format
 msgid "could not set socket to blocking mode: %m"
 msgstr "impostazione del socket in modalità bloccante fallita: %m"
 
-#: libpq/pqcomm.c:831 libpq/pqcomm.c:921
+#: libpq/pqcomm.c:839 libpq/pqcomm.c:929
 #, c-format
 msgid "could not receive data from client: %m"
 msgstr "ricezione dati dal client fallita: %m"
 
-#: libpq/pqcomm.c:1072
+#: libpq/pqcomm.c:1080
 msgid "unexpected EOF within message length word"
 msgstr "fine file inattesa nella word della lunghezza del messaggio"
 
-#: libpq/pqcomm.c:1083
+#: libpq/pqcomm.c:1091
 msgid "invalid message length"
 msgstr "lunghezza del messaggio non valida"
 
-#: libpq/pqcomm.c:1105 libpq/pqcomm.c:1115
+#: libpq/pqcomm.c:1113 libpq/pqcomm.c:1123
 msgid "incomplete message from client"
 msgstr "messaggio incompleto dal client"
 
-#: libpq/pqcomm.c:1245
+#: libpq/pqcomm.c:1253
 #, c-format
 msgid "could not send data to client: %m"
 msgstr "invio dati al client fallito: %m"
@@ -14910,52 +14914,52 @@ msgstr "rilevato deadlock"
 msgid "See server log for query details."
 msgstr "Vedi i log del server per i dettagli della query."
 
-#: storage/lmgr/lmgr.c:720
+#: storage/lmgr/lmgr.c:738
 #, c-format
 msgid "relation %u of database %u"
 msgstr "la relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:726
+#: storage/lmgr/lmgr.c:744
 #, c-format
 msgid "extension of relation %u of database %u"
 msgstr "l'estensione della relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:732
+#: storage/lmgr/lmgr.c:750
 #, c-format
 msgid "page %u of relation %u of database %u"
 msgstr "la pagina %u della relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:739
+#: storage/lmgr/lmgr.c:757
 #, c-format
 msgid "tuple (%u,%u) of relation %u of database %u"
 msgstr "la tupla (%u,%u) della relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:747
+#: storage/lmgr/lmgr.c:765
 #, c-format
 msgid "transaction %u"
 msgstr "la transazione %u"
 
-#: storage/lmgr/lmgr.c:752
+#: storage/lmgr/lmgr.c:770
 #, c-format
 msgid "virtual transaction %d/%u"
 msgstr "la transazione virtuale %d/%u"
 
-#: storage/lmgr/lmgr.c:758
+#: storage/lmgr/lmgr.c:776
 #, c-format
 msgid "object %u of class %u of database %u"
 msgstr "l'oggetto %u di classe %u del database %u"
 
-#: storage/lmgr/lmgr.c:766
+#: storage/lmgr/lmgr.c:784
 #, c-format
 msgid "user lock [%u,%u,%u]"
 msgstr "il lock utente [%u,%u,%u]"
 
-#: storage/lmgr/lmgr.c:773
+#: storage/lmgr/lmgr.c:791
 #, c-format
 msgid "advisory lock [%u,%u,%u,%u]"
 msgstr "l'advisory lock [%u,%u,%u,%u]"
 
-#: storage/lmgr/lmgr.c:781
+#: storage/lmgr/lmgr.c:799
 #, c-format
 msgid "unrecognized locktag type %d"
 msgstr "tipo di locktag %d sconosciuto"
@@ -14976,7 +14980,7 @@ msgid "conditional utility statements are not implemented"
 msgstr "i comandi di utilità condizionali non sono implementati"
 
 #: rewrite/rewriteManip.c:1024 rewrite/rewriteHandler.c:442
-#: parser/parse_utilcmd.c:2150 parser/parse_utilcmd.c:2249
+#: parser/parse_utilcmd.c:2144 parser/parse_utilcmd.c:2243
 msgid "conditional UNION/INTERSECT/EXCEPT statements are not implemented"
 msgstr ""
 "le istruzioni UNION/INTERSECT/EXCEPT condizionali non sono implementate"
@@ -15332,37 +15336,37 @@ msgstr "l'ordinamento \"%s\" per la codifica \"%s\" esiste già"
 msgid "collation \"%s\" already exists"
 msgstr "l'ordinamento \"%s\" esiste già"
 
-#: catalog/index.c:202 parser/parse_utilcmd.c:1352 parser/parse_utilcmd.c:1438
+#: catalog/index.c:206 parser/parse_utilcmd.c:1352 parser/parse_utilcmd.c:1438
 #, c-format
 msgid "multiple primary keys for table \"%s\" are not allowed"
 msgstr "non è possibile avere più di una chiave primaria per la tabella \"%s\""
 
-#: catalog/index.c:220
+#: catalog/index.c:224
 msgid "primary keys cannot be expressions"
 msgstr "le chiavi primarie non possono essere delle espressioni"
 
-#: catalog/index.c:730 catalog/index.c:1128
+#: catalog/index.c:734 catalog/index.c:1132
 msgid "user-defined indexes on system catalog tables are not supported"
 msgstr ""
 "non sono supportati indici definiti dall'utente sulle tabelle del catalogo "
 "di sistema"
 
-#: catalog/index.c:740
+#: catalog/index.c:744
 msgid "concurrent index creation on system catalog tables is not supported"
 msgstr ""
 "la creazione concorrente di indici sulle tabelle del catalogo di sistema non "
 "è supportata"
 
-#: catalog/index.c:758
+#: catalog/index.c:762
 msgid "shared indexes cannot be created after initdb"
 msgstr "indici condivisi non possono essere creati dopo initdb"
 
-#: catalog/index.c:1740
+#: catalog/index.c:1745
 #, c-format
 msgid "building index \"%s\" on table \"%s\""
 msgstr "creazione dell'indice \"%s\" sulla tabella \"%s\""
 
-#: catalog/index.c:2813
+#: catalog/index.c:2886
 msgid "cannot reindex temporary tables of other sessions"
 msgstr "non è possibile reindicizzare le tabelle temporanee di altre sessioni"
 
@@ -17037,7 +17041,7 @@ msgstr "CREATE TABLE AS non può specificare INTO"
 msgid "duplicate trigger events specified"
 msgstr "evento del trigger specificato più volte"
 
-#: gram.y:4153 parser/parse_utilcmd.c:2533 parser/parse_utilcmd.c:2559
+#: gram.y:4153 parser/parse_utilcmd.c:2527 parser/parse_utilcmd.c:2553
 msgid "constraint declared INITIALLY DEFERRED must be DEFERRABLE"
 msgstr "un vincolo dichiarato INITIALLY DEFERRED dev'essere DEFERRABLE"
 
@@ -17249,85 +17253,80 @@ msgstr "l'indice \"%s\" non è valido"
 
 #: parser/parse_utilcmd.c:1537
 #, c-format
-msgid "index \"%s\" is not ready"
-msgstr "l'indice \"%s\" non è pronto"
-
-#: parser/parse_utilcmd.c:1543
-#, c-format
 msgid "\"%s\" is not a unique index"
 msgstr "\"%s\" non è un indice univoco"
 
-#: parser/parse_utilcmd.c:1544 parser/parse_utilcmd.c:1551
-#: parser/parse_utilcmd.c:1558 parser/parse_utilcmd.c:1628
+#: parser/parse_utilcmd.c:1538 parser/parse_utilcmd.c:1545
+#: parser/parse_utilcmd.c:1552 parser/parse_utilcmd.c:1622
 msgid "Cannot create a primary key or unique constraint using such an index."
 msgstr ""
 "Non è possibile creare una chiave primaria o un vincolo univoco usando tale "
 "indice."
 
-#: parser/parse_utilcmd.c:1550
+#: parser/parse_utilcmd.c:1544
 #, c-format
 msgid "index \"%s\" contains expressions"
 msgstr "l'indice \"%s\" contiene espressioni"
 
-#: parser/parse_utilcmd.c:1557
+#: parser/parse_utilcmd.c:1551
 #, c-format
 msgid "\"%s\" is a partial index"
 msgstr "\"%s\" è un indice parziale"
 
-#: parser/parse_utilcmd.c:1569
+#: parser/parse_utilcmd.c:1563
 #, c-format
 msgid "\"%s\" is a deferrable index"
 msgstr "\"%s\" è un indice deferibile"
 
-#: parser/parse_utilcmd.c:1570
+#: parser/parse_utilcmd.c:1564
 msgid "Cannot create a non-deferrable constraint using a deferrable index."
 msgstr ""
 "Non è possibile creare un vincolo non deferibile usando un indice deferibile."
 
-#: parser/parse_utilcmd.c:1627
+#: parser/parse_utilcmd.c:1621
 #, c-format
 msgid "index \"%s\" does not have default sorting behavior"
 msgstr "l'indice \"%s\" non ha un ordinamento predefinito"
 
-#: parser/parse_utilcmd.c:1772
+#: parser/parse_utilcmd.c:1766
 #, c-format
 msgid "column \"%s\" appears twice in primary key constraint"
 msgstr "la colonna \"%s\" appare due volte nel vincolo di chiave primaria"
 
-#: parser/parse_utilcmd.c:1778
+#: parser/parse_utilcmd.c:1772
 #, c-format
 msgid "column \"%s\" appears twice in unique constraint"
 msgstr "la colonna \"%s\" appare due volte nel vincolo univoco"
 
-#: parser/parse_utilcmd.c:1943
+#: parser/parse_utilcmd.c:1937
 msgid "index expression cannot return a set"
 msgstr "l'espressione dell'indice non può restituire un insieme"
 
-#: parser/parse_utilcmd.c:1953
+#: parser/parse_utilcmd.c:1947
 msgid ""
 "index expressions and predicates can refer only to the table being indexed"
 msgstr ""
 "le espressioni e i predicati dell'indice possono riferirsi solo alla tabella "
 "indicizzata"
 
-#: parser/parse_utilcmd.c:2050
+#: parser/parse_utilcmd.c:2044
 msgid "rule WHERE condition cannot contain references to other relations"
 msgstr ""
 "le condizioni WHERE delle regole non possono avere riferimenti ad altre "
 "relazioni"
 
-#: parser/parse_utilcmd.c:2056
+#: parser/parse_utilcmd.c:2050
 msgid "cannot use aggregate function in rule WHERE condition"
 msgstr ""
 "non è possibile usare funzioni di aggregazioni nella condizione WHERE della "
 "regola"
 
-#: parser/parse_utilcmd.c:2060
+#: parser/parse_utilcmd.c:2054
 msgid "cannot use window function in rule WHERE condition"
 msgstr ""
 "non è possibile usare funzioni finestra nella condizione WHERE della regola"
 
-#: parser/parse_utilcmd.c:2132
+#: parser/parse_utilcmd.c:2126
 msgid ""
 "rules with WHERE conditions can only have SELECT, INSERT, UPDATE, or DELETE "
 "actions"
@@ -17335,55 +17334,55 @@ msgstr ""
 "le regole con una condizione WHERE possono avere solo azione SELECT, INSERT, "
 "UPDATE o DELETE"
 
-#: parser/parse_utilcmd.c:2168
+#: parser/parse_utilcmd.c:2162
 msgid "ON SELECT rule cannot use OLD"
 msgstr "la regola ON SELECT non può usare OLD"
 
-#: parser/parse_utilcmd.c:2172
+#: parser/parse_utilcmd.c:2166
 msgid "ON SELECT rule cannot use NEW"
 msgstr "la regola ON SELECT non può usare NEW"
 
-#: parser/parse_utilcmd.c:2181
+#: parser/parse_utilcmd.c:2175
 msgid "ON INSERT rule cannot use OLD"
 msgstr "la regola ON INSERT non può usare OLD"
 
-#: parser/parse_utilcmd.c:2187
+#: parser/parse_utilcmd.c:2181
 msgid "ON DELETE rule cannot use NEW"
 msgstr "La regola ON DELETE non può usare NEW"
 
-#: parser/parse_utilcmd.c:2215
+#: parser/parse_utilcmd.c:2209
 msgid "cannot refer to OLD within WITH query"
 msgstr "non ci si può riferire ad OLD nella query WITH"
 
-#: parser/parse_utilcmd.c:2222
+#: parser/parse_utilcmd.c:2216
 msgid "cannot refer to NEW within WITH query"
 msgstr "non ci si può riferire a NEW nella query WITH"
 
-#: parser/parse_utilcmd.c:2505
+#: parser/parse_utilcmd.c:2499
 msgid "misplaced DEFERRABLE clause"
 msgstr "clausola DEFERRABLE mal posizionata"
 
-#: parser/parse_utilcmd.c:2510 parser/parse_utilcmd.c:2525
+#: parser/parse_utilcmd.c:2504 parser/parse_utilcmd.c:2519
 msgid "multiple DEFERRABLE/NOT DEFERRABLE clauses not allowed"
 msgstr "clausole DEFERRABLE/NOT DEFERRABLE multiple non consentite"
 
-#: parser/parse_utilcmd.c:2520
+#: parser/parse_utilcmd.c:2514
 msgid "misplaced NOT DEFERRABLE clause"
 msgstr "clausola NOT DEFERRABLE mal posizionata"
 
-#: parser/parse_utilcmd.c:2541
+#: parser/parse_utilcmd.c:2535
 msgid "misplaced INITIALLY DEFERRED clause"
 msgstr "clausola INITIALLY DEFERRED mal posizionata"
 
-#: parser/parse_utilcmd.c:2546 parser/parse_utilcmd.c:2572
+#: parser/parse_utilcmd.c:2540 parser/parse_utilcmd.c:2566
 msgid "multiple INITIALLY IMMEDIATE/DEFERRED clauses not allowed"
 msgstr "clausole INITIALLY IMMEDIATE/DEFERRED multiple non sono consentite"
 
-#: parser/parse_utilcmd.c:2567
+#: parser/parse_utilcmd.c:2561
 msgid "misplaced INITIALLY IMMEDIATE clause"
 msgstr "clausola INITIALLY IMMEDIATE mal posizionata"
 
-#: parser/parse_utilcmd.c:2758
+#: parser/parse_utilcmd.c:2752
 #, c-format
 msgid ""
 "CREATE specifies a schema (%s) different from the one being created (%s)"
@@ -17467,43 +17466,43 @@ msgid "subquery uses ungrouped column \"%s.%s\" from outer query"
 msgstr ""
 "la sottoquery usa la colonna non raggruppata \"%s.%s\" dalla query esterna"
 
-#: parser/analyze.c:471
+#: parser/analyze.c:472
 msgid "INSERT ... SELECT cannot specify INTO"
 msgstr "INSERT ... SELECT non può specificare INTO"
 
-#: parser/analyze.c:564 parser/analyze.c:1070
+#: parser/analyze.c:565 parser/analyze.c:1071
 msgid "VALUES lists must all be the same length"
 msgstr "le liste VALUES devono essere tutte della stessa lunghezza"
 
-#: parser/analyze.c:606 parser/analyze.c:1211
+#: parser/analyze.c:607 parser/analyze.c:1212
 msgid "VALUES must not contain table references"
 msgstr "VALUES non può contenere riferimenti a tabelle"
 
-#: parser/analyze.c:620 parser/analyze.c:1225
+#: parser/analyze.c:621 parser/analyze.c:1226
 msgid "VALUES must not contain OLD or NEW references"
 msgstr "VALUES non può contenere riferimenti a OLD o a NEW"
 
-#: parser/analyze.c:621 parser/analyze.c:1226
+#: parser/analyze.c:622 parser/analyze.c:1227
 msgid "Use SELECT ... UNION ALL ... instead."
 msgstr "Usa SELECT ... UNION ALL ... invece."
 
-#: parser/analyze.c:725 parser/analyze.c:1238
+#: parser/analyze.c:726 parser/analyze.c:1239
 msgid "cannot use aggregate function in VALUES"
 msgstr "non si possono usare funzioni di aggregazione in VALUES"
 
-#: parser/analyze.c:731 parser/analyze.c:1244
+#: parser/analyze.c:732 parser/analyze.c:1245
 msgid "cannot use window function in VALUES"
 msgstr "non si possono usare funzioni finestra in VALUES"
 
-#: parser/analyze.c:765
+#: parser/analyze.c:766
 msgid "INSERT has more expressions than target columns"
 msgstr "INSERT ha più espressioni che colonne di destinazione"
 
-#: parser/analyze.c:783
+#: parser/analyze.c:784
 msgid "INSERT has more target columns than expressions"
 msgstr "INSERT ha più colonne di destinazione che espressioni"
 
-#: parser/analyze.c:787
+#: parser/analyze.c:788
 msgid ""
 "The insertion source is a row expression containing the same number of "
 "columns expected by the INSERT. Did you accidentally use extra parentheses?"
@@ -17512,25 +17511,25 @@ msgstr ""
 "colonne attese da INSERT. Forse hai usato accidentalmente parentesi in "
 "eccesso?"
 
-#: parser/analyze.c:1084
+#: parser/analyze.c:1085
 msgid "DEFAULT can only appear in a VALUES list within INSERT"
 msgstr "DEFAULT può apparire solo nella lista di VALUES usata in un INSERT"
 
-#: parser/analyze.c:1192 parser/analyze.c:2417
+#: parser/analyze.c:1193 parser/analyze.c:2421
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to VALUES"
 msgstr "SELECT FOR UPDATE/SHARE non è consentito con VALUES"
 
-#: parser/analyze.c:1455
+#: parser/analyze.c:1456
 msgid "invalid UNION/INTERSECT/EXCEPT ORDER BY clause"
 msgstr "clausola UNION/INTERSECT/EXCEPT ORDER BY non valida"
 
-#: parser/analyze.c:1456
+#: parser/analyze.c:1457
 msgid "Only result column names can be used, not expressions or functions."
 msgstr ""
 "Possono essere usati solo nomi di colonne risultanti, non espressioni o "
 "funzioni."
 
-#: parser/analyze.c:1457
+#: parser/analyze.c:1458
 msgid ""
 "Add the expression/function to every SELECT, or move the UNION into a FROM "
 "clause."
@@ -17538,11 +17537,11 @@ msgstr ""
 "Aggiungi l'espressione/funzione ad ogni SELECT, oppure sposta la UNION in "
 "una clausola FROM."
 
-#: parser/analyze.c:1529
+#: parser/analyze.c:1533
 msgid "INTO is only allowed on first SELECT of UNION/INTERSECT/EXCEPT"
 msgstr "INTO è permesso solo nella prima SELECT di UNION/INTERSECT/EXCEPT"
 
-#: parser/analyze.c:1589
+#: parser/analyze.c:1593
 msgid ""
 "UNION/INTERSECT/EXCEPT member statement cannot refer to other relations of "
 "same query level"
@@ -17550,85 +17549,85 @@ msgstr ""
 "l'istruzione membro di UNION/INTERSECT/EXCEPT non può riferirsi al altre "
 "relazione allo stesso livello della query"
 
-#: parser/analyze.c:1677
+#: parser/analyze.c:1681
 #, c-format
 msgid "each %s query must have the same number of columns"
 msgstr "ogni query in %s deve avere lo stesso numero di colonne"
 
-#: parser/analyze.c:1933
+#: parser/analyze.c:1937
 msgid "CREATE TABLE AS specifies too many column names"
 msgstr "troppi nomi di colonna specificati in CREATE TABLE AS"
 
-#: parser/analyze.c:1991
+#: parser/analyze.c:1995
 msgid "cannot use aggregate function in UPDATE"
 msgstr "non è possibile usare funzioni di aggregazione in UPDATE"
 
-#: parser/analyze.c:1997
+#: parser/analyze.c:2001
 msgid "cannot use window function in UPDATE"
 msgstr "non è possibile usare funzioni finestra in UPDATE"
 
-#: parser/analyze.c:2106
+#: parser/analyze.c:2110
 msgid "cannot use aggregate function in RETURNING"
 msgstr "non è possibile usare funzioni di aggregazione in RETURNING"
 
-#: parser/analyze.c:2112
+#: parser/analyze.c:2116
 msgid "cannot use window function in RETURNING"
 msgstr "non è possibile usare funzioni finestra in RETURNING"
 
-#: parser/analyze.c:2131
+#: parser/analyze.c:2135
 msgid "RETURNING cannot contain references to other relations"
 msgstr "RETURNING non può contenere riferimenti ad altre relazioni"
 
-#: parser/analyze.c:2170
+#: parser/analyze.c:2174
 msgid "cannot specify both SCROLL and NO SCROLL"
 msgstr "non è possibile specificare sia SCROLL che NO SCROLL"
 
-#: parser/analyze.c:2184
+#: parser/analyze.c:2188
 msgid "DECLARE CURSOR cannot specify INTO"
 msgstr "DECLARE CURSOR non può specificare INTO"
 
-#: parser/analyze.c:2196
+#: parser/analyze.c:2200
 msgid "DECLARE CURSOR must not contain data-modifying statements in WITH"
 msgstr ""
 "DECLARE CURSOR non può contenere istruzioni di modifica dei dati nel WITH"
 
-#: parser/analyze.c:2202
+#: parser/analyze.c:2206
 msgid "DECLARE CURSOR WITH HOLD ... FOR UPDATE/SHARE is not supported"
 msgstr "DECLARE CURSOR WITH HOLD ... FOR UPDATE/SHARE non è supportato"
 
-#: parser/analyze.c:2203
+#: parser/analyze.c:2207
 msgid "Holdable cursors must be READ ONLY."
 msgstr "I cursori trattenibili devono essere READ ONLY."
 
-#: parser/analyze.c:2216
+#: parser/analyze.c:2220
 msgid "DECLARE INSENSITIVE CURSOR ... FOR UPDATE/SHARE is not supported"
 msgstr "DECLARE INSENSITIVE CURSOR ... FOR UPDATE/SHARE non è supportato"
 
-#: parser/analyze.c:2217
+#: parser/analyze.c:2221
 msgid "Insensitive cursors must be READ ONLY."
 msgstr "I cursori Insensitive devono essere READ ONLY."
 
-#: parser/analyze.c:2270
+#: parser/analyze.c:2274
 msgid "SELECT FOR UPDATE/SHARE is not allowed with DISTINCT clause"
 msgstr "SELECT FOR UPDATE/SHARE non è consentito con la clausola DISTINCT"
 
-#: parser/analyze.c:2274
+#: parser/analyze.c:2278
 msgid "SELECT FOR UPDATE/SHARE is not allowed with GROUP BY clause"
 msgstr "SELECT FOR UPDATE/SHARE non è consentito con la clausola DISTINCT"
 
-#: parser/analyze.c:2278
+#: parser/analyze.c:2282
 msgid "SELECT FOR UPDATE/SHARE is not allowed with HAVING clause"
 msgstr "SELECT FOR UPDATE/SHARE non è consentito con la clausola HAVING"
 
-#: parser/analyze.c:2282
+#: parser/analyze.c:2286
 msgid "SELECT FOR UPDATE/SHARE is not allowed with aggregate functions"
 msgstr "SELECT FOR UPDATE/SHARE non è consentito con funzioni di aggregazione"
 
-#: parser/analyze.c:2286
+#: parser/analyze.c:2290
 msgid "SELECT FOR UPDATE/SHARE is not allowed with window functions"
 msgstr "SELECT FOR UPDATE/SHARE non è consentito con funzioni finestra"
 
-#: parser/analyze.c:2290
+#: parser/analyze.c:2294
 msgid ""
 "SELECT FOR UPDATE/SHARE is not allowed with set-returning functions in the "
 "target list"
@@ -17636,30 +17635,30 @@ msgstr ""
 "SELECT FOR UPDATE/SHARE non è consentito con funzioni che ritornano insiemi "
 "nella lista di destinazione"
 
-#: parser/analyze.c:2369
+#: parser/analyze.c:2373
 msgid "SELECT FOR UPDATE/SHARE must specify unqualified relation names"
 msgstr ""
 "SELECT FOR UPDATE/SHARE deve specificare nomi di relazioni non qualificati"
 
-#: parser/analyze.c:2386
+#: parser/analyze.c:2390
 #, c-format
 msgid "SELECT FOR UPDATE/SHARE cannot be used with foreign table \"%s\""
 msgstr ""
 "SELECT FOR UPDATE/SHARE non può essere usato con la tabella esterna \"%s\""
 
-#: parser/analyze.c:2405
+#: parser/analyze.c:2409
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a join"
 msgstr "SELECT FOR UPDATE/SHARE non può essere applicato ad un JOIN"
 
-#: parser/analyze.c:2411
+#: parser/analyze.c:2415
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a function"
 msgstr "SELECT FOR UPDATE/SHARE non può essere applicato ad una funzione"
 
-#: parser/analyze.c:2423
+#: parser/analyze.c:2427
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a WITH query"
 msgstr "SELECT FOR UPDATE/SHARE non può essere applicato ad una query WITH"
 
-#: parser/analyze.c:2437
+#: parser/analyze.c:2441
 #, c-format
 msgid "relation \"%s\" in FOR UPDATE/SHARE clause not found in FROM clause"
 msgstr ""
