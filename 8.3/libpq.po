@@ -326,12 +326,12 @@ msgstr "ERRORE: file di servizio \"%s\" non trovato\n"
 #: fe-connect.c:2948
 #, c-format
 msgid "ERROR: line %d too long in service file \"%s\"\n"
-msgstr "ERROR: riga %d troppo lunga nel file di servizio \"%s\"\n"
+msgstr "ERRORE: riga %d troppo lunga nel file di servizio \"%s\"\n"
 
 #: fe-connect.c:3020 fe-connect.c:3047
 #, c-format
 msgid "ERROR: syntax error in service file \"%s\", line %d\n"
-msgstr "ERROR: errore di sintassi nel file di servizio \"%s\", riga %d\n"
+msgstr "ERRORE: errore di sintassi nel file di servizio \"%s\", riga %d\n"
 
 #: fe-connect.c:3471
 msgid "connection pointer is NULL\n"

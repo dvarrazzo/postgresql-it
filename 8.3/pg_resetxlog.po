@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-03 13:49+0000\n"
-"PO-Revision-Date: 2012-11-04 11:24+0100\n"
+"PO-Revision-Date: 2012-12-03 17:45+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -89,7 +89,7 @@ msgstr "%s: parametro errato per l'opzione -O\n"
 #: pg_resetxlog.c:192
 #, c-format
 msgid "%s: multitransaction offset (-O) must not be -1\n"
-msgstr "%s: l'offset di una multitransazione (-O) must not be -1\n"
+msgstr "%s: l'offset di una multitransazione (-O) non può essere -1\n"
 
 #: pg_resetxlog.c:201 pg_resetxlog.c:208 pg_resetxlog.c:215
 #, c-format
@@ -104,7 +104,7 @@ msgstr "%s: non è stata specificata una directory per i dati\n"
 #: pg_resetxlog.c:243
 #, c-format
 msgid "%s: cannot be executed by \"root\"\n"
-msgstr "%s non può esssere eseguito da \"root\"\n"
+msgstr "%s non può essere eseguito da \"root\"\n"
 
 #: pg_resetxlog.c:245
 #, c-format
@@ -420,7 +420,7 @@ msgstr ""
 #: pg_resetxlog.c:992
 #, c-format
 msgid "  -m XID          set next multitransaction ID\n"
-msgstr "  -m XID          imposta il prossimo ID di multitransaction\n"
+msgstr "  -m XID          imposta il prossimo ID multitransazione\n"
 
 #: pg_resetxlog.c:993
 #, c-format
@@ -439,7 +439,7 @@ msgstr "  -o OID          imposta il prossimo OID\n"
 #: pg_resetxlog.c:995
 #, c-format
 msgid "  -O OFFSET       set next multitransaction offset\n"
-msgstr "  -O OFFSET       imposta il prossimo offset multitransaction\n"
+msgstr "  -O OFFSET       imposta il prossimo offset multitransazioneS\n"
 
 #: pg_resetxlog.c:996
 #, c-format

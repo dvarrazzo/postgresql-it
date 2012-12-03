@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-12-03 13:32+0000\n"
-"PO-Revision-Date: 2012-11-01 17:22+0100\n"
+"PO-Revision-Date: 2012-12-03 17:30+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -534,7 +534,7 @@ msgstr "tipo di variabile sconosciuto codice %d"
 #: type.c:261
 #, c-format
 msgid "variable \"%s\" is hidden by a local variable of a different type"
-msgstr "la variable \"%s\" è nascosta da una variabile locale di tipo diverso"
+msgstr "la variabile \"%s\" è nascosta da una variabile locale di tipo diverso"
 
 #: type.c:263
 #, c-format
@@ -574,7 +574,7 @@ msgstr "un indicatore per un tipo di dato semplice deve essere semplice"
 #: type.c:646
 #, c-format
 msgid "unrecognized descriptor item code %d"
-msgstr "descittore di codice %d sconosciuto"
+msgstr "descrittore di codice %d sconosciuto"
 
 #: variable.c:89 variable.c:116
 #, c-format

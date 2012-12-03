@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-12-03 13:41+0000\n"
-"PO-Revision-Date: 2012-11-01 17:22+0100\n"
+"PO-Revision-Date: 2012-12-03 17:30+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -549,7 +549,7 @@ msgstr "un indicatore per un tipo di dato semplice deve essere semplice"
 #: type.c:615
 #, c-format
 msgid "unrecognized descriptor item code %d"
-msgstr "descittore di codice %d sconosciuto"
+msgstr "descrittore di codice %d sconosciuto"
 
 #: variable.c:89 variable.c:116
 #, c-format

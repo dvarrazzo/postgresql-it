@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-12-03 13:27+0000\n"
-"PO-Revision-Date: 2012-11-02 17:06+0100\n"
+"PO-Revision-Date: 2012-12-03 17:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -189,7 +189,7 @@ msgstr ""
 #: pg_dump.c:850
 #, c-format
 msgid "  -b, --blobs                 include large objects in dump\n"
-msgstr "  -b, --blobs                 includi nell'archivio i large objects\n"
+msgstr "  -b, --blobs                 includi nell'archivio i large object\n"
 
 #: pg_dump.c:851
 #, c-format
@@ -1083,7 +1083,7 @@ msgstr "disabilitazione trigger per %s\n"
 #: pg_backup_archiver.c:706
 #, c-format
 msgid "enabling triggers for %s\n"
-msgstr "abilitazione triggers per %s\n"
+msgstr "abilitazione trigger per %s\n"
 
 #: pg_backup_archiver.c:736
 msgid ""
@@ -1543,7 +1543,8 @@ msgstr "compressione attiva\n"
 #: pg_backup_custom.c:822
 msgid "WARNING: ftell mismatch with expected position -- ftell used\n"
 msgstr ""
-"ATTENZIONE: ftell non corrisponde alla posizione prevista -- si usa ftell\n"
+"ATTENZIONE: ftell non corrisponde alla posizione prevista -- verrà usato il "
+"valore restituito da ftell\n"
 
 #: pg_backup_db.c:25
 msgid "archiver (db)"
@@ -1860,7 +1861,7 @@ msgstr ""
 #: pg_restore.c:398
 #, c-format
 msgid "  %s [OPTION]... [FILE]\n"
-msgstr "  %s [OPTIONE]... [FILE]\n"
+msgstr "  %s [OPZIONE]... [FILE]\n"
 
 #: pg_restore.c:401
 #, c-format
@@ -2205,8 +2206,8 @@ msgstr "  -S, --superuser=NOME        nome del superutente da usare nel dump\n"
 msgid ""
 "  -t, --tablespaces-only      dump only tablespaces, no databases or roles\n"
 msgstr ""
-"  -t, --tablespaces-only      scarica solo i tablespace e non i datatbase o "
-"i ruoli\n"
+"  -t, --tablespaces-only      scarica solo i tablespace e non i database o i "
+"ruoli\n"
 
 #: pg_dumpall.c:563
 #, c-format
@@ -2259,7 +2260,7 @@ msgstr "%s: riapertura del file di output \"%s\" fallita: %s\n"
 #: pg_dumpall.c:1606
 #, c-format
 msgid "%s: running \"%s\"\n"
-msgstr "%s: in eleborazione \"%s\"\n"
+msgstr "%s: in elaborazione \"%s\"\n"
 
 #: pg_dumpall.c:1651
 #, c-format

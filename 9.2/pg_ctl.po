@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-12-03 13:16+0000\n"
-"PO-Revision-Date: 2012-11-02 13:55+0100\n"
+"PO-Revision-Date: 2012-12-03 17:32+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -294,7 +294,7 @@ msgstr "il server si sta avviando comunque\n"
 msgid "%s: cannot restart server; single-user server is running (PID: %ld)\n"
 msgstr ""
 "%s: non è possibile riavviare il server; il server è in esecuzione in "
-"modalità a singlo utente (PID: %ld)\n"
+"modalità a singolo utente (PID: %ld)\n"
 
 #: pg_ctl.c:997 pg_ctl.c:1082
 msgid "Please terminate the single-user server and try again.\n"
@@ -687,7 +687,7 @@ msgstr ""
 #: pg_ctl.c:1830
 #, c-format
 msgid "  smart       quit after all clients have disconnected\n"
-msgstr "  smart       termina dopo che tutti i client si sono disconessi\n"
+msgstr "  smart       termina dopo che tutti i client si sono disconnessi\n"
 
 #: pg_ctl.c:1831
 #, c-format

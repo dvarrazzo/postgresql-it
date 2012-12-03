@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-03 13:48+0000\n"
-"PO-Revision-Date: 2012-12-03 15:37+0100\n"
+"PO-Revision-Date: 2012-12-03 18:01+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -461,7 +461,7 @@ msgstr ""
 #: postmaster/postmaster.c:967
 #, c-format
 msgid "%s: could not write external PID file \"%s\": %s\n"
-msgstr "%s: scrittura del file PID esteno \"%s\" fallita: %s\n"
+msgstr "%s: scrittura del file PID esterno \"%s\" fallita: %s\n"
 
 #: postmaster/postmaster.c:1067
 #, c-format
@@ -647,7 +647,7 @@ msgstr "processo di archiviazione"
 
 #: postmaster/postmaster.c:2292
 msgid "statistics collector process"
-msgstr "procersso del raccoglitore di statistiche"
+msgstr "processo del raccoglitore di statistiche"
 
 #: postmaster/postmaster.c:2306
 msgid "system logger process"
@@ -866,7 +866,7 @@ msgstr "non esiste una funzione di input binario per il tipo %s"
 #: utils/cache/lsyscache.c:2387 utils/adt/arrayfuncs.c:1464
 #, c-format
 msgid "no binary output function available for type %s"
-msgstr "non esistone una funzione di output binario per il tipo %s"
+msgstr "non esiste una funzione di output binario per il tipo %s"
 
 #: utils/cache/lsyscache.c:2707 utils/init/miscinit.c:479
 #: commands/variable.c:737 commands/variable.c:853 commands/user.c:552
@@ -994,7 +994,7 @@ msgstr "Statistiche / Monitoring"
 
 #: utils/misc/guc.c:365
 msgid "Statistics / Query and Index Statistics Collector"
-msgstr "Statistiche / Raccolta delle Statisriche su Query e Indici"
+msgstr "Statistiche / Raccolta delle Statistiche su Query e Indici"
 
 #: utils/misc/guc.c:367
 msgid "Autovacuum"
@@ -1190,7 +1190,7 @@ msgstr "Registra nel log ogni checkpoint."
 
 #: utils/misc/guc.c:611
 msgid "Logs each successful connection."
-msgstr "Registra nol log tutte le connessioni avvenute con successo."
+msgstr "Registra nel log tutte le connessioni avvenute con successo."
 
 #: utils/misc/guc.c:619
 msgid "Logs end of a session, including duration."
@@ -1535,9 +1535,7 @@ msgstr ""
 
 #: utils/misc/guc.c:1165
 msgid "GEQO: effort is used to set the default for other GEQO parameters."
-msgstr ""
-"GEQO: l'effort è usato per definire i default per gli altri parametri di "
-"GEQO."
+msgstr "GEQO: prova a definire i default per gli altri parametri di GEQO."
 
 #: utils/misc/guc.c:1173
 msgid "GEQO: number of individuals in the population."
@@ -1572,7 +1570,7 @@ msgstr "Imposta il numero di buffer di memoria condivisa usati dal server."
 #: utils/misc/guc.c:1242
 msgid "Sets the maximum number of temporary buffers used by each session."
 msgstr ""
-"Definisce il numero massimo di buffer temporanei usati da ogni sessone."
+"Definisce il numero massimo di buffer temporanei usati da ogni sessione."
 
 #: utils/misc/guc.c:1252
 msgid "Sets the TCP port the server listens on."
@@ -1863,7 +1861,7 @@ msgid ""
 "Age at which to autovacuum a table to prevent transaction ID wraparound."
 msgstr ""
 "Anzianità alla quale eseguire un autovacuum su una tabella per prevenire il "
-"wraparaound dell'ID delle transazioni."
+"wraparound dell'ID delle transazioni."
 
 #: utils/misc/guc.c:1697
 msgid ""
@@ -2109,7 +2107,7 @@ msgstr "Imposta il fuso orario da usarsi nei messaggi di log."
 
 #: utils/misc/guc.c:2005
 msgid "Sets the display format for date and time values."
-msgstr "Impsta il formato per la visualizzazione dei valori di data e ora."
+msgstr "Imposta il formato per la visualizzazione dei valori di data e ora."
 
 #: utils/misc/guc.c:2006
 msgid "Also controls interpretation of ambiguous date inputs."
@@ -2796,8 +2794,7 @@ msgstr "C'è un altro postmaster (PID %d) che sta usando il file socket \"%s\"?"
 #, c-format
 msgid "pre-existing shared memory block (key %lu, ID %lu) is still in use"
 msgstr ""
-"il blocco di memoria condivisa pre-esistente (key %lu, ID %lu) è ancora in "
-"uso"
+"il blocco di memoria condivisa preesistente (key %lu, ID %lu) è ancora in uso"
 
 #: utils/init/miscinit.c:904
 #, c-format
@@ -3160,11 +3157,11 @@ msgstr "l'accesso alla libreria \"%s\" non è consentito"
 #: utils/fmgr/dfmgr.c:497
 #, c-format
 msgid "invalid macro name in dynamic library path: %s"
-msgstr "nome della macro non valdo nel percorso della libreria dinamica: %s"
+msgstr "nome della macro non valido nel percorso della libreria dinamica: %s"
 
 #: utils/fmgr/dfmgr.c:542
 msgid "zero-length component in parameter \"dynamic_library_path\""
-msgstr "componente di lunghezza zero nel paramentro \"dynamic_library_path\""
+msgstr "componente di lunghezza zero nel parametro \"dynamic_library_path\""
 
 #: utils/fmgr/dfmgr.c:561
 msgid "component in parameter \"dynamic_library_path\" is not an absolute path"
@@ -4267,7 +4264,7 @@ msgstr ""
 
 #: utils/adt/formatting.c:4446
 msgid "\"RN\" not supported"
-msgstr "\"RN\" not è supportato"
+msgstr "\"RN\" non è supportato"
 
 #: utils/adt/date.c:70
 #, c-format
@@ -4874,7 +4871,7 @@ msgstr "la colonna tsvector \"%s\" non esiste"
 #: utils/adt/tsvector_op.c:1359
 #, c-format
 msgid "column \"%s\" is not of tsvector type"
-msgstr "la colonna \"%s\" non ê di tipo tsvector"
+msgstr "la colonna \"%s\" non è di tipo tsvector"
 
 #: utils/adt/tsvector_op.c:1371
 #, c-format
@@ -5187,7 +5184,7 @@ msgstr "aclinsert non è più supportato"
 
 #: utils/adt/acl.c:1263
 msgid "aclremove is no longer supported"
-msgstr "aclremove is no longer supported"
+msgstr "aclremove non è più supportato"
 
 #: utils/adt/acl.c:1350 utils/adt/acl.c:1574 utils/adt/acl.c:1791
 #: utils/adt/acl.c:1995 utils/adt/acl.c:2199 utils/adt/acl.c:2408
@@ -5519,7 +5516,7 @@ msgstr "%s: parametri della riga di comando non validi\n"
 #, c-format
 msgid "Cannot enlarge string buffer containing %d bytes by %d more bytes."
 msgstr ""
-"Non ê possibile aumentare il buffer della stringa contenente %d byte di "
+"Non è possibile aumentare il buffer della stringa contenente %d byte di "
 "altri %d byte."
 
 #: tsearch/ts_locale.c:277
@@ -5574,7 +5571,7 @@ msgstr "Usa \"?\" per rappresentare una stop word in un frase di esempio."
 #: tsearch/dict_thesaurus.c:567
 #, c-format
 msgid "thesaurus substitute word \"%s\" is a stop word (rule %d)"
-msgstr "la parola sostituivta del thesaurus \"%s\" è una stop word (regola %d)"
+msgstr "la parola sostitutiva del thesaurus \"%s\" è una stop word (regola %d)"
 
 #: tsearch/dict_thesaurus.c:574
 #, c-format
@@ -5812,7 +5809,7 @@ msgstr "formato dei dati binari non corretto nell'argomento %d della funzione"
 #: tcop/postgres.c:416 tcop/postgres.c:3965
 #, c-format
 msgid "invalid frontend message type %d"
-msgstr "frontend message di tipo %d non valido"
+msgstr "messaggio frontend di tipo %d non valido"
 
 #: tcop/postgres.c:854
 #, c-format
@@ -5869,7 +5866,7 @@ msgstr ""
 #: tcop/postgres.c:1645
 #, c-format
 msgid "incorrect binary data format in bind parameter %d"
-msgstr "formato del dato binario errato nel paramentro di bind %d"
+msgstr "formato del dato binario errato nel parametro di bind %d"
 
 #: tcop/postgres.c:1785
 #, c-format
@@ -6027,8 +6024,8 @@ msgid ""
 "disconnection: session time: %d:%02d:%02d.%03d user=%s database=%s host=%s%s"
 "%s"
 msgstr ""
-"disconnesione: tempo della sessione: %d:%02d:%02d.%03d utente=%s database=%s "
-"host=%s%s%s"
+"disconnessione: tempo della sessione: %d:%02d:%02d.%03d utente=%s database="
+"%s host=%s%s%s"
 
 #: tcop/utility.c:77
 #, c-format
@@ -6671,7 +6668,7 @@ msgstr "il file di log delle transazioni \"%s\" è stato riciclato"
 #: access/transam/xlog.c:2778
 #, c-format
 msgid "removing transaction log file \"%s\""
-msgstr "eliminazione delfile di log delle transazioni \"%s\""
+msgstr "eliminazione del file di log delle transazioni \"%s\""
 
 #: access/transam/xlog.c:2800
 #, c-format
@@ -7836,9 +7833,7 @@ msgstr "tra %s e %s"
 #: commands/tablecmds.c:1011 parser/parse_utilcmd.c:694
 #: parser/parse_utilcmd.c:881 parser/parse_utilcmd.c:951
 msgid "cannot convert whole-row table reference"
-msgstr ""
-"non è possibile convertire riferimenti ad una riga intera di tabella whole-"
-"row table"
+msgstr "non è possibile convertire riferimenti ad una riga intera di tabella"
 
 #: commands/tablecmds.c:1012 parser/parse_utilcmd.c:695
 #, c-format
@@ -8280,7 +8275,7 @@ msgstr ""
 #: commands/proclang.c:105
 #, c-format
 msgid "must be superuser to create procedural language \"%s\""
-msgstr "solo i superutenti possono creare il linguaggo procedurale \"%s\""
+msgstr "solo i superutenti possono creare il linguaggio procedurale \"%s\""
 
 #: commands/proclang.c:125 commands/proclang.c:238
 #, c-format
@@ -8750,7 +8745,7 @@ msgstr ""
 #: commands/copy.c:890
 #, c-format
 msgid "COPY delimiter cannot be \"%s\""
-msgstr "il delimitatore di COPY cannot be \"%s\""
+msgstr "il delimitatore di COPY non può essere \"%s\""
 
 #: commands/copy.c:896
 msgid "COPY HEADER available only in CSV mode"
@@ -9584,7 +9579,7 @@ msgstr "le procedure btree devono avere due argomenti"
 
 #: commands/opclasscmds.c:1129
 msgid "btree procedures must return integer"
-msgstr "pre procedure btree devono restituire un integer"
+msgstr "le procedure btree devono restituire un integer"
 
 #: commands/opclasscmds.c:1144
 msgid "hash procedures must have one argument"
@@ -9872,7 +9867,7 @@ msgstr "l'attributo sfunc dell'aggregato deve essere specificato"
 
 #: commands/aggregatecmds.c:134
 msgid "aggregate input type must be specified"
-msgstr "il tipo di inputo dell'aggregato deve essere specificato"
+msgstr "il tipo di input dell'aggregato deve essere specificato"
 
 #: commands/aggregatecmds.c:159
 msgid "basetype is redundant with aggregate input type specification"
@@ -10048,7 +10043,7 @@ msgstr ""
 msgid ""
 "relation \"%s\" TID %u/%u: dead HOT-updated tuple --- cannot shrink relation"
 msgstr ""
-"relazione \"%s\" TID %u/%u: tuple morte aggiornaate in HOT --- non è "
+"relazione \"%s\" TID %u/%u: tuple morte aggiornate in HOT --- non è "
 "possibile restringere la relazione"
 
 #: commands/vacuum.c:1593
@@ -10957,7 +10952,7 @@ msgid ""
 "Array with element type %s cannot be included in ARRAY construct with "
 "element type %s."
 msgstr ""
-"Un array con tipo di elementi %s non può essere incluso nel construtto ARRAY "
+"Un array con tipo di elementi %s non può essere incluso nel costrutto ARRAY "
 "con elementi di tipo %s."
 
 #: executor/execQual.c:3299
@@ -10975,7 +10970,7 @@ msgstr "il tipo di destinazione non è un array"
 #: executor/execQual.c:4337
 #, c-format
 msgid "ROW() column has type %s instead of type %s"
-msgstr "la colonna ROW() ê di tipo %s invece di %s"
+msgstr "la colonna ROW() è di tipo %s invece di %s"
 
 #: optimizer/plan/initsplan.c:564
 msgid ""
@@ -10996,7 +10991,7 @@ msgstr "SELECT FOR UPDATE/SHARE non è consentito nelle sottoquery"
 
 #: optimizer/path/allpaths.c:277
 msgid "SELECT FOR UPDATE/SHARE is not supported for inheritance queries"
-msgstr "SELECT FOR UPDATE/SHARE non è supportato pre query di ereditarietà"
+msgstr "SELECT FOR UPDATE/SHARE non è supportato per query di ereditarietà"
 
 #: optimizer/util/clauses.c:3360
 #, c-format
@@ -11284,12 +11279,12 @@ msgstr ""
 #: libpq/auth.c:143
 #, c-format
 msgid "Kerberos initialization returned error %d"
-msgstr "l'inizializazzione Kerberos è fallita con errore %d"
+msgstr "l'inizializzazione Kerberos è fallita con errore %d"
 
 #: libpq/auth.c:153
 #, c-format
 msgid "Kerberos keytab resolving returned error %d"
-msgstr "la risouzione della keytab di Kerberos è fallita con errore %d"
+msgstr "la risoluzione della keytab di Kerberos è fallita con errore %d"
 
 #: libpq/auth.c:177
 #, c-format
@@ -11304,7 +11299,7 @@ msgstr "Kerberos recvauth fallito con errore %d"
 #: libpq/auth.c:248
 #, c-format
 msgid "Kerberos unparse_name returned error %d"
-msgstr "Kerberos unparse_name fallito con erore %d"
+msgstr "Kerberos unparse_name fallito con errore %d"
 
 #: libpq/auth.c:299
 #, c-format
@@ -11339,7 +11334,7 @@ msgstr "contesto di sicurezza accettazione GSS fallito"
 
 #: libpq/auth.c:562
 msgid "retrieving GSS user name failed"
-msgstr "la rchiesta del GSS user name è fallita"
+msgstr "la richiesta del GSS user name è fallita"
 
 #: libpq/auth.c:633
 msgid "GSSAPI not implemented on this server"
@@ -11648,7 +11643,7 @@ msgstr "risposta dal server Ident formattata in maniera non corretta: \"%s\""
 #: libpq/hba.c:1467 libpq/hba.c:1497 libpq/hba.c:1561
 #, c-format
 msgid "could not get peer credentials: %m"
-msgstr "non è stato possibile recupeare le credenziali del peer: %m"
+msgstr "non è stato possibile recuperare le credenziali del peer: %m"
 
 #: libpq/hba.c:1476 libpq/hba.c:1506 libpq/hba.c:1585
 #, c-format
@@ -11966,7 +11961,7 @@ msgstr ""
 #: storage/smgr/md.c:829 storage/smgr/md.c:855 storage/smgr/md.c:879
 #, c-format
 msgid "could not truncate relation %u/%u/%u to %u blocks: %m"
-msgstr "troncamento della relaizone %u/%u/%u a %u blocchi fallito: %m"
+msgstr "troncamento della relazione %u/%u/%u a %u blocchi fallito: %m"
 
 #: storage/smgr/md.c:915 storage/smgr/md.c:926 storage/smgr/md.c:1099
 #: storage/smgr/md.c:1251
@@ -12023,7 +12018,7 @@ msgstr ""
 #: storage/lmgr/proc.c:989
 #, c-format
 msgid "process %d still waiting for %s on %s after %ld.%03d ms"
-msgstr "il processo %d è ancira un attesa di %s su %s dopo %ld.%03d ms"
+msgstr "il processo %d è ancora un attesa di %s su %s dopo %ld.%03d ms"
 
 #: storage/lmgr/proc.c:993
 #, c-format
@@ -13101,7 +13096,7 @@ msgstr "tipo composito %s"
 #: catalog/dependency.c:2339
 #, c-format
 msgid "relation %s"
-msgstr "relatione %s"
+msgstr "relazione %s"
 
 #: catalog/dependency.c:2380
 #, c-format
@@ -14170,7 +14165,7 @@ msgstr "l'argomento di %s non può contenere aggregati"
 #: parser/parse_clause.c:1119
 #, c-format
 msgid "argument of %s must not contain subqueries"
-msgstr "argument of %s must not contain sottoquery"
+msgstr "l'argomento di %s non può contenere sottoquery"
 
 #. translator: first %s is name of a SQL construct, eg ORDER BY
 #: parser/parse_clause.c:1228
@@ -14481,8 +14476,7 @@ msgstr ""
 #: parser/parse_relation.c:2034
 #, c-format
 msgid "adding missing FROM-clause entry for table \"%s\""
-msgstr ""
-"aggiunto elemento mancante alla clausola FROM-clause per la tabella \"%s\""
+msgstr "aggiunto elemento mancante alla clausola FROM per la tabella \"%s\""
 
 #: scan.l:360
 msgid "unterminated /* comment"

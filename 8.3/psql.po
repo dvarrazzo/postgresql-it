@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-03 13:48+0000\n"
-"PO-Revision-Date: 2012-11-06 15:02+0100\n"
+"PO-Revision-Date: 2012-12-03 17:29+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -833,7 +833,7 @@ msgid ""
 "                 write string to query output stream (see \\o)\n"
 msgstr ""
 "  \\qecho [STRING]\n"
-"                 scrivi la stringa nello stream di output della query (see "
+"                 scrivi la stringa nello stream di output della query (vedi "
 "\\o)\n"
 
 #: help.c:212
@@ -852,7 +852,7 @@ msgid ""
 "  \\d{t|i|s|v|S} [PATTERN] (add \"+\" for more detail)\n"
 "                 list tables/indexes/sequences/views/system tables\n"
 msgstr ""
-"  \\d{t|i|s|v|S} [MODELLO] (aggiungi \"+\" per maggiori dettagi)\n"
+"  \\d{t|i|s|v|S} [MODELLO] (aggiungi \"+\" per maggiori dettagli)\n"
 "                 elenca tabelle/indici/sequenze/viste/tabelle di sistema\n"
 
 #: help.c:216
@@ -891,7 +891,7 @@ msgstr "  \\dD [MODELLO]  elenca i domini\n"
 #, c-format
 msgid "  \\df [PATTERN]  list functions (add \"+\" for more detail)\n"
 msgstr ""
-"  \\df [MODLLO]  elenca le funzioni (aggiungi \"+\" per maggiori dettagli)\n"
+"  \\df [MODELLO]  elenca le funzioni (aggiungi \"+\" per maggiori dettagli)\n"
 
 #: help.c:223
 #, c-format
@@ -920,8 +920,8 @@ msgstr "  \\dFt [MODELLO] elenca i modelli di ricerca di testo\n"
 msgid ""
 "  \\dFp [PATTERN] list text search parsers (add \"+\" for more detail)\n"
 msgstr ""
-"  \\dFp [MODLLO] elenca gli analizzatori di ricerca di testo (aggiungi \"+\" "
-"per maggiori dettagli)\n"
+"  \\dFp [MODELLO] elenca gli analizzatori di ricerca di testo (aggiungi \"+"
+"\" per maggiori dettagli)\n"
 
 #: help.c:227
 #, c-format
@@ -932,7 +932,7 @@ msgstr "  \\dg [MODELLO]  elenca i gruppi\n"
 #, c-format
 msgid "  \\dn [PATTERN]  list schemas (add \"+\" for more detail)\n"
 msgstr ""
-"  \\dn [MODLLO]  elenca gli schemi (aggiungi \"+\" per maggiori dettagli)\n"
+"  \\dn [MODELLO]  elenca gli schemi (aggiungi \"+\" per maggiori dettagli)\n"
 
 #: help.c:229
 #, c-format
@@ -943,7 +943,7 @@ msgstr "  \\do [NAME]     elenca gli operatori\n"
 #, c-format
 msgid "  \\dl            list large objects, same as \\lo_list\n"
 msgstr ""
-"  \\dl            elenca i large objects, stesso risultato di \\lo_list\n"
+"  \\dl            elenca i large object, stesso risultato di \\lo_list\n"
 
 #: help.c:231
 #, c-format
@@ -1082,7 +1082,7 @@ msgid ""
 msgstr ""
 "Comando:     %s\n"
 "Descrizione: %s\n"
-"Sinstassi:\n"
+"Sintassi:\n"
 "%s\n"
 "\n"
 
@@ -2129,7 +2129,7 @@ msgid ""
 msgstr ""
 "ALTER ROLE name [ [ WITH ] option [ ... ] ]\n"
 "\n"
-"dove ooption può essere:\n"
+"dove option può essere:\n"
 "    \n"
 "      SUPERUSER | NOSUPERUSER\n"
 "    | CREATEDB | NOCREATEDB\n"
