@@ -1,10 +1,11 @@
 Italian PostgreSQL Localization
 ===============================
 
-Picked up on 2012-10-24 from http://babel.postgresql.org/#t9.2-branch-branch
+This project contains the current state of the PostgreSQL Italian translation
+files, together with a few development tools.
 
-There is a svn archive somewhere with the previous translations but the site
-appears to be down, in the meantime the changes are here.
+Questo progetto contiene lo stato corrente della traduzione italiana di
+PostgreSQL e alcuni tool di sviluppo.
 
 
 Note per il prossimo traduttore
@@ -43,6 +44,14 @@ make updatepots
 make update
     Riporta gli aggiornamenti fatti all'ultima versione sulla versione
     precedente ecc.
+
+make popack
+    Crea un archivio per version con i file ``.po``, utile per l'invio a
+    PostgreSQL NLS.
+
+make popack
+    Crea un archivio per versione con i file ``.mo`` utile per testare con
+    PostgreSQL.
 
 
 Sulla traduzione
