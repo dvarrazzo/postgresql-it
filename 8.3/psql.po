@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-03 13:48+0000\n"
-"PO-Revision-Date: 2012-12-03 17:29+0100\n"
+"PO-Revision-Date: 2012-12-03 18:44+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1595,7 +1595,7 @@ msgstr "Ha gli OID"
 #: describe.c:1504 describe.c:1628 describe.c:1630 describe.c:1632
 #: describe.c:1875 describe.c:1936
 msgid "yes"
-msgstr "si"
+msgstr "sì"
 
 #: describe.c:1504 describe.c:1628 describe.c:1630 describe.c:1632
 #: describe.c:1875 describe.c:1936
