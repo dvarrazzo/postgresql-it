@@ -439,7 +439,7 @@ msgstr "  -o OID          imposta il prossimo OID\n"
 #: pg_resetxlog.c:995
 #, c-format
 msgid "  -O OFFSET       set next multitransaction offset\n"
-msgstr "  -O OFFSET       imposta il prossimo offset multitransazioneS\n"
+msgstr "  -O OFFSET       imposta il prossimo offset multitransazione\n"
 
 #: pg_resetxlog.c:996
 #, c-format
