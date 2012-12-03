@@ -95,8 +95,8 @@ Per descrivere comandi dati dall'utente al database, usa l'imperativo. Per
 esempo negli help della riga di comando. traduci "read the password from the
 file" come "leggi la password dal file".
 
-Quando il database si rivolge all'utente, usa la seconda persona singolare.
-"Esegui fixdb se non vuoi perdere tutti i tuoi dati", non "eseguite".
+Quando il database si rivolge all'utente, usa l'imperativo.  "Esegui fixdb se
+non vuoi perdere tutti i tuoi dati", non "eseguite" o "eseguire".
 
 Se il programma ha un output allineato (es. i messaggi di --help) rispetta
 l'allineamento e non far andare le stringhe a zig zag.
