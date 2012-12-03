@@ -49,7 +49,7 @@ make popack
     Crea un archivio per version con i file ``.po``, utile per l'invio a
     PostgreSQL NLS.
 
-make popack
+make mopack
     Crea un archivio per versione con i file ``.mo`` utile per testare con
     PostgreSQL.
 
