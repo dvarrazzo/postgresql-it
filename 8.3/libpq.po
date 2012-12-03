@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-03 13:48+0000\n"
-"PO-Revision-Date: 2012-11-04 11:21+0100\n"
+"PO-Revision-Date: 2012-12-03 15:36+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -164,6 +164,8 @@ msgstr ""
 #, c-format
 msgid "Unix-domain socket path \"%s\" is too long (maximum %d bytes)\n"
 msgstr ""
+"Il percorso del socket di dominio unix \"%s\" è troppo lungo (massimo %d "
+"byte)\n"
 
 #: fe-connect.c:842
 #, c-format
