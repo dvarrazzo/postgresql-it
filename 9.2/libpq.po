@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-12-03 13:10+0000\n"
-"PO-Revision-Date: 2012-12-03 15:36+0100\n"
+"PO-Revision-Date: 2012-12-03 15:40+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -220,7 +220,7 @@ msgstr ""
 #: fe-connect.c:1387
 #, c-format
 msgid "could not translate host name \"%s\" to address: %s\n"
-msgstr "comversione del nome host \"%s\" in indirizzo fallita: %s\n"
+msgstr "conversione del nome host \"%s\" in indirizzo fallita: %s\n"
 
 #: fe-connect.c:1391
 #, c-format
