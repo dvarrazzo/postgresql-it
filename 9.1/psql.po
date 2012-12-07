@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2012-12-03 13:26+0000\n"
-"PO-Revision-Date: 2012-12-03 18:44+0100\n"
+"PO-Revision-Date: 2012-12-07 09:33+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -880,9 +880,8 @@ msgstr "Generali\n"
 msgid ""
 "  \\copyright             show PostgreSQL usage and distribution terms\n"
 msgstr ""
-"  \\copyright             mostra aiuti sull'utilizzo di PostgreSQL e "
-"termini\n"
-"                         di distribuzione\n"
+"  \\copyright             mostra i termini di uso e distribuzione di "
+"PostgreSQL\n"
 
 #: help.c:167
 #, c-format
@@ -899,9 +898,9 @@ msgid ""
 "  \\h [NAME]              help on syntax of SQL commands, * for all "
 "commands\n"
 msgstr ""
-"  \\h [NOME]              mostra sulla sintassi dei comandi SQL, * mostra "
-"tutti\n"
-"                         i comandi\n"
+"  \\h [NOME]              mostra aiuto sulla sintassi dei comandi SQL, * "
+"mostra\n"
+"                         tutti i comandi\n"
 
 #: help.c:169
 #, c-format

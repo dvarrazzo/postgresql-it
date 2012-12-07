@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-03 13:48+0000\n"
-"PO-Revision-Date: 2012-12-03 18:44+0100\n"
+"PO-Revision-Date: 2012-12-07 09:36+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -693,8 +693,7 @@ msgstr "  \\cd [DIRECTORY]cambia la directory di lavoro\n"
 #, c-format
 msgid "  \\copyright     show PostgreSQL usage and distribution terms\n"
 msgstr ""
-"  \\copyright     mostra aiuti sull'utilizzo di PostgreSQL e termini\n"
-"                 di distribuzione\n"
+"  \\copyright     mostra i termini di uso e distribuzione di PostgreSQL\n"
 
 #: help.c:177
 #, c-format
@@ -709,8 +708,8 @@ msgstr ""
 #, c-format
 msgid "  \\h [NAME]      help on syntax of SQL commands, * for all commands\n"
 msgstr ""
-"  \\h [NOME]      mostra sulla sintassi dei comandi SQL, * mostra tutti\n"
-"                 i comandi\n"
+"  \\h [NOME]      mostra aiuto sulla sintassi dei comandi SQL, * mostra\n"
+"                 tutti i comandi\n"
 
 #: help.c:180
 #, c-format
