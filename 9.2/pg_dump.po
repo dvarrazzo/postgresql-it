@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2012-12-03 13:17+0000\n"
-"PO-Revision-Date: 2012-12-03 17:33+0100\n"
+"POT-Creation-Date: 2013-01-21 05:47+0000\n"
+"PO-Revision-Date: 2013-01-23 11:17+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -314,19 +314,19 @@ msgstr "puntatore null non duplicabile\n"
 msgid "out of memory\n"
 msgstr "memoria esaurita\n"
 
-#: dumputils.c:1263
+#: dumputils.c:1266
 #, c-format
 msgid "%s: unrecognized section name: \"%s\"\n"
 msgstr "%s: nome di sezione sconosciuto: \"%s\"\n"
 
-#: dumputils.c:1265 pg_dump.c:517 pg_dump.c:531 pg_dumpall.c:298
+#: dumputils.c:1268 pg_dump.c:517 pg_dump.c:531 pg_dumpall.c:298
 #: pg_dumpall.c:308 pg_dumpall.c:318 pg_dumpall.c:327 pg_dumpall.c:336
 #: pg_dumpall.c:394 pg_restore.c:281 pg_restore.c:297 pg_restore.c:309
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
-#: dumputils.c:1326
+#: dumputils.c:1329
 #, c-format
 msgid "out of on_exit_nicely slots\n"
 msgstr "slot on_exit_nicely esauriti\n"
@@ -1789,62 +1789,62 @@ msgstr ""
 msgid "schema with OID %u does not exist\n"
 msgstr "lo schema con OID %u non esiste\n"
 
-#: pg_dump.c:3042
+#: pg_dump.c:3060
 #, c-format
 msgid "WARNING: owner of data type \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il proprietario del tipo dato \"%s\" non sembra essere valido\n"
 
-#: pg_dump.c:3153
+#: pg_dump.c:3171
 #, c-format
 msgid "WARNING: owner of operator \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il proprietario dell'operatore \"%s\" non sembra essere valido\n"
 
-#: pg_dump.c:3410
+#: pg_dump.c:3428
 #, c-format
 msgid "WARNING: owner of operator class \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il proprietario della classe operatore \"%s\" non sembra essere "
 "valido\n"
 
-#: pg_dump.c:3498
+#: pg_dump.c:3516
 #, c-format
 msgid "WARNING: owner of operator family \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il proprietario della famiglia di operatori \"%s\" non sembra "
 "essere valido\n"
 
-#: pg_dump.c:3636
+#: pg_dump.c:3654
 #, c-format
 msgid "WARNING: owner of aggregate function \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il proprietario della funzione di aggregazione \"%s\" non sembra "
 "essere valido\n"
 
-#: pg_dump.c:3818
+#: pg_dump.c:3836
 #, c-format
 msgid "WARNING: owner of function \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il proprietario della funzione \"%s\" non sembra essere valido\n"
 
-#: pg_dump.c:4320
+#: pg_dump.c:4338
 #, c-format
 msgid "WARNING: owner of table \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il proprietario della tabella \"%s\" non sembra essere valido\n"
 
-#: pg_dump.c:4467
+#: pg_dump.c:4485
 #, c-format
 msgid "reading indexes for table \"%s\"\n"
 msgstr "lettura degli indici per la tabella \"%s\"\n"
 
-#: pg_dump.c:4786
+#: pg_dump.c:4804
 #, c-format
 msgid "reading foreign key constraints for table \"%s\"\n"
 msgstr "lettura dei vincoli di chiave esterna per la tabella \"%s\"\n"
 
-#: pg_dump.c:5031
+#: pg_dump.c:5049
 #, c-format
 msgid ""
 "failed sanity check, parent table OID %u of pg_rewrite entry OID %u not "
@@ -1853,12 +1853,12 @@ msgstr ""
 "controllo integrità fallito, l'OID %u della tabella padre della voce OID %u "
 "di pg_rewrite non è stato trovato\n"
 
-#: pg_dump.c:5122
+#: pg_dump.c:5140
 #, c-format
 msgid "reading triggers for table \"%s\"\n"
 msgstr "lettura dei trigger per la tabella \"%s\"\n"
 
-#: pg_dump.c:5283
+#: pg_dump.c:5301
 #, c-format
 msgid ""
 "query produced null referenced table name for foreign key trigger \"%s\" on "
@@ -1867,32 +1867,32 @@ msgstr ""
 "la query non ha prodotto nessun nome di tabella referenziata per il trigger "
 "di chiave esterna \"%s\" sulla tabella \"%s\" (OID della tabella: %u)\n"
 
-#: pg_dump.c:5652
+#: pg_dump.c:5670
 #, c-format
 msgid "finding the columns and types of table \"%s\"\n"
 msgstr "ricerca delle colonne e dei tipi della tabella \"%s\"\n"
 
-#: pg_dump.c:5830
+#: pg_dump.c:5848
 #, c-format
 msgid "invalid column numbering in table \"%s\"\n"
 msgstr "numerazione delle colonne non valida nella tabella \"%s\"\n"
 
-#: pg_dump.c:5864
+#: pg_dump.c:5882
 #, c-format
 msgid "finding default expressions of table \"%s\"\n"
 msgstr "ricerca delle espressioni predefinite della tabella \"%s\"\n"
 
-#: pg_dump.c:5916
+#: pg_dump.c:5934
 #, c-format
 msgid "invalid adnum value %d for table \"%s\"\n"
 msgstr "valore adnum %d non valido per la tabella \"%s\"\n"
 
-#: pg_dump.c:5988
+#: pg_dump.c:6006
 #, c-format
 msgid "finding check constraints for table \"%s\"\n"
 msgstr "ricerca dei vincoli di controllo per la tabella \"%s\"\n"
 
-#: pg_dump.c:6083
+#: pg_dump.c:6101
 #, c-format
 msgid "expected %d check constraint on table \"%s\" but found %d\n"
 msgid_plural "expected %d check constraints on table \"%s\" but found %d\n"
@@ -1901,65 +1901,65 @@ msgstr[0] ""
 msgstr[1] ""
 "previsti %d vincoli di controllo sulla tabella \"%s\" ma trovati %d\n"
 
-#: pg_dump.c:6087
+#: pg_dump.c:6105
 #, c-format
 msgid "(The system catalogs might be corrupted.)\n"
 msgstr "(I cataloghi di sistema potrebbero essere corrotti.)\n"
 
-#: pg_dump.c:7447
+#: pg_dump.c:7465
 #, c-format
 msgid "WARNING: typtype of data type \"%s\" appears to be invalid\n"
 msgstr ""
 "ATTENZIONE: il \"typtype\" del tipo dato \"%s\" sembra non essere valido\n"
 
-#: pg_dump.c:8856
+#: pg_dump.c:8914
 #, c-format
 msgid "WARNING: bogus value in proargmodes array\n"
 msgstr "ATTENZIONE: valore errato nell'array proargmode\n"
 
-#: pg_dump.c:9184
+#: pg_dump.c:9242
 #, c-format
 msgid "WARNING: could not parse proallargtypes array\n"
 msgstr "ATTENZIONE: non è stato possibile analizzare l'array proallargtype\n"
 
-#: pg_dump.c:9200
+#: pg_dump.c:9258
 #, c-format
 msgid "WARNING: could not parse proargmodes array\n"
 msgstr "ATTENZIONE: non è stato possibile analizzare l'array proargmode\n"
 
-#: pg_dump.c:9214
+#: pg_dump.c:9272
 #, c-format
 msgid "WARNING: could not parse proargnames array\n"
 msgstr "ATTENZIONE: non è stato possibile analizzare l'array proargname\n"
 
-#: pg_dump.c:9225
+#: pg_dump.c:9283
 #, c-format
 msgid "WARNING: could not parse proconfig array\n"
 msgstr "ATTENZIONE: non è stato possibile analizzare l'array preconfig\n"
 
-#: pg_dump.c:9282
+#: pg_dump.c:9340
 #, c-format
 msgid "unrecognized provolatile value for function \"%s\"\n"
 msgstr "valore provolatile sconosciuto per la funzione \"%s\"\n"
 
-#: pg_dump.c:9502
+#: pg_dump.c:9560
 #, c-format
 msgid "WARNING: bogus value in pg_cast.castfunc or pg_cast.castmethod field\n"
 msgstr ""
 "ATTENZIONE: valore non corretto nei campi pg_cast.castfunc o pg_cast."
 "castmethod\n"
 
-#: pg_dump.c:9505
+#: pg_dump.c:9563
 #, c-format
 msgid "WARNING: bogus value in pg_cast.castmethod field\n"
 msgstr "ATTENZIONE: valore fasullo nel campo pg_cast.castmethod\n"
 
-#: pg_dump.c:9874
+#: pg_dump.c:9932
 #, c-format
 msgid "WARNING: could not find operator with OID %s\n"
 msgstr "ATTENZIONE: operatore con OID %s non trovato\n"
 
-#: pg_dump.c:10936
+#: pg_dump.c:10994
 #, c-format
 msgid ""
 "WARNING: aggregate function %s could not be dumped correctly for this "
@@ -1968,31 +1968,31 @@ msgstr ""
 "ATTENZIONE: la funzione di aggregazione %s non può essere scaricata "
 "correttamente per questa versione database; ignorata\n"
 
-#: pg_dump.c:11709
+#: pg_dump.c:11770
 #, c-format
-msgid "unknown object type (%d) in default privileges\n"
-msgstr "tipo di oggetto (%d) sconosciuto nei privilegi predefiniti\n"
+msgid "unrecognized object type in default privileges: %d\n"
+msgstr "tipo di oggetto sconosciuto nei privilegi predefiniti: %d\n"
 
-#: pg_dump.c:11724
+#: pg_dump.c:11785
 #, c-format
 msgid "could not parse default ACL list (%s)\n"
 msgstr "non è stato possibile interpretare la ACL predefinita (%s)\n"
 
-#: pg_dump.c:11779
+#: pg_dump.c:11840
 #, c-format
 msgid "could not parse ACL list (%s) for object \"%s\" (%s)\n"
 msgstr ""
 "non è stato possibile analizzare la lista ACL (%s) per l'oggetto \"%s"
 "\" (%s)\n"
 
-#: pg_dump.c:12220
+#: pg_dump.c:12281
 #, c-format
 msgid "query to obtain definition of view \"%s\" returned no data\n"
 msgstr ""
 "la query per ottenere la definizione della vista \"%s\" non ha restituito "
 "dati\n"
 
-#: pg_dump.c:12223
+#: pg_dump.c:12284
 #, c-format
 msgid ""
 "query to obtain definition of view \"%s\" returned more than one definition\n"
@@ -2000,28 +2000,28 @@ msgstr ""
 "la query per ottenere la definizione della vista \"%s\" ha restituito più di "
 "una definizione\n"
 
-#: pg_dump.c:12230
+#: pg_dump.c:12291
 #, c-format
 msgid "definition of view \"%s\" appears to be empty (length zero)\n"
 msgstr ""
 "la definizione della vista  \"%s\" sembra essere vuota (lunghezza zero)\n"
 
-#: pg_dump.c:12841
+#: pg_dump.c:12902
 #, c-format
 msgid "invalid column number %d for table \"%s\"\n"
 msgstr "il numero di colonne %d non è valido per la tabella \"%s\"\n"
 
-#: pg_dump.c:12951
+#: pg_dump.c:13012
 #, c-format
 msgid "missing index for constraint \"%s\"\n"
 msgstr "omesso indice per vincolo \"%s\"\n"
 
-#: pg_dump.c:13138
+#: pg_dump.c:13199
 #, c-format
 msgid "unrecognized constraint type: %c\n"
 msgstr "tipo di vincolo sconosciuto: %c\n"
 
-#: pg_dump.c:13287 pg_dump.c:13451
+#: pg_dump.c:13348 pg_dump.c:13512
 #, c-format
 msgid "query to get data of sequence \"%s\" returned %d row (expected 1)\n"
 msgid_plural ""
@@ -2033,26 +2033,26 @@ msgstr[1] ""
 "la query per ottenere i dati della sequenza \"%s\" ha restituito %d righe "
 "(prevista 1)\n"
 
-#: pg_dump.c:13298
+#: pg_dump.c:13359
 #, c-format
 msgid "query to get data of sequence \"%s\" returned name \"%s\"\n"
 msgstr ""
 "la query per ottenere dati della sequenza \"%s\" ha restituito il nome \"%s"
 "\"\n"
 
-#: pg_dump.c:13538
+#: pg_dump.c:13599
 #, c-format
 msgid "unexpected tgtype value: %d\n"
 msgstr "valore tgtype inatteso: %d\n"
 
-#: pg_dump.c:13620
+#: pg_dump.c:13681
 #, c-format
 msgid "invalid argument string (%s) for trigger \"%s\" on table \"%s\"\n"
 msgstr ""
 "la stringa argomento (%s) non è valida per il trigger \"%s\" sulla tabella "
 "\"%s\"\n"
 
-#: pg_dump.c:13737
+#: pg_dump.c:13798
 #, c-format
 msgid ""
 "query to get rule \"%s\" for table \"%s\" failed: wrong number of rows "
@@ -2061,12 +2061,12 @@ msgstr ""
 "la query per ottenere regole \"%s\" per la tabella \"%s\" ha fallito: ha "
 "restituito un numero errato di righe\n"
 
-#: pg_dump.c:14009
+#: pg_dump.c:14070
 #, c-format
 msgid "reading dependency data\n"
 msgstr "lettura dati di dipendenza\n"
 
-#: pg_dump.c:14590
+#: pg_dump.c:14651
 #, c-format
 msgid "query returned %d row instead of one: %s\n"
 msgid_plural "query returned %d rows instead of one: %s\n"

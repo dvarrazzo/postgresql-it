@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 8.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-03 13:48+0000\n"
-"PO-Revision-Date: 2012-12-03 18:01+0100\n"
+"POT-Creation-Date: 2013-01-21 05:17+0000\n"
+"PO-Revision-Date: 2013-01-23 11:20+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -580,8 +580,8 @@ msgstr ""
 #: postmaster/postmaster.c:1791 postmaster/postmaster.c:1824
 #: postmaster/postmaster.c:2828 postmaster/postmaster.c:3547
 #: postmaster/postmaster.c:3633 postmaster/postmaster.c:4190
-#: utils/hash/dynahash.c:363 utils/hash/dynahash.c:435
-#: utils/hash/dynahash.c:950 utils/misc/guc.c:2538 utils/misc/guc.c:2551
+#: utils/hash/dynahash.c:367 utils/hash/dynahash.c:444
+#: utils/hash/dynahash.c:956 utils/misc/guc.c:2538 utils/misc/guc.c:2551
 #: utils/misc/guc.c:2564 utils/init/miscinit.c:211 utils/init/miscinit.c:232
 #: utils/init/miscinit.c:242 utils/fmgr/dfmgr.c:221 utils/mb/mbutils.c:279
 #: utils/mb/mbutils.c:543 utils/mmgr/aset.c:360 utils/mmgr/aset.c:539
@@ -889,7 +889,7 @@ msgstr "il tipo %s non è composito"
 msgid "record type has not been registered"
 msgstr "il tipo del record non è stato registrato"
 
-#: utils/hash/dynahash.c:946 storage/ipc/shmem.c:190 storage/ipc/shmem.c:359
+#: utils/hash/dynahash.c:952 storage/ipc/shmem.c:190 storage/ipc/shmem.c:359
 #: storage/lmgr/proc.c:185 storage/lmgr/proc.c:198 storage/lmgr/lock.c:583
 #: storage/lmgr/lock.c:649 storage/lmgr/lock.c:2041 storage/lmgr/lock.c:2329
 #: storage/lmgr/lock.c:2394
@@ -2911,9 +2911,9 @@ msgstr "il database %u non esiste"
 
 #: utils/init/postinit.c:387 utils/init/postinit.c:506
 #: utils/init/postinit.c:522 utils/adt/dbsize.c:148 utils/adt/acl.c:1749
-#: commands/dbcommands.c:633 commands/dbcommands.c:779
-#: commands/dbcommands.c:902 commands/dbcommands.c:974
-#: commands/dbcommands.c:1082 commands/comment.c:624 catalog/aclchk.c:434
+#: commands/dbcommands.c:657 commands/dbcommands.c:803
+#: commands/dbcommands.c:926 commands/dbcommands.c:998
+#: commands/dbcommands.c:1106 commands/comment.c:624 catalog/aclchk.c:434
 #, c-format
 msgid "database \"%s\" does not exist"
 msgstr "il database \"%s\" non esiste"
@@ -4364,12 +4364,12 @@ msgstr "la stringa è troppo lunga per tsvector"
 msgid "encoding conversion from %s to ASCII not supported"
 msgstr "la conversione di codifica da %s a ASCII non è supportata"
 
-#: utils/adt/ascii.c:126 commands/dbcommands.c:194
+#: utils/adt/ascii.c:126 commands/dbcommands.c:195
 #, c-format
 msgid "%s is not a valid encoding name"
 msgstr "%s non è un nome di codifica valido"
 
-#: utils/adt/ascii.c:144 commands/dbcommands.c:184
+#: utils/adt/ascii.c:144 commands/dbcommands.c:185
 #, c-format
 msgid "%d is not a valid encoding code"
 msgstr "%d non è un codice di codifica valido"
@@ -4392,7 +4392,7 @@ msgid "database with OID %u does not exist"
 msgstr "il database con OID %u non esiste"
 
 #: utils/adt/dbsize.c:246 utils/adt/acl.c:2582 commands/tablecmds.c:343
-#: commands/tablecmds.c:5669 commands/dbcommands.c:312
+#: commands/tablecmds.c:5669 commands/dbcommands.c:313
 #: commands/indexcmds.c:205 commands/comment.c:663 commands/tablespace.c:412
 #: commands/tablespace.c:767 commands/tablespace.c:834
 #: commands/tablespace.c:936 commands/tablespace.c:1069
@@ -4894,7 +4894,7 @@ msgid "text search configuration name \"%s\" must be schema-qualified"
 msgstr "la configurazione di ricerca di testo \"%s\" deve avere uno schema"
 
 #: utils/adt/tsvector_op.c:1417 commands/tablecmds.c:1437 commands/copy.c:3377
-#: commands/indexcmds.c:741 parser/parse_expr.c:419
+#: commands/indexcmds.c:741 parser/parse_expr.c:421
 #, c-format
 msgid "column \"%s\" does not exist"
 msgstr "la colonna \"%s\" non esiste"
@@ -7825,7 +7825,7 @@ msgstr "la colonna ereditata \"%s\" ha un conflitto di tipo"
 #: commands/tablecmds.c:911 commands/tablecmds.c:1075
 #: parser/parse_coerce.c:268 parser/parse_coerce.c:1326
 #: parser/parse_coerce.c:1345 parser/parse_coerce.c:1390
-#: parser/parse_expr.c:1664
+#: parser/parse_expr.c:1679
 #, c-format
 msgid "%s versus %s"
 msgstr "tra %s e %s"
@@ -8411,9 +8411,9 @@ msgstr ""
 #: commands/copy.c:752 commands/copy.c:760 commands/copy.c:768
 #: commands/copy.c:776 commands/copy.c:784 commands/copy.c:792
 #: commands/copy.c:800 commands/copy.c:808 commands/copy.c:816
-#: commands/dbcommands.c:121 commands/dbcommands.c:129
-#: commands/dbcommands.c:137 commands/dbcommands.c:145
-#: commands/dbcommands.c:153 commands/dbcommands.c:875 commands/user.c:133
+#: commands/dbcommands.c:122 commands/dbcommands.c:130
+#: commands/dbcommands.c:138 commands/dbcommands.c:146
+#: commands/dbcommands.c:154 commands/dbcommands.c:899 commands/user.c:133
 #: commands/user.c:150 commands/user.c:158 commands/user.c:166
 #: commands/user.c:174 commands/user.c:182 commands/user.c:190
 #: commands/user.c:198 commands/user.c:206 commands/user.c:214
@@ -9198,53 +9198,53 @@ msgstr ""
 msgid "\"%s\": truncated %u to %u pages"
 msgstr "\"%s\": %u pagine ridotte a %u"
 
-#: commands/dbcommands.c:160
+#: commands/dbcommands.c:161
 msgid "LOCATION is not supported anymore"
 msgstr "LOCATION non è più supportato"
 
-#: commands/dbcommands.c:161
+#: commands/dbcommands.c:162
 msgid "Consider using tablespaces instead."
 msgstr "Puoi prendere in considerazione l'uso dei tablespace."
 
-#: commands/dbcommands.c:220
+#: commands/dbcommands.c:221
 msgid "permission denied to create database"
 msgstr "permesso di creare il database negato"
 
-#: commands/dbcommands.c:242
+#: commands/dbcommands.c:243
 #, c-format
 msgid "template database \"%s\" does not exist"
 msgstr "il modello di database \"%s\" non esiste"
 
-#: commands/dbcommands.c:254
+#: commands/dbcommands.c:255
 #, c-format
 msgid "permission denied to copy database \"%s\""
 msgstr "permesso di copiare il database \"%s\" negato"
 
-#: commands/dbcommands.c:266
+#: commands/dbcommands.c:267
 #, c-format
 msgid "invalid server encoding %d"
 msgstr "codifica del server non valida: %d"
 
-#: commands/dbcommands.c:295
+#: commands/dbcommands.c:296
 #, c-format
 msgid "encoding %s does not match server's locale %s"
 msgstr "la codifica %s non corrisponde al locale del server %s"
 
-#: commands/dbcommands.c:298
+#: commands/dbcommands.c:299
 #, c-format
 msgid "The server's LC_CTYPE setting requires encoding %s."
 msgstr "L'impostazione LC_CTYPE del server richiede la codifica %s."
 
-#: commands/dbcommands.c:325
+#: commands/dbcommands.c:326
 msgid "pg_global cannot be used as default tablespace"
 msgstr "pg_global non può essere usato come tablespace predefinito"
 
-#: commands/dbcommands.c:351
+#: commands/dbcommands.c:352
 #, c-format
 msgid "cannot assign new default tablespace \"%s\""
 msgstr "non è possibile assegnare il nuovo tablespace predefinito \"%s\""
 
-#: commands/dbcommands.c:353
+#: commands/dbcommands.c:354
 #, c-format
 msgid ""
 "There is a conflict because database \"%s\" already has some tables in this "
@@ -9253,48 +9253,48 @@ msgstr ""
 "C'è un conflitto perché il database \"%s\" ha già alcune tabelle in questo "
 "tablespace."
 
-#: commands/dbcommands.c:373 commands/dbcommands.c:799
+#: commands/dbcommands.c:374 commands/dbcommands.c:823
 #, c-format
 msgid "database \"%s\" already exists"
 msgstr "il database \"%s\" esiste già"
 
-#: commands/dbcommands.c:387
+#: commands/dbcommands.c:388
 #, c-format
 msgid "source database \"%s\" is being accessed by other users"
 msgstr "il database sorgente \"%s\" ha attualmente altri utenti collegati"
 
-#: commands/dbcommands.c:640
+#: commands/dbcommands.c:664
 #, c-format
 msgid "database \"%s\" does not exist, skipping"
 msgstr "il database \"%s\" non esiste, saltato"
 
-#: commands/dbcommands.c:661
+#: commands/dbcommands.c:685
 msgid "cannot drop a template database"
 msgstr "non è possibile eliminare un modello di database"
 
-#: commands/dbcommands.c:667
+#: commands/dbcommands.c:691
 msgid "cannot drop the currently open database"
 msgstr "non si può eliminare il database aperto attualmente"
 
-#: commands/dbcommands.c:678 commands/dbcommands.c:821
+#: commands/dbcommands.c:702 commands/dbcommands.c:845
 #, c-format
 msgid "database \"%s\" is being accessed by other users"
 msgstr "il database \"%s\" è attualmente utilizzato da altri utenti"
 
-#: commands/dbcommands.c:790
+#: commands/dbcommands.c:814
 msgid "permission denied to rename database"
 msgstr "permesso di rinominare il database negato"
 
-#: commands/dbcommands.c:810
+#: commands/dbcommands.c:834
 msgid "current database cannot be renamed"
 msgstr "il database corrente non può essere rinominato"
 
-#: commands/dbcommands.c:1121
+#: commands/dbcommands.c:1145
 msgid "permission denied to change owner of database"
 msgstr "permesso di cambiare il proprietario del database negato"
 
-#: commands/dbcommands.c:1349 commands/dbcommands.c:1518
-#: commands/dbcommands.c:1557
+#: commands/dbcommands.c:1384 commands/dbcommands.c:1563
+#: commands/dbcommands.c:1602
 #, c-format
 msgid "some useless files may be left behind in old database directory \"%s\""
 msgstr ""
@@ -12883,12 +12883,12 @@ msgstr "la relazione \"%s.%s\" non esiste"
 msgid "no schema has been selected to create in"
 msgstr "nessuna schema selezionato per crearci dentro"
 
-#: catalog/namespace.c:1895 parser/parse_expr.c:501 parser/parse_target.c:871
+#: catalog/namespace.c:1895 parser/parse_expr.c:503 parser/parse_target.c:871
 #, c-format
 msgid "cross-database references are not implemented: %s"
 msgstr "i riferimenti tra database diversi non sono implementati: %s"
 
-#: catalog/namespace.c:1901 gram.y:2966 gram.y:8790 parser/parse_expr.c:532
+#: catalog/namespace.c:1901 gram.y:2966 gram.y:8790 parser/parse_expr.c:534
 #: parser/parse_target.c:881
 #, c-format
 msgid "improper qualified name (too many dotted names): %s"
@@ -13584,20 +13584,20 @@ msgid "%s: could not determine user name (GetUserName failed)\n"
 msgstr ""
 "%s: non è stato possibile determinare il nome utente (GetUserName fallita)\n"
 
-#: parser/parse_coerce.c:250 parser/analyze.c:1957 parser/parse_expr.c:561
-#: parser/parse_expr.c:567
+#: parser/parse_coerce.c:250 parser/analyze.c:1957 parser/parse_expr.c:563
+#: parser/parse_expr.c:569
 #, c-format
 msgid "there is no parameter $%d"
 msgstr "parametro $%d non presente"
 
-#: parser/parse_coerce.c:266 parser/parse_expr.c:1662
+#: parser/parse_coerce.c:266 parser/parse_expr.c:1677
 #, c-format
 msgid "inconsistent types deduced for parameter $%d"
 msgstr "tipi di dati dedotti per il parametro $%d non consistenti"
 
 #: parser/parse_coerce.c:801 parser/parse_coerce.c:828
 #: parser/parse_coerce.c:844 parser/parse_coerce.c:858
-#: parser/parse_expr.c:2267
+#: parser/parse_expr.c:2282
 #, c-format
 msgid "cannot cast type %s to %s"
 msgstr "non è possibile convertire il tipo %s in %s"
@@ -13685,8 +13685,8 @@ msgid "type matched to anyenum is not an enum type: %s"
 msgstr "il tipo associato ad anyenum non è una enumerazione: %s"
 
 #: parser/parse_coerce.c:1456 parser/parse_coerce.c:1473
-#: parser/parse_coerce.c:1531 parser/parse_expr.c:1330
-#: parser/parse_expr.c:1848 parser/parse_expr.c:1879 parser/parse_oper.c:1043
+#: parser/parse_coerce.c:1531 parser/parse_expr.c:1332
+#: parser/parse_expr.c:1863 parser/parse_expr.c:1894 parser/parse_oper.c:1043
 #, c-format
 msgid "could not find array type for data type %s"
 msgstr "non è stato possibile trovare il tipo di array per il tipo di dati %s"
@@ -14210,90 +14210,90 @@ msgstr ""
 "Gli operatori di ordinamento devono essere i membri \"<\" oppure \">\" di "
 "una famiglia di operatori btree."
 
-#: parser/parse_expr.c:809
+#: parser/parse_expr.c:811
 msgid "NULLIF requires = operator to yield boolean"
 msgstr "NULLIF richiede che l'operatore = restituisca un valore booleano"
 
-#: parser/parse_expr.c:976
+#: parser/parse_expr.c:978
 msgid "arguments of row IN must all be row expressions"
 msgstr "gli argomenti della riga IN devono essere tutti espressioni di riga"
 
-#: parser/parse_expr.c:1193
+#: parser/parse_expr.c:1195
 msgid "subquery must return a column"
 msgstr "la sottoquery deve restituire una colonna"
 
-#: parser/parse_expr.c:1199
+#: parser/parse_expr.c:1201
 msgid "subquery must return only one column"
 msgstr "la sottoquery deve restituire solo una colonna"
 
-#: parser/parse_expr.c:1256
+#: parser/parse_expr.c:1258
 msgid "subquery has too many columns"
 msgstr "la sottoquery ha troppe colonne"
 
-#: parser/parse_expr.c:1260
+#: parser/parse_expr.c:1262
 msgid "subquery has too few columns"
 msgstr "la sottoquery ha troppe poche colonne"
 
-#: parser/parse_expr.c:1471
+#: parser/parse_expr.c:1486
 msgid "unnamed XML attribute value must be a column reference"
 msgstr ""
 "il valore dell'attributo XML senza nome dev'essere un riferimento ad una "
 "colonna"
 
-#: parser/parse_expr.c:1472
+#: parser/parse_expr.c:1487
 msgid "unnamed XML element value must be a column reference"
 msgstr ""
 "il valore dell'elemento XML senza nome dev'essere un riferimento ad una "
 "colonna"
 
-#: parser/parse_expr.c:1493
+#: parser/parse_expr.c:1508
 #, c-format
 msgid "XML attribute name \"%s\" appears more than once"
 msgstr "l'attributo XML di nome \"%s\" compare più di una volta"
 
-#: parser/parse_expr.c:1591
+#: parser/parse_expr.c:1606
 #, c-format
 msgid "cannot cast XMLSERIALIZE result to %s"
 msgstr "non è possibile convertire il risultato di XMLSERIALIZE a %s"
 
-#: parser/parse_expr.c:2308 parser/parse_expr.c:2506
+#: parser/parse_expr.c:2323 parser/parse_expr.c:2521
 msgid "unequal number of entries in row expressions"
 msgstr "numero di elementi differente nelle espressioni di riga"
 
-#: parser/parse_expr.c:2318
+#: parser/parse_expr.c:2333
 msgid "cannot compare rows of zero length"
 msgstr "non possono comparire righe di lunghezza zero"
 
-#: parser/parse_expr.c:2343
+#: parser/parse_expr.c:2358
 #, c-format
 msgid "row comparison operator must yield type boolean, not type %s"
 msgstr ""
 "l'operatore di comparazione tra righe deve restituire il tipo booleano, non "
 "il tipo %s"
 
-#: parser/parse_expr.c:2350
+#: parser/parse_expr.c:2365
 msgid "row comparison operator must not return a set"
 msgstr "l'operatore di comparazione tra righe non può restituire un insieme"
 
-#: parser/parse_expr.c:2409 parser/parse_expr.c:2453
+#: parser/parse_expr.c:2424 parser/parse_expr.c:2468
 #, c-format
 msgid "could not determine interpretation of row comparison operator %s"
 msgstr ""
 "non è stato possibile determinare un'interpretazione dell'operatore di "
 "comparazione tra righe %s"
 
-#: parser/parse_expr.c:2411
+#: parser/parse_expr.c:2426
 msgid ""
 "Row comparison operators must be associated with btree operator families."
 msgstr ""
 "Gli operatori di comparazione tra righe devono essere associati a famiglie "
 "di operatori btree."
 
-#: parser/parse_expr.c:2455
+#: parser/parse_expr.c:2470
 msgid "There are multiple equally-plausible candidates."
 msgstr "C'è più di un candidato egualmente plausibile."
 
-#: parser/parse_expr.c:2545
+#: parser/parse_expr.c:2560
 msgid "IS DISTINCT FROM requires = operator to yield boolean"
 msgstr ""
 "IS DISTINCT FROM richiede che l'operatore = restituisca un valore booleano"
