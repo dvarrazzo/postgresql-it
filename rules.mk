@@ -8,7 +8,7 @@ dlpots:
 	for u in $$(wget -O - http://babel.postgresql.org/ \
 			| egrep  "href=\"po-$(VERSION)-branch/.*pot\"" \
 			| sed -e 's/.*href="\(.*\)".*/\1/'); do \
-		wget http://babel.postgresql.org/$$u; \
+		wget -r http://babel.postgresql.org/$$u; \
 	done
 
 updatepots:
