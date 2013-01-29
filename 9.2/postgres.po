@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-01-21 05:41+0000\n"
-"PO-Revision-Date: 2013-01-23 11:20+0100\n"
+"POT-Creation-Date: 2013-01-29 16:11+0000\n"
+"PO-Revision-Date: 2013-01-29 16:34+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -8509,10 +8509,26 @@ msgstr ""
 "%u pagine dell'indice sono state cancellate, %u sono attualmente riusabili.\n"
 "%s."
 
-#: commands/vacuumlazy.c:1327
+#: commands/vacuumlazy.c:1321
+#, c-format
+msgid ""
+"automatic vacuum of table \"%s.%s.%s\": cannot (re)acquire exclusive lock "
+"for truncate scan"
+msgstr ""
+"vacuum automatico della tabella \"%s.%s.%s\": non è possibile (ri)acquisire "
+"un lock esclusivo per la scansione di troncamento"
+
+#: commands/vacuumlazy.c:1390
 #, c-format
 msgid "\"%s\": truncated %u to %u pages"
 msgstr "\"%s\": %u pagine ridotte a %u"
+
+#: commands/vacuumlazy.c:1445
+#, c-format
+msgid "\"%s\": suspending truncate due to conflicting lock request"
+msgstr ""
+"\"%s\": annullamento del troncamento a causa di richieste di lock in "
+"conflitto"
 
 #: commands/variable.c:161 utils/misc/guc.c:8327
 #, c-format
