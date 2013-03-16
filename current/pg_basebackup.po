@@ -625,8 +625,7 @@ msgstr ""
 #: pg_receivexlog.c:164
 #, c-format
 msgid "%s: could not stat file \"%s\": %s\n"
-msgstr ""
-"%s: \"non è stato possibile ottenere informazioni sul file \"%s\": %s\n"
+msgstr "%s: non è stato possibile ottenere informazioni sul file \"%s\": %s\n"
 
 #: pg_receivexlog.c:182
 #, c-format
