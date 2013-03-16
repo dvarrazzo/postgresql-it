@@ -44,7 +44,7 @@ check: $(MOS)
 	../tools/chkpos.py $(POS)
 
 clean:
-	rm -f *.mo
+	rm -f *.mo *.pot
 
 # NOTE: this doesn't generate all the expected file names:
 # ecpglib -> ecpglib6
