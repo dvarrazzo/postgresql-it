@@ -1,5 +1,8 @@
 # rules to be imported by VERSION/Makefile
 
+# working copy of the pgtranslation/messages repository
+PGTRANSWC = "$$HOME/dev/fs/pgtranslation/messages/"
+
 .PHONY: clean check
 
 all: $(MOS)
@@ -62,3 +65,11 @@ mopack:
 	mv libpq-$(VERSION).mo libpq5-$(VERSION).mo
 	-mv ecpglib-$(VERSION).mo ecpglib6-$(VERSION).mo
 	zip -9 ../package/messages-$(LANG)-$(VERSION).zip *.mo
+
+# propagate the changes to a pgtranslation working copy
+pgtranspush:
+	(cd $(PGTRANSWC) && git checkout $(VERSION))
+	for f in *.po; do \
+		msgmerge --no-wrap $$f $(PGTRANSWC)/$(LANG)/$$f \
+			| sponge $(PGTRANSWC)/$(LANG)/$$f; \
+	done
