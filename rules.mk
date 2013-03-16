@@ -70,6 +70,5 @@ mopack:
 pgtranspush:
 	(cd $(PGTRANSWC) && git checkout $(VERSION))
 	for f in *.po; do \
-		msgmerge --no-wrap $$f $(PGTRANSWC)/$(LANG)/$$f \
-			| sponge $(PGTRANSWC)/$(LANG)/$$f; \
+		msgcat --no-wrap -o $(PGTRANSWC)/$(LANG)/$$f $$f; \
 	done
