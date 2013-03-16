@@ -1,4 +1,4 @@
-SUBDIRS = current 9.2 9.1 9.0 8.4
+SUBDIRS = 9.3 9.2 9.1 9.0 8.4
 
 all dlpots updatepots check popack mopack clean:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
