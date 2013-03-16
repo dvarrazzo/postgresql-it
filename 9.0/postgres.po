@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-01-29 13:11+0000\n"
-"PO-Revision-Date: 2013-01-29 16:34+0100\n"
+"POT-Creation-Date: 2013-03-13 11:51+0000\n"
+"PO-Revision-Date: 2013-03-16 13:16+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1013,8 +1013,8 @@ msgid "record type has not been registered"
 msgstr "il tipo del record non è stato registrato"
 
 #: utils/hash/dynahash.c:952 storage/ipc/shmem.c:190 storage/lmgr/proc.c:195
-#: storage/lmgr/proc.c:213 storage/lmgr/lock.c:629 storage/lmgr/lock.c:698
-#: storage/lmgr/lock.c:2125 storage/lmgr/lock.c:2514 storage/lmgr/lock.c:2579
+#: storage/lmgr/proc.c:213 storage/lmgr/lock.c:721 storage/lmgr/lock.c:790
+#: storage/lmgr/lock.c:2217 storage/lmgr/lock.c:2606 storage/lmgr/lock.c:2671
 msgid "out of shared memory"
 msgstr "memoria condivisa esaurita"
 
@@ -3711,22 +3711,22 @@ msgstr "XML non supporta i valori infiniti per il tipo date."
 #: utils/adt/xml.c:1741 utils/adt/xml.c:1748 utils/adt/xml.c:1768
 #: utils/adt/xml.c:1775 utils/adt/timestamp.c:226 utils/adt/timestamp.c:269
 #: utils/adt/timestamp.c:491 utils/adt/timestamp.c:531
-#: utils/adt/timestamp.c:2530 utils/adt/timestamp.c:2551
-#: utils/adt/timestamp.c:2564 utils/adt/timestamp.c:2573
-#: utils/adt/timestamp.c:2631 utils/adt/timestamp.c:2654
-#: utils/adt/timestamp.c:2667 utils/adt/timestamp.c:2678
-#: utils/adt/timestamp.c:3114 utils/adt/timestamp.c:3244
-#: utils/adt/timestamp.c:3285 utils/adt/timestamp.c:3373
-#: utils/adt/timestamp.c:3420 utils/adt/timestamp.c:3531
-#: utils/adt/timestamp.c:3844 utils/adt/timestamp.c:3981
-#: utils/adt/timestamp.c:3988 utils/adt/timestamp.c:4002
-#: utils/adt/timestamp.c:4012 utils/adt/timestamp.c:4075
-#: utils/adt/timestamp.c:4215 utils/adt/timestamp.c:4225
-#: utils/adt/timestamp.c:4440 utils/adt/timestamp.c:4519
-#: utils/adt/timestamp.c:4526 utils/adt/timestamp.c:4553
-#: utils/adt/timestamp.c:4557 utils/adt/timestamp.c:4614
-#: utils/adt/formatting.c:2956 utils/adt/formatting.c:2988
-#: utils/adt/formatting.c:3056 utils/adt/date.c:913 utils/adt/date.c:960
+#: utils/adt/timestamp.c:2531 utils/adt/timestamp.c:2552
+#: utils/adt/timestamp.c:2565 utils/adt/timestamp.c:2574
+#: utils/adt/timestamp.c:2632 utils/adt/timestamp.c:2655
+#: utils/adt/timestamp.c:2668 utils/adt/timestamp.c:2679
+#: utils/adt/timestamp.c:3115 utils/adt/timestamp.c:3245
+#: utils/adt/timestamp.c:3286 utils/adt/timestamp.c:3374
+#: utils/adt/timestamp.c:3421 utils/adt/timestamp.c:3532
+#: utils/adt/timestamp.c:3845 utils/adt/timestamp.c:3982
+#: utils/adt/timestamp.c:3989 utils/adt/timestamp.c:4003
+#: utils/adt/timestamp.c:4013 utils/adt/timestamp.c:4076
+#: utils/adt/timestamp.c:4216 utils/adt/timestamp.c:4226
+#: utils/adt/timestamp.c:4441 utils/adt/timestamp.c:4520
+#: utils/adt/timestamp.c:4527 utils/adt/timestamp.c:4554
+#: utils/adt/timestamp.c:4558 utils/adt/timestamp.c:4615
+#: utils/adt/formatting.c:3044 utils/adt/formatting.c:3076
+#: utils/adt/formatting.c:3144 utils/adt/date.c:913 utils/adt/date.c:960
 #: utils/adt/date.c:1516 utils/adt/date.c:1553 utils/adt/date.c:2426
 #: utils/adt/nabstime.c:480 utils/adt/nabstime.c:523 utils/adt/nabstime.c:553
 #: utils/adt/nabstime.c:596
@@ -3900,7 +3900,7 @@ msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 
 #: utils/adt/int.c:718 utils/adt/int.c:860 utils/adt/int.c:968
 #: utils/adt/int.c:1057 utils/adt/int.c:1096 utils/adt/int.c:1124
-#: utils/adt/timestamp.c:2876 utils/adt/geo_ops.c:4130 utils/adt/int8.c:599
+#: utils/adt/timestamp.c:2877 utils/adt/geo_ops.c:4130 utils/adt/int8.c:599
 #: utils/adt/int8.c:659 utils/adt/int8.c:848 utils/adt/int8.c:956
 #: utils/adt/int8.c:1045 utils/adt/int8.c:1153 utils/adt/float.c:764
 #: utils/adt/float.c:828 utils/adt/float.c:2470 utils/adt/float.c:2533
@@ -3910,7 +3910,7 @@ msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 msgid "division by zero"
 msgstr "divisione per zero"
 
-#: utils/adt/int.c:1361 utils/adt/timestamp.c:4712 utils/adt/timestamp.c:4793
+#: utils/adt/int.c:1361 utils/adt/timestamp.c:4713 utils/adt/timestamp.c:4794
 #: utils/adt/int8.c:1411
 msgid "step size cannot equal zero"
 msgstr "il valore del passo non può essere uguale a zero"
@@ -4003,8 +4003,8 @@ msgstr "il timestamp non può essere NaN"
 msgid "timestamp(%d) precision must be between %d and %d"
 msgstr "la precisione di timestamp(%d) deve essere compresa fra %d e %d"
 
-#: utils/adt/timestamp.c:658 utils/adt/timestamp.c:3109
-#: utils/adt/timestamp.c:3239 utils/adt/timestamp.c:3624
+#: utils/adt/timestamp.c:658 utils/adt/timestamp.c:3110
+#: utils/adt/timestamp.c:3240 utils/adt/timestamp.c:3625
 msgid "interval out of range"
 msgstr "il valore di interval è fuori dall'intervallo consentito"
 
@@ -4027,54 +4027,54 @@ msgstr "la precisione di INTERVAL(%d) è stata ridotta al massimo consentito %d"
 msgid "interval(%d) precision must be between %d and %d"
 msgstr "la precisione di INTERVAL(%d) deve essere compresa fra %d e %d"
 
-#: utils/adt/timestamp.c:2306
+#: utils/adt/timestamp.c:2307
 msgid "cannot subtract infinite timestamps"
 msgstr "non è possibile sottrarre valori infiniti di TIMESTAMP"
 
-#: utils/adt/timestamp.c:3365 utils/adt/timestamp.c:3961
-#: utils/adt/timestamp.c:4020
+#: utils/adt/timestamp.c:3366 utils/adt/timestamp.c:3962
+#: utils/adt/timestamp.c:4021
 #, c-format
 msgid "timestamp units \"%s\" not supported"
 msgstr "unità \"%s\" di timestamp non supportata"
 
-#: utils/adt/timestamp.c:3379 utils/adt/timestamp.c:4030
+#: utils/adt/timestamp.c:3380 utils/adt/timestamp.c:4031
 #, c-format
 msgid "timestamp units \"%s\" not recognized"
 msgstr "unità \"%s\" di timestamp non riconosciuta"
 
-#: utils/adt/timestamp.c:3520 utils/adt/timestamp.c:4192
-#: utils/adt/timestamp.c:4233
+#: utils/adt/timestamp.c:3521 utils/adt/timestamp.c:4193
+#: utils/adt/timestamp.c:4234
 #, c-format
 msgid "timestamp with time zone units \"%s\" not supported"
 msgstr "unità \"%s\" di timestamp with time zone non supportata"
 
-#: utils/adt/timestamp.c:3537 utils/adt/timestamp.c:4242
+#: utils/adt/timestamp.c:3538 utils/adt/timestamp.c:4243
 #, c-format
 msgid "timestamp with time zone units \"%s\" not recognized"
 msgstr "unità \"%s\" di timestamp with time zone non riconosciuta"
 
-#: utils/adt/timestamp.c:3617 utils/adt/timestamp.c:4348
+#: utils/adt/timestamp.c:3618 utils/adt/timestamp.c:4349
 #, c-format
 msgid "interval units \"%s\" not supported"
 msgstr "unità \"%s\" di interval non supportata"
 
-#: utils/adt/timestamp.c:3633 utils/adt/timestamp.c:4375
+#: utils/adt/timestamp.c:3634 utils/adt/timestamp.c:4376
 #, c-format
 msgid "interval units \"%s\" not recognized"
 msgstr "unità \"%s\" di interval non riconosciuta"
 
-#: utils/adt/timestamp.c:4445 utils/adt/timestamp.c:4618
+#: utils/adt/timestamp.c:4446 utils/adt/timestamp.c:4619
 #, c-format
 msgid "could not convert to time zone \"%s\""
 msgstr "conversione al fuso orario \"%s\" fallita"
 
-#: utils/adt/timestamp.c:4452 utils/adt/timestamp.c:4625 utils/adt/date.c:2631
+#: utils/adt/timestamp.c:4453 utils/adt/timestamp.c:4626 utils/adt/date.c:2631
 #: utils/adt/datetime.c:928 utils/adt/datetime.c:1663
 #, c-format
 msgid "time zone \"%s\" not recognized"
 msgstr "fuso orario \"%s\" non riconosciuto"
 
-#: utils/adt/timestamp.c:4477 utils/adt/timestamp.c:4651
+#: utils/adt/timestamp.c:4478 utils/adt/timestamp.c:4652
 #, c-format
 msgid "interval time zone \"%s\" must not specify month"
 msgstr "il fuso orario dell'intervallo \"%s\" non può specificare i mesi"
@@ -4430,119 +4430,119 @@ msgstr ""
 msgid "\"%s\" is not a number"
 msgstr "\"%s\" non è un numero"
 
-#: utils/adt/formatting.c:1788
+#: utils/adt/formatting.c:1883
 msgid "invalid combination of date conventions"
 msgstr "la combinazione di convenzioni di date non è valida"
 
-#: utils/adt/formatting.c:1789
+#: utils/adt/formatting.c:1884
 msgid ""
 "Do not mix Gregorian and ISO week date conventions in a formatting template."
 msgstr ""
 "Non è possibile usare la convenzione gregoriana e ISO per settimane in un "
 "modello di formattazione."
 
-#: utils/adt/formatting.c:1806
+#: utils/adt/formatting.c:1901
 #, c-format
 msgid "conflicting values for \"%s\" field in formatting string"
 msgstr ""
 "sono presenti valori contraddittori per il campo \"%s\" nella stringa di "
 "formattazione"
 
-#: utils/adt/formatting.c:1808
+#: utils/adt/formatting.c:1903
 msgid "This value contradicts a previous setting for the same field type."
 msgstr ""
 "Questo valore contraddice una impostazione precedente per lo stesso tipo di "
 "campo"
 
-#: utils/adt/formatting.c:1869
+#: utils/adt/formatting.c:1964
 #, c-format
 msgid "source string too short for \"%s\" formatting field"
 msgstr ""
 "la stringa di origine è troppo corta per il campo di formattazione \"%s\""
 
-#: utils/adt/formatting.c:1871
+#: utils/adt/formatting.c:1966
 #, c-format
 msgid "Field requires %d characters, but only %d remain."
 msgstr "Il campo necessita di %d caratteri ma ne restano solo %d."
 
-#: utils/adt/formatting.c:1874 utils/adt/formatting.c:1888
+#: utils/adt/formatting.c:1969 utils/adt/formatting.c:1983
 msgid ""
 "If your source string is not fixed-width, try using the \"FM\" modifier."
 msgstr ""
 "Se la stringa di partenza non ha lunghezza fissa, prova ad usare il "
 "modificatore \"FM\"."
 
-#: utils/adt/formatting.c:1884 utils/adt/formatting.c:1897
-#: utils/adt/formatting.c:2027
+#: utils/adt/formatting.c:1979 utils/adt/formatting.c:1992
+#: utils/adt/formatting.c:2122
 #, c-format
 msgid "invalid value \"%s\" for \"%s\""
 msgstr "valore \"%s\" per \"%s\" non valido"
 
-#: utils/adt/formatting.c:1886
+#: utils/adt/formatting.c:1981
 #, c-format
 msgid "Field requires %d characters, but only %d could be parsed."
 msgstr ""
 "Il campo necessita di %d caratteri, ma è stato possibile analizzarne solo %d."
 
-#: utils/adt/formatting.c:1899
+#: utils/adt/formatting.c:1994
 msgid "Value must be an integer."
 msgstr "Il valore deve essere un integer."
 
-#: utils/adt/formatting.c:1904
+#: utils/adt/formatting.c:1999
 #, c-format
 msgid "value for \"%s\" in source string is out of range"
 msgstr ""
 "il valore \"%s\" nella stringa di origine è fuori dall'intervallo consentito"
 
-#: utils/adt/formatting.c:1906
+#: utils/adt/formatting.c:2001
 #, c-format
 msgid "Value must be in the range %d to %d."
 msgstr "Il valore deve essere compreso fra %d e %d."
 
-#: utils/adt/formatting.c:2029
+#: utils/adt/formatting.c:2124
 msgid "The given value did not match any of the allowed values for this field."
 msgstr ""
 "Il valore fornito non corrisponde a nessuno di quelli consentiti per questo "
 "campo."
 
-#: utils/adt/formatting.c:2585
+#: utils/adt/formatting.c:2673
 msgid "\"TZ\"/\"tz\" format patterns are not supported in to_date"
 msgstr ""
 "I pattern di formato \"TZ\"/\"tz\" non sono supportati nella funzione to_date"
 
-#: utils/adt/formatting.c:2689
+#: utils/adt/formatting.c:2777
 msgid "invalid input string for \"Y,YYY\""
 msgstr "stringa di input non valida per \"Y,YYY\""
 
-#: utils/adt/formatting.c:3080 utils/adt/date.c:167
+#: utils/adt/formatting.c:3168 utils/adt/date.c:167
 #, c-format
 msgid "date out of range: \"%s\""
 msgstr "data fuori dall'intervallo consentito: \"%s\""
 
-#: utils/adt/formatting.c:3212
+#: utils/adt/formatting.c:3300
 #, c-format
 msgid "hour \"%d\" is invalid for the 12-hour clock"
 msgstr "l'ora \"%d\" non è valida su un orologio a 12 ore"
 
-#: utils/adt/formatting.c:3214
+#: utils/adt/formatting.c:3302
 msgid "Use the 24-hour clock, or give an hour between 1 and 12."
 msgstr "Usa l'orologio a 24 ore o fornisci un'ora compresa fra 1 e 12."
 
-#: utils/adt/formatting.c:3252
+#: utils/adt/formatting.c:3340
 #, c-format
 msgid "inconsistent use of year %04d and \"BC\""
 msgstr "l'uso dell'anno %04d e di \"BC\" non è consistente"
 
-#: utils/adt/formatting.c:3299
+#: utils/adt/formatting.c:3387
 msgid "cannot calculate day of year without year information"
 msgstr ""
 "non è possibile calcolare il giorno dell'anno senza informazioni sull'anno"
 
-#: utils/adt/formatting.c:4161
+#: utils/adt/formatting.c:4249
 msgid "\"EEEE\" not supported for input"
 msgstr "l'uso di \"EEEE\" non è supportato per l'input"
 
-#: utils/adt/formatting.c:4173
+#: utils/adt/formatting.c:4261
 msgid "\"RN\" not supported for input"
 msgstr "l'uso di \"RN\" non è supportato per l'input"
 
@@ -4698,7 +4698,7 @@ msgstr "il database con OID %u non esiste"
 #: commands/tablespace.c:410 commands/tablespace.c:832
 #: commands/tablespace.c:899 commands/tablespace.c:1004
 #: commands/tablespace.c:1068 commands/tablespace.c:1201
-#: executor/execMain.c:2231 catalog/aclchk.c:702
+#: executor/execMain.c:2233 catalog/aclchk.c:702
 #, c-format
 msgid "tablespace \"%s\" does not exist"
 msgstr "il tablespace \"%s\" non esiste"
@@ -5565,19 +5565,19 @@ msgstr "lo schema \"%s\" non esiste"
 msgid "must be member of role \"%s\""
 msgstr "occorre far parte del ruolo \"%s\""
 
-#: utils/adt/enum.c:44 utils/adt/enum.c:54 utils/adt/enum.c:109
-#: utils/adt/enum.c:119
+#: utils/adt/enum.c:45 utils/adt/enum.c:55 utils/adt/enum.c:114
+#: utils/adt/enum.c:124
 #, c-format
 msgid "invalid input value for enum %s: \"%s\""
 msgstr "la sintassi per l'enumerazione %s non è valida: \"%s\""
 
-#: utils/adt/enum.c:81 utils/adt/enum.c:144
+#: utils/adt/enum.c:82 utils/adt/enum.c:149
 #, c-format
 msgid "invalid internal value for enum: %u"
 msgstr "il valore interno per l'enumerazione non è valido: %u"
 
-#: utils/adt/enum.c:264 utils/adt/enum.c:303 utils/adt/enum.c:350
-#: utils/adt/enum.c:370
+#: utils/adt/enum.c:269 utils/adt/enum.c:308 utils/adt/enum.c:355
+#: utils/adt/enum.c:375
 msgid "could not determine actual enum type"
 msgstr "determinazione del tipo reale di enumerazione fallita"
 
@@ -6000,7 +6000,7 @@ msgid "could not open dictionary file \"%s\": %m"
 msgstr "apertura del file dictionary \"%s\" fallita: %m"
 
 #: tsearch/spell.c:444 tsearch/spell.c:461 tsearch/spell.c:478
-#: tsearch/spell.c:495 tsearch/spell.c:517 gram.y:11474 gram.y:11491
+#: tsearch/spell.c:495 tsearch/spell.c:517 gram.y:11497 gram.y:11514
 msgid "syntax error"
 msgstr "errore di sintassi"
 
@@ -6579,7 +6579,7 @@ msgid "Values larger than a buffer page cannot be indexed."
 msgstr "Non si possono indicizzare valori più grandi di una pagina di buffer."
 
 #: access/hash/hashutil.c:165 access/nbtree/nbtpage.c:432
-#: access/gist/gistutil.c:644
+#: access/gist/gistutil.c:640
 #, c-format
 msgid "index \"%s\" contains unexpected zero page at block %u"
 msgstr ""
@@ -6589,12 +6589,12 @@ msgstr ""
 #: access/hash/hashutil.c:168 access/hash/hashutil.c:179
 #: access/hash/hashutil.c:191 access/hash/hashutil.c:212
 #: access/nbtree/nbtpage.c:435 access/nbtree/nbtpage.c:446
-#: access/gist/gistutil.c:647 access/gist/gistutil.c:658
+#: access/gist/gistutil.c:643 access/gist/gistutil.c:654
 msgid "Please REINDEX it."
 msgstr "Si richiede l'esecuzione di REINDEX."
 
 #: access/hash/hashutil.c:176 access/hash/hashutil.c:188
-#: access/nbtree/nbtpage.c:443 access/gist/gistutil.c:655
+#: access/nbtree/nbtpage.c:443 access/gist/gistutil.c:651
 #, c-format
 msgid "index \"%s\" contains corrupted page at block %u"
 msgstr "l'indice \"%s\" contiene una pagina corrotta al blocco %u"
@@ -8212,12 +8212,12 @@ msgstr ""
 msgid "\"%s\" is not an index"
 msgstr "\"%s\" non è un indice"
 
-#: access/gist/gistsplit.c:372
+#: access/gist/gistsplit.c:444
 #, c-format
 msgid "picksplit method for column %d of index \"%s\" failed"
 msgstr "il metodo picksplit per la colonna %d dell'indice \"%s\" è fallito"
 
-#: access/gist/gistsplit.c:374
+#: access/gist/gistsplit.c:446
 msgid ""
 "The index is not optimal. To optimize it, contact a developer, or try to use "
 "the column as the second one in the CREATE INDEX command."
@@ -8236,7 +8236,7 @@ msgstr ""
 msgid "Incomplete insertion detected during crash replay."
 msgstr "Inserimento non completo rilevato durante la ripetizione del crash"
 
-#: access/gist/gistutil.c:428
+#: access/gist/gistutil.c:424
 #, c-format
 msgid "index \"%s\" needs VACUUM or REINDEX to finish crash recovery"
 msgstr ""
@@ -8497,18 +8497,18 @@ msgstr "\"%s\" non è un tipo"
 msgid "Use DROP TYPE to remove a type."
 msgstr "Usa DROP TYPE per eliminare un tipo."
 
-#: commands/tablecmds.c:392 executor/execMain.c:2197
+#: commands/tablecmds.c:392 executor/execMain.c:2199
 msgid "ON COMMIT can only be used on temporary tables"
 msgstr "ON COMMIT può essere usato solo con le tabelle temporanee"
 
-#: commands/tablecmds.c:402 executor/execMain.c:2207
+#: commands/tablecmds.c:402 executor/execMain.c:2209
 msgid "cannot create temporary table within security-restricted operation"
 msgstr ""
 "non è possibile creare la tabella temporanea nell'ambito di operazioni a "
 "sicurezza ristretta"
 
 #: commands/tablecmds.c:457 commands/tablecmds.c:7030 commands/indexcmds.c:253
-#: executor/execMain.c:2257
+#: executor/execMain.c:2259
 msgid "only shared relations can be placed in pg_global tablespace"
 msgstr ""
 "solo le relazioni condivise possono essere poste nel tablespace pg_global"
@@ -9973,7 +9973,7 @@ msgstr "non è possibile ripulire tabelle temporanee di altre sessioni"
 msgid "clustering \"%s.%s\""
 msgstr "raggruppamento di \"%s.%s\""
 
-#: commands/cluster.c:390 commands/vacuumlazy.c:339
+#: commands/cluster.c:390 commands/vacuumlazy.c:361
 #, c-format
 msgid "vacuuming \"%s.%s\""
 msgstr "pulizia di \"%s.%s\""
@@ -10037,7 +10037,7 @@ msgstr ""
 msgid "cannot cluster on invalid index \"%s\""
 msgstr "non è possibile raggruppare sull'indice non valido \"%s\""
 
-#: commands/vacuumlazy.c:254
+#: commands/vacuumlazy.c:276
 #, c-format
 msgid ""
 "automatic vacuum of table \"%s.%s.%s\": index scans: %d\n"
@@ -10050,17 +10050,17 @@ msgstr ""
 "tuple: %.0f rimosse, %.0f restanti\n"
 "utilizzo del sistema: %s"
 
-#: commands/vacuumlazy.c:508
+#: commands/vacuumlazy.c:530
 #, c-format
 msgid "relation \"%s\" page %u is uninitialized --- fixing"
 msgstr "la relazione \"%s\" pagina %u non è inizializzata --- in correzione"
 
-#: commands/vacuumlazy.c:867
+#: commands/vacuumlazy.c:889
 #, c-format
 msgid "\"%s\": removed %.0f row versions in %u pages"
 msgstr "\"%s\": %.0f versioni di riga rimosse in %u pagine"
 
-#: commands/vacuumlazy.c:872
+#: commands/vacuumlazy.c:894
 #, c-format
 msgid ""
 "\"%s\": found %.0f removable, %.0f nonremovable row versions in %u out of %u "
@@ -10069,7 +10069,7 @@ msgstr ""
 "\"%s\": trovate %.0f versioni di riga removibili, %.0f non removibili in %u "
 "pagine su %u"
 
-#: commands/vacuumlazy.c:876
+#: commands/vacuumlazy.c:898
 #, c-format
 msgid ""
 "%.0f dead row versions cannot be removed yet.\n"
@@ -10082,29 +10082,29 @@ msgstr ""
 "%u pagine sono completamente vuote.\n"
 "%s."
 
-#: commands/vacuumlazy.c:934
+#: commands/vacuumlazy.c:956
 #, c-format
 msgid "\"%s\": removed %d row versions in %d pages"
 msgstr "\"%s\": %d versioni di riga rimosse in %d pagine"
 
-#: commands/vacuumlazy.c:937 commands/vacuumlazy.c:1029
-#: commands/vacuumlazy.c:1162
+#: commands/vacuumlazy.c:959 commands/vacuumlazy.c:1051
+#: commands/vacuumlazy.c:1225
 #, c-format
 msgid "%s."
 msgstr "%s."
 
-#: commands/vacuumlazy.c:1026
+#: commands/vacuumlazy.c:1048
 #, c-format
 msgid "scanned index \"%s\" to remove %d row versions"
 msgstr ""
 "effettuata la scansione dell'indice \"%s\" per rimuovere %d versioni di riga"
 
-#: commands/vacuumlazy.c:1067
+#: commands/vacuumlazy.c:1089
 #, c-format
 msgid "index \"%s\" now contains %.0f row versions in %u pages"
 msgstr "l'indice \"%s\" ora contiene %.0f versioni di riga in %u pagine"
 
-#: commands/vacuumlazy.c:1071
+#: commands/vacuumlazy.c:1093
 #, c-format
 msgid ""
 "%.0f index row versions were removed.\n"
@@ -10118,11 +10118,11 @@ msgstr ""
 #: commands/vacuumlazy.c:1153
 #, c-format
 msgid ""
-"automatic vacuum of table \"%s.%s.%s\": cannot (re)acquire exclusive lock "
+"automatic vacuum of table \"%s.%s.%s\": could not (re)acquire exclusive lock "
 "for truncate scan"
 msgstr ""
-"vacuum automatico della tabella \"%s.%s.%s\": non è possibile (ri)acquisire "
-"un lock esclusivo per la scansione di troncamento"
+"vacuum automatico della tabella \"%s.%s.%s\": (ri)acquisizione del lock "
+"esclusivo per troncamento fallita"
 
 #: commands/vacuumlazy.c:1222
 #, c-format
@@ -11281,30 +11281,30 @@ msgstr "il nome del canale è troppo lungo"
 msgid "payload string too long"
 msgstr "la stringa del carico è troppo lunga"
 
-#: commands/async.c:763
+#: commands/async.c:764
 msgid ""
 "cannot PREPARE a transaction that has executed LISTEN, UNLISTEN or NOTIFY"
 msgstr ""
 "non è possibile eseguire PREPARE in una transazione che ha eseguito LISTEN, "
 "UNLISTEN o NOTIFY"
 
-#: commands/async.c:868
+#: commands/async.c:867
 msgid "too many notifications in the NOTIFY queue"
 msgstr "troppe notifiche nella coda di NOTIFY"
 
-#: commands/async.c:1447
+#: commands/async.c:1440
 #, c-format
 msgid "NOTIFY queue is %.0f%% full"
 msgstr "la coda di NOTIFY è piena al %.0f%%"
 
-#: commands/async.c:1449
+#: commands/async.c:1442
 #, c-format
 msgid ""
 "The server process with PID %d is among those with the oldest transactions."
 msgstr ""
 "Il processo server con PID %d è tra quelli con le transazioni più vecchie."
 
-#: commands/async.c:1452
+#: commands/async.c:1445
 msgid ""
 "The NOTIFY queue cannot be emptied until that process ends its current "
 "transaction."
@@ -11409,8 +11409,8 @@ msgid "BEFORE STATEMENT trigger cannot return a value"
 msgstr "il trigger BEFORE STATEMENT non può restituire un valore"
 
 #: commands/trigger.c:2404 executor/nodeLockRows.c:137
-#: executor/nodeModifyTable.c:334 executor/nodeModifyTable.c:505
-#: executor/execMain.c:1654
+#: executor/nodeModifyTable.c:334 executor/nodeModifyTable.c:511
+#: executor/execMain.c:1656
 msgid "could not serialize access due to concurrent update"
 msgstr "serializzazione dell'accesso fallita a causa di modifiche concorrenti"
 
@@ -12024,47 +12024,47 @@ msgstr "OFFSET non può essere negativo"
 msgid "LIMIT must not be negative"
 msgstr "LIMIT non può essere negativo"
 
-#: executor/execMain.c:743
+#: executor/execMain.c:745
 #, c-format
 msgid "cannot lock rows in sequence \"%s\""
 msgstr "non è possibile bloccare righe nella sequenza \"%s\""
 
-#: executor/execMain.c:753
+#: executor/execMain.c:755
 #, c-format
 msgid "cannot lock rows in view \"%s\""
 msgstr "non è possibile bloccare righe vista \"%s\""
 
-#: executor/execMain.c:759
+#: executor/execMain.c:761
 #, c-format
 msgid "cannot lock rows in relation \"%s\""
 msgstr "non è possibile bloccare righe nella relazione \"%s\""
 
-#: executor/execMain.c:915
+#: executor/execMain.c:917
 #, c-format
 msgid "cannot change sequence \"%s\""
 msgstr "non è possibile modificare la sequenza \"%s\""
 
-#: executor/execMain.c:921
+#: executor/execMain.c:923
 #, c-format
 msgid "cannot change TOAST relation \"%s\""
 msgstr "non è possibile modificare la relazione TOAST \"%s\""
 
-#: executor/execMain.c:927
+#: executor/execMain.c:929
 #, c-format
 msgid "cannot change view \"%s\""
 msgstr "non è possibile modificare la vista \"%s\""
 
-#: executor/execMain.c:933
+#: executor/execMain.c:935
 #, c-format
 msgid "cannot change relation \"%s\""
 msgstr "non è possibile modificare la relazione \"%s\""
 
-#: executor/execMain.c:1358
+#: executor/execMain.c:1360
 #, c-format
 msgid "null value in column \"%s\" violates not-null constraint"
 msgstr "valori null nella colonna \"%s\" violano il vincolo non-null"
 
-#: executor/execMain.c:1370
+#: executor/execMain.c:1372
 #, c-format
 msgid "new row for relation \"%s\" violates check constraint \"%s\""
 msgstr ""
@@ -13863,7 +13863,7 @@ msgstr "il processo %d ha acquisito %s su %s dopo %ld.%03d ms"
 msgid "process %d failed to acquire %s on %s after %ld.%03d ms"
 msgstr "il processo %d ha fallito l'acquisizione di %s su %s dopo %ld.%03d ms"
 
-#: storage/lmgr/lock.c:516
+#: storage/lmgr/lock.c:608
 #, c-format
 msgid ""
 "cannot acquire lock mode %s on database objects while recovery is in progress"
@@ -13871,7 +13871,7 @@ msgstr ""
 "non è possibile acquisire lock in modo %s sugli oggetti del database mentre "
 "è in corso il ripristino"
 
-#: storage/lmgr/lock.c:518
+#: storage/lmgr/lock.c:610
 msgid ""
 "Only RowExclusiveLock or less can be acquired on database objects during "
 "recovery."
@@ -13879,12 +13879,12 @@ msgstr ""
 "Solo RowExclusiveLock o inferiore può essere acquisito sugli oggetti "
 "database durante il ripristino."
 
-#: storage/lmgr/lock.c:630 storage/lmgr/lock.c:699 storage/lmgr/lock.c:2515
-#: storage/lmgr/lock.c:2580
+#: storage/lmgr/lock.c:722 storage/lmgr/lock.c:791 storage/lmgr/lock.c:2607
+#: storage/lmgr/lock.c:2672
 msgid "You might need to increase max_locks_per_transaction."
 msgstr "Potrebbe essere necessario incrementare max_locks_per_transaction."
 
-#: storage/lmgr/lock.c:2126
+#: storage/lmgr/lock.c:2218
 msgid "Not enough memory for reassigning the prepared transaction's locks."
 msgstr ""
 "Memoria insufficiente per riassegnare i lock della transazione preparata."
@@ -13907,52 +13907,52 @@ msgstr "rilevato deadlock"
 msgid "See server log for query details."
 msgstr "Vedi i log del server per i dettagli della query."
 
-#: storage/lmgr/lmgr.c:735
+#: storage/lmgr/lmgr.c:753
 #, c-format
 msgid "relation %u of database %u"
 msgstr "la relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:741
+#: storage/lmgr/lmgr.c:759
 #, c-format
 msgid "extension of relation %u of database %u"
 msgstr "l'estensione della relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:747
+#: storage/lmgr/lmgr.c:765
 #, c-format
 msgid "page %u of relation %u of database %u"
 msgstr "la pagina %u della relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:754
+#: storage/lmgr/lmgr.c:772
 #, c-format
 msgid "tuple (%u,%u) of relation %u of database %u"
 msgstr "la tupla (%u,%u) della relazione %u del database %u"
 
-#: storage/lmgr/lmgr.c:762
+#: storage/lmgr/lmgr.c:780
 #, c-format
 msgid "transaction %u"
 msgstr "la transazione %u"
 
-#: storage/lmgr/lmgr.c:767
+#: storage/lmgr/lmgr.c:785
 #, c-format
 msgid "virtual transaction %d/%u"
 msgstr "la transazione virtuale %d/%u"
 
-#: storage/lmgr/lmgr.c:773
+#: storage/lmgr/lmgr.c:791
 #, c-format
 msgid "object %u of class %u of database %u"
 msgstr "l'oggetto %u di classe %u del database %u"
 
-#: storage/lmgr/lmgr.c:781
+#: storage/lmgr/lmgr.c:799
 #, c-format
 msgid "user lock [%u,%u,%u]"
 msgstr "il lock utente [%u,%u,%u]"
 
-#: storage/lmgr/lmgr.c:788
+#: storage/lmgr/lmgr.c:806
 #, c-format
 msgid "advisory lock [%u,%u,%u,%u]"
 msgstr "l'advisory lock [%u,%u,%u,%u]"
 
-#: storage/lmgr/lmgr.c:796
+#: storage/lmgr/lmgr.c:814
 #, c-format
 msgid "unrecognized locktag type %d"
 msgstr "tipo di locktag %d sconosciuto"
@@ -14480,7 +14480,7 @@ msgstr ""
 "non è possibile eliminare oggetti di proprietà di %s perché richiesti dal "
 "database"
 
-#: catalog/pg_shdepend.c:1291
+#: catalog/pg_shdepend.c:1294
 #, c-format
 msgid ""
 "cannot reassign ownership of objects owned by %s because they are required "
@@ -14928,7 +14928,7 @@ msgstr "nessuna schema selezionato per crearci dentro"
 msgid "cross-database references are not implemented: %s"
 msgstr "i riferimenti tra database diversi non sono implementati: %s"
 
-#: catalog/namespace.c:2237 gram.y:3673 gram.y:10605 parser/parse_expr.c:778
+#: catalog/namespace.c:2237 gram.y:3673 gram.y:10628 parser/parse_expr.c:778
 #: parser/parse_target.c:1005
 #, c-format
 msgid "improper qualified name (too many dotted names): %s"
@@ -15808,7 +15808,7 @@ msgstr "il database corrente non può essere cambiato"
 msgid "time zone interval must be HOUR or HOUR TO MINUTE"
 msgstr "l'intervallo della time zone deve essere HOUR o HOUR TO MINUTE"
 
-#: gram.y:1393 gram.y:8280 gram.y:10731
+#: gram.y:1393 gram.y:8280 gram.y:10754
 msgid "interval precision specified twice"
 msgstr "intervallo di precisione specificato due volte"
 
@@ -15894,71 +15894,71 @@ msgstr "la precisione per il tipo float dev'essere inferiore a 54 bit"
 msgid "UNIQUE predicate is not yet implemented"
 msgstr "il predicato UNIQUE non è stato ancora implementato"
 
-#: gram.y:9993
+#: gram.y:10016
 msgid "RANGE PRECEDING is only supported with UNBOUNDED"
 msgstr "RANGE PRECEDING è supportato solo con UNBOUNDED"
 
-#: gram.y:9999
+#: gram.y:10022
 msgid "RANGE FOLLOWING is only supported with UNBOUNDED"
 msgstr "RANGE FOLLOWING è supportato solo con UNBOUNDED"
 
-#: gram.y:10026 gram.y:10049
+#: gram.y:10049 gram.y:10072
 msgid "frame start cannot be UNBOUNDED FOLLOWING"
 msgstr "l'inizio della finestra non può essere UNBOUNDED FOLLOWING"
 
-#: gram.y:10031
+#: gram.y:10054
 msgid "frame starting from following row cannot end with current row"
 msgstr ""
 "una finestra che inizia dalla riga seguente non può terminare alla riga "
 "corrente"
 
-#: gram.y:10054
+#: gram.y:10077
 msgid "frame end cannot be UNBOUNDED PRECEDING"
 msgstr "la fine della finestra non può essere UNBOUNDED PRECEDING"
 
-#: gram.y:10060
+#: gram.y:10083
 msgid "frame starting from current row cannot have preceding rows"
 msgstr ""
 "una finestra che inizia dalla riga corrente non può avere righe precedenti"
 
-#: gram.y:10067
+#: gram.y:10090
 msgid "frame starting from following row cannot have preceding rows"
 msgstr ""
 "una finestra che inizia dalla riga seguente non può avere righe precedenti"
 
-#: gram.y:10706
+#: gram.y:10729
 msgid "type modifier cannot have parameter name"
 msgstr "un modificatore di tipo non può avere un nome di parametro"
 
-#: gram.y:11303 gram.y:11511
+#: gram.y:11326 gram.y:11534
 msgid "improper use of \"*\""
 msgstr "uso improprio di \"*\""
 
-#: gram.y:11442
+#: gram.y:11465
 msgid "wrong number of parameters on left side of OVERLAPS expression"
 msgstr "numero errato di parametri a sinistra dell'espressione OVERLAPS"
 
-#: gram.y:11449
+#: gram.y:11472
 msgid "wrong number of parameters on right side of OVERLAPS expression"
 msgstr "numero errato di parametri a destra dell'espressione OVERLAPS"
 
-#: gram.y:11574
+#: gram.y:11597
 msgid "multiple ORDER BY clauses not allowed"
 msgstr "non è possibile avere più di una clausola ORDER BY"
 
-#: gram.y:11585
+#: gram.y:11608
 msgid "multiple OFFSET clauses not allowed"
 msgstr "non è possibile avere più di una clausola OFFSET"
 
-#: gram.y:11594
+#: gram.y:11617
 msgid "multiple LIMIT clauses not allowed"
 msgstr "non è possibile avere più di una clausola LIMIT"
 
-#: gram.y:11603
+#: gram.y:11626
 msgid "multiple WITH clauses not allowed"
 msgstr "non è possibile avere più di una clausola WITH"
 
-#: gram.y:11758
+#: gram.y:11781
 msgid "OUT and INOUT arguments aren't allowed in TABLE functions"
 msgstr "gli argomenti OUT e INOUT non sono permessi nelle funzioni TABLE"
 
