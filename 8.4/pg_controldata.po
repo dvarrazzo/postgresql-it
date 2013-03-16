@@ -195,7 +195,7 @@ msgstr "Posizione precedente del checkpoint:        %X/%X\n"
 #: pg_controldata.c:181
 #, c-format
 msgid "Latest checkpoint's REDO location:    %X/%X\n"
-msgstr "Ultima posizione REDO checkpoint:           %X/%X\n"
+msgstr "Locazione di REDO dell'ultimo checkpoint:   %X/%X\n"
 
 #: pg_controldata.c:184
 #, c-format

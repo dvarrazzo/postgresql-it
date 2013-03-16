@@ -7566,8 +7566,7 @@ msgstr "punto di avvio del ripristino in %X/%X"
 #: access/transam/xlog.c:7055
 #, c-format
 msgid "unexpected timeline ID %u (after %u) in checkpoint record"
-msgstr ""
-"l'ID della timeline %u (dopo %u) non era prevista nel record di checkpoint"
+msgstr "timeline ID %u imprevista (dopo %u) nel record di checkpoint"
 
 #: access/transam/xlog.c:7085
 #, c-format

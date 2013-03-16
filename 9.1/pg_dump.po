@@ -84,7 +84,16 @@ msgstr "interpretazione della stringa di versione \"%s\" non riuscita\n"
 msgid "invalid client encoding \"%s\" specified\n"
 msgstr "codifica client specificata \"%s\" non valida\n"
 
-#: pg_dump.c:688
+#: pg_dump.c:671 pg_dump.c:2433 pg_dump.c:2481 pg_dump.c:2536 pg_dump.c:7725
+#: pg_dump.c:7956 pg_dump.c:8922 pg_dump.c:9474 pg_dump.c:9728 pg_dump.c:9842
+#: pg_dump.c:10298 pg_dump.c:10484 pg_dump.c:10590 pg_dump.c:10790
+#: pg_dump.c:11032 pg_dump.c:11199 pg_dump.c:11420 pg_dump.c:14246
+#, c-format
+msgid "query returned %d row instead of one: %s\n"
+msgid_plural "query returned %d rows instead of one: %s\n"
+msgstr[0] "la query ha restituito %d riga invece di una: %s\n"
+msgstr[1] "la query ha restituito %d righe invece di una: %s\n"
+
 #, c-format
 msgid "last built-in OID is %u\n"
 msgstr "l'ultimo OID predefinito è %u\n"
@@ -519,16 +528,6 @@ msgstr "apertura del large object %u fallita: %s"
 #, c-format
 msgid "error reading large object %u: %s"
 msgstr "errore di lettura del large object %u: %s"
-
-#: pg_dump.c:2399 pg_dump.c:2447 pg_dump.c:2502 pg_dump.c:7691 pg_dump.c:7922
-#: pg_dump.c:8888 pg_dump.c:9440 pg_dump.c:9694 pg_dump.c:9808 pg_dump.c:10264
-#: pg_dump.c:10450 pg_dump.c:10556 pg_dump.c:10756 pg_dump.c:10998
-#: pg_dump.c:11165 pg_dump.c:11386 pg_dump.c:14212
-#, c-format
-msgid "query returned %d row instead of one: %s\n"
-msgid_plural "query returned %d rows instead of one: %s\n"
-msgstr[0] "la query ha restituito %d riga invece di una: %s\n"
-msgstr[1] "la query ha restituito %d righe invece di una: %s\n"
 
 #: pg_dump.c:2583
 #, c-format

@@ -8164,8 +8164,7 @@ msgstr "il backup online è stato annullato, il ripristino non può continuare"
 #: access/transam/xlog.c:8557
 #, c-format
 msgid "unexpected timeline ID %u (after %u) in checkpoint record"
-msgstr ""
-"l'ID della timeline %u (dopo %u) non era prevista nel record di checkpoint"
+msgstr "timeline ID %u imprevista (dopo %u) nel record di checkpoint"
 
 #: access/transam/xlog.c:8602
 #, c-format
