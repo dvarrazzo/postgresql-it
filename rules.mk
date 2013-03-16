@@ -4,9 +4,11 @@
 
 all: $(MOS)
 
+URLPATTERN ?= "po-$(VERSION)-branch"
+
 dlpots:
 	for u in $$(wget -O - http://babel.postgresql.org/ \
-			| egrep  "href=\"po-$(VERSION)-branch/.*pot\"" \
+			| egrep  "href=\"$(URLPATTERN)/.*pot\"" \
 			| sed -e 's/.*href="\(.*\)".*/\1/'); do \
 		wget -O $$(basename $$u) http://babel.postgresql.org/$$u; \
 	done
