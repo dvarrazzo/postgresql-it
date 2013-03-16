@@ -1,5 +1,5 @@
 #
-# Translation of postgres to Italian
+# Translation of ecpg to Italian
 # PostgreSQL Project
 #
 # Associazione Culturale ITPUG - Italian PostgreSQL Users Group
@@ -7,17 +7,21 @@
 #
 # Traduttori:
 #  * Daniele Varrazzo <daniele.varrazzo@gmail.com>
-#  * Vincenzo Romano <vincenzo.romano@itpug.org>
+#  * Maurizio Totti <maurizio.totti@gmail.com>
+#
+# Revisori:
+#  * Emanuele Zamprogno <ez@medicinaopen.info>
+#
 #
 # Copyright (c) 2010, Associazione Culturale ITPUG
 # Distributed under the same license of the PostgreSQL project
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: postgres (PostgreSQL) 9.2\n"
+"Project-Id-Version: ecpg (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2013-03-15 22:10+0000\n"
-"PO-Revision-Date: 2013-03-16 03:28+0100\n"
+"PO-Revision-Date: 2012-12-03 17:30+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
