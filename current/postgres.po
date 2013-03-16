@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2013-03-15 22:11+0000\n"
-"PO-Revision-Date: 2013-03-16 03:28+0100\n"
+"PO-Revision-Date: 2013-03-16 04:25+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -5451,7 +5451,7 @@ msgstr "la funzione \"%s\" deve restituire il tipo \"event_trigger\""
 #: commands/event_trigger.c:199
 #, c-format
 msgid "filter value \"%s\" not recognized for filter variable \"%s\""
-msgstr "valore del filtro \"%s\" sconosciuto per la variabile filtro \"%s\" "
+msgstr "valore del filtro \"%s\" sconosciuto per la variabile filtro \"%s\""
 
 #. translator: %s represents an SQL statement name
 #: commands/event_trigger.c:205
