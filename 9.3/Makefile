@@ -3,6 +3,6 @@ VERSION = 9.3
 
 POS = $(wildcard *.po)
 MOS = $(patsubst %.po,%-$(VERSION).mo,$(POS))
-URLPATTERN ?= "po-$(VERSION)"
+URLPATTERN ?= "po-current"
 
 include ../rules.mk
