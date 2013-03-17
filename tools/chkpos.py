@@ -157,10 +157,19 @@ class Placeholders(Check):
             if not p1 and not p2:
                 return
 
-            # reorder shuffled placeholders
+            # Reorder shuffled placeholders.
+            # Allow partially reordered placeholders, e.g.
+            #   p1 = [u'%u', u'%s', u'%m']
+            #   p2 = [u'%2$s', u'%1$u', u'%m']
+            # are probably fine.
             if '$' in ''.join(p2):
-                p2.sort(key=lambda s: int(re.match(r'%((\d+)\$)', s).group(2)))
-                p2 = [re.sub(r'\d+\$', '', s) for s in p2]
+                p2o = p2[:]
+                for i, s in enumerate(p2):
+                    m = re.match(r'%((\d+)\$)', s)
+                    if m:
+                        p2o[int(m.group(2)) - 1] = re.sub(r'\d+\$', '', s)
+
+                p2 = p2o
 
             if p1 != p2:
                 raise CheckFailed("placeholders don't match")
