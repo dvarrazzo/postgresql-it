@@ -322,15 +322,15 @@ class CheckOption(ClearBrokenEntries):
 
 class ShortOption(CheckOption, Check):
     """check that the short options (e.g. -x) are consistent"""
-    _chk_re = re.compile(r'(?:\s|^)(-[a-zA-Z0-9])\b')
+    _chk_re = re.compile(r'(?:\W|^)(-[a-zA-Z0-9])\b')
 
 class LongOption(CheckOption, Check):
     """check that the long options (e.g. --foo) are consistent"""
-    _chk_re = re.compile(r'(?:\s|^)(--[^\s=A-Z]+)\b')
+    _chk_re = re.compile(r'(?:\W|^)(--[a-z0-9-]+)\b')
 
 class PsqlCommand(CheckOption, Check):
     """check that the psql commands (e.g. \\dX[+]) are consistent"""
-    _chk_re = re.compile(r'(?:\s|^)(\\[^\s]+)\b')
+    _chk_re = re.compile(r'(?:\W|^)(\\[^\s]+)\b')
 
 
 if __name__ == '__main__':
