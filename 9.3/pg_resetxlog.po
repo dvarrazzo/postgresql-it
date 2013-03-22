@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-03-15 22:17+0000\n"
-"PO-Revision-Date: 2012-12-03 17:45+0100\n"
+"POT-Creation-Date: 2013-03-22 04:47+0000\n"
+"PO-Revision-Date: 2013-03-22 12:18+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -447,10 +447,10 @@ msgstr "  -f               forza l'esecuzione dell'aggiornamento\n"
 #: pg_resetxlog.c:1035
 #, c-format
 msgid ""
-"  -l xlogfile      force minimum WAL starting location for new transaction "
+"  -l XLOGFILE      force minimum WAL starting location for new transaction "
 "log\n"
 msgstr ""
-"  -l xlogfile      forza la locazione di inizio WAL minima per il nuovo log "
+"  -l XLOGFILE      forza la locazione di inizio WAL minima per il nuovo log "
 "transazioni\n"
 
 #: pg_resetxlog.c:1036
