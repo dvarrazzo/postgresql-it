@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-03-22 04:48+0000\n"
-"PO-Revision-Date: 2013-03-22 12:28+0100\n"
+"POT-Creation-Date: 2013-03-25 19:18+0000\n"
+"PO-Revision-Date: 2013-03-25 22:09+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -423,3 +423,16 @@ msgstr "per valore"
 #, c-format
 msgid "Float8 argument passing:              %s\n"
 msgstr "passaggio di argomenti Float8:              %s\n"
+
+#: pg_controldata.c:290
+#, c-format
+msgid "Data page checksums:                  %s\n"
+msgstr "Somma di controllo dati delle pagine:       %s\n"
+
+#: pg_controldata.c:291
+msgid "disabled"
+msgstr "disabilitata"
+
+#: pg_controldata.c:291
+msgid "enabled"
+msgstr "abilitata"
