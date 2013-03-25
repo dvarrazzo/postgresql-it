@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-01-21 04:56+0000\n"
-"PO-Revision-Date: 2012-12-03 17:44+0100\n"
+"POT-Creation-Date: 2013-03-25 19:38+0000\n"
+"PO-Revision-Date: 2013-03-25 22:31+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -308,67 +308,72 @@ msgstr "Password: "
 msgid "%s: could not connect to server: %s"
 msgstr "%s: non è stato possibile connettersi al server: %s"
 
-#: pg_basebackup.c:838
+#: pg_basebackup.c:841
+#, c-format
+msgid "%s: unsupported server version %s\n"
+msgstr "%s: versione server %s non supportata\n"
+
+#: pg_basebackup.c:859
 #, c-format
 msgid "%s: could not send base backup command: %s"
 msgstr "%s: non è stato possibile inviare il comando di backup di base: %s"
 
-#: pg_basebackup.c:849
+#: pg_basebackup.c:870
 #, c-format
 msgid "%s: could not initiate base backup: %s"
 msgstr "%s: avvio del backup di base fallito: %s"
 
-#: pg_basebackup.c:855
+#: pg_basebackup.c:876
 #, c-format
 msgid "%s: no start point returned from server\n"
 msgstr "%s: nessun punto di avvio restituito dal server\n"
 
-#: pg_basebackup.c:871
+#: pg_basebackup.c:892
 #, c-format
 msgid "%s: could not get backup header: %s"
 msgstr "%s: non è stato possibile ottenere l'intestazione del backup: %s"
 
-#: pg_basebackup.c:877
+#: pg_basebackup.c:898
 #, c-format
 msgid "%s: no data returned from server\n"
 msgstr "%s: nessun dato restituito dal server\n"
 
-#: pg_basebackup.c:905
+#: pg_basebackup.c:926
 #, c-format
 msgid "%s: can only write single tablespace to stdout, database has %i\n"
 msgstr ""
 "%s: è possibile scrivere solo un singolo tablespace su stdout, il database "
 "ne ha %i\n"
 
-#: pg_basebackup.c:934
+#: pg_basebackup.c:955
 #, c-format
 msgid "%s: could not get WAL end position from server: %s"
 msgstr ""
 "%s: non è stato possibile ottenere la posizione finale del WAL dal server: %s"
 
-#: pg_basebackup.c:940
+#: pg_basebackup.c:961
 #, c-format
 msgid "%s: no WAL end position returned from server\n"
 msgstr "%s: nessuna posizione finale del WAL restituita dal server\n"
 
-#: pg_basebackup.c:952
+#: pg_basebackup.c:973
 #, c-format
 msgid "%s: final receive failed: %s"
 msgstr "%s: ricezione finale fallita: %s"
 
-#: pg_basebackup.c:1026
+#: pg_basebackup.c:1047
 #, c-format
 msgid "%s: invalid output format \"%s\", must be \"plain\" or \"tar\"\n"
 msgstr ""
 "%s: formato di output \"%s\" non valido, deve essere \"plain\" oppure \"tar"
 "\"\n"
 
-#: pg_basebackup.c:1048
+#: pg_basebackup.c:1069
 #, c-format
 msgid "%s: invalid compression level \"%s\"\n"
 msgstr "%s: livello di compressione non valido \"%s\"\n"
 
-#: pg_basebackup.c:1060
+#: pg_basebackup.c:1081
 #, c-format
 msgid ""
 "%s: invalid checkpoint argument \"%s\", must be \"fast\" or \"spread\"\n"
@@ -376,28 +381,28 @@ msgstr ""
 "%s: argomento di checkpoint \"%s\" non valido, deve essere \"fast\" oppure "
 "\"spread\"\n"
 
-#: pg_basebackup.c:1091 pg_basebackup.c:1105 pg_basebackup.c:1116
-#: pg_basebackup.c:1129
+#: pg_basebackup.c:1112 pg_basebackup.c:1126 pg_basebackup.c:1137
+#: pg_basebackup.c:1150
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
-#: pg_basebackup.c:1103
+#: pg_basebackup.c:1124
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
 msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
-#: pg_basebackup.c:1115
+#: pg_basebackup.c:1136
 #, c-format
 msgid "%s: no target directory specified\n"
 msgstr "%s: nessuna directory di destinazione specificata\n"
 
-#: pg_basebackup.c:1127
+#: pg_basebackup.c:1148
 #, c-format
 msgid "%s: only tar mode backups can be compressed\n"
 msgstr "%s: solo i backup in modalità tar possono essere compressi\n"
 
-#: pg_basebackup.c:1138
+#: pg_basebackup.c:1159
 #, c-format
 msgid "%s: this build does not support compression\n"
 msgstr "%s: questo binario compilato non supporta la compressione\n"
