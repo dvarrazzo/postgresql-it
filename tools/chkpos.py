@@ -263,13 +263,24 @@ class SuffixWhitespace(SuffixWhitespacePedantic):
         for s1, s2 in self.messages(entry):
             m1 = self._chk_re.search(s1)
             assert m1 is not None, "regex match failed"
-            if not m1.group():
-                return
 
             m2 = self._chk_re.search(s2)
             assert m2 is not None, "regex match failed"
 
-            if m1.group() != m2.group():
+            w1 = m1.group()
+            w2 = m2.group()
+
+            # ignore harmless whitespaces: the id has no space, the str has
+            # only spaces
+            if not (w1 or '\n' in w2):
+                return
+
+            # if there is the same number of cr there may be some extra
+            # whitespace, but it's harmless too (e.g. "\n" and " \n")
+            if '\n' in w1 and w1.count('\n') == w2.count('\n'):
+                return
+
+            if w1 != w2:
                 raise CheckFailed("match failed")
 
 class ClearBrokenEntries(object):
