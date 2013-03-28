@@ -2,13 +2,17 @@
 """Check the translations consistency.
 """
 
+import os
 import re
 import sys
 import glob
 import polib
 import codecs
+import xml.etree.ElementTree as ET
 from operator import attrgetter
 from itertools import count
+from collections import defaultdict
+
 
 import logging
 logger = logging.getLogger()
@@ -39,20 +43,24 @@ def main():
                     break
             else:
                 raise ScriptError("test not known: %s" % test)
-
     else:
         checks = [ c() for c in classes if c.default ]
 
     for check in checks:
         logger.debug("performing check: %s", check.__class__.__name__)
 
-    if opt.fix:
-        return _check_and_fix(opt, checks)
-    else:
-        return _check_only(opt, checks)
+    wl = Whitelist()
+    if opt.whitelist:
+        wl.load(opt.whitelist)
 
-def _check_only(opt, checks):
+    if opt.fix:
+        return _check_and_fix(opt, checks, wl)
+    else:
+        return _check_only(opt, checks, wl)
+
+def _check_only(opt, checks, wl):
     rv = 0
+    errs = []
     for fn in [fn for pat in opt.files for fn in glob.glob(pat)]:
         po = polib.pofile(fn)
         for entry in po:
@@ -60,12 +68,19 @@ def _check_only(opt, checks):
                 try:
                     check.check(entry)
                 except CheckFailed, e:
+                    if wl.accepted(fn, check, entry):
+                        continue
                     logger.error("%s failed in %s: %s\n%s",
                         check.__class__.__name__, fn, e, entry)
+                    errs.append((fn, check, entry))
                     rv = 1
+
+    if errs and opt.save_whitelist:
+        _merge_errors(opt, errs)
+
     return rv
 
-def _check_and_fix(opt, checks):
+def _check_and_fix(opt, checks, wl):
     for fn in [fn for pat in opt.files for fn in glob.glob(pat)]:
         po = polib.pofile(fn)
         errs = []
@@ -74,6 +89,8 @@ def _check_and_fix(opt, checks):
                 try:
                     check.check(entry)
                 except CheckFailed, e:
+                    if wl.accepted(fn, check, entry):
+                        continue
                     errs.append(entry)
                     logger.error("%s failed in %s: %s\n%s",
                         check.__class__.__name__, fn, e, entry)
@@ -84,6 +101,91 @@ def _check_and_fix(opt, checks):
             update_file(po, errs)
 
     return 0
+
+def _merge_errors(opt, errors):
+    """Merge a list of (filename, check, entry) to a whitelist file."""
+    # if saving on stdout, don't read it
+    wl = Whitelist()
+    if opt.save_whitelist != '-' and os.path.exists(opt.save_whitelist):
+        wl.load(opt.save_whitelist)
+
+    # merge the entries
+    for fn, check, entry in errors:
+        wl.add(fn, check, entry)
+
+    # save or print the whitelist
+    if opt.save_whitelist == '-':
+        wl.save(sys.stdout)
+    else:
+        wl.save(opt.save_whitelist)
+
+
+# a whitelist is a map::
+#
+#   filename -> check -> set([ (msgid, msgstr) ])
+#
+# it gets save into an xml such as::
+#
+#   <whitelist>
+#       <file filename=filename>
+#           <check name=check>
+#               <entry msgid=msgid msgstr=msgstr>
+
+class Whitelist:
+    def __init__(self):
+        self._data = defaultdict(lambda: defaultdict(set))
+
+    def load(self, file):
+        doc = ET.parse(file)
+        for ef in doc.getroot():
+            if ef.tag != 'file': continue
+            filename = ef.attrib['filename']
+            for ec in ef:
+                if ec.tag != 'check': continue
+                check = ec.attrib['name']
+                for ei in ec:
+                    if ei.tag != 'item': continue
+                    self._data[filename][check].add(
+                        (ei.attrib['msgid'], ei.attrib['msgstr']))
+
+    def save(self, file):
+        root = ET.Element('whitelist')
+        root.text = '\n  '
+        ef = None
+        for f in sorted(self._data):
+            ef = ET.SubElement(root, 'file', filename=f)
+            ef.text = '\n    '
+            ef.tail = '\n  '
+            ec = None
+            for c in sorted(self._data[f]):
+                ec = ET.SubElement(ef, 'check', name=c)
+                ec.text = '\n      '
+                ec.tail = '\n    '
+                i = None
+                for msgid, msgstr in sorted(self._data[f][c]):
+                    i = ET.SubElement(ec, 'item', msgid=msgid, msgstr=msgstr)
+                    i.tail = '\n      '
+                if i is not None:
+                    i.tail = i.tail[:-2]
+            if ec is not None:
+                ec.tail = ec.tail[:-2]
+        if ef is not None:
+            ef.tail = ef.tail[:-2]
+
+        ET.ElementTree(root).write(file, encoding='UTF-8')
+
+    def add(self, fn, check, entry):
+        self._data[fn][check.__class__.__name__].add(
+            (entry.msgid, entry.msgstr))
+
+    def accepted(self, fn, check, entry):
+        if fn not in self._data:
+            return False
+        if check.__class__.__name__ not in self._data[fn]:
+            return False
+        return (entry.msgid, entry.msgstr) in \
+            self._data[fn][check.__class__.__name__]
+
 
 def update_file(po, entries):
     """Update a few entries and save the file inplace.
@@ -172,9 +274,15 @@ def parse_cmdline():
             " (except the ones marked with *).")
     parser.add_option('--fix', action='store_true',
         help="fix the broken entries if possible and save the .po inplace")
-
+    parser.add_option('--whitelist', metavar="XML",
+        help="use a whitelist to accept some of the entries failing tests")
+    parser.add_option('--save-whitelist', metavar="XML",
+        help="save the errors found into a file; merge if exists")
     opt, args = parser.parse_args()
     opt.files = args
+
+    if opt.save_whitelist and opt.fix:
+        parser.error("you cannot --fix and --save-whitelist at the same time")
 
     return opt
 
