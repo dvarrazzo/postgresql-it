@@ -2,6 +2,11 @@
 """Check the translations consistency.
 """
 
+# Copyright (C) 2012-2013 Daniele Varrazzo <daniele.varrazzo@gmail.com>
+#
+# The script can be redistrubited under BSD license, see
+# http://opensource.org/licenses/BSD-3-Clause
+
 import os
 import re
 import sys
