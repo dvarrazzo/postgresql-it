@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-03-13 11:41+0000\n"
-"PO-Revision-Date: 2013-03-16 13:16+0100\n"
+"POT-Creation-Date: 2013-04-05 03:33+0000\n"
+"PO-Revision-Date: 2013-04-19 19:13+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -393,12 +393,12 @@ msgstr "%s: argomento non valido per l'opzione -f: \"%s\"\n"
 msgid "%s: invalid argument for option -t: \"%s\"\n"
 msgstr "%s: argomento non valido per l'opzione -t: \"%s\"\n"
 
-#: postmaster/postmaster.c:683 bootstrap/bootstrap.c:277 tcop/postgres.c:3437
+#: postmaster/postmaster.c:683 bootstrap/bootstrap.c:277 tcop/postgres.c:3441
 #, c-format
 msgid "--%s requires a value"
 msgstr "--%s richiede un valore"
 
-#: postmaster/postmaster.c:688 bootstrap/bootstrap.c:282 tcop/postgres.c:3442
+#: postmaster/postmaster.c:688 bootstrap/bootstrap.c:282 tcop/postgres.c:3446
 #, c-format
 msgid "-c %s requires a value"
 msgstr "-c %s richiede un valore"
@@ -636,8 +636,8 @@ msgstr ""
 "il PID %d nella richiesta di annullamento non corrisponde ad alcun processo"
 
 #: postmaster/postmaster.c:2015 postmaster/postmaster.c:2046
-#: postmaster/postmaster.c:3248 postmaster/postmaster.c:3932
-#: postmaster/postmaster.c:4018 postmaster/postmaster.c:4635
+#: postmaster/postmaster.c:3248 postmaster/postmaster.c:3927
+#: postmaster/postmaster.c:4013 postmaster/postmaster.c:4630
 #: utils/hash/dynahash.c:368 utils/hash/dynahash.c:445
 #: utils/hash/dynahash.c:959 utils/misc/guc.c:3298 utils/misc/guc.c:3311
 #: utils/misc/guc.c:3324 utils/misc/tzparser.c:455 utils/init/miscinit.c:150
@@ -791,7 +791,7 @@ msgstr "connessione ricevuta: host=%s porta=%s"
 msgid "connection received: host=%s"
 msgstr "connessione ricevuta: host=%s"
 
-#: postmaster/postmaster.c:3707 access/transam/xlog.c:2397
+#: postmaster/postmaster.c:3702 access/transam/xlog.c:2397
 #: access/transam/xlog.c:2530 access/transam/xlog.c:4463
 #: access/transam/xlog.c:9158 access/transam/xlog.c:9399
 #: storage/file/copydir.c:172 storage/smgr/md.c:289
@@ -799,7 +799,7 @@ msgstr "connessione ricevuta: host=%s"
 msgid "could not create file \"%s\": %m"
 msgstr "creazione del file \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:3717 postmaster/postmaster.c:3727
+#: postmaster/postmaster.c:3712 postmaster/postmaster.c:3722
 #: utils/misc/guc.c:7432 utils/misc/guc.c:7457 utils/init/miscinit.c:1097
 #: utils/init/miscinit.c:1106 utils/init/miscinit.c:1113
 #: access/transam/xlog.c:2429 access/transam/xlog.c:2562
@@ -809,87 +809,87 @@ msgstr "creazione del file \"%s\" fallita: %m"
 msgid "could not write to file \"%s\": %m"
 msgstr "scrittura nel file \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:3746
+#: postmaster/postmaster.c:3741
 #, c-format
 msgid "could not execute server process \"%s\": %m"
 msgstr "esecuzione del processo del server \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:4268
+#: postmaster/postmaster.c:4263
 msgid "database system is ready to accept read only connections"
 msgstr "il database è pronto ad accettare connessioni in sola lettura"
 
-#: postmaster/postmaster.c:4538
+#: postmaster/postmaster.c:4533
 #, c-format
 msgid "could not fork startup process: %m"
 msgstr "fork del processo di avvio fallito: %m"
 
-#: postmaster/postmaster.c:4542
+#: postmaster/postmaster.c:4537
 #, c-format
 msgid "could not fork background writer process: %m"
 msgstr "fork del processo di scrittura in background fallito: %m"
 
-#: postmaster/postmaster.c:4546
+#: postmaster/postmaster.c:4541
 #, c-format
 msgid "could not fork WAL writer process: %m"
 msgstr "fork del processo di scrittura dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:4550
+#: postmaster/postmaster.c:4545
 #, c-format
 msgid "could not fork WAL receiver process: %m"
 msgstr "fork del processo di ricezione dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:4554
+#: postmaster/postmaster.c:4549
 #, c-format
 msgid "could not fork process: %m"
 msgstr "fork del processo fallito: %m"
 
-#: postmaster/postmaster.c:4839
+#: postmaster/postmaster.c:4834
 #, c-format
 msgid "could not duplicate socket %d for use in backend: error code %d"
 msgstr ""
 "duplicazione del socket %d da usare nel backend fallita: codice errore %d"
 
-#: postmaster/postmaster.c:4871
+#: postmaster/postmaster.c:4866
 #, c-format
 msgid "could not create inherited socket: error code %d\n"
 msgstr "creazione del socket ereditato fallita: codice errore %d\n"
 
-#: postmaster/postmaster.c:4900 postmaster/postmaster.c:4907
+#: postmaster/postmaster.c:4895 postmaster/postmaster.c:4902
 #, c-format
 msgid "could not read from backend variables file \"%s\": %s\n"
 msgstr "lettura dal file delle variabili del backend \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:4916
+#: postmaster/postmaster.c:4911
 #, c-format
 msgid "could not remove file \"%s\": %s\n"
 msgstr "rimozione del file \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:4933
+#: postmaster/postmaster.c:4928
 #, c-format
 msgid "could not map view of backend variables: error code %d\n"
 msgstr ""
 "non è stato possibile mappare la vista delle variabili del backend: codice "
 "errore %d\n"
 
-#: postmaster/postmaster.c:4942
+#: postmaster/postmaster.c:4937
 #, c-format
 msgid "could not unmap view of backend variables: error code %d\n"
 msgstr ""
 "non è stato possibile rimuovere la mappa della vista delle variabili del "
 "backend: codice errore %d\n"
 
-#: postmaster/postmaster.c:4949
+#: postmaster/postmaster.c:4944
 #, c-format
 msgid "could not close handle to backend parameter variables: error code %d\n"
 msgstr ""
 "non è stato possibile chiudere l'handle dei parametri variabili del backend: "
 "codice errore %d\n"
 
-#: postmaster/postmaster.c:5094
+#: postmaster/postmaster.c:5089
 msgid "could not read exit code for process\n"
 msgstr "lettura del codice di uscita del processo fallita\n"
 
-#: postmaster/postmaster.c:5099
+#: postmaster/postmaster.c:5094
 msgid "could not post child completion status\n"
 msgstr "invio dello stato di completamento del figlio fallito\n"
 
@@ -3129,7 +3129,7 @@ msgstr "scrittura del file di lock \"%s\" fallita: %m"
 #: utils/init/miscinit.c:1046 utils/init/miscinit.c:1161
 #: utils/error/elog.c:1515 access/transam/xlog.c:2515
 #: access/transam/xlog.c:4232 access/transam/xlog.c:4326
-#: access/transam/xlog.c:4482 replication/basebackup.c:791
+#: access/transam/xlog.c:4482 replication/basebackup.c:849
 #: storage/file/copydir.c:165 storage/file/copydir.c:255 storage/smgr/md.c:553
 #: storage/smgr/md.c:810
 #, c-format
@@ -6342,7 +6342,7 @@ msgid "incorrect binary data format in function argument %d"
 msgstr "formato dei dati binari non corretto nell'argomento %d della funzione"
 
 #: tcop/postgres.c:401 tcop/postgres.c:413 tcop/postgres.c:424
-#: tcop/postgres.c:436 tcop/postgres.c:4194
+#: tcop/postgres.c:436 tcop/postgres.c:4195
 #, c-format
 msgid "invalid frontend message type %d"
 msgstr "messaggio frontend di tipo %d non valido"
@@ -6572,36 +6572,36 @@ msgstr ""
 "Incrementa il limite dello stack della piattaforma usando \"ulimit -s\" on "
 "un comando equivalente."
 
-#: tcop/postgres.c:3468
+#: tcop/postgres.c:3474
 msgid "invalid command-line arguments for server process"
 msgstr "argomento della riga di comando non valido per il processo server"
 
-#: tcop/postgres.c:3469 tcop/postgres.c:3475
+#: tcop/postgres.c:3475 tcop/postgres.c:3481
 #, c-format
 msgid "Try \"%s --help\" for more information."
 msgstr "Prova \"%s --help\" per maggiori informazioni."
 
-#: tcop/postgres.c:3473
+#: tcop/postgres.c:3479
 #, c-format
 msgid "%s: invalid command-line arguments"
 msgstr "%s: parametri della riga di comando non validi"
 
-#: tcop/postgres.c:3565
+#: tcop/postgres.c:3566
 #, c-format
 msgid "%s: no database nor user name specified"
 msgstr "%s: nessun database né nome utente specificato"
 
-#: tcop/postgres.c:4104
+#: tcop/postgres.c:4105
 #, c-format
 msgid "invalid CLOSE message subtype %d"
 msgstr "sottotipo %d del messaggio CLOSE non valido"
 
-#: tcop/postgres.c:4137
+#: tcop/postgres.c:4138
 #, c-format
 msgid "invalid DESCRIBE message subtype %d"
 msgstr "sottotipo %d del messaggio DESCRIBE non valido"
 
-#: tcop/postgres.c:4371
+#: tcop/postgres.c:4372
 #, c-format
 msgid ""
 "disconnection: session time: %d:%02d:%02d.%03d user=%s database=%s host=%s%s"
@@ -11491,7 +11491,7 @@ msgid "tablespace \"%s\" already exists"
 msgstr "il tablespace \"%s\" esiste già"
 
 #: commands/tablespace.c:377 commands/tablespace.c:529
-#: replication/basebackup.c:150 replication/basebackup.c:676
+#: replication/basebackup.c:152 replication/basebackup.c:734
 msgid "tablespaces are not supported on this platform"
 msgstr "i tablespace non sono supportati su questa piattaforma"
 
@@ -13202,48 +13202,54 @@ msgid "could not read from log file %u, segment %u, offset %u, length %lu: %m"
 msgstr ""
 "lettura dal file di log %u fallita, segmento %u, offset %u, lunghezza %lu: %m"
 
-#: replication/basebackup.c:124 replication/basebackup.c:657
+#: replication/basebackup.c:126 replication/basebackup.c:715
 #, c-format
 msgid "could not read symbolic link \"%s\": %m"
 msgstr "lettura del link simbolico \"%s\" fallita: %m"
 
-#: replication/basebackup.c:131 replication/basebackup.c:661
+#: replication/basebackup.c:133 replication/basebackup.c:719
 #, c-format
 msgid "symbolic link \"%s\" target is too long"
 msgstr "la destinazione del link simbolico \"%s\" è troppo lunga"
 
-#: replication/basebackup.c:252 replication/basebackup.c:810
+#: replication/basebackup.c:190
+#, c-format
+msgid "could not stat control file \"%s\": %m"
+msgstr ""
+"non è stato possibile ottenere informazioni sul file di controllo \"%s\": %m"
+
+#: replication/basebackup.c:267 replication/basebackup.c:868
 msgid "base backup could not send data, aborting backup"
 msgstr "invio dati da parte del backup di base fallito, backup interrotto"
 
-#: replication/basebackup.c:299 replication/basebackup.c:308
-#: replication/basebackup.c:317 replication/basebackup.c:326
-#: replication/basebackup.c:335
+#: replication/basebackup.c:314 replication/basebackup.c:323
+#: replication/basebackup.c:332 replication/basebackup.c:341
+#: replication/basebackup.c:350
 #, c-format
 msgid "duplicate option \"%s\""
 msgstr "opzione duplicata \"%s\""
 
-#: replication/basebackup.c:387
+#: replication/basebackup.c:402
 #, c-format
 msgid "could not open directory \"pg_tblspc\": %m"
 msgstr "non è stato possibile aprire la directory \"pg_tblspc\": %m"
 
-#: replication/basebackup.c:597
-msgid "shutdown requested, aborting active base backup"
-msgstr "arresto richiesto, interruzione del backup di base attivo"
-
-#: replication/basebackup.c:611
+#: replication/basebackup.c:597 replication/basebackup.c:669
 #, c-format
 msgid "could not stat file or directory \"%s\": %m"
 msgstr ""
 "non è stato possibile ottenere informazioni sul file o directory \"%s\": %m"
 
-#: replication/basebackup.c:710
+#: replication/basebackup.c:655
+msgid "shutdown requested, aborting active base backup"
+msgstr "arresto richiesto, interruzione del backup di base attivo"
+
+#: replication/basebackup.c:768
 #, c-format
 msgid "skipping special file \"%s\""
 msgstr "file speciale \"%s\" saltato"
 
-#: replication/basebackup.c:800
+#: replication/basebackup.c:858
 #, c-format
 msgid "archive member \"%s\" too large for tar format"
 msgstr "il membro \"%s\" dell'archivio è troppo grande per il formato tar"
