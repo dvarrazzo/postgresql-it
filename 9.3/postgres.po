@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-04-19 17:41+0000\n"
-"PO-Revision-Date: 2013-04-19 19:13+0100\n"
+"POT-Creation-Date: 2013-04-19 20:41+0000\n"
+"PO-Revision-Date: 2013-04-20 00:45+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -5458,7 +5458,7 @@ msgstr "%s può essere chiamata solo in una funzione trigger di evento sql_drop"
 #: commands/event_trigger.c:1213 commands/extension.c:1646
 #: commands/extension.c:1755 commands/extension.c:1948 commands/prepare.c:702
 #: executor/execQual.c:1719 executor/execQual.c:1744 executor/execQual.c:2105
-#: executor/execQual.c:5239 executor/functions.c:1011 foreign/foreign.c:421
+#: executor/execQual.c:5243 executor/functions.c:1011 foreign/foreign.c:421
 #: replication/walsender.c:1855 utils/adt/jsonfuncs.c:924
 #: utils/adt/jsonfuncs.c:1093 utils/adt/jsonfuncs.c:1593
 #: utils/fmgr/funcapi.c:61 utils/mmgr/portalmem.c:986
@@ -9155,29 +9155,34 @@ msgstr "il DOMAIN %s non consente valori nulli"
 msgid "value for domain %s violates check constraint \"%s\""
 msgstr "il valore per il DOMAIN %s viola il vincolo di controllo \"%s\""
 
-#: executor/execQual.c:4411 optimizer/util/clauses.c:573
+#: executor/execQual.c:4273
+#, c-format
+msgid "WHERE CURRENT OF is not supported for this table type"
+msgstr "WHERE CURRENT OF non è supportato per questo tipo di tabella"
+
+#: executor/execQual.c:4415 optimizer/util/clauses.c:573
 #: parser/parse_agg.c:347
 #, c-format
 msgid "aggregate function calls cannot be nested"
 msgstr "le chiamate a funzioni di aggregazione non possono essere annidate"
 
-#: executor/execQual.c:4449 optimizer/util/clauses.c:647
+#: executor/execQual.c:4453 optimizer/util/clauses.c:647
 #: parser/parse_agg.c:443
 #, c-format
 msgid "window function calls cannot be nested"
 msgstr "le chiamate a funzioni finestra non possono essere annidate"
 
-#: executor/execQual.c:4661
+#: executor/execQual.c:4665
 #, c-format
 msgid "target type is not an array"
 msgstr "il tipo di destinazione non è un array"
 
-#: executor/execQual.c:4775
+#: executor/execQual.c:4779
 #, c-format
 msgid "ROW() column has type %s instead of type %s"
 msgstr "la colonna ROW() è di tipo %s invece di %s"
 
-#: executor/execQual.c:4910 utils/adt/arrayfuncs.c:3383
+#: executor/execQual.c:4914 utils/adt/arrayfuncs.c:3383
 #: utils/adt/rowtypes.c:951
 #, c-format
 msgid "could not identify a comparison function for type %s"
