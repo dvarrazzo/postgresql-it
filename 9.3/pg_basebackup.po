@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-03-25 19:17+0000\n"
-"PO-Revision-Date: 2013-03-25 22:08+0100\n"
+"POT-Creation-Date: 2013-04-28 11:47+0000\n"
+"PO-Revision-Date: 2013-04-28 22:21+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -716,15 +716,15 @@ msgstr "%s: \"%s%s\" non rinominato, il segmento non è completo\n"
 
 #: receivelog.c:274
 #, c-format
-msgid "%s: could not open timeline history file \"%s\": %s"
-msgstr "%s: apertura del file della storia della timeline \"%s\" fallita: %s"
+msgid "%s: could not open timeline history file \"%s\": %s\n"
+msgstr "%s: apertura del file della storia della timeline \"%s\" fallita: %s\n"
 
 #: receivelog.c:301
 #, c-format
-msgid "%s: server reported unexpected history file name for timeline %u: %s"
+msgid "%s: server reported unexpected history file name for timeline %u: %s\n"
 msgstr ""
 "%s: il server ha riportato un nome di file della storia imprevisto per la "
-"timeline %u: %s"
+"timeline %u: %s\n"
 
 #: receivelog.c:316
 #, c-format

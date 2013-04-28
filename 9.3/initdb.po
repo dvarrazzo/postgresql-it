@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-03-25 19:17+0000\n"
-"PO-Revision-Date: 2013-03-25 22:07+0100\n"
+"POT-Creation-Date: 2013-04-28 11:47+0000\n"
+"PO-Revision-Date: 2013-04-28 22:19+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -666,8 +666,8 @@ msgstr "  -d, --debug               genera molto output di debug\n"
 
 #: initdb.c:2754
 #, c-format
-msgid "  -k, --data-checksums      data page checksums\n"
-msgstr "  -k, --data-checksums      somma di controllo dei dati delle pagine\n"
+msgid "  -k, --data-checksums      use data page checksums\n"
+msgstr "  -k, --data-checksums      usa i checksum delle pagine dati\n"
 
 #: initdb.c:2755
 #, c-format
@@ -851,7 +851,7 @@ msgstr "%s: nessuna codifica adeguata trovata per il locale \"%s\"\n"
 msgid "Rerun %s with the -E option.\n"
 msgstr "Esegui di nuovo %s con l'opzione -E.\n"
 
-#: initdb.c:2995 initdb.c:3556 initdb.c:3577
+#: initdb.c:2995 initdb.c:3557 initdb.c:3578
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
@@ -995,39 +995,41 @@ msgstr ""
 
 #: initdb.c:3323
 #, c-format
-msgid "Using the top-level directory of a mount point is not recommended.\n"
+msgid ""
+"Using a mount point directly as the data directory is not recommended.\n"
+"Create a subdirectory under the mount point.\n"
 msgstr ""
-"Usare una directory di livello massimo come punto di montaggio non è "
-"raccomandato.\n"
+"Usare un punto di montaggio direttamente come directory dati non è\n"
+"consigliato. Crea una sottodirectory sotto il punto di montaggio.\n"
 
-#: initdb.c:3341
+#: initdb.c:3342
 #, c-format
 msgid "creating subdirectories ... "
 msgstr "creazione delle sottodirectory ... "
 
-#: initdb.c:3500
+#: initdb.c:3501
 #, c-format
 msgid "Running in debug mode.\n"
 msgstr "Esecuzione in modalità debug\n"
 
-#: initdb.c:3504
+#: initdb.c:3505
 #, c-format
 msgid "Running in noclean mode.  Mistakes will not be cleaned up.\n"
 msgstr "Esecuzione in modalità noclean. Gli errori non verranno ripuliti.\n"
 
-#: initdb.c:3575
+#: initdb.c:3576
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
 msgstr "%s: troppi argomenti nella riga di comando (il primo è \"%s\")\n"
 
-#: initdb.c:3592
+#: initdb.c:3593
 #, c-format
 msgid "%s: password prompt and password file cannot be specified together\n"
 msgstr ""
 "%s: il prompt della password ed un file contenente la password non\n"
 "possono essere specificati contemporaneamente\n"
 
-#: initdb.c:3614
+#: initdb.c:3615
 #, c-format
 msgid ""
 "The files belonging to this database system will be owned by user \"%s\".\n"
@@ -1038,17 +1040,17 @@ msgstr ""
 "Questo utente deve inoltre possedere il processo server.\n"
 "\n"
 
-#: initdb.c:3628
+#: initdb.c:3629
 #, c-format
 msgid "Data page checksums are enabled.\n"
 msgstr "La somma di controllo dei dati delle pagine è abilitata.\n"
 
-#: initdb.c:3630
+#: initdb.c:3631
 #, c-format
 msgid "Data page checksums are disabled.\n"
 msgstr "La somma di controllo dei dati delle pagine è disabilitata.\n"
 
-#: initdb.c:3639
+#: initdb.c:3640
 #, c-format
 msgid ""
 "\n"
@@ -1060,7 +1062,7 @@ msgstr ""
 "La directory dei dati potrebbe diventare corrotta in caso di crash del "
 "sistema operativo.\n"
 
-#: initdb.c:3648
+#: initdb.c:3649
 #, c-format
 msgid ""
 "\n"
