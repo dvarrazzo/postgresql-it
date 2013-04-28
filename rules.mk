@@ -1,7 +1,7 @@
 # rules to be imported by VERSION/Makefile
 
 # working copy of the pgtranslation/messages repository
-PGTRANSWC = "$$HOME/dev/fs/pgtranslation/messages/"
+PGTR_WC = "$$HOME/dev/fs/pgtranslation/messages/"
 
 .PHONY: clean check
 
@@ -67,8 +67,9 @@ mopack:
 	zip -9 ../package/messages-$(LANG)-$(VERSION).zip *.mo
 
 # propagate the changes to a pgtranslation working copy
-pgtranspush:
-	(cd $(PGTRANSWC) && git checkout $(VERSION))
+pgtrpush:
+	(cd $(PGTR_WC) && git checkout $(PGTR_BRANCH))
 	for f in *.po; do \
-		msgcat --no-wrap -o $(PGTRANSWC)/$(LANG)/$$f $$f; \
+		msgcat --no-wrap -o $(PGTR_WC)/$(LANG)/$$f $$f; \
 	done
+	# (cd $(PGTR_WC) && git commit -m "$(LANG): translation update" .)
