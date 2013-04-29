@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-04-28 11:41+0000\n"
-"PO-Revision-Date: 2013-04-28 22:12+0100\n"
+"POT-Creation-Date: 2013-04-29 19:41+0000\n"
+"PO-Revision-Date: 2013-04-29 22:46+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -4411,7 +4411,7 @@ msgid "clustering \"%s.%s\" using sequential scan and sort"
 msgstr ""
 "raggruppamento di \"%s.%s\" usando una scansione sequenziale e ordinamento"
 
-#: commands/cluster.c:921 commands/vacuumlazy.c:418
+#: commands/cluster.c:921 commands/vacuumlazy.c:411
 #, c-format
 msgid "vacuuming \"%s.%s\""
 msgstr "pulizia di \"%s.%s\""
@@ -8538,7 +8538,7 @@ msgstr ""
 "\"%s\" saltato --- non è possibile ripulire non-tabelle o tabelle speciali "
 "di sistema"
 
-#: commands/vacuumlazy.c:321
+#: commands/vacuumlazy.c:314
 #, c-format
 msgid ""
 "automatic vacuum of table \"%s.%s.%s\": index scans: %d\n"
@@ -8556,17 +8556,17 @@ msgstr ""
 "s\n"
 "utilizzo di sistema: %s"
 
-#: commands/vacuumlazy.c:652
+#: commands/vacuumlazy.c:645
 #, c-format
 msgid "relation \"%s\" page %u is uninitialized --- fixing"
 msgstr "la relazione \"%s\" pagina %u non è inizializzata --- in correzione"
 
-#: commands/vacuumlazy.c:1023
+#: commands/vacuumlazy.c:1016
 #, c-format
 msgid "\"%s\": removed %.0f row versions in %u pages"
 msgstr "\"%s\": %.0f versioni di riga rimosse in %u pagine"
 
-#: commands/vacuumlazy.c:1028
+#: commands/vacuumlazy.c:1021
 #, c-format
 msgid ""
 "\"%s\": found %.0f removable, %.0f nonremovable row versions in %u out of %u "
@@ -8575,7 +8575,7 @@ msgstr ""
 "\"%s\": trovate %.0f versioni di riga removibili, %.0f non removibili in %u "
 "pagine su %u"
 
-#: commands/vacuumlazy.c:1032
+#: commands/vacuumlazy.c:1025
 #, c-format
 msgid ""
 "%.0f dead row versions cannot be removed yet.\n"
@@ -8588,29 +8588,29 @@ msgstr ""
 "%u pagine sono completamente vuote.\n"
 "%s."
 
-#: commands/vacuumlazy.c:1103
+#: commands/vacuumlazy.c:1096
 #, c-format
 msgid "\"%s\": removed %d row versions in %d pages"
 msgstr "\"%s\": %d versioni di riga rimosse in %d pagine"
 
-#: commands/vacuumlazy.c:1106 commands/vacuumlazy.c:1256
-#: commands/vacuumlazy.c:1434
+#: commands/vacuumlazy.c:1099 commands/vacuumlazy.c:1249
+#: commands/vacuumlazy.c:1420
 #, c-format
 msgid "%s."
 msgstr "%s."
 
-#: commands/vacuumlazy.c:1253
+#: commands/vacuumlazy.c:1246
 #, c-format
 msgid "scanned index \"%s\" to remove %d row versions"
 msgstr ""
 "effettuata la scansione dell'indice \"%s\" per rimuovere %d versioni di riga"
 
-#: commands/vacuumlazy.c:1298
+#: commands/vacuumlazy.c:1291
 #, c-format
 msgid "index \"%s\" now contains %.0f row versions in %u pages"
 msgstr "l'indice \"%s\" ora contiene %.0f versioni di riga in %u pagine"
 
-#: commands/vacuumlazy.c:1302
+#: commands/vacuumlazy.c:1295
 #, c-format
 msgid ""
 "%.0f index row versions were removed.\n"
@@ -8621,21 +8621,18 @@ msgstr ""
 "%u pagine dell'indice sono state cancellate, %u sono attualmente riusabili.\n"
 "%s."
 
-#: commands/vacuumlazy.c:1362
+#: commands/vacuumlazy.c:1352
 #, c-format
-msgid ""
-"automatic vacuum of table \"%s.%s.%s\": could not (re)acquire exclusive lock "
-"for truncate scan"
+msgid "\"%s\": stopping truncate due to conflicting lock request"
 msgstr ""
-"vacuum automatico della tabella \"%s.%s.%s\": (ri)acquisizione del lock "
-"esclusivo per troncamento fallita"
+"\"%s\": truncate interrotto a causa di una richiesta di lock in conflitto"
 
-#: commands/vacuumlazy.c:1431
+#: commands/vacuumlazy.c:1417
 #, c-format
 msgid "\"%s\": truncated %u to %u pages"
 msgstr "\"%s\": %u pagine ridotte a %u"
 
-#: commands/vacuumlazy.c:1486
+#: commands/vacuumlazy.c:1473
 #, c-format
 msgid "\"%s\": suspending truncate due to conflicting lock request"
 msgstr ""
@@ -11065,17 +11062,17 @@ msgstr ""
 "i lock di riga non possono essere applicati sul lato che può essere nullo di "
 "un join esterno"
 
-#: optimizer/plan/planner.c:1077 parser/analyze.c:2198
+#: optimizer/plan/planner.c:1084 parser/analyze.c:2198
 #, c-format
 msgid "row-level locks are not allowed with UNION/INTERSECT/EXCEPT"
 msgstr "i lock di riga non sono consentiti con UNION/INTERSECT/EXCEPT"
 
-#: optimizer/plan/planner.c:2484
+#: optimizer/plan/planner.c:2502
 #, c-format
 msgid "could not implement GROUP BY"
 msgstr "non è stato possibile implementare GROUP BY"
 
-#: optimizer/plan/planner.c:2485 optimizer/plan/planner.c:2657
+#: optimizer/plan/planner.c:2503 optimizer/plan/planner.c:2675
 #: optimizer/prep/prepunion.c:824
 #, c-format
 msgid ""
@@ -11085,29 +11082,29 @@ msgstr ""
 "Alcuni dei tipi di dati supportano solo l'hashing, mentre altri supportano "
 "solo l'ordinamento."
 
-#: optimizer/plan/planner.c:2656
+#: optimizer/plan/planner.c:2674
 #, c-format
 msgid "could not implement DISTINCT"
 msgstr "non è stato possibile implementare DISTINCT"
 
-#: optimizer/plan/planner.c:3247
+#: optimizer/plan/planner.c:3265
 #, c-format
 msgid "could not implement window PARTITION BY"
 msgstr "non è stato possibile implementare PARTITION BY della finestra"
 
-#: optimizer/plan/planner.c:3248
+#: optimizer/plan/planner.c:3266
 #, c-format
 msgid "Window partitioning columns must be of sortable datatypes."
 msgstr ""
 "La colonna di partizionamento della finestra dev'essere un tipo di dato "
 "ordinabile."
 
-#: optimizer/plan/planner.c:3252
+#: optimizer/plan/planner.c:3270
 #, c-format
 msgid "could not implement window ORDER BY"
 msgstr "non è stato possibile implementare ORDER BY della finestra"
 
-#: optimizer/plan/planner.c:3253
+#: optimizer/plan/planner.c:3271
 #, c-format
 msgid "Window ordering columns must be of sortable datatypes."
 msgstr ""
@@ -15096,30 +15093,30 @@ msgstr "il processo %d ha acquisito %s su %s dopo %ld.%03d ms"
 msgid "process %d failed to acquire %s on %s after %ld.%03d ms"
 msgstr "il processo %d ha fallito l'acquisizione di %s su %s dopo %ld.%03d ms"
 
-#: storage/page/bufpage.c:142
+#: storage/page/bufpage.c:143
 #, c-format
 msgid "page verification failed, calculated checksum %u but expected %u"
 msgstr ""
 "verifica della pagina fallita, somma di controllo calcolata %u ma era attesa "
 "%u"
 
-#: storage/page/bufpage.c:198 storage/page/bufpage.c:445
-#: storage/page/bufpage.c:678 storage/page/bufpage.c:808
+#: storage/page/bufpage.c:199 storage/page/bufpage.c:446
+#: storage/page/bufpage.c:679 storage/page/bufpage.c:809
 #, c-format
 msgid "corrupted page pointers: lower = %u, upper = %u, special = %u"
 msgstr "puntatore di pagina corrotto: lower = %u, upper = %u, special = %u"
 
-#: storage/page/bufpage.c:488
+#: storage/page/bufpage.c:489
 #, c-format
 msgid "corrupted item pointer: %u"
 msgstr "puntatore di elemento corrotto: %u"
 
-#: storage/page/bufpage.c:499 storage/page/bufpage.c:860
+#: storage/page/bufpage.c:500 storage/page/bufpage.c:861
 #, c-format
 msgid "corrupted item lengths: total %u, available space %u"
 msgstr "lunghezza dell'elemento corrotta: totale %u, spazio disponibile %u"
 
-#: storage/page/bufpage.c:697 storage/page/bufpage.c:833
+#: storage/page/bufpage.c:698 storage/page/bufpage.c:834
 #, c-format
 msgid "corrupted item pointer: offset = %u, size = %u"
 msgstr "puntatore di elemento corrotto: offset = %u, size = %u"
