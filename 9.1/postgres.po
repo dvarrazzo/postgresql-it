@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-04-29 19:04+0000\n"
-"PO-Revision-Date: 2013-04-29 22:46+0100\n"
+"POT-Creation-Date: 2013-06-16 07:12+0000\n"
+"PO-Revision-Date: 2013-06-17 16:50+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -488,7 +488,7 @@ msgstr "%s: eseguibile postgres corrispondente non trovato"
 
 #: postmaster/postmaster.c:1177 utils/misc/tzparser.c:323 utils/adt/misc.c:213
 #: utils/adt/genfile.c:353 commands/tablespace.c:689 commands/tablespace.c:699
-#: storage/file/fd.c:1605 storage/file/copydir.c:67 storage/file/copydir.c:106
+#: storage/file/fd.c:1682 storage/file/copydir.c:67 storage/file/copydir.c:106
 #, c-format
 msgid "could not open directory \"%s\": %m"
 msgstr "apertura della directory \"%s\" fallita: %m"
@@ -648,11 +648,11 @@ msgstr ""
 #: utils/adt/formatting.c:1524 utils/adt/formatting.c:1640
 #: utils/adt/formatting.c:1757 lib/stringinfo.c:266 commands/sequence.c:1014
 #: libpq/auth.c:1022 libpq/auth.c:1382 libpq/auth.c:1450 libpq/auth.c:1852
-#: storage/file/fd.c:359 storage/file/fd.c:742 storage/file/fd.c:860
-#: storage/ipc/procarray.c:801 storage/ipc/procarray.c:1212
-#: storage/ipc/procarray.c:1219 storage/ipc/procarray.c:1459
-#: storage/ipc/procarray.c:1910 storage/buffer/localbuf.c:350
-#: storage/buffer/buf_init.c:154
+#: storage/file/fd.c:364 storage/file/fd.c:761 storage/file/fd.c:879
+#: storage/file/fd.c:1443 storage/ipc/procarray.c:801
+#: storage/ipc/procarray.c:1212 storage/ipc/procarray.c:1219
+#: storage/ipc/procarray.c:1459 storage/ipc/procarray.c:1910
+#: storage/buffer/localbuf.c:350 storage/buffer/buf_init.c:154
 msgid "out of memory"
 msgstr "memoria esaurita"
 
@@ -793,7 +793,7 @@ msgstr "connessione ricevuta: host=%s"
 
 #: postmaster/postmaster.c:3702 access/transam/xlog.c:2397
 #: access/transam/xlog.c:2530 access/transam/xlog.c:4463
-#: access/transam/xlog.c:9158 access/transam/xlog.c:9399
+#: access/transam/xlog.c:9166 access/transam/xlog.c:9407
 #: storage/file/copydir.c:172 storage/smgr/md.c:289
 #, c-format
 msgid "could not create file \"%s\": %m"
@@ -991,16 +991,16 @@ msgstr "non esiste una funzione di output binario per il tipo %s"
 msgid "type \"%s\" is only a shell"
 msgstr "il tipo \"%s\" non è completamente definito"
 
-#: utils/cache/typcache.c:629
+#: utils/cache/typcache.c:634
 #, c-format
 msgid "type %s is not composite"
 msgstr "il tipo %s non è composito"
 
-#: utils/cache/typcache.c:643
+#: utils/cache/typcache.c:648
 msgid "record type has not been registered"
 msgstr "il tipo del record non è stato registrato"
 
-#: utils/cache/typcache.c:996 commands/typecmds.c:1272
+#: utils/cache/typcache.c:1001 commands/typecmds.c:1272
 #, c-format
 msgid "%s is not an enum"
 msgstr "%s non è una enumerazione"
@@ -1009,8 +1009,8 @@ msgstr "%s non è una enumerazione"
 #: storage/lmgr/predicate.c:2246 storage/lmgr/predicate.c:2261
 #: storage/lmgr/predicate.c:3656 storage/lmgr/predicate.c:4800
 #: storage/lmgr/proc.c:197 storage/lmgr/proc.c:216 storage/lmgr/lock.c:723
-#: storage/lmgr/lock.c:792 storage/lmgr/lock.c:2301 storage/lmgr/lock.c:2690
-#: storage/lmgr/lock.c:2755
+#: storage/lmgr/lock.c:792 storage/lmgr/lock.c:2301 storage/lmgr/lock.c:2700
+#: storage/lmgr/lock.c:2765
 msgid "out of shared memory"
 msgstr "memoria condivisa esaurita"
 
@@ -3551,8 +3551,8 @@ msgstr ""
 "assoluto."
 
 #: utils/fmgr/funcapi.c:60 utils/mmgr/portalmem.c:985 commands/prepare.c:751
-#: commands/extension.c:1707 commands/extension.c:1816
-#: commands/extension.c:2009 foreign/foreign.c:350 executor/functions.c:785
+#: commands/extension.c:1711 commands/extension.c:1820
+#: commands/extension.c:2013 foreign/foreign.c:350 executor/functions.c:785
 #: executor/execQual.c:1706 executor/execQual.c:1731 executor/execQual.c:2092
 #: executor/execQual.c:5221 replication/walsender.c:1412
 msgid "set-valued function called in context that cannot accept a set"
@@ -3683,8 +3683,8 @@ msgstr ""
 "non è possibile eseguire PREPARE in una transazione che ha creato un cursore "
 "WITH HOLD"
 
-#: utils/mmgr/portalmem.c:989 commands/prepare.c:755 commands/extension.c:1711
-#: commands/extension.c:1820 commands/extension.c:2013 foreign/foreign.c:355
+#: utils/mmgr/portalmem.c:989 commands/prepare.c:755 commands/extension.c:1715
+#: commands/extension.c:1824 commands/extension.c:2017 foreign/foreign.c:355
 #: replication/walsender.c:1416
 msgid "materialize mode required, but it is not allowed in this context"
 msgstr "necessaria modalità materializzata, ma non ammessa in questo contesto"
@@ -4159,15 +4159,15 @@ msgstr "fuso orario \"%s\" non riconosciuto"
 msgid "interval time zone \"%s\" must not specify month"
 msgstr "il fuso orario dell'intervallo \"%s\" non può specificare i mesi"
 
-#: utils/adt/selfuncs.c:4926
+#: utils/adt/selfuncs.c:4934
 msgid "case insensitive matching not supported on type bytea"
 msgstr "il confronto case insensitive sul tipo bytea non è supportato"
 
-#: utils/adt/selfuncs.c:4941 utils/adt/like.c:211
+#: utils/adt/selfuncs.c:4949 utils/adt/like.c:211
 msgid "could not determine which collation to use for ILIKE"
 msgstr "non è stato possibile determinare quale ordinamento usare per ILIKE"
 
-#: utils/adt/selfuncs.c:4942 utils/adt/varlena.c:1315
+#: utils/adt/selfuncs.c:4950 utils/adt/varlena.c:1315
 #: utils/adt/formatting.c:1515 utils/adt/formatting.c:1565
 #: utils/adt/formatting.c:1631 utils/adt/formatting.c:1681
 #: utils/adt/formatting.c:1748 utils/adt/formatting.c:1810
@@ -4176,7 +4176,7 @@ msgstr "non è stato possibile determinare quale ordinamento usare per ILIKE"
 msgid "Use the COLLATE clause to set the collation explicitly."
 msgstr "Usa la clausola COLLATE per impostare esplicitamente l'ordinamento."
 
-#: utils/adt/selfuncs.c:5029
+#: utils/adt/selfuncs.c:5037
 msgid "regular-expression matching not supported on type bytea"
 msgstr "il confronto con espressioni regolari sul tipo bytea non è supportato"
 
@@ -4821,8 +4821,8 @@ msgstr "%d non è un codice di codifica valido"
 
 #: utils/adt/dbsize.c:65 utils/adt/dbsize.c:211 utils/adt/dbsize.c:279
 #: utils/adt/genfile.c:107 utils/adt/genfile.c:279 access/transam/xlog.c:2932
-#: access/transam/xlog.c:3097 access/transam/xlog.c:9143
-#: access/transam/xlog.c:9319 storage/file/copydir.c:86
+#: access/transam/xlog.c:3097 access/transam/xlog.c:9151
+#: access/transam/xlog.c:9327 storage/file/copydir.c:86
 #: storage/file/copydir.c:125
 #, c-format
 msgid "could not stat file \"%s\": %m"
@@ -4833,7 +4833,7 @@ msgstr "non è stato possibile ottenere informazioni sul file \"%s\": %m"
 msgid "could not open tablespace directory \"%s\": %m"
 msgstr "apertura della directory del tablespace \"%s\" fallita: %m"
 
-#: utils/adt/dbsize.c:127 catalog/aclchk.c:3493 catalog/aclchk.c:4610
+#: utils/adt/dbsize.c:127 catalog/aclchk.c:3492 catalog/aclchk.c:4609
 #, c-format
 msgid "database with OID %u does not exist"
 msgstr "il database con OID %u non esiste"
@@ -4970,7 +4970,7 @@ msgstr "il valore per il DOMAIN %s viola il vincolo di controllo \"%s\""
 #: commands/tablecmds.c:4882 commands/tablecmds.c:4966
 #: commands/tablecmds.c:6619 commands/tablecmds.c:6828 commands/analyze.c:343
 #: commands/sequence.c:1443 commands/copy.c:3787 commands/trigger.c:592
-#: catalog/aclchk.c:1428 catalog/objectaddress.c:545 parser/analyze.c:2046
+#: catalog/aclchk.c:1427 catalog/objectaddress.c:545 parser/analyze.c:2046
 #: parser/parse_target.c:895 parser/parse_relation.c:2050
 #: parser/parse_relation.c:2107 parser/parse_type.c:117
 #, c-format
@@ -5431,9 +5431,9 @@ msgid "could not seek in file \"%s\": %m"
 msgstr "spostamento nel file \"%s\" fallito: %m"
 
 #: utils/adt/genfile.c:138 access/transam/xlog.c:2543
-#: access/transam/xlog.c:4494 access/transam/xlog.c:9331
-#: access/transam/xlog.c:9344 access/transam/xlog.c:9878
-#: access/transam/xlog.c:9913 storage/file/copydir.c:186
+#: access/transam/xlog.c:4494 access/transam/xlog.c:9339
+#: access/transam/xlog.c:9352 access/transam/xlog.c:9886
+#: access/transam/xlog.c:9921 storage/file/copydir.c:186
 #, c-format
 msgid "could not read file \"%s\": %m"
 msgstr "lettura de file \"%s\" fallita: %m"
@@ -5731,7 +5731,7 @@ msgstr "tipo di privilegio sconosciuto: \"%s\""
 #: utils/adt/acl.c:2102 utils/adt/acl.c:2130 utils/adt/acl.c:2160
 #: commands/tablecmds.c:209 commands/tablecmds.c:2175
 #: commands/tablecmds.c:2422 commands/tablecmds.c:9032
-#: commands/sequence.c:1032 catalog/aclchk.c:1693 catalog/objectaddress.c:398
+#: commands/sequence.c:1032 catalog/aclchk.c:1692 catalog/objectaddress.c:398
 #, c-format
 msgid "\"%s\" is not a sequence"
 msgstr "\"%s\" non è una sequenza"
@@ -5775,7 +5775,7 @@ msgstr "l'enumerazione %s non contiene valori"
 #: utils/adt/ri_triggers.c:1730 utils/adt/ri_triggers.c:1901
 #: utils/adt/ri_triggers.c:2117 utils/adt/ri_triggers.c:2299
 #: utils/adt/ri_triggers.c:2502 utils/adt/ri_triggers.c:2550
-#: utils/adt/ri_triggers.c:2595 utils/adt/ri_triggers.c:2757 gram.y:2887
+#: utils/adt/ri_triggers.c:2595 utils/adt/ri_triggers.c:2757 gram.y:2888
 msgid "MATCH PARTIAL not yet implemented"
 msgstr "il MATCH PARTIAL non è stato ancora implementato"
 
@@ -5971,11 +5971,11 @@ msgstr "l'operatore non esiste: %s"
 msgid "more than one operator named %s"
 msgstr "più di un operatore si chiama %s"
 
-#: utils/adt/regproc.c:630 gram.y:6217
+#: utils/adt/regproc.c:630 gram.y:6218
 msgid "missing argument"
 msgstr "argomento mancante"
 
-#: utils/adt/regproc.c:631 gram.y:6218
+#: utils/adt/regproc.c:631 gram.y:6219
 msgid "Use NONE to denote the missing argument of a unary operator."
 msgstr "Usa NONE per indicare l'argomento mancante in un operatore unario."
 
@@ -6188,7 +6188,7 @@ msgid "could not open dictionary file \"%s\": %m"
 msgstr "apertura del file dictionary \"%s\" fallita: %m"
 
 #: tsearch/spell.c:518 tsearch/spell.c:535 tsearch/spell.c:552
-#: tsearch/spell.c:569 tsearch/spell.c:591 gram.y:12500 gram.y:12517
+#: tsearch/spell.c:569 tsearch/spell.c:591 gram.y:12508 gram.y:12525
 msgid "syntax error"
 msgstr "errore di sintassi"
 
@@ -6255,22 +6255,22 @@ msgstr "più di un parametro Accept"
 msgid "unrecognized simple dictionary parameter: \"%s\""
 msgstr "parametro del dizionario simple sconosciuto: \"%s\""
 
-#: tcop/pquery.c:660
+#: tcop/pquery.c:661
 #, c-format
 msgid "bind message has %d result formats but query has %d columns"
 msgstr ""
 "il messaggio di bind ha %d formati di risultato ma la query ha %d colonne"
 
-#: tcop/pquery.c:738 tcop/pquery.c:1401 commands/portalcmds.c:340
+#: tcop/pquery.c:739 tcop/pquery.c:1403 commands/portalcmds.c:341
 #, c-format
 msgid "portal \"%s\" cannot be run"
 msgstr "il portale \"%s\" non può essere eseguito"
 
-#: tcop/pquery.c:969
+#: tcop/pquery.c:971
 msgid "cursor can only scan forward"
 msgstr "il cursore effettuare solo scansioni in avanti"
 
-#: tcop/pquery.c:970
+#: tcop/pquery.c:972
 msgid "Declare it with SCROLL option to enable backward scan."
 msgstr ""
 "Dichiaralo con l'opzione SCROLL per abilitare le scansioni all'indietro."
@@ -6288,7 +6288,7 @@ msgstr ""
 msgid "unsupported format code: %d"
 msgstr "codice di formato non supportato: %d"
 
-#: tcop/fastpath.c:221 catalog/aclchk.c:3547 catalog/aclchk.c:4297
+#: tcop/fastpath.c:221 catalog/aclchk.c:3546 catalog/aclchk.c:4296
 #, c-format
 msgid "function with OID %u does not exist"
 msgstr "la funzione con OID %u non esiste"
@@ -6801,14 +6801,14 @@ msgid "row is too big: size %lu, maximum size %lu"
 msgstr "riga troppo grande: la dimensione è %lu mentre il massimo è %lu"
 
 #: access/heap/heapam.c:1089 access/heap/heapam.c:1117
-#: access/heap/heapam.c:1147 catalog/aclchk.c:1678
+#: access/heap/heapam.c:1147 catalog/aclchk.c:1677
 #, c-format
 msgid "\"%s\" is an index"
 msgstr "\"%s\" è un indice"
 
 #: access/heap/heapam.c:1094 access/heap/heapam.c:1122
 #: access/heap/heapam.c:1152 commands/tablecmds.c:2197
-#: commands/tablecmds.c:7413 commands/tablecmds.c:9082 catalog/aclchk.c:1685
+#: commands/tablecmds.c:7413 commands/tablecmds.c:9082 catalog/aclchk.c:1684
 #, c-format
 msgid "\"%s\" is a composite type"
 msgstr "\"%s\" è un tipo composito"
@@ -7153,7 +7153,7 @@ msgstr "creazione del file di stato dell'archivio \"%s\" fallita: %m"
 msgid "could not write archive status file \"%s\": %m"
 msgstr "scrittura del file di stato dell'archivio \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:1803 access/transam/xlog.c:10511
+#: access/transam/xlog.c:1803 access/transam/xlog.c:10519
 #: replication/walreceiver.c:515 replication/walsender.c:1004
 #, c-format
 msgid "could not seek in log file %u, segment %u to offset %u: %m"
@@ -7219,7 +7219,7 @@ msgstr ""
 msgid "could not close log file %u, segment %u: %m"
 msgstr "chiusura del file di log %u fallita, segmento %u: %m"
 
-#: access/transam/xlog.c:2940 access/transam/xlog.c:9349 storage/smgr/md.c:371
+#: access/transam/xlog.c:2940 access/transam/xlog.c:9357 storage/smgr/md.c:371
 #: storage/smgr/md.c:420 storage/smgr/md.c:1251
 #, c-format
 msgid "could not remove file \"%s\": %m"
@@ -8019,7 +8019,7 @@ msgstr "il redo inizia in %X/%X"
 msgid "redo done at %X/%X"
 msgstr "redo concluso in %X/%X"
 
-#: access/transam/xlog.c:6704 access/transam/xlog.c:8296
+#: access/transam/xlog.c:6704 access/transam/xlog.c:8304
 #, c-format
 msgid "last completed transaction was at log time %s"
 msgstr "l'ultima transazione è stata completata all'orario di log %s"
@@ -8147,92 +8147,92 @@ msgstr "si tralascia il restartpoint, il ripristino è ormai terminato"
 msgid "skipping restartpoint, already performed at %X/%X"
 msgstr "si tralascia il restartpoint, già eseguito in %X/%X"
 
-#: access/transam/xlog.c:8294
+#: access/transam/xlog.c:8302
 #, c-format
 msgid "recovery restart point at %X/%X"
 msgstr "punto di avvio del ripristino in %X/%X"
 
-#: access/transam/xlog.c:8394
+#: access/transam/xlog.c:8402
 #, c-format
 msgid "restore point \"%s\" created at %X/%X"
 msgstr "punto di ripristino \"%s\" creato in %X/%X"
 
-#: access/transam/xlog.c:8494
+#: access/transam/xlog.c:8502
 msgid "online backup was canceled, recovery cannot continue"
 msgstr "il backup online è stato annullato, il ripristino non può continuare"
 
-#: access/transam/xlog.c:8557
+#: access/transam/xlog.c:8565
 #, c-format
 msgid "unexpected timeline ID %u (after %u) in checkpoint record"
 msgstr "timeline ID %u imprevista (dopo %u) nel record di checkpoint"
 
-#: access/transam/xlog.c:8602
+#: access/transam/xlog.c:8610
 #, c-format
 msgid "unexpected timeline ID %u (should be %u) in checkpoint record"
 msgstr ""
 "l'ID della timeline %u (che dovrebbe essere %u) non era prevista nel record "
 "di checkpoint"
 
-#: access/transam/xlog.c:8866 access/transam/xlog.c:8890
+#: access/transam/xlog.c:8874 access/transam/xlog.c:8898
 #, c-format
 msgid "could not fsync log file %u, segment %u: %m"
 msgstr "fsync del file di log %u fallito, segmento %u: %m"
 
-#: access/transam/xlog.c:8898
+#: access/transam/xlog.c:8906
 #, c-format
 msgid "could not fsync write-through log file %u, segment %u: %m"
 msgstr "fsync write-through sul file di log %u fallito, segmento %u: %m"
 
-#: access/transam/xlog.c:8907
+#: access/transam/xlog.c:8915
 #, c-format
 msgid "could not fdatasync log file %u, segment %u: %m"
 msgstr "fdatasync del file di log %u fallito, segmento %u: %m"
 
-#: access/transam/xlog.c:8988 access/transam/xlog.c:9267
+#: access/transam/xlog.c:8996 access/transam/xlog.c:9275
 msgid "must be superuser or replication role to run a backup"
 msgstr "solo un superutente o il ruolo di replica può eseguire un backup"
 
-#: access/transam/xlog.c:8993 access/transam/xlog.c:9272
-#: access/transam/xlog.c:9535 access/transam/xlog.c:9567
-#: access/transam/xlog.c:9608 access/transam/xlog.c:9641
-#: access/transam/xlog.c:9748 access/transam/xlog.c:9823
+#: access/transam/xlog.c:9001 access/transam/xlog.c:9280
+#: access/transam/xlog.c:9543 access/transam/xlog.c:9575
+#: access/transam/xlog.c:9616 access/transam/xlog.c:9649
+#: access/transam/xlog.c:9756 access/transam/xlog.c:9831
 msgid "recovery is in progress"
 msgstr "il ripristino è in corso"
 
-#: access/transam/xlog.c:8994 access/transam/xlog.c:9273
-#: access/transam/xlog.c:9536 access/transam/xlog.c:9568
-#: access/transam/xlog.c:9609 access/transam/xlog.c:9642
+#: access/transam/xlog.c:9002 access/transam/xlog.c:9281
+#: access/transam/xlog.c:9544 access/transam/xlog.c:9576
+#: access/transam/xlog.c:9617 access/transam/xlog.c:9650
 msgid "WAL control functions cannot be executed during recovery."
 msgstr ""
 "le funzioni di controllo WAL non possono essere eseguite durante il "
 "ripristino."
 
-#: access/transam/xlog.c:8999 access/transam/xlog.c:9278
+#: access/transam/xlog.c:9007 access/transam/xlog.c:9286
 msgid "WAL level not sufficient for making an online backup"
 msgstr "livello WAL non sufficiente per creare un backup online"
 
-#: access/transam/xlog.c:9000 access/transam/xlog.c:9279
-#: access/transam/xlog.c:9574
+#: access/transam/xlog.c:9008 access/transam/xlog.c:9287
+#: access/transam/xlog.c:9582
 msgid ""
 "wal_level must be set to \"archive\" or \"hot_standby\" at server start."
 msgstr ""
 "Il wal_level deve essere impostato ad \"archive\" oppure \"hot_standby\" "
 "all'avvio del server."
 
-#: access/transam/xlog.c:9005
+#: access/transam/xlog.c:9013
 #, c-format
 msgid "backup label too long (max %d bytes)"
 msgstr "etichetta di backup troppo lunga (massimo %d byte)"
 
-#: access/transam/xlog.c:9046 access/transam/xlog.c:9149
+#: access/transam/xlog.c:9054 access/transam/xlog.c:9157
 msgid "a backup is already in progress"
 msgstr "c'è già un backup in corso"
 
-#: access/transam/xlog.c:9047
+#: access/transam/xlog.c:9055
 msgid "Run pg_stop_backup() and try again."
 msgstr "Esegui pg_stop_backup() e prova di nuovo."
 
-#: access/transam/xlog.c:9150
+#: access/transam/xlog.c:9158
 #, c-format
 msgid ""
 "If you're sure there is no backup in progress, remove file \"%s\" and try "
@@ -8241,29 +8241,29 @@ msgstr ""
 "Se si è certi che non ci sono backup in corso, rimuovi il file \"%s\" e "
 "prova di nuovo."
 
-#: access/transam/xlog.c:9165 access/transam/xlog.c:9411
+#: access/transam/xlog.c:9173 access/transam/xlog.c:9419
 #, c-format
 msgid "could not write file \"%s\": %m"
 msgstr "scrittura nel file \"%s\" fallita: %m"
 
-#: access/transam/xlog.c:9323
+#: access/transam/xlog.c:9331
 msgid "a backup is not in progress"
 msgstr "nessuno backup in esecuzione"
 
-#: access/transam/xlog.c:9362 access/transam/xlog.c:9893
-#: access/transam/xlog.c:9899
+#: access/transam/xlog.c:9370 access/transam/xlog.c:9901
+#: access/transam/xlog.c:9907
 #, c-format
 msgid "invalid data in file \"%s\""
 msgstr "i dati nel file \"%s\" non sono validi"
 
-#: access/transam/xlog.c:9460
+#: access/transam/xlog.c:9468
 msgid ""
 "pg_stop_backup cleanup done, waiting for required WAL segments to be archived"
 msgstr ""
 "pulizia di pg_stop_backup effettuata, in attesa che i segmenti WAL richiesti "
 "vengano archiviati"
 
-#: access/transam/xlog.c:9470
+#: access/transam/xlog.c:9478
 #, c-format
 msgid ""
 "pg_stop_backup still waiting for all required WAL segments to be archived "
@@ -8272,7 +8272,7 @@ msgstr ""
 "pg_stop_backup è ancora in attesa che tutti i segmenti WAL richiesti siano "
 "stati archiviati (sono passati %d secondi)"
 
-#: access/transam/xlog.c:9472
+#: access/transam/xlog.c:9480
 msgid ""
 "Check that your archive_command is executing properly.  pg_stop_backup can "
 "be canceled safely, but the database backup will not be usable without all "
@@ -8282,12 +8282,12 @@ msgstr ""
 "pg_stop_backup può essere interrotto in sicurezza ma il backup del database "
 "non sarà utilizzabile senza tutti i segmenti WAL."
 
-#: access/transam/xlog.c:9479
+#: access/transam/xlog.c:9487
 msgid "pg_stop_backup complete, all required WAL segments have been archived"
 msgstr ""
 "pg_stop_backup completo, tutti i segmenti WAL richiesti sono stati archiviati"
 
-#: access/transam/xlog.c:9483
+#: access/transam/xlog.c:9491
 msgid ""
 "WAL archiving is not enabled; you must ensure that all required WAL segments "
 "are copied through other means to complete the backup"
@@ -8295,72 +8295,72 @@ msgstr ""
 "l'archiviazione WAL non è abilitata; devi verificare che tutti i segmenti "
 "WAL richiesti vengano copiati in qualche altro modo per completare il backup"
 
-#: access/transam/xlog.c:9530
+#: access/transam/xlog.c:9538
 msgid "must be superuser to switch transaction log files"
 msgstr "solo un superutente può cambiare i file di log delle transazioni"
 
-#: access/transam/xlog.c:9562
+#: access/transam/xlog.c:9570
 msgid "must be superuser to create a restore point"
 msgstr "Solo un superutente può creare un punto di ripristino"
 
-#: access/transam/xlog.c:9573
+#: access/transam/xlog.c:9581
 msgid "WAL level not sufficient for creating a restore point"
 msgstr "livello WAL non sufficiente per creare un punto di ripristino"
 
-#: access/transam/xlog.c:9581
+#: access/transam/xlog.c:9589
 #, c-format
 msgid "value too long for restore point (maximum %d characters)"
 msgstr ""
 "il valore è troppo lungo per un punto di ripristino (massimo %d caratteri)"
 
-#: access/transam/xlog.c:9749
+#: access/transam/xlog.c:9757
 msgid "pg_xlogfile_name_offset() cannot be executed during recovery."
 msgstr "pg_xlogfile_name_offset() non può essere eseguito durante il recupero."
 
-#: access/transam/xlog.c:9759 access/transam/xlog.c:9831
+#: access/transam/xlog.c:9767 access/transam/xlog.c:9839
 #, c-format
 msgid "could not parse transaction log location \"%s\""
 msgstr ""
 "non è stato possibile interpretare la posizione del log delle transazioni "
 "\"%s\""
 
-#: access/transam/xlog.c:9824
+#: access/transam/xlog.c:9832
 msgid "pg_xlogfile_name() cannot be executed during recovery."
 msgstr "pg_xlogfile_name() non può essere eseguito durante il recupero."
 
-#: access/transam/xlog.c:9935
+#: access/transam/xlog.c:9943
 #, c-format
 msgid "xlog redo %s"
 msgstr "xlog redo %s"
 
-#: access/transam/xlog.c:9975
+#: access/transam/xlog.c:9983
 msgid "online backup mode canceled"
 msgstr "modalità backup online annullata"
 
-#: access/transam/xlog.c:9976
+#: access/transam/xlog.c:9984
 #, c-format
 msgid "\"%s\" was renamed to \"%s\"."
 msgstr "\"%s\" è stato rinominato in \"%s\"."
 
-#: access/transam/xlog.c:9983
+#: access/transam/xlog.c:9991
 msgid "online backup mode was not canceled"
 msgstr "la modalità di backup online non è stata annullata"
 
-#: access/transam/xlog.c:9984
+#: access/transam/xlog.c:9992
 #, c-format
 msgid "Could not rename \"%s\" to \"%s\": %m."
 msgstr "Non è stato possibile rinominare \"%s\" in \"%s\": %m."
 
-#: access/transam/xlog.c:10497 access/transam/xlog.c:10519
+#: access/transam/xlog.c:10505 access/transam/xlog.c:10527
 #, c-format
 msgid "could not read from log file %u, segment %u, offset %u: %m"
 msgstr "lettura dal file di log %u fallita, segmento %u, offset %u: %m"
 
-#: access/transam/xlog.c:10608
+#: access/transam/xlog.c:10616
 msgid "received promote request"
 msgstr "richiesta di promozione ricevuta"
 
-#: access/transam/xlog.c:10621
+#: access/transam/xlog.c:10629
 #, c-format
 msgid "trigger file found: %s"
 msgstr "trovato il file trigger: %s"
@@ -9623,7 +9623,7 @@ msgid "unlogged sequences are not supported"
 msgstr "le sequenze non loggate non sono supportate"
 
 #: commands/sequence.c:537 commands/sequence.c:751 commands/sequence.c:793
-#: commands/sequence.c:830 commands/sequence.c:1495 catalog/aclchk.c:3072
+#: commands/sequence.c:830 commands/sequence.c:1495 catalog/aclchk.c:3071
 #, c-format
 msgid "permission denied for sequence %s"
 msgstr "permesso negato per la sequenza %s"
@@ -9671,7 +9671,7 @@ msgstr ""
 #: commands/dbcommands.c:195 commands/dbcommands.c:1342
 #: commands/dbcommands.c:1350 commands/extension.c:1250
 #: commands/extension.c:1258 commands/extension.c:1266
-#: commands/extension.c:2727 commands/collationcmds.c:93 commands/user.c:133
+#: commands/extension.c:2731 commands/collationcmds.c:93 commands/user.c:133
 #: commands/user.c:150 commands/user.c:158 commands/user.c:166
 #: commands/user.c:174 commands/user.c:182 commands/user.c:190
 #: commands/user.c:198 commands/user.c:206 commands/user.c:214
@@ -11167,7 +11167,7 @@ msgstr ""
 "la famiglia di operatori \"%s\" per il metodo di accesso \"%s\" esiste già "
 "nello schema \"%s\""
 
-#: commands/extension.c:149 commands/extension.c:2685
+#: commands/extension.c:149 commands/extension.c:2689
 #, c-format
 msgid "extension \"%s\" does not exist"
 msgstr "l'estensione \"%s\" non esiste"
@@ -11298,7 +11298,7 @@ msgstr "l'estensione \"%s\" esiste già"
 msgid "nested CREATE EXTENSION is not supported"
 msgstr "CREATE EXTENSION annidati non sono supportati"
 
-#: commands/extension.c:1284 commands/extension.c:2745
+#: commands/extension.c:1284 commands/extension.c:2749
 msgid "version to install must be specified"
 msgstr "il nome di versione da installare deve essere specificato"
 
@@ -11314,28 +11314,33 @@ msgstr ""
 msgid "extension \"%s\" must be installed in schema \"%s\""
 msgstr "l'estensione \"%s\" dev'essere installata nello schema \"%s\""
 
-#: commands/extension.c:1435 commands/extension.c:2886
+#: commands/extension.c:1399 commands/extension.c:1405 catalog/namespace.c:358
+#: catalog/namespace.c:2589
+msgid "no schema has been selected to create in"
+msgstr "nessuna schema selezionato per crearci dentro"
+
+#: commands/extension.c:1439 commands/extension.c:2890
 #, c-format
 msgid "required extension \"%s\" is not installed"
 msgstr "l'estensione richiesta \"%s\" non è installata"
 
-#: commands/extension.c:1596 commands/extension.c:2484
+#: commands/extension.c:1600 commands/extension.c:2488
 #: catalog/objectaddress.c:289
 msgid "extension name cannot be qualified"
 msgstr "il nome dell'estensione non può essere qualificato"
 
-#: commands/extension.c:1604
+#: commands/extension.c:1608
 #, c-format
 msgid "extension \"%s\" does not exist, skipping"
 msgstr "l'estensione \"%s\" non esiste, saltata"
 
-#: commands/extension.c:1659
+#: commands/extension.c:1663
 #, c-format
 msgid "cannot drop extension \"%s\" because it is being modified"
 msgstr ""
 "non è possibile eliminare l'estensione \"%s\" perché sta venendo modificata"
 
-#: commands/extension.c:2130
+#: commands/extension.c:2134
 msgid ""
 "pg_extension_config_dump() can only be called from an SQL script executed by "
 "CREATE EXTENSION"
@@ -11343,17 +11348,17 @@ msgstr ""
 "pg_extension_config_dump() può essere richiamata solo da uno script SQL "
 "eseguito da CREATE EXTENSION"
 
-#: commands/extension.c:2142
+#: commands/extension.c:2146
 #, c-format
 msgid "OID %u does not refer to a table"
 msgstr "l'OID %u non si riferisce ad una tabella"
 
-#: commands/extension.c:2147
+#: commands/extension.c:2151
 #, c-format
 msgid "table \"%s\" is not a member of the extension being created"
 msgstr "la tabella \"%s\" non è membra dell'estensione in fase di creazione"
 
-#: commands/extension.c:2511
+#: commands/extension.c:2515
 #, c-format
 msgid ""
 "cannot move extension \"%s\" into schema \"%s\" because the extension "
@@ -11362,31 +11367,31 @@ msgstr ""
 "non è possibile spostare l'estensione \"%s\" nello schema \"%s\" perché "
 "l'estensione contiene lo schema"
 
-#: commands/extension.c:2551 commands/extension.c:2614
+#: commands/extension.c:2555 commands/extension.c:2618
 #, c-format
 msgid "extension \"%s\" does not support SET SCHEMA"
 msgstr "l'estensione \"%s\" non supporta SET SCHEMA"
 
-#: commands/extension.c:2616
+#: commands/extension.c:2620
 #, c-format
 msgid "%s is not in the extension's schema \"%s\""
 msgstr "%s non è nello schema dell'estensione \"%s\""
 
-#: commands/extension.c:2665
+#: commands/extension.c:2669
 msgid "nested ALTER EXTENSION is not supported"
 msgstr "ALTER EXTENSION annidati non sono supportati"
 
-#: commands/extension.c:2756
+#: commands/extension.c:2760
 #, c-format
 msgid "version \"%s\" of extension \"%s\" is already installed"
 msgstr "la versione \"%s\" dell'estensione \"%s\" è già installata"
 
-#: commands/extension.c:2979 catalog/pg_depend.c:164
+#: commands/extension.c:2983 catalog/pg_depend.c:164
 #, c-format
 msgid "%s is already a member of extension \"%s\""
 msgstr "%s fa già parte dell'estensione \"%s\""
 
-#: commands/extension.c:2991
+#: commands/extension.c:2995
 #, c-format
 msgid ""
 "cannot add schema \"%s\" to extension \"%s\" because the schema contains the "
@@ -11395,7 +11400,7 @@ msgstr ""
 "non è possibile aggiungere lo schema \"%s\" all'estensione \"%s\" perché lo "
 "schema contiene l'estensione"
 
-#: commands/extension.c:3009
+#: commands/extension.c:3013
 #, c-format
 msgid "%s is not a member of extension \"%s\""
 msgstr "%s non fa parte dell'estensione \"%s\""
@@ -11609,7 +11614,7 @@ msgstr "il fornitore di etichette di sicurezza \"%s\" non è stato caricato"
 msgid "invalid cursor name: must not be empty"
 msgstr "nome di cursore non valido: non deve essere vuoto"
 
-#: commands/portalcmds.c:413
+#: commands/portalcmds.c:415
 msgid "could not reposition held cursor"
 msgstr "riposizionamento del cursore held fallito"
 
@@ -11800,7 +11805,7 @@ msgstr ""
 msgid "foreign-data wrapper \"%s\" does not exist"
 msgstr "il wrapper di dati esterni \"%s\" non esiste"
 
-#: commands/foreigncmds.c:292 catalog/aclchk.c:3874 catalog/aclchk.c:4556
+#: commands/foreigncmds.c:292 catalog/aclchk.c:3873 catalog/aclchk.c:4555
 #, c-format
 msgid "foreign-data wrapper with OID %u does not exist"
 msgstr "il wrapper di dati esterni con OID %u non esiste"
@@ -11812,7 +11817,7 @@ msgstr "il wrapper di dati esterni con OID %u non esiste"
 msgid "server \"%s\" does not exist"
 msgstr "il server \"%s\" non esiste"
 
-#: commands/foreigncmds.c:391 catalog/aclchk.c:3935 catalog/aclchk.c:4583
+#: commands/foreigncmds.c:391 catalog/aclchk.c:3934 catalog/aclchk.c:4582
 #, c-format
 msgid "foreign server with OID %u does not exist"
 msgstr "il server esterno con OID %u non esiste"
@@ -14539,31 +14544,41 @@ msgstr "creazione del file del server \"%s\" fallita: %m"
 msgid "could not write server file \"%s\": %m"
 msgstr "scrittura del file del server \"%s\" fallita: %m"
 
-#: storage/file/fd.c:406
+#: storage/file/fd.c:411
 #, c-format
 msgid "getrlimit failed: %m"
 msgstr "getrlimit fallito: %m"
 
-#: storage/file/fd.c:496
+#: storage/file/fd.c:501
 msgid "insufficient file descriptors available to start server process"
 msgstr "descrittori di file non sufficienti per avviare il processo server"
 
-#: storage/file/fd.c:497
+#: storage/file/fd.c:502
 #, c-format
 msgid "System allows %d, we need at least %d."
 msgstr "Il sistema ne consente %d, ne occorrono almeno %d."
 
-#: storage/file/fd.c:538 storage/file/fd.c:1450 storage/file/fd.c:1566
+#: storage/file/fd.c:543 storage/file/fd.c:1528 storage/file/fd.c:1643
 #, c-format
 msgid "out of file descriptors: %m; release and retry"
 msgstr "descrittori di file esauriti: %m; sto rilasciando e riprovando"
 
-#: storage/file/fd.c:1091
+#: storage/file/fd.c:1110
 #, c-format
 msgid "temporary file: path \"%s\", size %lu"
 msgstr "file temporaneo: percorso \"%s\", dimensione %lu"
 
-#: storage/file/fd.c:1625
+#: storage/file/fd.c:1504
+#, c-format
+msgid "exceeded maxAllocatedDescs (%d) while trying to open file \"%s\""
+msgstr "maxAllocatedDescs (%d) superato tentando di aprire il file \"%s\""
+
+#: storage/file/fd.c:1619
+#, c-format
+msgid "exceeded maxAllocatedDescs (%d) while trying to open directory \"%s\""
+msgstr "maxAllocatedDescs (%d) superato tentando di aprire la directory \"%s\""
+
+#: storage/file/fd.c:1702
 #, c-format
 msgid "could not read directory \"%s\": %m"
 msgstr "lettura della directory \"%s\" fallita: %m"
@@ -14644,7 +14659,7 @@ msgid "no empty local buffer available"
 msgstr "nessun buffer locale vuoto disponibile"
 
 #: storage/large_object/inv_api.c:277 catalog/aclchk.c:647
-#: catalog/aclchk.c:3677 catalog/aclchk.c:4368 catalog/objectaddress.c:199
+#: catalog/aclchk.c:3676 catalog/aclchk.c:4367 catalog/objectaddress.c:199
 #: catalog/pg_largeobject.c:116 catalog/pg_largeobject.c:176
 #, c-format
 msgid "large object %u does not exist"
@@ -14909,8 +14924,8 @@ msgstr ""
 "Solo RowExclusiveLock o inferiore può essere acquisito sugli oggetti "
 "database durante il ripristino."
 
-#: storage/lmgr/lock.c:724 storage/lmgr/lock.c:793 storage/lmgr/lock.c:2691
-#: storage/lmgr/lock.c:2756
+#: storage/lmgr/lock.c:724 storage/lmgr/lock.c:793 storage/lmgr/lock.c:2701
+#: storage/lmgr/lock.c:2766
 msgid "You might need to increase max_locks_per_transaction."
 msgstr "Potrebbe essere necessario incrementare max_locks_per_transaction."
 
@@ -15753,305 +15768,305 @@ msgstr "i privilegi della colonna sono validi solo per le relazioni"
 msgid "default privileges cannot be set for columns"
 msgstr "i privilegi predefiniti non possono essere impostati sulle colonne"
 
-#: catalog/aclchk.c:1731
+#: catalog/aclchk.c:1730
 #, c-format
 msgid "sequence \"%s\" only supports USAGE, SELECT, and UPDATE privileges"
 msgstr "la sequenza \"%s\" supporta solo i privilegi USAGE, SELECT e UPDATE"
 
-#: catalog/aclchk.c:1748
+#: catalog/aclchk.c:1747
 msgid "invalid privilege type USAGE for table"
 msgstr "tipo di privilegio USAGE non valido per la tabella"
 
-#: catalog/aclchk.c:1913
+#: catalog/aclchk.c:1912
 #, c-format
 msgid "invalid privilege type %s for column"
 msgstr "tipo di privilegio %s non valido per la colonna"
 
-#: catalog/aclchk.c:1926
+#: catalog/aclchk.c:1925
 #, c-format
 msgid "sequence \"%s\" only supports SELECT column privileges"
 msgstr "la sequenza \"%s\" supporta solo i privilegi di SELECT sulla colonna"
 
-#: catalog/aclchk.c:2510
+#: catalog/aclchk.c:2509
 #, c-format
 msgid "language \"%s\" is not trusted"
 msgstr "il linguaggio \"%s\" non è fidato"
 
-#: catalog/aclchk.c:2512
+#: catalog/aclchk.c:2511
 msgid "Only superusers can use untrusted languages."
 msgstr "Solo un superutente può usare linguaggi non fidati."
 
-#: catalog/aclchk.c:3019
+#: catalog/aclchk.c:3018
 #, c-format
 msgid "unrecognized privilege type \"%s\""
 msgstr "tipo di privilegio \"%s\" sconosciuto"
 
-#: catalog/aclchk.c:3068
+#: catalog/aclchk.c:3067
 #, c-format
 msgid "permission denied for column %s"
 msgstr "permesso negato per la colonna %s"
 
-#: catalog/aclchk.c:3070
+#: catalog/aclchk.c:3069
 #, c-format
 msgid "permission denied for relation %s"
 msgstr "permesso negato per la relazione %s"
 
-#: catalog/aclchk.c:3074
+#: catalog/aclchk.c:3073
 #, c-format
 msgid "permission denied for database %s"
 msgstr "permesso negato per il database %s"
 
-#: catalog/aclchk.c:3076
+#: catalog/aclchk.c:3075
 #, c-format
 msgid "permission denied for function %s"
 msgstr "permesso negato per la funzione %s"
 
-#: catalog/aclchk.c:3078
+#: catalog/aclchk.c:3077
 #, c-format
 msgid "permission denied for operator %s"
 msgstr "permesso negato per l'operatore %s"
 
-#: catalog/aclchk.c:3080
+#: catalog/aclchk.c:3079
 #, c-format
 msgid "permission denied for type %s"
 msgstr "permesso negato per il tipo %s"
 
-#: catalog/aclchk.c:3082
+#: catalog/aclchk.c:3081
 #, c-format
 msgid "permission denied for language %s"
 msgstr "permesso negato per il linguaggio %s"
 
-#: catalog/aclchk.c:3084
+#: catalog/aclchk.c:3083
 #, c-format
 msgid "permission denied for large object %s"
 msgstr "permesso negato per large object %s"
 
-#: catalog/aclchk.c:3086
+#: catalog/aclchk.c:3085
 #, c-format
 msgid "permission denied for schema %s"
 msgstr "permesso negato per lo schema %s"
 
-#: catalog/aclchk.c:3088
+#: catalog/aclchk.c:3087
 #, c-format
 msgid "permission denied for operator class %s"
 msgstr "permesso negato per la classe di operatori %s"
 
-#: catalog/aclchk.c:3090
+#: catalog/aclchk.c:3089
 #, c-format
 msgid "permission denied for operator family %s"
 msgstr "permesso negato per la famiglia di operatori %s"
 
-#: catalog/aclchk.c:3092
+#: catalog/aclchk.c:3091
 #, c-format
 msgid "permission denied for collation %s"
 msgstr "permesso negato per l'ordinamento %s"
 
-#: catalog/aclchk.c:3094
+#: catalog/aclchk.c:3093
 #, c-format
 msgid "permission denied for conversion %s"
 msgstr "permesso negato per la conversione %s"
 
-#: catalog/aclchk.c:3096
+#: catalog/aclchk.c:3095
 #, c-format
 msgid "permission denied for tablespace %s"
 msgstr "permesso negato per il tablespace %s"
 
-#: catalog/aclchk.c:3098
+#: catalog/aclchk.c:3097
 #, c-format
 msgid "permission denied for text search dictionary %s"
 msgstr "permesso negato per il dizionario di ricerca di testo %s"
 
-#: catalog/aclchk.c:3100
+#: catalog/aclchk.c:3099
 #, c-format
 msgid "permission denied for text search configuration %s"
 msgstr "permesso negato per la configurazione di ricerca di testo %s"
 
-#: catalog/aclchk.c:3102
+#: catalog/aclchk.c:3101
 #, c-format
 msgid "permission denied for foreign-data wrapper %s"
 msgstr "permesso negato per il wrapper di dati esterni %s"
 
-#: catalog/aclchk.c:3104
+#: catalog/aclchk.c:3103
 #, c-format
 msgid "permission denied for foreign server %s"
 msgstr "permesso negato per il server esterno %s"
 
-#: catalog/aclchk.c:3106
+#: catalog/aclchk.c:3105
 #, c-format
 msgid "permission denied for extension %s"
 msgstr "permesso negato per l'estensione %s"
 
-#: catalog/aclchk.c:3112 catalog/aclchk.c:3114
+#: catalog/aclchk.c:3111 catalog/aclchk.c:3113
 #, c-format
 msgid "must be owner of relation %s"
 msgstr "bisogna essere proprietari della relazione %s"
 
-#: catalog/aclchk.c:3116
+#: catalog/aclchk.c:3115
 #, c-format
 msgid "must be owner of sequence %s"
 msgstr "bisogna essere proprietari della sequenza %s"
 
-#: catalog/aclchk.c:3118
+#: catalog/aclchk.c:3117
 #, c-format
 msgid "must be owner of database %s"
 msgstr "bisogna essere proprietari del database %s"
 
-#: catalog/aclchk.c:3120
+#: catalog/aclchk.c:3119
 #, c-format
 msgid "must be owner of function %s"
 msgstr "bisogna essere proprietari della funzione %s"
 
-#: catalog/aclchk.c:3122
+#: catalog/aclchk.c:3121
 #, c-format
 msgid "must be owner of operator %s"
 msgstr "bisogna essere proprietari dell'operatore %s"
 
-#: catalog/aclchk.c:3124
+#: catalog/aclchk.c:3123
 #, c-format
 msgid "must be owner of type %s"
 msgstr "bisogna essere proprietari del tipo %s"
 
-#: catalog/aclchk.c:3126
+#: catalog/aclchk.c:3125
 #, c-format
 msgid "must be owner of language %s"
 msgstr "bisogna essere proprietari del linguaggio %s"
 
-#: catalog/aclchk.c:3128
+#: catalog/aclchk.c:3127
 #, c-format
 msgid "must be owner of large object %s"
 msgstr "bisogna essere proprietari del large object %s"
 
-#: catalog/aclchk.c:3130
+#: catalog/aclchk.c:3129
 #, c-format
 msgid "must be owner of schema %s"
 msgstr "bisogna essere proprietari dello schema %s"
 
-#: catalog/aclchk.c:3132
+#: catalog/aclchk.c:3131
 #, c-format
 msgid "must be owner of operator class %s"
 msgstr "bisogna essere proprietari della classe di operatore %s"
 
-#: catalog/aclchk.c:3134
+#: catalog/aclchk.c:3133
 #, c-format
 msgid "must be owner of operator family %s"
 msgstr "bisogna essere proprietari della famiglia di operatori %s"
 
-#: catalog/aclchk.c:3136
+#: catalog/aclchk.c:3135
 #, c-format
 msgid "must be owner of collation %s"
 msgstr "bisogna essere proprietari dell'ordinamento %s"
 
-#: catalog/aclchk.c:3138
+#: catalog/aclchk.c:3137
 #, c-format
 msgid "must be owner of conversion %s"
 msgstr "bisogna essere proprietari della conversione %s"
 
-#: catalog/aclchk.c:3140
+#: catalog/aclchk.c:3139
 #, c-format
 msgid "must be owner of tablespace %s"
 msgstr "bisogna essere proprietari del tablespace %s"
 
-#: catalog/aclchk.c:3142
+#: catalog/aclchk.c:3141
 #, c-format
 msgid "must be owner of text search dictionary %s"
 msgstr "bisogna essere proprietari del dizionario di ricerca di testo %s"
 
-#: catalog/aclchk.c:3144
+#: catalog/aclchk.c:3143
 #, c-format
 msgid "must be owner of text search configuration %s"
 msgstr "bisogna essere proprietari della configurazione di ricerca di testo %s"
 
-#: catalog/aclchk.c:3146
+#: catalog/aclchk.c:3145
 #, c-format
 msgid "must be owner of foreign-data wrapper %s"
 msgstr "bisogna essere proprietari del wrapper di dati esterni %s"
 
-#: catalog/aclchk.c:3148
+#: catalog/aclchk.c:3147
 #, c-format
 msgid "must be owner of foreign server %s"
 msgstr "bisogna essere proprietari del server esterno %s"
 
-#: catalog/aclchk.c:3150
+#: catalog/aclchk.c:3149
 #, c-format
 msgid "must be owner of extension %s"
 msgstr "bisogna essere proprietari dell'estensione %s"
 
-#: catalog/aclchk.c:3192
+#: catalog/aclchk.c:3191
 #, c-format
 msgid "permission denied for column \"%s\" of relation \"%s\""
 msgstr "permesso negato per la colonna \"%s\" della relazione \"%s\""
 
-#: catalog/aclchk.c:3219
+#: catalog/aclchk.c:3218
 #, c-format
 msgid "role with OID %u does not exist"
 msgstr "il ruolo con OID %u non esiste"
 
-#: catalog/aclchk.c:3312 catalog/aclchk.c:3320
+#: catalog/aclchk.c:3311 catalog/aclchk.c:3319
 #, c-format
 msgid "attribute %d of relation with OID %u does not exist"
 msgstr "l'attributo %d della relazione con OID %u non esiste"
 
-#: catalog/aclchk.c:3393 catalog/aclchk.c:4219
+#: catalog/aclchk.c:3392 catalog/aclchk.c:4218
 #, c-format
 msgid "relation with OID %u does not exist"
 msgstr "la relazione con OID %u non esiste"
 
-#: catalog/aclchk.c:3601 catalog/aclchk.c:4323
+#: catalog/aclchk.c:3600 catalog/aclchk.c:4322
 #, c-format
 msgid "language with OID %u does not exist"
 msgstr "il linguaggio con OID %u non esiste"
 
-#: catalog/aclchk.c:3762 catalog/aclchk.c:4395
+#: catalog/aclchk.c:3761 catalog/aclchk.c:4394
 #, c-format
 msgid "schema with OID %u does not exist"
 msgstr "lo schema con OID %u non esiste"
 
-#: catalog/aclchk.c:3816 catalog/aclchk.c:4422
+#: catalog/aclchk.c:3815 catalog/aclchk.c:4421
 #, c-format
 msgid "tablespace with OID %u does not exist"
 msgstr "il tablespace con l'OID %u non esiste"
 
-#: catalog/aclchk.c:4245
+#: catalog/aclchk.c:4244
 #, c-format
 msgid "type with OID %u does not exist"
 msgstr "il tipo con OID %u non esiste"
 
-#: catalog/aclchk.c:4271
+#: catalog/aclchk.c:4270
 #, c-format
 msgid "operator with OID %u does not exist"
 msgstr "l'operatore con OID %u non esiste"
 
-#: catalog/aclchk.c:4448
+#: catalog/aclchk.c:4447
 #, c-format
 msgid "operator class with OID %u does not exist"
 msgstr "la classe di operatori con OID %u non esiste"
 
-#: catalog/aclchk.c:4475
+#: catalog/aclchk.c:4474
 #, c-format
 msgid "operator family with OID %u does not exist"
 msgstr "la famiglia di operatori con OID %u non esiste"
 
-#: catalog/aclchk.c:4502
+#: catalog/aclchk.c:4501
 #, c-format
 msgid "text search dictionary with OID %u does not exist"
 msgstr "il dizionario di ricerca di testo con OID %u non esiste"
 
-#: catalog/aclchk.c:4529
+#: catalog/aclchk.c:4528
 #, c-format
 msgid "text search configuration with OID %u does not exist"
 msgstr "la configurazione di ricerca di testo con OID %u non esiste"
 
-#: catalog/aclchk.c:4636
+#: catalog/aclchk.c:4635
 #, c-format
 msgid "collation with OID %u does not exist"
 msgstr "l'ordinamento con OID %u non esiste"
 
-#: catalog/aclchk.c:4662
+#: catalog/aclchk.c:4661
 #, c-format
 msgid "conversion with OID %u does not exist"
 msgstr "la conversione con OID %u non esiste"
 
-#: catalog/aclchk.c:4703
+#: catalog/aclchk.c:4702
 #, c-format
 msgid "extension with OID %u does not exist"
 msgstr "l'estensione con OID %u non esiste"
@@ -16059,10 +16074,6 @@ msgstr "l'estensione con OID %u non esiste"
 #: catalog/namespace.c:260
 msgid "temporary tables cannot specify a schema name"
 msgstr "Le tabelle temporanee non possono specificare un nome di schema"
-
-#: catalog/namespace.c:358 catalog/namespace.c:2589
-msgid "no schema has been selected to create in"
-msgstr "nessuna schema selezionato per crearci dentro"
 
 #: catalog/namespace.c:410 catalog/namespace.c:423
 msgid "cannot create relations in temporary schemas of other sessions"
@@ -16081,7 +16092,7 @@ msgstr "solo relazioni temporanee possono essere create in schemi temporanei"
 msgid "cross-database references are not implemented: %s"
 msgstr "i riferimenti tra database diversi non sono implementati: %s"
 
-#: catalog/namespace.c:2395 gram.y:11634 gram.y:12834 parser/parse_expr.c:784
+#: catalog/namespace.c:2395 gram.y:11634 gram.y:12842 parser/parse_expr.c:784
 #: parser/parse_target.c:1092
 #, c-format
 msgid "improper qualified name (too many dotted names): %s"
@@ -17048,56 +17059,56 @@ msgstr "il tipo associato ad anynonarray è di tipo array: %s"
 msgid "type matched to anyenum is not an enum type: %s"
 msgstr "il tipo associato ad anyenum non è una enumerazione: %s"
 
-#: gram.y:915
+#: gram.y:916
 #, c-format
 msgid "unrecognized role option \"%s\""
 msgstr "opzione di ruolo \"%s\" sconosciuta"
 
-#: gram.y:1301
+#: gram.y:1302
 msgid "current database cannot be changed"
 msgstr "il database corrente non può essere cambiato"
 
-#: gram.y:1419 gram.y:1434
+#: gram.y:1420 gram.y:1435
 msgid "time zone interval must be HOUR or HOUR TO MINUTE"
 msgstr "l'intervallo della time zone deve essere HOUR o HOUR TO MINUTE"
 
-#: gram.y:1439 gram.y:9246 gram.y:11759
+#: gram.y:1440 gram.y:9246 gram.y:11759
 msgid "interval precision specified twice"
 msgstr "intervallo di precisione specificato due volte"
 
-#: gram.y:3005
+#: gram.y:3006
 msgid "CREATE TABLE AS cannot specify INTO"
 msgstr "CREATE TABLE AS non può specificare INTO"
 
-#: gram.y:4058
+#: gram.y:4059
 msgid "duplicate trigger events specified"
 msgstr "evento del trigger specificato più volte"
 
-#: gram.y:4153 parser/parse_utilcmd.c:2527 parser/parse_utilcmd.c:2553
+#: gram.y:4154 parser/parse_utilcmd.c:2527 parser/parse_utilcmd.c:2553
 msgid "constraint declared INITIALLY DEFERRED must be DEFERRABLE"
 msgstr "un vincolo dichiarato INITIALLY DEFERRED dev'essere DEFERRABLE"
 
-#: gram.y:4160
+#: gram.y:4161
 msgid "conflicting constraint properties"
 msgstr "proprietà del vincolo in conflitto"
 
-#: gram.y:4221
+#: gram.y:4222
 msgid "CREATE ASSERTION is not yet implemented"
 msgstr "CREATE ASSERTION non è stata ancora implementata"
 
-#: gram.y:4237
+#: gram.y:4238
 msgid "DROP ASSERTION is not yet implemented"
 msgstr "DROP ASSERTION non è stata ancora implementata"
 
-#: gram.y:4573
+#: gram.y:4574
 msgid "RECHECK is no longer required"
 msgstr "RECHECK non è più richiesto"
 
-#: gram.y:4574
+#: gram.y:4575
 msgid "Update your data type."
 msgstr "Aggiorna il tuo tipo di dato."
 
-#: gram.y:7297 gram.y:7303 gram.y:7309
+#: gram.y:7298 gram.y:7304 gram.y:7310
 msgid "WITH CHECK OPTION is not implemented"
 msgstr "WITH CHECK OPTION non è implementata"
 
@@ -17182,50 +17193,50 @@ msgstr ""
 msgid "type modifier cannot have parameter name"
 msgstr "un modificatore di tipo non può avere un nome di parametro"
 
-#: gram.y:12329 gram.y:12537
+#: gram.y:12337 gram.y:12545
 msgid "improper use of \"*\""
 msgstr "uso improprio di \"*\""
 
-#: gram.y:12468
+#: gram.y:12476
 msgid "wrong number of parameters on left side of OVERLAPS expression"
 msgstr "numero errato di parametri a sinistra dell'espressione OVERLAPS"
 
-#: gram.y:12475
+#: gram.y:12483
 msgid "wrong number of parameters on right side of OVERLAPS expression"
 msgstr "numero errato di parametri a destra dell'espressione OVERLAPS"
 
-#: gram.y:12600
+#: gram.y:12608
 msgid "multiple ORDER BY clauses not allowed"
 msgstr "non è possibile avere più di una clausola ORDER BY"
 
-#: gram.y:12611
+#: gram.y:12619
 msgid "multiple OFFSET clauses not allowed"
 msgstr "non è possibile avere più di una clausola OFFSET"
 
-#: gram.y:12620
+#: gram.y:12628
 msgid "multiple LIMIT clauses not allowed"
 msgstr "non è possibile avere più di una clausola LIMIT"
 
-#: gram.y:12629
+#: gram.y:12637
 msgid "multiple WITH clauses not allowed"
 msgstr "non è possibile avere più di una clausola WITH"
 
-#: gram.y:12775
+#: gram.y:12783
 msgid "OUT and INOUT arguments aren't allowed in TABLE functions"
 msgstr "gli argomenti OUT e INOUT non sono permessi nelle funzioni TABLE"
 
-#: gram.y:12876
+#: gram.y:12884
 msgid "multiple COLLATE clauses not allowed"
 msgstr "non è possibile avere più di una clausola COLLATE"
 
 #. translator: %s is CHECK, UNIQUE, or similar
-#: gram.y:12914 gram.y:12927
+#: gram.y:12922 gram.y:12935
 #, c-format
 msgid "%s constraints cannot be marked DEFERRABLE"
 msgstr "un vincolo %s non può essere marcato DEFERRABLE"
 
 #. translator: %s is CHECK, UNIQUE, or similar
-#: gram.y:12940
+#: gram.y:12948
 #, c-format
 msgid "%s constraints cannot be marked NOT VALID"
 msgstr "un vincolo %s non può essere marcato NOT VALID"
@@ -17902,10 +17913,6 @@ msgstr "parametro $%d non presente"
 msgid "NULLIF requires = operator to yield boolean"
 msgstr "NULLIF richiede che l'operatore = restituisca un valore booleano"
 
-#: parser/parse_expr.c:1202
-msgid "arguments of row IN must all be row expressions"
-msgstr "gli argomenti della riga IN devono essere tutti espressioni di riga"
-
 #: parser/parse_expr.c:1416
 msgid "subquery cannot have SELECT INTO"
 msgstr "sa sottoquery non può avere SELECT INTO"
@@ -18522,7 +18529,7 @@ msgstr ""
 msgid "invalid type name \"%s\""
 msgstr "nome di tipo \"%s\" non valido"
 
-#: parser/scansup.c:190
+#: parser/scansup.c:192
 #, c-format
 msgid "identifier \"%s\" will be truncated to \"%s\""
 msgstr "l'identificativo \"%s\" sarà troncato a \"%s\""
