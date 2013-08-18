@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-07-01 00:27+0000\n"
-"PO-Revision-Date: 2013-07-01 18:04+0100\n"
+"POT-Creation-Date: 2013-08-16 22:19+0000\n"
+"PO-Revision-Date: 2013-08-18 19:45+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: pg_resetxlog.c:133
 #, c-format
@@ -460,9 +460,9 @@ msgstr ""
 
 #: pg_resetxlog.c:1039
 #, c-format
-msgid "  -m XID,XID       set next and oldest multitransaction ID\n"
+msgid "  -m MXID,MXID     set next and oldest multitransaction ID\n"
 msgstr ""
-"  -m XID,XID       imposta gli ID multitransazione successivo e più vecchio\n"
+"  -m MXID,MXID     imposta gli ID multitransazione successivo e più vecchio\n"
 
 #: pg_resetxlog.c:1040
 #, c-format
