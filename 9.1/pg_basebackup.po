@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-08-15 12:45+0000\n"
-"PO-Revision-Date: 2013-08-18 21:39+0100\n"
+"POT-Creation-Date: 2013-10-03 02:00+0000\n"
+"PO-Revision-Date: 2013-10-04 01:25+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: pg_basebackup.c:96 pg_basebackup.c:110
 #, c-format
@@ -260,8 +260,8 @@ msgstr "%s: lettura dei dati COPY fallita: %s"
 
 #: pg_basebackup.c:515
 #, c-format
-msgid "%s: received invalid directory (too long): %s"
-msgstr "%s: directory ricevuta non valida (troppo lunga): %s"
+msgid "%s: received invalid directory (too long): %s\n"
+msgstr "%s: ricevuta directory non valida (troppo lunga): %s\n"
 
 #: pg_basebackup.c:576
 #, c-format
