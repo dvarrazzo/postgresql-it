@@ -25,7 +25,7 @@
 # Attuale traduttore: Emanuele Zamprogno <ez@medicinaopen.info>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: pgscripts (PostgreSQL) 9.3\n"
+"Project-Id-Version: pgscripts (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2014-07-30 04:12+0000\n"
 "PO-Revision-Date: 2014-07-30 22:45+0100\n"
