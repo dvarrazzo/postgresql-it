@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2014-07-30 04:08+0000\n"
-"PO-Revision-Date: 2014-07-30 22:46+0100\n"
+"PO-Revision-Date: 2014-07-30 22:54+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -8949,7 +8949,8 @@ msgstr "il multixact più vecchio è remoto"
 msgid ""
 "Close open transactions with multixacts soon to avoid wraparound problems."
 msgstr ""
-"Chiudi presto le transazioni con multixact per avere problemi di wraparound."
+"Chiudi presto le transazioni con multixact per evitare problemi di "
+"wraparound."
 
 #: commands/vacuum.c:1044
 #, c-format
