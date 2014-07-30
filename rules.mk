@@ -19,6 +19,7 @@ dlpots:
 updatepots:
 	for f in *.po; do \
 		msgmerge -N $$f $${f%.po}.pot | ../tools/nostale.py | sponge $$f; \
+		git diff $$f | egrep '^[-+][^-+#"]' | egrep . -q || git checkout $$f; \
 	done
 
 ifdef UPDATE_FROM
@@ -27,6 +28,7 @@ update:
 	for f in *.po; do \
 		msgmerge -N ../${UPDATE_FROM}/$$f $$f | ../tools/nostale.py | sponge $$f; \
 		sed -i 's/\(Project-Id-Version:.* \)\(${UPDATE_FROM}\)\(.*\)/\1${VERSION}\3/' $$f; \
+		git diff $$f | egrep '^[-+][^-+#"]' | egrep . -q || git checkout $$f; \
 	done
 
 endif
