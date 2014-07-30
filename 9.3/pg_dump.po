@@ -307,7 +307,7 @@ msgstr "archiviatore parallelo"
 #: parallel.c:143
 #, c-format
 msgid "%s: WSAStartup failed: %d\n"
-msgstr "%s: WSAStartup fallito: %d\n"
+msgstr "%s: WSAStartup fallita: %d\n"
 
 #: parallel.c:343
 #, c-format

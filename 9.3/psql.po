@@ -86,12 +86,12 @@ msgstr "pclose fallita: %s"
 #: ../../port/wait_error.c:47
 #, c-format
 msgid "command not executable"
-msgstr "comando non trovato"
+msgstr "comando non eseguibile"
 
 #: ../../port/wait_error.c:51
 #, c-format
 msgid "command not found"
-msgstr "comando non eseguibile"
+msgstr "comando non trovato"
 
 #: ../../port/wait_error.c:56
 #, c-format
