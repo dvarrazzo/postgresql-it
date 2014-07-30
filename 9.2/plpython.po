@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2013-01-21 05:39+0000\n"
-"PO-Revision-Date: 2012-11-02 15:26+0100\n"
+"POT-Creation-Date: 2014-07-29 09:19+0000\n"
+"PO-Revision-Date: 2014-07-30 22:35+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -166,23 +166,23 @@ msgstr ""
 "creazione del nuovo dizionario nella costruzione degli argomenti del trigger "
 "fallita"
 
-#: plpy_exec.c:664
+#: plpy_exec.c:662
 #, c-format
 msgid "TD[\"new\"] deleted, cannot modify row"
 msgstr "TD[\"new\"] cancellato, non è possibile modificare la riga"
 
-#: plpy_exec.c:667
+#: plpy_exec.c:666
 #, c-format
 msgid "TD[\"new\"] is not a dictionary"
 msgstr "TD[\"new\"] non è un dizionario"
 
-#: plpy_exec.c:691
+#: plpy_exec.c:690
 #, c-format
 msgid "TD[\"new\"] dictionary key at ordinal position %d is not a string"
 msgstr ""
 "la chiave di dizionario TD[\"new\"] alla posizione %d non è una stringa"
 
-#: plpy_exec.c:697
+#: plpy_exec.c:696
 #, c-format
 msgid ""
 "key \"%s\" found in TD[\"new\"] does not exist as a column in the triggering "
@@ -191,23 +191,23 @@ msgstr ""
 "la chiave \"%s\" trovata in TD[\"new\"] non esiste come colonna nella riga "
 "del trigger"
 
-#: plpy_exec.c:778
+#: plpy_exec.c:776
 #, c-format
 msgid "while modifying trigger row"
 msgstr "durante la modifica della riga trigger"
 
-#: plpy_exec.c:839
+#: plpy_exec.c:837
 #, c-format
 msgid "forcibly aborting a subtransaction that has not been exited"
 msgstr "interruzione forzata di una sotto-transazione che non è terminata"
 
-#: plpy_main.c:100
+#: plpy_main.c:101
 #, c-format
 msgid "Python major version mismatch in session"
 msgstr ""
 "mancata corrispondenza della versione maggiore di Python major nella sessione"
 
-#: plpy_main.c:101
+#: plpy_main.c:102
 #, c-format
 msgid ""
 "This session has previously used Python major version %d, and it is now "
@@ -216,38 +216,38 @@ msgstr ""
 "Questa sessione ha precedentemente usato Python con versione maggiore %d e "
 "ora sta tentando di usare Python con versione maggiore %d."
 
-#: plpy_main.c:103
+#: plpy_main.c:104
 #, c-format
 msgid "Start a new session to use a different Python major version."
 msgstr ""
 "Avvia una nuova sessione per usa una versione maggiore di Python diversa."
 
-#: plpy_main.c:118
+#: plpy_main.c:119
 #, c-format
 msgid "untrapped error in initialization"
 msgstr "errore non catturato durante l'inizializzazione"
 
-#: plpy_main.c:141
+#: plpy_main.c:142
 #, c-format
 msgid "could not import \"__main__\" module"
 msgstr "importazione del modulo \"__main__\""
 
-#: plpy_main.c:146
+#: plpy_main.c:147
 #, c-format
 msgid "could not create globals"
 msgstr "creazione delle variabili globali fallita"
 
-#: plpy_main.c:150
+#: plpy_main.c:151
 #, c-format
 msgid "could not initialize globals"
 msgstr "inizializzazione delle variabili globali fallita"
 
-#: plpy_main.c:347
+#: plpy_main.c:355
 #, c-format
 msgid "PL/Python function \"%s\""
 msgstr "funzione PL/Python \"%s\""
 
-#: plpy_main.c:354
+#: plpy_main.c:362
 #, c-format
 msgid "PL/Python anonymous code block"
 msgstr "blocco di codice anonimo in PL/Python"
@@ -286,27 +286,27 @@ msgstr "non è stato possibile espandere gli argomenti in plpy.elog"
 msgid "could not parse error message in plpy.elog"
 msgstr "non è stato possibile interpretare il messaggio di errore in plpy.elog"
 
-#: plpy_procedure.c:194
+#: plpy_procedure.c:199
 #, c-format
 msgid "trigger functions can only be called as triggers"
 msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 
-#: plpy_procedure.c:199 plpy_typeio.c:406
+#: plpy_procedure.c:204 plpy_typeio.c:406
 #, c-format
 msgid "PL/Python functions cannot return type %s"
 msgstr "le funzioni PL/Python non possono restituire il tipo %s"
 
-#: plpy_procedure.c:281
+#: plpy_procedure.c:286
 #, c-format
 msgid "PL/Python functions cannot accept type %s"
 msgstr "le funzioni PL/Python non possono accettare il tipo %s"
 
-#: plpy_procedure.c:377
+#: plpy_procedure.c:382
 #, c-format
 msgid "could not compile PL/Python function \"%s\""
 msgstr "compilazione della funzione PL/Python \"%s\" fallita"
 
-#: plpy_procedure.c:380
+#: plpy_procedure.c:385
 #, c-format
 msgid "could not compile anonymous PL/Python code block"
 msgstr "compilazione del blocco di codice anonimo PL/Python fallita"
@@ -350,11 +350,6 @@ msgstr "SPI_execute_plan ha fallito: %s"
 #, c-format
 msgid "SPI_execute failed: %s"
 msgstr "SPI_execute ha fallito: %s"
-
-#: plpy_spi.c:439
-#, c-format
-msgid "unrecognized error in PLy_spi_execute_fetch_result"
-msgstr "errore sconosciuto nella funzione PLy_spi_execute_fetch_result"
 
 #: plpy_subxactobject.c:122
 #, c-format
