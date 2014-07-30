@@ -80,8 +80,11 @@ mopack:
 
 # propagate the changes to a pgtranslation working copy
 pgtrpush:
-	(cd $(PGTR_WC) && git checkout $(PGTR_BRANCH))
+	(cd $(PGTR_WC) && git checkout $(PGTR_BRANCH) && git pull)
 	for f in *.po; do \
 		msgcat --no-wrap -o $(PGTR_WC)/$(LANG)/$$f $$f; \
+		(cd $(PGTR_WC) \
+			&& git diff $(LANG)/$$f | egrep '^[-+][^-+#"]' | egrep . -q \
+			|| git checkout $(LANG)/$$f); \
 	done
-	# (cd $(PGTR_WC) && git commit -m "$(LANG): translation update" .)
+	(cd $(PGTR_WC) && git commit -m "$(LANG): translation updates" $(LANG))

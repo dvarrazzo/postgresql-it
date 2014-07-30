@@ -1,6 +1,6 @@
 SUBDIRS = 9.4 9.3 9.2 9.1 9.0 8.4
 
-all dlpots updatepots check popack mopack clean:
+all dlpots updatepots check popack mopack clean pgtrpush:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
 
 update:
