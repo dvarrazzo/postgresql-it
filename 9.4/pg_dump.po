@@ -105,17 +105,17 @@ msgstr "processo figlio terminato da eccezione 0x%X"
 #: ../../common/wait_error.c:73
 #, c-format
 msgid "child process was terminated by signal %s"
-msgstr "processo figlio terminato dal segnale %s"
+msgstr "processo figlio terminato da segnale %s"
 
 #: ../../common/wait_error.c:77
 #, c-format
 msgid "child process was terminated by signal %d"
-msgstr "processo figlio terminato dal segnale %d"
+msgstr "processo figlio terminato da segnale %d"
 
 #: ../../common/wait_error.c:82
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "processo figlio terminato con stato non riconosciuto %d"
+msgstr "processo figlio uscito con stato non riconosciuto %d"
 
 #: common.c:105
 #, c-format
@@ -347,7 +347,7 @@ msgstr "archiviatore parallelo"
 #: parallel.c:143
 #, c-format
 msgid "%s: WSAStartup failed: %d\n"
-msgstr "%s: WSAStartup fallito: %d\n"
+msgstr "%s: WSAStartup fallita: %d\n"
 
 #: parallel.c:343
 #, c-format

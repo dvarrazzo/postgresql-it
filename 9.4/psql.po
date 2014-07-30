@@ -100,12 +100,12 @@ msgstr "errore nella ricerca del nome: %s"
 #: ../../common/wait_error.c:47
 #, c-format
 msgid "command not executable"
-msgstr "comando non trovato"
+msgstr "comando non eseguibile"
 
 #: ../../common/wait_error.c:51
 #, c-format
 msgid "command not found"
-msgstr "comando non eseguibile"
+msgstr "comando non trovato"
 
 #: ../../common/wait_error.c:56
 #, c-format
@@ -4695,7 +4695,7 @@ msgstr ""
 #: startup.c:609
 #, c-format
 msgid "%s: could not find own program executable\n"
-msgstr "%s: proprio programma eseguibile non trovato\n"
+msgstr "%s: il proprio programma eseguibile non è stato trovato\n"
 
 #: tab-complete.c:4085
 #, c-format
