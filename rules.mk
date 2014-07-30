@@ -9,6 +9,7 @@ all: $(MOS)
 
 URLPATTERN ?= "po-$(VERSION)-branch"
 
+# download .pot files from PG website
 dlpots:
 	for u in $$(wget -O - http://babel.postgresql.org/ \
 			| egrep  "href=\"$(URLPATTERN)/.*pot\"" \
@@ -16,6 +17,7 @@ dlpots:
 		wget -O $$(basename $$u) http://babel.postgresql.org/$$u; \
 	done
 
+# update .po files with the new strings downloaded by dlpots
 updatepots:
 	for f in *.po; do \
 		msgmerge -N $$f $${f%.po}.pot | ../tools/nostale.py | sponge $$f; \
@@ -24,6 +26,7 @@ updatepots:
 
 ifdef UPDATE_FROM
 
+# copy translations from newer PG version to this
 update:
 	for f in *.po; do \
 		msgmerge -N ../${UPDATE_FROM}/$$f $$f | ../tools/nostale.py | sponge $$f; \
@@ -45,6 +48,13 @@ uniform:
 		done \
 	done
 
+# Revert files whose only changes are in comments and metadata
+notrivial:
+	for f in *.po; do \
+		git diff $$f | egrep '^[-+][^-+#"]' | egrep . -q || git checkout $$f; \
+	done
+
+# Look for translation errors
 check: $(MOS)
 	../tools/chkpos.py $(POS)
 
