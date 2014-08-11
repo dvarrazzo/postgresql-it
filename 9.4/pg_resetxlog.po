@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-07-30 04:12+0000\n"
-"PO-Revision-Date: 2014-07-30 22:33+0100\n"
+"POT-Creation-Date: 2014-08-11 14:42+0000\n"
+"PO-Revision-Date: 2014-08-12 00:10+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -425,7 +425,7 @@ msgstr "DB di OldestXID:                            %u\n"
 
 #: pg_resetxlog.c:686
 #, c-format
-msgid "NextXID Epoch:                        %u\n"
+msgid "NextXID epoch:                        %u\n"
 msgstr "Epoca del NextXID:                          %u\n"
 
 #: pg_resetxlog.c:751

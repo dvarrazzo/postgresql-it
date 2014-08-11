@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-07-30 04:12+0000\n"
-"PO-Revision-Date: 2014-07-30 22:22+0100\n"
+"POT-Creation-Date: 2014-08-11 14:42+0000\n"
+"PO-Revision-Date: 2014-08-12 00:08+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -404,26 +404,26 @@ msgid "%s: could not close compressed file \"%s\": %s\n"
 msgstr "%s: chiusura del file compresso \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:953 pg_recvlogical.c:555 receivelog.c:160 receivelog.c:295
-#: receivelog.c:670
+#: receivelog.c:674
 #, c-format
 msgid "%s: could not close file \"%s\": %s\n"
 msgstr "%s: chiusura del file \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:964 pg_basebackup.c:1200 pg_recvlogical.c:421
-#: receivelog.c:885
+#: receivelog.c:890
 #, c-format
 msgid "%s: could not read COPY data: %s"
 msgstr "%s: lettura dei dati COPY fallita: %s"
 
 #: pg_basebackup.c:1126
 #, c-format
-msgid "%s: could not remove symbolic link \"%s\": %s"
-msgstr "%s: rimozione del link simbolico \"%s\" fallita: %s"
+msgid "%s: could not remove symbolic link \"%s\": %s\n"
+msgstr "%s: rimozione del link simbolico \"%s\" fallita: %s\n"
 
-#: pg_basebackup.c:1132
+#: pg_basebackup.c:1132 pg_basebackup.c:2245
 #, c-format
-msgid "%s: could not create symbolic link \"%s\": %s"
-msgstr "%s: creazione del link simbolico \"%s\" fallita: %s"
+msgid "%s: could not create symbolic link \"%s\": %s\n"
+msgstr "%s: creazione del link simbolico \"%s\" fallita: %s\n"
 
 #: pg_basebackup.c:1214
 #, c-format
@@ -689,11 +689,6 @@ msgstr ""
 msgid "%s: this build does not support compression\n"
 msgstr "%s: questo binario compilato non supporta la compressione\n"
 
-#: pg_basebackup.c:2245
-#, c-format
-msgid "%s: could not create symbolic link \"%s\": %s\n"
-msgstr "%s: creazione del link simbolico \"%s\" fallita: %s\n"
-
 #: pg_basebackup.c:2250
 #, c-format
 msgid "%s: symlinks are not supported on this platform"
@@ -946,22 +941,22 @@ msgstr "%s: streaming iniziato\n"
 msgid "%s: could not open log file \"%s\": %s\n"
 msgstr "%s: apertura del file di log \"%s\" fallita: %s\n"
 
-#: pg_recvlogical.c:398 receivelog.c:833
+#: pg_recvlogical.c:398 receivelog.c:837
 #, c-format
 msgid "%s: select() failed: %s\n"
 msgstr "%s: select() fallita: %s\n"
 
-#: pg_recvlogical.c:407 receivelog.c:841
+#: pg_recvlogical.c:407 receivelog.c:845
 #, c-format
 msgid "%s: could not receive data from WAL stream: %s"
 msgstr "%s: ricezione dati dallo stream WAL fallita: %s"
 
-#: pg_recvlogical.c:448 pg_recvlogical.c:487 receivelog.c:907 receivelog.c:942
+#: pg_recvlogical.c:448 pg_recvlogical.c:487 receivelog.c:912 receivelog.c:947
 #, c-format
 msgid "%s: streaming header too small: %d\n"
 msgstr "%s: intestazione dello streaming troppo piccola: %d\n"
 
-#: pg_recvlogical.c:470 receivelog.c:1048
+#: pg_recvlogical.c:470 receivelog.c:1053
 #, c-format
 msgid "%s: unrecognized streaming header: \"%c\"\n"
 msgstr "%s: intestazione dello streaming sconosciuta: \"%c\"\n"
@@ -971,7 +966,7 @@ msgstr "%s: intestazione dello streaming sconosciuta: \"%c\"\n"
 msgid "%s: could not write %u bytes to log file \"%s\": %s\n"
 msgstr "%s: scrittura di %u byte nel file di log \"%s\" fallita: %s\n"
 
-#: pg_recvlogical.c:541 receivelog.c:627 receivelog.c:662
+#: pg_recvlogical.c:541 receivelog.c:627 receivelog.c:665
 #, c-format
 msgid "%s: unexpected termination of replication stream: %s"
 msgstr "%s: terminazione inaspettata dello stream di replica: %s"
@@ -1186,12 +1181,12 @@ msgstr ""
 "%s: il server ha interrotto lo streaming della timeline %u a %X/%X, ma ha "
 "riportato l'inizio della timeline successiva %u a %X/%X\n"
 
-#: receivelog.c:653
+#: receivelog.c:656
 #, c-format
 msgid "%s: replication stream was terminated before stop point\n"
 msgstr "%s: lo stream di replica è terminato prima del punto di arresto\n"
 
-#: receivelog.c:701
+#: receivelog.c:705
 #, c-format
 msgid ""
 "%s: unexpected result set after end-of-timeline: got %d rows and %d fields, "
@@ -1200,30 +1195,30 @@ msgstr ""
 "%s: risultato imprevisto dopo la fine della timeline: ricevute %d righe e %d "
 "campi, attese %d righe e %d campi\n"
 
-#: receivelog.c:711
+#: receivelog.c:715
 #, c-format
 msgid "%s: could not parse next timeline's starting point \"%s\"\n"
 msgstr ""
 "%s: interpretazione del punto d'inizio della nuova timeline \"%s\" fallita\n"
 
-#: receivelog.c:766 receivelog.c:869 receivelog.c:1035
+#: receivelog.c:770 receivelog.c:873 receivelog.c:1040
 #, c-format
 msgid "%s: could not send copy-end packet: %s"
 msgstr "%s: invio del pacchetto di fine copia fallito: %s"
 
-#: receivelog.c:961
+#: receivelog.c:966
 #, c-format
 msgid "%s: received transaction log record for offset %u with no file open\n"
 msgstr ""
 "%s: ricevuti record di log delle transazioni per offset %u senza alcun file "
 "aperto\n"
 
-#: receivelog.c:973
+#: receivelog.c:978
 #, c-format
 msgid "%s: got WAL data offset %08x, expected %08x\n"
 msgstr "%s: ricevuto offset dati WAL %08x, atteso %08x\n"
 
-#: receivelog.c:1010
+#: receivelog.c:1015
 #, c-format
 msgid "%s: could not write %u bytes to WAL file \"%s\": %s\n"
 msgstr "%s: scrittura di %u byte nel file WAL \"%s\" fallita: %s\n"

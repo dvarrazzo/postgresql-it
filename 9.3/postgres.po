@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-07-29 09:14+0000\n"
-"PO-Revision-Date: 2014-07-30 22:54+0100\n"
+"POT-Creation-Date: 2014-08-11 14:44+0000\n"
+"PO-Revision-Date: 2014-08-12 00:06+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -445,8 +445,8 @@ msgid "\"%s\" is an index"
 msgstr "\"%s\" è un indice"
 
 #: access/heap/heapam.c:1199 access/heap/heapam.c:1227
-#: access/heap/heapam.c:1259 catalog/aclchk.c:1749 commands/tablecmds.c:8238
-#: commands/tablecmds.c:10591
+#: access/heap/heapam.c:1259 catalog/aclchk.c:1749 commands/tablecmds.c:8245
+#: commands/tablecmds.c:10598
 #, c-format
 msgid "\"%s\" is a composite type"
 msgstr "\"%s\" è un tipo composito"
@@ -464,7 +464,7 @@ msgstr "riga troppo grande: la dimensione è %lu mentre il massimo è %lu"
 
 #: access/index/indexam.c:169 catalog/objectaddress.c:842
 #: commands/indexcmds.c:1744 commands/tablecmds.c:231
-#: commands/tablecmds.c:10582
+#: commands/tablecmds.c:10589
 #, c-format
 msgid "\"%s\" is not an index"
 msgstr "\"%s\" non è un indice"
@@ -1676,8 +1676,8 @@ msgstr "avvio del ripristino dell'archivio"
 #: libpq/auth.c:1035 libpq/auth.c:1391 libpq/auth.c:1459 libpq/auth.c:1861
 #: postmaster/postmaster.c:2143 postmaster/postmaster.c:2174
 #: postmaster/postmaster.c:3631 postmaster/postmaster.c:4329
-#: postmaster/postmaster.c:4414 postmaster/postmaster.c:5092
-#: postmaster/postmaster.c:5268 postmaster/postmaster.c:5685
+#: postmaster/postmaster.c:4414 postmaster/postmaster.c:5095
+#: postmaster/postmaster.c:5271 postmaster/postmaster.c:5688
 #: storage/buffer/buf_init.c:154 storage/buffer/localbuf.c:397
 #: storage/file/fd.c:403 storage/file/fd.c:800 storage/file/fd.c:918
 #: storage/file/fd.c:1531 storage/ipc/procarray.c:901
@@ -2582,8 +2582,8 @@ msgstr "i privilegi predefiniti non possono essere impostati sulle colonne"
 #: commands/tablecmds.c:4919 commands/tablecmds.c:4969
 #: commands/tablecmds.c:5073 commands/tablecmds.c:5120
 #: commands/tablecmds.c:5204 commands/tablecmds.c:5292
-#: commands/tablecmds.c:7237 commands/tablecmds.c:7441
-#: commands/tablecmds.c:7833 commands/trigger.c:610 parser/analyze.c:1998
+#: commands/tablecmds.c:7244 commands/tablecmds.c:7448
+#: commands/tablecmds.c:7840 commands/trigger.c:610 parser/analyze.c:1998
 #: parser/parse_relation.c:2173 parser/parse_relation.c:2230
 #: parser/parse_target.c:920 parser/parse_type.c:124 utils/adt/acl.c:2840
 #: utils/adt/ruleutils.c:1790
@@ -2592,7 +2592,7 @@ msgid "column \"%s\" of relation \"%s\" does not exist"
 msgstr "la colonna \"%s\" della relazione \"%s\" non esiste"
 
 #: catalog/aclchk.c:1757 catalog/objectaddress.c:849 commands/sequence.c:1053
-#: commands/tablecmds.c:213 commands/tablecmds.c:10556 utils/adt/acl.c:2076
+#: commands/tablecmds.c:213 commands/tablecmds.c:10563 utils/adt/acl.c:2076
 #: utils/adt/acl.c:2106 utils/adt/acl.c:2138 utils/adt/acl.c:2170
 #: utils/adt/acl.c:2198 utils/adt/acl.c:2228
 #, c-format
@@ -2967,8 +2967,8 @@ msgstr "Nome del fork non valido"
 
 #: catalog/catalog.c:64
 #, c-format
-msgid "Valid fork names are \"main\", \"fsm\", and \"vm\"."
-msgstr "Nomi di fork validi sono \"main\", \"fsm\", e \"vm\"."
+msgid "Valid fork names are \"main\", \"fsm\", \"vm\", and \"init\"."
+msgstr "Nomi di fork validi sono \"main\", \"fsm\", \"vm\" e \"init\"."
 
 #: catalog/dependency.c:626
 #, c-format
@@ -3442,25 +3442,25 @@ msgstr "il nome del trigger di evento non può essere qualificato"
 
 #: catalog/objectaddress.c:856 commands/lockcmds.c:94 commands/tablecmds.c:207
 #: commands/tablecmds.c:1238 commands/tablecmds.c:4016
-#: commands/tablecmds.c:7344
+#: commands/tablecmds.c:7351
 #, c-format
 msgid "\"%s\" is not a table"
 msgstr "\"%s\" non è una tabella"
 
 #: catalog/objectaddress.c:863 commands/tablecmds.c:219
-#: commands/tablecmds.c:4040 commands/tablecmds.c:10561 commands/view.c:134
+#: commands/tablecmds.c:4040 commands/tablecmds.c:10568 commands/view.c:134
 #, c-format
 msgid "\"%s\" is not a view"
 msgstr "\"%s\" non è una vista"
 
 #: catalog/objectaddress.c:870 commands/matview.c:144 commands/tablecmds.c:225
-#: commands/tablecmds.c:10566
+#: commands/tablecmds.c:10573
 #, c-format
 msgid "\"%s\" is not a materialized view"
 msgstr "\"%s\" non è una vista materializzata"
 
 #: catalog/objectaddress.c:877 commands/tablecmds.c:243
-#: commands/tablecmds.c:4043 commands/tablecmds.c:10571
+#: commands/tablecmds.c:4043 commands/tablecmds.c:10578
 #, c-format
 msgid "\"%s\" is not a foreign table"
 msgstr "\"%s\" non è una tabella esterna"
@@ -4178,13 +4178,13 @@ msgstr "i tipi a dimensione fissa devono avere immagazzinamento PLAIN"
 msgid "could not form array type name for type \"%s\""
 msgstr "creazione del nome per il tipo array del tipo \"%s\" fallita"
 
-#: catalog/toasting.c:91 commands/indexcmds.c:381 commands/tablecmds.c:4025
-#: commands/tablecmds.c:10449
+#: catalog/toasting.c:95 commands/indexcmds.c:381 commands/tablecmds.c:4025
+#: commands/tablecmds.c:10456
 #, c-format
 msgid "\"%s\" is not a table or materialized view"
 msgstr "\"%s\" non è una tabella né una vista materializzata"
 
-#: catalog/toasting.c:142
+#: catalog/toasting.c:146
 #, c-format
 msgid "shared tables cannot be toasted after initdb"
 msgstr ""
@@ -4402,7 +4402,7 @@ msgstr "non è possibile raggruppare tabelle temporanee di altre sessioni"
 msgid "there is no previously clustered index for table \"%s\""
 msgstr "non esiste un indice già raggruppato per la tabella \"%s\""
 
-#: commands/cluster.c:175 commands/tablecmds.c:8538
+#: commands/cluster.c:175 commands/tablecmds.c:8545
 #, c-format
 msgid "index \"%s\" for table \"%s\" does not exist"
 msgstr "l'indice \"%s\" per la tabella \"%s\" non esiste"
@@ -6184,7 +6184,7 @@ msgstr "non è possibile creare indici sulla tabella esterna \"%s\""
 msgid "cannot create indexes on temporary tables of other sessions"
 msgstr "non è possibile creare indici su tabelle temporanee di altre sessioni"
 
-#: commands/indexcmds.c:446 commands/tablecmds.c:521 commands/tablecmds.c:8808
+#: commands/indexcmds.c:446 commands/tablecmds.c:521 commands/tablecmds.c:8815
 #, c-format
 msgid "only shared relations can be placed in pg_global tablespace"
 msgstr ""
@@ -6710,7 +6710,7 @@ msgid "unlogged sequences are not supported"
 msgstr "le sequenze non loggate non sono supportate"
 
 #: commands/sequence.c:425 commands/tablecmds.c:2292 commands/tablecmds.c:2471
-#: commands/tablecmds.c:9937 tcop/utility.c:999
+#: commands/tablecmds.c:9944 tcop/utility.c:999
 #, c-format
 msgid "relation \"%s\" does not exist, skipping"
 msgstr "la relazione \"%s\" non esiste, saltata"
@@ -6890,8 +6890,8 @@ msgstr "\"%s\" non è un tipo"
 msgid "Use DROP TYPE to remove a type."
 msgstr "Usa DROP TYPE per eliminare un tipo."
 
-#: commands/tablecmds.c:241 commands/tablecmds.c:7819
-#: commands/tablecmds.c:9869
+#: commands/tablecmds.c:241 commands/tablecmds.c:7826
+#: commands/tablecmds.c:9876
 #, c-format
 msgid "foreign table \"%s\" does not exist"
 msgstr "la tabella esterna \"%s\" non esiste"
@@ -6937,8 +6937,8 @@ msgstr "DROP INDEX CONCURRENTLY non supporta CASCADE"
 
 #: commands/tablecmds.c:913 commands/tablecmds.c:1251
 #: commands/tablecmds.c:2107 commands/tablecmds.c:3998
-#: commands/tablecmds.c:5827 commands/tablecmds.c:10482
-#: commands/tablecmds.c:10517 commands/trigger.c:207 commands/trigger.c:1092
+#: commands/tablecmds.c:5827 commands/tablecmds.c:10489
+#: commands/tablecmds.c:10524 commands/trigger.c:207 commands/trigger.c:1092
 #: commands/trigger.c:1198 rewrite/rewriteDefine.c:274
 #: rewrite/rewriteDefine.c:890
 #, c-format
@@ -6960,18 +6960,18 @@ msgstr "non è possibile troncare tabelle temporanee di altre sessioni"
 msgid "inherited relation \"%s\" is not a table"
 msgstr "la relazione ereditata \"%s\" non è una tabella"
 
-#: commands/tablecmds.c:1473 commands/tablecmds.c:9054
+#: commands/tablecmds.c:1473 commands/tablecmds.c:9061
 #, c-format
 msgid "cannot inherit from temporary relation \"%s\""
 msgstr "non è possibile ereditare dalla relazione temporanea \"%s\""
 
-#: commands/tablecmds.c:1481 commands/tablecmds.c:9062
+#: commands/tablecmds.c:1481 commands/tablecmds.c:9069
 #, c-format
 msgid "cannot inherit from temporary relation of another session"
 msgstr ""
 "non è possibile ereditare da una relazione temporanea di un'altra sessione"
 
-#: commands/tablecmds.c:1497 commands/tablecmds.c:9096
+#: commands/tablecmds.c:1497 commands/tablecmds.c:9103
 #, c-format
 msgid "relation \"%s\" would be inherited from more than once"
 msgstr "la relazione \"%s\" sarebbe ereditata più di una volta"
@@ -7148,7 +7148,7 @@ msgstr "verifica della tabella \"%s\""
 msgid "column \"%s\" contains null values"
 msgstr "la colonna \"%s\" contiene valori null"
 
-#: commands/tablecmds.c:3874 commands/tablecmds.c:6732
+#: commands/tablecmds.c:3874 commands/tablecmds.c:6739
 #, c-format
 msgid "check constraint \"%s\" is violated by some row"
 msgstr "il vincolo di controllo \"%s\" è violato da alcune righe"
@@ -7237,12 +7237,12 @@ msgstr "il tipo %s non è un tipo composito"
 msgid "cannot add column to typed table"
 msgstr "non è possibile aggiungere una colonna ad una tabella con tipo"
 
-#: commands/tablecmds.c:4414 commands/tablecmds.c:9250
+#: commands/tablecmds.c:4414 commands/tablecmds.c:9257
 #, c-format
 msgid "child table \"%s\" has different type for column \"%s\""
 msgstr "la tabella figlia \"%s\" ha tipo diverso per la colonna \"%s\""
 
-#: commands/tablecmds.c:4420 commands/tablecmds.c:9257
+#: commands/tablecmds.c:4420 commands/tablecmds.c:9264
 #, c-format
 msgid "child table \"%s\" has different collation for column \"%s\""
 msgstr "la tabella figlia \"%s\" ha ordinamento diverso per la colonna \"%s\""
@@ -7271,7 +7271,7 @@ msgstr "la colonna \"%s\" della relazione \"%s\" esiste già"
 #: commands/tablecmds.c:4833 commands/tablecmds.c:4928
 #: commands/tablecmds.c:4976 commands/tablecmds.c:5080
 #: commands/tablecmds.c:5127 commands/tablecmds.c:5211
-#: commands/tablecmds.c:7246 commands/tablecmds.c:7841
+#: commands/tablecmds.c:7253 commands/tablecmds.c:7848
 #, c-format
 msgid "cannot alter system column \"%s\""
 msgstr "non è possibile modificare la colonna di sistema \"%s\""
@@ -7391,8 +7391,8 @@ msgstr "non è possibile implementare il vincolo di chiave esterna \"%s\""
 msgid "Key columns \"%s\" and \"%s\" are of incompatible types: %s and %s."
 msgstr "Le colonne chiave \"%s\" e \"%s\" hanno tipi incompatibili: %s e %s."
 
-#: commands/tablecmds.c:6226 commands/tablecmds.c:7085
-#: commands/tablecmds.c:7141
+#: commands/tablecmds.c:6226 commands/tablecmds.c:7092
+#: commands/tablecmds.c:7148
 #, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist"
 msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste"
@@ -7433,14 +7433,21 @@ msgstr ""
 msgid "there is no primary key for referenced table \"%s\""
 msgstr "la tabella referenziata \"%s\" non ha una chiave primaria"
 
-#: commands/tablecmds.c:6603
+#: commands/tablecmds.c:6516
+#, c-format
+msgid "foreign key referenced-columns list must not contain duplicates"
+msgstr ""
+"la lista di colonne referenziate dalla chiave esterna non deve contenere "
+"duplicati"
+
+#: commands/tablecmds.c:6610
 #, c-format
 msgid "cannot use a deferrable unique constraint for referenced table \"%s\""
 msgstr ""
 "non è possibile usare un vincolo univoco deferito per la tabella "
 "referenziata \"%s\""
 
-#: commands/tablecmds.c:6608
+#: commands/tablecmds.c:6615
 #, c-format
 msgid ""
 "there is no unique constraint matching given keys for referenced table \"%s\""
@@ -7448,187 +7455,187 @@ msgstr ""
 "non c'è alcun vincolo univoco che corrisponda alle chiavi indicate per la "
 "tabella referenziata \"%s\""
 
-#: commands/tablecmds.c:6763
+#: commands/tablecmds.c:6770
 #, c-format
 msgid "validating foreign key constraint \"%s\""
 msgstr "validazione del vincolo di chiave esterna \"%s\""
 
-#: commands/tablecmds.c:7057
+#: commands/tablecmds.c:7064
 #, c-format
 msgid "cannot drop inherited constraint \"%s\" of relation \"%s\""
 msgstr ""
 "non è possibile eliminare il vincolo ereditato \"%s\" della relazione \"%s\""
 
-#: commands/tablecmds.c:7091
+#: commands/tablecmds.c:7098
 #, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist, skipping"
 msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste, saltato"
 
-#: commands/tablecmds.c:7230
+#: commands/tablecmds.c:7237
 #, c-format
 msgid "cannot alter column type of typed table"
 msgstr "non è possibile modificare il tipo di colonna di una tabella con tipo"
 
-#: commands/tablecmds.c:7253
+#: commands/tablecmds.c:7260
 #, c-format
 msgid "cannot alter inherited column \"%s\""
 msgstr "non è possibile modificare la colonna ereditata \"%s\""
 
-#: commands/tablecmds.c:7300
+#: commands/tablecmds.c:7307
 #, c-format
 msgid "transform expression must not return a set"
 msgstr "l'espressione di trasformazione non può restituire un insieme"
 
-#: commands/tablecmds.c:7319
+#: commands/tablecmds.c:7326
 #, c-format
 msgid "column \"%s\" cannot be cast automatically to type %s"
 msgstr "la colonna \"%s\" non può essere convertita automaticamente al tipo %s"
 
-#: commands/tablecmds.c:7321
+#: commands/tablecmds.c:7328
 #, c-format
 msgid "Specify a USING expression to perform the conversion."
 msgstr "Specifica una espressione USING per effettuare la conversione."
 
-#: commands/tablecmds.c:7370
+#: commands/tablecmds.c:7377
 #, c-format
 msgid "type of inherited column \"%s\" must be changed in child tables too"
 msgstr ""
 "il tipo della colonna ereditata \"%s\" deve essere cambiato anche nelle "
 "tabelle figlie"
 
-#: commands/tablecmds.c:7451
+#: commands/tablecmds.c:7458
 #, c-format
 msgid "cannot alter type of column \"%s\" twice"
 msgstr "non è possibile cambiare il tipo della colonna \"%s\" due volte"
 
-#: commands/tablecmds.c:7487
+#: commands/tablecmds.c:7494
 #, c-format
 msgid "default for column \"%s\" cannot be cast automatically to type %s"
 msgstr ""
 "il valore predefinito della colonna \"%s\" non può essere convertito "
 "automaticamente al tipo %s"
 
-#: commands/tablecmds.c:7613
+#: commands/tablecmds.c:7620
 #, c-format
 msgid "cannot alter type of a column used by a view or rule"
 msgstr ""
 "non è possibile cambiare il tipo di una colonna usata in una vista o una "
 "regola"
 
-#: commands/tablecmds.c:7614 commands/tablecmds.c:7633
+#: commands/tablecmds.c:7621 commands/tablecmds.c:7640
 #, c-format
 msgid "%s depends on column \"%s\""
 msgstr "%s dipende dalla colonna \"%s\""
 
-#: commands/tablecmds.c:7632
+#: commands/tablecmds.c:7639
 #, c-format
 msgid "cannot alter type of a column used in a trigger definition"
 msgstr ""
 "non è possibile cambiare il tipo di una colonna usata nella definizione di "
 "un trigger"
 
-#: commands/tablecmds.c:8208
+#: commands/tablecmds.c:8215
 #, c-format
 msgid "cannot change owner of index \"%s\""
 msgstr "non è possibile cambiare il proprietario dell'indice \"%s\""
 
-#: commands/tablecmds.c:8210
+#: commands/tablecmds.c:8217
 #, c-format
 msgid "Change the ownership of the index's table, instead."
 msgstr "Cambia il proprietario della tabella dell'indice invece."
 
-#: commands/tablecmds.c:8226
+#: commands/tablecmds.c:8233
 #, c-format
 msgid "cannot change owner of sequence \"%s\""
 msgstr "non è possibile cambiare il proprietario della sequenza \"%s\""
 
-#: commands/tablecmds.c:8228 commands/tablecmds.c:9956
+#: commands/tablecmds.c:8235 commands/tablecmds.c:9963
 #, c-format
 msgid "Sequence \"%s\" is linked to table \"%s\"."
 msgstr "La sequenza \"%s\" è collegata alla tabella \"%s\"."
 
-#: commands/tablecmds.c:8240 commands/tablecmds.c:10592
+#: commands/tablecmds.c:8247 commands/tablecmds.c:10599
 #, c-format
 msgid "Use ALTER TYPE instead."
 msgstr "È possibile usare ALTER TYPE invece."
 
-#: commands/tablecmds.c:8249
+#: commands/tablecmds.c:8256
 #, c-format
 msgid "\"%s\" is not a table, view, sequence, or foreign table"
 msgstr ""
 "\"%s\" non è una tabella, una vista, una sequenza né una tabella esterna"
 
-#: commands/tablecmds.c:8585
+#: commands/tablecmds.c:8592
 #, c-format
 msgid "cannot have multiple SET TABLESPACE subcommands"
 msgstr "non è possibile avere più di un sottocomando SET TABLESPACE"
 
-#: commands/tablecmds.c:8656
+#: commands/tablecmds.c:8663
 #, c-format
 msgid "\"%s\" is not a table, view, materialized view, index, or TOAST table"
 msgstr ""
 "\"%s\" non è una tabella, una vista, una vista materializzata né una tabella "
 "TOAST"
 
-#: commands/tablecmds.c:8801
+#: commands/tablecmds.c:8808
 #, c-format
 msgid "cannot move system relation \"%s\""
 msgstr "non è possibile spostare la relazione \"%s\""
 
-#: commands/tablecmds.c:8817
+#: commands/tablecmds.c:8824
 #, c-format
 msgid "cannot move temporary tables of other sessions"
 msgstr "non è possibile spostare tabelle temporanee di altre sessioni"
 
-#: commands/tablecmds.c:8945 storage/buffer/bufmgr.c:482
+#: commands/tablecmds.c:8952 storage/buffer/bufmgr.c:482
 #, c-format
 msgid "invalid page in block %u of relation %s"
 msgstr "pagina non valida nel blocco %u della relazione %s"
 
-#: commands/tablecmds.c:9023
+#: commands/tablecmds.c:9030
 #, c-format
 msgid "cannot change inheritance of typed table"
 msgstr "non è possibile cambiare ereditarietà di tabelle con tipo"
 
-#: commands/tablecmds.c:9069
+#: commands/tablecmds.c:9076
 #, c-format
 msgid "cannot inherit to temporary relation of another session"
 msgstr "non è possibile ereditare tabelle temporanee di un'altra sessione"
 
-#: commands/tablecmds.c:9123
+#: commands/tablecmds.c:9130
 #, c-format
 msgid "circular inheritance not allowed"
 msgstr "l'ereditarietà circolare non è consentita"
 
-#: commands/tablecmds.c:9124
+#: commands/tablecmds.c:9131
 #, c-format
 msgid "\"%s\" is already a child of \"%s\"."
 msgstr "\"%s\" è già figlia di \"%s\"."
 
-#: commands/tablecmds.c:9132
+#: commands/tablecmds.c:9139
 #, c-format
 msgid "table \"%s\" without OIDs cannot inherit from table \"%s\" with OIDs"
 msgstr ""
 "la tabella \"%s\" senza OID non può ereditare dalla tabella \"%s\" con OID"
 
-#: commands/tablecmds.c:9268
+#: commands/tablecmds.c:9275
 #, c-format
 msgid "column \"%s\" in child table must be marked NOT NULL"
 msgstr "la colonna \"%s\" nella tabella figlia dev'essere marcata NOT NULL"
 
-#: commands/tablecmds.c:9284
+#: commands/tablecmds.c:9291
 #, c-format
 msgid "child table is missing column \"%s\""
 msgstr "la tabella figlia non ha la colonna \"%s\""
 
-#: commands/tablecmds.c:9367
+#: commands/tablecmds.c:9374
 #, c-format
 msgid "child table \"%s\" has different definition for check constraint \"%s\""
 msgstr ""
 "la tabella figlia \"%s\" ha una definizione diversa del vincolo di controllo "
 "\"%s\""
 
-#: commands/tablecmds.c:9375
+#: commands/tablecmds.c:9382
 #, c-format
 msgid ""
 "constraint \"%s\" conflicts with non-inherited constraint on child table \"%s"
@@ -7637,63 +7644,63 @@ msgstr ""
 "il vincolo \"%s\" è in conflitto con un vincolo non ereditato nella tabella "
 "figlia \"%s\""
 
-#: commands/tablecmds.c:9399
+#: commands/tablecmds.c:9406
 #, c-format
 msgid "child table is missing constraint \"%s\""
 msgstr "la tabella figlia non ha il vincolo \"%s\""
 
-#: commands/tablecmds.c:9479
+#: commands/tablecmds.c:9486
 #, c-format
 msgid "relation \"%s\" is not a parent of relation \"%s\""
 msgstr "la relazione \"%s\" non è genitore della relazione \"%s\""
 
-#: commands/tablecmds.c:9705
+#: commands/tablecmds.c:9712
 #, c-format
 msgid "typed tables cannot inherit"
 msgstr "le tabelle con tipo non possono essere ereditate"
 
-#: commands/tablecmds.c:9736
+#: commands/tablecmds.c:9743
 #, c-format
 msgid "table is missing column \"%s\""
 msgstr "la tabella non ha la colonna \"%s\""
 
-#: commands/tablecmds.c:9746
+#: commands/tablecmds.c:9753
 #, c-format
 msgid "table has column \"%s\" where type requires \"%s\""
 msgstr "la tabella ha la colonna \"%s\" laddove il tipo richiede \"%s\""
 
-#: commands/tablecmds.c:9755
+#: commands/tablecmds.c:9762
 #, c-format
 msgid "table \"%s\" has different type for column \"%s\""
 msgstr "la tabella \"%s\" ha tipo diverso per la colonna \"%s\""
 
-#: commands/tablecmds.c:9768
+#: commands/tablecmds.c:9775
 #, c-format
 msgid "table has extra column \"%s\""
 msgstr "la tabella ha la colonna \"%s\" in eccesso"
 
-#: commands/tablecmds.c:9818
+#: commands/tablecmds.c:9825
 #, c-format
 msgid "\"%s\" is not a typed table"
 msgstr "\"%s\" non è una tabella con tipo"
 
-#: commands/tablecmds.c:9955
+#: commands/tablecmds.c:9962
 #, c-format
 msgid "cannot move an owned sequence into another schema"
 msgstr ""
 "non è possibile spostare una sequenza con proprietario in uno schema diverso"
 
-#: commands/tablecmds.c:10051
+#: commands/tablecmds.c:10058
 #, c-format
 msgid "relation \"%s\" already exists in schema \"%s\""
 msgstr "la relazione \"%s\" esiste già nello schema \"%s\""
 
-#: commands/tablecmds.c:10576
+#: commands/tablecmds.c:10583
 #, c-format
 msgid "\"%s\" is not a composite type"
 msgstr "\"%s\" non è un tipo composito"
 
-#: commands/tablecmds.c:10606
+#: commands/tablecmds.c:10613
 #, c-format
 msgid ""
 "\"%s\" is not a table, view, materialized view, sequence, or foreign table"
@@ -13147,12 +13154,12 @@ msgstr "pulizia automatica della tabella \"%s.%s.%s\""
 msgid "automatic analyze of table \"%s.%s.%s\""
 msgstr "analisi automatica della tabella \"%s.%s.%s\""
 
-#: postmaster/autovacuum.c:2880
+#: postmaster/autovacuum.c:2887
 #, c-format
 msgid "autovacuum not started because of misconfiguration"
 msgstr "autovacuum non avviato a causa di configurazione errata"
 
-#: postmaster/autovacuum.c:2881
+#: postmaster/autovacuum.c:2888
 #, c-format
 msgid "Enable the \"track_counts\" option."
 msgstr "Abilita l'opzione \"track_counts\"."
@@ -13830,47 +13837,47 @@ msgstr "connessione ricevuta: host=%s"
 msgid "could not execute server process \"%s\": %m"
 msgstr "esecuzione del processo del server \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:4681
+#: postmaster/postmaster.c:4684
 #, c-format
 msgid "database system is ready to accept read only connections"
 msgstr "il database è pronto ad accettare connessioni in sola lettura"
 
-#: postmaster/postmaster.c:4992
+#: postmaster/postmaster.c:4995
 #, c-format
 msgid "could not fork startup process: %m"
 msgstr "fork del processo di avvio fallito: %m"
 
-#: postmaster/postmaster.c:4996
+#: postmaster/postmaster.c:4999
 #, c-format
 msgid "could not fork background writer process: %m"
 msgstr "fork del processo di scrittura in background fallito: %m"
 
-#: postmaster/postmaster.c:5000
+#: postmaster/postmaster.c:5003
 #, c-format
 msgid "could not fork checkpointer process: %m"
 msgstr "fork del processo di creazione dei checkpoint fallito: %m"
 
-#: postmaster/postmaster.c:5004
+#: postmaster/postmaster.c:5007
 #, c-format
 msgid "could not fork WAL writer process: %m"
 msgstr "fork del processo di scrittura dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:5008
+#: postmaster/postmaster.c:5011
 #, c-format
 msgid "could not fork WAL receiver process: %m"
 msgstr "fork del processo di ricezione dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:5012
+#: postmaster/postmaster.c:5015
 #, c-format
 msgid "could not fork process: %m"
 msgstr "fork del processo fallito: %m"
 
-#: postmaster/postmaster.c:5191
+#: postmaster/postmaster.c:5194
 #, c-format
 msgid "registering background worker \"%s\""
 msgstr "registrazione del processo di lavoro in background \"%s\""
 
-#: postmaster/postmaster.c:5198
+#: postmaster/postmaster.c:5201
 #, c-format
 msgid ""
 "background worker \"%s\": must be registered in shared_preload_libraries"
@@ -13878,7 +13885,7 @@ msgstr ""
 "processo di lavoro in background \"%s\": deve essere registrato in "
 "shared_preload_libraries"
 
-#: postmaster/postmaster.c:5211
+#: postmaster/postmaster.c:5214
 #, c-format
 msgid ""
 "background worker \"%s\": must attach to shared memory in order to be able "
@@ -13887,7 +13894,7 @@ msgstr ""
 "processo di lavoro in background \"%s\": deve essere attaccato alla memoria "
 "condivisa per poter richiedere una connessione di database"
 
-#: postmaster/postmaster.c:5221
+#: postmaster/postmaster.c:5224
 #, c-format
 msgid ""
 "background worker \"%s\": cannot request database access if starting at "
@@ -13896,18 +13903,18 @@ msgstr ""
 "processo di lavoro in background \"%s\": non è possibile richiedere accesso "
 "al database se avviato all'avvio di postmaster"
 
-#: postmaster/postmaster.c:5236
+#: postmaster/postmaster.c:5239
 #, c-format
 msgid "background worker \"%s\": invalid restart interval"
 msgstr ""
 "processo di lavoro in background \"%s\": intervallo di riavvio non valido"
 
-#: postmaster/postmaster.c:5252
+#: postmaster/postmaster.c:5255
 #, c-format
 msgid "too many background workers"
 msgstr "troppi processi di lavoro in background"
 
-#: postmaster/postmaster.c:5253
+#: postmaster/postmaster.c:5256
 #, c-format
 msgid "Up to %d background worker can be registered with the current settings."
 msgid_plural ""
@@ -13919,82 +13926,82 @@ msgstr[1] ""
 "Le impostazioni correnti consentono la registrazione di un massimo di %d "
 "processi di lavoro in background."
 
-#: postmaster/postmaster.c:5296
+#: postmaster/postmaster.c:5299
 #, c-format
 msgid "database connection requirement not indicated during registration"
 msgstr ""
 "requisiti di connessione a database non indicati durante la registrazione"
 
-#: postmaster/postmaster.c:5303
+#: postmaster/postmaster.c:5306
 #, c-format
 msgid "invalid processing mode in background worker"
 msgstr "modalità di processo non valida nel processo di lavoro in background"
 
-#: postmaster/postmaster.c:5377
+#: postmaster/postmaster.c:5380
 #, c-format
 msgid "terminating background worker \"%s\" due to administrator command"
 msgstr ""
 "interruzione del processo di lavoro in background \"%s\" a causa di comando "
 "amministrativo"
 
-#: postmaster/postmaster.c:5594
+#: postmaster/postmaster.c:5597
 #, c-format
 msgid "starting background worker process \"%s\""
 msgstr "avvio del processo di lavoro in background \"%s\""
 
-#: postmaster/postmaster.c:5605
+#: postmaster/postmaster.c:5608
 #, c-format
 msgid "could not fork worker process: %m"
 msgstr "fork del processo di lavoro in background fallito: %m"
 
-#: postmaster/postmaster.c:5957
+#: postmaster/postmaster.c:5960
 #, c-format
 msgid "could not duplicate socket %d for use in backend: error code %d"
 msgstr ""
 "duplicazione del socket %d da usare nel backend fallita: codice errore %d"
 
-#: postmaster/postmaster.c:5989
+#: postmaster/postmaster.c:5992
 #, c-format
 msgid "could not create inherited socket: error code %d\n"
 msgstr "creazione del socket ereditato fallita: codice errore %d\n"
 
-#: postmaster/postmaster.c:6018 postmaster/postmaster.c:6025
+#: postmaster/postmaster.c:6021 postmaster/postmaster.c:6028
 #, c-format
 msgid "could not read from backend variables file \"%s\": %s\n"
 msgstr "lettura dal file delle variabili del backend \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:6034
+#: postmaster/postmaster.c:6037
 #, c-format
 msgid "could not remove file \"%s\": %s\n"
 msgstr "rimozione del file \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:6051
+#: postmaster/postmaster.c:6054
 #, c-format
 msgid "could not map view of backend variables: error code %lu\n"
 msgstr ""
 "non è stato possibile mappare la vista delle variabili del backend: codice "
 "errore %lu\n"
 
-#: postmaster/postmaster.c:6060
+#: postmaster/postmaster.c:6063
 #, c-format
 msgid "could not unmap view of backend variables: error code %lu\n"
 msgstr ""
 "non è stato possibile rimuovere la mappa della vista delle variabili del "
 "backend: codice errore %lu\n"
 
-#: postmaster/postmaster.c:6067
+#: postmaster/postmaster.c:6070
 #, c-format
 msgid "could not close handle to backend parameter variables: error code %lu\n"
 msgstr ""
 "chiusura dell'handle dei parametri variabili del backend fallita: codice "
 "errore %lu\n"
 
-#: postmaster/postmaster.c:6223
+#: postmaster/postmaster.c:6226
 #, c-format
 msgid "could not read exit code for process\n"
 msgstr "lettura del codice di uscita del processo fallita\n"
 
-#: postmaster/postmaster.c:6228
+#: postmaster/postmaster.c:6231
 #, c-format
 msgid "could not post child completion status\n"
 msgstr "invio dello stato di completamento del figlio fallito\n"
@@ -16167,7 +16174,7 @@ msgstr ""
 msgid "invalid number of dimensions: %d"
 msgstr "numero di dimensioni non valido: %d"
 
-#: utils/adt/array_userfuncs.c:487 utils/adt/json.c:1610 utils/adt/json.c:1639
+#: utils/adt/array_userfuncs.c:487 utils/adt/json.c:1609 utils/adt/json.c:1638
 #, c-format
 msgid "could not determine input data type"
 msgstr "non è stato possibile determinare il tipo di dato di input"

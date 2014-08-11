@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-07-29 09:28+0000\n"
-"PO-Revision-Date: 2014-07-30 22:54+0100\n"
+"POT-Creation-Date: 2014-08-10 20:58+0000\n"
+"PO-Revision-Date: 2014-08-12 00:06+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -256,11 +256,11 @@ msgstr "pulizia automatica della tabella \"%s.%s.%s\""
 msgid "automatic analyze of table \"%s.%s.%s\""
 msgstr "analisi automatica della tabella \"%s.%s.%s\""
 
-#: postmaster/autovacuum.c:2761
+#: postmaster/autovacuum.c:2768
 msgid "autovacuum not started because of misconfiguration"
 msgstr "autovacuum non avviato a causa di configurazione errata"
 
-#: postmaster/autovacuum.c:2762
+#: postmaster/autovacuum.c:2769
 msgid "Enable the \"track_counts\" option."
 msgstr "Abilita l'opzione \"track_counts\"."
 
@@ -4713,7 +4713,7 @@ msgid "database with OID %u does not exist"
 msgstr "il database con OID %u non esiste"
 
 #: utils/adt/dbsize.c:248 utils/adt/acl.c:4134 commands/tablecmds.c:435
-#: commands/tablecmds.c:6876 commands/dbcommands.c:437
+#: commands/tablecmds.c:6883 commands/dbcommands.c:437
 #: commands/dbcommands.c:1064 commands/indexcmds.c:228 commands/comment.c:737
 #: commands/tablespace.c:410 commands/tablespace.c:853
 #: commands/tablespace.c:920 commands/tablespace.c:1025
@@ -4853,7 +4853,7 @@ msgstr "il valore per il DOMAIN %s viola il vincolo di controllo \"%s\""
 #: commands/tablecmds.c:3969 commands/tablecmds.c:4016
 #: commands/tablecmds.c:4112 commands/tablecmds.c:4156
 #: commands/tablecmds.c:4235 commands/tablecmds.c:4316
-#: commands/tablecmds.c:5802 commands/tablecmds.c:5942 commands/analyze.c:329
+#: commands/tablecmds.c:5809 commands/tablecmds.c:5949 commands/analyze.c:329
 #: commands/sequence.c:1357 commands/copy.c:3454 commands/comment.c:651
 #: commands/trigger.c:549 catalog/aclchk.c:1468 parser/analyze.c:1831
 #: parser/parse_target.c:809 parser/parse_relation.c:2012
@@ -5557,7 +5557,7 @@ msgstr "tipo di privilegio sconosciuto: \"%s\""
 #: utils/adt/acl.c:2006 utils/adt/acl.c:2036 utils/adt/acl.c:2068
 #: utils/adt/acl.c:2100 utils/adt/acl.c:2128 utils/adt/acl.c:2158
 #: commands/tablecmds.c:202 commands/tablecmds.c:2064
-#: commands/tablecmds.c:2286 commands/tablecmds.c:7890 commands/sequence.c:958
+#: commands/tablecmds.c:2286 commands/tablecmds.c:7897 commands/sequence.c:958
 #: commands/comment.c:566 catalog/aclchk.c:1733
 #, c-format
 msgid "\"%s\" is not a sequence"
@@ -6646,7 +6646,7 @@ msgstr "\"%s\" è un indice"
 
 #: access/heap/heapam.c:1088 access/heap/heapam.c:1116
 #: access/heap/heapam.c:1146 commands/tablecmds.c:2080
-#: commands/tablecmds.c:6545 commands/tablecmds.c:7931 catalog/aclchk.c:1725
+#: commands/tablecmds.c:6552 commands/tablecmds.c:7938 catalog/aclchk.c:1725
 #, c-format
 msgid "\"%s\" is a composite type"
 msgstr "\"%s\" è un tipo composito"
@@ -8493,7 +8493,7 @@ msgid "view \"%s\" does not exist, skipping"
 msgstr "la vista \"%s\" non esiste, saltata"
 
 #: commands/tablecmds.c:208 commands/tablecmds.c:2070
-#: commands/tablecmds.c:2294 commands/tablecmds.c:7898 commands/view.c:163
+#: commands/tablecmds.c:2294 commands/tablecmds.c:7905 commands/view.c:163
 #: commands/comment.c:580
 #, c-format
 msgid "\"%s\" is not a view"
@@ -8541,7 +8541,7 @@ msgstr ""
 "non è possibile creare la tabella temporanea nell'ambito di operazioni a "
 "sicurezza ristretta"
 
-#: commands/tablecmds.c:460 commands/tablecmds.c:7073 commands/indexcmds.c:259
+#: commands/tablecmds.c:460 commands/tablecmds.c:7080 commands/indexcmds.c:259
 #: executor/execMain.c:2259
 msgid "only shared relations can be placed in pg_global tablespace"
 msgstr ""
@@ -8574,12 +8574,12 @@ msgstr "la colonna \"%s\" è stata specificata più di una volta"
 msgid "inherited relation \"%s\" is not a table"
 msgstr "la relazione ereditata \"%s\" non è una tabella"
 
-#: commands/tablecmds.c:1325 commands/tablecmds.c:7301
+#: commands/tablecmds.c:1325 commands/tablecmds.c:7308
 #, c-format
 msgid "cannot inherit from temporary relation \"%s\""
 msgstr "non è possibile ereditare dalla relazione temporanea \"%s\""
 
-#: commands/tablecmds.c:1342 commands/tablecmds.c:7329
+#: commands/tablecmds.c:1342 commands/tablecmds.c:7336
 #, c-format
 msgid "relation \"%s\" would be inherited from more than once"
 msgstr "la relazione \"%s\" sarebbe ereditata più di una volta"
@@ -8684,8 +8684,8 @@ msgstr "non è possibile rinominare la colonna ereditata \"%s\""
 msgid "column \"%s\" of relation \"%s\" already exists"
 msgstr "la colonna \"%s\" della relazione \"%s\" esiste già"
 
-#: commands/tablecmds.c:2082 commands/tablecmds.c:6547
-#: commands/tablecmds.c:7933
+#: commands/tablecmds.c:2082 commands/tablecmds.c:6554
+#: commands/tablecmds.c:7940
 msgid "Use ALTER TYPE instead."
 msgstr "È possibile usare ALTER TYPE invece."
 
@@ -8761,7 +8761,7 @@ msgstr "non è possibile aggiungere una colonna ad una tabella con tipo"
 msgid "column must be added to child tables too"
 msgstr "la colonna deve essere aggiunta anche alle tabelle figlie"
 
-#: commands/tablecmds.c:3593 commands/tablecmds.c:7485
+#: commands/tablecmds.c:3593 commands/tablecmds.c:7492
 #, c-format
 msgid "child table \"%s\" has different type for column \"%s\""
 msgstr "la tabella figlia \"%s\" ha tipo diverso per la colonna \"%s\""
@@ -8780,7 +8780,7 @@ msgstr ""
 #: commands/tablecmds.c:3886 commands/tablecmds.c:3978
 #: commands/tablecmds.c:4023 commands/tablecmds.c:4119
 #: commands/tablecmds.c:4163 commands/tablecmds.c:4242
-#: commands/tablecmds.c:5811
+#: commands/tablecmds.c:5818
 #, c-format
 msgid "cannot alter system column \"%s\""
 msgstr "non è possibile modificare la colonna di sistema \"%s\""
@@ -8894,14 +8894,20 @@ msgstr ""
 msgid "there is no primary key for referenced table \"%s\""
 msgstr "la tabella referenziata \"%s\" non ha una chiave primaria"
 
-#: commands/tablecmds.c:5272
+#: commands/tablecmds.c:5185
+msgid "foreign key referenced-columns list must not contain duplicates"
+msgstr ""
+"la lista di colonne referenziate dalla chiave esterna non deve contenere "
+"duplicati"
+
+#: commands/tablecmds.c:5279
 #, c-format
 msgid "cannot use a deferrable unique constraint for referenced table \"%s\""
 msgstr ""
 "non è possibile usare un vincolo univoco deferito per la tabella "
 "referenziata \"%s\""
 
-#: commands/tablecmds.c:5277
+#: commands/tablecmds.c:5284
 #, c-format
 msgid ""
 "there is no unique constraint matching given keys for referenced table \"%s\""
@@ -8909,204 +8915,204 @@ msgstr ""
 "non c'è alcun vincolo univoco che corrisponda alle chiavi indicate per la "
 "tabella referenziata \"%s\""
 
-#: commands/tablecmds.c:5621
+#: commands/tablecmds.c:5628
 #, c-format
 msgid "cannot drop inherited constraint \"%s\" of relation \"%s\""
 msgstr ""
 "non è possibile eliminare il vincolo ereditato \"%s\" della relazione \"%s\""
 
-#: commands/tablecmds.c:5648 commands/tablecmds.c:5762
+#: commands/tablecmds.c:5655 commands/tablecmds.c:5769
 #, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist"
 msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste"
 
-#: commands/tablecmds.c:5654
+#: commands/tablecmds.c:5661
 #, c-format
 msgid "constraint \"%s\" of relation \"%s\" does not exist, skipping"
 msgstr "il vincolo \"%s\" della relazione \"%s\" non esiste, saltato"
 
-#: commands/tablecmds.c:5795
+#: commands/tablecmds.c:5802
 msgid "cannot alter column type of typed table"
 msgstr "non è possibile modificare il tipo di colonna di una tabella con tipo"
 
-#: commands/tablecmds.c:5818
+#: commands/tablecmds.c:5825
 #, c-format
 msgid "cannot alter inherited column \"%s\""
 msgstr "non è possibile modificare la colonna ereditata \"%s\""
 
-#: commands/tablecmds.c:5855
+#: commands/tablecmds.c:5862
 msgid "transform expression must not return a set"
 msgstr "l'espressione di trasformazione non può restituire un insieme"
 
-#: commands/tablecmds.c:5861
+#: commands/tablecmds.c:5868
 msgid "cannot use subquery in transform expression"
 msgstr "non è possibile usare sottoquery in un'espressione di trasformazione"
 
-#: commands/tablecmds.c:5865
+#: commands/tablecmds.c:5872
 msgid "cannot use aggregate function in transform expression"
 msgstr ""
 "non è possibile usare funzioni aggregate in un'espressione di trasformazione"
 
-#: commands/tablecmds.c:5869
+#: commands/tablecmds.c:5876
 msgid "cannot use window function in transform expression"
 msgstr ""
 "non è possibile usare funzioni finestra in un'espressione di trasformazione"
 
-#: commands/tablecmds.c:5887
+#: commands/tablecmds.c:5894
 #, c-format
 msgid "column \"%s\" cannot be cast to type %s"
 msgstr "la colonna \"%s\" non può essere convertita al tipo %s"
 
-#: commands/tablecmds.c:5913
+#: commands/tablecmds.c:5920
 #, c-format
 msgid "type of inherited column \"%s\" must be changed in child tables too"
 msgstr ""
 "il tipo della colonna ereditata \"%s\" deve essere cambiato anche nelle "
 "tabelle figlie"
 
-#: commands/tablecmds.c:5952
+#: commands/tablecmds.c:5959
 #, c-format
 msgid "cannot alter type of column \"%s\" twice"
 msgstr "non è possibile cambiare il tipo della colonna \"%s\" due volte"
 
-#: commands/tablecmds.c:5986
+#: commands/tablecmds.c:5993
 #, c-format
 msgid "default for column \"%s\" cannot be cast to type %s"
 msgstr ""
 "il valore predefinito della colonna \"%s\" non può essere convertito al tipo "
 "%s"
 
-#: commands/tablecmds.c:6112
+#: commands/tablecmds.c:6119
 msgid "cannot alter type of a column used by a view or rule"
 msgstr ""
 "non è possibile cambiare il tipo di una colonna usata in una vista o una "
 "regola"
 
-#: commands/tablecmds.c:6113 commands/tablecmds.c:6131
+#: commands/tablecmds.c:6120 commands/tablecmds.c:6138
 #, c-format
 msgid "%s depends on column \"%s\""
 msgstr "%s dipende dalla colonna \"%s\""
 
-#: commands/tablecmds.c:6130
+#: commands/tablecmds.c:6137
 msgid "cannot alter type of a column used in a trigger definition"
 msgstr ""
 "non è possibile cambiare il tipo di una colonna usata nella definizione di "
 "un trigger"
 
-#: commands/tablecmds.c:6515
+#: commands/tablecmds.c:6522
 #, c-format
 msgid "cannot change owner of index \"%s\""
 msgstr "non è possibile cambiare il proprietario dell'indice \"%s\""
 
-#: commands/tablecmds.c:6517
+#: commands/tablecmds.c:6524
 msgid "Change the ownership of the index's table, instead."
 msgstr "Cambia il proprietario della tabella dell'indice invece."
 
-#: commands/tablecmds.c:6533
+#: commands/tablecmds.c:6540
 #, c-format
 msgid "cannot change owner of sequence \"%s\""
 msgstr "non è possibile cambiare il proprietario della sequenza \"%s\""
 
-#: commands/tablecmds.c:6535 commands/tablecmds.c:7923
+#: commands/tablecmds.c:6542 commands/tablecmds.c:7930
 #, c-format
 msgid "Sequence \"%s\" is linked to table \"%s\"."
 msgstr "La sequenza \"%s\" è collegata alla tabella \"%s\"."
 
-#: commands/tablecmds.c:6556 commands/tablecmds.c:7941
+#: commands/tablecmds.c:6563 commands/tablecmds.c:7948
 #, c-format
 msgid "\"%s\" is not a table, view, or sequence"
 msgstr "\"%s\" non è una tabella, una vista né una sequenza"
 
-#: commands/tablecmds.c:6841 commands/cluster.c:171
+#: commands/tablecmds.c:6848 commands/cluster.c:171
 #, c-format
 msgid "index \"%s\" for table \"%s\" does not exist"
 msgstr "l'indice \"%s\" per la tabella \"%s\" non esiste"
 
-#: commands/tablecmds.c:6892
+#: commands/tablecmds.c:6899
 msgid "cannot have multiple SET TABLESPACE subcommands"
 msgstr "non è possibile avere più di un sottocomando SET TABLESPACE"
 
-#: commands/tablecmds.c:6945
+#: commands/tablecmds.c:6952
 #, c-format
 msgid "\"%s\" is not a table, index, or TOAST table"
 msgstr "\"%s\" non è una tabella, un indice né una tabella TOAST"
 
-#: commands/tablecmds.c:7066
+#: commands/tablecmds.c:7073
 #, c-format
 msgid "cannot move system relation \"%s\""
 msgstr "non è possibile spostare la relazione \"%s\""
 
-#: commands/tablecmds.c:7082
+#: commands/tablecmds.c:7089
 msgid "cannot move temporary tables of other sessions"
 msgstr "non è possibile spostare tabelle temporanee di altre sessioni"
 
-#: commands/tablecmds.c:7271
+#: commands/tablecmds.c:7278
 msgid "cannot change inheritance of typed table"
 msgstr "non è possibile cambiare ereditarietà di tabelle con tipo"
 
-#: commands/tablecmds.c:7356
+#: commands/tablecmds.c:7363
 msgid "circular inheritance not allowed"
 msgstr "l'ereditarietà circolare non è consentita"
 
-#: commands/tablecmds.c:7357
+#: commands/tablecmds.c:7364
 #, c-format
 msgid "\"%s\" is already a child of \"%s\"."
 msgstr "\"%s\" è già figlia di \"%s\"."
 
-#: commands/tablecmds.c:7365
+#: commands/tablecmds.c:7372
 #, c-format
 msgid "table \"%s\" without OIDs cannot inherit from table \"%s\" with OIDs"
 msgstr ""
 "la tabella \"%s\" senza OID non può ereditare dalla tabella \"%s\" con OID"
 
-#: commands/tablecmds.c:7492
+#: commands/tablecmds.c:7499
 #, c-format
 msgid "column \"%s\" in child table must be marked NOT NULL"
 msgstr "la colonna \"%s\" nella tabella figlia dev'essere marcata NOT NULL"
 
-#: commands/tablecmds.c:7508
+#: commands/tablecmds.c:7515
 #, c-format
 msgid "child table is missing column \"%s\""
 msgstr "la tabella figlia non ha la colonna \"%s\""
 
-#: commands/tablecmds.c:7587
+#: commands/tablecmds.c:7594
 #, c-format
 msgid "child table \"%s\" has different definition for check constraint \"%s\""
 msgstr ""
 "la tabella figlia \"%s\" ha una definizione diversa del vincolo di controllo "
 "\"%s\""
 
-#: commands/tablecmds.c:7611
+#: commands/tablecmds.c:7618
 #, c-format
 msgid "child table is missing constraint \"%s\""
 msgstr "la tabella figlia non ha il vincolo \"%s\""
 
-#: commands/tablecmds.c:7692
+#: commands/tablecmds.c:7699
 #, c-format
 msgid "relation \"%s\" is not a parent of relation \"%s\""
 msgstr "la relazione \"%s\" non è genitore della relazione \"%s\""
 
-#: commands/tablecmds.c:7922
+#: commands/tablecmds.c:7929
 msgid "cannot move an owned sequence into another schema"
 msgstr ""
 "non è possibile spostare una sequenza con proprietario in uno schema diverso"
 
-#: commands/tablecmds.c:7951
+#: commands/tablecmds.c:7958
 #, c-format
 msgid "relation \"%s\" is already in schema \"%s\""
 msgstr "la relazione \"%s\" è già nello schema \"%s\""
 
-#: commands/tablecmds.c:7959 commands/functioncmds.c:1886
+#: commands/tablecmds.c:7966 commands/functioncmds.c:1886
 #: commands/typecmds.c:2794
 msgid "cannot move objects into or out of temporary schemas"
 msgstr "non posso spostare oggetti dentro o fuori gli schemi temporanei"
 
-#: commands/tablecmds.c:7965 commands/functioncmds.c:1892
+#: commands/tablecmds.c:7972 commands/functioncmds.c:1892
 #: commands/typecmds.c:2800
 msgid "cannot move objects into or out of TOAST schema"
 msgstr "non posso spostare oggetti dentro o fuori lo schema TOAST"
 
-#: commands/tablecmds.c:8014
+#: commands/tablecmds.c:8021
 #, c-format
 msgid "relation \"%s\" already exists in schema \"%s\""
 msgstr "la relazione \"%s\" esiste già nello schema \"%s\""

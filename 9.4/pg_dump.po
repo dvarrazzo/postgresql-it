@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-07-30 04:12+0000\n"
-"PO-Revision-Date: 2014-07-30 22:29+0100\n"
+"POT-Creation-Date: 2014-08-11 14:42+0000\n"
+"PO-Revision-Date: 2014-08-12 00:09+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1013,6 +1013,7 @@ msgstr ""
 "tipo di blocco dati sconosciuto %d durante il ripristino dell'archivio\n"
 
 #: pg_backup_custom.c:708 pg_backup_custom.c:758 pg_backup_custom.c:907
+#: pg_backup_tar.c:1086
 #, c-format
 msgid "could not determine seek position in archive file: %s\n"
 msgstr ""
@@ -1296,11 +1297,6 @@ msgstr "sintassi dell'istruzione COPY imprevista: \"%s\"\n"
 msgid "invalid OID for large object (%u)\n"
 msgstr "OID non valida per il large object (%u)\n"
 
-#: pg_backup_tar.c:1086
-#, c-format
-msgid "could not determine seek position in file: %s\n"
-msgstr "non è stato possibile determinare la posizione nel file: %s\n"
-
 #: pg_backup_tar.c:1095
 #, c-format
 msgid "archive member too large for tar format\n"
@@ -1417,7 +1413,7 @@ msgstr "(Il comando INSERT non può impostare OID.)\n"
 
 #: pg_dump.c:585
 #, c-format
-msgid "option --if-exists requires -c/--clean option\n"
+msgid "option --if-exists requires option -c/--clean\n"
 msgstr "l'opzione --if-exists richiede l'opzione -c/--clean\n"
 
 #: pg_dump.c:613
@@ -2317,7 +2313,7 @@ msgstr ""
 
 #: pg_dumpall.c:341 pg_restore.c:343
 #, c-format
-msgid "%s: option --if-exists requires -c/--clean option\n"
+msgid "%s: option --if-exists requires option -c/--clean\n"
 msgstr "%s: l'opzione --if-exists richiede l'opzione -c/--clean\n"
 
 #: pg_dumpall.c:348

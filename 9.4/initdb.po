@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-07-30 04:12+0000\n"
-"PO-Revision-Date: 2014-07-30 22:40+0100\n"
+"POT-Creation-Date: 2014-08-11 14:42+0000\n"
+"PO-Revision-Date: 2014-08-12 00:07+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -109,8 +109,8 @@ msgstr "rimozione del file o directory \"%s\" fallita: %s\n"
 
 #: ../../common/username.c:45
 #, c-format
-msgid "failed to look up effective user id %ld: %s"
-msgstr "id utente effettivo %ld non trovato: %s"
+msgid "could not look up effective user ID %ld: %s"
+msgstr "ID utente effettivo %ld non trovato: %s"
 
 #: ../../common/username.c:47
 msgid "user does not exist"
@@ -482,8 +482,8 @@ msgstr "ok\n"
 
 #: initdb.c:2555
 #, c-format
-msgid "%s: setlocale failed\n"
-msgstr "%s: setlocale fallito\n"
+msgid "%s: setlocale() failed\n"
+msgstr "%s: setlocale() fallito\n"
 
 #: initdb.c:2573
 #, c-format

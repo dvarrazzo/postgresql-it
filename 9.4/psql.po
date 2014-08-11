@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-07-30 04:12+0000\n"
-"PO-Revision-Date: 2014-07-30 21:41+0100\n"
+"POT-Creation-Date: 2014-08-11 14:42+0000\n"
+"PO-Revision-Date: 2014-08-12 00:14+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -85,8 +85,8 @@ msgstr "impossibile duplicare il puntatore nullo (errore interno)\n"
 
 #: ../../common/username.c:45
 #, c-format
-msgid "failed to look up effective user id %ld: %s"
-msgstr "id utente effettivo %ld non trovato: %s"
+msgid "could not look up effective user ID %ld: %s"
+msgstr "ID utente effettivo %ld non trovato: %s"
 
 #: ../../common/username.c:47 command.c:275
 msgid "user does not exist"
@@ -489,8 +489,8 @@ msgstr "Il piè di pagina di default (%s) è attivo.\n"
 
 #: command.c:2512
 #, c-format
-msgid "Default footer (%s) is off."
-msgstr "Il piè di pagina di default (%s) è disattivato."
+msgid "Default footer (%s) is off.\n"
+msgstr "Il piè di pagina di default (%s) è disattivato.\n"
 
 #: command.c:2519
 #, c-format
