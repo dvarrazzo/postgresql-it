@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-08-11 14:42+0000\n"
-"PO-Revision-Date: 2014-08-12 00:08+0100\n"
+"POT-Creation-Date: 2014-08-16 18:12+0000\n"
+"PO-Revision-Date: 2014-08-17 02:23+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -727,8 +727,8 @@ msgstr "  -n, --no-loop          non ri-eseguire se la connessione è persa\n"
 
 #: pg_receivexlog.c:77
 #, c-format
-msgid "      --slot=SLOTNAME    replication slot to use\n"
-msgstr "      --slot=NOMESLOT    slot di replicazione da usare\n"
+msgid "  -S, --slot=SLOTNAME    replication slot to use\n"
+msgstr "  -S, --slot=NOMESLOT    slot di replicazione da usare\n"
 
 #: pg_receivexlog.c:89
 #, c-format
@@ -1003,13 +1003,13 @@ msgstr "%s: occorre specificare almeno una azione\n"
 
 #: pg_recvlogical.c:817
 #, c-format
-msgid "%s: cannot use --init or --start together with --stop\n"
-msgstr "%s: --init o --start non possono essere usate con --stop\n"
+msgid "%s: cannot use --create or --start together with --drop\n"
+msgstr "%s: --create o --start non possono essere usate con --drop\n"
 
 #: pg_recvlogical.c:825
 #, c-format
-msgid "%s: cannot use --init or --stop together with --startpos\n"
-msgstr "%s: --init o --stop non possono essere usate con --startpos\n"
+msgid "%s: cannot use --create or --drop together with --startpos\n"
+msgstr "%s: --create o --drop non possono essere usate con --startpos\n"
 
 #: pg_recvlogical.c:879
 #, c-format
