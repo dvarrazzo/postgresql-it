@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-08-11 14:42+0000\n"
-"PO-Revision-Date: 2014-08-12 00:09+0100\n"
+"POT-Creation-Date: 2014-08-23 05:12+0000\n"
+"PO-Revision-Date: 2014-08-23 15:12+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1834,7 +1834,7 @@ msgstr ""
 "della variabile di ambiente PGDATABASE.\n"
 "\n"
 
-#: pg_dump.c:925 pg_dumpall.c:598 pg_restore.c:482
+#: pg_dump.c:925 pg_dumpall.c:598 pg_restore.c:485
 #, c-format
 msgid "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
@@ -2621,8 +2621,8 @@ msgstr ""
 
 #: pg_restore.c:449
 #, c-format
-msgid "  -I, --index=NAME             restore named indexes\n"
-msgstr "  -I, --index=NOME             ripristina gli indici nominati\n"
+msgid "  -I, --index=NAME             restore named index\n"
+msgstr "  -I, --index=NOME             ripristina l'indice nominato\n"
 
 #: pg_restore.c:450
 #, c-format
@@ -2643,14 +2643,14 @@ msgstr ""
 
 #: pg_restore.c:453
 #, c-format
-msgid "  -n, --schema=NAME            restore only objects in these schemas\n"
+msgid "  -n, --schema=NAME            restore only objects in this schema\n"
 msgstr ""
-"  -n, --schema=NOME            ripristina solo gli oggetti in questi schema\n"
+"  -n, --schema=NOME            ripristina solo gli oggetti in questo schema\n"
 
 #: pg_restore.c:455
 #, c-format
-msgid "  -P, --function=NAME(args)    restore named functions\n"
-msgstr "  -P, --function=NOME(arg)     ripristina le funzioni nominate\n"
+msgid "  -P, --function=NAME(args)    restore named function\n"
+msgstr "  -P, --function=NOME(arg)     ripristina la funzione nominata\n"
 
 #: pg_restore.c:456
 #, c-format
@@ -2669,13 +2669,13 @@ msgstr ""
 
 #: pg_restore.c:458
 #, c-format
-msgid "  -t, --table=NAME             restore named tables\n"
-msgstr "  -t, --table=NOME             ripristina le tabelle nominate\n"
+msgid "  -t, --table=NAME             restore named table\n"
+msgstr "  -t, --table=NOME             ripristina la tabella nominata\n"
 
 #: pg_restore.c:459
 #, c-format
-msgid "  -T, --trigger=NAME           restore named triggers\n"
-msgstr "  -T, --trigger=NOME           ripristina i trigger nominati\n"
+msgid "  -T, --trigger=NAME           restore named trigger\n"
+msgstr "  -T, --trigger=NOME           ripristina il trigger nominato\n"
 
 #: pg_restore.c:460
 #, c-format
@@ -2718,11 +2718,11 @@ msgstr ""
 #: pg_restore.c:468
 #, c-format
 msgid ""
-"  --section=SECTION            restore named sections (pre-data, data, or "
+"  --section=SECTION            restore named section (pre-data, data, or "
 "post-data)\n"
 msgstr ""
-"  --section=SEZIONE            ripristina le sezioni nominate (pre-data, "
-"data, or post-data)\n"
+"  --section=SEZIONE            ripristina la sezione nominata (pre-data, "
+"data o post-data)\n"
 
 #: pg_restore.c:479
 #, c-format
@@ -2730,6 +2730,18 @@ msgid "  --role=ROLENAME          do SET ROLE before restore\n"
 msgstr "  --role=NOMERUOLO         esegui SET ROLE prima del ripristino\n"
 
 #: pg_restore.c:481
+#, c-format
+msgid ""
+"\n"
+"The options -I, -n, -P, -t, -T, and --section can be combined and specified\n"
+"multiple times to select multiple objects.\n"
+msgstr ""
+"\n"
+"Le opzioni -I, -n, -P, -t, -T e --section possono essere combinate e "
+"specificate\n"
+"più volte per selezionare più oggetti.\n"
+
+#: pg_restore.c:484
 #, c-format
 msgid ""
 "\n"
