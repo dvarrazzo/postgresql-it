@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2014-08-11 14:42+0000\n"
-"PO-Revision-Date: 2014-08-12 00:07+0100\n"
+"PO-Revision-Date: 2014-08-25 21:00+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -992,8 +992,7 @@ msgstr "%s: accesso alla directory \"%s\" fallito: %s\n"
 #, c-format
 msgid "%s: transaction log directory location must be an absolute path\n"
 msgstr ""
-"%s: la posizione della directory del log delle transazioni deve essere un "
-"percorso assoluto\n"
+"%s: la directory dei log delle transazioni deve essere un percorso assoluto\n"
 
 #: initdb.c:3362
 #, c-format

@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2014-07-30 04:12+0000\n"
-"PO-Revision-Date: 2014-07-30 22:42+0100\n"
+"PO-Revision-Date: 2014-08-25 21:13+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -217,8 +217,8 @@ msgstr "%s: inizializzazione del sistema di database fallita\n"
 #, c-format
 msgid "%s: another server might be running; trying to start server anyway\n"
 msgstr ""
-"%s: un altro server potrebbe essere in esecuzione: si proverà ad avviare il "
-"server comunque\n"
+"%s: un altro server potrebbe essere in esecuzione; si sta provando ad "
+"avviare il server ugualmente\n"
 
 #: pg_ctl.c:878
 #, c-format
