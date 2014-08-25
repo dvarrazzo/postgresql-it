@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2014-07-29 09:27+0000\n"
-"PO-Revision-Date: 2014-07-30 22:29+0100\n"
+"PO-Revision-Date: 2014-08-25 21:16+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -228,13 +228,13 @@ msgstr "  -E, --encoding=CODIFICA     scarica i dati nella CODIFICA indicata\n"
 #, c-format
 msgid "  -n, --schema=SCHEMA         dump the named schema(s) only\n"
 msgstr ""
-"  -n, --schema=SCHEMA         scarica solo lo schema o gli schemi nominati\n"
+"  -n, --schema=SCHEMA         scarica solo lo schema o gli schemi indicati\n"
 
 #: pg_dump.c:889
 #, c-format
 msgid "  -N, --exclude-schema=SCHEMA do NOT dump the named schema(s)\n"
 msgstr ""
-"  -N, --exclude-schema=SCHEMA non scaricare lo schema o gli schemi nominati\n"
+"  -N, --exclude-schema=SCHEMA non scaricare lo schema o gli schemi indicati\n"
 
 #: pg_dump.c:890 pg_dumpall.c:545
 #, c-format
@@ -269,14 +269,14 @@ msgstr ""
 #, c-format
 msgid "  -t, --table=TABLE           dump the named table(s) only\n"
 msgstr ""
-"  -t, --table=TABELLA         scarica solo la tabella o le tabelle nominate\n"
+"  -t, --table=TABELLA         scarica solo la tabella o le tabelle indicate\n"
 
 #: pg_dump.c:896
 #, c-format
 msgid "  -T, --exclude-table=TABLE   do NOT dump the named table(s)\n"
 msgstr ""
 "  -T, --exclude-table=TABELLA NON scaricare la tabella o le tabelle "
-"nominate\n"
+"indicate\n"
 
 #: pg_dump.c:897 pg_dumpall.c:551
 #, c-format
@@ -1978,7 +1978,7 @@ msgid ""
 "                           restore named function\n"
 msgstr ""
 "  -P, --function=NOME(argomenti)\n"
-"                           ripristina la funzione nominata\n"
+"                           ripristina la funzione indicata\n"
 
 #: pg_restore.c:422
 #, c-format
@@ -1997,12 +1997,12 @@ msgstr ""
 #: pg_restore.c:424
 #, c-format
 msgid "  -t, --table=NAME         restore named table\n"
-msgstr "  -t, --table=NOME         ripristina la tabella nominata\n"
+msgstr "  -t, --table=NOME         ripristina la tabella indicata\n"
 
 #: pg_restore.c:425
 #, c-format
 msgid "  -T, --trigger=NAME       restore named trigger\n"
-msgstr "  -T, --trigger=NOME       ripristina il trigger nominato\n"
+msgstr "  -T, --trigger=NOME       ripristina il trigger indicato\n"
 
 #: pg_restore.c:426
 #, c-format
