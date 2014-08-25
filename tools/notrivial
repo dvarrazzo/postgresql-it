@@ -1,0 +1,5 @@
+#!/bin/bash
+# Revert the changes to a .po file if the only changes are in comments.
+for f in "$@"; do
+    git diff $f | egrep -v '^."(POT-Creation-Date|PO-Revision-Date|Project-Id-Version|X-Generator): ' | egrep '^[-+][^-+#]' | egrep -q . || git checkout $f
+done

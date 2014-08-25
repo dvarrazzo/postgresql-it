@@ -1,7 +1,6 @@
 # rules to be imported by VERSION/Makefile
 
-# working copy of the pgtranslation/messages repository
-PGTR_WC = "$$HOME/dev/fs/pgtranslation/messages/"
+ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 .PHONY: clean check
 
@@ -21,7 +20,7 @@ dlpots:
 updatepots:
 	for f in *.po; do \
 		msgmerge -N $$f $${f%.po}.pot | ../tools/nostale.py | sponge $$f; \
-		git diff $$f | egrep '^[-+][^-+#"]' | egrep . -q || git checkout $$f; \
+		../tools/notrivial $$f; \
 	done
 
 ifdef UPDATE_FROM
@@ -31,7 +30,7 @@ update:
 	for f in *.po; do \
 		msgmerge -N ../${UPDATE_FROM}/$$f $$f | ../tools/nostale.py | sponge $$f; \
 		sed -i 's/\(Project-Id-Version:.* \)\(${UPDATE_FROM}\)\(.*\)/\1${VERSION}\3/' $$f; \
-		git diff $$f | egrep '^[-+][^-+#"]' | egrep . -q || git checkout $$f; \
+		../tools/notrivial $$f; \
 	done
 
 endif
@@ -50,9 +49,7 @@ uniform:
 
 # Revert files whose only changes are in comments and metadata
 notrivial:
-	for f in *.po; do \
-		git diff $$f | egrep '^[-+][^-+#"]' | egrep . -q || git checkout $$f; \
-	done
+	../tools/notrivial *.po
 
 # Look for translation errors
 check: $(MOS)
@@ -79,12 +76,12 @@ mopack:
 	zip -9 ../package/messages-$(LANG)-$(VERSION).zip *.mo
 
 # propagate the changes to a pgtranslation working copy
+# you need a symlink called 'pgtr' in the current directory,
+# pointing to the pgtranslation messages repository
 pgtrpush:
-	(cd $(PGTR_WC) && git checkout $(PGTR_BRANCH) && git pull)
+	(cd ../pgtr && git checkout $(PGTR_BRANCH) && git pull)
 	for f in *.po; do \
-		msgcat --no-wrap -o $(PGTR_WC)/$(LANG)/$$f $$f; \
-		(cd $(PGTR_WC) \
-			&& git diff $(LANG)/$$f | egrep '^[-+][^-+#"]' | egrep . -q \
-			|| git checkout $(LANG)/$$f); \
+		msgcat --no-wrap -o ../pgtr/$(LANG)/$$f $$f; \
 	done
-	(cd $(PGTR_WC) && git commit -m "$(LANG): translation updates" $(LANG))
+	(cd ../pgtr && $(ROOT_DIR)/tools/notrivial $(LANG)/*.po)
+	(cd ../pgtr && git status --porcelain | grep -q '^ M' && git commit -m "$(LANG): translation updates" $(LANG) || true)
