@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2013-01-21 04:56+0000\n"
-"PO-Revision-Date: 2012-12-03 17:32+0100\n"
+"PO-Revision-Date: 2014-08-25 21:23+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -612,7 +612,7 @@ msgid ""
 "Options for stop or restart:\n"
 msgstr ""
 "\n"
-"Opzioni per lo spegnimento o il riavvio:\n"
+"Opzioni per l'arresto o il riavvio:\n"
 
 #: pg_ctl.c:1820
 #, c-format
