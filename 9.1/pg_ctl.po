@@ -448,7 +448,7 @@ msgid ""
 "  %s start   [-w] [-t SECS] [-D DATADIR] [-s] [-l FILENAME] [-o \"OPTIONS"
 "\"]\n"
 msgstr ""
-"  %s start   [-w] [-t SECS] [-D DATADIR] [-s] [-l FILENAME] [-o \"OPTIONS"
+"  %s start   [-w] [-t SECS] [-D DATADIR] [-s] [-l NOMEFILE] [-o \"OPZIONI"
 "\"]\n"
 
 #: pg_ctl.c:1785
@@ -463,7 +463,7 @@ msgid ""
 "                 [-o \"OPTIONS\"]\n"
 msgstr ""
 "  %s restart [-w] [-t SECS] [-D DATADIR] [-s] [-m SHUTDOWN-MODE]\n"
-"                 [-o \"OPTIONS\"]\n"
+"                 [-o \"OPZIONI\"]\n"
 
 #: pg_ctl.c:1788
 #, c-format
@@ -589,7 +589,7 @@ msgstr "  -c, --core-files       non disponibile su questa piattaforma\n"
 #, c-format
 msgid "  -l, --log FILENAME     write (or append) server log to FILENAME\n"
 msgstr ""
-"  -l, --log FILENAME     scrivi (o accoda) il log del server in FILENAME\n"
+"  -l, --log NOMEFILE     scrivi (o accoda) il log del server in NOMEFILE\n"
 
 #: pg_ctl.c:1816
 #, c-format
@@ -597,7 +597,7 @@ msgid ""
 "  -o OPTIONS             command line options to pass to postgres\n"
 "                         (PostgreSQL server executable) or initdb\n"
 msgstr ""
-"  -o OPTIONS             opzioni da riga di comando da passare a postgres\n"
+"  -o OPZIONI             opzioni da riga di comando da passare a postgres\n"
 "                         (programma eseguibile del server PostgreSQL)\n"
 
 #: pg_ctl.c:1818

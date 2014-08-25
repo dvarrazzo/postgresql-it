@@ -15681,7 +15681,7 @@ msgstr ""
 #: main/main.c:321 main/main.c:326
 #, c-format
 msgid "  -r FILENAME     send stdout and stderr to given file\n"
-msgstr "  -r FILENAME     invia stdout e stderr al file in argomento\n"
+msgstr "  -r NOMEFILE     invia stdout e stderr al file in argomento\n"
 
 #: main/main.c:323
 #, c-format

@@ -1372,7 +1372,7 @@ msgstr ""
 #: pg_dump.c:825
 #, c-format
 msgid "  -f, --file=FILENAME          output file or directory name\n"
-msgstr "  -f, --file=FILENAME          nome del file o directory di output\n"
+msgstr "  -f, --file=NOMEFILE          nome del file o directory di output\n"
 
 #: pg_dump.c:826
 #, c-format
