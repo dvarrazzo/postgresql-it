@@ -773,7 +773,7 @@ msgstr ""
 #, c-format
 msgid "  -S START-TYPE   service start type to register PostgreSQL server\n"
 msgstr ""
-"  -S START-TYPE   tipo di avvio del servizion con cui registrare il server "
+"  -S START-TYPE   tipo di avvio del servizio con cui registrare il server "
 "PostgreSQL\n"
 
 #: pg_ctl.c:1818

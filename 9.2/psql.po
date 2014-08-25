@@ -979,7 +979,7 @@ msgstr "ordinamento %s"
 
 #: describe.c:1466
 msgid "not null"
-msgstr "not null"
+msgstr "non null"
 
 #. translator: default values of column definitions
 #: describe.c:1476

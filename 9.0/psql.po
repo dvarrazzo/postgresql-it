@@ -1757,7 +1757,7 @@ msgstr "Memorizzazione"
 
 #: describe.c:1359
 msgid "not null"
-msgstr "not null"
+msgstr "non null"
 
 #. translator: default values of column definitions
 #: describe.c:1368

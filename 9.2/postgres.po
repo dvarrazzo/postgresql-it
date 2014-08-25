@@ -311,7 +311,7 @@ msgstr ""
 #, c-format
 msgid "old GIN indexes do not support whole-index scans nor searches for nulls"
 msgstr ""
-"i vecchi indici GIN non supportano le scansioni sull'intero indice nè le "
+"i vecchi indici GIN non supportano le scansioni sull'intero indice né le "
 "ricerche di null"
 
 #: access/gin/ginscan.c:401
@@ -10246,7 +10246,7 @@ msgid ""
 "authentication method \"ldap\" requires argument \"ldapbasedn\", \"ldapprefix"
 "\", or \"ldapsuffix\" to be set"
 msgstr ""
-"il metodo di autenticazione \"ldap\" richede che gli argomenti \"ldapbasedn"
+"il metodo di autenticazione \"ldap\" richiede che gli argomenti \"ldapbasedn"
 "\", \"ldapprefix\" o \"ldapsuffix\" siano impostati"
 
 #: libpq/hba.c:1406
@@ -11197,7 +11197,7 @@ msgstr ""
 #, c-format
 msgid "Aggregates with DISTINCT must be able to sort their inputs."
 msgstr ""
-"Gli aggregati cin DISTINCT devono essere in grado di ordinare i loro input."
+"Gli aggregati con DISTINCT devono essere in grado di ordinare i loro input."
 
 #: parser/parse_agg.c:172
 #, c-format

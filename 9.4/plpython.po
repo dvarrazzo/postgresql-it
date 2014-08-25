@@ -205,7 +205,7 @@ msgstr "interruzione forzata di una sotto-transazione che non è terminata"
 #, c-format
 msgid "Python major version mismatch in session"
 msgstr ""
-"mancata corrispondenza della versione maggiore di Python major nella sessione"
+"mancata corrispondenza della versione maggiore di Python nella sessione"
 
 #: plpy_main.c:94
 #, c-format

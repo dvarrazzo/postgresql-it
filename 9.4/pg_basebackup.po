@@ -105,7 +105,7 @@ msgid ""
 "  -r, --max-rate=RATE    maximum transfer rate to transfer data directory\n"
 "                         (in kB/s, or use suffix \"k\" or \"M\")\n"
 msgstr ""
-"  -r, --max-rate=RATE    transfer rate massimp per trasferire la directory "
+"  -r, --max-rate=RATE    transfer rate massimo per trasferire la directory "
 "dei dati\n"
 "                         (in kB/s, oppure usa i suffissi \"k\" o \"M\")\n"
 

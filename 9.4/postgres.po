@@ -390,7 +390,7 @@ msgstr ""
 #, c-format
 msgid "old GIN indexes do not support whole-index scans nor searches for nulls"
 msgstr ""
-"i vecchi indici GIN non supportano le scansioni sull'intero indice nè le "
+"i vecchi indici GIN non supportano le scansioni sull'intero indice né le "
 "ricerche di null"
 
 #: access/gin/ginscan.c:403
@@ -1875,7 +1875,7 @@ msgstr "si sta usando il precedente record di checkpoint in %X/%X"
 #: access/transam/xlog.c:6261
 #, c-format
 msgid "requested timeline %u is not a child of this server's history"
-msgstr "la timeline richiesta %u non è figlia della stora di questo server"
+msgstr "la timeline richiesta %u non è figlia della storia di questo server"
 
 #: access/transam/xlog.c:6263
 #, c-format
@@ -4421,7 +4421,9 @@ msgstr ""
 #: commands/aggregatecmds.c:224
 #, c-format
 msgid "aggregate minitcond must not be specified without mstype"
-msgstr "aggregate minitcond must not be specified without mstype"
+msgstr ""
+"l'attributo minitcond dell'aggregato non deve essere specificato se mstype "
+"non lo è"
 
 #: commands/aggregatecmds.c:244
 #, c-format
@@ -7585,7 +7587,7 @@ msgstr "la colonna \"%s\" è in una chiave primaria"
 #, c-format
 msgid "\"%s\" is not a table, materialized view, index, or foreign table"
 msgstr ""
-"\"%s\" non é una tabella, una vista materializzata, un indice né una tabella "
+"\"%s\" non è una tabella, una vista materializzata, un indice né una tabella "
 "esterna"
 
 #: commands/tablecmds.c:5168
@@ -10927,7 +10929,7 @@ msgid ""
 "authentication method \"ldap\" requires argument \"ldapbasedn\", \"ldapprefix"
 "\", or \"ldapsuffix\" to be set"
 msgstr ""
-"il metodo di autenticazione \"ldap\" richede che gli argomenti \"ldapbasedn"
+"il metodo di autenticazione \"ldap\" richiede che gli argomenti \"ldapbasedn"
 "\", \"ldapprefix\" o \"ldapsuffix\" siano impostati"
 
 #: libpq/hba.c:1418
@@ -11874,7 +11876,7 @@ msgstr ""
 #, c-format
 msgid "Aggregates with DISTINCT must be able to sort their inputs."
 msgstr ""
-"Gli aggregati cin DISTINCT devono essere in grado di ordinare i loro input."
+"Gli aggregati con DISTINCT devono essere in grado di ordinare i loro input."
 
 #: parser/parse_agg.c:254
 msgid "aggregate functions are not allowed in JOIN conditions"
@@ -12013,7 +12015,7 @@ msgstr "la finestra \"%s\" non esiste"
 msgid ""
 "aggregate functions are not allowed in a recursive query's recursive term"
 msgstr ""
-"le funzioni di aggregazione non sono ammesse nel termine ricosivo di una "
+"le funzioni di aggregazione non sono ammesse nel termine ricorsivo di una "
 "query ricorsiva"
 
 #: parser/parse_agg.c:1057

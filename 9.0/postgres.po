@@ -13541,7 +13541,7 @@ msgid ""
 "authentication method \"ldap\" requires argument \"ldapbasedn\", \"ldapprefix"
 "\", or \"ldapsuffix\" to be set"
 msgstr ""
-"il metodo di autenticazione \"ldap\" richede che gli argomenti \"ldapbasedn"
+"il metodo di autenticazione \"ldap\" richiede che gli argomenti \"ldapbasedn"
 "\", \"ldapprefix\" o \"ldapsuffix\" siano impostati"
 
 #: libpq/hba.c:1629
@@ -16159,7 +16159,7 @@ msgstr ""
 #: parser/parse_agg.c:129
 msgid "Aggregates with DISTINCT must be able to sort their inputs."
 msgstr ""
-"Gli aggregati cin DISTINCT devono essere in grado di ordinare i loro input."
+"Gli aggregati con DISTINCT devono essere in grado di ordinare i loro input."
 
 #: parser/parse_agg.c:170
 msgid "aggregate function calls cannot contain window function calls"

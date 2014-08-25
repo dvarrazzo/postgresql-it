@@ -323,7 +323,7 @@ msgstr "creazione delle eccezioni SPI di base fallita"
 #: plpython.c:4097
 msgid "Python major version mismatch in session"
 msgstr ""
-"mancata corrispondenza della versione maggiore di Python major nella sessione"
+"mancata corrispondenza della versione maggiore di Python nella sessione"
 
 #: plpython.c:4098
 #, c-format

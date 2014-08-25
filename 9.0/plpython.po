@@ -304,7 +304,7 @@ msgstr "errore sconosciuto nella funzione PLy_spi_execute_fetch_result"
 #: plpython.c:3247
 msgid "Python major version mismatch in session"
 msgstr ""
-"mancata corrispondenza della versione maggiore di Python major nella sessione"
+"mancata corrispondenza della versione maggiore di Python nella sessione"
 
 #: plpython.c:3248
 #, c-format
