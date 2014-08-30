@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-08-23 05:12+0000\n"
-"PO-Revision-Date: 2014-08-12 00:14+0100\n"
+"POT-Creation-Date: 2014-08-30 02:41+0000\n"
+"PO-Revision-Date: 2014-08-30 12:43+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -149,8 +149,8 @@ msgstr "\\%s: parametro in eccesso \"%s\" ignorato\n"
 
 #: command.c:273
 #, c-format
-msgid "could not get home directory for user id %ld: %s\n"
-msgstr "directory home non trovata per l'id utente %ld: %s\n"
+msgid "could not get home directory for user ID %ld: %s\n"
+msgstr "directory home non trovata per l'ID utente %ld: %s\n"
 
 #: command.c:291
 #, c-format
@@ -732,8 +732,8 @@ msgstr "esecuzione del comando \"%s\" fallito: %s\n"
 
 #: copy.c:346
 #, c-format
-msgid "could not stat file: %s\n"
-msgstr "richiesta informazioni sul file fallita: %s\n"
+msgid "could not stat file \"%s\": %s\n"
+msgstr "richiesta informazioni sul file \"%s\" fallita: %s\n"
 
 #: copy.c:350
 #, c-format
@@ -4148,10 +4148,8 @@ msgid "change the definition of a table"
 msgstr "cambia la definizione di una tabella"
 
 #: sql_help.h:326
-msgid "change the definition of a tablespace or affect objects of a tablespace"
-msgstr ""
-"cambia la definizione di un tablespace o modifica gli oggetti di un "
-"tablespace"
+msgid "change the definition of a tablespace"
+msgstr "cambia la definizione di un tablespace"
 
 #: sql_help.h:331
 msgid "change the definition of a text search configuration"

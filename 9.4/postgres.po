@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-08-23 05:08+0000\n"
-"PO-Revision-Date: 2014-08-18 12:29+0100\n"
+"POT-Creation-Date: 2014-08-30 02:38+0000\n"
+"PO-Revision-Date: 2014-08-30 12:41+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -496,21 +496,21 @@ msgstr "l'indice \"%s\" non è un indice hash"
 msgid "index \"%s\" has wrong hash version"
 msgstr "l'indice \"%s\" ha una versione errata dell'hash"
 
-#: access/heap/heapam.c:1200 access/heap/heapam.c:1228
-#: access/heap/heapam.c:1260 catalog/aclchk.c:1742
+#: access/heap/heapam.c:1199 access/heap/heapam.c:1227
+#: access/heap/heapam.c:1259 catalog/aclchk.c:1742
 #, c-format
 msgid "\"%s\" is an index"
 msgstr "\"%s\" è un indice"
 
-#: access/heap/heapam.c:1205 access/heap/heapam.c:1233
-#: access/heap/heapam.c:1265 catalog/aclchk.c:1749 commands/tablecmds.c:8495
+#: access/heap/heapam.c:1204 access/heap/heapam.c:1232
+#: access/heap/heapam.c:1264 catalog/aclchk.c:1749 commands/tablecmds.c:8495
 #: commands/tablecmds.c:11279
 #, c-format
 msgid "\"%s\" is a composite type"
 msgstr "\"%s\" è un tipo composito"
 
-#: access/heap/heapam.c:4224 access/heap/heapam.c:4438
-#: access/heap/heapam.c:4495
+#: access/heap/heapam.c:4223 access/heap/heapam.c:4436
+#: access/heap/heapam.c:4493 executor/execMain.c:1992
 #, c-format
 msgid "could not obtain lock on row in relation \"%s\""
 msgstr "lock di riga nella relazione \"%s\" fallito"
@@ -850,7 +850,7 @@ msgstr ""
 #: access/transam/timeline.c:345 access/transam/xlog.c:3283
 #: access/transam/xlog.c:10074 access/transam/xlog.c:10087
 #: access/transam/xlog.c:10455 access/transam/xlog.c:10498
-#: access/transam/xlogfuncs.c:473 access/transam/xlogfuncs.c:492
+#: access/transam/xlogfuncs.c:468 access/transam/xlogfuncs.c:487
 #: replication/logical/reorderbuffer.c:2820 replication/walsender.c:483
 #: storage/file/copydir.c:176 utils/adt/genfile.c:139
 #, c-format
@@ -859,7 +859,7 @@ msgstr "lettura de file \"%s\" fallita: %m"
 
 #: access/transam/timeline.c:411 access/transam/timeline.c:498
 #: access/transam/xlog.c:3185 access/transam/xlog.c:3314
-#: access/transam/xlogfuncs.c:498 commands/copy.c:1518
+#: access/transam/xlogfuncs.c:493 commands/copy.c:1518
 #: storage/file/copydir.c:201
 #, c-format
 msgid "could not close file \"%s\": %m"
@@ -875,7 +875,7 @@ msgstr "creazione del collegamento il file \"%s\" a \"%s\" fallita: %m"
 #: access/transam/xlogarchive.c:458 access/transam/xlogarchive.c:475
 #: access/transam/xlogarchive.c:582 postmaster/pgarch.c:759
 #: replication/logical/snapbuild.c:1593 replication/slot.c:933
-#: utils/time/snapmgr.c:999
+#: utils/misc/guc.c:6832 utils/time/snapmgr.c:999
 #, c-format
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "non è stato possibile rinominare il file \"%s\" in \"%s\": %m"
@@ -2311,7 +2311,7 @@ msgstr "rimozione del file \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:10105 access/transam/xlog.c:10118
 #: access/transam/xlog.c:10469 access/transam/xlog.c:10475
-#: access/transam/xlogfuncs.c:503
+#: access/transam/xlogfuncs.c:498
 #, c-format
 msgid "invalid data in file \"%s\""
 msgstr "i dati nel file \"%s\" non sono validi"
@@ -2503,19 +2503,18 @@ msgid "pg_xlogfile_name() cannot be executed during recovery."
 msgstr "pg_xlogfile_name() non può essere eseguito durante il recupero."
 
 #: access/transam/xlogfuncs.c:344 access/transam/xlogfuncs.c:366
-#: access/transam/xlogfuncs.c:388
 #, c-format
 msgid "must be superuser to control recovery"
 msgstr "solo un superutente può controllare il recupero"
 
 #: access/transam/xlogfuncs.c:349 access/transam/xlogfuncs.c:371
-#: access/transam/xlogfuncs.c:393
+#: access/transam/xlogfuncs.c:388
 #, c-format
 msgid "recovery is not in progress"
 msgstr "il recupero non è in corso"
 
 #: access/transam/xlogfuncs.c:350 access/transam/xlogfuncs.c:372
-#: access/transam/xlogfuncs.c:394
+#: access/transam/xlogfuncs.c:389
 #, c-format
 msgid "Recovery control functions can only be executed during recovery."
 msgstr ""
@@ -3561,7 +3560,7 @@ msgstr "\"%s\" non è una tabella"
 msgid "\"%s\" is not a view"
 msgstr "\"%s\" non è una vista"
 
-#: catalog/objectaddress.c:883 commands/matview.c:167 commands/tablecmds.c:226
+#: catalog/objectaddress.c:883 commands/matview.c:171 commands/tablecmds.c:226
 #: commands/tablecmds.c:11254
 #, c-format
 msgid "\"%s\" is not a materialized view"
@@ -6593,36 +6592,36 @@ msgstr "è possibile reindicizzare solo il database corrente"
 msgid "table \"%s.%s\" was reindexed"
 msgstr "la tabella \"%s.%s\" è stata reindicizzata"
 
-#: commands/matview.c:174
+#: commands/matview.c:178
 #, c-format
 msgid "CONCURRENTLY cannot be used when the materialized view is not populated"
 msgstr ""
 "non si può usare CONCURRENTLY quando la vista materializzata non è popolata"
 
-#: commands/matview.c:180
+#: commands/matview.c:184
 #, c-format
 msgid "CONCURRENTLY and WITH NO DATA options cannot be used together"
 msgstr ""
 "le opzioni CONCURRENTLY e WITH NO DATA non possono essere usate insieme"
 
-#: commands/matview.c:584
+#: commands/matview.c:591
 #, c-format
 msgid "new data for \"%s\" contains duplicate rows without any NULL columns"
 msgstr ""
 "i nuovi dati per \"%s\" contengono righe duplicate senza alcuna colonna NULL"
 
-#: commands/matview.c:586
+#: commands/matview.c:593
 #, c-format
 msgid "Row: %s"
 msgstr "Riga: %s"
 
-#: commands/matview.c:671
+#: commands/matview.c:681
 #, c-format
 msgid "cannot refresh materialized view \"%s\" concurrently"
 msgstr ""
 "non è possibile aggiornare la vista materializzata \"%s\" concorrentemente"
 
-#: commands/matview.c:673
+#: commands/matview.c:683
 #, c-format
 msgid ""
 "Create a UNIQUE index with no WHERE clause on one or more columns of the "
@@ -8393,7 +8392,7 @@ msgstr ""
 "Considera l'utilizzo di un trigger AFTER invece di un trigger BEFORE per "
 "propagare i cambiamenti ad altre righe."
 
-#: commands/trigger.c:2741 executor/execMain.c:2049
+#: commands/trigger.c:2741 executor/execMain.c:2059
 #: executor/nodeLockRows.c:165 executor/nodeModifyTable.c:447
 #: executor/nodeModifyTable.c:725
 #, c-format
@@ -9220,7 +9219,7 @@ msgstr "valore non valido per l'opzione \"check_option\""
 
 #: commands/view.c:55
 #, c-format
-msgid "Valid values are \"local\", and \"cascaded\"."
+msgid "Valid values are \"local\" and \"cascaded\"."
 msgstr "Valori validi sono \"local\" e \"cascaded\"."
 
 #: commands/view.c:114
@@ -13537,7 +13536,7 @@ msgstr "mappatura della memoria condivisa anonima fallita: %m"
 #, c-format
 msgid ""
 "This error usually means that PostgreSQL's request for a shared memory "
-"segment exceeded available memory, swap space or huge pages. To reduce the "
+"segment exceeded available memory, swap space, or huge pages. To reduce the "
 "request size (currently %zu bytes), reduce PostgreSQL's shared memory usage, "
 "perhaps by reducing shared_buffers or max_connections."
 msgstr ""
@@ -13545,7 +13544,7 @@ msgstr ""
 "segmento di memoria condivisa supera la memoria disponibile, lo spazio di "
 "swap o le pagine huge. Per ridurre la dimensione richiesta (attualmente %zu "
 "byte), riduci l'utilizzo di memoria condivisa di PostgreSQL, ad esempio "
-"riducendo \"shared_buffers o max_connections."
+"riducendo shared_buffers o max_connections."
 
 #: port/pg_shmem.c:439 port/sysv_shmem.c:439 port/win32_shmem.c:136
 #, c-format
@@ -15624,16 +15623,16 @@ msgstr ""
 "Le viste contenenti LIMIT o OFFSET non sono aggiornabili automaticamente."
 
 #: rewrite/rewriteHandler.c:2091
-msgid "Views that return aggregate functions are not automatically updatable"
+msgid "Views that return aggregate functions are not automatically updatable."
 msgstr ""
 "Le viste che restituiscono funzioni di aggregazione non sono aggiornabili "
-"automaticamente"
+"automaticamente."
 
 #: rewrite/rewriteHandler.c:2094
-msgid "Views that return window functions are not automatically updatable"
+msgid "Views that return window functions are not automatically updatable."
 msgstr ""
 "Le viste che restituiscono funzioni finestra non sono aggiornabili "
-"automaticamente"
+"automaticamente."
 
 #: rewrite/rewriteHandler.c:2097
 msgid ""
@@ -22678,11 +22677,6 @@ msgstr ""
 #, c-format
 msgid "failed to open auto conf file \"%s\": %m "
 msgstr "apertura del file di configurazione automatica \"%s\" fallita: %m "
-
-#: utils/misc/guc.c:6832
-#, c-format
-msgid "could not rename file \"%s\" to \"%s\" : %m"
-msgstr "rinominazione del file \"%s\" in \"%s\" fallita: %m"
 
 #: utils/misc/guc.c:6935
 #, c-format
