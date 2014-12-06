@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-11-19 21:08+0000\n"
-"PO-Revision-Date: 2014-11-21 23:34+0100\n"
+"POT-Creation-Date: 2014-12-06 18:08+0000\n"
+"PO-Revision-Date: 2014-12-06 18:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -9470,8 +9470,8 @@ msgstr "la nuova riga viola WITH CHECK OPTION per la vista \"%s\""
 
 #: executor/execQual.c:306 executor/execQual.c:334 executor/execQual.c:3157
 #: utils/adt/array_userfuncs.c:430 utils/adt/arrayfuncs.c:233
-#: utils/adt/arrayfuncs.c:512 utils/adt/arrayfuncs.c:1247
-#: utils/adt/arrayfuncs.c:2933 utils/adt/arrayfuncs.c:4958
+#: utils/adt/arrayfuncs.c:531 utils/adt/arrayfuncs.c:1275
+#: utils/adt/arrayfuncs.c:2961 utils/adt/arrayfuncs.c:4986
 #, c-format
 msgid "number of array dimensions (%d) exceeds the maximum allowed (%d)"
 msgstr ""
@@ -9615,7 +9615,6 @@ msgstr ""
 "con elementi di tipo %s."
 
 #: executor/execQual.c:3177 executor/execQual.c:3204
-#: utils/adt/arrayfuncs.c:547
 #, c-format
 msgid ""
 "multidimensional arrays must have array expressions with matching dimensions"
@@ -9663,7 +9662,7 @@ msgstr "il tipo di destinazione non è un array"
 msgid "ROW() column has type %s instead of type %s"
 msgstr "la colonna ROW() è di tipo %s invece di %s"
 
-#: executor/execQual.c:4986 utils/adt/arrayfuncs.c:3396
+#: executor/execQual.c:4986 utils/adt/arrayfuncs.c:3424
 #: utils/adt/rowtypes.c:921
 #, c-format
 msgid "could not identify a comparison function for type %s"
@@ -11203,7 +11202,7 @@ msgid "no data left in message"
 msgstr "nessun dato rimasto nel messaggio"
 
 #: libpq/pqformat.c:556 libpq/pqformat.c:574 libpq/pqformat.c:595
-#: utils/adt/arrayfuncs.c:1416 utils/adt/rowtypes.c:561
+#: utils/adt/arrayfuncs.c:1444 utils/adt/rowtypes.c:561
 #, c-format
 msgid "insufficient data left in message"
 msgstr "i dati rimasti nel messaggio non sono sufficienti"
@@ -12908,8 +12907,8 @@ msgstr "l'operatore non esiste: %s"
 msgid "Use an explicit ordering operator or modify the query."
 msgstr "Usa un operatore di ordinamento esplicito, oppure modifica la query."
 
-#: parser/parse_oper.c:225 utils/adt/arrayfuncs.c:3194
-#: utils/adt/arrayfuncs.c:3713 utils/adt/arrayfuncs.c:5266
+#: parser/parse_oper.c:225 utils/adt/arrayfuncs.c:3222
+#: utils/adt/arrayfuncs.c:3741 utils/adt/arrayfuncs.c:5294
 #: utils/adt/rowtypes.c:1159
 #, c-format
 msgid "could not identify an equality operator for type %s"
@@ -14852,17 +14851,17 @@ msgstr "la decodifica logica richiede una connessione al database"
 msgid "logical decoding cannot be used while in recovery"
 msgstr "la decodifica logica non può essere usata in modalità di recupero"
 
-#: replication/logical/logical.c:221 replication/logical/logical.c:372
+#: replication/logical/logical.c:230 replication/logical/logical.c:381
 #, c-format
 msgid "cannot use physical replication slot for logical decoding"
 msgstr "non si possono usare slot di replica fisica per la decodifica logica"
 
-#: replication/logical/logical.c:226 replication/logical/logical.c:377
+#: replication/logical/logical.c:235 replication/logical/logical.c:386
 #, c-format
 msgid "replication slot \"%s\" was not created in this database"
 msgstr "lo slot di replica \"%s\" non è stato creato in questo database"
 
-#: replication/logical/logical.c:233
+#: replication/logical/logical.c:242
 #, c-format
 msgid ""
 "cannot create logical replication slot in transaction that has performed "
@@ -14871,26 +14870,26 @@ msgstr ""
 "non si possono creare slot di replica logica in transazioni che hanno "
 "effettuato scritture"
 
-#: replication/logical/logical.c:413
+#: replication/logical/logical.c:422
 #, c-format
 msgid "starting logical decoding for slot \"%s\""
 msgstr "avvio della decodifica logica per lo slot \"%s\""
 
-#: replication/logical/logical.c:415
+#: replication/logical/logical.c:424
 #, c-format
 msgid "streaming transactions committing after %X/%X, reading WAL from %X/%X"
 msgstr ""
 "commit dello streaming delle transazioni dopo %X/%X, lettura del wal a "
 "partire da %X/%X"
 
-#: replication/logical/logical.c:550
+#: replication/logical/logical.c:559
 #, c-format
 msgid ""
 "slot \"%s\", output plugin \"%s\", in the %s callback, associated LSN %X/%X"
 msgstr ""
 "slot \"%s\", plugin di output \"%s\", nel callback %s, LSN associato %X/%X"
 
-#: replication/logical/logical.c:557
+#: replication/logical/logical.c:566
 #, c-format
 msgid "slot \"%s\", output plugin \"%s\", in the %s callback"
 msgstr "slot \"%s\", plugin di output \"%s\", nel callback %s"
@@ -14917,7 +14916,7 @@ msgstr "l'array deve essere monodimensionale"
 msgid "array must not contain nulls"
 msgstr "l'array non deve contenere NULL"
 
-#: replication/logical/logicalfuncs.c:361 utils/adt/json.c:2158
+#: replication/logical/logicalfuncs.c:361 utils/adt/json.c:2198
 #, c-format
 msgid "array must have even number of elements"
 msgstr "l'array deve avere un numero pari di elementi"
@@ -17186,14 +17185,14 @@ msgid "neither input type is an array"
 msgstr "nessuno dei tipi in input è un array"
 
 #: utils/adt/array_userfuncs.c:103 utils/adt/array_userfuncs.c:113
-#: utils/adt/arrayfuncs.c:1281 utils/adt/float.c:1161 utils/adt/float.c:1220
+#: utils/adt/arrayfuncs.c:1309 utils/adt/float.c:1161 utils/adt/float.c:1220
 #: utils/adt/float.c:2771 utils/adt/float.c:2787 utils/adt/int.c:623
 #: utils/adt/int.c:652 utils/adt/int.c:673 utils/adt/int.c:704
 #: utils/adt/int.c:737 utils/adt/int.c:759 utils/adt/int.c:907
 #: utils/adt/int.c:928 utils/adt/int.c:955 utils/adt/int.c:995
 #: utils/adt/int.c:1016 utils/adt/int.c:1043 utils/adt/int.c:1076
-#: utils/adt/int.c:1159 utils/adt/int8.c:1298 utils/adt/numeric.c:2289
-#: utils/adt/numeric.c:2298 utils/adt/varbit.c:1173 utils/adt/varbit.c:1565
+#: utils/adt/int.c:1159 utils/adt/int8.c:1298 utils/adt/numeric.c:2304
+#: utils/adt/numeric.c:2313 utils/adt/varbit.c:1173 utils/adt/varbit.c:1565
 #: utils/adt/varlena.c:1013 utils/adt/varlena.c:2036
 #, c-format
 msgid "integer out of range"
@@ -17240,185 +17239,229 @@ msgid "Arrays with differing dimensions are not compatible for concatenation."
 msgstr ""
 "Array con dimensioni diverse non sono compatibili per il concatenamento."
 
-#: utils/adt/array_userfuncs.c:426 utils/adt/arrayfuncs.c:1243
-#: utils/adt/arrayfuncs.c:2929 utils/adt/arrayfuncs.c:4954
+#: utils/adt/array_userfuncs.c:426 utils/adt/arrayfuncs.c:1271
+#: utils/adt/arrayfuncs.c:2957 utils/adt/arrayfuncs.c:4982
 #, c-format
 msgid "invalid number of dimensions: %d"
 msgstr "numero di dimensioni non valido: %d"
 
-#: utils/adt/array_userfuncs.c:487 utils/adt/json.c:1675 utils/adt/json.c:1770
-#: utils/adt/json.c:1799
+#: utils/adt/array_userfuncs.c:487 utils/adt/json.c:1694 utils/adt/json.c:1789
+#: utils/adt/json.c:1820
 #, c-format
 msgid "could not determine input data type"
 msgstr "non è stato possibile determinare il tipo di dato di input"
 
-#: utils/adt/arrayfuncs.c:240 utils/adt/arrayfuncs.c:252
-#, c-format
-msgid "missing dimension value"
-msgstr "manca il valore della dimensione"
-
-#: utils/adt/arrayfuncs.c:262
-#, c-format
-msgid "missing \"]\" in array dimensions"
-msgstr "manca \"]\" nelle dimensioni dell'array"
-
-#: utils/adt/arrayfuncs.c:270 utils/adt/arrayfuncs.c:2454
-#: utils/adt/arrayfuncs.c:2482 utils/adt/arrayfuncs.c:2497
-#, c-format
-msgid "upper bound cannot be less than lower bound"
-msgstr "il limite massimo non può essere minore del limite minimo"
-
-#: utils/adt/arrayfuncs.c:282 utils/adt/arrayfuncs.c:308
-#, c-format
-msgid "array value must start with \"{\" or dimension information"
-msgstr ""
-"un valore array deve iniziare col simbolo \"{\"o con l'informazione della "
-"dimensione"
-
-#: utils/adt/arrayfuncs.c:296
-#, c-format
-msgid "missing assignment operator"
-msgstr "manca l'operatore di assegnamento"
-
-#: utils/adt/arrayfuncs.c:313 utils/adt/arrayfuncs.c:319
-#, c-format
-msgid "array dimensions incompatible with array literal"
-msgstr "le dimensioni dell'array non sono compatibili con il letterale array"
-
-#: utils/adt/arrayfuncs.c:449 utils/adt/arrayfuncs.c:464
-#: utils/adt/arrayfuncs.c:473 utils/adt/arrayfuncs.c:487
-#: utils/adt/arrayfuncs.c:507 utils/adt/arrayfuncs.c:535
-#: utils/adt/arrayfuncs.c:540 utils/adt/arrayfuncs.c:580
-#: utils/adt/arrayfuncs.c:601 utils/adt/arrayfuncs.c:620
-#: utils/adt/arrayfuncs.c:730 utils/adt/arrayfuncs.c:739
-#: utils/adt/arrayfuncs.c:769 utils/adt/arrayfuncs.c:784
-#: utils/adt/arrayfuncs.c:837
+#: utils/adt/arrayfuncs.c:241 utils/adt/arrayfuncs.c:255
+#: utils/adt/arrayfuncs.c:266 utils/adt/arrayfuncs.c:288
+#: utils/adt/arrayfuncs.c:303 utils/adt/arrayfuncs.c:317
+#: utils/adt/arrayfuncs.c:323 utils/adt/arrayfuncs.c:330
+#: utils/adt/arrayfuncs.c:461 utils/adt/arrayfuncs.c:477
+#: utils/adt/arrayfuncs.c:488 utils/adt/arrayfuncs.c:503
+#: utils/adt/arrayfuncs.c:524 utils/adt/arrayfuncs.c:554
+#: utils/adt/arrayfuncs.c:561 utils/adt/arrayfuncs.c:569
+#: utils/adt/arrayfuncs.c:603 utils/adt/arrayfuncs.c:626
+#: utils/adt/arrayfuncs.c:646 utils/adt/arrayfuncs.c:758
+#: utils/adt/arrayfuncs.c:767 utils/adt/arrayfuncs.c:797
+#: utils/adt/arrayfuncs.c:812 utils/adt/arrayfuncs.c:865
 #, c-format
 msgid "malformed array literal: \"%s\""
 msgstr "il letterale array non è definito in modo corretto: \"%s\""
 
-#: utils/adt/arrayfuncs.c:876 utils/adt/arrayfuncs.c:1478
-#: utils/adt/arrayfuncs.c:2813 utils/adt/arrayfuncs.c:2961
-#: utils/adt/arrayfuncs.c:5054 utils/adt/arrayfuncs.c:5386
+#: utils/adt/arrayfuncs.c:242
+#, c-format
+msgid "\"[\" must introduce explicitly-specified array dimensions."
+msgstr ""
+"\"[\" deve introdurre un array con dimensioni specificate esplicitamente."
+
+#: utils/adt/arrayfuncs.c:256
+#, c-format
+msgid "Missing array dimension value."
+msgstr "Valore delle dimensioni dell'array mancante."
+
+#: utils/adt/arrayfuncs.c:267 utils/adt/arrayfuncs.c:304
+#, c-format
+msgid "Missing \"%s\" after array dimensions."
+msgstr "Manca \"%s\" dopo le dimensioni dell'array."
+
+#: utils/adt/arrayfuncs.c:276 utils/adt/arrayfuncs.c:2482
+#: utils/adt/arrayfuncs.c:2510 utils/adt/arrayfuncs.c:2525
+#, c-format
+msgid "upper bound cannot be less than lower bound"
+msgstr "il limite massimo non può essere minore del limite minimo"
+
+#: utils/adt/arrayfuncs.c:289
+#, c-format
+msgid "Array value must start with \"{\" or dimension information."
+msgstr ""
+"L'array deve iniziare con \"{\" oppure con le informazioni di dimensione."
+
+#: utils/adt/arrayfuncs.c:318
+#, c-format
+msgid "Array contents must start with \"{\"."
+msgstr "Il contenuto dell'array deve cominciare con \"{\"."
+
+#: utils/adt/arrayfuncs.c:324 utils/adt/arrayfuncs.c:331
+#, c-format
+msgid "Specified array dimensions do not match array contents."
+msgstr "Le dimensioni specificate per l'array non combaciano con il contenuto."
+
+#: utils/adt/arrayfuncs.c:462 utils/adt/arrayfuncs.c:489
+#: utils/adt/rangetypes.c:2083 utils/adt/rangetypes.c:2091
+#: utils/adt/rowtypes.c:208 utils/adt/rowtypes.c:216
+#, c-format
+msgid "Unexpected end of input."
+msgstr "L'input è terminato in modo inatteso."
+
+#: utils/adt/arrayfuncs.c:478 utils/adt/arrayfuncs.c:525
+#: utils/adt/arrayfuncs.c:555 utils/adt/arrayfuncs.c:604
+#, c-format
+msgid "Unexpected \"%c\" character."
+msgstr "Carattere \"%c\" inatteso."
+
+#: utils/adt/arrayfuncs.c:504 utils/adt/arrayfuncs.c:627
+#, c-format
+msgid "Unexpected array element."
+msgstr "Elemento dell'array inatteso."
+
+#: utils/adt/arrayfuncs.c:562
+#, c-format
+msgid "Unmatched \"%c\" character."
+msgstr "Il carattere \"%c\" non combacia."
+
+#: utils/adt/arrayfuncs.c:570
+#, c-format
+msgid "Multidimensional arrays must have sub-arrays with matching dimensions."
+msgstr ""
+"Gli array multidimensionali devono avere sotto-array con dimensioni "
+"corrispondenti."
+
+#: utils/adt/arrayfuncs.c:647
+#, c-format
+msgid "Junk after closing right brace."
+msgstr "Caratteri spuri dopo la parentesi chiusa."
+
+#: utils/adt/arrayfuncs.c:904 utils/adt/arrayfuncs.c:1506
+#: utils/adt/arrayfuncs.c:2841 utils/adt/arrayfuncs.c:2989
+#: utils/adt/arrayfuncs.c:5082 utils/adt/arrayfuncs.c:5414
 #: utils/adt/arrayutils.c:93 utils/adt/arrayutils.c:102
 #: utils/adt/arrayutils.c:109
 #, c-format
 msgid "array size exceeds the maximum allowed (%d)"
 msgstr "la dimensione dell'array supera il massimo consentito (%d)"
 
-#: utils/adt/arrayfuncs.c:1254
+#: utils/adt/arrayfuncs.c:1282
 #, c-format
 msgid "invalid array flags"
 msgstr "i flag dell'array non sono validi"
 
-#: utils/adt/arrayfuncs.c:1262
+#: utils/adt/arrayfuncs.c:1290
 #, c-format
 msgid "wrong element type"
 msgstr "il tipo di elemento è errato"
 
-#: utils/adt/arrayfuncs.c:1312 utils/adt/rangetypes.c:325
+#: utils/adt/arrayfuncs.c:1340 utils/adt/rangetypes.c:325
 #: utils/cache/lsyscache.c:2549
 #, c-format
 msgid "no binary input function available for type %s"
 msgstr "non esiste una funzione di input binario per il tipo %s"
 
-#: utils/adt/arrayfuncs.c:1452
+#: utils/adt/arrayfuncs.c:1480
 #, c-format
 msgid "improper binary format in array element %d"
 msgstr "il formato binario nell'elemento dell'array %d non è corretto"
 
-#: utils/adt/arrayfuncs.c:1534 utils/adt/rangetypes.c:330
+#: utils/adt/arrayfuncs.c:1562 utils/adt/rangetypes.c:330
 #: utils/cache/lsyscache.c:2582
 #, c-format
 msgid "no binary output function available for type %s"
 msgstr "non esiste una funzione di output binario per il tipo %s"
 
-#: utils/adt/arrayfuncs.c:1921
+#: utils/adt/arrayfuncs.c:1949
 #, c-format
 msgid "slices of fixed-length arrays not implemented"
 msgstr "le sezioni di array a lunghezza fissa non sono implementate"
 
-#: utils/adt/arrayfuncs.c:2094 utils/adt/arrayfuncs.c:2116
-#: utils/adt/arrayfuncs.c:2150 utils/adt/arrayfuncs.c:2436
-#: utils/adt/arrayfuncs.c:4934 utils/adt/arrayfuncs.c:4966
-#: utils/adt/arrayfuncs.c:4983 utils/adt/json.c:2171 utils/adt/json.c:2246
+#: utils/adt/arrayfuncs.c:2122 utils/adt/arrayfuncs.c:2144
+#: utils/adt/arrayfuncs.c:2178 utils/adt/arrayfuncs.c:2464
+#: utils/adt/arrayfuncs.c:4962 utils/adt/arrayfuncs.c:4994
+#: utils/adt/arrayfuncs.c:5011 utils/adt/json.c:2211 utils/adt/json.c:2286
 #, c-format
 msgid "wrong number of array subscripts"
 msgstr "il numero di indici di array è errato"
 
-#: utils/adt/arrayfuncs.c:2099 utils/adt/arrayfuncs.c:2192
-#: utils/adt/arrayfuncs.c:2487
+#: utils/adt/arrayfuncs.c:2127 utils/adt/arrayfuncs.c:2220
+#: utils/adt/arrayfuncs.c:2515
 #, c-format
 msgid "array subscript out of range"
 msgstr "indice dell'array fuori dall'intervallo"
 
-#: utils/adt/arrayfuncs.c:2104
+#: utils/adt/arrayfuncs.c:2132
 #, c-format
 msgid "cannot assign null value to an element of a fixed-length array"
 msgstr ""
 "non è possibile assegnare un valore nullo a un elemento di un array a "
 "dimensione fissa"
 
-#: utils/adt/arrayfuncs.c:2390
+#: utils/adt/arrayfuncs.c:2418
 #, c-format
 msgid "updates on slices of fixed-length arrays not implemented"
 msgstr "la modifica di sezioni di array a lunghezza fissa non è implementate"
 
-#: utils/adt/arrayfuncs.c:2426 utils/adt/arrayfuncs.c:2513
+#: utils/adt/arrayfuncs.c:2454 utils/adt/arrayfuncs.c:2541
 #, c-format
 msgid "source array too small"
 msgstr "l'array di origine è troppo piccolo"
 
-#: utils/adt/arrayfuncs.c:3068
+#: utils/adt/arrayfuncs.c:3096
 #, c-format
 msgid "null array element not allowed in this context"
 msgstr "in questo contesto non è consentito un elemento di array nullo"
 
-#: utils/adt/arrayfuncs.c:3171 utils/adt/arrayfuncs.c:3379
-#: utils/adt/arrayfuncs.c:3696
+#: utils/adt/arrayfuncs.c:3199 utils/adt/arrayfuncs.c:3407
+#: utils/adt/arrayfuncs.c:3724
 #, c-format
 msgid "cannot compare arrays of different element types"
 msgstr "non è possibile confrontare array con elementi di tipo diverso"
 
-#: utils/adt/arrayfuncs.c:3581 utils/adt/rangetypes.c:1212
+#: utils/adt/arrayfuncs.c:3609 utils/adt/rangetypes.c:1212
 #, c-format
 msgid "could not identify a hash function for type %s"
 msgstr "non è stato possibile trovare una funzione di hash per il tipo %s"
 
-#: utils/adt/arrayfuncs.c:4832 utils/adt/arrayfuncs.c:4872
+#: utils/adt/arrayfuncs.c:4860 utils/adt/arrayfuncs.c:4900
 #, c-format
 msgid "dimension array or low bound array cannot be null"
 msgstr ""
 "la dimensione dell'array o il suo limite inferiore non possono essere nulli"
 
-#: utils/adt/arrayfuncs.c:4935 utils/adt/arrayfuncs.c:4967
+#: utils/adt/arrayfuncs.c:4963 utils/adt/arrayfuncs.c:4995
 #, c-format
 msgid "Dimension array must be one dimensional."
 msgstr "L'array delle dimensioni deve avere una sola dimensione."
 
-#: utils/adt/arrayfuncs.c:4940 utils/adt/arrayfuncs.c:4972
+#: utils/adt/arrayfuncs.c:4968 utils/adt/arrayfuncs.c:5000
 #, c-format
 msgid "wrong range of array subscripts"
 msgstr "il range degli indici dell'array non è corretto"
 
-#: utils/adt/arrayfuncs.c:4941 utils/adt/arrayfuncs.c:4973
+#: utils/adt/arrayfuncs.c:4969 utils/adt/arrayfuncs.c:5001
 #, c-format
 msgid "Lower bound of dimension array must be one."
 msgstr "Il valore minimo dell'array delle dimensioni deve essere uno."
 
-#: utils/adt/arrayfuncs.c:4946 utils/adt/arrayfuncs.c:4978
+#: utils/adt/arrayfuncs.c:4974 utils/adt/arrayfuncs.c:5006
 #, c-format
 msgid "dimension values cannot be null"
 msgstr "i valori di dimensione non possono essere nulli"
 
-#: utils/adt/arrayfuncs.c:4984
+#: utils/adt/arrayfuncs.c:5012
 #, c-format
 msgid "Low bound array has different size than dimensions array."
 msgstr ""
 "L'array dei valori inferiori ha dimensione differente dal numero di "
 "dimensioni dell'array."
 
-#: utils/adt/arrayfuncs.c:5251
+#: utils/adt/arrayfuncs.c:5279
 #, c-format
 msgid "removing elements from multidimensional arrays is not supported"
 msgstr "la rimozione di elementi da array multidimensionali non è supportata"
@@ -17460,8 +17503,8 @@ msgstr "sintassi di input non valida per il tipo money: \"%s\""
 #: utils/adt/int.c:861 utils/adt/int.c:969 utils/adt/int.c:1058
 #: utils/adt/int.c:1097 utils/adt/int.c:1125 utils/adt/int8.c:597
 #: utils/adt/int8.c:657 utils/adt/int8.c:897 utils/adt/int8.c:1005
-#: utils/adt/int8.c:1094 utils/adt/int8.c:1202 utils/adt/numeric.c:4946
-#: utils/adt/numeric.c:5229 utils/adt/timestamp.c:3357
+#: utils/adt/int8.c:1094 utils/adt/int8.c:1202 utils/adt/numeric.c:4961
+#: utils/adt/numeric.c:5244 utils/adt/timestamp.c:3357
 #, c-format
 msgid "division by zero"
 msgstr "divisione per zero"
@@ -17497,7 +17540,7 @@ msgstr "il valore \"current\" per i tipi date/time non è più supportato"
 msgid "date out of range: \"%s\""
 msgstr "data fuori dall'intervallo consentito: \"%s\""
 
-#: utils/adt/date.c:217 utils/adt/json.c:1412 utils/adt/xml.c:2024
+#: utils/adt/date.c:217 utils/adt/json.c:1431 utils/adt/xml.c:2024
 #, c-format
 msgid "date out of range"
 msgstr "data fuori dall'intervallo consentito"
@@ -17525,8 +17568,8 @@ msgstr "data fuori dall'intervallo consentito per timestamp"
 #: utils/adt/date.c:971 utils/adt/date.c:1017 utils/adt/date.c:1617
 #: utils/adt/date.c:1653 utils/adt/date.c:2525 utils/adt/formatting.c:3287
 #: utils/adt/formatting.c:3319 utils/adt/formatting.c:3387
-#: utils/adt/json.c:1437 utils/adt/json.c:1444 utils/adt/json.c:1464
-#: utils/adt/json.c:1471 utils/adt/nabstime.c:455 utils/adt/nabstime.c:498
+#: utils/adt/json.c:1456 utils/adt/json.c:1463 utils/adt/json.c:1483
+#: utils/adt/json.c:1490 utils/adt/nabstime.c:455 utils/adt/nabstime.c:498
 #: utils/adt/nabstime.c:528 utils/adt/nabstime.c:571 utils/adt/timestamp.c:232
 #: utils/adt/timestamp.c:275 utils/adt/timestamp.c:724
 #: utils/adt/timestamp.c:753 utils/adt/timestamp.c:792
@@ -17729,7 +17772,7 @@ msgid "\"%s\" is out of range for type real"
 msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo real"
 
 #: utils/adt/float.c:417 utils/adt/float.c:491 utils/adt/float.c:515
-#: utils/adt/numeric.c:4408 utils/adt/numeric.c:4434
+#: utils/adt/numeric.c:4423 utils/adt/numeric.c:4449
 #, c-format
 msgid "invalid input syntax for type double precision: \"%s\""
 msgstr "la sintassi in input per il tipo double precision non è valida: \"%s\""
@@ -17742,33 +17785,33 @@ msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo double precision"
 #: utils/adt/float.c:1179 utils/adt/float.c:1237 utils/adt/int.c:349
 #: utils/adt/int.c:775 utils/adt/int.c:804 utils/adt/int.c:825
 #: utils/adt/int.c:845 utils/adt/int.c:879 utils/adt/int.c:1174
-#: utils/adt/int8.c:1323 utils/adt/numeric.c:2386 utils/adt/numeric.c:2395
+#: utils/adt/int8.c:1323 utils/adt/numeric.c:2401 utils/adt/numeric.c:2410
 #, c-format
 msgid "smallint out of range"
 msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 
-#: utils/adt/float.c:1363 utils/adt/numeric.c:5622
+#: utils/adt/float.c:1363 utils/adt/numeric.c:5637
 #, c-format
 msgid "cannot take square root of a negative number"
 msgstr "non è possibile estrarre la radice quadrata di un numero negativo"
 
-#: utils/adt/float.c:1405 utils/adt/numeric.c:2206
+#: utils/adt/float.c:1405 utils/adt/numeric.c:2221
 #, c-format
 msgid "zero raised to a negative power is undefined"
 msgstr "zero elevato a potenza negativa non è definito"
 
-#: utils/adt/float.c:1409 utils/adt/numeric.c:2212
+#: utils/adt/float.c:1409 utils/adt/numeric.c:2227
 #, c-format
 msgid "a negative number raised to a non-integer power yields a complex result"
 msgstr ""
 "un numero negativo elevato a potenza non intera è un valore di tipo complesso"
 
-#: utils/adt/float.c:1475 utils/adt/float.c:1505 utils/adt/numeric.c:5840
+#: utils/adt/float.c:1475 utils/adt/float.c:1505 utils/adt/numeric.c:5855
 #, c-format
 msgid "cannot take logarithm of zero"
 msgstr "non è possibile calcolare il logaritmo di zero"
 
-#: utils/adt/float.c:1479 utils/adt/float.c:1509 utils/adt/numeric.c:5844
+#: utils/adt/float.c:1479 utils/adt/float.c:1509 utils/adt/numeric.c:5859
 #, c-format
 msgid "cannot take logarithm of a negative number"
 msgstr "non è possibile calcolare il logaritmo di un numero negativo"
@@ -17780,12 +17823,12 @@ msgstr "non è possibile calcolare il logaritmo di un numero negativo"
 msgid "input is out of range"
 msgstr "il valore di input è fuori dall'intervallo consentito"
 
-#: utils/adt/float.c:2747 utils/adt/numeric.c:1259
+#: utils/adt/float.c:2747 utils/adt/numeric.c:1274
 #, c-format
 msgid "count must be greater than zero"
 msgstr "il valore count dev'essere maggiore di zero"
 
-#: utils/adt/float.c:2752 utils/adt/numeric.c:1266
+#: utils/adt/float.c:2752 utils/adt/numeric.c:1281
 #, c-format
 msgid "operand, lower bound, and upper bound cannot be NaN"
 msgstr "l'operando e i valori minimo e massimo non possono essere NaN"
@@ -17795,7 +17838,7 @@ msgstr "l'operando e i valori minimo e massimo non possono essere NaN"
 msgid "lower and upper bounds must be finite"
 msgstr "i valori minimo e massimo devono essere finiti"
 
-#: utils/adt/float.c:2796 utils/adt/numeric.c:1279
+#: utils/adt/float.c:2796 utils/adt/numeric.c:1294
 #, c-format
 msgid "lower bound cannot equal upper bound"
 msgstr "il valore minimo non può essere uguale a quello massimo"
@@ -18241,7 +18284,7 @@ msgstr "il valore \"%s\" è fuori dall'intervallo consentito per il tipo bigint"
 #: utils/adt/int8.c:964 utils/adt/int8.c:991 utils/adt/int8.c:1031
 #: utils/adt/int8.c:1052 utils/adt/int8.c:1079 utils/adt/int8.c:1112
 #: utils/adt/int8.c:1140 utils/adt/int8.c:1161 utils/adt/int8.c:1188
-#: utils/adt/int8.c:1361 utils/adt/int8.c:1400 utils/adt/numeric.c:2341
+#: utils/adt/int8.c:1361 utils/adt/int8.c:1400 utils/adt/numeric.c:2356
 #: utils/adt/varbit.c:1645
 #, c-format
 msgid "bigint out of range"
@@ -18252,41 +18295,41 @@ msgstr "bigint fuori dall'intervallo consentito"
 msgid "OID out of range"
 msgstr "OID fuori dall'intervallo consentito"
 
-#: utils/adt/json.c:695 utils/adt/json.c:735 utils/adt/json.c:750
-#: utils/adt/json.c:761 utils/adt/json.c:771 utils/adt/json.c:807
-#: utils/adt/json.c:819 utils/adt/json.c:850 utils/adt/json.c:868
-#: utils/adt/json.c:880 utils/adt/json.c:892 utils/adt/json.c:1031
-#: utils/adt/json.c:1045 utils/adt/json.c:1056 utils/adt/json.c:1064
-#: utils/adt/json.c:1072 utils/adt/json.c:1080 utils/adt/json.c:1088
-#: utils/adt/json.c:1096 utils/adt/json.c:1104 utils/adt/json.c:1112
-#: utils/adt/json.c:1142
+#: utils/adt/json.c:726 utils/adt/json.c:766 utils/adt/json.c:781
+#: utils/adt/json.c:792 utils/adt/json.c:802 utils/adt/json.c:838
+#: utils/adt/json.c:850 utils/adt/json.c:881 utils/adt/json.c:899
+#: utils/adt/json.c:911 utils/adt/json.c:923 utils/adt/json.c:1062
+#: utils/adt/json.c:1076 utils/adt/json.c:1087 utils/adt/json.c:1095
+#: utils/adt/json.c:1103 utils/adt/json.c:1111 utils/adt/json.c:1119
+#: utils/adt/json.c:1127 utils/adt/json.c:1135 utils/adt/json.c:1143
+#: utils/adt/json.c:1173
 #, c-format
 msgid "invalid input syntax for type json"
 msgstr "sintassi di input per il tipo json non valida"
 
-#: utils/adt/json.c:696
+#: utils/adt/json.c:727
 #, c-format
 msgid "Character with value 0x%02x must be escaped."
 msgstr "Il carattere con valore 0x%02x deve essere sottoposto ad escape."
 
-#: utils/adt/json.c:736
+#: utils/adt/json.c:767
 #, c-format
 msgid "\"\\u\" must be followed by four hexadecimal digits."
 msgstr "\"\\u\" deve essere seguito da quattro cifre esadecimali."
 
-#: utils/adt/json.c:751
+#: utils/adt/json.c:782
 #, c-format
 msgid "Unicode high surrogate must not follow a high surrogate."
 msgstr ""
 "un carattere surrogato alto Unicode non può seguire un altro surrogato alto"
 
-#: utils/adt/json.c:762 utils/adt/json.c:772 utils/adt/json.c:820
-#: utils/adt/json.c:881 utils/adt/json.c:893
+#: utils/adt/json.c:793 utils/adt/json.c:803 utils/adt/json.c:851
+#: utils/adt/json.c:912 utils/adt/json.c:924
 #, c-format
 msgid "Unicode low surrogate must follow a high surrogate."
 msgstr "un carattere surrogato basso Unicode deve seguire un surrogato alto"
 
-#: utils/adt/json.c:808
+#: utils/adt/json.c:839
 #, c-format
 msgid ""
 "Unicode escape values cannot be used for code point values above 007F when "
@@ -18295,98 +18338,98 @@ msgstr ""
 "i codici escape Unicode non possono essere usati per caratteri con codice "
 "superiore ad 007F quando l'encoding del server non è UTF8"
 
-#: utils/adt/json.c:851 utils/adt/json.c:869
+#: utils/adt/json.c:882 utils/adt/json.c:900
 #, c-format
 msgid "Escape sequence \"\\%s\" is invalid."
 msgstr "La sequenza di escape \"\\%s\" non è valida."
 
-#: utils/adt/json.c:1032
+#: utils/adt/json.c:1063
 #, c-format
 msgid "The input string ended unexpectedly."
 msgstr "La stringa di input è terminata inaspettatamente."
 
-#: utils/adt/json.c:1046
+#: utils/adt/json.c:1077
 #, c-format
 msgid "Expected end of input, but found \"%s\"."
 msgstr "Era prevista la fine dell'input, trovato \"%s\" invece."
 
-#: utils/adt/json.c:1057
+#: utils/adt/json.c:1088
 #, c-format
 msgid "Expected JSON value, but found \"%s\"."
 msgstr "Era previsto un valore JSON, trovato \"%s\" invece."
 
-#: utils/adt/json.c:1065 utils/adt/json.c:1113
+#: utils/adt/json.c:1096 utils/adt/json.c:1144
 #, c-format
 msgid "Expected string, but found \"%s\"."
 msgstr "Era prevista una stringa, trovato \"%s\" invece."
 
-#: utils/adt/json.c:1073
+#: utils/adt/json.c:1104
 #, c-format
 msgid "Expected array element or \"]\", but found \"%s\"."
 msgstr "Era previsto un elemento di array oppure \"]\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1081
+#: utils/adt/json.c:1112
 #, c-format
 msgid "Expected \",\" or \"]\", but found \"%s\"."
 msgstr "Era previsto \",\" oppure \"]\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1089
+#: utils/adt/json.c:1120
 #, c-format
 msgid "Expected string or \"}\", but found \"%s\"."
 msgstr "Era prevista una stringa oppure \"}\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1097
+#: utils/adt/json.c:1128
 #, c-format
 msgid "Expected \":\", but found \"%s\"."
 msgstr "Era previsto \":\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1105
+#: utils/adt/json.c:1136
 #, c-format
 msgid "Expected \",\" or \"}\", but found \"%s\"."
 msgstr "Era previsto \",\" oppure \"}\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1143
+#: utils/adt/json.c:1174
 #, c-format
 msgid "Token \"%s\" is invalid."
 msgstr "Il token \"%s\" non è valido."
 
-#: utils/adt/json.c:1215
+#: utils/adt/json.c:1246
 #, c-format
 msgid "JSON data, line %d: %s%s%s"
 msgstr "dati JSON, riga %d: %s%s%s"
 
-#: utils/adt/json.c:1360
+#: utils/adt/json.c:1389
 #, c-format
 msgid "key value must be scalar, not array, composite, or json"
 msgstr "la chiave deve essere uno scalare, non array, composito né json"
 
-#: utils/adt/json.c:1413
+#: utils/adt/json.c:1432
 #, c-format
 msgid "JSON does not support infinite date values."
 msgstr "JSON non supporta il valore infinito come data."
 
-#: utils/adt/json.c:1438 utils/adt/json.c:1465
+#: utils/adt/json.c:1457 utils/adt/json.c:1484
 #, c-format
 msgid "JSON does not support infinite timestamp values."
 msgstr "JSON non supporta il timestamp infinito."
 
-#: utils/adt/json.c:1930 utils/adt/json.c:1948 utils/adt/json.c:2023
-#: utils/adt/json.c:2044 utils/adt/json.c:2103
+#: utils/adt/json.c:1951 utils/adt/json.c:1969 utils/adt/json.c:2063
+#: utils/adt/json.c:2084 utils/adt/json.c:2143
 #, c-format
 msgid "could not determine data type for argument %d"
 msgstr "impossibile determinare il tipo di dato per l'argomento %d"
 
-#: utils/adt/json.c:1935
+#: utils/adt/json.c:1956
 #, c-format
 msgid "field name must not be null"
 msgstr "il nome del campo non può essere nullo"
 
-#: utils/adt/json.c:1998
+#: utils/adt/json.c:2038
 #, c-format
 msgid "argument list must have even number of elements"
 msgstr "la lista di argomenti deve avere un numero pari di elementi"
 
-#: utils/adt/json.c:1999
+#: utils/adt/json.c:2039
 #, c-format
 msgid ""
 "The arguments of json_build_object() must consist of alternating keys and "
@@ -18395,27 +18438,27 @@ msgstr ""
 "Gli argomenti di json_build_object() devono consistere in una serie "
 "alternata di chiavi e valori."
 
-#: utils/adt/json.c:2029
+#: utils/adt/json.c:2069
 #, c-format
 msgid "argument %d cannot be null"
 msgstr "l'argomento %d non può essere nullo"
 
-#: utils/adt/json.c:2030
+#: utils/adt/json.c:2070
 #, c-format
 msgid "Object keys should be text."
 msgstr "Le chiavi degli oggetti devono essere testo."
 
-#: utils/adt/json.c:2165
+#: utils/adt/json.c:2205
 #, c-format
 msgid "array must have two columns"
 msgstr "l'array deve avere due colonne"
 
-#: utils/adt/json.c:2189 utils/adt/json.c:2273
+#: utils/adt/json.c:2229 utils/adt/json.c:2313
 #, c-format
 msgid "null value not allowed for object key"
 msgstr "valori null non ammessi per le chiavi di oggetti"
 
-#: utils/adt/json.c:2262
+#: utils/adt/json.c:2302
 #, c-format
 msgid "mismatched array dimensions"
 msgstr "le dimensioni degli array non combaciano"
@@ -18740,8 +18783,8 @@ msgstr "il risultato è fuori dall'intervallo consentito"
 msgid "cannot subtract inet values of different sizes"
 msgstr "non è possibile sottrarre valori di tipo inet di dimensione diversa"
 
-#: utils/adt/numeric.c:485 utils/adt/numeric.c:512 utils/adt/numeric.c:3689
-#: utils/adt/numeric.c:3712 utils/adt/numeric.c:3736 utils/adt/numeric.c:3743
+#: utils/adt/numeric.c:485 utils/adt/numeric.c:512 utils/adt/numeric.c:3704
+#: utils/adt/numeric.c:3727 utils/adt/numeric.c:3751 utils/adt/numeric.c:3758
 #, c-format
 msgid "invalid input syntax for type numeric: \"%s\""
 msgstr "la sintassi di input non è valida per il tipo numeric: \"%s\""
@@ -18751,59 +18794,64 @@ msgstr "la sintassi di input non è valida per il tipo numeric: \"%s\""
 msgid "invalid length in external \"numeric\" value"
 msgstr "la lunghezza nel valore \"numeric\" esterno non è valida"
 
-#: utils/adt/numeric.c:713
+#: utils/adt/numeric.c:715
 #, c-format
 msgid "invalid sign in external \"numeric\" value"
 msgstr "il segno nel valore \"numeric\" esterno non è valido"
 
-#: utils/adt/numeric.c:723
+#: utils/adt/numeric.c:721
+#, c-format
+msgid "invalid scale in external \"numeric\" value"
+msgstr "la scala nel valore \"numeric\" esterno non è valida"
+
+#: utils/adt/numeric.c:730
 #, c-format
 msgid "invalid digit in external \"numeric\" value"
 msgstr "una delle cifre nel valore \"numeric\" esterno non è valida"
 
-#: utils/adt/numeric.c:906 utils/adt/numeric.c:920
+#: utils/adt/numeric.c:921 utils/adt/numeric.c:935
 #, c-format
 msgid "NUMERIC precision %d must be between 1 and %d"
 msgstr "la precisione di NUMERIC (%d) deve essere compresa fra 1 e %d"
 
-#: utils/adt/numeric.c:911
+#: utils/adt/numeric.c:926
 #, c-format
 msgid "NUMERIC scale %d must be between 0 and precision %d"
 msgstr ""
 "il numero di cifre decimali di NUMERIC (%d) deve essere compreso fra 0 e la "
 "precisione %d"
 
-#: utils/adt/numeric.c:929
+#: utils/adt/numeric.c:944
 #, c-format
 msgid "invalid NUMERIC type modifier"
 msgstr "modificatore del tipo NUMERIC non valido"
 
-#: utils/adt/numeric.c:1936 utils/adt/numeric.c:4186 utils/adt/numeric.c:6155
+#: utils/adt/numeric.c:1951 utils/adt/numeric.c:4201 utils/adt/numeric.c:6170
 #, c-format
 msgid "value overflows numeric format"
 msgstr "il valore causa un overflow nel formato numeric"
 
-#: utils/adt/numeric.c:2267
+#: utils/adt/numeric.c:2282
 #, c-format
 msgid "cannot convert NaN to integer"
 msgstr "non è possibile convertire NaN in un integer"
 
-#: utils/adt/numeric.c:2333
+#: utils/adt/numeric.c:2348
 #, c-format
 msgid "cannot convert NaN to bigint"
 msgstr "non è possibile convertire NaN in un bigint"
 
-#: utils/adt/numeric.c:2378
+#: utils/adt/numeric.c:2393
 #, c-format
 msgid "cannot convert NaN to smallint"
 msgstr "non è possibile convertire NaN in uno smallint"
 
-#: utils/adt/numeric.c:4256
+#: utils/adt/numeric.c:4271
 #, c-format
 msgid "numeric field overflow"
 msgstr "il campo numeric causa un overflow"
 
-#: utils/adt/numeric.c:4257
+#: utils/adt/numeric.c:4272
 #, c-format
 msgid ""
 "A field with precision %d, scale %d must round to an absolute value less "
@@ -18812,7 +18860,7 @@ msgstr ""
 "Un campo con precisione %d e %d cifre decimali deve arrotondarsi ad un "
 "valore assoluto inferiore a %s%d."
 
-#: utils/adt/numeric.c:5712
+#: utils/adt/numeric.c:5727
 #, c-format
 msgid "argument for function \"exp\" too big"
 msgstr "il valore dell'argomento per la funzione \"exp\" è troppo grande"
@@ -19113,12 +19161,6 @@ msgstr "Troppe virgole."
 #, c-format
 msgid "Junk after right parenthesis or bracket."
 msgstr "Caratteri spuri dopo la parentesi chiusa."
-
-#: utils/adt/rangetypes.c:2083 utils/adt/rangetypes.c:2091
-#: utils/adt/rowtypes.c:208 utils/adt/rowtypes.c:216
-#, c-format
-msgid "Unexpected end of input."
-msgstr "L'input è terminato in modo inatteso."
 
 #: utils/adt/regexp.c:285 utils/adt/regexp.c:1234 utils/adt/varlena.c:3042
 #, c-format

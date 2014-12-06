@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-11-19 21:14+0000\n"
-"PO-Revision-Date: 2014-11-13 13:55+0100\n"
+"POT-Creation-Date: 2014-12-05 17:44+0000\n"
+"PO-Revision-Date: 2014-12-06 18:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -16125,8 +16125,8 @@ msgstr "nessuno dei tipi in input è un array"
 #: utils/adt/int.c:737 utils/adt/int.c:759 utils/adt/int.c:907
 #: utils/adt/int.c:928 utils/adt/int.c:955 utils/adt/int.c:995
 #: utils/adt/int.c:1016 utils/adt/int.c:1043 utils/adt/int.c:1076
-#: utils/adt/int.c:1159 utils/adt/int8.c:1247 utils/adt/numeric.c:2242
-#: utils/adt/numeric.c:2251 utils/adt/varbit.c:1173 utils/adt/varbit.c:1565
+#: utils/adt/int.c:1159 utils/adt/int8.c:1247 utils/adt/numeric.c:2257
+#: utils/adt/numeric.c:2266 utils/adt/varbit.c:1173 utils/adt/varbit.c:1565
 #: utils/adt/varlena.c:1013 utils/adt/varlena.c:2036
 #, c-format
 msgid "integer out of range"
@@ -16179,7 +16179,7 @@ msgstr ""
 msgid "invalid number of dimensions: %d"
 msgstr "numero di dimensioni non valido: %d"
 
-#: utils/adt/array_userfuncs.c:487 utils/adt/json.c:1609 utils/adt/json.c:1638
+#: utils/adt/array_userfuncs.c:487 utils/adt/json.c:1637 utils/adt/json.c:1668
 #, c-format
 msgid "could not determine input data type"
 msgstr "non è stato possibile determinare il tipo di dato di input"
@@ -16392,8 +16392,8 @@ msgstr "sintassi di input non valida per il tipo money: \"%s\""
 #: utils/adt/int.c:861 utils/adt/int.c:969 utils/adt/int.c:1058
 #: utils/adt/int.c:1097 utils/adt/int.c:1125 utils/adt/int8.c:597
 #: utils/adt/int8.c:657 utils/adt/int8.c:846 utils/adt/int8.c:954
-#: utils/adt/int8.c:1043 utils/adt/int8.c:1151 utils/adt/numeric.c:4510
-#: utils/adt/numeric.c:4793 utils/adt/timestamp.c:3021
+#: utils/adt/int8.c:1043 utils/adt/int8.c:1151 utils/adt/numeric.c:4525
+#: utils/adt/numeric.c:4808 utils/adt/timestamp.c:3021
 #, c-format
 msgid "division by zero"
 msgstr "divisione per zero"
@@ -16643,7 +16643,7 @@ msgid "\"%s\" is out of range for type real"
 msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo real"
 
 #: utils/adt/float.c:449 utils/adt/float.c:523 utils/adt/float.c:579
-#: utils/adt/numeric.c:3972 utils/adt/numeric.c:3998
+#: utils/adt/numeric.c:3987 utils/adt/numeric.c:4013
 #, c-format
 msgid "invalid input syntax for type double precision: \"%s\""
 msgstr "la sintassi in input per il tipo double precision non è valida: \"%s\""
@@ -16656,33 +16656,33 @@ msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo double precision"
 #: utils/adt/float.c:1243 utils/adt/float.c:1301 utils/adt/int.c:349
 #: utils/adt/int.c:775 utils/adt/int.c:804 utils/adt/int.c:825
 #: utils/adt/int.c:845 utils/adt/int.c:879 utils/adt/int.c:1174
-#: utils/adt/int8.c:1272 utils/adt/numeric.c:2339 utils/adt/numeric.c:2348
+#: utils/adt/int8.c:1272 utils/adt/numeric.c:2354 utils/adt/numeric.c:2363
 #, c-format
 msgid "smallint out of range"
 msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 
-#: utils/adt/float.c:1427 utils/adt/numeric.c:5186
+#: utils/adt/float.c:1427 utils/adt/numeric.c:5201
 #, c-format
 msgid "cannot take square root of a negative number"
 msgstr "non è possibile estrarre la radice quadrata di un numero negativo"
 
-#: utils/adt/float.c:1469 utils/adt/numeric.c:2159
+#: utils/adt/float.c:1469 utils/adt/numeric.c:2174
 #, c-format
 msgid "zero raised to a negative power is undefined"
 msgstr "zero elevato a potenza negativa non è definito"
 
-#: utils/adt/float.c:1473 utils/adt/numeric.c:2165
+#: utils/adt/float.c:1473 utils/adt/numeric.c:2180
 #, c-format
 msgid "a negative number raised to a non-integer power yields a complex result"
 msgstr ""
 "un numero negativo elevato a potenza non intera è un valore di tipo complesso"
 
-#: utils/adt/float.c:1539 utils/adt/float.c:1569 utils/adt/numeric.c:5404
+#: utils/adt/float.c:1539 utils/adt/float.c:1569 utils/adt/numeric.c:5419
 #, c-format
 msgid "cannot take logarithm of zero"
 msgstr "non è possibile calcolare il logaritmo di zero"
 
-#: utils/adt/float.c:1543 utils/adt/float.c:1573 utils/adt/numeric.c:5408
+#: utils/adt/float.c:1543 utils/adt/float.c:1573 utils/adt/numeric.c:5423
 #, c-format
 msgid "cannot take logarithm of a negative number"
 msgstr "non è possibile calcolare il logaritmo di un numero negativo"
@@ -16694,12 +16694,12 @@ msgstr "non è possibile calcolare il logaritmo di un numero negativo"
 msgid "input is out of range"
 msgstr "il valore di input è fuori dall'intervallo consentito"
 
-#: utils/adt/float.c:2811 utils/adt/numeric.c:1212
+#: utils/adt/float.c:2811 utils/adt/numeric.c:1227
 #, c-format
 msgid "count must be greater than zero"
 msgstr "il valore count dev'essere maggiore di zero"
 
-#: utils/adt/float.c:2816 utils/adt/numeric.c:1219
+#: utils/adt/float.c:2816 utils/adt/numeric.c:1234
 #, c-format
 msgid "operand, lower bound, and upper bound cannot be NaN"
 msgstr "l'operando e i valori minimo e massimo non possono essere NaN"
@@ -16709,7 +16709,7 @@ msgstr "l'operando e i valori minimo e massimo non possono essere NaN"
 msgid "lower and upper bounds must be finite"
 msgstr "i valori minimo e massimo devono essere finiti"
 
-#: utils/adt/float.c:2860 utils/adt/numeric.c:1232
+#: utils/adt/float.c:2860 utils/adt/numeric.c:1247
 #, c-format
 msgid "lower bound cannot equal upper bound"
 msgstr "il valore minimo non può essere uguale a quello massimo"
@@ -17150,7 +17150,7 @@ msgstr "il valore \"%s\" è fuori dall'intervallo consentito per il tipo bigint"
 #: utils/adt/int8.c:980 utils/adt/int8.c:1001 utils/adt/int8.c:1028
 #: utils/adt/int8.c:1061 utils/adt/int8.c:1089 utils/adt/int8.c:1110
 #: utils/adt/int8.c:1137 utils/adt/int8.c:1310 utils/adt/int8.c:1349
-#: utils/adt/numeric.c:2294 utils/adt/varbit.c:1645
+#: utils/adt/numeric.c:2309 utils/adt/varbit.c:1645
 #, c-format
 msgid "bigint out of range"
 msgstr "bigint fuori dall'intervallo consentito"
@@ -17160,41 +17160,41 @@ msgstr "bigint fuori dall'intervallo consentito"
 msgid "OID out of range"
 msgstr "OID fuori dall'intervallo consentito"
 
-#: utils/adt/json.c:682 utils/adt/json.c:722 utils/adt/json.c:737
-#: utils/adt/json.c:748 utils/adt/json.c:758 utils/adt/json.c:792
-#: utils/adt/json.c:804 utils/adt/json.c:835 utils/adt/json.c:853
-#: utils/adt/json.c:865 utils/adt/json.c:877 utils/adt/json.c:1016
-#: utils/adt/json.c:1030 utils/adt/json.c:1041 utils/adt/json.c:1049
-#: utils/adt/json.c:1057 utils/adt/json.c:1065 utils/adt/json.c:1073
-#: utils/adt/json.c:1081 utils/adt/json.c:1089 utils/adt/json.c:1097
-#: utils/adt/json.c:1127
+#: utils/adt/json.c:713 utils/adt/json.c:753 utils/adt/json.c:768
+#: utils/adt/json.c:779 utils/adt/json.c:789 utils/adt/json.c:823
+#: utils/adt/json.c:835 utils/adt/json.c:866 utils/adt/json.c:884
+#: utils/adt/json.c:896 utils/adt/json.c:908 utils/adt/json.c:1047
+#: utils/adt/json.c:1061 utils/adt/json.c:1072 utils/adt/json.c:1080
+#: utils/adt/json.c:1088 utils/adt/json.c:1096 utils/adt/json.c:1104
+#: utils/adt/json.c:1112 utils/adt/json.c:1120 utils/adt/json.c:1128
+#: utils/adt/json.c:1158
 #, c-format
 msgid "invalid input syntax for type json"
 msgstr "sintassi di input per il tipo json non valida"
 
-#: utils/adt/json.c:683
+#: utils/adt/json.c:714
 #, c-format
 msgid "Character with value 0x%02x must be escaped."
 msgstr "Il carattere con valore 0x%02x deve essere sottoposto ad escape."
 
-#: utils/adt/json.c:723
+#: utils/adt/json.c:754
 #, c-format
 msgid "\"\\u\" must be followed by four hexadecimal digits."
 msgstr "\"\\u\" deve essere seguito da quattro cifre esadecimali."
 
-#: utils/adt/json.c:738
+#: utils/adt/json.c:769
 #, c-format
 msgid "Unicode high surrogate must not follow a high surrogate."
 msgstr ""
 "un carattere surrogato alto Unicode non può seguire un altro surrogato alto"
 
-#: utils/adt/json.c:749 utils/adt/json.c:759 utils/adt/json.c:805
-#: utils/adt/json.c:866 utils/adt/json.c:878
+#: utils/adt/json.c:780 utils/adt/json.c:790 utils/adt/json.c:836
+#: utils/adt/json.c:897 utils/adt/json.c:909
 #, c-format
 msgid "Unicode low surrogate must follow a high surrogate."
 msgstr "un carattere surrogato basso Unicode deve seguire un surrogato alto"
 
-#: utils/adt/json.c:793
+#: utils/adt/json.c:824
 #, c-format
 msgid ""
 "Unicode escape values cannot be used for code point values above 007F when "
@@ -17203,62 +17203,62 @@ msgstr ""
 "i codici escape Unicode non possono essere usati per caratteri con codice "
 "superiore ad 007F quando l'encoding del server non è UTF8"
 
-#: utils/adt/json.c:836 utils/adt/json.c:854
+#: utils/adt/json.c:867 utils/adt/json.c:885
 #, c-format
 msgid "Escape sequence \"\\%s\" is invalid."
 msgstr "La sequenza di escape \"\\%s\" non è valida."
 
-#: utils/adt/json.c:1017
+#: utils/adt/json.c:1048
 #, c-format
 msgid "The input string ended unexpectedly."
 msgstr "La stringa di input è terminata inaspettatamente."
 
-#: utils/adt/json.c:1031
+#: utils/adt/json.c:1062
 #, c-format
 msgid "Expected end of input, but found \"%s\"."
 msgstr "Era prevista la fine dell'input, trovato \"%s\" invece."
 
-#: utils/adt/json.c:1042
+#: utils/adt/json.c:1073
 #, c-format
 msgid "Expected JSON value, but found \"%s\"."
 msgstr "Era previsto un valore JSON, trovato \"%s\" invece."
 
-#: utils/adt/json.c:1050 utils/adt/json.c:1098
+#: utils/adt/json.c:1081 utils/adt/json.c:1129
 #, c-format
 msgid "Expected string, but found \"%s\"."
 msgstr "Era prevista una stringa, trovato \"%s\" invece."
 
-#: utils/adt/json.c:1058
+#: utils/adt/json.c:1089
 #, c-format
 msgid "Expected array element or \"]\", but found \"%s\"."
 msgstr "Era previsto un elemento di array oppure \"]\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1066
+#: utils/adt/json.c:1097
 #, c-format
 msgid "Expected \",\" or \"]\", but found \"%s\"."
 msgstr "Era previsto \",\" oppure \"]\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1074
+#: utils/adt/json.c:1105
 #, c-format
 msgid "Expected string or \"}\", but found \"%s\"."
 msgstr "Era prevista una stringa oppure \"}\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1082
+#: utils/adt/json.c:1113
 #, c-format
 msgid "Expected \":\", but found \"%s\"."
 msgstr "Era previsto \":\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1090
+#: utils/adt/json.c:1121
 #, c-format
 msgid "Expected \",\" or \"}\", but found \"%s\"."
 msgstr "Era previsto \",\" oppure \"}\", trovato \"%s\" invece."
 
-#: utils/adt/json.c:1128
+#: utils/adt/json.c:1159
 #, c-format
 msgid "Token \"%s\" is invalid."
 msgstr "Il token \"%s\" non è valido."
 
-#: utils/adt/json.c:1200
+#: utils/adt/json.c:1231
 #, c-format
 msgid "JSON data, line %d: %s%s%s"
 msgstr "dati JSON, riga %d: %s%s%s"
@@ -17580,8 +17580,8 @@ msgstr "il risultato è fuori dall'intervallo consentito"
 msgid "cannot subtract inet values of different sizes"
 msgstr "non è possibile sottrarre valori di tipo inet di dimensione diversa"
 
-#: utils/adt/numeric.c:485 utils/adt/numeric.c:512 utils/adt/numeric.c:3253
-#: utils/adt/numeric.c:3276 utils/adt/numeric.c:3300 utils/adt/numeric.c:3307
+#: utils/adt/numeric.c:485 utils/adt/numeric.c:512 utils/adt/numeric.c:3268
+#: utils/adt/numeric.c:3291 utils/adt/numeric.c:3315 utils/adt/numeric.c:3322
 #, c-format
 msgid "invalid input syntax for type numeric: \"%s\""
 msgstr "la sintassi di input non è valida per il tipo numeric: \"%s\""
@@ -17591,59 +17591,64 @@ msgstr "la sintassi di input non è valida per il tipo numeric: \"%s\""
 msgid "invalid length in external \"numeric\" value"
 msgstr "la lunghezza nel valore \"numeric\" esterno non è valida"
 
-#: utils/adt/numeric.c:666
+#: utils/adt/numeric.c:668
 #, c-format
 msgid "invalid sign in external \"numeric\" value"
 msgstr "il segno nel valore \"numeric\" esterno non è valido"
 
-#: utils/adt/numeric.c:676
+#: utils/adt/numeric.c:674
+#, c-format
+msgid "invalid scale in external \"numeric\" value"
+msgstr "la scala nel valore \"numeric\" esterno non è valida"
+
+#: utils/adt/numeric.c:683
 #, c-format
 msgid "invalid digit in external \"numeric\" value"
 msgstr "una delle cifre nel valore \"numeric\" esterno non è valida"
 
-#: utils/adt/numeric.c:859 utils/adt/numeric.c:873
+#: utils/adt/numeric.c:874 utils/adt/numeric.c:888
 #, c-format
 msgid "NUMERIC precision %d must be between 1 and %d"
 msgstr "la precisione di NUMERIC (%d) deve essere compresa fra 1 e %d"
 
-#: utils/adt/numeric.c:864
+#: utils/adt/numeric.c:879
 #, c-format
 msgid "NUMERIC scale %d must be between 0 and precision %d"
 msgstr ""
 "il numero di cifre decimali di NUMERIC (%d) deve essere compreso fra 0 e la "
 "precisione %d"
 
-#: utils/adt/numeric.c:882
+#: utils/adt/numeric.c:897
 #, c-format
 msgid "invalid NUMERIC type modifier"
 msgstr "modificatore del tipo NUMERIC non valido"
 
-#: utils/adt/numeric.c:1889 utils/adt/numeric.c:3750 utils/adt/numeric.c:5719
+#: utils/adt/numeric.c:1904 utils/adt/numeric.c:3765 utils/adt/numeric.c:5734
 #, c-format
 msgid "value overflows numeric format"
 msgstr "il valore causa un overflow nel formato numeric"
 
-#: utils/adt/numeric.c:2220
+#: utils/adt/numeric.c:2235
 #, c-format
 msgid "cannot convert NaN to integer"
 msgstr "non è possibile convertire NaN in un integer"
 
-#: utils/adt/numeric.c:2286
+#: utils/adt/numeric.c:2301
 #, c-format
 msgid "cannot convert NaN to bigint"
 msgstr "non è possibile convertire NaN in un bigint"
 
-#: utils/adt/numeric.c:2331
+#: utils/adt/numeric.c:2346
 #, c-format
 msgid "cannot convert NaN to smallint"
 msgstr "non è possibile convertire NaN in uno smallint"
 
-#: utils/adt/numeric.c:3820
+#: utils/adt/numeric.c:3835
 #, c-format
 msgid "numeric field overflow"
 msgstr "il campo numeric causa un overflow"
 
-#: utils/adt/numeric.c:3821
+#: utils/adt/numeric.c:3836
 #, c-format
 msgid ""
 "A field with precision %d, scale %d must round to an absolute value less "
@@ -17652,7 +17657,7 @@ msgstr ""
 "Un campo con precisione %d e %d cifre decimali deve arrotondarsi ad un "
 "valore assoluto inferiore a %s%d."
 
-#: utils/adt/numeric.c:5276
+#: utils/adt/numeric.c:5291
 #, c-format
 msgid "argument for function \"exp\" too big"
 msgstr "il valore dell'argomento per la funzione \"exp\" è troppo grande"

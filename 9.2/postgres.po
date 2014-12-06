@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-11-19 21:19+0000\n"
-"PO-Revision-Date: 2014-11-13 13:55+0100\n"
+"POT-Creation-Date: 2014-12-05 17:49+0000\n"
+"PO-Revision-Date: 2014-12-06 18:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -15516,8 +15516,8 @@ msgstr "nessuno dei tipi in input è un array"
 #: utils/adt/int.c:737 utils/adt/int.c:759 utils/adt/int.c:907
 #: utils/adt/int.c:928 utils/adt/int.c:955 utils/adt/int.c:995
 #: utils/adt/int.c:1016 utils/adt/int.c:1043 utils/adt/int.c:1076
-#: utils/adt/int.c:1159 utils/adt/int8.c:1247 utils/adt/numeric.c:2300
-#: utils/adt/numeric.c:2309 utils/adt/varbit.c:1173 utils/adt/varbit.c:1565
+#: utils/adt/int.c:1159 utils/adt/int8.c:1247 utils/adt/numeric.c:2315
+#: utils/adt/numeric.c:2324 utils/adt/varbit.c:1173 utils/adt/varbit.c:1565
 #: utils/adt/varlena.c:1004 utils/adt/varlena.c:2027
 #, c-format
 msgid "integer out of range"
@@ -15777,8 +15777,8 @@ msgstr "sintassi di input non valida per il tipo money: \"%s\""
 #: utils/adt/int.c:861 utils/adt/int.c:969 utils/adt/int.c:1058
 #: utils/adt/int.c:1097 utils/adt/int.c:1125 utils/adt/int8.c:597
 #: utils/adt/int8.c:657 utils/adt/int8.c:846 utils/adt/int8.c:954
-#: utils/adt/int8.c:1043 utils/adt/int8.c:1151 utils/adt/numeric.c:4554
-#: utils/adt/numeric.c:4837 utils/adt/timestamp.c:2977
+#: utils/adt/int8.c:1043 utils/adt/int8.c:1151 utils/adt/numeric.c:4569
+#: utils/adt/numeric.c:4852 utils/adt/timestamp.c:2977
 #, c-format
 msgid "division by zero"
 msgstr "divisione per zero"
@@ -16028,7 +16028,7 @@ msgid "\"%s\" is out of range for type real"
 msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo real"
 
 #: utils/adt/float.c:438 utils/adt/float.c:512 utils/adt/float.c:568
-#: utils/adt/numeric.c:4016 utils/adt/numeric.c:4042
+#: utils/adt/numeric.c:4031 utils/adt/numeric.c:4057
 #, c-format
 msgid "invalid input syntax for type double precision: \"%s\""
 msgstr "la sintassi in input per il tipo double precision non è valida: \"%s\""
@@ -16041,33 +16041,33 @@ msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo double precision"
 #: utils/adt/float.c:1232 utils/adt/float.c:1290 utils/adt/int.c:349
 #: utils/adt/int.c:775 utils/adt/int.c:804 utils/adt/int.c:825
 #: utils/adt/int.c:845 utils/adt/int.c:879 utils/adt/int.c:1174
-#: utils/adt/int8.c:1272 utils/adt/numeric.c:2401 utils/adt/numeric.c:2412
+#: utils/adt/int8.c:1272 utils/adt/numeric.c:2416 utils/adt/numeric.c:2427
 #, c-format
 msgid "smallint out of range"
 msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 
-#: utils/adt/float.c:1416 utils/adt/numeric.c:5230
+#: utils/adt/float.c:1416 utils/adt/numeric.c:5245
 #, c-format
 msgid "cannot take square root of a negative number"
 msgstr "non è possibile estrarre la radice quadrata di un numero negativo"
 
-#: utils/adt/float.c:1458 utils/adt/numeric.c:2213
+#: utils/adt/float.c:1458 utils/adt/numeric.c:2228
 #, c-format
 msgid "zero raised to a negative power is undefined"
 msgstr "zero elevato a potenza negativa non è definito"
 
-#: utils/adt/float.c:1462 utils/adt/numeric.c:2219
+#: utils/adt/float.c:1462 utils/adt/numeric.c:2234
 #, c-format
 msgid "a negative number raised to a non-integer power yields a complex result"
 msgstr ""
 "un numero negativo elevato a potenza non intera è un valore di tipo complesso"
 
-#: utils/adt/float.c:1528 utils/adt/float.c:1558 utils/adt/numeric.c:5448
+#: utils/adt/float.c:1528 utils/adt/float.c:1558 utils/adt/numeric.c:5463
 #, c-format
 msgid "cannot take logarithm of zero"
 msgstr "non è possibile calcolare il logaritmo di zero"
 
-#: utils/adt/float.c:1532 utils/adt/float.c:1562 utils/adt/numeric.c:5452
+#: utils/adt/float.c:1532 utils/adt/float.c:1562 utils/adt/numeric.c:5467
 #, c-format
 msgid "cannot take logarithm of a negative number"
 msgstr "non è possibile calcolare il logaritmo di un numero negativo"
@@ -16079,12 +16079,12 @@ msgstr "non è possibile calcolare il logaritmo di un numero negativo"
 msgid "input is out of range"
 msgstr "il valore di input è fuori dall'intervallo consentito"
 
-#: utils/adt/float.c:2800 utils/adt/numeric.c:1218
+#: utils/adt/float.c:2800 utils/adt/numeric.c:1233
 #, c-format
 msgid "count must be greater than zero"
 msgstr "il valore count dev'essere maggiore di zero"
 
-#: utils/adt/float.c:2805 utils/adt/numeric.c:1225
+#: utils/adt/float.c:2805 utils/adt/numeric.c:1240
 #, c-format
 msgid "operand, lower bound, and upper bound cannot be NaN"
 msgstr "l'operando e i valori minimo e massimo non possono essere NaN"
@@ -16094,7 +16094,7 @@ msgstr "l'operando e i valori minimo e massimo non possono essere NaN"
 msgid "lower and upper bounds must be finite"
 msgstr "i valori minimo e massimo devono essere finiti"
 
-#: utils/adt/float.c:2849 utils/adt/numeric.c:1238
+#: utils/adt/float.c:2849 utils/adt/numeric.c:1253
 #, c-format
 msgid "lower bound cannot equal upper bound"
 msgstr "il valore minimo non può essere uguale a quello massimo"
@@ -16540,7 +16540,7 @@ msgstr "il valore \"%s\" è fuori dall'intervallo consentito per il tipo bigint"
 #: utils/adt/int8.c:980 utils/adt/int8.c:1001 utils/adt/int8.c:1028
 #: utils/adt/int8.c:1061 utils/adt/int8.c:1089 utils/adt/int8.c:1110
 #: utils/adt/int8.c:1137 utils/adt/int8.c:1310 utils/adt/int8.c:1349
-#: utils/adt/numeric.c:2353 utils/adt/varbit.c:1645
+#: utils/adt/numeric.c:2368 utils/adt/varbit.c:1645
 #, c-format
 msgid "bigint out of range"
 msgstr "bigint fuori dall'intervallo consentito"
@@ -16824,8 +16824,8 @@ msgstr "il risultato è fuori dall'intervallo consentito"
 msgid "cannot subtract inet values of different sizes"
 msgstr "non è possibile sottrarre valori di tipo inet di dimensione diversa"
 
-#: utils/adt/numeric.c:474 utils/adt/numeric.c:501 utils/adt/numeric.c:3322
-#: utils/adt/numeric.c:3345 utils/adt/numeric.c:3369 utils/adt/numeric.c:3376
+#: utils/adt/numeric.c:474 utils/adt/numeric.c:501 utils/adt/numeric.c:3337
+#: utils/adt/numeric.c:3360 utils/adt/numeric.c:3384 utils/adt/numeric.c:3391
 #, c-format
 msgid "invalid input syntax for type numeric: \"%s\""
 msgstr "la sintassi di input non è valida per il tipo numeric: \"%s\""
@@ -16835,59 +16835,64 @@ msgstr "la sintassi di input non è valida per il tipo numeric: \"%s\""
 msgid "invalid length in external \"numeric\" value"
 msgstr "la lunghezza nel valore \"numeric\" esterno non è valida"
 
-#: utils/adt/numeric.c:665
+#: utils/adt/numeric.c:667
 #, c-format
 msgid "invalid sign in external \"numeric\" value"
 msgstr "il segno nel valore \"numeric\" esterno non è valido"
 
-#: utils/adt/numeric.c:675
+#: utils/adt/numeric.c:673
+#, c-format
+msgid "invalid scale in external \"numeric\" value"
+msgstr "la scala nel valore \"numeric\" esterno non è valida"
+
+#: utils/adt/numeric.c:682
 #, c-format
 msgid "invalid digit in external \"numeric\" value"
 msgstr "una delle cifre nel valore \"numeric\" esterno non è valida"
 
-#: utils/adt/numeric.c:861 utils/adt/numeric.c:875
+#: utils/adt/numeric.c:876 utils/adt/numeric.c:890
 #, c-format
 msgid "NUMERIC precision %d must be between 1 and %d"
 msgstr "la precisione di NUMERIC (%d) deve essere compresa fra 1 e %d"
 
-#: utils/adt/numeric.c:866
+#: utils/adt/numeric.c:881
 #, c-format
 msgid "NUMERIC scale %d must be between 0 and precision %d"
 msgstr ""
 "il numero di cifre decimali di NUMERIC (%d) deve essere compreso fra 0 e la "
 "precisione %d"
 
-#: utils/adt/numeric.c:884
+#: utils/adt/numeric.c:899
 #, c-format
 msgid "invalid NUMERIC type modifier"
 msgstr "modificatore del tipo NUMERIC non valido"
 
-#: utils/adt/numeric.c:1928 utils/adt/numeric.c:3801 utils/adt/numeric.c:5770
+#: utils/adt/numeric.c:1943 utils/adt/numeric.c:3816 utils/adt/numeric.c:5785
 #, c-format
 msgid "value overflows numeric format"
 msgstr "il valore causa un overflow nel formato numeric"
 
-#: utils/adt/numeric.c:2276
+#: utils/adt/numeric.c:2291
 #, c-format
 msgid "cannot convert NaN to integer"
 msgstr "non è possibile convertire NaN in un integer"
 
-#: utils/adt/numeric.c:2344
+#: utils/adt/numeric.c:2359
 #, c-format
 msgid "cannot convert NaN to bigint"
 msgstr "non è possibile convertire NaN in un bigint"
 
-#: utils/adt/numeric.c:2392
+#: utils/adt/numeric.c:2407
 #, c-format
 msgid "cannot convert NaN to smallint"
 msgstr "non è possibile convertire NaN in uno smallint"
 
-#: utils/adt/numeric.c:3871
+#: utils/adt/numeric.c:3886
 #, c-format
 msgid "numeric field overflow"
 msgstr "il campo numeric causa un overflow"
 
-#: utils/adt/numeric.c:3872
+#: utils/adt/numeric.c:3887
 #, c-format
 msgid ""
 "A field with precision %d, scale %d must round to an absolute value less "
@@ -16896,7 +16901,7 @@ msgstr ""
 "Un campo con precisione %d e %d cifre decimali deve arrotondarsi ad un "
 "valore assoluto inferiore a %s%d."
 
-#: utils/adt/numeric.c:5320
+#: utils/adt/numeric.c:5335
 #, c-format
 msgid "argument for function \"exp\" too big"
 msgstr "il valore dell'argomento per la funzione \"exp\" è troppo grande"
