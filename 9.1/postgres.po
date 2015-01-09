@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.1\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-12-05 17:53+0000\n"
-"PO-Revision-Date: 2014-12-06 18:26+0100\n"
+"POT-Creation-Date: 2015-01-08 04:23+0000\n"
+"PO-Revision-Date: 2015-01-09 12:48+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -344,7 +344,7 @@ msgstr "Il comando di archiviazione fallito era: %s"
 msgid "archive command was terminated by exception 0x%X"
 msgstr "comando di archiviazione terminato da eccezione 0x%X"
 
-#: postmaster/pgarch.c:579 postmaster/postmaster.c:2883
+#: postmaster/pgarch.c:579 postmaster/postmaster.c:2914
 msgid ""
 "See C include file \"ntstatus.h\" for a description of the hexadecimal value."
 msgstr ""
@@ -383,49 +383,49 @@ msgstr "apertura della directory dello stato dell'archivio \"%s\" fallita: %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "non è stato possibile rinominare il file \"%s\" in \"%s\": %m"
 
-#: postmaster/postmaster.c:598
+#: postmaster/postmaster.c:602
 #, c-format
 msgid "%s: invalid argument for option -f: \"%s\"\n"
 msgstr "%s: argomento non valido per l'opzione -f: \"%s\"\n"
 
-#: postmaster/postmaster.c:684
+#: postmaster/postmaster.c:688
 #, c-format
 msgid "%s: invalid argument for option -t: \"%s\"\n"
 msgstr "%s: argomento non valido per l'opzione -t: \"%s\"\n"
 
-#: postmaster/postmaster.c:707 bootstrap/bootstrap.c:269 tcop/postgres.c:3458
+#: postmaster/postmaster.c:711 bootstrap/bootstrap.c:269 tcop/postgres.c:3458
 #, c-format
 msgid "--%s requires a value"
 msgstr "--%s richiede un valore"
 
-#: postmaster/postmaster.c:712 bootstrap/bootstrap.c:274 tcop/postgres.c:3463
+#: postmaster/postmaster.c:716 bootstrap/bootstrap.c:274 tcop/postgres.c:3463
 #, c-format
 msgid "-c %s requires a value"
 msgstr "-c %s richiede un valore"
 
-#: postmaster/postmaster.c:724 postmaster/postmaster.c:737
+#: postmaster/postmaster.c:728 postmaster/postmaster.c:741
 #: bootstrap/bootstrap.c:285
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Prova \"%s --help\" per maggiori informazioni.\n"
 
-#: postmaster/postmaster.c:735
+#: postmaster/postmaster.c:739
 #, c-format
 msgid "%s: invalid argument: \"%s\"\n"
 msgstr "%s: argomento non valido: \"%s\"\n"
 
-#: postmaster/postmaster.c:760
+#: postmaster/postmaster.c:764
 #, c-format
 msgid "%s: superuser_reserved_connections must be less than max_connections\n"
 msgstr ""
 "%s: superuser_reserved_connections dev'essere minore di max_connections\n"
 
-#: postmaster/postmaster.c:765
+#: postmaster/postmaster.c:769
 #, c-format
 msgid "%s: max_wal_senders must be less than max_connections\n"
 msgstr "%s: max_wal_senders dev'essere minore di max_connections\n"
 
-#: postmaster/postmaster.c:770
+#: postmaster/postmaster.c:774
 msgid ""
 "WAL archival (archive_mode=on) requires wal_level \"archive\" or "
 "\"hot_standby\""
@@ -433,7 +433,7 @@ msgstr ""
 "L'archiviazione dei WAL (archive_mode=on) richiede wal_level \"archive\" "
 "oppure \"hot_standby\""
 
-#: postmaster/postmaster.c:773
+#: postmaster/postmaster.c:777
 msgid ""
 "WAL streaming (max_wal_senders > 0) requires wal_level \"archive\" or "
 "\"hot_standby\""
@@ -441,59 +441,68 @@ msgstr ""
 "lo streaming dei WAL (max_wal_senders > 0) richiede  wal_level \"archive\" "
 "oppure \"hot_standby\""
 
-#: postmaster/postmaster.c:781
+#: postmaster/postmaster.c:785
 #, c-format
 msgid "%s: invalid datetoken tables, please fix\n"
 msgstr "%s: datetoken tables non valido, per favore correggilo\n"
 
-#: postmaster/postmaster.c:881
+#: postmaster/postmaster.c:885
 msgid "invalid list syntax for \"listen_addresses\""
 msgstr "sintassi della lista non valida per \"listen_addresses\""
 
-#: postmaster/postmaster.c:911
+#: postmaster/postmaster.c:915
 #, c-format
 msgid "could not create listen socket for \"%s\""
 msgstr "creazione del socket di ascolto per \"%s\" fallita"
 
-#: postmaster/postmaster.c:917
+#: postmaster/postmaster.c:921
 msgid "could not create any TCP/IP sockets"
 msgstr "non è stato possibile creare alcun socket TCP/IP"
 
-#: postmaster/postmaster.c:968
+#: postmaster/postmaster.c:972
 msgid "could not create Unix-domain socket"
 msgstr "creazione del socket di dominio Unix fallita"
 
-#: postmaster/postmaster.c:976
+#: postmaster/postmaster.c:980
 msgid "no socket created for listening"
 msgstr "nessun socket per l'ascolto è stato creato"
 
-#: postmaster/postmaster.c:1015
+#: postmaster/postmaster.c:1019
 msgid "could not create I/O completion port for child queue"
 msgstr ""
 "creazione della porta di completamento I/O per la coda dei figli fallita"
 
-#: postmaster/postmaster.c:1059
+#: postmaster/postmaster.c:1063
 #, c-format
 msgid "%s: could not write external PID file \"%s\": %s\n"
 msgstr "%s: scrittura del file PID esterno \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:1098 utils/init/postinit.c:197
+#: postmaster/postmaster.c:1102 utils/init/postinit.c:197
 msgid "could not load pg_hba.conf"
 msgstr "caricamento di pg_hba.conf fallito"
 
-#: postmaster/postmaster.c:1151
+#: postmaster/postmaster.c:1126
+msgid "postmaster became multithreaded during startup"
+msgstr "il postmaster è diventato multithread durante l'avvio"
+
+#: postmaster/postmaster.c:1127
+msgid "Set the LC_ALL environment variable to a valid locale."
+msgstr ""
+"Imposta la variabile d'ambiente LC_ALL non corrisponde ad un locale valido."
+
+#: postmaster/postmaster.c:1173
 #, c-format
 msgid "%s: could not locate matching postgres executable"
 msgstr "%s: eseguibile postgres corrispondente non trovato"
 
-#: postmaster/postmaster.c:1172 utils/misc/tzparser.c:339 utils/adt/misc.c:213
+#: postmaster/postmaster.c:1194 utils/misc/tzparser.c:339 utils/adt/misc.c:213
 #: utils/adt/genfile.c:353 commands/tablespace.c:706 commands/tablespace.c:716
 #: storage/file/fd.c:1738 storage/file/copydir.c:64 storage/file/copydir.c:103
 #, c-format
 msgid "could not open directory \"%s\": %m"
 msgstr "apertura della directory \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:1174 utils/misc/tzparser.c:341
+#: postmaster/postmaster.c:1196 utils/misc/tzparser.c:341
 #, c-format
 msgid ""
 "This may indicate an incomplete PostgreSQL installation, or that the file "
@@ -502,41 +511,41 @@ msgstr ""
 "Questo potrebbe indicare una installazione di PostgreSQL incompleta, o che "
 "il file \"%s\" sia stato spostato dalla sua posizione corretta."
 
-#: postmaster/postmaster.c:1202
+#: postmaster/postmaster.c:1224
 #, c-format
 msgid "data directory \"%s\" does not exist"
 msgstr "la directory dei dati \"%s\" non esiste"
 
-#: postmaster/postmaster.c:1207
+#: postmaster/postmaster.c:1229
 #, c-format
 msgid "could not read permissions of directory \"%s\": %m"
 msgstr "lettura dei permessi della directory \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:1215
+#: postmaster/postmaster.c:1237
 #, c-format
 msgid "specified data directory \"%s\" is not a directory"
 msgstr "la directory dei dati specificata \"%s\" non è una directory"
 
-#: postmaster/postmaster.c:1231
+#: postmaster/postmaster.c:1253
 #, c-format
 msgid "data directory \"%s\" has wrong ownership"
 msgstr "la directory dei dati \"%s\" ha il proprietario errato"
 
-#: postmaster/postmaster.c:1233
+#: postmaster/postmaster.c:1255
 msgid "The server must be started by the user that owns the data directory."
 msgstr ""
 "Il server deve essere avviato dall'utente che possiede la directory dei dati."
 
-#: postmaster/postmaster.c:1253
+#: postmaster/postmaster.c:1275
 #, c-format
 msgid "data directory \"%s\" has group or world access"
 msgstr "la directory dei dati \"%s\" è accessibile dal gruppo o da tutti"
 
-#: postmaster/postmaster.c:1255
+#: postmaster/postmaster.c:1277
 msgid "Permissions should be u=rwx (0700)."
 msgstr "I permessi dovrebbero essere u=rwx (0700)."
 
-#: postmaster/postmaster.c:1266
+#: postmaster/postmaster.c:1288
 #, c-format
 msgid ""
 "%s: could not find the database system\n"
@@ -547,97 +556,97 @@ msgstr ""
 "Sarebbe dovuto essere nella directory \"%s\",\n"
 "ma l'apertura del file \"%s\" è fallita: %s\n"
 
-#: postmaster/postmaster.c:1302
+#: postmaster/postmaster.c:1324
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
 msgstr "%s: non è stato possibile aprire il file \"%s\": %s\n"
 
-#: postmaster/postmaster.c:1309
+#: postmaster/postmaster.c:1331
 #, c-format
 msgid "%s: could not open log file \"%s/%s\": %s\n"
 msgstr "%s: non è stato possibile aprire il file di log \"%s/%s\": %s\n"
 
-#: postmaster/postmaster.c:1320
+#: postmaster/postmaster.c:1342
 #, c-format
 msgid "%s: could not fork background process: %s\n"
 msgstr ""
 "%s: non è stato possibile effettuare il fork del processo di scrittura in "
 "background: %s\n"
 
-#: postmaster/postmaster.c:1342
+#: postmaster/postmaster.c:1364
 #, c-format
 msgid "%s: could not dissociate from controlling TTY: %s\n"
 msgstr "%s: non è stato possibile dissociarsi dal terminale di controllo: %s\n"
 
-#: postmaster/postmaster.c:1437
+#: postmaster/postmaster.c:1459
 #, c-format
 msgid "select() failed in postmaster: %m"
 msgstr "select() fallita in postmaster: %m"
 
-#: postmaster/postmaster.c:1599 postmaster/postmaster.c:1630
+#: postmaster/postmaster.c:1630 postmaster/postmaster.c:1661
 msgid "incomplete startup packet"
 msgstr "pacchetto di avvio incompleto"
 
-#: postmaster/postmaster.c:1611
+#: postmaster/postmaster.c:1642
 msgid "invalid length of startup packet"
 msgstr "dimensione del pacchetto di avvio non valida"
 
-#: postmaster/postmaster.c:1668
+#: postmaster/postmaster.c:1699
 #, c-format
 msgid "failed to send SSL negotiation response: %m"
 msgstr "invio della risposta di negoziazione SSL fallito: %m"
 
-#: postmaster/postmaster.c:1697
+#: postmaster/postmaster.c:1728
 #, c-format
 msgid "unsupported frontend protocol %u.%u: server supports %u.0 to %u.%u"
 msgstr ""
 "protocollo frontend non supportato %u.%u: il server supporta da %u.0 a %u.%u"
 
-#: postmaster/postmaster.c:1748
+#: postmaster/postmaster.c:1779
 msgid "invalid value for boolean option \"replication\""
 msgstr "valore per l'opzione booleana \"replication\" non valido"
 
-#: postmaster/postmaster.c:1768
+#: postmaster/postmaster.c:1799
 msgid "invalid startup packet layout: expected terminator as last byte"
 msgstr ""
 "formato del pacchetto di avvio non valido: atteso il terminatore all'ultimo "
 "byte"
 
-#: postmaster/postmaster.c:1796
+#: postmaster/postmaster.c:1827
 msgid "no PostgreSQL user name specified in startup packet"
 msgstr "nessun utente PostgreSQL specificato nel pacchetto di avvio"
 
-#: postmaster/postmaster.c:1853
+#: postmaster/postmaster.c:1884
 msgid "the database system is starting up"
 msgstr "il database si sta avviando"
 
-#: postmaster/postmaster.c:1858
+#: postmaster/postmaster.c:1889
 msgid "the database system is shutting down"
 msgstr "il database si sta spegnendo"
 
-#: postmaster/postmaster.c:1863
+#: postmaster/postmaster.c:1894
 msgid "the database system is in recovery mode"
 msgstr "il database è in modalità di ripristino"
 
-#: postmaster/postmaster.c:1868 storage/ipc/procarray.c:271
+#: postmaster/postmaster.c:1899 storage/ipc/procarray.c:271
 #: storage/ipc/sinvaladt.c:302 storage/lmgr/proc.c:304
 msgid "sorry, too many clients already"
 msgstr "spiacente, troppi client già connessi"
 
-#: postmaster/postmaster.c:1930
+#: postmaster/postmaster.c:1961
 #, c-format
 msgid "wrong key in cancel request for process %d"
 msgstr "chiave sbagliata nella richiesta di annullamento per il processo %d"
 
-#: postmaster/postmaster.c:1938
+#: postmaster/postmaster.c:1969
 #, c-format
 msgid "PID %d in cancel request did not match any process"
 msgstr ""
 "il PID %d nella richiesta di annullamento non corrisponde ad alcun processo"
 
-#: postmaster/postmaster.c:2010 postmaster/postmaster.c:2041
-#: postmaster/postmaster.c:3243 postmaster/postmaster.c:3930
-#: postmaster/postmaster.c:4015 postmaster/postmaster.c:4632
+#: postmaster/postmaster.c:2041 postmaster/postmaster.c:2072
+#: postmaster/postmaster.c:3274 postmaster/postmaster.c:3961
+#: postmaster/postmaster.c:4046 postmaster/postmaster.c:4675
 #: utils/hash/dynahash.c:368 utils/hash/dynahash.c:445
 #: utils/hash/dynahash.c:959 utils/misc/guc.c:3298 utils/misc/guc.c:3311
 #: utils/misc/guc.c:3324 utils/misc/tzparser.c:470 utils/init/miscinit.c:150
@@ -645,8 +654,8 @@ msgstr ""
 #: utils/mb/mbutils.c:374 utils/mb/mbutils.c:675 utils/mmgr/aset.c:416
 #: utils/mmgr/aset.c:587 utils/mmgr/aset.c:765 utils/mmgr/aset.c:966
 #: utils/adt/regexp.c:219 utils/adt/varlena.c:3472 utils/adt/varlena.c:3493
-#: utils/adt/formatting.c:1524 utils/adt/formatting.c:1640
-#: utils/adt/formatting.c:1757 lib/stringinfo.c:266 commands/sequence.c:1014
+#: utils/adt/formatting.c:1525 utils/adt/formatting.c:1641
+#: utils/adt/formatting.c:1758 lib/stringinfo.c:266 commands/sequence.c:1014
 #: libpq/auth.c:1032 libpq/auth.c:1392 libpq/auth.c:1460 libpq/auth.c:1862
 #: storage/file/fd.c:420 storage/file/fd.c:817 storage/file/fd.c:935
 #: storage/file/fd.c:1499 storage/ipc/procarray.c:849
@@ -656,142 +665,142 @@ msgstr ""
 msgid "out of memory"
 msgstr "memoria esaurita"
 
-#: postmaster/postmaster.c:2144
+#: postmaster/postmaster.c:2175
 msgid "received SIGHUP, reloading configuration files"
 msgstr "SIGHUP ricevuto, sto ricaricando i file di configurazione"
 
-#: postmaster/postmaster.c:2167
+#: postmaster/postmaster.c:2198
 msgid "pg_hba.conf not reloaded"
 msgstr "pg_hba.conf non è stato ricaricato"
 
-#: postmaster/postmaster.c:2210
+#: postmaster/postmaster.c:2241
 msgid "received smart shutdown request"
 msgstr "richiesta di arresto smart ricevuta"
 
-#: postmaster/postmaster.c:2257
+#: postmaster/postmaster.c:2288
 msgid "received fast shutdown request"
 msgstr "richiesta di arresto fast ricevuta"
 
-#: postmaster/postmaster.c:2275
+#: postmaster/postmaster.c:2306
 msgid "aborting any active transactions"
 msgstr "interruzione di tutte le transazioni attive"
 
-#: postmaster/postmaster.c:2304
+#: postmaster/postmaster.c:2335
 msgid "received immediate shutdown request"
 msgstr "richiesta di arresto immediate ricevuta"
 
-#: postmaster/postmaster.c:2392 postmaster/postmaster.c:2413
+#: postmaster/postmaster.c:2423 postmaster/postmaster.c:2444
 msgid "startup process"
 msgstr "avvio del processo"
 
-#: postmaster/postmaster.c:2395
+#: postmaster/postmaster.c:2426
 msgid "aborting startup due to startup process failure"
 msgstr "avvio interrotto a causa del fallimento del processo di avvio"
 
-#: postmaster/postmaster.c:2447
+#: postmaster/postmaster.c:2478
 msgid "database system is ready to accept connections"
 msgstr "il database è pronto ad accettare connessioni"
 
-#: postmaster/postmaster.c:2502
+#: postmaster/postmaster.c:2533
 msgid "background writer process"
 msgstr "processo di scrittura in background"
 
-#: postmaster/postmaster.c:2518
+#: postmaster/postmaster.c:2549
 msgid "WAL writer process"
 msgstr "processo di scrittura WAL"
 
-#: postmaster/postmaster.c:2532
+#: postmaster/postmaster.c:2563
 msgid "WAL receiver process"
 msgstr "processo di ricezione WAL"
 
-#: postmaster/postmaster.c:2547
+#: postmaster/postmaster.c:2578
 msgid "autovacuum launcher process"
 msgstr "processo del lanciatore di autovacuum"
 
-#: postmaster/postmaster.c:2562
+#: postmaster/postmaster.c:2593
 msgid "archiver process"
 msgstr "processo di archiviazione"
 
-#: postmaster/postmaster.c:2578
+#: postmaster/postmaster.c:2609
 msgid "statistics collector process"
 msgstr "processo del raccoglitore di statistiche"
 
-#: postmaster/postmaster.c:2592
+#: postmaster/postmaster.c:2623
 msgid "system logger process"
 msgstr "processo del logger di sistema"
 
-#: postmaster/postmaster.c:2627 postmaster/postmaster.c:2646
-#: postmaster/postmaster.c:2653 postmaster/postmaster.c:2671
+#: postmaster/postmaster.c:2658 postmaster/postmaster.c:2677
+#: postmaster/postmaster.c:2684 postmaster/postmaster.c:2702
 msgid "server process"
 msgstr "processo del server"
 
-#: postmaster/postmaster.c:2707
+#: postmaster/postmaster.c:2738
 msgid "terminating any other active server processes"
 msgstr "interruzione di tutti gli altri processi attivi del server"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
-#: postmaster/postmaster.c:2872
+#: postmaster/postmaster.c:2903
 #, c-format
 msgid "%s (PID %d) exited with exit code %d"
 msgstr "%s (PID %d) è uscito con codice di uscita %d"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
-#: postmaster/postmaster.c:2881
+#: postmaster/postmaster.c:2912
 #, c-format
 msgid "%s (PID %d) was terminated by exception 0x%X"
 msgstr "%s (PID %d) è stato terminato dall'eccezione 0x%X"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
-#: postmaster/postmaster.c:2890
+#: postmaster/postmaster.c:2921
 #, c-format
 msgid "%s (PID %d) was terminated by signal %d: %s"
 msgstr "%s (PID %d) è stato terminato dal segnale %d: %s"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
-#: postmaster/postmaster.c:2900
+#: postmaster/postmaster.c:2931
 #, c-format
 msgid "%s (PID %d) was terminated by signal %d"
 msgstr "%s (PID %d) è stato terminato dal segnale %d"
 
 #. translator: %s is a noun phrase describing a child process, such as
 #. "server process"
-#: postmaster/postmaster.c:2909
+#: postmaster/postmaster.c:2940
 #, c-format
 msgid "%s (PID %d) exited with unrecognized status %d"
 msgstr "%s (PID %d) uscito con stato sconosciuto %d"
 
-#: postmaster/postmaster.c:3089
+#: postmaster/postmaster.c:3120
 msgid "abnormal database system shutdown"
 msgstr "spegnimento anormale del database"
 
-#: postmaster/postmaster.c:3128
+#: postmaster/postmaster.c:3159
 msgid "all server processes terminated; reinitializing"
 msgstr "tutti i processi server sono terminati; re-inizializzazione"
 
-#: postmaster/postmaster.c:3311
+#: postmaster/postmaster.c:3342
 #, c-format
 msgid "could not fork new process for connection: %m"
 msgstr "fork del nuovo processo per la connessione fallito: %m"
 
-#: postmaster/postmaster.c:3353
+#: postmaster/postmaster.c:3384
 msgid "could not fork new process for connection: "
 msgstr "fork del nuovo processo per la connessione fallito: "
 
-#: postmaster/postmaster.c:3460
+#: postmaster/postmaster.c:3491
 #, c-format
 msgid "connection received: host=%s port=%s"
 msgstr "connessione ricevuta: host=%s porta=%s"
 
-#: postmaster/postmaster.c:3465
+#: postmaster/postmaster.c:3496
 #, c-format
 msgid "connection received: host=%s"
 msgstr "connessione ricevuta: host=%s"
 
-#: postmaster/postmaster.c:3705 access/transam/xlog.c:2398
+#: postmaster/postmaster.c:3736 access/transam/xlog.c:2398
 #: access/transam/xlog.c:2530 access/transam/xlog.c:4459
 #: access/transam/xlog.c:9213 access/transam/xlog.c:9457
 #: storage/file/copydir.c:169 storage/smgr/md.c:289
@@ -799,7 +808,7 @@ msgstr "connessione ricevuta: host=%s"
 msgid "could not create file \"%s\": %m"
 msgstr "creazione del file \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:3715 postmaster/postmaster.c:3725
+#: postmaster/postmaster.c:3746 postmaster/postmaster.c:3756
 #: utils/misc/guc.c:7446 utils/misc/guc.c:7471 utils/init/miscinit.c:1097
 #: utils/init/miscinit.c:1106 utils/init/miscinit.c:1113
 #: access/transam/xlog.c:2430 access/transam/xlog.c:2562
@@ -809,87 +818,91 @@ msgstr "creazione del file \"%s\" fallita: %m"
 msgid "could not write to file \"%s\": %m"
 msgstr "scrittura nel file \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:3744
+#: postmaster/postmaster.c:3775
 #, c-format
 msgid "could not execute server process \"%s\": %m"
 msgstr "esecuzione del processo del server \"%s\" fallita: %m"
 
-#: postmaster/postmaster.c:4265
+#: postmaster/postmaster.c:4252
+msgid "postmaster became multithreaded"
+msgstr "il postmaster è diventato multithread"
+
+#: postmaster/postmaster.c:4308
 msgid "database system is ready to accept read only connections"
 msgstr "il database è pronto ad accettare connessioni in sola lettura"
 
-#: postmaster/postmaster.c:4535
+#: postmaster/postmaster.c:4578
 #, c-format
 msgid "could not fork startup process: %m"
 msgstr "fork del processo di avvio fallito: %m"
 
-#: postmaster/postmaster.c:4539
+#: postmaster/postmaster.c:4582
 #, c-format
 msgid "could not fork background writer process: %m"
 msgstr "fork del processo di scrittura in background fallito: %m"
 
-#: postmaster/postmaster.c:4543
+#: postmaster/postmaster.c:4586
 #, c-format
 msgid "could not fork WAL writer process: %m"
 msgstr "fork del processo di scrittura dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:4547
+#: postmaster/postmaster.c:4590
 #, c-format
 msgid "could not fork WAL receiver process: %m"
 msgstr "fork del processo di ricezione dei WAL fallito: %m"
 
-#: postmaster/postmaster.c:4551
+#: postmaster/postmaster.c:4594
 #, c-format
 msgid "could not fork process: %m"
 msgstr "fork del processo fallito: %m"
 
-#: postmaster/postmaster.c:4836
+#: postmaster/postmaster.c:4879
 #, c-format
 msgid "could not duplicate socket %d for use in backend: error code %d"
 msgstr ""
 "duplicazione del socket %d da usare nel backend fallita: codice errore %d"
 
-#: postmaster/postmaster.c:4868
+#: postmaster/postmaster.c:4911
 #, c-format
 msgid "could not create inherited socket: error code %d\n"
 msgstr "creazione del socket ereditato fallita: codice errore %d\n"
 
-#: postmaster/postmaster.c:4897 postmaster/postmaster.c:4904
+#: postmaster/postmaster.c:4940 postmaster/postmaster.c:4947
 #, c-format
 msgid "could not read from backend variables file \"%s\": %s\n"
 msgstr "lettura dal file delle variabili del backend \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:4913
+#: postmaster/postmaster.c:4956
 #, c-format
 msgid "could not remove file \"%s\": %s\n"
 msgstr "rimozione del file \"%s\" fallita: %s\n"
 
-#: postmaster/postmaster.c:4930
+#: postmaster/postmaster.c:4973
 #, c-format
 msgid "could not map view of backend variables: error code %d\n"
 msgstr ""
 "non è stato possibile mappare la vista delle variabili del backend: codice "
 "errore %d\n"
 
-#: postmaster/postmaster.c:4939
+#: postmaster/postmaster.c:4982
 #, c-format
 msgid "could not unmap view of backend variables: error code %d\n"
 msgstr ""
 "non è stato possibile rimuovere la mappa della vista delle variabili del "
 "backend: codice errore %d\n"
 
-#: postmaster/postmaster.c:4946
+#: postmaster/postmaster.c:4989
 #, c-format
 msgid "could not close handle to backend parameter variables: error code %d\n"
 msgstr ""
 "non è stato possibile chiudere l'handle dei parametri variabili del backend: "
 "codice errore %d\n"
 
-#: postmaster/postmaster.c:5091
+#: postmaster/postmaster.c:5134
 msgid "could not read exit code for process\n"
 msgstr "lettura del codice di uscita del processo fallita\n"
 
-#: postmaster/postmaster.c:5096
+#: postmaster/postmaster.c:5139
 msgid "could not post child completion status\n"
 msgstr "invio dello stato di completamento del figlio fallito\n"
 
@@ -903,18 +916,18 @@ msgstr "la configurazione di ricerca di testo \"%s\" non esiste"
 msgid "cached plan must not change result type"
 msgstr "il cached plan non deve cambiare il tipo del risultato"
 
-#: utils/cache/relcache.c:4321
+#: utils/cache/relcache.c:4325
 #, c-format
 msgid "could not create relation-cache initialization file \"%s\": %m"
 msgstr ""
 "creazione del file di inizializzazione della cache delle relazioni \"%s\" "
 "fallita: %m"
 
-#: utils/cache/relcache.c:4323
+#: utils/cache/relcache.c:4327
 msgid "Continuing anyway, but there's something wrong."
 msgstr "Proseguo in ogni caso, ma c'è qualcosa che non funziona."
 
-#: utils/cache/relcache.c:4537
+#: utils/cache/relcache.c:4541
 #, c-format
 msgid "could not remove cache file \"%s\": %m"
 msgstr "rimozione del file di cache \"%s\" fallita: %m"
@@ -3120,7 +3133,7 @@ msgstr "scrittura del file di lock \"%s\" fallita: %m"
 #: utils/init/miscinit.c:1046 utils/init/miscinit.c:1161
 #: utils/error/elog.c:1549 access/transam/xlog.c:2515
 #: access/transam/xlog.c:4228 access/transam/xlog.c:4322
-#: access/transam/xlog.c:4478 replication/basebackup.c:896
+#: access/transam/xlog.c:4478 replication/basebackup.c:916
 #: storage/file/fd.c:384 storage/file/copydir.c:162 storage/smgr/md.c:553
 #: storage/smgr/md.c:810
 #, c-format
@@ -3810,8 +3823,8 @@ msgstr "XML non supporta i valori infiniti per il tipo date."
 #: utils/adt/timestamp.c:4440 utils/adt/timestamp.c:4454
 #: utils/adt/timestamp.c:4533 utils/adt/timestamp.c:4540
 #: utils/adt/timestamp.c:4567 utils/adt/timestamp.c:4571
-#: utils/adt/timestamp.c:4640 utils/adt/formatting.c:3247
-#: utils/adt/formatting.c:3279 utils/adt/formatting.c:3347
+#: utils/adt/timestamp.c:4640 utils/adt/formatting.c:3248
+#: utils/adt/formatting.c:3280 utils/adt/formatting.c:3348
 #: utils/adt/date.c:913 utils/adt/date.c:960 utils/adt/date.c:1516
 #: utils/adt/date.c:1553 utils/adt/date.c:2426 utils/adt/nabstime.c:480
 #: utils/adt/nabstime.c:523 utils/adt/nabstime.c:553 utils/adt/nabstime.c:596
@@ -4174,9 +4187,9 @@ msgid "could not determine which collation to use for ILIKE"
 msgstr "non è stato possibile determinare quale ordinamento usare per ILIKE"
 
 #: utils/adt/selfuncs.c:4965 utils/adt/varlena.c:1315
-#: utils/adt/formatting.c:1515 utils/adt/formatting.c:1565
-#: utils/adt/formatting.c:1631 utils/adt/formatting.c:1681
-#: utils/adt/formatting.c:1748 utils/adt/formatting.c:1810
+#: utils/adt/formatting.c:1516 utils/adt/formatting.c:1566
+#: utils/adt/formatting.c:1632 utils/adt/formatting.c:1682
+#: utils/adt/formatting.c:1749 utils/adt/formatting.c:1811
 #: utils/adt/like.c:212 commands/indexcmds.c:908 commands/view.c:145
 #: regex/regc_pg_locale.c:259 catalog/heap.c:560
 msgid "Use the COLLATE clause to set the collation explicitly."
@@ -4498,203 +4511,203 @@ msgstr "la specifica di formato per un intervallo non è valida"
 msgid "Intervals are not tied to specific calendar dates."
 msgstr "Gli intervalli non sono legati a specifiche date di calendario."
 
-#: utils/adt/formatting.c:1060
+#: utils/adt/formatting.c:1061
 msgid "\"EEEE\" must be the last pattern used"
 msgstr "\"EEEE\" dev'essere l'ultimo pattern usato"
 
-#: utils/adt/formatting.c:1068
+#: utils/adt/formatting.c:1069
 msgid "\"9\" must be ahead of \"PR\""
 msgstr "\"9\" dev'essere più avanti di \"PR\""
 
-#: utils/adt/formatting.c:1084
+#: utils/adt/formatting.c:1085
 msgid "\"0\" must be ahead of \"PR\""
 msgstr "\"0\" dev'essere più avanti di \"PR\""
 
-#: utils/adt/formatting.c:1110
+#: utils/adt/formatting.c:1111
 msgid "multiple decimal points"
 msgstr "troppi punti decimali"
 
-#: utils/adt/formatting.c:1114 utils/adt/formatting.c:1197
+#: utils/adt/formatting.c:1115 utils/adt/formatting.c:1198
 msgid "cannot use \"V\" and decimal point together"
 msgstr "non è possibile usare \"V\" ed un punto decimale insieme"
 
-#: utils/adt/formatting.c:1126
+#: utils/adt/formatting.c:1127
 msgid "cannot use \"S\" twice"
 msgstr "non è possibile usare \"S\" due volte"
 
-#: utils/adt/formatting.c:1130
+#: utils/adt/formatting.c:1131
 msgid "cannot use \"S\" and \"PL\"/\"MI\"/\"SG\"/\"PR\" together"
 msgstr ""
 "non è possibile usare sia \"S\" che \"PL\"/\"MI\"/\"SG\"/\"PR\" insieme"
 
-#: utils/adt/formatting.c:1150
+#: utils/adt/formatting.c:1151
 msgid "cannot use \"S\" and \"MI\" together"
 msgstr "non è possibile usare sia \"S\" che \"MI\" insieme"
 
-#: utils/adt/formatting.c:1160
+#: utils/adt/formatting.c:1161
 msgid "cannot use \"S\" and \"PL\" together"
 msgstr "non è possibile usare sia \"S\" che \"PL\" insieme"
 
-#: utils/adt/formatting.c:1170
+#: utils/adt/formatting.c:1171
 msgid "cannot use \"S\" and \"SG\" together"
 msgstr "non è possibile usare sia \"S\" che \"SG\" insieme"
 
-#: utils/adt/formatting.c:1179
+#: utils/adt/formatting.c:1180
 msgid "cannot use \"PR\" and \"S\"/\"PL\"/\"MI\"/\"SG\" together"
 msgstr ""
 "non è possibile usare sia \"PR\" che \"S\"/\"PL\"/\"MI\"/\"SG\" insieme"
 
-#: utils/adt/formatting.c:1205
+#: utils/adt/formatting.c:1206
 msgid "cannot use \"EEEE\" twice"
 msgstr "non è possibile usare \"EEEE\" due volte"
 
-#: utils/adt/formatting.c:1211
+#: utils/adt/formatting.c:1212
 msgid "\"EEEE\" is incompatible with other formats"
 msgstr "\"EEEE\" non è compatibile con altri formati"
 
-#: utils/adt/formatting.c:1212
+#: utils/adt/formatting.c:1213
 msgid ""
 "\"EEEE\" may only be used together with digit and decimal point patterns."
 msgstr ""
 "\"EEEE\" può essere usato soltanto insieme a pattern di cifre e punti "
 "decimali."
 
-#: utils/adt/formatting.c:1412
+#: utils/adt/formatting.c:1413
 #, c-format
 msgid "\"%s\" is not a number"
 msgstr "\"%s\" non è un numero"
 
-#: utils/adt/formatting.c:1514 utils/adt/formatting.c:1564
+#: utils/adt/formatting.c:1515 utils/adt/formatting.c:1565
 msgid "could not determine which collation to use for lower() function"
 msgstr ""
 "non è stato possibile determinare quale ordinamento usare per la funzione "
 "lower()"
 
-#: utils/adt/formatting.c:1630 utils/adt/formatting.c:1680
+#: utils/adt/formatting.c:1631 utils/adt/formatting.c:1681
 msgid "could not determine which collation to use for upper() function"
 msgstr ""
 "non è stato possibile determinare quale ordinamento usare per la funzione "
 "upper()"
 
-#: utils/adt/formatting.c:1747 utils/adt/formatting.c:1809
+#: utils/adt/formatting.c:1748 utils/adt/formatting.c:1810
 msgid "could not determine which collation to use for initcap() function"
 msgstr ""
 "non è stato possibile determinare quale ordinamento usare per la funzione "
 "initcap()"
 
-#: utils/adt/formatting.c:2086
+#: utils/adt/formatting.c:2087
 msgid "invalid combination of date conventions"
 msgstr "la combinazione di convenzioni di date non è valida"
 
-#: utils/adt/formatting.c:2087
+#: utils/adt/formatting.c:2088
 msgid ""
 "Do not mix Gregorian and ISO week date conventions in a formatting template."
 msgstr ""
 "Non è possibile usare la convenzione gregoriana e ISO per settimane in un "
 "modello di formattazione."
 
-#: utils/adt/formatting.c:2104
+#: utils/adt/formatting.c:2105
 #, c-format
 msgid "conflicting values for \"%s\" field in formatting string"
 msgstr ""
 "sono presenti valori contraddittori per il campo \"%s\" nella stringa di "
 "formattazione"
 
-#: utils/adt/formatting.c:2106
+#: utils/adt/formatting.c:2107
 msgid "This value contradicts a previous setting for the same field type."
 msgstr ""
 "Questo valore contraddice una impostazione precedente per lo stesso tipo di "
 "campo"
 
-#: utils/adt/formatting.c:2167
+#: utils/adt/formatting.c:2168
 #, c-format
 msgid "source string too short for \"%s\" formatting field"
 msgstr ""
 "la stringa di origine è troppo corta per il campo di formattazione \"%s\""
 
-#: utils/adt/formatting.c:2169
+#: utils/adt/formatting.c:2170
 #, c-format
 msgid "Field requires %d characters, but only %d remain."
 msgstr "Il campo necessita di %d caratteri ma ne restano solo %d."
 
-#: utils/adt/formatting.c:2172 utils/adt/formatting.c:2186
+#: utils/adt/formatting.c:2173 utils/adt/formatting.c:2187
 msgid ""
 "If your source string is not fixed-width, try using the \"FM\" modifier."
 msgstr ""
 "Se la stringa di partenza non ha lunghezza fissa, prova ad usare il "
 "modificatore \"FM\"."
 
-#: utils/adt/formatting.c:2182 utils/adt/formatting.c:2195
-#: utils/adt/formatting.c:2325
+#: utils/adt/formatting.c:2183 utils/adt/formatting.c:2196
+#: utils/adt/formatting.c:2326
 #, c-format
 msgid "invalid value \"%s\" for \"%s\""
 msgstr "valore \"%s\" per \"%s\" non valido"
 
-#: utils/adt/formatting.c:2184
+#: utils/adt/formatting.c:2185
 #, c-format
 msgid "Field requires %d characters, but only %d could be parsed."
 msgstr ""
 "Il campo necessita di %d caratteri, ma è stato possibile analizzarne solo %d."
 
-#: utils/adt/formatting.c:2197
+#: utils/adt/formatting.c:2198
 msgid "Value must be an integer."
 msgstr "Il valore deve essere un integer."
 
-#: utils/adt/formatting.c:2202
+#: utils/adt/formatting.c:2203
 #, c-format
 msgid "value for \"%s\" in source string is out of range"
 msgstr ""
 "il valore \"%s\" nella stringa di origine è fuori dall'intervallo consentito"
 
-#: utils/adt/formatting.c:2204
+#: utils/adt/formatting.c:2205
 #, c-format
 msgid "Value must be in the range %d to %d."
 msgstr "Il valore deve essere compreso fra %d e %d."
 
-#: utils/adt/formatting.c:2327
+#: utils/adt/formatting.c:2328
 msgid "The given value did not match any of the allowed values for this field."
 msgstr ""
 "Il valore fornito non corrisponde a nessuno di quelli consentiti per questo "
 "campo."
 
-#: utils/adt/formatting.c:2876
+#: utils/adt/formatting.c:2877
 msgid "\"TZ\"/\"tz\" format patterns are not supported in to_date"
 msgstr ""
 "I pattern di formato \"TZ\"/\"tz\" non sono supportati nella funzione to_date"
 
-#: utils/adt/formatting.c:2980
+#: utils/adt/formatting.c:2981
 msgid "invalid input string for \"Y,YYY\""
 msgstr "stringa di input non valida per \"Y,YYY\""
 
-#: utils/adt/formatting.c:3371 utils/adt/date.c:167
+#: utils/adt/formatting.c:3372 utils/adt/date.c:167
 #, c-format
 msgid "date out of range: \"%s\""
 msgstr "data fuori dall'intervallo consentito: \"%s\""
 
-#: utils/adt/formatting.c:3503
+#: utils/adt/formatting.c:3504
 #, c-format
 msgid "hour \"%d\" is invalid for the 12-hour clock"
 msgstr "l'ora \"%d\" non è valida su un orologio a 12 ore"
 
-#: utils/adt/formatting.c:3505
+#: utils/adt/formatting.c:3506
 msgid "Use the 24-hour clock, or give an hour between 1 and 12."
 msgstr "Usa l'orologio a 24 ore o fornisci un'ora compresa fra 1 e 12."
 
-#: utils/adt/formatting.c:3543
+#: utils/adt/formatting.c:3544
 #, c-format
 msgid "inconsistent use of year %04d and \"BC\""
 msgstr "l'uso dell'anno %04d e di \"BC\" non è consistente"
 
-#: utils/adt/formatting.c:3590
+#: utils/adt/formatting.c:3591
 msgid "cannot calculate day of year without year information"
 msgstr ""
 "non è possibile calcolare il giorno dell'anno senza informazioni sull'anno"
 
-#: utils/adt/formatting.c:4452
+#: utils/adt/formatting.c:4450
 msgid "\"EEEE\" not supported for input"
 msgstr "l'uso di \"EEEE\" non è supportato per l'input"
 
-#: utils/adt/formatting.c:4464
+#: utils/adt/formatting.c:4462
 msgid "\"RN\" not supported for input"
 msgstr "l'uso di \"RN\" non è supportato per l'input"
 
@@ -11542,7 +11555,7 @@ msgid "tablespace \"%s\" already exists"
 msgstr "il tablespace \"%s\" esiste già"
 
 #: commands/tablespace.c:377 commands/tablespace.c:529
-#: replication/basebackup.c:170 replication/basebackup.c:757
+#: replication/basebackup.c:170 replication/basebackup.c:777
 msgid "tablespaces are not supported on this platform"
 msgstr "i tablespace non sono supportati su questa piattaforma"
 
@@ -11958,50 +11971,50 @@ msgstr "il server non esiste, saltato"
 msgid "user mapping \"%s\" does not exist for the server, skipping"
 msgstr "la mappatura utenti \"%s\" non esiste per il server, saltata"
 
-#: commands/vacuum.c:421
+#: commands/vacuum.c:431
 msgid "oldest xmin is far in the past"
 msgstr "il più vecchio xmin è molto lontano nel tempo"
 
-#: commands/vacuum.c:422
+#: commands/vacuum.c:432
 msgid "Close open transactions soon to avoid wraparound problems."
 msgstr "Chiudi presto le transazioni per evitare problemi di wraparound."
 
-#: commands/vacuum.c:831
+#: commands/vacuum.c:841
 msgid "some databases have not been vacuumed in over 2 billion transactions"
 msgstr ""
 "alcuni database non sono stati ripuliti per più di 2 miliardi di transazioni"
 
-#: commands/vacuum.c:832
+#: commands/vacuum.c:842
 msgid "You might have already suffered transaction-wraparound data loss."
 msgstr ""
 "Potresti aver già subito perdita di dati dovuta al wraparound delle "
 "transazioni."
 
-#: commands/vacuum.c:939
+#: commands/vacuum.c:949
 #, c-format
 msgid "skipping vacuum of \"%s\" --- lock not available"
 msgstr "pulizia di \"%s\" saltata --- lock non disponibile"
 
-#: commands/vacuum.c:965
+#: commands/vacuum.c:975
 #, c-format
 msgid "skipping \"%s\" --- only superuser can vacuum it"
 msgstr "\"%s\" saltato --- solo i superutenti possono pulirla"
 
-#: commands/vacuum.c:969
+#: commands/vacuum.c:979
 #, c-format
 msgid "skipping \"%s\" --- only superuser or database owner can vacuum it"
 msgstr ""
 "\"%s\" saltato --- solo i superutenti o il proprietario del database possono "
 "pulirla"
 
-#: commands/vacuum.c:973
+#: commands/vacuum.c:983
 #, c-format
 msgid "skipping \"%s\" --- only table or database owner can vacuum it"
 msgstr ""
 "\"%s\" saltato --- solo il proprietario del database o della tabella possono "
 "pulirla"
 
-#: commands/vacuum.c:990
+#: commands/vacuum.c:1000
 #, c-format
 msgid "skipping \"%s\" --- cannot vacuum non-tables or special system tables"
 msgstr ""
@@ -13253,12 +13266,12 @@ msgid "could not read from log file %u, segment %u, offset %u, length %lu: %m"
 msgstr ""
 "lettura dal file di log %u fallita, segmento %u, offset %u, lunghezza %lu: %m"
 
-#: replication/basebackup.c:133 replication/basebackup.c:738
+#: replication/basebackup.c:133 replication/basebackup.c:758
 #, c-format
 msgid "could not read symbolic link \"%s\": %m"
 msgstr "lettura del link simbolico \"%s\" fallita: %m"
 
-#: replication/basebackup.c:140 replication/basebackup.c:742
+#: replication/basebackup.c:140 replication/basebackup.c:762
 #, c-format
 msgid "symbolic link \"%s\" target is too long"
 msgstr "la destinazione del link simbolico \"%s\" è troppo lunga"
@@ -13269,38 +13282,38 @@ msgid "could not stat control file \"%s\": %m"
 msgstr ""
 "non è stato possibile ottenere informazioni sul file di controllo \"%s\": %m"
 
-#: replication/basebackup.c:285 replication/basebackup.c:915
+#: replication/basebackup.c:287 replication/basebackup.c:935
 msgid "base backup could not send data, aborting backup"
 msgstr "invio dati da parte del backup di base fallito, backup interrotto"
 
-#: replication/basebackup.c:332 replication/basebackup.c:341
-#: replication/basebackup.c:350 replication/basebackup.c:359
-#: replication/basebackup.c:368
+#: replication/basebackup.c:343 replication/basebackup.c:352
+#: replication/basebackup.c:361 replication/basebackup.c:370
+#: replication/basebackup.c:379
 #, c-format
 msgid "duplicate option \"%s\""
 msgstr "opzione duplicata \"%s\""
 
-#: replication/basebackup.c:420
+#: replication/basebackup.c:431
 #, c-format
 msgid "could not open directory \"pg_tblspc\": %m"
 msgstr "non è stato possibile aprire la directory \"pg_tblspc\": %m"
 
-#: replication/basebackup.c:617 replication/basebackup.c:692
+#: replication/basebackup.c:628 replication/basebackup.c:703
 #, c-format
 msgid "could not stat file or directory \"%s\": %m"
 msgstr ""
 "non è stato possibile ottenere informazioni sul file o directory \"%s\": %m"
 
-#: replication/basebackup.c:678
+#: replication/basebackup.c:689
 msgid "shutdown requested, aborting active base backup"
 msgstr "arresto richiesto, interruzione del backup di base attivo"
 
-#: replication/basebackup.c:815
+#: replication/basebackup.c:835
 #, c-format
 msgid "skipping special file \"%s\""
 msgstr "file speciale \"%s\" saltato"
 
-#: replication/basebackup.c:905
+#: replication/basebackup.c:925
 #, c-format
 msgid "archive member \"%s\" too large for tar format"
 msgstr "il membro \"%s\" dell'archivio è troppo grande per il formato tar"
@@ -16730,17 +16743,17 @@ msgid "cannot remove dependency on %s because it is a system object"
 msgstr ""
 "non è possibile rimuovere la dipendenza da %s perché è un oggetto di sistema"
 
-#: main/main.c:247
+#: main/main.c:248
 #, c-format
 msgid "%s: setsysinfo failed: %s\n"
 msgstr "%s: setsysinfo fallita: %s\n"
 
-#: main/main.c:269
+#: main/main.c:270
 #, c-format
 msgid "%s: WSAStartup failed: %d\n"
 msgstr "%s: WSAStartup fallita: %d\n"
 
-#: main/main.c:288
+#: main/main.c:306
 #, c-format
 msgid ""
 "%s is the PostgreSQL server.\n"
@@ -16749,7 +16762,7 @@ msgstr ""
 "%s è il server PostgreSQL.\n"
 "\n"
 
-#: main/main.c:289
+#: main/main.c:307
 #, c-format
 msgid ""
 "Usage:\n"
@@ -16760,117 +16773,117 @@ msgstr ""
 "  %s [OPZIONE]...\n"
 "\n"
 
-#: main/main.c:290
+#: main/main.c:308
 #, c-format
 msgid "Options:\n"
 msgstr "Opzioni:\n"
 
-#: main/main.c:292
+#: main/main.c:310
 #, c-format
 msgid "  -A 1|0          enable/disable run-time assert checking\n"
 msgstr ""
 "  -A 1|0          abilita/disabilita il controllo delle asserzioni in "
 "esecuzione\n"
 
-#: main/main.c:294
+#: main/main.c:312
 #, c-format
 msgid "  -B NBUFFERS     number of shared buffers\n"
 msgstr "  -B NBUFFERS     numero di buffer condivisi\n"
 
-#: main/main.c:295
+#: main/main.c:313
 #, c-format
 msgid "  -c NAME=VALUE   set run-time parameter\n"
 msgstr "  -c NOME=VALORE  imposta un parametro di esecuzione\n"
 
-#: main/main.c:296
+#: main/main.c:314
 #, c-format
 msgid "  -d 1-5          debugging level\n"
 msgstr "  -d 1-5          livello di debugging\n"
 
-#: main/main.c:297
+#: main/main.c:315
 #, c-format
 msgid "  -D DATADIR      database directory\n"
 msgstr "  -D DATADIR      directory del database\n"
 
-#: main/main.c:298
+#: main/main.c:316
 #, c-format
 msgid "  -e              use European date input format (DMY)\n"
 msgstr "  -e              usa il formato date europeo (GMA)\n"
 
-#: main/main.c:299
+#: main/main.c:317
 #, c-format
 msgid "  -F              turn fsync off\n"
 msgstr "  -F              disabilita fsync\n"
 
-#: main/main.c:300
+#: main/main.c:318
 #, c-format
 msgid "  -h HOSTNAME     host name or IP address to listen on\n"
 msgstr "  -h HOSTNAME     nome host o indirizzo IP su cui ascoltare\n"
 
-#: main/main.c:301
+#: main/main.c:319
 #, c-format
 msgid "  -i              enable TCP/IP connections\n"
 msgstr "  -i              abilita le connessioni TCP/IP\n"
 
-#: main/main.c:302
+#: main/main.c:320
 #, c-format
 msgid "  -k DIRECTORY    Unix-domain socket location\n"
 msgstr "  -k DIRECTORY    locazione dei socket di dominio Unix\n"
 
-#: main/main.c:304
+#: main/main.c:322
 #, c-format
 msgid "  -l              enable SSL connections\n"
 msgstr "  -l              abilita la connessione SSL\n"
 
-#: main/main.c:306
+#: main/main.c:324
 #, c-format
 msgid "  -N MAX-CONNECT  maximum number of allowed connections\n"
 msgstr "  -N MAX-CONNECT  numero massimo di connessioni consentite\n"
 
-#: main/main.c:307
+#: main/main.c:325
 #, c-format
 msgid "  -o OPTIONS      pass \"OPTIONS\" to each server process (obsolete)\n"
 msgstr ""
 "  -o OPZIONI      passa \"OPZIONI\" ad ogni processo server (obsoleto)\n"
 
-#: main/main.c:308
+#: main/main.c:326
 #, c-format
 msgid "  -p PORT         port number to listen on\n"
 msgstr "  -p PORT         numero di porta sul quale ascoltare\n"
 
-#: main/main.c:309
+#: main/main.c:327
 #, c-format
 msgid "  -s              show statistics after each query\n"
 msgstr "  -s              mostra le statistiche dopo ogni query\n"
 
-#: main/main.c:310
+#: main/main.c:328
 #, c-format
 msgid "  -S WORK-MEM     set amount of memory for sorts (in kB)\n"
 msgstr ""
 "  -S WORK-MEM     imposta la dimensione della memoria per gli ordinamenti\n"
 "                  (in kB)\n"
 
-#: main/main.c:311
+#: main/main.c:329
 #, c-format
 msgid "  --NAME=VALUE    set run-time parameter\n"
 msgstr "  --NOME=VALORE   imposta un parametro di esecuzione\n"
 
-#: main/main.c:312
+#: main/main.c:330
 #, c-format
 msgid "  --describe-config  describe configuration parameters, then exit\n"
 msgstr "  --describe-config  descrivi i parametri di configurazione ed esci\n"
 
-#: main/main.c:313
+#: main/main.c:331
 #, c-format
 msgid "  --help          show this help, then exit\n"
 msgstr "  --help          mostra questo aiuto ed esci\n"
 
-#: main/main.c:314
+#: main/main.c:332
 #, c-format
 msgid "  --version       output version information, then exit\n"
 msgstr "  --version       mostra informazioni sulla versione ed esci\n"
 
-#: main/main.c:316
+#: main/main.c:334
 #, c-format
 msgid ""
 "\n"
@@ -16879,12 +16892,12 @@ msgstr ""
 "\n"
 "Opzioni per gli sviluppatori:\n"
 
-#: main/main.c:317
+#: main/main.c:335
 #, c-format
 msgid "  -f s|i|n|m|h    forbid use of some plan types\n"
 msgstr "  -f s|i|n|m|h    vieta l'uso di alcuni tipi di piani\n"
 
-#: main/main.c:318
+#: main/main.c:336
 #, c-format
 msgid ""
 "  -n              do not reinitialize shared memory after abnormal exit\n"
@@ -16892,37 +16905,37 @@ msgstr ""
 "  -n              non reinizializzare la memoria condivisa dopo un'uscita\n"
 "                  anormale\n"
 
-#: main/main.c:319
+#: main/main.c:337
 #, c-format
 msgid "  -O              allow system table structure changes\n"
 msgstr ""
 "  -O              consenti cambiamenti alla struttura delle tabelle\n"
 "                  di sistema\n"
 
-#: main/main.c:320
+#: main/main.c:338
 #, c-format
 msgid "  -P              disable system indexes\n"
 msgstr "  -P              disabilita gli indici di sistema\n"
 
-#: main/main.c:321
+#: main/main.c:339
 #, c-format
 msgid "  -t pa|pl|ex     show timings after each query\n"
 msgstr "  -t pa|pl|ex     mostra i tempi impiegati dopo ogni query\n"
 
-#: main/main.c:322
+#: main/main.c:340
 #, c-format
 msgid "  -T              send SIGSTOP to all backend processes if one dies\n"
 msgstr ""
 "  -T              invia SIGSTOP a tutti i processi backend se uno muore\n"
 
-#: main/main.c:323
+#: main/main.c:341
 #, c-format
 msgid "  -W NUM          wait NUM seconds to allow attach from a debugger\n"
 msgstr ""
 "  -W NUM          attendi NUM secondi per consentire ad un debugger\n"
 "                  di collegarsi\n"
 
-#: main/main.c:325
+#: main/main.c:343
 #, c-format
 msgid ""
 "\n"
@@ -16931,42 +16944,42 @@ msgstr ""
 "\n"
 "Opzione per la modalità a singolo utente:\n"
 
-#: main/main.c:326
+#: main/main.c:344
 #, c-format
 msgid "  --single        selects single-user mode (must be first argument)\n"
 msgstr ""
 "  --single        imposta la modalità utente singolo (deve essere il primo\n"
 "                  argomento)\n"
 
-#: main/main.c:327
+#: main/main.c:345
 #, c-format
 msgid "  DBNAME          database name (defaults to user name)\n"
 msgstr ""
 "  DBNAME          nome del database (il predefinito è il nome dell'utente)\n"
 
-#: main/main.c:328
+#: main/main.c:346
 #, c-format
 msgid "  -d 0-5          override debugging level\n"
 msgstr "  -d 0-5          scavalca il livello di debugging\n"
 
-#: main/main.c:329
+#: main/main.c:347
 #, c-format
 msgid "  -E              echo statement before execution\n"
 msgstr "  -E              stampa le istruzioni prima dell'esecuzione\n"
 
-#: main/main.c:330
+#: main/main.c:348
 #, c-format
 msgid "  -j              do not use newline as interactive query delimiter\n"
 msgstr ""
 "  -j              non usare \"a capo\" come delimitatore delle query\n"
 "                  interattivo\n"
 
-#: main/main.c:331 main/main.c:336
+#: main/main.c:349 main/main.c:354
 #, c-format
 msgid "  -r FILENAME     send stdout and stderr to given file\n"
 msgstr "  -r NOMEFILE     invia stdout e stderr al file in argomento\n"
 
-#: main/main.c:333
+#: main/main.c:351
 #, c-format
 msgid ""
 "\n"
@@ -16975,14 +16988,14 @@ msgstr ""
 "\n"
 "Opzioni per la modalità di inizializzazione:\n"
 
-#: main/main.c:334
+#: main/main.c:352
 #, c-format
 msgid "  --boot          selects bootstrapping mode (must be first argument)\n"
 msgstr ""
 "  --boot          seleziona la modalità di inizializzazione (dev'essere\n"
 "                  il primo argomento)\n"
 
-#: main/main.c:335
+#: main/main.c:353
 #, c-format
 msgid ""
 "  DBNAME          database name (mandatory argument in bootstrapping mode)\n"
@@ -16990,12 +17003,12 @@ msgstr ""
 "  DBNAME          nome del database (obbligatorio in modalità di\n"
 "                  inizializzazione)\n"
 
-#: main/main.c:337
+#: main/main.c:355
 #, c-format
 msgid "  -x NUM          internal use\n"
 msgstr "  -x NUM          uso interno\n"
 
-#: main/main.c:339
+#: main/main.c:357
 #, c-format
 msgid ""
 "\n"
@@ -17012,7 +17025,7 @@ msgstr ""
 "\n"
 "Puoi segnalare eventuali bug a <pgsql-bugs@postgresql.org>.\n"
 
-#: main/main.c:353
+#: main/main.c:371
 msgid ""
 "\"root\" execution of the PostgreSQL server is not permitted.\n"
 "The server must be started under an unprivileged user ID to prevent\n"
@@ -17024,12 +17037,12 @@ msgstr ""
 "prevenire possibili problemi di sicurezza. Consulta la documentazione\n"
 "per avere maggiori informazioni su come avviare il server correttamente.\n"
 
-#: main/main.c:370
+#: main/main.c:388
 #, c-format
 msgid "%s: real and effective user IDs must match\n"
 msgstr "%s: utente gli ID reale e quello effettivo devono coincidere\n"
 
-#: main/main.c:377
+#: main/main.c:395
 msgid ""
 "Execution of PostgreSQL by a user with administrative permissions is not\n"
 "permitted.\n"
@@ -17043,12 +17056,12 @@ msgstr ""
 "prevenire possibili problemi di sicurezza. Consulta la documentazione\n"
 "per avere maggiori informazioni su come avviare il server correttamente.\n"
 
-#: main/main.c:398
+#: main/main.c:416
 #, c-format
 msgid "%s: invalid effective UID: %d\n"
 msgstr "%s: UID effettivo non valido: %d\n"
 
-#: main/main.c:411
+#: main/main.c:429
 #, c-format
 msgid "%s: could not determine user name (GetUserName failed)\n"
 msgstr ""

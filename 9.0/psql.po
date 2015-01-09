@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2014-11-19 21:29+0000\n"
-"PO-Revision-Date: 2014-11-13 14:09+0100\n"
+"POT-Creation-Date: 2015-01-08 04:29+0000\n"
+"PO-Revision-Date: 2015-01-09 12:41+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -159,7 +159,7 @@ msgstr "Password: "
 msgid "Password for user %s: "
 msgstr "Inserisci la password per l'utente %s: "
 
-#: command.c:1323 command.c:2212 common.c:183 common.c:460 common.c:525
+#: command.c:1323 command.c:2216 common.c:183 common.c:460 common.c:525
 #: common.c:816 common.c:841 common.c:925 copy.c:434 copy.c:481 copy.c:612
 #, c-format
 msgid "%s"
@@ -276,103 +276,103 @@ msgstr "Lo stile della linea è %s.\n"
 msgid "Border style is %d.\n"
 msgstr "Lo stile del bordo è %d.\n"
 
-#: command.c:1893
+#: command.c:1895
 #, c-format
 msgid "Expanded display is on.\n"
 msgstr "La visualizzazione espansa è attiva.\n"
 
-#: command.c:1894
+#: command.c:1896
 #, c-format
 msgid "Expanded display is off.\n"
 msgstr "La visualizzazione espansa è disattivata.\n"
 
-#: command.c:1907
+#: command.c:1909
 msgid "Showing locale-adjusted numeric output."
 msgstr "L'output numerico visualizzato è corretto secondo il locale."
 
-#: command.c:1909
+#: command.c:1911
 msgid "Locale-adjusted numeric output is off."
 msgstr "La correzione dell'output numerico secondo il locale è disattivata."
 
-#: command.c:1922
+#: command.c:1924
 #, c-format
 msgid "Null display is \"%s\".\n"
 msgstr "La visualizzazione dei null è \"%s\".\n"
 
-#: command.c:1934
+#: command.c:1936
 #, c-format
 msgid "Field separator is \"%s\".\n"
 msgstr "Il separatore di campo è \"%s\".\n"
 
-#: command.c:1948
+#: command.c:1950
 #, c-format
 msgid "Record separator is <newline>."
 msgstr "Il separatore di record è <a capo>."
 
-#: command.c:1950
+#: command.c:1952
 #, c-format
 msgid "Record separator is \"%s\".\n"
 msgstr "Il separatore di record è \"%s\".\n"
 
-#: command.c:1964
+#: command.c:1966
 msgid "Showing only tuples."
 msgstr "Visualizzazione esclusiva dati attivata."
 
-#: command.c:1966
+#: command.c:1968
 msgid "Tuples only is off."
 msgstr "Visualizzazione esclusiva dati disattivata."
 
-#: command.c:1982
+#: command.c:1984
 #, c-format
 msgid "Title is \"%s\".\n"
 msgstr "Il titolo è \"%s\".\n"
 
-#: command.c:1984
+#: command.c:1986
 #, c-format
 msgid "Title is unset.\n"
 msgstr "Il titolo non è assegnato.\n"
 
-#: command.c:2000
+#: command.c:2002
 #, c-format
 msgid "Table attribute is \"%s\".\n"
 msgstr "L'attributo di tabella è \"%s\".\n"
 
-#: command.c:2002
+#: command.c:2004
 #, c-format
 msgid "Table attributes unset.\n"
 msgstr "Gli attributi di tabella non sono specificati.\n"
 
-#: command.c:2023
+#: command.c:2027
 msgid "Pager is used for long output."
 msgstr "Usa la paginazione per risultati estesi."
 
-#: command.c:2025
+#: command.c:2029
 msgid "Pager is always used."
 msgstr "Paginazione sempre attiva."
 
-#: command.c:2027
+#: command.c:2031
 msgid "Pager usage is off."
 msgstr "Paginazione disattivata."
 
-#: command.c:2041
+#: command.c:2045
 msgid "Default footer is on."
 msgstr "Il piè di pagina di default è attivo."
 
-#: command.c:2043
+#: command.c:2047
 msgid "Default footer is off."
 msgstr "Il piè di pagina di default è disattivato."
 
-#: command.c:2054
+#: command.c:2058
 #, c-format
 msgid "Target width for \"wrapped\" format is %d.\n"
 msgstr "La larghezza di destinazione per il formato \"wrapped\" è %d.\n"
 
-#: command.c:2059
+#: command.c:2063
 #, c-format
 msgid "\\pset: unknown option: %s\n"
 msgstr "\\pset: opzione sconosciuta: %s\n"
 
-#: command.c:2113
+#: command.c:2117
 msgid "\\!: failed\n"
 msgstr "\\!: fallita\n"
 
@@ -1468,6 +1468,11 @@ msgstr ""
 #: startup.c:619
 msgid "contains support for command-line editing"
 msgstr "include il supporto per l'editing della riga di comando"
+
+#: startup.c:680 startup.c:727 startup.c:764
+#, c-format
+msgid "unrecognized value \"%s\" for \"%s\"; assuming \"%s\"\n"
+msgstr "valore \"%s\" non riconosciuto per \"%s\"; interpretato come \"%s\"\n"
 
 #: describe.c:68 describe.c:235 describe.c:462 describe.c:561 describe.c:682
 #: describe.c:763 describe.c:824 describe.c:2373 describe.c:2494
