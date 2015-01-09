@@ -57,16 +57,18 @@ make mopack
 Sulla traduzione
 ----------------
 
-Non tradurre il plurale delle parole inglesi: file e non files.
+Non tradurre il plurale delle parole inglesi: *file* e non *files*.
 
-La traduzione di directory è directory, non cartella. "Cartella" è un
+La traduzione di *directory* è *directory*, non *cartella*. "Cartella" è un
 microsoftismo.
 
-La versione maiuscola di "è" è "È" e non "E'". Il modo più facile di digitarla
-su Linux è di scrivere è col Caps Lock attivo.
+La versione maiuscola di *è* è *È* e non *E'* (al massimo sarebbe *E`*, ma le
+tastiere italiane non hanno neanche il backtick...) Il modo più facile di
+ottenere il carattere su Linux è di digitare ``è`` col Caps Lock attivo. Su
+Windows usa ``Alt+0200``.
 
-Se hai un dubbio, su qualche parola, controlla come è stata fatta in passato.
-Per esempio, come è tradotto "database cluster"? ::
+Se hai un dubbio, su qualche parola, controlla come è stata tradotta in
+passato.  Per esempio, come è tradotto *database cluster*? ::
 
 	grep -i -A1 "database cluster" *.po
 
@@ -76,8 +78,8 @@ fartene un'idea.
 Sei il futuro Gadda e il linguaggio te lo manipoli come vuoi? Grande, siamo
 felici tu sia con noi. Ma la consistenza è più importante di altri fattori in
 questa traduzione, per consentire all'utente di capire se due messaggi si
-riferiscono agli stessi elementi. Quindi se sei convinto che "cluster di
-database" sia meglio tradotto come "ammasso di database", cambia *tutte* le
+riferiscono agli stessi elementi. Quindi se sei convinto che *cluster di
+database* sia meglio tradotto come *ammasso di database*, cambia *tutte* le
 occorrenze, non solo l'ultima che trovi.
 
 In inglese, nelle liste, si usa una virgola `anche prima dell'ultimo
@@ -92,16 +94,16 @@ elemento`__. In italiano no. Quindi la traduzione di:
 .. __: http://en.wikipedia.org/wiki/Serial_comma
 
 Per descrivere comandi dati dall'utente al database, usa l'imperativo. Per
-esempo negli help della riga di comando. traduci "read the password from the
-file" come "leggi la password dal file".
+esempo negli help della riga di comando. traduci *read the password from the
+file* come *leggi la password dal file*.
 
-Quando il database si rivolge all'utente, usa l'imperativo.  "Esegui fixdb se
-non vuoi perdere tutti i tuoi dati", non "eseguite" o "eseguire".
+Quando il database si rivolge all'utente, usa l'imperativo. *Esegui fixdb se
+non vuoi perdere tutti i tuoi dati*, non *eseguite* o *eseguire*.
 
-Se il programma ha un output allineato (es. i messaggi di --help) rispetta
+Se il programma ha un output allineato (es. i messaggi di ``--help``) rispetta
 l'allineamento e non far andare le stringhe a zig zag.
 
-Gli autori di postgres fanno molta attenzione alla distinzione tra i messaggi
+Gli autori di Postgres fanno molta attenzione alla distinzione tra i messaggi
 d'errore dovuti a qualcosa che è assolutamente impossibile fare, per i quali
 usano la forma *cannot*:
 
@@ -116,7 +118,7 @@ La traduzione scelta è stata rispettivamente:
 
     non è possibile costruire il tetto prima del pavimento
 
-    non è stato possibile trovare i calzini nel cassetto
+    i calzini non sono stati trovati nel cassetto
 
 Ovviamente sono possibili variazioni per un concetto così generico; sarebbe
 auspicabile comunque mantenere la distinzione tra i due sensi degli errori.
@@ -132,6 +134,9 @@ con:
 
 Il segnaposto alla fine è usato per rendere più evidente il valore, o più
 leggibile l'intera frase se la variabile può essere arbitrariamente lunga.
+Anche se è meno idiomatico, usa:
+
+    il file non è stato trovato: %s
 
 
 Traduzioni di termini abbastanza comuni
