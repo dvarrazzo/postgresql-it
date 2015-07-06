@@ -1,6 +1,7 @@
 LANG = it
-VERSION = 9.4
-PGTR_BRANCH=9.4
+VERSION = 9.5
+PGTR_BRANCH=master
+URLPATTERN = "po-current"
 
 POS = $(wildcard *.po)
 MOS = $(patsubst %.po,%-$(VERSION).mo,$(POS))
