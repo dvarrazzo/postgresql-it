@@ -2,3 +2,4 @@
 *.pot
 package
 pgtr
+/env
