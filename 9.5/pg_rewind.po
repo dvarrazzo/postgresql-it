@@ -1,5 +1,5 @@
 #
-# Translation of postgres to Italian
+# Translation of pg_rewind to Italian
 # PostgreSQL Project
 #
 # Associazione Culturale ITPUG - Italian PostgreSQL Users Group
@@ -7,14 +7,13 @@
 #
 # Traduttori:
 #  * Daniele Varrazzo <daniele.varrazzo@gmail.com>
-#  * Vincenzo Romano <vincenzo.romano@itpug.org>
 #
 # Copyright (c) 2010, Associazione Culturale ITPUG
 # Distributed under the same license of the PostgreSQL project
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: postgres (PostgreSQL) 9.4\n"
+"Project-Id-Version: pg_rewind (PostgreSQL) 9.5\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2015-07-06 21:14+0000\n"
 "PO-Revision-Date: 2015-07-07 02:32+0100\n"

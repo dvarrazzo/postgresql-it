@@ -1,20 +1,31 @@
 #
-# Translation of postgres to Italian
+# Translation of pgscripts to Italian
 # PostgreSQL Project
 #
 # Associazione Culturale ITPUG - Italian PostgreSQL Users Group
 # http://www.itpug.org/ - info@itpug.org
 #
 # Traduttori:
+#  * Emanuele Zamprogno <ez@medicinaopen.info>
 #  * Daniele Varrazzo <daniele.varrazzo@gmail.com>
-#  * Vincenzo Romano <vincenzo.romano@itpug.org>
+#
+# Revisori:
+#  * Diego Cinelli <diego.cinelli@gmail.com>
+#
+# Traduttori precedenti:
+#  * Primo traduttore: Fabrizio Mazzoni <veramente@libero.it>, 2003.
+#  * Secondo traduttore: Mirko Tebaldi <mirko.tebaldi@libero.it>, 2004.
 #
 # Copyright (c) 2010, Associazione Culturale ITPUG
 # Distributed under the same license of the PostgreSQL project
 #
+# Italian message translation file for pgscripts
+# Primo traduttore: Fabrizio Mazzoni <veramente@libero.it>, 2003.
+# Secondo traduttore: Mirko Tebaldi <mirko.tebaldi@libero.it>, 2004.
+# Attuale traduttore: Emanuele Zamprogno <ez@medicinaopen.info>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: postgres (PostgreSQL) 9.4\n"
+"Project-Id-Version: pgscripts (PostgreSQL) 9.5\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2015-07-06 14:43+0000\n"
 "PO-Revision-Date: 2015-07-07 03:07+0100\n"
@@ -24,7 +35,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
