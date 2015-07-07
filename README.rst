@@ -25,8 +25,8 @@ salvataggio il lavoro fatto viene mescolato a quello da fare ed usare i
 segnalibri diventa inutile.
 
 
-Commandi per lo sviluppo
-------------------------
+Comandi per lo sviluppo
+-----------------------
 
 make [all]
     compila tutti i .po in .mo
@@ -159,7 +159,7 @@ Traduzioni di termini abbastanza comuni
 * line: riga (di un file)
 * location: posizione
 * log file: file di log
-* owenership: il proprietario, non la proprietà (quest'ultimo è ambiguo)
+* ownership: il proprietario, non la proprietà (quest'ultimo è ambiguo)
 * return: restituire, non tornare o ritornare
 * server-side: lato server
 * set: impostare, non settare (non c'è puttare o gettare, no?)
