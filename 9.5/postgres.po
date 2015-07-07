@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2015-07-06 14:38+0000\n"
+"POT-Creation-Date: 2015-07-07 02:38+0000\n"
 "PO-Revision-Date: 2015-07-07 00:01+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -7697,35 +7697,20 @@ msgstr "WITH CHECK non può essere applicato a SELECT o a DELETE"
 msgid "only WITH CHECK expression allowed for INSERT"
 msgstr "solo le espressioni WITH CHECK sono consentite per INSERT"
 
-#: commands/policy.c:566
+#: commands/policy.c:566 commands/policy.c:877
 #, c-format
-msgid "policy \"%s\" for relation \"%s\" already exists"
-msgstr "la politica \"%s\" per la relazione \"%s\" esiste già"
+msgid "policy \"%s\" for table \"%s\" already exists"
+msgstr "la politica \"%s\" per la tabella \"%s\" esiste già"
 
-#: commands/policy.c:738
+#: commands/policy.c:738 commands/policy.c:905 commands/policy.c:980
 #, c-format
-msgid "policy \"%s\" on table \"%s\" does not exist"
-msgstr "la politica \"%s\" sulla tabella \"%s\" non esiste"
+msgid "policy \"%s\" for table \"%s\" does not exist"
+msgstr "la politica \"%s\" per la tabella \"%s\" non esiste"
 
 #: commands/policy.c:756
 #, c-format
 msgid "only USING expression allowed for SELECT, DELETE"
 msgstr "solo le espressioni USING sono permesse per SELECT e DELETE"
-
-#: commands/policy.c:877
-#, c-format
-msgid "policy \"%s\" for table \"%s\" already exists"
-msgstr "la politica \"%s\" per la tabella \"%s\" esiste già"
-
-#: commands/policy.c:905
-#, c-format
-msgid "policy \"%s\" for table \"%s\" does not exist"
-msgstr "la politica \"%s\" per la tabella \"%s\" non esiste"
-
-#: commands/policy.c:980
-#, c-format
-msgid "policy \"%s\" for table  \"%s\" does not exist"
-msgstr "la politica \"%s\" per la tabella \"%s\" non esiste"
 
 #: commands/portalcmds.c:61 commands/portalcmds.c:160
 #: commands/portalcmds.c:212
@@ -9741,10 +9726,10 @@ msgstr "solo i superutenti possono creare superutenti"
 msgid "must be superuser to create replication users"
 msgstr "solo i superutenti possono creare utenti di replica"
 
-#: commands/user.c:304
+#: commands/user.c:304 commands/user.c:685
 #, c-format
-msgid "must be superuser to change bypassrls attribute."
-msgstr "solo i superutenti possono cambiare l'attributo bypassrls."
+msgid "must be superuser to change bypassrls attribute"
+msgstr "solo i superutenti possono cambiare l'attributo bypassrls"
 
 #: commands/user.c:311
 #, c-format
@@ -9777,11 +9762,6 @@ msgstr "solo i superutenti possono modificare superutenti"
 #, c-format
 msgid "must be superuser to alter replication users"
 msgstr "solo i superutenti possono modificare utenti di replica"
-
-#: commands/user.c:685
-#, c-format
-msgid "must be superuser to change bypassrls attribute"
-msgstr "solo i superutenti possono cambiare l'attributo bypassrls"
 
 #: commands/user.c:701 commands/user.c:893
 #, c-format
@@ -21317,8 +21297,8 @@ msgstr "la lunghezza della stringa di bit supera il massimo consentito (%d)"
 #, c-format
 msgid "bit string length %d does not match type bit(%d)"
 msgstr ""
-"la lunghezza della stringa di bit %d non corrisponde a quella del tipo "
-"bit(%d)"
+"la lunghezza della stringa di bit %d non corrisponde a quella del tipo bit"
+"(%d)"
 
 #: utils/adt/varbit.c:199 utils/adt/varbit.c:511
 #, c-format
@@ -21526,8 +21506,8 @@ msgstr "inizializzazione della libreria XML fallita"
 msgid ""
 "libxml2 has incompatible char type: sizeof(char)=%u, sizeof(xmlChar)=%u."
 msgstr ""
-"La libreria libxml2 ha un tipo char non compatibile: sizeof(char)=%u, "
-"sizeof(xmlChar)=%u."
+"La libreria libxml2 ha un tipo char non compatibile: sizeof(char)=%u, sizeof"
+"(xmlChar)=%u."
 
 #: utils/adt/xml.c:997
 #, c-format
