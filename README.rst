@@ -8,6 +8,27 @@ Questo progetto contiene lo stato corrente della traduzione italiana di
 PostgreSQL e alcuni tool di sviluppo.
 
 
+Workflow
+--------
+
+This section is in English because the Makefile targets and tools can be of
+use to maintain the translation in other languages.
+
+- Run ``make dlpots`` to download the new strings.
+- Run ``make updatepots`` to merge the new strings to the ``.po`` files.
+- Translate the new strings in the last version.
+- Run ``make update`` to copy the new translations to older versions where
+  available.
+- Translate eventually missing strings from older versions. Run ``make
+  update`` again to push new strings further towards older versions if needed.
+- Run ``make check`` to look for errors.
+- Commit the changes.
+- Run ``make pgtrpush`` to commit the updates in the pgtranslation message
+  repos.
+- Run ``git push --all`` in the pgtranslation message repos to push changes
+  upstream.
+
+
 Note per il prossimo traduttore
 -------------------------------
 
