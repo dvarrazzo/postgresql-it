@@ -10,10 +10,10 @@ URLPATTERN ?= "po-$(VERSION)-branch"
 
 # download .pot files from PG website
 dlpots:
-	for u in $$(wget -O - http://babel.postgresql.org/ \
+	for u in $$(wget -O - https://babel.postgresql.org/ \
 			| egrep  "href=\"$(URLPATTERN)/.*pot\"" \
 			| sed -e 's/.*href="\(.*\)".*/\1/'); do \
-		wget -O $$(basename $$u) http://babel.postgresql.org/$$u; \
+		wget -O $$(basename $$u) https://babel.postgresql.org/$$u; \
 	done
 
 # update .po files with the new strings downloaded by dlpots
