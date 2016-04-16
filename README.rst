@@ -14,6 +14,10 @@ Workflow
 This section is in English because the Makefile targets and tools can be of
 use to maintain the translation in other languages.
 
+- Install the tools needed::
+
+    sudo apt-get install poedit myspell-it aspell-it python-polib
+
 - Run ``make dlpots`` to download the new strings.
 - Run ``make updatepots`` to merge the new strings to the ``.po`` files.
 - Translate the new strings in the last version.
