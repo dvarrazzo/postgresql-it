@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.5\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-12 00:42+0000\n"
-"PO-Revision-Date: 2016-04-17 03:44+0100\n"
+"PO-Revision-Date: 2016-04-17 04:02+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2977,7 +2977,7 @@ msgstr "  border             stile bordo (numero)\n"
 #: help.c:351
 #, c-format
 msgid "  columns            target width for the wrapped format\n"
-msgstr "  columns            larghezza obiettivo per il formato wrapped\n"
+msgstr "  columns            larghezza destinazione per il formato wrapped\n"
 
 #: help.c:352
 #, c-format

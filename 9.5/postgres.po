@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.5\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-12 00:38+0000\n"
-"PO-Revision-Date: 2016-04-17 03:49+0100\n"
+"PO-Revision-Date: 2016-04-17 04:04+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2059,7 +2059,7 @@ msgid ""
 "might need to choose an earlier recovery target."
 msgstr ""
 "Se ciò è avvenuto più di una volta, alcuni dati potrebbero essere corrotti e "
-"potresti dover scegliere un obiettivo di ripristino precedente."
+"potresti dover scegliere una destinazione di ripristino precedente."
 
 #: access/transam/xlog.c:5933
 #, c-format
@@ -4899,7 +4899,7 @@ msgstr "privilegi per %s"
 #: catalog/pg_shdepend.c:1089
 #, c-format
 msgid "target of %s"
-msgstr "obiettivo di %s"
+msgstr "destinazione di %s"
 
 #. translator: %s will always be "database %s"
 #: catalog/pg_shdepend.c:1097
@@ -15264,12 +15264,12 @@ msgstr ""
 #: postmaster/pgstat.c:1266
 #, c-format
 msgid "unrecognized reset target: \"%s\""
-msgstr "obiettivo del reset sconosciuto: \"%s\""
+msgstr "destinazione di reset sconosciuta: \"%s\""
 
 #: postmaster/pgstat.c:1267
 #, c-format
 msgid "Target must be \"archiver\" or \"bgwriter\"."
-msgstr "L'obiettivo deve essere \"archiver\" o \"bgwriter\"."
+msgstr "La destinazione deve essere \"archiver\" o \"bgwriter\"."
 
 #: postmaster/pgstat.c:3425
 #, c-format
@@ -15634,7 +15634,7 @@ msgstr "richiesta di arresto immediate ricevuta"
 #: postmaster/postmaster.c:2708
 #, c-format
 msgid "shutdown at recovery target"
-msgstr "arresto all'obiettivo di recupero"
+msgstr "arresto alla destinazione di recupero"
 
 #: postmaster/postmaster.c:2724 postmaster/postmaster.c:2747
 msgid "startup process"
@@ -16010,8 +16010,8 @@ msgstr "nome del file troppo lungo per il formato tar: \"%s\""
 msgid ""
 "symbolic link target too long for tar format: file name \"%s\", target \"%s\""
 msgstr ""
-"obiettivo del link simbolico troppo lungo per il formato tar: nome del file "
-"\"%s\", obiettivo \"%s\""
+"destinazione del link simbolico troppo lunga per il formato tar: nome del "
+"file \"%s\", destinazione \"%s\""
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:116
 #, c-format

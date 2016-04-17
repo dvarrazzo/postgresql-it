@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-11 22:56+0000\n"
-"PO-Revision-Date: 2016-04-17 03:49+0100\n"
+"PO-Revision-Date: 2016-04-17 04:04+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1675,7 +1675,7 @@ msgid ""
 "might need to choose an earlier recovery target."
 msgstr ""
 "Se ciò è avvenuto più di una volta, alcuni dati potrebbero essere corrotti e "
-"potresti dover scegliere un obiettivo di ripristino precedente."
+"potresti dover scegliere una destinazione di ripristino precedente."
 
 #: access/transam/xlog.c:6371
 #, c-format
@@ -13047,12 +13047,12 @@ msgstr ""
 #: postmaster/pgstat.c:1193
 #, c-format
 msgid "unrecognized reset target: \"%s\""
-msgstr "obiettivo del reset sconosciuto: \"%s\""
+msgstr "destinazione di reset sconosciuta: \"%s\""
 
 #: postmaster/pgstat.c:1194
 #, c-format
 msgid "Target must be \"bgwriter\"."
-msgstr "L'obiettivo deve essere \"bgwriter\"."
+msgstr "La destinazione deve essere \"bgwriter\"."
 
 #: postmaster/pgstat.c:3144
 #, c-format
