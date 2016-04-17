@@ -1,6 +1,7 @@
 LANG = it
 VERSION = 9.5
-PGTR_BRANCH=master
+UPDATE_FROM = 9.6
+PGTR_BRANCH = REL9_5_STABLE
 
 POS = $(wildcard *.po)
 MOS = $(patsubst %.po,%-$(VERSION).mo,$(POS))

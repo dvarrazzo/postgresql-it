@@ -1,6 +1,6 @@
 LANG = it
 VERSION = 9.6
-PGTR_BRANCH=master
+PGTR_BRANCH = master
 URLPATTERN = "po-master"
 
 POS = $(wildcard *.po)
