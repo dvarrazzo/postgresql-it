@@ -27,6 +27,12 @@ use to maintain the translation in other languages.
   update`` again to push new strings further towards older versions if needed.
 - Run ``make check`` to look for errors.
 - Commit the changes.
+
+The following steps are useful if you have commit rights to the PostgreSQL
+repository.
+
+- Create a symlink ``pgtr`` in this directory to the messages repository
+  (``pgtranslation/messages.git``).
 - Run ``make pgtrpush`` to commit the updates in the pgtranslation message
   repos.
 - Run ``git push --all`` in the pgtranslation message repos to push changes
