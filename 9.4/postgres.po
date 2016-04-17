@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-11 22:45+0000\n"
-"PO-Revision-Date: 2016-04-17 04:04+0100\n"
+"PO-Revision-Date: 2016-04-17 20:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1771,7 +1771,7 @@ msgid ""
 "hot standby is not possible because %s = %d is a lower setting than on the "
 "master server (its value was %d)"
 msgstr ""
-"L'hot standby non è possibile perché %s = %d è un'impostazione inferiore a "
+"l'hot standby non è possibile perché %s = %d è un'impostazione inferiore a "
 "quella del server master (il cui valore era %d)"
 
 #: access/transam/xlog.c:6024
@@ -2364,7 +2364,7 @@ msgstr "scrittura nel file \"%s\" fallita: %m"
 #: access/transam/xlog.c:10191
 #, c-format
 msgid "a backup is not in progress"
-msgstr "nessuno backup in esecuzione"
+msgstr "non c'è un backup in esecuzione"
 
 #: access/transam/xlog.c:10230 access/transam/xlog.c:10243
 #: access/transam/xlog.c:10594 access/transam/xlog.c:10600
@@ -10818,7 +10818,7 @@ msgstr "accesso fallito al file della chiave privata \"%s\": %m"
 #: libpq/be-secure.c:872
 #, c-format
 msgid "private key file \"%s\" has group or world access"
-msgstr "il file della chiave primaria \"%s\" ha accesso al gruppo o a chiunque"
+msgstr "il file della chiave privata \"%s\" ha accesso al gruppo o a chiunque"
 
 #: libpq/be-secure.c:874
 #, c-format
@@ -22700,7 +22700,7 @@ msgstr "Posizione del file di certificati del server SSL."
 
 #: utils/misc/guc.c:3149
 msgid "Location of the SSL server private key file."
-msgstr "Posizione del file della chiave primaria del server SSL."
+msgstr "Posizione del file della chiave privata del server SSL."
 
 #: utils/misc/guc.c:3159
 msgid "Location of the SSL certificate authority file."
