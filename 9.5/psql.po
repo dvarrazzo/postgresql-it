@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.5\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-12 00:42+0000\n"
-"PO-Revision-Date: 2016-04-17 02:56+0100\n"
+"PO-Revision-Date: 2016-04-17 03:44+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -1028,7 +1028,7 @@ msgstr "Privilegi di colonna"
 
 #: describe.c:818
 msgid "Policies"
-msgstr "Politiche"
+msgstr "Regole di sicurezza"
 
 #: describe.c:844 describe.c:4609 describe.c:4613
 msgid "Access privileges"
@@ -1257,23 +1257,23 @@ msgstr "Referenziato da:"
 
 #: describe.c:2063
 msgid "Policies:"
-msgstr "Politiche:"
+msgstr "Regole di sicurezza:"
 
 #: describe.c:2066
 msgid "Policies (forced row security enabled):"
-msgstr "Politiche (sicurezza di riga forzata abilitata):"
+msgstr "Regole (sicurezza per riga forzata abilitata):"
 
 #: describe.c:2069
 msgid "Policies (row security enabled): (none)"
-msgstr "Politiche (sicurezza di riga abilitata): (nessuna)"
+msgstr "Regole (sicurezza per riga abilitata): (nessuna)"
 
 #: describe.c:2072
 msgid "Policies (forced row security enabled): (none)"
-msgstr "Politiche (sicurezza di riga forzata abilitata): (nessuna)"
+msgstr "Regole (sicurezza per riga forzata abilitata): (nessuna)"
 
 #: describe.c:2075
 msgid "Policies (row security disabled):"
-msgstr "Politiche (sicurezza di riga disabilitata):"
+msgstr "Regole (sicurezza per riga disabilitata):"
 
 #: describe.c:2175 describe.c:2225
 msgid "Rules:"
@@ -4002,7 +4002,7 @@ msgstr "nome_dominio"
 
 #: sql_help.c:1404
 msgid "policy_name"
-msgstr "nome_politica"
+msgstr "nome_regola"
 
 #: sql_help.c:1408
 msgid "rule_name"
@@ -4831,7 +4831,7 @@ msgstr "cambia la definizione di una famiglia di operatori"
 
 #: sql_help.h:297
 msgid "change the definition of a row level security policy"
-msgstr "cambia la definizione di una politica di sicurezza a livello di riga"
+msgstr "cambia la definizione di una regola di sicurezza per riga"
 
 #: sql_help.h:302 sql_help.h:372
 msgid "change a database role"
@@ -5009,8 +5009,7 @@ msgstr "definisci una nuova famiglia operatore"
 
 #: sql_help.h:522
 msgid "define a new row level security policy for a table"
-msgstr ""
-"definisci una nuova politica di sicurezza a livello di riga per una tabella"
+msgstr "definisci una nuova regola di sicurezza per riga per una tabella"
 
 #: sql_help.h:532
 msgid "define a new rewrite rule"
@@ -5174,7 +5173,7 @@ msgstr "elimina gli oggetti database di proprietà di un ruolo di database"
 
 #: sql_help.h:737
 msgid "remove a row level security policy from a table"
-msgstr "rimuovi una politica di sicurezza a livello di riga da una tabella"
+msgstr "rimuovi una regola di sicurezza per riga da una tabella"
 
 #: sql_help.h:747
 msgid "remove a rewrite rule"

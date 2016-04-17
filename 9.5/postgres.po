@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.5\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-12 00:38+0000\n"
-"PO-Revision-Date: 2016-04-17 02:13+0100\n"
+"PO-Revision-Date: 2016-04-17 03:49+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -4396,7 +4396,7 @@ msgstr "trigger di evento %s"
 #: catalog/objectaddress.c:3121
 #, c-format
 msgid "policy %s on "
-msgstr "politica %s su "
+msgstr "regola di sicurezza %s su "
 
 #: catalog/objectaddress.c:3184
 #, c-format
@@ -5933,7 +5933,7 @@ msgstr "troppi nomi di colonne specificati"
 #: commands/createas.c:452
 #, c-format
 msgid "policies not yet implemented for this command"
-msgstr "politiche per questo comando non ancora implementate"
+msgstr "regole di sicurezza non ancora implementate per questo comando"
 
 #: commands/dbcommands.c:226
 #, c-format
@@ -6329,7 +6329,8 @@ msgstr "il trigger \"%s\" per la relazione \"%s\" non esiste, saltato"
 #: commands/dropcmds.c:389
 #, c-format
 msgid "policy \"%s\" for relation \"%s\" does not exist, skipping"
-msgstr "la politica \"%s\" per la relazione \"%s\" non esiste, saltata"
+msgstr ""
+"la regola di sicurezza \"%s\" per la relazione \"%s\" non esiste, saltata"
 
 #: commands/dropcmds.c:396
 #, c-format
@@ -7662,8 +7663,8 @@ msgstr "TuttiTutti i ruoli sono membri del ruolo PUBLIC."
 #, c-format
 msgid "role \"%s\" could not be removed from policy \"%s\" on \"%s\""
 msgstr ""
-"non è stato possibile rimuovere il ruolo \"%s\" dalla politica \"%s\" su \"%s"
-"\""
+"non è stato possibile rimuovere il ruolo \"%s\" dalla regola di sicurezza "
+"\"%s\" su \"%s\""
 
 #: commands/policy.c:712
 #, c-format
@@ -7678,12 +7679,12 @@ msgstr "solo le espressioni WITH CHECK sono consentite per INSERT"
 #: commands/policy.c:794 commands/policy.c:1244
 #, c-format
 msgid "policy \"%s\" for table \"%s\" already exists"
-msgstr "la politica \"%s\" per la tabella \"%s\" esiste già"
+msgstr "la regola di sicurezza \"%s\" per la tabella \"%s\" esiste già"
 
 #: commands/policy.c:993 commands/policy.c:1272 commands/policy.c:1347
 #, c-format
 msgid "policy \"%s\" for table \"%s\" does not exist"
-msgstr "la politica \"%s\" per la tabella \"%s\" non esiste"
+msgstr "la regola di sicurezza \"%s\" per la tabella \"%s\" non esiste"
 
 #: commands/policy.c:1011
 #, c-format
@@ -8675,7 +8676,7 @@ msgstr ""
 msgid "cannot alter type of a column used in a policy definition"
 msgstr ""
 "non è possibile cambiare il tipo di una colonna usata nella definizione di "
-"una politica"
+"una regola di sicurezza"
 
 #: commands/tablecmds.c:8924
 #, c-format
@@ -10439,15 +10440,14 @@ msgstr "la nuova riga viola l'opzione di controllo della vista \"%s\""
 #, c-format
 msgid "new row violates row-level security policy \"%s\" for table \"%s\""
 msgstr ""
-"la nuova riga viola la politica di sicurezza a livello di riga \"%s\" per la "
-"tabella \"%s\""
+"la nuova riga viola la regola di sicurezza per riga \"%s\" per la tabella "
+"\"%s\""
 
 #: executor/execMain.c:1826
 #, c-format
 msgid "new row violates row-level security policy for table \"%s\""
 msgstr ""
-"la nuova riga viola la politica di sicurezza a livello di riga per la "
-"tabella \"%s\""
+"la nuova riga viola la regola di sicurezza per riga per la tabella \"%s\""
 
 #: executor/execMain.c:1833
 #, c-format
@@ -10455,8 +10455,8 @@ msgid ""
 "new row violates row-level security policy \"%s\" (USING expression) for "
 "table \"%s\""
 msgstr ""
-"la nuova riga viola la politica di sicurezza a livello di riga \"%s"
-"\" (espressione USING) per la tabella \"%s\""
+"la nuova riga viola la regola di sicurezza per riga \"%s\" (espressione "
+"USING) per la tabella \"%s\""
 
 #: executor/execMain.c:1838
 #, c-format
@@ -10464,8 +10464,8 @@ msgid ""
 "new row violates row-level security policy (USING expression) for table \"%s"
 "\""
 msgstr ""
-"la nuova riga viola la politica di sicurezza a livello di riga (espressione "
-"USING) per la tabella \"%s\""
+"la nuova riga viola la regola di sicurezza per riga (espressione USING) per "
+"la tabella \"%s\""
 
 #: executor/execQual.c:300 executor/execQual.c:328 executor/execQual.c:3191
 #: utils/adt/array_userfuncs.c:472 utils/adt/arrayfuncs.c:263
@@ -12946,13 +12946,14 @@ msgstr ""
 #: parser/parse_agg.c:378
 msgid "aggregate functions are not allowed in policy expressions"
 msgstr ""
-"le funzioni di aggregazione non sono ammesse nell'espressione di una politica"
+"le funzioni di aggregazione non sono ammesse nell'espressione di una regola "
+"di sicurezza"
 
 #: parser/parse_agg.c:380
 msgid "grouping operations are not allowed in policy expressions"
 msgstr ""
 "le funzioni di raggruppamento non sono ammesse nell'espressione di una "
-"politica"
+"regola di sicurezza"
 
 #: parser/parse_agg.c:397
 msgid "aggregate functions are not allowed in window RANGE"
@@ -13082,7 +13083,9 @@ msgstr "le funzioni finestra non sono ammesse nelle funzioni in FROM"
 
 #: parser/parse_agg.c:781
 msgid "window functions are not allowed in policy expressions"
-msgstr "le funzioni finestra non sono ammesse nell'espressione di una politica"
+msgstr ""
+"le funzioni finestra non sono ammesse nell'espressione di una regola di "
+"sicurezza"
 
 #: parser/parse_agg.c:793
 msgid "window functions are not allowed in window definitions"
@@ -16783,8 +16786,8 @@ msgstr ""
 msgid ""
 "could not convert table \"%s\" to a view because it has row security policies"
 msgstr ""
-"conversione della tabella \"%s\" in vista fallita perché ha politiche di "
-"sicurezza delle righe"
+"conversione della tabella \"%s\" in vista fallita perché ha regole di "
+"sicurezza per riga"
 
 #: rewrite/rewriteDefine.c:492
 #, c-format
@@ -16927,7 +16930,9 @@ msgstr "ricorsione infinita individuata nelle regole per la relazione \"%s\""
 #: rewrite/rewriteHandler.c:1799
 #, c-format
 msgid "infinite recursion detected in policy for relation \"%s\""
-msgstr "ricorsione infinita individuata nella politica per la relazione \"%s\""
+msgstr ""
+"ricorsione infinita individuata nella regola di sicurezza per la relazione "
+"\"%s\""
 
 #: rewrite/rewriteHandler.c:2116
 msgid "Junk view columns are not updatable."
@@ -24471,7 +24476,7 @@ msgstr "errore interno: tipo di parametro sconosciuto\n"
 #, c-format
 msgid "query would be affected by row-level security policy for table \"%s\""
 msgstr ""
-"la query sarebbe influenzata dalla politica di sicurezza di riga pre la "
+"la query sarebbe influenzata dalla regola di sicurezza per riga pre la "
 "tabella \"%s\""
 
 #: utils/misc/rls.c:129
@@ -24480,8 +24485,8 @@ msgid ""
 "To disable the policy for the table's owner, use ALTER TABLE NO FORCE ROW "
 "LEVEL SECURITY."
 msgstr ""
-"Per disabilitare la politica per il proprietario della tabella usa ALTER "
-"TABLE NO FORCE ROW LEVEL SECURITY."
+"Per disabilitare la regola di sicurezza per il proprietario della tabella "
+"usa ALTER TABLE NO FORCE ROW LEVEL SECURITY."
 
 #: utils/misc/timeout.c:388
 #, c-format

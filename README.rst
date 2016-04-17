@@ -185,7 +185,9 @@ Traduzioni di termini abbastanza comuni
 * location: posizione
 * log file: file di log
 * ownership: il proprietario, non la proprietà (quest'ultimo è ambiguo)
+* policy: regola di sicurezza
 * return: restituire, non tornare o ritornare
+* row-level security policy: regola di sicurezza per riga
 * server-side: lato server
 * set: impostare, non settare (non c'è puttare o gettare, no?)
 * shell (tipo di dato): non completamente definito
