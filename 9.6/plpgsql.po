@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:07+0000\n"
-"PO-Revision-Date: 2015-07-07 03:18+0100\n"
+"PO-Revision-Date: 2016-04-17 20:58+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -663,16 +663,19 @@ msgid ""
 "there is no label \"%s\" attached to any block or loop enclosing this "
 "statement"
 msgstr ""
+"non c'è un'etichetta \"%s\" collegata ad alcun blocco o loop contenente "
+"questa istruzione"
 
 #: pl_gram.y:1687
 #, c-format
 msgid "block label \"%s\" cannot be used in CONTINUE"
-msgstr ""
+msgstr "l'etichetta di blocco \"%s\" non può essere usata con CONTINUE"
 
 #: pl_gram.y:1702
 #, c-format
 msgid "EXIT cannot be used outside a loop, unless it has a label"
 msgstr ""
+"EXIT non può essere usato fuori da un loop, a meno che non abbia un'etichetta"
 
 #: pl_gram.y:1703
 #, c-format

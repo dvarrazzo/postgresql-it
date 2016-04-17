@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:14+0000\n"
-"PO-Revision-Date: 2016-04-17 03:45+0100\n"
+"PO-Revision-Date: 2016-04-17 20:51+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -165,7 +165,7 @@ msgstr "lettura operatori definiti dall'utente\n"
 #: common.c:174
 #, c-format
 msgid "reading user-defined access methods\n"
-msgstr ""
+msgstr "lettura dei metodi di accesso definiti dall'utente\n"
 
 #: common.c:178
 #, c-format
@@ -825,27 +825,27 @@ msgstr "elemento STDSTRINGS non valido: %s\n"
 #: pg_backup_archiver.c:2661
 #, c-format
 msgid "Schema \"%s\" not found.\n"
-msgstr ""
+msgstr "Schema \"%s\" non trovato.\n"
 
 #: pg_backup_archiver.c:2668
 #, c-format
 msgid "Table \"%s\" not found.\n"
-msgstr ""
+msgstr "Tabella \"%s\" non trovata.\n"
 
 #: pg_backup_archiver.c:2675
 #, c-format
 msgid "Index \"%s\" not found.\n"
-msgstr ""
+msgstr "Indice \"%s\" non trovato.\n"
 
 #: pg_backup_archiver.c:2682
 #, c-format
 msgid "Function \"%s\" not found.\n"
-msgstr ""
+msgstr "Funzione \"%s\" non trovata.\n"
 
 #: pg_backup_archiver.c:2689
 #, c-format
 msgid "Trigger \"%s\" not found.\n"
-msgstr ""
+msgstr "Trigger \"%s\" non trovato.\n"
 
 #: pg_backup_archiver.c:2920
 #, c-format
@@ -1837,6 +1837,9 @@ msgid ""
 "to\n"
 "                               match at least one entity each\n"
 msgstr ""
+"  --strict-names               richiede che le tabelle/schemi includano "
+"pattern\n"
+"                               che combacino con almeno un'entità\n"
 
 #: pg_dump.c:932 pg_dumpall.c:578 pg_restore.c:477
 #, c-format
@@ -1940,7 +1943,7 @@ msgstr ""
 #: pg_dump.c:1193 pg_dump.c:1246
 #, c-format
 msgid "No matching table(s) were found for pattern \"%s\"\n"
-msgstr ""
+msgstr "Nessuna tabella trovata per il pattern \"%s\"\n"
 
 #: pg_dump.c:1596
 #, c-format
@@ -2189,7 +2192,7 @@ msgstr "valore provolatile sconosciuto per la funzione \"%s\"\n"
 #: pg_dump.c:11582
 #, c-format
 msgid "unrecognized proparallel value for function \"%s\"\n"
-msgstr ""
+msgstr "valore proparallel non riconosciuto per la funzione \"%s\"\n"
 
 #: pg_dump.c:11734
 #, c-format
@@ -2230,7 +2233,7 @@ msgstr "ATTENZIONE: operatore con OID %s non trovato\n"
 #: pg_dump.c:12318
 #, c-format
 msgid "WARNING: invalid type %c of access method %s\n"
-msgstr ""
+msgstr "ATTENZIONE: tipo %c non valido del metodo di accesso %s\n"
 
 #: pg_dump.c:13516
 #, c-format
@@ -2257,6 +2260,8 @@ msgid ""
 "could not parse initial GRANT ACL list (%s) or initial REVOKE ACL list (%s) "
 "for object \"%s\" (%s)\n"
 msgstr ""
+"non è stato possibile interpretare il GRANT ACL iniziale (%s) o il REVOKE "
+"ACL iniziale (%s) per l'oggetto \"%s\" (%s)\n"
 
 #: pg_dump.c:14478
 #, c-format
@@ -2264,6 +2269,8 @@ msgid ""
 "could not parse GRANT ACL list (%s) or REVOKE ACL list (%s) for object \"%s"
 "\" (%s)\n"
 msgstr ""
+"non è stato possibile interpretare il GRANT ACL (%s) o il REVOKE ACL (%s) "
+"per l'oggetto \"%s\" (%s)\n"
 
 #: pg_dump.c:14954
 #, c-format
@@ -2583,7 +2590,7 @@ msgstr ""
 #: pg_dumpall.c:777
 #, c-format
 msgid "%s: role name starting with 'pg_' skipped (%s)\n"
-msgstr ""
+msgstr "%s: nome di ruolo (%s) saltato perché inizia con 'pg_'\n"
 
 #: pg_dumpall.c:1128
 #, c-format
@@ -2825,6 +2832,8 @@ msgstr ""
 msgid ""
 "  -t, --table=NAME             restore named relation (table, view, etc)\n"
 msgstr ""
+"  -t, --table=NOME             ripristina la relazione indicata (tabella, "
+"vista, ecc.)\n"
 
 #: pg_restore.c:464
 #, c-format

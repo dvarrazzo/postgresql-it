@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:08+0000\n"
-"PO-Revision-Date: 2015-07-20 00:30+0100\n"
+"PO-Revision-Date: 2016-04-17 20:43+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -585,7 +585,7 @@ msgstr "codice ExecStatusType errato"
 
 #: fe-exec.c:2617
 msgid "PGresult is not an error result\n"
-msgstr ""
+msgstr "PGresult non è un risultato di errore\n"
 
 #: fe-exec.c:2692 fe-exec.c:2715
 #, c-format
@@ -727,7 +727,7 @@ msgstr "timeout scaduto\n"
 
 #: fe-misc.c:1061
 msgid "invalid socket\n"
-msgstr ""
+msgstr "socket non valido\n"
 
 #: fe-misc.c:1084
 #, c-format
@@ -838,7 +838,7 @@ msgstr "dati estranei nel messaggio di tipo \"T\""
 
 #: fe-protocol3.c:691
 msgid "extraneous data in \"t\" message"
-msgstr ""
+msgstr "dati estranei nel messaggio di tipo \"t\""
 
 #: fe-protocol3.c:762 fe-protocol3.c:794 fe-protocol3.c:812
 msgid "insufficient data in \"D\" message"
@@ -854,7 +854,7 @@ msgstr "dati estranei nel messaggio di tipo \"D\""
 
 #: fe-protocol3.c:1005
 msgid "no error message available\n"
-msgstr ""
+msgstr "nessun messaggio di errore disponibile\n"
 
 #. translator: %s represents a digit string
 #: fe-protocol3.c:1035 fe-protocol3.c:1054

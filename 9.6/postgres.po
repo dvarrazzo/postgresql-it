@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:08+0000\n"
-"PO-Revision-Date: 2016-04-17 04:04+0100\n"
+"PO-Revision-Date: 2016-04-17 20:26+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -34,7 +34,7 @@ msgstr ""
 #: ../common/config_info.c:179 ../common/config_info.c:187
 #: ../common/config_info.c:195
 msgid "not recorded"
-msgstr ""
+msgstr "non registrato"
 
 #: ../common/controldata_utils.c:52 commands/copy.c:2798
 #: commands/extension.c:3120 utils/adt/genfile.c:134
@@ -45,7 +45,7 @@ msgstr "apertura del file \"%s\" in lettura fallita: %m"
 #: ../common/controldata_utils.c:56
 #, c-format
 msgid "%s: could not open file \"%s\" for reading: %s\n"
-msgstr ""
+msgstr "%s: apertura del file \"%s\" in lettura fallita: %s\n"
 
 #: ../common/controldata_utils.c:66 access/transam/timeline.c:346
 #: access/transam/xlog.c:3193 access/transam/xlog.c:10338
@@ -63,11 +63,11 @@ msgstr "lettura de file \"%s\" fallita: %m"
 #: ../common/controldata_utils.c:69
 #, c-format
 msgid "%s: could not read file \"%s\": %s\n"
-msgstr ""
+msgstr "%s: lettura del file \"%s\" fallita: %s\n"
 
 #: ../common/controldata_utils.c:86
 msgid "calculated CRC checksum does not match value stored in file"
-msgstr ""
+msgstr "il CRC di controllo calcolato non combacia con quello nel file"
 
 #: ../common/controldata_utils.c:88
 #, c-format
@@ -77,10 +77,14 @@ msgid ""
 "is expecting.  The results below are untrustworthy.\n"
 "\n"
 msgstr ""
+"ATTENZIONE: Il CRC di controllo calcolato non combacia col valore salvato\n"
+"nel file. O il file è corrotto o ha una struttura diversa da ciò che\n"
+"il programma si aspetta. I Risulati seguenti non sono affidabili.\n"
+"\n"
 
 #: ../common/controldata_utils.c:97
 msgid "byte ordering mismatch"
-msgstr ""
+msgstr "l'ordine dei byte non combacia"
 
 #: ../common/controldata_utils.c:99
 #, c-format
@@ -91,6 +95,12 @@ msgid ""
 "and\n"
 "the PostgreSQL installation would be incompatible with this data directory.\n"
 msgstr ""
+"ATTENZIONE: l'ordine dei byte non sembra combaciare\n"
+"L'ordine dei byte usato per salvare il file di pg_control potrebbe non\n"
+"combaciare con quello usato da questo programma. In questo caso i risultati\n"
+"seguenti sarebbero errati e l'installazione di PostgreSQL sarebbe "
+"incompatibile\n"
+"con questa directory dati.\n"
 
 #: ../common/exec.c:127 ../common/exec.c:241 ../common/exec.c:284
 #, c-format
@@ -393,6 +403,8 @@ msgstr "tipo di pagina inaspettato 0x%04X nell'indice BRIN \"%s\" blocco %u"
 #, c-format
 msgid "brin opfamily %s contains function %s with invalid support number %d"
 msgstr ""
+"la famiglia di operatori brin %s contiene la funzione %s con numero di "
+"supporto non valido %d"
 
 #: access/brin/brin_validate.c:131
 #, c-format
@@ -400,42 +412,53 @@ msgid ""
 "brin opfamily %s contains function %s with wrong signature for support "
 "number %d"
 msgstr ""
+"la famiglia di operatori brin %s contiene la funzione %s con signature non "
+"valida per il numero di supporto %d"
 
 #: access/brin/brin_validate.c:153
 #, c-format
 msgid "brin opfamily %s contains operator %s with invalid strategy number %d"
 msgstr ""
+"la famiglia di operatori brin %s contiene la funzione %s con numero di "
+"strategia non valido %d"
 
 #: access/brin/brin_validate.c:182
 #, c-format
 msgid ""
 "brin opfamily %s contains invalid ORDER BY specification for operator %s"
 msgstr ""
+"la famiglia di operatori brin %s contiene una specifica ORDER BY non valida "
+"per l'operatore %s"
 
 #: access/brin/brin_validate.c:195
 #, c-format
 msgid "brin opfamily %s contains operator %s with wrong signature"
 msgstr ""
+"la famiglia di operatori brin %s contiene l'operatore %s con signature non "
+"valida"
 
 #: access/brin/brin_validate.c:233
 #, c-format
 msgid "brin opfamily %s is missing operator(s) for types %s and %s"
 msgstr ""
+"alla famiglia di operatori brin %s mancano operatori per i tipi %s e %s"
 
 #: access/brin/brin_validate.c:243
 #, c-format
 msgid "brin opfamily %s is missing support function(s) for types %s and %s"
 msgstr ""
+"alla famiglia di operatori brin %s mancano funzioni di supporto per i tipi "
+"%s e %s"
 
 #: access/brin/brin_validate.c:256
 #, c-format
 msgid "brin opclass %s is missing operator(s)"
-msgstr ""
+msgstr "alla classe di operatori brin %s mancano operatori"
 
 #: access/brin/brin_validate.c:267
 #, c-format
 msgid "brin opclass %s is missing support function %d"
-msgstr ""
+msgstr "alla classe di operatori brin %s manca la funzione di supporto %d"
 
 #: access/common/heaptuple.c:708 access/common/heaptuple.c:1339
 #, c-format
@@ -551,12 +574,12 @@ msgstr "la colonna \"%s\" non può essere dichiarata SETOF"
 #: access/gin/ginbulk.c:44
 #, c-format
 msgid "posting list is too long"
-msgstr ""
+msgstr "la lista di posting è troppo lunga"
 
 #: access/gin/ginbulk.c:45
 #, c-format
 msgid "Reduce maintenance_work_mem"
-msgstr ""
+msgstr "Riduci maintenance_work_mem"
 
 #: access/gin/ginentrypage.c:109 access/gist/gist.c:1354
 #: access/nbtree/nbtinsert.c:575 access/nbtree/nbtsort.c:488
@@ -579,17 +602,17 @@ msgstr "il ripristino è in corso"
 #: access/gin/ginfast.c:980
 #, c-format
 msgid "GIN pending list cannot be cleaned up during recovery."
-msgstr ""
+msgstr "La lista GIN in attesa non può essere completata durante il recupero."
 
 #: access/gin/ginfast.c:987
 #, c-format
 msgid "\"%s\" is not a GIN index"
-msgstr ""
+msgstr "\"%s\" non è un indice GIN"
 
 #: access/gin/ginfast.c:998
 #, c-format
 msgid "cannot access temporary indexes of other sessions"
-msgstr ""
+msgstr "non è possibile accedere ad indici temporanei di altre sessioni"
 
 #: access/gin/ginscan.c:409
 #, c-format
@@ -608,11 +631,15 @@ msgstr "Per correggere questo problema esegui REINDEX INDEX \"%s\"."
 msgid ""
 "gin opfamily %s contains support procedure %s with cross-type registration"
 msgstr ""
+"la famiglia di operatori gin %s contiene la procedura di supporto %s con "
+"tipi misti"
 
 #: access/gin/ginvalidate.c:148
 #, c-format
 msgid "gin opfamily %s contains function %s with invalid support number %d"
 msgstr ""
+"la famiglia di operatori gin %s contiene la funzione %s con numero di "
+"supporto non valido %d"
 
 #: access/gin/ginvalidate.c:160
 #, c-format
@@ -620,31 +647,40 @@ msgid ""
 "gin opfamily %s contains function %s with wrong signature for support number "
 "%d"
 msgstr ""
+"la famiglia di operatori gin %s contiene la funzione %s con signature non "
+"valida per il numero di supporto %d"
 
 #: access/gin/ginvalidate.c:179
 #, c-format
 msgid "gin opfamily %s contains operator %s with invalid strategy number %d"
 msgstr ""
+"la famiglia di operatori gin %s contiene l'operatore %s con numero di "
+"strategia non valida %d"
 
 #: access/gin/ginvalidate.c:192
 #, c-format
 msgid "gin opfamily %s contains invalid ORDER BY specification for operator %s"
 msgstr ""
+"la famiglia di operatori gin %s contiene una specifica ORDER BY non valida "
+"per l'operatore %s"
 
 #: access/gin/ginvalidate.c:205
 #, c-format
 msgid "gin opfamily %s contains operator %s with wrong signature"
 msgstr ""
+"la famiglia di operatori gin %s contiene l'operatore %s con signature non "
+"valida"
 
 #: access/gin/ginvalidate.c:246
 #, c-format
 msgid "gin opclass %s is missing support function %d"
-msgstr ""
+msgstr "alla classe di operatori gin %s manca la funzione di supporto %d"
 
 #: access/gin/ginvalidate.c:256
 #, c-format
 msgid "gin opclass %s is missing support function %d or %d"
 msgstr ""
+"alla classe di operatori gin %s mancano le funzioni di supporto %d o %d"
 
 #: access/gist/gist.c:692 access/gist/gistvacuum.c:258
 #, c-format
@@ -717,11 +753,15 @@ msgstr "l'indice \"%s\" contiene una pagina corrotta al blocco %u"
 msgid ""
 "gist opfamily %s contains support procedure %s with cross-type registration"
 msgstr ""
+"la famiglia di operatori gist %s contiene la procedura di supporto %s con "
+"tipi misti"
 
 #: access/gist/gistvalidate.c:145
 #, c-format
 msgid "gist opfamily %s contains function %s with invalid support number %d"
 msgstr ""
+"la famiglia di operatori gist %s contiene la funzione %s con numero di "
+"supporto non valido %d"
 
 #: access/gist/gistvalidate.c:157
 #, c-format
@@ -729,17 +769,23 @@ msgid ""
 "gist opfamily %s contains function %s with wrong signature for support "
 "number %d"
 msgstr ""
+"la famiglia di operatori gist %s contiene la funzione %s con signature non "
+"valida per il numero di supporto %d"
 
 #: access/gist/gistvalidate.c:177
 #, c-format
 msgid "gist opfamily %s contains operator %s with invalid strategy number %d"
 msgstr ""
+"la famiglia di operatori gist %s contiene l'operatore %s con numero di "
+"strategia non valida %d"
 
 #: access/gist/gistvalidate.c:195
 #, c-format
 msgid ""
 "gist opfamily %s contains unsupported ORDER BY specification for operator %s"
 msgstr ""
+"la famiglia di operatori gist %s contiene una specifica ORDER BY non "
+"supportata per l'operatore %s"
 
 #: access/gist/gistvalidate.c:206
 #, c-format
@@ -747,16 +793,20 @@ msgid ""
 "gist opfamily %s contains incorrect ORDER BY opfamily specification for "
 "operator %s"
 msgstr ""
+"la famiglia di operatori gist %s contiene una specifica ORDER BY non "
+"corretta per l'operatore %s"
 
 #: access/gist/gistvalidate.c:225
 #, c-format
 msgid "gist opfamily %s contains operator %s with wrong signature"
 msgstr ""
+"la famiglia di operatori gist %s contiene l'operatore %s con signature non "
+"valida"
 
 #: access/gist/gistvalidate.c:264
 #, c-format
 msgid "gist opclass %s is missing support function %d"
-msgstr ""
+msgstr "alla classe di operatori gist %s manca la funzione di supporto %d"
 
 #: access/hash/hashinsert.c:69
 #, c-format
@@ -795,6 +845,8 @@ msgstr "l'indice \"%s\" ha una versione errata dell'hash"
 msgid ""
 "hash opfamily %s contains support procedure %s with cross-type registration"
 msgstr ""
+"la famiglia di operatori hash %s contiene la procedura di supporto %s con "
+"tipi misti"
 
 #: access/hash/hashvalidate.c:113
 #, c-format
@@ -802,47 +854,60 @@ msgid ""
 "hash opfamily %s contains function %s with wrong signature for support "
 "number %d"
 msgstr ""
+"la famiglia di operatori hash %s contiene la funzione %s con signature non "
+"valida per il numero di supporto %d"
 
 #: access/hash/hashvalidate.c:130
 #, c-format
 msgid "hash opfamily %s contains function %s with invalid support number %d"
 msgstr ""
+"la famiglia di operatori hash %s contiene la funzione %s con numero di "
+"supporto non valido %d"
 
 #: access/hash/hashvalidate.c:151
 #, c-format
 msgid "hash opfamily %s contains operator %s with invalid strategy number %d"
 msgstr ""
+"la famiglia di operatori hash %s contiene l'operatore %s con numero di "
+"strategia non valida %d"
 
 #: access/hash/hashvalidate.c:164
 #, c-format
 msgid ""
 "hash opfamily %s contains invalid ORDER BY specification for operator %s"
 msgstr ""
+"la famiglia di operatori hash %s contiene una specifica ORDER BY non valida "
+"per l'operatore %s"
 
 #: access/hash/hashvalidate.c:177
 #, c-format
 msgid "hash opfamily %s contains operator %s with wrong signature"
 msgstr ""
+"la famiglia di operatori hash %s contiene l'operatore %s con signature non "
+"valida"
 
 #: access/hash/hashvalidate.c:189
 #, c-format
 msgid "hash opfamily %s lacks support function for operator %s"
 msgstr ""
+"alla famiglia di operatori hash %s manca la funzione di supporto per "
+"l'operatore %s"
 
 #: access/hash/hashvalidate.c:217
 #, c-format
 msgid "hash opfamily %s is missing operator(s) for types %s and %s"
 msgstr ""
+"alla famiglia di operatori hash %s mancano operatori per i tipi %s e %s"
 
 #: access/hash/hashvalidate.c:231
 #, c-format
 msgid "hash opclass %s is missing operator(s)"
-msgstr ""
+msgstr "alla classe di operatori hash %s mancano operatori"
 
 #: access/hash/hashvalidate.c:247
 #, c-format
 msgid "hash opfamily %s is missing cross-type operator(s)"
-msgstr ""
+msgstr "alla famiglia di operatori hash %s mancano operatori tra tipi diversi"
 
 #: access/heap/heapam.c:1137 access/heap/heapam.c:1189
 #, c-format
@@ -987,12 +1052,12 @@ msgstr "apertura del file \"%s\" fallita: %m"
 #: access/index/amapi.c:69 commands/amcmds.c:164
 #, c-format
 msgid "access method \"%s\" is not of type %s"
-msgstr ""
+msgstr "il metodo di accesso \"%s\" non è del tipo %s"
 
 #: access/index/amapi.c:78
 #, c-format
 msgid "index access method \"%s\" does not have a handler"
-msgstr ""
+msgstr "il metodo di accesso dell'indice \"%s\" non ha un handler"
 
 #: access/index/indexam.c:155 catalog/objectaddress.c:1196
 #: commands/indexcmds.c:1799 commands/tablecmds.c:241
@@ -1065,6 +1130,8 @@ msgstr ""
 #, c-format
 msgid "btree opfamily %s contains function %s with invalid support number %d"
 msgstr ""
+"la famiglia di operatori btree %s contiene la funzione %s con numero di "
+"supporto non valido %d"
 
 #: access/nbtree/nbtvalidate.c:112
 #, c-format
@@ -1072,42 +1139,53 @@ msgid ""
 "btree opfamily %s contains function %s with wrong signature for support "
 "number %d"
 msgstr ""
+"la famiglia di operatori btree %s contiene la funzione %s con signature non "
+"valida per il numero di supporto %d"
 
 #: access/nbtree/nbtvalidate.c:132
 #, c-format
 msgid "btree opfamily %s contains operator %s with invalid strategy number %d"
 msgstr ""
+"la famiglia di operatori btree %s contiene l'operatore %s con numero di "
+"strategia non valida %d"
 
 #: access/nbtree/nbtvalidate.c:145
 #, c-format
 msgid ""
 "btree opfamily %s contains invalid ORDER BY specification for operator %s"
 msgstr ""
+"la famiglia di operatori btree %s contiene una specifica ORDER BY non valida "
+"per l'operatore %s"
 
 #: access/nbtree/nbtvalidate.c:158
 #, c-format
 msgid "btree opfamily %s contains operator %s with wrong signature"
 msgstr ""
+"la famiglia di operatori btree %s contiene l'operatore %s con signature non "
+"valida"
 
 #: access/nbtree/nbtvalidate.c:200
 #, c-format
 msgid "btree opfamily %s is missing operator(s) for types %s and %s"
 msgstr ""
+"alla famiglia di operatori btree %s mancano operatori per i tipi %s e %s"
 
 #: access/nbtree/nbtvalidate.c:210
 #, c-format
 msgid "btree opfamily %s is missing support function for types %s and %s"
 msgstr ""
+"alla famiglia di operatori btree %s mancano funzioni di supporto per i tipi "
+"%s e %s"
 
 #: access/nbtree/nbtvalidate.c:224
 #, c-format
 msgid "btree opclass %s is missing operator(s)"
-msgstr ""
+msgstr "alla classe di operatori btree %s mancano operatori"
 
 #: access/nbtree/nbtvalidate.c:241
 #, c-format
 msgid "btree opfamily %s is missing cross-type operator(s)"
-msgstr ""
+msgstr "alla famiglia di operatori btree %s mancano operatori tra tipi diversi"
 
 #: access/spgist/spgutils.c:704
 #, c-format
@@ -1119,11 +1197,15 @@ msgstr "La dimensione %zu della tupla interna SP-GiST supera il massimo %zu"
 msgid ""
 "spgist opfamily %s contains support procedure %s with cross-type registration"
 msgstr ""
+"la famiglia di operatori spgist %s contiene la procedura di supporto %s con "
+"tipi misti"
 
 #: access/spgist/spgvalidate.c:115
 #, c-format
 msgid "spgist opfamily %s contains function %s with invalid support number %d"
 msgstr ""
+"la famiglia di operatori spgist %s contiene la funzione %s con numero di "
+"supporto non valido %d"
 
 #: access/spgist/spgvalidate.c:127
 #, c-format
@@ -1131,37 +1213,48 @@ msgid ""
 "spgist opfamily %s contains function %s with wrong signature for support "
 "number %d"
 msgstr ""
+"la famiglia di operatori spgist %s contiene la funzione %s con signature non "
+"valida per il numero di supporto %d"
 
 #: access/spgist/spgvalidate.c:146
 #, c-format
 msgid "spgist opfamily %s contains operator %s with invalid strategy number %d"
 msgstr ""
+"la famiglia di operatori spgist %s contiene l'operatore %s con numero di "
+"strategia non valida %d"
 
 #: access/spgist/spgvalidate.c:159
 #, c-format
 msgid ""
 "spgist opfamily %s contains invalid ORDER BY specification for operator %s"
 msgstr ""
+"la famiglia di operatori spgist %s contiene una specifica ORDER BY non "
+"valida per l'operatore %s"
 
 #: access/spgist/spgvalidate.c:172
 #, c-format
 msgid "spgist opfamily %s contains operator %s with wrong signature"
 msgstr ""
+"la famiglia di operatori spgist %s contiene l'operatore %s con signature non "
+"valida"
 
 #: access/spgist/spgvalidate.c:200
 #, c-format
 msgid "spgist opfamily %s is missing operator(s) for types %s and %s"
 msgstr ""
+"alla famiglia di operatori spgist %s mancano operatori per i tipi %s e %s"
 
 #: access/spgist/spgvalidate.c:220
 #, c-format
 msgid "spgist opfamily %s is missing support function %d for type %s"
 msgstr ""
+"alla famiglia di operatori spgist %s manca la funzione di supporto %d per il "
+"tipo %s"
 
 #: access/spgist/spgvalidate.c:233
 #, c-format
 msgid "spgist opclass %s is missing operator(s)"
-msgstr ""
+msgstr "alla classe di operatori spgist %s mancano operatori"
 
 #: access/tablesample/bernoulli.c:152 access/tablesample/system.c:156
 #, c-format
@@ -1602,12 +1695,13 @@ msgstr "Errore nell'alllocazione di un processore di lettura XLog."
 #: access/transam/twophase.c:1268
 #, c-format
 msgid "could not read two-phase state from xlog at %X/%X"
-msgstr ""
+msgstr "lettura dello stato a due fasi fallita per l'xlog a %X/%X"
 
 #: access/transam/twophase.c:1276
 #, c-format
 msgid "expected two-phase state data is not present in xlog at %X/%X"
 msgstr ""
+"i dati dello stato a due fasi attesi non sono presenti nell'xlog a %X/%X"
 
 #: access/transam/twophase.c:1512
 #, c-format
@@ -1639,6 +1733,8 @@ msgstr "chiusura del file dello stato a due fasi fallita: %m"
 msgid ""
 "%u two-phase state files were written for long-running prepared transactions"
 msgstr ""
+"%u file di stato a due fasi sono stati scritti per transazioni preparate di "
+"lunga durata"
 
 #: access/transam/twophase.c:1712
 #, c-format
@@ -2350,7 +2446,7 @@ msgid ""
 "hot standby is not possible because %s = %d is a lower setting than on the "
 "master server (its value was %d)"
 msgstr ""
-"L'hot standby non è possibile perché %s = %d è un'impostazione inferiore a "
+"l'hot standby non è possibile perché %s = %d è un'impostazione inferiore a "
 "quella del server master (il cui valore era %d)"
 
 #: access/transam/xlog.c:5878
@@ -2374,6 +2470,8 @@ msgid ""
 "hot standby is not possible because wal_level was not set to \"replica\" or "
 "higher on the master server"
 msgstr ""
+"l'hot standby non è possibile perché il wal_level non è impostato a \"replica"
+"\" o superiore nel server master"
 
 #: access/transam/xlog.c:5891
 #, c-format
@@ -2381,6 +2479,8 @@ msgid ""
 "Either set wal_level to \"replica\" on the master, or turn off hot_standby "
 "here."
 msgstr ""
+"Imposta il wal_level a \"replica\" sul master oppure disattiva hot_standby "
+"qui."
 
 #: access/transam/xlog.c:5948
 #, c-format
@@ -2855,6 +2955,8 @@ msgstr "livello WAL non sufficiente per creare un backup online"
 #, c-format
 msgid "wal_level must be set to \"replica\" or \"logical\" at server start."
 msgstr ""
+"Il wal_level deve essere impostato a \"replica\" o \"logical\" all'avvio del "
+"server."
 
 #: access/transam/xlog.c:9811
 #, c-format
@@ -2942,12 +3044,12 @@ msgstr "scrittura nel file \"%s\" fallita: %m"
 #: access/transam/xlog.c:10290
 #, c-format
 msgid "exclusive backup not in progress"
-msgstr ""
+msgstr "non c'è un backup esclusivo in corso"
 
 #: access/transam/xlog.c:10330
 #, c-format
 msgid "a backup is not in progress"
-msgstr "nessuno backup in esecuzione"
+msgstr "non c'è un backup in esecuzione"
 
 #: access/transam/xlog.c:10375 access/transam/xlog.c:10388
 #: access/transam/xlog.c:10728 access/transam/xlog.c:10734
@@ -3025,7 +3127,7 @@ msgstr ""
 #: access/transam/xlog.c:10858
 #, c-format
 msgid "xlog redo at %X/%X for %s"
-msgstr ""
+msgstr "ripristino xlog a %X/%X per %s"
 
 #: access/transam/xlog.c:10907
 #, c-format
@@ -3129,11 +3231,13 @@ msgstr "scrittura del file di stato dell'archivio \"%s\" fallita: %m"
 #, c-format
 msgid "aborting backup due to backend exiting before pg_stop_backup was called"
 msgstr ""
+"interruzione del backup perché il backend è terminato prima della chiamata "
+"di pg_stop_backup"
 
 #: access/transam/xlogfuncs.c:88
 #, c-format
 msgid "a backup is already in progress in this session"
-msgstr ""
+msgstr "c'è già un backup in corso in questa sessione"
 
 #: access/transam/xlogfuncs.c:94 commands/tablespace.c:709
 #: commands/tablespace.c:719 postmaster/postmaster.c:1395
@@ -3148,12 +3252,12 @@ msgstr "apertura della directory \"%s\" fallita: %m"
 #: access/transam/xlogfuncs.c:155 access/transam/xlogfuncs.c:229
 #, c-format
 msgid "non-exclusive backup in progress"
-msgstr ""
+msgstr "il backup in corso non è esclusivo"
 
 #: access/transam/xlogfuncs.c:156 access/transam/xlogfuncs.c:230
 #, c-format
 msgid "did you mean to use pg_stop_backup('f')?"
-msgstr ""
+msgstr "forse intendevi usare pg_stop_backup('f')?"
 
 #: access/transam/xlogfuncs.c:200 commands/event_trigger.c:1449
 #: commands/event_trigger.c:2000 commands/extension.c:1728
@@ -3188,12 +3292,12 @@ msgstr "necessaria modalità materializzata, ma non ammessa in questo contesto"
 #: access/transam/xlogfuncs.c:247
 #, c-format
 msgid "non-exclusive backup is not in progress"
-msgstr ""
+msgstr "non c'è un backup non esclusivo in corso"
 
 #: access/transam/xlogfuncs.c:248
 #, c-format
 msgid "did you mean to use pg_stop_backup('t')?"
-msgstr ""
+msgstr "forse intendevi usare pg_stop_backup('t')?"
 
 #: access/transam/xlogfuncs.c:327
 #, c-format
@@ -3243,7 +3347,7 @@ msgstr "contrecord richiesto da %X/%X"
 #: access/transam/xlogreader.c:334 access/transam/xlogreader.c:633
 #, c-format
 msgid "invalid record length at %X/%X: wanted %u, got %u"
-msgstr ""
+msgstr "lunghezza del record a %X/%X non valida: atteso %u, ricevuto %u"
 
 #: access/transam/xlogreader.c:349
 #, c-format
@@ -4421,7 +4525,7 @@ msgstr "La sintassi della lista non è valida."
 
 #: catalog/objectaddress.c:1065
 msgid "access method name cannot be qualified"
-msgstr ""
+msgstr "il nome del metodo di accesso non può essere qualificato"
 
 #: catalog/objectaddress.c:1068
 msgid "database name cannot be qualified"
@@ -4806,7 +4910,7 @@ msgstr "regola di sicurezza %s su "
 #: catalog/objectaddress.c:3192
 #, c-format
 msgid "access method %s"
-msgstr ""
+msgstr "metodo di accesso %s"
 
 #: catalog/objectaddress.c:3252
 #, c-format
@@ -4930,23 +5034,25 @@ msgstr ""
 #: catalog/pg_aggregate.c:426
 #, c-format
 msgid "return type of combine function %s is not %s"
-msgstr ""
+msgstr "il tipo restituito dalla funzione di combinazione %s non è %s"
 
 #: catalog/pg_aggregate.c:437
 #, c-format
 msgid ""
 "combine function with \"%s\" transition type must not be declared STRICT"
 msgstr ""
+"una funzione di combinazione con \"%s\" tipi di transizione non può essere "
+"dichiarata STRICT"
 
 #: catalog/pg_aggregate.c:457
 #, c-format
 msgid "return type of serialization function %s is not %s"
-msgstr ""
+msgstr "il tipo restituito dalla funzione di serializzazione %s non è %s"
 
 #: catalog/pg_aggregate.c:477
 #, c-format
 msgid "return type of deserialization function %s is not %s"
-msgstr ""
+msgstr "il tipo restituito dalla funzione di deserializzazione %s non è %s"
 
 #: catalog/pg_aggregate.c:493 catalog/pg_proc.c:246 catalog/pg_proc.c:253
 #, c-format
@@ -5499,16 +5605,18 @@ msgid ""
 "a serialization type must only be specified when the aggregate transition "
 "data type is \"%s\""
 msgstr ""
+"un tipo di serializzazione dev'essere specificato solo quando il tipo di "
+"dato di transizione dell'aggregato è \"%s\""
 
 #: commands/aggregatecmds.c:356
 #, c-format
 msgid "aggregate serialization data type cannot be %s"
-msgstr ""
+msgstr "il tipo di dato di serializzazione dell'aggregato non può essere %s"
 
 #: commands/aggregatecmds.c:369
 #, c-format
 msgid "aggregate serialization type cannot be \"%s\""
-msgstr ""
+msgstr "il tipo di serializzazione dell'aggregato non può essere \"%s\""
 
 #: commands/aggregatecmds.c:380
 #, c-format
@@ -5516,6 +5624,8 @@ msgid ""
 "aggregate serialization function must be specified when serialization type "
 "is specified"
 msgstr ""
+"occorre specificare una funzione di serializzazione dell'aggregato quando il "
+"tipo di serializzazione è specificato"
 
 #: commands/aggregatecmds.c:385
 #, c-format
@@ -5523,22 +5633,28 @@ msgid ""
 "aggregate deserialization function must be specified when serialization type "
 "is specified"
 msgstr ""
+"occorre specificare una funzione di deserializzazione dell'aggregato quando "
+"il tipo di serializzazione è specificato"
 
 #: commands/aggregatecmds.c:396
 #, c-format
 msgid "must specify serialization type when specifying serialization function"
 msgstr ""
+"occorre specificare il tipo di serializzazione quando la funzione di "
+"serializzazione è specificata"
 
 #: commands/aggregatecmds.c:402
 #, c-format
 msgid ""
 "must specify serialization type when specifying deserialization function"
 msgstr ""
+"occorre specificare il tipo di serializzazione quando la funzione di "
+"deserializzazione è specificata"
 
 #: commands/aggregatecmds.c:467 commands/functioncmds.c:570
 #, c-format
 msgid "parameter \"parallel\" must be SAFE, RESTRICTED, or UNSAFE"
-msgstr ""
+msgstr "il parametro \"parallel\" deve essere SAFE, RESTRICTED o UNSAFE"
 
 #: commands/alter.c:80 commands/event_trigger.c:231
 #, c-format
@@ -5601,22 +5717,22 @@ msgstr "occorre essere un superutente per impostare lo schema di %s"
 #: commands/amcmds.c:58
 #, c-format
 msgid "permission denied to create access method \"%s\""
-msgstr ""
+msgstr "permesso di creare il metodo di accesso \"%s\" negato"
 
 #: commands/amcmds.c:60
 #, c-format
 msgid "Must be superuser to create an access method."
-msgstr ""
+msgstr "Occorre essere un superutente per creare un metodo di accesso."
 
 #: commands/amcmds.c:68
 #, c-format
 msgid "access method \"%s\" already exists"
-msgstr ""
+msgstr "il metodo di accesso \"%s\" esiste già"
 
 #: commands/amcmds.c:124
 #, c-format
 msgid "must be superuser to drop access methods"
-msgstr ""
+msgstr "occorre essere un superutente per eliminare un metodo di accesso"
 
 #: commands/amcmds.c:175 commands/indexcmds.c:164 commands/indexcmds.c:495
 #: commands/opclasscmds.c:365 commands/opclasscmds.c:790
@@ -5627,14 +5743,14 @@ msgstr "Il metodo di accesso \"%s\" non esiste"
 #: commands/amcmds.c:251
 #, c-format
 msgid "handler function is not specified"
-msgstr ""
+msgstr "funzione handler non specificata"
 
 #: commands/amcmds.c:263 commands/event_trigger.c:240
 #: commands/foreigncmds.c:489 commands/proclang.c:117 commands/proclang.c:288
 #: commands/trigger.c:441 parser/parse_clause.c:761
 #, c-format
 msgid "function %s must return type %s"
-msgstr ""
+msgstr "la funzione %s deve restituire il tipo %s"
 
 #: commands/analyze.c:145
 #, c-format
@@ -5922,6 +6038,7 @@ msgstr "la codifica di destinazione \"%s\" non esiste"
 #, c-format
 msgid "encoding conversion function %s must return type %s"
 msgstr ""
+"la funzione di conversione della codifica %s deve restituire il tipo %s"
 
 #: commands/copy.c:362 commands/copy.c:374 commands/copy.c:408
 #: commands/copy.c:420
@@ -6132,27 +6249,27 @@ msgstr "la tabella \"%s\" non ha OID"
 #: commands/copy.c:1382
 #, c-format
 msgid "COPY (query) WITH OIDS is not supported"
-msgstr ""
+msgstr "COPY (query) WITH OIDS non è supportata"
 
 #: commands/copy.c:1402
 #, c-format
 msgid "DO INSTEAD NOTHING rules are not supported for COPY"
-msgstr ""
+msgstr "le regole DO INSTEAD NOTHING non sono supportate per COPY"
 
 #: commands/copy.c:1416
 #, c-format
 msgid "conditional DO INSTEAD rules are not supported for COPY"
-msgstr ""
+msgstr "le regole DO INSTEAD condizionali non sono supportate per COPY"
 
 #: commands/copy.c:1420
 #, c-format
 msgid "DO ALSO rules are not supported for the COPY"
-msgstr ""
+msgstr "le regole DO ALSO non sono supportate per COPY"
 
 #: commands/copy.c:1425
 #, c-format
 msgid "multi-statement DO INSTEAD rules are not supported for COPY"
-msgstr ""
+msgstr "le regole DO INSTEAD con più istruzioni non sono supportate per COPY"
 
 #: commands/copy.c:1435
 #, c-format
@@ -6162,7 +6279,7 @@ msgstr "COPY (SELECT INTO) non è supportata"
 #: commands/copy.c:1452
 #, c-format
 msgid "COPY query must have a RETURNING clause"
-msgstr ""
+msgstr "la query COPY deve avere una clausola RETURNING"
 
 #: commands/copy.c:1480
 #, c-format
@@ -6172,17 +6289,17 @@ msgstr "la relazione referenziata dall'istruzione COPY è cambiata"
 #: commands/copy.c:1538
 #, c-format
 msgid "FORCE_QUOTE column \"%s\" not referenced by COPY"
-msgstr ""
+msgstr "la colonna FORCE_QUOTE \"%s\" non è referenziata da COPY"
 
 #: commands/copy.c:1560
 #, c-format
 msgid "FORCE_NOT_NULL column \"%s\" not referenced by COPY"
-msgstr ""
+msgstr "la colonna FORCE_NOT_NULL \"%s\" non è referenziata da COPY"
 
 #: commands/copy.c:1582
 #, c-format
 msgid "FORCE_NULL column \"%s\" not referenced by COPY"
-msgstr ""
+msgstr "la colonna FORCE_NULL \"%s\" non è referenziata da COPY"
 
 #: commands/copy.c:1647
 #, c-format
@@ -7140,12 +7257,12 @@ msgstr "l'estensione \"%s\" dev'essere installata nello schema \"%s\""
 #: commands/extension.c:1435
 #, c-format
 msgid "cyclic dependency detected between extensions \"%s\" and \"%s\""
-msgstr ""
+msgstr "individuata una dipendenza ciclica tra le estensioni \"%s\" e \"%s\""
 
 #: commands/extension.c:1440
 #, c-format
 msgid "installing required extension \"%s\""
-msgstr ""
+msgstr "installazione dell'estensione richiesta \"%s\""
 
 #: commands/extension.c:1468 commands/extension.c:2923
 #, c-format
@@ -7156,6 +7273,7 @@ msgstr "l'estensione richiesta \"%s\" non è installata"
 #, c-format
 msgid "Use CREATE EXTENSION CASCADE to install required extensions too."
 msgstr ""
+"Usa CREATE EXTENSION CASCADE per installare anche le estensioni richieste."
 
 #: commands/extension.c:1534
 #, c-format
@@ -7767,7 +7885,7 @@ msgstr "il metodo di accesso \"%s\" non supporta i vincoli di esclusione"
 #: commands/indexcmds.c:590 commands/indexcmds.c:610
 #, c-format
 msgid "index creation on system columns is not supported"
-msgstr ""
+msgstr "la creazione di indici su colonne di sistema non è supportata"
 
 #: commands/indexcmds.c:635
 #, c-format
@@ -8140,17 +8258,17 @@ msgstr "almeno uno tra leftarg e rightarg deve essere specificato"
 #: commands/operatorcmds.c:278
 #, c-format
 msgid "restriction estimator function %s must return type %s"
-msgstr ""
+msgstr "la funzione di stima di restrizione %s deve restituire il tipo %s"
 
 #: commands/operatorcmds.c:324
 #, c-format
 msgid "join estimator function %s must return type %s"
-msgstr ""
+msgstr "la funzione di stima del join %s deve restituire il tipo %s"
 
 #: commands/operatorcmds.c:451
 #, c-format
 msgid "operator attribute \"%s\" can not be changed"
-msgstr ""
+msgstr "l'attributo dell'operatore \"%s\" non può essere cambiato"
 
 #: commands/policy.c:87 commands/policy.c:395 commands/policy.c:484
 #: commands/tablecmds.c:970 commands/tablecmds.c:1312
@@ -8898,7 +9016,7 @@ msgstr "la colonna deve essere aggiunta anche alle tabelle figlie"
 #: commands/tablecmds.c:5090
 #, c-format
 msgid "column \"%s\" of relation \"%s\" already exists, skipping"
-msgstr ""
+msgstr "la colonna \"%s\" della relazione \"%s\" esiste già, saltata"
 
 #: commands/tablecmds.c:5097
 #, c-format
@@ -9401,6 +9519,8 @@ msgid ""
 "index \"%s\" cannot be used as replica identity because column %d is a "
 "system column"
 msgstr ""
+"l'indice \"%s\" non può essere usato come identità di replica perché la "
+"colonna %d è una colonna di sistema"
 
 #: commands/tablecmds.c:11074
 #, c-format
@@ -9921,7 +10041,7 @@ msgstr ""
 #: commands/typecmds.c:453 commands/typecmds.c:470
 #, c-format
 msgid "changing return type of function %s from %s to %s"
-msgstr ""
+msgstr "modifica del tipo restituito dalla funzione %s da %s a %s"
 
 #: commands/typecmds.c:460
 #, c-format
@@ -9931,7 +10051,7 @@ msgstr "la funzione %s di input di tipo deve restituire il tipo %s"
 #: commands/typecmds.c:477
 #, c-format
 msgid "type output function %s must return type %s"
-msgstr ""
+msgstr "la funzione %s di output di tipo deve restituire il tipo %s"
 
 #: commands/typecmds.c:486
 #, c-format
@@ -9941,7 +10061,7 @@ msgstr "la funzione receive %s del tipo deve restituire il tipo %s"
 #: commands/typecmds.c:495
 #, c-format
 msgid "type send function %s must return type %s"
-msgstr ""
+msgstr "la funzione send %s del tipo deve restituire il tipo %s"
 
 #: commands/typecmds.c:560
 #, c-format
@@ -10056,17 +10176,17 @@ msgstr "modifica del tipo di argomento della funzione %s da \"opaque\" a %s"
 #: commands/typecmds.c:1837
 #, c-format
 msgid "typmod_in function %s must return type %s"
-msgstr ""
+msgstr "la funzione %s typmod_in deve restituire il tipo %s"
 
 #: commands/typecmds.c:1864
 #, c-format
 msgid "typmod_out function %s must return type %s"
-msgstr ""
+msgstr "la funzione %s typmod_out deve restituire il tipo %s"
 
 #: commands/typecmds.c:1891
 #, c-format
 msgid "type analyze function %s must return type %s"
-msgstr ""
+msgstr "la funzione %s analyze deve restituire il tipo %s"
 
 #: commands/typecmds.c:1937
 #, c-format
@@ -10091,6 +10211,7 @@ msgstr "la funzione canonica %s dell'intervallo deve essere immutabile"
 #, c-format
 msgid "range subtype diff function %s must return type %s"
 msgstr ""
+"la funzione %s di differenza sottotipo range deve restituire il tipo %s"
 
 #: commands/typecmds.c:2017
 #, c-format
@@ -10210,7 +10331,7 @@ msgstr "il nome di ruolo \"%s\" è riservato"
 #: commands/user.c:324 commands/user.c:1178 commands/user.c:1185
 #, c-format
 msgid "Role names starting with \"pg_\" are reserved."
-msgstr ""
+msgstr "I nomi di ruoli che iniziano con \"pg_\" sono riservati."
 
 #: commands/user.c:336 commands/user.c:1191
 #, c-format
@@ -10435,6 +10556,8 @@ msgstr "vacuum automatico della tabella \"%s.%s.%s\": scan di indici: %d\n"
 msgid ""
 "pages: %u removed, %u remain, %u skipped due to pins, %u skipped frozen\n"
 msgstr ""
+"pagine: %u rimosse, %u restanti, %u saltate perché bloccate, %u congelate "
+"saltate\n"
 
 #: commands/vacuumlazy.c:374
 #, c-format
@@ -11276,6 +11399,7 @@ msgstr "il tipo di risultato %s non è supportato per le funzioni SQL"
 #, c-format
 msgid "combine function for aggregate %u must to be declared as strict"
 msgstr ""
+"la funzione di combinazione per l'aggregato %u deve essere dichiarata strict"
 
 #: executor/nodeAgg.c:3055 executor/nodeWindowAgg.c:2289
 #, c-format
@@ -11514,7 +11638,7 @@ msgstr "autenticazione PAM fallita per l'utente \"%s\""
 #: libpq/auth.c:278
 #, c-format
 msgid "BSD authentication failed for user \"%s\""
-msgstr ""
+msgstr "autenticazione BSD fallita per l'utente \"%s\""
 
 #: libpq/auth.c:281
 #, c-format
@@ -11706,17 +11830,17 @@ msgstr "non è stato possibile ottenere il token dal contesto di sicurezza SSPI"
 #: libpq/auth.c:1377 libpq/auth.c:1396
 #, c-format
 msgid "could not translate name"
-msgstr ""
+msgstr "non è stato possibile tradurre il nome"
 
 #: libpq/auth.c:1409
 #, c-format
 msgid "realm name too long"
-msgstr ""
+msgstr "nome di realm troppo lungo"
 
 #: libpq/auth.c:1424
 #, c-format
 msgid "translated account name too long"
-msgstr ""
+msgstr "nome di account tradotto troppo lungo"
 
 #: libpq/auth.c:1610
 #, c-format
@@ -11791,7 +11915,7 @@ msgstr "pam_set_item(PAM_USER) fallita: %s"
 #: libpq/auth.c:1936
 #, c-format
 msgid "pam_set_item(PAM_RHOST) failed: %s"
-msgstr ""
+msgstr "pam_set_item(PAM_RHOST) fallita: %s"
 
 #: libpq/auth.c:1947
 #, c-format
@@ -11944,6 +12068,7 @@ msgstr "conversione del nome del server RADIUS \"%s\" in indirizzo fallita: %s"
 msgid ""
 "RADIUS authentication does not support passwords longer than %d characters"
 msgstr ""
+"l'autenticazione RADIUS non supporta password più lunghe di %d caratteri"
 
 #: libpq/auth.c:2528
 #, c-format
@@ -12122,17 +12247,19 @@ msgstr "accesso fallito al file della chiave privata \"%s\": %m"
 #: libpq/be-secure-openssl.c:212
 #, c-format
 msgid "private key file \"%s\" is not a regular file"
-msgstr ""
+msgstr "il file di chiave privata \"%s\" non è un file regolare"
 
 #: libpq/be-secure-openssl.c:224
 #, c-format
 msgid "private key file \"%s\" must be owned by the database user or root"
 msgstr ""
+"il file di chiave privata \"%s\" deve essere di proprietà dell'utente del "
+"database o di root"
 
 #: libpq/be-secure-openssl.c:244
 #, c-format
 msgid "private key file \"%s\" has group or world access"
-msgstr "il file della chiave primaria \"%s\" ha accesso al gruppo o a chiunque"
+msgstr "il file della chiave privata \"%s\" ha accesso al gruppo o a chiunque"
 
 #: libpq/be-secure-openssl.c:246
 #, c-format
@@ -12140,6 +12267,9 @@ msgid ""
 "File must have permissions u=rw (0600) or less if owned by the database "
 "user, or permissions u=rw,g=r (0640) or less if owned by root."
 msgstr ""
+"Il file deve avere permesso u=rw (0600) o inferiore se di proprietà "
+"dell'utente database, o permesso u=rw,g=r (0640) o inferiore se di proprietà "
+"di root."
 
 #: libpq/be-secure-openssl.c:253
 #, c-format
@@ -12242,11 +12372,12 @@ msgstr "codice di errore SSL: %lu"
 #, c-format
 msgid "terminating connection due to unexpected postmaster exit"
 msgstr ""
+"la connessione è stata terminata a causa di un'uscita inattesa di postmaster"
 
 #: libpq/crypt.c:54
 #, c-format
 msgid "Role \"%s\" does not exist."
-msgstr ""
+msgstr "Il ruolo \"%s\" non esiste."
 
 #: libpq/crypt.c:64
 #, c-format
@@ -12256,7 +12387,7 @@ msgstr "L'utente \"%s\" non ha una password assegnata."
 #: libpq/crypt.c:79
 #, c-format
 msgid "User \"%s\" has an empty password."
-msgstr ""
+msgstr "Il ruolo \"%s\" ha una password vuota."
 
 #: libpq/crypt.c:159
 #, c-format
@@ -12266,7 +12397,7 @@ msgstr "L'utente \"%s\" ha la password scaduta."
 #: libpq/crypt.c:167
 #, c-format
 msgid "Password does not match for user \"%s\"."
-msgstr ""
+msgstr "Le password non combaciano per l'utente \"%s\"."
 
 #: libpq/hba.c:188
 #, c-format
@@ -12554,7 +12685,7 @@ msgstr "gssapi e sspi"
 
 #: libpq/hba.c:1602 libpq/hba.c:1611
 msgid "sspi"
-msgstr ""
+msgstr "sspi"
 
 #: libpq/hba.c:1653
 #, c-format
@@ -13104,12 +13235,12 @@ msgstr ""
 #: nodes/extensible.c:66
 #, c-format
 msgid "extensible node type \"%s\" already exists"
-msgstr ""
+msgstr "il tipo di nodo estendibile \"%s\" esiste già"
 
 #: nodes/extensible.c:114
 #, c-format
 msgid "ExtensibleNodeMethods \"%s\" was not registered"
-msgstr ""
+msgstr "ExtensibleNodeMethods \"%s\" non è stato registrato"
 
 #: nodes/nodeFuncs.c:123 nodes/nodeFuncs.c:154 parser/parse_coerce.c:1820
 #: parser/parse_coerce.c:1848 parser/parse_coerce.c:1924
@@ -15915,6 +16046,8 @@ msgid ""
 "WAL streaming (max_wal_senders > 0) requires wal_level \"replica\" or "
 "\"logical\""
 msgstr ""
+"lo streaming WAL (max_wal_senders > 0) richiede wal_level \"replica\" oppure "
+"\"logical\""
 
 #: postmaster/postmaster.c:869
 #, c-format
@@ -16639,7 +16772,7 @@ msgstr "Attesa una tupla con 2 campi, ricevute %d tuple con %d campi."
 #: replication/libpqwalreceiver/libpqwalreceiver.c:334
 #, c-format
 msgid "invalid socket: %s"
-msgstr ""
+msgstr "socket non valido: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:374
 #: storage/ipc/latch.c:1271
@@ -16991,7 +17124,7 @@ msgstr "lo slot di replica \"%s\" non esiste"
 #: replication/slot.c:355
 #, c-format
 msgid "replication slot \"%s\" is active for PID %d"
-msgstr ""
+msgstr "lo slot di replica \"%s\" è attivo per il PID %d"
 
 #: replication/slot.c:501 replication/slot.c:912 replication/slot.c:1249
 #, c-format
@@ -17007,7 +17140,7 @@ msgstr ""
 #: replication/slot.c:766
 #, c-format
 msgid "replication slots can only be used if wal_level >= replica"
-msgstr ""
+msgstr "gli slot di replica possono essere usati solo se wal_level >= replica"
 
 #: replication/slot.c:1181 replication/slot.c:1219
 #, c-format
@@ -17074,12 +17207,12 @@ msgstr "lo standby \"%s\" ha ora priorità di standby sincrono %u"
 #: replication/syncrep.c:440
 #, c-format
 msgid "standby \"%s\" is now a synchronous standby with priority %u"
-msgstr ""
+msgstr "lo standby \"%s\" è ora uno standby sincrono con priorità %u"
 
 #: replication/syncrep.c:969
 #, c-format
 msgid "synchronous_standby_names parser returned %d"
-msgstr ""
+msgstr "il parser synchronous_standby_names ha restituito %d"
 
 #: replication/syncrep.c:1014
 #, c-format
@@ -17087,6 +17220,8 @@ msgid ""
 "The configured number of synchronous standbys (%d) exceeds the number of "
 "names of potential synchronous ones (%d)"
 msgstr ""
+"Il numero di standby sincroni configurati (%d) eccede quello di standby "
+"sincroni potenziali (%d)"
 
 #: replication/syncrep.c:1016
 #, c-format
@@ -17094,6 +17229,8 @@ msgid ""
 "Specify more names of potential synchronous standbys in "
 "synchronous_standby_names."
 msgstr ""
+"Specifica più nomi di standby sincroni potenziali in "
+"synchronous_standby_names."
 
 #: replication/walreceiver.c:172
 #, c-format
@@ -17797,7 +17934,7 @@ msgstr "scrittura del blocco %u della relazione %s"
 #: storage/buffer/bufmgr.c:4317
 #, c-format
 msgid "snapshot too old"
-msgstr ""
+msgstr "snapshot troppo vecchio"
 
 #: storage/buffer/localbuf.c:198
 #, c-format
@@ -17807,17 +17944,19 @@ msgstr "nessun buffer locale vuoto disponibile"
 #: storage/file/fd.c:436 storage/file/fd.c:508 storage/file/fd.c:544
 #, c-format
 msgid "could not flush dirty data: %m"
-msgstr ""
+msgstr "non è stato possibile scaricare i dati sporchi: %m"
 
 #: storage/file/fd.c:466
 #, c-format
 msgid "could not determine dirty data size: %m"
-msgstr ""
+msgstr "non è stato possibile determinare la dimensione dei dati sporchi: %m"
 
 #: storage/file/fd.c:518
 #, c-format
 msgid "could not munmap() while flushing data: %m"
 msgstr ""
+"non è possibile effettuare munmap() mentre si stanno scaricando i dati "
+"sporchi: %m"
 
 #: storage/file/fd.c:682
 #, c-format
@@ -17958,12 +18097,12 @@ msgstr "duplicazione dell'handle per \"%s\" fallita: %m"
 #: storage/ipc/latch.c:769
 #, c-format
 msgid "epoll_ctl() failed: %m"
-msgstr ""
+msgstr "epoll_ctl() fallita: %m"
 
 #: storage/ipc/latch.c:993
 #, c-format
 msgid "epoll_wait() failed: %m"
-msgstr ""
+msgstr "epoll_wait() fallita: %m"
 
 #: storage/ipc/latch.c:1113
 #, c-format
@@ -18752,6 +18891,8 @@ msgstr "annullamento dell'istruzione su richiesta dell'utente"
 #, c-format
 msgid "terminating connection due to idle-in-transaction timeout"
 msgstr ""
+"la connessione è stata terminata a causa di timeout di inattività durante "
+"una transazione"
 
 #: tcop/postgres.c:3101
 #, c-format
@@ -19011,22 +19152,22 @@ msgstr "parametro di Dictionary mancante"
 #: tsearch/spell.c:1034
 #, c-format
 msgid "invalid affix flag \"%s\""
-msgstr ""
+msgstr "flag di affix non valido \"%s\""
 
 #: tsearch/spell.c:386 tsearch/spell.c:1038
 #, c-format
 msgid "affix flag \"%s\" is out of range"
-msgstr ""
+msgstr "flag di affix \"%s\" fuori dall'intervallo valido"
 
 #: tsearch/spell.c:416
 #, c-format
 msgid "invalid character in affix flag \"%s\""
-msgstr ""
+msgstr "carattere non valido nel flag affix \"%s\""
 
 #: tsearch/spell.c:436
 #, c-format
 msgid "invalid affix flag \"%s\" with long flag value"
-msgstr ""
+msgstr "flag affix \"%s\" con valore di flag lungo"
 
 #: tsearch/spell.c:523
 #, c-format
@@ -19047,7 +19188,7 @@ msgstr "errore di sintassi"
 #: tsearch/spell.c:1161 tsearch/spell.c:1716
 #, c-format
 msgid "invalid affix alias \"%s\""
-msgstr ""
+msgstr "alias di affix \"%s\" non valido"
 
 #: tsearch/spell.c:1210 tsearch/spell.c:1280 tsearch/spell.c:1422
 #, c-format
@@ -19057,12 +19198,12 @@ msgstr "apertura del file affix \"%s\" fallita: %m"
 #: tsearch/spell.c:1264
 #, c-format
 msgid "Ispell dictionary supports only default, long and num flag value"
-msgstr ""
+msgstr "il dizionario Ispell supporta solo valori di flag default, long e num"
 
 #: tsearch/spell.c:1307
 #, c-format
 msgid "invalid number of flag vector aliases"
-msgstr ""
+msgstr "numero di alias nel vettore di flag non valido"
 
 #: tsearch/spell.c:1538
 #, c-format
@@ -19255,7 +19396,7 @@ msgstr "occorre far parte del ruolo \"%s\""
 #: utils/adt/acl.c:5279 utils/adt/acl.c:5285
 #, c-format
 msgid "role \"%s\" is reserved"
-msgstr ""
+msgstr "il ruolo \"%s\" è riservato"
 
 #: utils/adt/array_expanded.c:276 utils/adt/arrayfuncs.c:931
 #: utils/adt/arrayfuncs.c:1519 utils/adt/arrayfuncs.c:3251
@@ -19503,7 +19644,7 @@ msgstr "la modifica di sezioni di array a lunghezza fissa non è implementate"
 #: utils/adt/arrayfuncs.c:2826
 #, c-format
 msgid "array slice subscript must provide both boundaries"
-msgstr ""
+msgstr "l'indice della sezione dell'array deve fornire entrambi i limiti"
 
 #: utils/adt/arrayfuncs.c:2827
 #, c-format
@@ -19511,6 +19652,8 @@ msgid ""
 "When assigning to a slice of an empty array value, slice boundaries must be "
 "fully specified."
 msgstr ""
+"Quando si assegna ad una sezione di un array vuoto, i limiti della sezione "
+"devono essere specificati interamente."
 
 #: utils/adt/arrayfuncs.c:2838 utils/adt/arrayfuncs.c:2933
 #, c-format
@@ -19744,7 +19887,7 @@ msgstr "non è possibile convertire un valore speciale per abstime in una data"
 #: utils/adt/date.c:1112 utils/adt/date.c:1118
 #, c-format
 msgid "abstime out of range for date"
-msgstr ""
+msgstr "abstime fuori dall'intervallo massimo per una data"
 
 #: utils/adt/date.c:1258 utils/adt/date.c:1265 utils/adt/date.c:2082
 #: utils/adt/date.c:2089
@@ -19846,17 +19989,17 @@ msgstr "apertura della directory del tablespace \"%s\" fallita: %m"
 #: utils/adt/dbsize.c:757 utils/adt/dbsize.c:776 utils/adt/dbsize.c:828
 #, c-format
 msgid "invalid size: \"%s\""
-msgstr ""
+msgstr "dimensione non valida: \"%s\""
 
 #: utils/adt/dbsize.c:829
 #, c-format
 msgid "Invalid size unit: \"%s\"."
-msgstr ""
+msgstr "Unità di dimensione non valida: \"%s\"."
 
 #: utils/adt/dbsize.c:830
 #, c-format
 msgid "Valid units are \"bytes\", \"kB\", \"MB\", \"GB\", and \"TB\"."
-msgstr ""
+msgstr "Le unità valide sono \"bytes\", \"kB\", \"MB\", \"GB\" e \"TB\"."
 
 #: utils/adt/domains.c:85
 #, c-format
@@ -20786,12 +20929,14 @@ msgstr "l'elemento di percorso in posizione %d è nullo"
 #: utils/adt/jsonfuncs.c:3877
 #, c-format
 msgid "cannot replace existing key"
-msgstr ""
+msgstr "non è possibile sostituire una chiave esistente"
 
 #: utils/adt/jsonfuncs.c:3878
 #, c-format
 msgid "Try using the function jsonb_set to replace key value."
 msgstr ""
+"Prova ad utilizzare la funzione jsonb_set per rimpiazzare il valore della "
+"chiave."
 
 #: utils/adt/jsonfuncs.c:3960
 #, c-format
@@ -20854,6 +20999,8 @@ msgid ""
 "must be a member of the role whose query is being canceled or member of "
 "pg_signal_backend"
 msgstr ""
+"occorre essere un membro del ruolo la cui query deve essere annullata o "
+"membro di pg_signal_backend"
 
 #: utils/adt/misc.c:314
 #, c-format
@@ -20866,6 +21013,8 @@ msgid ""
 "must be a member of the role whose process is being terminated or member of "
 "pg_signal_backend"
 msgstr ""
+"occorre essere un membro del ruolo la cui processo deve essere terminato o "
+"membro di pg_signal_backend"
 
 #: utils/adt/misc.c:336
 #, c-format
@@ -20909,27 +21058,27 @@ msgstr "riservato"
 #: utils/adt/misc.c:856 utils/adt/misc.c:862 utils/adt/misc.c:885
 #, c-format
 msgid "string is not a valid identifier: \"%s\""
-msgstr ""
+msgstr "la stringa non è un identificatore valido: \"%s\""
 
 #: utils/adt/misc.c:799
 #, c-format
 msgid "String has unclosed double quotes."
-msgstr ""
+msgstr "La stringa ha virgolette non chiuse."
 
 #: utils/adt/misc.c:813
 #, c-format
 msgid "Quoted identifier must not be empty."
-msgstr ""
+msgstr "L'identificativo non può essere vuoto."
 
 #: utils/adt/misc.c:852
 #, c-format
 msgid "No valid identifier before \".\" symbol."
-msgstr ""
+msgstr "L'identificativo prima del simbolo \".\" non è valido."
 
 #: utils/adt/misc.c:858
 #, c-format
 msgid "No valid identifier after \".\" symbol."
-msgstr ""
+msgstr "L'identificativo dopo il simbolo \".\" non è valido."
 
 #: utils/adt/nabstime.c:136
 #, c-format
@@ -21252,7 +21401,7 @@ msgstr ""
 #: utils/adt/pgstatfuncs.c:569
 #, c-format
 msgid "invalid command name: \"%s\""
-msgstr ""
+msgstr "nome di comando non valido: \"%s\""
 
 #: utils/adt/pseudotypes.c:95
 #, c-format
@@ -21322,12 +21471,12 @@ msgstr "non è possibile mostrare un valore di tipo fdw_handler"
 #: utils/adt/pseudotypes.c:384
 #, c-format
 msgid "cannot accept a value of type index_am_handler"
-msgstr ""
+msgstr "non è possibile accettare un valore di tipo index_am_handler"
 
 #: utils/adt/pseudotypes.c:397
 #, c-format
 msgid "cannot display a value of type index_am_handler"
-msgstr ""
+msgstr "non è possibile mostrare un valore di tipo index_am_handler"
 
 #: utils/adt/pseudotypes.c:411
 #, c-format
@@ -21779,7 +21928,7 @@ msgstr "timestamp fuori dall'intervallo consentito: %d-%02d-%02d %d:%02d:%02g"
 #: utils/adt/timestamp.c:791
 #, c-format
 msgid "timestamp out of range: \"%g\""
-msgstr ""
+msgstr "timestamp fuori dall'intervallo consentito: \"%g\" "
 
 #: utils/adt/timestamp.c:987 utils/adt/timestamp.c:1558
 #: utils/adt/timestamp.c:2068 utils/adt/timestamp.c:3220
@@ -21897,7 +22046,7 @@ msgstr "la funzione gtsvector_in non è implementata"
 #: utils/adt/tsquery.c:166
 #, c-format
 msgid "distance in phrase operator should not be greater than %d"
-msgstr ""
+msgstr "la distanza nell'operatore di frase non può essere maggiore di %d"
 
 #: utils/adt/tsquery.c:254 utils/adt/tsquery.c:513
 #: utils/adt/tsvector_parser.c:141
@@ -21948,6 +22097,8 @@ msgstr ""
 #, c-format
 msgid "distance in phrase operator should be non-negative and less than %d"
 msgstr ""
+"la distanza nell'operatore di frase deve essere non negativa ed inferiore a "
+"%d"
 
 #: utils/adt/tsquery_rewrite.c:292
 #, c-format
@@ -21990,12 +22141,12 @@ msgstr ""
 #: utils/adt/tsvector_op.c:731
 #, c-format
 msgid "lexeme array may not contain nulls"
-msgstr ""
+msgstr "l'array di lessemi non può contenere null"
 
 #: utils/adt/tsvector_op.c:789
 #, c-format
 msgid "weight array may not contain nulls"
-msgstr ""
+msgstr "l'array dei pesi non può contenere null"
 
 #: utils/adt/tsvector_op.c:1976
 #, c-format
@@ -22185,22 +22336,22 @@ msgstr "il campo deve essere maggiore di zero"
 #: utils/adt/varlena.c:4804
 #, c-format
 msgid "unterminated format() type specifier"
-msgstr ""
+msgstr "specifica di tipo per format() non terminata"
 
 #: utils/adt/varlena.c:4805 utils/adt/varlena.c:4939 utils/adt/varlena.c:5060
 #, c-format
 msgid "For a single \"%%\" use \"%%%%\"."
-msgstr ""
+msgstr "Per un singolo \"%%\" usa \"%%%%\"."
 
 #: utils/adt/varlena.c:4937 utils/adt/varlena.c:5058
 #, c-format
 msgid "unrecognized format() type specifier \"%c\""
-msgstr ""
+msgstr "specifica di tipo per format() \"%c\" non riconosciuta"
 
 #: utils/adt/varlena.c:4950
 #, c-format
 msgid "too few arguments for format()"
-msgstr ""
+msgstr "numero di argomenti non sufficiente per format()"
 
 #: utils/adt/varlena.c:5007
 #, c-format
@@ -23402,7 +23553,7 @@ msgstr "Abilita l'uso da parte del planner di piani di join basati su hash."
 
 #: utils/misc/guc.c:882
 msgid "Enables use of foreign keys for estimating joins."
-msgstr ""
+msgstr "Abilita l'uso delle chiavi esterne per la stima dei join."
 
 #: utils/misc/guc.c:892
 msgid "Enables genetic query optimization."
@@ -23880,10 +24031,12 @@ msgstr "Mostra se i checksum di dati sono attivi in questo cluster."
 #: utils/misc/guc.c:1647
 msgid "Add sequence number to syslog messages to avoid duplicate suppression."
 msgstr ""
+"Aggiungi un numero sequenziale ai messaggi syslog per evitare la "
+"soppressione di duplicati."
 
 #: utils/misc/guc.c:1657
 msgid "Split messages sent to syslog by lines and to fit into 1024 bytes."
-msgstr ""
+msgstr "Dividi i messaggi inviati a syslog in linee inferiori a 1024 byte."
 
 #: utils/misc/guc.c:1676
 msgid ""
@@ -24077,10 +24230,13 @@ msgstr "Queste includono operazioni quali VACUUM e CREATE INDEX."
 msgid ""
 "Sets the maximum number of tuples to be sorted using replacement selection."
 msgstr ""
+"Imposta il numero massimo di tuple che possono essere ordinate usando il "
+"rimpiazzo della selezione."
 
 #: utils/misc/guc.c:1934
 msgid "When more tuples than this are present, quicksort will be used."
 msgstr ""
+"Quando un è presente un numero maggiore di tuple verrà usato quicksort."
 
 #: utils/misc/guc.c:1948
 msgid "Sets the maximum stack depth, in kilobytes."
@@ -24160,7 +24316,7 @@ msgstr "Imposta la durata massima consentita di qualsiasi attesa per un lock."
 
 #: utils/misc/guc.c:2110
 msgid "Sets the maximum allowed duration of any idling transaction."
-msgstr ""
+msgstr "Imposta la durata massima permessa per ogni transazione inattiva."
 
 #: utils/misc/guc.c:2121
 msgid "Minimum age at which VACUUM should freeze a table row."
@@ -24274,11 +24430,13 @@ msgstr ""
 
 #: utils/misc/guc.c:2289
 msgid "Time between WAL flushes performed in the WAL writer."
-msgstr ""
+msgstr "Tempo tra due flush del WAL effettuati dal processo di scrittura WAL."
 
 #: utils/misc/guc.c:2300
 msgid "Amount of WAL written out by WAL writer triggering a flush."
 msgstr ""
+"Quantità di WAL emessa dal processo di scrittura che ha fatto scattare un "
+"flush."
 
 #: utils/misc/guc.c:2312
 msgid "Sets the maximum number of simultaneously running WAL sender processes."
@@ -24379,6 +24537,8 @@ msgstr ""
 msgid ""
 "Number of pages after which previously performed writes are flushed to disk."
 msgstr ""
+"Numerp di pagine dopo il quale le scritture effettuate in precedenza sono "
+"scaricate su disco."
 
 #: utils/misc/guc.c:2478
 msgid "Maximum number of concurrent worker processes."
@@ -24468,6 +24628,7 @@ msgstr ""
 #: utils/misc/guc.c:2661
 msgid "Sets the maximum number of parallel processes per executor node."
 msgstr ""
+"Imposta il numero massimo di processi paralleli per nodo di esecuzione."
 
 #: utils/misc/guc.c:2671
 msgid "Sets the maximum memory to be used by each autovacuum worker process."
@@ -24478,10 +24639,12 @@ msgid ""
 "Time before a snapshot is too old to read pages changed after the snapshot "
 "was taken."
 msgstr ""
+"Tempo prima che uno snapshot sia troppo vecchio per leggere le pagine "
+"cambiate dopo che era stato effettuato."
 
 #: utils/misc/guc.c:2683
 msgid "A value of -1 disables this feature."
-msgstr ""
+msgstr "Il valore -1 disabilita questa feature."
 
 #: utils/misc/guc.c:2693
 msgid "Time between issuing TCP keepalives."
@@ -24498,7 +24661,7 @@ msgstr "Tempo che intercorre fra due ritrasmissioni del keepalive TCP."
 
 #: utils/misc/guc.c:2715
 msgid "SSL renegotiation is no longer supported; this can only be 0."
-msgstr ""
+msgstr "Il rinegoziamento SSL non è più supportato: può essere solo 0."
 
 #: utils/misc/guc.c:2726
 msgid "Maximum number of TCP keepalive retransmits."
@@ -24601,12 +24764,16 @@ msgid ""
 "Sets the planner's estimate of the cost of passing each tuple (row) from "
 "worker to master backend."
 msgstr ""
+"Imposta la stima del planner del costo di passare ogni tupla (riga) dal "
+"lavoratore al backend master."
 
 #: utils/misc/guc.c:2880
 msgid ""
 "Sets the planner's estimate of the cost of starting up worker processes for "
 "parallel query."
 msgstr ""
+"Imposta la stima del planner del costo di avvio dei processi worker per una "
+"query parallela."
 
 #: utils/misc/guc.c:2891
 msgid ""
@@ -24883,7 +25050,7 @@ msgstr "Posizione del file di certificati del server SSL."
 
 #: utils/misc/guc.c:3440
 msgid "Location of the SSL server private key file."
-msgstr "Posizione del file della chiave primaria del server SSL."
+msgstr "Posizione del file della chiave privata del server SSL."
 
 #: utils/misc/guc.c:3450
 msgid "Location of the SSL certificate authority file."
@@ -24902,6 +25069,7 @@ msgid ""
 "Number of synchronous standbys and list of names of potential synchronous "
 "ones."
 msgstr ""
+"Numero di standby sincroni e lista dei nomi di quelli potenziali sincroni."
 
 #: utils/misc/guc.c:3492
 msgid "Sets default text search configuration."
@@ -25043,24 +25211,28 @@ msgstr "Uso delle pagine huge su Linux."
 
 #: utils/misc/guc.c:3800
 msgid "Forces use of parallel query facilities."
-msgstr ""
+msgstr "Forza l'uso delle query parallele."
 
 #: utils/misc/guc.c:3801
 msgid ""
 "If possible, run query using a parallel worker and with parallel "
 "restrictions."
 msgstr ""
+"Se possibile, effettua le query usando worker paralleli e con restrizioni di "
+"parallelismo."
 
 #: utils/misc/guc.c:4601
 #, c-format
 msgid "%s: could not access directory \"%s\": %s\n"
-msgstr ""
+msgstr "%s: accesso alla directory \"%s\" fallito: %s\n"
 
 #: utils/misc/guc.c:4606
 #, c-format
 msgid ""
 "Run initdb or pg_basebackup to initialize a PostgreSQL data directory.\n"
 msgstr ""
+"Esegui initdb o pg_basebackup per inizializzare una directory di dati "
+"PostgreSQL.\n"
 
 #: utils/misc/guc.c:4626
 #, c-format
@@ -25076,7 +25248,7 @@ msgstr ""
 #: utils/misc/guc.c:4645
 #, c-format
 msgid "%s: could not access the server configuration file \"%s\": %s\n"
-msgstr ""
+msgstr "%s: accesso al file di configurazione del server \"%s\" fallito: %s\n"
 
 #: utils/misc/guc.c:4671
 #, c-format
@@ -25280,6 +25452,8 @@ msgstr "errore interno: tipo di parametro sconosciuto\n"
 msgid ""
 "query-specified return tuple and function return type are not compatible"
 msgstr ""
+"la tupla che la query specifica e il tipo restituito dalla funzione non sono "
+"compatibili"
 
 #: utils/misc/rls.c:127
 #, c-format
@@ -25429,7 +25603,7 @@ msgstr "lettura del blocco %ld dal file temporaneo fallita: %m"
 #: utils/sort/tuplesort.c:3360
 #, c-format
 msgid "cannot have more than %d runs for an external sort"
-msgstr ""
+msgstr "non è possibile avere più di %d esecuzioni per un sort esterno"
 
 #: utils/sort/tuplesort.c:4416
 #, c-format

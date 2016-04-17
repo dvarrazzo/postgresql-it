@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:14+0000\n"
-"PO-Revision-Date: 2015-07-07 02:35+0100\n"
+"PO-Revision-Date: 2016-04-17 20:42+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -380,7 +380,7 @@ msgstr "%s: cambio di permesso di \"%s\" fallito: %s\n"
 #: initdb.c:1444
 #, c-format
 msgid "running bootstrap script ... "
-msgstr ""
+msgstr "esecuzione dello script di bootstrap ..."
 
 #: initdb.c:1460
 #, c-format
@@ -984,7 +984,7 @@ msgstr "creazione delle sottodirectory ... "
 
 #: initdb.c:3291
 msgid "performing post-bootstrap initialization ... "
-msgstr ""
+msgstr "esecuzione dell'inizializzazione successiva al bootstrap ..."
 
 #: initdb.c:3442
 #, c-format

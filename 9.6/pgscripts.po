@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:14+0000\n"
-"PO-Revision-Date: 2016-04-17 03:33+0100\n"
+"PO-Revision-Date: 2016-04-17 20:55+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -68,28 +68,32 @@ msgstr "ricerca del nome utente fallita: codice di errore %lu"
 #, c-format
 msgid "(%lu row)"
 msgid_plural "(%lu rows)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "(%lu riga)"
+msgstr[1] "(%lu righe)"
 
 #: ../../fe_utils/print.c:2906
 #, c-format
 msgid "Interrupted\n"
-msgstr ""
+msgstr "Interrotto\n"
 
 #: ../../fe_utils/print.c:2970
 #, c-format
 msgid "Cannot add header to table content: column count of %d exceeded.\n"
 msgstr ""
+"Impossibile aggiungere l'intestazione al contenuto della tabella: numero di "
+"colonne è più di %d.\n"
 
 #: ../../fe_utils/print.c:3010
 #, c-format
 msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgstr ""
+"Impossibile aggiungere la cella al contenuto della tabella: il numero totale "
+"di celle è più di %d.\n"
 
 #: ../../fe_utils/print.c:3259
 #, c-format
 msgid "invalid output format (internal error): %d"
-msgstr ""
+msgstr "formato di output non valido (errore interno): %d"
 
 #: clusterdb.c:110 clusterdb.c:129 createdb.c:119 createdb.c:138
 #: createlang.c:89 createlang.c:119 createlang.c:174 createuser.c:169
@@ -1128,7 +1132,7 @@ msgstr "%s: la pulizia del database \"%s\" è fallita: %s"
 #: vacuumdb.c:929
 #, c-format
 msgid "%s: invalid socket: %s"
-msgstr ""
+msgstr "%s: socket non valido: %s"
 
 #: vacuumdb.c:938
 #, c-format

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:14+0000\n"
-"PO-Revision-Date: 2016-04-17 04:02+0100\n"
+"PO-Revision-Date: 2016-04-17 20:39+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -241,6 +241,8 @@ msgstr "Nessuna modifica"
 #, c-format
 msgid "The server (version %d.%d) does not support editing view definitions.\n"
 msgstr ""
+"Il server (versione %d.%d) non supporta la modifica della definizione delle "
+"viste.\n"
 
 #: command.c:825
 #, c-format
@@ -257,11 +259,11 @@ msgstr "%s"
 
 #: command.c:854
 msgid "out of memory"
-msgstr ""
+msgstr "memoria esaurita"
 
 #: command.c:857
 msgid "There was no previous error."
-msgstr ""
+msgstr "Non c'è un errore precedente."
 
 #: command.c:951 command.c:1001 command.c:1015 command.c:1032 command.c:1139
 #: command.c:1303 command.c:1537 command.c:1568
@@ -325,11 +327,13 @@ msgstr "il nome della funzione è richiesto\n"
 #, c-format
 msgid "The server (version %d.%d) does not support showing view definitions.\n"
 msgstr ""
+"Il server (versione %d.%d) non supporta la visualizzazione della definizione "
+"delle viste.\n"
 
 #: command.c:1435
 #, c-format
 msgid "view name is required\n"
-msgstr ""
+msgstr "il nome della vista è richiesto\n"
 
 #: command.c:1522
 msgid "Timing is on."
@@ -685,12 +689,12 @@ msgstr "\\watch non può essere usato con una query vuota\n"
 #: command.c:3110
 #, c-format
 msgid "%s\t%s (every %gs)\n"
-msgstr ""
+msgstr "%s\t%s (ogni %gs)\n"
 
 #: command.c:3113
 #, c-format
 msgid "%s (every %gs)\n"
-msgstr ""
+msgstr "%s (ogni %gs)\n"
 
 #: command.c:3167 command.c:3174 common.c:554 common.c:561 common.c:1168
 #, c-format
@@ -708,7 +712,7 @@ msgstr ""
 #: command.c:3325
 #, c-format
 msgid "%s.%s is not a view\n"
-msgstr ""
+msgstr "%s.%s non è una vista\n"
 
 #: common.c:137
 #, c-format
@@ -2264,6 +2268,8 @@ msgid ""
 "  \\errverbose            show most recent error message at maximum "
 "verbosity\n"
 msgstr ""
+"  \\errverbose            mostra il messaggio di errore più recente alla "
+"massima loquacità\n"
 
 #: help.c:176
 #, c-format
@@ -2280,6 +2286,8 @@ msgid ""
 "  \\gexec                 execute query, then execute each value in its "
 "result\n"
 msgstr ""
+"  \\gexec                 esegui la query, poi esegui ogni valore nel suo "
+"risultato\n"
 
 #: help.c:178
 #, c-format
@@ -2299,6 +2307,8 @@ msgstr "  \\q                     esci da psql\n"
 msgid ""
 "  \\crosstabview [COLUMNS] execute query and display results in crosstab\n"
 msgstr ""
+"  \\crosstabview [COLONNE] esegui la query e mostra il risultato in "
+"crosstab\n"
 
 #: help.c:181
 #, c-format
@@ -2356,7 +2366,7 @@ msgstr ""
 msgid ""
 "  \\ef [FUNCNAME [LINE]]  edit function definition with external editor\n"
 msgstr ""
-"  \\ef [NOME_FUN [RIGA]]  modifica la definizione della funzione con "
+"  \\ef [FUNZIONE [RIGA]]  modifica la definizione della funzione con "
 "l'editor\n"
 "                         esterno\n"
 
@@ -2364,6 +2374,8 @@ msgstr ""
 #, c-format
 msgid "  \\ev [VIEWNAME [LINE]]  edit view definition with external editor\n"
 msgstr ""
+"  \\ev [VISTA [LINE]]     modifica la definizione della vista con un editor "
+"esterno\n"
 
 #: help.c:196
 #, c-format
@@ -2544,7 +2556,7 @@ msgstr "  \\dFt[+] [MODELLO]      elenca i modelli di ricerca di testo\n"
 #: help.c:233
 #, c-format
 msgid "  \\dg[S+] [PATTERN]      list roles\n"
-msgstr ""
+msgstr "  \\dg[S+] [MODELLO]      elenca i ruoli\n"
 
 #: help.c:234
 #, c-format
@@ -2615,7 +2627,7 @@ msgstr "  \\dT[S+] [MODELLO]      elenca i tipi di dato\n"
 #: help.c:246
 #, c-format
 msgid "  \\du[S+] [PATTERN]      list roles\n"
-msgstr ""
+msgstr "  \\du[S+] [MODELLO]      elenca i ruoli\n"
 
 #: help.c:247
 #, c-format
@@ -2645,12 +2657,12 @@ msgstr "  \\l[+]   [PATTERN]      elenca i database\n"
 #: help.c:252
 #, c-format
 msgid "  \\sf[+]  FUNCNAME       show a function's definition\n"
-msgstr ""
+msgstr "  \\sf[+]  FUNZIONE       mostra la definizione di una funzione\n"
 
 #: help.c:253
 #, c-format
 msgid "  \\sv[+]  VIEWNAME       show a view's definition\n"
-msgstr ""
+msgstr "  \\sv[+]  VISTA          mostra la definizione di una vista\n"
 
 #: help.c:254
 #, c-format
@@ -3032,6 +3044,8 @@ msgid ""
 "  SHOW_CONTEXT       controls display of message context fields [never, "
 "errors, always]\n"
 msgstr ""
+"  SHOW_CONTEXT       controlla la visualizzazione dei campi di contesto dei "
+"messaggi [never, errors, always]\n"
 
 #: help.c:360
 #, c-format
@@ -3309,6 +3323,8 @@ msgid ""
 "  PSQL_EDITOR, EDITOR, VISUAL\n"
 "                     editor used by the \\e, \\ef, and \\ev commands\n"
 msgstr ""
+"  PSQL_EDITOR, EDITOR, VISUAL\n"
+"                     editor usato dai comandi \\e, \\ef, \\ev\n"
 
 #: help.c:412
 #, c-format
@@ -4152,7 +4168,7 @@ msgstr "nome_codifica"
 
 #: sql_help.c:1543
 msgid "access_method_type"
-msgstr ""
+msgstr "tipo_metodo_accesso"
 
 #: sql_help.c:1616 sql_help.c:1636 sql_help.c:1639
 msgid "arg_data_type"
@@ -4176,19 +4192,19 @@ msgstr "ffunz"
 
 #: sql_help.c:1621 sql_help.c:1644 sql_help.c:1656
 msgid "combinefunc"
-msgstr ""
+msgstr "funz_combine"
 
 #: sql_help.c:1622 sql_help.c:1645 sql_help.c:1657
 msgid "serialfunc"
-msgstr ""
+msgstr "funz_serial"
 
 #: sql_help.c:1623 sql_help.c:1646 sql_help.c:1658
 msgid "deserialfunc"
-msgstr ""
+msgstr "funz_deserial"
 
 #: sql_help.c:1624 sql_help.c:1647 sql_help.c:1659
 msgid "serialtype"
-msgstr ""
+msgstr "tipo_serial"
 
 #: sql_help.c:1625 sql_help.c:1648 sql_help.c:1660
 msgid "initial_condition"
@@ -5032,7 +5048,7 @@ msgstr "copia i dati tra un file ed una tabella"
 
 #: sql_help.c:4369
 msgid "define a new access method"
-msgstr ""
+msgstr "definisci un nuovo metodo di accesso"
 
 #: sql_help.c:4374
 msgid "define a new aggregate function"
@@ -5196,7 +5212,7 @@ msgstr "esegui un blocco di codice anonimo"
 
 #: sql_help.c:4584
 msgid "remove an access method"
-msgstr ""
+msgstr "rimuovi un metodo di accesso"
 
 #: sql_help.c:4589
 msgid "remove an aggregate function"

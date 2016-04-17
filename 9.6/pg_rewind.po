@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:15+0000\n"
-"PO-Revision-Date: 2016-04-17 03:23+0100\n"
+"PO-Revision-Date: 2016-04-17 20:53+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -146,7 +146,7 @@ msgstr "chiusura del file \"%s\" fallita: %s\n"
 #: datapagemap.c:124
 #, c-format
 msgid "  block %u\n"
-msgstr ""
+msgstr "  blocco %u\n"
 
 #: file_ops.c:64
 #, c-format
@@ -248,7 +248,7 @@ msgstr ""
 #: filemap.c:537
 #, c-format
 msgid "%s (%s)\n"
-msgstr ""
+msgstr "%s (%s)\n"
 
 #: libpq_fetch.c:55
 #, c-format
@@ -661,23 +661,23 @@ msgstr ""
 #: pg_rewind.c:462
 #, c-format
 msgid "Invalid control file"
-msgstr ""
+msgstr "file di controllo non valido"
 
 #: pg_rewind.c:473
 #, c-format
 msgid "Source timeline history:\n"
-msgstr ""
+msgstr "Storia della timeline di origine:\n"
 
 #: pg_rewind.c:475
 #, c-format
 msgid "Target timeline history:\n"
-msgstr ""
+msgstr "Storia della timeline di destinazione:\n"
 
 #. translator: %d is a timeline number, others are LSN positions
 #: pg_rewind.c:489
 #, c-format
 msgid "%d: %X/%X - %X/%X\n"
-msgstr ""
+msgstr "%d: %X/%X - %X/%X\n"
 
 #: pg_rewind.c:547
 #, c-format
@@ -778,7 +778,7 @@ msgstr "contrecord richiesto da %X/%X"
 #: xlogreader.c:334 xlogreader.c:633
 #, c-format
 msgid "invalid record length at %X/%X: wanted %u, got %u"
-msgstr ""
+msgstr "lunghezza del record a %X/%X non valida: attesa %u, ricevuta %u"
 
 #: xlogreader.c:349
 #, c-format

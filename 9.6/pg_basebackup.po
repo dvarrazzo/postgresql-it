@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:14+0000\n"
-"PO-Revision-Date: 2016-04-17 03:34+0100\n"
+"PO-Revision-Date: 2016-04-17 20:43+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -648,6 +648,7 @@ msgstr "%s: lo streaming WAL può essere usato solo in modalità plain\n"
 #, c-format
 msgid "%s: replication slots can only be used with WAL streaming\n"
 msgstr ""
+"%s: gli slot di replica possono essere usati solo con lo streaming dei WAL\n"
 
 #: pg_basebackup.c:2195
 #, c-format
@@ -969,7 +970,7 @@ msgstr "%s: apertura del file di log \"%s\" fallita: %s\n"
 #: pg_recvlogical.c:366 receivelog.c:933
 #, c-format
 msgid "%s: invalid socket: %s"
-msgstr ""
+msgstr "%s: socket non valido: %s"
 
 #: pg_recvlogical.c:420 receivelog.c:955
 #, c-format

@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:15+0000\n"
-"PO-Revision-Date: 2016-04-17 03:28+0100\n"
+"PO-Revision-Date: 2016-04-17 20:45+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -219,7 +219,7 @@ msgstr "attivato"
 #: pg_controldata.c:217
 #, c-format
 msgid "Latest checkpoint's NextXID:          %u:%u\n"
-msgstr ""
+msgstr "NextXID dell'ultimo checkpoint:             %u:%u\n"
 
 #: pg_controldata.c:220
 #, c-format

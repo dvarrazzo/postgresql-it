@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plperl (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:07+0000\n"
-"PO-Revision-Date: 2015-08-16 10:02+0100\n"
+"PO-Revision-Date: 2016-04-17 20:56+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -233,7 +233,7 @@ msgstr "le funzioni trigger possono essere chiamate esclusivamente da trigger"
 #: plperl.c:3121
 #, c-format
 msgid "query result has too many rows to fit in a Perl array"
-msgstr ""
+msgstr "il risultato della query ha troppe righe per un array Perl"
 
 #: plperl.c:3166
 #, c-format

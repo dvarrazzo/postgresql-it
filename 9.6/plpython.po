@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 9.6\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2016-04-17 00:07+0000\n"
-"PO-Revision-Date: 2016-04-17 03:39+0100\n"
+"PO-Revision-Date: 2016-04-17 20:40+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -70,7 +70,7 @@ msgstr "lettura da un cursore chiuso"
 #: plpy_cursorobject.c:467 plpy_spi.c:438
 #, c-format
 msgid "query result has too many rows to fit in a Python list"
-msgstr ""
+msgstr "il risultato della query ha troppe righe per una lista Python"
 
 #: plpy_cursorobject.c:508
 #, c-format
@@ -283,17 +283,17 @@ msgstr "non è stato possibile interpretare il messaggio di errore in plpy.elog"
 #: plpy_plpymodule.c:446
 #, c-format
 msgid "the message is already specified"
-msgstr ""
+msgstr "il messaggio è già specificato"
 
 #: plpy_plpymodule.c:469
 #, c-format
 msgid "'%s' is an invalid keyword argument for this function"
-msgstr ""
+msgstr "'%s' è un nome di argomento non valido per questa funzione"
 
 #: plpy_plpymodule.c:477 plpy_plpymodule.c:480
 #, c-format
 msgid "invalid SQLSTATE code"
-msgstr ""
+msgstr "codice SQLSTATE non valido"
 
 #: plpy_procedure.c:232
 #, c-format
