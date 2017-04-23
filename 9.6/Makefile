@@ -1,5 +1,6 @@
 LANG = it
 VERSION = 9.6
+UPDATE_FROM = 10.0
 PGTR_BRANCH = REL9_6_STABLE
 
 POS = $(wildcard *.po)

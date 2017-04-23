@@ -28,6 +28,7 @@ ifdef UPDATE_FROM
 # copy translations from newer PG version to this
 update:
 	for f in *.po; do \
+		if [ ! -f ../${UPDATE_FROM}/$$f ]; then continue; fi; \
 		msgmerge -N ../${UPDATE_FROM}/$$f $$f | ../tools/nostale.py | sponge $$f; \
 		sed -i 's/\(Project-Id-Version:.* \)\(${UPDATE_FROM}\)\(.*\)/\1${VERSION}\3/' $$f; \
 		../tools/notrivial $$f; \
