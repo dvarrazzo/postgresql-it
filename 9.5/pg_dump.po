@@ -358,12 +358,12 @@ msgstr "lettura dal file di input fallita: fine del file\n"
 #: dumputils.c:402 dumputils.c:433
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
-msgstr ""
+msgstr "il comando della shell nel parametro contiene un \"a capo\": \"%s\"\n"
 
 #: dumputils.c:545
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
-msgstr ""
+msgstr "il nome del database contiene un \"a capo\": \"%s\"\n"
 
 #: parallel.c:166
 msgid "parallel archiver"

@@ -322,12 +322,12 @@ msgstr "memoria esaurita\n"
 #: dumputils.c:372 dumputils.c:403
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
-msgstr ""
+msgstr "il comando della shell nel parametro contiene un \"a capo\": \"%s\"\n"
 
 #: dumputils.c:515
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
-msgstr ""
+msgstr "il nome del database contiene un \"a capo\": \"%s\"\n"
 
 #: dumputils.c:1471
 #, c-format
