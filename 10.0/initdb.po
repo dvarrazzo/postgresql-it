@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 10.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-04-22 22:46+0000\n"
-"PO-Revision-Date: 2017-04-23 03:06+0100\n"
+"PO-Revision-Date: 2017-04-23 04:42+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -111,7 +111,7 @@ msgstr "%s: fsync del file \"%s\" fallito: %s\n"
 #: ../../common/file_utils.c:387
 #, c-format
 msgid "%s: could not rename file \"%s\" to \"%s\": %s\n"
-msgstr ""
+msgstr "%s: non è stato possibile rinominare il file \"%s\" in \"%s\": %s\n"
 
 #: ../../common/pgfnames.c:45
 #, c-format
@@ -611,6 +611,7 @@ msgstr ""
 msgid ""
 "  -X, --waldir=WALDIR       location for the write-ahead log directory\n"
 msgstr ""
+"  -X, --waldir=WALDIR       locazione della la directory di write-ahead log\n"
 
 #: initdb.c:2279
 #, c-format
@@ -639,7 +640,7 @@ msgstr "  -L DIRECTORY              dove trovare i file di input\n"
 #: initdb.c:2283
 #, c-format
 msgid "  -n, --no-clean            do not clean up after errors\n"
-msgstr ""
+msgstr "  -n, --no-clean            non ripulire dopo gli errori\n"
 
 #: initdb.c:2284
 #, c-format
@@ -647,6 +648,9 @@ msgid ""
 "  -N, --no-sync             do not wait for changes to be written safely to "
 "disk\n"
 msgstr ""
+"  -N, --no-sync             non aspettare che i dati siano scritti con "
+"sicurezza\n"
+"                            sul disco\n"
 
 #: initdb.c:2285
 #, c-format
@@ -973,6 +977,7 @@ msgstr "Esecuzione in modalità debug\n"
 #, c-format
 msgid "Running in no-clean mode.  Mistakes will not be cleaned up.\n"
 msgstr ""
+"Esecuzione in modalità senza pulizia. Gli errori non verranno ripuliti.\n"
 
 #: initdb.c:3122
 #, c-format
@@ -1035,7 +1040,7 @@ msgstr ""
 #. translator: This is a placeholder in a shell command.
 #: initdb.c:3240
 msgid "logfile"
-msgstr ""
+msgstr "file_log"
 
 #: initdb.c:3242
 #, c-format
@@ -1046,3 +1051,8 @@ msgid ""
 "    %s\n"
 "\n"
 msgstr ""
+"\n"
+"Successo. Ora puoi avviare il server database con:\n"
+"\n"
+"    %s\n"
+"\n"

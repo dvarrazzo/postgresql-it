@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL) 10.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-04-22 22:38+0000\n"
-"PO-Revision-Date: 2017-04-23 03:03+0100\n"
+"PO-Revision-Date: 2017-04-23 04:44+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -217,7 +217,7 @@ msgstr "%s: il supporto al debug del parser (-d) non è disponibile\n"
 #: ecpg.c:256
 #, c-format
 msgid "%s, the PostgreSQL embedded C preprocessor, version %s\n"
-msgstr ""
+msgstr "%s, il preprocessore di PostgreSQL per programmi in C, versione %s\n"
 
 #: ecpg.c:258
 #, c-format
