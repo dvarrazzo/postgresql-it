@@ -1,4 +1,4 @@
-SUBDIRS = 10.0 9.6 9.5 9.4 9.3 9.2
+SUBDIRS = 10 9.6 9.5 9.4 9.3 9.2
 
 all dlpots updatepots check popack mopack clean notrivial pgtrpush:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done

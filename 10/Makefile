@@ -1,5 +1,5 @@
 LANG = it
-VERSION = 10.0
+VERSION = 10
 PGTR_BRANCH = master
 URLPATTERN = "po-master"
 
