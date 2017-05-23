@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL) 10.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-04-22 22:46+0000\n"
-"PO-Revision-Date: 2017-04-23 04:42+0100\n"
+"POT-Creation-Date: 2017-05-22 07:46+0000\n"
+"PO-Revision-Date: 2017-05-23 01:09+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -285,27 +285,23 @@ msgstr "%s: rimozione dei contenuti dalla directory dati fallita\n"
 
 #: initdb.c:566
 #, c-format
-msgid "%s: removing transaction log directory \"%s\"\n"
-msgstr "%s: rimozione della directory dei log delle transazioni \"%s\"\n"
+msgid "%s: removing WAL directory \"%s\"\n"
+msgstr "%s: rimozione della directory dei WAL \"%s\"\n"
 
 #: initdb.c:569
 #, c-format
-msgid "%s: failed to remove transaction log directory\n"
-msgstr "%s: rimozione della directory dei log delle transazioni fallita\n"
+msgid "%s: failed to remove WAL directory\n"
+msgstr "%s: rimozione della directory dei WAL fallita\n"
 
 #: initdb.c:575
 #, c-format
-msgid "%s: removing contents of transaction log directory \"%s\"\n"
-msgstr ""
-"%s: rimozione dei contenuti della directory dei log delle transazioni \"%s"
-"\"\n"
+msgid "%s: removing contents of WAL directory \"%s\"\n"
+msgstr "%s: rimozione del contenuto della directory dei WAL \"%s\"\n"
 
 #: initdb.c:578
 #, c-format
-msgid "%s: failed to remove contents of transaction log directory\n"
-msgstr ""
-"%s: rimozione dei contenuti della directory dei log delle transazioni "
-"fallita\n"
+msgid "%s: failed to remove contents of WAL directory\n"
+msgstr "%s: rimozione del contenuto della directory dei WAL fallita\n"
 
 #: initdb.c:587
 #, c-format
@@ -314,10 +310,8 @@ msgstr "%s: directory dati \"%s\" non rimossa su richiesta dell'utente\n"
 
 #: initdb.c:592
 #, c-format
-msgid "%s: transaction log directory \"%s\" not removed at user's request\n"
-msgstr ""
-"%s: directory dei log delle transazioni \"%s\" non rimossa su richiesta "
-"dell'utente\n"
+msgid "%s: WAL directory \"%s\" not removed at user's request\n"
+msgstr "%s: directory dei WAL \"%s\" non rimossa su richiesta dell'utente\n"
 
 #: initdb.c:613
 #, c-format
@@ -911,18 +905,18 @@ msgstr "%s: accesso alla directory \"%s\" fallito: %s\n"
 
 #: initdb.c:2724
 #, c-format
-msgid "%s: transaction log directory location must be an absolute path\n"
+msgid "%s: WAL directory location must be an absolute path\n"
 msgstr ""
-"%s: la directory dei log delle transazioni deve essere un percorso assoluto\n"
+"%s: la locazione della directory dei WAL deve essere un percorso assoluto\n"
 
 #: initdb.c:2778
 #, c-format
 msgid ""
-"If you want to store the transaction log there, either\n"
-"remove or empty the directory \"%s\".\n"
+"If you want to store the WAL there, either remove or empty the directory\n"
+"\"%s\".\n"
 msgstr ""
-"Se vuoi salvare lì i log delle transazioni,\n"
-"elimina oppure svuota la directory \"%s\".\n"
+"Se vuoi salvare i WAL in questo posto, elimina oppure svuota la directory\n"
+"\"%s\".\n"
 
 #: initdb.c:2793
 #, c-format
