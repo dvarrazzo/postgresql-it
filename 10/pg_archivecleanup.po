@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_archivecleanup (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-04-22 22:46+0000\n"
+"POT-Creation-Date: 2017-05-22 07:46+0000\n"
 "PO-Revision-Date: 2017-04-23 03:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -94,7 +94,8 @@ msgstr ""
 
 #: pg_archivecleanup.c:268
 #, c-format
-msgid "  -n             dry run, show the names of the files that would be removed\n"
+msgid ""
+"  -n             dry run, show the names of the files that would be removed\n"
 msgstr ""
 
 #: pg_archivecleanup.c:269
@@ -117,7 +118,8 @@ msgstr ""
 msgid ""
 "\n"
 "For use as archive_cleanup_command in recovery.conf when standby_mode = on:\n"
-"  archive_cleanup_command = 'pg_archivecleanup [OPTION]... ARCHIVELOCATION %%r'\n"
+"  archive_cleanup_command = 'pg_archivecleanup [OPTION]... ARCHIVELOCATION "
+"%%r'\n"
 "e.g.\n"
 "  archive_cleanup_command = 'pg_archivecleanup /mnt/server/archiverdir %%r'\n"
 msgstr ""
@@ -128,7 +130,8 @@ msgid ""
 "\n"
 "Or for use as a standalone archive cleaner:\n"
 "e.g.\n"
-"  pg_archivecleanup /mnt/server/archiverdir 000000010000000000000010.00000020.backup\n"
+"  pg_archivecleanup /mnt/server/archiverdir "
+"000000010000000000000010.00000020.backup\n"
 msgstr ""
 
 #: pg_archivecleanup.c:281

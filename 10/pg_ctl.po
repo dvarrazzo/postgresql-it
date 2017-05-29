@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-04-22 22:45+0000\n"
-"PO-Revision-Date: 2016-04-17 20:44+0100\n"
+"PO-Revision-Date: 2017-05-29 17:04+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../../common/exec.c:127 ../../common/exec.c:241 ../../common/exec.c:284
 #, c-format
@@ -402,15 +402,15 @@ msgstr "%s: rimozione del file di segnale di promozione \"%s\" fallita: %s\n"
 
 #: pg_ctl.c:1231
 msgid "waiting for server to promote..."
-msgstr ""
+msgstr "in attesa della promozione del server..."
 
 #: pg_ctl.c:1245
 msgid "server promoted\n"
-msgstr ""
+msgstr "server promosso\n"
 
 #: pg_ctl.c:1250
 msgid "server is still promoting\n"
-msgstr ""
+msgstr "il server è in fase di promozione\n"
 
 #: pg_ctl.c:1254
 msgid "server promoting\n"
@@ -548,7 +548,7 @@ msgstr "Utilizzo:\n"
 #: pg_ctl.c:1935
 #, c-format
 msgid "  %s init[db] [-D DATADIR] [-s] [-o OPTIONS]\n"
-msgstr ""
+msgstr "  %s init[db] [-D DATADIR] [-s] [-o OPZIONI]\n"
 
 #: pg_ctl.c:1936
 #, c-format
@@ -556,11 +556,13 @@ msgid ""
 "  %s start    [-D DATADIR] [-l FILENAME] [-W] [-t SECS] [-s]\n"
 "                  [-o OPTIONS] [-p PATH] [-c]\n"
 msgstr ""
+"  %s start    [-D DATADIR] [-l NOMEFILE] [-W] [-t SEC] [-s]\n"
+"                  [-o OPZIONI] [-p PERCORSO] [-c]\n"
 
 #: pg_ctl.c:1938
 #, c-format
 msgid "  %s stop     [-D DATADIR] [-m SHUTDOWN-MODE] [-W] [-t SECS] [-s]\n"
-msgstr ""
+msgstr "  %s stop     [-D DATADIR] [-m MODO-ARRESTO] [-W] [-t SEC] [-s]\n"
 
 #: pg_ctl.c:1939
 #, c-format
@@ -568,26 +570,28 @@ msgid ""
 "  %s restart  [-D DATADIR] [-m SHUTDOWN-MODE] [-W] [-t SECS] [-s]\n"
 "                  [-o OPTIONS] [-c]\n"
 msgstr ""
+"  %s restart  [-D DATADIR] [-m MODO-ARRESTO] [-W] [-t SEC] [-s]\n"
+"                  [-o OPTIONS] [-c]\n"
 
 #: pg_ctl.c:1941
 #, c-format
 msgid "  %s reload   [-D DATADIR] [-s]\n"
-msgstr ""
+msgstr "  %s reload   [-D DATADIR] [-s]\n"
 
 #: pg_ctl.c:1942
 #, c-format
 msgid "  %s status   [-D DATADIR]\n"
-msgstr ""
+msgstr "  %s status   [-D DATADIR]\n"
 
 #: pg_ctl.c:1943
 #, c-format
 msgid "  %s promote  [-D DATADIR] [-W] [-t SECS] [-s]\n"
-msgstr ""
+msgstr "  %s promote  [-D DATADIR] [-W] [-t SEC] [-s]\n"
 
 #: pg_ctl.c:1944
 #, c-format
 msgid "  %s kill     SIGNALNAME PID\n"
-msgstr ""
+msgstr "  %s kill     SEGNALE PID\n"
 
 #: pg_ctl.c:1946
 #, c-format
@@ -596,11 +600,14 @@ msgid ""
 "                  [-S START-TYPE] [-e SOURCE] [-W] [-t SECS] [-s] [-o "
 "OPTIONS]\n"
 msgstr ""
+"  %s register [-D DATADIR] [-N SERVIZIO] [-U UTENTE] [-P PASSWORD]\n"
+"                  [-S TIPO-AVVIO] [-e SORGENTE] [-W] [-t SEC] [-s] [-o "
+"OPZIONI]\n"
 
 #: pg_ctl.c:1948
 #, c-format
 msgid "  %s unregister [-N SERVICENAME]\n"
-msgstr "  %s unregister [-N SERVICENAME]\n"
+msgstr "  %s unregister [-N SERVIZIO]\n"
 
 #: pg_ctl.c:1951
 #, c-format
@@ -636,7 +643,7 @@ msgstr ""
 #, c-format
 msgid "  -t, --timeout=SECS     seconds to wait when using -w option\n"
 msgstr ""
-"  -t, --timeout=SECS     secondi da aspettare quando si usa l'opzione -w\n"
+"  -t, --timeout=SEC      secondi da aspettare quando si usa l'opzione -w\n"
 
 #: pg_ctl.c:1958
 #, c-format
@@ -647,11 +654,15 @@ msgstr "  -V, --version          mostra informazioni sulla versione ed esci\n"
 #, c-format
 msgid "  -w, --wait             wait until operation completes (default)\n"
 msgstr ""
+"  -w, --wait             aspetta fino al completamento dell'operazione "
+"(default)\n"
 
 #: pg_ctl.c:1960
 #, c-format
 msgid "  -W, --no-wait          do not wait until operation completes\n"
 msgstr ""
+"  -W, --no-wait          non aspettare fino al completamento "
+"dell'operazione\n"
 
 #: pg_ctl.c:1961
 #, c-format
@@ -695,6 +706,9 @@ msgid ""
 "  -o, --options=OPTIONS  command line options to pass to postgres\n"
 "                         (PostgreSQL server executable) or initdb\n"
 msgstr ""
+"  -o, --options=OPZIONI  opzioni da riga di comando da passare a postgres\n"
+"                         (programma eseguibile del server PostgreSQL) o "
+"initdb\n"
 
 #: pg_ctl.c:1973
 #, c-format
@@ -736,6 +750,8 @@ msgstr "  smart       termina dopo che tutti i client si sono disconnessi\n"
 #, c-format
 msgid "  fast        quit directly, with proper shutdown (default)\n"
 msgstr ""
+"  fast        termina direttamente, con una corretta procedura di arresto "
+"(default)\n"
 
 #: pg_ctl.c:1980
 #, c-format
@@ -769,7 +785,7 @@ msgstr ""
 msgid ""
 "  -N SERVICENAME  service name with which to register PostgreSQL server\n"
 msgstr ""
-"  -N SERVICENAME  nome del servizio con cui registrare il server PostgreSQL\n"
+"  -N SERVIZIO     nome del servizio con cui registrare il server PostgreSQL\n"
 
 #: pg_ctl.c:1988
 #, c-format
@@ -782,14 +798,14 @@ msgstr ""
 #, c-format
 msgid "  -U USERNAME     user name of account to register PostgreSQL server\n"
 msgstr ""
-"  -U USERNAME     nome utente dell'account con cui registrare il server "
+"  -U UTENTE       nome utente dell'account con cui registrare il server "
 "PostgreSQL\n"
 
 #: pg_ctl.c:1990
 #, c-format
 msgid "  -S START-TYPE   service start type to register PostgreSQL server\n"
 msgstr ""
-"  -S START-TYPE   tipo di avvio del servizio con cui registrare il server "
+"  -S TIPO-AVVIO   tipo di avvio del servizio con cui registrare il server "
 "PostgreSQL\n"
 
 #: pg_ctl.c:1992
@@ -848,7 +864,7 @@ msgstr ""
 #: pg_ctl.c:2151
 #, c-format
 msgid "%s: control file appears to be corrupt\n"
-msgstr ""
+msgstr "%s: il file di controllo sembra corrotto\n"
 
 #: pg_ctl.c:2221
 #, c-format

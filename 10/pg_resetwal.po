@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetwal (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-04-22 22:45+0000\n"
+"POT-Creation-Date: 2017-05-22 07:46+0000\n"
 "PO-Revision-Date: 2017-04-23 03:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -79,7 +79,8 @@ msgstr ""
 
 #: pg_resetwal.c:184 pg_resetwal.c:191
 #, c-format
-msgid "%s: transaction ID (-c) must be either 0 or greater than or equal to 2\n"
+msgid ""
+"%s: transaction ID (-c) must be either 0 or greater than or equal to 2\n"
 msgstr ""
 
 #: pg_resetwal.c:206
@@ -150,13 +151,13 @@ msgstr ""
 #, c-format
 msgid ""
 "The database server was not shut down cleanly.\n"
-"Resetting the transaction log might cause data to be lost.\n"
+"Resetting the write-ahead log might cause data to be lost.\n"
 "If you want to proceed anyway, use -f to force reset.\n"
 msgstr ""
 
 #: pg_resetwal.c:450
 #, c-format
-msgid "Transaction log reset\n"
+msgid "Write-ahead log reset\n"
 msgstr ""
 
 #: pg_resetwal.c:479
@@ -432,7 +433,9 @@ msgstr ""
 
 #: pg_resetwal.c:822
 #, c-format
-msgid "%s: internal error -- sizeof(ControlFileData) is too large ... fix PG_CONTROL_SIZE\n"
+msgid ""
+"%s: internal error -- sizeof(ControlFileData) is too large ... fix "
+"PG_CONTROL_SIZE\n"
 msgstr ""
 
 #: pg_resetwal.c:837
@@ -483,7 +486,7 @@ msgstr ""
 #: pg_resetwal.c:1162
 #, c-format
 msgid ""
-"%s resets the PostgreSQL transaction log.\n"
+"%s resets the PostgreSQL write-ahead log.\n"
 "\n"
 msgstr ""
 
@@ -502,7 +505,9 @@ msgstr ""
 
 #: pg_resetwal.c:1165
 #, c-format
-msgid "  -c XID,XID       set oldest and newest transactions bearing commit timestamp\n"
+msgid ""
+"  -c XID,XID       set oldest and newest transactions bearing commit "
+"timestamp\n"
 msgstr ""
 
 #: pg_resetwal.c:1166
@@ -527,7 +532,9 @@ msgstr ""
 
 #: pg_resetwal.c:1170
 #, c-format
-msgid "  -l XLOGFILE      force minimum WAL starting location for new transaction log\n"
+msgid ""
+"  -l WALFILE       force minimum WAL starting location for new write-ahead "
+"log\n"
 msgstr ""
 
 #: pg_resetwal.c:1171
@@ -537,7 +544,8 @@ msgstr ""
 
 #: pg_resetwal.c:1172
 #, c-format
-msgid "  -n               no update, just show what would be done (for testing)\n"
+msgid ""
+"  -n               no update, just show what would be done (for testing)\n"
 msgstr ""
 
 #: pg_resetwal.c:1173

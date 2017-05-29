@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-04-22 22:37+0000\n"
-"PO-Revision-Date: 2017-04-23 02:56+0100\n"
+"PO-Revision-Date: 2017-05-29 17:46+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -199,7 +199,7 @@ msgstr ""
 #: plpy_exec.c:975
 #, c-format
 msgid "cannot set system attribute \"%s\""
-msgstr ""
+msgstr "non è possibile impostare l'attributo di sistema \"%s\""
 
 #: plpy_exec.c:1046
 #, c-format
@@ -422,12 +422,12 @@ msgstr ""
 #: plpy_typeio.c:949
 #, c-format
 msgid "malformed record literal: \"%s\""
-msgstr ""
+msgstr "letterale di record non corretto: \"%s\""
 
 #: plpy_typeio.c:950
 #, c-format
 msgid "Missing left parenthesis."
-msgstr ""
+msgstr "Parentesi aperta mancante."
 
 #: plpy_typeio.c:951 plpy_typeio.c:1389
 #, c-format
@@ -435,21 +435,25 @@ msgid ""
 "To return a composite type in an array, return the composite type as a "
 "Python tuple, e.g. \"[('foo')]\""
 msgstr ""
+"Per restutuire un tipo composito in un array, restituisci il tipo composito "
+"come tupla Python, per esempio \"[('foo')]\""
 
 #: plpy_typeio.c:1000
 #, c-format
 msgid "number of array dimensions exceeds the maximum allowed (%d)"
-msgstr ""
+msgstr "il numero di dimensioni dell'array supera il massimo consentito (%d)"
 
 #: plpy_typeio.c:1004
 #, c-format
 msgid "cannot determine sequence length for function return value"
 msgstr ""
+"errore nel determinare la lunghezza della sequenza per il valore di ritorno "
+"della funzione"
 
 #: plpy_typeio.c:1007 plpy_typeio.c:1011
 #, c-format
 msgid "array size exceeds the maximum allowed"
-msgstr ""
+msgstr "la dimensione dell'array supera il massimo consentito"
 
 #: plpy_typeio.c:1037
 #, c-format
@@ -466,6 +470,9 @@ msgid ""
 "dimensions. PL/Python function return value has sequence length %d while "
 "expected %d"
 msgstr ""
+"gli array multidimensionali devono avere espressioni array di dimensioni "
+"corrispondenti. il valore di ritorno della funzione PL/Python ha una "
+"sequenza di lungezza %d, mentre era atteso %d"
 
 #: plpy_typeio.c:1212
 #, c-format
