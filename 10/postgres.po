@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-05-22 07:38+0000\n"
-"PO-Revision-Date: 2017-04-23 02:19+0100\n"
+"PO-Revision-Date: 2017-05-29 21:08+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -137,33 +137,33 @@ msgstr "impossibile duplicare il puntatore nullo (errore interno)\n"
 #: ../common/file_utils.c:82 ../common/file_utils.c:186
 #, c-format
 msgid "%s: could not stat file \"%s\": %s\n"
-msgstr ""
+msgstr "\"%s: lettura informazioni sul file \"%s\" fallita: %s\n"
 
 #: ../common/file_utils.c:162
 #, c-format
 msgid "%s: could not open directory \"%s\": %s\n"
-msgstr ""
+msgstr "%s: apertura della directory \"%s\" fallita: %s\n"
 
 #: ../common/file_utils.c:198
 #, c-format
 msgid "%s: could not read directory \"%s\": %s\n"
-msgstr ""
+msgstr "%s: lettura della directory \"%s\" fallita: %s\n"
 
 #: ../common/file_utils.c:231 ../common/file_utils.c:291
 #: ../common/file_utils.c:367
 #, c-format
 msgid "%s: could not open file \"%s\": %s\n"
-msgstr ""
+msgstr "%s: apertura del file \"%s\" fallita: %s\n"
 
 #: ../common/file_utils.c:304 ../common/file_utils.c:376
 #, c-format
 msgid "%s: could not fsync file \"%s\": %s\n"
-msgstr ""
+msgstr "%s: sincronizzazione del file \"%s\" fallita: %s\n"
 
 #: ../common/file_utils.c:387
 #, c-format
 msgid "%s: could not rename file \"%s\" to \"%s\": %s\n"
-msgstr ""
+msgstr "%s: rinominazione del file \"%s\" in \"%s\" fallita: %s\n"
 
 #: ../common/pgfnames.c:45
 #, c-format
@@ -274,7 +274,7 @@ msgstr "rimozione del file o directory \"%s\" fallita: %s\n"
 #: ../common/saslprep.c:1090
 #, c-format
 msgid "password too long"
-msgstr ""
+msgstr "password troppo lunga"
 
 #: ../common/username.c:43
 #, c-format
@@ -408,12 +408,12 @@ msgstr "lettura del SID del gruppo PowerUsers fallita: codice di errore %lu\n"
 #: ../port/win32security.c:80
 #, c-format
 msgid "could not check access token membership: error code %lu\n"
-msgstr ""
+msgstr "errore nel controllo del token di appartenenza: codice di errore %lu\n"
 
 #: access/brin/brin.c:866 access/brin/brin.c:937
 #, c-format
 msgid "block number out of range: %s"
-msgstr ""
+msgstr "numero di blocco fuori dall'intervallo consentito: %s"
 
 #: access/brin/brin.c:889 access/brin/brin.c:960
 #, c-format
@@ -436,12 +436,13 @@ msgstr ""
 #: access/brin/brin_revmap.c:379 access/brin/brin_revmap.c:385
 #, c-format
 msgid "corrupted BRIN index: inconsistent range map"
-msgstr ""
+msgstr "indice BRIN corrotto: mappa di dominio inconsistente"
 
 #: access/brin/brin_revmap.c:401
 #, c-format
 msgid "leftover placeholder tuple detected in BRIN index \"%s\", deleting"
 msgstr ""
+"trovata tupla segnaposto avanzata nell'indice BRIN \"%s\", verrà cancellata"
 
 #: access/brin/brin_revmap.c:598
 #, c-format
@@ -900,7 +901,7 @@ msgstr "Non si possono indicizzare valori più grandi di una pagina di buffer."
 #: access/hash/hashovfl.c:87
 #, c-format
 msgid "invalid overflow block number %u"
-msgstr ""
+msgstr "numero di blocco di overflow %u non valido"
 
 #: access/hash/hashovfl.c:283 access/hash/hashpage.c:453
 #, c-format
@@ -1660,7 +1661,7 @@ msgstr "L'ID della timeline deve essere numerico."
 #: access/transam/timeline.c:154
 #, c-format
 msgid "Expected a write-ahead log switchpoint location."
-msgstr ""
+msgstr "Attesa una locazione di switchpoint del log write-ahead."
 
 #: access/transam/timeline.c:158
 #, c-format
@@ -1788,17 +1789,17 @@ msgstr "lettura del file dello stato a due fasi \"%s\" fallita: %m"
 #: access/transam/twophase.c:1307 access/transam/xlog.c:6351
 #, c-format
 msgid "Failed while allocating a WAL reading processor."
-msgstr ""
+msgstr "Errore nell'allocazione di un processore di lettura del WAL."
 
 #: access/transam/twophase.c:1313
 #, c-format
 msgid "could not read two-phase state from WAL at %X/%X"
-msgstr ""
+msgstr "lettura dello stato a due fasi dal WAL a %X/%X fallita"
 
 #: access/transam/twophase.c:1321
 #, c-format
 msgid "expected two-phase state data is not present in WAL at %X/%X"
-msgstr ""
+msgstr "i dati attesi sullo stato a due fasi non sono presenti nel WAL a %X/%X"
 
 #: access/transam/twophase.c:1556
 #, c-format
@@ -1832,42 +1833,46 @@ msgid ""
 msgid_plural ""
 "%u two-phase state files were written for long-running prepared transactions"
 msgstr[0] ""
+"%u file di stato a due fasi scritto per una transazione preparata di lunga "
+"durata"
 msgstr[1] ""
+"%u file di stato a due fasi scritti per transazioni preparate di lunga durata"
 
 #: access/transam/twophase.c:1941
 #, c-format
 msgid "recovering prepared transaction %u from shared memory"
-msgstr ""
+msgstr "recupero di %u transazioni preparate dalla memoria condivisa"
 
 #: access/transam/twophase.c:2026
 #, c-format
 msgid "removing stale two-phase state file for \"%u\""
-msgstr ""
+msgstr "vecchio file di stato a due fasi per \"%u\" rimosso"
 
 #: access/transam/twophase.c:2033
 #, c-format
 msgid "removing stale two-phase state from shared memory for \"%u\""
 msgstr ""
+"rimozione del vecchio stato a due fasi dalla memoria condivisa per \"%u\""
 
 #: access/transam/twophase.c:2046
 #, c-format
 msgid "removing future two-phase state file for \"%u\""
-msgstr ""
+msgstr "rimozione del file di stato a due fasi future per \"%u\""
 
 #: access/transam/twophase.c:2053
 #, c-format
 msgid "removing future two-phase state from memory for \"%u\""
-msgstr ""
+msgstr "rimozione dello stato a due fasi dalla memoria per \"%u\""
 
 #: access/transam/twophase.c:2067 access/transam/twophase.c:2086
 #, c-format
 msgid "removing corrupt two-phase state file for \"%u\""
-msgstr ""
+msgstr "rimozione del file di stato a due fasi corrotto per \"%u\""
 
 #: access/transam/twophase.c:2093
 #, c-format
 msgid "removing corrupt two-phase state from memory for \"%u\""
-msgstr ""
+msgstr "rimozione dello stato a due fasi corrotto dalla memoria per \"%u\""
 
 #: access/transam/varsup.c:124
 #, c-format
@@ -2054,7 +2059,7 @@ msgstr "il file \"%s\" non contiene abbastanza dati"
 #: access/transam/xlog.c:3535
 #, c-format
 msgid "could not open write-ahead log file \"%s\": %m"
-msgstr ""
+msgstr "apertura del file di log write-ahead \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:3724 access/transam/xlog.c:5536
 #, c-format
@@ -2071,22 +2076,22 @@ msgstr "il segmento WAL richiesto %s è stato già rimosso"
 #: access/transam/xlog.c:4111
 #, c-format
 msgid "could not open write-ahead log directory \"%s\": %m"
-msgstr ""
+msgstr "apertura della directory del log write-ahead \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:3997
 #, c-format
 msgid "recycled write-ahead log file \"%s\""
-msgstr ""
+msgstr "riciclaggio del file di log write-ahead \"%s\""
 
 #: access/transam/xlog.c:4009
 #, c-format
 msgid "removing write-ahead log file \"%s\""
-msgstr ""
+msgstr "rimozione del file di log write-ahead \"%s\""
 
 #: access/transam/xlog.c:4029
 #, c-format
 msgid "could not rename old write-ahead log file \"%s\": %m"
-msgstr ""
+msgstr "rinominazione del vecchio file di log write-ahead \"%s\" fallita: %m"
 
 #: access/transam/xlog.c:4071 access/transam/xlog.c:4081
 #, c-format
@@ -2356,22 +2361,22 @@ msgstr ""
 #: access/transam/xlog.c:4986
 #, c-format
 msgid "could not generate secret authorization token"
-msgstr ""
+msgstr "generazione del token segreto di autenticazione fallita"
 
 #: access/transam/xlog.c:5076
 #, c-format
 msgid "could not write bootstrap write-ahead log file: %m"
-msgstr ""
+msgstr "scrittura del file di bootstrap del log write-ahead fallita: %m"
 
 #: access/transam/xlog.c:5084
 #, c-format
 msgid "could not fsync bootstrap write-ahead log file: %m"
-msgstr ""
+msgstr "sincronizzazione del file di bootstrap del log write-ahead fallita: %m"
 
 #: access/transam/xlog.c:5090
 #, c-format
 msgid "could not close bootstrap write-ahead log file: %m"
-msgstr ""
+msgstr "chiusura del file di bootstrap del log write-ahead fallita: %m"
 
 #: access/transam/xlog.c:5166
 #, c-format
@@ -2453,6 +2458,8 @@ msgid ""
 "The database server will regularly poll the pg_wal subdirectory to check for "
 "files placed there."
 msgstr ""
+"Il server database ispezionerà regolarmente la sottodirectory pg_wal per "
+"controllare se vi vengono aggiunti dei file.\""
 
 #: access/transam/xlog.c:5405
 #, c-format
@@ -2487,6 +2494,7 @@ msgstr "il ripristino è stato interrotto dopo aver raggiunto la consistenza"
 #, c-format
 msgid "recovery stopping before WAL location (LSN) \"%X/%X\""
 msgstr ""
+"il ripristino è stato interrotto prima della locazione WAL (LSN) \"%X/%X\""
 
 #: access/transam/xlog.c:5732
 #, c-format
@@ -2510,7 +2518,7 @@ msgstr "il ripristino è stato interrotto al punto di ripristino \"%s\" alle %s"
 #: access/transam/xlog.c:5803
 #, c-format
 msgid "recovery stopping after WAL location (LSN) \"%X/%X\""
-msgstr ""
+msgstr "il ripristino è stato interrotto dopo la locazione WAL (LSN) \"%X/%X\""
 
 #: access/transam/xlog.c:5871
 #, c-format
@@ -2532,7 +2540,7 @@ msgstr "ripristino in pausa"
 #: access/transam/xlog.c:5920
 #, c-format
 msgid "Execute pg_wal_replay_resume() to continue."
-msgstr ""
+msgstr "Esegui pg_wal_replay_resume() per continuare."
 
 #: access/transam/xlog.c:6128
 #, c-format
@@ -2657,7 +2665,7 @@ msgstr "avvio del ripristino point-in-time a \"%s\""
 #: access/transam/xlog.c:6326
 #, c-format
 msgid "starting point-in-time recovery to WAL location (LSN) \"%X/%X\""
-msgstr ""
+msgstr "avvio del ripristino point-in-time alla locazione WAL (LSN) \"%X/%X\""
 
 #: access/transam/xlog.c:6331
 #, c-format
@@ -2948,13 +2956,15 @@ msgstr "arresto in corso"
 #: access/transam/xlog.c:8639
 #, c-format
 msgid "checkpoint skipped due to an idle system"
-msgstr ""
+msgstr "checkpoint saltato per un sistema inattivo"
 
 #: access/transam/xlog.c:8844
 #, c-format
 msgid ""
 "concurrent write-ahead log activity while database system is shutting down"
 msgstr ""
+"attività concorrente del log write-ahead mentre il database è in fase di "
+"arresto"
 
 #: access/transam/xlog.c:9098
 #, c-format
@@ -3224,7 +3234,7 @@ msgstr ""
 #: access/transam/xlog.c:11326
 #, c-format
 msgid "WAL redo at %X/%X for %s"
-msgstr ""
+msgstr "Ripristino WAL a %X/%X per %s"
 
 #: access/transam/xlog.c:11375
 #, c-format
@@ -3411,12 +3421,12 @@ msgstr ""
 #: access/transam/xlogfuncs.c:475
 #, c-format
 msgid "pg_walfile_name_offset() cannot be executed during recovery."
-msgstr ""
+msgstr "pg_walfile_name_offset() non può essere eseguita in fase di recupero."
 
 #: access/transam/xlogfuncs.c:531
 #, c-format
 msgid "pg_walfile_name() cannot be executed during recovery."
-msgstr ""
+msgstr "pg_walfile_name() non può essere eseguita in fase di recupero."
 
 #: access/transam/xlogfuncs.c:551 access/transam/xlogfuncs.c:571
 #: access/transam/xlogfuncs.c:588
@@ -3798,6 +3808,7 @@ msgstr "i privilegi predefiniti non possono essere impostati sulle colonne"
 #, c-format
 msgid "cannot use IN SCHEMA clause when using GRANT/REVOKE ON SCHEMAS"
 msgstr ""
+"non è possibile usare la clausola IN SCHEMA usando GRANT/REVOKE ON SCHEMAS"
 
 #: catalog/aclchk.c:1521 catalog/objectaddress.c:1390 commands/analyze.c:390
 #: commands/copy.c:4670 commands/sequence.c:1731 commands/tablecmds.c:5599
@@ -3830,7 +3841,7 @@ msgstr "la sequenza \"%s\" supporta solo i privilegi USAGE, SELECT e UPDATE"
 #: catalog/aclchk.c:1842
 #, c-format
 msgid "invalid privilege type %s for table"
-msgstr ""
+msgstr "tipo di privilegio %s non valido per la tabella"
 
 #: catalog/aclchk.c:2008
 #, c-format
@@ -3951,7 +3962,7 @@ msgstr "permesso negato per la conversione %s"
 #: catalog/aclchk.c:3324
 #, c-format
 msgid "permission denied for statistics object %s"
-msgstr ""
+msgstr "permesso negato per la statistica %s"
 
 #: catalog/aclchk.c:3326
 #, c-format
@@ -3991,12 +4002,12 @@ msgstr "permesso negato per l'estensione %s"
 #: catalog/aclchk.c:3340
 #, c-format
 msgid "permission denied for publication %s"
-msgstr ""
+msgstr "permesso negato per la pubblicazione %s"
 
 #: catalog/aclchk.c:3342
 #, c-format
 msgid "permission denied for subscription %s"
-msgstr ""
+msgstr "permesso negato per la sottoscrizione %s"
 
 #: catalog/aclchk.c:3348 catalog/aclchk.c:3350
 #, c-format
@@ -4066,7 +4077,7 @@ msgstr "bisogna essere proprietari della conversione %s"
 #: catalog/aclchk.c:3376
 #, c-format
 msgid "must be owner of statistics object %s"
-msgstr ""
+msgstr "bisogna essere proprietari della statistica %s"
 
 #: catalog/aclchk.c:3378
 #, c-format
@@ -4106,12 +4117,12 @@ msgstr "bisogna essere proprietari dell'estensione %s"
 #: catalog/aclchk.c:3392
 #, c-format
 msgid "must be owner of publication %s"
-msgstr ""
+msgstr "bisogna essere proprietari della pubblicazione %s"
 
 #: catalog/aclchk.c:3394
 #, c-format
 msgid "must be owner of subscription %s"
-msgstr ""
+msgstr "bisogna essere proprietari della sottoscrizione %s"
 
 #: catalog/aclchk.c:3436
 #, c-format
@@ -4217,17 +4228,17 @@ msgstr "l'estensione con OID %u non esiste"
 #: catalog/aclchk.c:5097 commands/publicationcmds.c:733
 #, c-format
 msgid "publication with OID %u does not exist"
-msgstr ""
+msgstr "la pubblicazione con OID %u non esiste"
 
 #: catalog/aclchk.c:5123 commands/subscriptioncmds.c:1057
 #, c-format
 msgid "subscription with OID %u does not exist"
-msgstr ""
+msgstr "la sottoscrizione con OID %u non esiste"
 
 #: catalog/aclchk.c:5149
 #, c-format
 msgid "statistics object with OID %u does not exist"
-msgstr ""
+msgstr "la statistica con OID %u non esiste"
 
 #: catalog/dependency.c:613
 #, c-format
@@ -4302,7 +4313,7 @@ msgstr[1] "l'eliminazione elimina in cascata %d altri oggetti"
 #: catalog/dependency.c:1635
 #, c-format
 msgid "constant of the type %s cannot be used here"
-msgstr ""
+msgstr "un vincolo di tipo %s non può essere usato qui"
 
 #: catalog/heap.c:283
 #, c-format
@@ -4389,6 +4400,7 @@ msgstr ""
 #, c-format
 msgid "cannot add NO INHERIT constraint to partitioned table \"%s\""
 msgstr ""
+"non si può aggiungere un vincolo NO INHERIT alla tabella partizionata \"%s\""
 
 #: catalog/heap.c:2336
 #, c-format
@@ -4609,7 +4621,7 @@ msgstr "solo relazioni temporanee possono essere create in schemi temporanei"
 #: catalog/namespace.c:2139
 #, c-format
 msgid "statistics object \"%s\" does not exist"
-msgstr ""
+msgstr "la statistica \"%s\" non esiste"
 
 #: catalog/namespace.c:2262
 #, c-format
@@ -4725,7 +4737,7 @@ msgstr "\"%s\" non è una tabella esterna"
 #: catalog/objectaddress.c:1300
 #, c-format
 msgid "must specify relation and object name"
-msgstr ""
+msgstr "occorre specificare tabella e nome dell'oggetto"
 
 #: catalog/objectaddress.c:1376 catalog/objectaddress.c:1429
 #, c-format
@@ -4770,7 +4782,7 @@ msgstr "il server \"%s\" non esiste"
 #: catalog/objectaddress.c:1790
 #, c-format
 msgid "publication relation \"%s\" in publication \"%s\" does not exist"
-msgstr ""
+msgstr "la tabella \"%s\" nella pubblicazione \"%s\" non esiste"
 
 #: catalog/objectaddress.c:1852
 #, c-format
@@ -4780,7 +4792,7 @@ msgstr "tipo di oggetto ACL di default %c non riconosciuto"
 #: catalog/objectaddress.c:1853
 #, c-format
 msgid "Valid object types are \"r\", \"S\", \"f\", \"T\" and \"s\"."
-msgstr ""
+msgstr "I tipi di oggetti validi sono \"r\", \"S\", \"f\", \"T\" e \"s\"."
 
 #: catalog/objectaddress.c:1899
 #, c-format
@@ -4957,7 +4969,7 @@ msgstr "schema %s"
 #: catalog/objectaddress.c:3082
 #, c-format
 msgid "statistics object %s"
-msgstr ""
+msgstr "statistiche %s"
 
 #: catalog/objectaddress.c:3098
 #, c-format
@@ -5032,7 +5044,7 @@ msgstr "privilegi predefiniti sui nuovi tipi appartenenti al ruolo %s"
 #: catalog/objectaddress.c:3277
 #, c-format
 msgid "default privileges on new schemas belonging to role %s"
-msgstr ""
+msgstr "privilegi predefiniti sui nuovi schemi appartenenti al ruolo %s"
 
 #: catalog/objectaddress.c:3283
 #, c-format
@@ -5062,17 +5074,17 @@ msgstr "regola di sicurezza %s su "
 #: catalog/objectaddress.c:3364
 #, c-format
 msgid "publication %s"
-msgstr ""
+msgstr "pubblicazione %s"
 
 #: catalog/objectaddress.c:3384
 #, c-format
 msgid "publication table %s in publication %s"
-msgstr ""
+msgstr "tabella %s nella pubblicazione %s"
 
 #: catalog/objectaddress.c:3392
 #, c-format
 msgid "subscription %s"
-msgstr ""
+msgstr "sottoscrizione %s"
 
 #: catalog/objectaddress.c:3410
 #, c-format
@@ -5132,17 +5144,17 @@ msgstr "famiglia di operatori %s per il metodo d'accesso %s"
 #: catalog/objectaddress.c:4910
 #, c-format
 msgid "%s in publication %s"
-msgstr ""
+msgstr "%s nella pubblicazione %s"
 
 #: catalog/partition.c:741
 #, c-format
 msgid "cannot create range partition with empty range"
-msgstr ""
+msgstr "non è possibile creare una partizione su un intervallo vuoto"
 
 #: catalog/partition.c:835
 #, c-format
 msgid "partition \"%s\" would overlap partition \"%s\""
-msgstr ""
+msgstr "la partizione \"%s\" si sovrapporrebbe a \"%s\""
 
 #: catalog/partition.c:943 catalog/partition.c:1121 commands/analyze.c:1446
 #: commands/tablecmds.c:8863 executor/execExprInterp.c:2837
@@ -5317,12 +5329,12 @@ msgstr "la funzione %s richiede una coercizione di tipo a run-time"
 #: catalog/pg_collation.c:85 catalog/pg_collation.c:127
 #, c-format
 msgid "collation \"%s\" already exists, skipping"
-msgstr ""
+msgstr "l'ordinamento \"%s\" esiste già, saltato"
 
 #: catalog/pg_collation.c:87
 #, c-format
 msgid "collation \"%s\" for encoding \"%s\" already exists, skipping"
-msgstr ""
+msgstr "l'ordinamento \"%s\" per l'encoding \"%s\" esiste già, saltato"
 
 #: catalog/pg_collation.c:95 catalog/pg_collation.c:134
 #, c-format
@@ -5595,53 +5607,53 @@ msgstr "funzione SQL \"%s\""
 #: catalog/pg_publication.c:57 commands/trigger.c:194 commands/trigger.c:360
 #, c-format
 msgid "\"%s\" is a partitioned table"
-msgstr ""
+msgstr "\"%s\" è una tabella partizionata"
 
 #: catalog/pg_publication.c:59
 #, c-format
 msgid "Adding partitioned tables to publications is not supported."
-msgstr ""
+msgstr "L'aggiunta di tabelle partizionate a pubblicazioni non è supportata."
 
 #: catalog/pg_publication.c:60
 #, c-format
 msgid "You can add the table partitions individually."
-msgstr ""
+msgstr "Puoi aggiungere le partizioni della tabella individualmente."
 
 #: catalog/pg_publication.c:68
 #, c-format
 msgid "Only tables can be added to publications."
-msgstr ""
+msgstr "Solo le tabelle possono essere aggiunte alle pubblicazioni."
 
 #: catalog/pg_publication.c:74
 #, c-format
 msgid "\"%s\" is a system table"
-msgstr ""
+msgstr "\"%s\" è una tabella di sistema"
 
 #: catalog/pg_publication.c:76
 #, c-format
 msgid "System tables cannot be added to publications."
-msgstr ""
+msgstr "Le tabelle di sistema non possono essere aggiunte alle pubblicazioni."
 
 #: catalog/pg_publication.c:82
 #, c-format
 msgid "table \"%s\" cannot be replicated"
-msgstr ""
+msgstr "la tabella \"%s\" non può essere replicata"
 
 #: catalog/pg_publication.c:84
 #, c-format
 msgid "Temporary and unlogged relations cannot be replicated."
-msgstr ""
+msgstr "Le relazioni temporanee e non loggate non possono essere replicate."
 
 #: catalog/pg_publication.c:142
 #, c-format
 msgid "relation \"%s\" is already member of publication \"%s\""
-msgstr ""
+msgstr "la relazione \"%s\" è già membra della pubblicazione \"%s\""
 
 #: catalog/pg_publication.c:369 catalog/pg_publication.c:390
 #: commands/publicationcmds.c:401 commands/publicationcmds.c:702
 #, c-format
 msgid "publication \"%s\" does not exist"
-msgstr ""
+msgstr "la pubblicazione \"%s\" non esiste"
 
 #: catalog/pg_shdepend.c:692
 #, c-format
@@ -5718,7 +5730,7 @@ msgstr ""
 #: commands/subscriptioncmds.c:826 commands/subscriptioncmds.c:1026
 #, c-format
 msgid "subscription \"%s\" does not exist"
-msgstr ""
+msgstr "la sottoscrizione \"%s\" non esiste"
 
 #: catalog/pg_type.c:136 catalog/pg_type.c:452
 #, c-format
@@ -5900,12 +5912,12 @@ msgstr "il linguaggio \"%s\" esiste già"
 #: commands/alter.c:96 commands/publicationcmds.c:170
 #, c-format
 msgid "publication \"%s\" already exists"
-msgstr ""
+msgstr "la pubblicazione \"%s\" esiste già"
 
 #: commands/alter.c:99 commands/subscriptioncmds.c:343
 #, c-format
 msgid "subscription \"%s\" already exists"
-msgstr ""
+msgstr "la sottoscrizione \"%s\" esiste già"
 
 #: commands/alter.c:122
 #, c-format
@@ -5915,7 +5927,7 @@ msgstr "la conversione \"%s\" già esiste nello schema \"%s\""
 #: commands/alter.c:126
 #, c-format
 msgid "statistics object \"%s\" already exists in schema \"%s\""
-msgstr ""
+msgstr "la statistica \"%s\" esiste già nello schema \"%s\""
 
 #: commands/alter.c:130
 #, c-format
@@ -6205,7 +6217,7 @@ msgstr "attributo dell'ordinamento \"%s\" non riconosciuto"
 #: commands/collationcmds.c:152
 #, c-format
 msgid "unrecognized collation provider: %s"
-msgstr ""
+msgstr "fornitore di ordinamenti non riconosciuto: %s"
 
 #: commands/collationcmds.c:161
 #, c-format
@@ -6231,27 +6243,27 @@ msgstr "l'ordinamento \"%s\" già esiste nello schema \"%s\""
 #: commands/collationcmds.c:276
 #, c-format
 msgid "changing version from %s to %s"
-msgstr ""
+msgstr "cambio della versione da %s a %s"
 
 #: commands/collationcmds.c:291
 #, c-format
 msgid "version has not changed"
-msgstr ""
+msgstr "la versione non è cambiata"
 
 #: commands/collationcmds.c:382
 #, c-format
 msgid "could not convert locale name \"%s\" to language tag: %s"
-msgstr ""
+msgstr "conversione del nome di locale \"%s\" in tag di linguaggio fallita: %s"
 
 #: commands/collationcmds.c:401
 #, c-format
 msgid "could get display name for locale \"%s\": %s"
-msgstr ""
+msgstr "lettura del nome da mostrare per il locale \"%s\" fallita: %s"
 
 #: commands/collationcmds.c:432
 #, c-format
 msgid "must be superuser to import system collations"
-msgstr ""
+msgstr "solo un superutente può importare gli ordinamenti di sistema"
 
 #: commands/collationcmds.c:439 commands/copy.c:1829 commands/copy.c:3026
 #, c-format
@@ -6261,17 +6273,17 @@ msgstr "esecuzione del comando \"%s\" fallita: %m"
 #: commands/collationcmds.c:536
 #, c-format
 msgid "no usable system locales were found"
-msgstr ""
+msgstr "non è stato trovato nessun locale di sistema utilizzabile"
 
 #: commands/collationcmds.c:544 utils/mb/encnames.c:473
 #, c-format
 msgid "encoding \"%s\" not supported by ICU"
-msgstr ""
+msgstr "codifica \"%s\" non supportata da ICU"
 
 #: commands/collationcmds.c:588 commands/collationcmds.c:609
 #, c-format
 msgid "could not get keyword values for locale \"%s\": %s"
-msgstr ""
+msgstr "errore nella lettura dei valori chiave per il locale \"%s\": %s"
 
 #: commands/comment.c:61 commands/dbcommands.c:808 commands/dbcommands.c:996
 #: commands/dbcommands.c:1100 commands/dbcommands.c:1290
@@ -6621,7 +6633,7 @@ msgstr "non è possibile copiare dalla sequenza \"%s\""
 #: commands/copy.c:1798
 #, c-format
 msgid "cannot copy from partitioned table \"%s\""
-msgstr ""
+msgstr "non è possibile copiare dalla tabella partizionata \"%s\""
 
 #: commands/copy.c:1804
 #, c-format
@@ -6645,6 +6657,8 @@ msgid ""
 "COPY TO instructs the PostgreSQL server process to write a file. You may "
 "want a client-side facility such as psql's \\copy."
 msgstr ""
+"COPY TO fa scrivere un file al processo server PostgreSQL. Probabilmente ti "
+"serve un sistema lato client, per esempio il comando \\copy di psql."
 
 #: commands/copy.c:1872 commands/copy.c:3057
 #, c-format
@@ -6685,6 +6699,8 @@ msgstr "non è possibile copiare verso la vista \"%s\""
 #, c-format
 msgid "To enable copying to a view, provide an INSTEAD OF INSERT trigger."
 msgstr ""
+"Per consentire la copia in una vista occorre fornire un trigger INSTEAD OF "
+"INSERT."
 
 #: commands/copy.c:2340
 #, c-format
@@ -6726,7 +6742,7 @@ msgstr ""
 #: commands/copy.c:2587 executor/nodeModifyTable.c:311
 #, c-format
 msgid "cannot route inserted tuples to a foreign table"
-msgstr ""
+msgstr "non è possibile instradare le tuple inserite in una tabella esterna"
 
 #: commands/copy.c:3044
 #, c-format
@@ -6734,6 +6750,8 @@ msgid ""
 "COPY FROM instructs the PostgreSQL server process to read a file. You may "
 "want a client-side facility such as psql's \\copy."
 msgstr ""
+"COPY TO fa leggere un file dal processo server PostgreSQL. Probabilmente ti "
+"serve un sistema lato client, per esempio il comando \\copy di psql."
 
 #: commands/copy.c:3077
 #, c-format
@@ -7059,14 +7077,14 @@ msgstr "non si può eliminare il database aperto attualmente"
 #: commands/dbcommands.c:858
 #, c-format
 msgid "database \"%s\" is used by an active logical replication slot"
-msgstr ""
+msgstr "il database \"%s\" è usato da uno slot di replica attivo"
 
 #: commands/dbcommands.c:860
 #, c-format
 msgid "There is %d active slot"
 msgid_plural "There are %d active slots"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ci sono %d slot attivi"
+msgstr[1] "Ci sono %d slot attivi"
 
 #: commands/dbcommands.c:874 commands/dbcommands.c:1038
 #: commands/dbcommands.c:1168
@@ -7077,14 +7095,14 @@ msgstr "il database \"%s\" è attualmente utilizzato da altri utenti"
 #: commands/dbcommands.c:887
 #, c-format
 msgid "database \"%s\" is being used by logical replication subscription"
-msgstr ""
+msgstr "il database \"%s\" è usato da una sottoscrizione di replica logica"
 
 #: commands/dbcommands.c:889
 #, c-format
 msgid "There is %d subscription."
 msgid_plural "There are %d subscriptions."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ci sono %d sottoscrizioni."
+msgstr[1] "Ci sono %d sottoscrizioni."
 
 #: commands/dbcommands.c:1007
 #, c-format
@@ -7245,7 +7263,7 @@ msgstr "la conversione \"%s\" non esiste, saltata"
 #: commands/dropcmds.c:292
 #, c-format
 msgid "statistics object \"%s\" does not exist, skipping"
-msgstr ""
+msgstr "la statistica \"%s\" non esiste, saltata"
 
 #: commands/dropcmds.c:299
 #, c-format
@@ -7351,7 +7369,7 @@ msgstr ""
 #: commands/dropcmds.c:454
 #, c-format
 msgid "publication \"%s\" does not exist, skipping"
-msgstr ""
+msgstr "la pubblicazione \"%s\" non esiste, saltata"
 
 #: commands/event_trigger.c:185
 #, c-format
@@ -7589,6 +7607,8 @@ msgid ""
 "extension \"%s\" has no installation script nor update path for version \"%s"
 "\""
 msgstr ""
+"l'estensione \"%s\" non ha uno script di installazione o un percorso di "
+"update per la versione \"%s\""
 
 #: commands/extension.c:1425
 #, c-format
@@ -7779,22 +7799,22 @@ msgstr ""
 #: commands/foreigncmds.c:890
 #, c-format
 msgid "server \"%s\" already exists, skipping"
-msgstr ""
+msgstr "il server \"%s\" esiste già, saltato"
 
 #: commands/foreigncmds.c:1175
 #, c-format
 msgid "user mapping for \"%s\" already exists for server %s, skipping"
-msgstr ""
+msgstr "la mappatura utenti per \"%s\" esiste già per il server %s, saltata"
 
 #: commands/foreigncmds.c:1185
 #, c-format
 msgid "user mapping for \"%s\" already exists for server %s"
-msgstr ""
+msgstr "la mappatura utenti per \"%s\" esiste già per il server %s"
 
 #: commands/foreigncmds.c:1278 commands/foreigncmds.c:1393
 #, c-format
 msgid "user mapping for \"%s\" does not exist for the server"
-msgstr ""
+msgstr "la mappatura utenti per \"%s\" non esiste per il server"
 
 #: commands/foreigncmds.c:1380
 #, c-format
@@ -7804,7 +7824,7 @@ msgstr "il server non esiste, saltato"
 #: commands/foreigncmds.c:1398
 #, c-format
 msgid "user mapping for \"%s\" does not exist for the server, skipping"
-msgstr ""
+msgstr "la mappatura utenti per \"%s\" non esiste per il server, saltata"
 
 #: commands/foreigncmds.c:1549 foreign/foreign.c:357
 #, c-format
@@ -8016,11 +8036,13 @@ msgstr ""
 #, c-format
 msgid "second argument of cast function must be type %s"
 msgstr ""
+"il secondo argomento della funzione di conversione deve essere di tipo %s"
 
 #: commands/functioncmds.c:1479
 #, c-format
 msgid "third argument of cast function must be type %s"
 msgstr ""
+"il terzo argomento della funzione di conversione deve essere di tipo %s"
 
 #: commands/functioncmds.c:1484
 #, c-format
@@ -8128,6 +8150,7 @@ msgstr "la funzione di trasformazione deve poter ricevere un solo argomento"
 #, c-format
 msgid "first argument of transform function must be type %s"
 msgstr ""
+"il primo argomento della funzione di trasformazione deve essere di tipo %s"
 
 #: commands/functioncmds.c:1806
 #, c-format
@@ -8142,7 +8165,7 @@ msgstr "il tipo di dato %s è un dominio"
 #: commands/functioncmds.c:1852
 #, c-format
 msgid "return data type of FROM SQL function must be %s"
-msgstr ""
+msgstr "il tipo di dati restituito dalla funzione FROM SQL deve essere %s"
 
 #: commands/functioncmds.c:1878
 #, c-format
@@ -8194,7 +8217,7 @@ msgstr "non è possibile creare indici sulla tabella esterna \"%s\""
 #: commands/indexcmds.c:390
 #, c-format
 msgid "cannot create index on partitioned table \"%s\""
-msgstr ""
+msgstr "non è possibile creare indici sulla tabella partizionata \"%s\""
 
 #: commands/indexcmds.c:405
 #, c-format
@@ -8764,47 +8787,51 @@ msgstr "modifica del tipo restituito dalla funzione %s da %s a %s"
 #: commands/publicationcmds.c:106
 #, c-format
 msgid "invalid publish list"
-msgstr ""
+msgstr "lista di pubblicazione non valida"
 
 #: commands/publicationcmds.c:122
 #, c-format
 msgid "unrecognized \"publish\" value: \"%s\""
-msgstr ""
+msgstr "valore \"publish\" non valido: \"%s\""
 
 #: commands/publicationcmds.c:128
 #, c-format
 msgid "unrecognized publication parameter: %s"
-msgstr ""
+msgstr "parametro di pubblicazione non valido: %s"
 
 #: commands/publicationcmds.c:160
 #, c-format
 msgid "must be superuser to create FOR ALL TABLES publication"
-msgstr ""
+msgstr "solo un superutente può creare una pubblicazione FOR ALL TABLES"
 
 #: commands/publicationcmds.c:321
 #, c-format
 msgid "publication \"%s\" is defined as FOR ALL TABLES"
-msgstr ""
+msgstr "la pubblicazione \"%s\" è definita come FOR ALL TABLES"
 
 #: commands/publicationcmds.c:323
 #, c-format
 msgid "Tables cannot be added to or dropped from FOR ALL TABLES publications."
 msgstr ""
+"Non è possibile aggiungere o rimuovere tabelle da pubblicazioni FOR ALL "
+"TABLES."
 
 #: commands/publicationcmds.c:624
 #, c-format
 msgid "relation \"%s\" is not part of the publication"
-msgstr ""
+msgstr "la relazione \"%s\" non è parte di una pubblicazione"
 
 #: commands/publicationcmds.c:667
 #, c-format
 msgid "permission denied to change owner of publication \"%s\""
-msgstr ""
+msgstr "permesso negato per cambiare proprietario della pubblicazione \"%s\""
 
 #: commands/publicationcmds.c:669
 #, c-format
 msgid "The owner of a FOR ALL TABLES publication must be a superuser."
 msgstr ""
+"Il proprietario di una pubblicazione FOR ALL TABLES deve essere un "
+"superutente."
 
 #: commands/schemacmds.c:106 commands/schemacmds.c:280
 #, c-format
@@ -8876,17 +8903,17 @@ msgstr ""
 #: commands/sequence.c:1373
 #, c-format
 msgid "invalid sequence option SEQUENCE NAME"
-msgstr ""
+msgstr "opzione di sequenza SEQUENCE NAME non valido"
 
 #: commands/sequence.c:1401
 #, c-format
 msgid "identity column type must be smallint, integer, or bigint"
-msgstr ""
+msgstr "il tipo della colonna identità deve essere smallint, integer o bigint"
 
 #: commands/sequence.c:1402
 #, c-format
 msgid "sequence type must be smallint, integer, or bigint"
-msgstr ""
+msgstr "il tipo della sequenza deve essere smallint, integer o bigint"
 
 #: commands/sequence.c:1439
 #, c-format
@@ -8897,11 +8924,15 @@ msgstr "INCREMENT non può essere zero"
 #, c-format
 msgid "MAXVALUE (%s) is out of range for sequence data type %s"
 msgstr ""
+"MAXVALUE (%s) è al di fuori dell'intervallo consentito per il tipo di dati "
+"della sequenza %s"
 
 #: commands/sequence.c:1536
 #, c-format
 msgid "MINVALUE (%s) is out of range for sequence data type %s"
 msgstr ""
+"MINVALUE (%s) è al di fuori dell'intervallo consentito per il tipo di dati "
+"della sequenza %s"
 
 #: commands/sequence.c:1550
 #, c-format
@@ -8968,7 +8999,7 @@ msgstr ""
 #: commands/sequence.c:1746
 #, c-format
 msgid "cannot change ownership of identity sequence"
-msgstr ""
+msgstr "non è possibile cambiare proprietario di una sequenza identità"
 
 #: commands/sequence.c:1747 commands/tablecmds.c:9866
 #: commands/tablecmds.c:12442
@@ -8979,37 +9010,40 @@ msgstr "La sequenza \"%s\" è collegata alla tabella \"%s\"."
 #: commands/statscmds.c:93
 #, c-format
 msgid "statistics object \"%s\" already exists, skipping"
-msgstr ""
+msgstr "la statistica \"%s\" esiste già, saltata"
 
 #: commands/statscmds.c:100
 #, c-format
 msgid "statistics object \"%s\" already exists"
-msgstr ""
+msgstr "la statistica \"%s\" esiste già"
 
 #: commands/statscmds.c:112 commands/statscmds.c:121
 #, c-format
 msgid "only a single relation is allowed in CREATE STATISTICS"
-msgstr ""
+msgstr "solo una relazione singola è permessa in CREATE STATISTICS"
 
 #: commands/statscmds.c:139
 #, c-format
 msgid "relation \"%s\" is not a table, foreign table, or materialized view"
 msgstr ""
+"la relazione \"%s\" non è una tabella, una tabella esterna o una vista "
+"materializzata"
 
 #: commands/statscmds.c:170 commands/statscmds.c:176
 #, c-format
 msgid "only simple column references are allowed in CREATE STATISTICS"
 msgstr ""
+"solo riferimenti a colonne semplici sono consentiti in CREATE STATISTICS"
 
 #: commands/statscmds.c:183
 #, c-format
 msgid "column \"%s\" referenced in statistics does not exist"
-msgstr ""
+msgstr "la colonna \"%s\" nominata nella statistica non esiste"
 
 #: commands/statscmds.c:191
 #, c-format
 msgid "statistics creation on system columns is not supported"
-msgstr ""
+msgstr "la creazione di statistiche su colonne di sistema non è supportata"
 
 #: commands/statscmds.c:198
 #, c-format
@@ -9017,92 +9051,97 @@ msgid ""
 "column \"%s\" cannot be used in statistics because its type has no default "
 "btree operator class"
 msgstr ""
+"la colonna \"%s\" non può essere usata in una statistica perché il suo tipo "
+"non ha una classe di operatori btree definita"
 
 #: commands/statscmds.c:205
 #, c-format
 msgid "cannot have more than %d columns in statistics"
-msgstr ""
+msgstr "non è possibile avere più di %d colonne in una statistica"
 
 #: commands/statscmds.c:220
 #, c-format
 msgid "extended statistics require at least 2 columns"
-msgstr ""
+msgstr "una statistica estesa richiede almeno due colonne"
 
 #: commands/statscmds.c:238
 #, c-format
 msgid "duplicate column name in statistics definition"
-msgstr ""
+msgstr "nome di colonna duplicato nella definizione della statistica"
 
 #: commands/statscmds.c:266
 #, c-format
 msgid "unrecognized statistic type \"%s\""
-msgstr ""
+msgstr "tipo di statistica \"%s\" sconosciuto"
 
 #: commands/subscriptioncmds.c:173
 #, c-format
 msgid "unrecognized subscription parameter: %s"
-msgstr ""
+msgstr "parametro di sottoscrizione sconosciuto: %s"
 
 #: commands/subscriptioncmds.c:186
 #, c-format
 msgid "connect = false and enabled = true are mutually exclusive options"
-msgstr ""
+msgstr "connect = false ed enabled = true sono opzioni mutuamente esclusive"
 
 #: commands/subscriptioncmds.c:191
 #, c-format
 msgid "connect = false and create_slot = true are mutually exclusive options"
-msgstr ""
+msgstr "connect = false e create_slot = true sono opzioni mutuamente esclusive"
 
 #: commands/subscriptioncmds.c:196
 #, c-format
 msgid "connect = false and copy_data = true are mutually exclusive options"
-msgstr ""
+msgstr "connect = false e copy_data = true sono opzioni mutuamente esclusive"
 
 #: commands/subscriptioncmds.c:213
 #, c-format
 msgid "slot_name = NONE and enabled = true are mutually exclusive options"
-msgstr ""
+msgstr "slot_name = NONE ed enabled = true sono opzioni mutuamente esclusive"
 
 #: commands/subscriptioncmds.c:218
 #, c-format
 msgid "slot_name = NONE and create_slot = true are mutually exclusive options"
 msgstr ""
+"slot_name = NONE e create_slot = true sono opzioni mutuamente esclusive"
 
 #: commands/subscriptioncmds.c:223
 #, c-format
 msgid "subscription with slot_name = NONE must also set enabled = false"
 msgstr ""
+"una sottoscrizione con slot_name = NONE deve avere anche enabled = false"
 
 #: commands/subscriptioncmds.c:228
 #, c-format
 msgid "subscription with slot_name = NONE must also set create_slot = false"
 msgstr ""
+"una sottoscrizione con slot_name = NONE deve avere anche create_slot = false"
 
 #: commands/subscriptioncmds.c:270
 #, c-format
 msgid "publication name \"%s\" used more than once"
-msgstr ""
+msgstr "nome di pubblicazione \"%s\" usato più di una volta"
 
 #: commands/subscriptioncmds.c:332
 #, c-format
 msgid "must be superuser to create subscriptions"
-msgstr ""
+msgstr "occorre essere un superutente per creare sottoscrizioni"
 
 #: commands/subscriptioncmds.c:412 commands/subscriptioncmds.c:508
 #: replication/logical/tablesync.c:798 replication/logical/worker.c:1579
 #, c-format
 msgid "could not connect to the publisher: %s"
-msgstr ""
+msgstr "connessione alla pubblicazione fallita: %s"
 
 #: commands/subscriptioncmds.c:443
 #, c-format
 msgid "synchronized table states"
-msgstr ""
+msgstr "sincronizzazione degli stati della tabella"
 
 #: commands/subscriptioncmds.c:457
 #, c-format
 msgid "created replication slot \"%s\" on publisher"
-msgstr ""
+msgstr "creazione dello slot di replica \"%s\" sulla pubblicazione"
 
 #: commands/subscriptioncmds.c:474
 #, c-format
@@ -9110,37 +9149,43 @@ msgid ""
 "tables were not subscribed, you will have to run ALTER SUBSCRIPTION ... "
 "REFRESH PUBLICATION to subscribe the tables"
 msgstr ""
+"le tabelle non sono state sottoscritte, è necessario eseguire ALTER "
+"SUBSCRIPTION ... REFRESH PUBLICATION per sottoscrivere le tabelle"
 
 #: commands/subscriptioncmds.c:564
 #, c-format
 msgid "added subscription for table %s.%s"
-msgstr ""
+msgstr "aggiunta sottoscrizione per la tabella %s.%s"
 
 #: commands/subscriptioncmds.c:590
 #, c-format
 msgid "removed subscription for table %s.%s"
-msgstr ""
+msgstr "rimossa sottoscrizione per la tabella %s.%s"
 
 #: commands/subscriptioncmds.c:655
 #, c-format
 msgid "cannot set slot_name = NONE for enabled subscription"
 msgstr ""
+"non è possibile impostare slot_name = NONE per le sottoscrizioni attive"
 
 #: commands/subscriptioncmds.c:689
 #, c-format
 msgid "cannot enable subscription that does not have a slot name"
 msgstr ""
+"non è possibile abilitare una sottoscrizione che non ha un nome di slot"
 
 #: commands/subscriptioncmds.c:735 commands/subscriptioncmds.c:753
 #, c-format
 msgid ""
 "ALTER SUBSCRIPTION ... REFRESH is not allowed for disabled subscriptions"
 msgstr ""
+"ALTER SUBSCRIPTION ... REFRESH non è consentito per sottoscrizioni "
+"disabilitate"
 
 #: commands/subscriptioncmds.c:830
 #, c-format
 msgid "subscription \"%s\" does not exist, skipping"
-msgstr ""
+msgstr "la sottoscrizione \"%s\" non esiste, saltata"
 
 #: commands/subscriptioncmds.c:931
 #, c-format
@@ -9148,12 +9193,14 @@ msgid ""
 "could not connect to publisher when attempting to drop the replication slot "
 "\"%s\""
 msgstr ""
+"non è possibile connettersi alla pubblicazione mentre si sta eliminando lo "
+"slot di replica \"%s\""
 
 #: commands/subscriptioncmds.c:933 commands/subscriptioncmds.c:947
 #: replication/logical/tablesync.c:847 replication/logical/tablesync.c:867
 #, c-format
 msgid "The error was: %s"
-msgstr ""
+msgstr "L'errore è stato: %s"
 
 #: commands/subscriptioncmds.c:934
 #, c-format
@@ -9161,31 +9208,35 @@ msgid ""
 "Use ALTER SUBSCRIPTION ... SET (slot_name = NONE) to disassociate the "
 "subscription from the slot."
 msgstr ""
+"Usa ALTER SUBSCRIPTION ... SET (slot_name = NONE) per disassociare la "
+"sottoscrizione dallo slot."
 
 #: commands/subscriptioncmds.c:945
 #, c-format
 msgid "could not drop the replication slot \"%s\" on publisher"
-msgstr ""
+msgstr "eliminazione dello slot di replica \"%s\" sulla pubblicazione fallita"
 
 #: commands/subscriptioncmds.c:950
 #, c-format
 msgid "dropped replication slot \"%s\" on publisher"
-msgstr ""
+msgstr "eliminazione dello slot di replica \"%s\" sulla pubblicazione"
 
 #: commands/subscriptioncmds.c:991
 #, c-format
 msgid "permission denied to change owner of subscription \"%s\""
 msgstr ""
+"permesso negato nel cambiare il proprietario della sottoscrizione \"%s\""
 
 #: commands/subscriptioncmds.c:993
 #, c-format
 msgid "The owner of a subscription must be a superuser."
-msgstr ""
+msgstr "Il proprietario della sottoscrizione deve essere un superutente."
 
 #: commands/subscriptioncmds.c:1106
 #, c-format
 msgid "could not receive list of replicated tables from the publisher: %s"
 msgstr ""
+"errore nell'ottenere la lista delle tabelle replicate dalla pubblicazione: %s"
 
 #: commands/tablecmds.c:221 commands/tablecmds.c:263
 #, c-format
@@ -9297,11 +9348,13 @@ msgstr ""
 #, c-format
 msgid "cannot create table with OIDs as partition of table without OIDs"
 msgstr ""
+"non è possibile creare una tabella con OID come partizione di una tabella "
+"senza OID"
 
 #: commands/tablecmds.c:774 parser/parse_utilcmd.c:3270
 #, c-format
 msgid "\"%s\" is not partitioned"
-msgstr ""
+msgstr "\"%s\" non è partizionata"
 
 #: commands/tablecmds.c:953
 #, c-format
@@ -9317,7 +9370,7 @@ msgstr "DROP INDEX CONCURRENTLY non supporta CASCADE"
 #: commands/tablecmds.c:1234
 #, c-format
 msgid "cannot truncate only a partitioned table"
-msgstr ""
+msgstr "non è possibile troncare solo una tabella partizionata"
 
 #: commands/tablecmds.c:1235
 #, c-format
@@ -9325,6 +9378,8 @@ msgid ""
 "Do not specify the ONLY keyword, or use truncate only on the partitions "
 "directly."
 msgstr ""
+"Non specificare la parola chiave ONLY, oppure usa TRUNCATE ONLY sulle "
+"partizioni direttamente."
 
 #: commands/tablecmds.c:1263
 #, c-format
@@ -9339,12 +9394,12 @@ msgstr "non è possibile troncare tabelle temporanee di altre sessioni"
 #: commands/tablecmds.c:1742 commands/tablecmds.c:10966
 #, c-format
 msgid "cannot inherit from partitioned table \"%s\""
-msgstr ""
+msgstr "non è possibile ereditare dalla tabella partizionata \"%s\""
 
 #: commands/tablecmds.c:1747
 #, c-format
 msgid "cannot inherit from partition \"%s\""
-msgstr ""
+msgstr "non è possibile ereditare dalla partizione \"%s\""
 
 #: commands/tablecmds.c:1755 parser/parse_utilcmd.c:2030
 #, c-format
@@ -9566,7 +9621,7 @@ msgstr "il vincolo di controllo \"%s\" è violato da alcune righe"
 #: commands/tablecmds.c:4578
 #, c-format
 msgid "partition constraint is violated by some row"
-msgstr ""
+msgstr "il vincolo di partizione è violato da qualche riga"
 
 #: commands/tablecmds.c:4716 commands/trigger.c:245 rewrite/rewriteDefine.c:266
 #: rewrite/rewriteDefine.c:914
@@ -9664,7 +9719,7 @@ msgstr "non è possibile aggiungere una colonna ad una tabella con tipo"
 #: commands/tablecmds.c:5103
 #, c-format
 msgid "cannot add column to a partition"
-msgstr ""
+msgstr "non è possibile aggiungere una colonna ad una partizione"
 
 #: commands/tablecmds.c:5132 commands/tablecmds.c:11190
 #, c-format
@@ -9691,6 +9746,8 @@ msgstr ""
 #, c-format
 msgid "cannot recursively add identity column to table that has child tables"
 msgstr ""
+"non è possibile aggiungere ricorsivamente una colonna identità ad una "
+"tabella che ha tabelle figlie"
 
 #: commands/tablecmds.c:5395
 #, c-format
@@ -9713,12 +9770,14 @@ msgid ""
 "cannot remove constraint from only the partitioned table when partitions "
 "exist"
 msgstr ""
+"non è possibile rimuovere un vincolo solo da una tabella partizionata se ci "
+"sono partizioni esistenti"
 
 #: commands/tablecmds.c:5576 commands/tablecmds.c:5723
 #: commands/tablecmds.c:6520 commands/tablecmds.c:8555
 #, c-format
 msgid "Do not specify the ONLY keyword."
-msgstr ""
+msgstr "Non specificare la parola chiave ONLY."
 
 #: commands/tablecmds.c:5608 commands/tablecmds.c:5755
 #: commands/tablecmds.c:5810 commands/tablecmds.c:5885
@@ -9733,7 +9792,7 @@ msgstr "non è possibile modificare la colonna di sistema \"%s\""
 #: commands/tablecmds.c:5614 commands/tablecmds.c:5816
 #, c-format
 msgid "column \"%s\" of relation \"%s\" is an identity column"
-msgstr ""
+msgstr "la colonna \"%s\" della relazione \"%s\" è una colonna identità"
 
 #: commands/tablecmds.c:5650
 #, c-format
@@ -9743,18 +9802,20 @@ msgstr "la colonna \"%s\" è in una chiave primaria"
 #: commands/tablecmds.c:5672
 #, c-format
 msgid "column \"%s\" is marked NOT NULL in parent table"
-msgstr ""
+msgstr "la colonna \"%s\" è specificata NOT NULL nella tabella padre"
 
 #: commands/tablecmds.c:5722
 #, c-format
 msgid ""
 "cannot add constraint to only the partitioned table when partitions exist"
 msgstr ""
+"non è possibile aggiungere un vincolo solo alla tabella partizionata se "
+"esistono partizioni"
 
 #: commands/tablecmds.c:5818
 #, c-format
 msgid "Use ALTER TABLE ... ALTER COLUMN ... DROP IDENTITY instead."
-msgstr ""
+msgstr "Usa invece ALTER TABLE ... ALTER COLUMN ... DROP IDENTITY."
 
 #: commands/tablecmds.c:5896
 #, c-format
@@ -9762,26 +9823,29 @@ msgid ""
 "column \"%s\" of relation \"%s\" must be declared NOT NULL before identity "
 "can be added"
 msgstr ""
+"la colonna \"%s\" della relazione \"%s\" deve essere dichiarata NOT NULL "
+"prima che possa essere aggiunta l'identità"
 
 #: commands/tablecmds.c:5902
 #, c-format
 msgid "column \"%s\" of relation \"%s\" is already an identity column"
-msgstr ""
+msgstr "la colonna \"%s\" della relazione \"%s\" è già una colonna identità"
 
 #: commands/tablecmds.c:5908
 #, c-format
 msgid "column \"%s\" of relation \"%s\" already has a default value"
-msgstr ""
+msgstr "la colonna \"%s\" della relazione \"%s\" ha già un valore predefinito"
 
 #: commands/tablecmds.c:5985 commands/tablecmds.c:6046
 #, c-format
 msgid "column \"%s\" of relation \"%s\" is not an identity column"
-msgstr ""
+msgstr "la colonna \"%s\" della relazione \"%s\" non è una colonna identità"
 
 #: commands/tablecmds.c:6051
 #, c-format
 msgid "column \"%s\" of relation \"%s\" is not an identity column, skipping"
 msgstr ""
+"la colonna \"%s\" della relazione \"%s\" non è una colonna identità, saltata"
 
 #: commands/tablecmds.c:6135
 #, c-format
@@ -9827,17 +9891,22 @@ msgstr "non è possibile eliminare la colonna ereditata \"%s\""
 #, c-format
 msgid "cannot drop column named in partition key"
 msgstr ""
+"non è possibile eliminare una colonna nominata come chiave di partizione"
 
 #: commands/tablecmds.c:6495
 #, c-format
 msgid "cannot drop column referenced in partition key expression"
 msgstr ""
+"non è possibile eliminare una colonna referenziata in un'espressione di "
+"partizione"
 
 #: commands/tablecmds.c:6519
 #, c-format
 msgid ""
 "cannot drop column from only the partitioned table when partitions exist"
 msgstr ""
+"non è possibile eliminare una colonna solo dalla tabella partizionata se "
+"esistono delle partizioni"
 
 #: commands/tablecmds.c:6736
 #, c-format
@@ -9854,7 +9923,7 @@ msgstr "il vincolo deve essere aggiunto anche alle tabelle figlie"
 #: commands/tablecmds.c:7019
 #, c-format
 msgid "cannot reference partitioned table \"%s\""
-msgstr ""
+msgstr "non è possibile referenziare la tabella partizionata \"%s\""
 
 #: commands/tablecmds.c:7025
 #, c-format
@@ -10006,11 +10075,14 @@ msgstr "non è possibile modificare la colonna ereditata \"%s\""
 #, c-format
 msgid "cannot alter type of column named in partition key"
 msgstr ""
+"non è possibile cambiare il tipo di una colonna in una chiave di partizione"
 
 #: commands/tablecmds.c:8714
 #, c-format
 msgid "cannot alter type of column referenced in partition key expression"
 msgstr ""
+"non è possibile cambiare il tipo di una colonna referenziata in una "
+"espressione di partizione"
 
 #: commands/tablecmds.c:8764
 #, c-format
@@ -10178,12 +10250,12 @@ msgstr "non è possibile cambiare ereditarietà di tabelle con tipo"
 #: commands/tablecmds.c:10910 commands/tablecmds.c:11438
 #, c-format
 msgid "cannot change inheritance of a partition"
-msgstr ""
+msgstr "non è possibile cambiare ereditarietà di una partizione"
 
 #: commands/tablecmds.c:10915
 #, c-format
 msgid "cannot change inheritance of partitioned table"
-msgstr ""
+msgstr "non è possibile cambiare ereditarietà di una tabella partizionata"
 
 #: commands/tablecmds.c:10960
 #, c-format
@@ -10193,7 +10265,7 @@ msgstr "non è possibile ereditare tabelle temporanee di un'altra sessione"
 #: commands/tablecmds.c:10973
 #, c-format
 msgid "cannot inherit from a partition"
-msgstr ""
+msgstr "non è possibile ereditare da una partizione"
 
 #: commands/tablecmds.c:10995 commands/tablecmds.c:13441
 #, c-format
@@ -10253,7 +10325,7 @@ msgstr "la tabella figlia non ha il vincolo \"%s\""
 #: commands/tablecmds.c:11532
 #, c-format
 msgid "relation \"%s\" is not a partition of relation \"%s\""
-msgstr ""
+msgstr "la relazione \"%s\" non è una partizione della relazione \"%s\""
 
 #: commands/tablecmds.c:11538
 #, c-format
@@ -10350,11 +10422,13 @@ msgstr ""
 msgid ""
 "cannot change table \"%s\" to unlogged because it is part of a publication"
 msgstr ""
+"non è possibile rendere la tabella \"%s\" non loggata perché è parte di una "
+"pubblicazione"
 
 #: commands/tablecmds.c:12328
 #, c-format
 msgid "Unlogged relations cannot be replicated."
-msgstr ""
+msgstr "Le tabelle non loggate non possono essere replicate."
 
 #: commands/tablecmds.c:12373
 #, c-format
@@ -10401,47 +10475,52 @@ msgstr ""
 #: commands/tablecmds.c:13135
 #, c-format
 msgid "unrecognized partitioning strategy \"%s\""
-msgstr ""
+msgstr "strategia di partizionamento \"%s\" sconosciuta"
 
 #: commands/tablecmds.c:13161
 #, c-format
 msgid "column \"%s\" appears more than once in partition key"
-msgstr ""
+msgstr "la colonna \"%s\" appare più di una volta nella chiave di partizione"
 
 #: commands/tablecmds.c:13209
 #, c-format
 msgid "column \"%s\" named in partition key does not exist"
-msgstr ""
+msgstr "la colonna \"%s\" nominata nella chiave di partizione non esiste"
 
 #: commands/tablecmds.c:13216
 #, c-format
 msgid "cannot use system column \"%s\" in partition key"
 msgstr ""
+"non è possibile usare la colonna di sistema \"%s\" nella chiave di partizione"
 
 #: commands/tablecmds.c:13274
 #, c-format
 msgid "functions in partition key expression must be marked IMMUTABLE"
-msgstr ""
+msgstr "le funzioni nelle espressioni di partizione devono essere IMMUTABLE"
 
 #: commands/tablecmds.c:13283
 #, c-format
 msgid "cannot use constant expression as partition key"
 msgstr ""
+"non è possibile usare un'espressione costante come chiave di partizione"
 
 #: commands/tablecmds.c:13297
 #, c-format
 msgid "partition key expressions cannot contain whole-row references"
 msgstr ""
+"l'espressione di partizione non può contenere riferimenti alla riga intera"
 
 #: commands/tablecmds.c:13318
 #, c-format
 msgid "could not determine which collation to use for partition expression"
 msgstr ""
+"non è possibile determinare quale ordinamento usare per l'espressione di "
+"partizione"
 
 #: commands/tablecmds.c:13343
 #, c-format
 msgid "data type %s has no default btree operator class"
-msgstr ""
+msgstr "il tipo di dati %s non ha una classe di operatori btree predefinita"
 
 #: commands/tablecmds.c:13345
 #, c-format
@@ -10449,42 +10528,52 @@ msgid ""
 "You must specify a btree operator class or define a default btree operator "
 "class for the data type."
 msgstr ""
+"Devi specificare una classe di operatori btree o definire una classe di "
+"operatori btree predefinita per il tipo di dati."
 
 #: commands/tablecmds.c:13392
 #, c-format
 msgid "\"%s\" is already a partition"
-msgstr ""
+msgstr "\"%s\" è già una partizione"
 
 #: commands/tablecmds.c:13398
 #, c-format
 msgid "cannot attach a typed table as partition"
-msgstr ""
+msgstr "non è possibile agganciare una tabella con tipo come partizione"
 
 #: commands/tablecmds.c:13414
 #, c-format
 msgid "cannot attach inheritance child as partition"
 msgstr ""
+"non è possibile agganciare una tabella figlia di ereditarietà come partizione"
 
 #: commands/tablecmds.c:13428
 #, c-format
 msgid "cannot attach inheritance parent as partition"
 msgstr ""
+"non è possibile agganciare una tabella padre di ereditarietà come partizione"
 
 #: commands/tablecmds.c:13451
 #, c-format
 msgid ""
 "cannot attach a permanent relation as partition of temporary relation \"%s\""
 msgstr ""
+"non è possibile agganciare una relazione permanente come partizione della "
+"relazione temporanea \"%s\""
 
 #: commands/tablecmds.c:13459
 #, c-format
 msgid "cannot attach as partition of temporary relation of another session"
 msgstr ""
+"non è possibile agganciare una partizione di relazione temporanea di "
+"un'altra sessione"
 
 #: commands/tablecmds.c:13466
 #, c-format
 msgid "cannot attach temporary relation of another session as partition"
 msgstr ""
+"non è possibile agganciare una relazione temporanea di un'altra sessione "
+"come partizione"
 
 #: commands/tablecmds.c:13472
 #, c-format
@@ -10492,6 +10581,8 @@ msgid ""
 "cannot attach table \"%s\" without OIDs as partition of table \"%s\" with "
 "OIDs"
 msgstr ""
+"non è possibile agganciare la tabella \"%s\" senza OID come partizione della "
+"tabella \"%s\" con OID"
 
 #: commands/tablecmds.c:13480
 #, c-format
@@ -10499,22 +10590,30 @@ msgid ""
 "cannot attach table \"%s\" with OIDs as partition of table \"%s\" without "
 "OIDs"
 msgstr ""
+"non è possibile agganciare la tabella \"%s\" con OID come partizione della "
+"tabella \"%s\" senza OID"
 
 #: commands/tablecmds.c:13502
 #, c-format
 msgid "table \"%s\" contains column \"%s\" not found in parent \"%s\""
 msgstr ""
+"la tabella \"%s\" contiene la colonna \"%s\" che non è presente nel padre "
+"\"%s\""
 
 #: commands/tablecmds.c:13505
 #, c-format
 msgid "New partition should contain only the columns present in parent."
 msgstr ""
+"La partizione dovrebbe contenere solo le colonne presenti nella tabella "
+"padre."
 
 #: commands/tablecmds.c:13677
 #, c-format
 msgid ""
 "partition constraint for table \"%s\" is implied by existing constraints"
 msgstr ""
+"il vincolo di partizione per la tabella \"%s\" è implicito dai vincoli "
+"esistenti"
 
 #: commands/tablespace.c:162 commands/tablespace.c:179
 #: commands/tablespace.c:190 commands/tablespace.c:198
@@ -10661,7 +10760,7 @@ msgstr "Le tabelle non possono avere trigger INSTEAD OF."
 #: commands/trigger.c:196
 #, c-format
 msgid "Partitioned tables cannot have ROW triggers."
-msgstr ""
+msgstr "Le tabelle partizionate non possono avere trigger ROW."
 
 #: commands/trigger.c:207 commands/trigger.c:214 commands/trigger.c:374
 #, c-format
