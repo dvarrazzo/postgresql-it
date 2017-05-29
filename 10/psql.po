@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-05-22 07:45+0000\n"
-"PO-Revision-Date: 2017-04-23 02:39+0100\n"
+"PO-Revision-Date: 2017-05-29 18:24+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -188,6 +188,8 @@ msgstr "\\%s: parametro in eccesso \"%s\" ignorato\n"
 msgid ""
 "\\%s command ignored; use \\endif or Ctrl-C to exit current \\if block\n"
 msgstr ""
+"comando \\%s ignorato; usa \\endif o Ctrl-C per uscire dal blocco \\if "
+"corrente\n"
 
 #: command.c:553
 #, c-format
@@ -280,27 +282,27 @@ msgstr "\\%s: parametro richiesto mancante\n"
 #: command.c:1572
 #, c-format
 msgid "\\elif: cannot occur after \\else\n"
-msgstr ""
+msgstr "\\elif: non può apparire dopo \\else\n"
 
 #: command.c:1577
 #, c-format
 msgid "\\elif: no matching \\if\n"
-msgstr ""
+msgstr "\\elif: \\if corrispondente non trovato\n"
 
 #: command.c:1641
 #, c-format
 msgid "\\else: cannot occur after \\else\n"
-msgstr ""
+msgstr "\\else: non può apparire dopo \\else\n"
 
 #: command.c:1646
 #, c-format
 msgid "\\else: no matching \\if\n"
-msgstr ""
+msgstr "\\else: \\if corrispondente non trovato\n"
 
 #: command.c:1686
 #, c-format
 msgid "\\endif: no matching \\if\n"
-msgstr ""
+msgstr "\\endif: \\if corrispondente non trovato\n"
 
 #: command.c:1841
 msgid "Query buffer is empty."
@@ -322,7 +324,7 @@ msgstr "Le password non corrispondono.\n"
 #: command.c:1967
 #, c-format
 msgid "\\%s: could not read value for variable\n"
-msgstr ""
+msgstr "\\%s: errore nella lettura del valore della variabile\n"
 
 #: command.c:2070
 msgid "Query buffer reset (cleared)."
@@ -750,6 +752,8 @@ msgstr "non è possibile effettuare l'escape senza una connessione attiva\n"
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"l'argomento del comando shell contiene un \"a capo\" o un ritorno carrello: "
+"\"%s\"\n"
 
 #: common.c:415
 #, c-format
@@ -784,17 +788,17 @@ msgstr "Tempo: %.3f ms\n"
 #: common.c:608
 #, c-format
 msgid "Time: %.3f ms (%02d:%06.3f)\n"
-msgstr ""
+msgstr "Tempo: %.3f ms (%02d:%06.3f)\n"
 
 #: common.c:617
 #, c-format
 msgid "Time: %.3f ms (%02d:%02d:%06.3f)\n"
-msgstr ""
+msgstr "Tempo: %.3f ms (%02d:%02d:%06.3f)\n"
 
 #: common.c:624
 #, c-format
 msgid "Time: %.3f ms (%.0f d %02d:%02d:%06.3f)\n"
-msgstr ""
+msgstr "Tempo: %.3f ms (%.0f d %02d:%02d:%06.3f)\n"
 
 #: common.c:761
 #, c-format
@@ -917,6 +921,8 @@ msgid ""
 "Enter data to be copied followed by a newline.\n"
 "End with a backslash and a period on a line by itself, or an EOF signal."
 msgstr ""
+"Inserire i dati da copiare seguiti da un \"a capo\".\n"
+"Terminare con un backslash ed un punto su una singola riga, o un segnale EOF."
 
 #: copy.c:671
 msgid "aborted because of read failure"
@@ -1260,7 +1266,7 @@ msgstr "tipo"
 
 #: describe.c:1045
 msgid "schema"
-msgstr ""
+msgstr "schema"
 
 #: describe.c:1069
 msgid "Default access privileges"
@@ -1370,15 +1376,15 @@ msgstr "Colonna"
 
 #: describe.c:1716 describe.c:3546
 msgid "Collation"
-msgstr ""
+msgstr "Ordinamento"
 
 #: describe.c:1717 describe.c:3553
 msgid "Nullable"
-msgstr ""
+msgstr "Può essere null"
 
 #: describe.c:1718 describe.c:3554
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: describe.c:1723
 msgid "Value"
@@ -1404,17 +1410,17 @@ msgstr "Dest. stat."
 #: describe.c:1893
 #, c-format
 msgid "Partition of: %s %s"
-msgstr ""
+msgstr "Partizione di: %s %s"
 
 #: describe.c:1899
 #, c-format
 msgid "Partition constraint: %s"
-msgstr ""
+msgstr "Vincolo di partizione: %s"
 
 #: describe.c:1922
 #, c-format
 msgid "Partition key: %s"
-msgstr ""
+msgstr "Chiave di partizione: %s"
 
 #: describe.c:1990
 msgid "primary key, "
@@ -1462,7 +1468,7 @@ msgstr "Proprietario: %s"
 #: describe.c:2061
 #, c-format
 msgid "Sequence for identity column: %s"
-msgstr ""
+msgstr "Sequenza per la colonna identità: %s"
 
 #: describe.c:2125
 msgid "Indexes:"
@@ -1502,7 +1508,7 @@ msgstr "Regole (sicurezza per riga disabilitata):"
 
 #: describe.c:2405
 msgid "Statistics objects:"
-msgstr ""
+msgstr "Oggetti statistiche:"
 
 #: describe.c:2508 describe.c:2590
 msgid "Rules:"
@@ -1522,7 +1528,7 @@ msgstr "Regole abilitate solo su replica:"
 
 #: describe.c:2554
 msgid "Publications:"
-msgstr ""
+msgstr "Pubblicazioni:"
 
 #: describe.c:2573
 msgid "View definition:"
@@ -1555,12 +1561,12 @@ msgstr "Trigger abilitati solo su replica."
 #: describe.c:2782
 #, c-format
 msgid "Server: %s"
-msgstr ""
+msgstr "Server: %s"
 
 #: describe.c:2790
 #, c-format
 msgid "FDW Options: (%s)"
-msgstr ""
+msgstr "Opzioni FDW: (%s)"
 
 #: describe.c:2809
 msgid "Inherits"
@@ -1574,7 +1580,7 @@ msgstr "Numero di tabelle figlio: %d (Usa \\d+ per elencarle.)"
 #: describe.c:2865
 #, c-format
 msgid "Number of partitions: %d (Use \\d+ to list them.)"
-msgstr ""
+msgstr "Numero di partizioni: %d (Usa \\d+ per elencarle.)"
 
 #: describe.c:2873
 msgid "Child tables"
@@ -1582,7 +1588,7 @@ msgstr "Tabelle figlio"
 
 #: describe.c:2873
 msgid "Partitions"
-msgstr ""
+msgstr "Partizioni"
 
 #: describe.c:2907
 #, c-format
@@ -1846,7 +1852,7 @@ msgstr "Il server (versione %s) non supporta gli ordinamenti.\n"
 
 #: describe.c:3885
 msgid "Provider"
-msgstr ""
+msgstr "Provider"
 
 #: describe.c:3920
 msgid "List of collations"
@@ -2070,53 +2076,53 @@ msgstr "Oggetti nell'estensione \"%s\""
 #: describe.c:5057 describe.c:5120
 #, c-format
 msgid "The server (version %s) does not support publications.\n"
-msgstr ""
+msgstr "Il server (versione %s) non supporta pubblicazioni.\n"
 
 #: describe.c:5073 describe.c:5165
 msgid "Inserts"
-msgstr ""
+msgstr "Inserimenti"
 
 #: describe.c:5074 describe.c:5166
 msgid "Updates"
-msgstr ""
+msgstr "Modifiche"
 
 #: describe.c:5075 describe.c:5167
 msgid "Deletes"
-msgstr ""
+msgstr "Cancellazioni"
 
 #: describe.c:5092
 msgid "List of publications"
-msgstr ""
+msgstr "Lista delle pubblicazioni"
 
 #: describe.c:5162
 #, c-format
 msgid "Publication %s"
-msgstr ""
+msgstr "Pubblicazione %s"
 
 #: describe.c:5207
 msgid "Tables:"
-msgstr ""
+msgstr "Tabelle:"
 
 #: describe.c:5249
 #, c-format
 msgid "The server (version %s) does not support subscriptions.\n"
-msgstr ""
+msgstr "Il server (versione %s) non supporta sottoscrizioni.\n"
 
 #: describe.c:5265
 msgid "Publication"
-msgstr ""
+msgstr "Pubblicazione"
 
 #: describe.c:5272
 msgid "Synchronous commit"
-msgstr ""
+msgstr "Commit sincrono"
 
 #: describe.c:5273
 msgid "Conninfo"
-msgstr ""
+msgstr "Conninfo"
 
 #: describe.c:5295
 msgid "List of subscriptions"
-msgstr ""
+msgstr "Lista di sottoscrizioni"
 
 #: help.c:62
 #, c-format
@@ -2504,6 +2510,7 @@ msgstr ""
 #, c-format
 msgid "  \\gx [FILE]             as \\g, but forces expanded output mode\n"
 msgstr ""
+"  \\g [FILE]              come \\g, ma forza un modo di output espanso\n"
 
 #: help.c:177
 #, c-format
@@ -2673,18 +2680,19 @@ msgstr ""
 #: help.c:213
 #, c-format
 msgid "Conditional\n"
-msgstr ""
+msgstr "Condizionale\n"
 
 #: help.c:214
 #, c-format
 msgid "  \\if EXPR               begin conditional block\n"
-msgstr ""
+msgstr "  \\if ESPR               inizia un blocco condizionale\n"
 
 #: help.c:215
 #, c-format
 msgid ""
 "  \\elif EXPR             alternative within current conditional block\n"
 msgstr ""
+"  \\elif ESPR             alternativa all'interno di un blocco condizionale\n"
 
 #: help.c:216
 #, c-format
@@ -2692,11 +2700,12 @@ msgid ""
 "  \\else                  final alternative within current conditional "
 "block\n"
 msgstr ""
+"  \\else                  alternativa finale in un blocco condizionale\n"
 
 #: help.c:217
 #, c-format
 msgid "  \\endif                 end conditional block\n"
-msgstr ""
+msgstr "  \\endif                 fine del blocco condizionale\n"
 
 #: help.c:220
 #, c-format
@@ -2870,12 +2879,12 @@ msgstr ""
 #: help.c:251
 #, c-format
 msgid "  \\dRp[+] [PATTERN]      list replication publications\n"
-msgstr ""
+msgstr "  \\dRp[+] [MODELLO]      elenca le pubblicazioni di replica\n"
 
 #: help.c:252
 #, c-format
 msgid "  \\dRs[+] [PATTERN]      list replication subscriptions\n"
-msgstr ""
+msgstr "  \\dRs[+] [MODELLO]      elenca le sottoscrizioni di replica\n"
 
 #: help.c:253
 #, c-format
@@ -3238,6 +3247,8 @@ msgstr ""
 msgid ""
 "  HISTSIZE           max number of commands to store in the command history\n"
 msgstr ""
+"  HISTSIZE           numero massimo di comandi da salvare nella storia dei "
+"comandi\n"
 
 #: help.c:359
 #, c-format
@@ -3251,6 +3262,8 @@ msgid ""
 "  IGNOREEOF          number of EOFs needed to terminate an interactive "
 "session\n"
 msgstr ""
+"  IGNOREEOF          numero di EOF richiesti per terminare una sessione "
+"interattiva\n"
 
 #: help.c:361
 #, c-format
@@ -3693,7 +3706,7 @@ msgstr "Large object"
 #: mainloop.c:136
 #, c-format
 msgid "\\if: escaped\n"
-msgstr ""
+msgstr "\\if: uscita\n"
 
 #: mainloop.c:183
 #, c-format
@@ -3732,11 +3745,12 @@ msgstr ""
 #, c-format
 msgid "query ignored; use \\endif or Ctrl-C to exit current \\if block\n"
 msgstr ""
+"query ignorata: usa \\endif o Ctrl-C per uscire dal blocco \\if corrente\n"
 
 #: mainloop.c:494
 #, c-format
 msgid "reached EOF without finding closing \\endif(s)\n"
-msgstr ""
+msgstr "raggiunta fine file senza aver trovato \\endif finali\n"
 
 #: psqlscanslash.l:614
 #, c-format
@@ -4280,7 +4294,7 @@ msgstr "espressione_check"
 
 #: sql_help.c:814 sql_help.c:2208
 msgid "publication_parameter"
-msgstr ""
+msgstr "parametro_pubblicazione"
 
 #: sql_help.c:857 sql_help.c:1357 sql_help.c:2060 sql_help.c:2240
 #: sql_help.c:2768
@@ -4324,35 +4338,35 @@ msgstr "cache"
 
 #: sql_help.c:978 sql_help.c:2357
 msgid "conninfo"
-msgstr ""
+msgstr "conninfo"
 
 #: sql_help.c:980 sql_help.c:2358
 msgid "publication_name"
-msgstr ""
+msgstr "nome_pubblicazione"
 
 #: sql_help.c:981 sql_help.c:984
 msgid "refresh_option"
-msgstr ""
+msgstr "opzione_refresh"
 
 #: sql_help.c:989 sql_help.c:2359
 msgid "subscription_parameter"
-msgstr ""
+msgstr "parametro_sottoscrizione"
 
 #: sql_help.c:1100 sql_help.c:1103
 msgid "partition_name"
-msgstr ""
+msgstr "nome_partizione"
 
 #: sql_help.c:1101 sql_help.c:1980 sql_help.c:2476
 msgid "partition_bound_spec"
-msgstr ""
+msgstr "specifica_margine_partizione"
 
 #: sql_help.c:1119 sql_help.c:2488
 msgid "sequence_options"
-msgstr ""
+msgstr "opzioni_sequenza"
 
 #: sql_help.c:1121
 msgid "sequence_option"
-msgstr ""
+msgstr "opzione_sequenza"
 
 #: sql_help.c:1133
 msgid "table_constraint_using_index"
@@ -4401,7 +4415,7 @@ msgstr "nuovo_valore_enum"
 
 #: sql_help.c:1308
 msgid "neighbor_enum_value"
-msgstr ""
+msgstr "valore_enum_vicino"
 
 #: sql_help.c:1310
 msgid "existing_enum_value"
@@ -4747,15 +4761,15 @@ msgstr "nome_fdw"
 
 #: sql_help.c:2341
 msgid "statistics_name"
-msgstr ""
+msgstr "nome_statistica"
 
 #: sql_help.c:2342
 msgid "statistic_type"
-msgstr ""
+msgstr "tipo_statistica"
 
 #: sql_help.c:2356
 msgid "subscription_name"
-msgstr ""
+msgstr "nome_sottoscrizione"
 
 #: sql_help.c:2449
 msgid "source_table"
@@ -4793,11 +4807,11 @@ msgstr "e opzione_like è:"
 
 #: sql_help.c:2513
 msgid "and partition_bound_spec is:"
-msgstr ""
+msgstr "e specifica_margine_partizione è:"
 
 #: sql_help.c:2514 sql_help.c:2515 sql_help.c:2516
 msgid "bound_literal"
-msgstr ""
+msgstr "letterale_limite"
 
 #: sql_help.c:2517
 msgid "index_parameters in UNIQUE, PRIMARY KEY, and EXCLUDE constraints are:"
@@ -4861,7 +4875,7 @@ msgstr "nome_tabella_referenziata"
 
 #: sql_help.c:2659
 msgid "transition_relation_name"
-msgstr ""
+msgstr "nome_tabella_transizione"
 
 #: sql_help.c:2662
 msgid "arguments"
@@ -5302,7 +5316,7 @@ msgstr "cambia la definizione di una regola di sicurezza per riga"
 
 #: sql_help.c:4494
 msgid "change the definition of a publication"
-msgstr ""
+msgstr "cambia la definizione di una pubblicazione"
 
 #: sql_help.c:4499 sql_help.c:4579
 msgid "change a database role"
@@ -5326,11 +5340,11 @@ msgstr "cambia la definizione di un server esterno"
 
 #: sql_help.c:4524
 msgid "change the definition of an extended statistics object"
-msgstr ""
+msgstr "cambia la definizione di una statistica estesa"
 
 #: sql_help.c:4529
 msgid "change the definition of a subscription"
-msgstr ""
+msgstr "cambia la definizione di una sottoscrizione"
 
 #: sql_help.c:4534
 msgid "change a server configuration parameter"
@@ -5386,7 +5400,7 @@ msgstr "avvia un blocco di transazione"
 
 #: sql_help.c:4604
 msgid "force a write-ahead log checkpoint"
-msgstr ""
+msgstr "forza un checkpoint del write-ahead log"
 
 #: sql_help.c:4609
 msgid "close a cursor"
@@ -5496,7 +5510,7 @@ msgstr "definisci una nuova regola di sicurezza per riga per una tabella"
 
 #: sql_help.c:4739
 msgid "define a new publication"
-msgstr ""
+msgstr "definisci una nuova pubblicazione"
 
 #: sql_help.c:4749
 msgid "define a new rewrite rule"
@@ -5516,11 +5530,11 @@ msgstr "definisci un nuovo server esterno"
 
 #: sql_help.c:4769
 msgid "define extended statistics"
-msgstr ""
+msgstr "definisci una statistica estesa"
 
 #: sql_help.c:4774
 msgid "define a new subscription"
-msgstr ""
+msgstr "definisci una nuova sottoscrizione"
 
 #: sql_help.c:4779
 msgid "define a new table"
@@ -5676,7 +5690,7 @@ msgstr "rimuovi una regola di sicurezza per riga da una tabella"
 
 #: sql_help.c:4974
 msgid "remove a publication"
-msgstr ""
+msgstr "rimuovi una pubblicazione"
 
 #: sql_help.c:4984
 msgid "remove a rewrite rule"
@@ -5696,11 +5710,11 @@ msgstr "elimina una descrizione server esterno"
 
 #: sql_help.c:5004
 msgid "remove extended statistics"
-msgstr ""
+msgstr "rimuovi una statistica estesa"
 
 #: sql_help.c:5009
 msgid "remove a subscription"
-msgstr ""
+msgstr "rimuovi una sottoscrizione"
 
 #: sql_help.c:5014
 msgid "remove a table"
@@ -5947,17 +5961,17 @@ msgstr ""
 #: variables.c:139
 #, c-format
 msgid "unrecognized value \"%s\" for \"%s\": boolean expected\n"
-msgstr ""
+msgstr "valore \"%s\" non valido per \"%s\": è necessario un booleano\n"
 
 #: variables.c:176
 #, c-format
 msgid "invalid value \"%s\" for \"%s\": integer expected\n"
-msgstr ""
+msgstr "valore \"%s\" non valido per \"%s\": è necessario un intero\n"
 
 #: variables.c:224
 #, c-format
 msgid "invalid variable name: \"%s\"\n"
-msgstr ""
+msgstr "nome di variabile non valido: \"%s\"\n"
 
 #: variables.c:393
 #, c-format
@@ -5965,3 +5979,5 @@ msgid ""
 "unrecognized value \"%s\" for \"%s\"\n"
 "Available values are: %s.\n"
 msgstr ""
+"valore \"%s\" non riconosciuto per \"%s\"\n"
+"I valori disponibili sono: %s.\n"
