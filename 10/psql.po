@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-05-22 07:45+0000\n"
-"PO-Revision-Date: 2017-05-29 18:24+0100\n"
+"PO-Revision-Date: 2017-05-29 22:06+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2510,7 +2510,7 @@ msgstr ""
 #, c-format
 msgid "  \\gx [FILE]             as \\g, but forces expanded output mode\n"
 msgstr ""
-"  \\g [FILE]              come \\g, ma forza un modo di output espanso\n"
+"  \\gx [FILE]             come \\g, ma forza un modo di output espanso\n"
 
 #: help.c:177
 #, c-format
