@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-05-22 07:38+0000\n"
-"PO-Revision-Date: 2017-05-29 22:05+0100\n"
+"PO-Revision-Date: 2017-06-03 01:29+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -16220,11 +16220,13 @@ msgstr "il nome della funzione \"%s\" non è univoco"
 #, c-format
 msgid "Specify the argument list to select the function unambiguously."
 msgstr ""
+"Specifica l'elenco degli argomenti per selezionare la funzione senza "
+"ambiguità."
 
 #: parser/parse_func.c:1943
 #, c-format
 msgid "could not find a function named \"%s\""
-msgstr ""
+msgstr "funzione \"%s\" non trovata"
 
 #: parser/parse_func.c:2045
 #, c-format
@@ -16244,52 +16246,72 @@ msgstr "la funzione %s non è una funzione di aggregazione"
 #: parser/parse_func.c:2117
 msgid "set-returning functions are not allowed in JOIN conditions"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi in condizioni JOIN"
 
 #: parser/parse_func.c:2130
 msgid "set-returning functions are not allowed in policy expressions"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi nelle regole di "
+"sicurezza"
 
 #: parser/parse_func.c:2145
 msgid "set-returning functions are not allowed in window definitions"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi nelle definizioni di "
+"finestre"
 
 #: parser/parse_func.c:2183
 msgid "set-returning functions are not allowed in check constraints"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi nei vincoli di "
+"controllo"
 
 #: parser/parse_func.c:2187
 msgid "set-returning functions are not allowed in DEFAULT expressions"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi nelle espressioni "
+"DEFAULT"
 
 #: parser/parse_func.c:2190
 msgid "set-returning functions are not allowed in index expressions"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi nelle espressioni "
+"degli indici"
 
 #: parser/parse_func.c:2193
 msgid "set-returning functions are not allowed in index predicates"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi nei predicati degli "
+"indici"
 
 #: parser/parse_func.c:2196
 msgid "set-returning functions are not allowed in transform expressions"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi in espressioni di "
+"trasformazione"
 
 #: parser/parse_func.c:2199
 msgid "set-returning functions are not allowed in EXECUTE parameters"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi in parametri EXECUTE"
 
 #: parser/parse_func.c:2202
 msgid "set-returning functions are not allowed in trigger WHEN conditions"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi nelle condizioni "
+"WHEN dei trigger"
 
 #: parser/parse_func.c:2205
 msgid "set-returning functions are not allowed in partition key expression"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi in espressioni di "
+"partizione"
 
 #. translator: %s is name of a SQL construct, eg GROUP BY
 #: parser/parse_func.c:2225
 #, c-format
 msgid "set-returning functions are not allowed in %s"
-msgstr ""
+msgstr "non si possono usare funzioni che restituiscono insiemi in %s"
 
 #: parser/parse_node.c:87
 #, c-format
@@ -16618,17 +16640,17 @@ msgstr "nome di tipo \"%s\" non valido"
 #: parser/parse_utilcmd.c:264
 #, c-format
 msgid "cannot create partitioned table as inheritance child"
-msgstr ""
+msgstr "non è possibile creare tabelle partizionate come figli di ereditarietà"
 
 #: parser/parse_utilcmd.c:269
 #, c-format
 msgid "cannot partition using more than %d columns"
-msgstr ""
+msgstr "non è possibile partizionare usando più di %d colonne"
 
 #: parser/parse_utilcmd.c:276
 #, c-format
 msgid "cannot list partition using more than one column"
-msgstr ""
+msgstr "non è possibile elencare partizioni che usano più di una colonna"
 
 #: parser/parse_utilcmd.c:428
 #, c-format
@@ -16659,6 +16681,7 @@ msgstr ""
 #, c-format
 msgid "multiple identity specifications for column \"%s\" of table \"%s\""
 msgstr ""
+"specifica di identità multipla per la colonna \"%s\" della tabella \"%s\""
 
 #: parser/parse_utilcmd.c:685 parser/parse_utilcmd.c:802
 #, c-format
@@ -16669,6 +16692,7 @@ msgstr "i vincoli di chiave primaria non sono supportati sulle tabelle esterne"
 #, c-format
 msgid "primary key constraints are not supported on partitioned tables"
 msgstr ""
+"i vincoli di chiave primaria non sono supportati sulle tabelle partizionate"
 
 #: parser/parse_utilcmd.c:700 parser/parse_utilcmd.c:818
 #, c-format
@@ -16678,7 +16702,7 @@ msgstr "i vincoli di unicità non sono supportati sulle tabelle esterne"
 #: parser/parse_utilcmd.c:706 parser/parse_utilcmd.c:824
 #, c-format
 msgid "unique constraints are not supported on partitioned tables"
-msgstr ""
+msgstr "i vincoli di unicità non sono supportati sulle tabelle partizionate"
 
 #: parser/parse_utilcmd.c:723 parser/parse_utilcmd.c:854
 #, c-format
@@ -16689,11 +16713,14 @@ msgstr "i vincoli di chiave esterna non sono supportati sulle tabelle esterne"
 #, c-format
 msgid "foreign key constraints are not supported on partitioned tables"
 msgstr ""
+"i vincoli di chiave esterna non sono supportati sulle tabelle partizionate"
 
 #: parser/parse_utilcmd.c:757
 #, c-format
 msgid "both default and identity specified for column \"%s\" of table \"%s\""
 msgstr ""
+"specificati sia il default che l'identità per la colonna \"%s\" della "
+"tabella \"%s\""
 
 #: parser/parse_utilcmd.c:834
 #, c-format
@@ -16703,7 +16730,7 @@ msgstr "i vincoli esclusione non sono supportati sulle tabelle esterne"
 #: parser/parse_utilcmd.c:840
 #, c-format
 msgid "exclusion constraints are not supported on partitioned tables"
-msgstr ""
+msgstr "i vincoli esclusione non sono supportati sulle tabelle partizionate"
 
 #: parser/parse_utilcmd.c:910
 #, c-format
@@ -16896,38 +16923,42 @@ msgstr ""
 #: parser/parse_utilcmd.c:3315
 #, c-format
 msgid "invalid bound specification for a list partition"
-msgstr ""
+msgstr "specifica di estremità non valida per una partizione su lista"
 
 #: parser/parse_utilcmd.c:3338 parser/parse_utilcmd.c:3472
 #: parser/parse_utilcmd.c:3499
 #, c-format
 msgid "specified value cannot be cast to type \"%s\" of column \"%s\""
 msgstr ""
+"il valore specificato non può essere convertito al tipo \"%s\" della colonna "
+"\"%s\""
 
 #: parser/parse_utilcmd.c:3378
 #, c-format
 msgid "invalid bound specification for a range partition"
-msgstr ""
+msgstr "specifica di estremità non valida per una partizione su intervallo"
 
 #: parser/parse_utilcmd.c:3386
 #, c-format
 msgid "FROM must specify exactly one value per partitioning column"
 msgstr ""
+"FROM deve specificare esattamente un valore per colonna di partizionamento"
 
 #: parser/parse_utilcmd.c:3390
 #, c-format
 msgid "TO must specify exactly one value per partitioning column"
 msgstr ""
+"TO deve specificare esattamente un valore per colonna di partizionamento"
 
 #: parser/parse_utilcmd.c:3407 parser/parse_utilcmd.c:3421
 #, c-format
 msgid "cannot specify finite value after UNBOUNDED"
-msgstr ""
+msgstr "non si può specificare un valore finito dopo UNBOUNDED"
 
 #: parser/parse_utilcmd.c:3461 parser/parse_utilcmd.c:3488
 #, c-format
 msgid "cannot specify NULL in range bound"
-msgstr ""
+msgstr "non si può specificare NULL nel limite di un margine"
 
 #: parser/scansup.c:204
 #, c-format
@@ -17196,7 +17227,7 @@ msgstr "autovacuum: elaborazione del database \"%s\""
 #: postmaster/autovacuum.c:2280
 #, c-format
 msgid "autovacuum: dropping orphan temp table \"%s.%s.%s\""
-msgstr ""
+msgstr "autovacuum: eliminazione della tabella temporanea orfana \"%s.%s.%s\""
 
 #: postmaster/autovacuum.c:2486
 #, c-format
@@ -17211,7 +17242,7 @@ msgstr "analisi automatica della tabella \"%s.%s.%s\""
 #: postmaster/autovacuum.c:2700
 #, c-format
 msgid "processing work entry for relation \"%s.%s.%s\""
-msgstr ""
+msgstr "processo a lavoro sulla relazione \"%s.%s.%s\""
 
 #: postmaster/autovacuum.c:3344
 #, c-format
@@ -17262,6 +17293,8 @@ msgstr ""
 msgid ""
 "background worker \"%s\": parallel workers may not be configured for restart"
 msgstr ""
+"processo di lavoro in background \"%s\": i worker paralleli non possono "
+"essere configurati per il riavvio"
 
 #: postmaster/bgworker.c:673
 #, c-format
@@ -17360,6 +17393,8 @@ msgid ""
 "archiving write-ahead log file \"%s\" failed too many times, will try again "
 "later"
 msgstr ""
+"archiviazione del file di log write-ahead \"%s\" fallita troppe volte, verrà "
+"riprovato più tardi"
 
 #: postmaster/pgarch.c:588
 #, c-format
@@ -17833,17 +17868,17 @@ msgstr "SIGHUP ricevuto, sto ricaricando i file di configurazione"
 #: postmaster/postmaster.c:2541
 #, c-format
 msgid "pg_hba.conf was not reloaded"
-msgstr ""
+msgstr "pg_hba.conf non è stato ricaricato"
 
 #: postmaster/postmaster.c:2545
 #, c-format
 msgid "pg_ident.conf was not reloaded"
-msgstr ""
+msgstr "pg_ident.conf non è stato ricaricato"
 
 #: postmaster/postmaster.c:2555
 #, c-format
 msgid "SSL configuration was not reloaded"
-msgstr ""
+msgstr "la configurazione SSL non è stata ricaricata"
 
 #: postmaster/postmaster.c:2603
 #, c-format
@@ -17986,7 +18021,7 @@ msgstr "tutti i processi server sono terminati; re-inizializzazione"
 #: postmaster/postmaster.c:5707
 #, c-format
 msgid "could not generate random cancel key"
-msgstr ""
+msgstr "generazione della chiave di annullamento casuale fallita"
 
 #: postmaster/postmaster.c:4020
 #, c-format
@@ -18015,7 +18050,7 @@ msgstr "esecuzione del processo del server \"%s\" fallita: %m"
 #: postmaster/postmaster.c:4809
 #, c-format
 msgid "SSL configuration could not be loaded in child process"
-msgstr ""
+msgstr "errore nel caricamento della configurazione SSL nel processo figlio"
 
 #: postmaster/postmaster.c:4941
 #, c-format
@@ -18266,7 +18301,7 @@ msgstr ""
 #: replication/libpqwalreceiver/libpqwalreceiver.c:226
 #, c-format
 msgid "invalid connection string syntax: %s"
-msgstr ""
+msgstr "sintassi della stringa di connessione errata: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:250
 #, c-format
@@ -18352,61 +18387,63 @@ msgstr "invio dati allo stream WAL fallito: %s"
 #: replication/libpqwalreceiver/libpqwalreceiver.c:775
 #, c-format
 msgid "could not create replication slot \"%s\": %s"
-msgstr ""
+msgstr "creazione dello slot di replica \"%s\" fallita: %s"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:809
 #, c-format
 msgid "invalid query responser"
-msgstr ""
+msgstr "risposta della query non valida"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:810
 #, c-format
 msgid "Expected %d fields, got %d fields."
-msgstr ""
+msgstr "Attesi %d campi, ricevuti %d campi."
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:880
 #, c-format
 msgid "the query interface requires a database connection"
-msgstr ""
+msgstr "l'interfaccia per le query richiede una connessione ad un database"
 
 #: replication/libpqwalreceiver/libpqwalreceiver.c:911
 msgid "empty query"
-msgstr ""
+msgstr "query vuota"
 
 #: replication/logical/launcher.c:264
 #, c-format
 msgid "starting logical replication worker for subscription \"%s\""
-msgstr ""
+msgstr "avvio del worker di replica logica per la sottoscrizione \"%s\""
 
 #: replication/logical/launcher.c:271
 #, c-format
 msgid "cannot start logical replication workers when max_replication_slots = 0"
 msgstr ""
+"non è possibile avviare worker di replica logica se max_replication_slots = 0"
 
 #: replication/logical/launcher.c:351
 #, c-format
 msgid "out of logical replication worker slots"
-msgstr ""
+msgstr "worker di replica logica esauriti"
 
 #: replication/logical/launcher.c:352
 #, c-format
 msgid "You might need to increase max_logical_replication_workers."
-msgstr ""
+msgstr "Potresti dover aumentare max_logical_replication_workers."
 
 #: replication/logical/launcher.c:397
 #, c-format
 msgid "out of background worker slots"
-msgstr ""
+msgstr "worker di lavoro in background esauriti"
 
 #: replication/logical/launcher.c:398
 #, c-format
 msgid "You might need to increase max_worker_processes."
-msgstr ""
+msgstr "Potresti dover aumentare max_worker_processes."
 
 #: replication/logical/launcher.c:549
 #, c-format
 msgid "logical replication worker slot %d is empty, cannot attach"
 msgstr ""
+"lo slot del worker di replica logica %d è vuoto, non è possibile agganciarsi"
 
 #: replication/logical/launcher.c:558
 #, c-format
@@ -18414,16 +18451,18 @@ msgid ""
 "logical replication worker slot %d is already used by another worker, cannot "
 "attach"
 msgstr ""
+"lo slot del worker di replica logica %d è già in uso da un altro processo, "
+"non è possibile agganciarsi"
 
 #: replication/logical/launcher.c:791
 #, c-format
 msgid "logical replication launcher started"
-msgstr ""
+msgstr "lanciatore di replica logica avviato"
 
 #: replication/logical/launcher.c:899
 #, c-format
 msgid "logical replication launcher shutting down"
-msgstr ""
+msgstr "lanciatore di replica logica in arresto"
 
 #: replication/logical/logical.c:83
 #, c-format
@@ -18614,7 +18653,7 @@ msgstr "nessuna origine di replica configurata"
 #: replication/logical/relation.c:259
 #, c-format
 msgid "logical replication target relation \"%s.%s\" does not exist"
-msgstr ""
+msgstr "la relazione di destinazione di replica logica \"%s.%s\" non esiste"
 
 #: replication/logical/relation.c:292
 #, c-format
@@ -18622,6 +18661,8 @@ msgid ""
 "logical replication target relation \"%s.%s\" is missing some replicated "
 "columns"
 msgstr ""
+"la relazione di destinazione di replica logica \"%s.%s\" ha alcune colonne "
+"replicate mancanti"
 
 #: replication/logical/relation.c:332
 #, c-format
@@ -18629,11 +18670,13 @@ msgid ""
 "logical replication target relation \"%s.%s\" uses system columns in REPLICA "
 "IDENTITY index"
 msgstr ""
+"la relazione di destinazione di replica logica \"%s.%s\" usa colonne di "
+"sistema nell'indice REPLICA IDENTITY"
 
 #: replication/logical/relation.c:448
 #, c-format
 msgid "builtin type %u not found"
-msgstr ""
+msgstr "tipo predefinito %u non trovato"
 
 #: replication/logical/relation.c:449
 #, c-format
@@ -18641,11 +18684,13 @@ msgid ""
 "This can be caused by having publisher with higher major version than "
 "subscriber"
 msgstr ""
+"Ciò può essere causato da un database di pubblicazione di versione maggiore "
+"di quello di sottoscrizione"
 
 #: replication/logical/relation.c:481
 #, c-format
 msgid "data type \"%s.%s\" required for logical replication does not exist"
-msgstr ""
+msgstr "il tipo di dato \"%s.%s\" richiesto per la replica logica non esiste"
 
 #: replication/logical/reorderbuffer.c:2288
 #, c-format
@@ -18674,7 +18719,7 @@ msgstr "lettura dal file \"%s\" non riuscita: letti %d byte invece di %d"
 #: replication/logical/snapbuild.c:612
 #, c-format
 msgid "initial slot snapshot too large"
-msgstr ""
+msgstr "immagine iniziale dello slot troppo grande"
 
 #: replication/logical/snapbuild.c:664
 #, c-format
@@ -18706,16 +18751,17 @@ msgstr "la decodifica logica ha trovato un punto di avvio iniziale a %X/%X"
 #, c-format
 msgid "Waiting for transactions (approximately %d) older than %u to end."
 msgstr ""
+"In attesa che alcune transazioni (circa %d) più vecchie di %u finiscano."
 
 #: replication/logical/snapbuild.c:1330
 #, c-format
 msgid "logical decoding found initial consistent point at %X/%X"
-msgstr ""
+msgstr "la decodifica logica ha trovato il punto iniziale consistente a %X/%X"
 
 #: replication/logical/snapbuild.c:1357
 #, c-format
 msgid "There are no old transactions anymore."
-msgstr ""
+msgstr "Non ci sono più vecchie transazioni."
 
 #: replication/logical/snapbuild.c:1715 replication/logical/snapbuild.c:1743
 #: replication/logical/snapbuild.c:1760 replication/logical/snapbuild.c:1776
@@ -18758,36 +18804,45 @@ msgstr "interpretazione del nome di file \"%s\" fallita"
 #, c-format
 msgid "logical replication synchronization worker finished processing"
 msgstr ""
+"il worked di sincronizzazione della replica logica ha terminato il lavoro"
 
 #: replication/logical/tablesync.c:632
 #, c-format
 msgid "could not fetch table info for table \"%s.%s\" from publisher: %s"
 msgstr ""
+"errore nella lettura delle informazioni sulla tabella \"%s.%s\" per la "
+"pubblicazione: %s"
 
 #: replication/logical/tablesync.c:638
 #, c-format
 msgid "table \"%s.%s\" not found on publisher"
-msgstr ""
+msgstr "tabella \"%s.%s\" non trovata sul database di pubblicazione"
 
 #: replication/logical/tablesync.c:668
 #, c-format
 msgid "could not fetch table info for table \"%s.%s\": %s"
-msgstr ""
+msgstr "errore nella lettura delle informazioni sulla tabella \"%s.%s\": %s"
 
 #: replication/logical/tablesync.c:738
 #, c-format
 msgid "could not start initial contents copy for table \"%s.%s\": %s"
 msgstr ""
+"errore nell'avvio della copia iniziale dei contenuti per la tabella \"%s.%s"
+"\": %s"
 
 #: replication/logical/tablesync.c:846
 #, c-format
 msgid "table copy could not start transaction on publisher"
 msgstr ""
+"inizio della transazione non riuscito per la copia della tabella sul "
+"database di pubblicazione"
 
 #: replication/logical/tablesync.c:866
 #, c-format
 msgid "table copy could not finish transaction on publisher"
 msgstr ""
+"completamento della transazione non riuscito per la copia della tabella sul "
+"database di pubblicazione"
 
 #: replication/logical/worker.c:283
 #, c-format
@@ -18795,11 +18850,13 @@ msgid ""
 "processing remote data for replication target relation \"%s.%s\" column \"%s"
 "\", remote type %s, local type %s"
 msgstr ""
+"processo dei dati remoti per la replica della tabella di destinazione \"%s.%s"
+"\" colonna \"%s\", tipo remoto %s, tipo locale %s"
 
 #: replication/logical/worker.c:486
 #, c-format
 msgid "ORIGIN message sent out of order"
-msgstr ""
+msgstr "messaggi ORIGIN inviati in ordine sbagliato"
 
 #: replication/logical/worker.c:617
 #, c-format
@@ -18807,6 +18864,8 @@ msgid ""
 "publisher does not send replica identity column expected by the logical "
 "replication target relation \"%s.%s\""
 msgstr ""
+"il database di pubblicazione non invia le colonne di identità di replica "
+"attese dalla relazione di destinazione di replica logica \"%s.%s\""
 
 #: replication/logical/worker.c:624
 #, c-format
@@ -18815,27 +18874,31 @@ msgid ""
 "index nor PRIMARY KEY and published relation does not have REPLICA IDENTITY "
 "FULL"
 msgstr ""
+"la relazione di destinazione di replica logica \"%s.%s\" non ha né un indice "
+"REPLICA IDENTITY né una PRIMARY KEY e la relazione pubblicata non ha REPLICA "
+"IDENTITY FULL"
 
 #: replication/logical/worker.c:831
 #, c-format
 msgid ""
 "logical replication could not find row for delete in replication target %s"
 msgstr ""
+"la replica logica non ha trovato la riga da cancellare nella destinazione %s"
 
 #: replication/logical/worker.c:898
 #, c-format
 msgid "invalid logical replication message type %c"
-msgstr ""
+msgstr "messaggio di replica logica tipo %c non valido"
 
 #: replication/logical/worker.c:1036
 #, c-format
 msgid "data stream from publisher has ended"
-msgstr ""
+msgstr "stream di dati dal database di pubblicazione terminato"
 
 #: replication/logical/worker.c:1181
 #, c-format
 msgid "terminating logical replication worker due to timeout"
-msgstr ""
+msgstr "arresto del worker di replica logica per timeout"
 
 #: replication/logical/worker.c:1328
 #, c-format
@@ -18843,6 +18906,8 @@ msgid ""
 "logical replication worker for subscription \"%s\" will stop because the "
 "subscription was removed"
 msgstr ""
+"il worker di replica logica per la sottoscrizione \"%s\" verrà terminato "
+"perché la sottoscrizione è stata rimossa"
 
 #: replication/logical/worker.c:1343
 #, c-format
@@ -18850,6 +18915,8 @@ msgid ""
 "logical replication worker for subscription \"%s\" will stop because the "
 "subscription was disabled"
 msgstr ""
+"il worker di replica logica per la sottoscrizione \"%s\" verrà terminato "
+"perché la sottoscrizione è stata disabilitata"
 
 #: replication/logical/worker.c:1358
 #, c-format
@@ -18857,6 +18924,8 @@ msgid ""
 "logical replication worker for subscription \"%s\" will restart because the "
 "connection information was changed"
 msgstr ""
+"il worker di replica logica per la sottoscrizione \"%s\" verrà riavviato "
+"perché le informazioni di connessione sono cambiate"
 
 #: replication/logical/worker.c:1373
 #, c-format
@@ -18864,6 +18933,8 @@ msgid ""
 "logical replication worker for subscription \"%s\" will restart because "
 "subscription was renamed"
 msgstr ""
+"il worker di replica logica per la sottoscrizione \"%s\" verrà riavviato "
+"perché la sottoscrizione è stata rinominata"
 
 #: replication/logical/worker.c:1391
 #, c-format
@@ -18871,6 +18942,8 @@ msgid ""
 "logical replication worker for subscription \"%s\" will restart because the "
 "replication slot name was changed"
 msgstr ""
+"il worker di replica logica per la sottoscrizione \"%s\" verrà riavviato "
+"perché il nome dello slot di replica è cambiato"
 
 #: replication/logical/worker.c:1406
 #, c-format
@@ -18878,6 +18951,8 @@ msgid ""
 "logical replication worker for subscription \"%s\" will restart because "
 "subscription's publications were changed"
 msgstr ""
+"il worker di replica logica per la sottoscrizione \"%s\" verrà riavviato "
+"perché le pubblicazioni della sottoscrizione sono cambiate"
 
 #: replication/logical/worker.c:1506
 #, c-format
@@ -18885,41 +18960,47 @@ msgid ""
 "logical replication worker for subscription \"%s\" will not start because "
 "the subscription was disabled during startup"
 msgstr ""
+"il worker di replica logica per la sottoscrizione \"%s\" non verrà avviato "
+"perché la sottoscrizione è stata disabilitata all'avvio"
 
 #: replication/logical/worker.c:1562
 #, c-format
 msgid "subscription has no replication slot set"
-msgstr ""
+msgstr "la sottoscrizione non ha uno slot di replica impostato"
 
 #: replication/pgoutput/pgoutput.c:113
 #, c-format
 msgid "invalid proto_version"
-msgstr ""
+msgstr "proto_version non valido"
 
 #: replication/pgoutput/pgoutput.c:118
 #, c-format
 msgid "proto_verson \"%s\" out of range"
-msgstr ""
+msgstr "proto_version \"%s\" fuori dall'intervallo consentito"
 
 #: replication/pgoutput/pgoutput.c:135
 #, c-format
 msgid "invalid publication_names syntax"
-msgstr ""
+msgstr "sintassi di publication_names non valida"
 
 #: replication/pgoutput/pgoutput.c:179
 #, c-format
 msgid "client sent proto_version=%d but we only support protocol %d or lower"
 msgstr ""
+"il cliente ha inviato proto_version=%d ma solo il protocollo %d o inferiore "
+"è supportato"
 
 #: replication/pgoutput/pgoutput.c:185
 #, c-format
 msgid "client sent proto_version=%d but we only support protocol %d or higher"
 msgstr ""
+"il cliente ha inviato proto_version=%d ma solo il protocollo %d o superiore "
+"è supportato"
 
 #: replication/pgoutput/pgoutput.c:191
 #, c-format
 msgid "publication_names parameter missing"
-msgstr ""
+msgstr "parametro publication_names mancante"
 
 #: replication/slot.c:181
 #, c-format
@@ -19056,7 +19137,7 @@ msgstr "lo standby \"%s\" è ora uno standby sincrono con priorità %u"
 #: replication/syncrep.c:461
 #, c-format
 msgid "standby \"%s\" is now a candidate for quorum synchronous standby"
-msgstr ""
+msgstr "lo standby \"%s\" è ora un candidato al quorum di standby sincroni"
 
 #: replication/syncrep.c:1132
 #, c-format
@@ -19155,7 +19236,7 @@ msgstr "spostamento all'inizio del file \"%s\" fallito: %m"
 #: replication/walsender.c:533
 #, c-format
 msgid "IDENTIFY_SYSTEM has not been run before START_REPLICATION"
-msgstr ""
+msgstr "IDENTIFY_SYSTEM non eseguito prima di START_REPLICATION"
 
 #: replication/walsender.c:550
 #, c-format
@@ -19190,12 +19271,16 @@ msgid ""
 "CREATE_REPLICATION_SLOT ... EXPORT_SNAPSHOT must not be called inside a "
 "transaction"
 msgstr ""
+"CREATE_REPLICATION_SLOT ... EXPORT_SNAPSHOT non può essere eseguito in una "
+"transazione"
 
 #: replication/walsender.c:905
 #, c-format
 msgid ""
 "CREATE_REPLICATION_SLOT ... USE_SNAPSHOT must be called inside a transaction"
 msgstr ""
+"CREATE_REPLICATION_SLOT ... USE_SNAPSHOT deve essere eseguito in una "
+"transazione"
 
 #: replication/walsender.c:910
 #, c-format
@@ -19203,12 +19288,16 @@ msgid ""
 "CREATE_REPLICATION_SLOT ... USE_SNAPSHOT must be called in REPEATABLE READ "
 "isolation mode transaction"
 msgstr ""
+"CREATE_REPLICATION_SLOT ... USE_SNAPSHOT deve essere eseguito in una "
+"transazione in modalità  REPEATABLE READ"
 
 #: replication/walsender.c:915
 #, c-format
 msgid ""
 "CREATE_REPLICATION_SLOT ... USE_SNAPSHOT must be called before any query"
 msgstr ""
+"CREATE_REPLICATION_SLOT ... USE_SNAPSHOT deve essere eseguito prima di "
+"qualunque query"
 
 #: replication/walsender.c:920
 #, c-format
@@ -19216,6 +19305,8 @@ msgid ""
 "CREATE_REPLICATION_SLOT ... USE_SNAPSHOT must not be called in a "
 "subtransaction"
 msgstr ""
+"CREATE_REPLICATION_SLOT ... USE_SNAPSHOT non può essere eseguito in una "
+"sottotransazione"
 
 #: replication/walsender.c:1066
 #, c-format
@@ -19226,6 +19317,8 @@ msgstr "interruzione del processo walsender dopo la promozione"
 #, c-format
 msgid "cannot execute new commands while WAL sender is in stopping mode"
 msgstr ""
+"non è possibile eseguire nuovi comandi mentre WAL sender è in modalità di "
+"arresto"
 
 #: replication/walsender.c:1467
 #, c-format
@@ -19246,7 +19339,7 @@ msgstr ""
 #: replication/walsender.c:1545
 #, c-format
 msgid "not connected to database"
-msgstr ""
+msgstr "non connesso ad un database"
 
 #: replication/walsender.c:1585 replication/walsender.c:1601
 #, c-format
@@ -19359,7 +19452,7 @@ msgstr "la regola della vista \"%s\" deve essere chiamata \"%s\""
 #: rewrite/rewriteDefine.c:428
 #, c-format
 msgid "could not convert partitioned table \"%s\" to a view"
-msgstr ""
+msgstr "conversione della tabella partizionata \"%s\" in vista fallita"
 
 #: rewrite/rewriteDefine.c:436
 #, c-format
@@ -19538,22 +19631,23 @@ msgstr "non è possibile avere liste RETURNING in più di una regola"
 #: rewrite/rewriteHandler.c:818
 #, c-format
 msgid "cannot insert into column \"%s\""
-msgstr ""
+msgstr "non è possibile inserire nella colonna \"%s\""
 
 #: rewrite/rewriteHandler.c:819 rewrite/rewriteHandler.c:834
 #, c-format
 msgid "Column \"%s\" is an identity column defined as GENERATED ALWAYS."
 msgstr ""
+"La colonna \"%s\" è una colonna identità definita come GENERATED ALWAYS."
 
 #: rewrite/rewriteHandler.c:821
 #, c-format
 msgid "Use OVERRIDING SYSTEM VALUE to override."
-msgstr ""
+msgstr "Usa OVERRIDING SYSTEM VALUE per sovrascrivere."
 
 #: rewrite/rewriteHandler.c:833
 #, c-format
 msgid "column \"%s\" can only be updated to DEFAULT"
-msgstr ""
+msgstr "la colonna \"%s\" può essere modificata solo a DEFAULT"
 
 #: rewrite/rewriteHandler.c:984 rewrite/rewriteHandler.c:1002
 #, c-format
@@ -19813,7 +19907,7 @@ msgstr "parametro Language mancante"
 #: statistics/dependencies.c:542
 #, c-format
 msgid "invalid zero-length item array in MVDependencies"
-msgstr ""
+msgstr "elemento array a lunghezza zero non valido in MVDependencies"
 
 #: statistics/dependencies.c:673 statistics/dependencies.c:726
 #: statistics/mvdistinct.c:338 statistics/mvdistinct.c:391
@@ -19830,27 +19924,27 @@ msgstr "non è possibile accettare un valore del tipo %s"
 #, c-format
 msgid ""
 "statistics object \"%s.%s\" could not be computed for relation \"%s.%s\""
-msgstr ""
+msgstr "calcolo della statistica \"%s.%s\" fallito per la relazione \"%s.%s\""
 
 #: statistics/mvdistinct.c:259
 #, c-format
 msgid "invalid ndistinct magic %08x (expected %08x)"
-msgstr ""
+msgstr "valore magico ndistinct %08x non valido (atteso %08x)"
 
 #: statistics/mvdistinct.c:264
 #, c-format
 msgid "invalid ndistinct type %d (expected %d)"
-msgstr ""
+msgstr "tipo ndistinct %d non valido (atteso %d)"
 
 #: statistics/mvdistinct.c:269
 #, c-format
 msgid "invalid zero-length item array in MVNDistinct"
-msgstr ""
+msgstr "elemento array a lunghezza zero non valido in MVDistinct"
 
 #: statistics/mvdistinct.c:278
 #, c-format
 msgid "invalid MVNDistinct size %zd (expected at least %zd)"
-msgstr ""
+msgstr "dimensione MVDistinct %zd non valida (attesa almeno %zd)"
 
 #: storage/buffer/bufmgr.c:544 storage/buffer/bufmgr.c:657
 #, c-format
@@ -20091,7 +20185,7 @@ msgstr "memoria condivisa esaurita"
 #: storage/ipc/shmem.c:165 storage/ipc/shmem.c:246
 #, c-format
 msgid "out of shared memory (%zu bytes requested)"
-msgstr ""
+msgstr "memoria condivisa esaurita (richiesti %zu byte)"
 
 #: storage/ipc/shmem.c:421
 #, c-format
@@ -21736,7 +21830,7 @@ msgstr "sintassi di input non valida per il tipo %s: \"%s\""
 #: utils/adt/numutils.c:82 utils/adt/oid.c:70 utils/adt/oid.c:109
 #, c-format
 msgid "value \"%s\" is out of range for type %s"
-msgstr ""
+msgstr "valore \"%s\" fuori dall'intervallo consentito per il tipo %s"
 
 #: utils/adt/cash.c:653 utils/adt/cash.c:703 utils/adt/cash.c:754
 #: utils/adt/cash.c:803 utils/adt/cash.c:855 utils/adt/cash.c:905
@@ -21997,17 +22091,19 @@ msgstr "I dati di input mancano di padding, sono troncati o comunque corrotti."
 #: utils/adt/varlena.c:337
 #, c-format
 msgid "invalid input syntax for type %s"
-msgstr ""
+msgstr "sintassi di input non valida per il tipo %s"
 
 #: utils/adt/enum.c:115
 #, c-format
 msgid "unsafe use of new value \"%s\" of enum type %s"
-msgstr ""
+msgstr "uso non sicuro del nuovo valore \"%s\" dell'enumerazione %s"
 
 #: utils/adt/enum.c:118
 #, c-format
 msgid "New enum values must be committed before they can be used."
 msgstr ""
+"I nuovi valori di enumerazione devono ricevere un commit prima di poter "
+"essere usati."
 
 #: utils/adt/enum.c:136 utils/adt/enum.c:146 utils/adt/enum.c:204
 #: utils/adt/enum.c:214
@@ -22206,7 +22302,7 @@ msgstr "\"%s\" non è un numero"
 #: utils/adt/formatting.c:1480
 #, c-format
 msgid "case conversion failed: %s"
-msgstr ""
+msgstr "conversione maiuscole/minuscole fallita: %s"
 
 #: utils/adt/formatting.c:1546
 #, c-format
@@ -22323,7 +22419,7 @@ msgstr "valore del formato della stringa localizzata troppo lungo"
 #: utils/adt/formatting.c:3083
 #, c-format
 msgid "formatting field \"%s\" is only supported in to_char"
-msgstr ""
+msgstr "il campo di formattazione \"%s\" è supportato solo in to_char"
 
 #: utils/adt/formatting.c:3194
 #, c-format
@@ -22506,7 +22602,7 @@ msgstr "il valore del passo non può essere uguale a zero"
 #: utils/adt/numutils.c:61 utils/adt/numutils.c:105
 #, c-format
 msgid "invalid input syntax for %s: \"%s\""
-msgstr ""
+msgstr "sintassi di input non valida per %s: \"%s\""
 
 #: utils/adt/int8.c:500 utils/adt/int8.c:529 utils/adt/int8.c:550
 #: utils/adt/int8.c:581 utils/adt/int8.c:615 utils/adt/int8.c:640
@@ -22821,27 +22917,27 @@ msgstr "non è possibile eseguire %s su un argomento che non è un array"
 #: utils/adt/jsonfuncs.c:2337 utils/adt/jsonfuncs.c:2343
 #, c-format
 msgid "expected json array"
-msgstr ""
+msgstr "atteso un array json"
 
 #: utils/adt/jsonfuncs.c:2316
 #, c-format
 msgid "see the value of key \"%s\""
-msgstr ""
+msgstr "vedi il valore della chiave \"%s\""
 
 #: utils/adt/jsonfuncs.c:2338
 #, c-format
 msgid "see the array element %s of key \"%s\""
-msgstr ""
+msgstr "vedi l'elemento dell'array %s della chiave \"%s\""
 
 #: utils/adt/jsonfuncs.c:2344
 #, c-format
 msgid "see the array element %s"
-msgstr ""
+msgstr "vedi l'elemento dell'array %s"
 
 #: utils/adt/jsonfuncs.c:2379
 #, c-format
 msgid "malformed json array"
-msgstr ""
+msgstr "array json non valido"
 
 #: utils/adt/jsonfuncs.c:3152 utils/adt/jsonfuncs.c:3462
 #, c-format
@@ -22953,7 +23049,7 @@ msgstr "ottetto non valido nel valore \"macaddr\": \"%s\""
 #: utils/adt/mac8.c:554
 #, c-format
 msgid "macaddr8 data out of range to convert to macaddr"
-msgstr ""
+msgstr "dato macaddr8 fuori dall'intervallo valido per convertire a macaddr"
 
 #: utils/adt/mac8.c:555
 #, c-format
@@ -22962,6 +23058,9 @@ msgid ""
 "the left, for example: XX-XX-XX-FF-FE-XX-XX-XX, are eligible to be converted "
 "from macaddr8 to macaddr."
 msgstr ""
+"Solo gli indirizzi che hanno valori FF ed FE nel 4º e 5º byte da sinistra, "
+"per esempio XX-XX-XX-FF-FE-XX-XX-XX, possono essere convertiti da macaddr8 a "
+"macaddr."
 
 #: utils/adt/misc.c:238
 #, c-format
@@ -23063,12 +23162,12 @@ msgstr "L'identificativo dopo il \".\" non è valido."
 #: utils/adt/misc.c:914
 #, c-format
 msgid "log format \"%s\" is not supported"
-msgstr ""
+msgstr "il formato di log \"%s\" non è supportato"
 
 #: utils/adt/misc.c:915
 #, c-format
 msgid "The supported log formats are \"stderr\" and \"csvlog\"."
-msgstr ""
+msgstr "I formati supportati sono \"stderr\" e \"csvlog\"."
 
 #: utils/adt/nabstime.c:137
 #, c-format
@@ -23317,32 +23416,33 @@ msgstr ""
 #: utils/adt/pg_locale.c:1348
 #, c-format
 msgid "collation provider LIBC is not supported on this platform"
-msgstr ""
+msgstr "fornitore di ordinamento LIBC non supportato su questa piattaforma"
 
 #: utils/adt/pg_locale.c:1361 utils/adt/pg_locale.c:1443
 #, c-format
 msgid "could not open collator for locale \"%s\": %s"
-msgstr ""
+msgstr "apertura dell'ordinamento per il locale \"%s\" fallita: %s"
 
 #: utils/adt/pg_locale.c:1370
 #, c-format
 msgid "ICU is not supported in this build"
-msgstr ""
+msgstr "ICU non supportato in questo build"
 
 #: utils/adt/pg_locale.c:1371
 #, c-format
 msgid "You need to rebuild PostgreSQL using --with-icu."
-msgstr ""
+msgstr "Occorre ricompilare PostgreSQL usando --with-icu."
 
 #: utils/adt/pg_locale.c:1391
 #, c-format
 msgid "collation \"%s\" has no actual version, but a version was specified"
 msgstr ""
+"l'ordinamento \"%s\" non ha una versione, ma una versione è stata specificata"
 
 #: utils/adt/pg_locale.c:1398
 #, c-format
 msgid "collation \"%s\" has version mismatch"
-msgstr ""
+msgstr "la versione dell'ordinamento \"%s\" non combacia"
 
 #: utils/adt/pg_locale.c:1400
 #, c-format
@@ -23350,6 +23450,8 @@ msgid ""
 "The collation in the database was created using version %s, but the "
 "operating system provides version %s."
 msgstr ""
+"L'ordinamento nel database è stato creato usando la versione %s, ma il "
+"sistema operativo fornisce la versione %s."
 
 #: utils/adt/pg_locale.c:1403
 #, c-format
@@ -23357,21 +23459,24 @@ msgid ""
 "Rebuild all objects affected by this collation and run ALTER COLLATION %s "
 "REFRESH VERSION, or build PostgreSQL with the right library version."
 msgstr ""
+"Ricostruisci tutti gli oggetti che usano questo ordinamento ed esegui ALTER "
+"COLLATION %s REFRESH VERSION, oppure ricompila PostgreSQL con la versione "
+"giusta della libreria."
 
 #: utils/adt/pg_locale.c:1483
 #, c-format
 msgid "could not open ICU converter for encoding \"%s\": %s"
-msgstr ""
+msgstr "apertura del convertitore ICU per l'encoding \"%s\" fallita: %s"
 
 #: utils/adt/pg_locale.c:1503
 #, c-format
 msgid "ucnv_toUChars failed: %s"
-msgstr ""
+msgstr "ucnv_toUChars fallito: %s"
 
 #: utils/adt/pg_locale.c:1521
 #, c-format
 msgid "ucnv_fromUChars failed: %s"
-msgstr ""
+msgstr "ucnv_fromUChars fallito: %s"
 
 #: utils/adt/pg_locale.c:1693
 #, c-format
@@ -23414,12 +23519,12 @@ msgstr ""
 #: utils/adt/pseudotypes.c:350 utils/adt/pseudotypes.c:376
 #, c-format
 msgid "cannot output a value of type %s"
-msgstr "non è possibile mostrare un valore del tipo %s"
+msgstr "non è possibile emettere un valore del tipo %s"
 
 #: utils/adt/pseudotypes.c:403
 #, c-format
 msgid "cannot display a value of type %s"
-msgstr ""
+msgstr "non è possibile mostrare un valore del tipo %s"
 
 #: utils/adt/rangetypes.c:405
 #, c-format
@@ -23502,22 +23607,22 @@ msgstr "l'opzione regexp \"%c\" non è valida"
 #: utils/adt/regexp.c:862
 #, c-format
 msgid "regexp_match does not support the global option"
-msgstr ""
+msgstr "regexp_match non supporta l'opzione globale"
 
 #: utils/adt/regexp.c:863
 #, c-format
 msgid "Use the regexp_matches function instead."
-msgstr ""
+msgstr "Usa la funzione regexp_matches."
 
 #: utils/adt/regexp.c:1163
 #, c-format
 msgid "regexp_split_to_table does not support the global option"
-msgstr ""
+msgstr "regexp_split_to_table non supporta l'opzione globale"
 
 #: utils/adt/regexp.c:1219
 #, c-format
 msgid "regexp_split_to_array does not support the global option"
-msgstr ""
+msgstr "regexp_split_to_array non supporta l'opzione globale"
 
 #: utils/adt/regproc.c:105
 #, c-format
@@ -24090,7 +24195,7 @@ msgstr "le informazioni di posizione nel tsvector sono errate: \"%s\""
 #: utils/adt/txid.c:135
 #, c-format
 msgid "transaction ID "
-msgstr ""
+msgstr "ID transazione "
 
 #: utils/adt/txid.c:624
 #, c-format
@@ -24099,15 +24204,15 @@ msgstr "dati txid_snapshot esterni non validi"
 
 #: utils/adt/txid.c:758 utils/adt/txid.c:779
 msgid "in progress"
-msgstr ""
+msgstr "in esecuzione"
 
 #: utils/adt/txid.c:760
 msgid "committed"
-msgstr ""
+msgstr "completata"
 
 #: utils/adt/txid.c:762 utils/adt/txid.c:777
 msgid "aborted"
-msgstr ""
+msgstr "annullata"
 
 #: utils/adt/varbit.c:58 utils/adt/varchar.c:51
 #, c-format
@@ -24216,12 +24321,12 @@ msgstr "comparazione delle stringhe Unicode fallita: %m"
 #: utils/adt/varlena.c:1555 utils/adt/varlena.c:2141
 #, c-format
 msgid "collation failed: %s"
-msgstr ""
+msgstr "ordinamento fallito: %s"
 
 #: utils/adt/varlena.c:2356
 #, c-format
 msgid "sort key generation failed: %s"
-msgstr ""
+msgstr "generazione della chiave di ordinamento fallita: %s"
 
 #: utils/adt/varlena.c:3013 utils/adt/varlena.c:3044 utils/adt/varlena.c:3079
 #: utils/adt/varlena.c:3115
@@ -24445,22 +24550,22 @@ msgstr "registrazione del namespace XML con nome \"%s\" ed URI \"%s\" fallita"
 #: utils/adt/xml.c:4300
 #, c-format
 msgid "DEFAULT namespace is not supported"
-msgstr ""
+msgstr "il namespace DEFAULT non è supportato"
 
 #: utils/adt/xml.c:4329
 #, c-format
 msgid "row path filter must not be empty string"
-msgstr ""
+msgstr "il percorso del filtro di riga non può essere vuoto"
 
 #: utils/adt/xml.c:4360
 #, c-format
 msgid "column path filter must not be empty string"
-msgstr ""
+msgstr "il percorso del filtro di colonna non può essere vuoto"
 
 #: utils/adt/xml.c:4542
 #, c-format
 msgid "more than one value returned by column XPath expression"
-msgstr ""
+msgstr "l'espressione XPath ha restituito più di un valore"
 
 #: utils/cache/lsyscache.c:2612 utils/cache/lsyscache.c:2645
 #: utils/cache/lsyscache.c:2678 utils/cache/lsyscache.c:2711
@@ -24695,7 +24800,7 @@ msgstr "libreria incompatibile \"%s\": versione non corrispondente"
 #: utils/fmgr/dfmgr.c:321
 #, c-format
 msgid "Server is version %d, library is version %s."
-msgstr ""
+msgstr "La versione del server è %d, quella della libreria è %s."
 
 #: utils/fmgr/dfmgr.c:338
 #, c-format
@@ -24762,13 +24867,15 @@ msgstr "la funzione interna \"%s\" non è nella tabella interna di lookup"
 #: utils/fmgr/fmgr.c:399
 #, c-format
 msgid "could not find function information for function \"%s\""
-msgstr ""
+msgstr "informazioni sulla funzione \"%s\" non trovate"
 
 #: utils/fmgr/fmgr.c:401
 #, c-format
 msgid ""
 "SQL-callable functions need an accompanying PG_FUNCTION_INFO_V1(funcname)."
 msgstr ""
+"Le funzioni richiamabili da SQL devono avere un PG_FUNCTION_INFO_V1(nome) "
+"corrispondente."
 
 #: utils/fmgr/fmgr.c:419
 #, c-format
@@ -24984,6 +25091,8 @@ msgid ""
 "The data directory was initialized by PostgreSQL version %s, which is not "
 "compatible with this version %s."
 msgstr ""
+"La directory dei dati è stata inizializzata da PostgreSQL versione %s, che "
+"non è compatibile con questa versione %s."
 
 #: utils/init/miscinit.c:1469
 #, c-format
@@ -25304,7 +25413,7 @@ msgstr "Replica / Serve in Standby"
 
 #: utils/misc/guc.c:610
 msgid "Replication / Subscribers"
-msgstr ""
+msgstr "Replica / Sottoscrizioni"
 
 #: utils/misc/guc.c:612
 msgid "Query Tuning"
@@ -25477,7 +25586,7 @@ msgstr "Abilita l'uso da parte del planner di piani di join basati su hash."
 
 #: utils/misc/guc.c:906
 msgid "Enables the planner's use of gather merge plans."
-msgstr ""
+msgstr "Abilita l'uso da parte del planner di pani gather merge."
 
 #: utils/misc/guc.c:916
 msgid "Enables genetic query optimization."
@@ -25947,6 +26056,8 @@ msgid ""
 "Forces a switch to the next WAL file if a new file has not been started "
 "within N seconds."
 msgstr ""
+"Forza il passaggio al prossimo file WAL se un nuovo file non è stato "
+"iniziato entro N secondi."
 
 #: utils/misc/guc.c:1691
 msgid "Waits N seconds on connection startup after authentication."
@@ -26284,22 +26395,30 @@ msgstr ""
 msgid ""
 "Sets the maximum number of predicate-locked pages and tuples per relation."
 msgstr ""
+"Imposta il numero di pagine e tuple bloccate da lock di predicato per "
+"relazione."
 
 #: utils/misc/guc.c:2203
 msgid ""
 "If more than this total of pages and tuples in the same relation are locked "
 "by a connection, those locks are replaced by a relation level lock."
 msgstr ""
+"Se più di questo numero totale di pagine e tuple nella stessa relazione sono "
+"bloccate da una connessione, questi lock verranno sostituiti da un lock a "
+"livello di relazione."
 
 #: utils/misc/guc.c:2213
 msgid "Sets the maximum number of predicate-locked tuples per page."
 msgstr ""
+"Imposta il numero massimo di tuple bloccate da lock di predicato per pagina."
 
 #: utils/misc/guc.c:2214
 msgid ""
 "If more than this number of tuples on the same page are locked by a "
 "connection, those locks are replaced by a page level lock."
 msgstr ""
+"Se più di questo numero di tuple nella stessa pagina sono bloccate da una "
+"connessione, questi lock verranno sostituiti da un lock a livello di pagina."
 
 #: utils/misc/guc.c:2224
 msgid "Sets the maximum allowed time to complete client authentication."
@@ -26470,11 +26589,12 @@ msgstr "Numero massimo di processi worker concorrenti."
 
 #: utils/misc/guc.c:2513
 msgid "Maximum number of logical replication worker processes."
-msgstr ""
+msgstr "Numero massimo di processi worker di replica logica."
 
 #: utils/misc/guc.c:2525
 msgid "Maximum number of table synchronization workers per subscription."
 msgstr ""
+"Numero massimo di processi worker di sincronizzazione per sottoscrizione."
 
 #: utils/misc/guc.c:2535
 msgid "Automatic log file rotation will occur after N minutes."
@@ -26566,6 +26686,8 @@ msgstr ""
 msgid ""
 "Sets the maximum number of parallel workers than can be active at one time."
 msgstr ""
+"Imposta il numero massimo di worker paralleli che possono essere attivi "
+"contemporaneamente."
 
 #: utils/misc/guc.c:2728
 msgid "Sets the maximum memory to be used by each autovacuum worker process."
@@ -26638,22 +26760,30 @@ msgstr ""
 #: utils/misc/guc.c:2819
 msgid "Sets the minimum amount of table data for a parallel scan."
 msgstr ""
+"Imposta la quantità minima di dati di una tabella per uno scan parallelo."
 
 #: utils/misc/guc.c:2820
 msgid ""
 "If the planner estimates that it will read a number of table pages too small "
 "to reach this limit, a parallel scan will not be considered."
 msgstr ""
+"Se il planner stima che leggerà un numero di pagine di tabella troppo basso "
+"per raggiungere questo limite, non verrà preso in considerazione uno scan "
+"parallelo."
 
 #: utils/misc/guc.c:2830
 msgid "Sets the minimum amount of index data for a parallel scan."
 msgstr ""
+"Imposta la quantità minima di dati di un indice per uno scan parallelo."
 
 #: utils/misc/guc.c:2831
 msgid ""
 "If the planner estimates that it will read a number of index pages too small "
 "to reach this limit, a parallel scan will not be considered."
 msgstr ""
+"Se il planner stima che leggerà un numero di pagine di indice troppo basso "
+"per raggiungere questo limite, non verrà preso in considerazione uno scan "
+"parallelo."
 
 #: utils/misc/guc.c:2842
 msgid "Shows the server version as an integer."
@@ -27053,12 +27183,16 @@ msgstr "Imposta il nome del cluster, che è incluso nel titolo del processo."
 msgid ""
 "Sets the WAL resource managers for which WAL consistency checks are done."
 msgstr ""
+"Imposta i gestori di risorse WAL per cui vengono effettuati i controlli di "
+"consistenza WAL."
 
 #: utils/misc/guc.c:3634
 msgid ""
 "Full-page images will be logged for all data blocks and cross-checked "
 "against the results of WAL replay."
 msgstr ""
+"Immagini di pagine complete verranno loggate per tutti i blocchi di dati e "
+"comparati con i risultati del replay del WAL."
 
 #: utils/misc/guc.c:3653
 msgid "Sets whether \"\\'\" is allowed in string literals."
@@ -27332,6 +27466,8 @@ msgstr ""
 #, c-format
 msgid "must be superuser or a member of pg_read_all_settings to examine \"%s\""
 msgstr ""
+"occorre essere un superutente o un membro di pg_read_all_settings per "
+"esaminare \"%s\""
 
 #: utils/misc/guc.c:6833
 #, c-format
@@ -27551,12 +27687,12 @@ msgstr "Errore durante la creazione del contesto di memoria \"%s\"."
 #: utils/mmgr/dsa.c:518 utils/mmgr/dsa.c:1323
 #, c-format
 msgid "could not attach to dynamic shared area"
-msgstr ""
+msgstr "collegamento all'area dinamica condivisa fallito"
 
 #: utils/mmgr/dsa.c:714 utils/mmgr/dsa.c:796
 #, c-format
 msgid "Failed on DSA request of size %zu."
-msgstr ""
+msgstr "Errore su richiesta DSA di dimensione %zu."
 
 #: utils/mmgr/mcxt.c:726 utils/mmgr/mcxt.c:761 utils/mmgr/mcxt.c:798
 #: utils/mmgr/mcxt.c:835 utils/mmgr/mcxt.c:869 utils/mmgr/mcxt.c:898
@@ -27704,12 +27840,12 @@ msgstr "non è possibile importare uno snapshot da un database diverso"
 #: gram.y:1008
 #, c-format
 msgid "UNENCRYPTED PASSWORD is no longer supported"
-msgstr ""
+msgstr "UNENCRYPTED PASSWORD non è più supportato"
 
 #: gram.y:1009
 #, c-format
 msgid "Remove UNENCRYPTED to store the password in encrypted form instead."
-msgstr ""
+msgstr "Rimuovi UNENCRYPTED per memorizzare la password in formato criptato."
 
 #: gram.y:1071
 #, c-format
@@ -27734,7 +27870,7 @@ msgstr "l'intervallo della time zone deve essere HOUR o HOUR TO MINUTE"
 #: gram.y:2644
 #, c-format
 msgid "sequence option \"%s\" not supported here"
-msgstr ""
+msgstr "l'opzione della sequenza \"%s\" non è supportata qui"
 
 #: gram.y:2857 gram.y:2886
 #, c-format
@@ -27749,12 +27885,12 @@ msgstr "GLOBAL è deprecato nella creazione di tabelle temporanee"
 #: gram.y:5128
 #, c-format
 msgid "unrecognized row security option \"%s\""
-msgstr ""
+msgstr "opzione di sicurezza riga \"%s\" non riconosciuta"
 
 #: gram.y:5129
 #, c-format
 msgid "Only PERMISSIVE or RESTRICTIVE policies are supported currently."
-msgstr ""
+msgstr "Solo le regole PERMISSIVE o RESTRICTIVE sono attualmente supportate."
 
 #: gram.y:5237
 msgid "duplicate trigger events specified"
@@ -27833,22 +27969,23 @@ msgstr "Per esempio, FROM (SELECT ...) [AS] foo."
 #: gram.y:11968
 #, c-format
 msgid "only one DEFAULT value is allowed"
-msgstr ""
+msgstr "solo un valore DEFAULT è consentito"
 
 #: gram.y:11977
 #, c-format
 msgid "only one PATH value per column is allowed"
-msgstr ""
+msgstr "solo un valore PATH per colonna è consentito"
 
 #: gram.y:11986
 #, c-format
 msgid "conflicting or redundant NULL / NOT NULL declarations for column \"%s\""
 msgstr ""
+"dichiarazioni NULL / NOT NULL in conflitto o ridondanti per la colonna \"%s\""
 
 #: gram.y:11995
 #, c-format
 msgid "unrecognized column option \"%s\""
-msgstr ""
+msgstr "opzione di colonna \"%s\" non riconosciuta"
 
 #: gram.y:12249
 #, c-format
