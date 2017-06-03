@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pltcl (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-04-22 22:37+0000\n"
+"POT-Creation-Date: 2017-05-22 07:37+0000\n"
 "PO-Revision-Date: 2017-05-29 17:51+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -31,11 +31,13 @@ msgstr ""
 
 #: pltcl.c:459
 msgid "PL/Tcl function to call once when pltcl is first used."
-msgstr "Funzione PL/Tcl da richiamare una volta quando pltcl è usato la prima volta."
+msgstr ""
+"Funzione PL/Tcl da richiamare una volta quando pltcl è usato la prima volta."
 
 #: pltcl.c:466
 msgid "PL/TclU function to call once when pltclu is first used."
-msgstr "Funzione PL/TclU da richiamare una volta quando pltcl è usato la prima volta."
+msgstr ""
+"Funzione PL/TclU da richiamare una volta quando pltcl è usato la prima volta."
 
 #: pltcl.c:629
 #, c-format
@@ -56,12 +58,17 @@ msgstr "esecuzione del parametro %s"
 #: pltcl.c:830
 #, c-format
 msgid "set-valued function called in context that cannot accept a set"
-msgstr "funzione che restituisce insiemi richiamata in un contesto che non può accettare un insieme"
+msgstr ""
+"funzione che restituisce insiemi richiamata in un contesto che non può "
+"accettare un insieme"
 
 #: pltcl.c:994
 #, c-format
-msgid "function returning record called in context that cannot accept type record"
-msgstr "funzione che restituisce record richiamata in un contesto che non può accettare record"
+msgid ""
+"function returning record called in context that cannot accept type record"
+msgstr ""
+"funzione che restituisce record richiamata in un contesto che non può "
+"accettare record"
 
 #: pltcl.c:1263
 #, c-format
@@ -110,7 +117,9 @@ msgstr "la lista nome/valore di colonne deve avere un numero di elementi pari"
 #: pltcl.c:3118
 #, c-format
 msgid "column name/value list contains nonexistent column name \"%s\""
-msgstr "la lista nome/valore di elementi contiene un nome di colonna inesistente \"%s\""
+msgstr ""
+"la lista nome/valore di elementi contiene un nome di colonna inesistente \"%s"
+"\""
 
 #: pltcl.c:3125
 #, c-format
