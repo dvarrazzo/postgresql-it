@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_archivecleanup (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-05-22 07:46+0000\n"
+"POT-Creation-Date: 2017-08-30 21:45+0000\n"
 "PO-Revision-Date: 2017-04-23 03:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -17,103 +17,103 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: pg_archivecleanup.c:73
+#: pg_archivecleanup.c:72
 #, c-format
 msgid "%s: archive location \"%s\" does not exist\n"
 msgstr ""
 
-#: pg_archivecleanup.c:149
+#: pg_archivecleanup.c:148
 #, c-format
 msgid "%s: file \"%s\" would be removed\n"
 msgstr ""
 
-#: pg_archivecleanup.c:155
+#: pg_archivecleanup.c:154
 #, c-format
 msgid "%s: removing file \"%s\"\n"
 msgstr ""
 
-#: pg_archivecleanup.c:161
+#: pg_archivecleanup.c:160
 #, c-format
 msgid "%s: ERROR: could not remove file \"%s\": %s\n"
 msgstr ""
 
-#: pg_archivecleanup.c:169
+#: pg_archivecleanup.c:168
 #, c-format
 msgid "%s: could not read archive location \"%s\": %s\n"
 msgstr ""
 
-#: pg_archivecleanup.c:172
+#: pg_archivecleanup.c:171
 #, c-format
 msgid "%s: could not close archive location \"%s\": %s\n"
 msgstr ""
 
-#: pg_archivecleanup.c:176
+#: pg_archivecleanup.c:175
 #, c-format
 msgid "%s: could not open archive location \"%s\": %s\n"
 msgstr ""
 
-#: pg_archivecleanup.c:249
+#: pg_archivecleanup.c:248
 #, c-format
-msgid "%s: invalid filename input\n"
+msgid "%s: invalid file name argument\n"
 msgstr ""
 
-#: pg_archivecleanup.c:250 pg_archivecleanup.c:322 pg_archivecleanup.c:343
-#: pg_archivecleanup.c:355 pg_archivecleanup.c:362
+#: pg_archivecleanup.c:249 pg_archivecleanup.c:321 pg_archivecleanup.c:342
+#: pg_archivecleanup.c:354 pg_archivecleanup.c:361
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr ""
 
-#: pg_archivecleanup.c:263
+#: pg_archivecleanup.c:262
 #, c-format
 msgid ""
 "%s removes older WAL files from PostgreSQL archives.\n"
 "\n"
 msgstr ""
 
-#: pg_archivecleanup.c:264
+#: pg_archivecleanup.c:263
 #, c-format
 msgid "Usage:\n"
 msgstr ""
 
-#: pg_archivecleanup.c:265
+#: pg_archivecleanup.c:264
 #, c-format
 msgid "  %s [OPTION]... ARCHIVELOCATION OLDESTKEPTWALFILE\n"
 msgstr ""
 
-#: pg_archivecleanup.c:266
+#: pg_archivecleanup.c:265
 #, c-format
 msgid ""
 "\n"
 "Options:\n"
 msgstr ""
 
-#: pg_archivecleanup.c:267
+#: pg_archivecleanup.c:266
 #, c-format
 msgid "  -d             generate debug output (verbose mode)\n"
 msgstr ""
 
-#: pg_archivecleanup.c:268
+#: pg_archivecleanup.c:267
 #, c-format
 msgid ""
 "  -n             dry run, show the names of the files that would be removed\n"
 msgstr ""
 
-#: pg_archivecleanup.c:269
+#: pg_archivecleanup.c:268
 #, c-format
 msgid "  -V, --version  output version information, then exit\n"
 msgstr ""
 
-#: pg_archivecleanup.c:270
+#: pg_archivecleanup.c:269
 #, c-format
 msgid "  -x EXT         clean up files if they have this extension\n"
 msgstr ""
 
-#: pg_archivecleanup.c:271
+#: pg_archivecleanup.c:270
 #, c-format
 msgid "  -?, --help     show this help, then exit\n"
 msgstr ""
 
-#: pg_archivecleanup.c:272
+#: pg_archivecleanup.c:271
 #, c-format
 msgid ""
 "\n"
@@ -124,7 +124,7 @@ msgid ""
 "  archive_cleanup_command = 'pg_archivecleanup /mnt/server/archiverdir %%r'\n"
 msgstr ""
 
-#: pg_archivecleanup.c:277
+#: pg_archivecleanup.c:276
 #, c-format
 msgid ""
 "\n"
@@ -134,29 +134,29 @@ msgid ""
 "000000010000000000000010.00000020.backup\n"
 msgstr ""
 
-#: pg_archivecleanup.c:281
+#: pg_archivecleanup.c:280
 #, c-format
 msgid ""
 "\n"
 "Report bugs to <pgsql-bugs@postgresql.org>.\n"
 msgstr ""
 
-#: pg_archivecleanup.c:342
+#: pg_archivecleanup.c:341
 #, c-format
 msgid "%s: must specify archive location\n"
 msgstr ""
 
-#: pg_archivecleanup.c:354
+#: pg_archivecleanup.c:353
 #, c-format
-msgid "%s: must specify restartfilename\n"
+msgid "%s: must specify oldest kept WAL file\n"
 msgstr ""
 
-#: pg_archivecleanup.c:361
+#: pg_archivecleanup.c:360
 #, c-format
-msgid "%s: too many parameters\n"
+msgid "%s: too many command-line arguments\n"
 msgstr ""
 
-#: pg_archivecleanup.c:380
+#: pg_archivecleanup.c:379
 #, c-format
-msgid "%s: keep WAL file \"%s\" and later\n"
+msgid "%s: keeping WAL file \"%s\" and later\n"
 msgstr ""

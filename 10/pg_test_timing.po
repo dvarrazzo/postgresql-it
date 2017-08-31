@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_test_timing (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-04-22 22:45+0000\n"
+"POT-Creation-Date: 2017-08-30 21:44+0000\n"
 "PO-Revision-Date: 2017-04-23 03:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -59,20 +59,20 @@ msgstr ""
 msgid "Per loop time including overhead: %0.2f ns\n"
 msgstr ""
 
-#: pg_test_timing.c:180
-#, c-format
-msgid "Histogram of timing durations:\n"
-msgstr ""
-
-#: pg_test_timing.c:181
-#, c-format
-msgid "% of total"
-msgstr ""
-
-#: pg_test_timing.c:181
+#: pg_test_timing.c:175
 msgid "< us"
 msgstr ""
 
-#: pg_test_timing.c:181
+#: pg_test_timing.c:176
+#, no-c-format
+msgid "% of total"
+msgstr ""
+
+#: pg_test_timing.c:177
 msgid "count"
+msgstr ""
+
+#: pg_test_timing.c:186
+#, c-format
+msgid "Histogram of timing durations:\n"
 msgstr ""
