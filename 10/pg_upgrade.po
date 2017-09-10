@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-08-30 21:44+0000\n"
+"POT-Creation-Date: 2017-09-10 14:14+0000\n"
 "PO-Revision-Date: 2017-04-23 03:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
@@ -156,7 +156,7 @@ msgid "Creating script to analyze new cluster"
 msgstr ""
 
 #: check.c:446 check.c:574 check.c:838 check.c:941 check.c:1032 function.c:253
-#: version.c:57 version.c:156 version.c:257 version.c:339
+#: option.c:480 version.c:57 version.c:156 version.c:257 version.c:339
 #, c-format
 msgid "could not open file \"%s\": %s\n"
 msgstr ""
@@ -284,7 +284,7 @@ msgstr ""
 
 #: check.c:990
 #, c-format
-msgid "Checking for incompatible jsonb data type"
+msgid "Checking for incompatible \"jsonb\" data type"
 msgstr ""
 
 #: check.c:1056
@@ -576,9 +576,9 @@ msgstr ""
 msgid "could not get pg_ctl version data using %s: %s\n"
 msgstr ""
 
-#: exec.c:54 server.c:170
+#: exec.c:54
 #, c-format
-msgid "could not get version from %s\n"
+msgid "could not get pg_ctl version output from %s\n"
 msgstr ""
 
 #: exec.c:101 exec.c:105
@@ -593,7 +593,7 @@ msgstr ""
 
 #: exec.c:146 exec.c:201 option.c:101 option.c:217
 #, c-format
-msgid "cannot write to log file %s\n"
+msgid "could not write to log file \"%s\"\n"
 msgstr ""
 
 #: exec.c:175
@@ -644,7 +644,7 @@ msgstr ""
 
 #: exec.c:429
 #, c-format
-msgid "check for \"%s\" failed: not an executable file\n"
+msgid "check for \"%s\" failed: not a regular file\n"
 msgstr ""
 
 #: exec.c:441
@@ -709,7 +709,7 @@ msgstr ""
 msgid ""
 "could not create hard link between old and new data directories: %s\n"
 "In link mode the old and new data directories must be on the same file "
-"system volume.\n"
+"system.\n"
 msgstr ""
 
 #: function.c:110
@@ -896,7 +896,7 @@ msgstr ""
 
 #: option.c:265 option.c:462
 #, c-format
-msgid "cannot find current directory\n"
+msgid "could not determine current directory\n"
 msgstr ""
 
 #: option.c:268
@@ -1098,19 +1098,14 @@ msgstr ""
 msgid "could not get data directory using %s: %s\n"
 msgstr ""
 
-#: option.c:480
+#: option.c:488
 #, c-format
-msgid "Cannot open file %s: %m\n"
+msgid "could not read line %d from file \"%s\": %s\n"
 msgstr ""
 
-#: option.c:487
+#: option.c:506
 #, c-format
-msgid "Cannot read line %d from %s: %m\n"
-msgstr ""
-
-#: option.c:504
-#, c-format
-msgid "User-supplied old port number %hu corrected to %hu\n"
+msgid "user-supplied old port number %hu corrected to %hu\n"
 msgstr ""
 
 #: parallel.c:128 parallel.c:242
@@ -1180,7 +1175,7 @@ msgstr ""
 
 #: pg_upgrade.c:264
 #, c-format
-msgid "Freezing all rows on the new cluster"
+msgid "Freezing all rows in the new cluster"
 msgstr ""
 
 #: pg_upgrade.c:284
@@ -1220,7 +1215,7 @@ msgstr ""
 
 #: pg_upgrade.c:474
 #, c-format
-msgid "Setting oldest multixact ID on new cluster"
+msgid "Setting oldest multixact ID in new cluster"
 msgstr ""
 
 #: pg_upgrade.c:494
@@ -1300,6 +1295,11 @@ msgstr ""
 #: server.c:165
 #, c-format
 msgid "could not open version file: %s\n"
+msgstr ""
+
+#: server.c:170
+#, c-format
+msgid "could not parse PG_VERSION file from %s\n"
 msgstr ""
 
 #: server.c:284
