@@ -29,15 +29,17 @@ logging.basicConfig(
 class ScriptError(Exception):
     """Controlled exception raised by the script."""
 
+
 class CheckFailed(Exception):
     """Some translation check failed"""
+
 
 def main():
     opt = parse_cmdline()
 
-    classes = [ cls for cls in globals().itervalues()
-        if type(cls) == type and issubclass(cls, Check)
-        and cls is not Check]
+    classes = [
+        cls for cls in globals().itervalues()
+        if type(cls) == type and issubclass(cls, Check) and cls is not Check]
 
     if opt.tests:
         checks = []
@@ -49,7 +51,7 @@ def main():
             else:
                 raise ScriptError("test not known: %s" % test)
     else:
-        checks = [ c() for c in classes if c.default ]
+        checks = [c() for c in classes if c.default]
 
     for check in checks:
         logger.debug("performing check: %s", check.__class__.__name__)
@@ -63,6 +65,7 @@ def main():
     else:
         return _check_only(opt, checks, wl)
 
+
 def _check_only(opt, checks, wl):
     rv = 0
     errs = []
@@ -75,7 +78,8 @@ def _check_only(opt, checks, wl):
                 except CheckFailed, e:
                     if wl.accepted(fn, check, entry):
                         continue
-                    logger.error("%s failed in %s: %s\n%s",
+                    logger.error(
+                        "%s failed in %s: %s\n%s",
                         check.__class__.__name__, fn, e, entry)
                     errs.append((fn, check, entry))
                     rv = 1
@@ -84,6 +88,7 @@ def _check_only(opt, checks, wl):
         _merge_errors(opt, errs)
 
     return rv
+
 
 def _check_and_fix(opt, checks, wl):
     for fn in [fn for pat in opt.files for fn in glob.glob(pat)]:
@@ -97,7 +102,8 @@ def _check_and_fix(opt, checks, wl):
                     if wl.accepted(fn, check, entry):
                         continue
                     errs.append(entry)
-                    logger.error("%s failed in %s: %s\n%s",
+                    logger.error(
+                        "%s failed in %s: %s\n%s",
                         check.__class__.__name__, fn, e, entry)
                     check.fix(entry)
 
@@ -106,6 +112,7 @@ def _check_and_fix(opt, checks, wl):
             update_file(po, errs)
 
     return 0
+
 
 def _merge_errors(opt, errors):
     """Merge a list of (filename, check, entry) to a whitelist file."""
@@ -143,13 +150,16 @@ class Whitelist:
     def load(self, file):
         doc = ET.parse(file)
         for ef in doc.getroot():
-            if ef.tag != 'file': continue
+            if ef.tag != 'file':
+                continue
             filename = ef.attrib['filename']
             for ec in ef:
-                if ec.tag != 'check': continue
+                if ec.tag != 'check':
+                    continue
                 check = ec.attrib['name']
                 for ei in ec:
-                    if ei.tag != 'item': continue
+                    if ei.tag != 'item':
+                        continue
                     self._data[filename][check].add(
                         (ei.attrib['msgid'], ei.attrib['msgstr']))
 
@@ -239,7 +249,7 @@ def update_file(po, entries):
 
         # replace with the new string
         s = entry._str_field('msgstr', '', '', entry.msgstr, wrapwidth=0)
-        lines[start:end] = [ line + u'\n' for line in s ]
+        lines[start:end] = [l + u'\n' for l in s]
         i -= (end - start) + 1
 
     # replace the file
@@ -247,12 +257,14 @@ def update_file(po, entries):
         for line in lines:
             f.write(line)
 
+
 def get_check_classes():
-    classes = [ cls for cls in globals().itervalues()
-        if type(cls) == type and issubclass(cls, Check)
-        and cls is not Check ]
+    classes = [
+        cls for cls in globals().itervalues()
+        if type(cls) == type and issubclass(cls, Check) and cls is not Check]
     classes.sort(key=attrgetter('__name__'))
     return classes
+
 
 def parse_cmdline():
     import optparse
@@ -264,7 +276,8 @@ def parse_cmdline():
             else:
                 return ""
 
-    parser = optparse.OptionParser(usage="%prog [options] file [...]",
+    parser = optparse.OptionParser(
+        usage="%prog [options] file [...]",
         description="check message catalogs consistency",
         formatter=DontTouchTheEpilog(),
         epilog="Available tests are:\n" + '\n'.join(
@@ -272,16 +285,20 @@ def parse_cmdline():
                     cls.__name__,
                     not cls.default and '(*)' or '',
                     cls.__doc__)
-                for cls in get_check_classes()))
-    parser.add_option('--test', metavar="NAME", dest="tests", action='append',
+            for cls in get_check_classes()))
+    parser.add_option(
+        '--test', metavar="NAME", dest="tests", action='append',
         help="run the test NAME. Can be specified more than once."
-            " If not specified, run all the tests"
-            " (except the ones marked with *).")
-    parser.add_option('--fix', action='store_true',
+             " If not specified, run all the tests"
+             " (except the ones marked with *).")
+    parser.add_option(
+        '--fix', action='store_true',
         help="fix the broken entries if possible and save the .po inplace")
-    parser.add_option('--whitelist', metavar="XML",
+    parser.add_option(
+        '--whitelist', metavar="XML",
         help="use a whitelist to accept some of the entries failing tests")
-    parser.add_option('--save-whitelist', metavar="XML",
+    parser.add_option(
+        '--save-whitelist', metavar="XML",
         help="save the errors found into a file; merge if exists")
     opt, args = parser.parse_args()
     opt.files = args
@@ -364,14 +381,17 @@ class PrefixWhitespace(CheckWhitespace, Check):
     """check that the leading whitespaces are equal"""
     _chk_re = re.compile(r'^\s*')
 
+
 class SuffixWhitespacePedantic(CheckWhitespace, Check):
     """check that the trailing whitespaces are equal"""
     _chk_re = re.compile(r'\s*$')
     default = False
 
+
 class SuffixWhitespace(SuffixWhitespacePedantic):
     """check that the trailing nonempty whitespaces are equal"""
     default = True
+
     def check(self, entry):
         for s1, s2 in self.messages(entry):
             m1 = self._chk_re.search(s1)
@@ -396,6 +416,7 @@ class SuffixWhitespace(SuffixWhitespacePedantic):
             if w1 != w2:
                 raise CheckFailed("match failed")
 
+
 class ClearBrokenEntries(object):
     """Mixin class to remove broken translations."""
     def fix(self, entry):
@@ -409,8 +430,8 @@ class Placeholders(ClearBrokenEntries, Check):
 
     def check(self, entry):
         for s1, s2 in self.messages(entry):
-            p1 = [ s for s in self._chk_re.findall(s1) if s ]
-            p2 = [ s for s in self._chk_re.findall(s2) if s ]
+            p1 = [s for s in self._chk_re.findall(s1) if s]
+            p2 = [s for s in self._chk_re.findall(s2) if s]
 
             if not p1 and not p2:
                 return
@@ -432,6 +453,7 @@ class Placeholders(ClearBrokenEntries, Check):
             if p1 != p2:
                 raise CheckFailed("placeholders don't match")
 
+
 class CheckOption(ClearBrokenEntries):
     _chk_re = None
 
@@ -444,13 +466,16 @@ class CheckOption(ClearBrokenEntries):
             if m1 != m2:
                 raise CheckFailed("option don't match")
 
+
 class ShortOption(CheckOption, Check):
     """check that the short options (e.g. -x) are consistent"""
     _chk_re = re.compile(r'(?:\W|^)(-[a-zA-Z0-9])\b')
 
+
 class LongOption(CheckOption, Check):
     """check that the long options (e.g. --foo) are consistent"""
     _chk_re = re.compile(r'(?:\W|^)(--[a-z0-9-]+)\b')
+
 
 class PsqlCommand(CheckOption, Check):
     """check that the psql commands (e.g. \\dX[+]) are consistent"""
@@ -466,7 +491,8 @@ if __name__ == '__main__':
         sys.exit(1)
 
     except Exception, e:
-        logger.error("Unexpected error: %s - %s",
+        logger.error(
+            "Unexpected error: %s - %s",
             e.__class__.__name__, e, exc_info=True)
         sys.exit(1)
 
