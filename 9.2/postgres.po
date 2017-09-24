@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-09-03 15:45+0000\n"
-"PO-Revision-Date: 2017-09-10 18:15+0100\n"
+"POT-Creation-Date: 2017-09-24 10:35+0000\n"
+"PO-Revision-Date: 2017-09-24 23:48+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -2487,8 +2487,8 @@ msgstr "opzioni contraddittorie o ridondanti"
 msgid "default privileges cannot be set for columns"
 msgstr "i privilegi predefiniti non possono essere impostati sulle colonne"
 
-#: catalog/aclchk.c:1477 catalog/objectaddress.c:813 commands/analyze.c:387
-#: commands/copy.c:3983 commands/sequence.c:1480 commands/tablecmds.c:4787
+#: catalog/aclchk.c:1477 catalog/objectaddress.c:813 commands/analyze.c:391
+#: commands/copy.c:3992 commands/sequence.c:1480 commands/tablecmds.c:4787
 #: commands/tablecmds.c:4879 commands/tablecmds.c:4926
 #: commands/tablecmds.c:5028 commands/tablecmds.c:5072
 #: commands/tablecmds.c:5151 commands/tablecmds.c:5235
@@ -3442,7 +3442,7 @@ msgid "cannot reindex temporary tables of other sessions"
 msgstr "non è possibile reindicizzare le tabelle temporanee di altre sessioni"
 
 #: catalog/namespace.c:244 catalog/namespace.c:434 catalog/namespace.c:528
-#: commands/trigger.c:4220
+#: commands/trigger.c:4261
 #, c-format
 msgid "cross-database references are not implemented: \"%s.%s.%s\""
 msgstr "i riferimenti tra database diversi non sono implementati: \"%s.%s.%s\""
@@ -4193,12 +4193,17 @@ msgstr "analisi dell'albero di ereditarietà di \"%s.%s\""
 msgid "analyzing \"%s.%s\""
 msgstr "analisi di \"%s.%s\""
 
-#: commands/analyze.c:655
+#: commands/analyze.c:396
+#, c-format
+msgid "column \"%s\" of relation \"%s\" is specified twice"
+msgstr "la colonna \"%s\" della relazione \"%s\" è specificata due volte"
+
+#: commands/analyze.c:666
 #, c-format
 msgid "automatic analyze of table \"%s.%s.%s\" system usage: %s"
 msgstr "analisi automatica della tabella \"%s.%s.%s\" uso del sistema: %s"
 
-#: commands/analyze.c:1299
+#: commands/analyze.c:1310
 #, c-format
 msgid ""
 "\"%s\": scanned %d of %u pages, containing %.0f live rows and %.0f dead "
@@ -4207,7 +4212,7 @@ msgstr ""
 "\"%s\": esaminate %d pagine su %u, contenenti %.0f righe vive e %.0f righe "
 "morte; %d righe nel campione, %.0f righe totali stimate"
 
-#: commands/analyze.c:1563 executor/execQual.c:2891
+#: commands/analyze.c:1574 executor/execQual.c:2891
 msgid "could not convert row type"
 msgstr "conversione del tipo riga fallita"
 
@@ -4642,210 +4647,210 @@ msgstr ""
 msgid "relative path not allowed for COPY to file"
 msgstr "i percorsi relativi non sono consentiti per il COPY verso un file"
 
-#: commands/copy.c:1432
+#: commands/copy.c:1441
 #, c-format
 msgid "could not open file \"%s\" for writing: %m"
 msgstr "apertura del file \"%s\" in scrittura fallita: %m"
 
-#: commands/copy.c:1439 commands/copy.c:2395
+#: commands/copy.c:1448 commands/copy.c:2404
 #, c-format
 msgid "\"%s\" is a directory"
 msgstr "\"%s\" è una directory"
 
-#: commands/copy.c:1763
+#: commands/copy.c:1772
 #, c-format
 msgid "COPY %s, line %d, column %s"
 msgstr "COPY %s, riga %d, colonna %s"
 
-#: commands/copy.c:1767 commands/copy.c:1814
+#: commands/copy.c:1776 commands/copy.c:1823
 #, c-format
 msgid "COPY %s, line %d"
 msgstr "COPY %s, riga %d"
 
-#: commands/copy.c:1778
+#: commands/copy.c:1787
 #, c-format
 msgid "COPY %s, line %d, column %s: \"%s\""
 msgstr "COPY %s, riga %d, colonna %s: \"%s\""
 
-#: commands/copy.c:1786
+#: commands/copy.c:1795
 #, c-format
 msgid "COPY %s, line %d, column %s: null input"
 msgstr "COPY %s, riga %d, colonna %s: input nullo"
 
-#: commands/copy.c:1808
+#: commands/copy.c:1817
 #, c-format
 msgid "COPY %s, line %d: \"%s\""
 msgstr "COPY %s, riga %d: \"%s\""
 
-#: commands/copy.c:1892
+#: commands/copy.c:1901
 #, c-format
 msgid "cannot copy to view \"%s\""
 msgstr "non è possibile copiare verso la vista \"%s\""
 
-#: commands/copy.c:1897
+#: commands/copy.c:1906
 #, c-format
 msgid "cannot copy to foreign table \"%s\""
 msgstr "non è possibile copiare verso la tabella esterna \"%s\""
 
-#: commands/copy.c:1902
+#: commands/copy.c:1911
 #, c-format
 msgid "cannot copy to sequence \"%s\""
 msgstr "non è possibile copiare verso sequenza \"%s\""
 
-#: commands/copy.c:1907
+#: commands/copy.c:1916
 #, c-format
 msgid "cannot copy to non-table relation \"%s\""
 msgstr ""
 "non è possibile copiare verso la relazione \"%s\" perché non è una tabella"
 
-#: commands/copy.c:2388 utils/adt/genfile.c:122
+#: commands/copy.c:2397 utils/adt/genfile.c:122
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "apertura del file \"%s\" in lettura fallita: %m"
 
-#: commands/copy.c:2414
+#: commands/copy.c:2423
 #, c-format
 msgid "COPY file signature not recognized"
 msgstr "formato del file COPY non riconosciuto"
 
-#: commands/copy.c:2419
+#: commands/copy.c:2428
 #, c-format
 msgid "invalid COPY file header (missing flags)"
 msgstr "intestazione del file COPY non valida (flag mancanti)"
 
-#: commands/copy.c:2425
+#: commands/copy.c:2434
 #, c-format
 msgid "unrecognized critical flags in COPY file header"
 msgstr ""
 "alcune flag critici non sono stati riconosciuti nell'intestazione del file "
 "COPY"
 
-#: commands/copy.c:2431
+#: commands/copy.c:2440
 #, c-format
 msgid "invalid COPY file header (missing length)"
 msgstr "intestazione del file COPY non valida (manca la lunghezza)"
 
-#: commands/copy.c:2438
+#: commands/copy.c:2447
 #, c-format
 msgid "invalid COPY file header (wrong length)"
 msgstr "intestazione del file COPY non valida (lunghezza errata)"
 
-#: commands/copy.c:2571 commands/copy.c:3254 commands/copy.c:3484
+#: commands/copy.c:2580 commands/copy.c:3263 commands/copy.c:3493
 #, c-format
 msgid "extra data after last expected column"
 msgstr "ci sono dati in eccesso dopo l'ultima colonna attesa"
 
-#: commands/copy.c:2581
+#: commands/copy.c:2590
 #, c-format
 msgid "missing data for OID column"
 msgstr "dati per la colonna OID mancanti"
 
-#: commands/copy.c:2587
+#: commands/copy.c:2596
 #, c-format
 msgid "null OID in COPY data"
 msgstr "OID nullo nei dati da COPY"
 
-#: commands/copy.c:2597 commands/copy.c:2696
+#: commands/copy.c:2606 commands/copy.c:2705
 #, c-format
 msgid "invalid OID in COPY data"
 msgstr "OID non valido nei dati da COPY"
 
-#: commands/copy.c:2612
+#: commands/copy.c:2621
 #, c-format
 msgid "missing data for column \"%s\""
 msgstr "dati mancanti per la colonna \"%s\""
 
-#: commands/copy.c:2671
+#: commands/copy.c:2680
 #, c-format
 msgid "received copy data after EOF marker"
 msgstr "dati da copiare ricevuti dopo il segnalatore di fine file"
 
-#: commands/copy.c:2678
+#: commands/copy.c:2687
 #, c-format
 msgid "row field count is %d, expected %d"
 msgstr "il numero di campi è %d, ne erano attesi %d"
 
-#: commands/copy.c:3018 commands/copy.c:3035
+#: commands/copy.c:3027 commands/copy.c:3044
 #, c-format
 msgid "literal carriage return found in data"
 msgstr "\"ritorno carrello\" trovato nei dati"
 
-#: commands/copy.c:3019 commands/copy.c:3036
+#: commands/copy.c:3028 commands/copy.c:3045
 #, c-format
 msgid "unquoted carriage return found in data"
 msgstr "\"ritorno carrello\" non quotato trovato nei dati"
 
-#: commands/copy.c:3021 commands/copy.c:3038
+#: commands/copy.c:3030 commands/copy.c:3047
 #, c-format
 msgid "Use \"\\r\" to represent carriage return."
 msgstr "Usa \"\\r\" per rappresentare i caratteri \"ritorno carrello\"."
 
-#: commands/copy.c:3022 commands/copy.c:3039
+#: commands/copy.c:3031 commands/copy.c:3048
 #, c-format
 msgid "Use quoted CSV field to represent carriage return."
 msgstr ""
 "Usa un campo CSV quotato per rappresentare i caratteri \"ritorno carrello\"."
 
-#: commands/copy.c:3051
+#: commands/copy.c:3060
 #, c-format
 msgid "literal newline found in data"
 msgstr "\"nuova riga\" letterale trovato nei dati"
 
-#: commands/copy.c:3052
+#: commands/copy.c:3061
 #, c-format
 msgid "unquoted newline found in data"
 msgstr "\"nuova riga\" non quotato trovato nei dati"
 
-#: commands/copy.c:3054
+#: commands/copy.c:3063
 #, c-format
 msgid "Use \"\\n\" to represent newline."
 msgstr "Usa \"\\n\" per rappresentare i caratteri \"nuova riga\"."
 
-#: commands/copy.c:3055
+#: commands/copy.c:3064
 #, c-format
 msgid "Use quoted CSV field to represent newline."
 msgstr "Usa un campo CSV quotato per rappresentare i caratteri \"nuova riga\"."
 
-#: commands/copy.c:3101 commands/copy.c:3137
+#: commands/copy.c:3110 commands/copy.c:3146
 #, c-format
 msgid "end-of-copy marker does not match previous newline style"
 msgstr ""
 "il marcatore di fine copia non combacia con il precedente stile \"nuova riga"
 "\""
 
-#: commands/copy.c:3110 commands/copy.c:3126
+#: commands/copy.c:3119 commands/copy.c:3135
 #, c-format
 msgid "end-of-copy marker corrupt"
 msgstr "il marcatore di fine copia è corrotto"
 
-#: commands/copy.c:3568
+#: commands/copy.c:3577
 #, c-format
 msgid "unterminated CSV quoted field"
 msgstr "campo CSV tra virgolette non terminato"
 
-#: commands/copy.c:3645 commands/copy.c:3664
+#: commands/copy.c:3654 commands/copy.c:3673
 #, c-format
 msgid "unexpected EOF in COPY data"
 msgstr "fine file inattesa dei dati da COPY"
 
-#: commands/copy.c:3654
+#: commands/copy.c:3663
 #, c-format
 msgid "invalid field size"
 msgstr "dimensione del campo non valida"
 
-#: commands/copy.c:3677
+#: commands/copy.c:3686
 #, c-format
 msgid "incorrect binary data format"
 msgstr "formato di dati binari non corretto"
 
-#: commands/copy.c:3988 commands/indexcmds.c:1021 commands/tablecmds.c:1391
+#: commands/copy.c:3997 commands/indexcmds.c:1021 commands/tablecmds.c:1391
 #: commands/tablecmds.c:2190 parser/parse_expr.c:766
 #: utils/adt/tsvector_op.c:1418
 #, c-format
 msgid "column \"%s\" does not exist"
 msgstr "la colonna \"%s\" non esiste"
 
-#: commands/copy.c:3995 commands/tablecmds.c:1417 commands/trigger.c:637
+#: commands/copy.c:4004 commands/tablecmds.c:1417 commands/trigger.c:637
 #: parser/parse_target.c:915 parser/parse_target.c:926
 #, c-format
 msgid "column \"%s\" specified more than once"
@@ -7846,12 +7851,12 @@ msgstr "il trigger BEFORE STATEMENT non può restituire un valore"
 msgid "could not serialize access due to concurrent update"
 msgstr "serializzazione dell'accesso fallita a causa di modifiche concorrenti"
 
-#: commands/trigger.c:4271
+#: commands/trigger.c:4312
 #, c-format
 msgid "constraint \"%s\" is not deferrable"
 msgstr "il vincolo \"%s\" non è deferibile"
 
-#: commands/trigger.c:4294
+#: commands/trigger.c:4335
 #, c-format
 msgid "constraint \"%s\" does not exist"
 msgstr "il vincolo \"%s\" non esiste"
@@ -9888,12 +9893,12 @@ msgstr ""
 "il codice della risposta RADIUS (%d) per l'utente \"%s\" non è corretto"
 
 #: libpq/be-fsstubs.c:132 libpq/be-fsstubs.c:162 libpq/be-fsstubs.c:188
-#: libpq/be-fsstubs.c:224 libpq/be-fsstubs.c:271 libpq/be-fsstubs.c:518
+#: libpq/be-fsstubs.c:224 libpq/be-fsstubs.c:271 libpq/be-fsstubs.c:527
 #, c-format
 msgid "invalid large-object descriptor: %d"
 msgstr "descrittore di large object non valido: %d"
 
-#: libpq/be-fsstubs.c:172 libpq/be-fsstubs.c:204 libpq/be-fsstubs.c:528
+#: libpq/be-fsstubs.c:172 libpq/be-fsstubs.c:204 libpq/be-fsstubs.c:537
 #, c-format
 msgid "permission denied for large object %u"
 msgstr "permesso per il large object %u negato"
@@ -9933,12 +9938,12 @@ msgstr "solo un superutente può usare lo_export() lato server"
 msgid "Anyone can use the client-side lo_export() provided by libpq."
 msgstr "Chiunque può invece usare lo_export() lato client fornito da libpq."
 
-#: libpq/be-fsstubs.c:483
+#: libpq/be-fsstubs.c:492
 #, c-format
 msgid "could not create server file \"%s\": %m"
 msgstr "creazione del file del server \"%s\" fallita: %m"
 
-#: libpq/be-fsstubs.c:495
+#: libpq/be-fsstubs.c:504
 #, c-format
 msgid "could not write server file \"%s\": %m"
 msgstr "scrittura del file del server \"%s\" fallita: %m"
@@ -16625,7 +16630,7 @@ msgstr "il valore del passo non può essere uguale a zero"
 #: utils/adt/numutils.c:61 utils/adt/numutils.c:103
 #, c-format
 msgid "invalid input syntax for integer: \"%s\""
-msgstr "sintassi di input non valida per il tipo integer: \"%s\""
+msgstr "sintassi di input non valida per un intero: \"%s\""
 
 #: utils/adt/int8.c:114
 #, c-format
