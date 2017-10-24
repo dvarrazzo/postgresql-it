@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 9.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2017-09-24 10:23+0000\n"
-"PO-Revision-Date: 2017-09-24 23:48+0100\n"
+"POT-Creation-Date: 2017-10-23 22:32+0000\n"
+"PO-Revision-Date: 2017-10-24 08:30+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: Gruppo traduzioni ITPUG <traduzioni@itpug.org>\n"
 "Language: it\n"
@@ -513,8 +513,8 @@ msgstr "\"%s\" è un indice"
 msgid "\"%s\" is a composite type"
 msgstr "\"%s\" è un tipo composito"
 
-#: access/heap/heapam.c:4506 access/heap/heapam.c:4563
-#: access/heap/heapam.c:4808 executor/execMain.c:2106
+#: access/heap/heapam.c:4549 access/heap/heapam.c:4606
+#: access/heap/heapam.c:4851 executor/execMain.c:2105
 #, c-format
 msgid "could not obtain lock on row in relation \"%s\""
 msgstr "lock di riga nella relazione \"%s\" fallito"
@@ -2475,7 +2475,7 @@ msgid "Could not rename \"%s\" to \"%s\": %m."
 msgstr "Non è stato possibile rinominare \"%s\" in \"%s\": %m."
 
 #: access/transam/xlog.c:10952 replication/logical/logicalfuncs.c:169
-#: replication/walreceiver.c:937 replication/walsender.c:2156
+#: replication/walreceiver.c:942 replication/walsender.c:2156
 #, c-format
 msgid "could not seek in log segment %s to offset %u: %m"
 msgstr "spostamento nel segmento di log %s alla posizione %u fallito: %m"
@@ -2909,16 +2909,16 @@ msgstr "i privilegi predefiniti non possono essere impostati sulle colonne"
 #: commands/tablecmds.c:7555 commands/tablecmds.c:7774
 #: commands/tablecmds.c:8166 commands/trigger.c:641 parser/analyze.c:1994
 #: parser/parse_relation.c:2444 parser/parse_relation.c:2506
-#: parser/parse_target.c:931 parser/parse_type.c:128 utils/adt/acl.c:2840
+#: parser/parse_target.c:931 parser/parse_type.c:128 utils/adt/acl.c:2842
 #: utils/adt/ruleutils.c:1846
 #, c-format
 msgid "column \"%s\" of relation \"%s\" does not exist"
 msgstr "la colonna \"%s\" della relazione \"%s\" non esiste"
 
 #: catalog/aclchk.c:1757 catalog/objectaddress.c:862 commands/sequence.c:1058
-#: commands/tablecmds.c:215 commands/tablecmds.c:11418 utils/adt/acl.c:2076
-#: utils/adt/acl.c:2106 utils/adt/acl.c:2138 utils/adt/acl.c:2170
-#: utils/adt/acl.c:2198 utils/adt/acl.c:2228
+#: commands/tablecmds.c:215 commands/tablecmds.c:11418 utils/adt/acl.c:2078
+#: utils/adt/acl.c:2108 utils/adt/acl.c:2140 utils/adt/acl.c:2172
+#: utils/adt/acl.c:2200 utils/adt/acl.c:2230
 #, c-format
 msgid "\"%s\" is not a sequence"
 msgstr "\"%s\" non è una sequenza"
@@ -3791,7 +3791,7 @@ msgstr "il nome della colonna deve essere qualificato"
 
 #: catalog/objectaddress.c:1083 commands/functioncmds.c:126
 #: commands/tablecmds.c:237 commands/typecmds.c:3268 parser/parse_type.c:222
-#: parser/parse_type.c:251 parser/parse_type.c:795 utils/adt/acl.c:4374
+#: parser/parse_type.c:251 parser/parse_type.c:795 utils/adt/acl.c:4376
 #: utils/adt/regproc.c:1166
 #, c-format
 msgid "type \"%s\" does not exist"
@@ -4758,8 +4758,9 @@ msgstr "analisi di \"%s.%s\""
 
 #: commands/analyze.c:399
 #, c-format
-msgid "column \"%s\" of relation \"%s\" is specified twice"
-msgstr "la colonna \"%s\" della relazione \"%s\" è specificata due volte"
+msgid "column \"%s\" of relation \"%s\" appears more than once"
+msgstr ""
+"la colonna \"%s\" della relazione \"%s\" è specificata più di una volta"
 
 #: commands/analyze.c:671
 #, c-format
@@ -4779,22 +4780,22 @@ msgstr ""
 msgid "could not convert row type"
 msgstr "conversione del tipo riga fallita"
 
-#: commands/async.c:555
+#: commands/async.c:558
 #, c-format
 msgid "channel name cannot be empty"
 msgstr "Il nome del canale non può essere vuoto"
 
-#: commands/async.c:560
+#: commands/async.c:563
 #, c-format
 msgid "channel name too long"
 msgstr "il nome del canale è troppo lungo"
 
-#: commands/async.c:567
+#: commands/async.c:570
 #, c-format
 msgid "payload string too long"
 msgstr "la stringa del carico è troppo lunga"
 
-#: commands/async.c:752
+#: commands/async.c:755
 #, c-format
 msgid ""
 "cannot PREPARE a transaction that has executed LISTEN, UNLISTEN, or NOTIFY"
@@ -4802,24 +4803,24 @@ msgstr ""
 "non è possibile eseguire PREPARE in una transazione che ha eseguito LISTEN, "
 "UNLISTEN o NOTIFY"
 
-#: commands/async.c:855
+#: commands/async.c:858
 #, c-format
 msgid "too many notifications in the NOTIFY queue"
 msgstr "troppe notifiche nella coda di NOTIFY"
 
-#: commands/async.c:1458
+#: commands/async.c:1463
 #, c-format
 msgid "NOTIFY queue is %.0f%% full"
 msgstr "la coda di NOTIFY è piena al %.0f%%"
 
-#: commands/async.c:1460
+#: commands/async.c:1465
 #, c-format
 msgid ""
 "The server process with PID %d is among those with the oldest transactions."
 msgstr ""
 "Il processo server con PID %d è tra quelli con le transazioni più vecchie."
 
-#: commands/async.c:1463
+#: commands/async.c:1468
 #, c-format
 msgid ""
 "The NOTIFY queue cannot be emptied until that process ends its current "
@@ -8633,7 +8634,7 @@ msgstr ""
 "Considera l'utilizzo di un trigger AFTER invece di un trigger BEFORE per "
 "propagare i cambiamenti ad altre righe."
 
-#: commands/trigger.c:2747 executor/execMain.c:2173
+#: commands/trigger.c:2747 executor/execMain.c:2172
 #: executor/nodeLockRows.c:165 executor/nodeModifyTable.c:464
 #: executor/nodeModifyTable.c:748
 #, c-format
@@ -8872,7 +8873,7 @@ msgstr "i vincoli di chiave esterna non sono ammessi per i domini"
 msgid "specifying constraint deferrability not supported for domains"
 msgstr "specificare la deferibilità dei vincoli non è ammesso per i domini"
 
-#: commands/typecmds.c:1243 utils/cache/typcache.c:1071
+#: commands/typecmds.c:1243 utils/cache/typcache.c:1121
 #, c-format
 msgid "%s is not an enum"
 msgstr "%s non è una enumerazione"
@@ -9055,7 +9056,7 @@ msgstr "il ruolo \"%s\" esiste già"
 
 #: commands/user.c:618 commands/user.c:827 commands/user.c:933
 #: commands/user.c:1088 commands/variable.c:797 commands/variable.c:869
-#: utils/adt/acl.c:5121 utils/init/miscinit.c:362
+#: utils/adt/acl.c:5123 utils/init/miscinit.c:362
 #, c-format
 msgid "role \"%s\" does not exist"
 msgstr "il ruolo \"%s\" non esiste"
@@ -9968,7 +9969,7 @@ msgid "%s is not allowed in a SQL function"
 msgstr "%s non è consentito in una funzione SQL"
 
 #. translator: %s is a SQL statement name
-#: executor/functions.c:522 executor/spi.c:1343 executor/spi.c:2130
+#: executor/functions.c:522 executor/spi.c:1349 executor/spi.c:2136
 #, c-format
 msgid "%s is not allowed in a non-volatile function"
 msgstr "%s non è consentito in una funzione non volatile"
@@ -10128,43 +10129,43 @@ msgstr "l'offset di fine della finestra dev'essere non nullo"
 msgid "frame ending offset must not be negative"
 msgstr "l'offset di fine della finestra non può essere negativo"
 
-#: executor/spi.c:213
+#: executor/spi.c:214
 #, c-format
 msgid "transaction left non-empty SPI stack"
 msgstr "la transazione ha lasciato lo stack SPI non vuoto"
 
-#: executor/spi.c:214 executor/spi.c:278
+#: executor/spi.c:215 executor/spi.c:279
 #, c-format
 msgid "Check for missing \"SPI_finish\" calls."
 msgstr "Verifica che non ci siano chiamate \"SPI_finish\" mancanti."
 
-#: executor/spi.c:277
+#: executor/spi.c:278
 #, c-format
 msgid "subtransaction left non-empty SPI stack"
 msgstr "la sottotransazione ha lasciato lo stack SPI non vuoto"
 
-#: executor/spi.c:1207
+#: executor/spi.c:1213
 #, c-format
 msgid "cannot open multi-query plan as cursor"
 msgstr "non è possibile aprire un piano multi-query come cursore"
 
 #. translator: %s is name of a SQL command, eg INSERT
-#: executor/spi.c:1212
+#: executor/spi.c:1218
 #, c-format
 msgid "cannot open %s query as cursor"
 msgstr "non è possibile aprire una query %s come cursore"
 
-#: executor/spi.c:1320
+#: executor/spi.c:1326
 #, c-format
 msgid "DECLARE SCROLL CURSOR ... FOR UPDATE/SHARE is not supported"
 msgstr "DECLARE SCROLL CURSOR ... FOR UPDATE/SHARE non è supportato"
 
-#: executor/spi.c:1321 parser/analyze.c:2128
+#: executor/spi.c:1327 parser/analyze.c:2128
 #, c-format
 msgid "Scrollable cursors must be READ ONLY."
 msgstr "Un cursore scorribile dev'essere READ ONLY."
 
-#: executor/spi.c:2428
+#: executor/spi.c:2434
 #, c-format
 msgid "SQL statement \"%s\""
 msgstr "istruzione SQL \"%s\""
@@ -10365,7 +10366,7 @@ msgid "no pg_hba.conf entry for host \"%s\", user \"%s\", database \"%s\""
 msgstr ""
 "nessuna voce in pg_hba.conf per l'host \"%s\", utente \"%s\", database \"%s\""
 
-#: libpq/auth.c:524 libpq/hba.c:1182
+#: libpq/auth.c:524 libpq/hba.c:1172
 #, c-format
 msgid ""
 "MD5 authentication is not supported when \"db_user_namespace\" is enabled"
@@ -10639,7 +10640,7 @@ msgstr "server RADIUS non specificato"
 msgid "RADIUS secret not specified"
 msgstr "segreto RADIUS non specificato"
 
-#: libpq/auth.c:2302 libpq/hba.c:1579
+#: libpq/auth.c:2302 libpq/hba.c:1569
 #, c-format
 msgid "could not translate RADIUS server name \"%s\" to address: %s"
 msgstr "conversione del nome del server RADIUS \"%s\" in indirizzo fallita: %s"
@@ -10970,39 +10971,39 @@ msgstr "Il ruolo \"%s\" ha una password vuota."
 msgid "User \"%s\" has an expired password."
 msgstr "L'utente \"%s\" ha la password scaduta."
 
-#: libpq/hba.c:188
+#: libpq/hba.c:178
 #, c-format
 msgid "authentication file token too long, skipping: \"%s\""
 msgstr "token del file di autenticazione troppo lungo, saltato: \"%s\""
 
-#: libpq/hba.c:332
+#: libpq/hba.c:322
 #, c-format
 msgid "could not open secondary authentication file \"@%s\" as \"%s\": %m"
 msgstr ""
 "apertura del file secondario di autenticazione \"@%s\" come \"%s\" fallita: "
 "%m"
 
-#: libpq/hba.c:409
+#: libpq/hba.c:399
 #, c-format
 msgid "authentication file line too long"
 msgstr "riga del file di autenticazione troppo lunga"
 
-#: libpq/hba.c:410 libpq/hba.c:757 libpq/hba.c:773 libpq/hba.c:803
-#: libpq/hba.c:849 libpq/hba.c:862 libpq/hba.c:884 libpq/hba.c:893
-#: libpq/hba.c:916 libpq/hba.c:928 libpq/hba.c:947 libpq/hba.c:968
-#: libpq/hba.c:979 libpq/hba.c:1034 libpq/hba.c:1052 libpq/hba.c:1064
-#: libpq/hba.c:1081 libpq/hba.c:1091 libpq/hba.c:1105 libpq/hba.c:1121
-#: libpq/hba.c:1136 libpq/hba.c:1147 libpq/hba.c:1183 libpq/hba.c:1215
-#: libpq/hba.c:1226 libpq/hba.c:1246 libpq/hba.c:1257 libpq/hba.c:1274
-#: libpq/hba.c:1299 libpq/hba.c:1336 libpq/hba.c:1346 libpq/hba.c:1402
-#: libpq/hba.c:1414 libpq/hba.c:1427 libpq/hba.c:1510 libpq/hba.c:1581
-#: libpq/hba.c:1599 libpq/hba.c:1620 tsearch/ts_locale.c:182
+#: libpq/hba.c:400 libpq/hba.c:747 libpq/hba.c:763 libpq/hba.c:793
+#: libpq/hba.c:839 libpq/hba.c:852 libpq/hba.c:874 libpq/hba.c:883
+#: libpq/hba.c:906 libpq/hba.c:918 libpq/hba.c:937 libpq/hba.c:958
+#: libpq/hba.c:969 libpq/hba.c:1024 libpq/hba.c:1042 libpq/hba.c:1054
+#: libpq/hba.c:1071 libpq/hba.c:1081 libpq/hba.c:1095 libpq/hba.c:1111
+#: libpq/hba.c:1126 libpq/hba.c:1137 libpq/hba.c:1173 libpq/hba.c:1205
+#: libpq/hba.c:1216 libpq/hba.c:1236 libpq/hba.c:1247 libpq/hba.c:1264
+#: libpq/hba.c:1289 libpq/hba.c:1326 libpq/hba.c:1336 libpq/hba.c:1392
+#: libpq/hba.c:1404 libpq/hba.c:1417 libpq/hba.c:1500 libpq/hba.c:1571
+#: libpq/hba.c:1589 libpq/hba.c:1610 tsearch/ts_locale.c:182
 #, c-format
 msgid "line %d of configuration file \"%s\""
 msgstr "riga %d del file di configurazione \"%s\""
 
 #. translator: the second %s is a list of auth methods
-#: libpq/hba.c:755
+#: libpq/hba.c:745
 #, c-format
 msgid ""
 "authentication option \"%s\" is only valid for authentication methods %s"
@@ -11010,110 +11011,110 @@ msgstr ""
 "l'opzione di autenticazione \"%s\" è valida solo per i metodi di "
 "autenticazione %s"
 
-#: libpq/hba.c:771
+#: libpq/hba.c:761
 #, c-format
 msgid "authentication method \"%s\" requires argument \"%s\" to be set"
 msgstr ""
 "il metodo di autenticazione \"%s\" richiede che l'argomenti \"%s\" sia "
 "impostato"
 
-#: libpq/hba.c:792
+#: libpq/hba.c:782
 #, c-format
 msgid "missing entry in file \"%s\" at end of line %d"
 msgstr "voce mancante nel file \"%s\" alla fine della riga %d"
 
-#: libpq/hba.c:802
+#: libpq/hba.c:792
 #, c-format
 msgid "multiple values in ident field"
 msgstr "più di un valore nel campo ident"
 
-#: libpq/hba.c:847
+#: libpq/hba.c:837
 #, c-format
 msgid "multiple values specified for connection type"
 msgstr "più di un valore specificato per il tipo di connessione"
 
-#: libpq/hba.c:848
+#: libpq/hba.c:838
 #, c-format
 msgid "Specify exactly one connection type per line."
 msgstr "Specifica esattamente un tipo di connessione per riga."
 
-#: libpq/hba.c:861
+#: libpq/hba.c:851
 #, c-format
 msgid "local connections are not supported by this build"
 msgstr "le connessioni locali non sono supportate in questo binario"
 
-#: libpq/hba.c:882
+#: libpq/hba.c:872
 #, c-format
 msgid "hostssl requires SSL to be turned on"
 msgstr "hostssl richiede che SSL sia abilitato"
 
-#: libpq/hba.c:883
+#: libpq/hba.c:873
 #, c-format
 msgid "Set ssl = on in postgresql.conf."
 msgstr "Imposta ssl = on in postgresql.conf."
 
-#: libpq/hba.c:891
+#: libpq/hba.c:881
 #, c-format
 msgid "hostssl is not supported by this build"
 msgstr "hostssl non è supportato in questo binario"
 
-#: libpq/hba.c:892
+#: libpq/hba.c:882
 #, c-format
 msgid "Compile with --with-openssl to use SSL connections."
 msgstr "Compila con --with-openssl per usare connessioni SSL."
 
-#: libpq/hba.c:914
+#: libpq/hba.c:904
 #, c-format
 msgid "invalid connection type \"%s\""
 msgstr "tipo di connessione \"%s\" non valido"
 
-#: libpq/hba.c:927
+#: libpq/hba.c:917
 #, c-format
 msgid "end-of-line before database specification"
 msgstr "fine riga prima della specificazione del database"
 
-#: libpq/hba.c:946
+#: libpq/hba.c:936
 #, c-format
 msgid "end-of-line before role specification"
 msgstr "fine riga prima della specificazione del ruolo"
 
-#: libpq/hba.c:967
+#: libpq/hba.c:957
 #, c-format
 msgid "end-of-line before IP address specification"
 msgstr "fine riga prima della specificazione dell'indirizzo IP"
 
-#: libpq/hba.c:977
+#: libpq/hba.c:967
 #, c-format
 msgid "multiple values specified for host address"
 msgstr "più di un valore specificato per l'indirizzo host"
 
-#: libpq/hba.c:978
+#: libpq/hba.c:968
 #, c-format
 msgid "Specify one address range per line."
 msgstr "Specifica un intervallo di indirizzi per riga."
 
-#: libpq/hba.c:1032
+#: libpq/hba.c:1022
 #, c-format
 msgid "invalid IP address \"%s\": %s"
 msgstr "indirizzo IP non valido \"%s\": %s"
 
-#: libpq/hba.c:1050
+#: libpq/hba.c:1040
 #, c-format
 msgid "specifying both host name and CIDR mask is invalid: \"%s\""
 msgstr ""
 "specificare sia un nome host che una maschera CIDR non è consentito: \"%s\""
 
-#: libpq/hba.c:1062
+#: libpq/hba.c:1052
 #, c-format
 msgid "invalid CIDR mask in address \"%s\""
 msgstr "maschera CIDR non valida nell'indirizzo \"%s\""
 
-#: libpq/hba.c:1079
+#: libpq/hba.c:1069
 #, c-format
 msgid "end-of-line before netmask specification"
 msgstr "fine riga prima della specificazione della maschera di rete"
 
-#: libpq/hba.c:1080
+#: libpq/hba.c:1070
 #, c-format
 msgid ""
 "Specify an address range in CIDR notation, or provide a separate netmask."
@@ -11121,68 +11122,68 @@ msgstr ""
 "Specifica un intervallo di indirizzi in notazione CIDR, oppure fornisci una "
 "maschera di rete separata."
 
-#: libpq/hba.c:1090
+#: libpq/hba.c:1080
 #, c-format
 msgid "multiple values specified for netmask"
 msgstr "più di un valore specificato per la maschera di rete"
 
-#: libpq/hba.c:1103
+#: libpq/hba.c:1093
 #, c-format
 msgid "invalid IP mask \"%s\": %s"
 msgstr "maschera IP non valida \"%s\": %s"
 
-#: libpq/hba.c:1120
+#: libpq/hba.c:1110
 #, c-format
 msgid "IP address and mask do not match"
 msgstr "l'indirizzo IP e la maschera non combaciano"
 
-#: libpq/hba.c:1135
+#: libpq/hba.c:1125
 #, c-format
 msgid "end-of-line before authentication method"
 msgstr "fine riga prima del metodo di autenticazione"
 
-#: libpq/hba.c:1145
+#: libpq/hba.c:1135
 #, c-format
 msgid "multiple values specified for authentication type"
 msgstr "più di un valore specificato per il tipo di autenticazione"
 
-#: libpq/hba.c:1146
+#: libpq/hba.c:1136
 #, c-format
 msgid "Specify exactly one authentication type per line."
 msgstr "Specifica esattamente un tipo di autenticazione per riga."
 
-#: libpq/hba.c:1213
+#: libpq/hba.c:1203
 #, c-format
 msgid "invalid authentication method \"%s\""
 msgstr "metodo di autenticazione \"%s\" non valido"
 
-#: libpq/hba.c:1224
+#: libpq/hba.c:1214
 #, c-format
 msgid "invalid authentication method \"%s\": not supported by this build"
 msgstr ""
 "metodo di autenticazione \"%s\" non valido: non supportato in questo binario"
 
-#: libpq/hba.c:1245
+#: libpq/hba.c:1235
 #, c-format
 msgid "gssapi authentication is not supported on local sockets"
 msgstr "l'autenticazione gssapi non è supportata su socket locali"
 
-#: libpq/hba.c:1256
+#: libpq/hba.c:1246
 #, c-format
 msgid "peer authentication is only supported on local sockets"
 msgstr "l'autenticazione peer è supportata solo su socket locali"
 
-#: libpq/hba.c:1273
+#: libpq/hba.c:1263
 #, c-format
 msgid "cert authentication is only supported on hostssl connections"
 msgstr "l'autenticazione cert è supportata solo su connessioni hostssl"
 
-#: libpq/hba.c:1298
+#: libpq/hba.c:1288
 #, c-format
 msgid "authentication option not in name=value format: %s"
 msgstr "opzione di autenticazione non in formato nome=valore: %s"
 
-#: libpq/hba.c:1335
+#: libpq/hba.c:1325
 #, c-format
 msgid ""
 "cannot use ldapbasedn, ldapbinddn, ldapbindpasswd, ldapsearchattribute, or "
@@ -11191,7 +11192,7 @@ msgstr ""
 "non si possono usare ldapbasedn, ldapbinddn, ldapbindpasswd, "
 "ldapsearchattribute né ldapurl insieme a ldapprefix"
 
-#: libpq/hba.c:1345
+#: libpq/hba.c:1335
 #, c-format
 msgid ""
 "authentication method \"ldap\" requires argument \"ldapbasedn\", \"ldapprefix"
@@ -11200,16 +11201,16 @@ msgstr ""
 "il metodo di autenticazione \"ldap\" richiede che gli argomenti \"ldapbasedn"
 "\", \"ldapprefix\" o \"ldapsuffix\" siano impostati"
 
-#: libpq/hba.c:1388
+#: libpq/hba.c:1378
 msgid "ident, peer, gssapi, sspi, and cert"
 msgstr "ident, peer, gssapi, sspi e cert"
 
-#: libpq/hba.c:1401
+#: libpq/hba.c:1391
 #, c-format
 msgid "clientcert can only be configured for \"hostssl\" rows"
 msgstr "il clientcert può essere configurato solo per le righe \"hostssl\""
 
-#: libpq/hba.c:1412
+#: libpq/hba.c:1402
 #, c-format
 msgid ""
 "client certificates can only be checked if a root certificate store is "
@@ -11218,79 +11219,79 @@ msgstr ""
 "il certificato del client può essere controllato solo se un root certificate "
 "store è disponibile"
 
-#: libpq/hba.c:1413
+#: libpq/hba.c:1403
 #, c-format
 msgid "Make sure the configuration parameter \"ssl_ca_file\" is set."
 msgstr ""
 "Assicurati che il parametro di configurazione \"ssl_ca_file\" sia impostato."
 
-#: libpq/hba.c:1426
+#: libpq/hba.c:1416
 #, c-format
 msgid "clientcert can not be set to 0 when using \"cert\" authentication"
 msgstr ""
 "clientcert non può essere impostato a 0 quando si usa l'autenticazione \"cert"
 "\""
 
-#: libpq/hba.c:1453
+#: libpq/hba.c:1443
 #, c-format
 msgid "could not parse LDAP URL \"%s\": %s"
 msgstr "impossibile interpretare la URL LDAP \"%s\": %s"
 
-#: libpq/hba.c:1461
+#: libpq/hba.c:1451
 #, c-format
 msgid "unsupported LDAP URL scheme: %s"
 msgstr "schema di URL LDAP non supportato: %s"
 
-#: libpq/hba.c:1477
+#: libpq/hba.c:1467
 #, c-format
 msgid "filters not supported in LDAP URLs"
 msgstr "i filtri non sono supportati nelle URL LDAP"
 
-#: libpq/hba.c:1485
+#: libpq/hba.c:1475
 #, c-format
 msgid "LDAP URLs not supported on this platform"
 msgstr "URL LDAP non supportate su questa piattaforma"
 
-#: libpq/hba.c:1509
+#: libpq/hba.c:1499
 #, c-format
 msgid "invalid LDAP port number: \"%s\""
 msgstr "numero di porta LDAP non valido: \"%s\""
 
-#: libpq/hba.c:1549 libpq/hba.c:1556
+#: libpq/hba.c:1539 libpq/hba.c:1546
 msgid "gssapi and sspi"
 msgstr "gssapi e sspi"
 
-#: libpq/hba.c:1598
+#: libpq/hba.c:1588
 #, c-format
 msgid "invalid RADIUS port number: \"%s\""
 msgstr "numero di porta RADIUS non valido: \"%s\""
 
-#: libpq/hba.c:1618
+#: libpq/hba.c:1608
 #, c-format
 msgid "unrecognized authentication option name: \"%s\""
 msgstr "nome di opzione di autenticazione sconosciuto: \"%s\""
 
-#: libpq/hba.c:1759 guc-file.l:538
+#: libpq/hba.c:1749 guc-file.l:538
 #, c-format
 msgid "could not open configuration file \"%s\": %m"
 msgstr "apertura del file di configurazione \"%s\" fallita: %m"
 
-#: libpq/hba.c:1809
+#: libpq/hba.c:1799
 #, c-format
 msgid "configuration file \"%s\" contains no entries"
 msgstr "il file di configurazione \"%s\" non contiene alcuna voce"
 
-#: libpq/hba.c:1905
+#: libpq/hba.c:1895
 #, c-format
 msgid "invalid regular expression \"%s\": %s"
 msgstr "espressione regolare non valida \"%s\": %s"
 
-#: libpq/hba.c:1965
+#: libpq/hba.c:1955
 #, c-format
 msgid "regular expression match for \"%s\" failed: %s"
 msgstr "corrispondenza dell'espressione regolare \"%s\" fallita: %s"
 
-#: libpq/hba.c:1982
+#: libpq/hba.c:1972
 #, c-format
 msgid ""
 "regular expression \"%s\" has no subexpressions as requested by "
@@ -11299,20 +11300,20 @@ msgstr ""
 "l'espressione regolare \"%s\" non ha la sottoespressione richiesta dal "
 "riferimento in \"%s\""
 
-#: libpq/hba.c:2078
+#: libpq/hba.c:2068
 #, c-format
 msgid "provided user name (%s) and authenticated user name (%s) do not match"
 msgstr ""
 "il nome utente fornito (%s) e il nome utente autenticato (%s) non combaciano"
 
-#: libpq/hba.c:2098
+#: libpq/hba.c:2088
 #, c-format
 msgid "no match in usermap \"%s\" for user \"%s\" authenticated as \"%s\""
 msgstr ""
 "nessuna corrispondenza nella mappa utenti \"%s\" per l'utente \"%s\" "
 "autenticato come \"%s\""
 
-#: libpq/hba.c:2133
+#: libpq/hba.c:2123
 #, c-format
 msgid "could not open usermap file \"%s\": %m"
 msgstr "apertura del file usermap \"%s\" fallita: %m"
@@ -13429,7 +13430,7 @@ msgstr "riferimento %%TYPE improprio (troppi nomi puntati): %s"
 msgid "type reference %s converted to %s"
 msgstr "riferimento al tipo %s convertito in %s"
 
-#: parser/parse_type.c:257 parser/parse_type.c:805 utils/cache/typcache.c:198
+#: parser/parse_type.c:257 parser/parse_type.c:805 utils/cache/typcache.c:200
 #, c-format
 msgid "type \"%s\" is only a shell"
 msgstr "il tipo \"%s\" non è completamente definito"
@@ -15483,60 +15484,60 @@ msgstr "lo standby \"%s\" è ora in standby sincrono con priorità %u"
 msgid "terminating walreceiver process due to administrator command"
 msgstr "interruzione del processo walreceiver su comando dell'amministratore"
 
-#: replication/walreceiver.c:332
+#: replication/walreceiver.c:337
 #, c-format
 msgid "highest timeline %u of the primary is behind recovery timeline %u"
 msgstr ""
 "la timeline massima %u del primario è dietro la timeline di recupero %u"
 
-#: replication/walreceiver.c:367
+#: replication/walreceiver.c:372
 #, c-format
 msgid "started streaming WAL from primary at %X/%X on timeline %u"
 msgstr "streaming WAL avviato dal primario a %X/%X sulla timeline %u"
 
-#: replication/walreceiver.c:372
+#: replication/walreceiver.c:377
 #, c-format
 msgid "restarted WAL streaming at %X/%X on timeline %u"
 msgstr "streaming WAL riavviato sulla timeline %X/%X sulla timeline %u"
 
-#: replication/walreceiver.c:406
+#: replication/walreceiver.c:411
 #, c-format
 msgid "cannot continue WAL streaming, recovery has already ended"
 msgstr ""
 "non è possibile continuare lo streaming dei WAL, il recupero è già terminato"
 
-#: replication/walreceiver.c:443
+#: replication/walreceiver.c:448
 #, c-format
 msgid "replication terminated by primary server"
 msgstr "replica terminata dal server primario"
 
-#: replication/walreceiver.c:444
+#: replication/walreceiver.c:449
 #, c-format
 msgid "End of WAL reached on timeline %u at %X/%X."
 msgstr "Fine del WAL raggiunta sulla timeline %u a %X/%X."
 
-#: replication/walreceiver.c:491
+#: replication/walreceiver.c:496
 #, c-format
 msgid "terminating walreceiver due to timeout"
 msgstr "walreceiver terminato a causa di timeout"
 
-#: replication/walreceiver.c:531
+#: replication/walreceiver.c:536
 #, c-format
 msgid "primary server contains no more WAL on requested timeline %u"
 msgstr ""
 "il server primario non contiene più alcun WAL sulla timeline richiesta %u"
 
-#: replication/walreceiver.c:546 replication/walreceiver.c:903
+#: replication/walreceiver.c:551 replication/walreceiver.c:908
 #, c-format
 msgid "could not close log segment %s: %m"
 msgstr "chiusura del segmento di log %s fallita: %m"
 
-#: replication/walreceiver.c:668
+#: replication/walreceiver.c:673
 #, c-format
 msgid "fetching timeline history file for timeline %u from primary server"
 msgstr "recupero del file di storia della timeline %u dal server primario"
 
-#: replication/walreceiver.c:954
+#: replication/walreceiver.c:959
 #, c-format
 msgid "could not write to log segment %s at offset %u, length %lu: %m"
 msgstr ""
@@ -16219,57 +16220,57 @@ msgstr "il segmento di controllo della memoria dinamica condivisa non è valido"
 msgid "too many dynamic shared memory segments"
 msgstr "troppi segmenti di memoria dinamica condivisa"
 
-#: storage/ipc/dsm_impl.c:261 storage/ipc/dsm_impl.c:361
-#: storage/ipc/dsm_impl.c:533 storage/ipc/dsm_impl.c:648
-#: storage/ipc/dsm_impl.c:819 storage/ipc/dsm_impl.c:961
+#: storage/ipc/dsm_impl.c:262 storage/ipc/dsm_impl.c:363
+#: storage/ipc/dsm_impl.c:580 storage/ipc/dsm_impl.c:695
+#: storage/ipc/dsm_impl.c:866 storage/ipc/dsm_impl.c:1008
 #, c-format
 msgid "could not unmap shared memory segment \"%s\": %m"
 msgstr "unmap del segmento di memoria condivisa \"%s\" fallito: %m"
 
-#: storage/ipc/dsm_impl.c:271 storage/ipc/dsm_impl.c:543
-#: storage/ipc/dsm_impl.c:658 storage/ipc/dsm_impl.c:829
+#: storage/ipc/dsm_impl.c:272 storage/ipc/dsm_impl.c:590
+#: storage/ipc/dsm_impl.c:705 storage/ipc/dsm_impl.c:876
 #, c-format
 msgid "could not remove shared memory segment \"%s\": %m"
 msgstr "rimozione del segmento di memoria condivisa \"%s\" fallito: %m"
 
-#: storage/ipc/dsm_impl.c:292 storage/ipc/dsm_impl.c:729
-#: storage/ipc/dsm_impl.c:843
+#: storage/ipc/dsm_impl.c:293 storage/ipc/dsm_impl.c:776
+#: storage/ipc/dsm_impl.c:890
 #, c-format
 msgid "could not open shared memory segment \"%s\": %m"
 msgstr "apertura del segmento di memoria condivisa \"%s\" fallito: %m"
 
-#: storage/ipc/dsm_impl.c:316 storage/ipc/dsm_impl.c:559
-#: storage/ipc/dsm_impl.c:774 storage/ipc/dsm_impl.c:867
+#: storage/ipc/dsm_impl.c:317 storage/ipc/dsm_impl.c:606
+#: storage/ipc/dsm_impl.c:821 storage/ipc/dsm_impl.c:914
 #, c-format
 msgid "could not stat shared memory segment \"%s\": %m"
 msgstr ""
 "lettura informazioni sul segmento di memoria condivisa \"%s\" fallito: %m"
 
-#: storage/ipc/dsm_impl.c:335 storage/ipc/dsm_impl.c:886
-#: storage/ipc/dsm_impl.c:934
+#: storage/ipc/dsm_impl.c:337 storage/ipc/dsm_impl.c:933
+#: storage/ipc/dsm_impl.c:981
 #, c-format
 msgid "could not resize shared memory segment \"%s\" to %zu bytes: %m"
 msgstr ""
 "ridimensionamento del segmento di memoria condivisa \"%s\" a %zu byte "
 "fallito: %m"
 
-#: storage/ipc/dsm_impl.c:385 storage/ipc/dsm_impl.c:580
-#: storage/ipc/dsm_impl.c:750 storage/ipc/dsm_impl.c:985
+#: storage/ipc/dsm_impl.c:387 storage/ipc/dsm_impl.c:627
+#: storage/ipc/dsm_impl.c:797 storage/ipc/dsm_impl.c:1032
 #, c-format
 msgid "could not map shared memory segment \"%s\": %m"
 msgstr "map del segmento di memoria condivisa \"%s\" fallito: %m"
 
-#: storage/ipc/dsm_impl.c:515
+#: storage/ipc/dsm_impl.c:562
 #, c-format
 msgid "could not get shared memory segment: %m"
 msgstr "impossibile ottenere un segmento di memoria condivisa: %m"
 
-#: storage/ipc/dsm_impl.c:714
+#: storage/ipc/dsm_impl.c:761
 #, c-format
 msgid "could not create shared memory segment \"%s\": %m"
 msgstr "creazione del segmento di memoria condivisa \"%s\" fallito: %m"
 
-#: storage/ipc/dsm_impl.c:1026
+#: storage/ipc/dsm_impl.c:1073
 #, c-format
 msgid "could not duplicate handle for \"%s\": %m"
 msgstr "duplicazione dell'handle per \"%s\" fallita: %m"
@@ -17462,45 +17463,45 @@ msgstr "gli array di ACL non possono contenere valori nulli"
 msgid "extra garbage at the end of the ACL specification"
 msgstr "ci sono caratteri spuri al termine della specifica dell'ACL"
 
-#: utils/adt/acl.c:1196
+#: utils/adt/acl.c:1198
 #, c-format
 msgid "grant options cannot be granted back to your own grantor"
 msgstr ""
 "le opzioni di concessione non possono essere concesse a chi le ha concesse a "
 "te"
 
-#: utils/adt/acl.c:1257
+#: utils/adt/acl.c:1259
 #, c-format
 msgid "dependent privileges exist"
 msgstr "esistono privilegi dipendenti"
 
-#: utils/adt/acl.c:1258
+#: utils/adt/acl.c:1260
 #, c-format
 msgid "Use CASCADE to revoke them too."
 msgstr "Usa CASCADE per revocare anch'essi."
 
-#: utils/adt/acl.c:1537
+#: utils/adt/acl.c:1539
 #, c-format
 msgid "aclinsert is no longer supported"
 msgstr "aclinsert non è più supportato"
 
-#: utils/adt/acl.c:1547
+#: utils/adt/acl.c:1549
 #, c-format
 msgid "aclremove is no longer supported"
 msgstr "aclremove non è più supportato"
 
-#: utils/adt/acl.c:1633 utils/adt/acl.c:1687
+#: utils/adt/acl.c:1635 utils/adt/acl.c:1689
 #, c-format
 msgid "unrecognized privilege type: \"%s\""
 msgstr "tipo di privilegio sconosciuto: \"%s\""
 
-#: utils/adt/acl.c:3427 utils/adt/regproc.c:123 utils/adt/regproc.c:144
+#: utils/adt/acl.c:3429 utils/adt/regproc.c:123 utils/adt/regproc.c:144
 #: utils/adt/regproc.c:319
 #, c-format
 msgid "function \"%s\" does not exist"
 msgstr "la funzione \"%s\" non esiste"
 
-#: utils/adt/acl.c:4881
+#: utils/adt/acl.c:4883
 #, c-format
 msgid "must be member of role \"%s\""
 msgstr "occorre far parte del ruolo \"%s\""
@@ -17824,8 +17825,8 @@ msgstr "sintassi di input non valida per il tipo money: \"%s\""
 #: utils/adt/int.c:861 utils/adt/int.c:969 utils/adt/int.c:1058
 #: utils/adt/int.c:1097 utils/adt/int.c:1125 utils/adt/int8.c:597
 #: utils/adt/int8.c:657 utils/adt/int8.c:897 utils/adt/int8.c:1005
-#: utils/adt/int8.c:1094 utils/adt/int8.c:1202 utils/adt/numeric.c:4971
-#: utils/adt/numeric.c:5254 utils/adt/timestamp.c:3455
+#: utils/adt/int8.c:1094 utils/adt/int8.c:1202 utils/adt/numeric.c:4981
+#: utils/adt/numeric.c:5264 utils/adt/timestamp.c:3455
 #, c-format
 msgid "division by zero"
 msgstr "divisione per zero"
@@ -18087,7 +18088,7 @@ msgid "\"%s\" is out of range for type real"
 msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo real"
 
 #: utils/adt/float.c:414 utils/adt/float.c:488 utils/adt/float.c:512
-#: utils/adt/numeric.c:4427 utils/adt/numeric.c:4453
+#: utils/adt/numeric.c:4437 utils/adt/numeric.c:4463
 #, c-format
 msgid "invalid input syntax for type double precision: \"%s\""
 msgstr "la sintassi in input per il tipo double precision non è valida: \"%s\""
@@ -18105,7 +18106,7 @@ msgstr "\"%s\" è fuori dall'intervallo consentito per il tipo double precision"
 msgid "smallint out of range"
 msgstr "il valore è fuori dall'intervallo consentito per il tipo smallint"
 
-#: utils/adt/float.c:1360 utils/adt/numeric.c:5653
+#: utils/adt/float.c:1360 utils/adt/numeric.c:5663
 #, c-format
 msgid "cannot take square root of a negative number"
 msgstr "non è possibile estrarre la radice quadrata di un numero negativo"
@@ -18121,12 +18122,12 @@ msgid "a negative number raised to a non-integer power yields a complex result"
 msgstr ""
 "un numero negativo elevato a potenza non intera è un valore di tipo complesso"
 
-#: utils/adt/float.c:1472 utils/adt/float.c:1502 utils/adt/numeric.c:5871
+#: utils/adt/float.c:1472 utils/adt/float.c:1502 utils/adt/numeric.c:5881
 #, c-format
 msgid "cannot take logarithm of zero"
 msgstr "non è possibile calcolare il logaritmo di zero"
 
-#: utils/adt/float.c:1476 utils/adt/float.c:1506 utils/adt/numeric.c:5875
+#: utils/adt/float.c:1476 utils/adt/float.c:1506 utils/adt/numeric.c:5885
 #, c-format
 msgid "cannot take logarithm of a negative number"
 msgstr "non è possibile calcolare il logaritmo di un numero negativo"
@@ -19107,8 +19108,8 @@ msgstr "il risultato è fuori dall'intervallo consentito"
 msgid "cannot subtract inet values of different sizes"
 msgstr "non è possibile sottrarre valori di tipo inet di dimensione diversa"
 
-#: utils/adt/numeric.c:486 utils/adt/numeric.c:513 utils/adt/numeric.c:3701
-#: utils/adt/numeric.c:3724 utils/adt/numeric.c:3748
+#: utils/adt/numeric.c:486 utils/adt/numeric.c:513 utils/adt/numeric.c:3711
+#: utils/adt/numeric.c:3734 utils/adt/numeric.c:3758
 #, c-format
 msgid "invalid input syntax for type numeric: \"%s\""
 msgstr "la sintassi di input non è valida per il tipo numeric: \"%s\""
@@ -19145,8 +19146,8 @@ msgstr ""
 msgid "invalid NUMERIC type modifier"
 msgstr "modificatore del tipo NUMERIC non valido"
 
-#: utils/adt/numeric.c:1948 utils/adt/numeric.c:3763 utils/adt/numeric.c:4205
-#: utils/adt/numeric.c:6186
+#: utils/adt/numeric.c:1948 utils/adt/numeric.c:3773 utils/adt/numeric.c:4215
+#: utils/adt/numeric.c:6196
 #, c-format
 msgid "value overflows numeric format"
 msgstr "il valore causa un overflow nel formato numeric"
@@ -19166,12 +19167,17 @@ msgstr "non è possibile convertire NaN in un bigint"
 msgid "cannot convert NaN to smallint"
 msgstr "non è possibile convertire NaN in uno smallint"
 
-#: utils/adt/numeric.c:4275
+#: utils/adt/numeric.c:2427 utils/adt/numeric.c:2494
+#, c-format
+msgid "cannot convert infinity to numeric"
+msgstr "non è possibile convertire infinity in numeric"
+
+#: utils/adt/numeric.c:4285
 #, c-format
 msgid "numeric field overflow"
 msgstr "il campo numeric causa un overflow"
 
-#: utils/adt/numeric.c:4276
+#: utils/adt/numeric.c:4286
 #, c-format
 msgid ""
 "A field with precision %d, scale %d must round to an absolute value less "
@@ -19180,7 +19186,7 @@ msgstr ""
 "Un campo con precisione %d e %d cifre decimali deve arrotondarsi ad un "
 "valore assoluto inferiore a %s%d."
 
-#: utils/adt/numeric.c:5743
+#: utils/adt/numeric.c:5753
 #, c-format
 msgid "argument for function \"exp\" too big"
 msgstr "il valore dell'argomento per la funzione \"exp\" è troppo grande"
@@ -20441,12 +20447,12 @@ msgstr "fsync del file della mappa delle relazioni \"%s\" fallito: %m"
 msgid "could not close relation mapping file \"%s\": %m"
 msgstr "chiusura del file della mappa delle relazioni \"%s\" fallita: %m"
 
-#: utils/cache/typcache.c:704
+#: utils/cache/typcache.c:754
 #, c-format
 msgid "type %s is not composite"
 msgstr "il tipo %s non è composito"
 
-#: utils/cache/typcache.c:718
+#: utils/cache/typcache.c:768
 #, c-format
 msgid "record type has not been registered"
 msgstr "il tipo del record non è stato registrato"
