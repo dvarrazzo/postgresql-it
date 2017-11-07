@@ -1,40 +1,19 @@
 #
-# Translation of libpq to Italian
-# PostgreSQL Project
+# libpq.po
+#   Italian message translation file for libpq
 #
-# Associazione Culturale ITPUG - Italian PostgreSQL Users Group
-# http://www.itpug.org/ - info@itpug.org
+# For development and bug report please use:
+# https://github.com/dvarrazzo/postgresql-it
 #
-# Traduttori:
-#  * Daniele Varrazzo <daniele.varrazzo@gmail.com>
-#  * Maurizio Totti <maurizio.totti@itpug.org>
+# Copyright (C) 2012-2017 PostgreSQL Global Development Group
+# Copyright (C) 2010, Associazione Culturale ITPUG
 #
-# Revisori:
-#  * Emanuele Zamprogno <emanuele.zamprogno@itpug.org>
-#
-# Copyright (c) 2010, Associazione Culturale ITPUG
-# Distributed under the same license of the PostgreSQL project
-#
-# Translation of libpq to Italian
-# PostgreSQL Project
-#
-# Associazione Culturale ITPUG - Italian PostgreSQL Users Group
-# http://www.itpug.org/ - info@itpug.org
-#
-# Traduttori:
-#  * Maurizio Totti <maurizio.totti@itpug.org>
-#
-# Revisori:
-#  * Emanuele Zamprogno <emanuele.zamprogno@itpug.org>
-#
-# Copyright (c) 2009, Associazione Culturale ITPUG
-# Distributed under the same license of the PostgreSQL project
-#
-# Italian translation file for libpq.
+# Daniele Varrazzo <daniele.varrazzo@gmail.com>, 2012-2017
+# Maurizio Totti <maurizio.totti@gmail.com>, 2010
 # Fabrizio Mazzoni <veramente@libero.it>, 2003.
+# Gaetano Mendola <mendola@bigfoot.com>, 2003.
 #
-# Versione 1.00 del 12 Ottobre 2003
-# Revisione 1.01 del 14 Ottobre 2003 a cura di Gaetano Mendola <mendola@bigfoot.com>
+# This file is distributed under the same license as the PostgreSQL package.
 #
 msgid ""
 msgstr ""

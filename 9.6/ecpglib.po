@@ -1,18 +1,17 @@
 #
-# Translation of ecpglib to Italian
-# PostgreSQL Project
+# ecpglib.po
+#   Italian message translation file for ecpglib
 #
-# Associazione Culturale ITPUG - Italian PostgreSQL Users Group
-# http://www.itpug.org/ - info@itpug.org
+# For development and bug report please use:
+# https://github.com/dvarrazzo/postgresql-it
 #
-# Traduttori:
-#  * Maurizio Totti <maurizio.totti@gmail.com>
+# Copyright (C) 2012-2017 PostgreSQL Global Development Group
+# Copyright (C) 2010, Associazione Culturale ITPUG
 #
-# Revisori:
-#  * Gabriele Bartolini <gabriele.bartolini@2ndQuadrant.it>
+# Daniele Varrazzo <daniele.varrazzo@gmail.com>, 2012-2017
+# Maurizio Totti <maurizio.totti@gmail.com>, 2010
 #
-# Copyright (c) 2010, Associazione Culturale ITPUG
-# Distributed under the same license of the PostgreSQL project
+# This file is distributed under the same license as the PostgreSQL package.
 #
 msgid ""
 msgstr ""

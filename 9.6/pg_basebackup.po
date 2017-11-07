@@ -1,7 +1,15 @@
-# Italian message translation file for pg_basebackup
-# Copyright (C) 2012 PostgreSQL Global Development Group
+#
+# pg_basebackup.po
+#   Italian message translation file for pg_basebackup
+#
+# For development and bug report please use:
+# https://github.com/dvarrazzo/postgresql-it
+#
+# Copyright (C) 2012-2017 PostgreSQL Global Development Group
+#
+# Daniele Varrazzo <daniele.varrazzo@gmail.com>, 2012-2017
+#
 # This file is distributed under the same license as the PostgreSQL package.
-# Daniele Varrazzo <daniele.varrazzo@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
