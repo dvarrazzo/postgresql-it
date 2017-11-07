@@ -5,7 +5,7 @@ Copy headers from source files to destination files.
 Headers are defined as the comment and blank lines before the first line that
 is not such a thing.
 
-Source and destination could be two files or two dirs, in which case headrers
+Source and destination could be files or dirs, in which case headers
 will be copied across all files with the same name.
 """
 
@@ -77,7 +77,7 @@ def sync_files(src, dst):
     lines = []
     with open(src) as f:
         for l in f:
-            if opt.pattern.match(l):
+            if l.isspace() or opt.pattern.match(l):
                 lines.append(l)
             else:
                 break
@@ -86,7 +86,7 @@ def sync_files(src, dst):
         f = iter(f)
         while 1:
             l = f.next()
-            if not opt.pattern.match(l):
+            if not (l.isspace() or opt.pattern.match(l)):
                 break
 
         lines.append(l)
