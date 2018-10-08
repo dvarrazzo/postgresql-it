@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (Postgresql) 9.2\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2017-02-07 20:17+0000\n"
-"PO-Revision-Date: 2017-10-23 19:11+0100\n"
+"PO-Revision-Date: 2018-10-08 21:17+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../../port/exec.c:125 ../../port/exec.c:239 ../../port/exec.c:282
 #, c-format
@@ -1972,7 +1972,7 @@ msgstr "ATTENZIONE: valore non corretto nel campo pg_cast.castmethod\n"
 #: pg_dump.c:10077
 #, c-format
 msgid "WARNING: could not find operator with OID %s\n"
-msgstr "ATTENZIONE: operatore con OID %s non trovato\n"
+msgstr "ATTENZIONE: operatore con oid %s non trovato\n"
 
 #: pg_dump.c:11094
 #, c-format
