@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:16+0000\n"
-"PO-Revision-Date: 2018-10-08 20:47+0100\n"
+"PO-Revision-Date: 2018-10-08 22:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -53,14 +53,17 @@ msgstr "ordinamento dei byte non combaciante"
 #, c-format
 msgid ""
 "WARNING: possible byte ordering mismatch\n"
-"The byte ordering used to store the pg_control file might not match the one\n"
+"The byte ordering used to store the pg_control file might not match the "
+"one\n"
 "used by this program.  In that case the results below would be incorrect, "
 "and\n"
-"the PostgreSQL installation would be incompatible with this data directory.\n"
+"the PostgreSQL installation would be incompatible with this data "
+"directory.\n"
 msgstr ""
 "ATTENZIONE: possibile differenza nell'ordine dei byte\n"
 "L'ordine dei byte usato per memorizzare il file pg_control potrebbe non\n"
-"combaciare con quello usato da questo programma. In questo caso i risultati\n"
+"combaciare con quello usato da questo programma. In questo caso i "
+"risultati\n"
 "seguenti non sarebbero corretti e l'installazione di PostgreSQL sarebbe\n"
 "incompatibile con questa directory di dati.\n"
 
@@ -70,7 +73,8 @@ msgid ""
 "%s displays control information of a PostgreSQL database cluster.\n"
 "\n"
 msgstr ""
-"%s mostra informazioni di controllo su un cluster di database PostgreSQL.\n"
+"%s mostra informazioni di controllo su un cluster di database "
+"PostgreSQL.\n"
 "\n"
 
 #: pg_controldata.c:35
@@ -95,17 +99,18 @@ msgstr ""
 #: pg_controldata.c:38
 #, c-format
 msgid " [-D, --pgdata=]DATADIR  data directory\n"
-msgstr ""
+msgstr " [-D, --pgdata=]DATADIR  directory dei dati\n"
 
 #: pg_controldata.c:39
 #, c-format
 msgid "  -V, --version          output version information, then exit\n"
 msgstr ""
+"  -V, --version          mostra informazioni sulla versione ed esci\n"
 
 #: pg_controldata.c:40
 #, c-format
 msgid "  -?, --help             show this help, then exit\n"
-msgstr ""
+msgstr "  -?, --help             mostra questo aiuto ed esci\n"
 
 #: pg_controldata.c:41
 #, c-format
@@ -117,7 +122,8 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Se non viene specificata un directory per i dati (DATADIR) verrà usata la\n"
+"Se non viene specificata un directory per i dati (DATADIR) verrà usata "
+"la\n"
 "variabile d'ambiente PGDATA.\n"
 "\n"
 
@@ -181,7 +187,8 @@ msgstr "%s: non è stata specificata una directory per i dati\n"
 #, c-format
 msgid ""
 "WARNING: Calculated CRC checksum does not match value stored in file.\n"
-"Either the file is corrupt, or it has a different layout than this program\n"
+"Either the file is corrupt, or it has a different layout than this "
+"program\n"
 "is expecting.  The results below are untrustworthy.\n"
 "\n"
 msgstr ""
@@ -194,7 +201,7 @@ msgstr ""
 #: pg_controldata.c:178
 #, c-format
 msgid "WARNING: invalid WAL segment size\n"
-msgstr ""
+msgstr "ATTENZIONE: dimensione del segmento WAL non valida\n"
 
 #: pg_controldata.c:179
 #, c-format
@@ -209,11 +216,19 @@ msgid_plural ""
 "untrustworthy.\n"
 "\n"
 msgstr[0] ""
+"La dimensione del segmento WAL memorizzata nel file, %d byte, non è una\n"
+"potenza di 2 tra 1 MB e 1 GB. Il file è corrotto e i risultati\n"
+"sottostanti non sono affidabili.\n"
+"\n"
 msgstr[1] ""
+"The WAL segment size stored in the file, %d bytes, is not a power of two\n"
+"between 1 MB and 1 GB.  The file is corrupt and the results below are\n"
+"untrustworthy.\n"
+"\n"
 
 #: pg_controldata.c:221
 msgid "???"
-msgstr ""
+msgstr "???"
 
 #: pg_controldata.c:234
 #, c-format

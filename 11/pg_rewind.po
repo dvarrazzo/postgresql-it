@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:16+0000\n"
-"PO-Revision-Date: 2018-10-08 21:18+0100\n"
+"PO-Revision-Date: 2018-10-08 23:03+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -247,12 +247,12 @@ msgstr ""
 #: filemap.c:510 filemap.c:530
 #, c-format
 msgid "entry \"%s\" excluded from source file list\n"
-msgstr ""
+msgstr "voce \"%s\" esclusa dalla lista di file sorgenti\n"
 
 #: filemap.c:513 filemap.c:533
 #, c-format
 msgid "entry \"%s\" excluded from target file list\n"
-msgstr ""
+msgstr "voce \"%s\" esclusa dalla lista di file di destinazione\n"
 
 #. translator: first %s is a file path, second is a keyword such as COPY
 #: filemap.c:664
@@ -595,7 +595,7 @@ msgstr "È obbligatorio eseguire %s come superutente di PostgreSQL.\n"
 #: pg_rewind.c:210
 #, c-format
 msgid "%s: could not read permissions of directory \"%s\": %s\n"
-msgstr ""
+msgstr "%s: lettura dei permessi della directory \"%s\" fallita: %s\n"
 
 #: pg_rewind.c:241
 #, c-format
@@ -743,7 +743,11 @@ msgid_plural ""
 "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
 "control file specifies %d bytes\n"
 msgstr[0] ""
+"la dimensione del semgento WAL deve essere una potenza di due tra 1 MB e 1 "
+"GB, ma il file di controllo specifica %d byte\n"
 msgstr[1] ""
+"la dimensione del semgento WAL deve essere una potenza di due tra 1 MB e 1 "
+"GB, ma il file di controllo specifica %d byte\n"
 
 #: pg_rewind.c:727
 #, c-format
@@ -879,6 +883,8 @@ msgid ""
 "WAL file is from different database system: incorrect segment size in page "
 "header"
 msgstr ""
+"il file WAL è di un database diverso: dimensione del segmento errata "
+"nell'header della pagina"
 
 #: xlogreader.c:812
 #, c-format

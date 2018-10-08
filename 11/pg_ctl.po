@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:15+0000\n"
-"PO-Revision-Date: 2017-08-31 01:16+0100\n"
+"PO-Revision-Date: 2018-10-08 21:53+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../../common/exec.c:127 ../../common/exec.c:241 ../../common/exec.c:284
 #, c-format
@@ -304,7 +304,7 @@ msgstr "il server è stato arrestato\n"
 
 #: pg_ctl.c:962
 msgid "trying to start server anyway\n"
-msgstr ""
+msgstr "si sta provando ad avviare il server ugualmente\n"
 
 #: pg_ctl.c:971
 #, c-format
@@ -508,16 +508,18 @@ msgstr ""
 #, c-format
 msgid "%s: could not get LUIDs for privileges: error code %lu\n"
 msgstr ""
+"%s: errore nella lettura dei LUID per i privilegi: codice di errore %lu\n"
 
 #: pg_ctl.c:1867 pg_ctl.c:1881
 #, c-format
 msgid "%s: could not get token information: error code %lu\n"
 msgstr ""
+"%s: errore nella lettura del token di informazione: codice di errore %lu\n"
 
 #: pg_ctl.c:1875
 #, c-format
 msgid "%s: out of memory\n"
-msgstr ""
+msgstr "%s: memoria esaurita\n"
 
 #: pg_ctl.c:1905
 #, c-format

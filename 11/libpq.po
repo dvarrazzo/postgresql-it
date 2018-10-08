@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:08+0000\n"
-"PO-Revision-Date: 2018-10-08 20:45+0100\n"
+"PO-Revision-Date: 2018-10-08 21:59+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -155,6 +155,8 @@ msgstr "doppia richiesta di autenticazione SASL\n"
 msgid ""
 "server offered SCRAM-SHA-256-PLUS authentication over a non-SSL connection\n"
 msgstr ""
+"il server ha offerto autenticazione SCRAM-SHA-256-PLUS su una connessione "
+"non SSL\n"
 
 #: fe-auth.c:561
 msgid "none of the server's SASL authentication mechanisms are supported\n"
@@ -1083,15 +1085,16 @@ msgstr "codice di errore SSL sconosciuto: %d\n"
 #: fe-secure-openssl.c:398
 msgid "could not determine server certificate signature algorithm\n"
 msgstr ""
+"impossibile determinare l'algoritmo di firma del certificato del server\n"
 
 #: fe-secure-openssl.c:419
 #, c-format
 msgid "could not find digest for NID %s\n"
-msgstr ""
+msgstr "impossibile trovare il digest per il NID %s\n"
 
 #: fe-secure-openssl.c:429
 msgid "could not generate peer certificate hash\n"
-msgstr ""
+msgstr "impossibile generare l'hash del certificato del peer\n"
 
 #: fe-secure-openssl.c:486
 msgid "SSL certificate's name entry is missing\n"

@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:08+0000\n"
-"PO-Revision-Date: 2016-04-17 20:58+0100\n"
+"PO-Revision-Date: 2018-10-08 23:10+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: pl_comp.c:434 pl_handler.c:457
 #, c-format
@@ -232,7 +232,7 @@ msgstr "durante la pulizia delle eccezioni"
 #: pl_exec.c:2235 pl_exec.c:2249
 #, c-format
 msgid "argument %d is an output argument but is not writable"
-msgstr ""
+msgstr "l'argomento %d è un argomento di output ma non è scrivibile"
 
 #: pl_exec.c:2291
 #, c-format
@@ -384,7 +384,7 @@ msgstr "non è possibile usare COPY verso/da un client in PL/pgSQL"
 #: pl_exec.c:4136
 #, c-format
 msgid "unsupported transaction command in PL/pgSQL"
-msgstr ""
+msgstr "comando di transazione non supportato in PL/pgSQL"
 
 #: pl_exec.c:4160 pl_exec.c:4347
 #, c-format
@@ -432,7 +432,7 @@ msgstr ""
 #: pl_exec.c:4323
 #, c-format
 msgid "EXECUTE of transaction commands is not implemented"
-msgstr ""
+msgstr "l'EXECUTE dei comandi di transazione non è implementato"
 
 #: pl_exec.c:4625 pl_exec.c:4713
 #, c-format
@@ -473,7 +473,7 @@ msgstr ""
 #: pl_exec.c:5058
 #, c-format
 msgid "cannot assign to system column \"%s\""
-msgstr ""
+msgstr "non è possibile assegnare alla colonna di sistema \"%s\""
 
 #: pl_exec.c:5122
 #, c-format
@@ -518,6 +518,8 @@ msgstr "la query \"%s\" non è una SELECT"
 msgid ""
 "type of parameter %d (%s) does not match that when preparing the plan (%s)"
 msgstr ""
+"il tipo del parametro %d (%s) non combacia con quello usato preparando il "
+"piano (%s)"
 
 #: pl_exec.c:7379
 #, c-format
@@ -576,6 +578,8 @@ msgstr "gli ordinamenti non sono supportati dal tipo %s"
 #, c-format
 msgid "variable \"%s\" must have a default value, since it's declared NOT NULL"
 msgstr ""
+"la variabile \"%s\" deve avere un valore di default, perché è dichiarata NOT "
+"NULL"
 
 #: pl_gram.y:670 pl_gram.y:685 pl_gram.y:711
 #, c-format
@@ -616,6 +620,8 @@ msgid ""
 "loop variable of loop over rows must be a record variable or list of scalar "
 "variables"
 msgstr ""
+"la variabile di loop di un loop su righe deve essere una variabile record o "
+"una lista di variabili scalari"
 
 #: pl_gram.y:1392
 #, c-format
@@ -761,7 +767,7 @@ msgstr "Usa RETURN NEXT o RETURN QUERY."
 #: pl_gram.y:3205
 #, c-format
 msgid "RETURN cannot have a parameter in a procedure"
-msgstr ""
+msgstr "RETURN non può avere un parametro in una procedura"
 
 # Il fatto che una funzione che restituisce void sia chiamato "procedura" è un visual-basic-ismo che si può dimenticare
 #: pl_gram.y:3210
@@ -783,12 +789,14 @@ msgstr ""
 #: pl_gram.y:3388
 #, c-format
 msgid "variable \"%s\" is declared CONSTANT"
-msgstr ""
+msgstr "la variabile \"%s\" è dichiarata CONSTANT"
 
 #: pl_gram.y:3451
 #, c-format
 msgid "record variable cannot be part of multiple-item INTO list"
 msgstr ""
+"una variabile record non può essere parte di una lista INTO con più di un "
+"elemento"
 
 #: pl_gram.y:3497
 #, c-format

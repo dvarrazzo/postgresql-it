@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:15+0000\n"
-"PO-Revision-Date: 2018-10-08 20:46+0100\n"
+"PO-Revision-Date: 2018-10-08 22:16+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -275,7 +275,7 @@ msgstr ""
 #: pg_basebackup.c:360
 #, c-format
 msgid "  -C, --create-slot      create replication slot\n"
-msgstr ""
+msgstr "  -C, --create-slot      crea uno slot di replica\n"
 
 #: pg_basebackup.c:361
 #, c-format
@@ -330,6 +330,8 @@ msgid ""
 "      --no-verify-checksums\n"
 "                         do not verify checksums\n"
 msgstr ""
+"      --no-verify-checksums\n"
+"                         non verificare i checksum\n"
 
 #: pg_basebackup.c:371 pg_receivewal.c:94 pg_recvlogical.c:101
 #, c-format
@@ -429,12 +431,12 @@ msgstr "%s: creazione della pipe per il processo in background fallita: %s\n"
 #: pg_basebackup.c:612
 #, c-format
 msgid "%s: created temporary replication slot \"%s\"\n"
-msgstr ""
+msgstr "%s: slot di replica temporaneo \"%s\" creato\n"
 
 #: pg_basebackup.c:615
 #, c-format
 msgid "%s: created replication slot \"%s\"\n"
-msgstr ""
+msgstr "%s: slot di replica \"%s\" creato\n"
 
 #: pg_basebackup.c:636 pg_basebackup.c:692 pg_basebackup.c:1462
 #, c-format
@@ -686,7 +688,7 @@ msgstr "%s: punto finale del write-ahead log: %s\n"
 #: pg_basebackup.c:1985
 #, c-format
 msgid "%s: checksum error occurred\n"
-msgstr ""
+msgstr "%s: errore di checksum\n"
 
 #: pg_basebackup.c:1991
 #, c-format
@@ -834,7 +836,7 @@ msgstr "%s: %s richiede la specifica di uno slot usando --slot\n"
 #: pg_basebackup.c:2431
 #, c-format
 msgid "%s: --create-slot and --no-slot are incompatible options\n"
-msgstr ""
+msgstr "%s: --create-slot e --no-slot sono opzioni incompatibili\n"
 
 #: pg_basebackup.c:2444
 #, c-format
@@ -917,6 +919,8 @@ msgid ""
 "      --no-sync          do not wait for changes to be written safely to "
 "disk\n"
 msgstr ""
+"      --no-sync          non aspettare che i cambiamenti siano scritti sul "
+"disco in sicurezza\n"
 
 #: pg_receivewal.c:87 pg_recvlogical.c:96
 #, c-format
@@ -926,9 +930,8 @@ msgid ""
 "(default: %d)\n"
 msgstr ""
 "  -s, --status-interval=SEC\n"
-"                         tempo tra gli invii dei pacchetti di stato al "
-"server\n"
-"                         (default: %d)\n"
+"                         tempo tra i pacchetti di status inviati al server "
+"(default: %d)\n"
 
 #: pg_receivewal.c:90
 #, c-format
@@ -979,7 +982,7 @@ msgstr "%s: terminato segmento a %X/%X (timeline %u)\n"
 #: pg_receivewal.c:123
 #, c-format
 msgid "%s: stopped log streaming at %X/%X (timeline %u)\n"
-msgstr ""
+msgstr "%s: streaming del log interrotto a %X/%X (timeline %u)\n"
 
 #: pg_receivewal.c:139
 #, c-format
@@ -1049,7 +1052,7 @@ msgstr "%s: non è possibile usare --create-slot insieme a --drop-slot\n"
 #: pg_receivewal.c:650
 #, c-format
 msgid "%s: cannot use --synchronous together with --no-sync\n"
-msgstr ""
+msgstr "%s: non è possibile usare --synchronous insieme a --no-sync\n"
 
 #: pg_receivewal.c:728
 #, c-format
@@ -1369,7 +1372,7 @@ msgid ""
 "and %d or more fields\n"
 msgstr ""
 "%s: identificazione del sistema fallita: ricevute %d righe e %d campi, "
-"attese %d righe e %d campi o più\n"
+"attese %d righe e %d o più campi\n"
 
 #: receivelog.c:509
 #, c-format
@@ -1492,11 +1495,13 @@ msgid ""
 "%s: could not fetch WAL segment size: got %d rows and %d fields, expected %d "
 "rows and %d or more fields\n"
 msgstr ""
+"%s: lettura della dimensione del segmento WAL fallita: ricevute %d righe e "
+"%d campi, attese %d righe e %d o più campi\n"
 
 #: streamutil.c:322
 #, c-format
 msgid "%s: WAL segment size could not be parsed\n"
-msgstr ""
+msgstr "%s: impossibile interpretare la dimensione del segmento WAL\n"
 
 #: streamutil.c:339
 #, c-format
@@ -1507,7 +1512,11 @@ msgid_plural ""
 "%s: WAL segment size must be a power of two between 1 MB and 1 GB, but the "
 "remote server reported a value of %d bytes\n"
 msgstr[0] ""
+"%s: la dimensione del segmento WAL deve essere una potenza di due tra 1 MB e "
+"1 GB, ma il server remoto ha riportato un valore di %d byte\n"
 msgstr[1] ""
+"%s: la dimensione del segmento WAL deve essere una potenza di due tra 1 MB e "
+"1 GB, ma il server remoto ha riportato un valore di %d byte\n"
 
 #: streamutil.c:386
 #, c-format
@@ -1515,11 +1524,13 @@ msgid ""
 "%s: could not fetch group access flag: got %d rows and %d fields, expected "
 "%d rows and %d or more fields\n"
 msgstr ""
+"%s: lettura del flag di accesso di gruppo fallita: ricevute %d righe e %d "
+"campi, attese %d righe e %d o più campi\n"
 
 #: streamutil.c:395
 #, c-format
 msgid "%s: group access flag could not be parsed: %s\n"
-msgstr ""
+msgstr "%s: impossibile interpretare il flag di accesso di gruppo: %s\n"
 
 #: streamutil.c:556
 #, c-format
