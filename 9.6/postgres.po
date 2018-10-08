@@ -18580,7 +18580,7 @@ msgid ""
 "bind message supplies %d parameters, but prepared statement \"%s\" requires "
 "%d"
 msgstr ""
-"il messaggio di bind fornisce %d paramatri, ma l'istruzione preparata \"%s\" "
+"il messaggio di bind fornisce %d parametri, ma l'istruzione preparata \"%s\" "
 "ne richiede %d"
 
 #: tcop/postgres.c:1704
