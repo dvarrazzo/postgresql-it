@@ -54,7 +54,7 @@ notrivial:
 
 # Look for translation errors
 check: $(MOS)
-	../tools/chkpos.py $(POS)
+	../tools/chkpos.py $(POS) --whitelist ../whitelist.xml
 
 clean:
 	rm -f *.mo *.pot

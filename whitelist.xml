@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<whitelist>
+  <file filename="psql.po">
+    <check name="PsqlCommand">
+      <item msgid="reached EOF without finding closing \endif(s)&#10;" msgstr="raggiunta fine file senza aver trovato \endif finali&#10;" />
+    </check>
+  </file>
+</whitelist>
