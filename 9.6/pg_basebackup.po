@@ -884,7 +884,7 @@ msgid ""
 "%s controls PostgreSQL logical decoding streams.\n"
 "\n"
 msgstr ""
-"%s controlla i flussi di decodifica logica di PostgreSQ.\n"
+"%s controlla i flussi di decodifica logica di PostgreSQL.\n"
 "\n"
 
 #: pg_recvlogical.c:74
