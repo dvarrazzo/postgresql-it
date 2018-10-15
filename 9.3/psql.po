@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 9.3\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-05 20:53+0000\n"
-"PO-Revision-Date: 2018-10-08 21:39+0100\n"
+"PO-Revision-Date: 2017-10-24 08:36+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../../common/fe_memutils.c:33 ../../common/fe_memutils.c:60
 #: ../../common/fe_memutils.c:83 input.c:216 mainloop.c:72 mainloop.c:234
@@ -778,7 +778,7 @@ msgstr "Lista dei tablespace"
 #: describe.c:227
 #, c-format
 msgid "\\df only takes [antwS+] as options\n"
-msgstr "\\df accetta come opzione solo [antwS+]\n"
+msgstr "\\df accetta come opzioni solo [antwS+]\n"
 
 #: describe.c:235
 #, c-format

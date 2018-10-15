@@ -875,7 +875,7 @@ msgstr "Lista dei tablespace"
 #: describe.c:244
 #, c-format
 msgid "\\df only takes [antwS+] as options\n"
-msgstr "\\df accetta come opzione solo [antwS+]\n"
+msgstr "\\df accetta come opzioni solo [antwS+]\n"
 
 #: describe.c:252
 #, c-format
@@ -2838,7 +2838,7 @@ msgid ""
 "                     (default: 0=unlimited)\n"
 msgstr ""
 "  FETCH_COUNT        il numero di righe del risultato da leggere e mostrare "
-"pr volta\n"
+"per volta\n"
 "                     (default: 0=tutte)\n"
 
 #: help.c:330
@@ -3086,8 +3086,8 @@ msgid ""
 "                     column widths for left-aligned data types in latex-"
 "longtable format\n"
 msgstr ""
-"  tableattr (or T)   specifica gli attributi per il tag table in formato "
-"html o la\n"
+"  tableattr (o T)   specifica gli attributi per il tag table in formato html "
+"o la\n"
 "                     larghezza colonna proporzionale dei dati allineati a "
 "sinistra\n"
 "                     in formato latex-longtable\n"
