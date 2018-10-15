@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:08+0000\n"
-"PO-Revision-Date: 2018-10-08 21:32+0100\n"
+"PO-Revision-Date: 2018-10-15 23:59+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -742,6 +742,8 @@ msgid ""
 "operator family \"%s\" of access method %s contains support function %s with "
 "different left and right input types"
 msgstr ""
+"la famiglia di operatori \"%s\" del metodo di accesso %s contiene la "
+"funzione di supporto %s con tipi di input sinistro e destro diversi"
 
 #: access/gin/ginvalidate.c:257
 #, c-format
@@ -906,7 +908,7 @@ msgstr "\"%s\" è un tipo composito"
 #: access/heap/heapam.c:2639
 #, c-format
 msgid "cannot insert tuples in a parallel worker"
-msgstr ""
+msgstr "non è possibile inserire tuple in un lavoratore parallelo"
 
 #: access/heap/heapam.c:3083
 #, c-format
@@ -1088,6 +1090,8 @@ msgid ""
 "version mismatch in index \"%s\": file version %d, current version %d, "
 "minimal supported version %d"
 msgstr ""
+"le versioni non corrispondono per l'indice \"%s\": la versione sul file è "
+"%d, quella corrente %d, quella minima supportata %d"
 
 #: access/nbtree/nbtpage.c:1320
 #, c-format
@@ -1117,6 +1121,8 @@ msgstr ""
 msgid ""
 "compress method must be defined when leaf type is different from input type"
 msgstr ""
+"il metodo di compressione dev'essere definito quando il tipo foglia è "
+"diverso dal tipo di input"
 
 #: access/spgist/spgutils.c:743
 #, c-format
@@ -1177,6 +1183,9 @@ msgid ""
 "You might also need to commit or roll back old prepared transactions, or "
 "drop stale replication slots."
 msgstr ""
+"Esegui un VACUUM sull'intero database.\n"
+"Potresti anche dover eseguire il commit o il rollback di vecchie transazioni "
+"preparate, o eliminare vecchi slot di replica."
 
 #: access/transam/multixact.c:1007
 #, c-format
@@ -1294,6 +1303,10 @@ msgid ""
 "You might also need to commit or roll back old prepared transactions, or "
 "drop stale replication slots."
 msgstr ""
+"Per evitare lo spegnimento del database, si deve eseguire un VACUUM su tutto "
+"il database.\n"
+"Potrebbe essere necessario inoltre effettuare il COMMIT o il ROLLBACK di "
+"vecchie transazioni preparate, o eliminare vecchi slot di replica."
 
 #: access/transam/multixact.c:2602
 #, c-format
@@ -1673,6 +1686,10 @@ msgid ""
 "You might also need to commit or roll back old prepared transactions, or "
 "drop stale replication slots."
 msgstr ""
+"Arresta il processo postmaster ed effettua un VACUUM su quel database in "
+"modalità a utente singolo.\n"
+"Potrebbe essere necessario inoltre effettuare il COMMIT o il ROLLBACK di "
+"vecchie transazioni preparate, o eliminare vecchi slot di replica."
 
 #: access/transam/varsup.c:131
 #, c-format
@@ -1750,7 +1767,7 @@ msgstr "non è possibile eseguire %s all'interno di una sottotransazione"
 #: access/transam/xact.c:3210
 #, c-format
 msgid "%s cannot be executed from a function"
-msgstr ""
+msgstr "%s non può essere eseguito da una funzione"
 
 #  translator: %s represents an SQL statement name
 #. translator: %s represents an SQL statement name
@@ -1799,12 +1816,14 @@ msgstr ""
 #: access/transam/xact.c:4075 access/transam/xact.c:4124
 #, c-format
 msgid "savepoint \"%s\" does not exist"
-msgstr ""
+msgstr "il punto di salvataggio \"%s\" non esiste"
 
 #: access/transam/xact.c:4021 access/transam/xact.c:4130
 #, c-format
 msgid "savepoint \"%s\" does not exist within current savepoint level"
 msgstr ""
+"il punto di salvataggio \"%s\" non esiste al livello di punti di salvataggio "
+"corrente"
 
 #: access/transam/xact.c:4063
 #, c-format
@@ -2151,17 +2170,21 @@ msgid_plural ""
 "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
 "control file specifies %d bytes"
 msgstr[0] ""
+"la dimensione del segmento WAL dev'essere una potenza di due tra 1 MB e 1 "
+"GB, ma il file di controllo specifica %d byte"
 msgstr[1] ""
+"la dimensione del segmento WAL dev'essere una potenza di due tra 1 MB e 1 "
+"GB, ma il file di controllo specifica %d byte"
 
 #: access/transam/xlog.c:4714
 #, c-format
 msgid "\"min_wal_size\" must be at least twice \"wal_segment_size\""
-msgstr ""
+msgstr "\"min_wal_size\" dev'essere almeno il doppio di \"wal_segment_size\""
 
 #: access/transam/xlog.c:4718
 #, c-format
 msgid "\"max_wal_size\" must be at least twice \"wal_segment_size\""
-msgstr ""
+msgstr "\"max_wal_size\" dev'essere almeno il doppio di \"wal_segment_size\""
 
 #: access/transam/xlog.c:5105
 #, c-format
@@ -2213,7 +2236,7 @@ msgstr "recovery_target_xid non ha un valore numerico valido: \"%s\""
 #: access/transam/xlog.c:5397
 #, c-format
 msgid "recovery_target_time is not a valid timestamp: \"%s\""
-msgstr ""
+msgstr "recovery_target_time non è un timestamp valido: \"%s\""
 
 #: access/transam/xlog.c:5420
 #, c-format
@@ -2763,7 +2786,7 @@ msgstr "punto di avvio del ripristino in %X/%X"
 #: access/transam/xlog.c:9433
 #, c-format
 msgid "Last completed transaction was at log time %s."
-msgstr ""
+msgstr "L'ultima transazione completata è stata registrata all'ora %s."
 
 #: access/transam/xlog.c:9567
 #, c-format
@@ -3018,22 +3041,22 @@ msgstr ""
 #: access/transam/xlog.c:11431
 #, c-format
 msgid "backup time %s in file \"%s\""
-msgstr ""
+msgstr "ora del backup %s nel file \"%s\""
 
 #: access/transam/xlog.c:11436
 #, c-format
 msgid "backup label %s in file \"%s\""
-msgstr ""
+msgstr "etichetta del backup %s nel file \"%s\""
 
 #: access/transam/xlog.c:11449
 #, c-format
 msgid "Timeline ID parsed is %u, but expected %u"
-msgstr ""
+msgstr "L'ID della timeline letta è %u, ma era atteso %u"
 
 #: access/transam/xlog.c:11453
 #, c-format
 msgid "backup timeline %u in file \"%s\""
-msgstr ""
+msgstr "timeline del backup %u nel file \"%s\""
 
 #. translator: %s is a WAL record description
 #: access/transam/xlog.c:11561
@@ -3308,6 +3331,8 @@ msgid ""
 "WAL file is from different database system: incorrect segment size in page "
 "header"
 msgstr ""
+"il file di WAL è di un diverso database: dimensione del segmento sbagliata "
+"nell'header di pagina"
 
 #: access/transam/xlogreader.c:812
 #, c-format
@@ -3405,7 +3430,7 @@ msgstr ""
 #: bootstrap/bootstrap.c:268
 #, c-format
 msgid "-X requires a power of two value between 1 MB and 1 GB"
-msgstr ""
+msgstr "-X richiede una potenza di due tra 1 MB e 1 GB"
 
 #: bootstrap/bootstrap.c:285 postmaster/postmaster.c:826 tcop/postgres.c:3558
 #, c-format
@@ -3525,12 +3550,12 @@ msgstr "tipo di privilegio %s non valido per lo schema"
 #: catalog/aclchk.c:488 catalog/aclchk.c:1007
 #, c-format
 msgid "invalid privilege type %s for procedure"
-msgstr ""
+msgstr "tipo di privilegio %s non valido per la procedura"
 
 #: catalog/aclchk.c:492 catalog/aclchk.c:1011
 #, c-format
 msgid "invalid privilege type %s for routine"
-msgstr ""
+msgstr "tipo di privilegio %s non valido per la routine"
 
 #: catalog/aclchk.c:496
 #, c-format
@@ -3698,7 +3723,7 @@ msgstr "tipo di privilegio \"%s\" sconosciuto"
 #: catalog/aclchk.c:3364
 #, c-format
 msgid "permission denied for aggregate %s"
-msgstr ""
+msgstr "permesso negato per l'aggregato %s"
 
 #: catalog/aclchk.c:3367
 #, c-format
@@ -3723,7 +3748,7 @@ msgstr "permesso negato per il database %s"
 #: catalog/aclchk.c:3379
 #, c-format
 msgid "permission denied for domain %s"
-msgstr ""
+msgstr "permesso negato per il dominio %s"
 
 #: catalog/aclchk.c:3382
 #, c-format
@@ -3748,7 +3773,7 @@ msgstr "permesso negato per il server esterno %s"
 #: catalog/aclchk.c:3394
 #, c-format
 msgid "permission denied for foreign table %s"
-msgstr ""
+msgstr "permesso negato per la tabella esterna %s"
 
 #: catalog/aclchk.c:3397
 #, c-format
@@ -3758,7 +3783,7 @@ msgstr "permesso negato per la funzione %s"
 #: catalog/aclchk.c:3400
 #, c-format
 msgid "permission denied for index %s"
-msgstr ""
+msgstr "permesso negato per l'indice %s"
 
 #: catalog/aclchk.c:3403
 #, c-format
@@ -3773,7 +3798,7 @@ msgstr "permesso negato per large object %s"
 #: catalog/aclchk.c:3409
 #, c-format
 msgid "permission denied for materialized view %s"
-msgstr ""
+msgstr "permesso negato per la vista materializzata %s"
 
 #: catalog/aclchk.c:3412
 #, c-format
@@ -3793,12 +3818,12 @@ msgstr "permesso negato per la famiglia di operatori %s"
 #: catalog/aclchk.c:3421
 #, c-format
 msgid "permission denied for policy %s"
-msgstr ""
+msgstr "permesso negato per la regola di sicurezza %s"
 
 #: catalog/aclchk.c:3424
 #, c-format
 msgid "permission denied for procedure %s"
-msgstr ""
+msgstr "permesso negato per la procedura %s"
 
 #: catalog/aclchk.c:3427
 #, c-format
@@ -3808,7 +3833,7 @@ msgstr "permesso negato per la pubblicazione %s"
 #: catalog/aclchk.c:3430
 #, c-format
 msgid "permission denied for routine %s"
-msgstr ""
+msgstr "permesso negato per la routine %s"
 
 #: catalog/aclchk.c:3433
 #, c-format
@@ -3835,7 +3860,7 @@ msgstr "permesso negato per la sottoscrizione %s"
 #: catalog/aclchk.c:3445
 #, c-format
 msgid "permission denied for table %s"
-msgstr ""
+msgstr "permesso negato per la tabella %s"
 
 #: catalog/aclchk.c:3448
 #, c-format
@@ -3860,12 +3885,12 @@ msgstr "permesso negato per il tipo %s"
 #: catalog/aclchk.c:3460
 #, c-format
 msgid "permission denied for view %s"
-msgstr ""
+msgstr "permesso negato per la vista %s"
 
 #: catalog/aclchk.c:3495
 #, c-format
 msgid "must be owner of aggregate %s"
-msgstr ""
+msgstr "bisogna essere proprietari dell'aggregato %s"
 
 #: catalog/aclchk.c:3498
 #, c-format
@@ -3885,7 +3910,7 @@ msgstr "bisogna essere proprietari del database %s"
 #: catalog/aclchk.c:3507
 #, c-format
 msgid "must be owner of domain %s"
-msgstr ""
+msgstr "bisogna essere proprietari del dominio %s"
 
 #: catalog/aclchk.c:3510
 #, c-format
@@ -3910,7 +3935,7 @@ msgstr "bisogna essere proprietari del server esterno %s"
 #: catalog/aclchk.c:3522
 #, c-format
 msgid "must be owner of foreign table %s"
-msgstr ""
+msgstr "bisogna essere proprietari della tabella esterna %s"
 
 #: catalog/aclchk.c:3525
 #, c-format
@@ -3920,7 +3945,7 @@ msgstr "bisogna essere proprietari della funzione %s"
 #: catalog/aclchk.c:3528
 #, c-format
 msgid "must be owner of index %s"
-msgstr ""
+msgstr "bisogna essere proprietari dell'indice %s"
 
 #: catalog/aclchk.c:3531
 #, c-format
@@ -3935,7 +3960,7 @@ msgstr "bisogna essere proprietari del large object %s"
 #: catalog/aclchk.c:3537
 #, c-format
 msgid "must be owner of materialized view %s"
-msgstr ""
+msgstr "bisogna essere proprietari della vista materializzata %s"
 
 #: catalog/aclchk.c:3540
 #, c-format
@@ -3955,7 +3980,7 @@ msgstr "bisogna essere proprietari della famiglia di operatori %s"
 #: catalog/aclchk.c:3549
 #, c-format
 msgid "must be owner of procedure %s"
-msgstr ""
+msgstr "bisogna essere proprietari della procedura %s"
 
 #: catalog/aclchk.c:3552
 #, c-format
@@ -3965,7 +3990,7 @@ msgstr "bisogna essere proprietari della pubblicazione %s"
 #: catalog/aclchk.c:3555
 #, c-format
 msgid "must be owner of routine %s"
-msgstr ""
+msgstr "bisogna essere proprietari della routine %s"
 
 #: catalog/aclchk.c:3558
 #, c-format
@@ -3980,7 +4005,7 @@ msgstr "bisogna essere proprietari della sottoscrizione %s"
 #: catalog/aclchk.c:3564
 #, c-format
 msgid "must be owner of table %s"
-msgstr ""
+msgstr "bisogna essere proprietari della tabella %s"
 
 #: catalog/aclchk.c:3567
 #, c-format
@@ -3990,7 +4015,7 @@ msgstr "bisogna essere proprietari del tipo %s"
 #: catalog/aclchk.c:3570
 #, c-format
 msgid "must be owner of view %s"
-msgstr ""
+msgstr "bisogna essere proprietari della vista %s"
 
 #: catalog/aclchk.c:3573
 #, c-format
@@ -4446,7 +4471,7 @@ msgstr "DROP INDEX CONCURRENTLY deve essere la prima azione della transazione"
 #: catalog/index.c:2295
 #, c-format
 msgid "building index \"%s\" on table \"%s\" serially"
-msgstr ""
+msgstr "creazione seriale dell'indice \"%s\" sulla tabella \"%s\""
 
 #: catalog/index.c:2300
 #, c-format
@@ -4455,7 +4480,11 @@ msgid ""
 msgid_plural ""
 "building index \"%s\" on table \"%s\" with request for %d parallel workers"
 msgstr[0] ""
+"creazione dell'indice \"%s\" sulla tabella \"%s\" con richiesta di %d "
+"lavoratori paralleli"
 msgstr[1] ""
+"creazione dell'indice \"%s\" sulla tabella \"%s\" con richiesta di %d "
+"lavoratori paralleli"
 
 #: catalog/index.c:3689
 #, c-format
@@ -4471,6 +4500,7 @@ msgstr "l'indice \"%s\" è stato reindicizzato"
 #, c-format
 msgid "REINDEX of partitioned tables is not yet implemented, skipping \"%s\""
 msgstr ""
+"REINDEX di una tabella partizionata non ancora implementato, \"%s\" saltato"
 
 #: catalog/namespace.c:248 catalog/namespace.c:452 catalog/namespace.c:546
 #: commands/trigger.c:5400
@@ -4774,7 +4804,7 @@ msgstr "tipo di oggetto \"%s\" non riconosciuto"
 #: catalog/objectaddress.c:2694
 #, c-format
 msgid "column %s of %s"
-msgstr ""
+msgstr "colonna %s di %s"
 
 #: catalog/objectaddress.c:2704
 #, c-format
@@ -4816,7 +4846,7 @@ msgstr "conversione %s"
 #: catalog/objectaddress.c:2865
 #, c-format
 msgid "default value for %s"
-msgstr ""
+msgstr "valore di default per %s"
 
 #: catalog/objectaddress.c:2874
 #, c-format
@@ -4865,13 +4895,13 @@ msgstr "funzione %d (%s, %s) della %s: %s"
 #: catalog/objectaddress.c:3075
 #, c-format
 msgid "rule %s on %s"
-msgstr ""
+msgstr "regola %s su %s"
 
 #. translator: second %s is, e.g., "table %s"
 #: catalog/objectaddress.c:3113
 #, c-format
 msgid "trigger %s on %s"
-msgstr ""
+msgstr "trigger %s su %s"
 
 #: catalog/objectaddress.c:3129
 #, c-format
@@ -4937,6 +4967,8 @@ msgstr "mappatura utenti per %s sul server %s"
 #, c-format
 msgid "default privileges on new relations belonging to role %s in schema %s"
 msgstr ""
+"privilegi predefiniti sulle nuove relazioni appartenenti al ruolo %s nello "
+"schema %s"
 
 #: catalog/objectaddress.c:3386
 #, c-format
@@ -4947,6 +4979,8 @@ msgstr "privilegi predefiniti sulle nuove relazioni appartenenti al ruolo %s"
 #, c-format
 msgid "default privileges on new sequences belonging to role %s in schema %s"
 msgstr ""
+"privilegi predefiniti sulle nuove sequenze appartenenti al ruolo %s nello "
+"schema %s"
 
 #: catalog/objectaddress.c:3396
 #, c-format
@@ -4957,6 +4991,8 @@ msgstr "privilegi predefiniti sulle nuove sequenze appartenenti al ruolo %s"
 #, c-format
 msgid "default privileges on new functions belonging to role %s in schema %s"
 msgstr ""
+"privilegi predefiniti sulle nuove funzioni appartenenti al ruolo %s nello "
+"schema %s"
 
 #: catalog/objectaddress.c:3406
 #, c-format
@@ -4967,6 +5003,7 @@ msgstr "privilegi predefiniti sulle nuove funzioni appartenenti al ruolo %s"
 #, c-format
 msgid "default privileges on new types belonging to role %s in schema %s"
 msgstr ""
+"privilegi predefiniti sui nuovi tipi appartenenti al ruolo %s nello schema %s"
 
 #: catalog/objectaddress.c:3416
 #, c-format
@@ -4981,7 +5018,7 @@ msgstr "privilegi predefiniti sui nuovi schemi appartenenti al ruolo %s"
 #: catalog/objectaddress.c:3429
 #, c-format
 msgid "default privileges belonging to role %s in schema %s"
-msgstr ""
+msgstr "privilegi predefiniti appartenenti al ruolo %s nello schema %s"
 
 #: catalog/objectaddress.c:3433
 #, c-format
@@ -5002,7 +5039,7 @@ msgstr "trigger di evento %s"
 #: catalog/objectaddress.c:3500
 #, c-format
 msgid "policy %s on %s"
-msgstr ""
+msgstr "regola di sicurezza %s su %s"
 
 #: catalog/objectaddress.c:3510
 #, c-format
@@ -5440,32 +5477,32 @@ msgstr "la funzione \"%s\" esiste già, con gli stessi tipi di argomenti"
 #: catalog/pg_proc.c:393
 #, c-format
 msgid "cannot change routine kind"
-msgstr ""
+msgstr "non è possibile cambiare il tipo di routine"
 
 #: catalog/pg_proc.c:395
 #, c-format
 msgid "\"%s\" is an aggregate function."
-msgstr ""
+msgstr "\"%s\" è una funzione di aggregazione."
 
 #: catalog/pg_proc.c:397
 #, c-format
 msgid "\"%s\" is a function."
-msgstr ""
+msgstr "\"%s\" è una funzione."
 
 #: catalog/pg_proc.c:399
 #, c-format
 msgid "\"%s\" is a procedure."
-msgstr ""
+msgstr "\"%s\" è una procedura."
 
 #: catalog/pg_proc.c:401
 #, c-format
 msgid "\"%s\" is a window function."
-msgstr ""
+msgstr "\"%s\" è una funzione finestra."
 
 #: catalog/pg_proc.c:419
 #, c-format
 msgid "cannot change whether a procedure has output parameters"
-msgstr ""
+msgstr "non è possibile cambiare se una funzione ha parametri di output o no"
 
 #: catalog/pg_proc.c:420 catalog/pg_proc.c:446
 #, c-format
@@ -5477,7 +5514,7 @@ msgstr "non è possibile cambiare il tipo restituito da una funzione esistente"
 #: catalog/pg_proc.c:520 catalog/pg_proc.c:548
 #, c-format
 msgid "Use %s %s first."
-msgstr ""
+msgstr "Usa %s %s prima."
 
 #: catalog/pg_proc.c:447
 #, c-format
@@ -5811,7 +5848,7 @@ msgstr "il parametro \"parallel\" deve essere SAFE, RESTRICTED o UNSAFE"
 #: commands/aggregatecmds.c:486
 #, c-format
 msgid "parameter \"%s\" must be READ_ONLY, SHAREABLE, or READ_WRITE"
-msgstr ""
+msgstr "il parametro \"%s\" deve essere READ_ONLY, SHAREABLE o READ_WRITE"
 
 #: commands/alter.c:84 commands/event_trigger.c:236
 #, c-format
@@ -5932,7 +5969,7 @@ msgstr "analisi di \"%s\" saltata --- lock non disponibile"
 #: commands/analyze.c:192
 #, c-format
 msgid "skipping analyze of \"%s\" --- relation no longer exists"
-msgstr ""
+msgstr "analisi di \"%s\" saltata --- la relazione non esiste più"
 
 #: commands/analyze.c:209
 #, c-format
@@ -6070,7 +6107,7 @@ msgstr "non è possibile raggruppare tabelle temporanee di altre sessioni"
 #: commands/cluster.c:137
 #, c-format
 msgid "cannot cluster a partitioned table"
-msgstr ""
+msgstr "non è possibile eseguire CLUSTER su una tabella partizionata"
 
 #: commands/cluster.c:167
 #, c-format
@@ -6120,6 +6157,8 @@ msgstr "non è possibile raggruppare sull'indice non valido \"%s\""
 #, c-format
 msgid "cannot mark index clustered in partitioned table"
 msgstr ""
+"non è possibile marcare un indice come raggruppato in una tabella "
+"partizionata"
 
 #: commands/cluster.c:938
 #, c-format
@@ -6318,6 +6357,8 @@ msgid ""
 "must be superuser or a member of the pg_execute_server_program role to COPY "
 "to or from an external program"
 msgstr ""
+"occorre essere un superutente o membro del ruolo pg_execute_server_program "
+"per effettuare COPY da o verso un programma esterno"
 
 #: commands/copy.c:805 commands/copy.c:814 commands/copy.c:821
 #, c-format
@@ -6334,6 +6375,8 @@ msgid ""
 "must be superuser or a member of the pg_read_server_files role to COPY from "
 "a file"
 msgstr ""
+"bisogna essere un superutente o membro del ruolo pg_read_server_files per "
+"eseguire COPY da un file"
 
 #: commands/copy.c:820
 #, c-format
@@ -6341,6 +6384,8 @@ msgid ""
 "must be superuser or a member of the pg_write_server_files role to COPY to a "
 "file"
 msgstr ""
+"bisogna essere un superutente o membro del ruolo pg_write_server_files per "
+"eseguire COPY in un file"
 
 #: commands/copy.c:883
 #, c-format
@@ -7018,8 +7063,8 @@ msgstr "il database \"%s\" è usato da uno slot di replica attivo"
 #, c-format
 msgid "There is %d active slot."
 msgid_plural "There are %d active slots."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "C'è %d slot attivo."
+msgstr[1] "Ci sono %d slot attivi."
 
 #: commands/dbcommands.c:874 commands/dbcommands.c:1038
 #: commands/dbcommands.c:1168
@@ -7233,12 +7278,12 @@ msgstr "la funzione %s(%s) non esiste, saltata"
 #: commands/dropcmds.c:340
 #, c-format
 msgid "procedure %s(%s) does not exist, skipping"
-msgstr ""
+msgstr "la procedura %s(%s) non esiste, saltata"
 
 #: commands/dropcmds.c:353
 #, c-format
 msgid "routine %s(%s) does not exist, skipping"
-msgstr ""
+msgstr "la routine %s(%s) non esiste, saltata"
 
 #: commands/dropcmds.c:366
 #, c-format
@@ -7843,7 +7888,7 @@ msgstr "gli aggregati non accettano insiemi come argomenti"
 #: commands/functioncmds.c:277
 #, c-format
 msgid "procedures cannot accept set arguments"
-msgstr ""
+msgstr "le procedure non accettano insiemi come argomenti"
 
 #: commands/functioncmds.c:281
 #, c-format
@@ -7853,12 +7898,12 @@ msgstr "le funzioni non accettano insiemi come argomenti"
 #: commands/functioncmds.c:289
 #, c-format
 msgid "procedures cannot have OUT arguments"
-msgstr ""
+msgstr "le procedure non possono avere argomenti OUT"
 
 #: commands/functioncmds.c:290
 #, c-format
 msgid "INOUT arguments are permitted."
-msgstr ""
+msgstr "Argomenti INOUT sono permessi."
 
 #: commands/functioncmds.c:300
 #, c-format
@@ -7897,7 +7942,7 @@ msgstr ""
 #: commands/functioncmds.c:566 commands/functioncmds.c:716
 #, c-format
 msgid "invalid attribute in procedure definition"
-msgstr ""
+msgstr "attributo non valido nella definizione della procedura"
 
 #: commands/functioncmds.c:747
 #, c-format
@@ -7933,7 +7978,7 @@ msgstr "il linguaggio \"%s\" non esiste"
 #: commands/functioncmds.c:939 commands/functioncmds.c:2141
 #, c-format
 msgid "Use CREATE EXTENSION to load the language into the database."
-msgstr ""
+msgstr "Usa CREATE EXTENSION per caricare il linguaggio nel database."
 
 #: commands/functioncmds.c:974 commands/functioncmds.c:1248
 #, c-format
@@ -8021,7 +8066,7 @@ msgstr "la funzione di conversione non può essere volatile"
 #: commands/functioncmds.c:1534
 #, c-format
 msgid "cast function must be a normal function"
-msgstr ""
+msgstr "la funzione di conversione dev'essere una funzione normale"
 
 #: commands/functioncmds.c:1538
 #, c-format
@@ -8084,7 +8129,7 @@ msgstr "la funzione di trasformazione non può essere volatile"
 #: commands/functioncmds.c:1782
 #, c-format
 msgid "transform function must be a normal function"
-msgstr ""
+msgstr "la funzione di trasformazione dev'essere una funzione normale"
 
 #: commands/functioncmds.c:1786
 #, c-format
@@ -8153,8 +8198,8 @@ msgstr "il linguaggio \"%s\" non supporta l'esecuzione di codice inline"
 #, c-format
 msgid "cannot pass more than %d argument to a procedure"
 msgid_plural "cannot pass more than %d arguments to a procedure"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "non è possibile passare più di %d argomenti ad una procedura"
+msgstr[1] "non è possibile passare più di %d argomenti ad una procedura"
 
 #: commands/indexcmds.c:393
 #, c-format
@@ -8175,11 +8220,15 @@ msgstr "non è possibile creare indici sulla tabella esterna \"%s\""
 #, c-format
 msgid "cannot create index on partitioned table \"%s\" concurrently"
 msgstr ""
+"non è possibile creare indici sulla tabella partizionata \"%s\" "
+"concorrentemente"
 
 #: commands/indexcmds.c:467
 #, c-format
 msgid "cannot create exclusion constraints on partitioned table \"%s\""
 msgstr ""
+"non è possibile creare vincoli di esclusione sulla tabella partizionata \"%s"
+"\""
 
 #: commands/indexcmds.c:477
 #, c-format
@@ -8206,7 +8255,7 @@ msgstr "il metodo di accesso \"%s\" non supporta gli indici univoci"
 #: commands/indexcmds.c:598
 #, c-format
 msgid "access method \"%s\" does not support included columns"
-msgstr ""
+msgstr "il metodo di accesso \"%s\" non supporta colonne incluse"
 
 #: commands/indexcmds.c:603
 #, c-format
@@ -8221,17 +8270,19 @@ msgstr "il metodo di accesso \"%s\" non supporta i vincoli di esclusione"
 #: commands/indexcmds.c:720
 #, c-format
 msgid "unsupported %s constraint with partition key definition"
-msgstr ""
+msgstr "vincolo %s non supportato con una definizione di chiave di partizione"
 
 #: commands/indexcmds.c:722
 #, c-format
 msgid "%s constraints cannot be used when partition keys include expressions."
 msgstr ""
+"I vincoli %s non possono essere usati quando le chiavi di partizioni "
+"includono espressioni."
 
 #: commands/indexcmds.c:740
 #, c-format
 msgid "insufficient columns in %s constraint definition"
-msgstr ""
+msgstr "colonne non sufficienti nella definizione del vincolo %s"
 
 #: commands/indexcmds.c:742
 #, c-format
@@ -8239,6 +8290,8 @@ msgid ""
 "%s constraint on table \"%s\" lacks column \"%s\" which is part of the "
 "partition key."
 msgstr ""
+"il vincolo %s sulla tabella \"%s\" non ha la colonna \"%s\" che è parte "
+"della chiave di partizione."
 
 #: commands/indexcmds.c:761 commands/indexcmds.c:781
 #, c-format
@@ -8264,7 +8317,7 @@ msgstr "la colonna \"%s\" nominata nella chiave non esiste"
 #: commands/indexcmds.c:1482 parser/parse_utilcmd.c:1588
 #, c-format
 msgid "expressions are not supported in included columns"
-msgstr ""
+msgstr "le colonne incluse non supportano espressioni"
 
 #: commands/indexcmds.c:1523
 #, c-format
@@ -8275,22 +8328,22 @@ msgstr ""
 #: commands/indexcmds.c:1538
 #, c-format
 msgid "including column does not support a collation"
-msgstr ""
+msgstr "le colonne incluse non supportano ordinamenti"
 
 #: commands/indexcmds.c:1542
 #, c-format
 msgid "including column does not support an operator class"
-msgstr ""
+msgstr "le colonne incluse non supportano classi di operatori"
 
 #: commands/indexcmds.c:1546
 #, c-format
 msgid "including column does not support ASC/DESC options"
-msgstr ""
+msgstr "le colonne incluse non supportano opzioni ASC/DESC"
 
 #: commands/indexcmds.c:1550
 #, c-format
 msgid "including column does not support NULLS FIRST/LAST options"
-msgstr ""
+msgstr "le colonne incluse non supportano opzioni NULLS FIRST/LAST"
 
 #: commands/indexcmds.c:1577
 #, c-format
@@ -8392,12 +8445,12 @@ msgstr "la tabella \"%s.%s\" è stata reindicizzata"
 #: commands/indexcmds.c:2505
 #, c-format
 msgid "REINDEX is not yet implemented for partitioned indexes"
-msgstr ""
+msgstr "REINDEX non ancora implementato per tabelle partizionate"
 
 #: commands/lockcmds.c:100
 #, c-format
 msgid "\"%s\" is not a table or a view"
-msgstr ""
+msgstr "\"%s\" non è una tabella o una vista"
 
 #: commands/lockcmds.c:224 rewrite/rewriteHandler.c:1836
 #: rewrite/rewriteHandler.c:3532
@@ -8473,7 +8526,7 @@ msgstr "numero di operatore %d non valido, deve essere tra 1 e %d"
 #: commands/opclasscmds.c:989
 #, c-format
 msgid "invalid function number %d, must be between 1 and %d"
-msgstr ""
+msgstr "numero di funzione %d non valido, deve essere tra 1 e %d"
 
 #: commands/opclasscmds.c:549
 #, c-format
@@ -8551,62 +8604,64 @@ msgstr "gli operatori di ricerca degli indici devono restituire un booleano"
 #: commands/opclasscmds.c:1144
 #, c-format
 msgid "btree comparison functions must have two arguments"
-msgstr ""
+msgstr "le funzioni di comparazioni btree devono avere due argomenti"
 
 #: commands/opclasscmds.c:1148
 #, c-format
 msgid "btree comparison functions must return integer"
-msgstr ""
+msgstr "le funzioni di comparazioni btree devono restituire un intero"
 
 #: commands/opclasscmds.c:1165
 #, c-format
 msgid "btree sort support functions must accept type \"internal\""
-msgstr ""
+msgstr "le funzioni di supporto btree devono accettare il tipo \"internal\""
 
 #: commands/opclasscmds.c:1169
 #, c-format
 msgid "btree sort support functions must return void"
-msgstr ""
+msgstr "le funzioni di supporto btree devono restituire void"
 
 #: commands/opclasscmds.c:1180
 #, c-format
 msgid "btree in_range functions must have five arguments"
-msgstr ""
+msgstr "le funzioni in_range btree devono avere cinque argomenti"
 
 #: commands/opclasscmds.c:1184
 #, c-format
 msgid "btree in_range functions must return boolean"
-msgstr ""
+msgstr "le funzioni in_range btree devono restituire un booleano"
 
 #: commands/opclasscmds.c:1203
 #, c-format
 msgid "hash function 1 must have one argument"
-msgstr ""
+msgstr "la funzione di hash 1 deve avere un solo argomento"
 
 #: commands/opclasscmds.c:1207
 #, c-format
 msgid "hash function 1 must return integer"
-msgstr ""
+msgstr "la funzione di hash 1 deve restituire un intero"
 
 #: commands/opclasscmds.c:1214
 #, c-format
 msgid "hash function 2 must have two arguments"
-msgstr ""
+msgstr "la funzione di hash 2 deve avere due argomenti"
 
 #: commands/opclasscmds.c:1218
 #, c-format
 msgid "hash function 2 must return bigint"
-msgstr ""
+msgstr "la funzione di hash 2 deve restituire un btree"
 
 #: commands/opclasscmds.c:1243
 #, c-format
 msgid "associated data types must be specified for index support function"
 msgstr ""
+"occorre specificare tipi di dati associati per le funzioni di supporto "
+"dell'indice"
 
 #: commands/opclasscmds.c:1268
 #, c-format
 msgid "function number %d for (%s,%s) appears more than once"
-msgstr ""
+msgstr "la funzione numero %d per (%s,%s) compare più di una volta"
 
 #: commands/opclasscmds.c:1275
 #, c-format
@@ -8664,7 +8719,7 @@ msgstr "attributo dell'operatore \"%s\" non riconosciuto"
 #: commands/operatorcmds.c:165
 #, c-format
 msgid "operator function must be specified"
-msgstr ""
+msgstr "la funzione dell'operatore deve essere specificata"
 
 #: commands/operatorcmds.c:176
 #, c-format
@@ -9432,6 +9487,8 @@ msgid ""
 "Do not specify the ONLY keyword, or use TRUNCATE ONLY on the partitions "
 "directly."
 msgstr ""
+"Non specificare la parola chiave ONLY, oppure usa TRUNCATE ONLY sulle "
+"partizioni direttamente."
 
 #: commands/tablecmds.c:1451
 #, c-format
@@ -9685,6 +9742,8 @@ msgid ""
 "updated partition constraint for default partition would be violated by some "
 "row"
 msgstr ""
+"il nuovo vincolo di partizione per la partizione di default verrebbe violato "
+"da alcune righe"
 
 #: commands/tablecmds.c:4830
 #, c-format
@@ -9918,7 +9977,7 @@ msgstr ""
 #: commands/tablecmds.c:6426
 #, c-format
 msgid "cannot refer to non-index column by number"
-msgstr ""
+msgstr "non è possibile riferirsi a colonne non-indice per numero"
 
 #: commands/tablecmds.c:6457
 #, c-format
@@ -9933,7 +9992,7 @@ msgstr "target delle statistiche abbassato a %d"
 #: commands/tablecmds.c:6488
 #, c-format
 msgid "column number %d of relation \"%s\" does not exist"
-msgstr ""
+msgstr "la colonna numero %d della relazione \"%s\" non esiste"
 
 #: commands/tablecmds.c:6507
 #, c-format
@@ -14966,7 +15025,7 @@ msgid ""
 "Options for single-user mode:\n"
 msgstr ""
 "\n"
-"Opzione per la modalità a singolo utente:\n"
+"Opzione per la modalità a utente singolo:\n"
 
 #: main/main.c:364
 #, c-format
