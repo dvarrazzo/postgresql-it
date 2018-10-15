@@ -59,7 +59,7 @@ msgstr "%s: apertura del file \"%s\" in lettura fallita: %s\n"
 #: storage/file/copydir.c:204 utils/adt/genfile.c:152 utils/adt/misc.c:924
 #, c-format
 msgid "could not read file \"%s\": %m"
-msgstr "lettura de file \"%s\" fallita: %m"
+msgstr "lettura del file \"%s\" fallita: %m"
 
 #: ../common/controldata_utils.c:78
 #, c-format

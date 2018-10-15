@@ -1116,7 +1116,7 @@ msgstr ""
 #: utils/adt/genfile.c:151
 #, c-format
 msgid "could not read file \"%s\": %m"
-msgstr "lettura de file \"%s\" fallita: %m"
+msgstr "lettura del file \"%s\" fallita: %m"
 
 #: access/transam/timeline.c:412 access/transam/timeline.c:488
 #: access/transam/xlog.c:3079 access/transam/xlog.c:3240

@@ -822,7 +822,7 @@ msgstr "creazione del file \"%s\" fallita: %m"
 #: utils/adt/genfile.c:139
 #, c-format
 msgid "could not read file \"%s\": %m"
-msgstr "lettura de file \"%s\" fallita: %m"
+msgstr "lettura del file \"%s\" fallita: %m"
 
 #: access/transam/timeline.c:367 access/transam/timeline.c:401
 #: access/transam/timeline.c:477 access/transam/xlog.c:2384
