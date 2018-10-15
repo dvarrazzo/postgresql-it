@@ -5500,7 +5500,7 @@ msgstr ""
 #: commands/copy.c:814
 #, c-format
 msgid "must be superuser to COPY to or from a file"
-msgstr "bisogna essere un superutente per eseguire un COPY da o verso un file"
+msgstr "bisogna essere un superutente per eseguire COPY da o verso un file"
 
 #: commands/copy.c:881
 #, c-format
