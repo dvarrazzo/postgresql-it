@@ -1597,7 +1597,7 @@ msgid ""
 "You might also need to commit or roll back old prepared transactions."
 msgstr ""
 "Arresta il processo postmaster ed effettua un VACUUM su quel database in "
-"modalità a singolo utente.\n"
+"modalità a utente singolo.\n"
 "Potrebbe essere necessario inoltre effettuare il COMMIT o il ROLLBACK di "
 "vecchie transazioni preparate."
 
@@ -12954,7 +12954,7 @@ msgid ""
 "Options for single-user mode:\n"
 msgstr ""
 "\n"
-"Opzione per la modalità a singolo utente:\n"
+"Opzione per la modalità a utente singolo:\n"
 
 #: main/main.c:364
 #, c-format

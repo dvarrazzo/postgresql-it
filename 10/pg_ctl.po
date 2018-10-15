@@ -255,7 +255,7 @@ msgstr "Il server è in esecuzione?\n"
 msgid "%s: cannot stop server; single-user server is running (PID: %ld)\n"
 msgstr ""
 "%s: non è possibile fermare il server; il server è in esecuzione in modalità "
-"a singolo utente (PID: %ld)\n"
+"a utente singolo (PID: %ld)\n"
 
 #: pg_ctl.c:893 pg_ctl.c:989
 #, c-format
@@ -311,12 +311,12 @@ msgstr "il server si sta avviando comunque\n"
 msgid "%s: cannot restart server; single-user server is running (PID: %ld)\n"
 msgstr ""
 "%s: non è possibile riavviare il server; il server è in esecuzione in "
-"modalità a singolo utente (PID: %ld)\n"
+"modalità a utente singolo (PID: %ld)\n"
 
 #: pg_ctl.c:980 pg_ctl.c:1066
 msgid "Please terminate the single-user server and try again.\n"
 msgstr ""
-"Si prega di terminare il server in modalità singolo utente e di riprovare.\n"
+"Si prega di terminare il server in modalità utente singolo e di riprovare.\n"
 
 #: pg_ctl.c:1040
 #, c-format
@@ -329,7 +329,7 @@ msgstr ""
 msgid "%s: cannot reload server; single-user server is running (PID: %ld)\n"
 msgstr ""
 "%s: non è possibile eseguire il reload del server; il server è in esecuzione "
-"in modalità a singolo utente (PID: %ld)\n"
+"in modalità a utente singolo (PID: %ld)\n"
 
 #: pg_ctl.c:1072
 #, c-format
@@ -345,7 +345,7 @@ msgstr "segnale inviato al server\n"
 msgid "%s: cannot promote server; single-user server is running (PID: %ld)\n"
 msgstr ""
 "%s: non è possibile promuovere il server: il server è in esecuzione in "
-"modalità a singolo utente (PID: %ld)\n"
+"modalità a utente singolo (PID: %ld)\n"
 
 #: pg_ctl.c:1110
 #, c-format
@@ -395,7 +395,7 @@ msgstr "il server sta venendo promosso\n"
 #, c-format
 msgid "%s: single-user server is running (PID: %ld)\n"
 msgstr ""
-"%s: il server è in esecuzione in modalità a singolo utente (PID: %ld)\n"
+"%s: il server è in esecuzione in modalità a utente singolo (PID: %ld)\n"
 
 #: pg_ctl.c:1238
 #, c-format

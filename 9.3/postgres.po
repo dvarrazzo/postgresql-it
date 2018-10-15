@@ -11265,7 +11265,7 @@ msgid ""
 "Options for single-user mode:\n"
 msgstr ""
 "\n"
-"Opzione per la modalità a singolo utente:\n"
+"Opzione per la modalità a utente singolo:\n"
 
 #: main/main.c:389
 #, c-format
