@@ -17,7 +17,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pgscripts (PostgreSQL) 10\n"
+"Project-Id-Version: pgscripts (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:15+0000\n"
 "PO-Revision-Date: 2018-10-08 21:19+0100\n"
