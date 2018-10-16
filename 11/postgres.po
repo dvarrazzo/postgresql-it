@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:08+0000\n"
-"PO-Revision-Date: 2018-10-15 23:59+0100\n"
+"PO-Revision-Date: 2018-10-16 02:25+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -9998,16 +9998,20 @@ msgstr "la colonna numero %d della relazione \"%s\" non esiste"
 #, c-format
 msgid "cannot alter statistics on included column \"%s\" of index \"%s\""
 msgstr ""
+"non è possibile cambiare statistiche sulla colonna inclusa \"%s\" "
+"dell'indice \"%s\""
 
 #: commands/tablecmds.c:6512
 #, c-format
 msgid "cannot alter statistics on non-expression column \"%s\" of index \"%s\""
 msgstr ""
+"non è possibile cambiare statistiche sulla colonna non di espressione \"%s\" "
+"dell'indice \"%s\""
 
 #: commands/tablecmds.c:6514
 #, c-format
 msgid "Alter statistics on table column instead."
-msgstr ""
+msgstr "Cambia le statistiche sulla colonna della tabella invece."
 
 #: commands/tablecmds.c:6640
 #, c-format
@@ -10066,6 +10070,8 @@ msgid ""
 "ALTER TABLE / ADD CONSTRAINT USING INDEX is not supported on partitioned "
 "tables"
 msgstr ""
+"ALTER TABLE / ADD CONSTRAINT USING INDEX non è supportato su tabelle "
+"partizionate"
 
 #: commands/tablecmds.c:7041
 #, c-format
@@ -10090,6 +10096,8 @@ msgid ""
 "cannot use ONLY for foreign key on partitioned table \"%s\" referencing "
 "relation \"%s\""
 msgstr ""
+"non è possibile usare ONLY per la chiave esterna sulla tabella partizionata "
+"\"%s\" riferita alla relazione \"%s\""
 
 #: commands/tablecmds.c:7343
 #, c-format
@@ -10097,11 +10105,14 @@ msgid ""
 "cannot add NOT VALID foreign key on partitioned table \"%s\" referencing "
 "relation \"%s\""
 msgstr ""
+"non è possibile aggiungere la chiave esterna NON VALID sulla tabella "
+"partizionata \"%s\" riferita alla relazione \"%s\""
 
 #: commands/tablecmds.c:7346
 #, c-format
 msgid "This feature is not yet supported on partitioned tables."
 msgstr ""
+"Questa caratteristica non è ancora supportata sulle tabelle partizionate."
 
 #: commands/tablecmds.c:7352
 #, c-format
@@ -10723,7 +10734,7 @@ msgstr ""
 #: commands/tablecmds.c:13810
 #, c-format
 msgid "data type %s has no default hash operator class"
-msgstr ""
+msgstr "il tipo di dati %s non ha una classe di operatori hash di default"
 
 #: commands/tablecmds.c:13812
 #, c-format
@@ -10731,6 +10742,8 @@ msgid ""
 "You must specify a hash operator class or define a default hash operator "
 "class for the data type."
 msgstr ""
+"Devi specificare una classe di operatori hash o definire una classe di "
+"operatori hash di default per il tipo di dato."
 
 #: commands/tablecmds.c:13816
 #, c-format
@@ -10761,6 +10774,8 @@ msgid ""
 "updated partition constraint for default partition \"%s\" is implied by "
 "existing constraints"
 msgstr ""
+"il nuovo vincolo di partizione per la partizione di default \"%s\" è "
+"implicito grazie ai vincoli esistenti"
 
 #: commands/tablecmds.c:14048
 #, c-format
@@ -10863,21 +10878,23 @@ msgstr ""
 #, c-format
 msgid "cannot attach index \"%s\" as a partition of index \"%s\""
 msgstr ""
+"non è possibile agganciare l'indice \"%s\" come partizione dell'indice \"%s\""
 
 #: commands/tablecmds.c:14830
 #, c-format
 msgid "Index \"%s\" is already attached to another index."
-msgstr ""
+msgstr "L'indice \"%s\" è già agganciato ad un altro indice."
 
 #: commands/tablecmds.c:14849
 #, c-format
 msgid "Index \"%s\" is not an index on any partition of table \"%s\"."
 msgstr ""
+"L'Indice \"%s\" non è un indice di alcuna partizione della tabella \"%s\"."
 
 #: commands/tablecmds.c:14871
 #, c-format
 msgid "The index definitions do not match."
-msgstr ""
+msgstr "Le definizioni degli indici non corrispondono."
 
 #: commands/tablecmds.c:14890
 #, c-format
@@ -10885,11 +10902,13 @@ msgid ""
 "The index \"%s\" belongs to a constraint in table \"%s\" but no constraint "
 "exists for index \"%s\"."
 msgstr ""
+"L'indice \"%s\" appartiene ad un vincolo nella tabella \"%s\" ma non c'è "
+"alcun vincolo per l'indice \"%s\"."
 
 #: commands/tablecmds.c:14946
 #, c-format
 msgid "Another index is already attached for partition \"%s\"."
-msgstr ""
+msgstr "C'è già un altro indice agganciato per la partizione \"%s\"."
 
 #: commands/tablespace.c:163 commands/tablespace.c:180
 #: commands/tablespace.c:191 commands/tablespace.c:199
@@ -11045,11 +11064,13 @@ msgstr "Le tabelle non possono avere trigger INSTEAD OF."
 #, c-format
 msgid "Partitioned tables cannot have BEFORE / FOR EACH ROW triggers."
 msgstr ""
+"Le tabelle partizionate non possono avere trigger BEFORE / FOR EACH ROW."
 
 #: commands/trigger.c:255
 #, c-format
 msgid "Triggers on partitioned tables cannot have transition tables."
 msgstr ""
+"I trigger su tabelle partizionate non possono avere tabelle di transizione."
 
 #: commands/trigger.c:267 commands/trigger.c:274 commands/trigger.c:444
 #, c-format
@@ -11293,6 +11314,8 @@ msgid ""
 "tuple to be locked was already moved to another partition due to concurrent "
 "update"
 msgstr ""
+"la tupla da lockare era stata già mossa in un'altra partizione a causa di "
+"una modifica concorrente"
 
 #: commands/trigger.c:5452
 #, c-format
@@ -11891,6 +11914,7 @@ msgstr "il ruolo \"%s\" non è membro del ruolo \"%s\""
 #, c-format
 msgid "ANALYZE option must be specified when a column list is provided"
 msgstr ""
+"occorre specificare l'opzione ANALYZE quando è fornita una lista di colonne"
 
 #: commands/vacuum.c:203
 #, c-format
@@ -11915,6 +11939,9 @@ msgid ""
 "You might also need to commit or roll back old prepared transactions, or "
 "drop stale replication slots."
 msgstr ""
+"Chiudi presto le transazioni per evitare problemi di wraparound.\n"
+"Potrebbe essere necessario inoltre effettuare il COMMIT o il ROLLBACK di "
+"vecchie transazioni preparate, o eliminare vecchi slot di replica."
 
 #: commands/vacuum.c:698
 #, c-format
@@ -11950,7 +11977,7 @@ msgstr "pulizia di \"%s\" saltata --- lock non disponibile"
 #: commands/vacuum.c:1423
 #, c-format
 msgid "skipping vacuum of \"%s\" --- relation no longer exists"
-msgstr ""
+msgstr "pulizia di \"%s\" saltata --- la relazione non esiste più"
 
 #: commands/vacuum.c:1447
 #, c-format
@@ -11982,6 +12009,8 @@ msgstr ""
 #, c-format
 msgid "automatic aggressive vacuum of table \"%s.%s.%s\": index scans: %d\n"
 msgstr ""
+"vacuum automatico aggressivo della tabella \"%s.%s.%s\": scansioni di "
+"indici: %d\n"
 
 #: commands/vacuumlazy.c:380
 #, c-format
@@ -12025,7 +12054,7 @@ msgstr "utilizzo di sistema: %s"
 #: commands/vacuumlazy.c:500
 #, c-format
 msgid "aggressively vacuuming \"%s.%s\""
-msgstr ""
+msgstr "vacuum aggressivo di \"%s.%s\""
 
 #: commands/vacuumlazy.c:881
 #, c-format
@@ -12718,6 +12747,8 @@ msgid ""
 "tuple to be locked was already moved to another partition due to concurrent "
 "update, retrying"
 msgstr ""
+"la tupla da lockare era stata già mossa in un'altra partizione a causa di "
+"una modifica concorrente, sto riprovando"
 
 #: executor/execReplication.c:201 executor/execReplication.c:365
 #, c-format
@@ -12876,6 +12907,8 @@ msgstr "funzione SQL \"%s\" durante l'avvio"
 msgid ""
 "calling procedures with output arguments is not supported in SQL functions"
 msgstr ""
+"l'esecuzione di procedure con argomenti di output non è supportata in "
+"funzioni SQL"
 
 #: executor/functions.c:1657 executor/functions.c:1690
 #: executor/functions.c:1702 executor/functions.c:1826
@@ -13004,11 +13037,13 @@ msgid ""
 "tuple to be deleted was already moved to another partition due to concurrent "
 "update"
 msgstr ""
+"la tupla da cancellare era stata già mossa in un'altra partizione a causa di "
+"una modifica concorrente"
 
 #: executor/nodeModifyTable.c:1085
 #, c-format
 msgid "invalid ON UPDATE specification"
-msgstr ""
+msgstr "specifica ON UPDATE non valida"
 
 #: executor/nodeModifyTable.c:1086
 #, c-format
@@ -13016,6 +13051,8 @@ msgid ""
 "The result tuple would appear in a different partition than the original "
 "tuple."
 msgstr ""
+"La tupla risultato apparterrebbe ad una partizione diversa della tupla "
+"originale."
 
 #: executor/nodeModifyTable.c:1261
 #, c-format
@@ -13023,6 +13060,8 @@ msgid ""
 "tuple to be updated was already moved to another partition due to concurrent "
 "update"
 msgstr ""
+"la tupla da modificare era stata già mossa in un'altra partizione a causa di "
+"una modifica concorrente"
 
 #: executor/nodeModifyTable.c:1412
 #, c-format
@@ -13110,21 +13149,24 @@ msgstr "l'offset di fine della finestra non può essere negativo"
 #, c-format
 msgid "aggregate function %s does not support use as a window function"
 msgstr ""
+"la funzione di aggregazione %s non consente l'uso come funzione finestra"
 
 #: executor/spi.c:233 executor/spi.c:272
 #, c-format
 msgid "invalid transaction termination"
-msgstr ""
+msgstr "terminazione di transazione non valida"
 
 #: executor/spi.c:247
 #, c-format
 msgid "cannot commit while a subtransaction is active"
 msgstr ""
+"non è possibile effettuare un COMMIT mentre è attiva una sotto-transazione"
 
 #: executor/spi.c:278
 #, c-format
 msgid "cannot roll back while a subtransaction is active"
 msgstr ""
+"non è possibile effettuare un ROLLBACK mentre è attiva una sotto-transazione"
 
 #: executor/spi.c:317
 #, c-format
@@ -13196,7 +13238,7 @@ msgstr "accesso al file \"%s\" fallito: %m"
 #: jit/llvm/llvmjit.c:598
 #, c-format
 msgid "time to inline: %.3fs, opt: %.3fs, emit: %.3fs"
-msgstr ""
+msgstr "tempo per l'inline: %.3fs, ottimizzazione: %.3fs, emissione: %.3fs"
 
 #: lib/dshash.c:247 utils/mmgr/dsa.c:715 utils/mmgr/dsa.c:797
 #, c-format
@@ -13281,6 +13323,8 @@ msgid ""
 "The client selected SCRAM-SHA-256-PLUS, but the SCRAM message does not "
 "include channel binding data."
 msgstr ""
+"Il client ha scelto SCRAM-SHA-256-PLUS, ma il messaggio di SCRAM non include "
+"dati di binding del canale."
 
 #: libpq/auth-scram.c:905 libpq/auth-scram.c:935
 #, c-format
@@ -13290,7 +13334,7 @@ msgstr "Attesa virgola, ma trovato carattere \"%s\"."
 #: libpq/auth-scram.c:926
 #, c-format
 msgid "SCRAM channel binding negotiation error"
-msgstr ""
+msgstr "errore di negoziazione del binding del canale SCRAM"
 
 #: libpq/auth-scram.c:927
 #, c-format
@@ -13298,6 +13342,8 @@ msgid ""
 "The client supports SCRAM channel binding but thinks the server does not.  "
 "However, this server does support channel binding."
 msgstr ""
+"Il client supporta il binding del canale SCRAM ma pensa che il server non lo "
+"supporti. Invece, questo server supporta il binding del canale."
 
 #: libpq/auth-scram.c:949
 #, c-format
@@ -13305,11 +13351,13 @@ msgid ""
 "The client selected SCRAM-SHA-256 without channel binding, but the SCRAM "
 "message includes channel binding data."
 msgstr ""
+"Il client ha scelto SCRAM-SHA-256 senza binding del canale, ma il messaggio "
+"SCRAM include dati di binding del canale."
 
 #: libpq/auth-scram.c:960
 #, c-format
 msgid "unsupported SCRAM channel-binding type \"%s\""
-msgstr ""
+msgstr "tipo di binding di canale SCRAM \"%s\" non supportato"
 
 #: libpq/auth-scram.c:967
 #, c-format
@@ -13344,7 +13392,7 @@ msgstr "errore nella generazione del nonce SCRAM"
 #: libpq/auth-scram.c:1233
 #, c-format
 msgid "SCRAM channel binding check failed"
-msgstr ""
+msgstr "controllo di binding del canale SCRAM fallito"
 
 #: libpq/auth-scram.c:1251
 #, c-format
@@ -13736,12 +13784,12 @@ msgstr "inizializzazione LDAP fallita: codice errore %d"
 #: libpq/auth.c:2364
 #, c-format
 msgid "could not initialize LDAP: %s"
-msgstr ""
+msgstr "inizializzazione LDAP fallita: %s"
 
 #: libpq/auth.c:2374
 #, c-format
 msgid "ldaps not supported with this LDAP library"
-msgstr ""
+msgstr "ldaps non supportato con questa libreria LDAP"
 
 #: libpq/auth.c:2382
 #, c-format
@@ -13833,7 +13881,7 @@ msgstr "dn per il primo risultato di \"%s\" non trovato sul server \"%s\": %s"
 #: libpq/auth.c:2672
 #, c-format
 msgid "could not unbind after searching for user \"%s\" on server \"%s\""
-msgstr ""
+msgstr "unbinding fallito dopo aver cercato l'utente \"%s\" sul server \"%s\""
 
 #: libpq/auth.c:2703
 #, c-format
@@ -13843,7 +13891,7 @@ msgstr "login LDAP fallito per l'utente \"%s\" sul server \"%s\": %s"
 #: libpq/auth.c:2732
 #, c-format
 msgid "LDAP diagnostics: %s"
-msgstr ""
+msgstr "diagnostica LDAP: %s"
 
 #: libpq/auth.c:2757
 #, c-format
@@ -13965,7 +14013,7 @@ msgstr "descrittore di large object non valido: %d"
 #: libpq/be-fsstubs.c:161
 #, c-format
 msgid "large object descriptor %d was not opened for reading"
-msgstr ""
+msgstr "il descrittore per il large object %d non era aperto in lettura"
 
 #: libpq/be-fsstubs.c:185 libpq/be-fsstubs.c:552
 #, c-format
@@ -14027,12 +14075,12 @@ msgstr "permesso per il large object %u negato"
 #: libpq/be-secure-common.c:91
 #, c-format
 msgid "could not read from command \"%s\": %m"
-msgstr ""
+msgstr "lettura fallita dal comando \"%s\": %m"
 
 #: libpq/be-secure-common.c:109
 #, c-format
 msgid "command \"%s\" failed"
-msgstr ""
+msgstr "comando \"%s\" fallito"
 
 #: libpq/be-secure-common.c:139
 #, c-format
@@ -14489,6 +14537,8 @@ msgid ""
 "cannot use ldapbasedn, ldapbinddn, ldapbindpasswd, ldapsearchattribute, "
 "ldapsearchfilter, or ldapurl together with ldapprefix"
 msgstr ""
+"non è possibile usare ldapbasedn, ldapbinddn, ldapbindpasswd, "
+"ldapsearchattribute, ldapsearchfilter o ldapurl insieme a ldapprefix"
 
 #: libpq/hba.c:1533
 #, c-format
@@ -14502,7 +14552,7 @@ msgstr ""
 #: libpq/hba.c:1549
 #, c-format
 msgid "cannot use ldapsearchattribute together with ldapsearchfilter"
-msgstr ""
+msgstr "non è possibile usare ldapsearchattribute insieme a ldapsearchfilter"
 
 #: libpq/hba.c:1566
 #, c-format
@@ -14553,7 +14603,7 @@ msgstr "URL LDAP non supportate su questa piattaforma"
 #: libpq/hba.c:1778
 #, c-format
 msgid "invalid ldapscheme value: \"%s\""
-msgstr ""
+msgstr "valore ldapscheme non valido: \"%s\""
 
 #: libpq/hba.c:1796
 #, c-format
@@ -15595,11 +15645,12 @@ msgstr ""
 
 #: parser/parse_agg.c:425
 msgid "aggregate functions are not allowed in window GROUPS"
-msgstr ""
+msgstr "le funzioni di aggregazione non sono ammesse nel GROUPS della finestra"
 
 #: parser/parse_agg.c:427
 msgid "grouping operations are not allowed in window GROUPS"
 msgstr ""
+"le operazioni di raggruppamento non sono ammesse nel GROUPS della finestra"
 
 #: parser/parse_agg.c:461
 msgid "aggregate functions are not allowed in check constraints"
@@ -15676,18 +15727,21 @@ msgstr ""
 #: parser/parse_agg.c:512
 msgid "aggregate functions are not allowed in partition key expressions"
 msgstr ""
+"le funzioni di aggregazione non sono ammesse nelle espressioni di partizione"
 
 #: parser/parse_agg.c:514
 msgid "grouping operations are not allowed in partition key expressions"
 msgstr ""
+"le operazioni di raggruppamento non sono ammesse nelle espressioni di "
+"partizione"
 
 #: parser/parse_agg.c:520
 msgid "aggregate functions are not allowed in CALL arguments"
-msgstr ""
+msgstr "le funzioni di aggregazione non sono ammesse in argomenti CALL"
 
 #: parser/parse_agg.c:522
 msgid "grouping operations are not allowed in CALL arguments"
-msgstr ""
+msgstr "le operazioni di raggruppamento non sono ammesse in argomenti CALL"
 
 #. translator: %s is name of a SQL construct, eg GROUP BY
 #: parser/parse_agg.c:545 parser/parse_clause.c:1818
@@ -15784,11 +15838,11 @@ msgstr ""
 
 #: parser/parse_agg.c:900
 msgid "window functions are not allowed in partition key expressions"
-msgstr ""
+msgstr "le funzioni finestra non sono ammesse nelle espressioni di partizione"
 
 #: parser/parse_agg.c:903
 msgid "window functions are not allowed in CALL arguments"
-msgstr ""
+msgstr "le funzioni finestra non sono ammesse in argomenti CALL"
 
 #. translator: %s is name of a SQL construct, eg GROUP BY
 #: parser/parse_agg.c:923 parser/parse_clause.c:1827
@@ -16053,11 +16107,13 @@ msgstr "Omettere le parentesi in questa clausola OVER."
 msgid ""
 "RANGE with offset PRECEDING/FOLLOWING requires exactly one ORDER BY column"
 msgstr ""
+"RANGE con offset PRECEDING/FOLLOWING richiede esattamente una colonna ORDER "
+"BY"
 
 #: parser/parse_clause.c:2805
 #, c-format
 msgid "GROUPS mode requires an ORDER BY clause"
-msgstr ""
+msgstr "la modalità GROUPS richiede una clausola ORDER BY"
 
 #: parser/parse_clause.c:2875
 #, c-format
@@ -16145,6 +16201,7 @@ msgstr ""
 msgid ""
 "RANGE with offset PRECEDING/FOLLOWING is not supported for column type %s"
 msgstr ""
+"RANGE con offset PRECEDING/FOLLOWING non supportato per il tipo di colonna %s"
 
 #: parser/parse_clause.c:3652
 #, c-format
@@ -16152,11 +16209,13 @@ msgid ""
 "RANGE with offset PRECEDING/FOLLOWING is not supported for column type %s "
 "and offset type %s"
 msgstr ""
+"RANGE con offset PRECEDING/FOLLOWING non supportato per il tipo di colonna "
+"%s e tipo di offset %s"
 
 #: parser/parse_clause.c:3655
 #, c-format
 msgid "Cast the offset value to an appropriate type."
-msgstr ""
+msgstr "Converti il valore di offset in un tipo appropriato."
 
 #: parser/parse_clause.c:3660
 #, c-format
@@ -16164,11 +16223,13 @@ msgid ""
 "RANGE with offset PRECEDING/FOLLOWING has multiple interpretations for "
 "column type %s and offset type %s"
 msgstr ""
+"RANGE con offset PRECEDING/FOLLOWING ha interpretazioni multiple per il tipo "
+"di colonna %s e tipo di offset %s"
 
 #: parser/parse_clause.c:3663
 #, c-format
 msgid "Cast the offset value to the exact intended type."
-msgstr ""
+msgstr "Converti il valore di offset nel tipo esatto desiderato."
 
 #: parser/parse_coerce.c:1017 parser/parse_coerce.c:1055
 #: parser/parse_coerce.c:1073 parser/parse_coerce.c:1088
@@ -16526,11 +16587,11 @@ msgstr "non è possibile usare sottoquery nella condizione WHEN del trigger"
 
 #: parser/parse_expr.c:1847
 msgid "cannot use subquery in partition key expression"
-msgstr "non è possibile usare sottowquery in un'espressione di partizione"
+msgstr "non è possibile usare sottoquery in un'espressione di partizione"
 
 #: parser/parse_expr.c:1850
 msgid "cannot use subquery in CALL argument"
-msgstr ""
+msgstr "non è possibile usare sottoquery in argomenti CALL"
 
 #: parser/parse_expr.c:1903
 #, c-format
@@ -16655,22 +16716,22 @@ msgstr "gli argomenti posizionali non possono seguire gli argomenti con nome"
 #: parser/parse_func.c:278 parser/parse_func.c:2184
 #, c-format
 msgid "%s is not a procedure"
-msgstr ""
+msgstr "%s non è una procedura"
 
 #: parser/parse_func.c:282
 #, c-format
 msgid "To call a function, use SELECT."
-msgstr ""
+msgstr "Per eseguire una funzione, usa SELECT."
 
 #: parser/parse_func.c:288
 #, c-format
 msgid "%s is a procedure"
-msgstr ""
+msgstr "%s è una procedura"
 
 #: parser/parse_func.c:292
 #, c-format
 msgid "To call a procedure, use CALL."
-msgstr ""
+msgstr "Per eseguire una procedura, usa CALL."
 
 #: parser/parse_func.c:306
 #, c-format
@@ -16762,7 +16823,7 @@ msgstr "la funzione di aggregazione %s non può avere WITHIN GROUP"
 #: parser/parse_func.c:548
 #, c-format
 msgid "procedure %s is not unique"
-msgstr ""
+msgstr "la procedura %s non è unica"
 
 #: parser/parse_func.c:551
 #, c-format
@@ -16770,6 +16831,8 @@ msgid ""
 "Could not choose a best candidate procedure. You might need to add explicit "
 "type casts."
 msgstr ""
+"Non è stato possibile scegliere la procedura migliore. Potrebbe essere "
+"necessario convertire i tipi esplicitamente."
 
 #: parser/parse_func.c:557
 #, c-format
@@ -16799,7 +16862,7 @@ msgstr ""
 #: parser/parse_func.c:607 parser/parse_func.c:2172
 #, c-format
 msgid "procedure %s does not exist"
-msgstr ""
+msgstr "la procedura %s non esiste"
 
 #: parser/parse_func.c:610
 #, c-format
@@ -16807,6 +16870,8 @@ msgid ""
 "No procedure matches the given name and argument types. You might need to "
 "add explicit type casts."
 msgstr ""
+"Nessuna procedura trovata con nome e tipi di argomenti forniti. Potrebbe "
+"essere necessario convertire i tipi esplicitamente."
 
 #: parser/parse_func.c:619
 #, c-format
@@ -16888,17 +16953,17 @@ msgstr "funzione \"%s\" non trovata"
 #: parser/parse_func.c:2153
 #, c-format
 msgid "%s is not a function"
-msgstr ""
+msgstr "%s non è una funzione"
 
 #: parser/parse_func.c:2167
 #, c-format
 msgid "could not find a procedure named \"%s\""
-msgstr ""
+msgstr "procedura \"%s\" non trovata"
 
 #: parser/parse_func.c:2198
 #, c-format
 msgid "could not find an aggregate named \"%s\""
-msgstr ""
+msgstr "funzione di aggregazione \"%s\" non trovata"
 
 #: parser/parse_func.c:2203
 #, c-format
@@ -16982,6 +17047,7 @@ msgstr ""
 #: parser/parse_func.c:2371
 msgid "set-returning functions are not allowed in CALL arguments"
 msgstr ""
+"non si possono usare funzioni che restituiscono insiemi in argomenti CALL"
 
 #: parser/parse_node.c:87
 #, c-format
@@ -17040,6 +17106,8 @@ msgid ""
 "No operator matches the given name and argument type. You might need to add "
 "an explicit type cast."
 msgstr ""
+"Nessun operatore trovato con nome e tipo di argomento fornito. Potrebbe "
+"essere necessario convertire il tipo esplicitamente."
 
 #: parser/parse_oper.c:729
 #, c-format
@@ -17047,6 +17115,8 @@ msgid ""
 "No operator matches the given name and argument types. You might need to add "
 "explicit type casts."
 msgstr ""
+"Nessun operatore trovato con nome e tipi di argomenti forniti. Potrebbe "
+"essere necessario convertire i tipi esplicitamente."
 
 #: parser/parse_oper.c:790 parser/parse_oper.c:912
 #, c-format
@@ -17574,32 +17644,33 @@ msgstr ""
 #: parser/parse_utilcmd.c:3574
 #, c-format
 msgid "table \"%s\" is not partitioned"
-msgstr ""
+msgstr "la tabella \"%s\" non è partizionata"
 
 #: parser/parse_utilcmd.c:3581
 #, c-format
 msgid "index \"%s\" is not partitioned"
-msgstr ""
+msgstr "l'indice \"%s\" non è partizionato"
 
 #: parser/parse_utilcmd.c:3615
 #, c-format
 msgid "a hash-partitioned table may not have a default partition"
 msgstr ""
+"una tabella partizionata con un hash non può avere una partizione di default"
 
 #: parser/parse_utilcmd.c:3632
 #, c-format
 msgid "invalid bound specification for a hash partition"
-msgstr ""
+msgstr "specifica di estremità non valida per una partizione su hash"
 
 #: parser/parse_utilcmd.c:3638 partitioning/partbounds.c:2127
 #, c-format
 msgid "modulus for hash partition must be a positive integer"
-msgstr ""
+msgstr "il modulo per la partizione hash deve essere un intero positivo"
 
 #: parser/parse_utilcmd.c:3645 partitioning/partbounds.c:2135
 #, c-format
 msgid "remainder for hash partition must be less than modulus"
-msgstr ""
+msgstr "il resto per la partizione hash deve essere inferiore al modulo"
 
 #: parser/parse_utilcmd.c:3657
 #, c-format
@@ -17664,12 +17735,16 @@ msgstr "l'identificativo \"%s\" sarà troncato a \"%s\""
 #, c-format
 msgid "partition \"%s\" conflicts with existing default partition \"%s\""
 msgstr ""
+"la partizione \"%s\" è in conflitto con la partizione di default esistente "
+"\"%s\""
 
 #: partitioning/partbounds.c:390
 #, c-format
 msgid ""
 "every hash partition modulus must be a factor of the next larger modulus"
 msgstr ""
+"ogni modulo di partizione hash deve essere un fattore del successivo modulo "
+"più grande"
 
 #: partitioning/partbounds.c:486
 #, c-format
@@ -17694,6 +17769,8 @@ msgid ""
 "skipped scanning foreign table \"%s\" which is a partition of default "
 "partition \"%s\""
 msgstr ""
+"scansione della tabella esterna \"%s\", che è una partizione della "
+"partizione di default \"%s\", saltata"
 
 #: partitioning/partbounds.c:724
 #, c-format
@@ -17701,16 +17778,18 @@ msgid ""
 "updated partition constraint for default partition \"%s\" would be violated "
 "by some row"
 msgstr ""
+"il nuovo vincolo di partizione per la partizione di default \"%s\" verrebbe "
+"violato da alcune righe"
 
 #: partitioning/partbounds.c:2131
 #, c-format
 msgid "remainder for hash partition must be a non-negative integer"
-msgstr ""
+msgstr "il resto per la partizione hash deve essere un intero non negativo"
 
 #: partitioning/partbounds.c:2158
 #, c-format
 msgid "\"%s\" is not a hash partitioned table"
-msgstr ""
+msgstr "\"%s\" non è una tabella partizionata con un hash"
 
 #: partitioning/partbounds.c:2169 partitioning/partbounds.c:2285
 #, c-format
@@ -17718,6 +17797,8 @@ msgid ""
 "number of partitioning columns (%d) does not match number of partition keys "
 "provided (%d)"
 msgstr ""
+"il numero di colonne di partizionamento (%d) non combacia con il numero di "
+"chiavi di partizioni fornito (%d)"
 
 #: partitioning/partbounds.c:2189 partitioning/partbounds.c:2221
 #, c-format
@@ -17725,6 +17806,8 @@ msgid ""
 "column %d of the partition key has type \"%s\", but supplied value is of "
 "type \"%s\""
 msgstr ""
+"la colonna %d della chiave di partizione ha tipo \"%s\", ma il valore "
+"fornito è di tipo \"%s\""
 
 #: port/pg_shmem.c:196 port/sysv_shmem.c:196
 #, c-format
@@ -17929,18 +18012,18 @@ msgstr "try-lock del semaforo fallito: codice errore %lu"
 #: port/win32_shmem.c:157
 #, c-format
 msgid "could not enable Lock Pages in Memory user right: error code %lu"
-msgstr ""
+msgstr "abilitazione del privilegio Lock Pages fallito: codice di errore %lu"
 
 #: port/win32_shmem.c:123 port/win32_shmem.c:131 port/win32_shmem.c:143
 #: port/win32_shmem.c:158
 #, c-format
 msgid "Failed system call was %s."
-msgstr ""
+msgstr "La chiamata di sistema fallita è %s."
 
 #: port/win32_shmem.c:153
 #, c-format
 msgid "could not enable Lock Pages in Memory user right"
-msgstr ""
+msgstr "abilitazione del privilegio Lock Pages fallito"
 
 #: port/win32_shmem.c:154
 #, c-format
@@ -17948,16 +18031,18 @@ msgid ""
 "Assign Lock Pages in Memory user right to the Windows user account which "
 "runs PostgreSQL."
 msgstr ""
+"Assegna il privilegio Lock Pages in Memory all'utente Window che esegue "
+"PostgreSQL."
 
 #: port/win32_shmem.c:210
 #, c-format
 msgid "the processor does not support large pages"
-msgstr ""
+msgstr "il processore non supporta large pages"
 
 #: port/win32_shmem.c:212 port/win32_shmem.c:217
 #, c-format
 msgid "disabling huge pages"
-msgstr ""
+msgstr "huge page disabilitate"
 
 #: port/win32_shmem.c:279 port/win32_shmem.c:315 port/win32_shmem.c:333
 #, c-format
@@ -18402,6 +18487,8 @@ msgid ""
 "%s: superuser_reserved_connections (%d) plus max_wal_senders (%d) must be "
 "less than max_connections (%d)\n"
 msgstr ""
+"%s: superuser_reserved_connections (%d) più max_wal_senders (%d) dev'essere "
+"meno di max_connections (%d)\n"
 
 #: postmaster/postmaster.c:903
 #, c-format
@@ -18704,7 +18791,7 @@ msgstr "processo del logger di sistema"
 #: postmaster/postmaster.c:3116
 #, c-format
 msgid "background worker \"%s\""
-msgstr ""
+msgstr "processo di lavoro in background \"%s\""
 
 #: postmaster/postmaster.c:3200 postmaster/postmaster.c:3220
 #: postmaster/postmaster.c:3227 postmaster/postmaster.c:3245
@@ -19023,12 +19110,12 @@ msgstr "invio dati da parte del backup di base fallito, backup interrotto"
 #: replication/basebackup.c:609
 #, c-format
 msgid "%s total checksum verification failures"
-msgstr ""
+msgstr "%s fallimenti di verifica checksum totale"
 
 #: replication/basebackup.c:613
 #, c-format
 msgid "checksum verification failure during base backup"
-msgstr ""
+msgstr "fallimento verifica checksum durante il backup di base"
 
 #: replication/basebackup.c:657 replication/basebackup.c:666
 #: replication/basebackup.c:675 replication/basebackup.c:684
@@ -19059,7 +19146,7 @@ msgstr "file speciale \"%s\" saltato"
 #: replication/basebackup.c:1414
 #, c-format
 msgid "invalid segment number %d in file \"%s\""
-msgstr ""
+msgstr "segmento numero %d non valido nel file \"%s\""
 
 #: replication/basebackup.c:1433
 #, c-format
@@ -19067,16 +19154,18 @@ msgid ""
 "cannot verify checksum in file \"%s\", block %d: read buffer size %d and "
 "page size %d differ"
 msgstr ""
+"impossibile verificare il checksum nel file \"%s\", blocco %d: la dimensione "
+"del buffer di lettura %d e la dimensione della pagina %d sono diverse"
 
 #: replication/basebackup.c:1477 replication/basebackup.c:1493
 #, c-format
 msgid "could not fseek in file \"%s\": %m"
-msgstr ""
+msgstr "errore nell'fseek nel file \"%s\": %m"
 
 #: replication/basebackup.c:1485
 #, c-format
 msgid "could not reread block %d of file \"%s\": %m"
-msgstr ""
+msgstr "errore nella rilettura del blocco %d del file \"%s\": %m"
 
 #: replication/basebackup.c:1509
 #, c-format
@@ -19084,17 +19173,21 @@ msgid ""
 "checksum verification failed in file \"%s\", block %d: calculated %X but "
 "expected %X"
 msgstr ""
+"checksum di verifica fallito nel file \"%s\", blocco %d: calcolato %X ma "
+"atteso %X"
 
 #: replication/basebackup.c:1516
 #, c-format
 msgid ""
 "further checksum verification failures in file \"%s\" will not be reported"
 msgstr ""
+"ulteriori fallimenti del checksum di verifica nel file \"%s\" non verranno "
+"riportati"
 
 #: replication/basebackup.c:1574
 #, c-format
 msgid "file \"%s\" has a total of %d checksum verification failures"
-msgstr ""
+msgstr "il file \"%s\" ha un totale di %d fallimenti di verifiche checksum"
 
 #: replication/basebackup.c:1602
 #, c-format
@@ -19318,6 +19411,7 @@ msgstr "avvio della decodifica logica per lo slot \"%s\""
 #, c-format
 msgid "Streaming transactions committing after %X/%X, reading WAL from %X/%X."
 msgstr ""
+"Commit delle transazioni streaming dopo %X/%X, lettura del WAL dopo %X/%X."
 
 #: replication/logical/logical.c:578
 #, c-format
@@ -19763,6 +19857,8 @@ msgid ""
 "logical replication apply worker for subscription %u will not start because "
 "the subscription was removed during startup"
 msgstr ""
+"il worker di replica logica per la sottoscrizione %u non verrà avviato "
+"perché la sottoscrizione è stata rimossa durante l'avvio"
 
 #: replication/logical/worker.c:1643
 #, c-format
@@ -19928,17 +20024,19 @@ msgstr "troppi slot di replica attivi prima dell'arresto"
 #: replication/slotfuncs.c:490
 #, c-format
 msgid "invalid target wal lsn"
-msgstr ""
+msgstr "wal lsn di destinazione non valida"
 
 #: replication/slotfuncs.c:512
 #, c-format
 msgid "cannot advance replication slot that has not previously reserved WAL"
 msgstr ""
+"non è possibile avanzare uno slot di replica che non ha precedentemente "
+"riservato WAL"
 
 #: replication/slotfuncs.c:528
 #, c-format
 msgid "cannot advance replication slot to %X/%X, minimum is %X/%X"
-msgstr ""
+msgstr "non è possibile avanzare lo slot di replica a %X/%X, il minimo è %X/%X"
 
 #: replication/syncrep.c:246
 #, c-format
@@ -20846,7 +20944,7 @@ msgstr ""
 #: storage/file/buffile.c:317
 #, c-format
 msgid "could not open BufFile \"%s\""
-msgstr ""
+msgstr "errore nell'apertura del BufFile \"%s\""
 
 #: storage/file/fd.c:451 storage/file/fd.c:523 storage/file/fd.c:559
 #, c-format
@@ -20899,27 +20997,27 @@ msgstr "file temporaneo: percorso \"%s\", dimensione %lu"
 #: storage/file/fd.c:1444
 #, c-format
 msgid "cannot create temporary directory \"%s\": %m"
-msgstr ""
+msgstr "errore nella creazione della directory temporanea \"%s\": %m"
 
 #: storage/file/fd.c:1451
 #, c-format
 msgid "cannot create temporary subdirectory \"%s\": %m"
-msgstr ""
+msgstr "errore nella creazione della sottodirectory temporanea \"%s\": %m"
 
 #: storage/file/fd.c:1644
 #, c-format
 msgid "could not create temporary file \"%s\": %m"
-msgstr ""
+msgstr "errore nella creazione del file temporaneo \"%s\": %m"
 
 #: storage/file/fd.c:1679
 #, c-format
 msgid "could not open temporary file \"%s\": %m"
-msgstr ""
+msgstr "errore nell'apertura del file temporaneo \"%s\": %m"
 
 #: storage/file/fd.c:1720
 #, c-format
 msgid "cannot unlink temporary file \"%s\": %m"
-msgstr ""
+msgstr "errore nell'unlink del file temporaneo \"%s\": %m"
 
 #: storage/file/fd.c:2002
 #, c-format
@@ -20949,17 +21047,17 @@ msgstr "lettura della directory \"%s\" fallita: %m"
 #: storage/file/fd.c:3124
 #, c-format
 msgid "unexpected file found in temporary-files directory: \"%s\""
-msgstr ""
+msgstr "trovato file non previsto nella directory dei file temporanei: \"%s\""
 
 #: storage/file/fd.c:3443
 #, c-format
 msgid "could not rmdir directory \"%s\": %m"
-msgstr ""
+msgstr "errore nella rimozione della directory \"%s\": %m"
 
 #: storage/file/sharedfileset.c:93
 #, c-format
 msgid "could not attach to a SharedFileSet that is already destroyed"
-msgstr ""
+msgstr "errore collegandosi ad uno SharedFileSet che è stato già distrutto"
 
 #: storage/ipc/dsm.c:351
 #, c-format
@@ -21966,7 +22064,7 @@ msgstr "non è possibile creare indici sulla tabella partizionata \"%s\""
 #: tcop/utility.c:1340
 #, c-format
 msgid "Table \"%s\" contains partitions that are foreign tables."
-msgstr ""
+msgstr "La tabella \"%s\" contiene partizioni che sono tabelle esterne."
 
 #: tsearch/dict_ispell.c:52 tsearch/dict_thesaurus.c:624
 #, c-format
@@ -22158,7 +22256,7 @@ msgstr "numero di alias nel vettore di flag non valido"
 #: tsearch/spell.c:1332
 #, c-format
 msgid "number of aliases exceeds specified number %d"
-msgstr ""
+msgstr "il numero di alias è maggiore del numero specificato %d"
 
 #: tsearch/spell.c:1547
 #, c-format
@@ -22629,6 +22727,7 @@ msgstr "non è stato possibile trovare una funzione di hash per il tipo %s"
 #, c-format
 msgid "could not identify an extended hash function for type %s"
 msgstr ""
+"non è stato possibile trovare una funzione di hash estesa per il tipo %s"
 
 #: utils/adt/arrayfuncs.c:5216
 #, c-format
@@ -22869,7 +22968,7 @@ msgstr "campo temporale fuori dall'intervallo consentito: %d:%02d:%02g"
 #: utils/adt/timestamp.c:3346
 #, c-format
 msgid "invalid preceding or following size in window function"
-msgstr ""
+msgstr "dimensione precedente o successiva non valida nella funzione finestra"
 
 #: utils/adt/date.c:1978 utils/adt/date.c:1991
 #, c-format
@@ -23387,12 +23486,12 @@ msgstr "spostamento nel file \"%s\" fallito: %m"
 #: utils/adt/genfile.c:219
 #, c-format
 msgid "must be superuser to read files with adminpack 1.0"
-msgstr ""
+msgstr "solo i superutenti possono leggere file con adminpack 1.0"
 
 #: utils/adt/genfile.c:220
 #, c-format
 msgid "Consider using pg_file_read(), which is part of core, instead."
-msgstr ""
+msgstr "Considera l'uso di pg_file_read(), che è parte del core, invece."
 
 #: utils/adt/geo_ops.c:939
 #, c-format
@@ -23713,37 +23812,37 @@ msgstr "le chiavi dell'oggetto devono essere stringhe"
 #: utils/adt/jsonb.c:1910
 #, c-format
 msgid "cannot cast jsonb null to type %s"
-msgstr ""
+msgstr "non è possibile convertire un null jsonb al tipo %s"
 
 #: utils/adt/jsonb.c:1911
 #, c-format
 msgid "cannot cast jsonb string to type %s"
-msgstr ""
+msgstr "non è possibile convertire una stringa jsonb al tipo %s"
 
 #: utils/adt/jsonb.c:1912
 #, c-format
 msgid "cannot cast jsonb numeric to type %s"
-msgstr ""
+msgstr "non è possibile convertire un numero jsonb al tipo %s"
 
 #: utils/adt/jsonb.c:1913
 #, c-format
 msgid "cannot cast jsonb boolean to type %s"
-msgstr ""
+msgstr "non è possibile convertire un booleano jsonb al tipo %s"
 
 #: utils/adt/jsonb.c:1914
 #, c-format
 msgid "cannot cast jsonb array to type %s"
-msgstr ""
+msgstr "non è possibile convertire un array jsonb al tipo %s"
 
 #: utils/adt/jsonb.c:1915
 #, c-format
 msgid "cannot cast jsonb object to type %s"
-msgstr ""
+msgstr "non è possibile convertire un oggetto jsonb al tipo %s"
 
 #: utils/adt/jsonb.c:1916
 #, c-format
 msgid "cannot cast jsonb array or object to type %s"
-msgstr ""
+msgstr "non è possibile convertire un array o oggetto jsonb al tipo %s"
 
 #: utils/adt/jsonb_util.c:657
 #, c-format
@@ -23838,7 +23937,7 @@ msgstr "non è possibile eseguire %s su un argomento che non è un array"
 #: utils/adt/jsonfuncs.c:2355 utils/adt/jsonfuncs.c:2361
 #, c-format
 msgid "expected JSON array"
-msgstr ""
+msgstr "atteso un array JSON"
 
 #: utils/adt/jsonfuncs.c:2334
 #, c-format
@@ -23858,7 +23957,7 @@ msgstr "Vedi l'elemento dell'array %s."
 #: utils/adt/jsonfuncs.c:2397
 #, c-format
 msgid "malformed JSON array"
-msgstr ""
+msgstr "array JSON non valido"
 
 #: utils/adt/jsonfuncs.c:3250 utils/adt/jsonfuncs.c:3606
 #, c-format
@@ -23935,12 +24034,12 @@ msgstr "l'elemento di percorso in posizione %d non è un intero: \"%s\""
 #: utils/adt/jsonfuncs.c:4982
 #, c-format
 msgid "wrong flag type, only arrays and scalars are allowed"
-msgstr ""
+msgstr "tipo di flag non valido, solo array e scalari sono consentiti"
 
 #: utils/adt/jsonfuncs.c:4989
 #, c-format
 msgid "flag array element is not a string"
-msgstr ""
+msgstr "l'elemento dell'array di flag non è una stringa"
 
 #: utils/adt/jsonfuncs.c:4990 utils/adt/jsonfuncs.c:5012
 #, c-format
@@ -23948,11 +24047,13 @@ msgid ""
 "Possible values are: \"string\", \"numeric\", \"boolean\", \"key\", and \"all"
 "\""
 msgstr ""
+"I valori possibili sono: \"string\", \"numeric\", \"boolean\", \"key\" e "
+"\"all\""
 
 #: utils/adt/jsonfuncs.c:5010
 #, c-format
 msgid "wrong flag in flag array: \"%s\""
-msgstr ""
+msgstr "flag errato nell'array di flag: \"%s\""
 
 #: utils/adt/levenshtein.c:133
 #, c-format
@@ -24046,12 +24147,12 @@ msgstr "invio del segnale al postmaster fallito: %m"
 #: utils/adt/misc.c:355
 #, c-format
 msgid "must be superuser to rotate log files with adminpack 1.0"
-msgstr ""
+msgstr "solo i superutenti possono rotare i file di log con adminpack 1.0"
 
 #: utils/adt/misc.c:356
 #, c-format
 msgid "Consider using pg_logfile_rotate(), which is part of core, instead."
-msgstr ""
+msgstr "Considera l'uso di pg_logfile_rotate(), che è parte del core, invece."
 
 #: utils/adt/misc.c:361 utils/adt/misc.c:381
 #, c-format
@@ -25545,6 +25646,8 @@ msgid ""
 "operator class \"%s\" of access method %s is missing support function %d for "
 "type %s"
 msgstr ""
+"alla classe di operatori \"%s\" del metodi di accesso %s manca la funzione "
+"di supporto %d per il tipo %s"
 
 #: utils/cache/plancache.c:723
 #, c-format
@@ -25897,12 +26000,12 @@ msgstr ""
 #: utils/init/miscinit.c:157
 #, c-format
 msgid "data directory \"%s\" has invalid permissions"
-msgstr ""
+msgstr "la directory di dati \"%s\" ha permessi non validi"
 
 #: utils/init/miscinit.c:159
 #, c-format
 msgid "Permissions should be u=rwx (0700) or u=rwx,g=rx (0750)."
-msgstr ""
+msgstr "I permessi dovrebbero essere u=rwx (0700) o u=rwx,g=rx (0750)."
 
 #: utils/init/miscinit.c:218
 #, c-format
@@ -26094,6 +26197,8 @@ msgid ""
 "replication connection authorized: user=%s SSL enabled (protocol=%s, cipher="
 "%s, bits=%d, compression=%s)"
 msgstr ""
+"connessione di replica autorizzata: utente=%s SSL abilitato (protocollo=%s, "
+"cifrario=%s, bit=%d, compressione=%s)"
 
 #: utils/init/postinit.c:257 utils/init/postinit.c:274
 msgid "off"
@@ -26114,6 +26219,8 @@ msgid ""
 "connection authorized: user=%s database=%s SSL enabled (protocol=%s, cipher="
 "%s, bits=%d, compression=%s)"
 msgstr ""
+"connessione autorizzata: utente=%s database=%s SSL abilitato (protocollo=%s, "
+"cifrario=%s, bit=%d, compressione=%s)"
 
 #: utils/init/postinit.c:278
 #, c-format
@@ -26339,11 +26446,11 @@ msgstr "Connessioni ed Autenticazione / Impostazioni di Connessione"
 
 #: utils/misc/guc.c:579
 msgid "Connections and Authentication / Authentication"
-msgstr ""
+msgstr "Connessioni ed Autenticazione / Autenticazione"
 
 #: utils/misc/guc.c:581
 msgid "Connections and Authentication / SSL"
-msgstr ""
+msgstr "Connessioni ed Autenticazione / SSL"
 
 #: utils/misc/guc.c:583
 msgid "Resource Usage"
@@ -26525,6 +26632,8 @@ msgstr "Opzioni di Sviluppo"
 msgid ""
 "Valid units for this parameter are \"B\", \"kB\", \"MB\", \"GB\", and \"TB\"."
 msgstr ""
+"Le unità di misura valide per questo parametro sono \"B\", \"kB\", \"MB\", "
+"\"GB\" e \"TB\"."
 
 #: utils/misc/guc.c:763
 msgid ""
@@ -26581,33 +26690,38 @@ msgstr "Abilita l'uso da parte del planner di piani di join basati su hash."
 
 #: utils/misc/guc.c:921
 msgid "Enables the planner's use of gather merge plans."
-msgstr "Abilita l'uso da parte del planner di pani gather merge."
+msgstr "Abilita l'uso da parte del planner di piani gather merge."
 
 #: utils/misc/guc.c:930
 msgid "Enables partitionwise join."
-msgstr ""
+msgstr "Abilita join partizione su partizione."
 
 #: utils/misc/guc.c:939
 msgid "Enables partitionwise aggregation and grouping."
-msgstr ""
+msgstr "Abilita aggregazione e raggruppamento partizione per partizione."
 
 #: utils/misc/guc.c:948
 msgid "Enables the planner's use of parallel append plans."
-msgstr ""
+msgstr "Abilita l'uso da parte del planner di piani di append paralleli."
 
 #: utils/misc/guc.c:957
 msgid "Enables the planner's use of parallel hash plans."
-msgstr ""
+msgstr "Abilita l'uso da parte del planner di piani di hash paralleli."
 
 #: utils/misc/guc.c:966
 msgid "Enable plan-time and run-time partition pruning."
 msgstr ""
+"Abilita eliminazione delle partizioni durante la pianificazione e "
+"l'esecuzione."
 
 #: utils/misc/guc.c:967
 msgid ""
 "Allows the query planner and executor to compare partition bounds to "
 "conditions in the query to determine which partitions must be scanned."
 msgstr ""
+"Permetti al planner e all'esecutore di comparare i margini delle partizioni "
+"alle condizioni nelle query per determinare quali partizioni devono essere "
+"esaminate."
 
 #: utils/misc/guc.c:977
 msgid "Enables genetic query optimization."
@@ -26637,7 +26751,7 @@ msgstr "Abilita le connessioni SSL."
 
 #: utils/misc/guc.c:1025
 msgid "Also use ssl_passphrase_command during server reload."
-msgstr ""
+msgstr "Usa anche ssl_passphrase_command durante il riavvio del server."
 
 #: utils/misc/guc.c:1034
 msgid "Give priority to server ciphersuite order."
@@ -27078,35 +27192,37 @@ msgstr "Dividi i messaggi inviati a syslog in linee inferiori a 1024 byte."
 
 #: utils/misc/guc.c:1741
 msgid "Controls whether Gather and Gather Merge also run subplans."
-msgstr ""
+msgstr "Controlla se Gather e Gather Merge possano anche eseguire sottopiani."
 
 #: utils/misc/guc.c:1742
 msgid "Should gather nodes also run subplans, or just gather tuples?"
 msgstr ""
+"I nodi di raccolta possono anche eseguire sottopiani, o solo raccogliere "
+"tuple?"
 
 #: utils/misc/guc.c:1751
 msgid "Allow JIT compilation."
-msgstr ""
+msgstr "Permetti compilazione JIT."
 
 #: utils/misc/guc.c:1761
 msgid "Register JIT compiled function with debugger."
-msgstr ""
+msgstr "Registra la funzione compilata con JIT col debugger."
 
 #: utils/misc/guc.c:1778
 msgid "Write out LLVM bitcode to facilitate JIT debugging."
-msgstr ""
+msgstr "Scrivi il bitcode LLVM per facilitare il debugging JIT."
 
 #: utils/misc/guc.c:1789
 msgid "Allow JIT compilation of expressions."
-msgstr ""
+msgstr "Permetti la compilazione JIT di espressioni."
 
 #: utils/misc/guc.c:1800
 msgid "Register JIT compiled function with perf profiler."
-msgstr ""
+msgstr "Registra la funzione compilata con JIT con il perf profiler."
 
 #: utils/misc/guc.c:1817
 msgid "Allow JIT compilation of tuple deforming."
-msgstr ""
+msgstr "Permetti al compilatore JIT di deformare tuple."
 
 #: utils/misc/guc.c:1837
 msgid ""
@@ -27273,7 +27389,7 @@ msgstr ""
 
 #: utils/misc/guc.c:2072
 msgid "Mode of the data directory."
-msgstr ""
+msgstr "Modo della directory dei dati."
 
 #: utils/misc/guc.c:2073
 msgid ""
@@ -27281,6 +27397,9 @@ msgid ""
 "the chmod and umask system calls. (To use the customary octal format the "
 "number must start with a 0 (zero).)"
 msgstr ""
+"Il valore del parametro deve essere la specifica numerica dei permessi nella "
+"stessa forma accettata dalle chiamate di sistema chmod e umask. (Per usare "
+"il classico formato ottale, il valore numerico deve iniziare con 0 (zero).)"
 
 #: utils/misc/guc.c:2086
 msgid "Sets the maximum memory to be used for query workspaces."
@@ -27693,7 +27812,7 @@ msgstr ""
 
 #: utils/misc/guc.c:2801
 msgid "Shows the size of write ahead log segments."
-msgstr ""
+msgstr "Mostra la dimensione dei segmenti del log di write ahead"
 
 #: utils/misc/guc.c:2814
 msgid "Time to sleep between autovacuum runs."
@@ -27737,6 +27856,8 @@ msgstr ""
 msgid ""
 "Sets the maximum number of parallel processes per maintenance operation."
 msgstr ""
+"Imposta il numero massimo di processi paralleli per operazioni di "
+"manutenzione."
 
 #: utils/misc/guc.c:2884
 msgid "Sets the maximum number of parallel processes per executor node."
@@ -27925,27 +28046,27 @@ msgstr ""
 
 #: utils/misc/guc.c:3142
 msgid "Perform JIT compilation if query is more expensive."
-msgstr ""
+msgstr "Effettua la compilazione JIT se la query è più costosa."
 
 #: utils/misc/guc.c:3143
 msgid "-1 disables JIT compilation."
-msgstr ""
+msgstr "-1 disabilita la compilazione JIT."
 
 #: utils/misc/guc.c:3152
 msgid "Optimize JITed functions if query is more expensive."
-msgstr ""
+msgstr "Ottimizza le funzioni compilate con JIT se la query è più costosa."
 
 #: utils/misc/guc.c:3153
 msgid "-1 disables optimization."
-msgstr ""
+msgstr "-1 disabilita l'ottimizzazione."
 
 #: utils/misc/guc.c:3162
 msgid "Perform JIT inlining if query is more expensive."
-msgstr ""
+msgstr "Effettua l'inlining JIT se la query è più costosa."
 
 #: utils/misc/guc.c:3163
 msgid "-1 disables inlining."
-msgstr ""
+msgstr "-1 disabilita l'inlining."
 
 #: utils/misc/guc.c:3172
 msgid ""
@@ -27999,6 +28120,8 @@ msgstr ""
 msgid ""
 "Number of tuple inserts prior to index cleanup as a fraction of reltuples."
 msgstr ""
+"Numero di inserimenti di tuple prima della pulizia dell'indice come frazione "
+"di reltuples."
 
 #: utils/misc/guc.c:3272
 msgid "Sets the shell command that will be called to archive a WAL file."
@@ -28266,7 +28389,7 @@ msgstr "Posizione del file di parametri SSH DH."
 
 #: utils/misc/guc.c:3834
 msgid "Command to obtain passphrases for SSL."
-msgstr ""
+msgstr "Comando per ottenere la passphrase per SSL."
 
 #: utils/misc/guc.c:3844
 msgid "Sets the application name to be reported in statistics and logs."
@@ -28294,7 +28417,7 @@ msgstr ""
 
 #: utils/misc/guc.c:3877
 msgid "JIT provider to use."
-msgstr ""
+msgstr "Fornitore JIT da usare."
 
 #: utils/misc/guc.c:3897
 msgid "Sets whether \"\\'\" is allowed in string literals."
@@ -28411,7 +28534,7 @@ msgstr ""
 
 #: utils/misc/guc.c:4124
 msgid "Use of huge pages on Linux or Windows."
-msgstr ""
+msgstr "Uso di hige pages su Linux o Windows."
 
 #: utils/misc/guc.c:4134
 msgid "Forces use of parallel query facilities."
@@ -28668,6 +28791,8 @@ msgid ""
 "effective_io_concurrency must be set to 0 on platforms that lack "
 "posix_fadvise()"
 msgstr ""
+"effective_io_concurrency deve essere impostato a 0 su piattaforme che non "
+"hanno posix_fadvise()"
 
 #: utils/misc/help_config.c:131
 #, c-format
@@ -28810,6 +28935,7 @@ msgstr "collegamento all'area dinamica condivisa fallito"
 #, c-format
 msgid "Failed on request of size %zu in memory context \"%s\"."
 msgstr ""
+"Errore durante la richiesta di dimensione %zu nel contesto di memoria \"%s\"."
 
 #: utils/mmgr/portalmem.c:187
 #, c-format
@@ -28829,7 +28955,7 @@ msgstr "il portale \"%s\" non può essere eseguito"
 #: utils/mmgr/portalmem.c:476
 #, c-format
 msgid "cannot drop pinned portal \"%s\""
-msgstr ""
+msgstr "non è possibile eliminare il portale pinned \"%s\""
 
 #: utils/mmgr/portalmem.c:484
 #, c-format
@@ -28849,6 +28975,8 @@ msgid ""
 "cannot perform transaction commands inside a cursor loop that is not read-"
 "only"
 msgstr ""
+"non è possibile eseguire comandi di transazioni in un loop su cursore che "
+"non sia di sola lettura"
 
 #: utils/sort/logtape.c:276
 #, c-format
@@ -28858,12 +28986,12 @@ msgstr "lettura del blocco %ld dal file temporaneo fallita: %m"
 #: utils/sort/logtape.c:439
 #, c-format
 msgid "could not determine size of temporary file \"%s\""
-msgstr ""
+msgstr "determinazione della dimensione del file temporaneo \"%s\" fallita"
 
 #: utils/sort/sharedtuplestore.c:208
 #, c-format
 msgid "could not write to temporary file: %m"
-msgstr ""
+msgstr "scrittura nel file temporaneo fallita: %m"
 
 #: utils/sort/sharedtuplestore.c:437 utils/sort/sharedtuplestore.c:446
 #: utils/sort/sharedtuplestore.c:469 utils/sort/sharedtuplestore.c:486
@@ -28871,12 +28999,12 @@ msgstr ""
 #: utils/sort/sharedtuplestore.c:581
 #, c-format
 msgid "could not read from shared tuplestore temporary file"
-msgstr ""
+msgstr "errore nella lettura dal file temporaneo tuplestore condiviso"
 
 #: utils/sort/sharedtuplestore.c:492
 #, c-format
 msgid "unexpected chunk in shared tuplestore temporary file"
-msgstr ""
+msgstr "blocco non previsto nel file temporaneo tuplestore condiviso"
 
 #: utils/sort/tuplesort.c:2967
 #, c-format
@@ -29015,7 +29143,7 @@ msgstr "l'intervallo della time zone deve essere HOUR o HOUR TO MINUTE"
 #: gram.y:2138
 #, c-format
 msgid "column number must be in range from 1 to %d"
-msgstr ""
+msgstr "i numeri di colonne devono essere nell'intervallo tra 1 e %d"
 
 #: gram.y:2677
 #, c-format
@@ -29025,27 +29153,27 @@ msgstr "l'opzione della sequenza \"%s\" non è supportata qui"
 #: gram.y:2706
 #, c-format
 msgid "modulus for hash partition provided more than once"
-msgstr ""
+msgstr "modulo per partizione hash fornito più di una volta"
 
 #: gram.y:2715
 #, c-format
 msgid "remainder for hash partition provided more than once"
-msgstr ""
+msgstr "resto per partizione hash fornito più di una volta"
 
 #: gram.y:2722
 #, c-format
 msgid "unrecognized hash partition bound specification \"%s\""
-msgstr ""
+msgstr "specifica di vincolo di partizione hash \"%s\" non riconosciuto"
 
 #: gram.y:2730
 #, c-format
 msgid "modulus for hash partition must be specified"
-msgstr ""
+msgstr "il modulo per la partizione hash deve essere specificato"
 
 #: gram.y:2734
 #, c-format
 msgid "remainder for hash partition must be specified"
-msgstr ""
+msgstr "il resto per la partizione hash deve essere specificato"
 
 #: gram.y:2986 gram.y:3015
 #, c-format
