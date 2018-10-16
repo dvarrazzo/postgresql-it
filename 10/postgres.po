@@ -15878,7 +15878,7 @@ msgstr "non è possibile usare sottoquery nella condizione WHEN del trigger"
 
 #: parser/parse_expr.c:1841
 msgid "cannot use subquery in partition key expression"
-msgstr "non è possibile usare sottowquery in un'espressione di partizione"
+msgstr "non è possibile usare sottoquery in un'espressione di partizione"
 
 #: parser/parse_expr.c:1894
 #, c-format
