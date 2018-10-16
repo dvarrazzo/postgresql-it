@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:24+0000\n"
-"PO-Revision-Date: 2018-10-08 20:46+0100\n"
+"PO-Revision-Date: 2018-10-08 22:16+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -872,9 +872,8 @@ msgid ""
 "(default: %d)\n"
 msgstr ""
 "  -s, --status-interval=SEC\n"
-"                         tempo tra gli invii dei pacchetti di stato al "
-"server\n"
-"                         (default: %d)\n"
+"                         tempo tra i pacchetti di status inviati al server "
+"(default: %d)\n"
 
 #: pg_receivewal.c:85
 #, c-format
@@ -1318,7 +1317,7 @@ msgid ""
 "and %d or more fields\n"
 msgstr ""
 "%s: identificazione del sistema fallita: ricevute %d righe e %d campi, "
-"attese %d righe e %d campi o più\n"
+"attese %d righe e %d o più campi\n"
 
 #: receivelog.c:508
 #, c-format

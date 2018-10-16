@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:19+0000\n"
-"PO-Revision-Date: 2018-10-08 21:32+0100\n"
+"PO-Revision-Date: 2018-10-16 02:25+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -25581,7 +25581,7 @@ msgstr "Abilita l'uso da parte del planner di piani di join basati su hash."
 
 #: utils/misc/guc.c:906
 msgid "Enables the planner's use of gather merge plans."
-msgstr "Abilita l'uso da parte del planner di pani gather merge."
+msgstr "Abilita l'uso da parte del planner di piani gather merge."
 
 #: utils/misc/guc.c:916
 msgid "Enables genetic query optimization."
