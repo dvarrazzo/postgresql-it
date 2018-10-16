@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
 "POT-Creation-Date: 2018-10-08 14:14+0000\n"
-"PO-Revision-Date: 2018-10-15 21:06+0100\n"
+"PO-Revision-Date: 2018-10-16 02:28+0100\n"
 "Last-Translator: Daniele Varrazzo <daniele.varrazzo@gmail.com>\n"
 "Language-Team: https://github.com/dvarrazzo/postgresql-it\n"
 "Language: it\n"
@@ -3861,7 +3861,6 @@ msgid ""
 msgstr ""
 "  PSQL_EDITOR_LINENUMBER_ARG\n"
 "    come specificare un numero di riga quando si invoca l'editor\n"
-"\n"
 
 #: help.c:490
 #, c-format
